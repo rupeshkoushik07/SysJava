@@ -1,0 +1,11 @@
+SUMMARY: jruby_9.4.2.0
+========================================
+Total native methods:  448
+----------------------------------------
+MAPPED:                330  (73.7%)
+  Java_XXX             291
+  JVM_XXX              39
+
+UNMAPPED:              118  (26.3%)
+  Intrinsic            4
+  Truly unmapped       114

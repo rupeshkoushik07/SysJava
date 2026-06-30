@@ -1,0 +1,9 @@
+ftruncate
+getpriority
+mincore
+setpriority
+shmat
+shmctl
+shmdt
+shmget
+vfork

@@ -1,0 +1,4 @@
+=== JNA Dynamic Hits (Function.invoke*) ===
+Format: callerSig | lib | symbol | apiPattern | sinkSig | stmt
+
+<net.openhft.affinity.impl.LinuxHelper: int sched_getcpu()> | <?> | <?> | Function.getFunction(Pointer,int) | <com.sun.jna.Function: int invokeInt(java.lang.Object[])> | $stack25 = virtualinvoke ret_1#1.<com.sun.jna.Function: int invokeInt(java.lang.Object[])>($stack24)

@@ -1,0 +1,359 @@
+
+Path to mprotect:
+  Java_com_kenai_jffi_Foreign_mprotect_cdd0 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to futex:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0xa1f70_a1f70
+  fuzzyfunc-0xa1f70_a1f70 - [syscall]-> futex
+
+Path to mmap:
+  Java_com_kenai_jffi_Foreign_mmap_cd40 - [DIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to munmap:
+  Java_com_kenai_jffi_Foreign_munmap_cda0 - [DIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to close:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_close_93930
+  _IO_file_close_93930 - [DIRECT]-> __close_nocancel_11c630
+  __close_nocancel_11c630 - [syscall]-> close
+
+Path to read:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_read_938b0
+  _IO_file_read_938b0 - [DIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to lseek:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_seek_938d0
+  _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to fstat:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_stat_938e0
+  _IO_file_stat_938e0 - [DIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to write:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_write_93940
+  _IO_file_write_93940 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to getrandom:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> fuzzyfunc-0xa9d70_a9d70
+  fuzzyfunc-0xa9d70_a9d70 - [syscall]-> getrandom
+
+Path to rt_sigprocmask:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28820
+  abort_28820 - [syscall]-> rt_sigprocmask
+
+Path to clock_gettime:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> clock_gettime_ec950
+  clock_gettime_ec950 - [syscall]-> clock_gettime
+
+Path to poll:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to setsockopt:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to recvmsg:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to getpid:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to geteuid:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to getegid:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to sendmsg:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to accept:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1729b0_1729b0
+  fuzzyfunc-0x1729b0_1729b0 - [DIRECT]-> accept_12b820
+  accept_12b820 - [syscall]-> accept
+
+Path to sendto:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to recvfrom:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> recvfrom_12bca0
+  recvfrom_12bca0 - [syscall]-> recvfrom
+
+Path to mkdir:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x66710_66710
+  fuzzyfunc-0x66710_66710 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to openat:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x66720_66720
+  fuzzyfunc-0x66720_66720 - [DIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to mremap:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x92990_92990
+  fuzzyfunc-0x92990_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to unlink:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> open_temp_exec_file_dir_136f0
+  open_temp_exec_file_dir_136f0 - [DIRECT]-> unlink_11c430
+  unlink_11c430 - [syscall]-> unlink
+
+Path to prlimit64:
+  Java_com_kenai_jffi_Foreign_pageSize_cd30 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to ioctl:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_file_doallocate_85120
+  _IO_file_doallocate_85120 - [DIRECT]-> isatty_11ade0
+  isatty_11ade0 - [DIRECT]-> tcgetattr_11ce50
+  tcgetattr_11ce50 - [syscall]-> ioctl
+
+Path to wait4:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_proc_close_87950
+  _IO_proc_close_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to writev:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_wfile_underflow_8c5c0
+  _IO_wfile_underflow_8c5c0 - [DIRECT]-> fuzzyfunc-0x3b2f0_3b2f0
+  fuzzyfunc-0x3b2f0_3b2f0 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [syscall]-> writev
+
+Path to madvise:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _nss_files_initgroups_dyn_16bab0
+  _nss_files_initgroups_dyn_16bab0 - [DIRECT]-> realloc_ae0c0
+  realloc_ae0c0 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to exit_group:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to socket:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x173320_173320
+  fuzzyfunc-0x173320_173320 - [DIRECT]-> rtime_170a10
+  rtime_170a10 - [DIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to connect:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x173320_173320
+  fuzzyfunc-0x173320_173320 - [DIRECT]-> rtime_170a10
+  rtime_170a10 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to newfstatat:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x66690_66690
+  fuzzyfunc-0x66690_66690 - [DIRECT]-> lstat_11b030
+  lstat_11b030 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0xa9210_a9210
+  fuzzyfunc-0xa9210_a9210 - [DIRECT]-> fuzzyfunc-0x12b580_12b580
+  fuzzyfunc-0x12b580_12b580 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to pread64:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0xa9210_a9210
+  fuzzyfunc-0xa9210_a9210 - [DIRECT]-> fuzzyfunc-0x12b580_12b580
+  fuzzyfunc-0x12b580_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to sysinfo:
+  Java_com_kenai_jffi_Foreign_pageSize_cd30 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_avphys_pages_11fe70
+  get_avphys_pages_11fe70 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to sched_getaffinity:
+  Java_com_kenai_jffi_Foreign_pageSize_cd30 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
+  get_nprocs_conf_11fda0 - [DIRECT]-> fuzzyfunc-0x11fab0_11fab0
+  fuzzyfunc-0x11fab0_11fab0 - [syscall]-> sched_getaffinity
+
+Path to prctl:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _IO_wfile_underflow_8c5c0
+  _IO_wfile_underflow_8c5c0 - [DIRECT]-> fuzzyfunc-0x3b2f0_3b2f0
+  fuzzyfunc-0x3b2f0_3b2f0 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [DIRECT]-> fuzzyfunc-0x12a770_12a770
+  fuzzyfunc-0x12a770_12a770 - [syscall]-> prctl
+
+Path to sendmmsg:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to tgkill:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill_9ea10
+  pthread_kill_9ea10 - [syscall]-> tgkill
+
+Path to gettid:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill_9ea10
+  pthread_kill_9ea10 - [syscall]-> gettid
+
+Path to rt_sigaction:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> sigaction_452e0
+  sigaction_452e0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to clock_nanosleep:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x134580_134580
+  fuzzyfunc-0x134580_134580 - [DIRECT]-> sleep_10ec50
+  sleep_10ec50 - [DIRECT]-> nanosleep_f9a10
+  nanosleep_f9a10 - [DIRECT]-> clock_nanosleep_eca20
+  clock_nanosleep_eca20 - [syscall]-> clock_nanosleep
+
+Path to getcwd:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x134990_134990
+  fuzzyfunc-0x134990_134990 - [DIRECT]-> dcgettext_3bf80
+  dcgettext_3bf80 - [DIRECT]-> fuzzyfunc-0x3ce60_3ce60
+  fuzzyfunc-0x3ce60_3ce60 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to getpeername:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to fcntl:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to dup:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x173880_173880
+  fuzzyfunc-0x173880_173880 - [DIRECT]-> fuzzyfunc-0x1737c0_1737c0
+  fuzzyfunc-0x1737c0_1737c0 - [DIRECT]-> perror_28a93
+  perror_28a93 - [DIRECT]-> dup_116960
+  dup_116960 - [syscall]-> dup
+
+Path to brk:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> fuzzyfunc-0xab570_ab570
+  fuzzyfunc-0xab570_ab570 - [DIRECT]-> __default_morecore_aaa10
+  __default_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to bind:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> getifaddrs_13b590
+  getifaddrs_13b590 - [DIRECT]-> fuzzyfunc-0x13a2b0_13a2b0
+  fuzzyfunc-0x13a2b0_13a2b0 - [DIRECT]-> fuzzyfunc-0x13a1f0_13a1f0
+  fuzzyfunc-0x13a1f0_13a1f0 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to getsockname:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> getifaddrs_13b590
+  getifaddrs_13b590 - [DIRECT]-> fuzzyfunc-0x13a2b0_13a2b0
+  fuzzyfunc-0x13a2b0_13a2b0 - [DIRECT]-> fuzzyfunc-0x13a1f0_13a1f0
+  fuzzyfunc-0x13a1f0_13a1f0 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to sched_getparam:
+  Java_com_kenai_jffi_Foreign_dlsym_8ac0 - [DIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa5490_a5490
+  fuzzyfunc-0xa5490_a5490 - [DIRECT]-> sched_getparam_10e680
+  sched_getparam_10e680 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_com_kenai_jffi_Foreign_dlsym_8ac0 - [DIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa5490_a5490
+  fuzzyfunc-0xa5490_a5490 - [DIRECT]-> sched_getscheduler_10e6b0
+  sched_getscheduler_10e6b0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  Java_com_kenai_jffi_Foreign_dlsym_8ac0 - [DIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  Java_com_kenai_jffi_Foreign_dlsym_8ac0 - [DIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_com_kenai_jffi_Foreign_dlsym_8ac0 - [DIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to uname:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __resolv_context_get_14ec80
+  __resolv_context_get_14ec80 - [DIRECT]-> fuzzyfunc-0x148870_148870
+  fuzzyfunc-0x148870_148870 - [DIRECT]-> fuzzyfunc-0x147820_147820
+  fuzzyfunc-0x147820_147820 - [DIRECT]-> gethostname_11f400
+  gethostname_11f400 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to readv:
+  Java_com_kenai_jffi_Foreign_invokeL2_81b0 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> clnt_create_173e60
+  clnt_create_173e60 - [DIRECT]-> fuzzyfunc-0x17c7c0_17c7c0
+  fuzzyfunc-0x17c7c0_17c7c0 - [DIRECT]-> gethostbyname2_r_15d6f0
+  gethostbyname2_r_15d6f0 - [DIRECT]-> fuzzyfunc-0x17e1b0_17e1b0
+  fuzzyfunc-0x17e1b0_17e1b0 - [DIRECT]-> fuzzyfunc-0x17d700_17d700
+  fuzzyfunc-0x17d700_17d700 - [DIRECT]-> fuzzyfunc-0x180450_180450
+  fuzzyfunc-0x180450_180450 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv

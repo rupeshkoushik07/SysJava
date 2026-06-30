@@ -1,0 +1,10 @@
+/usr/local/openjdk-8/lib/jfr.jar
+/usr/local/openjdk-8/lib/jsse.jar
+/usr/local/openjdk-8/lib/rt.jar
+/zookeeper-3.4.14/lib/audience-annotations-0.5.0.jar
+/zookeeper-3.4.14/lib/jline-0.9.94.jar
+/zookeeper-3.4.14/lib/log4j-1.2.17.jar
+/zookeeper-3.4.14/lib/netty-3.10.6.Final.jar
+/zookeeper-3.4.14/lib/slf4j-api-1.7.25.jar
+/zookeeper-3.4.14/lib/slf4j-log4j12-1.7.25.jar
+/zookeeper-3.4.14/zookeeper-3.4.14.jar

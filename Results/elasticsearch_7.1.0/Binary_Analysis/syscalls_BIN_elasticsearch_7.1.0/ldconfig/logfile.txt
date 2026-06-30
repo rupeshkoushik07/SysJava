@@ -1,0 +1,393 @@
+
+Path to exit:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __exit_thread_450590
+  __exit_thread_450590 - [syscall]-> exit
+
+Path to uname:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _dl_discover_osversion_45a310
+  _dl_discover_osversion_45a310 - [DIRECT]-> uname_4884a0
+  uname_4884a0 - [syscall]-> uname
+
+Path to open:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _dl_discover_osversion_45a310
+  _dl_discover_osversion_45a310 - [DIRECT]-> open_450730
+  open_450730 - [syscall]-> open
+
+Path to read:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _dl_discover_osversion_45a310
+  _dl_discover_osversion_45a310 - [DIRECT]-> read_4508b0
+  read_4508b0 - [syscall]-> read
+
+Path to close:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _dl_discover_osversion_45a310
+  _dl_discover_osversion_45a310 - [DIRECT]-> close_450b30
+  close_450b30 - [syscall]-> close
+
+Path to arch_prctl:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __pthread_initialize_minimal_4091b0
+  __pthread_initialize_minimal_4091b0 - [DIRECT]-> __libc_setup_tls_408f30
+  __libc_setup_tls_408f30 - [syscall]-> arch_prctl
+
+Path to stat:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __exit_thread_450590
+  __exit_thread_450590 - [DIRECT]-> _xstat_4505b0
+  _xstat_4505b0 - [syscall]-> stat
+
+Path to fcntl:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_check_standard_fds_408e90
+  __libc_check_standard_fds_408e90 - [DIRECT]-> fcntl_450a10
+  fcntl_450a10 - [syscall]-> fcntl
+
+Path to futex:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _dl_discover_osversion_45a310
+  _dl_discover_osversion_45a310 - [DIRECT]-> open_450730
+  open_450730 - [DIRECT]-> __libc_disable_asynccancel_456e80
+  __libc_disable_asynccancel_456e80 - [syscall]-> futex
+
+Path to geteuid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> __libc_init_secure_45a2c0
+  __libc_init_secure_45a2c0 - [DIRECT]-> geteuid_488740
+  geteuid_488740 - [syscall]-> geteuid
+
+Path to getuid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> __libc_init_secure_45a2c0
+  __libc_init_secure_45a2c0 - [DIRECT]-> getuid_488730
+  getuid_488730 - [syscall]-> getuid
+
+Path to getegid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> __libc_init_secure_45a2c0
+  __libc_init_secure_45a2c0 - [DIRECT]-> getegid_488760
+  getegid_488760 - [syscall]-> getegid
+
+Path to getgid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> __libc_init_secure_45a2c0
+  __libc_init_secure_45a2c0 - [DIRECT]-> getgid_488750
+  getgid_488750 - [syscall]-> getgid
+
+Path to access:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> access_4887f0
+  access_4887f0 - [syscall]-> access
+
+Path to exit_group:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _exit_449710
+  _exit_449710 - [syscall]-> exit_group
+
+Path to writev:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> writev_451320
+  writev_451320 - [syscall]-> writev
+
+Path to mmap:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> mmap_451e40
+  mmap_451e40 - [syscall]-> mmap
+
+Path to munmap:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> munmap_451ef0
+  munmap_451ef0 - [syscall]-> munmap
+
+Path to fstat:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_check_standard_fds_408e90
+  __libc_check_standard_fds_408e90 - [DIRECT]-> check_one_fd.part.0_4004f0
+  check_one_fd.part.0_4004f0 - [DIRECT]-> _fxstat_450600
+  _fxstat_450600 - [syscall]-> fstat
+
+Path to brk:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __pthread_initialize_minimal_4091b0
+  __pthread_initialize_minimal_4091b0 - [DIRECT]-> __libc_setup_tls_408f30
+  __libc_setup_tls_408f30 - [DIRECT]-> sbrk_451290
+  sbrk_451290 - [DIRECT]-> brk_488d60
+  brk_488d60 - [syscall]-> brk
+
+Path to getcwd:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [syscall]-> getcwd
+
+Path to rt_sigprocmask:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> _setjmp_4100c0
+  _setjmp_4100c0 - [DIRECT]-> __sigsetjmp_463e50
+  __sigsetjmp_463e50 - [DIRECT]-> __sigjmp_save_463eb0
+  __sigjmp_save_463eb0 - [DIRECT]-> sigprocmask_464180
+  sigprocmask_464180 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> abort_4100d0
+  abort_4100d0 - [DIRECT]-> raise_463ee0
+  raise_463ee0 - [syscall]-> tgkill
+
+Path to gettid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> abort_4100d0
+  abort_4100d0 - [DIRECT]-> raise_463ee0
+  raise_463ee0 - [syscall]-> gettid
+
+Path to lstat:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [DIRECT]-> _lxstat_450650
+  _lxstat_450650 - [syscall]-> lstat
+
+Path to openat:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [DIRECT]-> __openat_nocancel_450790
+  __openat_nocancel_450790 - [syscall]-> openat
+
+Path to newfstatat:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [DIRECT]-> __fxstatat_4506a0
+  __fxstatat_4506a0 - [syscall]-> newfstatat
+
+Path to mremap:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> realloc_420450
+  realloc_420450 - [DIRECT]-> mremap_454900
+  mremap_454900 - [syscall]-> mremap
+
+Path to getpid:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_debug_printf_4974a0
+  _dl_debug_printf_4974a0 - [DIRECT]-> _dl_debug_vdprintf_496ee0
+  _dl_debug_vdprintf_496ee0 - [DIRECT]-> getpid_4886f0
+  getpid_4886f0 - [syscall]-> getpid
+
+Path to time:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> vsyslog_451c90
+  vsyslog_451c90 - [DIRECT]-> __vsyslog_chk_451620
+  __vsyslog_chk_451620 - [DIRECT]-> time_482890
+  time_482890 - [syscall]-> time
+
+Path to sendto:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> vsyslog_451c90
+  vsyslog_451c90 - [DIRECT]-> __vsyslog_chk_451620
+  __vsyslog_chk_451620 - [DIRECT]-> send_454980
+  send_454980 - [syscall]-> sendto
+
+Path to rt_sigaction:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> abort_4100d0
+  abort_4100d0 - [DIRECT]-> sigaction_464160
+  sigaction_464160 - [DIRECT]-> __libc_sigaction_463f70
+  __libc_sigaction_463f70 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __cxa_atexit_410ed0
+  __cxa_atexit_410ed0 - [DIRECT]-> __new_exitfn_410d30
+  __new_exitfn_410d30 - [DIRECT]-> calloc_420940
+  calloc_420940 - [DIRECT]-> _int_malloc_41d950
+  _int_malloc_41d950 - [DIRECT]-> sysmalloc_41d1d0
+  sysmalloc_41d1d0 - [DIRECT]-> mprotect_451f10
+  mprotect_451f10 - [syscall]-> mprotect
+
+Path to getdents:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [DIRECT]-> readdir_449570
+  readdir_449570 - [DIRECT]-> __getdents_449680
+  __getdents_449680 - [syscall]-> getdents
+
+Path to lseek:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_new_object_4949f0
+  _dl_new_object_4949f0 - [DIRECT]-> getcwd_450bb0
+  getcwd_450bb0 - [DIRECT]-> rewinddir_487cf0
+  rewinddir_487cf0 - [DIRECT]-> lseek_4548a0
+  lseek_4548a0 - [syscall]-> lseek
+
+Path to readlink:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_init_paths_491ef0
+  _dl_init_paths_491ef0 - [DIRECT]-> fillin_rpath_4918c0
+  fillin_rpath_4918c0 - [DIRECT]-> expand_dynamic_string_token_491660
+  expand_dynamic_string_token_491660 - [DIRECT]-> _dl_get_origin_497eb0
+  _dl_get_origin_497eb0 - [syscall]-> readlink
+
+Path to madvise:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> exit_410d10
+  exit_410d10 - [DIRECT]-> __run_exit_handlers_410c00
+  __run_exit_handlers_410c00 - [DIRECT]-> free_420380
+  free_420380 - [DIRECT]-> _int_free_41c880
+  _int_free_41c880 - [DIRECT]-> heap_trim_41b9b0
+  heap_trim_41b9b0 - [DIRECT]-> madvise_451f30
+  madvise_451f30 - [syscall]-> madvise
+
+Path to connect:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> vsyslog_451c90
+  vsyslog_451c90 - [DIRECT]-> __vsyslog_chk_451620
+  __vsyslog_chk_451620 - [DIRECT]-> openlog_internal_451450
+  openlog_internal_451450 - [DIRECT]-> connect_454920
+  connect_454920 - [syscall]-> connect
+
+Path to socket:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> vsyslog_451c90
+  vsyslog_451c90 - [DIRECT]-> __vsyslog_chk_451620
+  __vsyslog_chk_451620 - [DIRECT]-> openlog_internal_451450
+  openlog_internal_451450 - [DIRECT]-> socket_454a30
+  socket_454a30 - [syscall]-> socket
+
+Path to sched_yield:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_fatal_4086d0
+  __libc_fatal_4086d0 - [DIRECT]-> __libc_message.constprop.0_4080c0
+  __libc_message.constprop.0_4080c0 - [DIRECT]-> abort_4100d0
+  abort_4100d0 - [DIRECT]-> fcloseall_414320
+  fcloseall_414320 - [DIRECT]-> _IO_cleanup_416e70
+  _IO_cleanup_416e70 - [DIRECT]-> sched_yield_450540
+  sched_yield_450540 - [syscall]-> sched_yield
+
+Path to clock_getres:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_init_paths_491ef0
+  _dl_init_paths_491ef0 - [DIRECT]-> _dl_signal_error_496b50
+  _dl_signal_error_496b50 - [DIRECT]-> strerror_r_479e70
+  strerror_r_479e70 - [DIRECT]-> dcgettext_40adc0
+  dcgettext_40adc0 - [DIRECT]-> __dcigettext_40bc10
+  __dcigettext_40bc10 - [DIRECT]-> _nl_find_domain_40c660
+  _nl_find_domain_40c660 - [DIRECT]-> _nl_expand_alias_40e500
+  _nl_expand_alias_40e500 - [DIRECT]-> read_alias_file_40e010
+  read_alias_file_40e010 - [DIRECT]-> qsort_410af0
+  qsort_410af0 - [DIRECT]-> qsort_r_410780
+  qsort_r_410780 - [DIRECT]-> sysconf_449890
+  sysconf_449890 - [syscall]-> clock_getres
+
+Path to getrlimit:
+  _start_4025fd - [DIRECT]-> __libc_start_main_408960
+  __libc_start_main_408960 - [DIRECT]-> generic_start_main_408710
+  generic_start_main_408710 - [DIRECT]-> __libc_init_first_45a420
+  __libc_init_first_45a420 - [DIRECT]-> _dl_non_dynamic_init_459a00
+  _dl_non_dynamic_init_459a00 - [DIRECT]-> _dl_init_paths_491ef0
+  _dl_init_paths_491ef0 - [DIRECT]-> _dl_signal_error_496b50
+  _dl_signal_error_496b50 - [DIRECT]-> strerror_r_479e70
+  strerror_r_479e70 - [DIRECT]-> dcgettext_40adc0
+  dcgettext_40adc0 - [DIRECT]-> __dcigettext_40bc10
+  __dcigettext_40bc10 - [DIRECT]-> _nl_find_domain_40c660
+  _nl_find_domain_40c660 - [DIRECT]-> _nl_expand_alias_40e500
+  _nl_expand_alias_40e500 - [DIRECT]-> read_alias_file_40e010
+  read_alias_file_40e010 - [DIRECT]-> qsort_410af0
+  qsort_410af0 - [DIRECT]-> qsort_r_410780
+  qsort_r_410780 - [DIRECT]-> sysconf_449890
+  sysconf_449890 - [DIRECT]-> getrlimit_451270
+  getrlimit_451270 - [syscall]-> getrlimit

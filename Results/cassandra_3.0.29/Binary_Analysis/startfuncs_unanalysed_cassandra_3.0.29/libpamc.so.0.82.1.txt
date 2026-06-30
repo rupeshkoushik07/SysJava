@@ -1,0 +1,6 @@
+pamc_converse@@LIBPAMC_1.0
+pamc_disable@@LIBPAMC_1.0
+pamc_end@@LIBPAMC_1.0
+pamc_list_agents@@LIBPAMC_1.0
+pamc_load@@LIBPAMC_1.0
+pamc_start@@LIBPAMC_1.0

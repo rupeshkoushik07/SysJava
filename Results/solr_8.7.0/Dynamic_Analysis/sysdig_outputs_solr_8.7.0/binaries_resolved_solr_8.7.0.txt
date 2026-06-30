@@ -1,0 +1,17 @@
+/usr/bin/awk
+/bin/bash
+/bin/bash
+/usr/bin/dirname
+/usr/bin/expr
+/usr/bin/find
+/bin/grep
+/usr/bin/head
+/bin/mkdir
+/bin/ps
+/usr/sbin/runc
+/bin/sed
+/usr/bin/sort
+/bin/uname
+/usr/bin/env
+/usr/bin/tini
+/usr/local/openjdk-11/bin/java

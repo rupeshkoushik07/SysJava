@@ -1,0 +1,9 @@
+JLI_GetStdArgc_a990
+JLI_GetStdArgs_a980
+JLI_Launch_95a0
+JLI_ManifestIterate_d700
+JLI_ReportErrorMessage_af60
+JLI_ReportErrorMessageSys_ae50
+JLI_ReportExceptionDescription_a940
+JLI_ReportMessage_6aa0
+JLI_SetTraceLauncher_c8f0

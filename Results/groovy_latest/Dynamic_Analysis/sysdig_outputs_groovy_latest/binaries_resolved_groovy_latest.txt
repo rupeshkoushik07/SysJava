@@ -1,0 +1,7 @@
+/usr/bin/bash
+/usr/bin/id
+/usr/sbin/runc
+/usr/bin/sh
+/usr/bin/sleep
+/usr/bin/env
+/usr/bin/locale-check

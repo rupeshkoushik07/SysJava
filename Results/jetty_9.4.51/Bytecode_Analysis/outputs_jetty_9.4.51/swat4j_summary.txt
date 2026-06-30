@@ -1,0 +1,11 @@
+SUMMARY: jetty_9.4.51
+========================================
+Total native methods:  189
+----------------------------------------
+MAPPED:                133  (70.4%)
+  Java_XXX             98
+  JVM_XXX              35
+
+UNMAPPED:              56  (29.6%)
+  Intrinsic            0
+  Truly unmapped       56

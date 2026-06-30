@@ -1,0 +1,5 @@
+/bin/sh
+dirname
+/opt/java/openjdk/bin/java
+rm
+uname

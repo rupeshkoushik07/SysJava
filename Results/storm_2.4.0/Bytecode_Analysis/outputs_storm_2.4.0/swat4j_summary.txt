@@ -1,0 +1,12 @@
+SUMMARY: storm_2.4.0
+========================================
+Total native methods:  1447
+----------------------------------------
+MAPPED:                1155  (79.8%)
+  Java_XXX             992
+  NETTY_HEURISTIC      127
+  JVM_XXX              36
+
+UNMAPPED:              292  (20.2%)
+  Intrinsic            1
+  Truly unmapped       291

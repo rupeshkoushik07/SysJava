@@ -1,0 +1,14 @@
+fstat
+fsync
+getpriority
+getrusage
+lstat
+mincore
+setpriority
+shmat
+shmctl
+shmdt
+shmget
+shutdown
+statfs
+unlink

@@ -1,0 +1,9 @@
+exit
+fwrite
+getenv
+__libc_start_main
+malloc
+__printf_chk
+setlocale
+stderr
+strlen

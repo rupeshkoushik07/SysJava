@@ -1,0 +1,448 @@
+
+Path to gettid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZL10java_startP6Thread_96b860
+  _ZL10java_startP6Thread_96b860 - [syscall]-> gettid
+
+Path to futex:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rt_sigprocmask
+
+Path to exit:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to close:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_close_9b3a0
+  _IO_file_close_9b3a0 - [DIRECT]-> __close_nocancel_128e70
+  __close_nocancel_128e70 - [syscall]-> close
+
+Path to ioctl:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  _IO_file_doallocate_8bc60 - [DIRECT]-> fuzzyfunc-0x129430_129430
+  fuzzyfunc-0x129430_129430 - [syscall]-> ioctl
+
+Path to read:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_read_9b320
+  _IO_file_read_9b320 - [DIRECT]-> __read_nocancel_129240
+  __read_nocancel_129240 - [syscall]-> read
+
+Path to lseek:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_seek_9b340
+  _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to fstat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_stat_9b350
+  _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to write:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _IO_file_write_9b3b0
+  _IO_file_write_9b3b0 - [DIRECT]-> __write_nocancel_1292a0
+  __write_nocancel_1292a0 - [syscall]-> write
+
+Path to getpid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZL10java_startP6Thread_96b860
+  _ZL10java_startP6Thread_96b860 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to unlink:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN10CompileLogD0Ev_49aae0
+  _ZN10CompileLogD0Ev_49aae0 - [DIRECT]-> unlink_128d00
+  unlink_128d00 - [syscall]-> unlink
+
+Path to mprotect:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_9764d0
+  _ZN15VM_LinuxDllLoad4doitEv_9764d0 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to access:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
+Path to writev:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> __assert_fail_3bec0
+  __assert_fail_3bec0 - [DIRECT]-> fuzzyfunc-0x97df0_97df0
+  fuzzyfunc-0x97df0_97df0 - [syscall]-> writev
+
+Path to clock_gettime:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x17f8c0_17f8c0
+  fuzzyfunc-0x17f8c0_17f8c0 - [DIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to setsockopt:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x180d30_180d30
+  fuzzyfunc-0x180d30_180d30 - [DIRECT]-> setsockopt_1394a0
+  setsockopt_1394a0 - [syscall]-> setsockopt
+
+Path to geteuid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x1813d0_1813d0
+  fuzzyfunc-0x1813d0_1813d0 - [DIRECT]-> geteuid_fe650
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to getegid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x1813d0_1813d0
+  fuzzyfunc-0x1813d0_1813d0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
+Path to mkdir:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x6ad80_6ad80
+  fuzzyfunc-0x6ad80_6ad80 - [DIRECT]-> mkdir_127ad0
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to mremap:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x9a2b0_9a2b0
+  fuzzyfunc-0x9a2b0_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to munmap:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x9a2b0_9a2b0
+  fuzzyfunc-0x9a2b0_9a2b0 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to mmap:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x9a560_9a560
+  fuzzyfunc-0x9a560_9a560 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to madvise:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to lstat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Perf_Attach_9b8010
+  Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> __lxstat_137c40
+  __lxstat_137c40 - [syscall]-> lstat
+
+Path to kill:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Perf_Attach_9b8010
+  Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> kill_45eb0
+  kill_45eb0 - [syscall]-> kill
+
+Path to rt_sigaction:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _Unwind_IteratePhdrCallback_b75530
+  _Unwind_IteratePhdrCallback_b75530 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _Unwind_IteratePhdrCallback_b75530
+  _Unwind_IteratePhdrCallback_b75530 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> fuzzyfunc-0xa61b0_a61b0
+  fuzzyfunc-0xa61b0_a61b0 - [syscall]-> tgkill
+
+Path to exit_group:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _Unwind_IteratePhdrCallback_b75530
+  _Unwind_IteratePhdrCallback_b75530 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to vfork:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974cf0
+  _ZN2os13fork_and_execEPcb_974cf0 - [DIRECT]-> vfork_11cd30
+  vfork_11cd30 - [syscall]-> vfork
+
+Path to execve:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974cf0
+  _ZN2os13fork_and_execEPcb_974cf0 - [DIRECT]-> execve_f8200
+  execve_f8200 - [syscall]-> execve
+
+Path to getcwd:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to readlink:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> readlink_1283b0
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to faccessat2:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat2
+
+Path to faccessat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat
+
+Path to getpriority:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZNK10JavaThread8print_onEP12outputStream_adb700
+  _ZNK10JavaThread8print_onEP12outputStream_adb700 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_971bf0
+  _ZN2os19get_native_priorityEPK6ThreadPi_971bf0 - [DIRECT]-> getpriority_12aec0
+  getpriority_12aec0 - [syscall]-> getpriority
+
+Path to prctl:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> __assert_fail_3bec0
+  __assert_fail_3bec0 - [DIRECT]-> fuzzyfunc-0x97df0_97df0
+  fuzzyfunc-0x97df0_97df0 - [DIRECT]-> fuzzyfunc-0x138180_138180
+  fuzzyfunc-0x138180_138180 - [syscall]-> prctl
+
+Path to socket:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x182000_182000
+  fuzzyfunc-0x182000_182000 - [DIRECT]-> rtime_17f640
+  rtime_17f640 - [DIRECT]-> socket_139630
+  socket_139630 - [syscall]-> socket
+
+Path to openat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x2dd90_2dd90
+  fuzzyfunc-0x2dd90_2dd90 - [DIRECT]-> fuzzyfunc-0x36880_36880
+  fuzzyfunc-0x36880_36880 - [DIRECT]-> __open64_nocancel_1290a0
+  __open64_nocancel_1290a0 - [syscall]-> openat
+
+Path to getdents64:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x2dd90_2dd90
+  fuzzyfunc-0x2dd90_2dd90 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to newfstatat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x2dd90_2dd90
+  fuzzyfunc-0x2dd90_2dd90 - [DIRECT]-> stat_128480
+  stat_128480 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to sysinfo:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Loadavg_b0fe20
+  Unsafe_Loadavg_b0fe20 - [DIRECT]-> _ZN2os7loadavgEPdi_974200
+  _ZN2os7loadavgEPdi_974200 - [DIRECT]-> getloadavg_12cd70
+  getloadavg_12cd70 - [DIRECT]-> sysinfo_138a90
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to uname:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_PrintOsInfo_b56d70
+  WB_PrintOsInfo_b56d70 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973810
+  _ZN2os13print_os_infoEP12outputStream_973810 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_97b7d0
+  _ZN2os5Posix16print_uname_infoEP12outputStream_97b7d0 - [DIRECT]-> uname_11cd00
+  uname_11cd00 - [syscall]-> uname
+
+Path to prlimit64:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_PrintOsInfo_b56d70
+  WB_PrintOsInfo_b56d70 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973810
+  _ZN2os13print_os_infoEP12outputStream_973810 - [DIRECT]-> _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b5c0
+  _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b5c0 - [DIRECT]-> getrlimit_12aac0
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to shmget:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5bba0
+  WB_ReadFromNoaccessArea_b5bba0 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0
+  _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_970b60
+  _ZN2os22reserve_memory_specialEmmPcb_970b60 - [DIRECT]-> shmget_1399c0
+  shmget_1399c0 - [syscall]-> shmget
+
+Path to shmat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5bba0
+  WB_ReadFromNoaccessArea_b5bba0 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0
+  _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_970b60
+  _ZN2os22reserve_memory_specialEmmPcb_970b60 - [DIRECT]-> shmat_139960
+  shmat_139960 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5bba0
+  WB_ReadFromNoaccessArea_b5bba0 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0
+  _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_970b60
+  _ZN2os22reserve_memory_specialEmmPcb_970b60 - [DIRECT]-> shmctl_139a00
+  shmctl_139a00 - [syscall]-> shmctl
+
+Path to shmdt:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5bba0
+  WB_ReadFromNoaccessArea_b5bba0 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0
+  _ZN17ReservedHeapSpaceC2EmmbPc_b3b8d0 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_971100
+  _ZN2os22release_memory_specialEPcm_971100 - [DIRECT]-> shmdt_139990
+  shmdt_139990 - [syscall]-> shmdt
+
+Path to clone:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3dae0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974cf0
+  _ZN2os13fork_and_execEPcb_974cf0 - [DIRECT]-> fork_fddb0
+  fork_fddb0 - [DIRECT]-> _Fork_f73a0
+  _Fork_f73a0 - [syscall]-> clone
+
+Path to getuid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getuid_ffab0
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to getgid:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getgid_fe660
+  getgid_fe660 - [syscall]-> getgid
+
+Path to getpeername:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x17f8c0_17f8c0
+  fuzzyfunc-0x17f8c0_17f8c0 - [DIRECT]-> key_decryptsession_pk_1857c0
+  key_decryptsession_pk_1857c0 - [DIRECT]-> fuzzyfunc-0x184f70_184f70
+  fuzzyfunc-0x184f70_184f70 - [DIRECT]-> getpeername_139190
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to dup:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x182590_182590
+  fuzzyfunc-0x182590_182590 - [DIRECT]-> fuzzyfunc-0x1824d0_1824d0
+  fuzzyfunc-0x1824d0_1824d0 - [DIRECT]-> perror_28a8f
+  perror_28a8f - [DIRECT]-> dup_1230b0
+  dup_1230b0 - [syscall]-> dup
+
+Path to sched_yield:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> jni_GetDirectBufferAddress_729240
+  jni_GetDirectBufferAddress_729240 - [DIRECT]-> _ZL29initializeDirectBufferSupportP7JNIEnv_P10JavaThread.part.68_728e50
+  _ZL29initializeDirectBufferSupportP7JNIEnv_P10JavaThread.part.68_728e50 - [DIRECT]-> _ZN2os9yield_allEi_971b80
+  _ZN2os9yield_allEi_971b80 - [DIRECT]-> sched_yield_11ad20
+  sched_yield_11ad20 - [syscall]-> sched_yield
+
+Path to sched_getaffinity:
+  Java_java_util_zip_Inflater_init_3160 - [DIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> fuzzyfunc-0xb4160_b4160
+  fuzzyfunc-0xb4160_b4160 - [DIRECT]-> fuzzyfunc-0xb16d0_b16d0
+  fuzzyfunc-0xb16d0_b16d0 - [DIRECT]-> get_nprocs_12d590
+  get_nprocs_12d590 - [DIRECT]-> fuzzyfunc-0x12d2f0_12d2f0
+  fuzzyfunc-0x12d2f0_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to sched_setscheduler:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Park_b10970
+  Unsafe_Park_b10970 - [DIRECT]-> _ZN6Parker4parkEbl_9746e0
+  _ZN6Parker4parkEbl_9746e0 - [DIRECT]-> pthread_mutex_trylock_a8820
+  pthread_mutex_trylock_a8820 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_getparam:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Park_b10970
+  Unsafe_Park_b10970 - [DIRECT]-> _ZN6Parker4parkEbl_9746e0
+  _ZN6Parker4parkEbl_9746e0 - [DIRECT]-> pthread_mutex_trylock_a8820
+  pthread_mutex_trylock_a8820 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_getparam_11aba0
+  sched_getparam_11aba0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Park_b10970
+  Unsafe_Park_b10970 - [DIRECT]-> _ZN6Parker4parkEbl_9746e0
+  _ZN6Parker4parkEbl_9746e0 - [DIRECT]-> pthread_mutex_trylock_a8820
+  pthread_mutex_trylock_a8820 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_getscheduler_11abd0
+  sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
+
+Path to sched_get_priority_max:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Park_b10970
+  Unsafe_Park_b10970 - [DIRECT]-> _ZN6Parker4parkEbl_9746e0
+  _ZN6Parker4parkEbl_9746e0 - [DIRECT]-> pthread_mutex_trylock_a8820
+  pthread_mutex_trylock_a8820 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> Unsafe_Park_b10970
+  Unsafe_Park_b10970 - [DIRECT]-> _ZN6Parker4parkEbl_9746e0
+  _ZN6Parker4parkEbl_9746e0 - [DIRECT]-> pthread_mutex_trylock_a8820
+  pthread_mutex_trylock_a8820 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to stat:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> WB_AddToBootstrapClassLoaderSearch_b55220
+  WB_AddToBootstrapClassLoaderSearch_b55220 - [DIRECT]-> _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae900
+  _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae900 - [DIRECT]-> _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a590
+  _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a590 - [DIRECT]-> _ZN2os4statEPKcP4stat_973350
+  _ZN2os4statEPKcP4stat_973350 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat
+
+Path to mincore:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN10JavaThread3runEv_adfd60
+  _ZN10JavaThread3runEv_adfd60 - [DIRECT]-> _ZN10JavaThread24create_stack_guard_pagesEv_adfc70
+  _ZN10JavaThread24create_stack_guard_pagesEv_adfc70 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_967f30
+  _ZN2os24create_stack_guard_pagesEPcm_967f30 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_96f4c0
+  _ZN2os27pd_create_stack_guard_pagesEPcm_96f4c0 - [DIRECT]-> mincore_133050
+  mincore_133050 - [syscall]-> mincore
+
+Path to getrusage:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65c0d0
+  _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65c0d0 - [DIRECT]-> _ZN6CMTask19deal_with_referenceEP7oopDesc_661d80
+  _ZN6CMTask19deal_with_referenceEP7oopDesc_661d80 - [DIRECT]-> _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b44b0
+  _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b44b0 - [DIRECT]-> _ZN2os12elapsedVTimeEv_96c370
+  _ZN2os12elapsedVTimeEv_96c370 - [DIRECT]-> getrusage_12ab40
+  getrusage_12ab40 - [syscall]-> getrusage
+
+Path to fcntl:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [DIRECT]-> fdopendir_f66e0
+  fdopendir_f66e0 - [DIRECT]-> fuzzyfunc-0x128ee0_128ee0
+  fuzzyfunc-0x128ee0_128ee0 - [syscall]-> fcntl
+
+Path to getgroups:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
+  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> group_member_103910
+  group_member_103910 - [DIRECT]-> getgroups_fe670
+  getgroups_fe670 - [syscall]-> getgroups
+
+Path to shutdown:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> checked_jni_AllocObject_72e530
+  checked_jni_AllocObject_72e530 - [DIRECT]-> _ZN2os5abortEb_96c7c0
+  _ZN2os5abortEb_96c7c0 - [DIRECT]-> _ZN2os8shutdownEv_96c790
+  _ZN2os8shutdownEv_96c790 - [DIRECT]-> _ZN14AttachListener5abortEv_2f02b0
+  _ZN14AttachListener5abortEv_2f02b0 - [DIRECT]-> shutdown_1394e0
+  shutdown_1394e0 - [syscall]-> shutdown
+
+Path to bind:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x184080_184080
+  fuzzyfunc-0x184080_184080 - [DIRECT]-> getifaddrs_148b30
+  getifaddrs_148b30 - [DIRECT]-> fuzzyfunc-0x147810_147810
+  fuzzyfunc-0x147810_147810 - [DIRECT]-> fuzzyfunc-0x147750_147750
+  fuzzyfunc-0x147750_147750 - [DIRECT]-> bind_139130
+  bind_139130 - [syscall]-> bind
+
+Path to getsockname:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> fuzzyfunc-0x184080_184080
+  fuzzyfunc-0x184080_184080 - [DIRECT]-> getifaddrs_148b30
+  getifaddrs_148b30 - [DIRECT]-> fuzzyfunc-0x147810_147810
+  fuzzyfunc-0x147810_147810 - [DIRECT]-> fuzzyfunc-0x147750_147750
+  fuzzyfunc-0x147750_147750 - [DIRECT]-> getsockname_1391c0
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to brk:
+  Java_java_util_zip_Inflater_init_3160 - [DIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> fuzzyfunc-0xb4160_b4160
+  fuzzyfunc-0xb4160_b4160 - [DIRECT]-> fuzzyfunc-0xb2700_b2700
+  fuzzyfunc-0xb2700_b2700 - [DIRECT]-> __default_morecore_b1eb0
+  __default_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk
+
+Path to sched_setaffinity:
+  Java_java_util_jar_JarFile_getMetaInfEntryNames_3ca0 - [INDIRECT]-> jvmtiTrace_RunAgentThread_792e20
+  jvmtiTrace_RunAgentThread_792e20 - [DIRECT]-> _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7b0190
+  _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7b0190 - [DIRECT]-> _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5400
+  _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5400 - [DIRECT]-> _ZN10JavaThreadC1EPFvPS_P6ThreadEm_ae67c0
+  _ZN10JavaThreadC1EPFvPS_P6ThreadEm_ae67c0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975e80
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975e80 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [syscall]-> sched_setaffinity

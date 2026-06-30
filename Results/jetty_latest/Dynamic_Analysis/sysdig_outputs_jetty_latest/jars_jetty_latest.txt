@@ -1,0 +1,7 @@
+14:07:44.436229092 openat 1227834 java /usr/local/jetty/lib/logging/slf4j-api-2.0.17.jar f
+14:07:44.459006998 openat 1227834 java /usr/local/jetty/lib/logging/jetty-slf4j-impl-12.1.10.jar f
+14:07:44.460129519 openat 1227834 java /usr/local/jetty/lib/jetty-http-12.1.10.jar f
+14:07:44.462395436 openat 1227834 java /usr/local/jetty/lib/jetty-util-12.1.10.jar f
+14:07:44.466005400 openat 1227834 java /usr/local/jetty/lib/jetty-server-12.1.10.jar f
+14:07:44.468124467 openat 1227834 java /usr/local/jetty/lib/jetty-xml-12.1.10.jar f
+14:07:44.511814443 openat 1227834 java /usr/local/jetty/lib/jetty-io-12.1.10.jar f

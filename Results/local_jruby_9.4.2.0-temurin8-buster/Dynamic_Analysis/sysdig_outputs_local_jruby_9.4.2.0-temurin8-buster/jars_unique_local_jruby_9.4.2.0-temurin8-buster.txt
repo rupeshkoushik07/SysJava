@@ -1,0 +1,8 @@
+/opt/java/jre/lib/jce.jar
+/opt/java/jre/lib/jfr.jar
+/opt/java/jre/lib/jsse.jar
+/opt/java/jre/lib/resources.jar
+/opt/java/jre/lib/rt.jar
+/opt/java/jre/lib/security/policy/unlimited/local_policy.jar
+/opt/java/jre/lib/security/policy/unlimited/US_export_policy.jar
+/opt/jruby/lib/jruby.jar

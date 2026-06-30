@@ -1,0 +1,3 @@
+mlockall
+fadvise64
+munlockall

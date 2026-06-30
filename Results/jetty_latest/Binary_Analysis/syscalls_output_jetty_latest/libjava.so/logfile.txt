@@ -1,0 +1,97 @@
+
+Path to gettid:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to close_range:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> rt_sigprocmask
+
+Path to setresuid:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresgid
+
+Path to futex:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to exit:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to lseek:
+  Java_java_io_RandomAccessFile_seek0_13840 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to mmap:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mprotect:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to munmap:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to madvise:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to fstat:
+  Java_java_io_RandomAccessFile_length0_137d0 - [DIRECT]-> handleGetLength_17cf0
+  handleGetLength_17cf0 - [DIRECT]-> __fxstat_137b60
+  __fxstat_137b60 - [syscall]-> fstat
+
+Path to ioctl:
+  Java_java_io_RandomAccessFile_length0_137d0 - [DIRECT]-> handleGetLength_17cf0
+  handleGetLength_17cf0 - [DIRECT]-> ioctl_132c80
+  ioctl_132c80 - [syscall]-> ioctl
+
+Path to lstat:
+  Java_java_util_TimeZone_getSystemTimeZoneID_14a80 - [DIRECT]-> findJavaTZ_md_15160
+  findJavaTZ_md_15160 - [DIRECT]-> getPlatformTimeZoneID_14ec0
+  getPlatformTimeZoneID_14ec0 - [DIRECT]-> __lxstat_137c40
+  __lxstat_137c40 - [syscall]-> lstat
+
+Path to readlink:
+  Java_java_util_TimeZone_getSystemTimeZoneID_14a80 - [DIRECT]-> findJavaTZ_md_15160
+  findJavaTZ_md_15160 - [DIRECT]-> getPlatformTimeZoneID_14ec0
+  getPlatformTimeZoneID_14ec0 - [DIRECT]-> readlink_1283b0
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to clock_gettime:
+  Java_java_lang_Class_forName0_f2b0 - [INDIRECT]-> Unsafe_Park_1238270
+  Unsafe_Park_1238270 - [DIRECT]-> _ZN33FastUnorderedElapsedCounterSource3nowEv_120a510
+  _ZN33FastUnorderedElapsedCounterSource3nowEv_120a510 - [DIRECT]-> _ZN2os15elapsed_counterEv_e81960
+  _ZN2os15elapsed_counterEv_e81960 - [DIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to stat:
+  Java_java_util_TimeZone_getSystemTimeZoneID_14a80 - [DIRECT]-> findJavaTZ_md_15160
+  findJavaTZ_md_15160 - [DIRECT]-> getPlatformTimeZoneID_14ec0
+  getPlatformTimeZoneID_14ec0 - [DIRECT]-> findZoneinfoFile_14b60
+  findZoneinfoFile_14b60 - [DIRECT]-> isFileIdentical_14d50
+  isFileIdentical_14d50 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat

@@ -1,0 +1,14 @@
+894165	java	/etc/ld.so.cache
+894165	java	/lib/x86_64-linux-gnu/libcrypt.so.1
+894165	java	/lib/x86_64-linux-gnu/libgcc_s.so.1
+894165	java	/lib/x86_64-linux-gnu/libuuid.so.1
+894165	java	/usr/lib/x86_64-linux-gnu/libapr-1.so.0
+894165	java	/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+894165	java	/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/libmanagement.so
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/libnet.so
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/libnio.so
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/libsunec.so
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/libzip.so
+894165	java	/usr/local/openjdk-8/jre/lib/amd64/server/libjvm.so
+894165	java	/usr/local/tomcat/native-jni-lib/libtcnative-1.so.0.2.28

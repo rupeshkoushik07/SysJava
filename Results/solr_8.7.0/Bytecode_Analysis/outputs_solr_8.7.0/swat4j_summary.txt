@@ -1,0 +1,12 @@
+SUMMARY: solr_8.7.0
+========================================
+Total native methods:  537
+----------------------------------------
+MAPPED:                419  (78.0%)
+  Java_XXX             238
+  NETTY_HEURISTIC      144
+  JVM_XXX              37
+
+UNMAPPED:              118  (22.0%)
+  Intrinsic            3
+  Truly unmapped       115

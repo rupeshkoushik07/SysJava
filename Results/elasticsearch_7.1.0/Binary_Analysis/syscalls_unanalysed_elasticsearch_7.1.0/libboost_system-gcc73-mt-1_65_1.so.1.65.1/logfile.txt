@@ -1,0 +1,251 @@
+
+Path to futex:
+  _ZN5boost6system15system_categoryEv_1c70 - [DIRECT]-> __cxa_guard_acquire_973a0
+  __cxa_guard_acquire_973a0 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to mmap:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to close:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_close_797b0
+  _IO_file_close_797b0 - [DIRECT]-> __close_nocancel_ef619
+  __close_nocancel_ef619 - [syscall]-> close
+
+Path to read:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_eef60
+  read_eef60 - [syscall]-> read
+
+Path to lseek:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to write:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7a070
+  _IO_file_write@@GLIBC_2.2.5_7a070 - [DIRECT]-> write_eefc0
+  write_eefc0 - [syscall]-> write
+
+Path to writev:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to ioctl:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to rt_sigprocmask:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigprocmask_364a0
+  sigprocmask_364a0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> tgkill
+
+Path to gettid:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to exit:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit
+
+Path to exit_group:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to poll:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZNSt13basic_filebufIcSt11char_traitsIcEE9showmanycEv_11ea40
+  _ZNSt13basic_filebufIcSt11char_traitsIcEE9showmanycEv_11ea40 - [DIRECT]-> _ZNSt12__basic_fileIcE9showmanycEv_c8cd0
+  _ZNSt12__basic_fileIcE9showmanycEv_c8cd0 - [DIRECT]-> poll_f31e0
+  poll_f31e0 - [syscall]-> poll
+
+Path to brk:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to open:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_load_cache_2b670
+  __gconv_load_cache_2b670 - [DIRECT]-> __open_nocancel_eed29
+  __open_nocancel_eed29 - [syscall]-> open
+
+Path to getcwd:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to kill:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_eef60
+  read_eef60 - [DIRECT]-> __libc_enable_asynccancel_10bbd0
+  __libc_enable_asynccancel_10bbd0 - [DIRECT]-> __pthread_unwind_13d930
+  __pthread_unwind_13d930 - [syscall]-> kill
+
+Path to rt_sigaction:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to lstat:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to openat:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to madvise:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_85580
+  free_85580 - [DIRECT]-> _int_free_80f70
+  _int_free_80f70 - [DIRECT]-> heap_trim_7ff20
+  heap_trim_7ff20 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to mprotect:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> malloc_85160
+  malloc_85160 - [DIRECT]-> arena_get2.isra.3_7f6d0
+  arena_get2.isra.3_7f6d0 - [DIRECT]-> new_heap_7ef30
+  new_heap_7ef30 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to sched_yield:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_990c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> fcloseall_78210
+  fcloseall_78210 - [DIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to fcntl:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> fdopendir_c08e0
+  fdopendir_c08e0 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to getdents:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to getpid:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to sendto:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to stat:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> localtime_r_b40b0
+  localtime_r_b40b0 - [DIRECT]-> __tz_convert_b6070
+  __tz_convert_b6070 - [DIRECT]-> tzset_internal_b5670
+  tzset_internal_b5670 - [DIRECT]-> __tzfile_read_b62b0
+  __tzfile_read_b62b0 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to connect:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to socket:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to clock_getres:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> fuzzyfunc-0xaf840_af840
+  fuzzyfunc-0xaf840_af840 - [DIRECT]-> _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__c93e0
+  _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__c93e0 - [DIRECT]-> newlocale_2e3e0
+  newlocale_2e3e0 - [DIRECT]-> _nl_find_locale_2d0f0
+  _nl_find_locale_2d0f0 - [DIRECT]-> _nl_load_locale_from_archive_2dc80
+  _nl_load_locale_from_archive_2dc80 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to getrlimit:
+  _ZNK5boost6system14error_category12std_category7messageB5cxx11Ei_2530 - [INDIRECT]-> fuzzyfunc-0xaf840_af840
+  fuzzyfunc-0xaf840_af840 - [DIRECT]-> _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__c93e0
+  _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__c93e0 - [DIRECT]-> newlocale_2e3e0
+  newlocale_2e3e0 - [DIRECT]-> _nl_find_locale_2d0f0
+  _nl_find_locale_2d0f0 - [DIRECT]-> _nl_load_locale_from_archive_2dc80
+  _nl_load_locale_from_archive_2dc80 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit

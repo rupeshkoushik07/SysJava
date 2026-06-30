@@ -1,0 +1,15 @@
+14:49:17.456365811 openat 1260499 __cacert_entryp /etc/ld.so.cache f
+14:49:17.456468377 openat 1260499 __cacert_entryp /lib/x86_64-linux-gnu/libc.so.6 f
+14:49:17.458345318 openat 1260499 bash /etc/ld.so.cache f
+14:49:17.458428931 openat 1260499 bash /lib/x86_64-linux-gnu/libtinfo.so.6 f
+14:49:17.458569311 openat 1260499 bash /lib/x86_64-linux-gnu/libc.so.6 f
+14:49:17.462600520 openat 1260499 sh /etc/ld.so.cache f
+14:49:17.462658654 openat 1260499 sh /lib/x86_64-linux-gnu/libc.so.6 f
+14:49:17.464395179 openat 1260559 id /etc/ld.so.cache f
+14:49:17.464464724 openat 1260559 id /lib/x86_64-linux-gnu/libselinux.so.1 f
+14:49:17.464616789 openat 1260559 id /lib/x86_64-linux-gnu/libc.so.6 f
+14:49:17.464812321 openat 1260559 id /lib/x86_64-linux-gnu/libpcre2-8.so.0 f
+14:49:17.467360087 openat 1260560 locale-check /etc/ld.so.cache f
+14:49:17.467424019 openat 1260560 locale-check /lib/x86_64-linux-gnu/libc.so.6 f
+14:49:17.469441388 openat 1260561 sleep /etc/ld.so.cache f
+14:49:17.469545087 openat 1260561 sleep /lib/x86_64-linux-gnu/libc.so.6 f

@@ -1,0 +1,7 @@
+j2d_mlib_ImageAffine
+j2d_mlib_ImageConvKernelConvert
+j2d_mlib_ImageConvMxN
+j2d_mlib_ImageCreate
+j2d_mlib_ImageCreateStruct
+j2d_mlib_ImageDelete
+j2d_mlib_ImageLookUp

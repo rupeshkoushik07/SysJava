@@ -1,0 +1,222 @@
+
+Path to getuid:
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to chmod:
+  chmod_122f40 - [syscall]-> chmod
+
+Path to sigaltstack:
+  sigaltstack_46420 - [syscall]-> sigaltstack
+
+Path to getgroups:
+  getgroups_fe670 - [syscall]-> getgroups
+
+Path to futex:
+  sem_post_ac220 - [syscall]-> futex
+
+Path to setpgid:
+  setpgid_11ae50 - [syscall]-> setpgid
+
+Path to mprotect:
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to chroot:
+  chroot_12b0b0 - [syscall]-> chroot
+
+Path to ioctl:
+  tcsetattr_12a8a0 - [syscall]-> ioctl
+
+Path to utimensat:
+  utimensat_128e10 - [syscall]-> utimensat
+
+Path to munmap:
+  munmap_133b90 - [syscall]-> munmap
+
+Path to listen:
+  listen_1392b0 - [syscall]-> listen
+
+Path to mkdir:
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to getpeername:
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to gettid:
+  gettid_138c70 - [syscall]-> gettid
+
+Path to sync:
+  sync_134c90 - [syscall]-> sync
+
+Path to sethostname:
+  sethostname_134a90 - [syscall]-> sethostname
+
+Path to eventfd2:
+  eventfd_137aa0 - [syscall]-> eventfd2
+
+Path to inotify_add_watch:
+  inotify_add_watch_138730 - [syscall]-> inotify_add_watch
+
+Path to dup2:
+  dup2_1230e0 - [syscall]-> dup2
+
+Path to chown:
+  chown_122f70 - [syscall]-> chown
+
+Path to getpid:
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to unlinkat:
+  unlinkat_128d30 - [syscall]-> unlinkat
+
+Path to chdir:
+  chdir_122f10 - [syscall]-> chdir
+
+Path to inotify_init1:
+  inotify_init1_138760 - [syscall]-> inotify_init1
+
+Path to setsid:
+  setsid_11afd0 - [syscall]-> setsid
+
+Path to statfs:
+  statfs_1284a0 - [syscall]-> statfs
+
+Path to epoll_ctl:
+  epoll_ctl_1385e0 - [syscall]-> epoll_ctl
+
+Path to rename:
+  rename_6a810 - [syscall]-> rename
+
+Path to unlink:
+  unlink_128d00 - [syscall]-> unlink
+
+Path to fchmodat:
+  fchmodat_1235c0 - [syscall]-> fchmodat
+
+Path to lseek:
+  lseek_127a80 - [syscall]-> lseek
+
+Path to ftruncate:
+  ftruncate_12c6b0 - [syscall]-> ftruncate
+
+Path to setuid:
+  setuid_11b000 - [syscall]-> setuid
+
+Path to rt_sigprocmask:
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to linkat:
+  linkat_127930 - [syscall]-> linkat
+
+Path to dup:
+  dup_1230b0 - [syscall]-> dup
+
+Path to prlimit64:
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to newfstatat:
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to lchown:
+  lchown_1278d0 - [syscall]-> lchown
+
+Path to kill:
+  kill_45eb0 - [syscall]-> kill
+
+Path to fchown:
+  fchown_1237c0 - [syscall]-> fchown
+
+Path to fchmod:
+  fchmod_123590 - [syscall]-> fchmod
+
+Path to socket:
+  socket_139630 - [syscall]-> socket
+
+Path to setgroups:
+  setgroups_11add0 - [syscall]-> setgroups
+
+Path to fstat:
+  fstat_123b70 - [syscall]-> fstat
+
+Path to bind:
+  bind_139130 - [syscall]-> bind
+
+Path to epoll_create1:
+  epoll_create1_1385b0 - [syscall]-> epoll_create1
+
+Path to fadvise64:
+  posix_fadvise_127e50 - [syscall]-> fadvise64
+
+Path to exit_group:
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to sched_getaffinity:
+  sched_getaffinity_11ab40 - [syscall]-> sched_getaffinity
+
+Path to sched_getparam:
+  pthread_create_a4330 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  pthread_create_a4330 - [syscall]-> sched_getscheduler
+
+Path to prctl:
+  prctl_137f10 - [syscall]-> prctl
+
+Path to pipe2:
+  pipe2_127e00 - [syscall]-> pipe2
+
+Path to socketpair:
+  socketpair_139660 - [syscall]-> socketpair
+
+Path to clock_gettime:
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to fchownat:
+  fchownat_1237f0 - [syscall]-> fchownat
+
+Path to statx:
+  statx_128810 - [syscall]-> statx
+
+Path to readlink:
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to getcwd:
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to sched_yield:
+  sched_yield_11ad20 - [syscall]-> sched_yield
+
+Path to geteuid:
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to syncfs:
+  syncfs_134cc0 - [syscall]-> syncfs
+
+Path to getgid:
+  getgid_fe660 - [syscall]-> getgid
+
+Path to getegid:
+  getegid_fe640 - [syscall]-> getegid
+
+Path to getsockname:
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to umask:
+  umask_128cf0 - [syscall]-> umask
+
+Path to rmdir:
+  rmdir_128410 - [syscall]-> rmdir
+
+Path to uname:
+  uname_11cd00 - [syscall]-> uname
+
+Path to symlink:
+  symlink_128870 - [syscall]-> symlink
+
+Path to mkdirat:
+  mkdirat_127b00 - [syscall]-> mkdirat
+
+Path to setgid:
+  setgid_11ad50 - [syscall]-> setgid
+
+Path to inotify_rm_watch:
+  inotify_rm_watch_138790 - [syscall]-> inotify_rm_watch

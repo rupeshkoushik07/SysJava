@@ -1,0 +1,15 @@
+openat
+read
+readlink
+kill
+stat
+mmap
+getpid
+geteuid
+exit
+write
+close
+pipe2
+exit_group
+dup
+ioctl

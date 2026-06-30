@@ -1,0 +1,8 @@
+/bin/sh
+date
+expr
+grep
+/opt/java/openjdk/bin/java
+runc
+sed
+whoami

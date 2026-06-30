@@ -1,0 +1,44 @@
+declared_library	symbol	reason	source_report
+util	openpty	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	tcgetattr	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	isatty	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	tcsetattr	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	ttyname_r	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	ioctl	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	ioctl	library not found in Dataset/LIBS	ffi_all_hits.txt
+util	openpty	library not found in Dataset/LIBS	ffi_hits.txt
+util	tcgetattr	library not found in Dataset/LIBS	ffi_hits.txt
+util	isatty	library not found in Dataset/LIBS	ffi_hits.txt
+util	tcsetattr	library not found in Dataset/LIBS	ffi_hits.txt
+util	ttyname_r	library not found in Dataset/LIBS	ffi_hits.txt
+util	ioctl	library not found in Dataset/LIBS	ffi_hits.txt
+util	ioctl	library not found in Dataset/LIBS	ffi_hits.txt
+<?>	tcsetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcgetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ttyname_r	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+util	openpty	library not found in Dataset/LIBS	jna_iface_hits.txt
+<?>	isatty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcgetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+util	openpty	library not found in Dataset/LIBS	jna_iface_hits.txt
+<?>	isatty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcgetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcsetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ttyname_r	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ttyname_r	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+<?>	isatty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	openpty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcgetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcsetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ttyname_r	dynamic or unknown binding	jna_iface_hits.txt
+<?>	isatty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	openpty	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcgetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt
+<?>	tcsetattr	dynamic or unknown binding	jna_iface_hits.txt
+<?>	ioctl	dynamic or unknown binding	jna_iface_hits.txt

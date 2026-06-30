@@ -1,0 +1,2 @@
+15:57:23.456905487 openat 1322823 java /opt/jruby/lib/jruby.jar f
+15:57:23.934201914 openat 1322823 java /opt/jruby/lib/jruby.jar f

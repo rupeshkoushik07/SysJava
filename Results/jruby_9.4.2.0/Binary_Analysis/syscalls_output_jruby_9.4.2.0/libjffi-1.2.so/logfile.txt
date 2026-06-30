@@ -1,0 +1,243 @@
+
+Path to rt_sigreturn:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> __restore_rt_42520
+  __restore_rt_42520 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> clear_once_control_99f40
+  clear_once_control_99f40 - [syscall]-> futex
+
+Path to mmap:
+  Java_com_kenai_jffi_Foreign_mmap_cf40 - [DIRECT]-> mmap_11ea90
+  mmap_11ea90 - [syscall]-> mmap
+
+Path to munmap:
+  Java_com_kenai_jffi_Foreign_munmap_cfa0 - [DIRECT]-> munmap_11eaf0
+  munmap_11eaf0 - [syscall]-> munmap
+
+Path to mprotect:
+  Java_com_kenai_jffi_Foreign_mprotect_cfd0 - [DIRECT]-> mprotect_11eb20
+  mprotect_11eb20 - [syscall]-> mprotect
+
+Path to close:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_close_8a590
+  _IO_file_close_8a590 - [DIRECT]-> __close_nocancel_1198e0
+  __close_nocancel_1198e0 - [syscall]-> close
+
+Path to read:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_read_8b930
+  _IO_file_read_8b930 - [DIRECT]-> read_114850
+  read_114850 - [syscall]-> read
+
+Path to lseek:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_seek_8a670
+  _IO_file_seek_8a670 - [DIRECT]-> lseek_114990
+  lseek_114990 - [syscall]-> lseek
+
+Path to mremap:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_underflow_mmap_8bb50
+  _IO_file_underflow_mmap_8bb50 - [DIRECT]-> mremap_1269c0
+  mremap_1269c0 - [syscall]-> mremap
+
+Path to write:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_8aec0
+  _IO_file_write@@GLIBC_2.2.5_8aec0 - [DIRECT]-> write_1148f0
+  write_1148f0 - [syscall]-> write
+
+Path to openat:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> open_temp_exec_file_dir_136f0
+  open_temp_exec_file_dir_136f0 - [DIRECT]-> open_114560
+  open_114560 - [syscall]-> openat
+
+Path to unlink:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> open_temp_exec_file_dir_136f0
+  open_temp_exec_file_dir_136f0 - [DIRECT]-> unlink_116120
+  unlink_116120 - [syscall]-> unlink
+
+Path to memfd_create:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> open_temp_exec_file_memfd_137f0
+  open_temp_exec_file_memfd_137f0 - [DIRECT]-> memfd_create_126fb0
+  memfd_create_126fb0 - [syscall]-> memfd_create
+
+Path to mkdir:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> try_dir_61380
+  try_dir_61380 - [DIRECT]-> mkdir_1144d0
+  mkdir_1144d0 - [syscall]-> mkdir
+
+Path to prlimit64:
+  Java_com_kenai_jffi_Foreign_pageSize_cf30 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> getrlimit_11a350
+  getrlimit_11a350 - [syscall]-> prlimit64
+
+Path to ioctl:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_doallocate_7eb10
+  _IO_file_doallocate_7eb10 - [DIRECT]-> isatty_115fb0
+  isatty_115fb0 - [DIRECT]-> tcgetattr_119fa0
+  tcgetattr_119fa0 - [syscall]-> ioctl
+
+Path to newfstatat:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_file_stat_8aeb0
+  _IO_file_stat_8aeb0 - [DIRECT]-> fstat_113d50
+  fstat_113d50 - [DIRECT]-> fstatat_113db0
+  fstatat_113db0 - [syscall]-> newfstatat
+
+Path to writev:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> __libc_fatal_896d0
+  __libc_fatal_896d0 - [DIRECT]-> __libc_message.constprop.0_89280
+  __libc_message.constprop.0_89280 - [syscall]-> writev
+
+Path to getdents64:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> getdents64_e6630
+  getdents64_e6630 - [syscall]-> getdents64
+
+Path to pread64:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> __pread64_nocancel_119bd0
+  __pread64_nocancel_119bd0 - [syscall]-> pread64
+
+Path to exit:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to madvise:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> free_a53e0
+  free_a53e0 - [DIRECT]-> _int_free_a26a0
+  _int_free_a26a0 - [DIRECT]-> madvise_11ebf0
+  madvise_11ebf0 - [syscall]-> madvise
+
+Path to getrandom:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> getrandom_46c70
+  getrandom_46c70 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_e5650
+  clock_gettime@@GLIBC_2.17_e5650 - [syscall]-> clock_gettime
+
+Path to sched_getaffinity:
+  Java_com_kenai_jffi_Foreign_pageSize_cf30 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_nprocs_conf_121b70
+  get_nprocs_conf_121b70 - [DIRECT]-> __get_nprocs_sched_1218c0
+  __get_nprocs_sched_1218c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  Java_com_kenai_jffi_Foreign_pageSize_cf30 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_phys_pages_121c70
+  get_phys_pages_121c70 - [DIRECT]-> sysinfo_126e60
+  sysinfo_126e60 - [syscall]-> sysinfo
+
+Path to getcwd:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> dlopen_doit_905e0
+  dlopen_doit_905e0 - [DIRECT]-> dcgettext_3a8f0
+  dcgettext_3a8f0 - [DIRECT]-> __dcigettext_3b540
+  __dcigettext_3b540 - [DIRECT]-> getcwd_115250
+  getcwd_115250 - [syscall]-> getcwd
+
+Path to rt_sigprocmask:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> sigprocmask_42710
+  sigprocmask_42710 - [DIRECT]-> pthread_sigmask@@GLIBC_2.32_9bbd0
+  pthread_sigmask@@GLIBC_2.32_9bbd0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [syscall]-> tgkill
+
+Path to gettid:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [syscall]-> gettid
+
+Path to rt_sigaction:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> sigaction_424d0
+  sigaction_424d0 - [DIRECT]-> __libc_sigaction_42530
+  __libc_sigaction_42530 - [syscall]-> rt_sigaction
+
+Path to getpid:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> ffi_closure_unix64_111a0
+  ffi_closure_unix64_111a0 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [DIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to sched_getparam:
+  Java_com_kenai_jffi_Foreign_dlsym_8b00 - [DIRECT]-> dlsym@@GLIBC_2.34_90740
+  dlsym@@GLIBC_2.34_90740 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_current_priority_9d170
+  __pthread_current_priority_9d170 - [DIRECT]-> sched_getparam_108c70
+  sched_getparam_108c70 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_com_kenai_jffi_Foreign_dlsym_8b00 - [DIRECT]-> dlsym@@GLIBC_2.34_90740
+  dlsym@@GLIBC_2.34_90740 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_current_priority_9d170
+  __pthread_current_priority_9d170 - [DIRECT]-> sched_getscheduler_108cd0
+  sched_getscheduler_108cd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  Java_com_kenai_jffi_Foreign_dlsym_8b00 - [DIRECT]-> dlsym@@GLIBC_2.34_90740
+  dlsym@@GLIBC_2.34_90740 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_setscheduler_108ca0
+  sched_setscheduler_108ca0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  Java_com_kenai_jffi_Foreign_dlsym_8b00 - [DIRECT]-> dlsym@@GLIBC_2.34_90740
+  dlsym@@GLIBC_2.34_90740 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_get_priority_max_108d30
+  sched_get_priority_max_108d30 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_com_kenai_jffi_Foreign_dlsym_8b00 - [DIRECT]-> dlsym@@GLIBC_2.34_90740
+  dlsym@@GLIBC_2.34_90740 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_get_priority_min_108d60
+  sched_get_priority_min_108d60 - [syscall]-> sched_get_priority_min
+
+Path to fcntl:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> dlopen_doit_905e0
+  dlopen_doit_905e0 - [DIRECT]-> dcgettext_3a8f0
+  dcgettext_3a8f0 - [DIRECT]-> __dcigettext_3b540
+  __dcigettext_3b540 - [DIRECT]-> getcwd_115250
+  getcwd_115250 - [DIRECT]-> fdopendir_e69e0
+  fdopendir_e69e0 - [DIRECT]-> __fcntl64_nocancel_119910
+  __fcntl64_nocancel_119910 - [syscall]-> fcntl
+
+Path to brk:
+  Java_com_kenai_jffi_Foreign_longDoubleFromString_8160 - [INDIRECT]-> free_a53e0
+  free_a53e0 - [DIRECT]-> _int_free_a26a0
+  _int_free_a26a0 - [DIRECT]-> systrim.constprop.0_a25f0
+  systrim.constprop.0_a25f0 - [DIRECT]-> __glibc_morecore_a25b0
+  __glibc_morecore_a25b0 - [DIRECT]-> sbrk_11a8e0
+  sbrk_11a8e0 - [DIRECT]-> brk_11a8a0
+  brk_11a8a0 - [syscall]-> brk

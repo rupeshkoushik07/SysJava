@@ -1,0 +1,3 @@
+
+Path to futex:
+  _ZN5boost3log11v2_mt_posix3aux17futex_based_event4waitEv_88950 - [syscall]-> futex

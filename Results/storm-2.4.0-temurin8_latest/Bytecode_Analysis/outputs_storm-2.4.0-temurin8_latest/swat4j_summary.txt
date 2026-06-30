@@ -1,0 +1,12 @@
+SUMMARY: storm-2.4.0-temurin8_latest
+========================================
+Total native methods:  1547
+----------------------------------------
+MAPPED:                1193  (77.1%)
+  Java_XXX             1026
+  NETTY_HEURISTIC      127
+  JVM_XXX              40
+
+UNMAPPED:              354  (22.9%)
+  Intrinsic            5
+  Truly unmapped       349

@@ -1,0 +1,7 @@
+/usr/local/jetty/lib/jetty-http-12.1.10.jar
+/usr/local/jetty/lib/jetty-io-12.1.10.jar
+/usr/local/jetty/lib/jetty-server-12.1.10.jar
+/usr/local/jetty/lib/jetty-util-12.1.10.jar
+/usr/local/jetty/lib/jetty-xml-12.1.10.jar
+/usr/local/jetty/lib/logging/jetty-slf4j-impl-12.1.10.jar
+/usr/local/jetty/lib/logging/slf4j-api-2.0.17.jar

@@ -1,0 +1,2 @@
+Java_java_nio_MappedByteBuffer_force0
+Java_java_nio_MappedByteBuffer_load0

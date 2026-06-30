@@ -1,0 +1,45 @@
+
+Path to stat:
+  __xstat_1264f0 - [syscall]-> stat
+
+Path to write:
+  write_1148f0 - [syscall]-> write
+
+Path to getpid:
+  getpid_ec040 - [syscall]-> getpid
+
+Path to dup:
+  dup_115060 - [syscall]-> dup
+
+Path to pipe2:
+  pipe_1150f0 - [syscall]-> pipe2
+
+Path to mmap:
+  mmap_11ea90 - [syscall]-> mmap
+
+Path to exit:
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to read:
+  read_114850 - [syscall]-> read
+
+Path to geteuid:
+  geteuid_ec070 - [syscall]-> geteuid
+
+Path to ioctl:
+  ioctl_11a990 - [syscall]-> ioctl
+
+Path to openat:
+  open_114560 - [syscall]-> openat
+
+Path to close:
+  close_114fd0 - [syscall]-> close
+
+Path to kill:
+  kill_42750 - [syscall]-> kill
+
+Path to readlink:
+  readlink_1160c0 - [syscall]-> readlink

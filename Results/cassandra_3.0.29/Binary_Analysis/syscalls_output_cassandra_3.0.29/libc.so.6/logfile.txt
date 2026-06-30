@@ -1,0 +1,9 @@
+
+Path to fadvise64:
+  posix_fadvise_118d30 - [syscall]-> fadvise64
+
+Path to mlockall:
+  mlockall_11ec60 - [syscall]-> mlockall
+
+Path to munlockall:
+  munlockall_11ec90 - [syscall]-> munlockall

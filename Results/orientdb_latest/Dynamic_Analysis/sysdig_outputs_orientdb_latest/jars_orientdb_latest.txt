@@ -1,0 +1,6 @@
+14:29:27.154193258 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/jce.jar f
+14:29:27.158727847 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/ext/sunec.jar f
+14:29:27.196100616 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/ext/sunjce_provider.jar f
+14:29:27.208072925 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/security/policy/unlimited/US_export_policy.jar f
+14:29:27.212610077 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/security/policy/unlimited/local_policy.jar f
+14:29:28.490728852 openat 1242750 Thread-0 /opt/java/openjdk/jre/lib/rt.jar f

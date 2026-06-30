@@ -1,0 +1,14 @@
+alarm
+chown
+fchmod
+getpgrp
+prctl
+setgroups
+setitimer
+setns
+setpgid
+setresgid
+setresuid
+sigaltstack
+socketpair
+unshare

@@ -1,0 +1,15 @@
+1260499	bash	/etc/ld.so.cache
+1260499	bash	/lib/x86_64-linux-gnu/libc.so.6
+1260499	bash	/lib/x86_64-linux-gnu/libtinfo.so.6
+1260499	__cacert_entryp	/etc/ld.so.cache
+1260499	__cacert_entryp	/lib/x86_64-linux-gnu/libc.so.6
+1260499	sh	/etc/ld.so.cache
+1260499	sh	/lib/x86_64-linux-gnu/libc.so.6
+1260559	id	/etc/ld.so.cache
+1260559	id	/lib/x86_64-linux-gnu/libc.so.6
+1260559	id	/lib/x86_64-linux-gnu/libpcre2-8.so.0
+1260559	id	/lib/x86_64-linux-gnu/libselinux.so.1
+1260560	locale-check	/etc/ld.so.cache
+1260560	locale-check	/lib/x86_64-linux-gnu/libc.so.6
+1260561	sleep	/etc/ld.so.cache
+1260561	sleep	/lib/x86_64-linux-gnu/libc.so.6

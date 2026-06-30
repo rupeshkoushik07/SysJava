@@ -1,0 +1,366 @@
+
+Path to timerfd_create:
+  netty_epoll_native_timerFd_4160 - [DIRECT]-> timerfd_create_126ef0
+  timerfd_create_126ef0 - [syscall]-> timerfd_create
+
+Path to getsockopt:
+  netty_unix_socket_getSoLinger_85b0 - [DIRECT]-> getsockopt_127660
+  getsockopt_127660 - [syscall]-> getsockopt
+
+Path to rt_sigreturn:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> __restore_rt_42520
+  __restore_rt_42520 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> clear_once_control_99f40
+  clear_once_control_99f40 - [syscall]-> futex
+
+Path to epoll_create1:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> epoll_create1_126bc0
+  epoll_create1_126bc0 - [syscall]-> epoll_create1
+
+Path to recvmsg:
+  netty_unix_socket_recvFd_6ff0 - [DIRECT]-> recvmsg_127860
+  recvmsg_127860 - [syscall]-> recvmsg
+
+Path to fcntl:
+  netty_unix_socket_recvFd_6ff0 - [DIRECT]-> fcntl_114d70
+  fcntl_114d70 - [syscall]-> fcntl
+
+Path to close:
+  netty_unix_socket_recvFd_6ff0 - [DIRECT]-> close_114fd0
+  close_114fd0 - [syscall]-> close
+
+Path to setsockopt:
+  netty_unix_socket_setKeepAlive_8210 - [DIRECT]-> setsockopt_127b40
+  setsockopt_127b40 - [syscall]-> setsockopt
+
+Path to accept4:
+  netty_unix_socket_accept_7350 - [DIRECT]-> accept4_127d50
+  accept4_127d50 - [syscall]-> accept4
+
+Path to accept:
+  netty_unix_socket_accept_7350 - [DIRECT]-> accept_127490
+  accept_127490 - [syscall]-> accept
+
+Path to unlink:
+  netty_unix_socket_bindDomainSocket_6df0 - [DIRECT]-> unlink_116120
+  unlink_116120 - [syscall]-> unlink
+
+Path to bind:
+  netty_unix_socket_bindDomainSocket_6df0 - [DIRECT]-> bind_127530
+  bind_127530 - [syscall]-> bind
+
+Path to write:
+  netty_unix_filedescriptor_write_67d0 - [DIRECT]-> write_1148f0
+  write_1148f0 - [syscall]-> write
+
+Path to epoll_create:
+  netty_epoll_native_epollCreate_3fd0 - [DIRECT]-> epoll_create_126b90
+  epoll_create_126b90 - [syscall]-> epoll_create
+
+Path to writev:
+  netty_unix_filedescriptor_writevAddresses_66f0 - [DIRECT]-> writev_11aac0
+  writev_11aac0 - [syscall]-> writev
+
+Path to read:
+  netty_unix_filedescriptor_readAddress_61d0 - [DIRECT]-> read_114850
+  read_114850 - [syscall]-> read
+
+Path to openat:
+  netty_unix_filedescriptor_open_6850 - [DIRECT]-> open_114560
+  open_114560 - [syscall]-> openat
+
+Path to getpeername:
+  netty_unix_socket_remoteAddress_7290 - [DIRECT]-> getpeername_127600
+  getpeername_127600 - [syscall]-> getpeername
+
+Path to pipe2:
+  netty_unix_filedescriptor_newPipe_60f0 - [DIRECT]-> pipe2_115130
+  pipe2_115130 - [syscall]-> pipe2
+
+Path to epoll_ctl:
+  netty_epoll_native_epollCtlAdd0_3e20 - [DIRECT]-> epoll_ctl_126bf0
+  epoll_ctl_126bf0 - [syscall]-> epoll_ctl
+
+Path to epoll_wait:
+  netty_epoll_native_epollWait0_3e60 - [DIRECT]-> epoll_wait_125e50
+  epoll_wait_125e50 - [syscall]-> epoll_wait
+
+Path to timerfd_settime:
+  netty_epoll_native_epollWait0_3e60 - [DIRECT]-> timerfd_settime_126370
+  timerfd_settime_126370 - [syscall]-> timerfd_settime
+
+Path to sendmsg:
+  netty_unix_socket_sendToAddresses_77f0 - [DIRECT]-> sendmsg_1279d0
+  sendmsg_1279d0 - [syscall]-> sendmsg
+
+Path to connect:
+  netty_unix_socket_disconnect_6d30 - [DIRECT]-> connect_127560
+  connect_127560 - [syscall]-> connect
+
+Path to getsockname:
+  netty_unix_socket_localAddress_7e20 - [DIRECT]-> getsockname_127630
+  getsockname_127630 - [syscall]-> getsockname
+
+Path to socket:
+  netty_unix_socket_newSocketDomainFd_6aa0 - [DIRECT]-> socket_127bb0
+  socket_127bb0 - [syscall]-> socket
+
+Path to sendto:
+  netty_unix_socket_sendToAddress_7ee0 - [DIRECT]-> sendto_127a70
+  sendto_127a70 - [syscall]-> sendto
+
+Path to listen:
+  netty_unix_socket_listen_7500 - [DIRECT]-> listen_1276a0
+  listen_1276a0 - [syscall]-> listen
+
+Path to splice:
+  netty_epoll_native_splice0_3d10 - [DIRECT]-> splice_126060
+  splice_126060 - [syscall]-> splice
+
+Path to sendfile:
+  netty_epoll_linuxsocket_sendFile_5390 - [DIRECT]-> sendfile_1191f0
+  sendfile_1191f0 - [syscall]-> sendfile
+
+Path to shutdown:
+  netty_unix_socket_shutdown_7530 - [DIRECT]-> shutdown_127b80
+  shutdown_127b80 - [syscall]-> shutdown
+
+Path to sendmmsg:
+  netty_epoll_native_sendmmsg0_4220 - [DIRECT]-> sendmmsg_127ec0
+  sendmmsg_127ec0 - [syscall]-> sendmmsg
+
+Path to uname:
+  netty_epoll_native_kernelVersion_3be0 - [DIRECT]-> uname_ea300
+  uname_ea300 - [syscall]-> uname
+
+Path to eventfd2:
+  netty_epoll_native_eventFd_41c0 - [DIRECT]-> eventfd_125d50
+  eventfd_125d50 - [syscall]-> eventfd2
+
+Path to munmap:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_close_mmap_8a640
+  _IO_file_close_mmap_8a640 - [DIRECT]-> munmap_11eaf0
+  munmap_11eaf0 - [syscall]-> munmap
+
+Path to lseek:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_seek_8a670
+  _IO_file_seek_8a670 - [DIRECT]-> lseek_114990
+  lseek_114990 - [syscall]-> lseek
+
+Path to mmap:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_8b960
+  _IO_file_underflow_maybe_mmap_8b960 - [DIRECT]-> mmap_11ea90
+  mmap_11ea90 - [syscall]-> mmap
+
+Path to mremap:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_underflow_mmap_8bb50
+  _IO_file_underflow_mmap_8bb50 - [DIRECT]-> mremap_1269c0
+  mremap_1269c0 - [syscall]-> mremap
+
+Path to recvfrom:
+  netty_unix_socket_recvFrom_8bd0 - [DIRECT]-> _recvFrom_8880
+  _recvFrom_8880 - [DIRECT]-> recvfrom_127790
+  recvfrom_127790 - [syscall]-> recvfrom
+
+Path to ioctl:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_doallocate_7eb10
+  _IO_file_doallocate_7eb10 - [DIRECT]-> isatty_115fb0
+  isatty_115fb0 - [DIRECT]-> tcgetattr_119fa0
+  tcgetattr_119fa0 - [syscall]-> ioctl
+
+Path to newfstatat:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_file_stat_8aeb0
+  _IO_file_stat_8aeb0 - [DIRECT]-> fstat_113d50
+  fstat_113d50 - [DIRECT]-> fstatat_113db0
+  fstatat_113db0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> getdents64_e6630
+  getdents64_e6630 - [syscall]-> getdents64
+
+Path to pread64:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> __pread64_nocancel_119bd0
+  __pread64_nocancel_119bd0 - [syscall]-> pread64
+
+Path to madvise:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> free_a53e0
+  free_a53e0 - [DIRECT]-> _int_free_a26a0
+  _int_free_a26a0 - [DIRECT]-> madvise_11ebf0
+  madvise_11ebf0 - [syscall]-> madvise
+
+Path to getrandom:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> getrandom_46c70
+  getrandom_46c70 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_e5650
+  clock_gettime@@GLIBC_2.17_e5650 - [syscall]-> clock_gettime
+
+Path to mprotect:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> _int_malloc_a39b0
+  _int_malloc_a39b0 - [DIRECT]-> sysmalloc_a30d0
+  sysmalloc_a30d0 - [DIRECT]-> mprotect_11eb20
+  mprotect_11eb20 - [syscall]-> mprotect
+
+Path to exit:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to sched_getaffinity:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> arena_get2.part.0_a1ee0
+  arena_get2.part.0_a1ee0 - [DIRECT]-> get_nprocs_121b30
+  get_nprocs_121b30 - [DIRECT]-> __get_nprocs_sched_1218c0
+  __get_nprocs_sched_1218c0 - [syscall]-> sched_getaffinity
+
+Path to rt_sigprocmask:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> unwind_stop_9d2b0
+  unwind_stop_9d2b0 - [DIRECT]-> __libc_longjmp_42240
+  __libc_longjmp_42240 - [DIRECT]-> sigprocmask_42710
+  sigprocmask_42710 - [DIRECT]-> pthread_sigmask@@GLIBC_2.32_9bbd0
+  pthread_sigmask@@GLIBC_2.32_9bbd0 - [syscall]-> rt_sigprocmask
+
+Path to getcwd:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_wfile_underflow_84fd0
+  _IO_wfile_underflow_84fd0 - [DIRECT]-> __assert_fail_39e50
+  __assert_fail_39e50 - [DIRECT]-> dcgettext_3a8f0
+  dcgettext_3a8f0 - [DIRECT]-> __dcigettext_3b540
+  __dcigettext_3b540 - [DIRECT]-> getcwd_115250
+  getcwd_115250 - [syscall]-> getcwd
+
+Path to tgkill:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [syscall]-> tgkill
+
+Path to gettid:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [syscall]-> gettid
+
+Path to rt_sigaction:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> sigaction_424d0
+  sigaction_424d0 - [DIRECT]-> __libc_sigaction_42530
+  __libc_sigaction_42530 - [syscall]-> rt_sigaction
+
+Path to sched_getparam:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> _dl_addr_174580
+  _dl_addr_174580 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_current_priority_9d170
+  __pthread_current_priority_9d170 - [DIRECT]-> sched_getparam_108c70
+  sched_getparam_108c70 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> _dl_addr_174580
+  _dl_addr_174580 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_current_priority_9d170
+  __pthread_current_priority_9d170 - [DIRECT]-> sched_getscheduler_108cd0
+  sched_getscheduler_108cd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> _dl_addr_174580
+  _dl_addr_174580 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_setscheduler_108ca0
+  sched_setscheduler_108ca0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> _dl_addr_174580
+  _dl_addr_174580 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_get_priority_max_108d30
+  sched_get_priority_max_108d30 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_vtable_check_89ef0
+  _IO_vtable_check_89ef0 - [DIRECT]-> _dl_addr_174580
+  _dl_addr_174580 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_97ef0
+  pthread_mutex_lock@@GLIBC_2.2.5_97ef0 - [DIRECT]-> __pthread_mutex_lock_full_977a0
+  __pthread_mutex_lock_full_977a0 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_get_priority_min_108d60
+  sched_get_priority_min_108d60 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> free_a53e0
+  free_a53e0 - [DIRECT]-> _int_free_a26a0
+  _int_free_a26a0 - [DIRECT]-> systrim.constprop.0_a25f0
+  systrim.constprop.0_a25f0 - [DIRECT]-> __glibc_morecore_a25b0
+  __glibc_morecore_a25b0 - [DIRECT]-> sbrk_11a8e0
+  sbrk_11a8e0 - [DIRECT]-> brk_11a8a0
+  brk_11a8a0 - [syscall]-> brk
+
+Path to getpid:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> __malloc_assert_a0e70
+  __malloc_assert_a0e70 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [DIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to prlimit64:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_wfile_underflow_84fd0
+  _IO_wfile_underflow_84fd0 - [DIRECT]-> __assert_fail_39e50
+  __assert_fail_39e50 - [DIRECT]-> dcgettext_3a8f0
+  dcgettext_3a8f0 - [DIRECT]-> __dcigettext_3b540
+  __dcigettext_3b540 - [DIRECT]-> _nl_find_domain_3be90
+  _nl_find_domain_3be90 - [DIRECT]-> _nl_expand_alias_3daf0
+  _nl_expand_alias_3daf0 - [DIRECT]-> read_alias_file_3d5f0
+  read_alias_file_3d5f0 - [DIRECT]-> qsort_44b60
+  qsort_44b60 - [DIRECT]-> qsort_r_44780
+  qsort_r_44780 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> getrlimit_11a350
+  getrlimit_11a350 - [syscall]-> prlimit64
+
+Path to sysinfo:
+  netty_unix_buffer_memoryAddress0_58c0 - [INDIRECT]-> _IO_wfile_underflow_84fd0
+  _IO_wfile_underflow_84fd0 - [DIRECT]-> __assert_fail_39e50
+  __assert_fail_39e50 - [DIRECT]-> dcgettext_3a8f0
+  dcgettext_3a8f0 - [DIRECT]-> __dcigettext_3b540
+  __dcigettext_3b540 - [DIRECT]-> _nl_find_domain_3be90
+  _nl_find_domain_3be90 - [DIRECT]-> _nl_expand_alias_3daf0
+  _nl_expand_alias_3daf0 - [DIRECT]-> read_alias_file_3d5f0
+  read_alias_file_3d5f0 - [DIRECT]-> qsort_44b60
+  qsort_44b60 - [DIRECT]-> qsort_r_44780
+  qsort_r_44780 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_phys_pages_121c70
+  get_phys_pages_121c70 - [DIRECT]-> sysinfo_126e60
+  sysinfo_126e60 - [syscall]-> sysinfo

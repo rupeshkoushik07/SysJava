@@ -1,0 +1,6 @@
+/bin/sh
+/usr/bin/grep
+/usr/bin/ls
+/usr/bin/readlink
+/usr/bin/sh
+/usr/bin/test

@@ -1,0 +1,12 @@
+SUMMARY: cassandra_5.0.6-bookworm
+========================================
+Total native methods:  1635
+----------------------------------------
+MAPPED:                1232  (75.4%)
+  Java_XXX             746
+  NETTY_HEURISTIC      451
+  JVM_XXX              35
+
+UNMAPPED:              403  (24.6%)
+  Intrinsic            33
+  Truly unmapped       370

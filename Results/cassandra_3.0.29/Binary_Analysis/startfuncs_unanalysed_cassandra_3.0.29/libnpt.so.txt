@@ -1,0 +1,2 @@
+nptInitialize@@SUNWprivate_1.1
+nptTerminate@@SUNWprivate_1.1

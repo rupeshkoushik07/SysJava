@@ -1,0 +1,14 @@
+mprotect
+setresgid
+munmap
+rseq
+clock_gettime
+close_range
+setresuid
+set_robust_list
+mmap
+exit
+rt_sigprocmask
+gettid
+madvise
+futex

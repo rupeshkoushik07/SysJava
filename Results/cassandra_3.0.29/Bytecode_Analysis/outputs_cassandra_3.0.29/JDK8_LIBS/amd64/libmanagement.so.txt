@@ -1,0 +1,2 @@
+Java_sun_management_MemoryImpl_getMemoryManagers0
+Java_sun_management_MemoryImpl_getMemoryPools0

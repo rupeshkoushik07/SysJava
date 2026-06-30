@@ -1,0 +1,11 @@
+SUMMARY: groovy_4.0.0
+========================================
+Total native methods:  275
+----------------------------------------
+MAPPED:                166  (60.4%)
+  Java_XXX             129
+  JVM_XXX              37
+
+UNMAPPED:              109  (39.6%)
+  Intrinsic            1
+  Truly unmapped       108

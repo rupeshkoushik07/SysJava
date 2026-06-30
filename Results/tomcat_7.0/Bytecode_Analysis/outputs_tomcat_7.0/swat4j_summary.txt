@@ -1,0 +1,11 @@
+SUMMARY: tomcat_7.0
+========================================
+Total native methods:  612
+----------------------------------------
+MAPPED:                432  (70.6%)
+  Java_XXX             393
+  JVM_XXX              39
+
+UNMAPPED:              180  (29.4%)
+  Intrinsic            4
+  Truly unmapped       176

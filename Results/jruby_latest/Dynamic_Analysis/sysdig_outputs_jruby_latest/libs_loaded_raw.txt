@@ -1,0 +1,16 @@
+15:57:23.484248252 openat 1322823 java /opt/java/openjdk/lib/libzip.so f
+15:57:23.484380196 openat 1322823 java /opt/java/openjdk/lib/libzip.so f
+15:57:24.107322188 openat 1322823 java /opt/java/openjdk/lib/libjimage.so f
+15:57:24.430266004 openat 1322823 java /opt/jruby/lib/jni/x86_64-Linux/libjffi-1.2.so f
+15:57:24.430378258 openat 1322823 java /opt/jruby/lib/jni/x86_64-Linux/libjffi-1.2.so f
+15:57:24.449558842 openat 1322823 java /etc/ld.so.conf f
+15:57:24.450775707 openat 1322823 java /etc/ld.so.conf.d d
+15:57:24.451408164 openat 1322823 java /etc/ld.so.conf.d/libc.conf f
+15:57:24.451973059 openat 1322823 java /etc/ld.so.conf.d/x86_64-linux-gnu.conf f
+15:57:24.452510331 openat 1322823 java /etc/ld.so.conf.d/docker-openjdk.conf f
+15:57:24.470124840 openat 1322823 java /opt/java/openjdk/lib/libverify.so f
+15:57:24.470221585 openat 1322823 java /opt/java/openjdk/lib/libverify.so f
+15:57:24.880781646 openat 1322823 java /opt/java/openjdk/lib/libzip.so f
+15:57:25.005099546 openat 1322823 java /etc/ld.so.cache f
+15:57:25.006619469 openat 1322823 java /lib/x86_64-linux-gnu/libcrypt.so.1 f
+15:57:25.541194599 openat 1322823 java /opt/java/openjdk/lib/libnet.so f

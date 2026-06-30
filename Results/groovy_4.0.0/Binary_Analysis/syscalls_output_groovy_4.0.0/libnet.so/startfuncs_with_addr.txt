@@ -1,0 +1,3 @@
+Java_java_net_NetworkInterface_getAll_86f0
+Java_java_net_NetworkInterface_getByInetAddress0_8640
+Java_java_net_NetworkInterface_getByName0_8300

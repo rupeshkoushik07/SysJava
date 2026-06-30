@@ -1,0 +1,6 @@
+/bin/sh
+/bin/cat
+/bin/grep
+/opt/java/bin/java
+/usr/sbin/runc
+/bin/uname

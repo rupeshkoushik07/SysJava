@@ -1,0 +1,12 @@
+/etc/ld.so.cache
+/etc/ld.so.conf
+/etc/ld.so.conf.d
+/etc/ld.so.conf.d/docker-openjdk.conf
+/etc/ld.so.conf.d/libc.conf
+/etc/ld.so.conf.d/x86_64-linux-gnu.conf
+/lib/x86_64-linux-gnu/libcrypt.so.1
+/opt/java/openjdk/lib/libjimage.so
+/opt/java/openjdk/lib/libnet.so
+/opt/java/openjdk/lib/libverify.so
+/opt/java/openjdk/lib/libzip.so
+/opt/jruby/lib/jni/x86_64-Linux/libjffi-1.2.so

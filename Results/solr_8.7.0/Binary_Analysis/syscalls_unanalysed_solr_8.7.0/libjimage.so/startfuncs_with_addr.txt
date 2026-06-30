@@ -1,0 +1,17 @@
+JIMAGE_Close_5210
+JIMAGE_FindResource_5250
+JIMAGE_GetResource_5350
+JIMAGE_Open_5200
+JIMAGE_PackageToModule_5220
+JIMAGE_ResourceIterator_5370
+Java_jdk_internal_jimage_NativeImageBuffer_getNativeMap_37e0
+_fini_155f4
+e165ac
+1108
+898c8
+1108
+_init_3118
+27a5c8
+1000
+e000
+1000

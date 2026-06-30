@@ -1,0 +1,8 @@
+calloc
+free
+malloc
+mmap
+mmap64
+mremap
+munmap
+realloc

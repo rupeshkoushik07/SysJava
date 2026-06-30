@@ -1,0 +1,10 @@
+BrotliEncoderCompress
+BrotliEncoderCompressStream
+BrotliEncoderCreateInstance
+BrotliEncoderDestroyInstance
+BrotliEncoderHasMoreOutput
+BrotliEncoderIsFinished
+BrotliEncoderMaxCompressedSize
+BrotliEncoderSetParameter
+BrotliEncoderTakeOutput
+BrotliEncoderVersion

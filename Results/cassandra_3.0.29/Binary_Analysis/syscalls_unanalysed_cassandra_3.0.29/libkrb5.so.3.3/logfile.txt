@@ -1,0 +1,405 @@
+
+Path to set_robust_list:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> rt_sigprocmask
+
+Path to exit:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> exit
+
+Path to rseq:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> rseq
+
+Path to futex:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> futex
+
+Path to fcntl:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fcntl_114cf0
+  fcntl_114cf0 - [syscall]-> fcntl
+
+Path to ioctl:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> tcgetattr_119f20
+  tcgetattr_119f20 - [syscall]-> ioctl
+
+Path to getuid:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> getuid_ec060
+  getuid_ec060 - [syscall]-> getuid
+
+Path to geteuid:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> geteuid_ec070
+  geteuid_ec070 - [syscall]-> geteuid
+
+Path to getgid:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> getgid_ec080
+  getgid_ec080 - [syscall]-> getgid
+
+Path to getegid:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> getegid_ec090
+  getegid_ec090 - [syscall]-> getegid
+
+Path to prctl:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> prctl_126330
+  prctl_126330 - [syscall]-> prctl
+
+Path to sched_getscheduler:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [syscall]-> sched_getparam
+
+Path to getpid:
+  krb5_init_context_profile_48210 - [DIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to openat:
+  krb5_set_trace_filename_74cd0 - [DIRECT]-> open_1144e0
+  open_1144e0 - [syscall]-> openat
+
+Path to getpeername:
+  krb5_sendauth_610f0 - [DIRECT]-> getpeername_127580
+  getpeername_127580 - [syscall]-> getpeername
+
+Path to getsockname:
+  krb5_sendauth_610f0 - [DIRECT]-> getsockname_1275b0
+  getsockname_1275b0 - [syscall]-> getsockname
+
+Path to dup:
+  krb5_prompter_posix_66830 - [DIRECT]-> dup_114fe0
+  dup_114fe0 - [syscall]-> dup
+
+Path to close:
+  krb5_prompter_posix_66830 - [DIRECT]-> close_114f50
+  close_114f50 - [syscall]-> close
+
+Path to read:
+  krb5_net_read_68520 - [DIRECT]-> read_1147d0
+  read_1147d0 - [syscall]-> read
+
+Path to flock:
+  krb5_lock_file_683b0 - [DIRECT]-> flock_114df0
+  flock_114df0 - [syscall]-> flock
+
+Path to madvise:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [DIRECT]-> madvise_11eb70
+  madvise_11eb70 - [syscall]-> madvise
+
+Path to unlink:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x33010_33010
+  fuzzyfunc-0x33010_33010 - [DIRECT]-> unlink_1160a0
+  unlink_1160a0 - [syscall]-> unlink
+
+Path to fchmod:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x33010_33010
+  fuzzyfunc-0x33010_33010 - [DIRECT]-> fchmod_114280
+  fchmod_114280 - [syscall]-> fchmod
+
+Path to write:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x33010_33010
+  fuzzyfunc-0x33010_33010 - [DIRECT]-> write_114870
+  write_114870 - [syscall]-> write
+
+Path to lseek:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x34bf0_34bf0
+  fuzzyfunc-0x34bf0_34bf0 - [DIRECT]-> lseek_114910
+  lseek_114910 - [syscall]-> lseek
+
+Path to add_key:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x37290_37290
+  fuzzyfunc-0x37290_37290 - [DIRECT]-> add_key_2320
+  add_key_2320 - [syscall]-> add_key
+
+Path to fsync:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x376d0_376d0
+  fuzzyfunc-0x376d0_376d0 - [DIRECT]-> fsync_11b870
+  fsync_11b870 - [syscall]-> fsync
+
+Path to getrandom:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x19c20_19c20
+  fuzzyfunc-0x19c20_19c20 - [DIRECT]-> fuzzyfunc-0x1c250_1c250
+  fuzzyfunc-0x1c250_1c250 - [syscall]-> getrandom
+
+Path to recvfrom:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x6b330_6b330
+  fuzzyfunc-0x6b330_6b330 - [DIRECT]-> recv_127650
+  recv_127650 - [syscall]-> recvfrom
+
+Path to getsockopt:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x6af00_6af00
+  fuzzyfunc-0x6af00_6af00 - [DIRECT]-> getsockopt_1275e0
+  getsockopt_1275e0 - [syscall]-> getsockopt
+
+Path to sendmsg:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x6b070_6b070
+  fuzzyfunc-0x6b070_6b070 - [DIRECT]-> sendmsg_127950
+  sendmsg_127950 - [syscall]-> sendmsg
+
+Path to munmap:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x8a640_8a640
+  fuzzyfunc-0x8a640_8a640 - [DIRECT]-> munmap_11ea70
+  munmap_11ea70 - [syscall]-> munmap
+
+Path to mmap:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x8b960_8b960
+  fuzzyfunc-0x8b960_8b960 - [DIRECT]-> mmap_11ea10
+  mmap_11ea10 - [syscall]-> mmap
+
+Path to mremap:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x8bb50_8bb50
+  fuzzyfunc-0x8bb50_8bb50 - [DIRECT]-> mremap_126940
+  mremap_126940 - [syscall]-> mremap
+
+Path to sched_setaffinity:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [DIRECT]-> fuzzyfunc-0x945e0_945e0
+  fuzzyfunc-0x945e0_945e0 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [DIRECT]-> fuzzyfunc-0x945e0_945e0
+  fuzzyfunc-0x945e0_945e0 - [syscall]-> sched_setscheduler
+
+Path to rt_sigaction:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [DIRECT]-> __libc_sigaction_42530
+  __libc_sigaction_42530 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [DIRECT]-> mprotect_11eaa0
+  mprotect_11eaa0 - [syscall]-> mprotect
+
+Path to mkdir:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x61380_61380
+  fuzzyfunc-0x61380_61380 - [DIRECT]-> mkdir_114450
+  mkdir_114450 - [syscall]-> mkdir
+
+Path to accept:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x163730_163730
+  fuzzyfunc-0x163730_163730 - [DIRECT]-> accept_127410
+  accept_127410 - [syscall]-> accept
+
+Path to clock_gettime:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1641c0_1641c0
+  fuzzyfunc-0x1641c0_1641c0 - [DIRECT]-> clock_gettime_e5650
+  clock_gettime_e5650 - [syscall]-> clock_gettime
+
+Path to sendto:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1663a0_1663a0
+  fuzzyfunc-0x1663a0_1663a0 - [DIRECT]-> sendto_1279f0
+  sendto_1279f0 - [syscall]-> sendto
+
+Path to poll:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1663a0_1663a0
+  fuzzyfunc-0x1663a0_1663a0 - [DIRECT]-> poll_118b80
+  poll_118b80 - [syscall]-> poll
+
+Path to recvmsg:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1663a0_1663a0
+  fuzzyfunc-0x1663a0_1663a0 - [DIRECT]-> recvmsg_1277e0
+  recvmsg_1277e0 - [syscall]-> recvmsg
+
+Path to access:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x6d280_6d280
+  fuzzyfunc-0x6d280_6d280 - [DIRECT]-> access_114940
+  access_114940 - [syscall]-> access
+
+Path to setsockopt:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x163b30_163b30
+  fuzzyfunc-0x163b30_163b30 - [DIRECT]-> setsockopt_127ac0
+  setsockopt_127ac0 - [syscall]-> setsockopt
+
+Path to sched_yield:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x8eb50_8eb50
+  fuzzyfunc-0x8eb50_8eb50 - [DIRECT]-> sched_yield_108c90
+  sched_yield_108c90 - [syscall]-> sched_yield
+
+Path to uname:
+  krb5_sname_to_principal_7ba10 - [DIRECT]-> gethostname_11b250
+  gethostname_11b250 - [DIRECT]-> uname_ea300
+  uname_ea300 - [syscall]-> uname
+
+Path to link:
+  profile_flush_to_file_76b10 - [DIRECT]-> fuzzyfunc-0x729a0_729a0
+  fuzzyfunc-0x729a0_729a0 - [DIRECT]-> link_115f80
+  link_115f80 - [syscall]-> link
+
+Path to sync:
+  profile_flush_to_file_76b10 - [DIRECT]-> fuzzyfunc-0x729a0_729a0
+  fuzzyfunc-0x729a0_729a0 - [DIRECT]-> sync_11b900
+  sync_11b900 - [syscall]-> sync
+
+Path to rename:
+  profile_flush_to_file_76b10 - [DIRECT]-> fuzzyfunc-0x729a0_729a0
+  fuzzyfunc-0x729a0_729a0 - [DIRECT]-> rename_61ea0
+  rename_61ea0 - [syscall]-> rename
+
+Path to sched_getaffinity:
+  krb5_copy_addr_3ab50 - [DIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> fuzzyfunc-0xa1ee0_a1ee0
+  fuzzyfunc-0xa1ee0_a1ee0 - [DIRECT]-> fuzzyfunc-0x121a30_121a30
+  fuzzyfunc-0x121a30_121a30 - [syscall]-> sched_getaffinity
+
+Path to writev:
+  krb5_copy_addr_3ab50 - [DIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> fuzzyfunc-0xa0ce0_a0ce0
+  fuzzyfunc-0xa0ce0_a0ce0 - [DIRECT]-> fuzzyfunc-0x893e0_893e0
+  fuzzyfunc-0x893e0_893e0 - [syscall]-> writev
+
+Path to sched_get_priority_max:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_mutex_init_975c0
+  pthread_mutex_init_975c0 - [DIRECT]-> fuzzyfunc-0x9cd40_9cd40
+  fuzzyfunc-0x9cd40_9cd40 - [DIRECT]-> sched_get_priority_max_108cc0
+  sched_get_priority_max_108cc0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_mutex_init_975c0
+  pthread_mutex_init_975c0 - [DIRECT]-> fuzzyfunc-0x9cd40_9cd40
+  fuzzyfunc-0x9cd40_9cd40 - [DIRECT]-> sched_get_priority_min_108cf0
+  sched_get_priority_min_108cf0 - [syscall]-> sched_get_priority_min
+
+Path to newfstatat:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x6a330_6a330
+  fuzzyfunc-0x6a330_6a330 - [DIRECT]-> fstat_113cd0
+  fstat_113cd0 - [DIRECT]-> fstatat_113d30
+  fstatat_113d30 - [syscall]-> newfstatat
+
+Path to keyctl:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x30fe0_30fe0
+  fuzzyfunc-0x30fe0_30fe0 - [DIRECT]-> keyctl_search_25a0
+  keyctl_search_25a0 - [DIRECT]-> keyctl_2380
+  keyctl_2380 - [syscall]-> keyctl
+
+Path to socket:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x35680_35680
+  fuzzyfunc-0x35680_35680 - [DIRECT]-> fuzzyfunc-0x7b120_7b120
+  fuzzyfunc-0x7b120_7b120 - [DIRECT]-> socket_127b30
+  socket_127b30 - [syscall]-> socket
+
+Path to connect:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x35680_35680
+  fuzzyfunc-0x35680_35680 - [DIRECT]-> fuzzyfunc-0x7b120_7b120
+  fuzzyfunc-0x7b120_7b120 - [DIRECT]-> connect_1274e0
+  connect_1274e0 - [syscall]-> connect
+
+Path to chmod:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x2d470_2d470
+  fuzzyfunc-0x2d470_2d470 - [DIRECT]-> fuzzyfunc-0x27870_27870
+  fuzzyfunc-0x27870_27870 - [DIRECT]-> chmod_114250
+  chmod_114250 - [syscall]-> chmod
+
+Path to getdents64:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x2d6e0_2d6e0
+  fuzzyfunc-0x2d6e0_2d6e0 - [DIRECT]-> readdir_e6680
+  readdir_e6680 - [DIRECT]-> getdents64_e6630
+  getdents64_e6630 - [syscall]-> getdents64
+
+Path to wait4:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> _IO_proc_close_807e0
+  _IO_proc_close_807e0 - [DIRECT]-> waitpid_ea3a0
+  waitpid_ea3a0 - [DIRECT]-> wait4_ea3d0
+  wait4_ea3d0 - [syscall]-> wait4
+
+Path to exit_group:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x29be7_29be7
+  fuzzyfunc-0x29be7_29be7 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to pread64:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0xa1000_a1000
+  fuzzyfunc-0xa1000_a1000 - [DIRECT]-> fuzzyfunc-0x1271a0_1271a0
+  fuzzyfunc-0x1271a0_1271a0 - [DIRECT]-> __pread64_nocancel_119b50
+  __pread64_nocancel_119b50 - [syscall]-> pread64
+
+Path to bind:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1095c0_1095c0
+  fuzzyfunc-0x1095c0_1095c0 - [DIRECT]-> fuzzyfunc-0x143ee0_143ee0
+  fuzzyfunc-0x143ee0_143ee0 - [DIRECT]-> bind_1274b0
+  bind_1274b0 - [syscall]-> bind
+
+Path to getcwd:
+  krb5_chpw_message_3b130 - [DIRECT]-> dcngettext_3be40
+  dcngettext_3be40 - [DIRECT]-> fuzzyfunc-0x3b540_3b540
+  fuzzyfunc-0x3b540_3b540 - [DIRECT]-> getcwd_1151d0
+  getcwd_1151d0 - [syscall]-> getcwd
+
+Path to clone:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [DIRECT]-> fuzzyfunc-0x945e0_945e0
+  fuzzyfunc-0x945e0_945e0 - [DIRECT]-> fuzzyfunc-0x126870_126870
+  fuzzyfunc-0x126870_126870 - [DIRECT]-> clone_1259c0
+  clone_1259c0 - [syscall]-> clone
+
+Path to clock_nanosleep:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x1324b0_1324b0
+  fuzzyfunc-0x1324b0_1324b0 - [DIRECT]-> sleep_ea570
+  sleep_ea570 - [DIRECT]-> nanosleep_ea660
+  nanosleep_ea660 - [DIRECT]-> clock_nanosleep_e5730
+  clock_nanosleep_e5730 - [syscall]-> clock_nanosleep
+
+Path to tgkill:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x29be7_29be7
+  fuzzyfunc-0x29be7_29be7 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill_968d0
+  pthread_kill_968d0 - [syscall]-> tgkill
+
+Path to gettid:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x29be7_29be7
+  fuzzyfunc-0x29be7_29be7 - [DIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill_968d0
+  pthread_kill_968d0 - [syscall]-> gettid
+
+Path to sendmmsg:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> _nss_dns_getcanonname_r_1446b0
+  _nss_dns_getcanonname_r_1446b0 - [DIRECT]-> __res_context_query_14cfc0
+  __res_context_query_14cfc0 - [DIRECT]-> __res_context_send_14ecf0
+  __res_context_send_14ecf0 - [DIRECT]-> sendmmsg_127e40
+  sendmmsg_127e40 - [syscall]-> sendmmsg
+
+Path to prlimit64:
+  krb5_cc_store_cred_387d0 - [INDIRECT]-> fuzzyfunc-0x15d2b0_15d2b0
+  fuzzyfunc-0x15d2b0_15d2b0 - [DIRECT]-> svc_getreq_1695e0
+  svc_getreq_1695e0 - [DIRECT]-> _rpc_dtablesize_15d8a0
+  _rpc_dtablesize_15d8a0 - [DIRECT]-> getdtablesize_11b200
+  getdtablesize_11b200 - [DIRECT]-> getrlimit_11a2d0
+  getrlimit_11a2d0 - [syscall]-> prlimit64
+
+Path to brk:
+  krb5_copy_addr_3ab50 - [DIRECT]-> malloc_a50a0
+  malloc_a50a0 - [DIRECT]-> fuzzyfunc-0xa39b0_a39b0
+  fuzzyfunc-0xa39b0_a39b0 - [DIRECT]-> fuzzyfunc-0xa30d0_a30d0
+  fuzzyfunc-0xa30d0_a30d0 - [DIRECT]-> __default_morecore_a25b0
+  __default_morecore_a25b0 - [DIRECT]-> sbrk_11a860
+  sbrk_11a860 - [DIRECT]-> brk_11a820
+  brk_11a820 - [syscall]-> brk
+
+Path to sysinfo:
+  krb5_expand_hostname_75db0 - [DIRECT]-> fuzzyfunc-0x75a50_75a50
+  fuzzyfunc-0x75a50_75a50 - [DIRECT]-> krb5int_getaddrinfo_5f50
+  krb5int_getaddrinfo_5f50 - [DIRECT]-> getaddrinfo_10a990
+  getaddrinfo_10a990 - [DIRECT]-> qsort_r_44780
+  qsort_r_44780 - [DIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_phys_pages_121bf0
+  get_phys_pages_121bf0 - [DIRECT]-> sysinfo_126de0
+  sysinfo_126de0 - [syscall]-> sysinfo
+
+Path to readv:
+  krb5int_trace_7cdf0 - [DIRECT]-> fuzzyfunc-0x7bdc0_7bdc0
+  fuzzyfunc-0x7bdc0_7bdc0 - [DIRECT]-> getnameinfo_13fbc0
+  getnameinfo_13fbc0 - [DIRECT]-> getservbyport_r_13a0b0
+  getservbyport_r_13a0b0 - [DIRECT]-> fuzzyfunc-0x1703c0_1703c0
+  fuzzyfunc-0x1703c0_1703c0 - [DIRECT]-> fuzzyfunc-0x16f9f0_16f9f0
+  fuzzyfunc-0x16f9f0_16f9f0 - [DIRECT]-> fuzzyfunc-0x170f50_170f50
+  fuzzyfunc-0x170f50_170f50 - [DIRECT]-> readv_11a9a0
+  readv_11a9a0 - [syscall]-> readv

@@ -1,0 +1,11 @@
+basename
+/bin/bash
+chroot
+dirname
+env
+grep
+id
+/sbin/ldconfig
+uname
+/usr/share/elasticsearch/jdk/bin/java
+/usr/share/elasticsearch/modules/x-pack-ml/platform/linux-x86_64/bin/controller

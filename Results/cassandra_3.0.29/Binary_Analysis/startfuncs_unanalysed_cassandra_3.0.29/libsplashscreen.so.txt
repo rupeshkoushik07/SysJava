@@ -1,0 +1,14 @@
+Java_java_awt_SplashScreen__1close@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1getBounds@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1getImageFileName@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1getImageJarName@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1getInstance@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1getScaleFactor@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1isVisible@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1setImageData@@SUNWprivate_1.1
+Java_java_awt_SplashScreen__1update@@SUNWprivate_1.1
+SplashClose@@SUNWprivate_1.1
+SplashInit@@SUNWprivate_1.1
+SplashLoadFile@@SUNWprivate_1.1
+SplashLoadMemory@@SUNWprivate_1.1
+SplashSetFileJarName@@SUNWprivate_1.1

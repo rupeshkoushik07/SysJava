@@ -1,0 +1,9 @@
+JLI_GetStdArgc_c7c0
+JLI_GetStdArgs_c7b0
+JLI_Launch_9dc0
+JLI_ManifestIterate_e870
+JLI_ReportErrorMessage_bf60
+JLI_ReportErrorMessageSys_c020
+JLI_ReportExceptionDescription_c100
+JLI_ReportMessage_9d00
+JLI_SetTraceLauncher_db90

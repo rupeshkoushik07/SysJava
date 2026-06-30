@@ -1,0 +1,19 @@
+=== JNA Direct Mapping Hits ===
+Format: methodSig | lib | symbol | apiPattern | jar
+
+<org.elasticsearch.bootstrap.JNACLibrary: int getrlimit(int,org.elasticsearch.bootstrap.JNACLibrary$Rlimit)> | libc-2.17.so | getrlimit | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNACLibrary: int setrlimit(int,org.elasticsearch.bootstrap.JNACLibrary$Rlimit)> | libc-2.17.so | setrlimit | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNACLibrary: java.lang.String strerror(int)> | libc-2.17.so | strerror | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNACLibrary: int mlockall(int)> | libc-2.17.so | mlockall | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNACLibrary: int geteuid()> | libc-2.17.so | geteuid | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean SetProcessWorkingSetSize(com.sun.jna.Pointer,org.elasticsearch.bootstrap.JNAKernel32Library$SizeT,org.elasticsearch.bootstrap.JNAKernel32Library$SizeT)> | kernel32 | SetProcessWorkingSetSize | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean AssignProcessToJobObject(com.sun.jna.Pointer,com.sun.jna.Pointer)> | kernel32 | AssignProcessToJobObject | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean SetConsoleCtrlHandler(com.sun.jna.win32.StdCallLibrary$StdCallCallback,boolean)> | kernel32 | SetConsoleCtrlHandler | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean SetInformationJobObject(com.sun.jna.Pointer,int,com.sun.jna.Pointer,int)> | kernel32 | SetInformationJobObject | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean QueryInformationJobObject(com.sun.jna.Pointer,int,com.sun.jna.Pointer,int,com.sun.jna.Pointer)> | kernel32 | QueryInformationJobObject | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean CloseHandle(com.sun.jna.Pointer)> | kernel32 | CloseHandle | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: int VirtualQueryEx(com.sun.jna.Pointer,com.sun.jna.Pointer,org.elasticsearch.bootstrap.JNAKernel32Library$MemoryBasicInformation,int)> | kernel32 | VirtualQueryEx | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: com.sun.jna.Pointer GetCurrentProcess()> | kernel32 | GetCurrentProcess | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: int GetShortPathNameW(com.sun.jna.WString,char[],int)> | kernel32 | GetShortPathNameW | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: com.sun.jna.Pointer CreateJobObjectW(com.sun.jna.Pointer,java.lang.String)> | kernel32 | CreateJobObjectW | Native.register(String) | elasticsearch-7.5.2.jar
+<org.elasticsearch.bootstrap.JNAKernel32Library: boolean VirtualLock(com.sun.jna.Pointer,org.elasticsearch.bootstrap.JNAKernel32Library$SizeT)> | kernel32 | VirtualLock | Native.register(String) | elasticsearch-7.5.2.jar

@@ -1,0 +1,5 @@
+netty_epoll_native_isSupportingTcpFastopen
+netty_epoll_native_timerFdRead
+netty_epoll_native_timerFdSetTime
+netty_unix_socket_initialize
+netty_unix_socket_isIPv6Preferred

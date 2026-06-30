@@ -1,0 +1,3 @@
+mlockall
+munlockall
+posix_fadvise

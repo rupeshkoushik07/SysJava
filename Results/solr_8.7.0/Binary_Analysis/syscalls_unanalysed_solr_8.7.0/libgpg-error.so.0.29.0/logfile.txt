@@ -1,0 +1,394 @@
+
+Path to rt_sigreturn:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> __restore_rt_42520
+  __restore_rt_42520 - [syscall]-> rt_sigreturn
+
+Path to exit:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to access:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> access_1149c0
+  access_1149c0 - [syscall]-> access
+
+Path to chdir:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> chdir_1151f0
+  chdir_1151f0 - [syscall]-> chdir
+
+Path to futex:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> clear_once_control_99f40
+  clear_once_control_99f40 - [syscall]-> futex
+
+Path to close:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> close_114fd0
+  close_114fd0 - [syscall]-> close
+
+Path to connect:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> connect_127560
+  connect_127560 - [syscall]-> connect
+
+Path to dup:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> dup_115060
+  dup_115060 - [syscall]-> dup
+
+Path to dup2:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> dup2_115090
+  dup2_115090 - [syscall]-> dup2
+
+Path to fcntl:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> fcntl_114d70
+  fcntl_114d70 - [syscall]-> fcntl
+
+Path to getcwd:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getcwd_115250
+  getcwd_115250 - [syscall]-> getcwd
+
+Path to geteuid:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> geteuid_ec070
+  geteuid_ec070 - [syscall]-> geteuid
+
+Path to getpid:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to prlimit64:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getrlimit_11a350
+  getrlimit_11a350 - [syscall]-> prlimit64
+
+Path to getuid:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getuid_ec060
+  getuid_ec060 - [syscall]-> getuid
+
+Path to kill:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> kill_42750
+  kill_42750 - [syscall]-> kill
+
+Path to lseek:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> lseek_114990
+  lseek_114990 - [syscall]-> lseek
+
+Path to mkdir:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> mkdir_1144d0
+  mkdir_1144d0 - [syscall]-> mkdir
+
+Path to openat:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> open_114560
+  open_114560 - [syscall]-> openat
+
+Path to pipe2:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pipe_1150f0
+  pipe_1150f0 - [syscall]-> pipe2
+
+Path to poll:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> poll_118c00
+  poll_118c00 - [syscall]-> poll
+
+Path to read:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> read_114850
+  read_114850 - [syscall]-> read
+
+Path to sched_yield:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> sched_yield_108d00
+  sched_yield_108d00 - [syscall]-> sched_yield
+
+Path to setsid:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> setsid_ec390
+  setsid_ec390 - [syscall]-> setsid
+
+Path to socket:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> socket_127bb0
+  socket_127bb0 - [syscall]-> socket
+
+Path to time:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> time_syscall_d9970
+  time_syscall_d9970 - [syscall]-> time
+
+Path to write:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> write_1148f0
+  write_1148f0 - [syscall]-> write
+
+Path to writev:
+  gpgrt_fprintf_sf_f6d0 - [DIRECT]-> __stack_chk_fail_1365d0
+  __stack_chk_fail_1365d0 - [DIRECT]-> __fortify_fail_1365f0
+  __fortify_fail_1365f0 - [DIRECT]-> __libc_message_893e0
+  __libc_message_893e0 - [syscall]-> writev
+
+Path to munmap:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _IO_file_close_mmap_8a640
+  _IO_file_close_mmap_8a640 - [DIRECT]-> munmap_11eaf0
+  munmap_11eaf0 - [syscall]-> munmap
+
+Path to mmap:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_8b960
+  _IO_file_underflow_maybe_mmap_8b960 - [DIRECT]-> mmap_11ea90
+  mmap_11ea90 - [syscall]-> mmap
+
+Path to mremap:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _IO_file_underflow_mmap_8bb50
+  _IO_file_underflow_mmap_8bb50 - [DIRECT]-> mremap_1269c0
+  mremap_1269c0 - [syscall]-> mremap
+
+Path to execve:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> execv_eb1c0
+  execv_eb1c0 - [DIRECT]-> execve_eb080
+  execve_eb080 - [syscall]-> execve
+
+Path to clone:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> fork_ea6a0
+  fork_ea6a0 - [DIRECT]-> _Fork_eab30
+  _Fork_eab30 - [syscall]-> clone
+
+Path to set_robust_list:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> fork_ea6a0
+  fork_ea6a0 - [DIRECT]-> _Fork_eab30
+  _Fork_eab30 - [syscall]-> set_robust_list
+
+Path to newfstatat:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getcwd_115250
+  getcwd_115250 - [DIRECT]-> fstatat_113db0
+  fstatat_113db0 - [syscall]-> newfstatat
+
+Path to ioctl:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> isatty_115fb0
+  isatty_115fb0 - [DIRECT]-> tcgetattr_119fa0
+  tcgetattr_119fa0 - [syscall]-> ioctl
+
+Path to rt_sigprocmask:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_cancel@@GLIBC_2.34_92bc0
+  pthread_cancel@@GLIBC_2.34_92bc0 - [DIRECT]-> __pthread_kill_internal_96770
+  __pthread_kill_internal_96770 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_cancel@@GLIBC_2.34_92bc0
+  pthread_cancel@@GLIBC_2.34_92bc0 - [DIRECT]-> __pthread_kill_internal_96770
+  __pthread_kill_internal_96770 - [syscall]-> tgkill
+
+Path to gettid:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_cancel@@GLIBC_2.34_92bc0
+  pthread_cancel@@GLIBC_2.34_92bc0 - [DIRECT]-> __pthread_kill_internal_96770
+  __pthread_kill_internal_96770 - [syscall]-> gettid
+
+Path to rt_sigaction:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_cancel@@GLIBC_2.34_92bc0
+  pthread_cancel@@GLIBC_2.34_92bc0 - [DIRECT]-> __libc_sigaction_42530
+  __libc_sigaction_42530 - [syscall]-> rt_sigaction
+
+Path to getdents64:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> readdir_e6680
+  readdir_e6680 - [DIRECT]-> getdents64_e6630
+  getdents64_e6630 - [syscall]-> getdents64
+
+Path to madvise:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> realloc_a5740
+  realloc_a5740 - [DIRECT]-> madvise_11ebf0
+  madvise_11ebf0 - [syscall]-> madvise
+
+Path to unlink:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> tmpfile@@GLIBC_2.2.5_61090
+  tmpfile@@GLIBC_2.2.5_61090 - [DIRECT]-> unlink_116120
+  unlink_116120 - [syscall]-> unlink
+
+Path to wait4:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> waitpid_ea3a0
+  waitpid_ea3a0 - [DIRECT]-> wait4_ea3d0
+  wait4_ea3d0 - [syscall]-> wait4
+
+Path to pread64:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> __pread64_nocancel_119bd0
+  __pread64_nocancel_119bd0 - [syscall]-> pread64
+
+Path to getrandom:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> getrandom_46c70
+  getrandom_46c70 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> ptmalloc_init.part.0_a19b0
+  ptmalloc_init.part.0_a19b0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_e5650
+  clock_gettime@@GLIBC_2.17_e5650 - [syscall]-> clock_gettime
+
+Path to sched_get_priority_max:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_975c0
+  pthread_mutex_init@@GLIBC_2.2.5_975c0 - [DIRECT]-> __init_sched_fifo_prio_9cd40
+  __init_sched_fifo_prio_9cd40 - [DIRECT]-> sched_get_priority_max_108d30
+  sched_get_priority_max_108d30 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_975c0
+  pthread_mutex_init@@GLIBC_2.2.5_975c0 - [DIRECT]-> __init_sched_fifo_prio_9cd40
+  __init_sched_fifo_prio_9cd40 - [DIRECT]-> sched_get_priority_min_108d60
+  sched_get_priority_min_108d60 - [syscall]-> sched_get_priority_min
+
+Path to sched_setscheduler:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_setscheduler_108ca0
+  sched_setscheduler_108ca0 - [syscall]-> sched_setscheduler
+
+Path to sched_getparam:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_getparam_108c70
+  sched_getparam_108c70 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_getscheduler_108cd0
+  sched_getscheduler_108cd0 - [syscall]-> sched_getscheduler
+
+Path to sched_getaffinity:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_nprocs_conf_121b70
+  get_nprocs_conf_121b70 - [DIRECT]-> __get_nprocs_sched_1218c0
+  __get_nprocs_sched_1218c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_phys_pages_121c70
+  get_phys_pages_121c70 - [DIRECT]-> sysinfo_126e60
+  sysinfo_126e60 - [syscall]-> sysinfo
+
+Path to sendto:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> send_127910
+  send_127910 - [syscall]-> sendto
+
+Path to recvfrom:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> recvfrom_127790
+  recvfrom_127790 - [syscall]-> recvfrom
+
+Path to sendmmsg:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> sendmmsg_127ec0
+  sendmmsg_127ec0 - [syscall]-> sendmmsg
+
+Path to mprotect:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> _int_malloc_a39b0
+  _int_malloc_a39b0 - [DIRECT]-> sysmalloc_a30d0
+  sysmalloc_a30d0 - [DIRECT]-> mprotect_11eb20
+  mprotect_11eb20 - [syscall]-> mprotect
+
+Path to getpeername:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> send_vc_14e6a0
+  send_vc_14e6a0 - [DIRECT]-> getpeername_127600
+  getpeername_127600 - [syscall]-> getpeername
+
+Path to uname:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __resolv_context_get_151800
+  __resolv_context_get_151800 - [DIRECT]-> __res_vinit_14c3e0
+  __res_vinit_14c3e0 - [DIRECT]-> __resolv_conf_load_14b450
+  __resolv_conf_load_14b450 - [DIRECT]-> gethostname_11b2d0
+  gethostname_11b2d0 - [DIRECT]-> uname_ea300
+  uname_ea300 - [syscall]-> uname
+
+Path to setsockopt:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> reopen_14e480
+  reopen_14e480 - [DIRECT]-> __res_enable_icmp_14a440
+  __res_enable_icmp_14a440 - [DIRECT]-> setsockopt_127b40
+  setsockopt_127b40 - [syscall]-> setsockopt
+
+Path to brk:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> _int_malloc_a39b0
+  _int_malloc_a39b0 - [DIRECT]-> sysmalloc_a30d0
+  sysmalloc_a30d0 - [DIRECT]-> __glibc_morecore_a25b0
+  __glibc_morecore_a25b0 - [DIRECT]-> sbrk_11a8e0
+  sbrk_11a8e0 - [DIRECT]-> brk_11a8a0
+  brk_11a8a0 - [syscall]-> brk
+
+Path to recvmsg:
+  gpgrt_argparse_10640 - [DIRECT]-> fuzzyfunc-0x16990_16990
+  fuzzyfunc-0x16990_16990 - [INDIRECT]-> getpwnam_e93f0
+  getpwnam_e93f0 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_e9910
+  getpwnam_r@@GLIBC_2.2.5_e9910 - [DIRECT]-> __nscd_getpwnam_r_16de30
+  __nscd_getpwnam_r_16de30 - [DIRECT]-> nscd_getpw_r_16da10
+  nscd_getpw_r_16da10 - [DIRECT]-> __nscd_get_map_ref_171720
+  __nscd_get_map_ref_171720 - [DIRECT]-> __nscd_get_mapping_1712c0
+  __nscd_get_mapping_1712c0 - [DIRECT]-> recvmsg_127860
+  recvmsg_127860 - [syscall]-> recvmsg

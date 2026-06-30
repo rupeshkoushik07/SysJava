@@ -1,0 +1,6 @@
+Time taken for the analysis: 158 seconds
+Time taken for the analysis: 170 seconds
+Direct Edges computation: 9 seconds
+AT List computation: 378 seconds
+Indirect call target resolution:  464 seconds
+Generate indirect call targets: 528 seconds

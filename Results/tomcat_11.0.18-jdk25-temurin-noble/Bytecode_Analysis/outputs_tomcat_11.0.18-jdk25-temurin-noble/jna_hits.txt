@@ -1,0 +1,385 @@
+=== Combined Native Binding Hits ===
+Format: detector | payload
+
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_in_init(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_in_init | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void PKCS12_free(java.lang.foreign.MemorySegment)> | ssl | PKCS12_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_set_options(java.lang.foreign.MemorySegment,long)> | libssl.so.3 | SSL_CTX_set_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void DH_free(java.lang.foreign.MemorySegment)> | ssl | DH_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_request_add1_nonce(java.lang.foreign.MemorySegment,char,int)> | ssl | OCSP_request_add1_nonce | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_add_client_CA(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_add_client_CA | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_basic_verify(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long)> | ssl | OCSP_basic_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OpenSSL_version(int)> | ssl | OpenSSL_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment EVP_MD_fetch(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | EVP_MD_fetch | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_SESSION_get_id(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_SESSION_get_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_shutdown(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_shutdown | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CONF_CTX_set_ssl_ctx(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CONF_CTX_set_ssl_ctx | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment d2i_X509(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long)> | ssl | d2i_X509 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_resp_get0(java.lang.foreign.MemorySegment,int)> | ssl | OCSP_resp_get0 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment EVP_MD_get0_provider(java.lang.foreign.MemorySegment)> | ssl | EVP_MD_get0_provider | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_use_certificate(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_use_certificate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_read(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | libssl.so.3 | SSL_read | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int EVP_PKEY_get_bits(java.lang.foreign.MemorySegment)> | ssl | EVP_PKEY_get_bits | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void EC_GROUP_free(java.lang.foreign.MemorySegment)> | ssl | EC_GROUP_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BIO_new_file(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | BIO_new_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_SESSION_get_time(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_SESSION_get_time | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_get0_alpn_selected(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get0_alpn_selected | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_free(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CTX_get_ciphers(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_get_ciphers | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment DH_new()> | ssl | DH_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_privatekey(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_privatekey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_check_private_key(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_check_private_key | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_STORE_CTX_get0_untrusted(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get0_untrusted | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_STORE_CTX_get_ex_data(java.lang.foreign.MemorySegment,int)> | ssl | X509_STORE_CTX_get_ex_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_read_bio_ECPKParameters(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_read_bio_ECPKParameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_resp_get0_certs(java.lang.foreign.MemorySegment)> | ssl | OCSP_resp_get0_certs | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_check_validity(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long,long)> | ssl | OCSP_check_validity | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CONF_cmd_value_type(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CONF_cmd_value_type | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment ASN1_STRING_get0_data(java.lang.foreign.MemorySegment)> | ssl | ASN1_STRING_get0_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int BIO_read(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | BIO_read | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_STORE_CTX_get0_store(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get0_store | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_alpn_select_cb(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_alpn_select_cb | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_STORE_CTX_get_error_depth(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get_error_depth | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int PKCS12_parse(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PKCS12_parse | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_get_ext_by_NID(java.lang.foreign.MemorySegment,int,int)> | ssl | X509_get_ext_by_NID | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_STORE_CTX_get_error(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_bio(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_response_status(java.lang.foreign.MemorySegment)> | ssl | OCSP_response_status | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_request_add0_id(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | OCSP_request_add0_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_session(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_session | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_pending(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void OCSP_REQUEST_free(java.lang.foreign.MemorySegment)> | ssl | OCSP_REQUEST_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BIO_s_file()> | ssl | BIO_s_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_renegotiate(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_renegotiate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CONF_CTX_finish(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CONF_CTX_finish | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_ctrl(java.lang.foreign.MemorySegment,int,long,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_STORE_CTX_get_current_cert(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get_current_cert | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void X509_STORE_CTX_set_error(java.lang.foreign.MemorySegment,int)> | ssl | X509_STORE_CTX_set_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_cert_to_id(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | OCSP_cert_to_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int ASN1_STRING_length(java.lang.foreign.MemorySegment)> | ssl | ASN1_STRING_length | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CONF_CTX_new()> | libssl.so.3 | SSL_CONF_CTX_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BIO_s_bio()> | ssl | BIO_s_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long ERR_peek_last_error()> | ssl | ERR_peek_last_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_cert_verify_callback(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_cert_verify_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_default_passwd_cb(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_default_passwd_cb | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void CRYPTO_free(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | CRYPTO_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment d2i_ECPKParameters(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long)> | ssl | d2i_ECPKParameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_load_verify_locations(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_load_verify_locations | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment EC_KEY_new_by_curve_name(int)> | ssl | EC_KEY_new_by_curve_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_read_bio_DHparams(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_read_bio_DHparams | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_read_bio_X509_AUX(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_read_bio_X509_AUX | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void ERR_clear_error()> | ssl | ERR_clear_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void ERR_error_string_n(long,java.lang.foreign.MemorySegment,long)> | ssl | ERR_error_string_n | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CIPHER_get_auth_nid(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CIPHER_get_auth_nid | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_set_cipher_list(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_cipher_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_get_timeout(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_get_timeout | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_STORE_add_lookup(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | X509_STORE_add_lookup | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int EVP_PKEY_get_base_id(java.lang.foreign.MemorySegment)> | ssl | EVP_PKEY_get_base_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BIO_new(java.lang.foreign.MemorySegment)> | ssl | BIO_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_get_ex_data_X509_STORE_CTX_idx()> | libssl.so.3 | SSL_get_ex_data_X509_STORE_CTX_idx | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_use_certificate_chain_file(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_use_certificate_chain_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int BIO_write(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | BIO_write | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_REQUEST_new()> | ssl | OCSP_REQUEST_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CONF_CTX_free(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CONF_CTX_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CONF_cmd(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CONF_cmd | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CIPHER_get_kx_nid(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CIPHER_get_kx_nid | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int BIO_free(java.lang.foreign.MemorySegment)> | ssl | BIO_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int EC_GROUP_get_curve_name(java.lang.foreign.MemorySegment)> | ssl | EC_GROUP_get_curve_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long BIO_ctrl_pending(java.lang.foreign.MemorySegment)> | ssl | BIO_ctrl_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CTX_get_cert_store(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_get_cert_store | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_STORE_set_flags(java.lang.foreign.MemorySegment,long)> | ssl | X509_STORE_set_flags | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CTX_get_client_CA_list(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_get_client_CA_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long OpenSSL_version_num()> | ssl | OpenSSL_version_num | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_load_client_CA_file(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_load_client_CA_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int BIO_new_bio_pair(java.lang.foreign.MemorySegment,long,java.lang.foreign.MemorySegment,long)> | ssl | BIO_new_bio_pair | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment ERR_error_string(long,java.lang.foreign.MemorySegment)> | ssl | ERR_error_string | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get1_peer_certificate(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get1_peer_certificate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_check_issued(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | X509_check_issued | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void OCSP_BASICRESP_free(java.lang.foreign.MemorySegment)> | ssl | OCSP_BASICRESP_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment d2i_X509_bio(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | d2i_X509_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_8192(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_8192 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OSSL_PROVIDER_get0_name(java.lang.foreign.MemorySegment)> | ssl | OSSL_PROVIDER_get0_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void OCSP_CERTID_free(java.lang.foreign.MemorySegment)> | ssl | OCSP_CERTID_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_set_timeout(java.lang.foreign.MemorySegment,long)> | libssl.so.3 | SSL_CTX_set_timeout | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_EXTENSION_get_data(java.lang.foreign.MemorySegment)> | ssl | X509_EXTENSION_get_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_new(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_peer_cert_chain(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_peer_cert_chain | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_get_shutdown(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_shutdown | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_ASN1_read_bio(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_ASN1_read_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int RAND_load_file(java.lang.foreign.MemorySegment,long)> | ssl | RAND_load_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_4096(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_4096 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BIO_s_mem()> | ssl | BIO_s_mem | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_version(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void EVP_MD_free(java.lang.foreign.MemorySegment)> | ssl | EVP_MD_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_write(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | libssl.so.3 | SSL_write | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_do_handshake(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_do_handshake | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void RAND_seed(java.lang.foreign.MemorySegment,int)> | ssl | RAND_seed | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_set_ciphersuites(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_ciphersuites | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_set0_tmp_dh_pkey(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set0_tmp_dh_pkey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_check_nonce(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | OCSP_check_nonce | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CIPHER_get_name(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CIPHER_get_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_1536(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_1536 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_CTX_new(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int PKCS12_verify_mac(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | PKCS12_verify_mac | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_get_options(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_get_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OPENSSL_init_ssl(long,java.lang.foreign.MemorySegment)> | libssl.so.3 | OPENSSL_init_ssl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_verify(java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int i2d_OCSP_REQUEST(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | i2d_OCSP_REQUEST | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void OCSP_RESPONSE_free(java.lang.foreign.MemorySegment)> | ssl | OCSP_RESPONSE_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment d2i_PKCS12_bio(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | d2i_PKCS12_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_renegotiate_pending(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_renegotiate_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int i2d_X509(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | i2d_X509 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment d2i_OCSP_RESPONSE(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long)> | ssl | d2i_OCSP_RESPONSE | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_add_file_cert_subjects_to_stack(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_add_file_cert_subjects_to_stack | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_connect_state(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_connect_state | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_info_callback(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_info_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_set_default_verify_paths(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_default_verify_paths | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_6144(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_6144 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_set_cipher_list(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_cipher_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_verify_result(java.lang.foreign.MemorySegment,long)> | libssl.so.3 | SSL_set_verify_result | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void EVP_PKEY_free(java.lang.foreign.MemorySegment)> | ssl | EVP_PKEY_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_single_get0_status(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | OCSP_single_get0_status | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_tmp_dh_callback(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_tmp_dh_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_verify_client_post_handshake(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_verify_client_post_handshake | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_LOOKUP_file()> | ssl | X509_LOOKUP_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc2409_prime_768(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc2409_prime_768 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long ERR_get_error()> | ssl | ERR_get_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_use_PrivateKey(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_use_PrivateKey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_new()> | ssl | BN_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int BN_set_word(java.lang.foreign.MemorySegment,long)> | ssl | BN_set_word | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OPENSSL_sk_num(java.lang.foreign.MemorySegment)> | ssl | OPENSSL_sk_num | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void EC_KEY_free(java.lang.foreign.MemorySegment)> | ssl | EC_KEY_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_get_options(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OPENSSL_sk_value(java.lang.foreign.MemorySegment,int)> | ssl | OPENSSL_sk_value | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_read_bio_Parameters(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_read_bio_Parameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_client_CA_list(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_client_CA_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment OCSP_response_get1_basic(java.lang.foreign.MemorySegment)> | ssl | OCSP_response_get1_basic | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc2409_prime_1024(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc2409_prime_1024 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int OCSP_resp_find(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | OCSP_resp_find | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_set_accept_state(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_set_accept_state | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_LOOKUP_ctrl(java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment,long,java.lang.foreign.MemorySegment)> | ssl | X509_LOOKUP_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_CTX_clear_options(java.lang.foreign.MemorySegment,long)> | libssl.so.3 | SSL_CTX_clear_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int X509_STORE_CTX_get1_issuer(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get1_issuer | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment PEM_read_bio_PrivateKey(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | PEM_read_bio_PrivateKey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long BIO_ctrl(java.lang.foreign.MemorySegment,int,long,java.lang.foreign.MemorySegment)> | ssl | BIO_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_LOOKUP_hash_dir()> | ssl | X509_LOOKUP_hash_dir | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void X509_free(java.lang.foreign.MemorySegment)> | ssl | X509_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment X509_get_ext(java.lang.foreign.MemorySegment,int)> | ssl | X509_get_ext | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_free(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int DH_set0_pqg(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | DH_set0_pqg | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: void SSL_CTX_set_verify(java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_CTX_set_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment TLS_server_method()> | libssl.so.3 | TLS_server_method | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_3072(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_3072 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CONF_CTX_set_flags(java.lang.foreign.MemorySegment,int)> | libssl.so.3 | SSL_CONF_CTX_set_flags | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_ciphers(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_ciphers | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment SSL_get_current_cipher(java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_get_current_cipher | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: int SSL_CTX_set_session_id_context(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | libssl.so.3 | SSL_CTX_set_session_id_context | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: java.lang.foreign.MemorySegment BN_get_rfc3526_prime_2048(java.lang.foreign.MemorySegment)> | ssl | BN_get_rfc3526_prime_2048 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h: long SSL_set_options(java.lang.foreign.MemorySegment,long)> | libssl.so.3 | SSL_set_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int ENGINE_register_all_complete()> | ssl | ENGINE_register_all_complete | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int EVP_PKEY_base_id(java.lang.foreign.MemorySegment)> | ssl | EVP_PKEY_base_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: java.lang.foreign.MemorySegment X509_STORE_CTX_get0_current_issuer(java.lang.foreign.MemorySegment)> | ssl | X509_STORE_CTX_get0_current_issuer | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: java.lang.foreign.MemorySegment ENGINE_load_private_key(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | ENGINE_load_private_key | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int FIPS_mode()> | ssl | FIPS_mode | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int FIPS_mode_set(int)> | ssl | FIPS_mode_set | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: java.lang.foreign.MemorySegment SSL_get_peer_certificate(java.lang.foreign.MemorySegment)> | ssl | SSL_get_peer_certificate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: java.lang.foreign.MemorySegment OPENSSL_sk_value(java.lang.foreign.MemorySegment,int)> | ssl | sk_value | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int ENGINE_set_default(java.lang.foreign.MemorySegment,int)> | ssl | ENGINE_set_default | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int ENGINE_free(java.lang.foreign.MemorySegment)> | ssl | ENGINE_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int ENGINE_ctrl_cmd_string(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | ENGINE_ctrl_cmd_string | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: java.lang.foreign.MemorySegment ENGINE_by_id(java.lang.foreign.MemorySegment)> | ssl | ENGINE_by_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: long SSL_ctrl(java.lang.foreign.MemorySegment,int,long,java.lang.foreign.MemorySegment)> | libssl.so.3 | SSL_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int EVP_PKEY_bits(java.lang.foreign.MemorySegment)> | ssl | EVP_PKEY_bits | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility: int OPENSSL_sk_num(java.lang.foreign.MemorySegment)> | ssl | sk_num | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set1_groups_list(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | SSL_CTX_set1_groups_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set_max_proto_version(java.lang.foreign.MemorySegment,long)> | ssl | SSL_CTX_set_max_proto_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_sess_get_cache_size(java.lang.foreign.MemorySegment)> | ssl | SSL_CTX_sess_get_cache_size | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_add0_chain_cert(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | SSL_CTX_add0_chain_cert | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set_session_cache_mode(java.lang.foreign.MemorySegment,long)> | ssl | SSL_CTX_set_session_cache_mode | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_get_session_cache_mode(java.lang.foreign.MemorySegment)> | ssl | SSL_CTX_get_session_cache_mode | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_sess_set_cache_size(java.lang.foreign.MemorySegment,long)> | ssl | SSL_CTX_sess_set_cache_size | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set_tlsext_ticket_keys(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,long)> | ssl | SSL_CTX_set_tlsext_ticket_keys | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set1_groups(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int)> | ssl | SSL_CTX_set1_groups | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set_min_proto_version(java.lang.foreign.MemorySegment,long)> | ssl | SSL_CTX_set_min_proto_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Macros: long SSL_CTX_set_tmp_ecdh(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | ssl | SSL_CTX_set_tmp_ecdh | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.pem_password_cb: int invoke(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int,int,java.lang.foreign.MemorySegment)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_CTX_set_alpn_select_cb$cb: int invoke(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_CTX_set_cert_verify_callback$cb: int invoke(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_CTX_set_tmp_dh_callback$dh: java.lang.foreign.MemorySegment invoke(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int,int)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_CTX_set_verify$callback: int invoke(java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_set_info_callback$cb: void invoke(java.lang.foreign.MemorySegment,java.lang.foreign.MemorySegment,int,int)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.SSL_set_verify$callback: int invoke(java.lang.foreign.MemorySegment,int,java.lang.foreign.MemorySegment)> | <?> | <?> | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ASN1_STRING_get0_data: ASN1_STRING_get0_data> | libcrypto.so.3 | ASN1_STRING_get0_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ASN1_STRING_length: ASN1_STRING_length> | libcrypto.so.3 | ASN1_STRING_length | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_ctrl: BIO_ctrl> | libcrypto.so.3 | BIO_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_ctrl_pending: BIO_ctrl_pending> | libcrypto.so.3 | BIO_ctrl_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_free: BIO_free> | libcrypto.so.3 | BIO_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_new: BIO_new> | libcrypto.so.3 | BIO_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_new_bio_pair: BIO_new_bio_pair> | libcrypto.so.3 | BIO_new_bio_pair | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_new_file: BIO_new_file> | libcrypto.so.3 | BIO_new_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_read: BIO_read> | libcrypto.so.3 | BIO_read | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_s_bio: BIO_s_bio> | libcrypto.so.3 | BIO_s_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_s_file: BIO_s_file> | libcrypto.so.3 | BIO_s_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_s_mem: BIO_s_mem> | libcrypto.so.3 | BIO_s_mem | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BIO_write: BIO_write> | libcrypto.so.3 | BIO_write | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc2409_prime_1024: BN_get_rfc2409_prime_1024> | libcrypto.so.3 | BN_get_rfc2409_prime_1024 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc2409_prime_768: BN_get_rfc2409_prime_768> | libcrypto.so.3 | BN_get_rfc2409_prime_768 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_1536: BN_get_rfc3526_prime_1536> | libcrypto.so.3 | BN_get_rfc3526_prime_1536 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_2048: BN_get_rfc3526_prime_2048> | libcrypto.so.3 | BN_get_rfc3526_prime_2048 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_3072: BN_get_rfc3526_prime_3072> | libcrypto.so.3 | BN_get_rfc3526_prime_3072 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_4096: BN_get_rfc3526_prime_4096> | libcrypto.so.3 | BN_get_rfc3526_prime_4096 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_6144: BN_get_rfc3526_prime_6144> | libcrypto.so.3 | BN_get_rfc3526_prime_6144 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_get_rfc3526_prime_8192: BN_get_rfc3526_prime_8192> | libcrypto.so.3 | BN_get_rfc3526_prime_8192 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_new: BN_new> | libcrypto.so.3 | BN_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$BN_set_word: BN_set_word> | libcrypto.so.3 | BN_set_word | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$CRYPTO_free: CRYPTO_free> | libcrypto.so.3 | CRYPTO_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$DH_free: DH_free> | libcrypto.so.3 | DH_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$DH_new: DH_new> | libcrypto.so.3 | DH_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$DH_set0_pqg: DH_set0_pqg> | libcrypto.so.3 | DH_set0_pqg | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EC_GROUP_free: EC_GROUP_free> | libcrypto.so.3 | EC_GROUP_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EC_GROUP_get_curve_name: EC_GROUP_get_curve_name> | libcrypto.so.3 | EC_GROUP_get_curve_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EC_KEY_free: EC_KEY_free> | libcrypto.so.3 | EC_KEY_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EC_KEY_new_by_curve_name: EC_KEY_new_by_curve_name> | libcrypto.so.3 | EC_KEY_new_by_curve_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ERR_clear_error: ERR_clear_error> | libcrypto.so.3 | ERR_clear_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ERR_error_string: ERR_error_string> | libcrypto.so.3 | ERR_error_string | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ERR_error_string_n: ERR_error_string_n> | libcrypto.so.3 | ERR_error_string_n | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ERR_get_error: ERR_get_error> | libcrypto.so.3 | ERR_get_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$ERR_peek_last_error: ERR_peek_last_error> | libcrypto.so.3 | ERR_peek_last_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_MD_fetch: EVP_MD_fetch> | libcrypto.so.3 | EVP_MD_fetch | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_MD_free: EVP_MD_free> | libcrypto.so.3 | EVP_MD_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_MD_get0_provider: EVP_MD_get0_provider> | libcrypto.so.3 | EVP_MD_get0_provider | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_PKEY_free: EVP_PKEY_free> | libcrypto.so.3 | EVP_PKEY_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_PKEY_get_base_id: EVP_PKEY_get_base_id> | libcrypto.so.3 | EVP_PKEY_get_base_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$EVP_PKEY_get_bits: EVP_PKEY_get_bits> | libcrypto.so.3 | EVP_PKEY_get_bits | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_BASICRESP_free: OCSP_BASICRESP_free> | libcrypto.so.3 | OCSP_BASICRESP_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_CERTID_free: OCSP_CERTID_free> | libcrypto.so.3 | OCSP_CERTID_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_REQUEST_free: OCSP_REQUEST_free> | libcrypto.so.3 | OCSP_REQUEST_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_REQUEST_new: OCSP_REQUEST_new> | libcrypto.so.3 | OCSP_REQUEST_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_RESPONSE_free: OCSP_RESPONSE_free> | libcrypto.so.3 | OCSP_RESPONSE_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_basic_verify: OCSP_basic_verify> | libcrypto.so.3 | OCSP_basic_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_cert_to_id: OCSP_cert_to_id> | libcrypto.so.3 | OCSP_cert_to_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_check_nonce: OCSP_check_nonce> | libcrypto.so.3 | OCSP_check_nonce | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_check_validity: OCSP_check_validity> | libcrypto.so.3 | OCSP_check_validity | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_request_add0_id: OCSP_request_add0_id> | libcrypto.so.3 | OCSP_request_add0_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_request_add1_nonce: OCSP_request_add1_nonce> | libcrypto.so.3 | OCSP_request_add1_nonce | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_resp_find: OCSP_resp_find> | libcrypto.so.3 | OCSP_resp_find | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_resp_get0: OCSP_resp_get0> | libcrypto.so.3 | OCSP_resp_get0 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_resp_get0_certs: OCSP_resp_get0_certs> | libcrypto.so.3 | OCSP_resp_get0_certs | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_response_get1_basic: OCSP_response_get1_basic> | libcrypto.so.3 | OCSP_response_get1_basic | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_response_status: OCSP_response_status> | libcrypto.so.3 | OCSP_response_status | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OCSP_single_get0_status: OCSP_single_get0_status> | libcrypto.so.3 | OCSP_single_get0_status | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OPENSSL_init_ssl: OPENSSL_init_ssl> | libssl.so.3 | OPENSSL_init_ssl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OPENSSL_sk_num: OPENSSL_sk_num> | libcrypto.so.3 | OPENSSL_sk_num | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OPENSSL_sk_value: OPENSSL_sk_value> | libcrypto.so.3 | OPENSSL_sk_value | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OSSL_PROVIDER_get0_name: OSSL_PROVIDER_get0_name> | libcrypto.so.3 | OSSL_PROVIDER_get0_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OpenSSL_version: OpenSSL_version> | libcrypto.so.3 | OpenSSL_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$OpenSSL_version_num: OpenSSL_version_num> | libcrypto.so.3 | OpenSSL_version_num | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_ASN1_read_bio: PEM_ASN1_read_bio> | libcrypto.so.3 | PEM_ASN1_read_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_read_bio_DHparams: PEM_read_bio_DHparams> | libcrypto.so.3 | PEM_read_bio_DHparams | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_read_bio_ECPKParameters: PEM_read_bio_ECPKParameters> | libcrypto.so.3 | PEM_read_bio_ECPKParameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_read_bio_Parameters: PEM_read_bio_Parameters> | libcrypto.so.3 | PEM_read_bio_Parameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_read_bio_PrivateKey: PEM_read_bio_PrivateKey> | libcrypto.so.3 | PEM_read_bio_PrivateKey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PEM_read_bio_X509_AUX: PEM_read_bio_X509_AUX> | libcrypto.so.3 | PEM_read_bio_X509_AUX | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PKCS12_free: PKCS12_free> | libcrypto.so.3 | PKCS12_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PKCS12_parse: PKCS12_parse> | libcrypto.so.3 | PKCS12_parse | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$PKCS12_verify_mac: PKCS12_verify_mac> | libcrypto.so.3 | PKCS12_verify_mac | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$RAND_load_file: RAND_load_file> | libcrypto.so.3 | RAND_load_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$RAND_seed: RAND_seed> | libcrypto.so.3 | RAND_seed | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CIPHER_get_auth_nid: SSL_CIPHER_get_auth_nid> | libssl.so.3 | SSL_CIPHER_get_auth_nid | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CIPHER_get_kx_nid: SSL_CIPHER_get_kx_nid> | libssl.so.3 | SSL_CIPHER_get_kx_nid | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CIPHER_get_name: SSL_CIPHER_get_name> | libssl.so.3 | SSL_CIPHER_get_name | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_CTX_finish: SSL_CONF_CTX_finish> | libssl.so.3 | SSL_CONF_CTX_finish | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_CTX_free: SSL_CONF_CTX_free> | libssl.so.3 | SSL_CONF_CTX_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_CTX_new: SSL_CONF_CTX_new> | libssl.so.3 | SSL_CONF_CTX_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_CTX_set_flags: SSL_CONF_CTX_set_flags> | libssl.so.3 | SSL_CONF_CTX_set_flags | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_CTX_set_ssl_ctx: SSL_CONF_CTX_set_ssl_ctx> | libssl.so.3 | SSL_CONF_CTX_set_ssl_ctx | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_cmd: SSL_CONF_cmd> | libssl.so.3 | SSL_CONF_cmd | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CONF_cmd_value_type: SSL_CONF_cmd_value_type> | libssl.so.3 | SSL_CONF_cmd_value_type | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_add_client_CA: SSL_CTX_add_client_CA> | libssl.so.3 | SSL_CTX_add_client_CA | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_check_private_key: SSL_CTX_check_private_key> | libssl.so.3 | SSL_CTX_check_private_key | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_clear_options: SSL_CTX_clear_options> | libssl.so.3 | SSL_CTX_clear_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_ctrl: SSL_CTX_ctrl> | libssl.so.3 | SSL_CTX_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_free: SSL_CTX_free> | libssl.so.3 | SSL_CTX_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_get_cert_store: SSL_CTX_get_cert_store> | libssl.so.3 | SSL_CTX_get_cert_store | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_get_ciphers: SSL_CTX_get_ciphers> | libssl.so.3 | SSL_CTX_get_ciphers | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_get_client_CA_list: SSL_CTX_get_client_CA_list> | libssl.so.3 | SSL_CTX_get_client_CA_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_get_options: SSL_CTX_get_options> | libssl.so.3 | SSL_CTX_get_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_get_timeout: SSL_CTX_get_timeout> | libssl.so.3 | SSL_CTX_get_timeout | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_load_verify_locations: SSL_CTX_load_verify_locations> | libssl.so.3 | SSL_CTX_load_verify_locations | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_new: SSL_CTX_new> | libssl.so.3 | SSL_CTX_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set0_tmp_dh_pkey: SSL_CTX_set0_tmp_dh_pkey> | libssl.so.3 | SSL_CTX_set0_tmp_dh_pkey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_alpn_select_cb: SSL_CTX_set_alpn_select_cb> | libssl.so.3 | SSL_CTX_set_alpn_select_cb | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_cert_verify_callback: SSL_CTX_set_cert_verify_callback> | libssl.so.3 | SSL_CTX_set_cert_verify_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_cipher_list: SSL_CTX_set_cipher_list> | libssl.so.3 | SSL_CTX_set_cipher_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_ciphersuites: SSL_CTX_set_ciphersuites> | libssl.so.3 | SSL_CTX_set_ciphersuites | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_client_CA_list: SSL_CTX_set_client_CA_list> | libssl.so.3 | SSL_CTX_set_client_CA_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_default_passwd_cb: SSL_CTX_set_default_passwd_cb> | libssl.so.3 | SSL_CTX_set_default_passwd_cb | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_default_verify_paths: SSL_CTX_set_default_verify_paths> | libssl.so.3 | SSL_CTX_set_default_verify_paths | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_options: SSL_CTX_set_options> | libssl.so.3 | SSL_CTX_set_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_session_id_context: SSL_CTX_set_session_id_context> | libssl.so.3 | SSL_CTX_set_session_id_context | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_timeout: SSL_CTX_set_timeout> | libssl.so.3 | SSL_CTX_set_timeout | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_tmp_dh_callback: SSL_CTX_set_tmp_dh_callback> | libssl.so.3 | SSL_CTX_set_tmp_dh_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_set_verify: SSL_CTX_set_verify> | libssl.so.3 | SSL_CTX_set_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_use_PrivateKey: SSL_CTX_use_PrivateKey> | libssl.so.3 | SSL_CTX_use_PrivateKey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_use_certificate: SSL_CTX_use_certificate> | libssl.so.3 | SSL_CTX_use_certificate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_CTX_use_certificate_chain_file: SSL_CTX_use_certificate_chain_file> | libssl.so.3 | SSL_CTX_use_certificate_chain_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_SESSION_get_id: SSL_SESSION_get_id> | libssl.so.3 | SSL_SESSION_get_id | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_SESSION_get_time: SSL_SESSION_get_time> | libssl.so.3 | SSL_SESSION_get_time | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_add_file_cert_subjects_to_stack: SSL_add_file_cert_subjects_to_stack> | libssl.so.3 | SSL_add_file_cert_subjects_to_stack | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_do_handshake: SSL_do_handshake> | libssl.so.3 | SSL_do_handshake | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_free: SSL_free> | libssl.so.3 | SSL_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get0_alpn_selected: SSL_get0_alpn_selected> | libssl.so.3 | SSL_get0_alpn_selected | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get1_peer_certificate: SSL_get1_peer_certificate> | libssl.so.3 | SSL_get1_peer_certificate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_ciphers: SSL_get_ciphers> | libssl.so.3 | SSL_get_ciphers | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_current_cipher: SSL_get_current_cipher> | libssl.so.3 | SSL_get_current_cipher | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_ex_data_X509_STORE_CTX_idx: SSL_get_ex_data_X509_STORE_CTX_idx> | libssl.so.3 | SSL_get_ex_data_X509_STORE_CTX_idx | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_options: SSL_get_options> | libssl.so.3 | SSL_get_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_peer_cert_chain: SSL_get_peer_cert_chain> | libssl.so.3 | SSL_get_peer_cert_chain | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_privatekey: SSL_get_privatekey> | libssl.so.3 | SSL_get_privatekey | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_session: SSL_get_session> | libssl.so.3 | SSL_get_session | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_shutdown: SSL_get_shutdown> | libssl.so.3 | SSL_get_shutdown | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_get_version: SSL_get_version> | libssl.so.3 | SSL_get_version | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_in_init: SSL_in_init> | libssl.so.3 | SSL_in_init | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_load_client_CA_file: SSL_load_client_CA_file> | libssl.so.3 | SSL_load_client_CA_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_new: SSL_new> | libssl.so.3 | SSL_new | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_pending: SSL_pending> | libssl.so.3 | SSL_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_read: SSL_read> | libssl.so.3 | SSL_read | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_renegotiate: SSL_renegotiate> | libssl.so.3 | SSL_renegotiate | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_renegotiate_pending: SSL_renegotiate_pending> | libssl.so.3 | SSL_renegotiate_pending | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_accept_state: SSL_set_accept_state> | libssl.so.3 | SSL_set_accept_state | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_bio: SSL_set_bio> | libssl.so.3 | SSL_set_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_cipher_list: SSL_set_cipher_list> | libssl.so.3 | SSL_set_cipher_list | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_connect_state: SSL_set_connect_state> | libssl.so.3 | SSL_set_connect_state | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_info_callback: SSL_set_info_callback> | libssl.so.3 | SSL_set_info_callback | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_options: SSL_set_options> | libssl.so.3 | SSL_set_options | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_verify: SSL_set_verify> | libssl.so.3 | SSL_set_verify | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_set_verify_result: SSL_set_verify_result> | libssl.so.3 | SSL_set_verify_result | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_shutdown: SSL_shutdown> | libssl.so.3 | SSL_shutdown | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_verify_client_post_handshake: SSL_verify_client_post_handshake> | libssl.so.3 | SSL_verify_client_post_handshake | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$SSL_write: SSL_write> | libssl.so.3 | SSL_write | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$TLS_server_method: TLS_server_method> | libssl.so.3 | TLS_server_method | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_EXTENSION_get_data: X509_EXTENSION_get_data> | libcrypto.so.3 | X509_EXTENSION_get_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_LOOKUP_ctrl: X509_LOOKUP_ctrl> | libcrypto.so.3 | X509_LOOKUP_ctrl | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_LOOKUP_file: X509_LOOKUP_file> | libcrypto.so.3 | X509_LOOKUP_file | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_LOOKUP_hash_dir: X509_LOOKUP_hash_dir> | libcrypto.so.3 | X509_LOOKUP_hash_dir | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get0_store: X509_STORE_CTX_get0_store> | libcrypto.so.3 | X509_STORE_CTX_get0_store | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get0_untrusted: X509_STORE_CTX_get0_untrusted> | libcrypto.so.3 | X509_STORE_CTX_get0_untrusted | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get1_issuer: X509_STORE_CTX_get1_issuer> | libcrypto.so.3 | X509_STORE_CTX_get1_issuer | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get_current_cert: X509_STORE_CTX_get_current_cert> | libcrypto.so.3 | X509_STORE_CTX_get_current_cert | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get_error: X509_STORE_CTX_get_error> | libcrypto.so.3 | X509_STORE_CTX_get_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get_error_depth: X509_STORE_CTX_get_error_depth> | libcrypto.so.3 | X509_STORE_CTX_get_error_depth | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_get_ex_data: X509_STORE_CTX_get_ex_data> | libcrypto.so.3 | X509_STORE_CTX_get_ex_data | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_CTX_set_error: X509_STORE_CTX_set_error> | libcrypto.so.3 | X509_STORE_CTX_set_error | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_add_lookup: X509_STORE_add_lookup> | libcrypto.so.3 | X509_STORE_add_lookup | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_STORE_set_flags: X509_STORE_set_flags> | libcrypto.so.3 | X509_STORE_set_flags | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_check_issued: X509_check_issued> | libcrypto.so.3 | X509_check_issued | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_free: X509_free> | libcrypto.so.3 | X509_free | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_get_ext: X509_get_ext> | libcrypto.so.3 | X509_get_ext | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$X509_get_ext_by_NID: X509_get_ext_by_NID> | libcrypto.so.3 | X509_get_ext_by_NID | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$d2i_ECPKParameters: d2i_ECPKParameters> | libcrypto.so.3 | d2i_ECPKParameters | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$d2i_OCSP_RESPONSE: d2i_OCSP_RESPONSE> | libcrypto.so.3 | d2i_OCSP_RESPONSE | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$d2i_PKCS12_bio: d2i_PKCS12_bio> | libcrypto.so.3 | d2i_PKCS12_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$d2i_X509: d2i_X509> | libcrypto.so.3 | d2i_X509 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$d2i_X509_bio: d2i_X509_bio> | libcrypto.so.3 | d2i_X509_bio | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$i2d_OCSP_REQUEST: i2d_OCSP_REQUEST> | libcrypto.so.3 | i2d_OCSP_REQUEST | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h$i2d_X509: i2d_X509> | libcrypto.so.3 | i2d_X509 | downcallHandle | tomcat-coyote-ffm.jar
+ffi | <org.apache.tomcat.util.openssl.openssl_h_Compatibility$X509_STORE_CTX_get0_current_issuer: X509_STORE_CTX_get0_current_issuer> | libcrypto.so.3 | X509_STORE_CTX_get0_current_issuer | downcallHandle | tomcat-coyote-ffm.jar

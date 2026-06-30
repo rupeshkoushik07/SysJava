@@ -1,0 +1,23 @@
+=== JNA Direct Mapping Hits ===
+Format: methodSig | lib | symbol | apiPattern | jar
+
+<org.apache.cassandra.utils.NativeLibraryDarwin: int close(int)> | libc.so.6 | close | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: long getpid()> | libc.so.6 | getpid | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: com.sun.jna.Pointer strerror(int)> | libc.so.6 | strerror | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: int fsync(int)> | libc.so.6 | fsync | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: int mlockall(int)> | libc.so.6 | mlockall | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: int open(java.lang.String,int)> | libc.so.6 | open | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: int fcntl(int,int,long)> | libc.so.6 | fcntl | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryDarwin: int munlockall()> | libc.so.6 | munlockall | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int fsync(int)> | libc.so.6 | fsync | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: long getpid()> | libc.so.6 | getpid | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int close(int)> | libc.so.6 | close | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int mlockall(int)> | libc.so.6 | mlockall | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int fcntl(int,int,long)> | libc.so.6 | fcntl | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: com.sun.jna.Pointer strerror(int)> | libc.so.6 | strerror | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int posix_fadvise(int,long,int,int)> | libc.so.6 | posix_fadvise | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int open(java.lang.String,int)> | libc.so.6 | open | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryLinux: int munlockall()> | libc.so.6 | munlockall | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.NativeLibraryWindows: long GetCurrentProcessId()> | kernel32 | GetCurrentProcessId | Native.register(NativeLibrary) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.WindowsTimer: int timeBeginPeriod(int)> | winmm | timeBeginPeriod | Native.register(String) | apache-cassandra-3.0.29.jar
+<org.apache.cassandra.utils.WindowsTimer: int timeEndPeriod(int)> | winmm | timeEndPeriod | Native.register(String) | apache-cassandra-3.0.29.jar

@@ -1,0 +1,1485 @@
+{
+  "defaultAction": "SCMP_ACT_ALLOW",
+  "architectures": [
+    "SCMP_ARCH_X86_64",
+    "SCMP_ARCH_X86",
+    "SCMP_ARCH_X32"
+  ],
+  "syscalls": [
+    {
+      "name": "_llseek",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "_newselect",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "_sysctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "accept4",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "acct",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "add_key",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "adjtimex",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "afs_syscall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "alarm",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "bdflush",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "bpf",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "break",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "chown",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "chown32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_adjtime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_adjtime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_getres_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_gettime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_nanosleep_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_settime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "clock_settime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "copy_file_range",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "creat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "create_module",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "delete_module",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_create",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_ctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_ctl_old",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_pwait2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_wait",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "epoll_wait_old",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "eventfd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "execveat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fadvise64_64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fanotify_init",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fanotify_mark",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fchown",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fchown32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fcntl64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fgetxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "finit_module",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "flistxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "flock",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fork",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fremovexattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fsetxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fspick",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fstat64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fstatat64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fstatfs64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "fsync",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ftime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ftruncate64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "futex_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "futimesat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "get_kernel_syms",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "get_robust_list",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "get_thread_area",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getcpu",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getegid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "geteuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getgid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getgroups32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getitimer",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getpmsg",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getresgid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getresgid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getresuid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getresuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getsid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getsockopt",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "getxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "gtty",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "idle",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "init_module",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "inotify_add_watch",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "inotify_init",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "inotify_init1",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "inotify_rm_watch",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_cancel",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_destroy",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_getevents",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_pgetevents",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_pgetevents_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_setup",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_submit",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_uring_enter",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_uring_register",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "io_uring_setup",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ioperm",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "iopl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ioprio_get",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ioprio_set",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ipc",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "kcmp",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "kexec_file_load",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "kexec_load",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "landlock_add_rule",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "landlock_create_ruleset",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "landlock_restrict_self",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lchown",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lchown32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lgetxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "link",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "linkat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "listxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "llistxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lock",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lookup_dcookie",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lremovexattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lsetxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "lstat64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mbind",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "membarrier",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "memfd_secret",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "migrate_pages",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mknod",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mknodat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mlock2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mlockall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mmap2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "modify_ldt",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mount",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mount_setattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "move_mount",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "move_pages",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mpx",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_getsetattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_notify",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_open",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_timedreceive",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_timedreceive_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_timedsend",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_timedsend_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "mq_unlink",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "msgctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "msgget",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "msgrcv",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "msgsnd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "munlockall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "name_to_handle_at",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "nanosleep",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "nfsservctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "nice",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "oldfstat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "oldlstat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "oldolduname",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "oldstat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "olduname",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "open_by_handle_at",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pause",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "perf_event_open",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "personality",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pidfd_getfd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pidfd_open",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pidfd_send_signal",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pipe",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pkey_alloc",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pkey_free",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pkey_mprotect",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ppoll",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ppoll_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "prctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "preadv",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "preadv2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "process_madvise",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "process_mrelease",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "process_vm_readv",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "process_vm_writev",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "prof",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "profil",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pselect6_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ptrace",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "putpmsg",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pwritev",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "pwritev2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "query_module",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "quotactl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "quotactl_fd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "readahead",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "readdir",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "reboot",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "recvmmsg",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "recvmmsg_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "remap_file_pages",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "removexattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "renameat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "renameat2",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "request_key",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "restart_syscall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rmdir",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_sigpending",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_sigqueueinfo",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_sigsuspend",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_sigtimedwait",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_sigtimedwait_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "rt_tgsigqueueinfo",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sched_getattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sched_rr_get_interval",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sched_rr_get_interval_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sched_setattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "security",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "select",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "semctl",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "semget",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "semop",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "semtimedop",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "semtimedop_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sendfile",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sendfile64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sendmsg",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "set_mempolicy",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "set_thread_area",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setdomainname",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setfsgid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setfsgid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setfsuid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setfsuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setgid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setgroups32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setitimer",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setns",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setregid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setregid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setresgid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setresuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setreuid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setreuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "settimeofday",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setuid32",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "setxattr",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sgetmask",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "shutdown",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigaction",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigaltstack",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "signal",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "signalfd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "signalfd4",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigpending",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigprocmask",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigreturn",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sigsuspend",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "socketcall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "socketpair",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "splice",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ssetmask",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "stat64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "statfs",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "statfs64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "stime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "stty",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "swapoff",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "swapon",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "symlink",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sync",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sync_file_range",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "syncfs",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "sysfs",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "syslog",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "tee",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_create",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_delete",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_getoverrun",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_gettime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_gettime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_settime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timer_settime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timerfd_create",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timerfd_gettime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timerfd_gettime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timerfd_settime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "timerfd_settime64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "tkill",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "truncate",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "truncate64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "tuxcall",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ugetrlimit",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ulimit",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "umount",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "unshare",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "uselib",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "userfaultfd",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "ustat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "utime",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "utimensat",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "utimensat_time64",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "utimes",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "vhangup",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "vm86",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "vm86old",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "vmsplice",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "vserver",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "waitid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    },
+    {
+      "name": "waitpid",
+      "action": "SCMP_ACT_ERRNO",
+      "args": []
+    }
+  ]
+}

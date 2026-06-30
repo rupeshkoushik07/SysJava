@@ -1,0 +1,6 @@
+BrotliDefaultAllocFunc
+BrotliDefaultFreeFunc
+BrotliGetDictionary
+BrotliGetTransforms
+BrotliSetDictionaryData
+BrotliTransformDictionaryWord

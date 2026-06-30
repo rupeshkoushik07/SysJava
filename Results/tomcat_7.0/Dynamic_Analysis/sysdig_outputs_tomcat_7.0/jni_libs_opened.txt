@@ -1,0 +1,14 @@
+/etc/ld.so.cache
+/lib/x86_64-linux-gnu/libcrypt.so.1
+/lib/x86_64-linux-gnu/libgcc_s.so.1
+/lib/x86_64-linux-gnu/libuuid.so.1
+/usr/lib/x86_64-linux-gnu/libapr-1.so.0
+/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+/usr/local/openjdk-8/jre/lib/amd64/libmanagement.so
+/usr/local/openjdk-8/jre/lib/amd64/libnet.so
+/usr/local/openjdk-8/jre/lib/amd64/libnio.so
+/usr/local/openjdk-8/jre/lib/amd64/libsunec.so
+/usr/local/openjdk-8/jre/lib/amd64/libzip.so
+/usr/local/openjdk-8/jre/lib/amd64/server/libjvm.so
+/usr/local/tomcat/native-jni-lib/libtcnative-1.so.0.2.28

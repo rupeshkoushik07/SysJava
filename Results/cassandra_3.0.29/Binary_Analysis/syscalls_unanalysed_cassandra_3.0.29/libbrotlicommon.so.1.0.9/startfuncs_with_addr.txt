@@ -1,0 +1,12 @@
+BrotliDefaultAllocFunc_1300
+1300
+BrotliDefaultFreeFunc_1310
+1310
+BrotliGetDictionary_12e0
+12e0
+BrotliGetTransforms_1320
+1320
+BrotliSetDictionaryData_12f0
+12f0
+BrotliTransformDictionaryWord_1330
+1330

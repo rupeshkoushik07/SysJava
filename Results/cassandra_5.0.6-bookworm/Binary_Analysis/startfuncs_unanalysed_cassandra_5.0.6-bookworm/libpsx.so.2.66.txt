@@ -1,0 +1,4 @@
+psx_load_syscalls
+psx_set_sensitivity
+psx_syscall3
+psx_syscall6

@@ -1,0 +1,42 @@
+=== Combined Native Binding Hits ===
+Format: detector | payload
+
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | kevent | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | pipe | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | kqueue | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | read | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | write | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | strerror | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | close | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | shutdown | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | fcntl | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.Native$LibC | socket | poll | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.enxio.channels.WinLibCAdapter$LibMSVCRT | <?> | _strerror | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.enxio.channels.WinLibCAdapter$LibMSVCRT | <?> | _pipe | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.enxio.channels.WinLibCAdapter$LibMSVCRT | <?> | _read | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.enxio.channels.WinLibCAdapter$LibMSVCRT | <?> | _write | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.enxio.channels.WinLibCAdapter$LibMSVCRT | <?> | _close | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.posix.Crypt | libcrypt-2.28.so|libcrypt-2.28.so|<?> | crypt | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | getpeername | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | getsockname | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | fcntl | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | getsockopt | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | listen | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | recvfrom | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | socket | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | accept | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | bind | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | setsockopt | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | connect | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | sendto | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | socketpair | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | jnr.unixsocket.Native$LibC | <?> | strerror | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | OpenProcess | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | GetExitCodeProcess | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | CloseHandle | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | GetLastError | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | TerminateProcess | LibraryLoader.create().load(String) | jruby.jar
+jnr-ffi | org.jruby.ext.socket.RubyBasicSocket$LibC | <?> | setsockopt | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | org.jruby.ext.socket.RubyBasicSocket$LibC | <?> | strerror | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | org.jruby.ext.socket.RubyBasicSocket$LibC | <?> | getsockopt | LibraryLoader.create().library().load() | jruby.jar
+jnr-ffi | org.jruby.util.WindowsFFI$Kernel32 | Kernel32 | GetProcessId | LibraryLoader.create().load(String) | jruby.jar

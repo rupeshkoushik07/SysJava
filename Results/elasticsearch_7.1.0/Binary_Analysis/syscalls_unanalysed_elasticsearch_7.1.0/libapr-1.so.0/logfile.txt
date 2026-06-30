@@ -1,0 +1,455 @@
+
+Path to fcntl:
+  apr_file_inherit_unset_19000 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to read:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __read_chk_115fc0
+  __read_chk_115fc0 - [syscall]-> read
+
+Path to rt_sigreturn:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to close:
+  apr_pvsprintf_1d280 - [INDIRECT]-> close_ef610
+  close_ef610 - [syscall]-> close
+
+Path to mmap:
+  apr_pvsprintf_1d280 - [INDIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  apr_pvsprintf_1d280 - [INDIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to open:
+  apr_pvsprintf_1d280 - [INDIRECT]-> open_eed20
+  open_eed20 - [syscall]-> open
+
+Path to access:
+  apr_proc_create_26020 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to clone:
+  apr_proc_create_26020 - [DIRECT]-> fork_c4e60
+  fork_c4e60 - [syscall]-> clone
+
+Path to futex:
+  apr_proc_create_26020 - [DIRECT]-> fork_c4e60
+  fork_c4e60 - [syscall]-> futex
+
+Path to dup2:
+  apr_proc_create_26020 - [DIRECT]-> dup2_ef6a0
+  dup2_ef6a0 - [syscall]-> dup2
+
+Path to chdir:
+  apr_proc_create_26020 - [DIRECT]-> chdir_ef7c0
+  chdir_ef7c0 - [syscall]-> chdir
+
+Path to geteuid:
+  apr_proc_create_26020 - [DIRECT]-> geteuid_c5e30
+  geteuid_c5e30 - [syscall]-> geteuid
+
+Path to setuid:
+  apr_proc_create_26020 - [DIRECT]-> setuid_c5e90
+  setuid_c5e90 - [syscall]-> setuid
+
+Path to setrlimit:
+  apr_proc_create_26020 - [DIRECT]-> setrlimit_f4320
+  setrlimit_f4320 - [syscall]-> setrlimit
+
+Path to exit_group:
+  apr_proc_create_26020 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to exit:
+  apr_proc_create_26020 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit
+
+Path to execve:
+  apr_proc_create_26020 - [DIRECT]-> execve_c5200
+  execve_c5200 - [syscall]-> execve
+
+Path to setgid:
+  apr_proc_create_26020 - [DIRECT]-> setgid_c5ef0
+  setgid_c5ef0 - [syscall]-> setgid
+
+Path to poll:
+  apr_wait_for_io_or_timeout_25960 - [DIRECT]-> poll_f31e0
+  poll_f31e0 - [syscall]-> poll
+
+Path to unlink:
+  apr_file_remove_18d60 - [DIRECT]-> unlink_f0710
+  unlink_f0710 - [syscall]-> unlink
+
+Path to mkdir:
+  apr_dir_make_171f0 - [DIRECT]-> mkdir_eecc0
+  mkdir_eecc0 - [syscall]-> mkdir
+
+Path to setsockopt:
+  apr_mcast_interface_1fc80 - [DIRECT]-> setsockopt_fefc0
+  setsockopt_fefc0 - [syscall]-> setsockopt
+
+Path to connect:
+  apr_socket_connect_21c10 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to getsockopt:
+  apr_socket_connect_21c10 - [DIRECT]-> getsockopt_fec80
+  getsockopt_fec80 - [syscall]-> getsockopt
+
+Path to shmget:
+  apr_shm_attach_257b0 - [DIRECT]-> shmget_ff7c0
+  shmget_ff7c0 - [syscall]-> shmget
+
+Path to shmat:
+  apr_shm_attach_257b0 - [DIRECT]-> shmat_ff760
+  shmat_ff760 - [syscall]-> shmat
+
+Path to recvfrom:
+  apr_socket_recvfrom_1ffc0 - [DIRECT]-> recvfrom_fed90
+  recvfrom_fed90 - [syscall]-> recvfrom
+
+Path to chmod:
+  apr_file_perms_set_18260 - [DIRECT]-> chmod_eebd0
+  chmod_eebd0 - [syscall]-> chmod
+
+Path to rt_sigtimedwait:
+  apr_signal_thread_26990 - [DIRECT]-> sigwait_365f0
+  sigwait_365f0 - [syscall]-> rt_sigtimedwait
+
+Path to write:
+  apr_socket_send_1fd20 - [DIRECT]-> write_eefc0
+  write_eefc0 - [syscall]-> write
+
+Path to pipe:
+  apr_file_pipe_create_19290 - [DIRECT]-> pipe_ef700
+  pipe_ef700 - [syscall]-> pipe
+
+Path to rename:
+  apr_file_rename_18d80 - [DIRECT]-> rename_6bc70
+  rename_6bc70 - [syscall]-> rename
+
+Path to lseek:
+  apr_file_writev_19aa0 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to writev:
+  apr_file_writev_19aa0 - [DIRECT]-> writev_f49a0
+  writev_f49a0 - [syscall]-> writev
+
+Path to accept4:
+  apr_socket_accept_219b0 - [DIRECT]-> accept4_ff2d0
+  accept4_ff2d0 - [syscall]-> accept4
+
+Path to wait4:
+  apr_proc_other_child_refresh_1eca0 - [DIRECT]-> waitpid_c4a20
+  waitpid_c4a20 - [syscall]-> wait4
+
+Path to getpid:
+  apr_proc_fork_25f30 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to shmctl:
+  apr_shm_create_25470 - [DIRECT]-> shmctl_ff7f0
+  shmctl_ff7f0 - [syscall]-> shmctl
+
+Path to listen:
+  apr_socket_listen_21980 - [DIRECT]-> listen_fecb0
+  listen_fecb0 - [syscall]-> listen
+
+Path to getpeername:
+  apr_socket_addr_get_208d0 - [DIRECT]-> getpeername_fec20
+  getpeername_fec20 - [syscall]-> getpeername
+
+Path to getsockname:
+  apr_socket_addr_get_208d0 - [DIRECT]-> getsockname_fec50
+  getsockname_fec50 - [syscall]-> getsockname
+
+Path to ftruncate:
+  apr_file_trunc_1a120 - [DIRECT]-> ftruncate_f6b90
+  ftruncate_f6b90 - [syscall]-> ftruncate
+
+Path to ioctl:
+  apr_socket_atmark_227f0 - [DIRECT]-> ioctl_f48d0
+  ioctl_f48d0 - [syscall]-> ioctl
+
+Path to lstat:
+  apr_stat_18290 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to stat:
+  apr_stat_18290 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to sendto:
+  apr_socket_sendto_1fed0 - [DIRECT]-> sendto_fef60
+  sendto_fef60 - [syscall]-> sendto
+
+Path to setsid:
+  apr_proc_detach_26750 - [DIRECT]-> setsid_c6100
+  setsid_c6100 - [syscall]-> setsid
+
+Path to link:
+  apr_file_link_190a0 - [DIRECT]-> link_f05f0
+  link_f05f0 - [syscall]-> link
+
+Path to socket:
+  apr_socket_create_217d0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to getcwd:
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to shutdown:
+  apr_socket_shutdown_218e0 - [DIRECT]-> shutdown_feff0
+  shutdown_feff0 - [syscall]-> shutdown
+
+Path to utimes:
+  apr_file_mtime_set_183f0 - [DIRECT]-> utimes_f69b0
+  utimes_f69b0 - [syscall]-> utimes
+
+Path to fsync:
+  apr_file_sync_19bc0 - [DIRECT]-> fsync_f50f0
+  fsync_f50f0 - [syscall]-> fsync
+
+Path to fdatasync:
+  apr_file_datasync_19c20 - [DIRECT]-> fdatasync_f5180
+  fdatasync_f5180 - [syscall]-> fdatasync
+
+Path to getuid:
+  apr_uid_current_27870 - [DIRECT]-> getuid_c5e20
+  getuid_c5e20 - [syscall]-> getuid
+
+Path to getgid:
+  apr_uid_current_27870 - [DIRECT]-> getgid_c5e40
+  getgid_c5e40 - [syscall]-> getgid
+
+Path to sendfile:
+  apr_socket_sendfile_20230 - [DIRECT]-> sendfile_f3530
+  sendfile_f3530 - [syscall]-> sendfile
+
+Path to kill:
+  apr_proc_kill_268e0 - [DIRECT]-> kill_364d0
+  kill_364d0 - [syscall]-> kill
+
+Path to rmdir:
+  apr_dir_remove_17340 - [DIRECT]-> rmdir_f0770
+  rmdir_f0770 - [syscall]-> rmdir
+
+Path to fstat:
+  apr_file_info_get_locked_18120 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to select:
+  apr_sleep_272d0 - [DIRECT]-> select_f4f40
+  select_f4f40 - [syscall]-> select
+
+Path to bind:
+  apr_socket_bind_21930 - [DIRECT]-> bind_feb90
+  bind_feb90 - [syscall]-> bind
+
+Path to sched_yield:
+  apr_pvsprintf_1d280 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mremap:
+  apr_pvsprintf_1d280 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to semctl:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x1a8f0_1a8f0
+  fuzzyfunc-0x1a8f0_1a8f0 - [DIRECT]-> semctl_ff700
+  semctl_ff700 - [syscall]-> semctl
+
+Path to semop:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x1ac90_1ac90
+  fuzzyfunc-0x1ac90_1ac90 - [DIRECT]-> semop_ff6a0
+  semop_ff6a0 - [syscall]-> semop
+
+Path to semget:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x1adb0_1adb0
+  fuzzyfunc-0x1adb0_1adb0 - [DIRECT]-> semget_ff6d0
+  semget_ff6d0 - [syscall]-> semget
+
+Path to flock:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x1ae50_1ae50
+  fuzzyfunc-0x1ae50_1ae50 - [DIRECT]-> flock_ef4d0
+  flock_ef4d0 - [syscall]-> flock
+
+Path to epoll_wait:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x22910_22910
+  fuzzyfunc-0x22910_22910 - [DIRECT]-> epoll_wait_fe450
+  epoll_wait_fe450 - [syscall]-> epoll_wait
+
+Path to epoll_ctl:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x22b00_22b00
+  fuzzyfunc-0x22b00_22b00 - [DIRECT]-> epoll_ctl_fe420
+  epoll_ctl_fe420 - [syscall]-> epoll_ctl
+
+Path to epoll_create1:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x22e10_22e10
+  fuzzyfunc-0x22e10_22e10 - [DIRECT]-> epoll_create1_fe3f0
+  epoll_create1_fe3f0 - [syscall]-> epoll_create1
+
+Path to shmdt:
+  apr_pvsprintf_1d280 - [INDIRECT]-> fuzzyfunc-0x25390_25390
+  fuzzyfunc-0x25390_25390 - [DIRECT]-> shmdt_ff790
+  shmdt_ff790 - [syscall]-> shmdt
+
+Path to uname:
+  apr_gethostname_22840 - [DIRECT]-> gethostname_f4de0
+  gethostname_f4de0 - [DIRECT]-> uname_c4900
+  uname_c4900 - [syscall]-> uname
+
+Path to mknod:
+  apr_file_namedpipe_create_19490 - [DIRECT]-> mkfifo_ee820
+  mkfifo_ee820 - [DIRECT]-> _xmknod_ee970
+  _xmknod_ee970 - [syscall]-> mknod
+
+Path to getdents:
+  apr_dir_read_16fe0 - [DIRECT]-> readdir_r_c04e0
+  readdir_r_c04e0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to dup3:
+  apr_proc_detach_26750 - [DIRECT]-> freopen_77070
+  freopen_77070 - [DIRECT]-> dup3_ef6d0
+  dup3_ef6d0 - [syscall]-> dup3
+
+Path to dup:
+  apr_proc_detach_26750 - [DIRECT]-> perror_6b340
+  perror_6b340 - [DIRECT]-> dup_ef670
+  dup_ef670 - [syscall]-> dup
+
+Path to openat:
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  apr_signal_26900 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to brk:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to fchmod:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __fop_create_42_recover_11cdb0
+  __fop_create_42_recover_11cdb0 - [DIRECT]-> __os_open_14a660
+  __os_open_14a660 - [DIRECT]-> fchmod_eec00
+  fchmod_eec00 - [syscall]-> fchmod
+
+Path to rt_sigprocmask:
+  apr_pvsprintf_1d280 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigprocmask_364a0
+  sigprocmask_364a0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  apr_pvsprintf_1d280 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> tgkill
+
+Path to gettid:
+  apr_pvsprintf_1d280 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to recvmsg:
+  apr_pvsprintf_1d280 - [INDIRECT]-> rfc3484_sort_e3f70
+  rfc3484_sort_e3f70 - [DIRECT]-> __check_native_125320
+  __check_native_125320 - [DIRECT]-> recvmsg_fedf0
+  recvmsg_fedf0 - [syscall]-> recvmsg
+
+Path to madvise:
+  apr_pvsprintf_1d280 - [DIRECT]-> free_85580
+  free_85580 - [DIRECT]-> _int_free_80f70
+  _int_free_80f70 - [DIRECT]-> heap_trim_7ff20
+  heap_trim_7ff20 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to pread64:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __heap_pg_alloc_recover_6d150
+  __heap_pg_alloc_recover_6d150 - [DIRECT]-> __db_zero_extend_15d760
+  __db_zero_extend_15d760 - [DIRECT]-> __os_io_148200
+  __os_io_148200 - [DIRECT]-> pread_ed640
+  pread_ed640 - [syscall]-> pread64
+
+Path to pwrite64:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __heap_pg_alloc_recover_6d150
+  __heap_pg_alloc_recover_6d150 - [DIRECT]-> __db_zero_extend_15d760
+  __db_zero_extend_15d760 - [DIRECT]-> __os_io_148200
+  __os_io_148200 - [DIRECT]-> pwrite_ed6a0
+  pwrite_ed6a0 - [syscall]-> pwrite64
+
+Path to munlock:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __memp_fclose_pp_13cec0
+  __memp_fclose_pp_13cec0 - [DIRECT]-> __memp_fclose_13c9e0
+  __memp_fclose_13c9e0 - [DIRECT]-> __os_unmapfile_144db0
+  __os_unmapfile_144db0 - [DIRECT]-> munlock_f8570
+  munlock_f8570 - [syscall]-> munlock
+
+Path to accept:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __repmgr_select_thread_a7fc0
+  __repmgr_select_thread_a7fc0 - [DIRECT]-> __repmgr_select_loop_a7220
+  __repmgr_select_loop_a7220 - [DIRECT]-> __repmgr_accept_a4d30
+  __repmgr_accept_a4d30 - [DIRECT]-> accept_feb30
+  accept_feb30 - [syscall]-> accept
+
+Path to clock_getres:
+  apr_pvsprintf_1d280 - [INDIRECT]-> gaiconf_init_e3250
+  gaiconf_init_e3250 - [DIRECT]-> qsort_39080
+  qsort_39080 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to mprotect:
+  apr_pvsprintf_1d280 - [INDIRECT]-> malloc_85160
+  malloc_85160 - [DIRECT]-> arena_get2.isra.3_7f6d0
+  arena_get2.isra.3_7f6d0 - [DIRECT]-> new_heap_7ef30
+  new_heap_7ef30 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to mlock:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __memp_fopen_pp_1354f0
+  __memp_fopen_pp_1354f0 - [DIRECT]-> __memp_fopen_13b550
+  __memp_fopen_13b550 - [DIRECT]-> __os_mapfile_144a10
+  __os_mapfile_144a10 - [DIRECT]-> fuzzyfunc-0x15d840_15d840
+  fuzzyfunc-0x15d840_15d840 - [DIRECT]-> mlock_f8540
+  mlock_f8540 - [syscall]-> mlock
+
+Path to readv:
+  apr_pvsprintf_1d280 - [INDIRECT]-> __repmgr_channel_a02f0
+  __repmgr_channel_a02f0 - [DIRECT]-> fuzzyfunc-0x9ff70_9ff70
+  fuzzyfunc-0x9ff70_9ff70 - [DIRECT]-> __repmgr_read_conn_a2620
+  __repmgr_read_conn_a2620 - [DIRECT]-> __repmgr_readv_a20a0
+  __repmgr_readv_a20a0 - [DIRECT]-> readv_f4900
+  readv_f4900 - [syscall]-> readv
+
+Path to getrlimit:
+  apr_pvsprintf_1d280 - [INDIRECT]-> gaiconf_init_e3250
+  gaiconf_init_e3250 - [DIRECT]-> qsort_39080
+  qsort_39080 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit

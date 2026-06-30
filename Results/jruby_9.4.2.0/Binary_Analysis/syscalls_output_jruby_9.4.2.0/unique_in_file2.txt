@@ -1,0 +1,15 @@
+getpriority
+getrusage
+memfd_create
+mincore
+mkdir
+setpriority
+shmat
+shmctl
+shmdt
+shmget
+shutdown
+statfs
+time
+unlink
+vfork

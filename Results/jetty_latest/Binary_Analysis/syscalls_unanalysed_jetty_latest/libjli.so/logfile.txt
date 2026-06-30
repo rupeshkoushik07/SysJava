@@ -1,0 +1,361 @@
+
+Path to fstat:
+  JLI_PreprocessArg_43c0 - [DIRECT]-> __fxstat_137b60
+  __fxstat_137b60 - [syscall]-> fstat
+
+Path to stat:
+  JLI_Launch_cca0 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat
+
+Path to futex:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rt_sigprocmask
+
+Path to exit:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to dup:
+  JLI_StringDup_10300 - [DIRECT]-> perror_28a8f
+  perror_28a8f - [DIRECT]-> dup_1230b0
+  dup_1230b0 - [syscall]-> dup
+
+Path to execve:
+  JLI_Launch_cca0 - [DIRECT]-> CreateExecutionEnvironment_f360
+  CreateExecutionEnvironment_f360 - [DIRECT]-> execve_f8200
+  execve_f8200 - [syscall]-> execve
+
+Path to access:
+  JLI_Launch_cca0 - [DIRECT]-> JLI_WildcardExpandClasspath_11e00
+  JLI_WildcardExpandClasspath_11e00 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
+Path to mremap:
+  JLI_List_add_105f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to madvise:
+  JLI_List_add_105f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to lseek:
+  JLI_ManifestIterate_11aa0 - [DIRECT]-> find_file_11490
+  find_file_11490 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to close:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> _IO_file_close_9b3a0
+  _IO_file_close_9b3a0 - [DIRECT]-> __close_nocancel_128e70
+  __close_nocancel_128e70 - [syscall]-> close
+
+Path to ioctl:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  _IO_file_doallocate_8bc60 - [DIRECT]-> fuzzyfunc-0x129430_129430
+  fuzzyfunc-0x129430_129430 - [syscall]-> ioctl
+
+Path to read:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> _IO_file_read_9b320
+  _IO_file_read_9b320 - [DIRECT]-> __read_nocancel_129240
+  __read_nocancel_129240 - [syscall]-> read
+
+Path to write:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> _IO_file_write_9b3b0
+  _IO_file_write_9b3b0 - [DIRECT]-> __write_nocancel_1292a0
+  __write_nocancel_1292a0 - [syscall]-> write
+
+Path to clock_gettime:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x17f8c0_17f8c0
+  fuzzyfunc-0x17f8c0_17f8c0 - [DIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to setsockopt:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x180d30_180d30
+  fuzzyfunc-0x180d30_180d30 - [DIRECT]-> setsockopt_1394a0
+  setsockopt_1394a0 - [syscall]-> setsockopt
+
+Path to getpid:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x1813d0_1813d0
+  fuzzyfunc-0x1813d0_1813d0 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to geteuid:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x1813d0_1813d0
+  fuzzyfunc-0x1813d0_1813d0 - [DIRECT]-> geteuid_fe650
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to getegid:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x1813d0_1813d0
+  fuzzyfunc-0x1813d0_1813d0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
+Path to mkdir:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x6ad80_6ad80
+  fuzzyfunc-0x6ad80_6ad80 - [DIRECT]-> mkdir_127ad0
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to munmap:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x9a2b0_9a2b0
+  fuzzyfunc-0x9a2b0_9a2b0 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to mmap:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x9a560_9a560
+  fuzzyfunc-0x9a560_9a560 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to exit_group:
+  JLI_StringDup_10300 - [DIRECT]-> exit_486a0
+  exit_486a0 - [DIRECT]-> fuzzyfunc-0x483f0_483f0
+  fuzzyfunc-0x483f0_483f0 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to readlink:
+  JLI_Launch_cca0 - [DIRECT]-> CreateExecutionEnvironment_f360
+  CreateExecutionEnvironment_f360 - [DIRECT]-> SetExecname_f2d0
+  SetExecname_f2d0 - [DIRECT]-> readlink_1283b0
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to getgid:
+  JLI_Launch_cca0 - [DIRECT]-> CreateExecutionEnvironment_f360
+  CreateExecutionEnvironment_f360 - [DIRECT]-> RequiresSetenv_eeb0
+  RequiresSetenv_eeb0 - [DIRECT]-> getgid_fe660
+  getgid_fe660 - [syscall]-> getgid
+
+Path to getuid:
+  JLI_Launch_cca0 - [DIRECT]-> CreateExecutionEnvironment_f360
+  CreateExecutionEnvironment_f360 - [DIRECT]-> RequiresSetenv_eeb0
+  RequiresSetenv_eeb0 - [DIRECT]-> getuid_ffab0
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to openat:
+  JLI_Launch_cca0 - [DIRECT]-> JLI_WildcardExpandClasspath_11e00
+  JLI_WildcardExpandClasspath_11e00 - [DIRECT]-> opendir_f6920
+  opendir_f6920 - [DIRECT]-> __open64_nocancel_1290a0
+  __open64_nocancel_1290a0 - [syscall]-> openat
+
+Path to getdents64:
+  JLI_Launch_cca0 - [DIRECT]-> JLI_WildcardExpandClasspath_11e00
+  JLI_WildcardExpandClasspath_11e00 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to writev:
+  JLI_Launch_cca0 - [DIRECT]-> __stack_chk_fail_145420
+  __stack_chk_fail_145420 - [DIRECT]-> __fortify_fail_144070
+  __fortify_fail_144070 - [DIRECT]-> fuzzyfunc-0x97df0_97df0
+  fuzzyfunc-0x97df0_97df0 - [syscall]-> writev
+
+Path to getcwd:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> GetApplicationHomeFromDll_fb80
+  GetApplicationHomeFromDll_fb80 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to faccessat2:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> GetApplicationHomeFromDll_fb80
+  GetApplicationHomeFromDll_fb80 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat2
+
+Path to faccessat:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> GetApplicationHomeFromDll_fb80
+  GetApplicationHomeFromDll_fb80 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat
+
+Path to socket:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x182000_182000
+  fuzzyfunc-0x182000_182000 - [DIRECT]-> rtime_17f640
+  rtime_17f640 - [DIRECT]-> socket_139630
+  socket_139630 - [syscall]-> socket
+
+Path to rt_sigaction:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x2a23b_2a23b
+  fuzzyfunc-0x2a23b_2a23b - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x2a23b_2a23b
+  fuzzyfunc-0x2a23b_2a23b - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> fuzzyfunc-0xa61b0_a61b0
+  fuzzyfunc-0xa61b0_a61b0 - [syscall]-> tgkill
+
+Path to newfstatat:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x2dd90_2dd90
+  fuzzyfunc-0x2dd90_2dd90 - [DIRECT]-> stat_128480
+  stat_128480 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to prctl:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [DIRECT]-> fuzzyfunc-0xa3cf0_a3cf0
+  fuzzyfunc-0xa3cf0_a3cf0 - [DIRECT]-> fuzzyfunc-0x138180_138180
+  fuzzyfunc-0x138180_138180 - [syscall]-> prctl
+
+Path to fcntl:
+  JLI_StringDup_10300 - [DIRECT]-> perror_28a8f
+  perror_28a8f - [DIRECT]-> fdopen_8c090
+  fdopen_8c090 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [DIRECT]-> fuzzyfunc-0x128f90_128f90
+  fuzzyfunc-0x128f90_128f90 - [syscall]-> fcntl
+
+Path to sched_getparam:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [syscall]-> sched_getscheduler
+
+Path to mprotect:
+  JLI_List_add_105f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> fuzzyfunc-0xb4480_b4480
+  fuzzyfunc-0xb4480_b4480 - [DIRECT]-> fuzzyfunc-0xb2700_b2700
+  fuzzyfunc-0xb2700_b2700 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to getpeername:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x17f8c0_17f8c0
+  fuzzyfunc-0x17f8c0_17f8c0 - [DIRECT]-> key_decryptsession_pk_1857c0
+  key_decryptsession_pk_1857c0 - [DIRECT]-> fuzzyfunc-0x184f70_184f70
+  fuzzyfunc-0x184f70_184f70 - [DIRECT]-> getpeername_139190
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to gettid:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x2a23b_2a23b
+  fuzzyfunc-0x2a23b_2a23b - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> raise_45b60
+  raise_45b60 - [DIRECT]-> pthread_kill_a6370
+  pthread_kill_a6370 - [syscall]-> gettid
+
+Path to sched_setaffinity:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [syscall]-> sched_setscheduler
+
+Path to prlimit64:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> getrlimit_12aac0
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to getgroups:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> GetApplicationHomeFromDll_fb80
+  GetApplicationHomeFromDll_fb80 - [DIRECT]-> realpath_194490
+  realpath_194490 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> group_member_103910
+  group_member_103910 - [DIRECT]-> getgroups_fe670
+  getgroups_fe670 - [syscall]-> getgroups
+
+Path to sched_getaffinity:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> fuzzyfunc-0xb4160_b4160
+  fuzzyfunc-0xb4160_b4160 - [DIRECT]-> fuzzyfunc-0xb16d0_b16d0
+  fuzzyfunc-0xb16d0_b16d0 - [DIRECT]-> get_nprocs_12d590
+  get_nprocs_12d590 - [DIRECT]-> fuzzyfunc-0x12d2f0_12d2f0
+  fuzzyfunc-0x12d2f0_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to bind:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x184080_184080
+  fuzzyfunc-0x184080_184080 - [DIRECT]-> getifaddrs_148b30
+  getifaddrs_148b30 - [DIRECT]-> fuzzyfunc-0x147810_147810
+  fuzzyfunc-0x147810_147810 - [DIRECT]-> fuzzyfunc-0x147750_147750
+  fuzzyfunc-0x147750_147750 - [DIRECT]-> bind_139130
+  bind_139130 - [syscall]-> bind
+
+Path to getsockname:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> fuzzyfunc-0x184080_184080
+  fuzzyfunc-0x184080_184080 - [DIRECT]-> getifaddrs_148b30
+  getifaddrs_148b30 - [DIRECT]-> fuzzyfunc-0x147810_147810
+  fuzzyfunc-0x147810_147810 - [DIRECT]-> fuzzyfunc-0x147750_147750
+  fuzzyfunc-0x147750_147750 - [DIRECT]-> getsockname_1391c0
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to sched_get_priority_max:
+  JLI_Launch_cca0 - [DIRECT]-> LoadJavaVM_f1e0
+  LoadJavaVM_f1e0 - [DIRECT]-> dlsym_a0290
+  dlsym_a0290 - [DIRECT]-> pthread_mutex_lock_a7980
+  pthread_mutex_lock_a7980 - [DIRECT]-> fuzzyfunc-0xa72d0_a72d0
+  fuzzyfunc-0xa72d0_a72d0 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  JLI_Launch_cca0 - [DIRECT]-> LoadJavaVM_f1e0
+  LoadJavaVM_f1e0 - [DIRECT]-> dlsym_a0290
+  dlsym_a0290 - [DIRECT]-> pthread_mutex_lock_a7980
+  pthread_mutex_lock_a7980 - [DIRECT]-> fuzzyfunc-0xa72d0_a72d0
+  fuzzyfunc-0xa72d0_a72d0 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to sysinfo:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_phys_pages_12d610
+  get_phys_pages_12d610 - [DIRECT]-> sysinfo_138a90
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to brk:
+  JLI_List_add_105f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> fuzzyfunc-0xb4480_b4480
+  fuzzyfunc-0xb4480_b4480 - [DIRECT]-> fuzzyfunc-0xb2700_b2700
+  fuzzyfunc-0xb2700_b2700 - [DIRECT]-> __default_morecore_b1eb0
+  __default_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk
+
+Path to uname:
+  JLI_ManifestIterate_11aa0 - [INDIRECT]-> _nss_dns_getcanonname_r_14d620
+  _nss_dns_getcanonname_r_14d620 - [DIRECT]-> __resolv_context_get_15de80
+  __resolv_context_get_15de80 - [DIRECT]-> fuzzyfunc-0x157510_157510
+  fuzzyfunc-0x157510_157510 - [DIRECT]-> fuzzyfunc-0x156500_156500
+  fuzzyfunc-0x156500_156500 - [DIRECT]-> gethostname_12cc40
+  gethostname_12cc40 - [DIRECT]-> uname_11cd00
+  uname_11cd00 - [syscall]-> uname
+
+Path to clone:
+  JLI_Launch_cca0 - [DIRECT]-> JVMInit_fa00
+  JVMInit_fa00 - [DIRECT]-> ContinueInNewThread_ca60
+  ContinueInNewThread_ca60 - [DIRECT]-> CallJavaMainInNewThread_f8f0
+  CallJavaMainInNewThread_f8f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [DIRECT]-> fuzzyfunc-0x137680_137680
+  fuzzyfunc-0x137680_137680 - [DIRECT]-> clone_137570
+  clone_137570 - [syscall]-> clone

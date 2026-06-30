@@ -1,0 +1,87 @@
+declared_library	symbol	reason	source_report
+kernel32	SetConsoleCtrlHandler	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	VirtualLock	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	CloseHandle	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	CreateJobObjectW	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	SetInformationJobObject	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	AssignProcessToJobObject	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	GetCurrentProcess	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	VirtualQueryEx	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	QueryInformationJobObject	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	GetShortPathNameW	library not found in Dataset/LIBS	jna_directmap_hits.txt
+kernel32	SetProcessWorkingSetSize	library not found in Dataset/LIBS	jna_directmap_hits.txt
+<?>	ffi_prep_closure	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setDouble	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getWideString	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getChar	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getDirectByteBuffer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	ffi_prep_cif	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	initIDs	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setDetachState	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getNativeVersion	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getDirectByteBuffer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	unregister	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getInt	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	registerMethod	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeInt	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeStructure	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setLong	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getStringBytes	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	freeNativeCallback	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	createNativeCallback	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getShort	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setPointer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokePointer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setWideString	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	free	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	ffi_call	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	open	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeVoid	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getByte	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getDouble	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setProtected	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeLong	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setMemory	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	sizeof	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	initialize_ffi_type	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	findSymbol	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	malloc	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeObject	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	indexOf	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getFloat	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setShort	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setByte	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	close	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setLastError	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setFloat	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getLastError	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getWindowHandle0	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getLong	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeFloat	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	isProtected	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	_getPointer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	getAPIChecksum	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setInt	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	write	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	_getDirectBufferPointer	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	ffi_free_closure	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	read	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	invokeDouble	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	setChar	dynamic or unknown binding	jna_directmap_hits.txt
+<?>	priv_set	dynamic or unknown binding	jna_iface_hits.txt
+<?>	sandbox_init	dynamic or unknown binding	jna_iface_hits.txt
+<?>	sandbox_free_error	dynamic or unknown binding	jna_iface_hits.txt
+<?>	syscall	dynamic or unknown binding	jna_iface_hits.txt
+<?>	prctl	dynamic or unknown binding	jna_iface_hits.txt

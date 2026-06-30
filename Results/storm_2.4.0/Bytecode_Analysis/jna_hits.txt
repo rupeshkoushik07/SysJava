@@ -1,0 +1,24 @@
+=== Combined Native Binding Hits ===
+Format: detector | payload
+
+ffi | <com.nimbusds.jose.crypto.HMAC: HMAC> | crypto | HMAC | downcallHandle | nimbus-jose-jwt-4.41.1.jar
+ffi | <clojure.core$printf: printf> | c-2.31 | printf | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$rand: rand> | c-2.31 | rand | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$read: read> | c-2.31 | read | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$remove: remove> | c-2.31 | remove | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$send: send> | c-2.31 | send | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$sync: sync> | c-2.31 | sync | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.core$time: time> | c-2.31 | time | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.edn$read: read> | c-2.31 | read | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.pprint$write: write> | c-2.31 | write | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.set$index: index> | c-2.31 | index | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.set$rename: rename> | c-2.31 | rename | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.set$select: select> | c-2.31 | select | downcallHandle | clojure-1.10.0.jar
+ffi | <clojure.spec.alpha$accept: accept> | c-2.31 | accept | downcallHandle | spec.alpha-0.2.176.jar
+ffi | <clojure.tools.logging$error: error> | c-2.31 | error | downcallHandle | storm-clojure-2.4.0.jar
+ffi | <clojure.tools.logging$log: log> | m-2.31 | log | downcallHandle | storm-clojure-2.4.0.jar
+ffi | <clojure.tools.logging$logf: logf> | m-2.31 | logf | downcallHandle | storm-clojure-2.4.0.jar
+ffi | <clojure.tools.logging$warn: warn> | c-2.31 | warn | downcallHandle | storm-clojure-2.4.0.jar
+ffi | <clojure.zip$remove: remove> | c-2.31 | remove | downcallHandle | clojure-1.10.0.jar
+ffi | <org.apache.http.impl.auth.NTLMEngineImpl$MD4: MD4> | crypto | MD4 | downcallHandle | httpclient-4.5.6.jar
+ffi | <org.eclipse.jetty.util.security.Credential$MD5: MD5> | crypto | MD5 | downcallHandle | jetty-util-9.4.14.v20181114.jar

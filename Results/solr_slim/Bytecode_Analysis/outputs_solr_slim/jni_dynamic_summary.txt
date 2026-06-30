@@ -1,0 +1,76 @@
+# lib | status | bindings | high_conf | sym_infer | unknown | note
+libawt.so|OK|0|0|0|0|
+libawt_headless.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libawt_xawt.so|OK|0|0|0|0|
+libdt_socket.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libextnet.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libfontmanager.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libfreetype.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libinstrument.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libj2gss.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libj2pcsc.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libj2pkcs11.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjaas.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjava.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjavajpeg.so|OK|0|0|0|0|
+libjawt.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjdwp.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjimage.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjli.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsig.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsound.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsvml.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+liblcms.so|OK|0|0|0|0|
+libmanagement.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_agent.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_ext.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmlib_image.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnet.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnio.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libprefs.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+librmi.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsctp.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libsimdsort.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsplashscreen.so|OK|0|0|0|0|
+libsyslookup.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libverify.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzip.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsig.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjvm.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+ld.so.cache|SKIPPED_NOT_ELF|0|0|0|0|not ELF: Magic number does not match
+libacl.so.1.1.2302|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libc.so.6|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libcap.so.2.66|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libcrypto.so.3|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libdl.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libextnet.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libgcrypt.so.20.4.3|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libgpg-error.so.0.34.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjava.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjimage.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjli.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjvm.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+liblz4.so.1.9.4|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+liblzma.so.5.4.5|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libm.so.6|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libmanagement.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_ext.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnet.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnetty_transport_native_epoll_x86_64.so|OK|160|160|0|0|
+libnio.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnss_compat.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_dns.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_files.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_hesiod.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libpcre2-8.so.0.11.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libproc2.so.0.0.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libpthread.so.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libresolv.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+librt.so.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libselinux.so.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsnappyjava_snappy-java-1.1.10.8.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsyslookup.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsystemd.so.0.38.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libtinfo.so.6.4|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzip.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzstd.so.1.5.5|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|

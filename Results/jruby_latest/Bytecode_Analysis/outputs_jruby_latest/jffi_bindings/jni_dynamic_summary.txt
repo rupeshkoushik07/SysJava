@@ -1,0 +1,17 @@
+# lib | status | bindings | high_conf | sym_infer | unknown | note
+ld.so.cache|SKIPPED_NOT_ELF|0|0|0|0|not ELF: Magic number does not match
+ld.so.conf|SKIPPED_NOT_ELF|0|0|0|0|not ELF: Magic number does not match
+libcrypt.so.1.1.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjffi-1.2.so|OK|0|0|0|0|
+libjimage.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnet.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnss_compat.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_compat.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_dns.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_files.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_hesiod.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_hesiod.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libresolv.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libresolv.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libverify.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzip.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|

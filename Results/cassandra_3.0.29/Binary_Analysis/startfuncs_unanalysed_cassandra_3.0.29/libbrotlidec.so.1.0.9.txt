@@ -1,0 +1,12 @@
+BrotliDecoderCreateInstance
+BrotliDecoderDecompress
+BrotliDecoderDecompressStream
+BrotliDecoderDestroyInstance
+BrotliDecoderErrorString
+BrotliDecoderGetErrorCode
+BrotliDecoderHasMoreOutput
+BrotliDecoderIsFinished
+BrotliDecoderIsUsed
+BrotliDecoderSetParameter
+BrotliDecoderTakeOutput
+BrotliDecoderVersion

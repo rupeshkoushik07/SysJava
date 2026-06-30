@@ -1,0 +1,12 @@
+/bin/bash
+/bin/bash
+/bin/chown
+/usr/bin/dirname
+/usr/sbin/gosu
+/bin/grep
+/usr/bin/id
+/usr/sbin/runc
+/bin/sed
+/bin/uname
+/usr/bin/env
+/usr/local/openjdk-8/bin/java

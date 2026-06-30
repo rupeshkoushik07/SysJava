@@ -1,0 +1,12 @@
+/usr/bin/bash
+/bin/bash
+/usr/bin/chown
+/usr/bin/dirname
+/usr/sbin/gosu
+/usr/bin/grep
+/usr/bin/id
+/usr/bin/ls
+/opt/java/openjdk/bin/java
+/usr/bin/sed
+/usr/bin/uname
+/usr/bin/env

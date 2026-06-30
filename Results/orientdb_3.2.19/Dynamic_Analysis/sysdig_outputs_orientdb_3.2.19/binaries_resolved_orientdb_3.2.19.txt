@@ -1,0 +1,5 @@
+/bin/sh
+/usr/bin/dirname
+/opt/java/openjdk/bin/java
+/usr/bin/rm
+/usr/bin/uname

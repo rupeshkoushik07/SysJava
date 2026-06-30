@@ -1,0 +1,5 @@
+=== Skipped Methods (VerifyError/Exceptions during body building) ===
+Format: methodSig | exceptionType | message
+
+<org.apache.jasper.servlet.JspCServletContext: java.net.URL getResource(java.lang.String)> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@4e7413df to <org.apache.jasper.servlet.JspCServletContext: java.net.URL getResource(java.lang.String)>
+<org.apache.jasper.servlet.JspCServletContext: java.net.URL getResource(java.lang.String)> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@4e7413df to <org.apache.jasper.servlet.JspCServletContext: java.net.URL getResource(java.lang.String)>

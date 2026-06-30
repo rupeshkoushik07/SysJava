@@ -1,0 +1,3 @@
+=== JNA Interface Mapping Hits ===
+Format: callerSig | lib | symbol | apiPattern | interface | calleeSig | callerJar | calleeJar
+

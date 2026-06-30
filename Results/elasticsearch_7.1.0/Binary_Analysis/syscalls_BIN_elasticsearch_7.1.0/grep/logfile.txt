@@ -1,0 +1,183 @@
+
+Path to openat:
+  openat_eee10 - [syscall]-> openat
+
+Path to fstatfs:
+  fstatfs_eeab0 - [syscall]-> fstatfs
+
+Path to newfstatat:
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to fcntl:
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to fchdir:
+  fchdir_ef7f0 - [syscall]-> fchdir
+
+Path to exit:
+  _exit_c51a0 - [syscall]-> exit
+
+Path to exit_group:
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to lseek:
+  lseek_fded0 - [syscall]-> lseek
+
+Path to open:
+  open_eed20 - [syscall]-> open
+
+Path to close:
+  close_ef610 - [syscall]-> close
+
+Path to read:
+  read_eef60 - [syscall]-> read
+
+Path to rt_sigreturn:
+  error_fbd00 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  error_fbd00 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to futex:
+  openat_eee10 - [DIRECT]-> __libc_disable_asynccancel_10bc30
+  __libc_disable_asynccancel_10bc30 - [syscall]-> futex
+
+Path to mremap:
+  realloc_85660 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to munmap:
+  realloc_85660 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to getdents:
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to mmap:
+  pcre_jit_stack_alloc_44aa0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to clock_getres:
+  pcre_jit_stack_alloc_44aa0 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to ioctl:
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to fstat:
+  fdopendir_c08e0 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to rt_sigprocmask:
+  abort_377b0 - [DIRECT]-> sigprocmask_364a0
+  sigprocmask_364a0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> tgkill
+
+Path to gettid:
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to sched_yield:
+  error_fbd00 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to write:
+  error_fbd00 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7a070
+  _IO_file_write@@GLIBC_2.2.5_7a070 - [DIRECT]-> write_eefc0
+  write_eefc0 - [syscall]-> write
+
+Path to writev:
+  error_fbd00 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to madvise:
+  error_fbd00 - [INDIRECT]-> fuzzyfunc-0x266a0_266a0
+  fuzzyfunc-0x266a0_266a0 - [DIRECT]-> posix_madvise_ee5d0
+  posix_madvise_ee5d0 - [syscall]-> madvise
+
+Path to kill:
+  openat_eee10 - [DIRECT]-> __libc_enable_asynccancel_10bbd0
+  __libc_enable_asynccancel_10bbd0 - [DIRECT]-> __pthread_unwind_13d930
+  __pthread_unwind_13d930 - [syscall]-> kill
+
+Path to getrlimit:
+  pcre_jit_stack_alloc_44aa0 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to getcwd:
+  dcgettext_2fa70 - [DIRECT]-> __dcigettext_30970
+  __dcigettext_30970 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to rt_sigaction:
+  abort_377b0 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to brk:
+  error_fbd00 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to mprotect:
+  calloc_85b80 - [DIRECT]-> _int_malloc_820e0
+  _int_malloc_820e0 - [DIRECT]-> sysmalloc_81900
+  sysmalloc_81900 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to stat:
+  pcre_jit_stack_alloc_44aa0 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> __sysconf_check_spec_c6af0
+  __sysconf_check_spec_c6af0 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to lstat:
+  dcgettext_2fa70 - [DIRECT]-> __dcigettext_30970
+  __dcigettext_30970 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to getpid:
+  error_fbd00 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to sendto:
+  error_fbd00 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to connect:
+  error_fbd00 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to socket:
+  error_fbd00 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket

@@ -1,0 +1,9 @@
+JIMAGE_Close
+JIMAGE_FindResource
+JIMAGE_GetResource
+JIMAGE_Open
+JIMAGE_PackageToModule
+JIMAGE_ResourceIterator
+Java_jdk_internal_jimage_NativeImageBuffer_getNativeMap
+_fini
+_init

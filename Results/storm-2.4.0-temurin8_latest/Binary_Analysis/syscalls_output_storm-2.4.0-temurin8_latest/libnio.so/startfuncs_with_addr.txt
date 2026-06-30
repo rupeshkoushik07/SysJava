@@ -1,0 +1,4 @@
+Java_java_nio_MappedByteBuffer_force0_9680
+Java_java_nio_MappedByteBuffer_load0_9630
+Java_sun_nio_ch_IOUtil_fdVal_8280
+Java_sun_nio_ch_IOUtil_setfdVal_82a0

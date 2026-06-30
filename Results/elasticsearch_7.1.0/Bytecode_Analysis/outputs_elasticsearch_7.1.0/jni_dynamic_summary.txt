@@ -1,0 +1,87 @@
+# lib | status | bindings | high_conf | sym_infer | unknown | note
+libattach.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libawt.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libawt_headless.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libawt_xawt.so|OK|0|0|0|0|
+libdt_socket.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libextnet.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libfontmanager.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libinstrument.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libj2gss.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libj2pcsc.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libj2pkcs11.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjaas.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjava.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjavajpeg.so|OK|0|0|0|0|
+libjawt.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjdwp.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjimage.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjli.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsig.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsound.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+liblcms.so|OK|0|0|0|0|
+libmanagement.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_agent.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_ext.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmlib_image.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnet.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnio.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libprefs.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+librmi.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsaproc.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsctp.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libsplashscreen.so|OK|0|0|0|0|
+libsunec.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libunpack.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libverify.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzip.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjsig.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjvm.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+ld.so.cache|SKIPPED_NOT_ELF|0|0|0|0|not ELF: Magic number does not match
+libMlCore.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libapr-1.so.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libaprutil-1.so.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libboost_filesystem-gcc73-mt-1_65_1.so.1.65.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libboost_iostreams-gcc73-mt-1_65_1.so.1.65.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libboost_program_options-gcc73-mt-1_65_1.so.1.65.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libboost_regex-gcc73-mt-1_65_1.so.1.65.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libboost_system-gcc73-mt-1_65_1.so.1.65.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libc-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libcrypt-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libdl-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libexpat.so.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libextnet.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libfreebl3.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libgcc_s.so.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjava.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libjimage.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjli.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjnidispatch.so|OK|0|0|0|0|
+libjvm.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+liblog4cxx.so.10|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libm-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libmanagement.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libmanagement_ext.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnet.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnio.so|OK|0|0|0|0|no .data.rel.ro* (non-PIC or unusual layout)
+libnss_compat-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_db-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_dns-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_files-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_hesiod-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_myhostname.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_mymachines.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_nis-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnss_nisplus-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libpcre.so.1.2.0|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libpthread-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libresolv-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+librt-2.17.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libselinux.so.1|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libstdc++.so.6|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libsunec.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libtinfo.so.5.9|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libverify.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libxml2.so.2|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libz.so.1.2.7|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libzip.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|

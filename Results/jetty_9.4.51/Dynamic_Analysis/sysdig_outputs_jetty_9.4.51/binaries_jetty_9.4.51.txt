@@ -1,0 +1,1 @@
+20:23:47.759887082 execve java /opt/java/openjdk/bin/java

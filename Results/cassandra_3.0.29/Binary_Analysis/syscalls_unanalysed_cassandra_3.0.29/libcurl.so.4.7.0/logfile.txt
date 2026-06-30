@@ -1,0 +1,268 @@
+
+Path to access:
+  curl_mime_filedata_3fa40 - [DIRECT]-> access_114940
+  access_114940 - [syscall]-> access
+
+Path to exit:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to accept:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> accept_127410
+  accept_127410 - [syscall]-> accept
+
+Path to bind:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> bind_1274b0
+  bind_1274b0 - [syscall]-> bind
+
+Path to chmod:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> chmod_114250
+  chmod_114250 - [syscall]-> chmod
+
+Path to clock_gettime:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> clock_gettime_e5650
+  clock_gettime_e5650 - [syscall]-> clock_gettime
+
+Path to close:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> close_114f50
+  close_114f50 - [syscall]-> close
+
+Path to connect:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> connect_1274e0
+  connect_1274e0 - [syscall]-> connect
+
+Path to dup2:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> dup2_115010
+  dup2_115010 - [syscall]-> dup2
+
+Path to fchmod:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fchmod_114280
+  fchmod_114280 - [syscall]-> fchmod
+
+Path to fcntl:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fcntl_114cf0
+  fcntl_114cf0 - [syscall]-> fcntl
+
+Path to utimensat:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x119270_119270
+  fuzzyfunc-0x119270_119270 - [syscall]-> utimensat
+
+Path to writev:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x893e0_893e0
+  fuzzyfunc-0x893e0_893e0 - [syscall]-> writev
+
+Path to futex:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x91870_91870
+  fuzzyfunc-0x91870_91870 - [syscall]-> futex
+
+Path to sched_setaffinity:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x945e0_945e0
+  fuzzyfunc-0x945e0_945e0 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x945e0_945e0
+  fuzzyfunc-0x945e0_945e0 - [syscall]-> sched_setscheduler
+
+Path to set_robust_list:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> rt_sigprocmask
+
+Path to rseq:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> fuzzyfunc-0x947d0_947d0
+  fuzzyfunc-0x947d0_947d0 - [syscall]-> rseq
+
+Path to arch_prctl:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getcontext_538d0
+  getcontext_538d0 - [syscall]-> arch_prctl
+
+Path to getegid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getegid_ec090
+  getegid_ec090 - [syscall]-> getegid
+
+Path to getrandom:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getentropy_46d10
+  getentropy_46d10 - [syscall]-> getrandom
+
+Path to geteuid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> geteuid_ec070
+  geteuid_ec070 - [syscall]-> geteuid
+
+Path to getgid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getgid_ec080
+  getgid_ec080 - [syscall]-> getgid
+
+Path to getpeername:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getpeername_127580
+  getpeername_127580 - [syscall]-> getpeername
+
+Path to getpid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to prlimit64:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getrlimit_11a2d0
+  getrlimit_11a2d0 - [syscall]-> prlimit64
+
+Path to getsockname:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getsockname_1275b0
+  getsockname_1275b0 - [syscall]-> getsockname
+
+Path to getsockopt:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getsockopt_1275e0
+  getsockopt_1275e0 - [syscall]-> getsockopt
+
+Path to getuid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> getuid_ec060
+  getuid_ec060 - [syscall]-> getuid
+
+Path to ioctl:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> ioctl_11a910
+  ioctl_11a910 - [syscall]-> ioctl
+
+Path to kill:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> kill_42750
+  kill_42750 - [syscall]-> kill
+
+Path to listen:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> listen_127620
+  listen_127620 - [syscall]-> listen
+
+Path to lseek:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> lseek_114910
+  lseek_114910 - [syscall]-> lseek
+
+Path to madvise:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> madvise_11eb70
+  madvise_11eb70 - [syscall]-> madvise
+
+Path to mkdir:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> mkdir_114450
+  mkdir_114450 - [syscall]-> mkdir
+
+Path to mlock:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> mlock_11ec00
+  mlock_11ec00 - [syscall]-> mlock
+
+Path to mmap:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> mmap_11ea10
+  mmap_11ea10 - [syscall]-> mmap
+
+Path to mprotect:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> mprotect_11eaa0
+  mprotect_11eaa0 - [syscall]-> mprotect
+
+Path to munmap:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> munmap_11ea70
+  munmap_11ea70 - [syscall]-> munmap
+
+Path to openat:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> open_1144e0
+  open_1144e0 - [syscall]-> openat
+
+Path to poll:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> poll_118b80
+  poll_118b80 - [syscall]-> poll
+
+Path to prctl:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> prctl_126330
+  prctl_126330 - [syscall]-> prctl
+
+Path to sched_getscheduler:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> pthread_create_94c40
+  pthread_create_94c40 - [syscall]-> sched_getparam
+
+Path to tgkill:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> pthread_kill_175da0
+  pthread_kill_175da0 - [syscall]-> tgkill
+
+Path to gettid:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> pthread_kill_175da0
+  pthread_kill_175da0 - [syscall]-> gettid
+
+Path to read:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> read_1147d0
+  read_1147d0 - [syscall]-> read
+
+Path to recvfrom:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> recv_127650
+  recv_127650 - [syscall]-> recvfrom
+
+Path to recvmsg:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> recvmsg_1277e0
+  recvmsg_1277e0 - [syscall]-> recvmsg
+
+Path to rename:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> rename_61ea0
+  rename_61ea0 - [syscall]-> rename
+
+Path to sched_yield:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> sched_yield_108c90
+  sched_yield_108c90 - [syscall]-> sched_yield
+
+Path to pselect6:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> select_11b4e0
+  select_11b4e0 - [syscall]-> pselect6
+
+Path to sendto:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> send_127890
+  send_127890 - [syscall]-> sendto
+
+Path to sendfile:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> sendfile_119170
+  sendfile_119170 - [syscall]-> sendfile
+
+Path to sendmsg:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> sendmsg_127950
+  sendmsg_127950 - [syscall]-> sendmsg
+
+Path to setsockopt:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> setsockopt_127ac0
+  setsockopt_127ac0 - [syscall]-> setsockopt
+
+Path to shmat:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> shmat_1283e0
+  shmat_1283e0 - [syscall]-> shmat
+
+Path to shmdt:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> shmdt_128410
+  shmdt_128410 - [syscall]-> shmdt
+
+Path to shmget:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> shmget_128440
+  shmget_128440 - [syscall]-> shmget
+
+Path to shutdown:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> shutdown_127b00
+  shutdown_127b00 - [syscall]-> shutdown
+
+Path to socket:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> socket_127b30
+  socket_127b30 - [syscall]-> socket
+
+Path to socketpair:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> socketpair_127b60
+  socketpair_127b60 - [syscall]-> socketpair
+
+Path to uname:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> uname_ea300
+  uname_ea300 - [syscall]-> uname
+
+Path to unlink:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> unlink_1160a0
+  unlink_1160a0 - [syscall]-> unlink
+
+Path to write:
+  curl_mime_filedata_3fa40 - [INDIRECT]-> write_114870
+  write_114870 - [syscall]-> write

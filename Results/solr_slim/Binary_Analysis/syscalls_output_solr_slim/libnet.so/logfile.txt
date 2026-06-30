@@ -1,0 +1,633 @@
+
+Path to gettid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to close_range:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [syscall]-> rt_sigprocmask
+
+Path to setresuid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [syscall]-> setresgid
+
+Path to futex:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x99530_99530
+  fuzzyfunc-0x99530_99530 - [syscall]-> futex
+
+Path to set_robust_list:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> set_robust_list
+
+Path to rseq:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> rseq
+
+Path to exit:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> exit
+
+Path to socket:
+  Java_java_net_NetworkInterface_getAll_8100 - [DIRECT]-> enumInterfaces_7720
+  enumInterfaces_7720 - [DIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to close:
+  Java_java_net_NetworkInterface_getAll_8100 - [DIRECT]-> enumInterfaces_7720
+  enumInterfaces_7720 - [DIRECT]-> close_116710
+  close_116710 - [syscall]-> close
+
+Path to read:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _IO_file_read_938b0
+  _IO_file_read_938b0 - [DIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to lseek:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _IO_file_seek_938d0
+  _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to fstat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _IO_file_stat_938e0
+  _IO_file_stat_938e0 - [DIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to write:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _IO_file_write_93940
+  _IO_file_write_93940 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to unlink:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10CompileLogD0Ev_747ce0
+  _ZN10CompileLogD0Ev_747ce0 - [DIRECT]-> unlink_11c430
+  unlink_11c430 - [syscall]-> unlink
+
+Path to mprotect:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to membarrier:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
+  _ZN22VM_HandshakeAllThreads4doitEv_9b9000 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780
+  _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780 - [syscall]-> membarrier
+
+Path to clock_gettime:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_e818d0
+  _ZN2os13javaTimeNanosEv_e818d0 - [DIRECT]-> clock_gettime_ec950
+  clock_gettime_ec950 - [syscall]-> clock_gettime
+
+Path to mmap:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to munmap:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to madvise:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to openat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_e766f0
+  _ZN2os8dll_loadEPKcPci_e766f0 - [DIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to access:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> access_116650
+  access_116650 - [syscall]-> access
+
+Path to writev:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> __libc_fatal_90a40
+  __libc_fatal_90a40 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [syscall]-> writev
+
+Path to getrandom:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> fuzzyfunc-0xa9d70_a9d70
+  fuzzyfunc-0xa9d70_a9d70 - [syscall]-> getrandom
+
+Path to rt_sigaction:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to fchdir:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> fchdir_116d90
+  fchdir_116d90 - [syscall]-> fchdir
+
+Path to exit_group:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to chdir:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> chdir_116680
+  chdir_116680 - [syscall]-> chdir
+
+Path to dup2:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> dup2_116990
+  dup2_116990 - [syscall]-> dup2
+
+Path to getpgid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> getpgid_f5a50
+  getpgid_f5a50 - [syscall]-> getpgid
+
+Path to getuid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> getuid_f5b40
+  getuid_f5b40 - [syscall]-> getuid
+
+Path to fcntl:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to setsid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> setsid_10ea90
+  setsid_10ea90 - [syscall]-> setsid
+
+Path to setpgid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> setpgid_10e930
+  setpgid_10e930 - [syscall]-> setpgid
+
+Path to sched_setscheduler:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to sched_setparam:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> sched_setparam_10e7a0
+  sched_setparam_10e7a0 - [syscall]-> sched_setparam
+
+Path to getgid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> getgid_f4760
+  getgid_f4760 - [syscall]-> getgid
+
+Path to prlimit64:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to poll:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to setsockopt:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to recvmsg:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to getpid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to geteuid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to getegid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to sendmsg:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to accept:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1729b0_1729b0
+  fuzzyfunc-0x1729b0_1729b0 - [DIRECT]-> accept_12b820
+  accept_12b820 - [syscall]-> accept
+
+Path to sendto:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to recvfrom:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> recvfrom_12bca0
+  recvfrom_12bca0 - [syscall]-> recvfrom
+
+Path to mkdir:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x66710_66710
+  fuzzyfunc-0x66710_66710 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to mremap:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x92990_92990
+  fuzzyfunc-0x92990_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to sched_getscheduler:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa8d50_a8d50
+  fuzzyfunc-0xa8d50_a8d50 - [DIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa8d50_a8d50
+  fuzzyfunc-0xa8d50_a8d50 - [DIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [syscall]-> sched_getparam
+
+Path to ioctl:
+  Java_java_net_NetworkInterface_isUp0_8280 - [DIRECT]-> getFlags0_68b0
+  getFlags0_68b0 - [DIRECT]-> ioctl_124de0
+  ioctl_124de0 - [syscall]-> ioctl
+
+Path to lstat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> Perf_Attach_eba180
+  Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
+  _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> __lxstat_12a260
+  __lxstat_12a260 - [syscall]-> lstat
+
+Path to sysinfo:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
+  WB_HostPhysicalSwap_12baca0 - [DIRECT]-> _ZN2os5Linux9host_swapEv_e70ed0
+  _ZN2os5Linux9host_swapEv_e70ed0 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to wait4:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _IO_proc_close_87950
+  _IO_proc_close_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to stat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80
+  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80 - [DIRECT]-> _ZN2os4statEPKcP4stat_e80ee0
+  _ZN2os4statEPKcP4stat_e80ee0 - [DIRECT]-> __xstat_12ab60
+  __xstat_12ab60 - [syscall]-> stat
+
+Path to times:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
+  _ZN17ShenandoahMmuTask4taskEv_1094c70 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__e819b0
+  _ZN2os12getTimesSecsEPdS0_S0__e819b0 - [DIRECT]-> times_1106b0
+  times_1106b0 - [syscall]-> times
+
+Path to getrusage:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
+  _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420 - [DIRECT]-> _ZN2os12elapsedVTimeEv_e71230
+  _ZN2os12elapsedVTimeEv_e71230 - [DIRECT]-> getrusage_11d260
+  getrusage_11d260 - [syscall]-> getrusage
+
+Path to prctl:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> __assert_fail_3b4d0
+  __assert_fail_3b4d0 - [DIRECT]-> fuzzyfunc-0x3b350_3b350
+  fuzzyfunc-0x3b350_3b350 - [DIRECT]-> fuzzyfunc-0x12a770_12a770
+  fuzzyfunc-0x12a770_12a770 - [syscall]-> prctl
+
+Path to getdents64:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x10f8d0_10f8d0
+  fuzzyfunc-0x10f8d0_10f8d0 - [DIRECT]-> fuzzyfunc-0x129c90_129c90
+  fuzzyfunc-0x129c90_129c90 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to connect:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x173320_173320
+  fuzzyfunc-0x173320_173320 - [DIRECT]-> rtime_170a10
+  rtime_170a10 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to newfstatat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x66690_66690
+  fuzzyfunc-0x66690_66690 - [DIRECT]-> lstat_11b030
+  lstat_11b030 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to rt_sigtimedwait:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa8d50_a8d50
+  fuzzyfunc-0xa8d50_a8d50 - [DIRECT]-> sigwaitinfo_46020
+  sigwaitinfo_46020 - [DIRECT]-> sigtimedwait_45f50
+  sigtimedwait_45f50 - [syscall]-> rt_sigtimedwait
+
+Path to sched_setaffinity:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa8d50_a8d50
+  fuzzyfunc-0xa8d50_a8d50 - [DIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> fuzzyfunc-0x9c450_9c450
+  fuzzyfunc-0x9c450_9c450 - [syscall]-> sched_setaffinity
+
+Path to pread64:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa9210_a9210
+  fuzzyfunc-0xa9210_a9210 - [DIRECT]-> fuzzyfunc-0x12b580_12b580
+  fuzzyfunc-0x12b580_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to sched_yield:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80
+  _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80 - [DIRECT]-> _ZN2os11naked_yieldEv_e80c90
+  _ZN2os11naked_yieldEv_e80c90 - [DIRECT]-> sched_yield_10e800
+  sched_yield_10e800 - [syscall]-> sched_yield
+
+Path to kill:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> Perf_Attach_eba180
+  Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
+  _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> _ZL18get_user_name_slowiiP10JavaThread_ebd8a0
+  _ZL18get_user_name_slowiiP10JavaThread_ebd8a0 - [DIRECT]-> kill_45530
+  kill_45530 - [syscall]-> kill
+
+Path to clock_nanosleep:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_12c39c0
+  WB_CheckThreadObjOfTerminatingThread_12c39c0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_e80cf0
+  _ZN2os17naked_short_sleepEl_e80cf0 - [DIRECT]-> nanosleep_f9a10
+  nanosleep_f9a10 - [DIRECT]-> clock_nanosleep_eca20
+  clock_nanosleep_eca20 - [syscall]-> clock_nanosleep
+
+Path to sched_getaffinity:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_HostCPUs_12badb0
+  WB_HostCPUs_12badb0 - [DIRECT]-> _ZN2os5Linux22active_processor_countEv_e75480
+  _ZN2os5Linux22active_processor_countEv_e75480 - [DIRECT]-> _ZL26get_active_processor_countv_e75250
+  _ZL26get_active_processor_countv_e75250 - [DIRECT]-> sched_getaffinity_187a70
+  sched_getaffinity_187a70 - [syscall]-> sched_getaffinity
+
+Path to uname:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_PrintOsInfo_12baec0
+  WB_PrintOsInfo_12baec0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_e747e0
+  _ZN2os13print_os_infoEP12outputStream_e747e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0
+  _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to setpriority:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
+  _ZN12WorkerThread3runEv_12cb260 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0
+  _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_e73650
+  _ZN2os19set_native_priorityEP6Threadi_e73650 - [DIRECT]-> setpriority_11d650
+  setpriority_11d650 - [syscall]-> setpriority
+
+Path to tgkill:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
+  _ZN22VM_HandshakeAllThreads4doitEv_9b9000 - [DIRECT]-> _ZL14handle_timeoutP18HandshakeOperationP10JavaThread_9b74c0
+  _ZL14handle_timeoutP18HandshakeOperationP10JavaThread_9b74c0 - [DIRECT]-> _ZN2os13signal_threadEP6ThreadiPKc_10da7a0
+  _ZN2os13signal_threadEP6ThreadiPKc_10da7a0 - [DIRECT]-> pthread_kill_185760
+  pthread_kill_185760 - [syscall]-> tgkill
+
+Path to getcwd:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
+  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to readlink:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
+  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> readlink_11bb20
+  readlink_11bb20 - [syscall]-> readlink
+
+Path to faccessat:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
+  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat
+
+Path to faccessat2:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
+  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat2
+
+Path to getpriority:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_e3a900
+  _ZNK11NamedThread8print_onEP12outputStream_e3a900 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_11f7fb0
+  _ZNK6Thread8print_onEP12outputStreamb_11f7fb0 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_e73690
+  _ZN2os19get_native_priorityEPK6ThreadPi_e73690 - [DIRECT]-> getpriority_11d610
+  getpriority_11d610 - [syscall]-> getpriority
+
+Path to sendmmsg:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to dup:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x173880_173880
+  fuzzyfunc-0x173880_173880 - [DIRECT]-> fuzzyfunc-0x1737c0_1737c0
+  fuzzyfunc-0x1737c0_1737c0 - [DIRECT]-> perror_28a93
+  perror_28a93 - [DIRECT]-> dup_116960
+  dup_116960 - [syscall]-> dup
+
+Path to sched_get_priority_max:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
+  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock_a0ef0
+  pthread_mutex_trylock_a0ef0 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
+  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock_a0ef0
+  pthread_mutex_trylock_a0ef0 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to fallocate:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
+  _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
+  _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
+  _ZN2os18map_memory_to_fileEPcmi_e82950 - [DIRECT]-> posix_fallocate64_11b950
+  posix_fallocate64_11b950 - [syscall]-> fallocate
+
+Path to mincore:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10JavaThread3runEv_a42ce0
+  _ZN10JavaThread3runEv_a42ce0 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780
+  _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_e6a730
+  _ZN2os24create_stack_guard_pagesEPcm_e6a730 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_e731e0
+  _ZN2os27pd_create_stack_guard_pagesEPcm_e731e0 - [DIRECT]-> mincore_1251a0
+  mincore_1251a0 - [syscall]-> mincore
+
+Path to shutdown:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10SerialHeap10initializeEv_f48bd0
+  _ZN10SerialHeap10initializeEv_f48bd0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__a21340
+  _Z33vm_shutdown_during_initializationPKcS0__a21340 - [DIRECT]-> _ZN2os8shutdownEv_e82670
+  _ZN2os8shutdownEv_e82670 - [DIRECT]-> _ZN14AttachListener5abortEv_553860
+  _ZN14AttachListener5abortEv_553860 - [DIRECT]-> shutdown_12c1c0
+  shutdown_12c1c0 - [syscall]-> shutdown
+
+Path to rmdir:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780
+  _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0
+  _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0 - [DIRECT]-> _ZN11FileMapInfo14open_as_outputEv_884030
+  _ZN11FileMapInfo14open_as_outputEv_884030 - [DIRECT]-> remove_66180
+  remove_66180 - [DIRECT]-> rmdir_11bb80
+  rmdir_11bb80 - [syscall]-> rmdir
+
+Path to brk:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> fuzzyfunc-0xab570_ab570
+  fuzzyfunc-0xab570_ab570 - [DIRECT]-> __default_morecore_aaa10
+  __default_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to bind:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> getifaddrs_13b590
+  getifaddrs_13b590 - [DIRECT]-> fuzzyfunc-0x13a2b0_13a2b0
+  fuzzyfunc-0x13a2b0_13a2b0 - [DIRECT]-> fuzzyfunc-0x13a1f0_13a1f0
+  fuzzyfunc-0x13a1f0_13a1f0 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to getsockname:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> getifaddrs_13b590
+  getifaddrs_13b590 - [DIRECT]-> fuzzyfunc-0x13a2b0_13a2b0
+  fuzzyfunc-0x13a2b0_13a2b0 - [DIRECT]-> fuzzyfunc-0x13a1f0_13a1f0
+  fuzzyfunc-0x13a1f0_13a1f0 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to clone:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0xa8d50_a8d50
+  fuzzyfunc-0xa8d50_a8d50 - [DIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> fuzzyfunc-0x9c450_9c450
+  fuzzyfunc-0x9c450_9c450 - [DIRECT]-> fuzzyfunc-0x129b30_129b30
+  fuzzyfunc-0x129b30_129b30 - [DIRECT]-> clone_129a20
+  clone_129a20 - [syscall]-> clone
+
+Path to umask:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0
+  JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_78ec40
+  _Z15report_vm_errorPKciS0_S0_z_78ec40 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_128af30
+  _ZN7VMError6reportEP12outputStreamb_128af30 - [DIRECT]-> _ZN2os15print_user_infoEP12outputStream_e807a0
+  _ZN2os15print_user_infoEP12outputStream_e807a0 - [DIRECT]-> umask_11c420
+  umask_11c420 - [syscall]-> umask
+
+Path to waitid:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_e82400
+  _ZN2os13fork_and_execEPKc_e82400 - [DIRECT]-> posix_spawn_187b10
+  posix_spawn_187b10 - [DIRECT]-> fuzzyfunc-0x10fec0_10fec0
+  fuzzyfunc-0x10fec0_10fec0 - [DIRECT]-> fuzzyfunc-0x10f420_10f420
+  fuzzyfunc-0x10f420_10f420 - [DIRECT]-> fuzzyfunc-0x129bf0_129bf0
+  fuzzyfunc-0x129bf0_129bf0 - [syscall]-> waitid
+
+Path to getgroups:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
+  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> group_member_f9930
+  group_member_f9930 - [DIRECT]-> getgroups_f4770
+  getgroups_f4770 - [syscall]-> getgroups
+
+Path to ftruncate:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
+  _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
+  _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
+  _ZN2os18map_memory_to_fileEPcmi_e82950 - [DIRECT]-> posix_fallocate64_11b950
+  posix_fallocate64_11b950 - [DIRECT]-> fuzzyfunc-0x11b780_11b780
+  fuzzyfunc-0x11b780_11b780 - [DIRECT]-> ftruncate_11ee90
+  ftruncate_11ee90 - [syscall]-> ftruncate
+
+Path to fstatfs:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
+  _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
+  _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
+  _ZN2os18map_memory_to_fileEPcmi_e82950 - [DIRECT]-> posix_fallocate64_11b950
+  posix_fallocate64_11b950 - [DIRECT]-> fuzzyfunc-0x11b780_11b780
+  fuzzyfunc-0x11b780_11b780 - [DIRECT]-> fstatfs_117420
+  fstatfs_117420 - [syscall]-> fstatfs
+
+Path to pwrite64:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
+  _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
+  _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
+  _ZN2os18map_memory_to_fileEPcmi_e82950 - [DIRECT]-> posix_fallocate64_11b950
+  posix_fallocate64_11b950 - [DIRECT]-> fuzzyfunc-0x11b780_11b780
+  fuzzyfunc-0x11b780_11b780 - [DIRECT]-> pwrite_fa500
+  pwrite_fa500 - [syscall]-> pwrite64
+
+Path to get_mempolicy:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC1Ev_12e2d30
+  _ZN14ZCollectedHeapC1Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC1Ev_12ed500
+  _ZN5ZHeapC1Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310
+  _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310 - [DIRECT]-> _ZN10ZPartition5primeEP8ZWorkersm.part.0_1316040
+  _ZN10ZPartition5primeEP8ZWorkersm.part.0_1316040 - [DIRECT]-> _ZN5ZNUMA9memory_idEm_130cf70
+  _ZN5ZNUMA9memory_idEm_130cf70 - [DIRECT]-> _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0
+  _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0 - [syscall]-> get_mempolicy
+
+Path to memfd_create:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC1Ev_12e2d30
+  _ZN14ZCollectedHeapC1Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC1Ev_12ed500
+  _ZN5ZHeapC1Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocatorC2Emmmm_13100b0
+  _ZN14ZPageAllocatorC2Emmmm_13100b0 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC2Em_131e670
+  _ZN22ZPhysicalMemoryManagerC2Em_131e670 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC1Em_131c290
+  _ZN22ZPhysicalMemoryBackingC1Em_131c290 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_131bda0
+  _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_131bda0 - [DIRECT]-> _ZN8ZSyscall12memfd_createEPKcj_133f2b0
+  _ZN8ZSyscall12memfd_createEPKcj_133f2b0 - [syscall]-> memfd_create
+
+Path to sendfile:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> _ZN10SerialHeap18do_full_collectionEb_f4aae0
+  _ZN10SerialHeap18do_full_collectionEb_f4aae0 - [DIRECT]-> _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370
+  _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370 - [DIRECT]-> _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50
+  _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50 - [DIRECT]-> _ZN10HeapDumper9dump_heapEv_9c43b0
+  _ZN10HeapDumper9dump_heapEv_9c43b0 - [DIRECT]-> _ZN10HeapDumper9dump_heapEb_9c40f0
+  _ZN10HeapDumper9dump_heapEb_9c40f0 - [DIRECT]-> _ZN10HeapDumper4dumpEPKcP12outputStreamibj_9c37b0
+  _ZN10HeapDumper4dumpEPKcP12outputStreamibj_9c37b0 - [DIRECT]-> _ZN10DumpMerger8do_mergeEv_9bee60
+  _ZN10DumpMerger8do_mergeEv_9bee60 - [DIRECT]-> _ZN10DumpMerger10merge_fileEPKc_9bec80
+  _ZN10DumpMerger10merge_fileEPKc_9bec80 - [DIRECT]-> _ZN2os5Linux8sendfileEiiPll_e73730
+  _ZN2os5Linux8sendfileEiiPll_e73730 - [DIRECT]-> sendfile_11bbb0
+  sendfile_11bbb0 - [syscall]-> sendfile
+
+Path to readv:
+  Java_java_net_NetworkInterface_getAll_8100 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> clnt_create_173e60
+  clnt_create_173e60 - [DIRECT]-> fuzzyfunc-0x17c7c0_17c7c0
+  fuzzyfunc-0x17c7c0_17c7c0 - [DIRECT]-> gethostbyname2_r_15d6f0
+  gethostbyname2_r_15d6f0 - [DIRECT]-> fuzzyfunc-0x17e1b0_17e1b0
+  fuzzyfunc-0x17e1b0_17e1b0 - [DIRECT]-> fuzzyfunc-0x17d700_17d700
+  fuzzyfunc-0x17d700_17d700 - [DIRECT]-> fuzzyfunc-0x180450_180450
+  fuzzyfunc-0x180450_180450 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv

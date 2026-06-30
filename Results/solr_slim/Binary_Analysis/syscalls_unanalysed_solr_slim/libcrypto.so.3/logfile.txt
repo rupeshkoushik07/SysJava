@@ -1,0 +1,340 @@
+
+Path to mlock2:
+  CRYPTO_secure_malloc_init_224290 - [syscall]-> mlock2
+
+Path to rt_sigprocmask:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> abort_28820
+  abort_28820 - [syscall]-> rt_sigprocmask
+
+Path to accept:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> accept_12b820
+  accept_12b820 - [syscall]-> accept
+
+Path to bind:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to chmod:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> chmod_1166b0
+  chmod_1166b0 - [syscall]-> chmod
+
+Path to clock_gettime:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> clock_gettime_ec950
+  clock_gettime_ec950 - [syscall]-> clock_gettime
+
+Path to close:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> close_116710
+  close_116710 - [syscall]-> close
+
+Path to connect:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to fstat:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to futex:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0xa1f70_a1f70
+  fuzzyfunc-0xa1f70_a1f70 - [syscall]-> futex
+
+Path to getrandom:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> getentropy_48710
+  getentropy_48710 - [syscall]-> getrandom
+
+Path to getpid:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to getsockname:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to getsockopt:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to ioctl:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> ioctl_124de0
+  ioctl_124de0 - [syscall]-> ioctl
+
+Path to listen:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> listen_12bb50
+  listen_12bb50 - [syscall]-> listen
+
+Path to lseek:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to madvise:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to mlock:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> mlock_1252c0
+  mlock_1252c0 - [syscall]-> mlock
+
+Path to mmap:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to mprotect:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to munmap:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to openat:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to read:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to recvfrom:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> recvfrom_12bca0
+  recvfrom_12bca0 - [syscall]-> recvfrom
+
+Path to recvmsg:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to pselect6:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> select_126bc0
+  select_126bc0 - [syscall]-> pselect6
+
+Path to sendmsg:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to sendto:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to setsockopt:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to shmat:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> shmat_12c740
+  shmat_12c740 - [syscall]-> shmat
+
+Path to shmdt:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> shmdt_12c770
+  shmdt_12c770 - [syscall]-> shmdt
+
+Path to shmget:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> shmget_12c7a0
+  shmget_12c7a0 - [syscall]-> shmget
+
+Path to shutdown:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> shutdown_12c1c0
+  shutdown_12c1c0 - [syscall]-> shutdown
+
+Path to socket:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to uname:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to write:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to exit_group:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to fcntl:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fdopen_854f0
+  fdopen_854f0 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to poll:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to geteuid:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to getegid:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to mkdir:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x66710_66710
+  fuzzyfunc-0x66710_66710 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to mremap:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x92990_92990
+  fuzzyfunc-0x92990_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to dup:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> perror_28a93
+  perror_28a93 - [DIRECT]-> dup_116960
+  dup_116960 - [syscall]-> dup
+
+Path to getdents64:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> readdir_ed970
+  readdir_ed970 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sigaction_452e0
+  sigaction_452e0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to newfstatat:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> stat_11bbf0
+  stat_11bbf0 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to prlimit64:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to writev:
+  EVP_PKEY_CTX_set_dsa_paramgen_md_props_1e5460 - [DIRECT]-> __stack_chk_fail_137ec0
+  __stack_chk_fail_137ec0 - [DIRECT]-> __fortify_fail_136c30
+  __fortify_fail_136c30 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [syscall]-> writev
+
+Path to wait4:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> _IO_proc_close_87950
+  _IO_proc_close_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to tgkill:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill_9ea10
+  pthread_kill_9ea10 - [syscall]-> tgkill
+
+Path to gettid:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill_9ea10
+  pthread_kill_9ea10 - [syscall]-> gettid
+
+Path to pread64:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0xa9210_a9210
+  fuzzyfunc-0xa9210_a9210 - [DIRECT]-> fuzzyfunc-0x12b580_12b580
+  fuzzyfunc-0x12b580_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to sysinfo:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_avphys_pages_11fe70
+  get_avphys_pages_11fe70 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to sched_getaffinity:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
+  get_nprocs_conf_11fda0 - [DIRECT]-> fuzzyfunc-0x11fab0_11fab0
+  fuzzyfunc-0x11fab0_11fab0 - [syscall]-> sched_getaffinity
+
+Path to clock_nanosleep:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> usleep_129710
+  usleep_129710 - [DIRECT]-> nanosleep_f9a10
+  nanosleep_f9a10 - [DIRECT]-> clock_nanosleep_eca20
+  clock_nanosleep_eca20 - [syscall]-> clock_nanosleep
+
+Path to prctl:
+  EVP_PKEY_CTX_set_dsa_paramgen_md_props_1e5460 - [DIRECT]-> __stack_chk_fail_137ec0
+  __stack_chk_fail_137ec0 - [DIRECT]-> __fortify_fail_136c30
+  __fortify_fail_136c30 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [DIRECT]-> fuzzyfunc-0x12a770_12a770
+  fuzzyfunc-0x12a770_12a770 - [syscall]-> prctl
+
+Path to sendmmsg:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to getcwd:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlerror_979c0
+  dlerror_979c0 - [DIRECT]-> dcgettext_3bf80
+  dcgettext_3bf80 - [DIRECT]-> fuzzyfunc-0x3ce60_3ce60
+  fuzzyfunc-0x3ce60_3ce60 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to getpeername:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to brk:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> fuzzyfunc-0xab570_ab570
+  fuzzyfunc-0xab570_ab570 - [DIRECT]-> __default_morecore_aaa10
+  __default_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to sched_getparam:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa5490_a5490
+  fuzzyfunc-0xa5490_a5490 - [DIRECT]-> sched_getparam_10e680
+  sched_getparam_10e680 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa5490_a5490
+  fuzzyfunc-0xa5490_a5490 - [DIRECT]-> sched_getscheduler_10e6b0
+  sched_getscheduler_10e6b0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> dlsym_982c0
+  dlsym_982c0 - [DIRECT]-> pthread_mutex_lock_9fff0
+  pthread_mutex_lock_9fff0 - [DIRECT]-> fuzzyfunc-0x9f910_9f910
+  fuzzyfunc-0x9f910_9f910 - [DIRECT]-> fuzzyfunc-0xa50b0_a50b0
+  fuzzyfunc-0xa50b0_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to readv:
+  EVP_MAC_gettable_ctx_params_207f00 - [INDIRECT]-> getaddrinfo_15a720
+  getaddrinfo_15a720 - [DIRECT]-> getservbyname_r_163eb0
+  getservbyname_r_163eb0 - [DIRECT]-> fuzzyfunc-0x17f720_17f720
+  fuzzyfunc-0x17f720_17f720 - [DIRECT]-> fuzzyfunc-0x17ecc0_17ecc0
+  fuzzyfunc-0x17ecc0_17ecc0 - [DIRECT]-> fuzzyfunc-0x180450_180450
+  fuzzyfunc-0x180450_180450 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv

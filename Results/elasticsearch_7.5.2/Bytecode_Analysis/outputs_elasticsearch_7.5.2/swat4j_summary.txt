@@ -1,0 +1,11 @@
+SUMMARY: elasticsearch_7.5.2
+========================================
+Total native methods:  233
+----------------------------------------
+MAPPED:                160  (68.7%)
+  Java_XXX             125
+  JVM_XXX              35
+
+UNMAPPED:              73  (31.3%)
+  Intrinsic            1
+  Truly unmapped       72

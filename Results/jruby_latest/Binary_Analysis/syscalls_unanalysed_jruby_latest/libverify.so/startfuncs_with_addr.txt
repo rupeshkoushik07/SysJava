@@ -1,0 +1,3 @@
+VerifyClassForMajorVersion_73f0
+_fini_a6cc
+_init_3f08

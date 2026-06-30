@@ -1,0 +1,12 @@
+SUMMARY: cassandra_3.0.29
+========================================
+Total native methods:  686
+----------------------------------------
+MAPPED:                464  (67.6%)
+  Java_XXX             320
+  NETTY_HEURISTIC      107
+  JVM_XXX              37
+
+UNMAPPED:              222  (32.4%)
+  Intrinsic            57
+  Truly unmapped       165

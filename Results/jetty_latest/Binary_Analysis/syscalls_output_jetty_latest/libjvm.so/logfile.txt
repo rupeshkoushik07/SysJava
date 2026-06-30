@@ -1,0 +1,62 @@
+
+Path to gettid:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to close_range:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> rt_sigprocmask
+
+Path to setresuid:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresgid
+
+Path to futex:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to exit:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to mprotect:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to mmap:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to munmap:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to madvise:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to clock_gettime:
+  Unsafe_GetInt_1234070 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
+  _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420 - [DIRECT]-> _ZN2os15elapsed_counterEv_e81960
+  _ZN2os15elapsed_counterEv_e81960 - [DIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime

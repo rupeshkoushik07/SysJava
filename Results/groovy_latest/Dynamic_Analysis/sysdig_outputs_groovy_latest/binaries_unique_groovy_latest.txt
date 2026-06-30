@@ -1,0 +1,7 @@
+bash
+id
+runc
+sh
+sleep
+/usr/bin/env
+/usr/bin/locale-check

@@ -1,0 +1,411 @@
+
+Path to gettid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to rt_sigprocmask:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to clock_gettime:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to flock:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> flock_123b40
+  flock_123b40 - [syscall]-> flock
+
+Path to fstat:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to newfstatat:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to fstatfs:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstatfs_123be0
+  fstatfs_123be0 - [syscall]-> fstatfs
+
+Path to ftruncate:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> ftruncate_12c6b0
+  ftruncate_12c6b0 - [syscall]-> ftruncate
+
+Path to close_range:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> close_range
+
+Path to setresuid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresgid
+
+Path to futex:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to exit:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to getpeername:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpeername_139190
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to getpgid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpgid_ff9c0
+  getpgid_ff9c0 - [syscall]-> getpgid
+
+Path to getpid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to getppid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getppid_ffa10
+  getppid_ffa10 - [syscall]-> getppid
+
+Path to getpriority:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpriority_12aec0
+  getpriority_12aec0 - [syscall]-> getpriority
+
+Path to getrusage:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getrusage_12ab40
+  getrusage_12ab40 - [syscall]-> getrusage
+
+Path to getsid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsid_ffa80
+  getsid_ffa80 - [syscall]-> getsid
+
+Path to getsockname:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsockname_1391c0
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to getsockopt:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsockopt_1391f0
+  getsockopt_1391f0 - [syscall]-> getsockopt
+
+Path to ioctl:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> ioctl_132c80
+  ioctl_132c80 - [syscall]-> ioctl
+
+Path to kill:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> kill_45eb0
+  kill_45eb0 - [syscall]-> kill
+
+Path to lseek:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to mmap:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to munmap:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to rt_sigpending:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> sigpending_45ee0
+  sigpending_45ee0 - [syscall]-> rt_sigpending
+
+Path to statfs:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> statfs_1284a0
+  statfs_1284a0 - [syscall]-> statfs
+
+Path to umask:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> umask_128cf0
+  umask_128cf0 - [syscall]-> umask
+
+Path to unlink:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> unlink_128d00
+  unlink_128d00 - [syscall]-> unlink
+
+Path to close:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _IO_file_close_9b3a0
+  _IO_file_close_9b3a0 - [DIRECT]-> __close_nocancel_128e70
+  __close_nocancel_128e70 - [syscall]-> close
+
+Path to read:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _IO_file_read_9b320
+  _IO_file_read_9b320 - [DIRECT]-> __read_nocancel_129240
+  __read_nocancel_129240 - [syscall]-> read
+
+Path to write:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _IO_file_write_9b3b0
+  _IO_file_write_9b3b0 - [DIRECT]-> __write_nocancel_1292a0
+  __write_nocancel_1292a0 - [syscall]-> write
+
+Path to geteuid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69cf0
+  _XimLocalOpenIM_69cf0 - [DIRECT]-> geteuid_fe650
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to getegid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69cf0
+  _XimLocalOpenIM_69cf0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
+Path to getuid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69cf0
+  _XimLocalOpenIM_69cf0 - [DIRECT]-> getuid_ffab0
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to getgid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69cf0
+  _XimLocalOpenIM_69cf0 - [DIRECT]-> getgid_fe660
+  getgid_fe660 - [syscall]-> getgid
+
+Path to writev:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __assert_fail_3bec0
+  __assert_fail_3bec0 - [DIRECT]-> fuzzyfunc-0x97df0_97df0
+  fuzzyfunc-0x97df0_97df0 - [syscall]-> writev
+
+Path to rt_sigaction:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> fuzzyfunc-0xa61b0_a61b0
+  fuzzyfunc-0xa61b0_a61b0 - [syscall]-> tgkill
+
+Path to exit_group:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to fchdir:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> fchdir_123560
+  fchdir_123560 - [syscall]-> fchdir
+
+Path to chdir:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> chdir_122f10
+  chdir_122f10 - [syscall]-> chdir
+
+Path to openat:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> __open64_nocancel_1290a0
+  __open64_nocancel_1290a0 - [syscall]-> openat
+
+Path to dup2:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> dup2_1230e0
+  dup2_1230e0 - [syscall]-> dup2
+
+Path to setsid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> setsid_11afd0
+  setsid_11afd0 - [syscall]-> setsid
+
+Path to setpgid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> setpgid_11ae50
+  setpgid_11ae50 - [syscall]-> setpgid
+
+Path to sched_setscheduler:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_setparam:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> sched_setparam_11acc0
+  sched_setparam_11acc0 - [syscall]-> sched_setparam
+
+Path to prlimit64:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> getrlimit_12aac0
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to setsockopt:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x180d30_180d30
+  fuzzyfunc-0x180d30_180d30 - [DIRECT]-> setsockopt_1394a0
+  setsockopt_1394a0 - [syscall]-> setsockopt
+
+Path to shutdown:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
+  fuzzyfunc-0x4b330_4b330 - [DIRECT]-> shutdown_1394e0
+  shutdown_1394e0 - [syscall]-> shutdown
+
+Path to mkdir:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x6ad80_6ad80
+  fuzzyfunc-0x6ad80_6ad80 - [DIRECT]-> mkdir_127ad0
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to mremap:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x9a2b0_9a2b0
+  fuzzyfunc-0x9a2b0_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to madvise:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to sched_getparam:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xb07f0_b07f0
+  fuzzyfunc-0xb07f0_b07f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xb07f0_b07f0
+  fuzzyfunc-0xb07f0_b07f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [syscall]-> sched_getscheduler
+
+Path to getdents64:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to access:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimCheckIfLocalProcessing_67fe0
+  _XimCheckIfLocalProcessing_67fe0 - [DIRECT]-> _XlcFileName_4f350
+  _XlcFileName_4f350 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
+Path to prctl:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __assert_fail_3bec0
+  __assert_fail_3bec0 - [DIRECT]-> fuzzyfunc-0x97df0_97df0
+  fuzzyfunc-0x97df0_97df0 - [DIRECT]-> fuzzyfunc-0x138180_138180
+  fuzzyfunc-0x138180_138180 - [syscall]-> prctl
+
+Path to fcntl:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [DIRECT]-> fuzzyfunc-0x128f90_128f90
+  fuzzyfunc-0x128f90_128f90 - [syscall]-> fcntl
+
+Path to socket:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x1685c0_1685c0
+  fuzzyfunc-0x1685c0_1685c0 - [DIRECT]-> fuzzyfunc-0x14cdd0_14cdd0
+  fuzzyfunc-0x14cdd0_14cdd0 - [DIRECT]-> socket_139630
+  socket_139630 - [syscall]-> socket
+
+Path to bind:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x1685c0_1685c0
+  fuzzyfunc-0x1685c0_1685c0 - [DIRECT]-> fuzzyfunc-0x14cdd0_14cdd0
+  fuzzyfunc-0x14cdd0_14cdd0 - [DIRECT]-> bind_139130
+  bind_139130 - [syscall]-> bind
+
+Path to getcwd:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x2dd90_2dd90
+  fuzzyfunc-0x2dd90_2dd90 - [DIRECT]-> fuzzyfunc-0x2cf80_2cf80
+  fuzzyfunc-0x2cf80_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to uname:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> _XimXTransGetHostname_4cc60
+  _XimXTransGetHostname_4cc60 - [DIRECT]-> uname_11cd00
+  uname_11cd00 - [syscall]-> uname
+
+Path to sched_setaffinity:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xb07f0_b07f0
+  fuzzyfunc-0xb07f0_b07f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [syscall]-> sched_setaffinity
+
+Path to mprotect:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xb07f0_b07f0
+  fuzzyfunc-0xb07f0_b07f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_nprocs_conf_12d5d0
+  get_nprocs_conf_12d5d0 - [DIRECT]-> fuzzyfunc-0x12d2f0_12d2f0
+  fuzzyfunc-0x12d2f0_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_phys_pages_12d610
+  get_phys_pages_12d610 - [DIRECT]-> sysinfo_138a90
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to getresuid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimCheckIfLocalProcessing_67fe0
+  _XimCheckIfLocalProcessing_67fe0 - [DIRECT]-> _XlcFileName_4f350
+  _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
+  xlocaledir_4f210 - [DIRECT]-> getresuid_ffa50
+  getresuid_ffa50 - [syscall]-> getresuid
+
+Path to getresgid:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimCheckIfLocalProcessing_67fe0
+  _XimCheckIfLocalProcessing_67fe0 - [DIRECT]-> _XlcFileName_4f350
+  _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
+  xlocaledir_4f210 - [DIRECT]-> getresgid_ffa20
+  getresgid_ffa20 - [syscall]-> getresgid
+
+Path to dup:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x182590_182590
+  fuzzyfunc-0x182590_182590 - [DIRECT]-> fuzzyfunc-0x1824d0_1824d0
+  fuzzyfunc-0x1824d0_1824d0 - [DIRECT]-> perror_28a8f
+  perror_28a8f - [DIRECT]-> dup_1230b0
+  dup_1230b0 - [syscall]-> dup
+
+Path to shmdt:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x50bd0_50bd0
+  fuzzyfunc-0x50bd0_50bd0 - [DIRECT]-> XFreeFont_23190
+  XFreeFont_23190 - [DIRECT]-> _XF86BigfontFreeFontMetrics_23150
+  _XF86BigfontFreeFontMetrics_23150 - [DIRECT]-> shmdt_139990
+  shmdt_139990 - [syscall]-> shmdt
+
+Path to shmat:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x51140_51140
+  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
+  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
+  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmat_139960
+  shmat_139960 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x51140_51140
+  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
+  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
+  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmctl_139a00
+  shmctl_139a00 - [syscall]-> shmctl
+
+Path to sched_get_priority_max:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pthread_mutex_lock_a7980
+  pthread_mutex_lock_a7980 - [DIRECT]-> fuzzyfunc-0xa72d0_a72d0
+  fuzzyfunc-0xa72d0_a72d0 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pthread_mutex_lock_a7980
+  pthread_mutex_lock_a7980 - [DIRECT]-> fuzzyfunc-0xa72d0_a72d0
+  fuzzyfunc-0xa72d0_a72d0 - [DIRECT]-> fuzzyfunc-0xacb30_acb30
+  fuzzyfunc-0xacb30_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to clone:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0xb07f0_b07f0
+  fuzzyfunc-0xb07f0_b07f0 - [DIRECT]-> pthread_create_a4330
+  pthread_create_a4330 - [DIRECT]-> fuzzyfunc-0xa3ae0_a3ae0
+  fuzzyfunc-0xa3ae0_a3ae0 - [DIRECT]-> fuzzyfunc-0x137680_137680
+  fuzzyfunc-0x137680_137680 - [DIRECT]-> clone_137570
+  clone_137570 - [syscall]-> clone
+
+Path to brk:
+  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> fuzzyfunc-0xb4160_b4160
+  fuzzyfunc-0xb4160_b4160 - [DIRECT]-> fuzzyfunc-0xb2700_b2700
+  fuzzyfunc-0xb2700_b2700 - [DIRECT]-> __default_morecore_b1eb0
+  __default_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

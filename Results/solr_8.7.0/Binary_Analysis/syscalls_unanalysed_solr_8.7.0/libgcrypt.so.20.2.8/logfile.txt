@@ -1,0 +1,386 @@
+
+Path to fstat:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> __fxstat_126550
+  __fxstat_126550 - [syscall]-> fstat
+
+Path to gettimeofday:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> __gettimeofday_syscall_d9a80
+  __gettimeofday_syscall_d9a80 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> __restore_rt_42520
+  __restore_rt_42520 - [syscall]-> rt_sigreturn
+
+Path to access:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> access_1149c0
+  access_1149c0 - [syscall]-> access
+
+Path to chdir:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> chdir_1151f0
+  chdir_1151f0 - [syscall]-> chdir
+
+Path to futex:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> clear_once_control_99f40
+  clear_once_control_99f40 - [syscall]-> futex
+
+Path to close:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> close_114fd0
+  close_114fd0 - [syscall]-> close
+
+Path to connect:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> connect_127560
+  connect_127560 - [syscall]-> connect
+
+Path to dup:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> dup_115060
+  dup_115060 - [syscall]-> dup
+
+Path to fcntl:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> fcntl_114d70
+  fcntl_114d70 - [syscall]-> fcntl
+
+Path to ftruncate:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> ftruncate_11d030
+  ftruncate_11d030 - [syscall]-> ftruncate
+
+Path to getrandom:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> fuzzyfunc-0xcf2a0_cf2a0
+  fuzzyfunc-0xcf2a0_cf2a0 - [syscall]-> getrandom
+
+Path to getcwd:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getcwd_115250
+  getcwd_115250 - [syscall]-> getcwd
+
+Path to geteuid:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> geteuid_ec070
+  geteuid_ec070 - [syscall]-> geteuid
+
+Path to getpid:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getpid_ec040
+  getpid_ec040 - [syscall]-> getpid
+
+Path to getrusage:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getrusage_11a3d0
+  getrusage_11a3d0 - [syscall]-> getrusage
+
+Path to getuid:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getuid_ec060
+  getuid_ec060 - [syscall]-> getuid
+
+Path to lseek:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> lseek_114990
+  lseek_114990 - [syscall]-> lseek
+
+Path to mkdir:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> mkdir_1144d0
+  mkdir_1144d0 - [syscall]-> mkdir
+
+Path to mlock:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> mlock_11ec80
+  mlock_11ec80 - [syscall]-> mlock
+
+Path to mmap:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> mmap_11ea90
+  mmap_11ea90 - [syscall]-> mmap
+
+Path to munmap:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> munmap_11eaf0
+  munmap_11eaf0 - [syscall]-> munmap
+
+Path to openat:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> open_114560
+  open_114560 - [syscall]-> openat
+
+Path to poll:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> poll_118c00
+  poll_118c00 - [syscall]-> poll
+
+Path to read:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> read_114850
+  read_114850 - [syscall]-> read
+
+Path to sched_yield:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> sched_yield_108d00
+  sched_yield_108d00 - [syscall]-> sched_yield
+
+Path to pselect6:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> select_11b560
+  select_11b560 - [syscall]-> pselect6
+
+Path to setuid:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> setuid_ec0d0
+  setuid_ec0d0 - [syscall]-> setuid
+
+Path to socket:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> socket_127bb0
+  socket_127bb0 - [syscall]-> socket
+
+Path to time:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> time_syscall_d9970
+  time_syscall_d9970 - [syscall]-> time
+
+Path to write:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> write_1148f0
+  write_1148f0 - [syscall]-> write
+
+Path to mremap:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _IO_file_underflow_mmap_8bb50
+  _IO_file_underflow_mmap_8bb50 - [DIRECT]-> mremap_1269c0
+  mremap_1269c0 - [syscall]-> mremap
+
+Path to exit:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit
+
+Path to exit_group:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> _exit_eac00
+  _exit_eac00 - [syscall]-> exit_group
+
+Path to clock_gettime:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> clock_d8df0
+  clock_d8df0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_e5650
+  clock_gettime@@GLIBC_2.17_e5650 - [syscall]-> clock_gettime
+
+Path to newfstatat:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getcwd_115250
+  getcwd_115250 - [DIRECT]-> fstatat_113db0
+  fstatat_113db0 - [syscall]-> newfstatat
+
+Path to ioctl:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> isatty_115fb0
+  isatty_115fb0 - [DIRECT]-> tcgetattr_119fa0
+  tcgetattr_119fa0 - [syscall]-> ioctl
+
+Path to madvise:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> realloc_a5740
+  realloc_a5740 - [DIRECT]-> madvise_11ebf0
+  madvise_11ebf0 - [syscall]-> madvise
+
+Path to tgkill:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> setuid_ec0d0
+  setuid_ec0d0 - [DIRECT]-> __nptl_setxid_919b0
+  __nptl_setxid_919b0 - [syscall]-> tgkill
+
+Path to prlimit64:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> getrlimit_11a350
+  getrlimit_11a350 - [syscall]-> prlimit64
+
+Path to unlink:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> tmpfile@@GLIBC_2.2.5_61090
+  tmpfile@@GLIBC_2.2.5_61090 - [DIRECT]-> unlink_116120
+  unlink_116120 - [syscall]-> unlink
+
+Path to writev:
+  gcry_log_debug_e440 - [DIRECT]-> __stack_chk_fail_1365d0
+  __stack_chk_fail_1365d0 - [DIRECT]-> __fortify_fail_1365f0
+  __fortify_fail_1365f0 - [DIRECT]-> __libc_message_893e0
+  __libc_message_893e0 - [syscall]-> writev
+
+Path to sendto:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> __syslog_chk_11e550
+  __syslog_chk_11e550 - [DIRECT]-> __vsyslog_internal_11de90
+  __vsyslog_internal_11de90 - [DIRECT]-> send_127910
+  send_127910 - [syscall]-> sendto
+
+Path to getdents64:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> getdents64_e6630
+  getdents64_e6630 - [syscall]-> getdents64
+
+Path to pread64:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _dl_tunable_set_hugetlb_a1000
+  _dl_tunable_set_hugetlb_a1000 - [DIRECT]-> __malloc_hugepage_config_127220
+  __malloc_hugepage_config_127220 - [DIRECT]-> __pread64_nocancel_119bd0
+  __pread64_nocancel_119bd0 - [syscall]-> pread64
+
+Path to rt_sigprocmask:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> sigprocmask_42710
+  sigprocmask_42710 - [DIRECT]-> pthread_sigmask@@GLIBC_2.32_9bbd0
+  pthread_sigmask@@GLIBC_2.32_9bbd0 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> raise_42460
+  raise_42460 - [DIRECT]-> pthread_kill@@GLIBC_2.34_968d0
+  pthread_kill@@GLIBC_2.34_968d0 - [syscall]-> gettid
+
+Path to rt_sigaction:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> abort_28720
+  abort_28720 - [DIRECT]-> sigaction_424d0
+  sigaction_424d0 - [DIRECT]-> __libc_sigaction_42530
+  __libc_sigaction_42530 - [syscall]-> rt_sigaction
+
+Path to sched_get_priority_max:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_975c0
+  pthread_mutex_init@@GLIBC_2.2.5_975c0 - [DIRECT]-> __init_sched_fifo_prio_9cd40
+  __init_sched_fifo_prio_9cd40 - [DIRECT]-> sched_get_priority_max_108d30
+  sched_get_priority_max_108d30 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_975c0
+  pthread_mutex_init@@GLIBC_2.2.5_975c0 - [DIRECT]-> __init_sched_fifo_prio_9cd40
+  __init_sched_fifo_prio_9cd40 - [DIRECT]-> sched_get_priority_min_108d60
+  sched_get_priority_min_108d60 - [syscall]-> sched_get_priority_min
+
+Path to sched_setscheduler:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_setscheduler_108ca0
+  sched_setscheduler_108ca0 - [syscall]-> sched_setscheduler
+
+Path to sched_getparam:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_getparam_108c70
+  sched_getparam_108c70 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_98e50
+  pthread_mutex_trylock@@GLIBC_2.34_98e50 - [DIRECT]-> __pthread_tpp_change_priority_9cd70
+  __pthread_tpp_change_priority_9cd70 - [DIRECT]-> sched_getscheduler_108cd0
+  sched_getscheduler_108cd0 - [syscall]-> sched_getscheduler
+
+Path to sched_getaffinity:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_nprocs_conf_121b70
+  get_nprocs_conf_121b70 - [DIRECT]-> __get_nprocs_sched_1218c0
+  __get_nprocs_sched_1218c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> sysconf_ed280
+  sysconf_ed280 - [DIRECT]-> get_phys_pages_121c70
+  get_phys_pages_121c70 - [DIRECT]-> sysinfo_126e60
+  sysinfo_126e60 - [syscall]-> sysinfo
+
+Path to recvfrom:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> recvfrom_127790
+  recvfrom_127790 - [syscall]-> recvfrom
+
+Path to sendmmsg:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> sendmmsg_127ec0
+  sendmmsg_127ec0 - [syscall]-> sendmmsg
+
+Path to mprotect:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> _int_malloc_a39b0
+  _int_malloc_a39b0 - [DIRECT]-> sysmalloc_a30d0
+  sysmalloc_a30d0 - [DIRECT]-> mprotect_11eb20
+  mprotect_11eb20 - [syscall]-> mprotect
+
+Path to getpeername:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> send_vc_14e6a0
+  send_vc_14e6a0 - [DIRECT]-> getpeername_127600
+  getpeername_127600 - [syscall]-> getpeername
+
+Path to uname:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __resolv_context_get_151800
+  __resolv_context_get_151800 - [DIRECT]-> __res_vinit_14c3e0
+  __res_vinit_14c3e0 - [DIRECT]-> __resolv_conf_load_14b450
+  __resolv_conf_load_14b450 - [DIRECT]-> gethostname_11b2d0
+  gethostname_11b2d0 - [DIRECT]-> uname_ea300
+  uname_ea300 - [syscall]-> uname
+
+Path to setsockopt:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> _nss_dns_getcanonname_r_144730
+  _nss_dns_getcanonname_r_144730 - [DIRECT]-> __res_context_query_14d070
+  __res_context_query_14d070 - [DIRECT]-> __res_context_send_14eda0
+  __res_context_send_14eda0 - [DIRECT]-> reopen_14e480
+  reopen_14e480 - [DIRECT]-> __res_enable_icmp_14a440
+  __res_enable_icmp_14a440 - [DIRECT]-> setsockopt_127b40
+  setsockopt_127b40 - [syscall]-> setsockopt
+
+Path to brk:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> calloc_a6520
+  calloc_a6520 - [DIRECT]-> _int_malloc_a39b0
+  _int_malloc_a39b0 - [DIRECT]-> sysmalloc_a30d0
+  sysmalloc_a30d0 - [DIRECT]-> __glibc_morecore_a25b0
+  __glibc_morecore_a25b0 - [DIRECT]-> sbrk_11a8e0
+  sbrk_11a8e0 - [DIRECT]-> brk_11a8a0
+  brk_11a8a0 - [syscall]-> brk
+
+Path to recvmsg:
+  gcry_mac_get_algo_keylen_d6a0 - [DIRECT]-> fuzzyfunc-0x26710_26710
+  fuzzyfunc-0x26710_26710 - [INDIRECT]-> getpwnam_e93f0
+  getpwnam_e93f0 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_e9910
+  getpwnam_r@@GLIBC_2.2.5_e9910 - [DIRECT]-> __nscd_getpwnam_r_16de30
+  __nscd_getpwnam_r_16de30 - [DIRECT]-> nscd_getpw_r_16da10
+  nscd_getpw_r_16da10 - [DIRECT]-> __nscd_get_map_ref_171720
+  __nscd_get_map_ref_171720 - [DIRECT]-> __nscd_get_mapping_1712c0
+  __nscd_get_mapping_1712c0 - [DIRECT]-> recvmsg_127860
+  recvmsg_127860 - [syscall]-> recvmsg

@@ -1,0 +1,4 @@
+misc_conv@@LIBPAM_MISC_1.0
+pam_misc_drop_env@@LIBPAM_MISC_1.0
+pam_misc_paste_env@@LIBPAM_MISC_1.0
+pam_misc_setenv@@LIBPAM_MISC_1.0

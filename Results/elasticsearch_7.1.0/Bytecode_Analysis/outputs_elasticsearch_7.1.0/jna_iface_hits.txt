@@ -1,0 +1,5 @@
+=== JNA Interface Mapping Hits ===
+Format: callerSig | lib | symbol | apiPattern | interface | calleeSig | callerJar | calleeJar
+
+<org.elasticsearch.bootstrap.SystemCallFilter: long linux_syscall(long,java.lang.Object[])> | libc.so.6 | syscall | Native.loadLibrary(String,Class) | org.elasticsearch.bootstrap.SystemCallFilter$LinuxLibrary | <org.elasticsearch.bootstrap.SystemCallFilter$LinuxLibrary: com.sun.jna.NativeLong syscall(com.sun.jna.NativeLong,java.lang.Object[])> | elasticsearch-7.1.0.jar | elasticsearch-7.1.0.jar
+<org.elasticsearch.bootstrap.SystemCallFilter: int linux_prctl(int,long,long,long,long)> | libc.so.6 | prctl | Native.loadLibrary(String,Class) | org.elasticsearch.bootstrap.SystemCallFilter$LinuxLibrary | <org.elasticsearch.bootstrap.SystemCallFilter$LinuxLibrary: int prctl(int,com.sun.jna.NativeLong,com.sun.jna.NativeLong,com.sun.jna.NativeLong,com.sun.jna.NativeLong)> | elasticsearch-7.1.0.jar | elasticsearch-7.1.0.jar

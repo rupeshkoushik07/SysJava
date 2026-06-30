@@ -1,0 +1,4 @@
+22:06:54.841369803 execve python python
+22:06:54.842145268 execve java /usr/local/openjdk-11/bin/java
+22:06:57.547828887 execve python python
+22:06:57.549356031 execve java /usr/local/openjdk-11/bin/java

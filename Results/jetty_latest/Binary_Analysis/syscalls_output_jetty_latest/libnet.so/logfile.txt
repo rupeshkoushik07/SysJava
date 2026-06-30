@@ -1,0 +1,92 @@
+
+Path to gettid:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to close_range:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> rt_sigprocmask
+
+Path to setresuid:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0x11beb0_11beb0
+  fuzzyfunc-0x11beb0_11beb0 - [syscall]-> setresgid
+
+Path to futex:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0xa12c0_a12c0
+  fuzzyfunc-0xa12c0_a12c0 - [syscall]-> futex
+
+Path to set_robust_list:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> set_robust_list
+
+Path to exit:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> exit
+
+Path to rseq:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> fuzzyfunc-0xa3de0_a3de0
+  fuzzyfunc-0xa3de0_a3de0 - [syscall]-> rseq
+
+Path to socket:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [DIRECT]-> enumInterfaces_7720
+  enumInterfaces_7720 - [DIRECT]-> socket_139630
+  socket_139630 - [syscall]-> socket
+
+Path to unlink:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN10CompileLogD0Ev_747ce0
+  _ZN10CompileLogD0Ev_747ce0 - [DIRECT]-> unlink_128d00
+  unlink_128d00 - [syscall]-> unlink
+
+Path to mprotect:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to mmap:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to munmap:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to madvise:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to ioctl:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [DIRECT]-> enumInterfaces_7720
+  enumInterfaces_7720 - [DIRECT]-> enumIPv4Interfaces.constprop.0_7470
+  enumIPv4Interfaces.constprop.0_7470 - [DIRECT]-> ioctl_132c80
+  ioctl_132c80 - [syscall]-> ioctl
+
+Path to membarrier:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> WB_HandshakeWalkStack_12ba4c0
+  WB_HandshakeWalkStack_12ba4c0 - [DIRECT]-> _ZN9Handshake7executeEP16HandshakeClosureP17ThreadsListHandleP10JavaThread_9b7ea0
+  _ZN9Handshake7executeEP16HandshakeClosureP17ThreadsListHandleP10JavaThread_9b7ea0 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780
+  _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780 - [syscall]-> membarrier
+
+Path to clock_gettime:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
+  _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420 - [DIRECT]-> _ZN2os15elapsed_counterEv_e81960
+  _ZN2os15elapsed_counterEv_e81960 - [DIRECT]-> clock_gettime_f5cf0
+  clock_gettime_f5cf0 - [syscall]-> clock_gettime
+
+Path to sched_getaffinity:
+  Java_java_net_NetworkInterface_getByName0_7b80 - [INDIRECT]-> WB_HandshakeWalkStack_12ba4c0
+  WB_HandshakeWalkStack_12ba4c0 - [DIRECT]-> _ZN9Handshake7executeEP16HandshakeClosureP17ThreadsListHandleP10JavaThread_9b7ea0
+  _ZN9Handshake7executeEP16HandshakeClosureP17ThreadsListHandleP10JavaThread_9b7ea0 - [DIRECT]-> _ZN2os22active_processor_countEv_e75490
+  _ZN2os22active_processor_countEv_e75490 - [DIRECT]-> _ZL26get_active_processor_countv_e75250
+  _ZL26get_active_processor_countv_e75250 - [DIRECT]-> sched_getaffinity_196a60
+  sched_getaffinity_196a60 - [syscall]-> sched_getaffinity

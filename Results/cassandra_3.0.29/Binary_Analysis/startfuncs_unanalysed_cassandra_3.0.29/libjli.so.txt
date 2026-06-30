@@ -1,0 +1,9 @@
+JLI_GetStdArgc
+JLI_GetStdArgs
+JLI_Launch
+JLI_ManifestIterate
+JLI_ReportErrorMessage
+JLI_ReportErrorMessageSys
+JLI_ReportExceptionDescription
+JLI_ReportMessage
+JLI_SetTraceLauncher

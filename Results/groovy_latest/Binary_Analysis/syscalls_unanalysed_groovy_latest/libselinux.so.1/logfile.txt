@@ -1,0 +1,412 @@
+
+Path to openat:
+  security_get_initial_context_raw_bb90 - [DIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to close:
+  security_get_initial_context_raw_bb90 - [DIRECT]-> close_116710
+  close_116710 - [syscall]-> close
+
+Path to sched_yield:
+  selinux_status_updated_1e3d0 - [DIRECT]-> sched_yield_10e800
+  sched_yield_10e800 - [syscall]-> sched_yield
+
+Path to write:
+  security_check_context_raw_9b30 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to access:
+  selinux_trans_to_raw_context_18ec0 - [DIRECT]-> access_116650
+  access_116650 - [syscall]-> access
+
+Path to bind:
+  avc_audit_ec60 - [INDIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to connect:
+  avc_audit_ec60 - [INDIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to execve:
+  avc_audit_ec60 - [INDIRECT]-> execve_eef30
+  execve_eef30 - [syscall]-> execve
+
+Path to fcntl:
+  avc_audit_ec60 - [INDIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to fgetxattr:
+  avc_audit_ec60 - [INDIRECT]-> fgetxattr_11e800
+  fgetxattr_11e800 - [syscall]-> fgetxattr
+
+Path to fsetxattr:
+  avc_audit_ec60 - [INDIRECT]-> fsetxattr_11e890
+  fsetxattr_11e890 - [syscall]-> fsetxattr
+
+Path to fstat:
+  avc_audit_ec60 - [INDIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to futex:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x99530_99530
+  fuzzyfunc-0x99530_99530 - [syscall]-> futex
+
+Path to set_robust_list:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> rt_sigprocmask
+
+Path to rseq:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> rseq
+
+Path to exit:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [syscall]-> exit
+
+Path to getsockopt:
+  avc_audit_ec60 - [INDIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to gettid:
+  avc_audit_ec60 - [INDIRECT]-> gettid_12b380
+  gettid_12b380 - [syscall]-> gettid
+
+Path to getxattr:
+  avc_audit_ec60 - [INDIRECT]-> getxattr_120860
+  getxattr_120860 - [syscall]-> getxattr
+
+Path to lgetxattr:
+  avc_audit_ec60 - [INDIRECT]-> lgetxattr_124e60
+  lgetxattr_124e60 - [syscall]-> lgetxattr
+
+Path to lsetxattr:
+  avc_audit_ec60 - [INDIRECT]-> lsetxattr_125030
+  lsetxattr_125030 - [syscall]-> lsetxattr
+
+Path to mmap:
+  avc_audit_ec60 - [INDIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to mount:
+  avc_audit_ec60 - [INDIRECT]-> mount_12af30
+  mount_12af30 - [syscall]-> mount
+
+Path to munmap:
+  avc_audit_ec60 - [INDIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to poll:
+  avc_audit_ec60 - [INDIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to sched_getscheduler:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [syscall]-> sched_getparam
+
+Path to read:
+  avc_audit_ec60 - [INDIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to readv:
+  avc_audit_ec60 - [INDIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv
+
+Path to recvfrom:
+  avc_audit_ec60 - [INDIRECT]-> recvfrom_12bca0
+  recvfrom_12bca0 - [syscall]-> recvfrom
+
+Path to removexattr:
+  avc_audit_ec60 - [INDIRECT]-> removexattr_126a90
+  removexattr_126a90 - [syscall]-> removexattr
+
+Path to sendmsg:
+  avc_audit_ec60 - [INDIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to setxattr:
+  avc_audit_ec60 - [INDIRECT]-> setxattr_127160
+  setxattr_127160 - [syscall]-> setxattr
+
+Path to socket:
+  avc_audit_ec60 - [INDIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to statfs:
+  avc_audit_ec60 - [INDIRECT]-> statfs_11bc10
+  statfs_11bc10 - [syscall]-> statfs
+
+Path to umount2:
+  avc_audit_ec60 - [INDIRECT]-> umount2_12aa20
+  umount2_12aa20 - [syscall]-> umount2
+
+Path to uname:
+  avc_audit_ec60 - [INDIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to getrandom:
+  security_get_initial_context_raw_bb90 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> fuzzyfunc-0xa9d70_a9d70
+  fuzzyfunc-0xa9d70_a9d70 - [syscall]-> getrandom
+
+Path to lseek:
+  avc_audit_ec60 - [INDIRECT]-> _IO_file_seek_938d0
+  _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to fchdir:
+  avc_audit_ec60 - [INDIRECT]-> fts_close_118aa0
+  fts_close_118aa0 - [DIRECT]-> fchdir_116d90
+  fchdir_116d90 - [syscall]-> fchdir
+
+Path to clock_gettime:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> clock_gettime_ec950
+  clock_gettime_ec950 - [syscall]-> clock_gettime
+
+Path to setsockopt:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to recvmsg:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x172060_172060
+  fuzzyfunc-0x172060_172060 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to getpid:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to geteuid:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to getegid:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1726d0_1726d0
+  fuzzyfunc-0x1726d0_1726d0 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to accept:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1729b0_1729b0
+  fuzzyfunc-0x1729b0_1729b0 - [DIRECT]-> accept_12b820
+  accept_12b820 - [syscall]-> accept
+
+Path to sendto:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to mkdir:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x66710_66710
+  fuzzyfunc-0x66710_66710 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to mremap:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x92990_92990
+  fuzzyfunc-0x92990_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to madvise:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x9c720_9c720
+  fuzzyfunc-0x9c720_9c720 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to newfstatat:
+  avc_audit_ec60 - [INDIRECT]-> lstat_11b030
+  lstat_11b030 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to dup:
+  avc_audit_ec60 - [INDIRECT]-> perror_28a93
+  perror_28a93 - [DIRECT]-> dup_116960
+  dup_116960 - [syscall]-> dup
+
+Path to sched_setaffinity:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> fuzzyfunc-0x9c450_9c450
+  fuzzyfunc-0x9c450_9c450 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> fuzzyfunc-0x9c450_9c450
+  fuzzyfunc-0x9c450_9c450 - [syscall]-> sched_setscheduler
+
+Path to rt_sigaction:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to getdents64:
+  avc_audit_ec60 - [INDIRECT]-> readdir_ed970
+  readdir_ed970 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to getcwd:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to readlink:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> readlink_11bb20
+  readlink_11bb20 - [syscall]-> readlink
+
+Path to faccessat:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat
+
+Path to faccessat2:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat2
+
+Path to prlimit64:
+  avc_audit_ec60 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to writev:
+  fgetfilecon_dc60 - [DIRECT]-> __stack_chk_fail_137ec0
+  __stack_chk_fail_137ec0 - [DIRECT]-> __fortify_fail_136c30
+  __fortify_fail_136c30 - [DIRECT]-> fuzzyfunc-0x90810_90810
+  fuzzyfunc-0x90810_90810 - [syscall]-> writev
+
+Path to ioctl:
+  avc_audit_ec60 - [INDIRECT]-> _IO_file_doallocate_85120
+  _IO_file_doallocate_85120 - [DIRECT]-> isatty_11ade0
+  isatty_11ade0 - [DIRECT]-> tcgetattr_11ce50
+  tcgetattr_11ce50 - [syscall]-> ioctl
+
+Path to wait4:
+  avc_audit_ec60 - [INDIRECT]-> _IO_proc_close_87950
+  _IO_proc_close_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to prctl:
+  avc_audit_ec60 - [INDIRECT]-> __assert_fail_3b4d0
+  __assert_fail_3b4d0 - [DIRECT]-> fuzzyfunc-0x3b350_3b350
+  fuzzyfunc-0x3b350_3b350 - [DIRECT]-> fuzzyfunc-0x12a770_12a770
+  fuzzyfunc-0x12a770_12a770 - [syscall]-> prctl
+
+Path to exit_group:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x29fec_29fec
+  fuzzyfunc-0x29fec_29fec - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to pread64:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0xa9210_a9210
+  fuzzyfunc-0xa9210_a9210 - [DIRECT]-> fuzzyfunc-0x12b580_12b580
+  fuzzyfunc-0x12b580_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to sched_get_priority_max:
+  avc_audit_ec60 - [INDIRECT]-> pthread_mutex_init_9f710
+  pthread_mutex_init_9f710 - [DIRECT]-> fuzzyfunc-0xa5080_a5080
+  fuzzyfunc-0xa5080_a5080 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  avc_audit_ec60 - [INDIRECT]-> pthread_mutex_init_9f710
+  pthread_mutex_init_9f710 - [DIRECT]-> fuzzyfunc-0xa5080_a5080
+  fuzzyfunc-0xa5080_a5080 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to getuid:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> getuid_f5b40
+  getuid_f5b40 - [syscall]-> getuid
+
+Path to getgid:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> getgid_f4760
+  getgid_f4760 - [syscall]-> getgid
+
+Path to sysinfo:
+  avc_audit_ec60 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_avphys_pages_11fe70
+  get_avphys_pages_11fe70 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to sched_getaffinity:
+  avc_audit_ec60 - [INDIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
+  get_nprocs_conf_11fda0 - [DIRECT]-> fuzzyfunc-0x11fab0_11fab0
+  fuzzyfunc-0x11fab0_11fab0 - [syscall]-> sched_getaffinity
+
+Path to sendmmsg:
+  avc_audit_ec60 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to clock_nanosleep:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x134580_134580
+  fuzzyfunc-0x134580_134580 - [DIRECT]-> sleep_10ec50
+  sleep_10ec50 - [DIRECT]-> nanosleep_f9a10
+  nanosleep_f9a10 - [DIRECT]-> clock_nanosleep_eca20
+  clock_nanosleep_eca20 - [syscall]-> clock_nanosleep
+
+Path to getpeername:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x170c70_170c70
+  fuzzyfunc-0x170c70_170c70 - [DIRECT]-> key_decryptsession_pk_176ae0
+  key_decryptsession_pk_176ae0 - [DIRECT]-> fuzzyfunc-0x1762d0_1762d0
+  fuzzyfunc-0x1762d0_1762d0 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to tgkill:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x29fec_29fec
+  fuzzyfunc-0x29fec_29fec - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill_9ea10
+  pthread_kill_9ea10 - [syscall]-> tgkill
+
+Path to clone:
+  avc_audit_ec60 - [INDIRECT]-> pthread_create_9cbc0
+  pthread_create_9cbc0 - [DIRECT]-> fuzzyfunc-0x9c450_9c450
+  fuzzyfunc-0x9c450_9c450 - [DIRECT]-> fuzzyfunc-0x129b30_129b30
+  fuzzyfunc-0x129b30_129b30 - [DIRECT]-> clone_129a20
+  clone_129a20 - [syscall]-> clone
+
+Path to getgroups:
+  avc_audit_ec60 - [INDIRECT]-> realpath_185680
+  realpath_185680 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> group_member_f9930
+  group_member_f9930 - [DIRECT]-> getgroups_f4770
+  getgroups_f4770 - [syscall]-> getgroups
+
+Path to brk:
+  security_get_initial_context_raw_bb90 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> fuzzyfunc-0xab570_ab570
+  fuzzyfunc-0xab570_ab570 - [DIRECT]-> __default_morecore_aaa10
+  __default_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to getsockname:
+  avc_audit_ec60 - [INDIRECT]-> fuzzyfunc-0x1752e0_1752e0
+  fuzzyfunc-0x1752e0_1752e0 - [DIRECT]-> getifaddrs_13b590
+  getifaddrs_13b590 - [DIRECT]-> fuzzyfunc-0x13a2b0_13a2b0
+  fuzzyfunc-0x13a2b0_13a2b0 - [DIRECT]-> fuzzyfunc-0x13a1f0_13a1f0
+  fuzzyfunc-0x13a1f0_13a1f0 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
