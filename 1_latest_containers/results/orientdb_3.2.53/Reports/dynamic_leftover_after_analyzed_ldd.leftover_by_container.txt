@@ -1,0 +1,9 @@
+orientdb_3.2.53 (7)
+  - jffi313529115476503082.so
+  - libcrypt.so.1
+  - libjli.so
+  - libpcre2-8.so.0
+  - librt.so.1
+  - libselinux.so.1
+  - libtinfo.so.6
+

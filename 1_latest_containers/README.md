@@ -20,15 +20,15 @@ covering JDK 8 to 25. One folder per image is in `results/`.
 
 ## Files
 
-> The result folders are placeholders (`PENDING.md`) until the final runs are
-> done; `tables/` and `STATUS.md` are added with the results.
-
 * `scripts/`: the exact pipeline scripts used for this table (driver: `scripts/run_latest_target.sh`).
 * `runc.txt`: the runtime syscall set merged into every profile.
 * `results/<image>/`: one pipeline result. The layout is described in the top-level README.
   * The seccomp profile is `Binary_Analysis/syscalls_output_<image>/<image>.json`.
   * Whether the container still starts under that profile is in `seccomp_runtime_test.log`.
   * `detector_commit.txt` names the detector build used for stage 4 (see below).
+  * `dataset/`: the JARs, libraries, executables and Java runtime copied out of
+    the container, as split xz parts (layout in the top-level README). `../whitelist.sh`
+    uses them, so the static reproduction needs no Docker.
 * `tables/`: table rows computed from `results/` by `tools/make_tables.py`
   (`table.md`, `table.csv`, `table_rows.tex`).
 * `STATUS.md`: which images are complete in this version of the artifact.
@@ -36,8 +36,11 @@ covering JDK 8 to 25. One folder per image is in `results/`.
 
 ## Reproduce
 
-Static (no SysPart, sysdig or root; minutes per image): rebuild an image's
-allowlist from the shipped call graphs, see the top-level README, level B.
+Static (no SysPart, sysdig, Docker or root; minutes per image): rebuild an
+image's allowlist from its shipped dataset and call graphs. It reruns the
+bytecode analysis (native methods) and the native mapping, then parses the
+shipped call graphs to the syscalls instead of running SysPart. See the
+top-level README, level B.
 
 ```bash
 ../whitelist.sh zookeeper_3.9.5          # -> whitelists_static/zookeeper_3.9.5.json + .diff.txt
@@ -87,9 +90,11 @@ AUDIT=../analysis/coverage_latest/per_app_summary.csv TABLE_ONLY=1 ./reproduce.s
 
 ## Notes
 
-* **Detector build.** `echotrace/` (commit in `echotrace/COMMIT`) follows class
-  initialisers (`<clinit>`) and resolves inherited methods. Each image's
-  `detector_commit.txt` records the detector commit it was analysed with.
+* **Detector build.** `echotrace/` (commit `52628c4`, in `echotrace/COMMIT`) follows
+  class initialisers (`<clinit>`) and resolves inherited methods. Stage 4 of
+  Elasticsearch, Storm and JRuby was run with it (`detector_commit.txt`). The
+  other seven were run with the commit before it, `516fb46` (`echotrace_516fb46/`;
+  `pipeline_run.log`: "code at 516fb46").
 * **glibc ≥ 2.41.** Cancellable syscall wrappers there pass the syscall number
   through `__syscall_cancel`. `scripts/cancel_syscall_sites.py`
   recovers these call sites (OrientDB, Jetty and Storm run on glibc 2.43).

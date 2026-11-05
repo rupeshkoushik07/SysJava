@@ -1,0 +1,28 @@
+container=zookeeper_3.9.5
+image=zookeeper:3.9.5
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json
+profile_syscalls=181 SCMP_ACT_ERRNO
+workload=docker run  zookeeper:3.9.5 
+started_at=2026-11-05T13:05:57+01:00
+
+---- baseline (no profile) ----
+docker_run_output=adc5c194fbb4561fd49edfd85fbe7c6d22f62f1a0eb90667be50f8f02be8c3e2
+baseline_ready_after=3s
+baseline_state=running exit=0
+baseline_probe=ok tcp_2181
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-zookeeper-3-9-5 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json  zookeeper:3.9.5 
+docker_run_output=27349f5d11913cd03b7ec023ef5121a216fd3459ae83a3f209834cfa0568330a
+ready=NO
+state_after_60s=exited exit=1
+probe=fail no_tcp_accept_2181
+eperm_lines=0 (baseline 0)
+
+RESULT=FAIL not_ready not_running probe_failed
+finished_at=2026-11-05T13:08:02+01:00
+
+---- docker logs tail (with profile) ----
+ZooKeeper JMX enabled by default
+Using config: /conf/zoo.cfg

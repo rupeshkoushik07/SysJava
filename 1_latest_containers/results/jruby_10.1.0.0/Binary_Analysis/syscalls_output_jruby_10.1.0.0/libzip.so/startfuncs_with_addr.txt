@@ -1,0 +1,4 @@
+Java_java_util_zip_Adler32_updateBytes_2090
+Java_java_util_zip_CRC32_updateBytes0_2160
+Java_java_util_zip_Inflater_init_2c00
+Java_java_util_zip_Inflater_initIDs_2b90

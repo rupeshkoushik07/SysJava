@@ -11,8 +11,9 @@ This artifact contains the tool source, the scripts that run the whole pipeline
 for each container, the Docker images used (pinned by digest), and scripts that
 rebuild the tables from the results.
 
-> **Status:** the result folders are placeholders (`PENDING.md`) while the final
-> runs finish. They will be filled with the layout described below.
+> **Status:** the results of the ten latest-version images (`1_latest_containers/results/`)
+> are included. The result folders of `2_swat4j_vs_sysjava/` are placeholders
+> (`PENDING.md`) while those final runs finish.
 
 ## Layout
 
@@ -24,11 +25,12 @@ rebuild the tables from the results.
 | `Results/` | Results of the original submission, kept unchanged | submitted version |
 | [`docker_images/`](docker_images/README.md) | Every image used, with its digest, image ID, OS and JDK; the Dockerfiles of the rebuilt Debian 10 + JDK 8 images and a pinned build script | |
 | `echotrace/` | Tool source: the bytecode analysis (Java, Maven). Commit in `echotrace/COMMIT` | |
+| `echotrace_516fb46/` | The same tool one commit earlier, before the `<clinit>` fix. Stage 4 of seven latest-version results was run with it (`pipeline_run.log`: "code at 516fb46"); `whitelist.sh` uses it for those images | |
 | [`syspart/`](syspart/README.md) | Which SysPart build is used and how to build it (SysPart is a third-party tool) | |
 | [`swat4j/`](swat4j/README.md) | Scripts that run the SWAT4J baseline unmodified (its allowlists are added with the results) | |
 | `analysis/` | Native-declaration coverage audit (`coverage.sh`) | coverage rows of both tables |
 | `tools/` | `make_tables.py` (results to table rows); `replay_syspart.py`, `whitelist_from_callgraphs.py` (used by `whitelist.sh`); `build_artifact.sh`, `docker_images.sh`, `anonymise.sh` (how this folder was assembled) | |
-| `whitelist.sh` | Static reproduction of one image's allowlist from the shipped call graphs (level B below) | profiles in both tables |
+| `whitelist.sh` | Static reproduction of one image's allowlist from the shipped dataset and call graphs, without SysPart (level B below) | profiles in both tables |
 | `setup.sh` | One-time setup for the full rerun (level C): checks tools, builds `echotrace/`, prepares `work/latest` and `work/jdk8` | |
 
 Each result folder (`<folder>/results/<image>/` or `sysjava_results/<image>/`) has
@@ -52,12 +54,23 @@ pipeline_run.log                           full log of the run
 seccomp_runtime_test.log                   the container restarted under its profile (RESULT=PASS/FAIL)
 named_callgraph_summary.tsv                functions / unnamed functions / syscalls per SysPart result
 debug_symbols.tsv                          which ELF got debug symbols from where
+detector_commit.txt                        detector commit of stage 4, when it differs from the default
+jni_overload_check.tsv                     overloaded JNI methods and how each was mapped
+dataset/Dataset.tar.xz.partNN              the files copied out of the container (below)
 ```
 
-`callgraph.json` and `allfunctions.txt` files are gzipped (`gunzip -k`). The container file copies
-(`Dataset/`: JARs, `.so` files, executables, with and without debug symbols) are
-not shipped. They are copies of files from public Docker images and the pipeline
-recreates them on a rerun.
+`callgraph.json` and `allfunctions.txt` files are gzipped (`gunzip -k`).
+
+`dataset/` holds the files the run copied out of the container, as an xz
+archive split into 45 MB parts: `Dataset/JARFILES_<image>/` (JARs),
+`LIBS_<image>/` (native libraries, with the JDK's under `JDK*_LIBS/`),
+`BINARIES_<image>/` (executables), `RUNTIME_<image>/` (the container's Java
+runtime), and `Dataset_symbolized/LIBS_<image>/_container_deps/` (libraries
+stage 6 added from the container because a copied library needs them). They are
+copies of files from public Docker images. Unpack with
+`cat dataset/Dataset.tar.xz.part* | xz -dc | tar -x`. The copies with restored
+debug symbols are not shipped (stage 6 recreates them; `debug_symbols.tsv`
+says where each came from).
 
 ## Reproducing the tables
 
@@ -66,7 +79,7 @@ There are three levels, from fastest to complete:
 | | What it reruns | Needs | Time per image |
 |---|---|---|---|
 | A | table rows from the shipped results | Python | seconds |
-| B | bytecode analysis, native mapping, syscalls from the shipped call graphs, seccomp profile | Docker, JDK 17+, Maven, Python, binutils | 5-15 min |
+| B | bytecode analysis and native mapping on the shipped dataset, syscalls from the shipped call graphs, seccomp profile | JDK 17+, Maven, Python, binutils, xz | 5-15 min |
 | C | the whole pipeline, including the sysdig capture and SysPart | everything below, root | 2-8 h |
 
 ### A. Rebuild the tables from the shipped results (no setup; once results are added)
@@ -85,12 +98,13 @@ and JARs observed; libraries analysed). They also check that each profile equals
 the union of its parts. Once results are added, the output for the shipped
 results will be in `<folder>/tables/`.
 
-### B. Rebuild the allowlists from the shipped call graphs (no SysPart, no sysdig, no root)
+### B. Rebuild the allowlists from the shipped dataset and call graphs (no SysPart, no Docker, no root)
 
-SysPart's call graph of every analysed library and executable is shipped
-(`callgraph.json.gz`, with the syscall sites in `syscalls_with_callsites*.txt`).
-`whitelist.sh` reruns SysJava's own analysis on the pinned image and parses
-those call graphs instead of running SysPart:
+The files each run copied out of its container (`dataset/`) and SysPart's call
+graph of every analysed library and executable (`callgraph.json.gz`, with the
+syscall sites in `syscalls_with_callsites*.txt`) are shipped. `whitelist.sh`
+reruns SysJava's own analysis on that dataset and parses those call graphs
+instead of running SysPart:
 
 ```bash
 ./whitelist.sh zookeeper_3.9.5     # one image (folder name from either table)
@@ -99,10 +113,13 @@ those call graphs instead of running SysPart:
 
 For one image it:
 
-1. starts the pinned image (`docker_images/images.tsv`);
-2. copies out the JARs, libraries and executables listed in the shipped sysdig
-   capture (`Dynamic_Analysis/`), plus the container's JDK;
-3. runs the bytecode analysis (`echotrace/`, built with Maven on first use);
+1. unpacks the shipped dataset into `work/static/<image>/`;
+2. (only if the image has no shipped dataset, or with `FROM_CONTAINER=1`) starts
+   the pinned image (`docker_images/images.tsv`) instead and copies out the files
+   listed in the shipped sysdig capture (`Dynamic_Analysis/`); this needs Docker;
+3. runs the bytecode analysis, giving `native_methods.txt` and the JNI, JNA,
+   JNR-FFI and FFM bindings. It uses the detector commit the shipped result was
+   made with (`echotrace/` or `echotrace_516fb46/`, built with Maven on first use);
 4. maps native methods to native symbols, giving the start functions per library;
 5. follows each shipped call graph from those start functions to the reachable
    syscalls (`tools/replay_syspart.py`, the same breadth-first search as
@@ -119,9 +136,11 @@ cover, the report says so (`starts_not_in_callgraph`,
 `new_library_needs_syspart`); that part needs level C.
 
 Checked on the five finished latest-version images: all 141 call graphs give
-the same syscalls as SysPart did, and ZooKeeper 3.9.5 rerun end to end gives
-the same native methods (735) and the same profile, apart from `set_tid_address`,
-which was added to `runc.txt` after that run.
+the same syscalls as SysPart did. ZooKeeper 3.9.5 rerun from its shipped dataset
+(no Docker, 6 minutes) gives the same native methods (735), all 35 call graphs
+ok, and the same profile apart from `set_tid_address`, which was added to
+`runc.txt` after that run. JRuby 10.1.0.0 (detector `52628c4`) gives the same
+460 native methods, all 22 call graphs ok, and an identical profile (173 syscalls).
 
 ### C. Rerun everything
 

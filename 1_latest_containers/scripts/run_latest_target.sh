@@ -210,7 +210,10 @@ if run_from 8; then
     python3 "${WS}/scripts/report_dynamic_leftover_after_analyzed_ldd.py" \
         --libs-dir "$SLIBS" --syscalls-dir "${WS}/syscalls_output_${T}"
     python3 "${WS}/scripts/analyze_unanalysed_loaded_libs.py" --libs-dir "$SLIBS" --run-syspart
-    python3 "${WS}/scripts/analyse_jna_ffi.py" --libs-dir "$SLIBS" --outputs-dir "$OUTPUTS_DIR" --run-syspart
+    # Exits 1 when no bound library resolves in LIBS_ (e.g. jruby's jnr-ffi bindings to Windows
+    # Kernel32 and Solaris libsocket): nothing to analyse, not a pipeline failure.
+    python3 "${WS}/scripts/analyse_jna_ffi.py" --libs-dir "$SLIBS" --outputs-dir "$OUTPUTS_DIR" --run-syspart \
+        || echo "stage 8: JNA/FFI analysis exited $? (bound libraries not in LIBS_, listed above); continuing"
 fi
 
 if run_from 9; then

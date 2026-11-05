@@ -1,0 +1,51 @@
+container=orientdb_3.2.53
+image=orientdb:3.2.53
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json
+profile_syscalls=166 SCMP_ACT_ERRNO
+workload=docker run -e ORIENTDB_ROOT_PASSWORD=root orientdb:3.2.53 
+started_at=2026-11-05T21:20:53+01:00
+
+---- baseline (no profile) ----
+docker_run_output=ed0ad07b8f44533ee5ada8bc65e4f52978a2487ede87390516a73d9d170b2b18
+baseline_ready_after=7s
+baseline_state=running exit=0
+baseline_probe=ok http_200 /
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-orientdb-3-2-53 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json -e ORIENTDB_ROOT_PASSWORD=root orientdb:3.2.53 
+docker_run_output=018547bc642c082af9eb97f135ee9d5866dfd04481beef8bfe5ba2ccac5a502f
+ready=NO
+state_after_60s=exited exit=1
+probe=fail no_http_answer /
+eperm_lines=0 (baseline 0)
+
+RESULT=FAIL not_ready not_running probe_failed
+finished_at=2026-11-05T21:23:03+01:00
+
+---- docker logs tail (with profile) ----
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.logging.LogManager.loadLoggerHandlers(LogManager.java:958)
+	at java.util.logging.LogManager.initializeGlobalHandlers(LogManager.java:1578)
+	at java.util.logging.LogManager.access$1500(LogManager.java:145)
+	at java.util.logging.LogManager$RootLogger.accessCheckedHandlers(LogManager.java:1667)
+	at java.util.logging.Logger.getHandlers(Logger.java:1777)
+	at java.util.logging.Logger.log(Logger.java:735)
+	at com.orientechnologies.common.log.OLogManager.log(OLogManager.java:210)
+	at com.orientechnologies.common.log.OLogManager.infoNoDb(OLogManager.java:250)
+	at com.orientechnologies.common.jnr.ONative.getOpenFilesLimit(ONative.java:117)
+	at com.orientechnologies.orient.core.engine.local.OEngineLocalPaginated.getOpenFilesLimit(OEngineLocalPaginated.java:71)
+	at com.orientechnologies.orient.core.engine.local.OEngineLocalPaginated.<init>(OEngineLocalPaginated.java:54)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:380)
+	... 9 more
+
+2026-11-05 20:22:01:483 INFO  Can not detect value of limit of open files. [ONative]
+2026-11-05 20:22:01:486 INFO  Default limit of open files (512) will be used. [ONative]
+2026-11-05 20:22:01:495 INFO  Orient Engine is shutting down... [Orient]
+2026-11-05 20:22:01:520 INFO  Clearing byte buffer pool [Orient]
+2026-11-05 20:22:01:525 INFO  OrientDB Engine shutdown complete [Orient]

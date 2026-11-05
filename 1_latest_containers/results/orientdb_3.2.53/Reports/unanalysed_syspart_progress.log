@@ -1,0 +1,15 @@
+2026-11-05T09:12:38 RUN image=orientdb_3.2.53 libraries=7 force=False
+2026-11-05T09:12:38 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Dataset_symbolized/LIBS_orientdb_3.2.53
+2026-11-05T09:12:38 UNRESOLVED [1/7] jffi313529115476503082.so
+2026-11-05T09:12:38 START [2/7] libcrypt.so.1 functions=19 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libcrypt.so.1/logfile.txt
+2026-11-05T09:13:37 DONE [2/7] libcrypt.so.1 status=failed exit=1 syscalls=0
+2026-11-05T09:13:37 START [3/7] libjli.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libjli.so/logfile.txt
+2026-11-05T09:14:37 DONE [3/7] libjli.so status=completed exit=0 syscalls=59
+2026-11-05T09:14:38 START [4/7] libpcre2-8.so.0 functions=78 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libpcre2-8.so.0/logfile.txt
+2026-11-05T09:16:28 DONE [4/7] libpcre2-8.so.0 status=completed exit=0 syscalls=35
+2026-11-05T09:16:28 START [5/7] librt.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/librt.so.1/logfile.txt
+2026-11-05T09:17:18 DONE [5/7] librt.so.1 status=failed exit=1 syscalls=0
+2026-11-05T09:17:18 START [6/7] libselinux.so.1 functions=241 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libselinux.so.1/logfile.txt
+2026-11-05T09:19:22 DONE [6/7] libselinux.so.1 status=completed exit=0 syscalls=72
+2026-11-05T09:19:22 START [7/7] libtinfo.so.6 functions=212 log=/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libtinfo.so.6/logfile.txt
+2026-11-05T09:20:25 DONE [7/7] libtinfo.so.6 status=completed exit=0 syscalls=44

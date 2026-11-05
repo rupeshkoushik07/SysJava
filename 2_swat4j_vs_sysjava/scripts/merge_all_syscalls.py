@@ -59,6 +59,14 @@ def read_syscalls_file(filepath: Path) -> Set[str]:
     return syscalls
 
 
+# Result folders SysPart could not produce a result for: compute_syscalls_lowmem.sh
+# exits 3 on a call-graph crash and leaves syspart_failed.txt, or (crash exclusion)
+# excluded_starts_syspart_crash.txt when every start function crashes or times out.
+# Reported as "unanalysable (SysPart crash)" rather than as a missing result.
+UNANALYSABLE: List[str] = []
+SYSPART_FAILURE_MARKERS = ("syspart_failed.txt", "excluded_starts_syspart_crash.txt")
+
+
 def process_directory(base_dir: Path, dir_type: str) -> Tuple[Set[str], List[str], List[str]]:
     """
     Process a directory (syscalls_BIN_* or syscalls_LIBS_*) and collect syscalls.
@@ -93,6 +101,10 @@ def process_directory(base_dir: Path, dir_type: str) -> Tuple[Set[str], List[str
         subdir_name = subdir.name
 
         if not syscalls_file.exists():
+            if any((subdir / m).exists() for m in SYSPART_FAILURE_MARKERS):
+                UNANALYSABLE.append(f"{dir_type}: {subdir_name}")
+                print(f"  ✗ {subdir_name}: unanalysable (SysPart crash), no syscalls.txt")
+                continue
             missing_files.append(subdir_name)
             print(f"  ✗ {subdir_name}: syscalls.txt MISSING")
             continue
@@ -415,6 +427,11 @@ def main():
     print(f"  - Empty:     {len(lib_empty)}")
     print(f"  - Missing:   {len(lib_missing)}")
     print(f"  - Syscalls:  {len(library_syscalls)} unique")
+
+    if UNANALYSABLE:
+        print(f"\nUnanalysable (SysPart crash): {len(UNANALYSABLE)}")
+        for name in UNANALYSABLE:
+            print(f"    - {name}")
 
     print(f"\nRunc Whitelist:")
     if runc_syscalls:

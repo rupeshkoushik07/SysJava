@@ -1,0 +1,7 @@
+image	loaded_name	resolved_relpath	output_dir	status	exit_code
+orientdb_3.2.53	libcrypt.so.1	libcrypt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libcrypt.so.1	failed	1
+orientdb_3.2.53	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libjli.so	completed	0
+orientdb_3.2.53	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libpcre2-8.so.0	completed	0
+orientdb_3.2.53	librt.so.1	librt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/librt.so.1	failed	1
+orientdb_3.2.53	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libselinux.so.1	completed	0
+orientdb_3.2.53	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/libtinfo.so.6	completed	0

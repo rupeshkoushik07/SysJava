@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/user/Tutorial/EchoTrace_latest/scripts/getsyscalls_lowmem.py", line 135, in <module>
+    main()
+  File "/home/user/Tutorial/EchoTrace_latest/scripts/getsyscalls_lowmem.py", line 97, in main
+    with open(args.args3) as handle:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/jna_ffi_analysis/syscalls/libtinfo.so.6.6/startfuncs_with_addr.txt'

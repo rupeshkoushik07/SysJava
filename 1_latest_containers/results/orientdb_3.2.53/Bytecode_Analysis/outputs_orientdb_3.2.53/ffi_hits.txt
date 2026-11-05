@@ -1,0 +1,4 @@
+=== FFI (Foreign Function & Memory API) Hits ===
+Format: callerSig | lib | symbol | mechanism | jar
+
+<org.bouncycastle.jcajce.provider.keystore.BC: BC> | tinfo | BC | downcallHandle | bcprov-jdk18on-1.84.jar

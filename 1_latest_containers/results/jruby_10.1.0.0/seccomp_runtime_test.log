@@ -1,0 +1,27 @@
+container=jruby_10.1.0.0
+image=jruby:10.1.0.0
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jruby_10.1.0.0/Binary_Analysis/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json
+profile_syscalls=173 SCMP_ACT_ERRNO
+workload=docker run -it jruby:10.1.0.0 
+started_at=2026-11-05T18:29:07+01:00
+
+---- baseline (no profile) ----
+docker_run_output=7a72e1759d778b26909fded1f809d238569d6c7475c59302c2077927603c3d9b
+baseline_ready_after=31s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-jruby-10-1-0-0 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jruby_10.1.0.0/Binary_Analysis/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json -it jruby:10.1.0.0 
+docker_run_output=394d019295f2d518de13734cd53d0d1556c46e49dd1f91ff1925ea17089fdda9
+ready_after=31s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-05T18:32:11+01:00
+
+---- docker logs tail (with profile) ----
+[0.001s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because flock() failed (errno = 1)

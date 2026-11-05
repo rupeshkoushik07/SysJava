@@ -1,0 +1,9 @@
+Time taken for the analysis: 45 seconds
+Time taken for the analysis: 64 seconds
+Direct Edges computation: 0 seconds
+AT List computation: 11 seconds
+Indirect call target resolution:  5 seconds
+Generate indirect call targets: 11 seconds
+Print call graph edges: 24 seconds
+Time taken for the analysis: 105 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/syscalls_BIN_orientdb_3.2.53/env.uumain/callgraph.json

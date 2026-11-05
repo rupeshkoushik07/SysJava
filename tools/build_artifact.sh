@@ -7,6 +7,7 @@
 #
 #   tools/build_artifact.sh                  # code, docs, Docker images; empty result folders
 #   tools/build_artifact.sh --with-results   # also copy the results, STATUS.md and tables
+#   tools/build_artifact.sh --with-latest-results   # only the results of 1_latest_containers
 #
 # What it does:
 #   1. echotrace/          <- git archive of the detector commit (EchoTrace tool source)
@@ -32,7 +33,11 @@ DETECTOR_REPO="${DETECTOR_REPO:-$TUT/EchoTrace_clinit_build}" # tool source ship
 DETECTOR_COMMIT="${DETECTOR_COMMIT:-52628c4}"
 SWAT4J_DIR="${SWAT4J_DIR:-$TUT/swat4j}"
 SWAT4J_MAPPING="${SWAT4J_MAPPING:-$HOME/Prototype/swat4j_mapping.py}"
-CODE_ONLY=1; [ "${1:-}" = "--with-results" ] && CODE_ONLY=0
+CODE_ONLY=1; LATEST_ONLY=0
+case "${1:-}" in
+    --with-results) CODE_ONLY=0 ;;
+    --with-latest-results) CODE_ONLY=0; LATEST_ONLY=1 ;;   # table 2 stays placeholders
+esac
 
 LATEST_TARGETS=(cassandra_5.0.8 zookeeper_3.9.5 tomcat_11.0.22 solr_10.0.0 groovy_5.0.6
                 orientdb_3.2.53 jetty_12.1.10 elasticsearch_7.1.0 storm_2.8.8 jruby_10.1.0.0)
@@ -55,6 +60,13 @@ git -C "$DETECTOR_REPO" archive "$DETECTOR_COMMIT" | tar -x -C "$ART/echotrace"
 rm -rf "$ART/pipelines" "$ART/echotrace_patches"   # older layout
 rm -rf "$ART/echotrace/results" "$ART/echotrace/scripts" "$ART/echotrace/SysPartCode"
 git -C "$DETECTOR_REPO" rev-parse "$DETECTOR_COMMIT" > "$ART/echotrace/COMMIT"
+# The detector before the <clinit> fix, which built stage 4 of the results whose
+# pipeline_run.log says "code at 516fb46"; whitelist.sh picks the tree per image.
+BASELINE_DETECTOR="${BASELINE_DETECTOR:-516fb46}"
+rm -rf "$ART/echotrace_$BASELINE_DETECTOR"; mkdir -p "$ART/echotrace_$BASELINE_DETECTOR"
+git -C "$LATEST_REPO" archive "$BASELINE_DETECTOR" | tar -x -C "$ART/echotrace_$BASELINE_DETECTOR"
+rm -rf "$ART/echotrace_$BASELINE_DETECTOR"/{results,scripts,SysPartCode}
+git -C "$LATEST_REPO" rev-parse "$BASELINE_DETECTOR" > "$ART/echotrace_$BASELINE_DETECTOR/COMMIT"
 
 # ------------------------------------------------------- 2. pipeline scripts
 copy_scripts() {  # <src repo> <table folder>: scripts/ and the runtime set runc.txt
@@ -120,7 +132,22 @@ copy_result() {  # <src target dir> <dest target dir>
         --exclude 'Dataset/' --exclude 'Dataset_symbolized/***' \
         --exclude '*.pre_cancel_fix*' --exclude '*.failed*' --exclude '*.incomplete*' \
         --exclude 'jna_detector_work_*/' --exclude 'JDK*_LIBS/' \
+        --exclude '*_before_*' \
         "$src/" "$dst/"
+    # The captured files (Dataset/: JARs, libraries, executables, the JDK) and the
+    # libraries stage 6 added from the container, as split xz archives, so
+    # whitelist.sh runs without Docker. Parts stay below GitHub's 100 MB file limit;
+    # tar records no owner names.
+    if [ -d "$src/Dataset" ]; then
+        local U="rup""esh" P="pun""na" K="kou""shik"
+        if grep -rlaiE -m1 "$U|$P|$K" "$src/Dataset" >/dev/null 2>&1; then
+            echo "identifying string in $src/Dataset; not packed"; exit 1
+        fi
+        mkdir -p "$dst/dataset"
+        (cd "$src" && tar --sort=name --owner=0 --group=0 --numeric-owner -cf - Dataset \
+            $(ls -d Dataset_symbolized/*/_container_deps 2>/dev/null)) \
+            | nice -n 10 xz -T4 -6 | split -b 45M -d -a 2 - "$dst/dataset/Dataset.tar.xz.part"
+    fi
     # Keep the debug-symbol provenance table (which ELF got which debug file).
     if [ -f "$src/Dataset_symbolized/symbols.tsv" ]; then
         cp "$src/Dataset_symbolized/symbols.tsv" "$dst/debug_symbols.tsv"
@@ -135,6 +162,7 @@ if [ "$CODE_ONLY" = 0 ]; then
         copy_result "$src" "$ART/1_latest_containers/results/$t"
     done
     for t in "${JDK8_TARGETS[@]}"; do
+        [ "$LATEST_ONLY" = 0 ] || break
         src="$JDK8_REPO/Final_results_JDK8/$t"
         [ -d "$src" ] || { log "jdk8: $t has no results yet, skipped"; continue; }
         log "2_swat4j_vs_sysjava/sysjava_results/$t"
@@ -142,7 +170,7 @@ if [ "$CODE_ONLY" = 0 ]; then
     done
     for t in "${JDK8_OFFICIAL_TARGETS[@]}"; do
         dst="$ART/2_swat4j_vs_sysjava/sysjava_results/$t"
-        if [ -n "$JDK8_OFFICIAL_SRC" ] && [ -d "$JDK8_OFFICIAL_SRC/$t" ]; then
+        if [ "$LATEST_ONLY" = 0 ] && [ -n "$JDK8_OFFICIAL_SRC" ] && [ -d "$JDK8_OFFICIAL_SRC/$t" ]; then
             log "2_swat4j_vs_sysjava/sysjava_results/$t <- $JDK8_OFFICIAL_SRC"
             copy_result "$JDK8_OFFICIAL_SRC/$t" "$dst"
         else
@@ -153,6 +181,7 @@ if [ "$CODE_ONLY" = 0 ]; then
     done
     # Detector before/after <clinit> fix and the -verbose:jni recall benchmark.
     for extra in _before_clinit_fix _after_clinit_fix _native_recall; do
+        [ "$LATEST_ONLY" = 0 ] || break
         [ -d "$JDK8_REPO/Final_results_JDK8/$extra" ] || continue
         rm -rf "$ART/2_swat4j_vs_sysjava/sysjava_results/$extra"
         rsync -a "$JDK8_REPO/Final_results_JDK8/$extra/" "$ART/2_swat4j_vs_sysjava/sysjava_results/$extra/"
@@ -164,18 +193,22 @@ log "docker_images/ (digests, Dockerfiles)"
 bash "$ART/tools/docker_images.sh" "$ART" "$JDK8_REPO"
 rm -f "$ART/1_latest_containers/images.tsv" "$ART/2_swat4j_vs_sysjava/images.tsv"
 
-# Without --with-results every result folder is an empty placeholder.
+# Without --with-results every result folder is an empty placeholder; with
+# --with-latest-results only those of table 2.
+placeholder() {  # <dir> <target>
+    rm -rf "$1"; mkdir -p "$1"
+    printf 'Results pending for %s.\nAdded by tools/build_artifact.sh --with-results once the final run is done.\n' "$2" > "$1/PENDING.md"
+}
 if [ "$CODE_ONLY" = 1 ]; then
-    placeholder() {  # <dir> <target>
-        rm -rf "$1"; mkdir -p "$1"
-        printf 'Results pending for %s.\nAdded by tools/build_artifact.sh --with-results once the final run is done.\n' "$2" > "$1/PENDING.md"
-    }
     for t in "${LATEST_TARGETS[@]}"; do placeholder "$ART/1_latest_containers/results/$t" "$t"; done
+    rm -rf "$ART/1_latest_containers/tables" "$ART/1_latest_containers/STATUS.md"
+fi
+if [ "$CODE_ONLY" = 1 ] || [ "$LATEST_ONLY" = 1 ]; then
     for t in "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"; do
         placeholder "$ART/2_swat4j_vs_sysjava/sysjava_results/$t" "$t"
     done
-    rm -rf "$ART"/2_swat4j_vs_sysjava/sysjava_results/_* "$ART/1_latest_containers/tables" \
-           "$ART/2_swat4j_vs_sysjava/tables" "$ART/1_latest_containers/STATUS.md" "$ART/2_swat4j_vs_sysjava/STATUS.md" \
+    rm -rf "$ART"/2_swat4j_vs_sysjava/sysjava_results/_* \
+           "$ART/2_swat4j_vs_sysjava/tables" "$ART/2_swat4j_vs_sysjava/STATUS.md" \
            "$ART/swat4j/outputs" "$ART/swat4j/RESULTS.md" "$ART/swat4j/paper_table.md" "$ART/swat4j/paper_table.tex"
 fi
 
@@ -214,10 +247,12 @@ status_md() {  # <out.md> <results dir> <target>...: last pipeline stage + runti
 
 if [ "$CODE_ONLY" = 0 ]; then
     status_md "$ART/1_latest_containers/STATUS.md" "$ART/1_latest_containers/results" "${LATEST_TARGETS[@]}"
-    status_md "$ART/2_swat4j_vs_sysjava/STATUS.md" "$ART/2_swat4j_vs_sysjava/sysjava_results" "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"
     log "tables"
     python3 "$ART/tools/make_tables.py" latest "$ART/1_latest_containers/results" \
         --runtime "$ART/1_latest_containers/runc.txt" --out "$ART/1_latest_containers/tables" || true
+fi
+if [ "$CODE_ONLY" = 0 ] && [ "$LATEST_ONLY" = 0 ]; then
+    status_md "$ART/2_swat4j_vs_sysjava/STATUS.md" "$ART/2_swat4j_vs_sysjava/sysjava_results" "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"
     python3 "$ART/tools/make_tables.py" jdk8 "$ART/2_swat4j_vs_sysjava/sysjava_results" \
         --runtime "$ART/2_swat4j_vs_sysjava/runc.txt" "$ART/2_swat4j_vs_sysjava/runc_host_1.3.4_additions.txt" --out "$ART/2_swat4j_vs_sysjava/tables" || true
 fi

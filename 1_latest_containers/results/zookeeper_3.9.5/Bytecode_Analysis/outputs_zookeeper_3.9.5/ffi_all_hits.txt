@@ -1,0 +1,10 @@
+=== Combined FFI Native Binding Hits ===
+Format: detector | payload
+
+ffi | <org.jline.terminal.impl.ffm.CLibrary: void setAttributes(int,org.jline.terminal.Attributes)> | util | tcsetattr | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: org.jline.terminal.spi.Pty openpty(org.jline.terminal.spi.TerminalProvider,org.jline.terminal.Attributes,org.jline.terminal.Size)> | util | openpty | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: org.jline.terminal.Size getTerminalSize(int)> | util | ioctl | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: boolean isTty(int)> | util | isatty | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: java.lang.String ttyName(int)> | util | ttyname_r | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: org.jline.terminal.Attributes getAttributes(int)> | util | tcgetattr | downcallHandle | jline-3.25.1.jar
+ffi | <org.jline.terminal.impl.ffm.CLibrary: void setTerminalSize(int,org.jline.terminal.Size)> | util | ioctl | downcallHandle | jline-3.25.1.jar

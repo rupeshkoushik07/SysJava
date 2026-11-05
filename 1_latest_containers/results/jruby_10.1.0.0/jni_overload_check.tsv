@@ -1,0 +1,8 @@
+library	java_method	jni_symbol	in_mapping	in_start_file
+libjffi-1.2.so	com.kenai.jffi.Foreign.defineClass	Java_com_kenai_jffi_Foreign_defineClass__Ljava_lang_String_2Ljava_lang_Object_2Ljava_nio_ByteBuffer_2	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.defineClass	Java_com_kenai_jffi_Foreign_defineClass__Ljava_lang_String_2Ljava_lang_Object_2_3BII	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.getZeroTerminatedByteArray	Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__J	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.getZeroTerminatedByteArray	Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__JI	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.getZeroTerminatedByteArray	Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__JJ	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.getZeroTerminatedByteArrayChecked	Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArrayChecked__J	yes	yes
+libjffi-1.2.so	com.kenai.jffi.Foreign.getZeroTerminatedByteArrayChecked	Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArrayChecked__JI	yes	yes

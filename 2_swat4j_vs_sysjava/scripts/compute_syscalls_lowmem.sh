@@ -75,6 +75,10 @@ callgraph_status=("${PIPESTATUS[@]}")
 # is recorded with its exit code in excluded_starts_syspart_crash.txt. If the rest still
 # crashes (only a combination does), bisect for more, up to SYSPART_BISECT_MAX_RUNS
 # (default 60) runs. The call graph is then rebuilt from the remaining starts.
+# Some starts make SysPart loop instead of crash (Elastic ML controller): each probe is
+# limited to SYSPART_PROBE_TIMEOUT seconds (default 900) and a start that runs out is
+# excluded the same way, recorded with reason "timeout". The rebuild is limited to
+# SYSPART_REBUILD_TIMEOUT seconds (default 3600); running out there fails the library.
 # SYSPART_EXCLUDE_CRASHES=0 disables this.
 EXCLUDED="${OUT}/excluded_starts_syspart_crash.txt"
 rm -f "$EXCLUDED"
@@ -82,12 +86,15 @@ if [ "${callgraph_status[0]}" -ne 0 ] && [ "${SYSPART_EXCLUDE_CRASHES:-1}" != 0 
         && [ "$(grep -c . "$RESOLVED_START")" -gt 1 ]; then
     echo "compute_syscalls: call-graph step exited ${callgraph_status[0]}; testing each start function alone" >&2
     work=$(mktemp -d)
-    cg_code() { ( ./syspart -p "$APP" -s "$1" -i -a 23 > /dev/null 2>&1 ); echo $?; } 2>/dev/null
+    probe_timeout=${SYSPART_PROBE_TIMEOUT:-900}
+    # timeout exits 124 (TERM) or 137 (KILL after the grace period) when the limit is hit.
+    cg_code() { ( timeout -k 30 "$probe_timeout" ./syspart -p "$APP" -s "$1" -i -a 23 > /dev/null 2>&1 ); echo $?; } 2>/dev/null
     export APP
     grep . "$RESOLVED_START" | xargs -P "${SYSPART_CRASH_JOBS:-6}" -I{} sh -c '
-        d=$(mktemp -d -p "$1"); echo "$2" > "$d/s"
-        ( ./syspart -p "$APP" -s "$d/s" -i -a 23 > /dev/null 2>&1 ) 2>/dev/null; c=$?
-        [ "$c" -ne 0 ] && printf "%s\t%s\n" "$2" "$c" > "$d/bad"; true' _ "$work" {}
+        d=$(mktemp -d -p "$1"); echo "$3" > "$d/s"
+        ( timeout -k 30 "$2" ./syspart -p "$APP" -s "$d/s" -i -a 23 > /dev/null 2>&1 ) 2>/dev/null; c=$?
+        case "$c" in 124|137) c=timeout ;; esac
+        [ "$c" != 0 ] && printf "%s\t%s\n" "$3" "$c" > "$d/bad"; true' _ "$work" "$probe_timeout" {}
     cat "$work"/*/bad 2>/dev/null | sort > "$EXCLUDED"
     cut -f1 "$EXCLUDED" > "$work/bad"
     runs=0
@@ -108,6 +115,7 @@ if [ "${callgraph_status[0]}" -ne 0 ] && [ "${SYSPART_EXCLUDE_CRASHES:-1}" != 0 
         # Crashes only together with another start: drop the smallest crashing group found.
         code=$(cg_code "$work/cur")
         [ "$code" -ne 0 ] || break
+        case "$code" in 124|137) code=timeout ;; esac
         while read -r s; do printf '%s\t%s\n' "$s" "$code"; done < "$work/cur" >> "$EXCLUDED"
         cat "$work/cur" >> "$work/bad"
     done
@@ -116,7 +124,7 @@ if [ "${callgraph_status[0]}" -ne 0 ] && [ "${SYSPART_EXCLUDE_CRASHES:-1}" != 0 
     fi
     if [ -s "$EXCLUDED" ] && [ -s "$work/rest" ]; then
         cp "$work/rest" "$RESOLVED_START"
-        ./syspart -p $APP -s $RESOLVED_START -i -a 23 | python3 "$(dirname "$(realpath "$0")")/parse_callgraph_to_json_lowmem.py" - $OUT/callgraph.json
+        timeout -k 30 "${SYSPART_REBUILD_TIMEOUT:-3600}" ./syspart -p $APP -s $RESOLVED_START -i -a 23 | python3 "$(dirname "$(realpath "$0")")/parse_callgraph_to_json_lowmem.py" - $OUT/callgraph.json
         callgraph_status=("${PIPESTATUS[@]}")
     fi
     rm -rf "$work"
@@ -124,6 +132,8 @@ fi
 # ---- crash exclusion (end) ------------------------------------------------------
 if [ "${callgraph_status[0]}" -ne 0 ]; then
     echo "compute_syscalls: syspart call-graph step (-a 23) exited ${callgraph_status[0]} on $APP; no result" >&2
+    # Marks the folder as unanalysable (SysPart crash) for merge_all_syscalls.py.
+    echo "call-graph step (-a 23) exited ${callgraph_status[0]}" > "$OUT/syspart_failed.txt"
     exit 3
 fi
 

@@ -7,6 +7,6 @@ swat4j/rerun/
 swat4j/rerun_host/
 swat4j/dynamic/
 swat4j/.tmp_jdk8_native/
-echotrace/target/
+echotrace*/target/
 __pycache__/
 */whitelists_static/

@@ -413,6 +413,15 @@ process_binary() {
         log_message "SUCCESS" "Extracted $func_count imported functions as start points"
     fi
 
+    # Executables are analysed from _start + main: a non-PIE _start passes main
+    # to __libc_start_main as an immediate (mov $addr,%rdi), which SysPart does
+    # not follow, so from _start alone only libc's startup code is reached.
+    if [ "$(cat "$start_file")" = "_start" ] \
+            && { nm "$binary_path" 2>/dev/null; nm -D "$binary_path" 2>/dev/null; } | grep -q " [Tt] main$"; then
+        echo "main" >> "$start_file"
+        log_message "SUCCESS" "Added main as a second entry point"
+    fi
+
     #########################################################################
     # Step 2: Run SysPart analysis
     #########################################################################

@@ -1,0 +1,3 @@
+/opt/jruby/lib/jruby.jar
+/opt/jruby/lib/ruby/stdlib/io/wait.jar
+/opt/jruby/lib/ruby/stdlib/stringio.jar

@@ -1,0 +1,5 @@
+wait4 11cdb0 module-libc.so.6 wait4 61
+open 127bd0 module-libc.so.6 openat 257
+openat 127cd0 module-libc.so.6 openat 257
+read 128390 module-libc.so.6 read 0
+write 128e50 module-libc.so.6 write 1

@@ -1,0 +1,16 @@
+awk
+basename
+bash
+cut
+dirname
+expr
+ls
+/opt/java/openjdk/bin/java
+/opt/java/openjdk/lib/jspawnhelper
+runc
+sed
+sh
+uname
+/usr/bin/env
+/usr/bin/infocmp
+/usr/bin/test

@@ -13,6 +13,8 @@
 #           jetty_9.4.51-jdk8-buster
 #           official JDK 8 images: zookeeper_3.4.14 | tomcat_7.0 | cassandra_3.0.29 |
 #           orientdb_3.2.19 | jruby_9.4.2.0
+#           rebuilt on Debian 10: cassandra_3.0.29-jdk8-buster |
+#           orientdb_3.2.19-jdk8-buster | jruby_9.4.2.0-jdk8-buster
 #   first-stage: resume from this stage number (1-10), default 1
 #
 # Each target runs in its own workspace (jdk8_workspaces/<target>/) holding a
@@ -44,6 +46,28 @@ case "$T" in
         CMD=(nimbus); MARKER="" ;;
     jetty_9.4.51-jdk8-buster)
         IMAGE=jetty:9.4.51-jdk8-buster; RUN_ARGS=(); CMD=(); MARKER="Started @" ;;
+    zookeeper_3.4.14)
+        IMAGE=zookeeper:3.4.14; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
+    tomcat_7.0)
+        IMAGE=tomcat:7.0; RUN_ARGS=(); CMD=(); MARKER="Server startup in" ;;
+    cassandra_3.0.29)
+        IMAGE=cassandra:3.0.29; RUN_ARGS=(-e MAX_HEAP_SIZE=1G -e HEAP_NEWSIZE=256M); CMD=()
+        MARKER="Starting listening for CQL clients" ;;
+    orientdb_3.2.19)
+        IMAGE=orientdb:3.2.19; RUN_ARGS=(-e ORIENTDB_ROOT_PASSWORD=root); CMD=(); MARKER="OrientDB Studio available" ;;
+    jruby_9.4.2.0)
+        # irb needs a terminal and prints nothing: ready = JVM up for 30 s.
+        IMAGE=jruby:9.4.2.0; RUN_ARGS=(-it); CMD=(); MARKER="" ;;
+    # cassandra/orientdb/jruby rebuilt on debian:buster-slim + Temurin 8u504
+    # (DockerFiles/jdk8-buster/); same run arguments and ready lines.
+    cassandra_3.0.29-jdk8-buster)
+        IMAGE=cassandra:3.0.29-jdk8-buster; RUN_ARGS=(-e MAX_HEAP_SIZE=1G -e HEAP_NEWSIZE=256M); CMD=()
+        MARKER="Starting listening for CQL clients" ;;
+    orientdb_3.2.19-jdk8-buster)
+        IMAGE=orientdb:3.2.19-jdk8-buster; RUN_ARGS=(-e ORIENTDB_ROOT_PASSWORD=root); CMD=(); MARKER="OrientDB Studio available" ;;
+    jruby_9.4.2.0-jdk8-buster)
+        # irb needs a terminal and prints nothing: ready = JVM up for 30 s.
+        IMAGE=jruby:9.4.2.0-jdk8-buster; RUN_ARGS=(-it); CMD=(); MARKER="" ;;
     zookeeper_3.4.14)
         IMAGE=zookeeper:3.4.14; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
     tomcat_7.0)

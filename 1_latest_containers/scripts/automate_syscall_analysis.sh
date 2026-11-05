@@ -286,6 +286,28 @@ find_binary_file() {
 }
 
 #############################################################################
+# Function: write_start_entries
+# Description: Start functions for an executable that has _start (user decision 2026-11-05):
+#   _start, plus main whenever the binary defines it, dynamic or static (non-PIE _start passes
+#   main to __libc_start_main as an absolute immediate SysPart does not follow, so main was
+#   never reached), plus uu_<tool>::uumain for uutils multi-call binaries (dispatch on argv[0]
+#   through a table SysPart does not follow). PIE binaries already reach main; no change.
+# Arguments: $1 - binary path, $2 - start file
+#############################################################################
+write_start_entries() {
+    local binary_path="$1" start_file="$2" tool
+    tool=$(basename "$binary_path")
+    echo "_start" > "$start_file"
+    # grep without -q: an early exit would SIGPIPE nm/readelf and fail the test under pipefail.
+    if nm "$binary_path" 2>/dev/null | grep " [Tt] main$" >/dev/null; then
+        echo "main" >> "$start_file"
+    fi
+    nm "$binary_path" 2>/dev/null | awk '{print $NF}' \
+        | grep -E "^_ZN[0-9]+uu_${tool}6uumain" | sort -u >> "$start_file" || true
+    log_message "INFO" "Start functions for $tool: $(tr '\n' ' ' < "$start_file")" >&2
+}
+
+#############################################################################
 # Function: create_binary_start_file
 # Description: Create a start.txt file for a binary
 #              - First checks if "_start" symbol exists
@@ -306,15 +328,15 @@ create_binary_start_file() {
     # Try nm with regular symbols first
     if nm "$binary_path" 2>/dev/null | grep -q " [Tt] _start$"; then
         log_message "INFO" "Found _start symbol (nm), using it as entry point" >&2
-        echo "_start" > "$start_file"
+        write_start_entries "$binary_path" "$start_file"
     # Try nm with dynamic symbols (-D flag)
     elif nm -D "$binary_path" 2>/dev/null | grep -q " [Tt] _start$"; then
         log_message "INFO" "Found _start symbol (nm -D), using it as entry point" >&2
-        echo "_start" > "$start_file"
+        write_start_entries "$binary_path" "$start_file"
     # Try objdump as fallback
     elif objdump -t "$binary_path" 2>/dev/null | grep -q " _start$"; then
         log_message "INFO" "Found _start symbol (objdump), using it as entry point" >&2
-        echo "_start" > "$start_file"
+        write_start_entries "$binary_path" "$start_file"
     else
         log_message "WARN" "No _start symbol found in: $binary_name" >&2
         log_message "INFO" "Extracting imported (UND) functions as start functions" >&2
@@ -381,10 +403,10 @@ process_binary() {
 
     # Check for _start symbol
     if nm "$binary_path" 2>/dev/null | grep -q " [Tt] _start$"; then
-        echo "_start" > "$start_file"
+        write_start_entries "$binary_path" "$start_file"
         log_message "SUCCESS" "Found _start symbol, using it as entry point"
     elif nm -D "$binary_path" 2>/dev/null | grep -q " [Tt] _start$"; then
-        echo "_start" > "$start_file"
+        write_start_entries "$binary_path" "$start_file"
         log_message "SUCCESS" "Found _start symbol (dynamic), using it as entry point"
     else
         log_message "WARNING" "No _start symbol found, extracting imported functions..."

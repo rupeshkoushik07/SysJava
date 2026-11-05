@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 #
 # Static reproduction: rebuild one image's seccomp allowlist from the shipped
-# call graphs. No SysPart, no sysdig, no root, no debug symbols.
+# dataset and call graphs. No SysPart, no sysdig, no root, no debug symbols,
+# and no Docker when the image's results ship its dataset (results/<image>/dataset/).
 #
 #   ./whitelist.sh <image>            e.g. ./whitelist.sh zookeeper_3.9.5
 #   ./whitelist.sh all                every image with shipped results
 #
 # Steps (pipeline stage numbers of run_latest_target.sh in brackets):
-#   1. start the pinned image                                         [1]
-#   2. copy out the JARs, libraries and executables the shipped sysdig
-#      capture lists, and the container's JDK                         [2, 3]
+#   1-2. unpack the shipped dataset: the JARs, libraries, executables and JDK
+#      the original run copied out of the container                   [1-3]
+#      (without a shipped dataset, or with FROM_CONTAINER=1: start the pinned
+#      image and copy the files the shipped sysdig capture lists)
 #   3. bytecode analysis: native methods and their bindings           [4]
 #   4. native mapping: start functions per library                    [5]
 #   5. parse the shipped SysPart call graphs from those start
@@ -22,14 +24,15 @@
 #   <image>.diff.txt     syscalls added or missing against the shipped profile
 # Work files: work/static/<image>/
 #
-# Needs Docker, JDK 17+, Maven, Python 3, binutils. RESULTS=<dir> reads shipped
-# results from another folder (default: the table folder's results).
-# KEEP_CONTAINER=1 leaves the container running. ECHOTRACE=<dir> runs the
-# bytecode analysis from another build of the tool (default: echotrace/).
+# Needs JDK 17+, Maven, Python 3, binutils, xz (Docker only without a shipped
+# dataset). RESULTS=<dir> reads shipped results from another folder (default:
+# the table folder's results). KEEP_CONTAINER=1 leaves the container running.
+# The bytecode analysis uses the detector commit the image's results were made
+# with (detector_commit.txt, or "code at <commit>" in pipeline_run.log):
+# echotrace/ or echotrace_<commit>/. ECHOTRACE=<dir> overrides it.
 set -euo pipefail
 ART="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 T="${1:?usage: ./whitelist.sh <image>|all}"
-ET="${ECHOTRACE:-$ART/echotrace}"
 
 if [ "$T" = all ]; then
     rc=0
@@ -58,6 +61,20 @@ eval "$(sed -n '/^case "\$T" in/,/^esac/p' "$DRIVER")"
 eval "$(sed -n '/^ready() {/,/^}/p' "$DRIVER")"
 CNAME="et_static_${T}"
 
+# Detector build the shipped results were analysed with.
+if [ -n "${ECHOTRACE:-}" ]; then ET="$ECHOTRACE"
+else
+    used="$(sed -n 's/.*stage4_detector_commit=\([0-9a-f]*\).*/\1/p' "$SHIPPED/detector_commit.txt" 2>/dev/null | head -1 || true)"
+    [ -n "$used" ] || used="$(grep -aoE 'JNADetector, code at [0-9a-f]+' "$SHIPPED/pipeline_run.log" 2>/dev/null | tail -1 | awk '{print $NF}' || true)"
+    ET="$ART/echotrace"
+    if [ -n "$used" ] && ! grep -q "^$used" "$ART/echotrace/COMMIT"; then
+        if [ -d "$ART/echotrace_$used" ]; then ET="$ART/echotrace_$used"
+        else echo "note: results made with detector $used, which is not shipped; using echotrace/"; fi
+    fi
+fi
+DATASET_PARTS=("$SHIPPED"/dataset/Dataset.tar.xz.part*)
+[ -e "${DATASET_PARTS[0]}" ] && [ -z "${FROM_CONTAINER:-}" ] && FROM_DATASET=1 || FROM_DATASET=""
+
 WS="$ART/work/static/$T"
 OUT="$TABLE/whitelists_static"
 rm -rf "$WS"; mkdir -p "$WS" "$OUT"
@@ -80,6 +97,26 @@ if [ ! -f "$ET/target/.classpath" ]; then
         && mvn -q dependency:build-classpath -Dmdep.outputFile=target/.classpath)
 fi
 
+export IMG_NAME="$T"
+export JARFILES_DIR="$WS/JARFILES_$T" LIBS_DIR="$WS/LIBS_$T" BINARIES_DIR="$WS/BINARIES_$T"
+export RUNTIME_DIR="$WS/RUNTIME_$T" OUTPUTS_DIR="$WS/outputs_$T"
+export JARFILES_IMAGE="$JARFILES_DIR" LIBS_IMAGE="$LIBS_DIR"
+cp -a "$SHIPPED/Dynamic_Analysis/sysdig_outputs_$T" "$WS/sysdig_outputs_$T"
+echo "detector: $ET ($(cut -c1-7 "$ET/COMMIT" 2>/dev/null || echo ?))"
+
+if [ -n "$FROM_DATASET" ]; then
+# ---------------------------------------------- 1-2. shipped dataset
+step "1-2. unpack the shipped dataset (${#DATASET_PARTS[@]} parts)"
+cat "${DATASET_PARTS[@]}" | xz -dc | tar -x -C "$WS"
+mv "$WS/Dataset/"* "$WS/" && rmdir "$WS/Dataset"
+# Libraries the copied ELFs need but the capture did not list (e.g. libutil for
+# a JNA binding), as the debug-symbol stage [6] copied them from the container.
+if [ -d "$WS/Dataset_symbolized/LIBS_$T/_container_deps" ]; then
+    mkdir -p "$LIBS_DIR/_container_deps"
+    cp -a "$WS/Dataset_symbolized/LIBS_$T/_container_deps/." "$LIBS_DIR/_container_deps/"
+fi
+rm -rf "$WS/Dataset_symbolized"
+else
 # ------------------------------------------------------------ 1. container
 step "1. start $IMAGE"
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
@@ -104,14 +141,9 @@ docker run -d --name "$CNAME" "${RUN_ARGS[@]}" "$IMAGE" "${CMD[@]}" >/dev/null
 trap '[ -n "${KEEP_CONTAINER:-}" ] || docker rm -f "$CNAME" >/dev/null 2>&1 || true' EXIT
 ready 300 && echo "container up: $CNAME" || { echo "container did not become ready"; exit 1; }
 
-export IMG_NAME="$T"
-export JARFILES_DIR="$WS/JARFILES_$T" LIBS_DIR="$WS/LIBS_$T" BINARIES_DIR="$WS/BINARIES_$T"
-export RUNTIME_DIR="$WS/RUNTIME_$T" OUTPUTS_DIR="$WS/outputs_$T"
-export JARFILES_IMAGE="$JARFILES_DIR" LIBS_IMAGE="$LIBS_DIR"
 
 # ------------------------------------------------------- 2. copy inputs
 step "2. copy the files listed in the shipped capture, and the container's JDK"
-cp -a "$SHIPPED/Dynamic_Analysis/sysdig_outputs_$T" "$WS/sysdig_outputs_$T"
 # The extraction part of sysdig_unified.sh (its header and STEP 6), without the capture.
 awk '/^# --- STEP 1:/{skip=1} /^# --- STEP 6:/{skip=0} !skip' \
     "$WS/scripts/sysdig_unified.sh" > "$WS/scripts/copy_captured_files.sh"
@@ -125,6 +157,7 @@ mkdir -p "$WS/_deps_root" && mv "$LIBS_DIR" "$BINARIES_DIR" "$WS/_deps_root/"
 added = s.complete_dependencies(sys.argv[1], Path(sys.argv[2]))
 print("container dependencies added: %d %s" % (len(added), " ".join(added)))' "static_$T" "$WS/_deps_root")
 mv "$WS/_deps_root/LIBS_$T" "$WS/_deps_root/BINARIES_$T" "$WS/" && rmdir "$WS/_deps_root"
+fi
 if [ -d "$LIBS_DIR/_container_deps" ]; then cp -n "$LIBS_DIR/_container_deps/"* "$LIBS_DIR/" 2>/dev/null || true; fi
 bash "$WS/scripts/relink_sonames.sh" "$LIBS_DIR" >/dev/null
 echo "copied: $(find "$JARFILES_DIR" -name '*.jar' | wc -l) JARs, $(find "$LIBS_DIR" -name '*.so*' | wc -l) libraries," \

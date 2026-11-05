@@ -219,6 +219,17 @@ cd ~/Tutorial/rq1_native_mapping/syscall_ablation
   recomputation equals the ablation's own `syscalls.txt`.
 * **Pending libraries:** a library whose ablation graph is not finished is listed in
   `pending.csv`. Rerun the script once it finishes.
+* **Run of 2026-11-05 (ablation finished; 12.5 min):** libjvm stays pending, because its
+  no-binding graph never finished (`A/libjvm.so/DID_NOT_FINISH`, bad_alloc at 35 and 60 GB).
+  `check_A` is True for all six libraries. `check_B` is True only for libtcnative and libzip;
+  see O13. Union over the six libraries, all arms walked on the A graph: A 127, E 127,
+  B 119, S 116.
+  * E minus B: chmod fsync getppid mlock mlock2 rename statfs utimensat.
+  * B minus S: accept listen sendmsg. This is an artifact of the A graph (O13). On the
+    ablation's own B graphs, SWAT4J's start functions equal SysJava's in libtcnative, libjava,
+    libnet and libzip (same names), and those four already reach all 44 libssl/libcrypto
+    syscalls. So over the six libraries the SWAT4J union equals the SysJava union (116, same
+    set).
 * **Deployed-profile check:** not yet. It needs stage 10 of the pipeline, which fills
   `Final_results_latest_versions/tomcat_11.0.22/` with the BIN, unanalysed and final-profile
   files. Then pass `--rest` and `--profile` as in 4b.
@@ -276,5 +287,17 @@ cd ~/Tutorial/rq1_native_mapping/syscall_ablation
 
   The ES and Cassandra results come from a manual `grep -cx` over those three lists, not yet
   scripted.
+* **O13. A SysPart `-a 23` graph depends on its roots.** The same start functions reach
+  fewer syscalls on a graph rooted only at them than on the graph rooted at every function,
+  because indirect-call targets are resolved over the code the roots reach. On the
+  ablation's own binding-only graphs (B), with the same 75/107 starts:
+  * libssl reaches 44 syscalls there, but 59 on the all-function graph (A);
+  * libcrypto reaches 44 there, but 62 on A.
+  For libjava and libnet the pipeline's own binding-rooted runs give 107/104, against 109/107
+  on A. So arms E (exports) and S (SWAT4J) walked on the A graph are over-estimates. A fair E
+  and S needs its own SysPart run per library. The fair binding numbers are the ablation's
+  own B (`summary.md`, regenerated 2026-11-05 without libjvm): over the same six libraries as
+  `out_binding_tomcat11_0_22/`, 357 start functions reach 116 syscalls with binding, and 12,914
+  reach 127 without.
 * **O10. Load.** The host is shared, and each libjvm graph takes several GB to load. Run at most
   two `mechanism_ablation.py` processes at once.

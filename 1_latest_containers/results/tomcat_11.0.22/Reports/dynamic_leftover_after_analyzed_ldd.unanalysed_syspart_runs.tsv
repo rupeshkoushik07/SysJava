@@ -1,0 +1,8 @@
+image	loaded_name	resolved_relpath	output_dir	status	exit_code
+tomcat_11.0.22	libextnet.so	libextnet.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libextnet.so	skipped_complete	0
+tomcat_11.0.22	libjimage.so	libjimage.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libjimage.so	completed	0
+tomcat_11.0.22	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libjli.so	skipped_complete	0
+tomcat_11.0.22	libmanagement.so	libmanagement.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libmanagement.so	completed	0
+tomcat_11.0.22	libmanagement_ext.so	libmanagement_ext.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libmanagement_ext.so	completed	0
+tomcat_11.0.22	libnio.so	libnio.so	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libnio.so	completed	0
+tomcat_11.0.22	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libtinfo.so.6	completed	0

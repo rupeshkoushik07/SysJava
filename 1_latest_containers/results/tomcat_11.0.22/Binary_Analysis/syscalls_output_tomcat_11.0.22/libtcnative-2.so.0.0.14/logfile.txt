@@ -1,0 +1,386 @@
+
+Path to gettimeofday:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> __gettimeofday_syscall_df6d0
+  __gettimeofday_syscall_df6d0 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> __restore_rt_45330
+  __restore_rt_45330 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> clear_once_control_a1f70
+  clear_once_control_a1f70 - [syscall]-> futex
+
+Path to getrandom:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> getentropy_48710
+  getentropy_48710 - [syscall]-> getrandom
+
+Path to time:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> time_syscall_df5d0
+  time_syscall_df5d0 - [syscall]-> time
+
+Path to close:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_close_93930
+  _IO_file_close_93930 - [DIRECT]-> __close_nocancel_11c630
+  __close_nocancel_11c630 - [syscall]-> close
+
+Path to munmap:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_close_mmap_938f0
+  _IO_file_close_mmap_938f0 - [DIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to read:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_read_938b0
+  _IO_file_read_938b0 - [DIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to lseek:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_seek_938d0
+  _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to fstat:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_stat_938e0
+  _IO_file_stat_938e0 - [DIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to mmap:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_92c20
+  _IO_file_underflow_maybe_mmap_92c20 - [DIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to mremap:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_underflow_mmap_92990
+  _IO_file_underflow_mmap_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to write:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_93940
+  _IO_file_write@@GLIBC_2.2.5_93940 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to rt_sigprocmask:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> __start_context_5ef80
+  __start_context_5ef80 - [DIRECT]-> setcontext_4a960
+  setcontext_4a960 - [syscall]-> rt_sigprocmask
+
+Path to shmdt:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> cleanup_shm_3d5620
+  cleanup_shm_3d5620 - [DIRECT]-> shmdt_12c770
+  shmdt_12c770 - [syscall]-> shmdt
+
+Path to ioctl:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> open_console_35b230
+  open_console_35b230 - [DIRECT]-> tcgetattr_11ce50
+  tcgetattr_11ce50 - [syscall]-> ioctl
+
+Path to unlink:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> socket_cleanup_1dda0
+  socket_cleanup_1dda0 - [DIRECT]-> unlink_11c430
+  unlink_11c430 - [syscall]-> unlink
+
+Path to getpid:
+  Java_org_apache_tomcat_jni_SSL_newSSL_bd60 - [DIRECT]-> SSL_rand_seed_b770
+  SSL_rand_seed_b770 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to gettid:
+  Java_org_apache_tomcat_jni_SSL_newSSL_bd60 - [DIRECT]-> SSL_rand_seed_b770
+  SSL_rand_seed_b770 - [DIRECT]-> tcn_get_thread_id_aed0
+  tcn_get_thread_id_aed0 - [syscall]-> gettid
+
+Path to madvise:
+  Java_org_apache_tomcat_jni_SSLContext_setAlpnProtos_102b0 - [DIRECT]-> realloc_ae0c0
+  realloc_ae0c0 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to socket:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_socket_create_22d30
+  apr_socket_create_22d30 - [DIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to connect:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_socket_connect_25f10
+  apr_socket_connect_25f10 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to getsockopt:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_socket_connect_25f10
+  apr_socket_connect_25f10 - [DIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to fcntl:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_socket_timeout_set_23690
+  apr_socket_timeout_set_23690 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to wait4:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
+  _IO_proc_close@@GLIBC_2.2.5_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to writev:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> __libc_fatal_90a40
+  __libc_fatal_90a40 - [DIRECT]-> __libc_message_impl_90810
+  __libc_message_impl_90810 - [syscall]-> writev
+
+Path to openat:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
+  __malloc_hugepage_config_12b580 - [DIRECT]-> __open64_nocancel_11c8a0
+  __open64_nocancel_11c8a0 - [syscall]-> openat
+
+Path to getdents64:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
+  __malloc_hugepage_config_12b580 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to pread64:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
+  __malloc_hugepage_config_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to newfstatat:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> def_load_bio_142d50
+  def_load_bio_142d50 - [DIRECT]-> stat_11bbf0
+  stat_11bbf0 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to clock_gettime:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> ossl_rand_get_nonce_309620
+  ossl_rand_get_nonce_309620 - [DIRECT]-> ossl_pool_add_nonce_data_3d5d90
+  ossl_pool_add_nonce_data_3d5d90 - [DIRECT]-> clock_gettime@@GLIBC_2.17_ec950
+  clock_gettime@@GLIBC_2.17_ec950 - [syscall]-> clock_gettime
+
+Path to bind:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> rfc3484_sort_159170
+  rfc3484_sort_159170 - [DIRECT]-> __check_native_13f5b0
+  __check_native_13f5b0 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to getsockname:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> rfc3484_sort_159170
+  rfc3484_sort_159170 - [DIRECT]-> __check_native_13f5b0
+  __check_native_13f5b0 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to sendto:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> rfc3484_sort_159170
+  rfc3484_sort_159170 - [DIRECT]-> __check_native_13f5b0
+  __check_native_13f5b0 - [DIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to recvmsg:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> rfc3484_sort_159170
+  rfc3484_sort_159170 - [DIRECT]-> __check_native_13f5b0
+  __check_native_13f5b0 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to mprotect:
+  Java_org_apache_tomcat_jni_SSL_newSSL_bd60 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> _int_malloc_ab570
+  _int_malloc_ab570 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to exit_group:
+  Java_org_apache_tomcat_jni_SSLContext_setSessionTicketKeys_107c0 - [DIRECT]-> exit_47ba0
+  exit_47ba0 - [DIRECT]-> __run_exit_handlers_47910
+  __run_exit_handlers_47910 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to poll:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_socket_connect_25f10
+  apr_socket_connect_25f10 - [DIRECT]-> apr_wait_for_io_or_timeout_2b310
+  apr_wait_for_io_or_timeout_2b310 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to prctl:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> __libc_fatal_90a40
+  __libc_fatal_90a40 - [DIRECT]-> __libc_message_impl_90810
+  __libc_message_impl_90810 - [DIRECT]-> __set_vma_name_12a770
+  __set_vma_name_12a770 - [syscall]-> prctl
+
+Path to recvfrom:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> recvfrom_12bca0
+  recvfrom_12bca0 - [syscall]-> recvfrom
+
+Path to sendmmsg:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to getcwd:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> dlopen_doit_98140
+  dlopen_doit_98140 - [DIRECT]-> dcgettext_3bf80
+  dcgettext_3bf80 - [DIRECT]-> __dcigettext_3ce60
+  __dcigettext_3ce60 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to shmget:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> ossl_rand_get_entropy_309530
+  ossl_rand_get_entropy_309530 - [DIRECT]-> ossl_pool_acquire_entropy_3d59f0
+  ossl_pool_acquire_entropy_3d59f0 - [DIRECT]-> wait_random_seeded_3d5630
+  wait_random_seeded_3d5630 - [DIRECT]-> shmget_12c7a0
+  shmget_12c7a0 - [syscall]-> shmget
+
+Path to shmat:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> ossl_rand_get_entropy_309530
+  ossl_rand_get_entropy_309530 - [DIRECT]-> ossl_pool_acquire_entropy_3d59f0
+  ossl_pool_acquire_entropy_3d59f0 - [DIRECT]-> wait_random_seeded_3d5630
+  wait_random_seeded_3d5630 - [DIRECT]-> shmat_12c740
+  shmat_12c740 - [syscall]-> shmat
+
+Path to uname:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> ossl_rand_get_entropy_309530
+  ossl_rand_get_entropy_309530 - [DIRECT]-> ossl_pool_acquire_entropy_3d59f0
+  ossl_pool_acquire_entropy_3d59f0 - [DIRECT]-> wait_random_seeded_3d5630
+  wait_random_seeded_3d5630 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to pselect6:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> ossl_rand_get_entropy_309530
+  ossl_rand_get_entropy_309530 - [DIRECT]-> ossl_pool_acquire_entropy_3d59f0
+  ossl_pool_acquire_entropy_3d59f0 - [DIRECT]-> wait_random_seeded_3d5630
+  wait_random_seeded_3d5630 - [DIRECT]-> select_126bc0
+  select_126bc0 - [syscall]-> pselect6
+
+Path to rt_sigaction:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> read_string_35b790
+  read_string_35b790 - [DIRECT]-> read_string_inner_35b3e0
+  read_string_inner_35b3e0 - [DIRECT]-> sigaction_452e0
+  sigaction_452e0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to sched_getaffinity:
+  Java_org_apache_tomcat_jni_SSL_newSSL_bd60 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> arena_get2.part.0_aa300
+  arena_get2.part.0_aa300 - [DIRECT]-> get_nprocs_11fd60
+  get_nprocs_11fd60 - [DIRECT]-> __get_nprocs_sched_11fab0
+  __get_nprocs_sched_11fab0 - [syscall]-> sched_getaffinity
+
+Path to kill:
+  Java_org_apache_tomcat_jni_Library_terminate_aca0 - [DIRECT]-> apr_pool_destroy_28100
+  apr_pool_destroy_28100 - [DIRECT]-> free_proc_chain.part.0_27f60
+  free_proc_chain.part.0_27f60 - [DIRECT]-> apr_proc_kill_2b6f0
+  apr_proc_kill_2b6f0 - [DIRECT]-> kill_45530
+  kill_45530 - [syscall]-> kill
+
+Path to prlimit64:
+  Java_org_apache_tomcat_jni_Library_initialize_ac50 - [DIRECT]-> apr_initialize_29400
+  apr_initialize_29400 - [DIRECT]-> apr_pool_initialize_27c70
+  apr_pool_initialize_27c70 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to tgkill:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> CRYPTO_secure_malloc_2246b0
+  CRYPTO_secure_malloc_2246b0 - [DIRECT]-> OPENSSL_die_220960
+  OPENSSL_die_220960 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> raise_45260
+  raise_45260 - [DIRECT]-> pthread_kill@@GLIBC_2.34_9ea10
+  pthread_kill@@GLIBC_2.34_9ea10 - [syscall]-> tgkill
+
+Path to getpeername:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> send_vc_14ae90
+  send_vc_14ae90 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to brk:
+  Java_org_apache_tomcat_jni_SSL_newSSL_bd60 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> _int_malloc_ab570
+  _int_malloc_ab570 - [DIRECT]-> __glibc_morecore_aaa10
+  __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to sysinfo:
+  Java_org_apache_tomcat_jni_Library_initialize_ac50 - [DIRECT]-> apr_initialize_29400
+  apr_initialize_29400 - [DIRECT]-> apr_pool_initialize_27c70
+  apr_pool_initialize_27c70 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_avphys_pages_11fe70
+  get_avphys_pages_11fe70 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to sched_getparam:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_current_priority_a5490
+  __pthread_current_priority_a5490 - [DIRECT]-> sched_getparam_10e680
+  sched_getparam_10e680 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_current_priority_a5490
+  __pthread_current_priority_a5490 - [DIRECT]-> sched_getscheduler_10e6b0
+  sched_getscheduler_10e6b0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to setsockopt:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> reopen_14ac60
+  reopen_14ac60 - [DIRECT]-> __res_enable_icmp_146650
+  __res_enable_icmp_146650 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to readv:
+  Java_org_apache_tomcat_jni_SSL_getCipherForSSL_c130 - [INDIRECT]-> SSL_callback_SSL_verify_115b0
+  SSL_callback_SSL_verify_115b0 - [DIRECT]-> apr_sockaddr_info_get_28bf0
+  apr_sockaddr_info_get_28bf0 - [DIRECT]-> call_resolver.isra.0_2f120
+  call_resolver.isra.0_2f120 - [DIRECT]-> getaddrinfo_15a720
+  getaddrinfo_15a720 - [DIRECT]-> getservbyname_r@@GLIBC_2.2.5_163eb0
+  getservbyname_r@@GLIBC_2.2.5_163eb0 - [DIRECT]-> __nscd_getservbyname_r_17f720
+  __nscd_getservbyname_r_17f720 - [DIRECT]-> nscd_getserv_r_17ecc0
+  nscd_getserv_r_17ecc0 - [DIRECT]-> __readvall_180450
+  __readvall_180450 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv

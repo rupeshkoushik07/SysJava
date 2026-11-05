@@ -1,0 +1,699 @@
+
+Path to socket:
+  Java_sun_nio_ch_UnixDomainSockets_socket0_cc20 - [DIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to fchown:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [DIRECT]-> fchown_116fa0
+  fchown_116fa0 - [syscall]-> fchown
+
+Path to gettid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
+
+Path to futex:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __condvar_cleanup_waiting_9b4b0
+  __condvar_cleanup_waiting_9b4b0 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __restore_rt_45330
+  __restore_rt_45330 - [syscall]-> rt_sigreturn
+
+Path to rt_sigprocmask:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [syscall]-> rt_sigprocmask
+
+Path to setresuid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [syscall]-> setresgid
+
+Path to close_range:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [syscall]-> close_range
+
+Path to newfstatat:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> fstatat_wrapper_df90
+  fstatat_wrapper_df90 - [syscall]-> newfstatat
+
+Path to set_robust_list:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> start_thread_9c720
+  start_thread_9c720 - [syscall]-> set_robust_list
+
+Path to rseq:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> start_thread_9c720
+  start_thread_9c720 - [syscall]-> rseq
+
+Path to exit:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> start_thread_9c720
+  start_thread_9c720 - [syscall]-> exit
+
+Path to time:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> time_syscall_df5d0
+  time_syscall_df5d0 - [syscall]-> time
+
+Path to write:
+  Java_sun_nio_fs_UnixNativeDispatcher_write0_eaf0 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to getsockopt:
+  Java_sun_nio_ch_Net_getInterface6_c160 - [DIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to fadvise64:
+  Java_sun_nio_fs_LinuxNativeDispatcher_posix_1fadvise_9f30 - [DIRECT]-> posix_fadvise_11b550
+  posix_fadvise_11b550 - [syscall]-> fadvise64
+
+Path to fcntl:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_release0_d760 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to recvfrom:
+  Java_sun_nio_ch_DatagramDispatcher_read0_8b50 - [DIRECT]-> recv_12bbe0
+  recv_12bbe0 - [syscall]-> recvfrom
+
+Path to getpeername:
+  Java_sun_nio_ch_InheritedChannel_unixPeerAddress0_9850 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to listen:
+  Java_sun_nio_ch_Net_listen_aed0 - [DIRECT]-> listen_12bb50
+  listen_12bb50 - [syscall]-> listen
+
+Path to readv:
+  Java_sun_nio_ch_SocketDispatcher_readv0_c7d0 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv
+
+Path to poll:
+  Java_sun_nio_fs_LinuxWatchService_poll_a450 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to fchmodat:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchmodat0_f0e0 - [DIRECT]-> fchmodat_116df0
+  fchmodat_116df0 - [syscall]-> fchmodat
+
+Path to epoll_ctl:
+  Java_sun_nio_ch_EPoll_ctl_8e70 - [DIRECT]-> epoll_ctl_12ad20
+  epoll_ctl_12ad20 - [syscall]-> epoll_ctl
+
+Path to sendfile:
+  Java_sun_nio_fs_LinuxNativeDispatcher_directCopy0_9f40 - [DIRECT]-> sendfile_11bbb0
+  sendfile_11bbb0 - [syscall]-> sendfile
+
+Path to tgkill:
+  Java_sun_nio_ch_NativeThread_signal0_a840 - [DIRECT]-> pthread_kill@@GLIBC_2.34_9ea10
+  pthread_kill@@GLIBC_2.34_9ea10 - [syscall]-> tgkill
+
+Path to socketpair:
+  Java_sun_nio_ch_UnixDispatcher_init_c980 - [DIRECT]-> socketpair_12c340
+  socketpair_12c340 - [syscall]-> socketpair
+
+Path to close:
+  Java_sun_nio_ch_UnixDispatcher_init_c980 - [DIRECT]-> close_116710
+  close_116710 - [syscall]-> close
+
+Path to access:
+  Java_sun_nio_fs_UnixNativeDispatcher_access0_fd60 - [DIRECT]-> access_116650
+  access_116650 - [syscall]-> access
+
+Path to sendto:
+  Java_sun_nio_ch_DatagramDispatcher_write0_8c70 - [DIRECT]-> send_12bec0
+  send_12bec0 - [syscall]-> sendto
+
+Path to readlink:
+  Java_sun_nio_fs_UnixNativeDispatcher_readlink0_fb80 - [DIRECT]-> readlink_11bb20
+  readlink_11bb20 - [syscall]-> readlink
+
+Path to rename:
+  Java_sun_nio_fs_UnixNativeDispatcher_rename0_fa30 - [DIRECT]-> rename_661d0
+  rename_661d0 - [syscall]-> rename
+
+Path to fstat:
+  Java_sun_nio_ch_FileKey_init_91e0 - [DIRECT]-> __fxstat_12a180
+  __fxstat_12a180 - [syscall]-> fstat
+
+Path to utimensat:
+  Java_sun_nio_fs_UnixNativeDispatcher_utimensat0_f4f0 - [DIRECT]-> utimensat_11c540
+  utimensat_11c540 - [syscall]-> utimensat
+
+Path to connect:
+  Java_sun_nio_ch_Net_connect0_af80 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to accept:
+  Java_sun_nio_ch_UnixDomainSockets_accept0_cee0 - [DIRECT]-> accept_12b820
+  accept_12b820 - [syscall]-> accept
+
+Path to stat:
+  Java_sun_nio_fs_UnixNativeDispatcher_stat0_eb80 - [DIRECT]-> __xstat_12ab60
+  __xstat_12ab60 - [syscall]-> stat
+
+Path to dup2:
+  Java_sun_nio_ch_DatagramDispatcher_dup0_8d90 - [DIRECT]-> dup2_116990
+  dup2_116990 - [syscall]-> dup2
+
+Path to writev:
+  Java_sun_nio_ch_SocketDispatcher_writev0_c8b0 - [DIRECT]-> writev_129880
+  writev_129880 - [syscall]-> writev
+
+Path to openat:
+  Java_sun_nio_ch_InheritedChannel_open0_9b00 - [DIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to chown:
+  Java_sun_nio_fs_UnixNativeDispatcher_chown0_f180 - [DIRECT]-> chown_1166e0
+  chown_1166e0 - [syscall]-> chown
+
+Path to inotify_rm_watch:
+  Java_sun_nio_fs_LinuxWatchService_inotifyRmWatch_a2f0 - [DIRECT]-> inotify_rm_watch_12aed0
+  inotify_rm_watch_12aed0 - [syscall]-> inotify_rm_watch
+
+Path to pipe2:
+  Java_sun_nio_ch_IOUtil_makePipe_93d0 - [DIRECT]-> pipe_11b440
+  pipe_11b440 - [syscall]-> pipe2
+
+Path to dup:
+  Java_sun_nio_fs_UnixNativeDispatcher_dup_e6b0 - [DIRECT]-> dup_116960
+  dup_116960 - [syscall]-> dup
+
+Path to setsockopt:
+  Java_sun_nio_ch_Net_setInterface6_c0a0 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to read:
+  Java_sun_nio_ch_IOUtil_drain_9520 - [DIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to bind:
+  Java_sun_nio_ch_UnixDomainSockets_bind0_cc70 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to lseek:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_available0_d4c0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to ioctl:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_available0_d4c0 - [DIRECT]-> ioctl_124de0
+  ioctl_124de0 - [syscall]-> ioctl
+
+Path to lchown:
+  Java_sun_nio_fs_UnixNativeDispatcher_lchown0_f210 - [DIRECT]-> lchown_11ae50
+  lchown_11ae50 - [syscall]-> lchown
+
+Path to getsockname:
+  Java_sun_nio_ch_Net_localPort_b200 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to fchmod:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchmod0_f050 - [DIRECT]-> fchmod_116dc0
+  fchmod_116dc0 - [syscall]-> fchmod
+
+Path to inotify_init:
+  Java_sun_nio_fs_LinuxWatchService_inotifyInit_a230 - [DIRECT]-> inotify_init_12a230
+  inotify_init_12a230 - [syscall]-> inotify_init
+
+Path to symlink:
+  Java_sun_nio_fs_UnixNativeDispatcher_symlink0_fb20 - [DIRECT]-> symlink_11bfa0
+  symlink_11bfa0 - [syscall]-> symlink
+
+Path to pwrite64:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_pwrite0_d240 - [DIRECT]-> pwrite_fa500
+  pwrite_fa500 - [syscall]-> pwrite64
+
+Path to lstat:
+  Java_sun_nio_fs_UnixNativeDispatcher_lstat0_ec50 - [DIRECT]-> __lxstat_12a260
+  __lxstat_12a260 - [syscall]-> lstat
+
+Path to munmap:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_unmap0_d970 - [DIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to recvmsg:
+  Java_sun_nio_ch_DatagramDispatcher_readv0_8bd0 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to chmod:
+  Java_sun_nio_fs_UnixNativeDispatcher_chmod0_efc0 - [DIRECT]-> chmod_1166b0
+  chmod_1166b0 - [syscall]-> chmod
+
+Path to fgetxattr:
+  Java_sun_nio_fs_UnixNativeDispatcher_fgetxattr0_104d0 - [DIRECT]-> fgetxattr_11e800
+  fgetxattr_11e800 - [syscall]-> fgetxattr
+
+Path to fsetxattr:
+  Java_sun_nio_fs_UnixNativeDispatcher_fsetxattr0_10540 - [DIRECT]-> fsetxattr_11e890
+  fsetxattr_11e890 - [syscall]-> fsetxattr
+
+Path to epoll_wait:
+  Java_sun_nio_ch_EPoll_wait_8ea0 - [DIRECT]-> epoll_wait_12a020
+  epoll_wait_12a020 - [syscall]-> epoll_wait
+
+Path to fremovexattr:
+  Java_sun_nio_fs_UnixNativeDispatcher_fremovexattr0_105b0 - [DIRECT]-> fremovexattr_11e860
+  fremovexattr_11e860 - [syscall]-> fremovexattr
+
+Path to getcwd:
+  Java_sun_nio_fs_UnixNativeDispatcher_getcwd_e530 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to rmdir:
+  Java_sun_nio_fs_UnixNativeDispatcher_rmdir0_f850 - [DIRECT]-> rmdir_11bb80
+  rmdir_11bb80 - [syscall]-> rmdir
+
+Path to inotify_add_watch:
+  Java_sun_nio_fs_LinuxWatchService_inotifyAddWatch_a290 - [DIRECT]-> inotify_add_watch_12ae70
+  inotify_add_watch_12ae70 - [syscall]-> inotify_add_watch
+
+Path to mmap:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_map0_d850 - [DIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to epoll_create1:
+  Java_sun_nio_ch_EPoll_create_8e30 - [DIRECT]-> epoll_create1_12acf0
+  epoll_create1_12acf0 - [syscall]-> epoll_create1
+
+Path to link:
+  Java_sun_nio_fs_UnixNativeDispatcher_link0_f8b0 - [DIRECT]-> link_11ae80
+  link_11ae80 - [syscall]-> link
+
+Path to mkdir:
+  Java_sun_nio_fs_UnixNativeDispatcher_mkdir0_f7f0 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to shutdown:
+  Java_sun_nio_ch_Net_shutdown_c210 - [DIRECT]-> shutdown_12c1c0
+  shutdown_12c1c0 - [syscall]-> shutdown
+
+Path to eventfd2:
+  Java_sun_nio_ch_EventFD_eventfd0_8f00 - [DIRECT]-> eventfd_12a0c0
+  eventfd_12a0c0 - [syscall]-> eventfd2
+
+Path to flistxattr:
+  Java_sun_nio_fs_UnixNativeDispatcher_flistxattr_10610 - [DIRECT]-> flistxattr_11e830
+  flistxattr_11e830 - [syscall]-> flistxattr
+
+Path to pread64:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_pread0_d150 - [DIRECT]-> pread_fa460
+  pread_fa460 - [syscall]-> pread64
+
+Path to sendmsg:
+  Java_sun_nio_ch_DatagramDispatcher_writev0_8cf0 - [DIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to ftruncate:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_truncate0_d3b0 - [DIRECT]-> ftruncate_11ee90
+  ftruncate_11ee90 - [syscall]-> ftruncate
+
+Path to fdatasync:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_force0_d350 - [DIRECT]-> fdatasync_11e770
+  fdatasync_11e770 - [syscall]-> fdatasync
+
+Path to fsync:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_force0_d350 - [DIRECT]-> fsync_11ee00
+  fsync_11ee00 - [syscall]-> fsync
+
+Path to prlimit64:
+  Java_sun_nio_ch_IOUtil_fdLimit_9620 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to unlink:
+  Java_sun_nio_fs_UnixNativeDispatcher_unlink0_f940 - [DIRECT]-> unlink_11c430
+  unlink_11c430 - [syscall]-> unlink
+
+Path to msync:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MappedMemoryUtils_force0_a660
+  MappedMemoryUtils_force0_a660 - [DIRECT]-> msync_125c70
+  msync_125c70 - [syscall]-> msync
+
+Path to mincore:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MappedMemoryUtils_isLoaded0_a4f0
+  MappedMemoryUtils_isLoaded0_a4f0 - [DIRECT]-> mincore_1251a0
+  mincore_1251a0 - [syscall]-> mincore
+
+Path to madvise:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MappedMemoryUtils_load0_a5c0
+  MappedMemoryUtils_load0_a5c0 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to mremap:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _IO_file_underflow_mmap_92990
+  _IO_file_underflow_mmap_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to mprotect:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to membarrier:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
+  _ZN22VM_HandshakeAllThreads4doitEv_9b9000 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780
+  _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780 - [syscall]-> membarrier
+
+Path to clock_gettime:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_e818d0
+  _ZN2os13javaTimeNanosEv_e818d0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_ec950
+  clock_gettime@@GLIBC_2.17_ec950 - [syscall]-> clock_gettime
+
+Path to getpid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __nptl_setxid_sighandler_99530
+  __nptl_setxid_sighandler_99530 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to rt_sigaction:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to fchdir:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> fchdir_116d90
+  fchdir_116d90 - [syscall]-> fchdir
+
+Path to exit_group:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to chdir:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> chdir_116680
+  chdir_116680 - [syscall]-> chdir
+
+Path to getpgid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> getpgid_f5a50
+  getpgid_f5a50 - [syscall]-> getpgid
+
+Path to getuid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> getuid_f5b40
+  getuid_f5b40 - [syscall]-> getuid
+
+Path to setsid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> setsid_10ea90
+  setsid_10ea90 - [syscall]-> setsid
+
+Path to setpgid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> setpgid_10e930
+  setpgid_10e930 - [syscall]-> setpgid
+
+Path to sched_setscheduler:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to sched_setparam:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> sched_setparam_10e7a0
+  sched_setparam_10e7a0 - [syscall]-> sched_setparam
+
+Path to getgid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> __spawni_child_10f8d0
+  __spawni_child_10f8d0 - [DIRECT]-> getgid_f4760
+  getgid_f4760 - [syscall]-> getgid
+
+Path to sched_getscheduler:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
+  pthread_create@@GLIBC_2.34_9cbc0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
+  pthread_create@@GLIBC_2.34_9cbc0 - [syscall]-> sched_getparam
+
+Path to getdents64:
+  Java_sun_nio_fs_UnixNativeDispatcher_readdir0_f730 - [DIRECT]-> readdir_ed970
+  readdir_ed970 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to faccessat2:
+  Java_sun_nio_fs_UnixNativeDispatcher_realpath0_fc80 - [DIRECT]-> realpath@@GLIBC_2.3_46730
+  realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat2
+
+Path to faccessat:
+  Java_sun_nio_fs_UnixNativeDispatcher_realpath0_fc80 - [DIRECT]-> realpath@@GLIBC_2.3_46730
+  realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat
+
+Path to mknodat:
+  Java_sun_nio_fs_UnixNativeDispatcher_mknod0_fea0 - [DIRECT]-> __xmknod_12aaf0
+  __xmknod_12aaf0 - [DIRECT]-> mknodat_11b100
+  mknodat_11b100 - [syscall]-> mknodat
+
+Path to statfs:
+  Java_sun_nio_fs_UnixNativeDispatcher_statvfs0_fda0 - [DIRECT]-> statvfs_11bc40
+  statvfs_11bc40 - [DIRECT]-> statfs_11bc10
+  statfs_11bc10 - [syscall]-> statfs
+
+Path to getrandom:
+  Java_sun_nio_fs_UnixNativeDispatcher_getpwuid_ff40 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> ptmalloc_init.part.0_a9d70
+  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
+
+Path to fstatfs:
+  Java_sun_nio_ch_UnixFileDispatcherImpl_setDirect0_d9c0 - [DIRECT]-> fstatvfs_117450
+  fstatvfs_117450 - [DIRECT]-> fstatfs_117420
+  fstatfs_117420 - [syscall]-> fstatfs
+
+Path to geteuid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> Perf_Attach_eba180
+  Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
+  _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to sysinfo:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
+  WB_HostPhysicalSwap_12baca0 - [DIRECT]-> _ZN2os5Linux9host_swapEv_e70ed0
+  _ZN2os5Linux9host_swapEv_e70ed0 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to wait4:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
+  _IO_proc_close@@GLIBC_2.2.5_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to times:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
+  _ZN17ShenandoahMmuTask4taskEv_1094c70 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__e819b0
+  _ZN2os12getTimesSecsEPdS0_S0__e819b0 - [DIRECT]-> times_1106b0
+  times_1106b0 - [syscall]-> times
+
+Path to getrusage:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
+  _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420 - [DIRECT]-> _ZN2os12elapsedVTimeEv_e71230
+  _ZN2os12elapsedVTimeEv_e71230 - [DIRECT]-> getrusage_11d260
+  getrusage_11d260 - [syscall]-> getrusage
+
+Path to prctl:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> start_thread_9c720
+  start_thread_9c720 - [DIRECT]-> name_stack_maps_9c650
+  name_stack_maps_9c650 - [DIRECT]-> __set_vma_name_12a770
+  __set_vma_name_12a770 - [syscall]-> prctl
+
+Path to rt_sigtimedwait:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> sigwaitinfo_46020
+  sigwaitinfo_46020 - [DIRECT]-> sigtimedwait_45f50
+  sigtimedwait_45f50 - [syscall]-> rt_sigtimedwait
+
+Path to sched_setaffinity:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
+  pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
+  create_thread_9c450 - [syscall]-> sched_setaffinity
+
+Path to getegid:
+  Java_sun_nio_fs_UnixNativeDispatcher_realpath0_fc80 - [DIRECT]-> realpath@@GLIBC_2.3_46730
+  realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to sched_getaffinity:
+  Java_sun_nio_ch_IOUtil_iovMax_9670 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
+  get_nprocs_conf_11fda0 - [DIRECT]-> __get_nprocs_sched_11fab0
+  __get_nprocs_sched_11fab0 - [syscall]-> sched_getaffinity
+
+Path to sched_yield:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80
+  _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80 - [DIRECT]-> _ZN2os11naked_yieldEv_e80c90
+  _ZN2os11naked_yieldEv_e80c90 - [DIRECT]-> sched_yield_10e800
+  sched_yield_10e800 - [syscall]-> sched_yield
+
+Path to kill:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> Perf_Attach_eba180
+  Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
+  _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> _ZL18get_user_name_slowiiP10JavaThread_ebd8a0
+  _ZL18get_user_name_slowiiP10JavaThread_ebd8a0 - [DIRECT]-> kill_45530
+  kill_45530 - [syscall]-> kill
+
+Path to clock_nanosleep:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_12c39c0
+  WB_CheckThreadObjOfTerminatingThread_12c39c0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_e80cf0
+  _ZN2os17naked_short_sleepEl_e80cf0 - [DIRECT]-> nanosleep_f9a10
+  nanosleep_f9a10 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_eca20
+  clock_nanosleep@@GLIBC_2.17_eca20 - [syscall]-> clock_nanosleep
+
+Path to uname:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> WB_PrintOsInfo_12baec0
+  WB_PrintOsInfo_12baec0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_e747e0
+  _ZN2os13print_os_infoEP12outputStream_e747e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0
+  _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to setpriority:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
+  _ZN12WorkerThread3runEv_12cb260 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0
+  _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_e73650
+  _ZN2os19set_native_priorityEP6Threadi_e73650 - [DIRECT]-> setpriority_11d650
+  setpriority_11d650 - [syscall]-> setpriority
+
+Path to getpriority:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_e3a900
+  _ZNK11NamedThread8print_onEP12outputStream_e3a900 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_11f7fb0
+  _ZNK6Thread8print_onEP12outputStreamb_11f7fb0 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_e73690
+  _ZN2os19get_native_priorityEPK6ThreadPi_e73690 - [DIRECT]-> getpriority_11d610
+  getpriority_11d610 - [syscall]-> getpriority
+
+Path to sendmmsg:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to getgroups:
+  Java_sun_nio_fs_UnixNativeDispatcher_realpath0_fc80 - [DIRECT]-> realpath@@GLIBC_2.3_46730
+  realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> group_member_f9930
+  group_member_f9930 - [DIRECT]-> getgroups_f4770
+  getgroups_f4770 - [syscall]-> getgroups
+
+Path to sched_get_priority_max:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
+  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
+  pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
+  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
+  pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to fallocate:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
+  _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
+  _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
+  _ZN2os18map_memory_to_fileEPcmi_e82950 - [DIRECT]-> posix_fallocate64_11b950
+  posix_fallocate64_11b950 - [syscall]-> fallocate
+
+Path to clone3:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
+  pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
+  create_thread_9c450 - [DIRECT]-> __clone_internal_129b30
+  __clone_internal_129b30 - [DIRECT]-> clone3_129c40
+  clone3_129c40 - [syscall]-> clone3
+
+Path to clone:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> timer_helper_thread_a8d50
+  timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
+  pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
+  create_thread_9c450 - [DIRECT]-> __clone_internal_129b30
+  __clone_internal_129b30 - [DIRECT]-> clone_129a20
+  clone_129a20 - [syscall]-> clone
+
+Path to brk:
+  Java_sun_nio_fs_UnixNativeDispatcher_getpwuid_ff40 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> _int_malloc_ab570
+  _int_malloc_ab570 - [DIRECT]-> __glibc_morecore_aaa10
+  __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to umask:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0
+  JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_78ec40
+  _Z15report_vm_errorPKciS0_S0_z_78ec40 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_128af30
+  _ZN7VMError6reportEP12outputStreamb_128af30 - [DIRECT]-> _ZN2os15print_user_infoEP12outputStream_e807a0
+  _ZN2os15print_user_infoEP12outputStream_e807a0 - [DIRECT]-> umask_11c420
+  umask_11c420 - [syscall]-> umask
+
+Path to waitid:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_e82400
+  _ZN2os13fork_and_execEPKc_e82400 - [DIRECT]-> posix_spawn@@GLIBC_2.15_10ecd0
+  posix_spawn@@GLIBC_2.15_10ecd0 - [DIRECT]-> __spawni_10fec0
+  __spawni_10fec0 - [DIRECT]-> __spawnix_10f420
+  __spawnix_10f420 - [DIRECT]-> __clone_pidfd_supported_129bf0
+  __clone_pidfd_supported_129bf0 - [syscall]-> waitid
+
+Path to get_mempolicy:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_12e2d30
+  _ZN14ZCollectedHeapC2Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC2Ev_12ed500
+  _ZN5ZHeapC2Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310
+  _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310 - [DIRECT]-> _ZN10ZPartition5primeEP8ZWorkersm.part.0_1316040
+  _ZN10ZPartition5primeEP8ZWorkersm.part.0_1316040 - [DIRECT]-> _ZN5ZNUMA9memory_idEm_130cf70
+  _ZN5ZNUMA9memory_idEm_130cf70 - [DIRECT]-> _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0
+  _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0 - [syscall]-> get_mempolicy
+
+Path to timer_delete:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN13NonJavaThread8post_runEv_e3ac60
+  _ZN13NonJavaThread8post_runEv_e3ac60 - [DIRECT]-> _ZN3Jfr14on_thread_exitEP6Thread_a45da0
+  _ZN3Jfr14on_thread_exitEP6Thread_a45da0 - [DIRECT]-> _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0
+  _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0 - [DIRECT]-> _ZN24JfrCPUTimeThreadSampling23on_javathread_terminateEP10JavaThread_a4afd0
+  _ZN24JfrCPUTimeThreadSampling23on_javathread_terminateEP10JavaThread_a4afd0 - [DIRECT]-> _ZN19JfrCPUSamplerThread23on_javathread_terminateEP10JavaThread_a4a970
+  _ZN19JfrCPUSamplerThread23on_javathread_terminateEP10JavaThread_a4a970 - [DIRECT]-> _ZN14JfrThreadLocal15unset_cpu_timerEv_abb470
+  _ZN14JfrThreadLocal15unset_cpu_timerEv_abb470 - [DIRECT]-> timer_delete@@GLIBC_2.34_a8b10
+  timer_delete@@GLIBC_2.34_a8b10 - [syscall]-> timer_delete
+
+Path to timer_create:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
+  _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
+  _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
+  _ZN14JfrThreadLocal8on_startEP6Thread_abb650 - [DIRECT]-> _ZN24JfrCPUTimeThreadSampling20on_javathread_createEP10JavaThread_a4bd90
+  _ZN24JfrCPUTimeThreadSampling20on_javathread_createEP10JavaThread_a4bd90 - [DIRECT]-> _ZN19JfrCPUSamplerThread20on_javathread_createEP10JavaThread.part.0_a4bc10
+  _ZN19JfrCPUSamplerThread20on_javathread_createEP10JavaThread.part.0_a4bc10 - [DIRECT]-> _ZN19JfrCPUSamplerThread23create_timer_for_threadEP10JavaThreadRPv_a4baf0
+  _ZN19JfrCPUSamplerThread23create_timer_for_threadEP10JavaThreadRPv_a4baf0 - [DIRECT]-> timer_create@@GLIBC_2.34_a8860
+  timer_create@@GLIBC_2.34_a8860 - [syscall]-> timer_create
+
+Path to timer_settime:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
+  _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
+  _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
+  _ZN14JfrThreadLocal8on_startEP6Thread_abb650 - [DIRECT]-> _ZN24JfrCPUTimeThreadSampling20on_javathread_createEP10JavaThread_a4bd90
+  _ZN24JfrCPUTimeThreadSampling20on_javathread_createEP10JavaThread_a4bd90 - [DIRECT]-> _ZN19JfrCPUSamplerThread20on_javathread_createEP10JavaThread.part.0_a4bc10
+  _ZN19JfrCPUSamplerThread20on_javathread_createEP10JavaThread.part.0_a4bc10 - [DIRECT]-> _ZN19JfrCPUSamplerThread23create_timer_for_threadEP10JavaThreadRPv_a4baf0
+  _ZN19JfrCPUSamplerThread23create_timer_for_threadEP10JavaThreadRPv_a4baf0 - [DIRECT]-> timer_settime@@GLIBC_2.34_a8cf0
+  timer_settime@@GLIBC_2.34_a8cf0 - [syscall]-> timer_settime
+
+Path to memfd_create:
+  Java_sun_nio_fs_UnixNativeDispatcher_fchown0_f2a0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_12e2d30
+  _ZN14ZCollectedHeapC2Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC2Ev_12ed500
+  _ZN5ZHeapC2Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocatorC1Emmmm_13100b0
+  _ZN14ZPageAllocatorC1Emmmm_13100b0 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC1Em_131e670
+  _ZN22ZPhysicalMemoryManagerC1Em_131e670 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC1Em_131c290
+  _ZN22ZPhysicalMemoryBackingC1Em_131c290 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_131bda0
+  _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_131bda0 - [DIRECT]-> _ZN8ZSyscall12memfd_createEPKcj_133f2b0
+  _ZN8ZSyscall12memfd_createEPKcj_133f2b0 - [syscall]-> memfd_create

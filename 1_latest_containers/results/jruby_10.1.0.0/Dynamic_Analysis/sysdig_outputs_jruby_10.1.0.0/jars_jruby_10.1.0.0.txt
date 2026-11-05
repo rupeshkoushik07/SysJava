@@ -1,0 +1,4 @@
+12:40:37.079095272 openat 167447 java /opt/jruby/lib/jruby.jar f
+12:40:37.283731791 openat 167447 java /opt/jruby/lib/jruby.jar f
+12:40:41.680209929 openat 167447 java /opt/jruby/lib/ruby/stdlib/io/wait.jar f
+12:40:42.189830739 openat 167447 java /opt/jruby/lib/ruby/stdlib/stringio.jar f

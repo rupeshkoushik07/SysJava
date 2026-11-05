@@ -1,0 +1,22 @@
+tomcat_11.0.22 (20)
+  - libapr-1.so.0
+  - libapr-1.so.0:
+  - libc.so.6
+  - libcrypto.so.3
+  - libcrypto.so.3:
+  - libdl.so.2
+  - libdl.so.2:
+  - libjava.so
+  - libjvm.so
+  - libm.so.6
+  - libm.so.6:
+  - libpthread.so.0
+  - libpthread.so.0:
+  - librt.so.1
+  - librt.so.1:
+  - libssl.so.3
+  - libtcnative-2.so.0.0.14:
+  - libtcnative-2.so.0:
+  - libuuid.so.1
+  - libuuid.so.1:
+

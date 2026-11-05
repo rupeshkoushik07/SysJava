@@ -1,0 +1,6 @@
+ioctl
+isatty
+openpty@@GLIBC_2.34
+tcgetattr
+tcsetattr
+ttyname_r

@@ -1,0 +1,8 @@
+/usr/bin/bash
+/bin/sh
+/usr/bin/find
+/opt/java/openjdk/bin/java
+/usr/bin/realpath
+/usr/sbin/runc
+/usr/bin/uname
+/usr/bin/env

@@ -1,0 +1,14 @@
+groovy_5.0.6 (12)
+  - jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so
+  - libacl.so.1
+  - libgmp.so.10
+  - libjimage.so
+  - libjli.so
+  - libjsvml.so
+  - libnio.so
+  - libpcre2-8.so.0
+  - libselinux.so.1
+  - libtic.so.6
+  - libtinfo.so.6
+  - libverify.so
+

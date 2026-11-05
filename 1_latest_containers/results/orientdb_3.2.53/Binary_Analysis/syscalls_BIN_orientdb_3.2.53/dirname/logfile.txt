@@ -1,0 +1,221 @@
+
+Path to futex:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  _start_107fe0 - [INDIRECT]-> __restore_rt_45cb0
+  __restore_rt_45cb0 - [syscall]-> rt_sigreturn
+
+Path to rt_sigprocmask:
+  _start_107fe0 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to clock_gettime:
+  _start_107fe0 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
+  clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
+
+Path to close:
+  _start_107fe0 - [INDIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to dup:
+  _start_107fe0 - [INDIRECT]-> dup_1230b0
+  dup_1230b0 - [syscall]-> dup
+
+Path to fcntl:
+  _start_107fe0 - [INDIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
+
+Path to fstat:
+  _start_107fe0 - [INDIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to getcwd:
+  _start_107fe0 - [INDIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to gettid:
+  _start_107fe0 - [INDIRECT]-> gettid_138c70
+  gettid_138c70 - [syscall]-> gettid
+
+Path to ioctl:
+  _start_107fe0 - [INDIRECT]-> isatty_1293c0
+  isatty_1293c0 - [syscall]-> ioctl
+
+Path to mmap:
+  _start_107fe0 - [INDIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mprotect:
+  _start_107fe0 - [INDIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to munmap:
+  _start_107fe0 - [INDIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to openat:
+  _start_107fe0 - [INDIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
+Path to pause:
+  _start_107fe0 - [INDIRECT]-> pause_1043a0
+  pause_1043a0 - [syscall]-> pause
+
+Path to poll:
+  _start_107fe0 - [INDIRECT]-> poll_127e30
+  poll_127e30 - [syscall]-> poll
+
+Path to read:
+  _start_107fe0 - [INDIRECT]-> read_128390
+  read_128390 - [syscall]-> read
+
+Path to sigaltstack:
+  _start_107fe0 - [INDIRECT]-> sigaltstack_46420
+  sigaltstack_46420 - [syscall]-> sigaltstack
+
+Path to statx:
+  _start_107fe0 - [INDIRECT]-> statx_128810
+  statx_128810 - [syscall]-> statx
+
+Path to write:
+  _start_107fe0 - [INDIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
+
+Path to writev:
+  _start_107fe0 - [INDIRECT]-> writev_137430
+  writev_137430 - [syscall]-> writev
+
+Path to lseek:
+  _start_107fe0 - [INDIRECT]-> _IO_file_seek_9b340
+  _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to mremap:
+  _start_107fe0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to prctl:
+  _start_107fe0 - [INDIRECT]-> _ZN6rustix7backend5param4auxv9init_auxv17ha004c52b66eb9d26E_fa48d
+  _ZN6rustix7backend5param4auxv9init_auxv17ha004c52b66eb9d26E_fa48d - [DIRECT]-> _ZN6rustix7backend5param4auxv14init_auxv_impl17h57e26c77e5229210E.llvm.8271188695075841048_fa0dc
+  _ZN6rustix7backend5param4auxv14init_auxv_impl17h57e26c77e5229210E.llvm.8271188695075841048_fa0dc - [syscall]-> prctl
+
+Path to exit:
+  _start_107fe0 - [INDIRECT]-> __libc_start_main@@GLIBC_2.34_2a690
+  __libc_start_main@@GLIBC_2.34_2a690 - [DIRECT]-> __libc_start_call_main_2a580
+  __libc_start_call_main_2a580 - [syscall]-> exit
+
+Path to rt_sigaction:
+  _start_107fe0 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  _start_107fe0 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+
+Path to exit_group:
+  _start_107fe0 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to newfstatat:
+  _start_107fe0 - [INDIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to getrandom:
+  _start_107fe0 - [INDIRECT]-> getrandom_49d00
+  getrandom_49d00 - [DIRECT]-> getrandom_vdso_49660
+  getrandom_vdso_49660 - [syscall]-> getrandom
+
+Path to sched_getaffinity:
+  _start_107fe0 - [INDIRECT]-> pthread_getattr_np@@GLIBC_2.32_a5750
+  pthread_getattr_np@@GLIBC_2.32_a5750 - [DIRECT]-> pthread_getaffinity_np@@GLIBC_2.32_a5630
+  pthread_getaffinity_np@@GLIBC_2.32_a5630 - [syscall]-> sched_getaffinity
+
+Path to prlimit64:
+  _start_107fe0 - [INDIRECT]-> pthread_getattr_np@@GLIBC_2.32_a5750
+  pthread_getattr_np@@GLIBC_2.32_a5750 - [DIRECT]-> getrlimit_12aac0
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to madvise:
+  _start_107fe0 - [INDIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to wait4:
+  _start_107fe0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
+
+Path to getdents64:
+  _start_107fe0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to getpid:
+  _start_107fe0 - [INDIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to sysinfo:
+  _start_107fe0 - [INDIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_phys_pages_12d610
+  get_phys_pages_12d610 - [DIRECT]-> sysinfo_138a90
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to sched_getparam:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [DIRECT]-> __pthread_mutex_cond_lock_a6bf0
+  __pthread_mutex_cond_lock_a6bf0 - [DIRECT]-> __pthread_mutex_cond_lock_full_a64f0
+  __pthread_mutex_cond_lock_full_a64f0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getparam_11aba0
+  sched_getparam_11aba0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [DIRECT]-> __pthread_mutex_cond_lock_a6bf0
+  __pthread_mutex_cond_lock_a6bf0 - [DIRECT]-> __pthread_mutex_cond_lock_full_a64f0
+  __pthread_mutex_cond_lock_full_a64f0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getscheduler_11abd0
+  sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [DIRECT]-> __pthread_mutex_cond_lock_a6bf0
+  __pthread_mutex_cond_lock_a6bf0 - [DIRECT]-> __pthread_mutex_cond_lock_full_a64f0
+  __pthread_mutex_cond_lock_full_a64f0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [DIRECT]-> __pthread_mutex_cond_lock_a6bf0
+  __pthread_mutex_cond_lock_a6bf0 - [DIRECT]-> __pthread_mutex_cond_lock_full_a64f0
+  __pthread_mutex_cond_lock_full_a64f0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  _start_107fe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  __condvar_cleanup_waiting_a3140 - [DIRECT]-> __pthread_mutex_cond_lock_a6bf0
+  __pthread_mutex_cond_lock_a6bf0 - [DIRECT]-> __pthread_mutex_cond_lock_full_a64f0
+  __pthread_mutex_cond_lock_full_a64f0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  _start_107fe0 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> __libc_calloc2_b4160
+  __libc_calloc2_b4160 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

@@ -1,0 +1,6 @@
+ioctl_11a990
+isatty_115fb0
+openpty@@GLIBC_2.34_1741b0
+tcgetattr_119fa0
+tcsetattr_119db0
+ttyname_r_115c50

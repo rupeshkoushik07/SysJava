@@ -1,0 +1,13 @@
+zookeeper_3.9.5 (11)
+  - libacl.so.1
+  - libextnet.so
+  - libjimage.so
+  - libjli.so
+  - libjsvml.so
+  - libmanagement.so
+  - libmanagement_ext.so
+  - libpcre.so.3
+  - libpcre2-8.so.0
+  - libselinux.so.1
+  - libtinfo.so.6
+

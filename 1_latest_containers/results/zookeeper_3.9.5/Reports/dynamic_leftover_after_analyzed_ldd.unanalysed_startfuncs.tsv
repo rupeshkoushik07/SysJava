@@ -1,0 +1,12 @@
+image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
+zookeeper_3.9.5	libacl.so.1	libacl.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libacl.so.1.txt	41	ok
+zookeeper_3.9.5	libextnet.so	libextnet.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libextnet.so.txt	15	ok
+zookeeper_3.9.5	libjimage.so	libjimage.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libjimage.so.txt	9	ok
+zookeeper_3.9.5	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libjli.so.txt	20	ok
+zookeeper_3.9.5	libjsvml.so	libjsvml.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libjsvml.so.txt	272	ok
+zookeeper_3.9.5	libmanagement.so	libmanagement.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libmanagement.so.txt	69	ok
+zookeeper_3.9.5	libmanagement_ext.so	libmanagement_ext.so	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libmanagement_ext.so.txt	35	ok
+zookeeper_3.9.5	libpcre.so.3	libpcre.so.3	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libpcre.so.3.txt	27	ok
+zookeeper_3.9.5	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libpcre2-8.so.0.txt	73	ok
+zookeeper_3.9.5	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libselinux.so.1.txt	236	ok
+zookeeper_3.9.5	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/zookeeper_3.9.5/startfuncs_unanalysed_zookeeper_3.9.5/libtinfo.so.6.txt	198	ok

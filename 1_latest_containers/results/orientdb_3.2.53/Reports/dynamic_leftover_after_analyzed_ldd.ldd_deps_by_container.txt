@@ -1,0 +1,14 @@
+orientdb_3.2.53 (12)
+  - libc.so.6
+  - libdl.so.2
+  - libdl.so.2:
+  - libgcc_s.so.1
+  - libjava.so
+  - libjvm.so
+  - libm.so.6
+  - libm.so.6:
+  - libnet.so
+  - libpthread.so.0
+  - libpthread.so.0:
+  - libverify.so
+

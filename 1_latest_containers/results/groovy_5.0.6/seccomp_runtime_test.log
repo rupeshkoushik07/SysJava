@@ -1,0 +1,36 @@
+container=groovy_5.0.6
+image=groovy:5.0.6
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json
+profile_syscalls=193 SCMP_ACT_ERRNO
+workload=docker run -it groovy:5.0.6 
+started_at=2026-11-05T23:19:58+01:00
+
+---- baseline (no profile) ----
+docker_run_output=0a591ed4dcb2c43e2e071612977e27866950137f6daa3f10d8b7b4554a27ced2
+baseline_ready_after=4s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-groovy-5-0-6 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json -it groovy:5.0.6 
+docker_run_output=c5097e6818eb218711d15f42d927c29633dcf43b539b8e662755c65333592d9f
+ready_after=4s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-05T23:22:12+01:00
+
+---- docker logs tail (with profile) ----
+WARNING: Using incubator modules: jdk.incubator.vector
+[32mGroovy Shell[m (5.0.6, JVM: 21.0.11, Term: linux)
+Type '[1m/help[m' or '[1m/h[m' for help, '[1m/exit[m' or '[1m/x[m' to exit.
+[31m       [m[33m     [m[32m           [m[36m     [m[34m     [m[35m     _      [m
+[31m  __ _ [m[33m_ __ [m[32m___   ___[m[36m__   __[m[34m_   _[m[35m ___| |__   [m
+[31m / _` |[m[33m '__/[m[32m _ \ / _ \[m[36m \ / /[m[34m | | [m[35m/ __| '_ \  [m
+[31m| (_| |[m[33m | [m[32m| (_) | (_) \[m[36m V /[m[34m| |_| [m[35m\__ \ | | | [m
+[31m \__, |[m[33m_| [m[32m \___/ \___/ [m[36m\_/ [m[34m \__, [m[35m|___/_| |_| [m
+[31m |___/ [m[33m   [m[32m              [m[36m   [m[34m |___/ [m
+-----------------------------------------------------------------------------------------------------------------------

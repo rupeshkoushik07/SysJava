@@ -1,0 +1,8 @@
+image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
+orientdb_3.2.53	jffi313529115476503082.so			0	unresolved
+orientdb_3.2.53	libcrypt.so.1	libcrypt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/libcrypt.so.1.txt	19	ok
+orientdb_3.2.53	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/libjli.so.txt	9	ok
+orientdb_3.2.53	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/libpcre2-8.so.0.txt	78	ok
+orientdb_3.2.53	librt.so.1	librt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/librt.so.1.txt	1	ok
+orientdb_3.2.53	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/libselinux.so.1.txt	241	ok
+orientdb_3.2.53	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/orientdb_3.2.53/startfuncs_unanalysed_orientdb_3.2.53/libtinfo.so.6.txt	212	ok

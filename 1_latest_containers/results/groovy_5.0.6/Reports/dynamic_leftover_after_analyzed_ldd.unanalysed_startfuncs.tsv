@@ -1,0 +1,13 @@
+image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
+groovy_5.0.6	jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so	jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so.txt	15	ok
+groovy_5.0.6	libacl.so.1	libacl.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libacl.so.1.txt	41	ok
+groovy_5.0.6	libgmp.so.10	libgmp.so.10	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libgmp.so.10.txt	593	ok
+groovy_5.0.6	libjimage.so	libjimage.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libjimage.so.txt	9	ok
+groovy_5.0.6	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libjli.so.txt	20	ok
+groovy_5.0.6	libjsvml.so	libjsvml.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libjsvml.so.txt	272	ok
+groovy_5.0.6	libnio.so	libnio.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libnio.so.txt	202	ok
+groovy_5.0.6	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libpcre2-8.so.0.txt	73	ok
+groovy_5.0.6	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libselinux.so.1.txt	240	ok
+groovy_5.0.6	libtic.so.6	libtic.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libtic.so.6.txt	12	ok
+groovy_5.0.6	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libtinfo.so.6.txt	211	ok
+groovy_5.0.6	libverify.so	libverify.so	/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/startfuncs_unanalysed_groovy_5.0.6/libverify.so.txt	3	ok

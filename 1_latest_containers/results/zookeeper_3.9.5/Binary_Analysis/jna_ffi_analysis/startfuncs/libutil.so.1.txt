@@ -1,0 +1,6 @@
+ioctl
+isatty
+openpty
+tcgetattr
+tcsetattr
+ttyname_r

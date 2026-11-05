@@ -1,0 +1,4 @@
+=== Combined FFI Native Binding Hits ===
+Format: detector | payload
+
+ffi | <org.bouncycastle.jcajce.provider.keystore.BC: BC> | tinfo | BC | downcallHandle | bcprov-jdk18on-1.84.jar

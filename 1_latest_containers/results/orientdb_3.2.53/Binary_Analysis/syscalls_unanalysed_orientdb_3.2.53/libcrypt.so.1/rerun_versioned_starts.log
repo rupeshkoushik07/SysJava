@@ -1,0 +1,19 @@
+Time taken for the analysis: 34 seconds
+Time taken for the analysis: 36 seconds
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+Direct Edges computation: 0 seconds
+AT List computation: 11 seconds
+Indirect call target resolution:  4 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 1 seconds
+Time taken for the analysis: 51 seconds
+Call graph saved to /tmp/claude-2232/-home-user-user-Tutorial/a6acf456-6a88-438e-bf69-b3baebc75620/scratchpad/vertest/out2/callgraph.json

@@ -1,0 +1,28 @@
+2026-11-05T17:19:29 RUN image=jruby_10.1.0.0 libraries=8 force=False
+2026-11-05T17:19:29 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jruby_10.1.0.0/Dataset_symbolized/LIBS_jruby_10.1.0.0
+2026-11-05T17:19:30 START [1/8] libcrypt.so.1 functions=19 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libcrypt.so.1/logfile.txt
+2026-11-05T17:20:14 DONE [1/8] libcrypt.so.1 status=completed exit=0 syscalls=37
+2026-11-05T17:20:14 START [2/8] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libjimage.so/logfile.txt
+2026-11-05T17:49:54 DONE [2/8] libjimage.so status=completed exit=0 syscalls=103
+2026-11-05T17:49:54 START [3/8] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libjli.so/logfile.txt
+2026-11-05T17:50:47 DONE [3/8] libjli.so status=completed exit=0 syscalls=67
+2026-11-05T17:50:47 START [4/8] libjsvml.so functions=272 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libjsvml.so/logfile.txt
+2026-11-05T17:51:33 DONE [4/8] libjsvml.so status=completed exit=0 syscalls=0
+2026-11-05T17:51:33 START [5/8] libpcre2-8.so.0 functions=73 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libpcre2-8.so.0/logfile.txt
+2026-11-05T17:52:58 DONE [5/8] libpcre2-8.so.0 status=completed exit=0 syscalls=39
+2026-11-05T17:52:58 START [6/8] libselinux.so.1 functions=240 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libselinux.so.1/logfile.txt
+2026-11-05T17:54:35 DONE [6/8] libselinux.so.1 status=completed exit=0 syscalls=83
+2026-11-05T17:54:35 START [7/8] libtinfo.so.6 functions=211 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libtinfo.so.6/logfile.txt
+2026-11-05T17:55:19 DONE [7/8] libtinfo.so.6 status=completed exit=0 syscalls=49
+2026-11-05T17:55:19 START [8/8] libverify.so functions=3 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/libverify.so/logfile.txt
+2026-11-05T18:21:36 DONE [8/8] libverify.so status=completed exit=0 syscalls=103
+2026-11-05T18:29:06 RUN image=jruby_10.1.0.0 libraries=8 force=False
+2026-11-05T18:29:06 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jruby_10.1.0.0/Dataset_symbolized/LIBS_jruby_10.1.0.0
+2026-11-05T18:29:06 SKIP [1/8] libcrypt.so.1 already_complete
+2026-11-05T18:29:06 SKIP [2/8] libjimage.so already_complete
+2026-11-05T18:29:06 SKIP [3/8] libjli.so already_complete
+2026-11-05T18:29:06 SKIP [4/8] libjsvml.so already_complete
+2026-11-05T18:29:06 SKIP [5/8] libpcre2-8.so.0 already_complete
+2026-11-05T18:29:06 SKIP [6/8] libselinux.so.1 already_complete
+2026-11-05T18:29:06 SKIP [7/8] libtinfo.so.6 already_complete
+2026-11-05T18:29:06 SKIP [8/8] libverify.so already_complete

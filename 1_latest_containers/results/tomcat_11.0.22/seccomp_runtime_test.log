@@ -1,0 +1,51 @@
+container=tomcat_11.0.22
+image=tomcat:11.0.22
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Binary_Analysis/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json
+profile_syscalls=180 SCMP_ACT_ERRNO
+workload=docker run  tomcat:11.0.22 
+started_at=2026-11-05T13:51:46+01:00
+
+---- baseline (no profile) ----
+docker_run_output=3ab933cd8386fe42c1de4969da30d22d7e651e55b717a0f982f04a977c613e31
+baseline_ready_after=4s
+baseline_state=running exit=0
+baseline_probe=ok http_404 /
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-tomcat-11-0-22 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Binary_Analysis/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json  tomcat:11.0.22 
+docker_run_output=1e09144a444181bfe70af3160a1d5732dfc61d0096645c04a962e81fad651e82
+ready_after=2s
+state_after_60s=running exit=0
+probe=ok http_404 /
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-05T13:53:54+01:00
+
+---- docker logs tail (with profile) ----
+05-Nov-2026 12:52:52.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+05-Nov-2026 12:52:52.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+05-Nov-2026 12:52:52.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+05-Nov-2026 12:52:52.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+05-Nov-2026 12:52:52.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Nov-2026 12:52:52.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Nov-2026 12:52:52.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Nov-2026 12:52:52.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+05-Nov-2026 12:52:52.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+05-Nov-2026 12:52:52.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+05-Nov-2026 12:52:52.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+05-Nov-2026 12:52:52.741 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.14] using APR version [1.7.2].
+05-Nov-2026 12:52:52.749 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+05-Nov-2026 12:52:53.093 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Nov-2026 12:52:53.119 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [611] milliseconds
+05-Nov-2026 12:52:53.165 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Nov-2026 12:52:53.165 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.22]
+05-Nov-2026 12:52:53.184 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Nov-2026 12:52:53.197 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [76] milliseconds

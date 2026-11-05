@@ -1,0 +1,75 @@
+path	gnu_build_id	status	detail	source_override
+BINARIES_tomcat_11.0.22/bash	2f77b36371c214e11670c7d9d92727e9a49f626b	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/2f77b36371c214e11670c7d9d92727e9a49f626b.debug	
+BINARIES_tomcat_11.0.22/dirname	20936e433e49d729dd934ac6b22393009ca36dfa	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/20936e433e49d729dd934ac6b22393009ca36dfa.debug	
+BINARIES_tomcat_11.0.22/env	914ca3f2b3e73633bef0f1d0f15d2dfb9dbcc04d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/914ca3f2b3e73633bef0f1d0f15d2dfb9dbcc04d.debug	
+BINARIES_tomcat_11.0.22/java	b006fac2fbd217c87b715584bac7b0e1d0368252	HAS_SYMTAB		
+BINARIES_tomcat_11.0.22/runc	ef13e663636f0413387ba0e1652c80171f931505	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ef13e663636f0413387ba0e1652c80171f931505.debug	
+BINARIES_tomcat_11.0.22/uname	822227eeef6e591bf24443d978a40ccab46544fd	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/822227eeef6e591bf24443d978a40ccab46544fd.debug	
+LIBS_tomcat_11.0.22/JDK25_LIBS/libattach.so	f6749b001315857c4766d501e1ffc137ffd4e394	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libawt.so	b17adb1470505e9fbab06c4031908f9c126c743c	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libawt_headless.so	43d96abaf2cbb07ccbf64fa00a6956e2978ad145	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libawt_xawt.so	f661a8bf3478cdcfcc6e221b2ec2e56f0cba5d01	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libdt_socket.so	9cfec1bbc73e425ec15ff9969cffbc3ebf3aaf17	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libextnet.so	d44778fca5c9c6c0a21c491f43ec660467992365	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libfontmanager.so	07f47b24ea1cf24b858d61e5697b2a58721be9c9	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libfreetype.so	b928d48b8d34ace7612efb1b981f414cc27ca33b	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libinstrument.so	25691fa60f6b506b1232dcfc045e1d6e5e4702a0	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libj2gss.so	3544fab8edded8477c9b283bd7cbdaf108a6cfb1	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libj2pcsc.so	cbd35bb9b1f90dce18abd0fed5a8ca2172c42c82	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libj2pkcs11.so	b856f3a5c981dfa59924c7afa45bd781146c8627	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjaas.so	66018df649e6bf23f6f98bb81a1e256d9bac3e41	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjava.so	ec7b1c71673ca45a58e29e97ac33290b8d303b67	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjavajpeg.so	7fa76097f3d4e6e263769b95b657c54750daeb1e	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjawt.so	f1ff2796e479be4669a50824d4328e650466fbc5	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjdwp.so	76bcb71f2615cf72b086320cacf1b844114da16a	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjimage.so	2b1da851c7d142c9a4807bacf88893dfcc87ee76	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjli.so	aad6a04bc1ad2cd72eb83b53ea2921c452440583	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjsig.so	801da0370055321edfce315151638bfbab8fc600	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjsound.so	feeef8da0b7ba615675dc70a34c591833df43289	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libjsvml.so	813bbcde9d2d5e7fe77bc7e00660353c6b957eee	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/liblcms.so	142d021834a991eda8db9760579c7b1242edbd30	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libmanagement.so	ac6726dedb2f0c34f4f9b9560c54fda8a1e6693d	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libmanagement_agent.so	b7f67e385d8469d13ca5692aa2b1a812a263d44f	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libmanagement_ext.so	7f930b3acef080b433149fe967c47d48224959d0	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libmlib_image.so	900255e4be09003ddab9663c881a1970e48d219a	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libnet.so	ebc94fc532e8d63928c19e66721c3b38e56c0d64	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libnio.so	cee26cf73c2a1ab9cd0bffc8a852b8b6e034e3f1	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libprefs.so	863acfd9ece20da96ead30bc7381c19d6cfdd817	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/librmi.so	fdcc623e6c0fc06ba2f7bbd7c82f9b2374028cbd	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libsaproc.so	374a0a90fefb52ac17e8623d14d8181ca35d292c	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libsctp.so	4b9d313d3d6d48f9799efac5dd13016bca968673	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libsimdsort.so	b567340fbf4982bd565a4fe04ba0128e5553cd03	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libsplashscreen.so	a84dc8e6f9d020311f780b9e8c2b98a35c3b6404	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libsyslookup.so	d396e7c349796c261bac771cf0a363c033790a2b	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libverify.so	0bf1a1527302c20734b1914dd29f6e0c1d2012a3	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/libzip.so	0daba67a1b2a945c9510bcbdfc946fb46bff2c8d	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/server/libjsig.so	801da0370055321edfce315151638bfbab8fc600	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/JDK25_LIBS/server/libjvm.so	cc370ed13824fae0d65fd64357a9bdf1a732eac0	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libapr-1.so.0.7.2	fa8d5938cffbeff2c7315322bcb257e2bec3f2f6	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/fa8d5938cffbeff2c7315322bcb257e2bec3f2f6.debug	
+LIBS_tomcat_11.0.22/libc.so.6	8e9fd827446c24067541ac5390e6f527fb5947bb	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/8e9fd827446c24067541ac5390e6f527fb5947bb.debug	
+LIBS_tomcat_11.0.22/libcrypto.so.3	c0dbcda570d4328c8d2b295afb2f9dfa83e10e78	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/c0dbcda570d4328c8d2b295afb2f9dfa83e10e78.debug	
+LIBS_tomcat_11.0.22/libdl.so.2	1b3e1db8ad46395b3d411fb940a29cdb52d39842	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/1b3e1db8ad46395b3d411fb940a29cdb52d39842.debug	
+LIBS_tomcat_11.0.22/libextnet.so	d44778fca5c9c6c0a21c491f43ec660467992365	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libjava.so	ec7b1c71673ca45a58e29e97ac33290b8d303b67	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libjimage.so	2b1da851c7d142c9a4807bacf88893dfcc87ee76	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libjli.so	aad6a04bc1ad2cd72eb83b53ea2921c452440583	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libjvm.so	cc370ed13824fae0d65fd64357a9bdf1a732eac0	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libm.so.6	05cb320701679843b2853acf5b62daa306ea930f	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/05cb320701679843b2853acf5b62daa306ea930f.debug	
+LIBS_tomcat_11.0.22/libmanagement.so	ac6726dedb2f0c34f4f9b9560c54fda8a1e6693d	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libmanagement_ext.so	7f930b3acef080b433149fe967c47d48224959d0	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libnet.so	ebc94fc532e8d63928c19e66721c3b38e56c0d64	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libnio.so	cee26cf73c2a1ab9cd0bffc8a852b8b6e034e3f1	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libnss_compat.so.2	4147364e7c9293abbe4fbf4aa8215c59ebfcc747	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/4147364e7c9293abbe4fbf4aa8215c59ebfcc747.debug	
+LIBS_tomcat_11.0.22/libnss_dns.so.2	61c25ed08b6b8da97bcb982a6379c71306bc7386	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/61c25ed08b6b8da97bcb982a6379c71306bc7386.debug	
+LIBS_tomcat_11.0.22/libnss_files.so.2	76e8d3da6d6831b99f900d35944ffba88fa123c7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/76e8d3da6d6831b99f900d35944ffba88fa123c7.debug	
+LIBS_tomcat_11.0.22/libnss_hesiod.so.2	248de44233e43413368c7c0a4bfaf39f1631a28c	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/248de44233e43413368c7c0a4bfaf39f1631a28c.debug	
+LIBS_tomcat_11.0.22/libpthread.so.0	be1180eba10bfdf158e409ba3824b881f553934b	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/be1180eba10bfdf158e409ba3824b881f553934b.debug	
+LIBS_tomcat_11.0.22/libresolv.so.2	12f8018be722e5a4ee2f91a7307ed427f538c715	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/12f8018be722e5a4ee2f91a7307ed427f538c715.debug	
+LIBS_tomcat_11.0.22/librt.so.1	e2a7fcb9086c2f0947a95ffc316fe54d36aec663	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/e2a7fcb9086c2f0947a95ffc316fe54d36aec663.debug	
+LIBS_tomcat_11.0.22/libssl.so.3	26eac46d04ffb5876d3bbb226ebc2d83ecaa6298	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/26eac46d04ffb5876d3bbb226ebc2d83ecaa6298.debug	
+LIBS_tomcat_11.0.22/libtcnative-2.so.0.0.14	4ba0646bd481b06e932798fff81104a7f6244eee	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/libtinfo.so.6.4	b2a4eb01681b01ed8c9cc5045db68638a3f7ac93	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/b2a4eb01681b01ed8c9cc5045db68638a3f7ac93.debug	
+LIBS_tomcat_11.0.22/libuuid.so.1.3.0	02fac2917457a306fbe590aa428ea6f7d30de0bc	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/02fac2917457a306fbe590aa428ea6f7d30de0bc.debug	
+LIBS_tomcat_11.0.22/libzip.so	0daba67a1b2a945c9510bcbdfc946fb46bff2c8d	HAS_SYMTAB		
+LIBS_tomcat_11.0.22/_container_deps/ld-linux-x86-64.so.2	da07864eb4c1b06504b8688d25d7e84759fe708d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/da07864eb4c1b06504b8688d25d7e84759fe708d.debug	et_tomcat_11.0.22 (missing DT_NEEDED)
+LIBS_tomcat_11.0.22/_container_deps/libseccomp.so.2	ebbca39470299c86d412c32d82a25b2aba80a5f6	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ebbca39470299c86d412c32d82a25b2aba80a5f6.debug	et_tomcat_11.0.22 (missing DT_NEEDED)
