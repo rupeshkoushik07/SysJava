@@ -6,7 +6,7 @@
 #   ./reproduce.sh                      # all 10 images, one after another
 #   ./reproduce.sh tomcat_11.0.22 ...   # selected images
 #   STAGE=8 ./reproduce.sh solr_10.0.0  # resume one image from a stage (1-11)
-#   TABLE_ONLY=1 ./reproduce.sh         # rebuild the table from existing results
+#   TABLE_ONLY=1 ./reproduce.sh         # only the table, from the rerun (or the shipped) results
 #
 # Results:  ../work/latest/Final_results_latest_versions/<image>/
 # Table:    tables_rerun/table.{md,csv} and table_rows.tex
@@ -15,7 +15,6 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 W="$HERE/../work/latest"
-[ -d "$W/scripts" ] || { echo "run ../setup.sh first"; exit 1; }
 ALL=(cassandra_5.0.8 zookeeper_3.9.5 tomcat_11.0.22 solr_10.0.0 groovy_5.0.6
      orientdb_3.2.53 jetty_12.1.10 elasticsearch_7.1.0 storm_2.8.8 jruby_10.1.0.0)
 TARGETS=("$@"); [ ${#TARGETS[@]} -gt 0 ] || TARGETS=("${ALL[@]}")
@@ -31,6 +30,7 @@ pin() {
                    *) docker pull "$tag" ;; esac
 }
 if [ -z "${TABLE_ONLY:-}" ]; then
+    [ -d "$W/scripts" ] || { echo "run ../setup.sh first"; exit 1; }
     for t in "${TARGETS[@]}"; do pin "${t%%_*}:${t#*_}"; done
     [[ " ${TARGETS[*]} " == *" storm_2.8.8 "* ]] && pin zookeeper:3.9.5
     for t in "${TARGETS[@]}"; do
@@ -40,7 +40,11 @@ if [ -z "${TABLE_ONLY:-}" ]; then
     done
 fi
 
-python3 "$HERE/../tools/make_tables.py" latest "$W/Final_results_latest_versions" \
-    --runtime "$W/runc.txt" --out "$HERE/tables_rerun" \
+# The rerun's results when there are any, else the shipped ones.
+R="$W/Final_results_latest_versions"
+if [ ! -d "$R" ] || [ -z "$(ls -A "$R" 2>/dev/null)" ]; then R="$HERE/results"; fi
+echo "===== Table tab:latest (results: $R)"
+python3 "$HERE/../tools/make_tables.py" latest "$R" \
+    --runtime "$HERE/runc.txt" --out "$HERE/tables_rerun" \
     ${AUDIT:+--audit "$AUDIT"}
 echo "Compare with the shipped results: diff -r tables/ tables_rerun/"

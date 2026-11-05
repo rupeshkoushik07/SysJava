@@ -53,13 +53,40 @@ Digests and image IDs of all of them: `../docker_images/IMAGES.md`.
 
 ## Reproduce
 
+Static (no SysPart, sysdig or root; minutes per image): rebuild an image's
+allowlist from the shipped call graphs, see the top-level README, level B.
+
+```bash
+../whitelist.sh jetty_9.4.51-jdk8-buster          # -> whitelists_static/jetty_9.4.51-jdk8-buster.json + .diff.txt
+```
+
+Full pipeline:
+
+One command runs SysJava (with SysPart) and SWAT4J (static and dynamic) on the
+ten images and prints the finished table:
+
 ```bash
 SYSPART_ROOT=/path/to/SysPartCode ../setup.sh   # once
-./reproduce.sh                                  # gets/builds the 10 images, runs the pipeline, tables
+./reproduce.sh                                  # SysJava + SWAT4J on all 10 images, then the tables
 ./reproduce.sh jetty_9.4.51-jdk8-buster         # one image
-STAGE=7 ./reproduce.sh solr_8.7.0-jdk8-buster   # resume from stage 7
-TABLE_ONLY=1 ./reproduce.sh
+STAGE=7 ./reproduce.sh solr_8.7.0-jdk8-buster   # resume SysJava from stage 7
+SKIP_SWAT4J=1 ./reproduce.sh                    # SysJava only
+SKIP_SYSJAVA=1 ./reproduce.sh                   # SWAT4J only (needs a SysJava rerun's Dataset/)
+TABLE_ONLY=1 ./reproduce.sh                     # only the tables, from existing results
 ```
+
+It writes to `tables_rerun/`:
+
+* `sysjava_vs_swat4j.md` / `.tex`: Table `tab:results`: SysJava total (A),
+  SWAT4J static + dynamic (B) and its two parts, A ∩ B, A ∖ B, B ∖ A
+  (`tools/swat4j_table.py`, which runs `swat4j/make_paper_table.py`);
+* `table.md`, `table.csv`, `table_rows.tex`: the SysJava breakdown rows
+  (`tools/make_tables.py`).
+
+For any part that was not rerun, the tables use the shipped results
+(`sysjava_results/`, `../swat4j/outputs/`), and the script prints which
+folders it used. SWAT4J's one-time setup (`../swat4j/setup_swat4j.sh`) runs on
+first use; its dynamic analysis traces containerd with `strace`, so it needs sudo.
 
 The driver is `scripts/run_jdk8_target.sh`. Results go to
 `work/jdk8/Final_results_JDK8/<image>/`. Its stages are numbered
@@ -75,8 +102,8 @@ the paths it hard-codes (`/home/mrx/Desktop`, `/usr/local/apr/lib`), which are
 bind-mounted in a private mount namespace per application.
 
 ```bash
-../swat4j/setup_swat4j.sh          # once: clone + compile SWAT4J, needs openjdk-8-jdk
-SWAT4J=1 TABLE_ONLY=1 ./reproduce.sh
+../swat4j/setup_swat4j.sh          # once (reproduce.sh runs it if needed): clone + compile SWAT4J, needs openjdk-8-jdk
+SKIP_SYSJAVA=1 ./reproduce.sh      # SWAT4J on all ten images, then the table
 ```
 
 * Static: `swat4j/run_swat4j_host.sh <image>...` runs SWAT4J on the same JARs and

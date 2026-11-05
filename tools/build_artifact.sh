@@ -12,7 +12,7 @@
 #   1. echotrace/          <- git archive of the detector commit (EchoTrace tool source)
 #   2. 1_latest_containers/scripts/  <- driver + pipeline scripts used for that table
 #      2_swat4j_vs_sysjava/scripts/  <- driver + pipeline scripts used for that table
-#   3. syspart/            <- pinned SysPart build description and local patches
+#   3. syspart/            <- pinned SysPart build description
 #   4. swat4j/             <- SWAT4J run/compare scripts and their small outputs
 #   5. 1_latest_containers/results/<target>   <- Final_results_latest_versions
 #      2_swat4j_vs_sysjava/sysjava_results/<target> <- Final_results_JDK8 (5 rebuilt images)
@@ -64,16 +64,28 @@ copy_scripts() {  # <src repo> <table folder>: scripts/ and the runtime set runc
 }
 log "1_latest_containers/scripts <- ${LATEST_REPO}/scripts"
 copy_scripts "$LATEST_REPO" "$ART/1_latest_containers"
+# Drop the author-only before/after run of the older detector from stage 4.
+python3 - "$ART/1_latest_containers/scripts/run_latest_target.sh" <<'PY'
+import re, sys
+p = sys.argv[1]; s = open(p).read()
+s2 = re.sub(r'\n    if \[ "\$DETECTOR_REPO" != "\$REPO" \]; then\n.*?\n    fi\n', '\n', s, count=1, flags=re.S)
+assert s2 != s, "unpatched block not found in run_latest_target.sh"
+open(p, 'w').write(s2)
+PY
 log "2_swat4j_vs_sysjava/scripts <- ${JDK8_REPO}/scripts"
 copy_scripts "$JDK8_REPO" "$ART/2_swat4j_vs_sysjava"
 python3 "$ART/tools/add_jdk8_official_targets.py" "$ART/2_swat4j_vs_sysjava/scripts"
+sed -i 's#syspart-pin/PINNED.md#syspart/README.md#' "$ART/2_swat4j_vs_sysjava/scripts/rerun_syspart_symbolized.sh"
 # The JDK 8 runs used runc.txt plus the four runc 1.3.4 init syscalls (README beside it).
 cp "$JDK8_REPO"/runc_host_1.3.4_additions.* "$ART/2_swat4j_vs_sysjava/"
 
 # --------------------------------------------------------------- 3. SysPart
-log "syspart/ <- ${JDK8_REPO}/syspart-pin"
+# syspart/README.md is maintained in the artifact itself. Only the Egalito crash
+# fix is shipped; SysPartCode is used unmodified.
+log "syspart/ <- README + ${JDK8_REPO}/syspart-pin/egalito-local.patch"
 mkdir -p "$ART/syspart"
-cp "$JDK8_REPO"/syspart-pin/* "$ART/syspart/"
+rm -f "$ART/syspart/"*.patch "$ART/syspart/PINNED.md"
+cp "$JDK8_REPO/syspart-pin/egalito-local.patch" "$ART/syspart/"
 
 # ---------------------------------------------------------------- 4. SWAT4J
 log "swat4j/ <- ${SWAT4J_DIR} (scripts + allowlists, not the SWAT4J tool itself)"
@@ -88,7 +100,7 @@ cp "$ART/swat4j_extra/README.md" "$ART/swat4j/" 2>/dev/null || true
 rsync -a "$SWAT4J_DIR/mrx_desktop/" "$ART/swat4j/mrx_desktop/"   # OpenJDK 8 native sources SWAT4J reads
 [ ! -f "$SWAT4J_MAPPING" ] || cp "$SWAT4J_MAPPING" "$ART/swat4j/swat4j_mapping.py"
 rsync -a "$SWAT4J_DIR/rerun_host/output-native" "$SWAT4J_DIR/rerun_host/output-syscalls" "$ART/swat4j/outputs/static_host/"
-rsync -a --include '*_result.txt' --include '*.log' --exclude '*' "$SWAT4J_DIR/dynamic/" "$ART/swat4j/outputs/dynamic/"
+rsync -a --include '*_result.txt' --include '*.log' --include timing.csv --exclude '*' "$SWAT4J_DIR/dynamic/" "$ART/swat4j/outputs/dynamic/"
 rsync -a "$SWAT4J_DIR/comparison/" "$ART/swat4j/outputs/comparison/"
 rsync -a "$SWAT4J_DIR/comparison_published/" "$ART/swat4j/outputs/comparison_published/"
 
@@ -170,10 +182,11 @@ fi
 # ------------------------------------------------------------- 6. anonymise
 log "anonymising text files"
 bash "$ART/tools/anonymise.sh" "$ART"
-# Call graphs are the bulk of the results (up to ~50 MB each); gzip after
-# anonymising so the text pass sees them.
+# Call graphs and function lists are the bulk of the results (up to ~50 MB
+# each); gzip after anonymising so the text pass sees them. whitelist.sh reads
+# them gzipped.
 find "$ART/1_latest_containers/results" "$ART/2_swat4j_vs_sysjava/sysjava_results" \
-    -name callgraph.json -type f -print0 2>/dev/null | nice -n 10 xargs -0 -r -P 4 gzip -9f
+    \( -name callgraph.json -o -name allfunctions.txt \) -type f -print0 2>/dev/null | nice -n 10 xargs -0 -r -P 4 gzip -9f
 
 # ------------------------------------------------------- 7. tables + status
 status_md() {  # <out.md> <results dir> <target>...: last pipeline stage + runtime check

@@ -35,6 +35,11 @@ tomcat:7.0|2_swat4j_vs_sysjava|official|Debian 10|8u292
 cassandra:3.0.29|2_swat4j_vs_sysjava|official|Ubuntu 22.04|8u402-b06
 orientdb:3.2.19|2_swat4j_vs_sysjava|official|Ubuntu 22.04|8u372-b07
 jruby:9.4.2.0|2_swat4j_vs_sysjava|official|Ubuntu 20.04|8u372-b07
+jetty:9.4.51|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Ubuntu 20.04|17.0.8.1
+storm:2.4.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Debian 11|11.0.16
+solr:8.7.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Debian 11|11.0.15
+elasticsearch:7.5.2|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|docker.elastic.co/elasticsearch/elasticsearch:7.5.2, retagged|CentOS 7|13 (bundled)
+groovy:4.0.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Ubuntu 20.04|17.0.2
 debian:buster-slim|base of the five built images|official|Debian 10|-
 "
 

@@ -36,6 +36,15 @@ covering JDK 8 to 25. One folder per image is in `results/`.
 
 ## Reproduce
 
+Static (no SysPart, sysdig or root; minutes per image): rebuild an image's
+allowlist from the shipped call graphs, see the top-level README, level B.
+
+```bash
+../whitelist.sh zookeeper_3.9.5          # -> whitelists_static/zookeeper_3.9.5.json + .diff.txt
+```
+
+Full pipeline:
+
 ```bash
 SYSPART_ROOT=/path/to/SysPartCode ../setup.sh   # once
 ./reproduce.sh                                  # all 10 images (2-8 h each)

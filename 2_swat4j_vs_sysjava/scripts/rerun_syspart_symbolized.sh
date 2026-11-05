@@ -26,7 +26,7 @@
 #   EXCLUDE="t/elf"    space-separated target/elf pairs to skip
 #   START_MODE=exports start each library from all its exported functions
 #                      instead of the JNI mapping (writes Binary_Analysis_exports/)
-#   SYSPART_APP=dir    SysPart build to use (default: pinned, see syspart-pin/PINNED.md)
+#   SYSPART_APP=dir    SysPart build to use (default: pinned, see syspart/README.md)
 #   PHASE=light|heavy  light skips the HEAVY_RE ELFs, heavy runs only them
 #                      (default: all). On a 62 GB host run light with JOBS=4
 #                      JOB_MEM_GB=12, then heavy with JOBS=1 JOB_MEM_GB=55.
@@ -42,7 +42,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 RESULTS_ROOT="${RESULTS_ROOT:-${PROJECT_ROOT}/Final_results_echotrace}"
 # SYSPART_APP selects the SysPart build (its analysis/app directory). The
-# default is the pinned build documented in syspart-pin/PINNED.md.
+# default is the pinned build documented in syspart/README.md.
 SYSPART_APP="${SYSPART_APP:-/home/user/SysPartCode/analysis/app}"
 JOBS="${JOBS:-3}"
 JOB_TIMEOUT="${JOB_TIMEOUT:-7200}"

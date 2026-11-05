@@ -65,8 +65,10 @@ case "$T" in
 esac
 
 CNAME="et_${T}"
-WS="${REPO}/workspaces/${T}"
-RESULTS_ROOT="${REPO}/Final_results_latest_versions"
+# WS_ROOT / RESULTS_ROOT / LAST_STAGE let a partial rerun (e.g. the clinit-fix rerun into
+# Final_results_latest_versions_clinit) use its own folders and stop after a given stage.
+WS="${WS_ROOT:-${REPO}/workspaces}/${T}"
+RESULTS_ROOT="${RESULTS_ROOT:-${REPO}/Final_results_latest_versions}"
 FINAL="${RESULTS_ROOT}/${T}"
 LOCKS="${REPO}/workspaces/.locks"
 mkdir -p "$WS" "$FINAL" "$LOCKS"
@@ -74,7 +76,7 @@ LOG="${FINAL}/pipeline_run.log"
 exec > >(tee -a "$LOG") 2>&1
 
 stage() { echo; echo "===== [$(date '+%F %T')] ${T} stage $1: $2"; }
-run_from() { [ "$FIRST" -le "$1" ]; }
+run_from() { [ "$FIRST" -le "$1" ] && [ "$1" -le "${LAST_STAGE:-11}" ]; }
 
 ready() {  # wait until the app is up (same rule as verify_seccomp_profile.sh)
     local deadline=$((SECONDS + ${1:-240})) started
@@ -161,19 +163,6 @@ if run_from 4; then
         > "${FINAL}/detector_commit.txt"
     java -Xmx16g -cp "${DETECTOR_REPO}/target/classes:$(cat "${DETECTOR_REPO}/target/.classpath")" \
         com.echotrace.app.bytecode_new.JNADetector "$JARFILES_DIR" "$OUTPUTS_DIR" "$RUNTIME_DIR"
-    if [ "$DETECTOR_REPO" != "$REPO" ]; then
-        # Before/after numbers: the unpatched mode-1 native-method tracer only
-        # (no SysPart), from this worktree's build, into a side folder.
-        UNPATCHED_DIR="${WS}/stage4_unpatched"
-        mkdir -p "$UNPATCHED_DIR"
-        java -Xmx16g -Dprototype.output.dir="$UNPATCHED_DIR" \
-            -cp "${REPO}/target/classes:$(cat "${REPO}/target/.classpath")" \
-            com.echotrace.app.bytecode_new.PrototypeFinal "$JARFILES_DIR" --1 --runtime "$RUNTIME_DIR" \
-            > "${UNPATCHED_DIR}/prototypefinal_unpatched.log" 2>&1
-        printf 'stage4_unpatched_commit=%s\n' "$(git -C "$REPO" rev-parse --short HEAD)" >> "${FINAL}/detector_commit.txt"
-        echo "stage 4 natives: patched $(wc -l < "${OUTPUTS_DIR}/native_methods.txt"), unpatched $(wc -l < "${UNPATCHED_DIR}/native_methods.txt")"
-        cp "${UNPATCHED_DIR}/native_methods.txt" "${FINAL}/native_methods_unpatched_516fb46.txt"
-    fi
 fi
 
 if run_from 5; then

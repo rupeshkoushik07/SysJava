@@ -54,6 +54,12 @@ if [ -z "${EGALITO_SYSROOT:-}" ] && ! readelf -l "$APP" 2>/dev/null | grep -q 'I
     export EGALITO_SYSROOT="$(dirname "$(realpath "$0")")/../artifacts/all-running-containers/debug-symbols"
 fi
 
+# A start file removed after the stage started (a library excluded as unloadable, e.g. storm's
+# unshaded netty io_uring) means: skip this item. Exit before SysPart runs with no start function.
+if [ ! -s "$STARTFILE" ]; then
+    echo "compute_syscalls: start file $STARTFILE missing or empty (excluded); skipping $APP" >&2
+    exit 4
+fi
 temp_start_func=$(head -1 $STARTFILE)
 ./syspart -p $APP -s $temp_start_func -a 25 > $OUT/allfunctions.txt
 ./syspart -p $APP -s $temp_start_func -a 24 > $OUT/syscalls_with_callsites.txt
@@ -67,6 +73,61 @@ awk 'NR==FNR { n=$1; sub(/@.*/, "", n); if ($1 ~ /@/ && !(n in ver)) ver[n]=$1; 
 # A SysPart crash here (e.g. SIGSEGV on libgcrypt) leaves an empty call graph and would be
 # reported as "completed, 0 syscalls"; fail instead so it is counted as a failed result.
 callgraph_status=("${PIPESTATUS[@]}")
+
+# ---- crash exclusion (begin) ----------------------------------------------------
+# Some start functions crash SysPart on their own (libsystemd's sd_bus_add_* family).
+# Rule: exclude only those and analyse the rest. Each start is tried alone with the
+# call-graph step (SYSPART_CRASH_JOBS in parallel, default 6); every one that crashes
+# is recorded with its exit code in excluded_starts_syspart_crash.txt. If the rest still
+# crashes (only a combination does), bisect for more, up to SYSPART_BISECT_MAX_RUNS
+# (default 60) runs. The call graph is then rebuilt from the remaining starts.
+# SYSPART_EXCLUDE_CRASHES=0 disables this.
+EXCLUDED="${OUT}/excluded_starts_syspart_crash.txt"
+rm -f "$EXCLUDED"
+if [ "${callgraph_status[0]}" -ne 0 ] && [ "${SYSPART_EXCLUDE_CRASHES:-1}" != 0 ] \
+        && [ "$(grep -c . "$RESOLVED_START")" -gt 1 ]; then
+    echo "compute_syscalls: call-graph step exited ${callgraph_status[0]}; testing each start function alone" >&2
+    work=$(mktemp -d)
+    cg_code() { ( ./syspart -p "$APP" -s "$1" -i -a 23 > /dev/null 2>&1 ); echo $?; } 2>/dev/null
+    export APP
+    grep . "$RESOLVED_START" | xargs -P "${SYSPART_CRASH_JOBS:-6}" -I{} sh -c '
+        d=$(mktemp -d -p "$1"); echo "$2" > "$d/s"
+        ( ./syspart -p "$APP" -s "$d/s" -i -a 23 > /dev/null 2>&1 ) 2>/dev/null; c=$?
+        [ "$c" -ne 0 ] && printf "%s\t%s\n" "$2" "$c" > "$d/bad"; true' _ "$work" {}
+    cat "$work"/*/bad 2>/dev/null | sort > "$EXCLUDED"
+    cut -f1 "$EXCLUDED" > "$work/bad"
+    runs=0
+    max_runs=${SYSPART_BISECT_MAX_RUNS:-60}
+    while [ "$runs" -lt "$max_runs" ]; do
+        grep -vxFf "$work/bad" "$RESOLVED_START" > "$work/rest" || true
+        [ -s "$work/rest" ] || break
+        runs=$((runs + 1)); [ "$(cg_code "$work/rest")" -eq 0 ] && break
+        cp "$work/rest" "$work/cur"
+        while [ "$(wc -l < "$work/cur")" -gt 1 ] && [ "$runs" -lt "$max_runs" ]; do
+            half=$(( $(wc -l < "$work/cur") / 2 ))
+            head -n "$half" "$work/cur" > "$work/a"
+            tail -n +"$((half + 1))" "$work/cur" > "$work/b"
+            runs=$((runs + 1))
+            if [ "$(cg_code "$work/a")" -ne 0 ]; then cp "$work/a" "$work/cur"
+            else runs=$((runs + 1)); [ "$(cg_code "$work/b")" -ne 0 ] && cp "$work/b" "$work/cur" || break; fi
+        done
+        # Crashes only together with another start: drop the smallest crashing group found.
+        code=$(cg_code "$work/cur")
+        [ "$code" -ne 0 ] || break
+        while read -r s; do printf '%s\t%s\n' "$s" "$code"; done < "$work/cur" >> "$EXCLUDED"
+        cat "$work/cur" >> "$work/bad"
+    done
+    if [ -s "$EXCLUDED" ]; then
+        echo "compute_syscalls: excluded $(grep -c . "$EXCLUDED") start function(s) that crash SysPart: $(cut -f1 "$EXCLUDED" | tr '\n' ' ')" >&2
+    fi
+    if [ -s "$EXCLUDED" ] && [ -s "$work/rest" ]; then
+        cp "$work/rest" "$RESOLVED_START"
+        ./syspart -p $APP -s $RESOLVED_START -i -a 23 | python3 "$(dirname "$(realpath "$0")")/parse_callgraph_to_json_lowmem.py" - $OUT/callgraph.json
+        callgraph_status=("${PIPESTATUS[@]}")
+    fi
+    rm -rf "$work"
+fi
+# ---- crash exclusion (end) ------------------------------------------------------
 if [ "${callgraph_status[0]}" -ne 0 ]; then
     echo "compute_syscalls: syspart call-graph step (-a 23) exited ${callgraph_status[0]} on $APP; no result" >&2
     exit 3
