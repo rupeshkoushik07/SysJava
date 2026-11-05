@@ -98,7 +98,7 @@ Steps:
 ```bash
 SYSPART_ROOT=/path/to/SysPartCode ./setup.sh   # once
 1_latest_containers/reproduce.sh               # Table tab:latest   (10 images)
-2_swat4j_vs_sysjava/reproduce.sh               # Table tab:results  (5 JDK 8 images)
+2_swat4j_vs_sysjava/reproduce.sh               # Table tab:results  (10 JDK 8 images)
 analysis/coverage.sh latest                    # native-declaration coverage rows
 analysis/coverage.sh jdk8
 AUDIT=analysis/coverage_latest/per_app_summary.csv TABLE_ONLY=1 1_latest_containers/reproduce.sh
