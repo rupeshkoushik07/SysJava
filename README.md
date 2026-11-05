@@ -55,6 +55,7 @@ seccomp_runtime_test.log                   the container restarted under its pro
 named_callgraph_summary.tsv                functions / unnamed functions / syscalls per SysPart result
 debug_symbols.tsv                          which ELF got debug symbols from where
 detector_commit.txt                        detector commit of stage 4, when it differs from the default
+ADDED_first_start_binaries.md              executables added by hand, and why (some images)
 jni_overload_check.tsv                     overloaded JNI methods and how each was mapped
 dataset/Dataset.tar.xz.partNN              the files copied out of the container (below)
 ```

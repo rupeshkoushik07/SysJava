@@ -148,6 +148,8 @@ copy_result() {  # <src target dir> <dest target dir>
             $(ls -d Dataset_symbolized/*/_container_deps 2>/dev/null)) \
             | nice -n 10 xz -T4 -6 | split -b 45M -d -a 2 - "$dst/dataset/Dataset.tar.xz.part"
     fi
+    # Notes on executables added by hand to the analysis (not in the capture).
+    cp "$src"/Dataset_symbolized/BINARIES_*/ADDED_first_start_binaries.md "$dst/" 2>/dev/null || true
     # Keep the debug-symbol provenance table (which ELF got which debug file).
     if [ -f "$src/Dataset_symbolized/symbols.tsv" ]; then
         cp "$src/Dataset_symbolized/symbols.tsv" "$dst/debug_symbols.tsv"
