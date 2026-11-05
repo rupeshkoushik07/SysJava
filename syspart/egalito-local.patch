@@ -1,0 +1,56 @@
+diff --git a/src/chunk/plt.cpp b/src/chunk/plt.cpp
+index 9433c332..63f6954b 100644
+--- a/src/chunk/plt.cpp
++++ b/src/chunk/plt.cpp
+@@ -403,8 +403,16 @@ void PLTList::parseEntryLazy(ElfSection *pltSection, address_t entry,
+             if(r) {
+                 auto symbol = r->getSymbol();
+                 if(!symbol) {
+-                symbol = module->getElfSpace()->getSymbolList()->find(
+-                    r->getAddend());
++                    auto elfSpace = module->getElfSpace();
++                    auto symbolList = elfSpace ? elfSpace->getSymbolList() : nullptr;
++                    if(symbolList) {
++                        symbol = symbolList->find(r->getAddend());
++                    }
++                }
++                if(!symbol) {
++                    LOG(1, "Skipping unresolved lazy PLT entry at "
++                        << std::hex << pltAddress);
++                    return;
+                 }
+                 auto externalSymbol = ExternalSymbolFactory(module)
+                     .makeExternalSymbol(symbol);
+diff --git a/src/conductor/conductor.cpp b/src/conductor/conductor.cpp
+index a04856ab..c948b6cf 100644
+--- a/src/conductor/conductor.cpp
++++ b/src/conductor/conductor.cpp
+@@ -103,6 +103,12 @@ void Conductor::parseLibraries() {
+             continue;  // already parsed
+         }
+ 
++        if(library->getResolvedPath().empty()) {
++            LOG(1, "WARNING: skipping unresolved library ["
++                << library->getName() << "]");
++            continue;
++        }
++
+         ElfMap *elf = new ElfMap(library->getResolvedPathCStr());
+         parse(elf, library);
+     }
+diff --git a/src/elf/elfdynamic.cpp b/src/elf/elfdynamic.cpp
+index 1f8c34b5..77a8c406 100644
+--- a/src/elf/elfdynamic.cpp
++++ b/src/elf/elfdynamic.cpp
+@@ -225,6 +225,11 @@ void ElfDynamic::processLibrary(const std::string &fullPath,
+ 
+    int isLdEnabled = isFeatureEnabled("ENABLE_LD");
+ 
++    if(fullPath.empty()) {
++        LOG(1, "    skipping unresolved library [" << filename << "]");
++        return;
++    }
++
+     if(filename == "ld-linux-x86-64.so.2"
+         || filename == "ld-linux-aarch64.so.1"
+         || filename == "ld-linux-riscv64-lp64d.so.1") {

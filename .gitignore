@@ -1,0 +1,11 @@
+# created by setup.sh / reproduce.sh on the reviewer's machine
+work/
+*/tables_rerun/
+analysis/coverage_*/
+swat4j/run/
+swat4j/rerun/
+swat4j/rerun_host/
+swat4j/dynamic/
+swat4j/.tmp_jdk8_native/
+echotrace/target/
+__pycache__/
