@@ -1,0 +1,224 @@
+
+Path to rt_sigreturn:
+  inflateInit2__faf0 - [INDIRECT]-> __restore_rt_45cb0
+  __restore_rt_45cb0 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  inflateInit2__faf0 - [INDIRECT]-> clear_once_control_a96b0
+  clear_once_control_a96b0 - [syscall]-> futex
+
+Path to lseek:
+  gzseek64_134e0 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to close:
+  gzclose_w_15730 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to munmap:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_close_mmap_9b360
+  _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to ioctl:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  _IO_file_doallocate_8bc60 - [DIRECT]-> __isatty_nostatus_129430
+  __isatty_nostatus_129430 - [syscall]-> ioctl
+
+Path to read:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_read_9b320
+  _IO_file_read_9b320 - [DIRECT]-> read_128390
+  read_128390 - [syscall]-> read
+
+Path to fstat:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_stat_9b350
+  _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to mmap:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mremap:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to write:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
+  _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
+
+Path to openat:
+  gzdopen_13320 - [DIRECT]-> gz_open_7f90
+  gz_open_7f90 - [DIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
+Path to madvise:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_mem_finish_968f0
+  _IO_mem_finish_968f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to wait4:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
+
+Path to writev:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
+  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
+
+Path to getcwd:
+  inflateInit2__faf0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
+  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to getdents64:
+  inflateInit2__faf0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to newfstatat:
+  inflateInit2__faf0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
+  stat_128480 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to rt_sigprocmask:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to prctl:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
+  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [DIRECT]-> __set_vma_name_138180
+  __set_vma_name_138180 - [syscall]-> prctl
+
+Path to exit_group:
+  inflateInit2__faf0 - [INDIRECT]-> print_and_abort_b6ce0
+  print_and_abort_b6ce0 - [DIRECT]-> exit_486a0
+  exit_486a0 - [DIRECT]-> __run_exit_handlers_483f0
+  __run_exit_handlers_483f0 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to mprotect:
+  gzdopen_13320 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to rt_sigaction:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+
+Path to fcntl:
+  inflateInit2__faf0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
+  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [DIRECT]-> fdopendir_f66e0
+  fdopendir_f66e0 - [DIRECT]-> __fcntl64_nocancel_128ee0
+  __fcntl64_nocancel_128ee0 - [syscall]-> fcntl
+
+Path to sched_getaffinity:
+  gzdopen_13320 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> arena_get2_b16d0
+  arena_get2_b16d0 - [DIRECT]-> get_nprocs_12d590
+  get_nprocs_12d590 - [DIRECT]-> __get_nprocs_sched_12d2f0
+  __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to gettid:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> raise_45b60
+  raise_45b60 - [DIRECT]-> pthread_kill@@GLIBC_2.34_a6370
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
+
+Path to getpid:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to sched_getparam:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getparam_11aba0
+  sched_getparam_11aba0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getscheduler_11abd0
+  sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  inflateInit2__faf0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  gzdopen_13320 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

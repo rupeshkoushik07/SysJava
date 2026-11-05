@@ -1,0 +1,243 @@
+
+Path to write:
+  _nc_outch_16190 - [DIRECT]-> write_eefc0
+  write_eefc0 - [syscall]-> write
+
+Path to rt_sigreturn:
+  delay_output_160e0 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  delay_output_160e0 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to nanosleep:
+  napms_10670 - [DIRECT]-> nanosleep_c4e00
+  nanosleep_c4e00 - [syscall]-> nanosleep
+
+Path to stat:
+  _nc_locale_breaks_acs_11990 - [DIRECT]-> strstr_a54b0
+  strstr_a54b0 - [syscall]-> stat
+
+Path to ioctl:
+  _nc_set_tty_mode_16740 - [DIRECT]-> tcsetattr_f3ea0
+  tcsetattr_f3ea0 - [syscall]-> ioctl
+
+Path to access:
+  _nc_access_d040 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to select:
+  _nc_timed_wait_169c0 - [DIRECT]-> select_f4f40
+  select_f4f40 - [syscall]-> select
+
+Path to futex:
+  _nc_outch_16190 - [DIRECT]-> write_eefc0
+  write_eefc0 - [DIRECT]-> __libc_disable_asynccancel_10bc30
+  __libc_disable_asynccancel_10bc30 - [syscall]-> futex
+
+Path to munmap:
+  _nc_add_to_try_d200 - [DIRECT]-> free_85580
+  free_85580 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to sched_yield:
+  delay_output_160e0 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mmap:
+  delay_output_160e0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to close:
+  delay_output_160e0 - [INDIRECT]-> _IO_file_close_797b0
+  _IO_file_close_797b0 - [DIRECT]-> __close_nocancel_ef619
+  __close_nocancel_ef619 - [syscall]-> close
+
+Path to read:
+  delay_output_160e0 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_eef60
+  read_eef60 - [syscall]-> read
+
+Path to lseek:
+  delay_output_160e0 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  delay_output_160e0 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  delay_output_160e0 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to writev:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to kill:
+  _nc_outch_16190 - [DIRECT]-> write_eefc0
+  write_eefc0 - [DIRECT]-> __libc_enable_asynccancel_10bbd0
+  __libc_enable_asynccancel_10bbd0 - [DIRECT]-> __pthread_unwind_13d930
+  __pthread_unwind_13d930 - [syscall]-> kill
+
+Path to exit:
+  _nc_err_abort_eb70 - [DIRECT]-> exit_39ba0
+  exit_39ba0 - [DIRECT]-> __run_exit_handlers_39a90
+  __run_exit_handlers_39a90 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit
+
+Path to exit_group:
+  _nc_err_abort_eb70 - [DIRECT]-> exit_39ba0
+  exit_39ba0 - [DIRECT]-> __run_exit_handlers_39a90
+  __run_exit_handlers_39a90 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to brk:
+  delay_output_160e0 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to open:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_load_cache_2b670
+  __gconv_load_cache_2b670 - [DIRECT]-> __open_nocancel_eed29
+  __open_nocancel_eed29 - [syscall]-> open
+
+Path to getcwd:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to rt_sigprocmask:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigprocmask_364a0
+  sigprocmask_364a0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> tgkill
+
+Path to gettid:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to mprotect:
+  _nc_add_to_try_d200 - [DIRECT]-> calloc_85b80
+  calloc_85b80 - [DIRECT]-> _int_malloc_820e0
+  _int_malloc_820e0 - [DIRECT]-> sysmalloc_81900
+  sysmalloc_81900 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to madvise:
+  _nc_add_to_try_d200 - [DIRECT]-> free_85580
+  free_85580 - [DIRECT]-> _int_free_80f70
+  _int_free_80f70 - [DIRECT]-> heap_trim_7ff20
+  heap_trim_7ff20 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to clock_getres:
+  _nc_get_locale_11950 - [DIRECT]-> setlocale_2c8a0
+  setlocale_2c8a0 - [DIRECT]-> _nl_find_locale_2d0f0
+  _nl_find_locale_2d0f0 - [DIRECT]-> _nl_load_locale_from_archive_2dc80
+  _nl_load_locale_from_archive_2dc80 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to lstat:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to openat:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to getrlimit:
+  _nc_get_locale_11950 - [DIRECT]-> setlocale_2c8a0
+  setlocale_2c8a0 - [DIRECT]-> _nl_find_locale_2d0f0
+  _nl_find_locale_2d0f0 - [DIRECT]-> _nl_load_locale_from_archive_2dc80
+  _nl_load_locale_from_archive_2dc80 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to fcntl:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> fdopendir_c08e0
+  fdopendir_c08e0 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to getdents:
+  delay_output_160e0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to getpid:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to sendto:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to connect:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to socket:
+  delay_output_160e0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket

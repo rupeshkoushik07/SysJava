@@ -1,0 +1,428 @@
+
+Path to futex:
+  __cxa_guard_acquire_a9260 - [syscall]-> futex
+
+Path to gettimeofday:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to set_robust_list:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rt_sigprocmask
+
+Path to rseq:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rseq
+
+Path to exit:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> exit
+
+Path to openat:
+  _ZNSt13random_device7_M_initERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_d3410 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to getrandom:
+  _ZNSt13random_device7_M_initERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_d3410 - [DIRECT]-> getentropy_3f020
+  getentropy_3f020 - [syscall]-> getrandom
+
+Path to rename:
+  _ZNSt10filesystem6renameERKNS_7__cxx114pathES3_RSt10error_code_16f0c0 - [DIRECT]-> rename_58a80
+  rename_58a80 - [syscall]-> rename
+
+Path to read:
+  _ZNSt13random_device9_M_getvalEv_d3820 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to readlink:
+  _ZNSt10filesystem12read_symlinkERKNS_4pathERSt10error_code_185e50 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to symlink:
+  _ZNSt10filesystem14create_symlinkERKNS_4pathES2_RSt10error_code_184540 - [DIRECT]-> symlink_f9a50
+  symlink_f9a50 - [syscall]-> symlink
+
+Path to close:
+  _ZNSt10filesystem7__cxx1128recursive_directory_iteratorC2ERKNS0_4pathENS_17directory_optionsEPSt10error_code_16caa0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to mkdir:
+  _ZNSt10filesystem16create_directoryERKNS_4pathERSt10error_code_185050 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to clock_gettime:
+  _ZNSt6chrono3_V212system_clock3nowEv_cb180 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to ioctl:
+  _ZNSt12__basic_fileIcE9showmanycEv_c9fa0 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to poll:
+  _ZNSt12__basic_fileIcE9showmanycEv_c9fa0 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to lseek:
+  _ZNSt12__basic_fileIcE9showmanycEv_c9fa0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to link:
+  _ZNSt10filesystem16create_hard_linkERKNS_7__cxx114pathES3_RSt10error_code_16e4a0 - [DIRECT]-> link_f99f0
+  link_f99f0 - [syscall]-> link
+
+Path to getcwd:
+  _ZNSt10filesystem12current_pathB5cxx11ERSt10error_code_170170 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to fchmodat:
+  _ZNSt10filesystem11permissionsERKNS_7__cxx114pathENS_5permsENS_12perm_optionsERSt10error_code_16f6e0 - [DIRECT]-> fchmodat_f7dd0
+  fchmodat_f7dd0 - [syscall]-> fchmodat
+
+Path to sched_getscheduler:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getparam
+
+Path to truncate:
+  _ZNSt10filesystem11resize_fileERKNS_7__cxx114pathEmRSt10error_code_16f160 - [DIRECT]-> truncate_100020
+  truncate_100020 - [syscall]-> truncate
+
+Path to utimensat:
+  _ZNSt10filesystem15last_write_timeERKNS_4pathENSt6chrono10time_pointINS_12__file_clockENS3_8durationIlSt5ratioILl1ELl1000000000EEEEEERSt10error_code_184b10 - [DIRECT]-> utimensat_fc920
+  utimensat_fc920 - [syscall]-> utimensat
+
+Path to write:
+  _ZNSt12__basic_fileIcE6xsputnEPKcl_c9e00 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to writev:
+  _ZNSt12__basic_fileIcE8xsputn_2EPKclS2_l_c9e70 - [DIRECT]-> writev_fde50
+  writev_fde50 - [syscall]-> writev
+
+Path to chdir:
+  _ZNSt10filesystem12current_pathERKNS_4pathERSt10error_code_1845a0 - [DIRECT]-> chdir_f8bf0
+  chdir_f8bf0 - [syscall]-> chdir
+
+Path to sched_yield:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to munmap:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to getpid:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to sendto:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to recvmsg:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to madvise:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to exit_group:
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_aad80 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to fcntl:
+  _ZNSt12__basic_fileIcE8sys_openEiSt13_Ios_Openmode_c9c50 - [DIRECT]-> fdopen@@GLIBC_2.2.5_75ba0
+  fdopen@@GLIBC_2.2.5_75ba0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to newfstatat:
+  _ZNSt10filesystem12read_symlinkERKNS_4pathERSt10error_code_185e50 - [DIRECT]-> lstat_f7840
+  lstat_f7840 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to clock_nanosleep:
+  _ZNSt11this_thread11__sleep_forENSt6chrono8durationIlSt5ratioILl1ELl1EEEENS1_IlS2_ILl1ELl1000000000EEEE_d45b0 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to unlinkat:
+  _ZNSt10filesystem10remove_allERKNS_7__cxx114pathERSt10error_code_16efc0 - [DIRECT]-> _ZNSt10filesystem7__cxx1128recursive_directory_iterator7__eraseEPSt10error_code_16d800
+  _ZNSt10filesystem7__cxx1128recursive_directory_iterator7__eraseEPSt10error_code_16d800 - [DIRECT]-> unlinkat_f9b40
+  unlinkat_f9b40 - [syscall]-> unlinkat
+
+Path to unlink:
+  _ZNSt10filesystem6removeERKNS_7__cxx114pathERSt10error_code_16ee10 - [DIRECT]-> remove_58a40
+  remove_58a40 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to rmdir:
+  _ZNSt10filesystem6removeERKNS_7__cxx114pathERSt10error_code_16ee10 - [DIRECT]-> remove_58a40
+  remove_58a40 - [DIRECT]-> rmdir_f9b70
+  rmdir_f9b70 - [syscall]-> rmdir
+
+Path to faccessat2:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to fchmod:
+  _ZNSt10filesystem4copyERKNS_7__cxx114pathES3_NS_12copy_optionsERSt10error_code_170ed0 - [DIRECT]-> _ZNSt10filesystem12do_copy_fileEPKcS1_NS_26copy_options_existing_fileEP4statS4_RSt10error_code_170630
+  _ZNSt10filesystem12do_copy_fileEPKcS1_NS_26copy_options_existing_fileEP4statS4_RSt10error_code_170630 - [DIRECT]-> fchmod_f7d80
+  fchmod_f7d80 - [syscall]-> fchmod
+
+Path to sendfile:
+  _ZNSt10filesystem4copyERKNS_7__cxx114pathES3_NS_12copy_optionsERSt10error_code_170ed0 - [DIRECT]-> _ZNSt10filesystem12do_copy_fileEPKcS1_NS_26copy_options_existing_fileEP4statS4_RSt10error_code_170630
+  _ZNSt10filesystem12do_copy_fileEPKcS1_NS_26copy_options_existing_fileEP4statS4_RSt10error_code_170630 - [DIRECT]-> sendfile_fc800
+  sendfile_fc800 - [syscall]-> sendfile
+
+Path to chmod:
+  _ZNSt10filesystem11permissionsERKNS_7__cxx114pathENS_5permsENS_12perm_optionsERSt10error_code_16f6e0 - [DIRECT]-> fchmodat_f7dd0
+  fchmodat_f7dd0 - [DIRECT]-> chmod_f7d50
+  chmod_f7d50 - [syscall]-> chmod
+
+Path to sched_setaffinity:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setscheduler
+
+Path to rt_sigaction:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to mmap:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to mprotect:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  _ZNSt6thread20hardware_concurrencyEv_d4590 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to mremap:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
+  mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to ppoll:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _ZNSt12_GLOBAL__N_117__libc_arc4randomEPv_d3260
+  _ZNSt12_GLOBAL__N_117__libc_arc4randomEPv_d3260 - [DIRECT]-> arc4random_3d2f0
+  arc4random_3d2f0 - [DIRECT]-> __GI___arc4random_buf.part.0_3d0d0
+  __GI___arc4random_buf.part.0_3d0d0 - [syscall]-> ppoll
+
+Path to getdents64:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to geteuid:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getuid:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to getegid:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to prlimit64:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to statfs:
+  _ZNSt10filesystem5spaceERKNS_4pathERSt10error_code_184e20 - [DIRECT]-> _ZNSt10filesystem8do_spaceEPKcRmS2_S2_RSt10error_code_16e400
+  _ZNSt10filesystem8do_spaceEPKcRmS2_S2_RSt10error_code_16e400 - [DIRECT]-> statvfs_f7c60
+  statvfs_f7c60 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to tgkill:
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_aad80 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_aad80 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to sched_get_priority_max:
+  _ZN9__gnu_cxx9free_list8_M_clearEv_b4060 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  _ZN9__gnu_cxx9free_list8_M_clearEv_b4060 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to getgroups:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to sysinfo:
+  _ZNSt10filesystem9canonicalERKNS_7__cxx114pathERSt10error_code_173360 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to clone3:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to clone:
+  _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE_d46d0 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone_108b10
+  clone_108b10 - [syscall]-> clone
+
+Path to socket:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to bind:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to getsockname:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to brk:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to dup:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __get_myaddress_13b300
+  __get_myaddress_13b300 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to setsockopt:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to connect:
+  _ZNSt13basic_istreamIwSt11char_traitsIwEE6ignoreEl@@GLIBCXX_3.4.5_a65f0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> __EI_pmap_getport_144af0
+  __EI_pmap_getport_144af0 - [DIRECT]-> __EI___libc_rpc_getport_144930
+  __EI___libc_rpc_getport_144930 - [DIRECT]-> __get_socket_144890
+  __get_socket_144890 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect

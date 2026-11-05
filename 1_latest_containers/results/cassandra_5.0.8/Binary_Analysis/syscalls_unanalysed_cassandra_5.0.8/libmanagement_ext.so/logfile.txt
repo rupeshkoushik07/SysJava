@@ -1,0 +1,631 @@
+
+Path to gettid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
+  _ZL19thread_native_entryP6Thread_c29660 - [syscall]-> gettid
+
+Path to futex:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> __condvar_cleanup_waiting_88360
+  __condvar_cleanup_waiting_88360 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to rseq:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rseq
+
+Path to exit:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> exit
+
+Path to set_robust_list:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rt_sigprocmask
+
+Path to time:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to times:
+  Java_com_sun_management_internal_OperatingSystemImpl_getProcessCpuTime0_3750 - [DIRECT]-> times_d3b30
+  times_d3b30 - [syscall]-> times
+
+Path to prlimit64:
+  Java_com_sun_management_internal_OperatingSystemImpl_getMaxFileDescriptorCount0_3890 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to sysinfo:
+  Java_com_sun_management_internal_OperatingSystemImpl_getTotalSwapSpaceSize0_36b0 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to sched_yield:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to close:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_close_80280
+  _IO_file_close_80280 - [DIRECT]-> __close_nocancel_fce60
+  __close_nocancel_fce60 - [syscall]-> close
+
+Path to munmap:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to read:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_read_81710
+  _IO_file_read_81710 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to lseek:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to unlink:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10CompileLogD0Ev_5e07b0
+  _ZN10CompileLogD0Ev_5e07b0 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to mprotect:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
+  _ZN15VM_LinuxDllLoad4doitEv_c2e450 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to clock_gettime:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_c34640
+  _ZN2os13javaTimeNanosEv_c34640 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to openat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_c2a090
+  _ZN2os8dll_loadEPKcPci_c2a090 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to access:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to getpid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to sendto:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to poll:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvmsg:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to writev:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to madvise:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to mkdir:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to getdents64:
+  Java_com_sun_management_internal_OperatingSystemImpl_getOpenFileDescriptorCount0_3800 - [DIRECT]-> readdir_d0080
+  readdir_d0080 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to lstat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> Perf_Attach_c67a70
+  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __lxstat_1095d0
+  __lxstat_1095d0 - [syscall]-> lstat
+
+Path to geteuid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> Perf_Attach_c67a70
+  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to fstat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> Perf_Attach_c67a70
+  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __fxstat_109580
+  __fxstat_109580 - [syscall]-> fstat
+
+Path to mmap:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> Perf_Attach_c67a70
+  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to kill:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> Perf_Attach_c67a70
+  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> kill_3c260
+  kill_3c260 - [syscall]-> kill
+
+Path to ioctl:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_doallocate_75840
+  _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to newfstatat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to mremap:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
+  mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to stat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4statEPKcP4stat_c339f0
+  _ZN2os4statEPKcP4stat_c339f0 - [DIRECT]-> __xstat_109530
+  __xstat_109530 - [syscall]-> stat
+
+Path to fcntl:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4openEPKcii_c28290
+  _ZN2os4openEPKcii_c28290 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to getrusage:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN20G1RemSetSamplingTask7executeEv_74f280
+  _ZN20G1RemSetSamplingTask7executeEv_74f280 - [DIRECT]-> _ZN2os12elapsedVTimeEv_c246e0
+  _ZN2os12elapsedVTimeEv_c246e0 - [DIRECT]-> getrusage_fd860
+  getrusage_fd860 - [syscall]-> getrusage
+
+Path to vfork:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
+  _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> vfork_d43b0
+  vfork_d43b0 - [syscall]-> vfork
+
+Path to execve:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
+  _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> execve_d4ad0
+  execve_d4ad0 - [syscall]-> execve
+
+Path to exit_group:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
+  _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to pread64:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to getrandom:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to sched_getaffinity:
+  Java_com_sun_management_internal_OperatingSystemImpl_initialize0_35f0 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_nprocs_conf_104380
+  get_nprocs_conf_104380 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to clock_nanosleep:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_f11be0
+  WB_CheckThreadObjOfTerminatingThread_f11be0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_c337e0
+  _ZN2os17naked_short_sleepEl_c337e0 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to uname:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_PrintOsInfo_f03360
+  WB_PrintOsInfo_f03360 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_c259e0
+  _ZN2os13print_os_infoEP12outputStream_c259e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30
+  _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to setpriority:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
+  _ZN10GangWorker3runEv_f1d130 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890
+  _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_c27ee0
+  _ZN2os19set_native_priorityEP6Threadi_c27ee0 - [DIRECT]-> setpriority_fdba0
+  setpriority_fdba0 - [syscall]-> setpriority
+
+Path to wait4:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
+  _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> waitpid_d3b90
+  waitpid_d3b90 - [DIRECT]-> wait4_d3bc0
+  wait4_d3bc0 - [syscall]-> wait4
+
+Path to clone:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
+  _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> fork_d3e80
+  fork_d3e80 - [DIRECT]-> _Fork_d4330
+  _Fork_d4330 - [syscall]-> clone
+
+Path to getcwd:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to readlink:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to faccessat2:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to rt_sigaction:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to getpriority:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_bf8430
+  _ZNK11NamedThread8print_onEP12outputStream_bf8430 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_e67070
+  _ZNK6Thread8print_onEP12outputStreamb_e67070 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_c27f30
+  _ZN2os19get_native_priorityEPK6ThreadPi_c27f30 - [DIRECT]-> getpriority_fdb60
+  getpriority_fdb60 - [syscall]-> getpriority
+
+Path to sched_setscheduler:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
+  _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
+  pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_getparam:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
+  _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
+  pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
+  _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
+  pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_get_priority_max:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
+  _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
+  pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
+  _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
+  pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to mincore:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
+  _ZN10JavaThread3runEv_e69030 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270
+  _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_c205e0
+  _ZN2os24create_stack_guard_pagesEPcm_c205e0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_c276a0
+  _ZN2os27pd_create_stack_guard_pagesEPcm_c276a0 - [DIRECT]-> mincore_101b30
+  mincore_101b30 - [syscall]-> mincore
+
+Path to prctl:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
+  _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
+  _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to tgkill:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN13WatcherThread3runEv_bf8b90
+  _ZN13WatcherThread3runEv_bf8b90 - [DIRECT]-> _ZN7VMError13check_timeoutEv_ee8e20
+  _ZN7VMError13check_timeoutEv_ee8e20 - [DIRECT]-> _ZN7VMError26interrupt_reporting_threadEv_ee9d90
+  _ZN7VMError26interrupt_reporting_threadEv_ee9d90 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to shmdt:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
+  _ZN14ShenandoahHeap10initializeEv_d38f70 - [DIRECT]-> _ZN13ReservedSpaceC1EmmmPc_ee2100
+  _ZN13ReservedSpaceC1EmmmPc_ee2100 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_c20d30
+  _ZN2os22release_memory_specialEPcm_c20d30 - [DIRECT]-> _ZN2os25pd_release_memory_specialEPcm_c27e00
+  _ZN2os25pd_release_memory_specialEPcm_c27e00 - [DIRECT]-> shmdt_10b630
+  shmdt_10b630 - [syscall]-> shmdt
+
+Path to shutdown:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
+  _ZN15G1CollectedHeap10initializeEv_6f17d0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__8295b0
+  _Z33vm_shutdown_during_initializationPKcS0__8295b0 - [DIRECT]-> _ZN2os8shutdownEv_c35470
+  _ZN2os8shutdownEv_c35470 - [DIRECT]-> _ZN14AttachListener5abortEv_422380
+  _ZN14AttachListener5abortEv_422380 - [DIRECT]-> shutdown_10ad90
+  shutdown_10ad90 - [syscall]-> shutdown
+
+Path to getuid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to getegid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to rmdir:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
+  _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820
+  _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820 - [DIRECT]-> _ZN11FileMapInfo14open_for_writeEPKc_6c0270
+  _ZN11FileMapInfo14open_for_writeEPKc_6c0270 - [DIRECT]-> remove_58a40
+  remove_58a40 - [DIRECT]-> rmdir_f9b70
+  rmdir_f9b70 - [syscall]-> rmdir
+
+Path to socket:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to bind:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to getsockname:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to fallocate:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
+  _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
+  _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_c209d0
+  _ZN2os18map_memory_to_fileEmi_c209d0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c355f0
+  _ZN2os18map_memory_to_fileEPcmi_c355f0 - [DIRECT]-> posix_fallocate64_fc7c0
+  posix_fallocate64_fc7c0 - [syscall]-> fallocate
+
+Path to shmget:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
+  _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
+  _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
+  _ZN2os22reserve_memory_specialEmmmPcb_c20c90 - [DIRECT]-> _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540
+  _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540 - [DIRECT]-> shmget_10b660
+  shmget_10b660 - [syscall]-> shmget
+
+Path to shmat:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
+  _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
+  _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
+  _ZN2os22reserve_memory_specialEmmmPcb_c20c90 - [DIRECT]-> _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540
+  _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540 - [DIRECT]-> shmat_10b600
+  shmat_10b600 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
+  _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
+  _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
+  _ZN2os22reserve_memory_specialEmmmPcb_c20c90 - [DIRECT]-> _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540
+  _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540 - [DIRECT]-> shmctl@@GLIBC_2.2.5_10b690
+  shmctl@@GLIBC_2.2.5_10b690 - [syscall]-> shmctl
+
+Path to umask:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZL6_fatalv_9b9680
+  _ZL6_fatalv_9b9680 - [DIRECT]-> _Z12report_fatal11VMErrorTypePKciS1_z_6094c0
+  _Z12report_fatal11VMErrorTypePKciS1_z_6094c0 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_ee4df0
+  _ZN7VMError6reportEP12outputStreamb_ee4df0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c33100
+  _ZN2os5Posix15print_user_infoEP12outputStream_c33100 - [DIRECT]-> umask_f7d40
+  umask_f7d40 - [syscall]-> umask
+
+Path to get_mempolicy:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
+  _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00
+  _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_f4c490
+  _ZN10ZPageCache9free_pageEP5ZPage_f4c490 - [DIRECT]-> _ZN5ZNUMA9memory_idEm_f43eb0
+  _ZN5ZNUMA9memory_idEm_f43eb0 - [DIRECT]-> _ZN8ZSyscall13get_mempolicyEPiPmmPvm_f61550
+  _ZN8ZSyscall13get_mempolicyEPiPmmPvm_f61550 - [syscall]-> get_mempolicy
+
+Path to sched_setaffinity:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
+  _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
+  _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setaffinity
+
+Path to getgroups:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
+  _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to brk:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to ftruncate:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
+  _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
+  _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
+  _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0
+  _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC2Em_f4fd40
+  _ZN22ZPhysicalMemoryBackingC2Em_f4fd40 - [DIRECT]-> ftruncate_100050
+  ftruncate_100050 - [syscall]-> ftruncate
+
+Path to fstatfs:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
+  _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
+  _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
+  _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0
+  _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC2Em_f4fd40
+  _ZN22ZPhysicalMemoryBackingC2Em_f4fd40 - [DIRECT]-> fstatfs_f7c30
+  fstatfs_f7c30 - [syscall]-> fstatfs
+
+Path to pwrite64:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
+  _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440
+  _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking8uncommitEmm_f51480
+  _ZNK22ZPhysicalMemoryBacking8uncommitEmm_f51480 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking19split_and_fallocateEbmm_f50cf0
+  _ZNK22ZPhysicalMemoryBacking19split_and_fallocateEbmm_f50cf0 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking19fallocate_fill_holeEmm_f50a60
+  _ZNK22ZPhysicalMemoryBacking19fallocate_fill_holeEmm_f50a60 - [DIRECT]-> pwrite_f6470
+  pwrite_f6470 - [syscall]-> pwrite64
+
+Path to memfd_create:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
+  _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
+  _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
+  _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0
+  _ZN22ZPhysicalMemoryManagerC2Em_f4d6b0 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC2Em_f4fd40
+  _ZN22ZPhysicalMemoryBackingC2Em_f4fd40 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_f4f850
+  _ZNK22ZPhysicalMemoryBacking13create_mem_fdEPKc_f4f850 - [DIRECT]-> _ZN8ZSyscall12memfd_createEPKcj_f61510
+  _ZN8ZSyscall12memfd_createEPKcj_f61510 - [syscall]-> memfd_create
+
+Path to clone3:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
+  _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
+  _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to dup:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __get_myaddress_13b300
+  __get_myaddress_13b300 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to setsockopt:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to connect:
+  Java_com_sun_management_internal_Flag_getAllFlagNames_2a50 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> __EI_pmap_getport_144af0
+  __EI_pmap_getport_144af0 - [DIRECT]-> __EI___libc_rpc_getport_144930
+  __EI___libc_rpc_getport_144930 - [DIRECT]-> __get_socket_144890
+  __get_socket_144890 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect

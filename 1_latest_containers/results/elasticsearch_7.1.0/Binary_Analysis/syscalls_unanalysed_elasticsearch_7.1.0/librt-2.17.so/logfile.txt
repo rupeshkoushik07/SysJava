@@ -1,0 +1,388 @@
+
+Path to mq_timedsend:
+  mq_timedsend_4c50 - [syscall]-> mq_timedsend
+
+Path to mq_getsetattr:
+  mq_setattr_4860 - [syscall]-> mq_getsetattr
+
+Path to timer_delete:
+  timer_delete@@GLIBC_2.3.3_40f0 - [syscall]-> timer_delete
+
+Path to timer_create:
+  timer_create@@GLIBC_2.3.3_3e20 - [syscall]-> timer_create
+
+Path to mq_notify:
+  mq_notify_4ac0 - [syscall]-> mq_notify
+
+Path to mq_timedreceive:
+  mq_timedreceive_4cc0 - [syscall]-> mq_timedreceive
+
+Path to mq_open:
+  mq_open_4720 - [syscall]-> mq_open
+
+Path to timer_gettime:
+  timer_gettime@@GLIBC_2.3.3_4220 - [syscall]-> timer_gettime
+
+Path to mq_unlink:
+  mq_unlink_4800 - [syscall]-> mq_unlink
+
+Path to timer_settime:
+  timer_settime@@GLIBC_2.3.3_4270 - [syscall]-> timer_settime
+
+Path to timer_getoverrun:
+  timer_getoverrun@@GLIBC_2.3.3_41d0 - [syscall]-> timer_getoverrun
+
+Path to close:
+  mq_close_47d0 - [syscall]-> close
+
+Path to futex:
+  lio_listio@@GLIBC_2.4_3b70 - [DIRECT]-> lio_listio_internal_3700
+  lio_listio_internal_3700 - [syscall]-> futex
+
+Path to rt_sigprocmask:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [syscall]-> rt_sigprocmask
+
+Path to open:
+  shm_open_4450 - [DIRECT]-> open_ee70
+  open_ee70 - [syscall]-> open
+
+Path to unlink:
+  shm_unlink_45d0 - [DIRECT]-> unlink_f0710
+  unlink_f0710 - [syscall]-> unlink
+
+Path to fcntl:
+  aio_fsync_2570 - [DIRECT]-> fcntl_e830
+  fcntl_e830 - [syscall]-> fcntl
+
+Path to set_robust_list:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __nptl_set_robust_6770
+  __nptl_set_robust_6770 - [syscall]-> set_robust_list
+
+Path to tgkill:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> tgkill
+
+Path to rt_sigreturn:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __restore_rt_f5d0
+  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to exit:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [syscall]-> exit
+
+Path to rt_sigtimedwait:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> timer_helper_thread_4da0
+  timer_helper_thread_4da0 - [syscall]-> rt_sigtimedwait
+
+Path to write:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> unwind_cleanup_e150
+  unwind_cleanup_e150 - [syscall]-> write
+
+Path to sched_getparam:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [syscall]-> sched_getparam
+
+Path to sched_get_priority_min:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [syscall]-> sched_getscheduler
+
+Path to statfs:
+  shm_open_4450 - [DIRECT]-> where_is_shmfs_42c0
+  where_is_shmfs_42c0 - [DIRECT]-> statfs_eea80
+  statfs_eea80 - [syscall]-> statfs
+
+Path to munmap:
+  timer_delete@@GLIBC_2.3.3_40f0 - [DIRECT]-> free_85580
+  free_85580 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to getpid:
+  aio_cancel_23c0 - [DIRECT]-> __aio_notify_3cd0
+  __aio_notify_3cd0 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to rt_sigqueueinfo:
+  aio_cancel_23c0 - [DIRECT]-> __aio_notify_3cd0
+  __aio_notify_3cd0 - [DIRECT]-> __aio_sigqueue_3bd0
+  __aio_sigqueue_3bd0 - [syscall]-> rt_sigqueueinfo
+
+Path to writev:
+  __mq_open_2_47b0 - [DIRECT]-> __fortify_fail_1179b0
+  __fortify_fail_1179b0 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to pause:
+  aio_init_2d20 - [DIRECT]-> pthread_mutex_lock_9c30
+  pthread_mutex_lock_9c30 - [DIRECT]-> __pthread_mutex_lock_full_58b0
+  __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
+  __pause_nocancel_eed9 - [syscall]-> pause
+
+Path to sched_yield:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mmap:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to read:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_e6d0
+  read_e6d0 - [syscall]-> read
+
+Path to lseek:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to mprotect:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __make_stacks_executable_70a0
+  __make_stacks_executable_70a0 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to pread64:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> handle_fildes_io_2600
+  handle_fildes_io_2600 - [DIRECT]-> pread_ef30
+  pread_ef30 - [syscall]-> pread64
+
+Path to pwrite64:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> handle_fildes_io_2600
+  handle_fildes_io_2600 - [DIRECT]-> pwrite_ed6a0
+  pwrite_ed6a0 - [syscall]-> pwrite64
+
+Path to fdatasync:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> handle_fildes_io_2600
+  handle_fildes_io_2600 - [DIRECT]-> fdatasync_f5180
+  fdatasync_f5180 - [syscall]-> fdatasync
+
+Path to fsync:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> handle_fildes_io_2600
+  handle_fildes_io_2600 - [DIRECT]-> fsync_ecf0
+  fsync_ecf0 - [syscall]-> fsync
+
+Path to recvfrom:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> helper_thread_48a0
+  helper_thread_48a0 - [DIRECT]-> recv_ea10
+  recv_ea10 - [syscall]-> recvfrom
+
+Path to socket:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> init_mq_netlink_4950
+  init_mq_netlink_4950 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to sched_setscheduler:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> pthread_setschedparam_9370
+  pthread_setschedparam_9370 - [DIRECT]-> sched_setscheduler_e2ce0
+  sched_setscheduler_e2ce0 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to sched_setaffinity:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [syscall]-> sched_setaffinity
+
+Path to getuid:
+  aio_cancel_23c0 - [DIRECT]-> __aio_notify_3cd0
+  __aio_notify_3cd0 - [DIRECT]-> __aio_sigqueue_3bd0
+  __aio_sigqueue_3bd0 - [DIRECT]-> getuid_c5e20
+  getuid_c5e20 - [syscall]-> getuid
+
+Path to gettid:
+  mq_timedsend_4c50 - [DIRECT]-> __librt_enable_asynccancel_4ff0
+  __librt_enable_asynccancel_4ff0 - [DIRECT]-> __pthread_unwind_e2c0
+  __pthread_unwind_e2c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to exit_group:
+  mq_timedsend_4c50 - [DIRECT]-> __librt_enable_asynccancel_4ff0
+  __librt_enable_asynccancel_4ff0 - [DIRECT]-> __pthread_unwind_e2c0
+  __pthread_unwind_e2c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to ioctl:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to brk:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to getcwd:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to clone:
+  aio_write_36e0 - [DIRECT]-> __aio_enqueue_request_2d90
+  __aio_enqueue_request_2d90 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [DIRECT]-> clone_fde40
+  clone_fde40 - [syscall]-> clone
+
+Path to rt_sigaction:
+  mq_timedsend_4c50 - [DIRECT]-> __librt_enable_asynccancel_4ff0
+  __librt_enable_asynccancel_4ff0 - [DIRECT]-> __pthread_unwind_e2c0
+  __pthread_unwind_e2c0 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_f5e0
+  __libc_sigaction_f5e0 - [syscall]-> rt_sigaction
+
+Path to lstat:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to openat:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to sendto:
+  __mq_open_2_47b0 - [DIRECT]-> __fortify_fail_1179b0
+  __fortify_fail_1179b0 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to getdents:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to stat:
+  aio_suspend_33d0 - [DIRECT]-> _Unwind_Resume_50b0
+  _Unwind_Resume_50b0 - [INDIRECT]-> localtime_r_b40b0
+  localtime_r_b40b0 - [DIRECT]-> __tz_convert_b6070
+  __tz_convert_b6070 - [DIRECT]-> tzset_internal_b5670
+  tzset_internal_b5670 - [DIRECT]-> __tzfile_read_b62b0
+  __tzfile_read_b62b0 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to connect:
+  __mq_open_2_47b0 - [DIRECT]-> __fortify_fail_1179b0
+  __fortify_fail_1179b0 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to clock_getres:
+  __mq_open_2_47b0 - [DIRECT]-> __fortify_fail_1179b0
+  __fortify_fail_1179b0 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> vfprintf_48480
+  vfprintf_48480 - [DIRECT]-> strerror_r_8c1d0
+  strerror_r_8c1d0 - [DIRECT]-> dcgettext_2fa70
+  dcgettext_2fa70 - [DIRECT]-> __dcigettext_30970
+  __dcigettext_30970 - [DIRECT]-> _nl_find_domain_31520
+  _nl_find_domain_31520 - [DIRECT]-> _nl_expand_alias_334f0
+  _nl_expand_alias_334f0 - [DIRECT]-> read_alias_file_33000
+  read_alias_file_33000 - [DIRECT]-> qsort_39080
+  qsort_39080 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to getrlimit:
+  __mq_open_2_47b0 - [DIRECT]-> __fortify_fail_1179b0
+  __fortify_fail_1179b0 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> vfprintf_48480
+  vfprintf_48480 - [DIRECT]-> strerror_r_8c1d0
+  strerror_r_8c1d0 - [DIRECT]-> dcgettext_2fa70
+  dcgettext_2fa70 - [DIRECT]-> __dcigettext_30970
+  __dcigettext_30970 - [DIRECT]-> _nl_find_domain_31520
+  _nl_find_domain_31520 - [DIRECT]-> _nl_expand_alias_334f0
+  _nl_expand_alias_334f0 - [DIRECT]-> read_alias_file_33000
+  read_alias_file_33000 - [DIRECT]-> qsort_39080
+  qsort_39080 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit

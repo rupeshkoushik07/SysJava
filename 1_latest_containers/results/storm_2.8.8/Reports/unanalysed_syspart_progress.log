@@ -1,0 +1,36 @@
+2026-11-05T19:07:02 RUN image=storm_2.8.8 libraries=17 force=False
+2026-11-05T19:07:02 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8
+2026-11-05T19:07:02 START [1/17] _bz2.cpython-314-x86_64-linux-gnu.so functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/_bz2.cpython-314-x86_64-linux-gnu.so/logfile.txt
+2026-11-05T19:07:50 DONE [1/17] _bz2.cpython-314-x86_64-linux-gnu.so status=completed exit=0 syscalls=0
+2026-11-05T19:07:50 START [2/17] _lzma.cpython-314-x86_64-linux-gnu.so functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/_lzma.cpython-314-x86_64-linux-gnu.so/logfile.txt
+2026-11-05T19:08:41 DONE [2/17] _lzma.cpython-314-x86_64-linux-gnu.so status=completed exit=0 syscalls=0
+2026-11-05T19:08:41 START [3/17] _zstd.cpython-314-x86_64-linux-gnu.so functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/_zstd.cpython-314-x86_64-linux-gnu.so/logfile.txt
+2026-11-05T19:09:44 DONE [3/17] _zstd.cpython-314-x86_64-linux-gnu.so status=completed exit=0 syscalls=0
+2026-11-05T19:09:44 START [4/17] libbz2.so.1.0 functions=33 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libbz2.so.1.0/logfile.txt
+2026-11-05T19:10:30 DONE [4/17] libbz2.so.1.0 status=completed exit=0 syscalls=34
+2026-11-05T19:10:30 START [5/17] libexpat.so.1 functions=71 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libexpat.so.1/logfile.txt
+2026-11-05T19:11:19 DONE [5/17] libexpat.so.1 status=completed exit=0 syscalls=36
+2026-11-05T19:11:20 START [6/17] libextnet.so functions=15 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libextnet.so/logfile.txt
+2026-11-05T19:32:40 DONE [6/17] libextnet.so status=completed exit=0 syscalls=94
+2026-11-05T19:32:40 START [7/17] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libjimage.so/logfile.txt
+2026-11-05T19:53:49 DONE [7/17] libjimage.so status=completed exit=0 syscalls=93
+2026-11-05T19:53:49 START [8/17] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libjli.so/logfile.txt
+2026-11-05T19:54:45 DONE [8/17] libjli.so status=completed exit=0 syscalls=63
+2026-11-05T19:54:45 START [9/17] libjsvml.so functions=272 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libjsvml.so/logfile.txt
+2026-11-05T19:55:33 DONE [9/17] libjsvml.so status=completed exit=0 syscalls=34
+2026-11-05T19:55:33 START [10/17] liblzma.so.5 functions=114 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/liblzma.so.5/logfile.txt
+2026-11-05T19:56:23 DONE [10/17] liblzma.so.5 status=completed exit=0 syscalls=53
+2026-11-05T19:56:23 START [11/17] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libmanagement.so/logfile.txt
+2026-11-05T20:15:32 DONE [11/17] libmanagement.so status=completed exit=0 syscalls=93
+2026-11-05T20:15:32 START [12/17] libmanagement_ext.so functions=35 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libmanagement_ext.so/logfile.txt
+2026-11-05T20:34:33 DONE [12/17] libmanagement_ext.so status=completed exit=0 syscalls=93
+2026-11-05T20:34:33 START [13/17] libpcre2-8.so.0 functions=78 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libpcre2-8.so.0/logfile.txt
+2026-11-05T20:36:11 DONE [13/17] libpcre2-8.so.0 status=completed exit=0 syscalls=36
+2026-11-05T20:36:11 START [14/17] libselinux.so.1 functions=241 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libselinux.so.1/logfile.txt
+2026-11-05T20:37:48 DONE [14/17] libselinux.so.1 status=completed exit=0 syscalls=81
+2026-11-05T20:37:48 START [15/17] libtinfo.so.6 functions=212 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libtinfo.so.6/logfile.txt
+2026-11-05T20:38:34 DONE [15/17] libtinfo.so.6 status=completed exit=0 syscalls=47
+2026-11-05T20:38:34 START [16/17] libz.so.1 functions=88 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libz.so.1/logfile.txt
+2026-11-05T20:39:21 DONE [16/17] libz.so.1 status=completed exit=0 syscalls=34
+2026-11-05T20:39:21 START [17/17] libzstd.so.1 functions=187 log=/home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/libzstd.so.1/logfile.txt
+2026-11-05T20:40:16 DONE [17/17] libzstd.so.1 status=completed exit=0 syscalls=51

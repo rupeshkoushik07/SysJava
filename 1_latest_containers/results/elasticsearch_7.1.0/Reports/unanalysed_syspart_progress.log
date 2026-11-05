@@ -1,0 +1,54 @@
+2026-11-05T17:27:30 RUN image=elasticsearch_7.1.0 libraries=26 force=False
+2026-11-05T17:27:30 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/elasticsearch_7.1.0/Dataset_symbolized/LIBS_elasticsearch_7.1.0
+2026-11-05T17:27:31 START [1/26] libMlCore.so functions=1187 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libMlCore.so/logfile.txt
+2026-11-05T19:44:44 DONE [1/26] libMlCore.so status=failed exit=3 syscalls=0
+2026-11-05T19:44:44 START [2/26] libapr-1.so.0 functions=503 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libapr-1.so.0/logfile.txt
+2026-11-05T19:45:29 DONE [2/26] libapr-1.so.0 status=completed exit=0 syscalls=102
+2026-11-05T19:45:29 START [3/26] libaprutil-1.so.0 functions=268 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libaprutil-1.so.0/logfile.txt
+2026-11-05T19:46:21 DONE [3/26] libaprutil-1.so.0 status=completed exit=0 syscalls=65
+2026-11-05T19:46:21 START [4/26] libboost_filesystem-gcc73-mt-1_65_1.so.1.65.1 functions=144 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libboost_filesystem-gcc73-mt-1_65_1.so.1.65.1/logfile.txt
+2026-11-05T19:47:36 DONE [4/26] libboost_filesystem-gcc73-mt-1_65_1.so.1.65.1 status=completed exit=0 syscalls=59
+2026-11-05T19:47:36 START [5/26] libboost_iostreams-gcc73-mt-1_65_1.so.1.65.1 functions=226 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libboost_iostreams-gcc73-mt-1_65_1.so.1.65.1/logfile.txt
+2026-11-05T19:48:52 DONE [5/26] libboost_iostreams-gcc73-mt-1_65_1.so.1.65.1 status=completed exit=0 syscalls=47
+2026-11-05T19:48:52 START [6/26] libboost_program_options-gcc73-mt-1_65_1.so.1.65.1 functions=705 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libboost_program_options-gcc73-mt-1_65_1.so.1.65.1/logfile.txt
+2026-11-05T19:50:32 DONE [6/26] libboost_program_options-gcc73-mt-1_65_1.so.1.65.1 status=completed exit=0 syscalls=46
+2026-11-05T19:50:32 START [7/26] libboost_regex-gcc73-mt-1_65_1.so.1.65.1 functions=1188 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libboost_regex-gcc73-mt-1_65_1.so.1.65.1/logfile.txt
+2026-11-05T19:52:32 DONE [7/26] libboost_regex-gcc73-mt-1_65_1.so.1.65.1 status=completed exit=0 syscalls=46
+2026-11-05T19:52:32 START [8/26] libboost_system-gcc73-mt-1_65_1.so.1.65.1 functions=15 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libboost_system-gcc73-mt-1_65_1.so.1.65.1/logfile.txt
+2026-11-05T19:53:40 DONE [8/26] libboost_system-gcc73-mt-1_65_1.so.1.65.1 status=completed exit=0 syscalls=46
+2026-11-05T19:53:40 START [9/26] libcrypt.so.1 functions=7 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libcrypt-2.17.so/logfile.txt
+2026-11-05T19:54:18 DONE [9/26] libcrypt.so.1 status=completed exit=0 syscalls=40
+2026-11-05T19:54:18 START [10/26] libexpat.so.0 functions=79 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libexpat.so.0/logfile.txt
+2026-11-05T19:55:04 DONE [10/26] libexpat.so.0 status=completed exit=0 syscalls=38
+2026-11-05T19:55:04 START [11/26] libextnet.so functions=12 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libextnet.so/logfile.txt
+2026-11-05T20:12:25 DONE [11/26] libextnet.so status=completed exit=0 syscalls=82
+2026-11-05T20:12:25 START [12/26] libfreebl3.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libfreebl3.so/logfile.txt
+2026-11-05T20:13:05 DONE [12/26] libfreebl3.so status=completed exit=0 syscalls=40
+2026-11-05T20:13:05 START [13/26] libgcc_s.so.1 functions=132 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libgcc_s.so.1/logfile.txt
+2026-11-05T20:13:44 DONE [13/26] libgcc_s.so.1 status=completed exit=0 syscalls=38
+2026-11-05T20:13:44 START [14/26] libjimage.so functions=10 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libjimage.so/logfile.txt
+2026-11-05T20:31:37 DONE [14/26] libjimage.so status=completed exit=0 syscalls=80
+2026-11-05T20:31:37 START [15/26] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libjli.so/logfile.txt
+2026-11-05T20:32:19 DONE [15/26] libjli.so status=completed exit=0 syscalls=55
+2026-11-05T20:32:19 START [16/26] liblog4cxx.so.10 functions=4215 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/liblog4cxx.so.10/logfile.txt
+2026-11-05T20:37:17 DONE [16/26] liblog4cxx.so.10 status=completed exit=0 syscalls=82
+2026-11-05T20:37:17 START [17/26] libmanagement.so functions=67 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libmanagement.so/logfile.txt
+2026-11-05T20:54:27 DONE [17/26] libmanagement.so status=completed exit=0 syscalls=80
+2026-11-05T20:54:27 START [18/26] libmanagement_ext.so functions=31 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libmanagement_ext.so/logfile.txt
+2026-11-05T21:12:14 DONE [18/26] libmanagement_ext.so status=completed exit=0 syscalls=80
+2026-11-05T21:12:14 START [19/26] libnss_files.so.2 functions=68 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libnss_files-2.17.so/logfile.txt
+2026-11-05T21:12:54 DONE [19/26] libnss_files.so.2 status=completed exit=0 syscalls=38
+2026-11-05T21:12:54 START [20/26] libpcre.so.1 functions=27 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libpcre.so.1/logfile.txt
+2026-11-05T21:13:56 DONE [20/26] libpcre.so.1 status=completed exit=0 syscalls=44
+2026-11-05T21:13:56 START [21/26] librt.so.1 functions=40 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/librt-2.17.so/logfile.txt
+2026-11-05T21:14:35 DONE [21/26] librt.so.1 status=completed exit=0 syscalls=67
+2026-11-05T21:14:35 START [22/26] libselinux.so.1 functions=234 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libselinux.so.1/logfile.txt
+2026-11-05T21:15:47 DONE [22/26] libselinux.so.1 status=completed exit=0 syscalls=70
+2026-11-05T21:15:47 START [23/26] libstdc++.so.6 functions=3956 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libstdc++.so.6/logfile.txt
+2026-11-05T21:18:13 DONE [23/26] libstdc++.so.6 status=completed exit=0 syscalls=40
+2026-11-05T21:18:13 START [24/26] libsunec.so functions=7 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libsunec.so/logfile.txt
+2026-11-05T21:19:04 DONE [24/26] libsunec.so status=completed exit=0 syscalls=38
+2026-11-05T21:19:04 START [25/26] libtinfo.so.5 functions=147 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libtinfo.so.5/logfile.txt
+2026-11-05T21:19:51 DONE [25/26] libtinfo.so.5 status=completed exit=0 syscalls=41
+2026-11-05T21:19:51 START [26/26] libxml2.so.2 functions=1708 log=/home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/libxml2.so.2/logfile.txt
+2026-11-05T21:21:29 DONE [26/26] libxml2.so.2 status=completed exit=0 syscalls=52

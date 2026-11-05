@@ -1,0 +1,298 @@
+
+Path to futex:
+  _ZN5boost10filesystem6detail8dot_pathEv_11180 - [DIRECT]-> __cxa_guard_acquire_973a0
+  __cxa_guard_acquire_973a0 - [syscall]-> futex
+
+Path to set_tid_address:
+  _init_7680 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> set_tid_address
+
+Path to set_robust_list:
+  _init_7680 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  _init_7680 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> rt_sigprocmask
+
+Path to rename:
+  _ZN5boost10filesystem6detail6renameERKNS0_4pathES4_PNS_6system10error_codeE_8ea0 - [DIRECT]-> rename_6bc70
+  rename_6bc70 - [syscall]-> rename
+
+Path to tgkill:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> tgkill
+
+Path to rt_sigreturn:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> __restore_rt_f5d0
+  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to write:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> unwind_cleanup_e150
+  unwind_cleanup_e150 - [syscall]-> write
+
+Path to stat:
+  _ZN5boost10filesystem6detail9file_sizeERKNS0_4pathEPNS_6system10error_codeE_d160 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to mkdir:
+  _ZN5boost10filesystem6detail14copy_directoryERKNS0_4pathES4_PNS_6system10error_codeE_8fa0 - [DIRECT]-> mkdir_eecc0
+  mkdir_eecc0 - [syscall]-> mkdir
+
+Path to open:
+  _ZN5boost10filesystem6detail9copy_fileERKNS0_4pathES4_NS1_11copy_optionEPNS_6system10error_codeE_90a0 - [DIRECT]-> open_ee70
+  open_ee70 - [syscall]-> open
+
+Path to read:
+  _ZN5boost10filesystem6detail9copy_fileERKNS0_4pathES4_NS1_11copy_optionEPNS_6system10error_codeE_90a0 - [DIRECT]-> read_e6d0
+  read_e6d0 - [syscall]-> read
+
+Path to close:
+  _ZN5boost10filesystem6detail9copy_fileERKNS0_4pathES4_NS1_11copy_optionEPNS_6system10error_codeE_90a0 - [DIRECT]-> close_e730
+  close_e730 - [syscall]-> close
+
+Path to symlink:
+  _ZN5boost10filesystem6detail24create_directory_symlinkERKNS0_4pathES4_PNS_6system10error_codeE_8ba0 - [DIRECT]-> symlink_f0650
+  symlink_f0650 - [syscall]-> symlink
+
+Path to readlink:
+  _ZN5boost10filesystem6detail12read_symlinkERKNS0_4pathEPNS_6system10error_codeE_ab40 - [DIRECT]-> readlink_f06b0
+  readlink_f06b0 - [syscall]-> readlink
+
+Path to link:
+  _ZN5boost10filesystem6detail16create_hard_linkERKNS0_4pathES4_PNS_6system10error_codeE_8ca0 - [DIRECT]-> link_f05f0
+  link_f05f0 - [syscall]-> link
+
+Path to getcwd:
+  _ZN5boost10filesystem6detail12current_pathEPNS_6system10error_codeE_94f0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to chmod:
+  _ZN5boost10filesystem6detail11permissionsERKNS0_4pathENS0_5permsEPNS_6system10error_codeE_b940 - [DIRECT]-> chmod_eebd0
+  chmod_eebd0 - [syscall]-> chmod
+
+Path to chdir:
+  _ZN5boost10filesystem6detail12current_pathERKNS0_4pathEPNS_6system10error_codeE_ca10 - [DIRECT]-> chdir_ef7c0
+  chdir_ef7c0 - [syscall]-> chdir
+
+Path to truncate:
+  _ZN5boost10filesystem6detail11resize_fileERKNS0_4pathEmPNS_6system10error_codeE_cd00 - [DIRECT]-> truncate_f6b60
+  truncate_f6b60 - [syscall]-> truncate
+
+Path to unlink:
+  _ZN5boost10filesystem6detail6removeERKNS0_4pathEPNS_6system10error_codeE_ee80 - [DIRECT]-> unlink_f0710
+  unlink_f0710 - [syscall]-> unlink
+
+Path to rmdir:
+  _ZN5boost10filesystem6detail6removeERKNS0_4pathEPNS_6system10error_codeE_ee80 - [DIRECT]-> rmdir_f0770
+  rmdir_f0770 - [syscall]-> rmdir
+
+Path to lstat:
+  _ZN5boost10filesystem6detail14symlink_statusERKNS0_4pathEPNS_6system10error_codeE_b510 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to utime:
+  _ZN5boost10filesystem6detail15last_write_timeERKNS0_4pathElPNS_6system10error_codeE_df30 - [DIRECT]-> utime_ee7f0
+  utime_ee7f0 - [syscall]-> utime
+
+Path to clock_getres:
+  _ZN5boost10filesystem6detail28directory_iterator_incrementERNS0_18directory_iteratorEPNS_6system10error_codeE_bb30 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to rt_sigaction:
+  _init_7680 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> __libc_sigaction_f5e0
+  __libc_sigaction_f5e0 - [syscall]-> rt_sigaction
+
+Path to getrlimit:
+  _init_7680 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to mmap:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to lseek:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to mprotect:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> __make_stacks_executable_70a0
+  __make_stacks_executable_70a0 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to writev:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to sched_get_priority_min:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_min_e2da0
+  sched_get_priority_min_e2da0 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_max_e2d70
+  sched_get_priority_max_e2d70 - [syscall]-> sched_get_priority_max
+
+Path to sched_getparam:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getparam_e2cb0
+  sched_getparam_e2cb0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getscheduler_e2d10
+  sched_getscheduler_e2d10 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_setschedparam_9370
+  pthread_setschedparam_9370 - [DIRECT]-> sched_setscheduler_e2ce0
+  sched_setscheduler_e2ce0 - [syscall]-> sched_setscheduler
+
+Path to openat:
+  _ZN5boost10filesystem6detail12current_pathEPNS_6system10error_codeE_94f0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  _ZN5boost10filesystem6detail12current_pathEPNS_6system10error_codeE_94f0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to statfs:
+  _ZN5boost10filesystem6detail5spaceERKNS0_4pathEPNS_6system10error_codeE_cdf0 - [DIRECT]-> statvfs_eeae0
+  statvfs_eeae0 - [DIRECT]-> statfs_eea80
+  statfs_eea80 - [syscall]-> statfs
+
+Path to getdents:
+  _ZN5boost10filesystem6detail28directory_iterator_incrementERNS0_18directory_iteratorEPNS_6system10error_codeE_bb30 - [DIRECT]-> readdir_r_c04e0
+  readdir_r_c04e0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to gettid:
+  _ZNK5boost10filesystem4path9extensionEv_120d0 - [DIRECT]-> _Unwind_Resume_10580
+  _Unwind_Resume_10580 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to exit_group:
+  _ZNK5boost10filesystem4path9extensionEv_120d0 - [DIRECT]-> _Unwind_Resume_10580
+  _Unwind_Resume_10580 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to exit:
+  _ZNK5boost10filesystem4path9extensionEv_120d0 - [DIRECT]-> _Unwind_Resume_10580
+  _Unwind_Resume_10580 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit
+
+Path to ioctl:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to poll:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> _ZNSt13basic_filebufIcSt11char_traitsIcEE9showmanycEv_11ea40
+  _ZNSt13basic_filebufIcSt11char_traitsIcEE9showmanycEv_11ea40 - [DIRECT]-> _ZNSt12__basic_fileIcE9showmanycEv_c8cd0
+  _ZNSt12__basic_fileIcE9showmanycEv_c8cd0 - [DIRECT]-> poll_f31e0
+  poll_f31e0 - [syscall]-> poll
+
+Path to brk:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to pause:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> pthread_mutex_lock_9c30
+  pthread_mutex_lock_9c30 - [DIRECT]-> __pthread_mutex_lock_full_58b0
+  __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
+  __pause_nocancel_eed9 - [syscall]-> pause
+
+Path to fcntl:
+  _ZN5boost10filesystem6detail12current_pathEPNS_6system10error_codeE_94f0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> fdopendir_c08e0
+  fdopendir_c08e0 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to madvise:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_85580
+  free_85580 - [DIRECT]-> _int_free_80f70
+  _int_free_80f70 - [DIRECT]-> heap_trim_7ff20
+  heap_trim_7ff20 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to access:
+  _ZN5boost10filesystem6detail28directory_iterator_constructERNS0_18directory_iteratorERKNS0_4pathEPNS_6system10error_codeE_d350 - [DIRECT]-> pathconf_c68a0
+  pathconf_c68a0 - [DIRECT]-> __statfs_link_max_c6550
+  __statfs_link_max_c6550 - [DIRECT]-> distinguish_extX.isra.0_c6270
+  distinguish_extX.isra.0_c6270 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to sched_yield:
+  _ZNK5boost10filesystem4path9extensionEv_120d0 - [DIRECT]-> _Unwind_Resume_10580
+  _Unwind_Resume_10580 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> fcloseall_78210
+  fcloseall_78210 - [DIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to getpid:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to sendto:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to connect:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to socket:
+  _ZNK5boost10filesystem6detail18utf8_codecvt_facet9do_lengthER11__mbstate_tPKcS6_m_14ff0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket

@@ -1,0 +1,4 @@
+=== FFI (Foreign Function & Memory API) Hits ===
+Format: callerSig | lib | symbol | mechanism | jar
+
+<org.eclipse.jetty.util.security.Credential$MD5: MD5> | crypto | MD5 | downcallHandle | jetty-util-12.0.27.jar

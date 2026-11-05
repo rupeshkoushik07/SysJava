@@ -1,0 +1,586 @@
+
+Path to rt_sigprocmask:
+  _init_ae0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> rt_sigprocmask
+
+Path to set_tid_address:
+  _init_ae0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> set_tid_address
+
+Path to set_robust_list:
+  _init_ae0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> set_robust_list
+
+Path to setsockopt:
+  Java_jdk_net_LinuxSocketOptions_setTcpKeepAliveTime0_fb0 - [DIRECT]-> setsockopt_fefc0
+  setsockopt_fefc0 - [syscall]-> setsockopt
+
+Path to getsockopt:
+  Java_jdk_net_LinuxSocketOptions_getTcpkeepAliveProbes0_1050 - [DIRECT]-> getsockopt_fec80
+  getsockopt_fec80 - [syscall]-> getsockopt
+
+Path to socket:
+  Java_jdk_net_LinuxSocketOptions_quickAckSupported0_ea0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to close:
+  Java_jdk_net_LinuxSocketOptions_quickAckSupported0_ea0 - [DIRECT]-> close_ef610
+  close_ef610 - [syscall]-> close
+
+Path to gettid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  _ZL19thread_native_entryP6Thread_bfe0a0 - [syscall]-> gettid
+
+Path to tgkill:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> tgkill
+
+Path to futex:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __restore_rt_f5d0
+  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to exit:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [syscall]-> exit
+
+Path to write:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> unwind_cleanup_e150
+  unwind_cleanup_e150 - [syscall]-> write
+
+Path to rt_sigaction:
+  _init_ae0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to getrlimit:
+  _init_ae0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to sched_yield:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mmap:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to read:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_eef60
+  read_eef60 - [syscall]-> read
+
+Path to lseek:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to getpid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  _ZL19thread_native_entryP6Thread_bfe0a0 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to unlink:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN10CompileLogD0Ev_60dc10
+  _ZN10CompileLogD0Ev_60dc10 - [DIRECT]-> unlink_f0710
+  unlink_f0710 - [syscall]-> unlink
+
+Path to mprotect:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_bff550
+  _ZN15VM_LinuxDllLoad4doitEv_bff550 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to open:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_bf5bb0
+  _ZN2os8dll_loadEPKcPci_bf5bb0 - [DIRECT]-> open_eed20
+  open_eed20 - [syscall]-> open
+
+Path to access:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to stat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0
+  _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0 - [DIRECT]-> strstr_a54b0
+  strstr_a54b0 - [syscall]-> stat
+
+Path to writev:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to sched_get_priority_min:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_min_e2da0
+  sched_get_priority_min_e2da0 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_max_e2d70
+  sched_get_priority_max_e2d70 - [syscall]-> sched_get_priority_max
+
+Path to sched_getparam:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getparam_e2cb0
+  sched_getparam_e2cb0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getscheduler_e2d10
+  sched_getscheduler_e2d10 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_setschedparam_9370
+  pthread_setschedparam_9370 - [DIRECT]-> sched_setscheduler_e2ce0
+  sched_setscheduler_e2ce0 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to lstat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to kill:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> kill_364d0
+  kill_364d0 - [syscall]-> kill
+
+Path to geteuid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> geteuid_c5e30
+  geteuid_c5e30 - [syscall]-> geteuid
+
+Path to ioctl:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to fcntl:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEPKcP6Thread_5a0150
+  _ZN17ClassPathDirEntry11open_streamEPKcP6Thread_5a0150 - [DIRECT]-> _ZN2os4openEPKcii_bfcb80
+  _ZN2os4openEPKcii_bfcb80 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to getrusage:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60
+  _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60 - [DIRECT]-> _ZN2os12elapsedVTimeEv_bf5550
+  _ZN2os12elapsedVTimeEv_bf5550 - [DIRECT]-> getrusage_f4350
+  getrusage_f4350 - [syscall]-> getrusage
+
+Path to vfork:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
+  _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> vfork_c5150
+  vfork_c5150 - [syscall]-> vfork
+
+Path to wait4:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
+  _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> waitpid_c4a20
+  waitpid_c4a20 - [syscall]-> wait4
+
+Path to execve:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
+  _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> execve_c5200
+  execve_c5200 - [syscall]-> execve
+
+Path to exit_group:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
+  _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to mincore:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN25SnapshotThreadStackWalker18do_allocation_siteEPK20ReservedMemoryRegion_e38bf0
+  _ZN25SnapshotThreadStackWalker18do_allocation_siteEPK20ReservedMemoryRegion_e38bf0 - [DIRECT]-> _ZN2os18committed_in_rangeEPhmRS0_Rm_bf9460
+  _ZN2os18committed_in_rangeEPhmRS0_Rm_bf9460 - [DIRECT]-> mincore_f84e0
+  mincore_f84e0 - [syscall]-> mincore
+
+Path to brk:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to getcwd:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to pause:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> pthread_mutex_lock_9c30
+  pthread_mutex_lock_9c30 - [DIRECT]-> __pthread_mutex_lock_full_58b0
+  __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
+  __pause_nocancel_eed9 - [syscall]-> pause
+
+Path to fallocate:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
+  _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
+  _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
+  posix_fallocate_f34e0 - [syscall]-> fallocate
+
+Path to uname:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_PrintOsInfo_e63370
+  WB_PrintOsInfo_e63370 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_bf6660
+  _ZN2os13print_os_infoEP12outputStream_bf6660 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_c04e80
+  _ZN2os5Posix16print_uname_infoEP12outputStream_c04e80 - [DIRECT]-> uname_c4900
+  uname_c4900 - [syscall]-> uname
+
+Path to nanosleep:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN14MacroAssembler7debug64EPclPl_acab20
+  _ZN14MacroAssembler7debug64EPclPl_acab20 - [DIRECT]-> _ZN2os11message_boxEPKcS1__bfc930
+  _ZN2os11message_boxEPKcS1__bfc930 - [DIRECT]-> sleep_c4bf0
+  sleep_c4bf0 - [DIRECT]-> nanosleep_c4e00
+  nanosleep_c4e00 - [syscall]-> nanosleep
+
+Path to times:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN15VM_G1Concurrent4doitEv_7a8b90
+  _ZN15VM_G1Concurrent4doitEv_7a8b90 - [DIRECT]-> _ZN14GCTraceCPUTimeC1Ev_7bf7c0
+  _ZN14GCTraceCPUTimeC1Ev_7bf7c0 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__bf57e0
+  _ZN2os12getTimesSecsEPdS0_S0__bf57e0 - [DIRECT]-> times_c4930
+  times_c4930 - [syscall]-> times
+
+Path to setpriority:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN18AbstractGangWorker10initializeEv_e6f660
+  _ZN18AbstractGangWorker10initializeEv_e6f660 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_bec280
+  _ZN2os12set_priorityEP6Thread14ThreadPriority_bec280 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_bfb410
+  _ZN2os19set_native_priorityEP6Threadi_bfb410 - [DIRECT]-> setpriority_f4710
+  setpriority_f4710 - [syscall]-> setpriority
+
+Path to sysinfo:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN18VM_RedefineClasses13doit_prologueEv_a15320
+  _ZN18VM_RedefineClasses13doit_prologueEv_a15320 - [DIRECT]-> _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread_a14a90
+  _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread_a14a90 - [DIRECT]-> _ZN2os16available_memoryEv_bfdfa0
+  _ZN2os16available_memoryEv_bfdfa0 - [DIRECT]-> sysinfo_fe7e0
+  sysinfo_fe7e0 - [syscall]-> sysinfo
+
+Path to clock_getres:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c06780
+  _ZN2os5Posix8realpathEPKcPcm_c06780 - [DIRECT]-> realpath@@GLIBC_2.3_432a0
+  realpath@@GLIBC_2.3_432a0 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to readlink:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c06780
+  _ZN2os5Posix8realpathEPKcPcm_c06780 - [DIRECT]-> realpath@@GLIBC_2.3_432a0
+  realpath@@GLIBC_2.3_432a0 - [DIRECT]-> readlink_f06b0
+  readlink_f06b0 - [syscall]-> readlink
+
+Path to getpriority:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_dcb700
+  _ZNK11NamedThread8print_onEP12outputStream_dcb700 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_dcb4e0
+  _ZNK6Thread8print_onEP12outputStreamb_dcb4e0 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_bfb460
+  _ZN2os19get_native_priorityEPK6ThreadPi_bfb460 - [DIRECT]-> getpriority_f46d0
+  getpriority_f46d0 - [syscall]-> getpriority
+
+Path to openat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to shmdt:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
+  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN17ReservedHeapSpace26initialize_compressed_heapEmmb_e3d9d0
+  _ZN17ReservedHeapSpace26initialize_compressed_heapEmmb_e3d9d0 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_bfb050
+  _ZN2os22release_memory_specialEPcm_bfb050 - [DIRECT]-> shmdt_ff790
+  shmdt_ff790 - [syscall]-> shmdt
+
+Path to shmget:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
+  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
+  _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
+  _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0 - [DIRECT]-> shmget_ff7c0
+  shmget_ff7c0 - [syscall]-> shmget
+
+Path to shmat:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
+  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
+  _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
+  _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0 - [DIRECT]-> shmat_ff760
+  shmat_ff760 - [syscall]-> shmat
+
+Path to shmctl:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
+  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
+  _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
+  _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0 - [DIRECT]-> shmctl_ff7f0
+  shmctl_ff7f0 - [syscall]-> shmctl
+
+Path to sched_getaffinity:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  _ZL19thread_native_entryP6Thread_bfe0a0 - [DIRECT]-> _ZN6Thread26record_stack_base_and_sizeEv_dcaa70
+  _ZN6Thread26record_stack_base_and_sizeEv_dcaa70 - [DIRECT]-> _ZN2os18current_stack_baseEv_bfd650
+  _ZN2os18current_stack_baseEv_bfd650 - [DIRECT]-> pthread_getattr_np_97e0
+  pthread_getattr_np_97e0 - [DIRECT]-> pthread_getaffinity_np@@GLIBC_2.3.4_f860
+  pthread_getaffinity_np@@GLIBC_2.3.4_f860 - [syscall]-> sched_getaffinity
+
+Path to get_mempolicy:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN18ZNMethodOopClosure6do_oopEPP7oopDesc_e79690
+  _ZN18ZNMethodOopClosure6do_oopEPP7oopDesc_e79690 - [DIRECT]-> _ZN5ZHeap15relocate_objectEm_e8f410
+  _ZN5ZHeap15relocate_objectEm_e8f410 - [DIRECT]-> _ZN14ZPageAllocator9free_pageEP5ZPageb_ea3b00
+  _ZN14ZPageAllocator9free_pageEP5ZPageb_ea3b00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_ea4580
+  _ZN10ZPageCache9free_pageEP5ZPage_ea4580 - [DIRECT]-> _ZN5ZNUMA9memory_idEm_e9ded0
+  _ZN5ZNUMA9memory_idEm_e9ded0 - [syscall]-> get_mempolicy
+
+Path to sched_setaffinity:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTask_e705c0
+  _ZN8WorkGang8run_taskEP16AbstractGangTask_e705c0 - [DIRECT]-> _ZN13WorkerManager11add_workersI16AbstractWorkGangEEjPT_jjjN2os10ThreadTypeEb_e70cd0
+  _ZN13WorkerManager11add_workersI16AbstractWorkGangEEjPT_jjjN2os10ThreadTypeEb_e70cd0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_bfea70
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_bfea70 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [syscall]-> sched_setaffinity
+
+Path to getdents:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> __gconv_read_conf_25190
+  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
+  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to sendto:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to ftruncate:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
+  _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
+  _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
+  posix_fallocate_f34e0 - [DIRECT]-> internal_fallocate_f3330
+  internal_fallocate_f3330 - [DIRECT]-> ftruncate_f6b90
+  ftruncate_f6b90 - [syscall]-> ftruncate
+
+Path to fstatfs:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
+  _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
+  _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
+  posix_fallocate_f34e0 - [DIRECT]-> internal_fallocate_f3330
+  internal_fallocate_f3330 - [DIRECT]-> fstatfs_eeab0
+  fstatfs_eeab0 - [syscall]-> fstatfs
+
+Path to pwrite64:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
+  _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
+  _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
+  posix_fallocate_f34e0 - [DIRECT]-> internal_fallocate_f3330
+  internal_fallocate_f3330 - [DIRECT]-> pwrite_ed6a0
+  pwrite_ed6a0 - [syscall]-> pwrite64
+
+Path to pread64:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
+  _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
+  _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
+  posix_fallocate_f34e0 - [DIRECT]-> internal_fallocate_f3330
+  internal_fallocate_f3330 - [DIRECT]-> pread_ed640
+  pread_ed640 - [syscall]-> pread64
+
+Path to mkdir:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
+  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_c07860
+  _ZN2os20create_file_for_heapEPKc_c07860 - [DIRECT]-> mkstemp_f55e0
+  mkstemp_f55e0 - [DIRECT]-> __gen_tempname_6b8d0
+  __gen_tempname_6b8d0 - [DIRECT]-> mkdir_eecc0
+  mkdir_eecc0 - [syscall]-> mkdir
+
+Path to clone:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTask_e705c0
+  _ZN8WorkGang8run_taskEP16AbstractGangTask_e705c0 - [DIRECT]-> _ZN13WorkerManager11add_workersI16AbstractWorkGangEEjPT_jjjN2os10ThreadTypeEb_e70cd0
+  _ZN13WorkerManager11add_workersI16AbstractWorkGangEEjPT_jjjN2os10ThreadTypeEb_e70cd0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_bfea70
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_bfea70 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [DIRECT]-> clone_fde40
+  clone_fde40 - [syscall]-> clone
+
+Path to connect:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> openlog_internal_f77b0
+  openlog_internal_f77b0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to getuid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> JVM_GetJVMCIRuntime_987330
+  JVM_GetJVMCIRuntime_987330 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
+  _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
+  _ZN2os5Posix15print_user_infoEP12outputStream_c05050 - [DIRECT]-> getuid_c5e20
+  getuid_c5e20 - [syscall]-> getuid
+
+Path to getgid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> JVM_GetJVMCIRuntime_987330
+  JVM_GetJVMCIRuntime_987330 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
+  _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
+  _ZN2os5Posix15print_user_infoEP12outputStream_c05050 - [DIRECT]-> getgid_c5e40
+  getgid_c5e40 - [syscall]-> getgid
+
+Path to getegid:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> JVM_GetJVMCIRuntime_987330
+  JVM_GetJVMCIRuntime_987330 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
+  _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
+  _ZN2os5Posix15print_user_infoEP12outputStream_c05050 - [DIRECT]-> getegid_c5e50
+  getegid_c5e50 - [syscall]-> getegid
+
+Path to umask:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> JVM_GetJVMCIRuntime_987330
+  JVM_GetJVMCIRuntime_987330 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
+  _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
+  _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
+  _ZN2os5Posix15print_user_infoEP12outputStream_c05050 - [DIRECT]-> umask_eebc0
+  umask_eebc0 - [syscall]-> umask
+
+Path to memfd_create:
+  _init_ae0 - [DIRECT]-> call_gmon_start_b80
+  call_gmon_start_b80 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_e75b00
+  _ZN10ZArguments11create_heapEv_e75b00 - [DIRECT]-> _ZN14ZCollectedHeapC1EP16ZCollectorPolicy_e8b480
+  _ZN14ZCollectedHeapC1EP16ZCollectorPolicy_e8b480 - [DIRECT]-> _ZN5ZHeapC1Ev_e8e430
+  _ZN5ZHeapC1Ev_e8e430 - [DIRECT]-> _ZN14ZPageAllocatorC2Emmm_ea2040
+  _ZN14ZPageAllocatorC2Emmm_ea2040 - [DIRECT]-> _ZN22ZPhysicalMemoryManagerC2Emm_ea5050
+  _ZN22ZPhysicalMemoryManagerC2Emm_ea5050 - [DIRECT]-> _ZN22ZPhysicalMemoryBackingC1Emm_ea6110
+  _ZN22ZPhysicalMemoryBackingC1Emm_ea6110 - [DIRECT]-> _ZN12ZBackingFileC2Ev_e762a0
+  _ZN12ZBackingFileC2Ev_e762a0 - [DIRECT]-> _ZNK12ZBackingFile13create_mem_fdEPKc_e75e00
+  _ZNK12ZBackingFile13create_mem_fdEPKc_e75e00 - [syscall]-> memfd_create

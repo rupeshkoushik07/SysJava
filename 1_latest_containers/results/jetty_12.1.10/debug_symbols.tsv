@@ -1,0 +1,75 @@
+path	gnu_build_id	status	detail	source_override
+BINARIES_jetty_12.1.10/dash	4fb1ca0909b70880d403d990202c4989ef1e8415	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/4fb1ca0909b70880d403d990202c4989ef1e8415.debug	
+BINARIES_jetty_12.1.10/date	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_jetty_12.1.10/expr	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_jetty_12.1.10/grep	9601f9b5d319a231b14e6c6289e998da074aa543	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9601f9b5d319a231b14e6c6289e998da074aa543.debug	
+BINARIES_jetty_12.1.10/java	b006fac2fbd217c87b715584bac7b0e1d0368252	HAS_SYMTAB		
+BINARIES_jetty_12.1.10/runc	ef13e663636f0413387ba0e1652c80171f931505	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ef13e663636f0413387ba0e1652c80171f931505.debug	
+BINARIES_jetty_12.1.10/sed	4b8d3303c87ca4d75affc7ad7ff1aa6eaba01e25	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/4b8d3303c87ca4d75affc7ad7ff1aa6eaba01e25.debug	
+BINARIES_jetty_12.1.10/whoami	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+LIBS_jetty_12.1.10/JDK25_LIBS/libattach.so	f6749b001315857c4766d501e1ffc137ffd4e394	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libawt.so	b17adb1470505e9fbab06c4031908f9c126c743c	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libawt_headless.so	43d96abaf2cbb07ccbf64fa00a6956e2978ad145	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libawt_xawt.so	f661a8bf3478cdcfcc6e221b2ec2e56f0cba5d01	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libdt_socket.so	9cfec1bbc73e425ec15ff9969cffbc3ebf3aaf17	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libextnet.so	d44778fca5c9c6c0a21c491f43ec660467992365	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libfontmanager.so	07f47b24ea1cf24b858d61e5697b2a58721be9c9	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libfreetype.so	b928d48b8d34ace7612efb1b981f414cc27ca33b	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libinstrument.so	25691fa60f6b506b1232dcfc045e1d6e5e4702a0	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libj2gss.so	3544fab8edded8477c9b283bd7cbdaf108a6cfb1	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libj2pcsc.so	cbd35bb9b1f90dce18abd0fed5a8ca2172c42c82	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libj2pkcs11.so	b856f3a5c981dfa59924c7afa45bd781146c8627	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjaas.so	66018df649e6bf23f6f98bb81a1e256d9bac3e41	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjava.so	ec7b1c71673ca45a58e29e97ac33290b8d303b67	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjavajpeg.so	7fa76097f3d4e6e263769b95b657c54750daeb1e	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjawt.so	f1ff2796e479be4669a50824d4328e650466fbc5	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjdwp.so	76bcb71f2615cf72b086320cacf1b844114da16a	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjimage.so	2b1da851c7d142c9a4807bacf88893dfcc87ee76	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjli.so	aad6a04bc1ad2cd72eb83b53ea2921c452440583	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjsig.so	801da0370055321edfce315151638bfbab8fc600	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjsound.so	feeef8da0b7ba615675dc70a34c591833df43289	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libjsvml.so	813bbcde9d2d5e7fe77bc7e00660353c6b957eee	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/liblcms.so	142d021834a991eda8db9760579c7b1242edbd30	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libmanagement.so	ac6726dedb2f0c34f4f9b9560c54fda8a1e6693d	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libmanagement_agent.so	b7f67e385d8469d13ca5692aa2b1a812a263d44f	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libmanagement_ext.so	7f930b3acef080b433149fe967c47d48224959d0	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libmlib_image.so	900255e4be09003ddab9663c881a1970e48d219a	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libnet.so	ebc94fc532e8d63928c19e66721c3b38e56c0d64	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libnio.so	cee26cf73c2a1ab9cd0bffc8a852b8b6e034e3f1	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libprefs.so	863acfd9ece20da96ead30bc7381c19d6cfdd817	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/librmi.so	fdcc623e6c0fc06ba2f7bbd7c82f9b2374028cbd	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libsaproc.so	374a0a90fefb52ac17e8623d14d8181ca35d292c	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libsctp.so	4b9d313d3d6d48f9799efac5dd13016bca968673	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libsimdsort.so	b567340fbf4982bd565a4fe04ba0128e5553cd03	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libsplashscreen.so	a84dc8e6f9d020311f780b9e8c2b98a35c3b6404	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libsyslookup.so	d396e7c349796c261bac771cf0a363c033790a2b	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libverify.so	0bf1a1527302c20734b1914dd29f6e0c1d2012a3	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/libzip.so	0daba67a1b2a945c9510bcbdfc946fb46bff2c8d	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/server/libjsig.so	801da0370055321edfce315151638bfbab8fc600	HAS_SYMTAB		
+LIBS_jetty_12.1.10/JDK25_LIBS/server/libjvm.so	cc370ed13824fae0d65fd64357a9bdf1a732eac0	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libacl.so.1.1.2302	d9d62bfcf3954b996c05fc268332a15c3df94f4d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/d9d62bfcf3954b996c05fc268332a15c3df94f4d.debug	
+LIBS_jetty_12.1.10/libc.so.6	90ebd03ae9d9f42b23b4eb82fdf70352cf744198	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/90ebd03ae9d9f42b23b4eb82fdf70352cf744198.debug	
+LIBS_jetty_12.1.10/libdl.so.2	d87b9971d70d7df09f8afd970acaff8184d227f9	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/d87b9971d70d7df09f8afd970acaff8184d227f9.debug	
+LIBS_jetty_12.1.10/libextnet.so	d44778fca5c9c6c0a21c491f43ec660467992365	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libgcc_s.so.1	5ce300f9a05585d57cb8cc061081f58a80daa431	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/5ce300f9a05585d57cb8cc061081f58a80daa431.debug	
+LIBS_jetty_12.1.10/libjava.so	ec7b1c71673ca45a58e29e97ac33290b8d303b67	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libjimage.so	2b1da851c7d142c9a4807bacf88893dfcc87ee76	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libjli.so	aad6a04bc1ad2cd72eb83b53ea2921c452440583	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libjvm.so	cc370ed13824fae0d65fd64357a9bdf1a732eac0	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libm.so.6	2018176f50f7431b43528ae7a5ba7665523edc21	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/2018176f50f7431b43528ae7a5ba7665523edc21.debug	
+LIBS_jetty_12.1.10/libmanagement.so	ac6726dedb2f0c34f4f9b9560c54fda8a1e6693d	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libmanagement_ext.so	7f930b3acef080b433149fe967c47d48224959d0	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libnet.so	ebc94fc532e8d63928c19e66721c3b38e56c0d64	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libnio.so	cee26cf73c2a1ab9cd0bffc8a852b8b6e034e3f1	HAS_SYMTAB		
+LIBS_jetty_12.1.10/libnss_compat.so.2	98647ebcca0f58406ae0a1668b3bce651c24b44a	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/98647ebcca0f58406ae0a1668b3bce651c24b44a.debug	
+LIBS_jetty_12.1.10/libnss_dns.so.2	92fcbab3d3c3c340e2bc329f43df750c79b66214	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/92fcbab3d3c3c340e2bc329f43df750c79b66214.debug	
+LIBS_jetty_12.1.10/libnss_files.so.2	f0360882a746ab39c16df61caecf79b2912cbea5	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/f0360882a746ab39c16df61caecf79b2912cbea5.debug	
+LIBS_jetty_12.1.10/libnss_hesiod.so.2	65155469773378bf89309ed2ec289e7059afd437	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/65155469773378bf89309ed2ec289e7059afd437.debug	
+LIBS_jetty_12.1.10/libpcre2-8.so.0.14.0	a0f364b52d51d30aa11c17ce870ebea163e625e0	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/a0f364b52d51d30aa11c17ce870ebea163e625e0.debug	
+LIBS_jetty_12.1.10/libpthread.so.0	ace3fca78dbfc26694c8ffe8c115682ed6b86e79	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ace3fca78dbfc26694c8ffe8c115682ed6b86e79.debug	
+LIBS_jetty_12.1.10/libresolv.so.2	74e4d0c6437a47b49b8e6cb95b3e923a90f057a9	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/74e4d0c6437a47b49b8e6cb95b3e923a90f057a9.debug	
+LIBS_jetty_12.1.10/librt.so.1	83262304cfeec2cf8bd71fde0058b1736f1aef62	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/83262304cfeec2cf8bd71fde0058b1736f1aef62.debug	
+LIBS_jetty_12.1.10/libselinux.so.1	9646187febef07a272db2ba5ed8c468e16be1a7a	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9646187febef07a272db2ba5ed8c468e16be1a7a.debug	
+LIBS_jetty_12.1.10/libzip.so	0daba67a1b2a945c9510bcbdfc946fb46bff2c8d	HAS_SYMTAB		
+LIBS_jetty_12.1.10/_container_deps/ld-linux-x86-64.so.2	98336d13e85bb188b91ad461c67807e02b02e132	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/98336d13e85bb188b91ad461c67807e02b02e132.debug	et_jetty_12.1.10 (missing DT_NEEDED)
+LIBS_jetty_12.1.10/_container_deps/libseccomp.so.2	9584322762cdf29a9a4736f8d612252df5c9f07d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9584322762cdf29a9a4736f8d612252df5c9f07d.debug	et_jetty_12.1.10 (missing DT_NEEDED)

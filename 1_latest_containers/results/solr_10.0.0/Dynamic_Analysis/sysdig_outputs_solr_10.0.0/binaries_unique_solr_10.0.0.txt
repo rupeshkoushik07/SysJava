@@ -1,0 +1,16 @@
+awk
+bash
+/bin/bash
+dirname
+find
+grep
+head
+mkdir
+/opt/java/openjdk/bin/java
+ps
+runc
+sed
+sort
+tini
+uname
+/usr/bin/env

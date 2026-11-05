@@ -1,0 +1,9 @@
+crypt@@XCRYPT_2.0_15da0
+crypt_checksalt@@XCRYPT_4.3_16c70
+crypt_gensalt@@XCRYPT_2.0_13460
+crypt_gensalt_ra@@XCRYPT_2.0_16c10
+crypt_gensalt_rn@@XCRYPT_2.0_16ac0
+crypt_preferred_method@@XCRYPT_4.4_16d00
+crypt_r@@XCRYPT_2.0_16a80
+crypt_ra@@XCRYPT_2.0_169d0
+crypt_rn@@XCRYPT_2.0_16950

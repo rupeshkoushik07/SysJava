@@ -1,0 +1,4 @@
+=== Combined FFI Native Binding Hits ===
+Format: detector | payload
+
+ffi | <org.eclipse.jetty.util.security.Credential$MD5: MD5> | crypto | MD5 | downcallHandle | jetty-util-12.0.27.jar

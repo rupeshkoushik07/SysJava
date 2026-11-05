@@ -1,0 +1,362 @@
+
+Path to gettid:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [syscall]-> gettid
+
+Path to socket:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to connect:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to write:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to read:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to close:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to getrandom:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to gettimeofday:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to time:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to flock:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> get_clock_2490
+  get_clock_2490 - [DIRECT]-> flock_f8890
+  flock_f8890 - [syscall]-> flock
+
+Path to umask:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> get_clock_2490
+  get_clock_2490 - [DIRECT]-> umask_f7d40
+  umask_f7d40 - [syscall]-> umask
+
+Path to openat:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> get_clock_2490
+  get_clock_2490 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to ftruncate:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> get_clock_2490
+  get_clock_2490 - [DIRECT]-> ftruncate_100050
+  ftruncate_100050 - [syscall]-> ftruncate
+
+Path to ioctl:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> get_node_id.constprop.0_2a90
+  get_node_id.constprop.0_2a90 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to clock_nanosleep:
+  uuid_generate_time_3200 - [DIRECT]-> uuid_generate_time_generic_2df0
+  uuid_generate_time_generic_2df0 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to writev:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to getpid:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [DIRECT]-> crank_random_3ac0
+  crank_random_3ac0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to getuid:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [DIRECT]-> crank_random_3ac0
+  crank_random_3ac0 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to getppid:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [DIRECT]-> crank_random_3ac0
+  crank_random_3ac0 - [DIRECT]-> getppid_d54f0
+  getppid_d54f0 - [syscall]-> getppid
+
+Path to fcntl:
+  __uuid_generate_random_3220 - [DIRECT]-> ul_random_get_bytes_3c40
+  ul_random_get_bytes_3c40 - [DIRECT]-> random_get_fd_3bc0
+  random_get_fd_3bc0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to munmap:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to lseek:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to mmap:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to rt_sigprocmask:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to newfstatat:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to mremap:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
+  mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to getdents64:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to madvise:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to clock_gettime:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to exit_group:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to mprotect:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to rt_sigaction:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to getcwd:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_wfile_underflow_7b4f0
+  _IO_wfile_underflow_7b4f0 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to tgkill:
+  uuid_parse_range_3600 - [DIRECT]-> __stack_chk_fail_1181e0
+  __stack_chk_fail_1181e0 - [DIRECT]-> __fortify_fail_1181f0
+  __fortify_fail_1181f0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to sched_getparam:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to prlimit64:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_wfile_underflow_7b4f0
+  _IO_wfile_underflow_7b4f0 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> _nl_find_domain_36e30
+  _nl_find_domain_36e30 - [DIRECT]-> _nl_expand_alias_38a50
+  _nl_expand_alias_38a50 - [DIRECT]-> read_alias_file_38580
+  read_alias_file_38580 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to sysinfo:
+  __uuid_generate_time_2de0 - [DIRECT]-> __uuid_generate_time_internal_2be0
+  __uuid_generate_time_internal_2be0 - [DIRECT]-> gettimeofday_c4190
+  gettimeofday_c4190 - [INDIRECT]-> _IO_wfile_underflow_7b4f0
+  _IO_wfile_underflow_7b4f0 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> _nl_find_domain_36e30
+  _nl_find_domain_36e30 - [DIRECT]-> _nl_expand_alias_38a50
+  _nl_expand_alias_38a50 - [DIRECT]-> read_alias_file_38580
+  read_alias_file_38580 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo

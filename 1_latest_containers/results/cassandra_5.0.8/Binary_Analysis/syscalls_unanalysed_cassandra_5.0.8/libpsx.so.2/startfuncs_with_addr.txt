@@ -1,0 +1,7 @@
+__psx_syscall_2f90
+__so_start_3740
+__wrap_pthread_create_2da0
+psx_load_syscalls_2d80
+psx_set_sensitivity_36d0
+psx_syscall3_3670
+psx_syscall6_36a0

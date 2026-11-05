@@ -1,0 +1,428 @@
+
+Path to close:
+  avc_netlink_loop_add0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to futex:
+  avc_netlink_loop_add0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  avc_netlink_loop_add0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to exit:
+  avc_netlink_loop_add0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> exit
+
+Path to set_robust_list:
+  avc_netlink_loop_add0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  avc_netlink_loop_add0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rt_sigprocmask
+
+Path to rseq:
+  avc_netlink_loop_add0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rseq
+
+Path to openat:
+  security_canonicalize_context_raw_c030 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to write:
+  security_canonicalize_context_raw_c030 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to read:
+  security_canonicalize_context_raw_c030 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to access:
+  selinux_raw_to_trans_context_1e7c0 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to mmap:
+  selinux_status_open_1d960 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to sched_yield:
+  selinux_status_open_1d960 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to getxattr:
+  getfilecon_raw_f410 - [DIRECT]-> getxattr_104750
+  getxattr_104750 - [syscall]-> getxattr
+
+Path to lgetxattr:
+  lgetfilecon_raw_150b0 - [DIRECT]-> lgetxattr_1047b0
+  lgetxattr_1047b0 - [syscall]-> lgetxattr
+
+Path to execve:
+  rpm_execcon_1dee0 - [DIRECT]-> execve_d4ad0
+  execve_d4ad0 - [syscall]-> execve
+
+Path to lsetxattr:
+  lsetfilecon_raw_15cf0 - [DIRECT]-> lsetxattr_104840
+  lsetxattr_104840 - [syscall]-> lsetxattr
+
+Path to setxattr:
+  setfilecon_raw_1df20 - [DIRECT]-> setxattr_1048a0
+  setxattr_1048a0 - [syscall]-> setxattr
+
+Path to socket:
+  avc_netlink_open_aba0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to bind:
+  avc_netlink_open_aba0 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to fcntl:
+  avc_netlink_open_aba0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to getsockopt:
+  getpeercon_raw_f5d0 - [DIRECT]-> getsockopt_10a8b0
+  getsockopt_10a8b0 - [syscall]-> getsockopt
+
+Path to munmap:
+  selinux_status_close_1dbd0 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to statfs:
+  selinux_restorecon_xattr_1d260 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to mount:
+  selinux_init_load_policy_15950 - [DIRECT]-> mount_109e50
+  mount_109e50 - [syscall]-> mount
+
+Path to umount2:
+  selinux_init_load_policy_15950 - [DIRECT]-> umount2_108b80
+  umount2_108b80 - [syscall]-> umount2
+
+Path to fsetxattr:
+  fsetfilecon_raw_e130 - [DIRECT]-> fsetxattr_104720
+  fsetxattr_104720 - [syscall]-> fsetxattr
+
+Path to poll:
+  avc_netlink_loop_add0 - [DIRECT]-> avc_netlink_receive.constprop.0_a360
+  avc_netlink_receive.constprop.0_a360 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvfrom:
+  avc_netlink_loop_add0 - [DIRECT]-> avc_netlink_receive.constprop.0_a360
+  avc_netlink_receive.constprop.0_a360 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to lseek:
+  avc_netlink_loop_add0 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to getpid:
+  avc_netlink_loop_add0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to sendto:
+  avc_netlink_loop_add0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to recvmsg:
+  avc_netlink_loop_add0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to writev:
+  avc_netlink_loop_add0 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to madvise:
+  avc_netlink_loop_add0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to getcwd:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to readlink:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to faccessat2:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to connect:
+  selinux_raw_to_trans_context_1e7c0 - [DIRECT]-> setransd_open_1e260
+  setransd_open_1e260 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to sendmsg:
+  selinux_raw_to_trans_context_1e7c0 - [DIRECT]-> send_request.constprop.0_1e360
+  send_request.constprop.0_1e360 - [DIRECT]-> sendmsg_10ac00
+  sendmsg_10ac00 - [syscall]-> sendmsg
+
+Path to readv:
+  selinux_raw_to_trans_context_1e7c0 - [DIRECT]-> receive_response_1e0b0
+  receive_response_1e0b0 - [DIRECT]-> readv_fddb0
+  readv_fddb0 - [syscall]-> readv
+
+Path to gettid:
+  getprevcon_raw_182b0 - [DIRECT]-> getprocattrcon_raw_17980
+  getprocattrcon_raw_17980 - [DIRECT]-> gettid_10a2a0
+  gettid_10a2a0 - [syscall]-> gettid
+
+Path to fgetxattr:
+  fgetfilecon_raw_df20 - [DIRECT]-> fgetxattr_wrapper.constprop.0_de20
+  fgetxattr_wrapper.constprop.0_de20 - [DIRECT]-> fgetxattr_104690
+  fgetxattr_104690 - [syscall]-> fgetxattr
+
+Path to mremap:
+  fgetfilecon_raw_df20 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to prlimit64:
+  selinux_status_open_1d960 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to newfstatat:
+  selinux_lsetfilecon_default_176c0 - [DIRECT]-> lstat_f7840
+  lstat_f7840 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to fchdir:
+  selinux_restorecon_xattr_1d260 - [DIRECT]-> fts_read_fbba0
+  fts_read_fbba0 - [DIRECT]-> fchdir_f8c20
+  fchdir_f8c20 - [syscall]-> fchdir
+
+Path to removexattr:
+  selinux_restorecon_xattr_1d260 - [DIRECT]-> add_xattr_entry_1abe0
+  add_xattr_entry_1abe0 - [DIRECT]-> removexattr_104870
+  removexattr_104870 - [syscall]-> removexattr
+
+Path to sched_getscheduler:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getparam
+
+Path to ioctl:
+  avc_netlink_loop_add0 - [INDIRECT]-> _IO_file_doallocate_75840
+  _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to getdents64:
+  avc_netlink_loop_add0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  avc_netlink_loop_add0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to clock_gettime:
+  avc_netlink_loop_add0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> __deadline_current_time_123da0
+  __deadline_current_time_123da0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to getrandom:
+  avc_netlink_loop_add0 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to geteuid:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getuid:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to getegid:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to sched_getaffinity:
+  selinux_status_open_1d960 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_nprocs_conf_104380
+  get_nprocs_conf_104380 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  selinux_status_open_1d960 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to uname:
+  selinux_restorecon_xattr_1d260 - [DIRECT]-> restorecon_init_1c4f0
+  restorecon_init_1c4f0 - [DIRECT]-> exclude_non_seclabel_mounts_1af10
+  exclude_non_seclabel_mounts_1af10 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to sched_setscheduler:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setscheduler
+
+Path to sched_setaffinity:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setaffinity
+
+Path to rt_sigaction:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_get_priority_max:
+  avc_netlink_loop_add0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  avc_netlink_loop_add0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to exit_group:
+  avc_netlink_loop_add0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [DIRECT]-> __GI___nptl_setxid_sighandler.cold_26dc0
+  __GI___nptl_setxid_sighandler.cold_26dc0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to getgroups:
+  realpath_not_final_17070 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to sendmmsg:
+  avc_netlink_loop_add0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  avc_netlink_loop_add0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to getsockname:
+  avc_netlink_loop_add0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to dup:
+  avc_netlink_loop_add0 - [INDIRECT]-> selabel_file_init_13ea0
+  selabel_file_init_13ea0 - [DIRECT]-> init.constprop.0_13730
+  init.constprop.0_13730 - [DIRECT]-> process_file_11e50
+  process_file_11e50 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to clone3:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to clone:
+  selinux_restorecon_1d060 - [DIRECT]-> selinux_restorecon_common_1c590
+  selinux_restorecon_common_1c590 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone_108b10
+  clone_108b10 - [syscall]-> clone
+
+Path to tgkill:
+  avc_netlink_loop_add0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [DIRECT]-> __GI___nptl_setxid_sighandler.cold_26dc0
+  __GI___nptl_setxid_sighandler.cold_26dc0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to brk:
+  avc_netlink_loop_add0 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to setsockopt:
+  avc_netlink_loop_add0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> reopen_12e420
+  reopen_12e420 - [DIRECT]-> __res_enable_icmp_12a2d0
+  __res_enable_icmp_12a2d0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt

@@ -1,0 +1,4 @@
+Java_sun_nio_ch_IOUtil_fdVal
+Java_sun_nio_ch_IOUtil_setfdVal
+Java_sun_nio_ch_Net_isIPv6Available0
+Java_sun_nio_ch_Net_socket0

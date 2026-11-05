@@ -1,0 +1,430 @@
+
+Path to futex:
+  _ZN7log4cxx7rolling6Action14getStaticClassEv_d2140 - [DIRECT]-> __cxa_guard_acquire_973a0
+  __cxa_guard_acquire_973a0 - [syscall]-> futex
+
+Path to set_robust_list:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __nptl_set_robust_6770
+  __nptl_set_robust_6770 - [syscall]-> set_robust_list
+
+Path to tgkill:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> tgkill
+
+Path to rt_sigreturn:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __restore_rt_f5d0
+  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to exit:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [syscall]-> rt_sigprocmask
+
+Path to write:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> unwind_cleanup_e150
+  unwind_cleanup_e150 - [syscall]-> write
+
+Path to set_tid_address:
+  _init_cc7c0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [syscall]-> set_tid_address
+
+Path to sched_yield:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mmap:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to close:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_close_797b0
+  _IO_file_close_797b0 - [DIRECT]-> __close_nocancel_ef619
+  __close_nocancel_ef619 - [syscall]-> close
+
+Path to read:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_e6d0
+  read_e6d0 - [syscall]-> read
+
+Path to lseek:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_ed50
+  lseek_ed50 - [syscall]-> lseek
+
+Path to fstat:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to mprotect:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __make_stacks_executable_70a0
+  __make_stacks_executable_70a0 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to unlink:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> apr_unix_file_cleanup_18960
+  apr_unix_file_cleanup_18960 - [DIRECT]-> unlink_f0710
+  unlink_f0710 - [syscall]-> unlink
+
+Path to writev:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to epoll_wait:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> fuzzyfunc-0x22910_22910
+  fuzzyfunc-0x22910_22910 - [DIRECT]-> epoll_wait_fe450
+  epoll_wait_fe450 - [syscall]-> epoll_wait
+
+Path to epoll_ctl:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> fuzzyfunc-0x22b00_22b00
+  fuzzyfunc-0x22b00_22b00 - [DIRECT]-> epoll_ctl_fe420
+  epoll_ctl_fe420 - [syscall]-> epoll_ctl
+
+Path to epoll_create1:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> fuzzyfunc-0x22e10_22e10
+  fuzzyfunc-0x22e10_22e10 - [DIRECT]-> epoll_create1_fe3f0
+  epoll_create1_fe3f0 - [syscall]-> epoll_create1
+
+Path to poll:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> fuzzyfunc-0x23340_23340
+  fuzzyfunc-0x23340_23340 - [DIRECT]-> poll_f31e0
+  poll_f31e0 - [syscall]-> poll
+
+Path to select:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> fuzzyfunc-0x23f00_23f00
+  fuzzyfunc-0x23f00_23f00 - [DIRECT]-> select_f4f40
+  select_f4f40 - [syscall]-> select
+
+Path to sched_get_priority_min:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_min_e2da0
+  sched_get_priority_min_e2da0 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_max_e2d70
+  sched_get_priority_max_e2d70 - [syscall]-> sched_get_priority_max
+
+Path to sched_getparam:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getparam_e2cb0
+  sched_getparam_e2cb0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_getschedparam_9240
+  pthread_getschedparam_9240 - [DIRECT]-> sched_getscheduler_e2d10
+  sched_getscheduler_e2d10 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_setschedparam_9370
+  pthread_setschedparam_9370 - [DIRECT]-> sched_setscheduler_e2ce0
+  sched_setscheduler_e2ce0 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> start_thread_7d10
+  start_thread_7d10 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to access:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to dup2:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> dup2_ef6a0
+  dup2_ef6a0 - [syscall]-> dup2
+
+Path to chdir:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> chdir_ef7c0
+  chdir_ef7c0 - [syscall]-> chdir
+
+Path to geteuid:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> geteuid_c5e30
+  geteuid_c5e30 - [syscall]-> geteuid
+
+Path to setuid:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> setuid_c5e90
+  setuid_c5e90 - [syscall]-> setuid
+
+Path to setrlimit:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> setrlimit_f4320
+  setrlimit_f4320 - [syscall]-> setrlimit
+
+Path to exit_group:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to execve:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> execve_c5200
+  execve_c5200 - [syscall]-> execve
+
+Path to setgid:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> setgid_c5ef0
+  setgid_c5ef0 - [syscall]-> setgid
+
+Path to wait4:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_wait_26620
+  apr_proc_wait_26620 - [DIRECT]-> waitpid_f110
+  waitpid_f110 - [syscall]-> wait4
+
+Path to socket:
+  _ZN7log4cxx7helpers14DatagramSocket6createEv_e5170 - [DIRECT]-> apr_socket_create_217d0
+  apr_socket_create_217d0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to bind:
+  _ZN7log4cxx7helpers14DatagramSocket4bindEiNS0_10ObjectPtrTINS0_11InetAddressEEE_e4bc0 - [DIRECT]-> apr_socket_bind_21930
+  apr_socket_bind_21930 - [DIRECT]-> bind_feb90
+  bind_feb90 - [syscall]-> bind
+
+Path to sendto:
+  _ZN7log4cxx7helpers14DatagramSocket4sendERNS0_10ObjectPtrTINS0_14DatagramPacketEEE_e5c60 - [DIRECT]-> apr_socket_sendto_1fed0
+  apr_socket_sendto_1fed0 - [DIRECT]-> sendto_ec90
+  sendto_ec90 - [syscall]-> sendto
+
+Path to recvfrom:
+  _ZN7log4cxx7helpers14DatagramSocket7receiveERNS0_10ObjectPtrTINS0_14DatagramPacketEEE_e5a30 - [DIRECT]-> apr_socket_recvfrom_1ffc0
+  apr_socket_recvfrom_1ffc0 - [DIRECT]-> recvfrom_eac0
+  recvfrom_eac0 - [syscall]-> recvfrom
+
+Path to connect:
+  _ZN7log4cxx7helpers14DatagramSocket7connectENS0_10ObjectPtrTINS0_11InetAddressEEEi_e4fc0 - [DIRECT]-> apr_socket_connect_21c10
+  apr_socket_connect_21c10 - [DIRECT]-> connect_e9b0
+  connect_e9b0 - [syscall]-> connect
+
+Path to getsockopt:
+  _ZN7log4cxx7helpers14DatagramSocket7connectENS0_10ObjectPtrTINS0_11InetAddressEEEi_e4fc0 - [DIRECT]-> apr_socket_connect_21c10
+  apr_socket_connect_21c10 - [DIRECT]-> getsockopt_fec80
+  getsockopt_fec80 - [syscall]-> getsockopt
+
+Path to open:
+  _ZNK7log4cxx4File4openEPP10apr_file_tiiRNS_7helpers4PoolE_f7a80 - [DIRECT]-> apr_file_open_18a40
+  apr_file_open_18a40 - [DIRECT]-> open_ee70
+  open_ee70 - [syscall]-> open
+
+Path to fcntl:
+  _ZNK7log4cxx4File4openEPP10apr_file_tiiRNS_7helpers4PoolE_f7a80 - [DIRECT]-> apr_file_open_18a40
+  apr_file_open_18a40 - [DIRECT]-> fcntl_e830
+  fcntl_e830 - [syscall]-> fcntl
+
+Path to lstat:
+  _ZNK7log4cxx4File6existsERNS_7helpers4PoolE_f7ae0 - [DIRECT]-> apr_stat_18290
+  apr_stat_18290 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to stat:
+  _ZNK7log4cxx4File6existsERNS_7helpers4PoolE_f7ae0 - [DIRECT]-> apr_stat_18290
+  apr_stat_18290 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to rename:
+  _ZNK7log4cxx4File8renameToERKS0_RNS_7helpers4PoolE_f7ba0 - [DIRECT]-> apr_file_rename_18d80
+  apr_file_rename_18d80 - [DIRECT]-> rename_6bc70
+  rename_6bc70 - [syscall]-> rename
+
+Path to getcwd:
+  _ZN7log4cxx7helpers6System11getPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_151d70 - [DIRECT]-> apr_filepath_get_178b0
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to getuid:
+  _ZN7log4cxx7helpers6System11getPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_151d70 - [DIRECT]-> apr_uid_current_27870
+  apr_uid_current_27870 - [DIRECT]-> getuid_c5e20
+  getuid_c5e20 - [syscall]-> getuid
+
+Path to getgid:
+  _ZN7log4cxx7helpers6System11getPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_151d70 - [DIRECT]-> apr_uid_current_27870
+  apr_uid_current_27870 - [DIRECT]-> getgid_c5e40
+  getgid_c5e40 - [syscall]-> getgid
+
+Path to setsockopt:
+  _ZN7log4cxx7helpers12ServerSocketC2Ei_1404d0 - [DIRECT]-> apr_socket_opt_set_22260
+  apr_socket_opt_set_22260 - [DIRECT]-> setsockopt_fefc0
+  setsockopt_fefc0 - [syscall]-> setsockopt
+
+Path to listen:
+  _ZN7log4cxx7helpers12ServerSocketC2Ei_1404d0 - [DIRECT]-> apr_socket_listen_21980
+  apr_socket_listen_21980 - [DIRECT]-> listen_fecb0
+  listen_fecb0 - [syscall]-> listen
+
+Path to accept4:
+  _ZN7log4cxx7helpers12ServerSocket6acceptEv_1407a0 - [DIRECT]-> apr_socket_accept_219b0
+  apr_socket_accept_219b0 - [DIRECT]-> accept4_ff2d0
+  accept4_ff2d0 - [syscall]-> accept4
+
+Path to getpeername:
+  _ZN7log4cxx7helpers6SocketC1EP12apr_socket_tP10apr_pool_t_147f30 - [DIRECT]-> apr_socket_addr_get_208d0
+  apr_socket_addr_get_208d0 - [DIRECT]-> getpeername_fec20
+  getpeername_fec20 - [syscall]-> getpeername
+
+Path to getsockname:
+  _ZN7log4cxx7helpers6SocketC1EP12apr_socket_tP10apr_pool_t_147f30 - [DIRECT]-> apr_socket_addr_get_208d0
+  apr_socket_addr_get_208d0 - [DIRECT]-> getsockname_fec50
+  getsockname_fec50 - [syscall]-> getsockname
+
+Path to rt_sigaction:
+  _init_cc7c0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> __libc_sigaction_f5e0
+  __libc_sigaction_f5e0 - [syscall]-> rt_sigaction
+
+Path to getrlimit:
+  _init_cc7c0 - [DIRECT]-> __pthread_initialize_minimal_68d0
+  __pthread_initialize_minimal_68d0 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to gettid:
+  _ZN7log4cxx7rolling6Action14getStaticClassEv_d2140 - [DIRECT]-> _Unwind_Resume_10580
+  _Unwind_Resume_10580 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to ioctl:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to brk:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to pause:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> pthread_mutex_lock_9c30
+  pthread_mutex_lock_9c30 - [DIRECT]-> __pthread_mutex_lock_full_58b0
+  __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
+  __pause_nocancel_eed9 - [syscall]-> pause
+
+Path to recvmsg:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> rfc3484_sort_e3f70
+  rfc3484_sort_e3f70 - [DIRECT]-> __check_native_125320
+  __check_native_125320 - [DIRECT]-> recvmsg_fedf0
+  recvmsg_fedf0 - [syscall]-> recvmsg
+
+Path to pipe:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_procattr_child_out_set_25cf0
+  apr_procattr_child_out_set_25cf0 - [DIRECT]-> apr_file_pipe_create_19290
+  apr_file_pipe_create_19290 - [DIRECT]-> pipe_ef700
+  pipe_ef700 - [syscall]-> pipe
+
+Path to setsid:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_proc_create_26020
+  apr_proc_create_26020 - [DIRECT]-> apr_proc_detach_26750
+  apr_proc_detach_26750 - [DIRECT]-> setsid_c6100
+  setsid_c6100 - [syscall]-> setsid
+
+Path to getpid:
+  _ZN7log4cxx3net14SyslogAppender6appendERKNS_7helpers10ObjectPtrTINS_3spi12LoggingEventEEERNS2_4PoolE_14f9a0 - [DIRECT]-> syslog_f7ed0
+  syslog_f7ed0 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to sched_setaffinity:
+  _ZN7log4cxx7helpers6Thread3runEPFPvP12apr_thread_tS2_ES2__154a90 - [DIRECT]-> apr_thread_create_26bb0
+  apr_thread_create_26bb0 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [syscall]-> sched_setaffinity
+
+Path to getdents:
+  _ZNK7log4cxx4File4listB5cxx11ERNS_7helpers4PoolE_f7dc0 - [DIRECT]-> apr_dir_read_16fe0
+  apr_dir_read_16fe0 - [DIRECT]-> readdir_r_c04e0
+  readdir_r_c04e0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to mkdir:
+  _ZNK7log4cxx4File6mkdirsERNS_7helpers4PoolE_f7d70 - [DIRECT]-> apr_dir_make_recursive_17220
+  apr_dir_make_recursive_17220 - [DIRECT]-> apr_dir_make_171f0
+  apr_dir_make_171f0 - [DIRECT]-> mkdir_eecc0
+  mkdir_eecc0 - [syscall]-> mkdir
+
+Path to uname:
+  _ZN7log4cxx7helpers11InetAddress12getAllByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_108740 - [DIRECT]-> apr_getnameinfo_20d30
+  apr_getnameinfo_20d30 - [DIRECT]-> getnameinfo_121680
+  getnameinfo_121680 - [DIRECT]-> uname_c4900
+  uname_c4900 - [syscall]-> uname
+
+Path to openat:
+  _ZN7log4cxx7helpers6System11getPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_151d70 - [DIRECT]-> apr_filepath_get_178b0
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  _ZN7log4cxx7helpers6System11getPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_151d70 - [DIRECT]-> apr_filepath_get_178b0
+  apr_filepath_get_178b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to clock_getres:
+  _ZN7log4cxx7helpers10ObjectPtrTINS_7pattern15NameAbbreviatorEED0Ev_e0050 - [INDIRECT]-> gaiconf_init_e3250
+  gaiconf_init_e3250 - [DIRECT]-> qsort_39080
+  qsort_39080 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to dup3:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_procattr_child_out_set_25cf0
+  apr_procattr_child_out_set_25cf0 - [DIRECT]-> apr_file_dup2_17750
+  apr_file_dup2_17750 - [DIRECT]-> fuzzyfunc-0x17570_17570
+  fuzzyfunc-0x17570_17570 - [DIRECT]-> dup3_ef6d0
+  dup3_ef6d0 - [syscall]-> dup3
+
+Path to dup:
+  _ZNK7log4cxx7rolling16GZCompressAction7executeERNS_7helpers4PoolE_101500 - [DIRECT]-> apr_procattr_child_out_set_25cf0
+  apr_procattr_child_out_set_25cf0 - [DIRECT]-> apr_file_dup2_17750
+  apr_file_dup2_17750 - [DIRECT]-> fuzzyfunc-0x17570_17570
+  fuzzyfunc-0x17570_17570 - [DIRECT]-> dup_ef670
+  dup_ef670 - [syscall]-> dup
+
+Path to clone:
+  _ZN7log4cxx7helpers6Thread3runEPFPvP12apr_thread_tS2_ES2__154a90 - [DIRECT]-> apr_thread_create_26bb0
+  apr_thread_create_26bb0 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8050
+  pthread_create@@GLIBC_2.2.5_8050 - [DIRECT]-> do_clone.constprop.4_6f40
+  do_clone.constprop.4_6f40 - [DIRECT]-> clone_fde40
+  clone_fde40 - [syscall]-> clone
+
+Path to kill:
+  _ZN7log4cxx7helpers12ServerSocket6acceptEv_1407a0 - [DIRECT]-> apr_pool_destroy_1c700
+  apr_pool_destroy_1c700 - [DIRECT]-> fuzzyfunc-0x1b990_1b990
+  fuzzyfunc-0x1b990_1b990 - [DIRECT]-> apr_proc_kill_268e0
+  apr_proc_kill_268e0 - [DIRECT]-> kill_364d0
+  kill_364d0 - [syscall]-> kill
+
+Path to readv:
+  _ZN7log4cxx7helpers11InetAddress12getAllByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE_108740 - [DIRECT]-> apr_getnameinfo_20d30
+  apr_getnameinfo_20d30 - [DIRECT]-> getnameinfo_121680
+  getnameinfo_121680 - [DIRECT]-> gethostbyaddr_r@@GLIBC_2.2.5_118200
+  gethostbyaddr_r@@GLIBC_2.2.5_118200 - [DIRECT]-> __nscd_gethostbyaddr_r_1371b0
+  __nscd_gethostbyaddr_r_1371b0 - [DIRECT]-> nscd_gethst_r_136810
+  nscd_gethst_r_136810 - [DIRECT]-> __readvall_138dc0
+  __readvall_138dc0 - [DIRECT]-> readv_f4900
+  readv_f4900 - [syscall]-> readv

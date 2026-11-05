@@ -1,0 +1,374 @@
+
+Path to bpf:
+  bpf_map_lookup_elem_flags_c260 - [syscall]-> bpf
+
+Path to perf_event_open:
+  bpf_program__attach_tracepoint_opts_26240 - [syscall]-> perf_event_open
+
+Path to rt_sigreturn:
+  bpf_link__destroy_23830 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  bpf_link__destroy_23830 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to time:
+  bpf_link__destroy_23830 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to epoll_wait:
+  perf_buffer__poll_26e20 - [DIRECT]-> epoll_wait_108ee0
+  epoll_wait_108ee0 - [syscall]-> epoll_wait
+
+Path to fcntl:
+  bpf_link_create_dcf0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to close:
+  bpf_link_create_dcf0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to ioctl:
+  bpf_program__attach_perf_event_opts_23b80 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to unlink:
+  bpf_program__unpin_1b6b0 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to munmap:
+  user_ring_buffer__free_33100 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to clock_gettime:
+  user_ring_buffer__reserve_blocking_33560 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to epoll_create1:
+  user_ring_buffer__new_33180 - [DIRECT]-> epoll_create1_109be0
+  epoll_create1_109be0 - [syscall]-> epoll_create1
+
+Path to mmap:
+  user_ring_buffer__new_33180 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to epoll_ctl:
+  user_ring_buffer__new_33180 - [DIRECT]-> epoll_ctl_109c10
+  epoll_ctl_109c10 - [syscall]-> epoll_ctl
+
+Path to openat:
+  bpf_linker__new_349f0 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to dup3:
+  bpf_map__reuse_fd_1a920 - [DIRECT]-> dup3_f8ad0
+  dup3_f8ad0 - [syscall]-> dup3
+
+Path to uname:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to faccessat2:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to getpid:
+  bpf_program__attach_uprobe_opts_24fa0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to read:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_file_read_81710
+  _IO_file_read_81710 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to lseek:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to writev:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to prlimit64:
+  bpf_btf_load_e270 - [DIRECT]-> bump_rlimit_memlock_b470
+  bump_rlimit_memlock_b470 - [DIRECT]-> setrlimit_fd820
+  setrlimit_fd820 - [syscall]-> prlimit64
+
+Path to statfs:
+  bpf_program__unpin_1b6b0 - [DIRECT]-> check_path_18db0
+  check_path_18db0 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to mremap:
+  libbpf_register_prog_handler_1c6f0 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  libbpf_register_prog_handler_1c6f0 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to socket:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to setsockopt:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to bind:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to getsockname:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to sendto:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> send_10ab40
+  send_10ab40 - [syscall]-> sendto
+
+Path to mkdir:
+  bpf_program__pin_1b570 - [DIRECT]-> make_parent_dir_18cd0
+  make_parent_dir_18cd0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to pread64:
+  bpf_linker__add_file_34ea0 - [DIRECT]-> elf_getshdrstrndx_12670
+  elf_getshdrstrndx_12670 - [DIRECT]-> pread_f63c0
+  pread_f63c0 - [syscall]-> pread64
+
+Path to fchmod:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> fchmod_f7d80
+  fchmod_f7d80 - [syscall]-> fchmod
+
+Path to ftruncate:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> ftruncate_100050
+  ftruncate_100050 - [syscall]-> ftruncate
+
+Path to fallocate:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> posix_fallocate_fc5b0
+  posix_fallocate_fc5b0 - [syscall]-> fallocate
+
+Path to newfstatat:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to geteuid:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getuid:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to getegid:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to getdents64:
+  bpf_link__destroy_23830 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to rt_sigprocmask:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to getrandom:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to recvmsg:
+  bpf_xdp_query_2c770 - [DIRECT]-> libbpf_netlink_send_recv_2bc80
+  libbpf_netlink_send_recv_2bc80 - [DIRECT]-> netlink_recvmsg_2bc40
+  netlink_recvmsg_2bc40 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to msync:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> __elf64_updatemmap_f530
+  __elf64_updatemmap_f530 - [DIRECT]-> msync_101a60
+  msync_101a60 - [syscall]-> msync
+
+Path to pwrite64:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> __elf64_updatefile_10130
+  __elf64_updatefile_10130 - [DIRECT]-> pwrite_f6470
+  pwrite_f6470 - [syscall]-> pwrite64
+
+Path to sched_getaffinity:
+  libbpf_probe_bpf_map_type_2dbd0 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_nprocs_conf_104380
+  get_nprocs_conf_104380 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  libbpf_probe_bpf_map_type_2dbd0 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to getgroups:
+  libbpf_find_kernel_btf_137e0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to mprotect:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to exit_group:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to getcwd:
+  bpf_linker__new_349f0 - [DIRECT]-> elf_errmsg_3550
+  elf_errmsg_3550 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to fstatfs:
+  bpf_linker__finalize_378e0 - [DIRECT]-> elf_update_c680
+  elf_update_c680 - [DIRECT]-> posix_fallocate_fc5b0
+  posix_fallocate_fc5b0 - [DIRECT]-> internal_fallocate_fc3e0
+  internal_fallocate_fc3e0 - [DIRECT]-> fstatfs_f7c30
+  fstatfs_f7c30 - [syscall]-> fstatfs
+
+Path to rt_sigaction:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to readlink:
+  bpf_program__attach_usdt_25ed0 - [DIRECT]-> usdt_manager_attach_usdt_3d440
+  usdt_manager_attach_usdt_3d440 - [DIRECT]-> parse_vma_segs_3d030
+  parse_vma_segs_3d030 - [DIRECT]-> __realpath_chk_1171f0
+  __realpath_chk_1171f0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to brk:
+  btf_ext__free_12e50 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to sched_getparam:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  bpf_link__destroy_23830 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to tgkill:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  bpf_link__destroy_23830 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid

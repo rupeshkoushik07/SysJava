@@ -1,0 +1,338 @@
+
+Path to recvmmsg:
+  netty_epoll_native_recvmmsg0_5c90 - [syscall]-> recvmmsg
+
+Path to sendmmsg:
+  netty_epoll_native_sendmmsg0_5f10 - [syscall]-> sendmmsg
+
+Path to socket:
+  netty_unix_socket_newSocketStreamFd_a1c0 - [DIRECT]-> socket_139630
+  socket_139630 - [syscall]-> socket
+
+Path to setsockopt:
+  netty_unix_socket_newSocketStreamFd_a1c0 - [DIRECT]-> setsockopt_1394a0
+  setsockopt_1394a0 - [syscall]-> setsockopt
+
+Path to close:
+  netty_unix_socket_newSocketStreamFd_a1c0 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to bind:
+  netty_unix_socket_bind_bca0 - [DIRECT]-> bind_139130
+  bind_139130 - [syscall]-> bind
+
+Path to rt_sigreturn:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> __restore_rt_45cb0
+  __restore_rt_45cb0 - [syscall]-> rt_sigreturn
+
+Path to accept:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> accept_1390e0
+  accept_1390e0 - [syscall]-> accept
+
+Path to accept4:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> accept4_139100
+  accept4_139100 - [syscall]-> accept4
+
+Path to futex:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> clear_once_control_a96b0
+  clear_once_control_a96b0 - [syscall]-> futex
+
+Path to clock_gettime:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
+  clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
+
+Path to connect:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> connect_139160
+  connect_139160 - [syscall]-> connect
+
+Path to epoll_create:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> epoll_create_1379e0
+  epoll_create_1379e0 - [syscall]-> epoll_create
+
+Path to epoll_create1:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> epoll_create1_1385b0
+  epoll_create1_1385b0 - [syscall]-> epoll_create1
+
+Path to epoll_ctl:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> epoll_ctl_1385e0
+  epoll_ctl_1385e0 - [syscall]-> epoll_ctl
+
+Path to epoll_pwait2:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> epoll_pwait2_137a40
+  epoll_pwait2_137a40 - [syscall]-> epoll_pwait2
+
+Path to epoll_wait:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> epoll_wait_137a70
+  epoll_wait_137a70 - [syscall]-> epoll_wait
+
+Path to eventfd2:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> eventfd_137aa0
+  eventfd_137aa0 - [syscall]-> eventfd2
+
+Path to fcntl:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
+
+Path to getpeername:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> getpeername_139190
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to getsockname:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> getsockname_1391c0
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to getsockopt:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> getsockopt_1391f0
+  getsockopt_1391f0 - [syscall]-> getsockopt
+
+Path to listen:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> listen_1392b0
+  listen_1392b0 - [syscall]-> listen
+
+Path to openat:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
+Path to pipe2:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> pipe_127dc0
+  pipe_127dc0 - [syscall]-> pipe2
+
+Path to read:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> read_128390
+  read_128390 - [syscall]-> read
+
+Path to recvfrom:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> recv_139340
+  recv_139340 - [syscall]-> recvfrom
+
+Path to recvmsg:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> recvmsg_1393c0
+  recvmsg_1393c0 - [syscall]-> recvmsg
+
+Path to sendto:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> send_1393f0
+  send_1393f0 - [syscall]-> sendto
+
+Path to sendfile:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> sendfile_128440
+  sendfile_128440 - [syscall]-> sendfile
+
+Path to sendmsg:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> sendmsg_139450
+  sendmsg_139450 - [syscall]-> sendmsg
+
+Path to shutdown:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> shutdown_1394e0
+  shutdown_1394e0 - [syscall]-> shutdown
+
+Path to splice:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> splice_138280
+  splice_138280 - [syscall]-> splice
+
+Path to timerfd_create:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> timerfd_create_138b20
+  timerfd_create_138b20 - [syscall]-> timerfd_create
+
+Path to timerfd_settime:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> timerfd_settime_138310
+  timerfd_settime_138310 - [syscall]-> timerfd_settime
+
+Path to uname:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> uname_11cd00
+  uname_11cd00 - [syscall]-> uname
+
+Path to unlink:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> unlink_128d00
+  unlink_128d00 - [syscall]-> unlink
+
+Path to write:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
+
+Path to writev:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> writev_137430
+  writev_137430 - [syscall]-> writev
+
+Path to munmap:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_close_mmap_9b360
+  _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to ioctl:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  _IO_file_doallocate_8bc60 - [DIRECT]-> __isatty_nostatus_129430
+  __isatty_nostatus_129430 - [syscall]-> ioctl
+
+Path to lseek:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_seek_9b340
+  _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to fstat:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_stat_9b350
+  _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to mmap:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mremap:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to madvise:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_mem_finish_968f0
+  _IO_mem_finish_968f0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to wait4:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
+
+Path to getcwd:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
+  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to getdents64:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to newfstatat:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
+  stat_128480 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to rt_sigprocmask:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to prctl:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
+  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [DIRECT]-> __set_vma_name_138180
+  __set_vma_name_138180 - [syscall]-> prctl
+
+Path to mprotect:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> __libc_calloc2_b4160
+  __libc_calloc2_b4160 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to exit_group:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> print_and_abort_b6ce0
+  print_and_abort_b6ce0 - [DIRECT]-> exit_486a0
+  exit_486a0 - [DIRECT]-> __run_exit_handlers_483f0
+  __run_exit_handlers_483f0 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to rt_sigaction:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+
+Path to sched_getaffinity:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> __libc_calloc2_b4160
+  __libc_calloc2_b4160 - [DIRECT]-> arena_get2_b16d0
+  arena_get2_b16d0 - [DIRECT]-> get_nprocs_12d590
+  get_nprocs_12d590 - [DIRECT]-> __get_nprocs_sched_12d2f0
+  __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to gettid:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> raise_45b60
+  raise_45b60 - [DIRECT]-> pthread_kill@@GLIBC_2.34_a6370
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
+
+Path to getpid:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to sched_getparam:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getparam_11aba0
+  sched_getparam_11aba0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getscheduler_11abd0
+  sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  netty_unix_socket_bind_bca0 - [INDIRECT]-> calloc_b5f80
+  calloc_b5f80 - [DIRECT]-> __libc_calloc2_b4160
+  __libc_calloc2_b4160 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

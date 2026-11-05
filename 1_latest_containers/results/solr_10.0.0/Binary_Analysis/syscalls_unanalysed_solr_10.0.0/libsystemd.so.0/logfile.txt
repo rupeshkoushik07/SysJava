@@ -1,0 +1,558 @@
+
+Path to pidfd_send_signal:
+  sd_event_source_send_child_signal_78120 - [syscall]-> pidfd_send_signal
+
+Path to rt_sigqueueinfo:
+  sd_event_source_send_child_signal_78120 - [syscall]-> rt_sigqueueinfo
+
+Path to pidfd_open:
+  sd_event_add_child_74bb0 - [syscall]-> pidfd_open
+
+Path to request_key:
+  sd_id128_get_invocation_6a480 - [syscall]-> request_key
+
+Path to keyctl:
+  sd_id128_get_invocation_6a480 - [syscall]-> keyctl
+
+Path to getpid:
+  sd_event_trim_memory_72480 - [DIRECT]-> getpid_f5a90
+  getpid_f5a90 - [syscall]-> getpid
+
+Path to gettid:
+  sd_event_trim_memory_72480 - [DIRECT]-> gettid_12b380
+  gettid_12b380 - [syscall]-> gettid
+
+Path to rt_sigreturn:
+  sd_event_prepare_848b0 - [INDIRECT]-> __restore_rt_45330
+  __restore_rt_45330 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  sd_event_prepare_848b0 - [INDIRECT]-> clear_once_control_a1f70
+  clear_once_control_a1f70 - [syscall]-> futex
+
+Path to time:
+  sd_event_prepare_848b0 - [INDIRECT]-> time_syscall_df5d0
+  time_syscall_df5d0 - [syscall]-> time
+
+Path to epoll_wait:
+  sd_event_wait_837a0 - [DIRECT]-> epoll_wait_12a020
+  epoll_wait_12a020 - [syscall]-> epoll_wait
+
+Path to epoll_pwait2:
+  sd_event_wait_837a0 - [DIRECT]-> epoll_pwait2_129f60
+  epoll_pwait2_129f60 - [syscall]-> epoll_pwait2
+
+Path to read:
+  sd_event_wait_837a0 - [DIRECT]-> read_11ba80
+  read_11ba80 - [syscall]-> read
+
+Path to waitid:
+  sd_event_wait_837a0 - [DIRECT]-> waitid_110860
+  waitid_110860 - [syscall]-> waitid
+
+Path to socket:
+  sd_journal_sendv_5c400 - [DIRECT]-> socket_12c310
+  socket_12c310 - [syscall]-> socket
+
+Path to sendmsg:
+  sd_journal_sendv_5c400 - [DIRECT]-> sendmsg_12c020
+  sendmsg_12c020 - [syscall]-> sendmsg
+
+Path to prctl:
+  sd_journal_sendv_5c400 - [DIRECT]-> prctl_12a590
+  prctl_12a590 - [syscall]-> prctl
+
+Path to memfd_create:
+  sd_journal_sendv_5c400 - [DIRECT]-> memfd_create_12b2f0
+  memfd_create_12b2f0 - [syscall]-> memfd_create
+
+Path to writev:
+  sd_journal_sendv_5c400 - [DIRECT]-> writev_129880
+  writev_129880 - [syscall]-> writev
+
+Path to fcntl:
+  sd_journal_sendv_5c400 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to getsockname:
+  sd_is_socket_6fc40 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to clock_gettime:
+  sd_event_add_time_74890 - [DIRECT]-> clock_gettime@@GLIBC_2.17_ec950
+  clock_gettime@@GLIBC_2.17_ec950 - [syscall]-> clock_gettime
+
+Path to epoll_ctl:
+  sd_event_source_set_io_fd_76710 - [DIRECT]-> epoll_ctl_12ad20
+  epoll_ctl_12ad20 - [syscall]-> epoll_ctl
+
+Path to openat:
+  sd_event_add_memory_pressure_739d0 - [DIRECT]-> open_11b150
+  open_11b150 - [syscall]-> openat
+
+Path to fstat:
+  sd_event_add_memory_pressure_739d0 - [DIRECT]-> fstat_1173b0
+  fstat_1173b0 - [syscall]-> fstat
+
+Path to fstatfs:
+  sd_event_add_memory_pressure_739d0 - [DIRECT]-> fstatfs_117420
+  fstatfs_117420 - [syscall]-> fstatfs
+
+Path to getuid:
+  sd_bus_query_sender_privilege_23c00 - [DIRECT]-> getuid_f5b40
+  getuid_f5b40 - [syscall]-> getuid
+
+Path to timerfd_create:
+  sd_event_set_watchdog_85360 - [DIRECT]-> timerfd_create_12b230
+  timerfd_create_12b230 - [syscall]-> timerfd_create
+
+Path to ftruncate:
+  sd_bus_message_seal_29670 - [DIRECT]-> ftruncate_11ee90
+  ftruncate_11ee90 - [syscall]-> ftruncate
+
+Path to munmap:
+  sd_bus_message_seal_29670 - [DIRECT]-> munmap_125d70
+  munmap_125d70 - [syscall]-> munmap
+
+Path to rt_sigprocmask:
+  sd_event_add_signal_75f00 - [DIRECT]-> pthread_sigmask@@GLIBC_2.32_a3f00
+  pthread_sigmask@@GLIBC_2.32_a3f00 - [syscall]-> rt_sigprocmask
+
+Path to kill:
+  sd_event_source_send_child_signal_78120 - [DIRECT]-> kill_45530
+  kill_45530 - [syscall]-> kill
+
+Path to setsockopt:
+  sd_device_monitor_filter_update_461c0 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to ioctl:
+  sd_device_open_53c90 - [DIRECT]-> ioctl_124de0
+  ioctl_124de0 - [syscall]-> ioctl
+
+Path to epoll_create1:
+  sd_event_new_72f30 - [DIRECT]-> epoll_create1_12acf0
+  epoll_create1_12acf0 - [syscall]-> epoll_create1
+
+Path to pipe2:
+  sd_pid_notify_barrier_705f0 - [DIRECT]-> pipe2_11b480
+  pipe2_11b480 - [syscall]-> pipe2
+
+Path to getsockopt:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to bind:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to sendto:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> sendto_12c0c0
+  sendto_12c0c0 - [syscall]-> sendto
+
+Path to inotify_init1:
+  sd_login_monitor_new_7d600 - [DIRECT]-> inotify_init1_12aea0
+  inotify_init1_12aea0 - [syscall]-> inotify_init1
+
+Path to inotify_add_watch:
+  sd_login_monitor_new_7d600 - [DIRECT]-> inotify_add_watch_12ae70
+  inotify_add_watch_12ae70 - [syscall]-> inotify_add_watch
+
+Path to faccessat2:
+  sd_booted_70ab0 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat2
+
+Path to faccessat:
+  sd_booted_70ab0 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [syscall]-> faccessat
+
+Path to shutdown:
+  sd_journal_stream_fd_5d5f0 - [DIRECT]-> shutdown_12c1c0
+  shutdown_12c1c0 - [syscall]-> shutdown
+
+Path to write:
+  sd_journal_stream_fd_5d5f0 - [DIRECT]-> write_11c590
+  write_11c590 - [syscall]-> write
+
+Path to getrandom:
+  sd_event_trim_memory_72480 - [DIRECT]-> mallinfo2_aeed0
+  mallinfo2_aeed0 - [DIRECT]-> ptmalloc_init.part.0_a9d70
+  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
+
+Path to madvise:
+  sd_event_trim_memory_72480 - [DIRECT]-> malloc_trim_aebc0
+  malloc_trim_aebc0 - [DIRECT]-> madvise_1250e0
+  madvise_1250e0 - [syscall]-> madvise
+
+Path to recvmsg:
+  sd_bus_call_42230 - [DIRECT]-> bus_socket_read_message_3b700
+  bus_socket_read_message_3b700 - [DIRECT]-> recvmsg_12be10
+  recvmsg_12be10 - [syscall]-> recvmsg
+
+Path to readv:
+  sd_bus_call_42230 - [DIRECT]-> bus_socket_read_message_3b700
+  bus_socket_read_message_3b700 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv
+
+Path to signalfd4:
+  sd_event_add_child_pidfd_74ff0 - [DIRECT]-> event_make_signal_data_70f50
+  event_make_signal_data_70f50 - [DIRECT]-> signalfd_12a810
+  signalfd_12a810 - [syscall]-> signalfd4
+
+Path to timerfd_settime:
+  sd_event_prepare_848b0 - [DIRECT]-> event_arm_timer_794a0
+  event_arm_timer_794a0 - [DIRECT]-> timerfd_settime_12a9d0
+  timerfd_settime_12a9d0 - [syscall]-> timerfd_settime
+
+Path to close:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_file_close_93930
+  _IO_file_close_93930 - [DIRECT]-> __close_nocancel_11c630
+  __close_nocancel_11c630 - [syscall]-> close
+
+Path to lseek:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_file_seek_938d0
+  _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
+  lseek_11b000 - [syscall]-> lseek
+
+Path to mmap:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_92c20
+  _IO_file_underflow_maybe_mmap_92c20 - [DIRECT]-> mmap_125320
+  mmap_125320 - [syscall]-> mmap
+
+Path to mremap:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_file_underflow_mmap_92990
+  _IO_file_underflow_mmap_92990 - [DIRECT]-> mremap_12a350
+  mremap_12a350 - [syscall]-> mremap
+
+Path to connect:
+  sd_event_prepare_848b0 - [INDIRECT]-> fun_writer_b1e0
+  fun_writer_b1e0 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to sched_yield:
+  sd_event_prepare_848b0 - [INDIRECT]-> func_fd_read_5290
+  func_fd_read_5290 - [DIRECT]-> sched_yield_10e800
+  sched_yield_10e800 - [syscall]-> sched_yield
+
+Path to mkdir:
+  sd_event_prepare_848b0 - [INDIRECT]-> try_dir_66710
+  try_dir_66710 - [DIRECT]-> mkdir_11b050
+  mkdir_11b050 - [syscall]-> mkdir
+
+Path to umask:
+  sd_journal_sendv_5c400 - [DIRECT]-> open_tmpfile_unlinkable.constprop.0_92f90
+  open_tmpfile_unlinkable.constprop.0_92f90 - [DIRECT]-> umask_11c420
+  umask_11c420 - [syscall]-> umask
+
+Path to unlink:
+  sd_journal_sendv_5c400 - [DIRECT]-> open_tmpfile_unlinkable.constprop.0_92f90
+  open_tmpfile_unlinkable.constprop.0_92f90 - [DIRECT]-> unlink_11c430
+  unlink_11c430 - [syscall]-> unlink
+
+Path to newfstatat:
+  sd_device_get_sysattr_value_53220 - [DIRECT]-> lstat_11b030
+  lstat_11b030 - [DIRECT]-> fstatat_1173e0
+  fstatat_1173e0 - [syscall]-> newfstatat
+
+Path to inotify_rm_watch:
+  sd_event_source_set_priority_77000 - [DIRECT]-> inode_data_realize_watch.isra.0_9de10
+  inode_data_realize_watch.isra.0_9de10 - [DIRECT]-> inotify_rm_watch_12aed0
+  inotify_rm_watch_12aed0 - [syscall]-> inotify_rm_watch
+
+Path to statfs:
+  sd_event_add_memory_pressure_739d0 - [DIRECT]-> cg_unified_cached.constprop.0_9af70
+  cg_unified_cached.constprop.0_9af70 - [DIRECT]-> statfs_11bc10
+  statfs_11bc10 - [syscall]-> statfs
+
+Path to access:
+  sd_device_new_from_subsystem_sysname_55010 - [DIRECT]-> device_strjoin_new_54e90
+  device_strjoin_new_54e90 - [DIRECT]-> access_116650
+  access_116650 - [syscall]-> access
+
+Path to geteuid:
+  sd_pid_notify_with_fds_70590 - [DIRECT]-> pid_notify_with_fds_internal_6e760
+  pid_notify_with_fds_internal_6e760 - [DIRECT]-> geteuid_f4750
+  geteuid_f4750 - [syscall]-> geteuid
+
+Path to getgid:
+  sd_pid_notify_with_fds_70590 - [DIRECT]-> pid_notify_with_fds_internal_6e760
+  pid_notify_with_fds_internal_6e760 - [DIRECT]-> getgid_f4760
+  getgid_f4760 - [syscall]-> getgid
+
+Path to getegid:
+  sd_pid_notify_with_fds_70590 - [DIRECT]-> pid_notify_with_fds_internal_6e760
+  pid_notify_with_fds_internal_6e760 - [DIRECT]-> getegid_f4740
+  getegid_f4740 - [syscall]-> getegid
+
+Path to socketpair:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> socketpair_12c340
+  socketpair_12c340 - [syscall]-> socketpair
+
+Path to clone:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [syscall]-> clone
+
+Path to fchdir:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> fchdir_116d90
+  fchdir_116d90 - [syscall]-> fchdir
+
+Path to chroot:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> chroot_11d800
+  chroot_11d800 - [syscall]-> chroot
+
+Path to setgroups:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> setgroups_10e8b0
+  setgroups_10e8b0 - [syscall]-> setgroups
+
+Path to setresgid:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> setresgid_10e970
+  setresgid_10e970 - [syscall]-> setresgid
+
+Path to setresuid:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> setresuid_10ea00
+  setresuid_10ea00 - [syscall]-> setresuid
+
+Path to exit_group:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> _exit_ee200
+  _exit_ee200 - [syscall]-> exit_group
+
+Path to setns:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> setns_12b2c0
+  setns_12b2c0 - [syscall]-> setns
+
+Path to getpeername:
+  sd_bus_start_41410 - [DIRECT]-> bus_socket_start_auth_3f0f0
+  bus_socket_start_auth_3f0f0 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
+
+Path to statx:
+  sd_device_monitor_new_46040 - [DIRECT]-> device_monitor_new_full.constprop.0_97300
+  device_monitor_new_full.constprop.0_97300 - [DIRECT]-> statx_11bf40
+  statx_11bf40 - [syscall]-> statx
+
+Path to ppoll:
+  sd_pid_notify_barrier_705f0 - [DIRECT]-> ppoll_usec_879a0
+  ppoll_usec_879a0 - [DIRECT]-> ppoll_11b990
+  ppoll_11b990 - [syscall]-> ppoll
+
+Path to prlimit64:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> getrlimit_11d1e0
+  getrlimit_11d1e0 - [syscall]-> prlimit64
+
+Path to mq_getsetattr:
+  sd_is_mq_70350 - [DIRECT]-> mq_getattr@@GLIBC_2.34_a80e0
+  mq_getattr@@GLIBC_2.34_a80e0 - [DIRECT]-> mq_setattr@@GLIBC_2.34_a8680
+  mq_setattr@@GLIBC_2.34_a8680 - [syscall]-> mq_getsetattr
+
+Path to mkdirat:
+  sd_id128_get_boot_6a240 - [DIRECT]-> id128_read_at.constprop.0_95a00
+  id128_read_at.constprop.0_95a00 - [DIRECT]-> xopenat.constprop.0_9bb70
+  xopenat.constprop.0_9bb70 - [DIRECT]-> mkdirat_11b080
+  mkdirat_11b080 - [syscall]-> mkdirat
+
+Path to unlinkat:
+  sd_id128_get_boot_6a240 - [DIRECT]-> id128_read_at.constprop.0_95a00
+  id128_read_at.constprop.0_95a00 - [DIRECT]-> xopenat.constprop.0_9bb70
+  xopenat.constprop.0_9bb70 - [DIRECT]-> unlinkat_11c460
+  unlinkat_11c460 - [syscall]-> unlinkat
+
+Path to mprotect:
+  sd_bus_creds_get_cmdline_1a140 - [DIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> _int_malloc_ab570
+  _int_malloc_ab570 - [DIRECT]-> mprotect_125c40
+  mprotect_125c40 - [syscall]-> mprotect
+
+Path to wait4:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
+  _IO_proc_close@@GLIBC_2.2.5_87950 - [DIRECT]-> waitpid_110910
+  waitpid_110910 - [DIRECT]-> wait4_1107c0
+  wait4_1107c0 - [syscall]-> wait4
+
+Path to getdents64:
+  sd_event_prepare_848b0 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
+  __malloc_hugepage_config_12b580 - [DIRECT]-> getdents64_ed920
+  getdents64_ed920 - [syscall]-> getdents64
+
+Path to pread64:
+  sd_event_prepare_848b0 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
+  __malloc_hugepage_config_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
+  __pread64_nocancel_11c9d0 - [syscall]-> pread64
+
+Path to recvfrom:
+  sd_event_prepare_848b0 - [INDIRECT]-> device_monitor_event_handler_4e470
+  device_monitor_event_handler_4e470 - [DIRECT]-> device_monitor_receive_device.constprop.0_96240
+  device_monitor_receive_device.constprop.0_96240 - [DIRECT]-> recv_12bbe0
+  recv_12bbe0 - [syscall]-> recvfrom
+
+Path to sched_get_priority_max:
+  sd_bus_new_37bd0 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_9f710
+  pthread_mutex_init@@GLIBC_2.2.5_9f710 - [DIRECT]-> __init_sched_fifo_prio_a5080
+  __init_sched_fifo_prio_a5080 - [DIRECT]-> sched_get_priority_max_10e6e0
+  sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  sd_bus_new_37bd0 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_9f710
+  pthread_mutex_init@@GLIBC_2.2.5_9f710 - [DIRECT]-> __init_sched_fifo_prio_a5080
+  __init_sched_fifo_prio_a5080 - [DIRECT]-> sched_get_priority_min_10e710
+  sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
+
+Path to getppid:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [DIRECT]-> getppid_f5aa0
+  getppid_f5aa0 - [syscall]-> getppid
+
+Path to dup2:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [DIRECT]-> dup2_116990
+  dup2_116990 - [syscall]-> dup2
+
+Path to tgkill:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> setgroups_10e8b0
+  setgroups_10e8b0 - [DIRECT]-> __nptl_setxid_99670
+  __nptl_setxid_99670 - [syscall]-> tgkill
+
+Path to name_to_handle_at:
+  sd_device_monitor_new_46040 - [DIRECT]-> device_monitor_new_full.constprop.0_97300
+  device_monitor_new_full.constprop.0_97300 - [DIRECT]-> path_get_mnt_id_at_fallback_8ebe0
+  path_get_mnt_id_at_fallback_8ebe0 - [DIRECT]-> name_to_handle_at_12b290
+  name_to_handle_at_12b290 - [syscall]-> name_to_handle_at
+
+Path to sysinfo:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_avphys_pages_11fe70
+  get_avphys_pages_11fe70 - [DIRECT]-> sysinfo_12b1a0
+  sysinfo_12b1a0 - [syscall]-> sysinfo
+
+Path to sched_getaffinity:
+  sd_device_new_from_ifname_55f20 - [DIRECT]-> sysconf_110050
+  sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
+  get_nprocs_conf_11fda0 - [DIRECT]-> __get_nprocs_sched_11fab0
+  __get_nprocs_sched_11fab0 - [syscall]-> sched_getaffinity
+
+Path to getgroups:
+  sd_booted_70ab0 - [DIRECT]-> faccessat_116b50
+  faccessat_116b50 - [DIRECT]-> group_member_f9930
+  group_member_f9930 - [DIRECT]-> getgroups_f4770
+  getgroups_f4770 - [syscall]-> getgroups
+
+Path to rt_sigaction:
+  sd_bus_creds_get_owner_uid_1a020 - [DIRECT]-> log_assert_failed_86120
+  log_assert_failed_86120 - [DIRECT]-> abort_28820
+  abort_28820 - [DIRECT]-> sigaction_452e0
+  sigaction_452e0 - [DIRECT]-> __libc_sigaction_45340
+  __libc_sigaction_45340 - [syscall]-> rt_sigaction
+
+Path to poll:
+  sd_event_prepare_848b0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to sendmmsg:
+  sd_event_prepare_848b0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
+Path to getcwd:
+  sd_event_prepare_848b0 - [INDIRECT]-> print_and_abort_af5a0
+  print_and_abort_af5a0 - [DIRECT]-> dcgettext_3bf80
+  dcgettext_3bf80 - [DIRECT]-> __dcigettext_3ce60
+  __dcigettext_3ce60 - [DIRECT]-> getcwd_11a440
+  getcwd_11a440 - [syscall]-> getcwd
+
+Path to readlinkat:
+  sd_device_get_sysattr_value_53220 - [DIRECT]-> readlink_value_8ae70
+  readlink_value_8ae70 - [DIRECT]-> readlinkat_malloc_86da0
+  readlinkat_malloc_86da0 - [DIRECT]-> __readlinkat_chk_137aa0
+  __readlinkat_chk_137aa0 - [DIRECT]-> readlinkat_11bb50
+  readlinkat_11bb50 - [syscall]-> readlinkat
+
+Path to set_robust_list:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [DIRECT]-> fork_f3f60
+  fork_f3f60 - [DIRECT]-> _Fork_ee180
+  _Fork_ee180 - [syscall]-> set_robust_list
+
+Path to capget:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [DIRECT]-> cap_get_proc_4780
+  cap_get_proc_4780 - [DIRECT]-> capget_12ac30
+  capget_12ac30 - [syscall]-> capget
+
+Path to close_range:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> safe_fork_full.constprop.0_a1f40
+  safe_fork_full.constprop.0_a1f40 - [DIRECT]-> close_all_fds.constprop.0_98f90
+  close_all_fds.constprop.0_98f90 - [DIRECT]-> close_range_1167a0
+  close_range_1167a0 - [syscall]-> close_range
+
+Path to execve:
+  sd_bus_start_41410 - [DIRECT]-> bus_start_address.part.0.lto_priv.0_49ce0
+  bus_start_address.part.0.lto_priv.0_49ce0 - [DIRECT]-> execvp_eefa0
+  execvp_eefa0 - [DIRECT]-> execvpe_eefc0
+  execvpe_eefc0 - [DIRECT]-> execve_eef30
+  execve_eef30 - [syscall]-> execve
+
+Path to brk:
+  sd_event_trim_memory_72480 - [DIRECT]-> malloc_trim_aebc0
+  malloc_trim_aebc0 - [DIRECT]-> systrim.constprop.0_aaa40
+  systrim.constprop.0_aaa40 - [DIRECT]-> __glibc_morecore_aaa10
+  __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
+Path to sched_getparam:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_current_priority_a5490
+  __pthread_current_priority_a5490 - [DIRECT]-> sched_getparam_10e680
+  sched_getparam_10e680 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_current_priority_a5490
+  __pthread_current_priority_a5490 - [DIRECT]-> sched_getscheduler_10e6b0
+  sched_getscheduler_10e6b0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  sd_event_prepare_848b0 - [INDIRECT]-> _IO_vtable_check_91290
+  _IO_vtable_check_91290 - [DIRECT]-> _dl_addr_183a90
+  _dl_addr_183a90 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
+  __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
+  __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_setscheduler_10e7d0
+  sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
+
+Path to uname:
+  sd_event_prepare_848b0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __resolv_context_get_14ec80
+  __resolv_context_get_14ec80 - [DIRECT]-> __res_vinit_148870
+  __res_vinit_148870 - [DIRECT]-> __resolv_conf_load_147820
+  __resolv_conf_load_147820 - [DIRECT]-> gethostname_11f400
+  gethostname_11f400 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname

@@ -1,0 +1,9 @@
+Time taken for the analysis: 9 seconds
+Time taken for the analysis: 15 seconds
+Direct Edges computation: 2 seconds
+AT List computation: 0 seconds
+Indirect call target resolution:  2 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 14 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_BIN_elasticsearch_7.1.0/basename.main/callgraph.json

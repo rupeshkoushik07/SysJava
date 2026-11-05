@@ -1,0 +1,16 @@
+awk
+bash
+/bin/bash
+chown
+cut
+dirname
+gosu
+grep
+id
+/lib64/ld-linux-x86-64.so.2
+/opt/java/openjdk/bin/java
+/opt/java/openjdk/lib/jspawnhelper
+python3
+runc
+sh
+/usr/bin/env

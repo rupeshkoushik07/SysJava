@@ -1,0 +1,9 @@
+=== Combined FFI Native Binding Hits ===
+Format: detector | payload
+
+ffi | <com.amazon.corretto.crypto.provider.EvpHmac$MD5: MD5> | crypto | MD5 | downcallHandle | AmazonCorrettoCryptoProvider-2.2.0-linux-x86_64.jar
+ffi | <com.amazon.corretto.crypto.provider.EvpHmac$SHA1: SHA1> | crypto | SHA1 | downcallHandle | AmazonCorrettoCryptoProvider-2.2.0-linux-x86_64.jar
+ffi | <com.amazon.corretto.crypto.provider.EvpHmac$SHA256: SHA256> | crypto | SHA256 | downcallHandle | AmazonCorrettoCryptoProvider-2.2.0-linux-x86_64.jar
+ffi | <com.amazon.corretto.crypto.provider.EvpHmac$SHA384: SHA384> | crypto | SHA384 | downcallHandle | AmazonCorrettoCryptoProvider-2.2.0-linux-x86_64.jar
+ffi | <com.amazon.corretto.crypto.provider.EvpHmac$SHA512: SHA512> | crypto | SHA512 | downcallHandle | AmazonCorrettoCryptoProvider-2.2.0-linux-x86_64.jar
+jnr-ffi | com.datastax.driver.core.Native$LibCLoader$LibC | libc.so.6 | gettimeofday | LibraryLoader.create().load(String) | cassandra-driver-core-3.12.1-shaded.jar

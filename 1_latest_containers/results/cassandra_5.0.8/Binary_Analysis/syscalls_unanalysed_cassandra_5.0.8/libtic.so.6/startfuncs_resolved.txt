@@ -1,0 +1,12 @@
+_nc_capcmp
+_nc_entry_match
+_nc_infotocap
+_nc_read_entry_source
+_nc_reset_input
+_nc_resolve_uses2
+_nc_set_writedir
+_nc_tic_expand
+_nc_tic_written
+_nc_trans_string
+_nc_write_entry
+_nc_write_object

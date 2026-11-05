@@ -1,0 +1,485 @@
+
+Path to futex:
+  nis_lookup_caa0 - [INDIRECT]-> __condvar_cleanup_waiting_88360
+  __condvar_cleanup_waiting_88360 - [syscall]-> futex
+
+Path to gettimeofday:
+  nis_lookup_caa0 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  nis_lookup_caa0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to rt_sigprocmask:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to time:
+  nis_lookup_caa0 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to geteuid:
+  nis_local_principal_c8e0 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to writev:
+  nis_lookup_caa0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to stat:
+  nis_lookup_caa0 - [DIRECT]-> __nisfind_server_9a70
+  __nisfind_server_9a70 - [DIRECT]-> __xstat_109530
+  __xstat_109530 - [syscall]-> stat
+
+Path to fcntl:
+  nis_lookup_caa0 - [DIRECT]-> __nisbind_connect_9370
+  __nisbind_connect_9370 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to getpid:
+  nis_lookup_caa0 - [DIRECT]-> __nisbind_connect_9370
+  __nisbind_connect_9370 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to sched_yield:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to close:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_close_80280
+  _IO_file_close_80280 - [DIRECT]-> __close_nocancel_fce60
+  __close_nocancel_fce60 - [syscall]-> close
+
+Path to munmap:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to read:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_read_81710
+  _IO_file_read_81710 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to lseek:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to clock_gettime:
+  nis_lookup_caa0 - [INDIRECT]-> _svcauth_des_13f180
+  _svcauth_des_13f180 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to exit_group:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to sendto:
+  nis_lookup_caa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to poll:
+  nis_lookup_caa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvmsg:
+  nis_lookup_caa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  nis_lookup_caa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to openat:
+  nis_lookup_caa0 - [INDIRECT]-> dfl_store_69d30
+  dfl_store_69d30 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to getuid:
+  nis_lookup_caa0 - [INDIRECT]-> expand_userid_70f20
+  expand_userid_70f20 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to unlink:
+  nis_lookup_caa0 - [INDIRECT]-> fcc_destroy_32c10
+  fcc_destroy_32c10 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to fchmod:
+  nis_lookup_caa0 - [INDIRECT]-> fcc_initialize_32de0
+  fcc_initialize_32de0 - [DIRECT]-> fchmod_f7d80
+  fchmod_f7d80 - [syscall]-> fchmod
+
+Path to rename:
+  nis_lookup_caa0 - [INDIRECT]-> fcc_replace_31810
+  fcc_replace_31810 - [DIRECT]-> rename_58a80
+  rename_58a80 - [syscall]-> rename
+
+Path to getsockname:
+  nis_lookup_caa0 - [INDIRECT]-> kpasswd_sendto_msg_callback_6fb90
+  kpasswd_sendto_msg_callback_6fb90 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to getrandom:
+  nis_lookup_caa0 - [INDIRECT]-> krb5int_arcfour_encrypt_8660
+  krb5int_arcfour_encrypt_8660 - [DIRECT]-> krb5_c_random_make_octets_ac90
+  krb5_c_random_make_octets_ac90 - [syscall]-> getrandom
+
+Path to add_key:
+  nis_lookup_caa0 - [INDIRECT]-> krcc_generate_new_37d40
+  krcc_generate_new_37d40 - [DIRECT]-> add_key_2330
+  add_key_2330 - [syscall]-> add_key
+
+Path to setsockopt:
+  nis_lookup_caa0 - [INDIRECT]-> readunix_140200
+  readunix_140200 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to accept:
+  nis_lookup_caa0 - [INDIRECT]-> rendezvous_request_19940
+  rendezvous_request_19940 - [DIRECT]-> accept_10a6e0
+  accept_10a6e0 - [syscall]-> accept
+
+Path to getsockopt:
+  nis_lookup_caa0 - [INDIRECT]-> service_tcp_connect_78c50
+  service_tcp_connect_78c50 - [DIRECT]-> getsockopt_10a8b0
+  getsockopt_10a8b0 - [syscall]-> getsockopt
+
+Path to mkdir:
+  nis_lookup_caa0 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to access:
+  nis_lookup_caa0 - [INDIRECT]-> userok_k5login_74a30
+  userok_k5login_74a30 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to uname:
+  nis_local_host_c820 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to mremap:
+  __create_ib_request_f7e0 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  __create_ib_request_f7e0 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to pread64:
+  yp_bind_6d00 - [DIRECT]-> __yp_bind.part.0_69d0
+  __yp_bind.part.0_69d0 - [DIRECT]-> pread_f63c0
+  pread_f63c0 - [syscall]-> pread64
+
+Path to mmap:
+  nis_free_directory_bf20 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to getegid:
+  nis_lookup_caa0 - [DIRECT]-> __nisbind_connect_9370
+  __nisbind_connect_9370 - [DIRECT]-> authunix_create_default_9bd0
+  authunix_create_default_9bd0 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgroups:
+  nis_lookup_caa0 - [DIRECT]-> __nisbind_connect_9370
+  __nisbind_connect_9370 - [DIRECT]-> authunix_create_default_9bd0
+  authunix_create_default_9bd0 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to dup:
+  nis_lookup_caa0 - [DIRECT]-> __nisbind_connect_9370
+  __nisbind_connect_9370 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to ioctl:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_doallocate_75840
+  _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to newfstatat:
+  nis_lookup_caa0 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to getdents64:
+  nis_lookup_caa0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to chmod:
+  nis_lookup_caa0 - [INDIRECT]-> dcc_resolve_2fe60
+  dcc_resolve_2fe60 - [DIRECT]-> write_primary_file_2f810
+  write_primary_file_2f810 - [DIRECT]-> chmod_f7d50
+  chmod_f7d50 - [syscall]-> chmod
+
+Path to flock:
+  nis_lookup_caa0 - [INDIRECT]-> fcc_initialize_32de0
+  fcc_initialize_32de0 - [DIRECT]-> krb5_lock_file_76890
+  krb5_lock_file_76890 - [DIRECT]-> flock_f8890
+  flock_f8890 - [syscall]-> flock
+
+Path to socket:
+  nis_lookup_caa0 - [INDIRECT]-> kcm_gen_new_34bb0
+  kcm_gen_new_34bb0 - [DIRECT]-> kcmio_unix_socket_connect.isra.0_332b0
+  kcmio_unix_socket_connect.isra.0_332b0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to connect:
+  nis_lookup_caa0 - [INDIRECT]-> kcm_gen_new_34bb0
+  kcm_gen_new_34bb0 - [DIRECT]-> kcmio_unix_socket_connect.isra.0_332b0
+  kcmio_unix_socket_connect.isra.0_332b0 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to fsync:
+  nis_lookup_caa0 - [INDIRECT]-> krb5_ktfile_add_3aee0
+  krb5_ktfile_add_3aee0 - [DIRECT]-> k5_sync_disk_file_73430
+  k5_sync_disk_file_73430 - [DIRECT]-> fsync_fec10
+  fsync_fec10 - [syscall]-> fsync
+
+Path to keyctl:
+  nis_lookup_caa0 - [INDIRECT]-> krcc_destroy_373d0
+  krcc_destroy_373d0 - [DIRECT]-> keyctl_clear_24d0
+  keyctl_clear_24d0 - [DIRECT]-> keyctl_2390
+  keyctl_2390 - [syscall]-> keyctl
+
+Path to bind:
+  nis_lookup_caa0 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to sendmsg:
+  nis_lookup_caa0 - [INDIRECT]-> writeunix_140180
+  writeunix_140180 - [DIRECT]-> __msgwrite_140070
+  __msgwrite_140070 - [DIRECT]-> sendmsg_10ac00
+  sendmsg_10ac00 - [syscall]-> sendmsg
+
+Path to getcwd:
+  nis_local_principal_c8e0 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to mprotect:
+  nis_lookup_caa0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  nis_lookup_caa0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to tgkill:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  nis_lookup_caa0 - [INDIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to getgid:
+  nis_lookup_caa0 - [INDIRECT]-> gssint_mechglue_init__aux_167c0
+  gssint_mechglue_init__aux_167c0 - [DIRECT]-> add_error_table_2780
+  add_error_table_2780 - [DIRECT]-> init_debug_2340
+  init_debug_2340 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to prctl:
+  nis_lookup_caa0 - [INDIRECT]-> gssint_mechglue_init__aux_167c0
+  gssint_mechglue_init__aux_167c0 - [DIRECT]-> add_error_table_2780
+  add_error_table_2780 - [DIRECT]-> init_debug_2340
+  init_debug_2340 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to getpeername:
+  nis_lookup_caa0 - [INDIRECT]-> iakerb_gss_accept_sec_context_27e90
+  iakerb_gss_accept_sec_context_27e90 - [DIRECT]-> krb5_sendto_kdc_79a10
+  krb5_sendto_kdc_79a10 - [DIRECT]-> k5_sendto_78de0
+  k5_sendto_78de0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to prlimit64:
+  nis_lookup_caa0 - [INDIRECT]-> rendezvous_request_19940
+  rendezvous_request_19940 - [DIRECT]-> __EI__rpc_dtablesize_13b260
+  __EI__rpc_dtablesize_13b260 - [DIRECT]-> getdtablesize_fe5d0
+  getdtablesize_fe5d0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to sched_getparam:
+  yp_bind_6d00 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  yp_bind_6d00 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  yp_bind_6d00 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  yp_bind_6d00 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  yp_bind_6d00 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to sendmmsg:
+  nis_lookup_caa0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to listen:
+  nis_list_fc40 - [DIRECT]-> __nis_create_callback_8a30
+  __nis_create_callback_8a30 - [DIRECT]-> svctcp_create_12e20
+  svctcp_create_12e20 - [DIRECT]-> svc_com_create_12bb0
+  svc_com_create_12bb0 - [DIRECT]-> svc_tli_create_17d50
+  svc_tli_create_17d50 - [DIRECT]-> listen_10a8e0
+  listen_10a8e0 - [syscall]-> listen
+
+Path to brk:
+  nis_free_directory_bf20 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to readv:
+  taddr2host_7e60 - [DIRECT]-> getnameinfo_1209e0
+  getnameinfo_1209e0 - [DIRECT]-> getservbyport_r@@GLIBC_2.2.5_11b9e0
+  getservbyport_r@@GLIBC_2.2.5_11b9e0 - [DIRECT]-> __nscd_getservbyport_r_14b340
+  __nscd_getservbyport_r_14b340 - [DIRECT]-> nscd_getserv_r_14aa50
+  nscd_getserv_r_14aa50 - [DIRECT]-> __readvall_14bec0
+  __readvall_14bec0 - [DIRECT]-> readv_fddb0
+  readv_fddb0 - [syscall]-> readv
+
+Path to readlink:
+  nis_lookup_caa0 - [INDIRECT]-> gss_indicate_mechs_1a430
+  gss_indicate_mechs_1a430 - [DIRECT]-> updateMechList_1a000
+  updateMechList_1a000 - [DIRECT]-> glob64@@GLIBC_2.27_d7640
+  glob64@@GLIBC_2.27_d7640 - [DIRECT]-> getlogin_r_14cd40
+  getlogin_r_14cd40 - [DIRECT]-> getlogin_r_fd0_14c970
+  getlogin_r_fd0_14c970 - [DIRECT]-> ttyname_r_f9670
+  ttyname_r_f9670 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to clock_nanosleep:
+  nis_lookup_caa0 - [INDIRECT]-> rendezvous_request_19940
+  rendezvous_request_19940 - [DIRECT]-> makefd_xprt_18ed0
+  makefd_xprt_18ed0 - [DIRECT]-> __rpc_sockinfo2netid_12070
+  __rpc_sockinfo2netid_12070 - [DIRECT]-> getnetconfigent_fbb0
+  getnetconfigent_fbb0 - [DIRECT]-> sleep_d3d50
+  sleep_d3d50 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to sysinfo:
+  nis_lookup_caa0 - [INDIRECT]-> gss_indicate_mechs_1a430
+  gss_indicate_mechs_1a430 - [DIRECT]-> updateMechList_1a000
+  updateMechList_1a000 - [DIRECT]-> glob64@@GLIBC_2.27_d7640
+  glob64@@GLIBC_2.27_d7640 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to alarm:
+  nis_lookup_caa0 - [INDIRECT]-> gss_indicate_mechs_1a430
+  gss_indicate_mechs_1a430 - [DIRECT]-> updateMechList_1a000
+  updateMechList_1a000 - [DIRECT]-> glob64@@GLIBC_2.27_d7640
+  glob64@@GLIBC_2.27_d7640 - [DIRECT]-> getlogin_r_14cd40
+  getlogin_r_14cd40 - [DIRECT]-> getlogin_r_fd0_14c970
+  getlogin_r_fd0_14c970 - [DIRECT]-> __libc_getutline_r_14d840
+  __libc_getutline_r_14d840 - [DIRECT]-> try_file_lock_14d1d0
+  try_file_lock_14d1d0 - [DIRECT]-> alarm_d3d20
+  alarm_d3d20 - [syscall]-> alarm
+
+Path to link:
+  nis_lookup_caa0 - [INDIRECT]-> gss_krb5int_copy_ccache_24d20
+  gss_krb5int_copy_ccache_24d20 - [DIRECT]-> krb5_free_context_4f670
+  krb5_free_context_4f670 - [DIRECT]-> k5_os_free_context_73390
+  k5_os_free_context_73390 - [DIRECT]-> profile_release_81100
+  profile_release_81100 - [DIRECT]-> profile_close_file_7dc50
+  profile_close_file_7dc50 - [DIRECT]-> profile_flush_file_data_7d7e0
+  profile_flush_file_data_7d7e0 - [DIRECT]-> write_data_to_file_7d130
+  write_data_to_file_7d130 - [DIRECT]-> link_f99f0
+  link_f99f0 - [syscall]-> link
+
+Path to sync:
+  nis_lookup_caa0 - [INDIRECT]-> gss_krb5int_copy_ccache_24d20
+  gss_krb5int_copy_ccache_24d20 - [DIRECT]-> krb5_free_context_4f670
+  krb5_free_context_4f670 - [DIRECT]-> k5_os_free_context_73390
+  k5_os_free_context_73390 - [DIRECT]-> profile_release_81100
+  profile_release_81100 - [DIRECT]-> profile_close_file_7dc50
+  profile_close_file_7dc50 - [DIRECT]-> profile_flush_file_data_7d7e0
+  profile_flush_file_data_7d7e0 - [DIRECT]-> write_data_to_file_7d130
+  write_data_to_file_7d130 - [DIRECT]-> sync_feca0
+  sync_feca0 - [syscall]-> sync

@@ -1,0 +1,4 @@
+=== jnr-ffi Native Binding Hits ===
+Format: interface | lib | symbol | apiPattern | jar
+
+com.datastax.driver.core.Native$LibCLoader$LibC | libc.so.6 | gettimeofday | LibraryLoader.create().load(String) | cassandra-driver-core-3.12.1-shaded.jar

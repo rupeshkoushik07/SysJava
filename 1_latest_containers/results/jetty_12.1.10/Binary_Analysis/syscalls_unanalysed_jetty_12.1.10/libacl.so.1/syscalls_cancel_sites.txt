@@ -1,0 +1,14 @@
+wait4 11cdb0 module-libc.so.6 wait4 61
+close 122fa0 module-libc.so.6 close 3
+open 127bd0 module-libc.so.6 openat 257
+openat 127cd0 module-libc.so.6 openat 257
+poll 127e30 module-libc.so.6 poll 7
+read 128390 module-libc.so.6 read 0
+write 128e50 module-libc.so.6 write 1
+readv 134520 module-libc.so.6 readv 19
+writev 137430 module-libc.so.6 writev 20
+connect 139160 module-libc.so.6 connect 42
+recvfrom 139370 module-libc.so.6 recvfrom 45
+recvmsg 1393c0 module-libc.so.6 recvmsg 47
+send 1393f0 module-libc.so.6 sendto 44
+sendmmsg 139420 module-libc.so.6 sendmmsg 307

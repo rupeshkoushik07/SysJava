@@ -1,0 +1,382 @@
+
+Path to getpid:
+  blkid_partlist_devno_to_partition_196f0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to openat:
+  blkid_verify_15440 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to close:
+  blkid_verify_15440 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to access:
+  blkid_get_dev_bb10 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to gettimeofday:
+  blkid_free_probe_11de0 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  blkid_free_probe_11de0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  blkid_free_probe_11de0 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to time:
+  blkid_free_probe_11de0 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to fadvise64:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> posix_fadvise_fc3c0
+  posix_fadvise_fc3c0 - [syscall]-> fadvise64
+
+Path to ioctl:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to fcntl:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to lseek:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to read:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to getuid:
+  blkid_init_debug_a0a0 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to geteuid:
+  blkid_init_debug_a0a0 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getgid:
+  blkid_init_debug_a0a0 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to getegid:
+  blkid_init_debug_a0a0 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to write:
+  blkid_do_wipe_10800 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to fsync:
+  blkid_do_wipe_10800 - [DIRECT]-> fsync_fec10
+  fsync_fec10 - [syscall]-> fsync
+
+Path to newfstatat:
+  blkid_verify_15440 - [DIRECT]-> stat_f77e0
+  stat_f77e0 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to writev:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to sched_yield:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to munmap:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to pipe2:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> pipe_f8b00
+  pipe_f8b00 - [syscall]-> pipe2
+
+Path to setgid:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> setgid_d55f0
+  setgid_d55f0 - [syscall]-> setgid
+
+Path to setuid:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> setuid_d5570
+  setuid_d5570 - [syscall]-> setuid
+
+Path to dup2:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> dup2_f8aa0
+  dup2_f8aa0 - [syscall]-> dup2
+
+Path to mkdir:
+  blkid_free_probe_11de0 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to readlink:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> ul_reopen_29430
+  ul_reopen_29430 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to unlink:
+  blkid_put_cache_a880 - [DIRECT]-> blkid_flush_cache_13d30
+  blkid_flush_cache_13d30 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to link:
+  blkid_put_cache_a880 - [DIRECT]-> blkid_flush_cache_13d30
+  blkid_flush_cache_13d30 - [DIRECT]-> link_f99f0
+  link_f99f0 - [syscall]-> link
+
+Path to rename:
+  blkid_put_cache_a880 - [DIRECT]-> blkid_flush_cache_13d30
+  blkid_flush_cache_13d30 - [DIRECT]-> rename_58a80
+  rename_58a80 - [syscall]-> rename
+
+Path to fchmod:
+  blkid_put_cache_a880 - [DIRECT]-> blkid_flush_cache_13d30
+  blkid_flush_cache_13d30 - [DIRECT]-> fchmod_f7d80
+  fchmod_f7d80 - [syscall]-> fchmod
+
+Path to clock_nanosleep:
+  blkid_do_wipe_10800 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to madvise:
+  blkid_partlist_devno_to_partition_196f0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to mmap:
+  blkid_partlist_devno_to_partition_196f0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to getcwd:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to faccessat2:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to rt_sigprocmask:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to getrandom:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to getdents64:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> blkid__scan_dir_d270
+  blkid__scan_dir_d270 - [DIRECT]-> readdir_d0080
+  readdir_d0080 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to mremap:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
+  mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to pread64:
+  blkid_free_probe_11de0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to clone:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> fork_d3e80
+  fork_d3e80 - [DIRECT]-> _Fork_d4330
+  _Fork_d4330 - [syscall]-> clone
+
+Path to set_robust_list:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> fork_d3e80
+  fork_d3e80 - [DIRECT]-> _Fork_d4330
+  _Fork_d4330 - [syscall]-> set_robust_list
+
+Path to tgkill:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> setgid_d55f0
+  setgid_d55f0 - [DIRECT]-> __nptl_setxid_86860
+  __nptl_setxid_86860 - [syscall]-> tgkill
+
+Path to execve:
+  blkid_free_probe_11de0 - [INDIRECT]-> probe_dm_tp_25cb0
+  probe_dm_tp_25cb0 - [DIRECT]-> execv_d4c20
+  execv_d4c20 - [DIRECT]-> execve_d4ad0
+  execve_d4ad0 - [syscall]-> execve
+
+Path to readlinkat:
+  blkid_probe_set_device_11ee0 - [DIRECT]-> sysfs_chrdev_devno_to_devname_3d140
+  sysfs_chrdev_devno_to_devname_3d140 - [DIRECT]-> ul_path_readlink_39630
+  ul_path_readlink_39630 - [DIRECT]-> readlinkat_f9ae0
+  readlinkat_f9ae0 - [syscall]-> readlinkat
+
+Path to prctl:
+  blkid_get_cache_a720 - [DIRECT]-> blkid_get_cache_filename_a5f0
+  blkid_get_cache_filename_a5f0 - [DIRECT]-> safe_getenv_28c20
+  safe_getenv_28c20 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to prlimit64:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to mprotect:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to exit_group:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to sched_getaffinity:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to dup:
+  blkid_probe_all_removable_cff0 - [DIRECT]-> sysfs_probe_all_c2b0
+  sysfs_probe_all_c2b0 - [DIRECT]-> ul_path_opendir_39450
+  ul_path_opendir_39450 - [DIRECT]-> dup_fd_cloexec_28f70
+  dup_fd_cloexec_28f70 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to getgroups:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to sysinfo:
+  blkid_get_dev_bb10 - [DIRECT]-> canonicalize_path_27e70
+  canonicalize_path_27e70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to rt_sigaction:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to brk:
+  blkid_partlist_devno_to_partition_196f0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to gettid:
+  blkid_devno_to_devname_d4e0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to sched_getparam:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  blkid_free_probe_11de0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min

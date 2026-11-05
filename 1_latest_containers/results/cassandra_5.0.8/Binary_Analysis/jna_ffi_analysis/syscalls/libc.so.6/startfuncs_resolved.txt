@@ -1,0 +1,16 @@
+close
+fcntl
+fsync
+getpid
+gettimeofday
+mlockall
+msvcrt
+munlockall
+open
+posix_fadvise
+sched_getaffinity@@GLIBC_2.3.4
+sched_getcpu
+sched_setaffinity@@GLIBC_2.3.4
+strerror
+syscall
+uname

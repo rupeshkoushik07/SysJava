@@ -1,0 +1,436 @@
+
+Path to futex:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> __condvar_cleanup_waiting_88360
+  __condvar_cleanup_waiting_88360 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to read:
+  p11_kit_remote_serve_module_35400 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to write:
+  p11_kit_remote_serve_module_35400 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to openat:
+  p11_kit_pin_file_callback_49de0 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to close:
+  p11_kit_pin_file_callback_49de0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to getpid:
+  p11_kit_modules_release_48d40 - [DIRECT]-> p11_debug_message_c06b0
+  p11_debug_message_c06b0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to munmap:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to lseek:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to rt_sigprocmask:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to writev:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to unlink:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> open_temp_exec_file_dir_2ed0
+  open_temp_exec_file_dir_2ed0 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to memfd_create:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> open_temp_exec_file_memfd_2d90
+  open_temp_exec_file_memfd_2d90 - [DIRECT]-> memfd_create_10a210
+  memfd_create_10a210 - [syscall]-> memfd_create
+
+Path to mremap:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to mkdir:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to ioctl:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _IO_file_doallocate_75840
+  _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to newfstatat:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to mmap:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_80900
+  _IO_file_underflow_maybe_mmap_80900 - [DIRECT]-> decide_maybe_mmap_80740
+  decide_maybe_mmap_80740 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to getdents64:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to exit_group:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to getrandom:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to access:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> open_temp_exec_file_mnt_30a0
+  open_temp_exec_file_mnt_30a0 - [DIRECT]-> open_temp_exec_file_mnt.part.0_2fc0
+  open_temp_exec_file_mnt.part.0_2fc0 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to kill:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> rpc_exec_free_4ba40
+  rpc_exec_free_4ba40 - [DIRECT]-> rpc_exec_wait_or_terminate_4b000
+  rpc_exec_wait_or_terminate_4b000 - [DIRECT]-> kill_3c260
+  kill_3c260 - [syscall]-> kill
+
+Path to getcwd:
+  p11_kit_module_initialize_49410 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to getuid:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> load_registered_modules_unlocked_475d0
+  load_registered_modules_unlocked_475d0 - [DIRECT]-> _p11_conf_load_globals_36ba0
+  _p11_conf_load_globals_36ba0 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to sched_getparam:
+  p11_kit_modules_release_48d40 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  p11_kit_modules_release_48d40 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  p11_kit_modules_release_48d40 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  p11_kit_modules_release_48d40 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  p11_kit_modules_release_48d40 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to rt_sigaction:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to clock_nanosleep:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> rpc_exec_free_4ba40
+  rpc_exec_free_4ba40 - [DIRECT]-> rpc_exec_wait_or_terminate_4b000
+  rpc_exec_wait_or_terminate_4b000 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to wait4:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> rpc_exec_free_4ba40
+  rpc_exec_free_4ba40 - [DIRECT]-> rpc_exec_wait_or_terminate_4b000
+  rpc_exec_wait_or_terminate_4b000 - [DIRECT]-> waitpid_d3b90
+  waitpid_d3b90 - [DIRECT]-> wait4_d3bc0
+  wait4_d3bc0 - [syscall]-> wait4
+
+Path to prlimit64:
+  p11_kit_registered_modules_47f40 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to poll:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to sendto:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> send_10ab40
+  send_10ab40 - [syscall]-> sendto
+
+Path to recvfrom:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to sendmmsg:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to socket:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to connect:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to getpeername:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to tgkill:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> ffi_closure_unix64_70c8
+  ffi_closure_unix64_70c8 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to statfs:
+  p11_kit_remote_serve_tokens_357d0 - [DIRECT]-> p11_virtual_wrap_bd300
+  p11_virtual_wrap_bd300 - [DIRECT]-> bind_ffi_closure_5bcd0
+  bind_ffi_closure_5bcd0 - [DIRECT]-> ffi_closure_alloc_44d0
+  ffi_closure_alloc_44d0 - [DIRECT]-> dlmmap.constprop.0_3f60
+  dlmmap.constprop.0_3f60 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to ftruncate:
+  p11_kit_remote_serve_tokens_357d0 - [DIRECT]-> p11_virtual_wrap_bd300
+  p11_virtual_wrap_bd300 - [DIRECT]-> bind_ffi_closure_5bcd0
+  bind_ffi_closure_5bcd0 - [DIRECT]-> ffi_closure_alloc_44d0
+  ffi_closure_alloc_44d0 - [DIRECT]-> dlmmap.constprop.0_3f60
+  dlmmap.constprop.0_3f60 - [DIRECT]-> ftruncate_100050
+  ftruncate_100050 - [syscall]-> ftruncate
+
+Path to fcntl:
+  p11_kit_module_initialize_49410 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [DIRECT]-> fdopendir_d03b0
+  fdopendir_d03b0 - [DIRECT]-> __fcntl64_nocancel_fce90
+  __fcntl64_nocancel_fce90 - [syscall]-> fcntl
+
+Path to readlink:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to faccessat2:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to sysinfo:
+  p11_kit_registered_modules_47f40 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to brk:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to geteuid:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getegid:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to uname:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __resolv_context_get_130c20
+  __resolv_context_get_130c20 - [DIRECT]-> maybe_init_130aa0
+  maybe_init_130aa0 - [DIRECT]-> __res_vinit_12bf90
+  __res_vinit_12bf90 - [DIRECT]-> __resolv_conf_load_12b1c0
+  __resolv_conf_load_12b1c0 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to setsockopt:
+  p11_kit_iter_destroy_object_38180 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> reopen_12e420
+  reopen_12e420 - [DIRECT]-> __res_enable_icmp_12a2d0
+  __res_enable_icmp_12a2d0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to getgroups:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> is_module_enabled_unlocked_469d0
+  is_module_enabled_unlocked_469d0 - [DIRECT]-> _p11_get_progname_unlocked_361c0
+  _p11_get_progname_unlocked_361c0 - [DIRECT]-> getprogname_bfb70
+  getprogname_bfb70 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
+  realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to recvmsg:
+  p11_kit_initialize_registered_47cf0 - [DIRECT]-> load_registered_modules_unlocked_475d0
+  load_registered_modules_unlocked_475d0 - [DIRECT]-> _p11_conf_load_globals_36ba0
+  _p11_conf_load_globals_36ba0 - [DIRECT]-> p11_path_expand_c24b0
+  p11_path_expand_c24b0 - [DIRECT]-> expand_homedir_c22c0
+  expand_homedir_c22c0 - [DIRECT]-> getpwuid_r@@GLIBC_2.2.5_d3510
+  getpwuid_r@@GLIBC_2.2.5_d3510 - [DIRECT]-> __nscd_getpwuid_r_148f50
+  __nscd_getpwuid_r_148f50 - [DIRECT]-> nscd_getpw_r_148b10
+  nscd_getpw_r_148b10 - [DIRECT]-> __nscd_get_map_ref_14c4d0
+  __nscd_get_map_ref_14c4d0 - [DIRECT]-> __nscd_get_mapping_14c0b0
+  __nscd_get_mapping_14c0b0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg

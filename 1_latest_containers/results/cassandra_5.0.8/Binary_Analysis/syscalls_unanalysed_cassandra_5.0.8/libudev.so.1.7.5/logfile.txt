@@ -1,0 +1,401 @@
+
+Path to access:
+  udev_queue_get_seqnum_is_finished_ba80 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to inotify_init1:
+  udev_queue_get_fd_bae0 - [DIRECT]-> inotify_init1_109dc0
+  inotify_init1_109dc0 - [syscall]-> inotify_init1
+
+Path to inotify_add_watch:
+  udev_queue_get_fd_bae0 - [DIRECT]-> inotify_add_watch_109d60
+  inotify_add_watch_109d60 - [syscall]-> inotify_add_watch
+
+Path to openat:
+  udev_device_set_sysattr_value_8750 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to mmap:
+  udev_hwdb_new_a3c0 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to setsockopt:
+  udev_monitor_filter_remove_b6e0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to bind:
+  udev_monitor_enable_receiving_aed0 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to pidfd_send_signal:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [syscall]-> pidfd_send_signal
+
+Path to getpid:
+  udev_enumerate_scan_devices_11ef0 - [DIRECT]-> _hashmap_free.part.0.constprop.0_1fe00
+  _hashmap_free.part.0.constprop.0_1fe00 - [DIRECT]-> getpid_cached_12830
+  getpid_cached_12830 - [syscall]-> getpid
+
+Path to gettid:
+  udev_enumerate_scan_devices_11ef0 - [DIRECT]-> _hashmap_free.part.0.constprop.0_1fe00
+  _hashmap_free.part.0.constprop.0_1fe00 - [DIRECT]-> gettid_10a2a0
+  gettid_10a2a0 - [syscall]-> gettid
+
+Path to clock_gettime:
+  udev_device_get_usec_since_initialized_85c0 - [DIRECT]-> now_19f70
+  now_19f70 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to recvfrom:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> recv_10a910
+  recv_10a910 - [syscall]-> recvfrom
+
+Path to recvmsg:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to ioctl:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to getuid:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to geteuid:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to ppoll:
+  udev_monitor_receive_device_10760 - [DIRECT]-> fd_wait_for_event.constprop.0_1f1d0
+  fd_wait_for_event.constprop.0_1f1d0 - [DIRECT]-> ppoll_fc2c0
+  ppoll_fc2c0 - [syscall]-> ppoll
+
+Path to close:
+  udev_queue_get_fd_bae0 - [DIRECT]-> safe_close_13370
+  safe_close_13370 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to faccessat2:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat2
+
+Path to faccessat:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [syscall]-> faccessat
+
+Path to newfstatat:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to read:
+  udev_queue_flush_bb90 - [DIRECT]-> flush_fd_128c0
+  flush_fd_128c0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to rt_sigreturn:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to writev:
+  udev_queue_new_b840 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to munmap:
+  udev_hwdb_unref_a9b0 - [DIRECT]-> sd_hwdb_unref.isra.0_20910
+  sd_hwdb_unref.isra.0_20910 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to fcntl:
+  udev_device_set_sysattr_value_8750 - [DIRECT]-> fdopen@@GLIBC_2.2.5_75ba0
+  fdopen@@GLIBC_2.2.5_75ba0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to getsockname:
+  udev_monitor_enable_receiving_aed0 - [DIRECT]-> monitor_set_nl_address_7000
+  monitor_set_nl_address_7000 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to socket:
+  udev_monitor_new_from_netlink_ad40 - [DIRECT]-> device_monitor_new_full.constprop.0_1da80
+  device_monitor_new_full.constprop.0_1da80 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to statx:
+  udev_monitor_new_from_netlink_ad40 - [DIRECT]-> device_monitor_new_full.constprop.0_1da80
+  device_monitor_new_full.constprop.0_1da80 - [DIRECT]-> statx_f7b30
+  statx_f7b30 - [syscall]-> statx
+
+Path to name_to_handle_at:
+  udev_monitor_new_from_netlink_ad40 - [DIRECT]-> device_monitor_new_full.constprop.0_1da80
+  device_monitor_new_full.constprop.0_1da80 - [DIRECT]-> name_to_handle_at_10a1b0
+  name_to_handle_at_10a1b0 - [syscall]-> name_to_handle_at
+
+Path to getsockopt:
+  udev_monitor_set_receive_buffer_size_b170 - [DIRECT]-> fd_set_rcvbuf.constprop.0_1a780
+  fd_set_rcvbuf.constprop.0_1a780 - [DIRECT]-> getsockopt_10a8b0
+  getsockopt_10a8b0 - [syscall]-> getsockopt
+
+Path to rt_sigprocmask:
+  udev_queue_ref_b890 - [DIRECT]-> log_assert_failed_12a70
+  log_assert_failed_12a70 - [DIRECT]-> log_assert_failed.cold_5835
+  log_assert_failed.cold_5835 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to waitid:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [DIRECT]-> waitid_d3c70
+  waitid_d3c70 - [syscall]-> waitid
+
+Path to kill:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [DIRECT]-> kill_3c260
+  kill_3c260 - [syscall]-> kill
+
+Path to madvise:
+  udev_monitor_unref_b270 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to statfs:
+  udev_monitor_receive_device_10760 - [DIRECT]-> device_monitor_receive_device_f150
+  device_monitor_receive_device_f150 - [DIRECT]-> proc_mounted_19a40
+  proc_mounted_19a40 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to lseek:
+  udev_device_get_parent_with_subsystem_devtype_10940 - [DIRECT]-> device_read_uevent_file_e950
+  device_read_uevent_file_e950 - [DIRECT]-> read_virtual_file_at.constprop.0_1d2d0
+  read_virtual_file_at.constprop.0_1d2d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to getegid:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to getgid:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to write:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to prlimit64:
+  udev_monitor_filter_add_match_subsystem_devtype_b3b0 - [DIRECT]-> hashmap_base_ensure_allocated.lto_priv.0_13e30
+  hashmap_base_ensure_allocated.lto_priv.0_13e30 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to getrandom:
+  udev_queue_new_b840 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to mremap:
+  udev_device_set_sysattr_value_8750 - [DIRECT]-> path_extend_internal_18180
+  path_extend_internal_18180 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to fstatfs:
+  udev_enumerate_add_syspath_a2d0 - [DIRECT]-> device_new_from_syspath.constprop.0_1b2b0
+  device_new_from_syspath.constprop.0_1b2b0 - [DIRECT]-> device_set_syspath_c960
+  device_set_syspath_c960 - [DIRECT]-> fstatfs_f7c30
+  fstatfs_f7c30 - [syscall]-> fstatfs
+
+Path to exit_group:
+  udev_queue_ref_b890 - [DIRECT]-> log_assert_failed_12a70
+  log_assert_failed_12a70 - [DIRECT]-> log_assert_failed.cold_5835
+  log_assert_failed.cold_5835 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  udev_queue_ref_b890 - [DIRECT]-> log_assert_failed_12a70
+  log_assert_failed_12a70 - [DIRECT]-> log_assert_failed.cold_5835
+  log_assert_failed.cold_5835 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to epoll_ctl:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [DIRECT]-> source_disconnect_15f20
+  source_disconnect_15f20 - [DIRECT]-> epoll_ctl_109c10
+  epoll_ctl_109c10 - [syscall]-> epoll_ctl
+
+Path to inotify_rm_watch:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [DIRECT]-> source_disconnect_15f20
+  source_disconnect_15f20 - [DIRECT]-> inotify_rm_watch_109df0
+  inotify_rm_watch_109df0 - [syscall]-> inotify_rm_watch
+
+Path to readlinkat:
+  udev_device_get_driver_7270 - [DIRECT]-> sd_device_get_driver_19350
+  sd_device_get_driver_19350 - [DIRECT]-> readlink_value_18e30
+  readlink_value_18e30 - [DIRECT]-> readlinkat_malloc_135a0
+  readlinkat_malloc_135a0 - [DIRECT]-> readlinkat_f9ae0
+  readlinkat_f9ae0 - [syscall]-> readlinkat
+
+Path to getdents64:
+  udev_enumerate_scan_devices_11ef0 - [DIRECT]-> parent_crawl_children_11d30
+  parent_crawl_children_11d30 - [DIRECT]-> readdir_ensure_type_12e80
+  readdir_ensure_type_12e80 - [DIRECT]-> readdir_d0080
+  readdir_d0080 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to getgroups:
+  udev_device_get_sysattr_list_entry_8b10 - [DIRECT]-> device_sysattrs_read_all_internal.lto_priv.0_1cea0
+  device_sysattrs_read_all_internal.lto_priv.0_1cea0 - [DIRECT]-> faccessat_f8580
+  faccessat_f8580 - [DIRECT]-> group_member_d5670
+  group_member_d5670 - [DIRECT]-> getgroups_d5540
+  getgroups_d5540 - [syscall]-> getgroups
+
+Path to pread64:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to sched_getaffinity:
+  udev_monitor_filter_add_match_subsystem_devtype_b3b0 - [DIRECT]-> hashmap_base_ensure_allocated.lto_priv.0_13e30
+  hashmap_base_ensure_allocated.lto_priv.0_13e30 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_nprocs_conf_104380
+  get_nprocs_conf_104380 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  udev_monitor_filter_add_match_subsystem_devtype_b3b0 - [DIRECT]-> hashmap_base_ensure_allocated.lto_priv.0_13e30
+  hashmap_base_ensure_allocated.lto_priv.0_13e30 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to mprotect:
+  udev_queue_new_b840 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to rt_sigaction:
+  udev_queue_ref_b890 - [DIRECT]-> log_assert_failed_12a70
+  log_assert_failed_12a70 - [DIRECT]-> log_assert_failed.cold_5835
+  log_assert_failed.cold_5835 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to getcwd:
+  udev_monitor_filter_add_match_subsystem_devtype_b3b0 - [DIRECT]-> hashmap_base_ensure_allocated.lto_priv.0_13e30
+  hashmap_base_ensure_allocated.lto_priv.0_13e30 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to tgkill:
+  udev_queue_ref_b890 - [DIRECT]-> log_assert_failed_12a70
+  log_assert_failed_12a70 - [DIRECT]-> log_assert_failed.cold_5835
+  log_assert_failed.cold_5835 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to signalfd4:
+  udev_monitor_unref_b270 - [DIRECT]-> device_monitor_free.isra.0_20b80
+  device_monitor_free.isra.0_20b80 - [DIRECT]-> sd_event_source_unref_16ba0
+  sd_event_source_unref_16ba0 - [DIRECT]-> source_disconnect_15f20
+  source_disconnect_15f20 - [DIRECT]-> event_gc_signal_data_15e10
+  event_gc_signal_data_15e10 - [DIRECT]-> event_unmask_signal_data_15c80
+  event_unmask_signal_data_15c80 - [DIRECT]-> signalfd_108dc0
+  signalfd_108dc0 - [syscall]-> signalfd4
+
+Path to brk:
+  udev_monitor_unref_b270 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to sched_getparam:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  udev_enumerate_add_match_parent_a060 - [DIRECT]-> _hashmap_clear.constprop.0_1fce0
+  _hashmap_clear.constprop.0_1fce0 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min

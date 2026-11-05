@@ -1,0 +1,400 @@
+
+Path to get_mempolicy:
+  get_mempolicy_7260 - [syscall]-> get_mempolicy
+
+Path to mbind:
+  mbind_7280 - [syscall]-> mbind
+
+Path to set_mempolicy:
+  set_mempolicy_72b0 - [syscall]-> set_mempolicy
+
+Path to sched_getaffinity:
+  numa_sched_getaffinity@@libnuma_1.2_7390 - [syscall]-> sched_getaffinity
+
+Path to move_pages:
+  move_pages_72f0 - [syscall]-> move_pages
+
+Path to sched_setaffinity:
+  numa_sched_setaffinity@@libnuma_1.2_7340 - [syscall]-> sched_setaffinity
+
+Path to migrate_pages:
+  migrate_pages_72d0 - [syscall]-> migrate_pages
+
+Path to mmap:
+  numa_alloc_4c90 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to mremap:
+  numa_realloc_4d10 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to munmap:
+  numa_free_5ca0 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to futex:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> __lll_lock_wake_private_86160
+  __lll_lock_wake_private_86160 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to writev:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to dup:
+  numa_error_42b0 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to close:
+  numa_error_42b0 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to madvise:
+  numa_bitmask_free_41b0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to openat:
+  numa_bitmask_free_41b0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> __open64_nocancel_fcfc0
+  __open64_nocancel_fcfc0 - [syscall]-> openat
+
+Path to read:
+  numa_bitmask_free_41b0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> __read_nocancel_fd100
+  __read_nocancel_fd100 - [syscall]-> read
+
+Path to sched_yield:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to lseek:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to readlink:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_class_78e0
+  affinity_class_78e0 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to socket:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to ioctl:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to getrandom:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to rt_sigprocmask:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to fcntl:
+  numa_error_42b0 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> fdopen@@GLIBC_2.2.5_75ba0
+  fdopen@@GLIBC_2.2.5_75ba0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to exit_group:
+  numa_error_42b0 - [DIRECT]-> exit_3e680
+  exit_3e680 - [DIRECT]-> __run_exit_handlers_3e3f0
+  __run_exit_handlers_3e3f0 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  numa_error_42b0 - [DIRECT]-> exit_3e680
+  exit_3e680 - [DIRECT]-> __run_exit_handlers_3e3f0
+  __run_exit_handlers_3e3f0 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to newfstatat:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to getdents64:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to connect:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to getsockname:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to sendto:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> rtnetlink_request_8470
+  rtnetlink_request_8470 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to recvfrom:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> rtnetlink_request_8470
+  rtnetlink_request_8470 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to bind:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to recvmsg:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to mprotect:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to getcwd:
+  numa_pagesize_44b0 - [DIRECT]-> getpagesize_fe590
+  getpagesize_fe590 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to rt_sigaction:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to brk:
+  numa_bitmask_free_41b0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to poll:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to sendmmsg:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to prlimit64:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to tgkill:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to sched_getparam:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to sysinfo:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to getpid:
+  numa_distance_73c0 - [DIRECT]-> calloc_996e0
+  calloc_996e0 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to uname:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __resolv_context_get_130c20
+  __resolv_context_get_130c20 - [DIRECT]-> maybe_init_130aa0
+  maybe_init_130aa0 - [DIRECT]-> __res_vinit_12bf90
+  __res_vinit_12bf90 - [DIRECT]-> __resolv_conf_load_12b1c0
+  __resolv_conf_load_12b1c0 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to setsockopt:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> reopen_12e420
+  reopen_12e420 - [DIRECT]-> __res_enable_icmp_12a2d0
+  __res_enable_icmp_12a2d0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to readv:
+  numa_warn_4380 - [DIRECT]-> fwrite_76ab0
+  fwrite_76ab0 - [INDIRECT]-> affinity_ip_7e90
+  affinity_ip_7e90 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> gethostbyname2_r@@GLIBC_2.2.5_118fb0
+  gethostbyname2_r@@GLIBC_2.2.5_118fb0 - [DIRECT]-> __nscd_gethostbyname2_r_149fd0
+  __nscd_gethostbyname2_r_149fd0 - [DIRECT]-> nscd_gethst_r_149720
+  nscd_gethst_r_149720 - [DIRECT]-> __readvall_14bec0
+  __readvall_14bec0 - [DIRECT]-> readv_fddb0
+  readv_fddb0 - [syscall]-> readv

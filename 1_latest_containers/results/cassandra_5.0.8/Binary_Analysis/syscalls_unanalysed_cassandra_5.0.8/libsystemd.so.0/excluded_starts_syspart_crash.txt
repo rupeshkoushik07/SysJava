@@ -1,0 +1,12 @@
+sd_journal_get_events	139
+sd_journal_get_fd	139
+sd_journal_get_timeout	139
+sd_journal_open	139
+sd_journal_open_container	139
+sd_journal_open_directory	139
+sd_journal_open_directory_fd	139
+sd_journal_open_files	139
+sd_journal_open_files_fd	139
+sd_journal_open_namespace	139
+sd_journal_process	139
+sd_journal_wait	139

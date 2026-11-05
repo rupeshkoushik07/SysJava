@@ -1,0 +1,416 @@
+
+Path to gettimeofday:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to time:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to getrandom:
+  krb5int_random_string_5daa0 - [DIRECT]-> krb5_c_random_make_octets_ac90
+  krb5_c_random_make_octets_ac90 - [syscall]-> getrandom
+
+Path to read:
+  krb5_net_read_769e0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to dup:
+  krb5_prompter_posix_76c50 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to fcntl:
+  krb5_prompter_posix_76c50 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to ioctl:
+  krb5_prompter_posix_76c50 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to close:
+  krb5_prompter_posix_76c50 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to getpid:
+  krb5int_trace_7bd40 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to flock:
+  krb5_lock_file_76890 - [DIRECT]-> flock_f8890
+  flock_f8890 - [syscall]-> flock
+
+Path to openat:
+  krb5_set_trace_filename_7bf00 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to getpeername:
+  krb5_auth_con_genaddrs_71600 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to getsockname:
+  krb5_auth_con_genaddrs_71600 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to writev:
+  krb5int_copy_data_contents_42ca0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to munmap:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to lseek:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to geteuid:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> dfl_store_69d30
+  dfl_store_69d30 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getuid:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> expand_userid_70f20
+  expand_userid_70f20 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to unlink:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> fcc_destroy_32c10
+  fcc_destroy_32c10 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to fchmod:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> fcc_initialize_32de0
+  fcc_initialize_32de0 - [DIRECT]-> fchmod_f7d80
+  fchmod_f7d80 - [syscall]-> fchmod
+
+Path to rename:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> fcc_replace_31810
+  fcc_replace_31810 - [DIRECT]-> rename_58a80
+  rename_58a80 - [syscall]-> rename
+
+Path to add_key:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krcc_generate_new_37d40
+  krcc_generate_new_37d40 - [DIRECT]-> add_key_2330
+  add_key_2330 - [syscall]-> add_key
+
+Path to getsockopt:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> service_tcp_connect_78c50
+  service_tcp_connect_78c50 - [DIRECT]-> getsockopt_10a8b0
+  getsockopt_10a8b0 - [syscall]-> getsockopt
+
+Path to recvfrom:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> service_udp_read_777b0
+  service_udp_read_777b0 - [DIRECT]-> recv_10a910
+  recv_10a910 - [syscall]-> recvfrom
+
+Path to mkdir:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to access:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> userok_k5login_74a30
+  userok_k5login_74a30 - [DIRECT]-> access_f8410
+  access_f8410 - [syscall]-> access
+
+Path to mremap:
+  k5_authind_decode_40170 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  k5_authind_decode_40170 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to rt_sigprocmask:
+  krb5_kt_get_entry_38f60 - [DIRECT]-> krb5_kt_get_entry.cold_25810
+  krb5_kt_get_entry.cold_25810 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to sendmsg:
+  krb5_net_write_76b90 - [DIRECT]-> krb5int_net_writev_76a50
+  krb5int_net_writev_76a50 - [DIRECT]-> sendmsg_10ac00
+  sendmsg_10ac00 - [syscall]-> sendmsg
+
+Path to rt_sigaction:
+  krb5_prompter_posix_76c50 - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to uname:
+  krb5_sname_to_principal_7a750 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to mmap:
+  krb5_cc_cache_match_2cb50 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to getcwd:
+  krb5_cc_cache_match_2cb50 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to clock_gettime:
+  krb5int_copy_data_contents_42ca0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to newfstatat:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to getdents64:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to chmod:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> dcc_resolve_2fe60
+  dcc_resolve_2fe60 - [DIRECT]-> write_primary_file_2f810
+  write_primary_file_2f810 - [DIRECT]-> chmod_f7d50
+  chmod_f7d50 - [syscall]-> chmod
+
+Path to socket:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> kcm_gen_new_34bb0
+  kcm_gen_new_34bb0 - [DIRECT]-> kcmio_unix_socket_connect.isra.0_332b0
+  kcmio_unix_socket_connect.isra.0_332b0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to connect:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> kcm_gen_new_34bb0
+  kcm_gen_new_34bb0 - [DIRECT]-> kcmio_unix_socket_connect.isra.0_332b0
+  kcmio_unix_socket_connect.isra.0_332b0 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to fsync:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krb5_ktfile_add_3aee0
+  krb5_ktfile_add_3aee0 - [DIRECT]-> k5_sync_disk_file_73430
+  k5_sync_disk_file_73430 - [DIRECT]-> fsync_fec10
+  fsync_fec10 - [syscall]-> fsync
+
+Path to keyctl:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krcc_destroy_373d0
+  krcc_destroy_373d0 - [DIRECT]-> keyctl_clear_24d0
+  keyctl_clear_24d0 - [DIRECT]-> keyctl_2390
+  keyctl_2390 - [syscall]-> keyctl
+
+Path to bind:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to sendto:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to recvmsg:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> rfc3484_sort_ee9b0
+  rfc3484_sort_ee9b0 - [DIRECT]-> __check_native_124c20
+  __check_native_124c20 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to exit_group:
+  krb5_kt_get_entry_38f60 - [DIRECT]-> krb5_kt_get_entry.cold_25810
+  krb5_kt_get_entry.cold_25810 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  krb5_kt_get_entry_38f60 - [DIRECT]-> krb5_kt_get_entry.cold_25810
+  krb5_kt_get_entry.cold_25810 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to setsockopt:
+  krb5_sendto_kdc_79a10 - [DIRECT]-> k5_sendto_78de0
+  k5_sendto_78de0 - [DIRECT]-> maybe_send_77ed0
+  maybe_send_77ed0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to link:
+  profile_flush_to_file_80e80 - [DIRECT]-> profile_flush_file_data_to_file_7d900
+  profile_flush_file_data_to_file_7d900 - [DIRECT]-> write_data_to_file_7d130
+  write_data_to_file_7d130 - [DIRECT]-> link_f99f0
+  link_f99f0 - [syscall]-> link
+
+Path to sync:
+  profile_flush_to_file_80e80 - [DIRECT]-> profile_flush_file_data_to_file_7d900
+  profile_flush_file_data_to_file_7d900 - [DIRECT]-> write_data_to_file_7d130
+  write_data_to_file_7d130 - [DIRECT]-> sync_feca0
+  sync_feca0 - [syscall]-> sync
+
+Path to mprotect:
+  krb5int_copy_data_contents_42ca0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  krb5int_copy_data_contents_42ca0 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to getgid:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krb5int_lib_init__aux_259c0
+  krb5int_lib_init__aux_259c0 - [DIRECT]-> add_error_table_2780
+  add_error_table_2780 - [DIRECT]-> init_debug_2340
+  init_debug_2340 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to getegid:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krb5int_lib_init__aux_259c0
+  krb5int_lib_init__aux_259c0 - [DIRECT]-> add_error_table_2780
+  add_error_table_2780 - [DIRECT]-> init_debug_2340
+  init_debug_2340 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to prctl:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> krb5int_lib_init__aux_259c0
+  krb5int_lib_init__aux_259c0 - [DIRECT]-> add_error_table_2780
+  add_error_table_2780 - [DIRECT]-> init_debug_2340
+  init_debug_2340 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to poll:
+  krb5_sendto_kdc_79a10 - [DIRECT]-> k5_sendto_78de0
+  k5_sendto_78de0 - [DIRECT]-> service_fds_77ad0
+  service_fds_77ad0 - [DIRECT]-> __poll_chk_118170
+  __poll_chk_118170 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to sched_get_priority_max:
+  profile_init_flags_81190 - [DIRECT]-> k5_os_mutex_init_38f0
+  k5_os_mutex_init_38f0 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_8ba80
+  pthread_mutex_init@@GLIBC_2.2.5_8ba80 - [DIRECT]-> __init_sched_fifo_prio_90e30
+  __init_sched_fifo_prio_90e30 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  profile_init_flags_81190 - [DIRECT]-> k5_os_mutex_init_38f0
+  k5_os_mutex_init_38f0 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_8ba80
+  pthread_mutex_init@@GLIBC_2.2.5_8ba80 - [DIRECT]-> __init_sched_fifo_prio_90e30
+  __init_sched_fifo_prio_90e30 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to sendmmsg:
+  krb5_cc_resolve_2ba50 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to tgkill:
+  krb5_kt_get_entry_38f60 - [DIRECT]-> krb5_kt_get_entry.cold_25810
+  krb5_kt_get_entry.cold_25810 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  krb5_kt_get_entry_38f60 - [DIRECT]-> krb5_kt_get_entry.cold_25810
+  krb5_kt_get_entry.cold_25810 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to sched_getparam:
+  krb5_crypto_us_timeofday_6f860 - [DIRECT]-> k5_os_mutex_lock_39d0
+  k5_os_mutex_lock_39d0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  krb5_crypto_us_timeofday_6f860 - [DIRECT]-> k5_os_mutex_lock_39d0
+  k5_os_mutex_lock_39d0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  krb5_crypto_us_timeofday_6f860 - [DIRECT]-> k5_os_mutex_lock_39d0
+  k5_os_mutex_lock_39d0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to brk:
+  krb5_cc_cache_match_2cb50 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to prlimit64:
+  krb5_os_localaddr_73b00 - [DIRECT]-> k5_os_hostaddr_71860
+  k5_os_hostaddr_71860 - [DIRECT]-> krb5int_getaddrinfo_5790
+  krb5int_getaddrinfo_5790 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to sysinfo:
+  krb5_os_localaddr_73b00 - [DIRECT]-> k5_os_hostaddr_71860
+  k5_os_hostaddr_71860 - [DIRECT]-> krb5int_getaddrinfo_5790
+  krb5int_getaddrinfo_5790 - [DIRECT]-> getaddrinfo_efc70
+  getaddrinfo_efc70 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to readv:
+  krb5int_trace_7bd40 - [DIRECT]-> trace_format_7ad10
+  trace_format_7ad10 - [DIRECT]-> getnameinfo_1209e0
+  getnameinfo_1209e0 - [DIRECT]-> getservbyport_r@@GLIBC_2.2.5_11b9e0
+  getservbyport_r@@GLIBC_2.2.5_11b9e0 - [DIRECT]-> __nscd_getservbyport_r_14b340
+  __nscd_getservbyport_r_14b340 - [DIRECT]-> nscd_getserv_r_14aa50
+  nscd_getserv_r_14aa50 - [DIRECT]-> __readvall_14bec0
+  __readvall_14bec0 - [DIRECT]-> readv_fddb0
+  readv_fddb0 - [syscall]-> readv

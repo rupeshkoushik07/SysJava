@@ -1,0 +1,3 @@
+debconfclient_delete_15c0
+debconfclient_init_1140
+debconfclient_new_1500

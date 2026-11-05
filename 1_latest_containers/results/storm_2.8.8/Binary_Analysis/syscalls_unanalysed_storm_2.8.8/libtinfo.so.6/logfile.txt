@@ -1,0 +1,272 @@
+
+Path to clock_gettime:
+  _nc_timed_wait_1ecf0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
+  clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
+
+Path to poll:
+  _nc_timed_wait_1ecf0 - [DIRECT]-> poll_127e30
+  poll_127e30 - [syscall]-> poll
+
+Path to rt_sigreturn:
+  _nc_update_screensize_132e0 - [INDIRECT]-> __restore_rt_45cb0
+  __restore_rt_45cb0 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  _nc_update_screensize_132e0 - [INDIRECT]-> clear_once_control_a96b0
+  clear_once_control_a96b0 - [syscall]-> futex
+
+Path to time:
+  _nc_update_screensize_132e0 - [INDIRECT]-> time_syscall_e8050
+  time_syscall_e8050 - [syscall]-> time
+
+Path to write:
+  _nc_outch_sp_1dd80 - [DIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
+
+Path to getuid:
+  _nc_env_access_f8b0 - [DIRECT]-> getuid_ffab0
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to geteuid:
+  _nc_env_access_f8b0 - [DIRECT]-> geteuid_fe650
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to getgid:
+  _nc_env_access_f8b0 - [DIRECT]-> getgid_fe660
+  getgid_fe660 - [syscall]-> getgid
+
+Path to getegid:
+  _nc_env_access_f8b0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
+Path to ioctl:
+  _nc_set_tty_mode_sp_1dfa0 - [DIRECT]-> tcsetattr_12a8a0
+  tcsetattr_12a8a0 - [syscall]-> ioctl
+
+Path to access:
+  _nc_access_f650 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
+Path to setfsuid:
+  _nc_safe_fopen_f920 - [DIRECT]-> setfsuid_1380d0
+  setfsuid_1380d0 - [syscall]-> setfsuid
+
+Path to setfsgid:
+  _nc_safe_fopen_f920 - [DIRECT]-> setfsgid_1380a0
+  setfsgid_1380a0 - [syscall]-> setfsgid
+
+Path to fstat:
+  _nc_safe_fopen_f920 - [DIRECT]-> fstat_123b70
+  fstat_123b70 - [syscall]-> fstat
+
+Path to openat:
+  _nc_safe_open3_fa20 - [DIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
+Path to close:
+  _nc_safe_open3_fa20 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to clock_nanosleep:
+  napms_sp_12970 - [DIRECT]-> nanosleep_1039f0
+  nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
+  clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
+
+Path to munmap:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_file_close_mmap_9b360
+  _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
+  munmap_133b90 - [syscall]-> munmap
+
+Path to read:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_file_read_9b320
+  _IO_file_read_9b320 - [DIRECT]-> read_128390
+  read_128390 - [syscall]-> read
+
+Path to lseek:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_file_seek_9b340
+  _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to mmap:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mremap:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to madvise:
+  _nc_doalloc_10ce0 - [DIRECT]-> realloc_b59c0
+  realloc_b59c0 - [DIRECT]-> madvise_132f90
+  madvise_132f90 - [syscall]-> madvise
+
+Path to prlimit64:
+  _nc_setupterm_1c910 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> getrlimit_12aac0
+  getrlimit_12aac0 - [syscall]-> prlimit64
+
+Path to newfstatat:
+  _nc_is_path_found_f7d0 - [DIRECT]-> stat_128480
+  stat_128480 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to writev:
+  _nc_timed_wait_1ecf0 - [DIRECT]-> __stack_chk_fail_145420
+  __stack_chk_fail_145420 - [DIRECT]-> __fortify_fail_144070
+  __fortify_fail_144070 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
+
+Path to wait4:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
+
+Path to getcwd:
+  _nc_update_screensize_132e0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
+  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to getdents64:
+  _nc_update_screensize_132e0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to exit_group:
+  _nc_err_abort_10110 - [DIRECT]-> exit_486a0
+  exit_486a0 - [DIRECT]-> __run_exit_handlers_483f0
+  __run_exit_handlers_483f0 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to sched_getaffinity:
+  _nc_setupterm_1c910 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_nprocs_conf_12d5d0
+  get_nprocs_conf_12d5d0 - [DIRECT]-> __get_nprocs_sched_12d2f0
+  __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  _nc_setupterm_1c910 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_phys_pages_12d610
+  get_phys_pages_12d610 - [DIRECT]-> sysinfo_138a90
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to prctl:
+  _nc_timed_wait_1ecf0 - [DIRECT]-> __stack_chk_fail_145420
+  __stack_chk_fail_145420 - [DIRECT]-> __fortify_fail_144070
+  __fortify_fail_144070 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [DIRECT]-> __set_vma_name_138180
+  __set_vma_name_138180 - [syscall]-> prctl
+
+Path to rt_sigprocmask:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to mprotect:
+  _nc_align_termtype_116f0 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> mprotect_133ae0
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to rt_sigaction:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to tgkill:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+
+Path to fcntl:
+  _nc_update_screensize_132e0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
+  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [DIRECT]-> fdopendir_f66e0
+  fdopendir_f66e0 - [DIRECT]-> __fcntl64_nocancel_128ee0
+  __fcntl64_nocancel_128ee0 - [syscall]-> fcntl
+
+Path to gettid:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> raise_45b60
+  raise_45b60 - [DIRECT]-> pthread_kill@@GLIBC_2.34_a6370
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
+
+Path to getpid:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> __libc_cleanup_pop_restore_a0ae0
+  __libc_cleanup_pop_restore_a0ae0 - [DIRECT]-> __pthread_unwind_ad200
+  __pthread_unwind_ad200 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to sched_getparam:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getparam_11aba0
+  sched_getparam_11aba0 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
+  __pthread_current_priority_acf50 - [DIRECT]-> sched_getscheduler_11abd0
+  sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_setscheduler_11acf0
+  sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  _nc_update_screensize_132e0 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> _dl_addr_192e60
+  _dl_addr_192e60 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
+  __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  _nc_align_termtype_116f0 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

@@ -1,0 +1,83 @@
+Time taken for the analysis: 11 seconds
+Time taken for the analysis: 15 seconds
+Direct Edges computation: 2 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgcrypt.so.20.rerun/callgraph.json
+compute_syscalls: call-graph step exited 139; testing each start function alone
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+Segmentation fault
+compute_syscalls: excluded 70 start function(s) that crash SysPart: gcry_cipher_algo_info gcry_cipher_algo_name gcry_cipher_authenticate gcry_cipher_checktag gcry_cipher_ctl gcry_cipher_decrypt gcry_cipher_encrypt gcry_cipher_get_algo_blklen gcry_cipher_get_algo_keylen gcry_cipher_gettag gcry_cipher_map_name gcry_cipher_mode_from_oid gcry_cipher_open gcry_cipher_setctr gcry_cipher_setiv gcry_cipher_setkey gcry_control gcry_create_nonce gcry_kdf_compute gcry_kdf_derive gcry_kdf_final gcry_kdf_open gcry_mac_algo_info gcry_mac_algo_name gcry_mac_ctl gcry_mac_get_algo_keylen gcry_mac_get_algo_maclen gcry_mac_map_name gcry_mac_open gcry_mac_read gcry_mac_setiv gcry_mac_setkey gcry_mac_verify gcry_mac_write gcry_md_copy gcry_md_ctl gcry_md_enable gcry_md_get_algo gcry_md_hash_buffer gcry_md_hash_buffers gcry_md_info gcry_md_is_enabled gcry_md_open gcry_md_setkey gcry_md_write gcry_mpi_randomize gcry_pk_algo_info gcry_pk_algo_name gcry_pk_ctl gcry_pk_decrypt gcry_pk_encrypt gcry_pk_genkey gcry_pk_get_curve gcry_pk_get_keygrip gcry_pk_get_nbits gcry_pk_get_param gcry_pk_hash_sign gcry_pk_hash_verify gcry_pk_map_name gcry_pk_sign gcry_pk_testkey gcry_pk_verify gcry_prime_check gcry_prime_generate gcry_prime_group_generator gcry_pubkey_get_sexp gcry_random_add_bytes gcry_random_bytes gcry_random_bytes_secure gcry_randomize 
+Direct Edges computation: 2 seconds
+AT List computation: 2 seconds
+Indirect call target resolution:  3 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 18 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgcrypt.so.20.rerun/callgraph.json

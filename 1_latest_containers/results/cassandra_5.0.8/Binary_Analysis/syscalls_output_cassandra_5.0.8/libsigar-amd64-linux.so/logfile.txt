@@ -1,0 +1,466 @@
+
+Path to gettimeofday:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to setresuid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> setresuid
+
+Path to setresgid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> setresgid
+
+Path to close_range:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> rt_sigprocmask
+
+Path to futex:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to time:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to sched_yield:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to close:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_close_80280
+  _IO_file_close_80280 - [DIRECT]-> __close_nocancel_fce60
+  __close_nocancel_fce60 - [syscall]-> close
+
+Path to munmap:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to read:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_read_81710
+  _IO_file_read_81710 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to lseek:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to rt_sigaction:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to exit_group:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to fchdir:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> fchdir_f8c20
+  fchdir_f8c20 - [syscall]-> fchdir
+
+Path to chdir:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> chdir_f8bf0
+  chdir_f8bf0 - [syscall]-> chdir
+
+Path to openat:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> __open64_nocancel_fcfc0
+  __open64_nocancel_fcfc0 - [syscall]-> openat
+
+Path to dup2:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> dup2_f8aa0
+  dup2_f8aa0 - [syscall]-> dup2
+
+Path to getpgid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getpgid_d5710
+  getpgid_d5710 - [syscall]-> getpgid
+
+Path to getuid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to fcntl:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to setsid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> setsid_d57d0
+  setsid_d57d0 - [syscall]-> setsid
+
+Path to setpgid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> setpgid_d5740
+  setpgid_d5740 - [syscall]-> setpgid
+
+Path to sched_setscheduler:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_setparam:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> sched_setparam_edf50
+  sched_setparam_edf50 - [syscall]-> sched_setparam
+
+Path to getgid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to prlimit64:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to sendto:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to poll:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvmsg:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to writev:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to getpid:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> ptql_branch_init_pid_221d0
+  ptql_branch_init_pid_221d0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to readlink:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> sigar_proc_exe_get_1d7e0
+  sigar_proc_exe_get_1d7e0 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to mkdir:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to ioctl:
+  Java_org_hyperic_sigar_util_Getline_isatty_15df0 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to times:
+  Java_org_hyperic_sigar_ThreadCpu_gather_e1d0 - [DIRECT]-> sigar_thread_cpu_get_1da10
+  sigar_thread_cpu_get_1da10 - [DIRECT]-> times_d3b30
+  times_d3b30 - [syscall]-> times
+
+Path to stat:
+  Java_org_hyperic_sigar_DiskUsage_gather_d170 - [DIRECT]-> sigar_disk_usage_get_1de60
+  sigar_disk_usage_get_1de60 - [DIRECT]-> __xstat_109530
+  __xstat_109530 - [syscall]-> stat
+
+Path to kill:
+  Java_org_hyperic_sigar_Sigar_kill_ae40 - [DIRECT]-> sigar_proc_kill_16400
+  sigar_proc_kill_16400 - [DIRECT]-> kill_3c260
+  kill_3c260 - [syscall]-> kill
+
+Path to socket:
+  Java_org_hyperic_sigar_Sigar_getNetInterfaceList_15650 - [DIRECT]-> sigar_net_interface_list_get_19950
+  sigar_net_interface_list_get_19950 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to lstat:
+  Java_org_hyperic_sigar_FileInfo_gatherLink_15150 - [DIRECT]-> sigar_link_attrs_get_21810
+  sigar_link_attrs_get_21810 - [DIRECT]-> __lxstat_1095d0
+  __lxstat_1095d0 - [syscall]-> lstat
+
+Path to newfstatat:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to mmap:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_80900
+  _IO_file_underflow_maybe_mmap_80900 - [DIRECT]-> decide_maybe_mmap_80740
+  decide_maybe_mmap_80740 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to mremap:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
+  mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to wait4:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_77330
+  _IO_proc_close@@GLIBC_2.2.5_77330 - [DIRECT]-> waitpid_d3b90
+  waitpid_d3b90 - [DIRECT]-> wait4_d3bc0
+  wait4_d3bc0 - [syscall]-> wait4
+
+Path to getdents64:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> __closefrom_fallback_1096e0
+  __closefrom_fallback_1096e0 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to madvise:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _nss_files_initgroups_dyn_13a710
+  _nss_files_initgroups_dyn_13a710 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to clock_gettime:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> __deadline_current_time_123da0
+  __deadline_current_time_123da0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to getrandom:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to uname:
+  Java_org_hyperic_sigar_NetInfo_gather_ec70 - [DIRECT]-> sigar_net_info_get_19600
+  sigar_net_info_get_19600 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to unlink:
+  Java_org_hyperic_sigar_util_Getline_histadd_15ef0 - [DIRECT]-> sigar_getline_histadd_26050
+  sigar_getline_histadd_26050 - [DIRECT]-> remove_58a40
+  remove_58a40 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to rmdir:
+  Java_org_hyperic_sigar_util_Getline_histadd_15ef0 - [DIRECT]-> sigar_getline_histadd_26050
+  sigar_getline_histadd_26050 - [DIRECT]-> remove_58a40
+  remove_58a40 - [DIRECT]-> rmdir_f9b70
+  rmdir_f9b70 - [syscall]-> rmdir
+
+Path to connect:
+  Java_org_hyperic_sigar_RPC_ping_12650 - [DIRECT]-> sigar_rpc_ping_175b0
+  sigar_rpc_ping_175b0 - [DIRECT]-> __GI_clnttcp_create_142b10
+  __GI_clnttcp_create_142b10 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to getcwd:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> dlopen_doit_85460
+  dlopen_doit_85460 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to mprotect:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  Java_org_hyperic_sigar_ResourceLimit_gather_b460 - [DIRECT]-> sigar_resource_limit_get_19810
+  sigar_resource_limit_get_19810 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to statfs:
+  Java_org_hyperic_sigar_FileSystemUsage_gather_d950 - [DIRECT]-> sigar_file_system_usage_get_1ea10
+  sigar_file_system_usage_get_1ea10 - [DIRECT]-> sigar_statvfs_214e0
+  sigar_statvfs_214e0 - [DIRECT]-> statvfs_f7c60
+  statvfs_f7c60 - [DIRECT]-> statfs_f7c00
+  statfs_f7c00 - [syscall]-> statfs
+
+Path to bind:
+  Java_org_hyperic_sigar_RPC_ping_12650 - [DIRECT]-> sigar_rpc_ping_175b0
+  sigar_rpc_ping_175b0 - [DIRECT]-> __GI_clnttcp_create_142b10
+  __GI_clnttcp_create_142b10 - [DIRECT]-> bindresvport_11f380
+  bindresvport_11f380 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to setsockopt:
+  Java_org_hyperic_sigar_RPC_ping_12650 - [DIRECT]-> sigar_rpc_ping_175b0
+  sigar_rpc_ping_175b0 - [DIRECT]-> __EI_clntudp_create_143b10
+  __EI_clntudp_create_143b10 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to tgkill:
+  Java_org_hyperic_sigar_util_Getline_getline_15e20 - [DIRECT]-> sigar_getline_26bd0
+  sigar_getline_26bd0 - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  Java_org_hyperic_sigar_util_Getline_getline_15e20 - [DIRECT]-> sigar_getline_26bd0
+  sigar_getline_26bd0 - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to sendmmsg:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to getsockname:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to sched_getparam:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_get_priority_max:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  Java_org_hyperic_sigar_SigarLog_setLogger_16280 - [INDIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to pipe2:
+  Java_org_hyperic_sigar_ptql_SigarProcessQuery_findProcess_15ba0 - [DIRECT]-> sigar_ptql_query_find_process_237d0
+  sigar_ptql_query_find_process_237d0 - [DIRECT]-> ptql_proc_list_get_234c0
+  ptql_proc_list_get_234c0 - [DIRECT]-> sigar_sudo_file2str_22060
+  sigar_sudo_file2str_22060 - [DIRECT]-> popen@@GLIBC_2.2.5_778e0
+  popen@@GLIBC_2.2.5_778e0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_77540
+  _IO_proc_open@@GLIBC_2.2.5_77540 - [DIRECT]-> pipe2_f8b30
+  pipe2_f8b30 - [syscall]-> pipe2
+
+Path to readv:
+  Java_org_hyperic_sigar_Sigar_getFQDN_15830 - [DIRECT]-> sigar_fqdn_get_1a1a0
+  sigar_fqdn_get_1a1a0 - [DIRECT]-> gethostbyaddr_r@@GLIBC_2.2.5_1186e0
+  gethostbyaddr_r@@GLIBC_2.2.5_1186e0 - [DIRECT]-> __nscd_gethostbyaddr_r_14a030
+  __nscd_gethostbyaddr_r_14a030 - [DIRECT]-> nscd_gethst_r_149720
+  nscd_gethst_r_149720 - [DIRECT]-> __readvall_14bec0
+  __readvall_14bec0 - [DIRECT]-> readv_fddb0
+  readv_fddb0 - [syscall]-> readv
+
+Path to clone3:
+  Java_org_hyperic_sigar_ptql_SigarProcessQuery_findProcess_15ba0 - [DIRECT]-> sigar_ptql_query_find_process_237d0
+  sigar_ptql_query_find_process_237d0 - [DIRECT]-> ptql_proc_list_get_234c0
+  ptql_proc_list_get_234c0 - [DIRECT]-> sigar_sudo_file2str_22060
+  sigar_sudo_file2str_22060 - [DIRECT]-> popen@@GLIBC_2.2.5_778e0
+  popen@@GLIBC_2.2.5_778e0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_77540
+  _IO_proc_open@@GLIBC_2.2.5_77540 - [DIRECT]-> posix_spawn@@GLIBC_2.15_f6a80
+  posix_spawn@@GLIBC_2.15_f6a80 - [DIRECT]-> __spawni_f72d0
+  __spawni_f72d0 - [DIRECT]-> __spawnix_f6aa0
+  __spawnix_f6aa0 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to clone:
+  Java_org_hyperic_sigar_ptql_SigarProcessQuery_findProcess_15ba0 - [DIRECT]-> sigar_ptql_query_find_process_237d0
+  sigar_ptql_query_find_process_237d0 - [DIRECT]-> ptql_proc_list_get_234c0
+  ptql_proc_list_get_234c0 - [DIRECT]-> sigar_sudo_file2str_22060
+  sigar_sudo_file2str_22060 - [DIRECT]-> popen@@GLIBC_2.2.5_778e0
+  popen@@GLIBC_2.2.5_778e0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_77540
+  _IO_proc_open@@GLIBC_2.2.5_77540 - [DIRECT]-> posix_spawn@@GLIBC_2.15_f6a80
+  posix_spawn@@GLIBC_2.15_f6a80 - [DIRECT]-> __spawni_f72d0
+  __spawni_f72d0 - [DIRECT]-> __spawnix_f6aa0
+  __spawnix_f6aa0 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone_108b10
+  clone_108b10 - [syscall]-> clone

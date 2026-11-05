@@ -1,0 +1,95 @@
+path	gnu_build_id	status	detail	source_override
+BINARIES_storm_2.8.8/bash	a292b52b679fb438b940f1c17e2e4951ac52ac89	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/a292b52b679fb438b940f1c17e2e4951ac52ac89.debug	
+BINARIES_storm_2.8.8/chown	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_storm_2.8.8/cut	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_storm_2.8.8/dash	4fb1ca0909b70880d403d990202c4989ef1e8415	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/4fb1ca0909b70880d403d990202c4989ef1e8415.debug	
+BINARIES_storm_2.8.8/dirname	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_storm_2.8.8/env	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_storm_2.8.8/gosu	0e56d66265a4cd94368d8a4a24accef33780fa0f	HAS_SYMTAB		
+BINARIES_storm_2.8.8/grep	9601f9b5d319a231b14e6c6289e998da074aa543	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9601f9b5d319a231b14e6c6289e998da074aa543.debug	
+BINARIES_storm_2.8.8/id	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7.debug	
+BINARIES_storm_2.8.8/java		HAS_SYMTAB		
+BINARIES_storm_2.8.8/jspawnhelper		HAS_SYMTAB		
+BINARIES_storm_2.8.8/ld-linux-x86-64.so.2	98336d13e85bb188b91ad461c67807e02b02e132	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/98336d13e85bb188b91ad461c67807e02b02e132.debug	
+BINARIES_storm_2.8.8/mawk	c83bc5be5a3d9d0da590b193aec96cc44846455d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/c83bc5be5a3d9d0da590b193aec96cc44846455d.debug	
+BINARIES_storm_2.8.8/python3.14	cf4a4c4c83bc8b292024484e248c3c322ad9e9be	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/cf4a4c4c83bc8b292024484e248c3c322ad9e9be.debug	
+BINARIES_storm_2.8.8/runc	ef13e663636f0413387ba0e1652c80171f931505	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ef13e663636f0413387ba0e1652c80171f931505.debug	
+LIBS_storm_2.8.8/JDK17_LIBS/libawt.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libawt_headless.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libawt_xawt.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libdt_socket.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libextnet.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libfontmanager.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libfreetype.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libinstrument.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libj2gss.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libj2pcsc.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libj2pkcs11.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjaas.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjava.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjavajpeg.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjawt.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjdwp.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjimage.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjli.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjsig.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjsound.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libjsvml.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/liblcms.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libmanagement.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libmanagement_agent.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libmanagement_ext.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libmlib_image.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libnet.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libnio.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libprefs.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/librmi.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libsctp.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libsplashscreen.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libsyslookup.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libverify.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/libzip.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/server/libjsig.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/JDK17_LIBS/server/libjvm.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/_bz2.cpython-314-x86_64-linux-gnu.so	142ccc1c435141045c25ba96e8457fdbf3886fdb	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/142ccc1c435141045c25ba96e8457fdbf3886fdb.debug	
+LIBS_storm_2.8.8/_lzma.cpython-314-x86_64-linux-gnu.so	827a2c1cdea36a2478a9ea6bde8afaa82fbf1088	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/827a2c1cdea36a2478a9ea6bde8afaa82fbf1088.debug	
+LIBS_storm_2.8.8/_zstd.cpython-314-x86_64-linux-gnu.so	bec4b8998041a89776e0df466e22d8c468636dbe	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/bec4b8998041a89776e0df466e22d8c468636dbe.debug	
+LIBS_storm_2.8.8/libbz2.so.1.0.4	5535dc87332f7a44e29dd67e367ae5414db6d55a	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/5535dc87332f7a44e29dd67e367ae5414db6d55a.debug	
+LIBS_storm_2.8.8/libc.so.6	90ebd03ae9d9f42b23b4eb82fdf70352cf744198	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/90ebd03ae9d9f42b23b4eb82fdf70352cf744198.debug	
+LIBS_storm_2.8.8/libdl.so.2	d87b9971d70d7df09f8afd970acaff8184d227f9	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/d87b9971d70d7df09f8afd970acaff8184d227f9.debug	
+LIBS_storm_2.8.8/libexpat.so.1.11.2	f9aa234c6db0a4e0d2d8bf1ea5d955fcab076be7	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/f9aa234c6db0a4e0d2d8bf1ea5d955fcab076be7.debug	
+LIBS_storm_2.8.8/libextnet.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libgcc_s.so.1	5ce300f9a05585d57cb8cc061081f58a80daa431	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/5ce300f9a05585d57cb8cc061081f58a80daa431.debug	
+LIBS_storm_2.8.8/libjava.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libjimage.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libjli.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libjsvml.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libjvm.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/liblzma.so.5.8.3	b3ae536ae60e03b847f0311329907db8729d518f	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/b3ae536ae60e03b847f0311329907db8729d518f.debug	
+LIBS_storm_2.8.8/libm.so.6	2018176f50f7431b43528ae7a5ba7665523edc21	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/2018176f50f7431b43528ae7a5ba7665523edc21.debug	
+LIBS_storm_2.8.8/libmanagement.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libmanagement_ext.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libnet.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libnetty_quiche42_linux_x86_64.so	ea211c2885ab4f88b5156ea3173d7f354405d72d	HAS_SYMTAB		
+LIBS_storm_2.8.8/libnetty_transport_native_io_uring42_x86_64.so	7110f9b131d571059a3fb95758d38522e77f6399	HAS_SYMTAB		
+LIBS_storm_2.8.8/libnio.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libnss_compat.so.2	98647ebcca0f58406ae0a1668b3bce651c24b44a	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/98647ebcca0f58406ae0a1668b3bce651c24b44a.debug	
+LIBS_storm_2.8.8/libnss_dns.so.2	92fcbab3d3c3c340e2bc329f43df750c79b66214	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/92fcbab3d3c3c340e2bc329f43df750c79b66214.debug	
+LIBS_storm_2.8.8/libnss_files.so.2	f0360882a746ab39c16df61caecf79b2912cbea5	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/f0360882a746ab39c16df61caecf79b2912cbea5.debug	
+LIBS_storm_2.8.8/libnss_hesiod.so.2	65155469773378bf89309ed2ec289e7059afd437	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/65155469773378bf89309ed2ec289e7059afd437.debug	
+LIBS_storm_2.8.8/liborg_apache_storm_shade_netty_tcnative_linux_x86_64.so	0d541b0dee5e3d8d163cf850f9e542cecc5d58c6	HAS_SYMTAB		
+LIBS_storm_2.8.8/liborg_apache_storm_shade_netty_transport_native_epoll_x86_64.so	6f28c62e4a222fb8cbc8f28c79cc8ca54a108b68	HAS_SYMTAB		
+LIBS_storm_2.8.8/libpcre2-8.so.0.14.0	a0f364b52d51d30aa11c17ce870ebea163e625e0	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/a0f364b52d51d30aa11c17ce870ebea163e625e0.debug	
+LIBS_storm_2.8.8/libpthread.so.0	ace3fca78dbfc26694c8ffe8c115682ed6b86e79	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/ace3fca78dbfc26694c8ffe8c115682ed6b86e79.debug	
+LIBS_storm_2.8.8/libresolv.so.2	74e4d0c6437a47b49b8e6cb95b3e923a90f057a9	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/74e4d0c6437a47b49b8e6cb95b3e923a90f057a9.debug	
+LIBS_storm_2.8.8/librocksdbjni16624330668920755723.so	0ce7cdd0ee404f6d20a58ed3a5fba30e3d61122d	HAS_SYMTAB		
+LIBS_storm_2.8.8/librt.so.1	83262304cfeec2cf8bd71fde0058b1736f1aef62	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/83262304cfeec2cf8bd71fde0058b1736f1aef62.debug	
+LIBS_storm_2.8.8/libselinux.so.1	9646187febef07a272db2ba5ed8c468e16be1a7a	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9646187febef07a272db2ba5ed8c468e16be1a7a.debug	
+LIBS_storm_2.8.8/libsnappyjava_storm-shaded-deps-2.8.8.so		NO_BUILD_ID		
+LIBS_storm_2.8.8/libstdc++.so.6.0.35	3a7a8c6bd922e6314edb7a710fdc0293265c2c42	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/3a7a8c6bd922e6314edb7a710fdc0293265c2c42.debug	
+LIBS_storm_2.8.8/libtinfo.so.6.6	a0fcd64cfb3582c6ed132d18f3d3e5f8e4806cb9	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/a0fcd64cfb3582c6ed132d18f3d3e5f8e4806cb9.debug	
+LIBS_storm_2.8.8/libz.so.1.3.1	72583b832d80c2d08237d2d7a5ee3877681444dd	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/72583b832d80c2d08237d2d7a5ee3877681444dd.debug	
+LIBS_storm_2.8.8/libzip.so		HAS_SYMTAB		
+LIBS_storm_2.8.8/libzstd.so.1.5.7	5d0cccfdd88c4d7dfc9d0ffbe46cdc2d8f19afbd	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/5d0cccfdd88c4d7dfc9d0ffbe46cdc2d8f19afbd.debug	
+LIBS_storm_2.8.8/_container_deps/libseccomp.so.2	9584322762cdf29a9a4736f8d612252df5c9f07d	SYMBOLIZED	/home/user/Tutorial/EchoTrace_latest/artifacts/all-running-containers/debug-symbols/build-id/9584322762cdf29a9a4736f8d612252df5c9f07d.debug	et_storm_2.8.8 (missing DT_NEEDED)
+BINARIES_storm_2.8.8/cat	3d35b26ede5ed84094cb43b61d3b9f01b9ff41f7	SYMBOLIZED	debuginfod.ubuntu.com; ADDED: first-start-only binary, not captured (capture restarts the container)	

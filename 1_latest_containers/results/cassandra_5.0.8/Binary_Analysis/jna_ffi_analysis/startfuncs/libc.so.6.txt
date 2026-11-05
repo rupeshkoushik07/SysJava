@@ -1,0 +1,16 @@
+close
+fcntl
+fsync
+getpid
+gettimeofday
+mlockall
+msvcrt
+munlockall
+open
+posix_fadvise
+sched_getaffinity
+sched_getcpu
+sched_setaffinity
+strerror
+syscall
+uname

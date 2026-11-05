@@ -1,0 +1,351 @@
+
+Path to rt_sigreturn:
+  ss_rl_completion_4690 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to setresuid:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> setresuid
+
+Path to setresgid:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> setresgid
+
+Path to close_range:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> close_range
+
+Path to rt_sigprocmask:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [syscall]-> rt_sigprocmask
+
+Path to kill:
+  ss_rl_completion_4690 - [INDIRECT]-> cancel_handler_4c380
+  cancel_handler_4c380 - [syscall]-> kill
+
+Path to futex:
+  ss_rl_completion_4690 - [INDIRECT]-> clear_once_control_8e0e0
+  clear_once_control_8e0e0 - [syscall]-> futex
+
+Path to openat:
+  ss_help_38f0 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to close:
+  ss_help_38f0 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to dup2:
+  ss_help_38f0 - [DIRECT]-> dup2_f8aa0
+  dup2_f8aa0 - [syscall]-> dup2
+
+Path to read:
+  ss_page_stdin_4fa0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to write:
+  ss_page_stdin_4fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to getuid:
+  ss_safe_getenv_4f40 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to geteuid:
+  ss_safe_getenv_4f40 - [DIRECT]-> geteuid_d5510
+  geteuid_d5510 - [syscall]-> geteuid
+
+Path to getgid:
+  ss_safe_getenv_4f40 - [DIRECT]-> getgid_d5520
+  getgid_d5520 - [syscall]-> getgid
+
+Path to getegid:
+  ss_safe_getenv_4f40 - [DIRECT]-> getegid_d5530
+  getegid_d5530 - [syscall]-> getegid
+
+Path to prctl:
+  ss_safe_getenv_4f40 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to pipe2:
+  ss_pager_create_50d0 - [DIRECT]-> pipe_f8b00
+  pipe_f8b00 - [syscall]-> pipe2
+
+Path to writev:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to mremap:
+  ss_create_invocation_3600 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  ss_create_invocation_3600 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to sched_yield:
+  ss_rl_completion_4690 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to munmap:
+  ss_rl_completion_4690 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to lseek:
+  ss_rl_completion_4690 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to rt_sigaction:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to exit_group:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to fchdir:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> fchdir_f8c20
+  fchdir_f8c20 - [syscall]-> fchdir
+
+Path to chdir:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> chdir_f8bf0
+  chdir_f8bf0 - [syscall]-> chdir
+
+Path to getpgid:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getpgid_d5710
+  getpgid_d5710 - [syscall]-> getpgid
+
+Path to fcntl:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to setsid:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> setsid_d57d0
+  setsid_d57d0 - [syscall]-> setsid
+
+Path to setpgid:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> setpgid_d5740
+  setpgid_d5740 - [syscall]-> setpgid
+
+Path to sched_setscheduler:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_setparam:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> sched_setparam_edf50
+  sched_setparam_edf50 - [syscall]-> sched_setparam
+
+Path to prlimit64:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to ioctl:
+  ss_rl_completion_4690 - [INDIRECT]-> default_com_err_proc_2a00
+  default_com_err_proc_2a00 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to clone:
+  ss_help_38f0 - [DIRECT]-> fork_d3e80
+  fork_d3e80 - [DIRECT]-> _Fork_d4330
+  _Fork_d4330 - [syscall]-> clone
+
+Path to set_robust_list:
+  ss_help_38f0 - [DIRECT]-> fork_d3e80
+  fork_d3e80 - [DIRECT]-> _Fork_d4330
+  _Fork_d4330 - [syscall]-> set_robust_list
+
+Path to dup:
+  ss_list_requests_4c80 - [DIRECT]-> perror_524e0
+  perror_524e0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to mmap:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to getrandom:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to newfstatat:
+  ss_rl_completion_4690 - [INDIRECT]-> _IO_file_stat_80f90
+  _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to getdents64:
+  ss_rl_completion_4690 - [INDIRECT]-> __spawni_child_f6d50
+  __spawni_child_f6d50 - [DIRECT]-> __closefrom_fallback_1096e0
+  __closefrom_fallback_1096e0 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  ss_rl_completion_4690 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to wait4:
+  ss_rl_completion_4690 - [INDIRECT]-> cancel_handler_4c380
+  cancel_handler_4c380 - [DIRECT]-> waitpid_d3b90
+  waitpid_d3b90 - [DIRECT]-> wait4_d3bc0
+  wait4_d3bc0 - [syscall]-> wait4
+
+Path to sigaltstack:
+  ss_rl_completion_4690 - [INDIRECT]-> listen_int_handler_3fe0
+  listen_int_handler_3fe0 - [DIRECT]-> __longjmp_chk_118060
+  __longjmp_chk_118060 - [DIRECT]-> ____longjmp_chk_1180b0
+  ____longjmp_chk_1180b0 - [syscall]-> sigaltstack
+
+Path to mprotect:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to sched_getaffinity:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to getcwd:
+  ss_rl_completion_4690 - [INDIRECT]-> dlopen_doit_85460
+  dlopen_doit_85460 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to execve:
+  ss_page_stdin_4fa0 - [DIRECT]-> execlp_d4f10
+  execlp_d4f10 - [DIRECT]-> execvpe_d54c0
+  execvpe_d54c0 - [DIRECT]-> __execvpe_common_d5180
+  __execvpe_common_d5180 - [DIRECT]-> execve_d4ad0
+  execve_d4ad0 - [syscall]-> execve
+
+Path to sched_getparam:
+  ss_get_readline_5210 - [DIRECT]-> dlsym@@GLIBC_2.34_855b0
+  dlsym@@GLIBC_2.34_855b0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  ss_get_readline_5210 - [DIRECT]-> dlsym@@GLIBC_2.34_855b0
+  dlsym@@GLIBC_2.34_855b0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_get_priority_max:
+  ss_get_readline_5210 - [DIRECT]-> dlsym@@GLIBC_2.34_855b0
+  dlsym@@GLIBC_2.34_855b0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  ss_get_readline_5210 - [DIRECT]-> dlsym@@GLIBC_2.34_855b0
+  dlsym@@GLIBC_2.34_855b0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to tgkill:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to getpid:
+  ss_execute_command_3e30 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to clone3:
+  ss_execute_line_3ef0 - [DIRECT]-> system_4c490
+  system_4c490 - [DIRECT]-> do_system_4c020
+  do_system_4c020 - [DIRECT]-> posix_spawn@@GLIBC_2.15_f6a80
+  posix_spawn@@GLIBC_2.15_f6a80 - [DIRECT]-> __spawni_f72d0
+  __spawni_f72d0 - [DIRECT]-> __spawnix_f6aa0
+  __spawnix_f6aa0 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to sysinfo:
+  ss_rl_completion_4690 - [INDIRECT]-> dlopen_doit_85460
+  dlopen_doit_85460 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> _nl_find_domain_36e30
+  _nl_find_domain_36e30 - [DIRECT]-> _nl_expand_alias_38a50
+  _nl_expand_alias_38a50 - [DIRECT]-> read_alias_file_38580
+  read_alias_file_38580 - [DIRECT]-> qsort_3ffd0
+  qsort_3ffd0 - [DIRECT]-> qsort_r_3fc80
+  qsort_r_3fc80 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo

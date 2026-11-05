@@ -1,0 +1,9 @@
+wait4 11cdb0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 wait4 61
+open 127bd0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 openat 257
+openat 127cd0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 openat 257
+read 128390 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 read 0
+write 128e50 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 write 1
+select 1346e0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 pselect6 270
+select 1346e0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 pselect6 270
+accept 1390e0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 accept 43
+send 1393f0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libc.so.6 sendto 44

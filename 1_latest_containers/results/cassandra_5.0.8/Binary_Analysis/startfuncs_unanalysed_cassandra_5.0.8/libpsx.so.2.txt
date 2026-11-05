@@ -1,0 +1,7 @@
+__psx_syscall
+__so_start
+__wrap_pthread_create
+psx_load_syscalls
+psx_set_sensitivity
+psx_syscall3
+psx_syscall6

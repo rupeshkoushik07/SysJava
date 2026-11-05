@@ -1,0 +1,17 @@
+add_error_table_2780
+add_to_error_table_2930
+com_err_2b40
+com_err_va_2b30
+com_right_2c50
+com_right_r_2ca0
+error_message_2550
+error_table_name_2940
+et_list_lock_2520
+et_list_unlock_2530
+free_error_table_2d80
+init_error_table_2990
+initialize_error_table_r_2d00
+remove_error_table_2830
+reset_com_err_hook_2c30
+set_com_err_gettext_2540
+set_com_err_hook_2c10

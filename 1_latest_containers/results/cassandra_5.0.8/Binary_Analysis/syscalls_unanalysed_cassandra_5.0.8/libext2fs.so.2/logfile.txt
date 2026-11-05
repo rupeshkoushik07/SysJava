@@ -1,0 +1,368 @@
+
+Path to ioctl:
+  ext2fs_get_device_phys_sectsize_2a150 - [DIRECT]-> ioctl_fdd30
+  ioctl_fdd30 - [syscall]-> ioctl
+
+Path to close:
+  ext2fs_get_device_phys_sectsize_2a150 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to getpid:
+  ext2fs_mmp_new_seq_327b0 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to getuid:
+  ext2fs_mmp_new_seq_327b0 - [DIRECT]-> getuid_d5500
+  getuid_d5500 - [syscall]-> getuid
+
+Path to gettimeofday:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> __gettimeofday_syscall_c4150
+  __gettimeofday_syscall_c4150 - [syscall]-> gettimeofday
+
+Path to futex:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  __nptl_setxid_sighandler_86720 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to set_robust_list:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> set_robust_list
+
+Path to rt_sigprocmask:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rt_sigprocmask
+
+Path to rseq:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> rseq
+
+Path to exit:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [syscall]-> exit
+
+Path to time:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> time_syscall_c4050
+  time_syscall_c4050 - [syscall]-> time
+
+Path to read:
+  ext2fs_image_super_read_12cc0 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to fsync:
+  ext2fs_tdb_flush_40950 - [DIRECT]-> fsync_fec10
+  fsync_fec10 - [syscall]-> fsync
+
+Path to write:
+  ext2fs_image_bitmap_write_12da0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to umask:
+  ext2fs_create_icount_tdb_2aa50 - [DIRECT]-> umask_f7d40
+  umask_f7d40 - [syscall]-> umask
+
+Path to uname:
+  ext2fs_get_device_size2_29d70 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to munmap:
+  ext2fs_tdb_store_3f140 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to unlink:
+  ext2fs_free_icount_2a8b0 - [DIRECT]-> unlink_f9b10
+  unlink_f9b10 - [syscall]-> unlink
+
+Path to sched_getscheduler:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [syscall]-> sched_getparam
+
+Path to lseek:
+  ext2fs_llseek_31060 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to pselect6:
+  ext2fs_tdb_transaction_commit_3dbb0 - [DIRECT]-> select_fe8a0
+  select_fe8a0 - [syscall]-> pselect6
+
+Path to ftruncate:
+  ext2fs_tdb_transaction_recover_3d840 - [DIRECT]-> ftruncate_100050
+  ftruncate_100050 - [syscall]-> ftruncate
+
+Path to dup:
+  ext2fs_dup_handle_125c0 - [DIRECT]-> dup_f8a70
+  dup_f8a70 - [syscall]-> dup
+
+Path to openat:
+  ext2fs_tdb_reopen_40650 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to writev:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to newfstatat:
+  ext2fs_fstat_43c40 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to sched_yield:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> _IO_cleanup_83b30
+  _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
+  sched_yield_ee010 - [syscall]-> sched_yield
+
+Path to sendto:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
+  sendto_10aca0 - [syscall]-> sendto
+
+Path to poll:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvmsg:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to madvise:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to fcntl:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> tdb_brlock_3b1f0
+  tdb_brlock_3b1f0 - [DIRECT]-> fcntl_f87a0
+  fcntl_f87a0 - [syscall]-> fcntl
+
+Path to pwrite64:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> tdb_expand_file_3b570
+  tdb_expand_file_3b570 - [DIRECT]-> pwrite_f6470
+  pwrite_f6470 - [syscall]-> pwrite64
+
+Path to pread64:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> tdb_read_3c9f0
+  tdb_read_3c9f0 - [DIRECT]-> pread_f63c0
+  pread_f63c0 - [syscall]-> pread64
+
+Path to mkdir:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> try_dir_58fc0
+  try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
+  mkdir_f7f30 - [syscall]-> mkdir
+
+Path to mremap:
+  ext2fs_zero_blocks2_31680 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to mmap:
+  ext2fs_tdb_store_3f140 - [DIRECT]-> tdb_mmap.part.0_3b6d0
+  tdb_mmap.part.0_3b6d0 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to sched_setaffinity:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [syscall]-> sched_setscheduler
+
+Path to rt_sigaction:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to prlimit64:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to utimensat:
+  ext2fs_tdb_transaction_commit_3dbb0 - [DIRECT]-> utime_f7750
+  utime_f7750 - [DIRECT]-> __utimensat64_helper_fc8f0
+  __utimensat64_helper_fc8f0 - [syscall]-> utimensat
+
+Path to msync:
+  ext2fs_tdb_transaction_commit_3dbb0 - [DIRECT]-> transaction_sync_3b310
+  transaction_sync_3b310 - [DIRECT]-> msync_101a60
+  msync_101a60 - [syscall]-> msync
+
+Path to getrandom:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to getdents64:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to sched_getaffinity:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_nprocs_conf_104380
+  get_nprocs_conf_104380 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to clock_nanosleep:
+  ext2fs_mmp_start_32950 - [DIRECT]-> sleep_d3d50
+  sleep_d3d50 - [DIRECT]-> nanosleep_d3e40
+  nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
+  clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
+
+Path to exit_group:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to clone3:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone3_1098c0
+  clone3_1098c0 - [syscall]-> clone3
+
+Path to clone:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> pthread_create@@GLIBC_2.34_89380
+  pthread_create@@GLIBC_2.34_89380 - [DIRECT]-> create_thread_88d00
+  create_thread_88d00 - [DIRECT]-> __clone_internal_109910
+  __clone_internal_109910 - [DIRECT]-> clone_108b10
+  clone_108b10 - [syscall]-> clone
+
+Path to getcwd:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> _IO_wfile_underflow_7b4f0
+  _IO_wfile_underflow_7b4f0 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to socket:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to bind:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> bind_10a780
+  bind_10a780 - [syscall]-> bind
+
+Path to getsockname:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> clntudp_call_142fa0
+  clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
+  getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
+  getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
+  __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
+  getsockname_10a880 - [syscall]-> getsockname
+
+Path to sched_get_priority_max:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> read_bitmaps_range_start_36f10
+  read_bitmaps_range_start_36f10 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  ext2fs_rw_bitmaps_37b50 - [DIRECT]-> read_bitmaps_range_start_36f10
+  read_bitmaps_range_start_36f10 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to brk:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to tgkill:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
+
+Path to gettid:
+  ext2fs_namei_follow_33140 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> raise_3bfa0
+  raise_3bfa0 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
+  pthread_kill@@GLIBC_2.34_8af40 - [DIRECT]-> __pthread_kill_implementation_8ade0
+  __pthread_kill_implementation_8ade0 - [syscall]-> gettid
+
+Path to setsockopt:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt
+
+Path to connect:
+  ext2fs_tdb_parse_record_3efa0 - [INDIRECT]-> start_thread_88ef0
+  start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
+  __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
+  __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
+  __rpc_thread_svc_cleanup_1459e0 - [DIRECT]-> __GI_svc_unregister_1450d0
+  __GI_svc_unregister_1450d0 - [DIRECT]-> __EI_pmap_unset_13b520
+  __EI_pmap_unset_13b520 - [DIRECT]-> __EI_clntudp_bufcreate_143af0
+  __EI_clntudp_bufcreate_143af0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_143800
+  __GI___libc_clntudp_bufcreate_143800 - [DIRECT]-> __EI_pmap_getport_144af0
+  __EI_pmap_getport_144af0 - [DIRECT]-> __EI___libc_rpc_getport_144930
+  __EI___libc_rpc_getport_144930 - [DIRECT]-> __get_socket_144890
+  __get_socket_144890 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect

@@ -1,0 +1,392 @@
+
+Path to gettid:
+  capng_get_caps_process_2cb0 - [syscall]-> gettid
+
+Path to fremovexattr:
+  capng_apply_caps_fd_3a10 - [DIRECT]-> fremovexattr_1046f0
+  fremovexattr_1046f0 - [syscall]-> fremovexattr
+
+Path to fsetxattr:
+  capng_apply_caps_fd_3a10 - [DIRECT]-> fsetxattr_104720
+  fsetxattr_104720 - [syscall]-> fsetxattr
+
+Path to capget:
+  capng_get_caps_process_2cb0 - [DIRECT]-> capget_109af0
+  capget_109af0 - [syscall]-> capget
+
+Path to prctl:
+  capng_get_caps_process_2cb0 - [DIRECT]-> prctl_109410
+  prctl_109410 - [syscall]-> prctl
+
+Path to setresgid:
+  capng_change_id_4120 - [DIRECT]-> setresgid_d58f0
+  setresgid_d58f0 - [syscall]-> setresgid
+
+Path to setresuid:
+  capng_change_id_4120 - [DIRECT]-> setresuid_d5860
+  setresuid_d5860 - [syscall]-> setresuid
+
+Path to setgroups:
+  capng_change_id_4120 - [DIRECT]-> setgroups_d1050
+  setgroups_d1050 - [syscall]-> setgroups
+
+Path to capset:
+  capng_apply_3e50 - [DIRECT]-> capset_109b20
+  capset_109b20 - [syscall]-> capset
+
+Path to fgetxattr:
+  capng_get_caps_fd_2f10 - [DIRECT]-> fgetxattr_104690
+  fgetxattr_104690 - [syscall]-> fgetxattr
+
+Path to newfstatat:
+  capng_apply_caps_fd_3a10 - [DIRECT]-> fstat_f7800
+  fstat_f7800 - [DIRECT]-> fstatat_f7860
+  fstatat_f7860 - [syscall]-> newfstatat
+
+Path to futex:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fgets_76040
+  fgets_76040 - [DIRECT]-> __lll_lock_wake_private_86160
+  __lll_lock_wake_private_86160 - [syscall]-> futex
+
+Path to rt_sigreturn:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> __restore_rt_3c050
+  __restore_rt_3c050 - [syscall]-> rt_sigreturn
+
+Path to writev:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [syscall]-> writev
+
+Path to tgkill:
+  capng_change_id_4120 - [DIRECT]-> setresgid_d58f0
+  setresgid_d58f0 - [DIRECT]-> __nptl_setxid_86860
+  __nptl_setxid_86860 - [syscall]-> tgkill
+
+Path to readlink:
+  capng_apply_3e50 - [DIRECT]-> log_problem_27b0
+  log_problem_27b0 - [DIRECT]-> readlink_f9ab0
+  readlink_f9ab0 - [syscall]-> readlink
+
+Path to openat:
+  capng_set_rootid_2c40 - [DIRECT]-> init_28c0
+  init_28c0 - [DIRECT]-> init_lib_2320
+  init_lib_2320 - [DIRECT]-> open_f7fc0
+  open_f7fc0 - [syscall]-> openat
+
+Path to fstatfs:
+  capng_set_rootid_2c40 - [DIRECT]-> init_28c0
+  init_28c0 - [DIRECT]-> init_lib_2320
+  init_lib_2320 - [DIRECT]-> fstatfs_f7c30
+  fstatfs_f7c30 - [syscall]-> fstatfs
+
+Path to read:
+  capng_set_rootid_2c40 - [DIRECT]-> init_28c0
+  init_28c0 - [DIRECT]-> init_lib_2320
+  init_lib_2320 - [DIRECT]-> read_f82a0
+  read_f82a0 - [syscall]-> read
+
+Path to close:
+  capng_set_rootid_2c40 - [DIRECT]-> init_28c0
+  init_28c0 - [DIRECT]-> init_lib_2320
+  init_lib_2320 - [DIRECT]-> close_f89e0
+  close_f89e0 - [syscall]-> close
+
+Path to munmap:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _IO_file_close_mmap_80470
+  _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
+  munmap_101a00 - [syscall]-> munmap
+
+Path to lseek:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _IO_file_seek_806d0
+  _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
+  lseek_f83e0 - [syscall]-> lseek
+
+Path to write:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
+  write_f8340 - [syscall]-> write
+
+Path to mmap:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
+Path to rt_sigprocmask:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [syscall]-> rt_sigprocmask
+
+Path to getrandom:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
+  getrandom_3f180 - [syscall]-> getrandom
+
+Path to clock_gettime:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
+  ptmalloc_init.part.0_952f0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
+  clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
+
+Path to getpid:
+  capng_change_id_4120 - [DIRECT]-> setresgid_d58f0
+  setresgid_d58f0 - [DIRECT]-> __nptl_setxid_86860
+  __nptl_setxid_86860 - [DIRECT]-> getpid_d54e0
+  getpid_d54e0 - [syscall]-> getpid
+
+Path to mremap:
+  capng_change_id_4120 - [DIRECT]-> getpwuid_d2e70
+  getpwuid_d2e70 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> mremap_1099d0
+  mremap_1099d0 - [syscall]-> mremap
+
+Path to madvise:
+  capng_change_id_4120 - [DIRECT]-> getpwuid_d2e70
+  getpwuid_d2e70 - [DIRECT]-> realloc_99130
+  realloc_99130 - [DIRECT]-> madvise_101b00
+  madvise_101b00 - [syscall]-> madvise
+
+Path to prlimit64:
+  capng_change_id_4120 - [DIRECT]-> initgroups_d0f50
+  initgroups_d0f50 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> getrlimit_fd7e0
+  getrlimit_fd7e0 - [syscall]-> prlimit64
+
+Path to ioctl:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _IO_file_doallocate_75840
+  _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
+  isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
+  tcgetattr_fd4a0 - [syscall]-> ioctl
+
+Path to getdents64:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
+  getdents64_d0030 - [syscall]-> getdents64
+
+Path to pread64:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
+  __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
+  __pread64_nocancel_fd130 - [syscall]-> pread64
+
+Path to mprotect:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> mprotect_101a30
+  mprotect_101a30 - [syscall]-> mprotect
+
+Path to exit_group:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit_group
+
+Path to exit:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> _exit_d43e0
+  _exit_d43e0 - [syscall]-> exit
+
+Path to sched_getaffinity:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> arena_get2_957a0
+  arena_get2_957a0 - [DIRECT]-> get_nprocs_104340
+  get_nprocs_104340 - [DIRECT]-> __get_nprocs_sched_1042c0
+  __get_nprocs_sched_1042c0 - [syscall]-> sched_getaffinity
+
+Path to sysinfo:
+  capng_change_id_4120 - [DIRECT]-> initgroups_d0f50
+  initgroups_d0f50 - [DIRECT]-> sysconf_d62a0
+  sysconf_d62a0 - [DIRECT]-> get_avphys_pages_104450
+  get_avphys_pages_104450 - [DIRECT]-> sysinfo_10a0c0
+  sysinfo_10a0c0 - [syscall]-> sysinfo
+
+Path to sendto:
+  capng_apply_3e50 - [DIRECT]-> log_problem_27b0
+  log_problem_27b0 - [DIRECT]-> __syslog_chk_1015c0
+  __syslog_chk_1015c0 - [DIRECT]-> __vsyslog_internal_100d80
+  __vsyslog_internal_100d80 - [DIRECT]-> send_10ab40
+  send_10ab40 - [syscall]-> sendto
+
+Path to rt_sigaction:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> __libc_message_7f1d0
+  __libc_message_7f1d0 - [DIRECT]-> abort_2639f
+  abort_2639f - [DIRECT]-> sigaction_3c010
+  sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
+  __libc_sigaction_3c060 - [syscall]-> rt_sigaction
+
+Path to connect:
+  capng_apply_3e50 - [DIRECT]-> log_problem_27b0
+  log_problem_27b0 - [DIRECT]-> __syslog_chk_1015c0
+  __syslog_chk_1015c0 - [DIRECT]-> __vsyslog_internal_100d80
+  __vsyslog_internal_100d80 - [DIRECT]-> openlog_internal_100c70
+  openlog_internal_100c70 - [DIRECT]-> connect_10a7b0
+  connect_10a7b0 - [syscall]-> connect
+
+Path to socket:
+  capng_apply_3e50 - [DIRECT]-> log_problem_27b0
+  log_problem_27b0 - [DIRECT]-> __syslog_chk_1015c0
+  __syslog_chk_1015c0 - [DIRECT]-> __vsyslog_internal_100d80
+  __vsyslog_internal_100d80 - [DIRECT]-> openlog_internal_100c70
+  openlog_internal_100c70 - [DIRECT]-> socket_10adc0
+  socket_10adc0 - [syscall]-> socket
+
+Path to getcwd:
+  capng_get_caps_process_2cb0 - [DIRECT]-> __isoc99_sscanf_52220
+  __isoc99_sscanf_52220 - [DIRECT]-> __vfscanf_internal_5eb60
+  __vfscanf_internal_5eb60 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [syscall]-> getcwd
+
+Path to poll:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> poll_fc220
+  poll_fc220 - [syscall]-> poll
+
+Path to recvfrom:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> recvfrom_10a9d0
+  recvfrom_10a9d0 - [syscall]-> recvfrom
+
+Path to sendmmsg:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> sendmmsg_10b0b0
+  sendmmsg_10b0b0 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_vc_12dcf0
+  send_vc_12dcf0 - [DIRECT]-> getpeername_10a850
+  getpeername_10a850 - [syscall]-> getpeername
+
+Path to brk:
+  capng_print_caps_text_4900 - [DIRECT]-> malloc_98930
+  malloc_98930 - [DIRECT]-> _int_malloc_97360
+  _int_malloc_97360 - [DIRECT]-> sysmalloc_96b20
+  sysmalloc_96b20 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
+Path to recvmsg:
+  capng_change_id_4120 - [DIRECT]-> initgroups_d0f50
+  initgroups_d0f50 - [DIRECT]-> internal_getgrouplist_d0b90
+  internal_getgrouplist_d0b90 - [DIRECT]-> __nscd_getgrouplist_14a660
+  __nscd_getgrouplist_14a660 - [DIRECT]-> __nscd_get_map_ref_14c4d0
+  __nscd_get_map_ref_14c4d0 - [DIRECT]-> __nscd_get_mapping_14c0b0
+  __nscd_get_mapping_14c0b0 - [DIRECT]-> recvmsg_10aa90
+  recvmsg_10aa90 - [syscall]-> recvmsg
+
+Path to sched_getparam:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getparam_edf80
+  sched_getparam_edf80 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_current_priority_91250
+  __pthread_current_priority_91250 - [DIRECT]-> sched_getscheduler_edfe0
+  sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
+
+Path to sched_setscheduler:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_setscheduler_edfb0
+  sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
+
+Path to sched_get_priority_max:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_max_ee040
+  sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [DIRECT]-> _IO_vtable_check_7fc10
+  _IO_vtable_check_7fc10 - [DIRECT]-> _dl_addr_14ecd0
+  _dl_addr_14ecd0 - [DIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_8c370
+  pthread_mutex_lock@@GLIBC_2.2.5_8c370 - [DIRECT]-> __pthread_mutex_lock_full_8bc70
+  __pthread_mutex_lock_full_8bc70 - [DIRECT]-> __pthread_tpp_change_priority_90e60
+  __pthread_tpp_change_priority_90e60 - [DIRECT]-> sched_get_priority_min_ee070
+  sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
+
+Path to fcntl:
+  capng_get_caps_process_2cb0 - [DIRECT]-> __isoc99_sscanf_52220
+  __isoc99_sscanf_52220 - [DIRECT]-> __vfscanf_internal_5eb60
+  __vfscanf_internal_5eb60 - [DIRECT]-> __assert_fail_34e80
+  __assert_fail_34e80 - [DIRECT]-> dcgettext_358b0
+  dcgettext_358b0 - [DIRECT]-> __dcigettext_365e0
+  __dcigettext_365e0 - [DIRECT]-> getcwd_f8c50
+  getcwd_f8c50 - [DIRECT]-> fdopendir_d03b0
+  fdopendir_d03b0 - [DIRECT]-> __fcntl64_nocancel_fce90
+  __fcntl64_nocancel_fce90 - [syscall]-> fcntl
+
+Path to uname:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __resolv_context_get_130c20
+  __resolv_context_get_130c20 - [DIRECT]-> maybe_init_130aa0
+  maybe_init_130aa0 - [DIRECT]-> __res_vinit_12bf90
+  __res_vinit_12bf90 - [DIRECT]-> __resolv_conf_load_12b1c0
+  __resolv_conf_load_12b1c0 - [DIRECT]-> gethostname_fe620
+  gethostname_fe620 - [DIRECT]-> uname_d3b00
+  uname_d3b00 - [syscall]-> uname
+
+Path to setsockopt:
+  capng_get_caps_process_2cb0 - [DIRECT]-> fclose@@GLIBC_2.2.5_759a0
+  fclose@@GLIBC_2.2.5_759a0 - [INDIRECT]-> _nss_dns_getcanonname_r_125380
+  _nss_dns_getcanonname_r_125380 - [DIRECT]-> __res_context_query_12c740
+  __res_context_query_12c740 - [DIRECT]-> __res_context_send_12f3d0
+  __res_context_send_12f3d0 - [DIRECT]-> send_dg_12e590
+  send_dg_12e590 - [DIRECT]-> reopen_12e420
+  reopen_12e420 - [DIRECT]-> __res_enable_icmp_12a2d0
+  __res_enable_icmp_12a2d0 - [DIRECT]-> setsockopt_10ad60
+  setsockopt_10ad60 - [syscall]-> setsockopt

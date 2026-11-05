@@ -1,0 +1,254 @@
+
+Path to rt_sigreturn:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> __restore_rt_29df0
+  __restore_rt_29df0 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> _dl_lookup_symbol_x_c680
+  _dl_lookup_symbol_x_c680 - [syscall]-> futex
+
+Path to brk:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [DIRECT]-> brk_284c0
+  brk_284c0 - [syscall]-> brk
+
+Path to arch_prctl:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [syscall]-> arch_prctl
+
+Path to execve:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [syscall]-> execve
+
+Path to mmap:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> __minimal_malloc_d5c0
+  __minimal_malloc_d5c0 - [DIRECT]-> mmap_29930
+  mmap_29930 - [syscall]-> mmap
+
+Path to prctl:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> __minimal_malloc_d5c0
+  __minimal_malloc_d5c0 - [DIRECT]-> __set_vma_name_29ab0
+  __set_vma_name_29ab0 - [syscall]-> prctl
+
+Path to writev:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> _dl_debug_printf_feb0
+  _dl_debug_printf_feb0 - [DIRECT]-> _dl_debug_vdprintf_f890
+  _dl_debug_vdprintf_f890 - [syscall]-> writev
+
+Path to exit_group:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> version_check_doit_239d0
+  version_check_doit_239d0 - [DIRECT]-> _Exit_29c50
+  _Exit_29c50 - [syscall]-> exit_group
+
+Path to fcntl:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [DIRECT]-> __libc_check_standard_fds_28ec0
+  __libc_check_standard_fds_28ec0 - [DIRECT]-> __fcntl64_nocancel_29620
+  __fcntl64_nocancel_29620 - [syscall]-> fcntl
+
+Path to openat:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [DIRECT]-> __libc_check_standard_fds_28ec0
+  __libc_check_standard_fds_28ec0 - [DIRECT]-> __open64_nocancel_29710
+  __open64_nocancel_29710 - [syscall]-> openat
+
+Path to fstat:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [DIRECT]-> __libc_check_standard_fds_28ec0
+  __libc_check_standard_fds_28ec0 - [DIRECT]-> fstat_294b0
+  fstat_294b0 - [syscall]-> fstat
+
+Path to access:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> access_29480
+  access_29480 - [syscall]-> access
+
+Path to set_tid_address:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> __tls_init_tp_16e40
+  __tls_init_tp_16e40 - [syscall]-> set_tid_address
+
+Path to set_robust_list:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> __tls_init_tp_16e40
+  __tls_init_tp_16e40 - [syscall]-> set_robust_list
+
+Path to rseq:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> __tls_init_tp_16e40
+  __tls_init_tp_16e40 - [syscall]-> rseq
+
+Path to getpid:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> getpid_29c90
+  getpid_29c90 - [syscall]-> getpid
+
+Path to munmap:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> munmap_29a10
+  munmap_29a10 - [syscall]-> munmap
+
+Path to mprotect:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> relocate_doit_234c0
+  relocate_doit_234c0 - [DIRECT]-> _dl_relocate_object_14560
+  _dl_relocate_object_14560 - [DIRECT]-> mprotect_299e0
+  mprotect_299e0 - [syscall]-> mprotect
+
+Path to getcwd:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_new_object_dc40
+  _dl_new_object_dc40 - [DIRECT]-> getcwd_284f0
+  getcwd_284f0 - [syscall]-> getcwd
+
+Path to readlinkat:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_map_object_deps_3a10
+  _dl_map_object_deps_3a10 - [DIRECT]-> _dl_get_origin_f660
+  _dl_get_origin_f660 - [syscall]-> readlinkat
+
+Path to write:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_help_23050
+  _dl_help_23050 - [DIRECT]-> _dl_write_18720
+  _dl_write_18720 - [syscall]-> write
+
+Path to close:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_sysdep_read_whole_file_d800
+  _dl_sysdep_read_whole_file_d800 - [DIRECT]-> __GI___close_nocancel_295e0
+  __GI___close_nocancel_295e0 - [syscall]-> close
+
+Path to lseek:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_start_profile_21400
+  _dl_start_profile_21400 - [DIRECT]-> lseek_29510
+  lseek_29510 - [syscall]-> lseek
+
+Path to newfstatat:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_new_object_dc40
+  _dl_new_object_dc40 - [DIRECT]-> getcwd_284f0
+  getcwd_284f0 - [DIRECT]-> fstatat_294e0
+  fstatat_294e0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_start_profile_21400
+  _dl_start_profile_21400 - [DIRECT]-> profil_293c0
+  profil_293c0 - [DIRECT]-> __libc_sigaction_29e00
+  __libc_sigaction_29e00 - [syscall]-> rt_sigaction
+
+Path to setitimer:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_start_profile_21400
+  _dl_start_profile_21400 - [DIRECT]-> profil_293c0
+  profil_293c0 - [DIRECT]-> setitimer_2e990
+  setitimer_2e990 - [syscall]-> setitimer
+
+Path to sched_getaffinity:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_print_diagnostics_1e510
+  _dl_print_diagnostics_1e510 - [DIRECT]-> _dl_diagnostics_cpu_1f650
+  _dl_diagnostics_cpu_1f650 - [DIRECT]-> _dl_diagnostics_cpuid_1ec60
+  _dl_diagnostics_cpuid_1ec60 - [syscall]-> sched_getaffinity
+
+Path to getcpu:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_print_diagnostics_1e510
+  _dl_print_diagnostics_1e510 - [DIRECT]-> _dl_diagnostics_cpu_1f650
+  _dl_diagnostics_cpu_1f650 - [DIRECT]-> _dl_diagnostics_cpuid_1ec60
+  _dl_diagnostics_cpuid_1ec60 - [syscall]-> getcpu
+
+Path to sched_setaffinity:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_print_diagnostics_1e510
+  _dl_print_diagnostics_1e510 - [DIRECT]-> _dl_diagnostics_cpu_1f650
+  _dl_diagnostics_cpu_1f650 - [DIRECT]-> _dl_diagnostics_cpuid_1ec60
+  _dl_diagnostics_cpuid_1ec60 - [syscall]-> sched_setaffinity
+
+Path to read:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> map_doit_23480
+  map_doit_23480 - [DIRECT]-> _dl_map_object_b4d0
+  _dl_map_object_b4d0 - [DIRECT]-> _dl_map_new_object_a880
+  _dl_map_new_object_a880 - [DIRECT]-> open_verify.constprop.0_6e30
+  open_verify.constprop.0_6e30 - [DIRECT]-> __read_nocancel_297b0
+  __read_nocancel_297b0 - [syscall]-> read
+
+Path to pread64:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [INDIRECT]-> map_doit_23480
+  map_doit_23480 - [DIRECT]-> _dl_map_object_b4d0
+  _dl_map_object_b4d0 - [DIRECT]-> _dl_map_new_object_a880
+  _dl_map_new_object_a880 - [DIRECT]-> open_verify.constprop.0_6e30
+  open_verify.constprop.0_6e30 - [DIRECT]-> __pread64_nocancel_29780
+  __pread64_nocancel_29780 - [syscall]-> pread64
+
+Path to getdents64:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_new_object_dc40
+  _dl_new_object_dc40 - [DIRECT]-> getcwd_284f0
+  getcwd_284f0 - [DIRECT]-> readdir_29170
+  readdir_29170 - [DIRECT]-> getdents64_292c0
+  getdents64_292c0 - [syscall]-> getdents64
+
+Path to uname:
+  _start_23340 - [DIRECT]-> _dl_start_23ee0
+  _dl_start_23ee0 - [DIRECT]-> _dl_sysdep_start_22d40
+  _dl_sysdep_start_22d40 - [INDIRECT_RESOLVED]-> dl_main_247a0
+  dl_main_247a0 - [DIRECT]-> _dl_print_diagnostics_1e510
+  _dl_print_diagnostics_1e510 - [DIRECT]-> _dl_diagnostics_kernel_1fe60
+  _dl_diagnostics_kernel_1fe60 - [DIRECT]-> print_uname_1fd70
+  print_uname_1fd70 - [DIRECT]-> uname_29ca0
+  uname_29ca0 - [syscall]-> uname

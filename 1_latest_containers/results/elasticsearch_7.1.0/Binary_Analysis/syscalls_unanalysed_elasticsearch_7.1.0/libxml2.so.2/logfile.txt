@@ -1,0 +1,292 @@
+
+Path to rt_sigreturn:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
+
+Path to close:
+  xmlNanoFTPFreeCtxt_9f210 - [DIRECT]-> close_ef610
+  close_ef610 - [syscall]-> close
+
+Path to select:
+  xmlNanoFTPCloseConnection_a05c0 - [DIRECT]-> select_f4f40
+  select_f4f40 - [syscall]-> select
+
+Path to sendto:
+  xmlNanoFTPList_a08b0 - [DIRECT]-> send_fee50
+  send_fee50 - [syscall]-> sendto
+
+Path to recvfrom:
+  xmlNanoFTPList_a08b0 - [DIRECT]-> recv_fece0
+  recv_fece0 - [syscall]-> recvfrom
+
+Path to socket:
+  xmlNanoFTPGetConnection_a00e0 - [DIRECT]-> socket_ff020
+  socket_ff020 - [syscall]-> socket
+
+Path to getsockname:
+  xmlNanoFTPGetConnection_a00e0 - [DIRECT]-> getsockname_fec50
+  getsockname_fec50 - [syscall]-> getsockname
+
+Path to bind:
+  xmlNanoFTPGetConnection_a00e0 - [DIRECT]-> bind_feb90
+  bind_feb90 - [syscall]-> bind
+
+Path to listen:
+  xmlNanoFTPGetConnection_a00e0 - [DIRECT]-> listen_fecb0
+  listen_fecb0 - [syscall]-> listen
+
+Path to connect:
+  xmlNanoFTPGetConnection_a00e0 - [DIRECT]-> connect_febc0
+  connect_febc0 - [syscall]-> connect
+
+Path to open:
+  xmlNanoHTTPFetch_9e6e0 - [DIRECT]-> open_eed20
+  open_eed20 - [syscall]-> open
+
+Path to write:
+  xmlNanoHTTPFetch_9e6e0 - [DIRECT]-> write_eefc0
+  write_eefc0 - [syscall]-> write
+
+Path to getcwd:
+  xmlParserGetDirectory_641b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [syscall]-> getcwd
+
+Path to sched_yield:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_cleanup_7dac0
+  _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
+  sched_yield_e2d40 - [syscall]-> sched_yield
+
+Path to mmap:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
+  mmap_f8330 - [syscall]-> mmap
+
+Path to munmap:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
+  munmap_f83f0 - [syscall]-> munmap
+
+Path to read:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_file_read_7a740
+  _IO_file_read_7a740 - [DIRECT]-> read_eef60
+  read_eef60 - [syscall]-> read
+
+Path to lseek:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_file_seek_79e30
+  _IO_file_seek_79e30 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
+Path to fstat:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_file_stat_7a060
+  _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
+  _fxstat_ee8d0 - [syscall]-> fstat
+
+Path to mremap:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
+  mremap_fe630 - [syscall]-> mremap
+
+Path to futex:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> __cxa_finalize_39e40
+  __cxa_finalize_39e40 - [DIRECT]-> __unregister_atfork_10be70
+  __unregister_atfork_10be70 - [syscall]-> futex
+
+Path to writev:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [syscall]-> writev
+
+Path to stat:
+  xmlCheckFilename_62700 - [DIRECT]-> fuzzyfunc-0x60ed0_60ed0
+  fuzzyfunc-0x60ed0_60ed0 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
+
+Path to poll:
+  xmlNanoHTTPRead_9d870 - [DIRECT]-> fuzzyfunc-0x9c8c0_9c8c0
+  fuzzyfunc-0x9c8c0_9c8c0 - [DIRECT]-> poll_f31e0
+  poll_f31e0 - [syscall]-> poll
+
+Path to dup:
+  __xmlOutputBufferCreateFilename_63b70 - [DIRECT]-> fuzzyfunc-0x60dd0_60dd0
+  fuzzyfunc-0x60dd0_60dd0 - [DIRECT]-> dup_ef670
+  dup_ef670 - [syscall]-> dup
+
+Path to lstat:
+  xmlParserGetDirectory_641b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> _lxstat_ee920
+  _lxstat_ee920 - [syscall]-> lstat
+
+Path to openat:
+  xmlParserGetDirectory_641b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to newfstatat:
+  xmlParserGetDirectory_641b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
+  __fxstatat_eea30 - [syscall]-> newfstatat
+
+Path to ioctl:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
+  isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
+  tcgetattr_f4020 - [syscall]-> ioctl
+
+Path to brk:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> __default_morecore_88410
+  __default_morecore_88410 - [DIRECT]-> sbrk_f4820
+  sbrk_f4820 - [DIRECT]-> brk_f47b0
+  brk_f47b0 - [syscall]-> brk
+
+Path to rt_sigprocmask:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigprocmask_364a0
+  sigprocmask_364a0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> tgkill
+
+Path to gettid:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> raise_361d0
+  raise_361d0 - [syscall]-> gettid
+
+Path to exit_group:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit_group
+
+Path to exit:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> _exit_c51a0
+  _exit_c51a0 - [syscall]-> exit
+
+Path to recvmsg:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> rfc3484_sort_e3f70
+  rfc3484_sort_e3f70 - [DIRECT]-> __check_native_125320
+  __check_native_125320 - [DIRECT]-> recvmsg_fedf0
+  recvmsg_fedf0 - [syscall]-> recvmsg
+
+Path to fcntl:
+  xmlNanoHTTPMethodRedir_9d9f0 - [DIRECT]-> fuzzyfunc-0x9cfd0_9cfd0
+  fuzzyfunc-0x9cfd0_9cfd0 - [DIRECT]-> fuzzyfunc-0x9cdd0_9cdd0
+  fuzzyfunc-0x9cdd0_9cdd0 - [DIRECT]-> fcntl_ef3b0
+  fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to getsockopt:
+  xmlNanoHTTPMethodRedir_9d9f0 - [DIRECT]-> fuzzyfunc-0x9cfd0_9cfd0
+  fuzzyfunc-0x9cfd0_9cfd0 - [DIRECT]-> fuzzyfunc-0x9cdd0_9cdd0
+  fuzzyfunc-0x9cdd0_9cdd0 - [DIRECT]-> getsockopt_fec80
+  getsockopt_fec80 - [syscall]-> getsockopt
+
+Path to kill:
+  xmlNanoFTPFreeCtxt_9f210 - [DIRECT]-> close_ef610
+  close_ef610 - [DIRECT]-> __libc_enable_asynccancel_10bbd0
+  __libc_enable_asynccancel_10bbd0 - [DIRECT]-> __pthread_unwind_13d930
+  __pthread_unwind_13d930 - [syscall]-> kill
+
+Path to clock_getres:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> getaddrinfo_e6a10
+  getaddrinfo_e6a10 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [syscall]-> clock_getres
+
+Path to getdents:
+  xmlParserGetDirectory_641b0 - [DIRECT]-> getcwd_ef820
+  getcwd_ef820 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to madvise:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_85580
+  free_85580 - [DIRECT]-> _int_free_80f70
+  _int_free_80f70 - [DIRECT]-> heap_trim_7ff20
+  heap_trim_7ff20 - [DIRECT]-> madvise_f84b0
+  madvise_f84b0 - [syscall]-> madvise
+
+Path to rt_sigaction:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> abort_377b0
+  abort_377b0 - [DIRECT]-> sigaction_36480
+  sigaction_36480 - [DIRECT]-> __libc_sigaction_36290
+  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+
+Path to mprotect:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> malloc_85160
+  malloc_85160 - [DIRECT]-> arena_get2.isra.3_7f6d0
+  arena_get2.isra.3_7f6d0 - [DIRECT]-> new_heap_7ef30
+  new_heap_7ef30 - [DIRECT]-> mprotect_f8420
+  mprotect_f8420 - [syscall]-> mprotect
+
+Path to getrlimit:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> getaddrinfo_e6a10
+  getaddrinfo_e6a10 - [DIRECT]-> qsort_r_38d10
+  qsort_r_38d10 - [DIRECT]-> sysconf_c6c10
+  sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
+  getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to getpid:
+  xmlCatalogLocalResolve_a5fa0 - [INDIRECT]-> free_check_84040
+  free_check_84040 - [DIRECT]-> __libc_message_78950
+  __libc_message_78950 - [DIRECT]-> vsyslog_f8000
+  vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
+  __vsyslog_chk_f7980 - [DIRECT]-> getpid_c5dd0
+  getpid_c5dd0 - [syscall]-> getpid
+
+Path to access:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> getaddrinfo_e6a10
+  getaddrinfo_e6a10 - [DIRECT]-> gaih_inet.constprop.8_e4cf0
+  gaih_inet.constprop.8_e4cf0 - [DIRECT]-> __inet6_scopeid_pton_1248b0
+  __inet6_scopeid_pton_1248b0 - [DIRECT]-> if_nametoindex_122180
+  if_nametoindex_122180 - [DIRECT]-> __opensock_ff0d0
+  __opensock_ff0d0 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
+Path to readv:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> gethostbyname_1186a0
+  gethostbyname_1186a0 - [DIRECT]-> gethostbyname_r@@GLIBC_2.2.5_119080
+  gethostbyname_r@@GLIBC_2.2.5_119080 - [DIRECT]-> __nscd_gethostbyname_r_1370c0
+  __nscd_gethostbyname_r_1370c0 - [DIRECT]-> nscd_gethst_r_136810
+  nscd_gethst_r_136810 - [DIRECT]-> __readvall_138dc0
+  __readvall_138dc0 - [DIRECT]-> readv_f4900
+  readv_f4900 - [syscall]-> readv
+
+Path to sendmmsg:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> _nss_dns_gethostbyname_r_2b60
+  _nss_dns_gethostbyname_r_2b60 - [DIRECT]-> gethostbyname3_context_2030
+  gethostbyname3_context_2030 - [DIRECT]-> __res_context_search_7b50
+  __res_context_search_7b50 - [DIRECT]-> __res_context_query_6ef0
+  __res_context_query_6ef0 - [DIRECT]-> __res_context_send_97a0
+  __res_context_send_97a0 - [DIRECT]-> sendmmsg_ff420
+  sendmmsg_ff420 - [syscall]-> sendmmsg
+
+Path to uname:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> gethostbyname_1186a0
+  gethostbyname_1186a0 - [DIRECT]-> __resolv_context_get_10f8f0
+  __resolv_context_get_10f8f0 - [DIRECT]-> maybe_init_10f780
+  maybe_init_10f780 - [DIRECT]-> __res_vinit_10e6b0
+  __res_vinit_10e6b0 - [DIRECT]-> __resolv_conf_load_10d920
+  __resolv_conf_load_10d920 - [DIRECT]-> gethostname_f4de0
+  gethostname_f4de0 - [DIRECT]-> uname_c4900
+  uname_c4900 - [syscall]-> uname
+
+Path to getpeername:
+  xmlNanoFTPConnect_9f420 - [DIRECT]-> _nss_dns_gethostbyname_r_2b60
+  _nss_dns_gethostbyname_r_2b60 - [DIRECT]-> gethostbyname3_context_2030
+  gethostbyname3_context_2030 - [DIRECT]-> __res_context_search_7b50
+  __res_context_search_7b50 - [DIRECT]-> __res_context_query_6ef0
+  __res_context_query_6ef0 - [DIRECT]-> __res_context_send_97a0
+  __res_context_send_97a0 - [DIRECT]-> send_vc_8980
+  send_vc_8980 - [DIRECT]-> getpeername_fec20
+  getpeername_fec20 - [syscall]-> getpeername

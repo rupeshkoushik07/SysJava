@@ -1,0 +1,9 @@
+Time taken for the analysis: 44 seconds
+Time taken for the analysis: 69 seconds
+Direct Edges computation: 0 seconds
+AT List computation: 11 seconds
+Indirect call target resolution:  5 seconds
+Generate indirect call targets: 5 seconds
+Print call graph edges: 14 seconds
+Time taken for the analysis: 77 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_BIN_jetty_12.1.10/whoami.uumain/callgraph.json

@@ -1,0 +1,11 @@
+exit_group
+futex
+getpid
+gettid
+mmap
+munmap
+prctl
+rt_sigaction
+rt_sigprocmask
+tgkill
+writev

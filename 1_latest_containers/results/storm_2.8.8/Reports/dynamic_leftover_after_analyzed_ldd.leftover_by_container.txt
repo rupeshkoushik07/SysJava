@@ -1,0 +1,19 @@
+storm_2.8.8 (17)
+  - _bz2.cpython-314-x86_64-linux-gnu.so
+  - _lzma.cpython-314-x86_64-linux-gnu.so
+  - _zstd.cpython-314-x86_64-linux-gnu.so
+  - libbz2.so.1.0
+  - libexpat.so.1
+  - libextnet.so
+  - libjimage.so
+  - libjli.so
+  - libjsvml.so
+  - liblzma.so.5
+  - libmanagement.so
+  - libmanagement_ext.so
+  - libpcre2-8.so.0
+  - libselinux.so.1
+  - libtinfo.so.6
+  - libz.so.1
+  - libzstd.so.1
+
