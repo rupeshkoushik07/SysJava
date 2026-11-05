@@ -64,6 +64,13 @@ RESOLVED_START="${OUT}/startfuncs_resolved.txt"
 awk 'NR==FNR { n=$1; sub(/@.*/, "", n); if ($1 ~ /@/ && !(n in ver)) ver[n]=$1; have[$1]=1; next }
      { print (($1 in have) || !($1 in ver)) ? $1 : ver[$1] }' "$OUT/allfunctions.txt" "$STARTFILE" > "$RESOLVED_START"
 ./syspart -p $APP -s $RESOLVED_START -i -a 23 | python3 "$(dirname "$(realpath "$0")")/parse_callgraph_to_json_lowmem.py" - $OUT/callgraph.json
+# A SysPart crash here (e.g. SIGSEGV on libgcrypt) leaves an empty call graph and would be
+# reported as "completed, 0 syscalls"; fail instead so it is counted as a failed result.
+callgraph_status=("${PIPESTATUS[@]}")
+if [ "${callgraph_status[0]}" -ne 0 ]; then
+    echo "compute_syscalls: syspart call-graph step (-a 23) exited ${callgraph_status[0]} on $APP; no result" >&2
+    exit 3
+fi
 
 # glibc >= 2.41 issues cancellable syscalls (fsync, wait4, ...) through
 # __syscall_cancel with the number pushed as an argument, which SysPart's

@@ -88,6 +88,7 @@ seccomp
 sendmmsg
 sendto
 set_robust_list
+set_tid_address
 setgid
 setgroups
 setitimer

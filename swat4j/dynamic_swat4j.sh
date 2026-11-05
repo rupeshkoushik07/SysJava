@@ -10,7 +10,9 @@
 set -uo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
-OUT="$HERE/dynamic"
+OUT="${OUT:-$HERE/dynamic}"
+# STRACE_FLAGS="-c" reproduces the paper's wording exactly (no -f: only the attached thread)
+STRACE_FLAGS="${STRACE_FLAGS:--f -c}"
 MAX_WAIT="${MAX_WAIT:-180}"
 mkdir -p "$OUT"
 
@@ -41,7 +43,7 @@ run_app() {
   local name="swat4j_dyn_$app" raw="$OUT/${app}_strace.txt"
   docker rm -f "$name" >/dev/null 2>&1
 
-  sudo strace -f -c -o "$raw" -p "$CONTAINERD_PID" 2>/dev/null &
+  sudo strace $STRACE_FLAGS -o "$raw" -p "$CONTAINERD_PID" 2>/dev/null &
   local spid=$!
   sleep 2   # let strace attach to all containerd threads
 
@@ -80,7 +82,7 @@ run_app() {
   echo "[done] $app: ${secs}s ($stopped_by), $n syscalls"
 }
 
-echo "Tracing containerd PID $CONTAINERD_PID, cap ${MAX_WAIT}s"
+echo "Tracing containerd PID $CONTAINERD_PID with strace $STRACE_FLAGS, cap ${MAX_WAIT}s"
 want=" $* "
 while IFS='|' read -r app image args ready; do
   [ -z "$app" ] && continue

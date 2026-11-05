@@ -8,8 +8,8 @@
 # 2. builds the EchoTrace (SysJava) bytecode analysis in echotrace/ (Maven)
 # 3. fetches the OpenJDK 8 native sources SWAT4J's mapper reads (swat4j/.tmp_jdk8_native)
 # 4. creates one working copy per pipeline:
-#      work/latest/  (Table tab:latest,  pipelines/latest/scripts)
-#      work/jdk8/    (Table tab:results, pipelines/jdk8/scripts)
+#      work/latest/  (Table tab:latest,  1_latest_containers/scripts)
+#      work/jdk8/    (Table tab:results, 2_swat4j_vs_sysjava/scripts)
 #    each = echotrace/ + the pipeline's scripts + runc.txt + a SysPart link tree.
 #
 # SYSPART_ROOT must point at a built SysPartCode checkout (see syspart/README.md):
@@ -67,25 +67,27 @@ syspart_tree() {  # <dest> <work repo>: symlink tree into SYSPART_ROOT, low-memo
     ln -s "$repo/scripts/compute_syscalls_lowmem.sh" "$dest/analysis/app/src/scripts/compute_syscalls.sh"
 }
 
+declare -A TABLE=([latest]=1_latest_containers [jdk8]=2_swat4j_vs_sysjava)
 for p in latest jdk8; do
     W="$ART/work/$p"
     echo "== work/$p"
     mkdir -p "$W"
     rsync -a --delete --exclude target/ "$ART/echotrace/" "$W/"
     rsync -a "$ART/echotrace/target/" "$W/target/"
-    rsync -a --delete "$ART/pipelines/$p/scripts/" "$W/scripts/"
-    cp "$ART/pipelines/$p/runc.txt" "$W/runc.txt"
+    rsync -a --delete "$ART/${TABLE[$p]}/scripts/" "$W/scripts/"
+    cp "$ART/${TABLE[$p]}/runc.txt" "$W/runc.txt"
     mkdir -p "$W/artifacts/all-running-containers/debug-symbols"
     syspart_tree "$W/SysPartCode" "$W"
 done
 # JDK 8 pipeline: runtime set includes the runc 1.3.4 init syscalls, the
 # workspaces read the classpath from jdk8_workspaces/, SysPart via SysPartLowmem,
 # and the five images are rebuilt locally from DockerFiles/jdk8-buster.
-cat "$ART/pipelines/jdk8/runc_host_1.3.4_additions.txt" >> "$ART/work/jdk8/runc.txt"
+cat "$ART/2_swat4j_vs_sysjava/runc_host_1.3.4_additions.txt" >> "$ART/work/jdk8/runc.txt"
 mkdir -p "$ART/work/jdk8/jdk8_workspaces"
 cp "$ART/work/jdk8/target/.classpath" "$ART/work/jdk8/jdk8_workspaces/.classpath"
 syspart_tree "$ART/work/jdk8/SysPartLowmem" "$ART/work/jdk8"
-rsync -a "$ART/pipelines/jdk8/DockerFiles/" "$ART/work/jdk8/DockerFiles/"
+mkdir -p "$ART/work/jdk8/DockerFiles"
+rsync -a "$ART/docker_images/dockerfiles/jdk8-buster/" "$ART/work/jdk8/DockerFiles/jdk8-buster/"
 
 echo
 echo "Setup done. Next:"

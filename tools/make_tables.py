@@ -5,7 +5,7 @@
 
 <set> is "latest" (Table tab:latest) or "jdk8" (Table tab:results). Each
 subfolder <results_dir>/<target>/ is one pipeline result (layout written by
-pipelines/*/scripts/organize_results.sh). Writes <out>/table.csv, table.md and
+<table folder>/scripts/organize_results.sh). Writes <out>/table.csv, table.md and
 table_rows.tex (rows in the paper's column order; '-' where a result is missing).
 
 Syscall-allowlist rows (all sets are syscall names, one per line):

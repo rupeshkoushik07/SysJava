@@ -10,8 +10,8 @@
 #
 # What it does:
 #   1. echotrace/          <- git archive of the detector commit (EchoTrace tool source)
-#   2. pipelines/latest/   <- driver + scripts used for 1_latest_containers
-#      pipelines/jdk8/     <- driver + scripts + Dockerfiles used for 2_swat4j_vs_sysjava
+#   2. 1_latest_containers/scripts/  <- driver + pipeline scripts used for that table
+#      2_swat4j_vs_sysjava/scripts/  <- driver + pipeline scripts used for that table
 #   3. syspart/            <- pinned SysPart build description and local patches
 #   4. swat4j/             <- SWAT4J run/compare scripts and their small outputs
 #   5. 1_latest_containers/results/<target>   <- Final_results_latest_versions
@@ -51,28 +51,24 @@ log "echotrace/ <- ${DETECTOR_REPO} @ ${DETECTOR_COMMIT}"
 rm -rf "$ART/echotrace"; mkdir -p "$ART/echotrace"
 git -C "$DETECTOR_REPO" archive "$DETECTOR_COMMIT" | tar -x -C "$ART/echotrace"
 # results/ and SysPartCode/ in the tool repo are old sample outputs / a stub; the
-# pipelines bring their own scripts and SysPart is built separately (syspart/).
+# table folders bring their own scripts/ and SysPart is built separately (syspart/).
+rm -rf "$ART/pipelines" "$ART/echotrace_patches"   # older layout
 rm -rf "$ART/echotrace/results" "$ART/echotrace/scripts" "$ART/echotrace/SysPartCode"
 git -C "$DETECTOR_REPO" rev-parse "$DETECTOR_COMMIT" > "$ART/echotrace/COMMIT"
 
-# ------------------------------------------------------------- 2. pipelines
-copy_scripts() {  # <src repo> <dest>
-    rm -rf "$2"; mkdir -p "$2"
+# ------------------------------------------------------- 2. pipeline scripts
+copy_scripts() {  # <src repo> <table folder>: scripts/ and the runtime set runc.txt
+    rm -rf "$2/scripts"; mkdir -p "$2"
     rsync -a --exclude '__pycache__' --exclude '*.pyc' --exclude '*.bak' "$1/scripts/" "$2/scripts/"
     cp "$1/runc.txt" "$2/runc.txt"
 }
-log "pipelines/latest <- ${LATEST_REPO}/scripts"
-copy_scripts "$LATEST_REPO" "$ART/pipelines/latest"
-log "pipelines/jdk8 <- ${JDK8_REPO}/scripts + DockerFiles/jdk8-buster"
-copy_scripts "$JDK8_REPO" "$ART/pipelines/jdk8"
-python3 "$ART/tools/add_jdk8_official_targets.py" "$ART/pipelines/jdk8/scripts"
+log "1_latest_containers/scripts <- ${LATEST_REPO}/scripts"
+copy_scripts "$LATEST_REPO" "$ART/1_latest_containers"
+log "2_swat4j_vs_sysjava/scripts <- ${JDK8_REPO}/scripts"
+copy_scripts "$JDK8_REPO" "$ART/2_swat4j_vs_sysjava"
+python3 "$ART/tools/add_jdk8_official_targets.py" "$ART/2_swat4j_vs_sysjava/scripts"
 # The JDK 8 runs used runc.txt plus the four runc 1.3.4 init syscalls (README beside it).
-cp "$JDK8_REPO"/runc_host_1.3.4_additions.* "$ART/pipelines/jdk8/"
-mkdir -p "$ART/pipelines/jdk8/DockerFiles"
-rsync -a "$JDK8_REPO/DockerFiles/jdk8-buster/" "$ART/pipelines/jdk8/DockerFiles/jdk8-buster/"   # driver expects them here; same files as docker_images/dockerfiles
-for p in "$JDK8_REPO"/patches/*.patch; do
-    if [ -f "$p" ]; then mkdir -p "$ART/echotrace_patches"; cp "$p" "$ART/echotrace_patches/"; fi
-done
+cp "$JDK8_REPO"/runc_host_1.3.4_additions.* "$ART/2_swat4j_vs_sysjava/"
 
 # --------------------------------------------------------------- 3. SysPart
 log "syspart/ <- ${JDK8_REPO}/syspart-pin"
@@ -208,9 +204,9 @@ if [ "$CODE_ONLY" = 0 ]; then
     status_md "$ART/2_swat4j_vs_sysjava/STATUS.md" "$ART/2_swat4j_vs_sysjava/sysjava_results" "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"
     log "tables"
     python3 "$ART/tools/make_tables.py" latest "$ART/1_latest_containers/results" \
-        --runtime "$ART/pipelines/latest/runc.txt" --out "$ART/1_latest_containers/tables" || true
+        --runtime "$ART/1_latest_containers/runc.txt" --out "$ART/1_latest_containers/tables" || true
     python3 "$ART/tools/make_tables.py" jdk8 "$ART/2_swat4j_vs_sysjava/sysjava_results" \
-        --runtime "$ART/pipelines/jdk8/runc.txt" "$ART/pipelines/jdk8/runc_host_1.3.4_additions.txt" --out "$ART/2_swat4j_vs_sysjava/tables" || true
+        --runtime "$ART/2_swat4j_vs_sysjava/runc.txt" "$ART/2_swat4j_vs_sysjava/runc_host_1.3.4_additions.txt" --out "$ART/2_swat4j_vs_sysjava/tables" || true
 fi
 
 bash "$ART/tools/anonymise.sh" --check "$ART"

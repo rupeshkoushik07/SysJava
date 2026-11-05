@@ -24,8 +24,6 @@ rebuild the tables from the results.
 | `Results/` | Results of the original submission, kept unchanged | submitted version |
 | [`docker_images/`](docker_images/README.md) | Every image used, with its digest, image ID, OS and JDK; the Dockerfiles of the rebuilt Debian 10 + JDK 8 images and a pinned build script | |
 | `echotrace/` | Tool source: the bytecode analysis (Java, Maven). Commit in `echotrace/COMMIT` | |
-| `echotrace_patches/` | The detector fix (`<clinit>` and inherited methods) as a patch, to rebuild the earlier detector | |
-| `pipelines/latest/`, `pipelines/jdk8/` | The exact driver and pipeline scripts used for folders 1 and 2 | |
 | [`syspart/`](syspart/README.md) | Which SysPart build is used and how to build it (SysPart is a third-party tool) | |
 | [`swat4j/`](swat4j/README.md) | Scripts that run the SWAT4J baseline unmodified (its allowlists are added with the results) | |
 | `analysis/` | Native-declaration coverage audit (`coverage.sh`) | coverage rows of both tables |
@@ -69,9 +67,9 @@ Rerunning the pipeline takes hours per image.
 
 ```bash
 python3 tools/make_tables.py latest 1_latest_containers/results \
-    --runtime pipelines/latest/runc.txt --out /tmp/latest_table
+    --runtime 1_latest_containers/runc.txt --out /tmp/latest_table
 python3 tools/make_tables.py jdk8 2_swat4j_vs_sysjava/sysjava_results \
-    --runtime pipelines/jdk8/runc.txt pipelines/jdk8/runc_host_1.3.4_additions.txt \
+    --runtime 2_swat4j_vs_sysjava/runc.txt 2_swat4j_vs_sysjava/runc_host_1.3.4_additions.txt \
     --out /tmp/jdk8_table
 ```
 
@@ -108,7 +106,7 @@ AUDIT=analysis/coverage_jdk8/per_app_summary.csv   TABLE_ONLY=1 2_swat4j_vs_sysj
 Each `reproduce.sh` takes image names to run a subset. `STAGE=<n>` resumes an
 image from pipeline stage *n*. A failed stage does not stop the other images.
 
-Pipeline stages, the same for every image (`pipelines/*/scripts/run_*_target.sh`):
+Pipeline stages, the same for every image (`1_latest_containers/scripts/run_latest_target.sh`, `2_swat4j_vs_sysjava/scripts/run_jdk8_target.sh`):
 
 | Stage | What runs | Main script |
 |---|---|---|

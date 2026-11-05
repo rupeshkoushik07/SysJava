@@ -32,6 +32,8 @@ Digests and image IDs of all of them: `../docker_images/IMAGES.md`.
 > The result folders are placeholders (`PENDING.md`) until the final runs are
 > done; `tables/` and `STATUS.md` are added with the results.
 
+* `scripts/`: the exact pipeline scripts used for this table (driver: `scripts/run_jdk8_target.sh`).
+* `runc.txt` + `runc_host_1.3.4_additions.txt`: the runtime syscall set merged into every profile.
 * `sysjava_results/<image>/`: SysJava pipeline result. The layout is described in
   the top-level README. The profile is
   `Binary_Analysis/syscalls_output_<image>/<image>.json`, and the runtime check is
@@ -59,7 +61,7 @@ STAGE=7 ./reproduce.sh solr_8.7.0-jdk8-buster   # resume from stage 7
 TABLE_ONLY=1 ./reproduce.sh
 ```
 
-The driver is `pipelines/jdk8/scripts/run_jdk8_target.sh`. Results go to
+The driver is `scripts/run_jdk8_target.sh`. Results go to
 `work/jdk8/Final_results_JDK8/<image>/`. Its stages are numbered
 1-10: there is no separate unnamed-function count, so stage 9 is the profile
 merge and stage 10 the runtime check (stages 10 and 11 in the latest pipeline).
@@ -97,7 +99,7 @@ with the profile in log mode, and the README beside that file explains how.
 ## Notes
 
 * The five official images run through the same driver
-  (`pipelines/jdk8/scripts/run_jdk8_target.sh`). Only their image, run options
+  (`scripts/run_jdk8_target.sh`). Only their image, run options
   and ready log line are added; the pipeline is the same. JRuby's `irb` prints
   no ready line, so it counts as ready once its JVM has run for 30 s.
 * SysPart call graphs of stripped libraries get their function names from the

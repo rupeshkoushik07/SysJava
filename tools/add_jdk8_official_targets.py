@@ -3,7 +3,7 @@
 JDK 8 images of Table tab:results (zookeeper:3.4.14, tomcat:7.0,
 cassandra:3.0.29, orientdb:3.2.19, jruby:9.4.2.0).
 
-    add_jdk8_official_targets.py <pipelines/jdk8/scripts>
+    add_jdk8_official_targets.py <2_swat4j_vs_sysjava/scripts>
 
 The pipeline is unchanged; only the per-image settings are added (image, docker
 run arguments, ready log line), plus one readiness rule for images that print

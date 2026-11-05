@@ -23,6 +23,8 @@ covering JDK 8 to 25. One folder per image is in `results/`.
 > The result folders are placeholders (`PENDING.md`) until the final runs are
 > done; `tables/` and `STATUS.md` are added with the results.
 
+* `scripts/`: the exact pipeline scripts used for this table (driver: `scripts/run_latest_target.sh`).
+* `runc.txt`: the runtime syscall set merged into every profile.
 * `results/<image>/`: one pipeline result. The layout is described in the top-level README.
   * The seccomp profile is `Binary_Analysis/syscalls_output_<image>/<image>.json`.
   * Whether the container still starts under that profile is in `seccomp_runtime_test.log`.
@@ -42,7 +44,7 @@ STAGE=8 ./reproduce.sh solr_10.0.0              # resume an image from stage 8
 TABLE_ONLY=1 ./reproduce.sh                     # only rebuild tables_rerun/ from existing results
 ```
 
-The pipeline driver is `pipelines/latest/scripts/run_latest_target.sh` (in the
+The pipeline driver is `scripts/run_latest_target.sh` (in the
 working copy `work/latest/`). For each image it writes
 `work/latest/Final_results_latest_versions/<image>/`, in the same layout as
 `results/`. To compare a rerun with the shipped table:
@@ -66,7 +68,7 @@ AUDIT=../analysis/coverage_latest/per_app_summary.csv TABLE_ONLY=1 ./reproduce.s
 |---|---|
 | Java Lib Syscalls | `Binary_Analysis/syscalls_output_<image>/library_syscalls.txt` ∪ `Binary_Analysis/jna_ffi_analysis/union_syscalls.txt` |
 | Container Binary Syscalls | `Binary_Analysis/syscalls_BIN_<image>/binary_syscalls.txt` |
-| Runtime Set, Additional | `pipelines/latest/runc.txt` minus the two rows above |
+| Runtime Set, Additional | `runc.txt` (in this folder) minus the two rows above |
 | Library Fallback (Δ) | `Binary_Analysis/syscalls_unanalysed_<image>/unanalysed_syscalls.txt` minus all of the above |
 | Total Syscalls | syscall names in the profile `<image>.json` (checked to equal the union of the four sets) |
 | Libraries / Executables / JARs Observed | `Dynamic_Analysis/sysdig_outputs_<image>/libs_loaded_raw.txt`, `binaries_unique_<image>.txt`, `jars_unique_<image>.txt` |
@@ -76,14 +78,11 @@ AUDIT=../analysis/coverage_latest/per_app_summary.csv TABLE_ONLY=1 ./reproduce.s
 
 ## Notes
 
-* **Detector build.** Elasticsearch 7.1.0, Storm 2.8.8 and JRuby 10.1.0.0 were run
-  with the detector at `echotrace/COMMIT`. That build follows class initialisers
-  (`<clinit>`) and resolves inherited methods. The detector without this fix is
-  `echotrace/` with `echotrace_patches/prototypefinal_clinit_inherited_fix.patch`
-  reverted (`git apply -R`). Each `detector_commit.txt` records which build an
-  image used.
+* **Detector build.** `echotrace/` (commit in `echotrace/COMMIT`) follows class
+  initialisers (`<clinit>`) and resolves inherited methods. Each image's
+  `detector_commit.txt` records the detector commit it was analysed with.
 * **glibc ≥ 2.41.** Cancellable syscall wrappers there pass the syscall number
-  through `__syscall_cancel`. `pipelines/latest/scripts/cancel_syscall_sites.py`
+  through `__syscall_cancel`. `scripts/cancel_syscall_sites.py`
   recovers these call sites (OrientDB, Jetty and Storm run on glibc 2.43).
 * **Runtime set.** `runc.txt` holds the syscalls the container runtime issues
   before the application starts.

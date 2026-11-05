@@ -238,7 +238,12 @@ fi
 PROFILE_NAME="${T}.json"
 if run_from 10; then
     stage 10 "merge syscalls into seccomp profile, assemble results"
-    python3 "${WS}/scripts/merge_all_syscalls.py" "$T"
+    # merge_all_syscalls.py exits 1 when any binary/library has no result (e.g. gosu)
+    # even though it writes the profile; only a missing profile is fatal.
+    python3 "${WS}/scripts/merge_all_syscalls.py" "$T" \
+        || { [ -s "${WS}/syscalls_output_${T}/${T}.json" ] \
+             && echo "stage 10: merge reported items without results (listed above); profile written, continuing" \
+             || { echo "stage 10: merge wrote no profile"; exit 1; }; }
     ORGANIZE_TMP="${WS}/Final_results"
     rm -rf "$ORGANIZE_TMP"
     bash "${WS}/scripts/organize_results.sh" "$T"
