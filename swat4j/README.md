@@ -1,27 +1,32 @@
 # SWAT4J baseline
 
-SWAT4J (https://github.com/facumolina/SWAT4J, commit `6929d66`) is the tool
-SysJava is compared against in Table `tab:results`. It is run **unmodified**. Its
-bugs, crashes and coverage gaps are reported as they are. Only the environment
-it expects is provided.
+SWAT4J (https://github.com/facumolina/SWAT4J, commit `6929d66`) is run
+**unmodified** on the ten JDK 8 images of Table `tab:results`: no fixes and no
+workarounds. Only the environment it expects is provided.
 
-| File | Purpose |
+## Shipped outputs
+
+`outputs/` holds SWAT4J's static and dynamic allowlists for the ten images,
+its native-method mapping, and SysJava's allowlists for the same images
+(`outputs/README.md` lists every file). To print the table:
+
+```bash
+python3 show_results.py outputs           # the table
+python3 show_results.py outputs --sets    # also the syscalls only SysJava / only SWAT4J allows
+```
+
+## Rerun
+
+`../2_swat4j_vs_sysjava/reproduce.sh` runs these in order:
+
+| Script | Step |
 |---|---|
-| `setup_swat4j.sh` | Clone SWAT4J at the pinned commit into `run/`, compile its bytecode tracer with JDK 8 |
-| `run_swat4j_host.sh <image>...` | SWAT4J static analysis on the host's OpenJDK 8. Uses the JARs/libraries of a SysJava result (`DATASETS=<results dir>`) |
-| `run_swat4j.sh` | The same in an Ubuntu 18.04 container (`docker/Dockerfile`). Earlier variant, kept for reference |
-| `dynamic_swat4j.sh <app>...` | SWAT4J dynamic analysis as in its paper: `strace -f -c` on containerd while the image starts |
-| `swat4j_mapping.py` | SWAT4J's JNI-name mapping (from `binary_analyser.py`) as a standalone script. Used by `analysis/coverage.sh` |
-| `compare_allowlists.py`, `make_paper_table.py` | SysJava vs SWAT4J allowlist comparison and table |
-| `mrx_desktop/native` | OpenJDK 8 native sources that SWAT4J reads from `/home/mrx/Desktop/native` |
-| `outputs/`, `RESULTS.md` | Allowlists produced for the paper and notes on the reruns (added with the results) |
+| `setup_swat4j.sh` | clone SWAT4J at the pinned commit into `run/`, compile it with JDK 8 (once) |
+| `run_swat4j_host_out.sh <image>...` | static analysis on the JARs and libraries SysJava captured (`DATASETS=<results>`) |
+| `dynamic_all_jdk8deb.sh [app...]` | dynamic analysis: `strace -f -c` on containerd while each image starts (`dynamic_swat4j_jdk8deb.sh`); a run during which another container started is repeated. Needs sudo |
+| `package_outputs_jdk8deb.sh <dir>` | collect the outputs into one folder for `show_results.py` |
 
-Environment-only adaptations, none of which change SWAT4J's code:
-
-* SWAT4J hard-codes `/home/mrx/Desktop` and `/usr/local/apr/lib`. Each application
-  runs in its own mount namespace with these paths bind-mounted, because SWAT4J
-  rewrites `soname/` on every run.
-* `--jdk-lib` of the mapper points at the container's own JDK libraries, since
-  the host JDK it defaults to may not be installed.
-* `ausyscall` calls syscalls 17/18 `pread`/`pwrite`, while Docker profiles call
-  them `pread64`/`pwrite64`. The comparison scripts alias the two names.
+SWAT4J hard-codes `/home/mrx/Desktop` and `/usr/local/apr/lib`; each image runs
+in its own mount namespace with these paths bind-mounted (`mrx_desktop/` holds
+the OpenJDK 8 sources it reads there). `ausyscall` names syscalls 17/18
+`pread`/`pwrite` where Docker uses `pread64`/`pwrite64`; the two are aliased.

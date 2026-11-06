@@ -1,0 +1,11 @@
+SUMMARY: jetty_9.4.51-jdk8-buster
+========================================
+Total native methods:  273
+----------------------------------------
+MAPPED:                162  (59.3%)
+  Java_XXX             122
+  JVM_XXX              40
+
+UNMAPPED:              111  (40.7%)
+  Intrinsic            7
+  Truly unmapped       104

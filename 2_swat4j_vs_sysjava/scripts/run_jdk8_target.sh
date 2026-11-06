@@ -14,7 +14,8 @@
 #           official JDK 8 images: zookeeper_3.4.14 | tomcat_7.0 | cassandra_3.0.29 |
 #           orientdb_3.2.19 | jruby_9.4.2.0
 #           rebuilt on Debian 10: cassandra_3.0.29-jdk8-buster |
-#           orientdb_3.2.19-jdk8-buster | jruby_9.4.2.0-jdk8-buster
+#           orientdb_3.2.19-jdk8-buster | jruby_9.4.2.0-jdk8-buster |
+#           zookeeper_3.4.14-jdk8-buster | tomcat_7.0-jdk8-buster
 #   first-stage: resume from this stage number (1-10), default 1
 #
 # Each target runs in its own workspace (jdk8_workspaces/<target>/) holding a
@@ -68,6 +69,12 @@ case "$T" in
     jruby_9.4.2.0-jdk8-buster)
         # irb needs a terminal and prints nothing: ready = JVM up for 30 s.
         IMAGE=jruby:9.4.2.0-jdk8-buster; RUN_ARGS=(-it); CMD=(); MARKER="" ;;
+    # official zookeeper/tomcat (already Debian 10) with only the JDK swapped
+    # from OpenJDK 8u292 to Temurin 8u504 (DockerFiles/jdk8-buster/).
+    zookeeper_3.4.14-jdk8-buster)
+        IMAGE=zookeeper:3.4.14-jdk8-buster; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
+    tomcat_7.0-jdk8-buster)
+        IMAGE=tomcat:7.0-jdk8-buster; RUN_ARGS=(); CMD=(); MARKER="Server startup in" ;;
     zookeeper_3.4.14)
         IMAGE=zookeeper:3.4.14; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
     tomcat_7.0)
@@ -88,13 +95,33 @@ WS="${REPO}/jdk8_workspaces/${T}"
 FINAL="${REPO}/Final_results_JDK8/${T}"
 LOCKS="${REPO}/jdk8_workspaces/.locks"
 mkdir -p "$WS" "$FINAL" "$LOCKS"
+# One run per target at a time: a plain run waits here for a STOP_AFTER
+# preparation of the same target to finish, then continues after it.
+# A plain run that took over a preparation leaves .claimed; a later plain run
+# from stage 1 (e.g. a queue that still lists the target) then stops here.
+# Delete ${FINAL}/.claimed to run the target from stage 1 again.
+claimed() { [ "$FIRST" = 1 ] && [ -z "${STOP_AFTER:-}" ] && [ -e "${FINAL}/.claimed" ]; }
+if claimed; then echo "${T}: already claimed by an earlier run ($(cat "${FINAL}/.claimed")); nothing to do"; exit 0; fi
+exec 9>"${LOCKS}/target_${T}"
+flock 9
+if claimed; then echo "${T}: already claimed by an earlier run ($(cat "${FINAL}/.claimed")); nothing to do"; exit 0; fi
 LOG="${FINAL}/pipeline_run.log"
 exec > >(tee -a "$LOG") 2>&1
 
 stage() { echo; echo "===== [$(date '+%F %T')] ${T} stage $1: $2"; }
 # SKIP_STAGES="6": leave those stages' results as they are (e.g. keep the
 # symbolized dataset when only the bytecode analysis changed).
-run_from() { [ "$FIRST" -le "$1" ] && [[ " ${SKIP_STAGES:-} " != *" $1 "* ]]; }
+# STOP_AFTER=N: stop after stage N (e.g. 6 = dataset, bytecode analysis and
+# debug symbols only) and leave ${FINAL}/.prepared_through so that a later
+# plain run (first stage 1) continues from stage N+1 instead of starting over.
+PREPARED="${FINAL}/.prepared_through"
+if [ "$FIRST" = 1 ] && [ -z "${STOP_AFTER:-}" ] && [ -s "$PREPARED" ]; then
+    FIRST=$(( $(cat "$PREPARED") + 1 ))
+    echo "stages 1-$((FIRST - 1)) already prepared ($(cat "$PREPARED")); continuing from stage ${FIRST}"
+    rm -f "$PREPARED"
+    echo "$(date '+%F %T') pid $$ from stage ${FIRST}" > "${FINAL}/.claimed"
+fi
+run_from() { [ "$FIRST" -le "$1" ] && [ "$1" -le "${STOP_AFTER:-10}" ] && [[ " ${SKIP_STAGES:-} " != *" $1 "* ]]; }
 
 ready() {  # wait until the app is up: log marker, or (storm) nimbus.log line
     local deadline=$((SECONDS + ${1:-180}))
@@ -159,6 +186,11 @@ fi
 if run_from 3; then
     stage 3 "extract JDK runtime, JARs, native libraries"
     bash "${WS}/scripts/extract_runtime_and_jar_libs.sh" "$CNAME"
+    # Libraries unpacked from JARs into /tmp at run time (netty, jffi) are not in
+    # the container's file system; take them from the JARs.
+    python3 "${WS}/scripts/extract_jar_natives.py" \
+        --loaded "${WS}/sysdig_outputs_${T}/libs_loaded_raw.txt" --jars "$JARFILES_DIR" \
+        --libs "$LIBS_DIR" --report "${WS}/jar_natives_recovered.tsv"
 fi
 
 # --------------------------------------------------------- bytecode analysis
@@ -250,4 +282,9 @@ if run_from 10; then
         "${FINAL}/Binary_Analysis/syscalls_output_${T}/seccomp_runtime_test.log" -- "${RUN_ARGS[@]}" -- "${CMD[@]}"
 fi
 
+if [ "${STOP_AFTER:-10}" -lt 10 ]; then
+    echo "$STOP_AFTER" > "$PREPARED"
+    stage done "prepared through stage ${STOP_AFTER}; a plain run continues from stage $((STOP_AFTER + 1))"
+    exit 0
+fi
 stage done "finished; profile: ${PROFILE}"

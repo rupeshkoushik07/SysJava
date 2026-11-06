@@ -45,7 +45,10 @@ for tool in "${TOOLS[@]}"; do
     mains=$(grep -oE "^_ZN[0-9]+uu_${tool}6uumain[^ ]*" "$O/allfunctions.txt" | sort -u)
     [ -n "$mains" ] || { say "$tool: no uu_${tool}::uumain in allfunctions.txt, left as is"; continue; }
     rm -rf "$N"; mkdir -p "$N"; { echo _start; echo "$mains"; } > "$N/start.txt"
-    (cd "$W/SysPartCode/analysis/app" && ulimit -s 1048576 && USER_LIBRARY_PATH="$ULP" \
+    # Hard cap (coordinator, 2026-11-05: storm python3.14 from main exceeded 96 GB): 32 GB virtual
+    # memory and 2 h per binary; a capped binary keeps its previous result.
+    (cd "$W/SysPartCode/analysis/app" && ulimit -s 1048576 && ulimit -v "${BINARY_RERUN_VMEM_KB:-33554432}" \
+        && USER_LIBRARY_PATH="$ULP" timeout -k 30 "${BINARY_RERUN_TIMEOUT:-7200}" \
         bash src/scripts/compute_syscalls.sh "$SBINS/$tool" "$N" "$N/start.txt" --log) > "$N/run.log" 2>&1 \
         || { say "$tool: rerun failed, keeping _start-only result; see $N/run.log"; continue; }
     old=$(wc -l < "$O/syscalls.txt")

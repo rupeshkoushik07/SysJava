@@ -1,0 +1,11 @@
+SUMMARY: orientdb_3.2.19-jdk8-buster
+========================================
+Total native methods:  581
+----------------------------------------
+MAPPED:                377  (64.9%)
+  Java_XXX             338
+  JVM_XXX              39
+
+UNMAPPED:              204  (35.1%)
+  Intrinsic            8
+  Truly unmapped       196

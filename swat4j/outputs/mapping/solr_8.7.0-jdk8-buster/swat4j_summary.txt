@@ -1,0 +1,11 @@
+SUMMARY: solr_8.7.0-jdk8-buster
+========================================
+Total native methods:  698
+----------------------------------------
+MAPPED:                277  (39.7%)
+  Java_XXX             237
+  JVM_XXX              40
+
+UNMAPPED:              421  (60.3%)
+  Intrinsic            10
+  Truly unmapped       411

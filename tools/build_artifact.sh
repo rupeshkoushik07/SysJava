@@ -41,12 +41,12 @@ esac
 
 LATEST_TARGETS=(cassandra_5.0.8 zookeeper_3.9.5 tomcat_11.0.22 solr_10.0.0 groovy_5.0.6
                 orientdb_3.2.53 jetty_12.1.10 elasticsearch_7.1.0 storm_2.8.8 jruby_10.1.0.0)
-JDK8_TARGETS=(storm_2.4.0-jdk8-buster solr_8.7.0-jdk8-buster elasticsearch_7.5.2-jdk8-buster
-              groovy_4.0.0-jdk8-buster jetty_9.4.51-jdk8-buster)
-# The other five columns of tab:results: official images that already ship JDK 8.
-# Their results are copied from JDK8_OFFICIAL_SRC once it is set (the final run
-# is not done yet); until then each gets an empty placeholder folder.
-JDK8_OFFICIAL_TARGETS=(zookeeper_3.4.14 tomcat_7.0 cassandra_3.0.29 orientdb_3.2.19 jruby_9.4.2.0)
+JDK8_TARGETS=(zookeeper_3.4.14-jdk8-buster tomcat_7.0-jdk8-buster cassandra_3.0.29-jdk8-buster
+              jetty_9.4.51-jdk8-buster storm_2.4.0-jdk8-buster orientdb_3.2.19-jdk8-buster
+              elasticsearch_7.5.2-jdk8-buster solr_8.7.0-jdk8-buster groovy_4.0.0-jdk8-buster
+              jruby_9.4.2.0-jdk8-buster)
+# Earlier the official JDK 8 images; all ten are now rebuilt on Debian 10 (kept empty).
+JDK8_OFFICIAL_TARGETS=()
 JDK8_OFFICIAL_SRC="${JDK8_OFFICIAL_SRC:-}"
 
 log() { echo "[build_artifact] $*"; }
@@ -102,19 +102,23 @@ cp "$JDK8_REPO/syspart-pin/egalito-local.patch" "$ART/syspart/"
 # ---------------------------------------------------------------- 4. SWAT4J
 log "swat4j/ <- ${SWAT4J_DIR} (scripts + allowlists, not the SWAT4J tool itself)"
 rm -rf "$ART/swat4j"; mkdir -p "$ART/swat4j/outputs"
-for f in run_swat4j_host.sh run_swat4j.sh dynamic_swat4j.sh compare_allowlists.py \
-         make_paper_table.py RESULTS.md paper_table.md paper_table.tex; do
-    if [ -f "$SWAT4J_DIR/$f" ]; then cp "$SWAT4J_DIR/$f" "$ART/swat4j/"; fi
+# Scripts of the SWAT4J runs on the ten JDK 8 Debian 10 images (the earlier
+# official-image scripts are no longer shipped).
+for f in run_swat4j_host_out.sh dynamic_swat4j_jdk8deb.sh package_outputs_jdk8deb.sh \
+         README_outputs_jdk8deb.md show_results.py; do
+    cp "$SWAT4J_DIR/$f" "$ART/swat4j/"
 done
-cp -r "$SWAT4J_DIR/docker" "$ART/swat4j/docker"
+# dynamic_all.sh retries a dynamic run when another container started during it and
+# logs each try in dynamic_runs.tsv; the copy finds its folder instead of a fixed path.
+sed -E 's#^H=[^;]*;#H="$(cd "$(dirname "$0")" \&\& pwd)";#; s#^for app in (zookeeper[a-z ]*); do#for app in ${*:-\1}; do#' \
+    "$SWAT4J_DIR/jdk8_debian10/dynamic_all.sh" > "$ART/swat4j/dynamic_all_jdk8deb.sh"
+grep -q 'dirname "$0"' "$ART/swat4j/dynamic_all_jdk8deb.sh" || { echo "dynamic_all.sh: path not replaced"; exit 1; }
 cp "$ART/swat4j_extra/setup_swat4j.sh" "$ART/swat4j/"
 cp "$ART/swat4j_extra/README.md" "$ART/swat4j/" 2>/dev/null || true
 rsync -a "$SWAT4J_DIR/mrx_desktop/" "$ART/swat4j/mrx_desktop/"   # OpenJDK 8 native sources SWAT4J reads
 [ ! -f "$SWAT4J_MAPPING" ] || cp "$SWAT4J_MAPPING" "$ART/swat4j/swat4j_mapping.py"
-rsync -a "$SWAT4J_DIR/rerun_host/output-native" "$SWAT4J_DIR/rerun_host/output-syscalls" "$ART/swat4j/outputs/static_host/"
-rsync -a --include '*_result.txt' --include '*.log' --include timing.csv --exclude '*' "$SWAT4J_DIR/dynamic/" "$ART/swat4j/outputs/dynamic/"
-rsync -a "$SWAT4J_DIR/comparison/" "$ART/swat4j/outputs/comparison/"
-rsync -a "$SWAT4J_DIR/comparison_published/" "$ART/swat4j/outputs/comparison_published/"
+# SWAT4J's outputs on the ten images + SysJava's allowlists; show_results.py prints the table.
+bash "$SWAT4J_DIR/package_outputs_jdk8deb.sh" "$ART/swat4j/outputs" >/dev/null
 
 # ------------------------------------------- native-mapping audit (coverage)
 log "analysis/native_mapping_audit <- rq1_native_mapping (scripts and write-ups)"
@@ -158,6 +162,8 @@ copy_result() {  # <src target dir> <dest target dir>
 
 if [ "$CODE_ONLY" = 0 ]; then
     for t in "${LATEST_TARGETS[@]}"; do
+        # KEEP_LATEST=1: keep result folders already built (repacking the datasets takes an hour)
+        if [ -n "${KEEP_LATEST:-}" ] && [ -d "$ART/1_latest_containers/results/$t/Binary_Analysis" ]; then continue; fi
         src="$LATEST_REPO/Final_results_latest_versions/$t"
         [ -d "$src" ] || { log "latest: $t has no results yet, skipped"; continue; }
         log "1_latest_containers/results/$t"
@@ -193,6 +199,10 @@ fi
 # ------------------------------------------------- Docker images and digests
 log "docker_images/ (digests, Dockerfiles)"
 bash "$ART/tools/docker_images.sh" "$ART" "$JDK8_REPO"
+# Host, kernel, Docker/runc/libseccomp and tool versions of the runs (the image
+# tarballs themselves, 5 GB, are not in the repository).
+DOCKER_RECORD="${DOCKER_RECORD:-$TUT/docker_images}"
+cp "$DOCKER_RECORD/ENVIRONMENT.md" "$DOCKER_RECORD/environment.json" "$ART/docker_images/" 2>/dev/null || true
 rm -f "$ART/1_latest_containers/images.tsv" "$ART/2_swat4j_vs_sysjava/images.tsv"
 
 # Without --with-results every result folder is an empty placeholder; with
@@ -206,12 +216,13 @@ if [ "$CODE_ONLY" = 1 ]; then
     rm -rf "$ART/1_latest_containers/tables" "$ART/1_latest_containers/STATUS.md"
 fi
 if [ "$CODE_ONLY" = 1 ] || [ "$LATEST_ONLY" = 1 ]; then
+    rm -rf "$ART/2_swat4j_vs_sysjava/sysjava_results"
     for t in "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"; do
         placeholder "$ART/2_swat4j_vs_sysjava/sysjava_results/$t" "$t"
     done
     rm -rf "$ART"/2_swat4j_vs_sysjava/sysjava_results/_* \
            "$ART/2_swat4j_vs_sysjava/tables" "$ART/2_swat4j_vs_sysjava/STATUS.md" \
-           "$ART/swat4j/outputs" "$ART/swat4j/RESULTS.md" "$ART/swat4j/paper_table.md" "$ART/swat4j/paper_table.tex"
+           "$ART/swat4j/RESULTS.md" "$ART/swat4j/paper_table.md" "$ART/swat4j/paper_table.tex"
 fi
 
 # ------------------------------------------------------------- 6. anonymise

@@ -30,17 +30,17 @@ elasticsearch:7.5.2-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-bust
 groovy:4.0.0-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/groovy|Debian 10|Temurin 8u504-b01
 jetty:9.4.51-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/jetty|Debian 10|Temurin 8u504-b01
 zookeeper:3.7|2_swat4j_vs_sysjava (Storm's ZooKeeper)|official|Ubuntu 22.04|11.0.25
-zookeeper:3.4.14|2_swat4j_vs_sysjava|official|Debian 10|8u292
-tomcat:7.0|2_swat4j_vs_sysjava|official|Debian 10|8u292
-cassandra:3.0.29|2_swat4j_vs_sysjava|official|Ubuntu 22.04|8u402-b06
-orientdb:3.2.19|2_swat4j_vs_sysjava|official|Ubuntu 22.04|8u372-b07
-jruby:9.4.2.0|2_swat4j_vs_sysjava|official|Ubuntu 20.04|8u372-b07
-jetty:9.4.51|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Ubuntu 20.04|17.0.8.1
-storm:2.4.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Debian 11|11.0.16
-solr:8.7.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Debian 11|11.0.15
-elasticsearch:7.5.2|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|docker.elastic.co/elasticsearch/elasticsearch:7.5.2, retagged|CentOS 7|13 (bundled)
-groovy:4.0.0|2_swat4j_vs_sysjava (SWAT4J dynamic analysis)|official|Ubuntu 20.04|17.0.2
-debian:buster-slim|base of the five built images|official|Debian 10|-
+zookeeper:3.4.14-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/zookeeper|Debian 10|Temurin 8u504-b01
+zookeeper:3.4.14|build stage of dockerfiles/jdk8-buster/zookeeper|official|Debian 10|8u292
+tomcat:7.0-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/tomcat|Debian 10|Temurin 8u504-b01
+tomcat:7.0|build stage of dockerfiles/jdk8-buster/tomcat|official|Debian 10|8u292
+cassandra:3.0.29-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/cassandra|Debian 10|Temurin 8u504-b01
+cassandra:3.0.29|build stage of dockerfiles/jdk8-buster/cassandra|official|Ubuntu 22.04|8u402-b06
+orientdb:3.2.19-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/orientdb|Debian 10|Temurin 8u504-b01
+orientdb:3.2.19|build stage of dockerfiles/jdk8-buster/orientdb|official|Ubuntu 22.04|8u372-b07
+jruby:9.4.2.0-jdk8-buster|2_swat4j_vs_sysjava|built: dockerfiles/jdk8-buster/jruby|Debian 10|Temurin 8u504-b01
+jruby:9.4.2.0|build stage of dockerfiles/jdk8-buster/jruby|official|Ubuntu 20.04|8u372-b07
+debian:buster-slim|base of the ten built images|official|Debian 10|-
 "
 
 printf 'tag\tpull_ref\timage_id\tfolder\tobtained\tos\tjdk\n' > "$OUT/images.tsv"

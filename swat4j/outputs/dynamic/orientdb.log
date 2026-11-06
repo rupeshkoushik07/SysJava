@@ -1,0 +1,51 @@
+           .                                          
+          .`        `                                 
+          ,      `:.                                  
+         `,`    ,:`                                   
+         .,.   :,,                                    
+         .,,  ,,,                                     
+    .    .,.:::::  ````                                 :::::::::     :::::::::   
+    ,`   .::,,,,::.,,,,,,`;;                      .:    ::::::::::    :::    :::  
+    `,.  ::,,,,,,,:.,,.`  `                       .:    :::      :::  :::     ::: 
+     ,,:,:,,,,,,,,::.   `        `         ``     .:    :::      :::  :::     ::: 
+      ,,:.,,,,,,,,,: `::, ,,   ::,::`   : :,::`  ::::   :::      :::  :::    :::  
+       ,:,,,,,,,,,,::,:   ,,  :.    :   ::    :   .:    :::      :::  :::::::     
+        :,,,,,,,,,,:,::   ,,  :      :  :     :   .:    :::      :::  :::::::::   
+  `     :,,,,,,,,,,:,::,  ,, .::::::::  :     :   .:    :::      :::  :::     ::: 
+  `,...,,:,,,,,,,,,: .:,. ,, ,,         :     :   .:    :::      :::  :::     ::: 
+    .,,,,::,,,,,,,:  `: , ,,  :     `   :     :   .:    :::      :::  :::     ::: 
+      ...,::,,,,::.. `:  .,,  :,    :   :     :   .:    :::::::::::   :::     ::: 
+           ,::::,,,. `:   ,,   :::::    :     :   .:    :::::::::     ::::::::::  
+           ,,:` `,,.                                  
+          ,,,    .,`                                  
+         ,,.     `,                                   
+       ``        `.                                                          
+                 ``                                       www.orientdb.com
+                 `                                    
+
+[36m2026-11-06 08:18:21:529[0m[32m INFO  [0mDetected limit of amount of simultaneously open files is 524288,  limit of open files for disk cache will be set to 261632 [ONative]
+[36m2026-11-06 08:18:21:544[0m[32m INFO  [0mLoading configuration from: /orientdb/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+[36m2026-11-06 08:18:21:779[0m[32m INFO  [0mOrientDB Server v3.2.19 (build c652e539f26ddbc167c93d4921c43993f3c6538c, branch UNKNOWN) is starting up... [OServer]
+[36m2026-11-06 08:18:22:157[0m[32m INFO  [0m135064719360 B/128807 MB/125 GB of physical memory were detected on machine [ONative]
+[36m2026-11-06 08:18:22:158[0m[32m INFO  [0mSoft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+[36m2026-11-06 08:18:22:158[0m[32m INFO  [0mHard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+[36m2026-11-06 08:18:22:159[0m[32m INFO  [0mDetected memory limit for current process is 135064719360 B/128807 MB/125 GB [ONative]
+[36m2026-11-06 08:18:22:161[0m[32m INFO  [0mJVM can use maximum 1963MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+[36m2026-11-06 08:18:22:162[0m[32m INFO  [0mBecause OrientDB is running outside a container 2g of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+[36m2026-11-06 08:18:22:162[0m[32m INFO  [0mOrientDB auto-config DISKCACHE=124,796MB (heap=1,963MB os=128,807MB) [orientechnologies]
+[36m2026-11-06 08:18:22:164[0m[32m INFO  [0mSystem is started under an effective user : `root` [OEngineLocalPaginated]
+[36m2026-11-06 08:18:22:165[0m[33m WARNI [0mYou are running under the "root" user privileges that introduces security risks. Please consider to run under a user dedicated to be used to run current server instance. [OEngineLocalPaginated]
+[36m2026-11-06 08:18:22:195[0m[32m INFO  [0mWAL maximum segment size is set to 6,248 MB [OrientDBDistributed]
+[36m2026-11-06 08:18:22:393[0m[32m INFO  [0mDatabases directory: /orientdb/databases [OServer]
+[36m2026-11-06 08:18:22:417[0m[32m INFO  [0mCreating the system database 'OSystem' for current server [OSystemDatabase]
+[36m2026-11-06 08:18:22:473[0m[32m INFO  [0mPage size for WAL located in /orientdb/databases/OSystem is set to 4096 bytes. [CASDiskWriteAheadLog]
+[36m2026-11-06 08:18:22:527[0m[32m INFO  [0mDWL:OSystem: block size = 4096 bytes, maximum segment size = 6248 MB [DoubleWriteLogGL]
+[36m2026-11-06 08:18:22:719[0m[32m INFO  [0mStorage 'plocal:/orientdb/databases/OSystem' is created under OrientDB distribution : 3.2.19 (build c652e539f26ddbc167c93d4921c43993f3c6538c, branch UNKNOWN) [OLocalPaginatedStorage]
+[36m2026-11-06 08:18:23:863[0m[32m INFO  [0mListening [32mbinary[0m connections on [32m0.0.0.0:2424[0m (protocol v.38, socket=default) [OServerNetworkListener]
+[36m2026-11-06 08:18:23:868[0m[32m INFO  [0mListening [32mhttp[0m connections on [32m0.0.0.0:2480[0m (protocol v.10, socket=default) [OServerNetworkListener]
+[36m2026-11-06 08:18:23:879[0m[32m INFO  [0mFound ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+[36m2026-11-06 08:18:24:245[0m[32m INFO  [0mInstalling dynamic plugin 'orientdb-etl-3.2.19.jar'... [OServerPluginManager]
+[36m2026-11-06 08:18:24:263[0m[32m INFO  [0mInstalling dynamic plugin 'orientdb-studio-3.2.19.zip'... [OServerPluginManager]
+[36m2026-11-06 08:18:24:266[0m[32m INFO  [0m[OVariableParser.resolveVariables] Property not found: distributed [orientechnologies]
+[36m2026-11-06 08:18:24:275[0m[33m WARNI [0mAuthenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+[36m2026-11-06 08:18:24:279[0m[32m INFO  [0mOrientDB Studio available at [34mhttp://172.17.0.15:2480/studio/index.html[0m [OServer]

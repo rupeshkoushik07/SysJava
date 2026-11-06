@@ -46,7 +46,10 @@ for tool in "${TOOLS[@]}"; do
     O=$W/syscalls_BIN_$T/$tool; N=$O.main
     rm -rf "$N"; mkdir -p "$N"; write_start_entries "$SBINS/$tool" "$N/start.txt" 2>/dev/null
     grep -qx main "$N/start.txt" || { say "$tool: no main (no main symbol), left as is"; rm -rf "$N"; continue; }
-    (cd "$W/SysPartCode/analysis/app" && ulimit -s 1048576 && USER_LIBRARY_PATH="$ULP" \
+    # Hard cap (coordinator, 2026-11-05: storm python3.14 from main exceeded 96 GB): 32 GB virtual
+    # memory and 2 h per binary; a capped binary keeps its previous result.
+    (cd "$W/SysPartCode/analysis/app" && ulimit -s 1048576 && ulimit -v "${BINARY_RERUN_VMEM_KB:-33554432}" \
+        && USER_LIBRARY_PATH="$ULP" timeout -k 30 "${BINARY_RERUN_TIMEOUT:-7200}" \
         bash src/scripts/compute_syscalls.sh "$SBINS/$tool" "$N" "$N/start.txt" --log) > "$N/run.log" 2>&1 \
         || { say "$tool: rerun failed, keeping _start-only result; see $N/run.log"; continue; }
     old=$(wc -l < "$O/syscalls.txt")

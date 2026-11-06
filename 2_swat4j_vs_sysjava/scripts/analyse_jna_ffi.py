@@ -227,8 +227,10 @@ def main():
         print(f"  {lib:<24} -> NOT FOUND in mirror")
 
     if not resolved:
-        print("\nNo library resolved; nothing to analyse.", file=sys.stderr)
-        return 1
+        # The bound libraries do not exist in this container (e.g. jnr-ffi's
+        # Windows Kernel32): reported above, nothing to analyse.
+        print("\nNo library resolved; nothing to analyse.")
+        return 0
 
     startfunc_root.mkdir(parents=True, exist_ok=True)
     for lib, (path, symbols) in sorted(resolved.items()):

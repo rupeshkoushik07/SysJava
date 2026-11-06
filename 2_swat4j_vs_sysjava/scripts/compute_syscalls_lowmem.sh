@@ -32,6 +32,12 @@ if [[ $# -lt 3 || "$1" == "-h" || "$1" == "--help" ]]; then
     exit 0
 fi
 
+# SYSPART_VMEM_LIMIT_KB caps the virtual memory of every SysPart step (ulimit -v);
+# unset means no cap. A step over the cap fails like a crash.
+if [ -n "${SYSPART_VMEM_LIMIT_KB:-}" ]; then
+    ulimit -v "$SYSPART_VMEM_LIMIT_KB"
+fi
+
 APP=$1
 OUT=$(realpath $2)
 STARTFILE=$(realpath $3)
@@ -144,6 +150,13 @@ while read -r START_FUNC; do
         echo "${START_FUNC}_${start_addr}" >> "${OUT}/startfuncs_with_addr.txt"
     fi
 done < "$RESOLVED_START"
+# None of the start functions is in SysPart's function list (e.g. a stripped
+# static Go binary has no _start symbol): no result, reported as unanalysable.
+if [ ! -s "${OUT}/startfuncs_with_addr.txt" ]; then
+    echo "compute_syscalls: none of the start functions ($(tr '\n' ' ' < "$RESOLVED_START")) found in $APP; no result" >&2
+    echo "no start function found in SysPart's function list: $(tr '\n' ' ' < "$RESOLVED_START")" > "$OUT/syspart_failed.txt"
+    exit 3
+fi
 if [ "$log_flag" = true ]; then
 	python3 "$(dirname "$(realpath "$0")")/getsyscalls_lowmem.py" $OUT/callgraph.json $OUT/syscalls_with_callsites.txt $OUT/startfuncs_with_addr.txt --log $OUT/logfile.txt > $OUT/syscalls.txt
 else

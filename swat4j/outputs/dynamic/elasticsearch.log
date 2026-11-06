@@ -1,0 +1,59 @@
+future versions of Elasticsearch will require Java 11; your Java version from [/opt/java/jre] does not meet this requirement
+[2026-11-06T08:40:43,111][INFO ][o.e.e.NodeEnvironment    ] [es01] using [1] data paths, mounts [[/ (overlay)]], net usable_space [121.9gb], net total_space [503.8gb], types [overlay]
+[2026-11-06T08:40:43,114][INFO ][o.e.e.NodeEnvironment    ] [es01] heap size [989.8mb], compressed ordinary object pointers [true]
+[2026-11-06T08:40:43,119][INFO ][o.e.n.Node               ] [es01] node name [es01], node ID [PLP-7dt3TvCxgUg2LcWeyA], cluster name [docker-es-7.5.2]
+[2026-11-06T08:40:43,120][INFO ][o.e.n.Node               ] [es01] version[7.5.2], pid[1], build[default/tar/8bec50e1e0ad29dad5653712cf3bb580cd1afcdf/2020-01-15T12:11:52.313576Z], OS[Linux/5.15.0-202-generic/amd64], JVM[Temurin/OpenJDK 64-Bit Server VM/1.8.0_504/25.504-b01]
+[2026-11-06T08:40:43,120][INFO ][o.e.n.Node               ] [es01] JVM home [/opt/java/jre]
+[2026-11-06T08:40:43,121][INFO ][o.e.n.Node               ] [es01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-5944920841869000670, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -XX:MaxDirectMemorySize=536870912, -Des.path.home=/opt/elasticsearch, -Des.path.conf=/opt/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2026-11-06T08:40:46,162][INFO ][o.e.p.PluginsService     ] [es01] loaded module [aggs-matrix-stats]
+[2026-11-06T08:40:46,163][INFO ][o.e.p.PluginsService     ] [es01] loaded module [analysis-common]
+[2026-11-06T08:40:46,163][INFO ][o.e.p.PluginsService     ] [es01] loaded module [flattened]
+[2026-11-06T08:40:46,164][INFO ][o.e.p.PluginsService     ] [es01] loaded module [frozen-indices]
+[2026-11-06T08:40:46,164][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-common]
+[2026-11-06T08:40:46,165][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-geoip]
+[2026-11-06T08:40:46,165][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-user-agent]
+[2026-11-06T08:40:46,165][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-expression]
+[2026-11-06T08:40:46,166][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-mustache]
+[2026-11-06T08:40:46,166][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-painless]
+[2026-11-06T08:40:46,167][INFO ][o.e.p.PluginsService     ] [es01] loaded module [mapper-extras]
+[2026-11-06T08:40:46,167][INFO ][o.e.p.PluginsService     ] [es01] loaded module [parent-join]
+[2026-11-06T08:40:46,167][INFO ][o.e.p.PluginsService     ] [es01] loaded module [percolator]
+[2026-11-06T08:40:46,168][INFO ][o.e.p.PluginsService     ] [es01] loaded module [rank-eval]
+[2026-11-06T08:40:46,168][INFO ][o.e.p.PluginsService     ] [es01] loaded module [reindex]
+[2026-11-06T08:40:46,168][INFO ][o.e.p.PluginsService     ] [es01] loaded module [repository-url]
+[2026-11-06T08:40:46,169][INFO ][o.e.p.PluginsService     ] [es01] loaded module [search-business-rules]
+[2026-11-06T08:40:46,169][INFO ][o.e.p.PluginsService     ] [es01] loaded module [spatial]
+[2026-11-06T08:40:46,169][INFO ][o.e.p.PluginsService     ] [es01] loaded module [transform]
+[2026-11-06T08:40:46,170][INFO ][o.e.p.PluginsService     ] [es01] loaded module [transport-netty4]
+[2026-11-06T08:40:46,170][INFO ][o.e.p.PluginsService     ] [es01] loaded module [vectors]
+[2026-11-06T08:40:46,170][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-analytics]
+[2026-11-06T08:40:46,171][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ccr]
+[2026-11-06T08:40:46,171][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-core]
+[2026-11-06T08:40:46,171][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-deprecation]
+[2026-11-06T08:40:46,172][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-enrich]
+[2026-11-06T08:40:46,172][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-graph]
+[2026-11-06T08:40:46,172][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ilm]
+[2026-11-06T08:40:46,172][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-logstash]
+[2026-11-06T08:40:46,173][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ml]
+[2026-11-06T08:40:46,173][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-monitoring]
+[2026-11-06T08:40:46,173][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-rollup]
+[2026-11-06T08:40:46,174][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-security]
+[2026-11-06T08:40:46,174][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-sql]
+[2026-11-06T08:40:46,174][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-voting-only-node]
+[2026-11-06T08:40:46,177][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-watcher]
+[2026-11-06T08:40:46,177][INFO ][o.e.p.PluginsService     ] [es01] no plugins loaded
+[2026-11-06T08:40:50,754][INFO ][o.e.x.s.a.s.FileRolesStore] [es01] parsed [0] roles from file [/opt/elasticsearch/config/roles.yml]
+[2026-11-06T08:40:51,361][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [es01] [controller/220] [Main.cc@110] controller (64 bit): Version 7.5.2 (Build 68f6981dfb8e2d) Copyright (c) 2020 Elasticsearch BV
+[2026-11-06T08:40:52,040][DEBUG][o.e.a.ActionModule       ] [es01] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2026-11-06T08:40:52,240][INFO ][o.e.d.DiscoveryModule    ] [es01] using discovery type [single-node] and seed hosts providers [settings]
+[2026-11-06T08:40:53,308][INFO ][o.e.n.Node               ] [es01] initialized
+[2026-11-06T08:40:53,309][INFO ][o.e.n.Node               ] [es01] starting ...
+[2026-11-06T08:40:53,560][INFO ][o.e.t.TransportService   ] [es01] publish_address {172.17.0.15:9300}, bound_addresses {[::]:9300}
+[2026-11-06T08:40:53,739][WARN ][o.e.b.BootstrapChecks    ] [es01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2026-11-06T08:40:53,749][INFO ][o.e.c.c.Coordinator      ] [es01] setting initial configuration to VotingConfiguration{PLP-7dt3TvCxgUg2LcWeyA}
+[2026-11-06T08:40:53,951][INFO ][o.e.c.s.MasterService    ] [es01] elected-as-master ([1] nodes joined)[{es01}{PLP-7dt3TvCxgUg2LcWeyA}{cQJQTitsSdGdOilNGwtOhg}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{es01}{PLP-7dt3TvCxgUg2LcWeyA}{cQJQTitsSdGdOilNGwtOhg}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}
+[2026-11-06T08:40:54,004][INFO ][o.e.c.c.CoordinationState] [es01] cluster UUID set to [dy1Spbk7QqGzN7Wvd1GqIg]
+[2026-11-06T08:40:54,053][INFO ][o.e.c.s.ClusterApplierService] [es01] master node changed {previous [], current [{es01}{PLP-7dt3TvCxgUg2LcWeyA}{cQJQTitsSdGdOilNGwtOhg}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2026-11-06T08:40:54,155][INFO ][o.e.h.AbstractHttpServerTransport] [es01] publish_address {172.17.0.15:9200}, bound_addresses {[::]:9200}
+[2026-11-06T08:40:54,157][INFO ][o.e.n.Node               ] [es01] started
+[2026-11-06T08:40:54,256][INFO ][o.e.g.GatewayService     ] [es01] recovered [0] indices into cluster_state

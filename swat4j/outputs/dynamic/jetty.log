@@ -1,0 +1,5 @@
+2026-11-06 08:46:38.375:INFO::main: Logging initialized @819ms to org.eclipse.jetty.util.log.StdErrLog
+2026-11-06 08:46:38.698:INFO:oejs.Server:main: jetty-9.4.51.v20230217; built: 2023-02-17T08:19:37.309Z; git: b45c405e4544384de066f814ed42ae3dceacdd49; jvm 1.8.0_504-b01
+2026-11-06 08:46:38.725:INFO:oejdp.ScanningAppProvider:main: Deployment monitor [file:///var/lib/jetty/webapps/] at interval 1
+2026-11-06 08:46:38.796:INFO:oejs.AbstractConnector:main: Started ServerConnector@2be71cf7{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2026-11-06 08:46:38.798:INFO:oejs.Server:main: Started @1243ms
