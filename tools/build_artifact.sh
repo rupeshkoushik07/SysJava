@@ -87,7 +87,6 @@ PY
 log "2_swat4j_vs_sysjava/scripts <- ${JDK8_REPO}/scripts"
 copy_scripts "$JDK8_REPO" "$ART/2_swat4j_vs_sysjava"
 python3 "$ART/tools/add_jdk8_official_targets.py" "$ART/2_swat4j_vs_sysjava/scripts"
-sed -i 's#syspart-pin/PINNED.md#syspart/README.md#' "$ART/2_swat4j_vs_sysjava/scripts/rerun_syspart_symbolized.sh"
 # The JDK 8 runs used runc.txt plus the four runc 1.3.4 init syscalls (README beside it).
 cp "$JDK8_REPO"/runc_host_1.3.4_additions.* "$ART/2_swat4j_vs_sysjava/"
 
@@ -283,6 +282,12 @@ if [ "$CODE_ONLY" = 1 ] || [ "$LATEST_ONLY" = 1 ]; then
            "$ART/2_swat4j_vs_sysjava/tables" "$ART/2_swat4j_vs_sysjava/STATUS.md" \
            "$ART/swat4j/RESULTS.md" "$ART/swat4j/paper_table.md" "$ART/swat4j/paper_table.tex"
 fi
+
+# ---------------------------------------------------- unused scripts
+# Only scripts the pipeline calls are shipped; the one-off rerun and debugging helpers
+# used while producing the results are dropped (tools/prune_scripts.py says which).
+python3 "$ART/tools/prune_scripts.py" "$ART" 1_latest_containers run_latest_target.sh
+python3 "$ART/tools/prune_scripts.py" "$ART" 2_swat4j_vs_sysjava run_jdk8_target.sh
 
 # ------------------------------------------------------------- 6. anonymise
 log "anonymising text files"
