@@ -29,7 +29,7 @@ Digests: `../docker_images/IMAGES.md`.
 ## Reproduce
 
 ```bash
-../whitelist.sh zookeeper_3.9.5     # allowlist without SysPart, minutes
+python3 ../whitelist.py zookeeper_3.9.5   # allowlist without SysPart, minutes
 TABLE_ONLY=1 ./reproduce.sh         # table from the shipped results
 ./reproduce.sh                      # full rerun of all 10 images (needs ../setup.sh)
 ./reproduce.sh tomcat_11.0.22       # one image
@@ -39,7 +39,7 @@ TABLE_ONLY=1 ./reproduce.sh         # table from the shipped results
 
 * Stage 4 of ZooKeeper, OrientDB, Elasticsearch, Storm and JRuby used `echotrace/`
   (`52628c4`, with the `<clinit>` fix); the other five used `echotrace_516fb46/`.
-  `whitelist.sh` picks the matching one.
+  `whitelist.py` picks the matching one.
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.
 * Each `ADDED_first_start_binaries.md` explains executables that were added by
