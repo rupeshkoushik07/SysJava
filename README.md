@@ -32,7 +32,7 @@ The tool is called EchoTrace in the code.
 Each image has one folder (`results/<image>/` or `sysjava_results/<image>/`):
 
 ```
-Binary_Analysis/syscalls_output_<image>/<image>.json   the seccomp profile
+<image>.json                    the seccomp profile (also under Binary_Analysis/syscalls_output_<image>/)
 Binary_Analysis/                SysPart results: callgraph.json.gz and syscalls.txt per library/executable
 Bytecode_Analysis/              native_methods.txt and the JNI/JNA/JNR-FFI/FFM bindings
 Dynamic_Analysis/               sysdig capture: what the container loaded and executed
