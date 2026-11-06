@@ -132,8 +132,9 @@ cp "$RQ1"/syscall_ablation/*.py "$RQ1"/syscall_ablation/*.sh "$RQ1"/syscall_abla
 copy_result() {  # <src target dir> <dest target dir>
     local src="$1" dst="$2"
     rm -rf "$dst"; mkdir -p "$dst"
-    nice -n 10 rsync -a \
-        --exclude 'Dataset/' --exclude 'Dataset_symbolized/***' \
+    # -L: some reruns link to folders of the first run; copy what the links point to.
+    nice -n 10 rsync -aL \
+        --exclude '/Dataset' --exclude '/Dataset_symbolized' \
         --exclude '*.pre_cancel_fix*' --exclude '*.failed*' --exclude '*.incomplete*' \
         --exclude 'jna_detector_work_*/' --exclude 'JDK*_LIBS/' \
         --exclude '*_before_*' \
@@ -148,7 +149,7 @@ copy_result() {  # <src target dir> <dest target dir>
             echo "identifying string in $src/Dataset; not packed"; exit 1
         fi
         mkdir -p "$dst/dataset"
-        (cd "$src" && tar --sort=name --owner=0 --group=0 --numeric-owner -cf - Dataset \
+        (cd "$src" && tar -h --sort=name --owner=0 --group=0 --numeric-owner -cf - Dataset \
             $(ls -d Dataset_symbolized/*/_container_deps 2>/dev/null)) \
             | nice -n 10 xz -T4 -6 | split -b 45M -d -a 2 - "$dst/dataset/Dataset.tar.xz.part"
     fi
@@ -165,6 +166,8 @@ if [ "$CODE_ONLY" = 0 ]; then
         # KEEP_LATEST=1: keep result folders already built (repacking the datasets takes an hour)
         if [ -n "${KEEP_LATEST:-}" ] && [ -d "$ART/1_latest_containers/results/$t/Binary_Analysis" ]; then continue; fi
         src="$LATEST_REPO/Final_results_latest_versions/$t"
+        # ZooKeeper and OrientDB were rerun with the <clinit> fix; that rerun is final.
+        [ ! -d "$LATEST_REPO/Final_results_latest_versions_clinit/$t" ] || src="$LATEST_REPO/Final_results_latest_versions_clinit/$t"
         [ -d "$src" ] || { log "latest: $t has no results yet, skipped"; continue; }
         log "1_latest_containers/results/$t"
         copy_result "$src" "$ART/1_latest_containers/results/$t"
@@ -263,6 +266,9 @@ if [ "$CODE_ONLY" = 0 ]; then
     log "tables"
     python3 "$ART/tools/make_tables.py" latest "$ART/1_latest_containers/results" \
         --runtime "$ART/1_latest_containers/runc.txt" --out "$ART/1_latest_containers/tables" || true
+    # The final Table III (paper format) and the remaining not-found natives with reasons.
+    cp "$LATEST_REPO"/tables/tableIII_latest_rerun_*.tex "$LATEST_REPO"/tables/tableIII_latest_rerun_*.pdf \
+       "$LATEST_REPO"/tables/notfound_natives_latest_*.pdf "$ART/1_latest_containers/tables/" 2>/dev/null || true
 fi
 if [ "$CODE_ONLY" = 0 ] && [ "$LATEST_ONLY" = 0 ]; then
     status_md "$ART/2_swat4j_vs_sysjava/STATUS.md" "$ART/2_swat4j_vs_sysjava/sysjava_results" "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"
@@ -271,5 +277,7 @@ if [ "$CODE_ONLY" = 0 ] && [ "$LATEST_ONLY" = 0 ]; then
 fi
 
 bash "$ART/tools/anonymise.sh" --check "$ART"
+links="$(find "$ART" -path "$ART/.git" -prune -o -path "$ART/work" -prune -o -type l -print)"
+[ -z "$links" ] || { echo "symlinks in the artifact (targets may name the author):"; echo "$links"; exit 1; }
 du -sh "$ART"
 log "done"

@@ -1,4 +1,13 @@
-orientdb_3.2.53 (12)
+orientdb_3.2.53 (23)
+  - libX11.so.6
+  - libXau.so.6
+  - libXdmcp.so.6
+  - libXext.so.6
+  - libXi.so.6
+  - libXrender.so.1
+  - libXtst.so.6
+  - libawt.so
+  - libbsd.so.0
   - libc.so.6
   - libdl.so.2
   - libdl.so.2:
@@ -7,8 +16,10 @@ orientdb_3.2.53 (12)
   - libjvm.so
   - libm.so.6
   - libm.so.6:
+  - libmd.so.0
   - libnet.so
   - libpthread.so.0
   - libpthread.so.0:
   - libverify.so
+  - libxcb.so.1
 

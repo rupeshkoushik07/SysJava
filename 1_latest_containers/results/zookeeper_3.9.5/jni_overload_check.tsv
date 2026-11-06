@@ -1,4 +1,7 @@
 library	java_method	jni_symbol	in_mapping	in_start_file
+libawt.so	sun.awt.DebugSettings.setCTracingOn	Java_sun_awt_DebugSettings_setCTracingOn__Z	yes	yes
+libawt.so	sun.awt.DebugSettings.setCTracingOn	Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2	yes	yes
+libawt.so	sun.awt.DebugSettings.setCTracingOn	Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2I	yes	yes
 libjlinenative.so	org.jline.nativ.CLibrary.ioctl	Java_org_jline_nativ_CLibrary_ioctl__IJLorg_jline_nativ_CLibrary_00024WinSize_2	yes	yes
 libjlinenative.so	org.jline.nativ.CLibrary.ioctl	Java_org_jline_nativ_CLibrary_ioctl__IJ_3I	yes	yes
 libsnappyjava.so	org.xerial.snappy.SnappyNative.isValidCompressedBuffer	Java_org_xerial_snappy_SnappyNative_isValidCompressedBuffer__JJJ	yes	yes

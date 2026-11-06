@@ -115,6 +115,7 @@ shmdt
 shmget
 shutdown
 socket
+socketpair
 splice
 stat
 statfs

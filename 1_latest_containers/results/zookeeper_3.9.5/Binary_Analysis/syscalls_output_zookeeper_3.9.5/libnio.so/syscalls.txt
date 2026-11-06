@@ -1,3 +1,8 @@
+shmdt
+getrandom
+getegid
+unlink
+sched_getscheduler
 mmap
 memfd_create
 exit_group
@@ -32,6 +37,7 @@ mincore
 getrusage
 access
 getpid
+socketpair
 dup
 sched_getparam
 socket
@@ -86,8 +92,3 @@ madvise
 setpriority
 umask
 sched_yield
-shmdt
-getrandom
-getegid
-unlink
-sched_getscheduler

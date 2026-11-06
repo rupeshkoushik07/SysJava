@@ -1,3 +1,7 @@
+shmdt
+getegid
+unlink
+sched_getscheduler
 mmap
 exit_group
 lstat
@@ -21,6 +25,7 @@ mincore
 getrusage
 access
 getpid
+socketpair
 dup
 read
 sched_getparam
@@ -76,7 +81,3 @@ pread64
 newfstatat
 madvise
 sched_yield
-shmdt
-getegid
-unlink
-sched_getscheduler

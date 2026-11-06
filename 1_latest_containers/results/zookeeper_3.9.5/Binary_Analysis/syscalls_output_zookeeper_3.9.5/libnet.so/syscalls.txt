@@ -1,3 +1,5 @@
+madvise
+setpriority
 umask
 sched_yield
 shmdt
@@ -37,6 +39,7 @@ mincore
 getrusage
 access
 getpid
+socketpair
 dup
 sched_getparam
 socket
@@ -61,17 +64,17 @@ gettid
 get_mempolicy
 futex
 fallocate
-memfd_create
-exit
 getgid
+exit
+memfd_create
 rt_sigreturn
 kill
 writev
 sched_setscheduler
 sched_setaffinity
-rseq
-set_robust_list
 rt_sigprocmask
+set_robust_list
+rseq
 time
 sched_getaffinity
 close
@@ -89,5 +92,3 @@ getdents64
 pread64
 newfstatat
 recvmsg
-madvise
-setpriority

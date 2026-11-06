@@ -19,7 +19,7 @@ The tool is called EchoTrace in the code.
 | `Results/` | results of the original submission, unchanged | |
 | [`docker_images/`](docker_images/README.md) | every image used, pinned by digest; Dockerfiles of the rebuilt JDK 8 images | |
 | `echotrace/` | tool source (bytecode analysis), commit `52628c4` | |
-| `echotrace_516fb46/` | the same tool one commit earlier; seven latest-version results were made with it | |
+| `echotrace_516fb46/` | the same tool one commit earlier; five latest-version results were made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit | |
@@ -43,6 +43,10 @@ pipeline_run.log                full log of the run
 
 `dataset/` is an xz archive split into 45 MB parts:
 `cat dataset/Dataset.tar.xz.part* | xz -dc | tar -x`.
+
+Call graphs are gzipped (6.7 GB uncompressed, 1 GB compressed). Python reads
+them directly with `json.load(gzip.open(path))`; `gunzip -k <file>` gives the
+plain JSON.
 
 ## Reproducing the tables
 

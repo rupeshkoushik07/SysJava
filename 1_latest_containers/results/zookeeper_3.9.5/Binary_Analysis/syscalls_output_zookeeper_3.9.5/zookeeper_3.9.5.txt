@@ -137,6 +137,7 @@ sendmmsg
 sendmsg
 sendto
 set_robust_list
+set_tid_address
 setgid
 setgroups
 setitimer
@@ -157,6 +158,7 @@ shmget
 shutdown
 sigaltstack
 socket
+socketpair
 splice
 stat
 statfs

@@ -11,21 +11,21 @@ Path to rt_sigreturn:
   Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> __restore_rt_42520
   __restore_rt_42520 - [syscall]-> rt_sigreturn
 
+Path to rt_sigprocmask:
+  Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> start_thread_947d0
+  start_thread_947d0 - [syscall]-> rt_sigprocmask
+
 Path to exit:
   Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> start_thread_947d0
   start_thread_947d0 - [syscall]-> exit
-
-Path to set_robust_list:
-  Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> start_thread_947d0
-  start_thread_947d0 - [syscall]-> set_robust_list
 
 Path to rseq:
   Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> start_thread_947d0
   start_thread_947d0 - [syscall]-> rseq
 
-Path to rt_sigprocmask:
+Path to set_robust_list:
   Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> start_thread_947d0
-  start_thread_947d0 - [syscall]-> rt_sigprocmask
+  start_thread_947d0 - [syscall]-> set_robust_list
 
 Path to time:
   Java_java_util_zip_Inflater_inflateBytesBytes_3100 - [INDIRECT]-> time_syscall_d9970

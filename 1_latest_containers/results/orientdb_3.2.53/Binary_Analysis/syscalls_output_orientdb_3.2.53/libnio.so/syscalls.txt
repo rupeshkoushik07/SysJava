@@ -15,6 +15,7 @@ mincore
 getrusage
 access
 getpid
+socketpair
 dup
 read
 sched_getparam

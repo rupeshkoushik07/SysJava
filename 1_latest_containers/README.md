@@ -21,7 +21,9 @@ Digests: `../docker_images/IMAGES.md`.
 
 * `results/<image>/`: one result per image (layout in the top-level README).
 * `STATUS.md`: whether each image runs under its profile.
-* `tables/`: the table rows.
+* `tables/`: Table III as in the paper (`tableIII_latest_rerun_*.tex`, `.pdf`), the
+  remaining not-found natives with their reasons (`notfound_natives_latest_*.pdf`),
+  and the rows computed from `results/` (`table.md`).
 * `scripts/`: the pipeline scripts; `runc.txt`: the runtime syscall set.
 
 ## Reproduce
@@ -35,8 +37,8 @@ TABLE_ONLY=1 ./reproduce.sh         # table from the shipped results
 
 ## Notes
 
-* Stage 4 of Elasticsearch, Storm and JRuby used `echotrace/` (`52628c4`, with
-  the `<clinit>` fix); the other seven used `echotrace_516fb46/`.
+* Stage 4 of ZooKeeper, OrientDB, Elasticsearch, Storm and JRuby used `echotrace/`
+  (`52628c4`, with the `<clinit>` fix); the other five used `echotrace_516fb46/`.
   `whitelist.sh` picks the matching one.
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.

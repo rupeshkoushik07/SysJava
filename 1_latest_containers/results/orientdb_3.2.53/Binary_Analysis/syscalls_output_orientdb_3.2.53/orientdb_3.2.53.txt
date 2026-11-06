@@ -37,6 +37,7 @@ fchmod
 fcntl
 fdatasync
 fgetxattr
+flock
 fsetxattr
 fstat
 fstatfs
@@ -50,6 +51,7 @@ geteuid
 getgid
 getgroups
 getpeername
+getpgid
 getpgrp
 getpid
 getppid
@@ -59,6 +61,7 @@ getresgid
 getresuid
 getrlimit
 getrusage
+getsid
 getsockname
 getsockopt
 gettid
@@ -108,6 +111,7 @@ removexattr
 rename
 rseq
 rt_sigaction
+rt_sigpending
 rt_sigprocmask
 rt_sigreturn
 rt_sigsuspend
@@ -124,6 +128,7 @@ sendmmsg
 sendmsg
 sendto
 set_robust_list
+set_tid_address
 setfsgid
 setfsuid
 setgid
@@ -145,6 +150,7 @@ shmget
 shutdown
 sigaltstack
 socket
+socketpair
 stat
 statfs
 statx

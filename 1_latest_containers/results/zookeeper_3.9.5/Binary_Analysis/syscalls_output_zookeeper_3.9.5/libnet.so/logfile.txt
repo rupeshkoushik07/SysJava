@@ -11,6 +11,14 @@ Path to rt_sigreturn:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> __restore_rt_42520
   __restore_rt_42520 - [syscall]-> rt_sigreturn
 
+Path to rt_sigprocmask:
+  Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
+  start_thread_947d0 - [syscall]-> rt_sigprocmask
+
+Path to set_robust_list:
+  Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
+  start_thread_947d0 - [syscall]-> set_robust_list
+
 Path to rseq:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
   start_thread_947d0 - [syscall]-> rseq
@@ -19,30 +27,24 @@ Path to exit:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
   start_thread_947d0 - [syscall]-> exit
 
-Path to set_robust_list:
-  Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
-  start_thread_947d0 - [syscall]-> set_robust_list
-
-Path to rt_sigprocmask:
-  Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> start_thread_947d0
-  start_thread_947d0 - [syscall]-> rt_sigprocmask
-
 Path to time:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> time_syscall_d9970
   time_syscall_d9970 - [syscall]-> time
 
-Path to ioctl:
-  Java_java_net_NetworkInterface_isLoopback0_9700 - [DIRECT]-> getFlags0_7d60
-  getFlags0_7d60 - [DIRECT]-> ioctl_11a990
-  ioctl_11a990 - [syscall]-> ioctl
+Path to socketpair:
+  Java_java_net_PlainSocketImpl_initProto_cc80 - [DIRECT]-> socketpair_127be0
+  socketpair_127be0 - [syscall]-> socketpair
+
+Path to shutdown:
+  Java_java_net_PlainSocketImpl_initProto_cc80 - [DIRECT]-> shutdown_127b80
+  shutdown_127b80 - [syscall]-> shutdown
 
 Path to close:
-  Java_java_net_NetworkInterface_isLoopback0_9700 - [DIRECT]-> getFlags0_7d60
-  getFlags0_7d60 - [DIRECT]-> close_114fd0
+  Java_java_net_PlainSocketImpl_initProto_cc80 - [DIRECT]-> close_114fd0
   close_114fd0 - [syscall]-> close
 
 Path to socket:
-  Java_java_net_NetworkInterface_getByIndex0_9230 - [DIRECT]-> enumInterfaces_8bd0
+  Java_java_net_NetworkInterface_getAll_9560 - [DIRECT]-> enumInterfaces_8bd0
   enumInterfaces_8bd0 - [DIRECT]-> socket_127bb0
   socket_127bb0 - [syscall]-> socket
 
@@ -140,6 +142,11 @@ Path to mkdir:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> try_dir_61380
   try_dir_61380 - [DIRECT]-> mkdir_1144d0
   mkdir_1144d0 - [syscall]-> mkdir
+
+Path to ioctl:
+  Java_java_net_NetworkInterface_getMacAddr0_9740 - [DIRECT]-> getMacAddress.constprop.0_7c70
+  getMacAddress.constprop.0_7c70 - [DIRECT]-> ioctl_11a990
+  ioctl_11a990 - [syscall]-> ioctl
 
 Path to lstat:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> Perf_Attach_c67a70
@@ -385,14 +392,6 @@ Path to shmdt:
   _ZN2os25pd_release_memory_specialEPcm_c27e00 - [DIRECT]-> shmdt_128490
   shmdt_128490 - [syscall]-> shmdt
 
-Path to shutdown:
-  Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
-  _ZN15G1CollectedHeap10initializeEv_6f17d0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__8295b0
-  _Z33vm_shutdown_during_initializationPKcS0__8295b0 - [DIRECT]-> _ZN2os8shutdownEv_c35470
-  _ZN2os8shutdownEv_c35470 - [DIRECT]-> _ZN14AttachListener5abortEv_422380
-  _ZN14AttachListener5abortEv_422380 - [DIRECT]-> shutdown_127b80
-  shutdown_127b80 - [syscall]-> shutdown
-
 Path to readlink:
   Java_java_net_NetworkInterface_getAll_9560 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
@@ -442,7 +441,7 @@ Path to getsockname:
   getsockname_127630 - [syscall]-> getsockname
 
 Path to brk:
-  Java_java_net_NetworkInterface_getByIndex0_9230 - [DIRECT]-> free_a53e0
+  Java_java_net_NetworkInterface_getAll_9560 - [DIRECT]-> free_a53e0
   free_a53e0 - [DIRECT]-> _int_free_a26a0
   _int_free_a26a0 - [DIRECT]-> systrim.constprop.0_a25f0
   systrim.constprop.0_a25f0 - [DIRECT]-> __glibc_morecore_a25b0

@@ -52,8 +52,8 @@ Path to ioctl:
 
 Path to read:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _IO_file_read_9b320
-  _IO_file_read_9b320 - [DIRECT]-> __read_nocancel_129240
-  __read_nocancel_129240 - [syscall]-> read
+  _IO_file_read_9b320 - [DIRECT]-> read_128390
+  read_128390 - [syscall]-> read
 
 Path to lseek:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _IO_file_seek_9b340
@@ -77,8 +77,8 @@ Path to mremap:
 
 Path to write:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
-  _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> __write_nocancel_1292a0
-  __write_nocancel_1292a0 - [syscall]-> write
+  _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
 
 Path to getpid:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _ZL10java_startP6Thread_96b860
@@ -99,6 +99,26 @@ Path to access:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
   _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> access_122ee0
   access_122ee0 - [syscall]-> access
+
+Path to sendto:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> clntudp_call_184080
+  clntudp_call_184080 - [DIRECT]-> sendto_139480
+  sendto_139480 - [syscall]-> sendto
+
+Path to poll:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> clntudp_call_184080
+  clntudp_call_184080 - [DIRECT]-> poll_127e30
+  poll_127e30 - [syscall]-> poll
+
+Path to recvmsg:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> clntudp_call_184080
+  clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
+  recvmsg_1393c0 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> clntudp_call_184080
+  clntudp_call_184080 - [DIRECT]-> recvfrom_139370
+  recvfrom_139370 - [syscall]-> recvfrom
 
 Path to madvise:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> start_thread_a3de0
@@ -128,6 +148,18 @@ Path to geteuid:
   Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> geteuid_fe650
   geteuid_fe650 - [syscall]-> geteuid
+
+Path to openat:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> Perf_Attach_9b8010
+  Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
+Path to wait4:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
 
 Path to rt_sigaction:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _Unwind_IteratePhdrCallback_b75530
@@ -189,12 +221,6 @@ Path to getpriority:
   _ZN2os19get_native_priorityEPK6ThreadPi_971bf0 - [DIRECT]-> getpriority_12aec0
   getpriority_12aec0 - [syscall]-> getpriority
 
-Path to openat:
-  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_load_cache_36880
-  __gconv_load_cache_36880 - [DIRECT]-> __open64_nocancel_1290a0
-  __open64_nocancel_1290a0 - [syscall]-> openat
-
 Path to getdents64:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
@@ -218,6 +244,12 @@ Path to prctl:
   start_thread_a3de0 - [DIRECT]-> name_stack_maps_a3cf0
   name_stack_maps_a3cf0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
+
+Path to fcntl:
+  Java_java_util_zip_ZipFile_open_36e0 - [DIRECT]-> JVM_Open_74a260
+  JVM_Open_74a260 - [DIRECT]-> _ZN2os4openEPKcii_973cb0
+  _ZN2os4openEPKcii_973cb0 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
 
 Path to sysinfo:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> Unsafe_Loadavg_b0fe20
@@ -303,13 +335,6 @@ Path to sched_yield:
   _ZN2os9yield_allEi_971b80 - [DIRECT]-> sched_yield_11ad20
   sched_yield_11ad20 - [syscall]-> sched_yield
 
-Path to fcntl:
-  Java_java_util_zip_ZipFile_open_36e0 - [DIRECT]-> JVM_Open_74a260
-  JVM_Open_74a260 - [DIRECT]-> _ZN2os4openEPKcii_973cb0
-  _ZN2os4openEPKcii_973cb0 - [DIRECT]-> fcntl_123820
-  fcntl_123820 - [DIRECT]-> __fcntl64_nocancel_adjusted_128f90
-  __fcntl64_nocancel_adjusted_128f90 - [syscall]-> fcntl
-
 Path to sched_getaffinity:
   Java_java_util_zip_ZipFile_getEntry_3860 - [DIRECT]-> malloc_b5110
   malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
@@ -382,6 +407,14 @@ Path to getrusage:
   _ZN2os12elapsedVTimeEv_96c370 - [DIRECT]-> getrusage_12ab40
   getrusage_12ab40 - [syscall]-> getrusage
 
+Path to clock_nanosleep:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _ZN14MacroAssembler7debug64EPclPl_8750e0
+  _ZN14MacroAssembler7debug64EPclPl_8750e0 - [DIRECT]-> _ZN2os11message_boxEPKcS1__9731a0
+  _ZN2os11message_boxEPKcS1__9731a0 - [DIRECT]-> sleep_11b180
+  sleep_11b180 - [DIRECT]-> nanosleep_1039f0
+  nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
+  clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
+
 Path to getgroups:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
   _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> realpath@@GLIBC_2.3_47200
@@ -452,6 +485,18 @@ Path to setsockopt:
   __GI___libc_clntudp_bufcreate_1848a0 - [DIRECT]-> setsockopt_1394a0
   setsockopt_1394a0 - [syscall]-> setsockopt
 
+Path to pread64:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> _ZL13crash_handleriP7siginfoPv_b415b0
+  _ZL13crash_handleriP7siginfoPv_b415b0 - [DIRECT]-> _ZN7VMError14report_and_dieEv_b3fca0
+  _ZN7VMError14report_and_dieEv_b3fca0 - [DIRECT]-> _ZN3Jfr14on_vm_shutdownEb_6b0510
+  _ZN3Jfr14on_vm_shutdownEb_6b0510 - [DIRECT]-> _ZN16JfrEmergencyDump14on_vm_shutdownEb_6bbdc0
+  _ZN16JfrEmergencyDump14on_vm_shutdownEb_6bbdc0 - [DIRECT]-> _ZN18JfrRecorderService6rotateEi_6e1200
+  _ZN18JfrRecorderService6rotateEi_6e1200 - [DIRECT]-> _ZN13JfrRepository11on_vm_errorEv_6e2f10
+  _ZN13JfrRepository11on_vm_errorEv_6e2f10 - [DIRECT]-> _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb9c0
+  _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb9c0 - [DIRECT]-> _ZN2os7read_atEiPvjl_971480
+  _ZN2os7read_atEiPvjl_971480 - [DIRECT]-> pread_1043f0
+  pread_1043f0 - [syscall]-> pread64
+
 Path to clone3:
   Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> jvmtiTrace_RunAgentThread_792e20
   jvmtiTrace_RunAgentThread_792e20 - [DIRECT]-> _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7b0190
@@ -475,3 +520,15 @@ Path to dup:
   __get_myaddress.cold_2a20c - [DIRECT]-> perror_28a8f
   perror_28a8f - [DIRECT]-> dup_1230b0
   dup_1230b0 - [syscall]-> dup
+
+Path to connect:
+  Java_java_util_zip_ZipFile_getEntry_3860 - [INDIRECT]-> start_thread_a3de0
+  start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
+  __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
+  __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
+  __rpc_thread_svc_cleanup_1877e0 - [DIRECT]-> __EI_pmap_unset_17b510
+  __EI_pmap_unset_17b510 - [DIRECT]-> __EI_clntudp_bufcreate_184bc0
+  __EI_clntudp_bufcreate_184bc0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_1848a0
+  __GI___libc_clntudp_bufcreate_1848a0 - [DIRECT]-> __GI_pmap_getport_186490
+  __GI_pmap_getport_186490 - [DIRECT]-> connect_139160
+  connect_139160 - [syscall]-> connect
