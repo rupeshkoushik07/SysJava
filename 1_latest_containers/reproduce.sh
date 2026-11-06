@@ -9,7 +9,8 @@
 #   TABLE_ONLY=1 ./reproduce.sh         # only the table, from the rerun (or the shipped) results
 #
 # Results:  ../work/latest/Final_results_latest_versions/<image>/
-# Table:    tables_rerun/table.{md,csv} and table_rows.tex
+# Table:    tables_rerun/tableIII_latest.tex (and .pdf with matplotlib), compared with
+#           the shipped tables/tableIII_latest.tex
 # Needs:    ~8 cores, 64 GB RAM (+ swap), ~60 GB disk; a full libjvm SysPart run
 #           takes 20-35 GB and 1-3 h. One image takes 2-8 h end to end.
 set -euo pipefail
@@ -44,7 +45,22 @@ fi
 R="$W/Final_results_latest_versions"
 if [ ! -d "$R" ] || [ -z "$(ls -A "$R" 2>/dev/null)" ]; then R="$HERE/results"; fi
 echo "===== Table tab:latest (results: $R)"
-python3 "$HERE/../tools/make_tables.py" latest "$R" \
-    --runtime "$HERE/runc.txt" --out "$HERE/tables_rerun" \
-    ${AUDIT:+--audit "$AUDIT"}
-echo "Compare with the shipped results: diff -r tables/ tables_rerun/"
+# The generator checks whether each JAR with an FFM hit references java/lang/foreign, so it
+# needs the JARs: shipped results have them only in dataset/, which is unpacked into a view.
+V="$HERE/../work/table_latest"; rm -rf "$V"; mkdir -p "$V"
+for t in "${ALL[@]}"; do
+    mkdir -p "$V/$t"
+    for x in "$R/$t"/*; do ln -s "$(realpath "$x")" "$V/$t/"; done
+    if [ ! -d "$R/$t/Dataset/JARFILES_$t" ]; then
+        cat "$R/$t"/dataset/Dataset.tar.xz.part* | xz -dc | tar -x -C "$V/$t" "Dataset/JARFILES_$t"
+    fi
+done
+mkdir -p "$HERE/tables_rerun"
+python3 "$HERE/../tools/make_paper_table_latest.py" "$V" "$HERE/unavailable_libs" \
+    "$HERE/tables/mapping_audit_per_app.csv" "$HERE/tables_rerun/tableIII_latest" "$HERE/runc.txt" || true
+if cmp -s "$HERE/tables_rerun/tableIII_latest.tex" "$HERE/tables/tableIII_latest.tex"; then
+    echo "tables_rerun/tableIII_latest.tex is identical to the shipped tables/tableIII_latest.tex"
+else
+    echo "tables_rerun/tableIII_latest.tex differs from the shipped table:"
+    diff "$HERE/tables/tableIII_latest.tex" "$HERE/tables_rerun/tableIII_latest.tex" || true
+fi

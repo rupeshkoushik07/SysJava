@@ -1,0 +1,12 @@
+org.elasticsearch.bootstrap.JNAKernel32Library.SetInformationJobObject
+org.elasticsearch.bootstrap.JNAKernel32Library.VirtualLock
+org.elasticsearch.bootstrap.JNAKernel32Library.GetCurrentProcess
+org.elasticsearch.bootstrap.JNAKernel32Library.SetConsoleCtrlHandler
+org.elasticsearch.bootstrap.JNAKernel32Library.GetShortPathNameW
+org.elasticsearch.bootstrap.JNAKernel32Library.CreateJobObjectW
+org.elasticsearch.bootstrap.JNAKernel32Library.SetProcessWorkingSetSize
+org.elasticsearch.bootstrap.JNAKernel32Library.QueryInformationJobObject
+org.elasticsearch.bootstrap.JNAKernel32Library.AssignProcessToJobObject
+java.lang.Class.getSuperclass
+org.elasticsearch.bootstrap.JNAKernel32Library.VirtualQueryEx
+org.elasticsearch.bootstrap.JNAKernel32Library.CloseHandle

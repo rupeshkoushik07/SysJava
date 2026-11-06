@@ -1,0 +1,4 @@
+notfound_search/libjvm.so:jdk.internal.misc.VM.getNanoTimeAdjustment -> JVM_GetNanoTimeAdjustment [JVM]
+notfound_search/libjvm.so:java.lang.Object.wait0 -> JVM_MonitorWait [JVM]
+unavailable_libs/tomcat_11.0.22/jsvc:org.apache.commons.daemon.support.DaemonLoader.shutdown -> shutdown [REGISTERED]
+unavailable_libs/tomcat_11.0.22/jsvc:org.apache.commons.daemon.support.DaemonLoader.failed -> failed [REGISTERED]

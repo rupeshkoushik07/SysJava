@@ -1,0 +1,2 @@
+jdk.internal.vm.Continuation.doYield
+java.lang.Class.getSuperclass

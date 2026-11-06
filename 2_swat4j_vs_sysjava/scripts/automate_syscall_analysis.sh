@@ -468,6 +468,12 @@ process_binary() {
 
     popd > /dev/null
 
+    # Exit 3: compute_syscalls_lowmem.sh found no usable call graph and left
+    # syspart_failed.txt; the merge reports it as unanalysable (SysPart crash).
+    if [ $syspart_exit -eq 3 ]; then
+        log_message "WARNING" "Unanalysable (SysPart crash): $binary_basename ($(cat "$output_dir/syspart_failed.txt" 2>/dev/null))"
+        return 0
+    fi
     if [ $syspart_exit -ne 0 ]; then
         log_message "ERROR" "SysPart analysis failed (exit code: $syspart_exit)"
         log_message "ERROR" "Check log file: $output_dir/logfile.txt"
@@ -574,6 +580,9 @@ process_library() {
 
     if [ $exit_code -eq 0 ]; then
         log_message "SUCCESS" "Completed analysis for: $startfunc_basename"
+        return 0
+    elif [ $exit_code -eq 3 ]; then
+        log_message "WARNING" "Unanalysable (SysPart crash): $startfunc_basename ($(cat "$output_dir/syspart_failed.txt" 2>/dev/null))"
         return 0
     else
         log_message "ERROR" "Failed to analyze: $startfunc_basename (exit code: $exit_code)"

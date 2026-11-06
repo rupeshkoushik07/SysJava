@@ -1,0 +1,4 @@
+notfound_search/libjvm.so:jdk.internal.misc.VM.getNanoTimeAdjustment -> JVM_GetNanoTimeAdjustment [JVM]
+notfound_search/libjvm.so:jdk.internal.misc.ScopedMemoryAccess.registerNatives -> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods [JVM]
+notfound_search/libjvm.so:jdk.internal.misc.Unsafe.registerNatives -> JVM_RegisterJDKInternalMiscUnsafeMethods [JVM]
+notfound_search/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]

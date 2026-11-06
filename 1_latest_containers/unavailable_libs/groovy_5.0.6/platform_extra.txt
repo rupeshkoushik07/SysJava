@@ -1,0 +1,3 @@
+jdk.internal.vm.Continuation.doYield
+java.lang.invoke.MethodHandle.invokeExact
+java.lang.Class.getSuperclass

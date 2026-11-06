@@ -1,0 +1,6 @@
+- Container: `et_tomcat_11.0.22`, image `tomcat:11.0.22` (`sha256:59ab4ab47f49`)
+- Application: Apache Tomcat 11.0.22
+- Distro: Ubuntu 24.04.4 LTS
+- JDK: JDK 25 (Eclipse Temurin, `/opt/java/openjdk`)
+- Native libraries: tomcat-native 2.0.14, OpenSSL 3.0.13-0ubuntu3.9, APR 1.7.2-3.1ubuntu0.1, glibc 2.39-0ubuntu8.7
+- Analysis: SysPart June build (`/home/user/SysPartCode`, as the latest-versions pipeline); libraries and dependencies from Dataset_symbolized

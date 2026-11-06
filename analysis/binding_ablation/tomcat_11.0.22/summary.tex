@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{xspace}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\newcommand{\sysname}{SysJava\xspace}
+\title{\sysname with and without Binding Recovery: Apache Tomcat 11.0.22}
+\author{}
+\date{\vspace{-8ex}}
+\begin{document}
+\maketitle
+
+\begin{table}[H]
+\centering
+\caption{Syscalls reached from the native libraries of Apache Tomcat 11.0.22, with binding recovery (analysis starts from the functions the native methods and FFM downcalls are mapped to) and without (analysis starts from every function in the library). Container \texttt{et\_tomcat\_11.0.22}, image \texttt{tomcat:11.0.22} (\texttt{sha256:59ab4ab47f49}); Ubuntu 24.04.4 LTS; JDK 25 (Eclipse Temurin, \texttt{/opt/java/openjdk}); native libraries tomcat-native 2.0.14, OpenSSL 3.0.13-0ubuntu3.9, APR 1.7.2-3.1ubuntu0.1, glibc 2.39-0ubuntu8.7.}
+\label{tab:binding-tomcat-11-0-22}
+\begin{tabular}{llrrrr}
+\toprule
+ &  & \multicolumn{2}{c}{\textbf{Binding}} & \multicolumn{2}{c}{\textbf{No binding}} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+\textbf{Library} & \textbf{Interface} & Start functions & Syscalls & Start functions & Syscalls \\
+\midrule
+libjava.so & JNI & 69 & 107 & 305 & 115 \\
+libjvm.so & JNI & 88 & 104 & 52,680 & not resolved \\
+libnet.so & JNI & 5 & 104 & 92 & 109 \\
+libtcnative-2.so.0.0.14 & JNI & 92 & 61 & 167 & 62 \\
+libzip.so & JNI & 9 & 104 & 205 & 104 \\
+libcrypto.so.3 & FFM & 107 & 44 & 10,851 & 68 \\
+libssl.so.3 & FFM & 75 & 44 & 1,294 & 60 \\
+\textbf{All except libjvm.so} &  & \textbf{357} & \textbf{116} & \textbf{12,914} & \textbf{127} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{Native methods (JNI)}
+\sysname's bytecode analysis found 269 native methods (Java methods declared \texttt{native}, in the application and the JDK) and mapped 263 of them to C functions: 92 in libtcnative-2.so.0.0.14, 88 in libjvm.so, 69 in libjava.so, 9 in libzip.so and 5 in libnet.so (175 through JNI symbol naming, 48 through RegisterNatives tables, 40 through JVM native-method tables). Of the other 6, 5 have no matching function in any library and 1 could not be resolved.
+
+\paragraph*{FFM downcalls}
+Apache Tomcat 11.0.22 also calls native functions directly through the Foreign Function \& Memory (FFM) API in tomcat-coyote-ffm.jar. \sysname found downcall handles for 200 native functions, separate from the 269 native methods, and mapped 182 of them to the libraries that define them: 107 in libcrypto.so.3 and 75 in libssl.so.3. The other 18 (e.g. \texttt{EVP\_PKEY\_base\_id}, \texttt{EVP\_PKEY\_bits}) are not exported by these libraries. \sysname found no JNA or JNR-FFI bindings.
+
+\paragraph*{How the syscalls were counted}
+All 7 libraries are among the 20 native libraries the JVM loaded at runtime (sysdig trace). For each library, SysPart builds a call graph and collects every syscall reachable from the start functions: with binding, the functions the native methods and FFM downcalls map to; without binding, every function in the library, since without the mapping any of them could be called. Both use the same library files and SysPart build. The last row adds up the start functions and counts each syscall once. For libjava.so, libjvm.so, libnet.so and libzip.so, the binding numbers come from the \sysname pipeline's own run (same start functions; where both were computed, they agree).
+
+\paragraph*{Result}
+Across the 6 libraries with both results, starting from the mapped functions reaches 116 syscalls; starting from every function reaches 127. Per library, the gap is largest in libcrypto.so.3 (+24), libssl.so.3 (+16) and libjava.so (+8). Reached only without binding (11): \texttt{accept}, \texttt{chmod}, \texttt{fsync}, \texttt{getppid}, \texttt{listen}, \texttt{mlock}, \texttt{mlock2}, \texttt{rename}, \texttt{sendmsg}, \texttt{statfs} and \texttt{utimensat}.
+
+\paragraph*{Why libjvm.so is not resolved without binding}
+With binding, SysPart starts from its 88 mapped functions and resolves 104 syscalls. Without binding, it has to start from all 52,680, and it ran out of memory (\texttt{std::bad\_alloc}) at a 35 GB and again at a 60 GB limit. SysPart links every indirect call site to every address-taken function in the code the graph covers: 23,969 functions with binding, but all of libjvm.so without, whose 37,884 indirect call sites and at least 21,679 address-taken functions make about 800 million edges. The last row leaves libjvm.so out; with binding it adds no syscall the other libraries do not already reach.
+
+\end{document}

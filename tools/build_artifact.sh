@@ -199,6 +199,62 @@ if [ "$CODE_ONLY" = 0 ]; then
     done
 fi
 
+# ------------------------------------------- inputs of Table III (tab:latest)
+# make_paper_table_latest.py reads, besides the results: the hand mapping of natives whose
+# library the image does not ship, the classification of unresolved bindings, and the
+# mapping audit. Only those text files of unavailable_libs/ are shipped (no libraries).
+log "1_latest_containers/unavailable_libs, Table III generator"
+U="$LATEST_REPO/unavailable_libs"; D="$ART/1_latest_containers/unavailable_libs"
+rm -rf "$D"; mkdir -p "$D/notfound_search" "$ART/1_latest_containers/tables"
+cp "$U/NOTES.md" "$U/PROVENANCE.tsv" "$D/"
+cp "$U"/notfound_search/{binding_overrides.py,classify.py,classification.tsv} "$D/notfound_search/"
+(cd "$U" && find . -path ./notfound_search -prune -o -path ./prev_run_compare -prune -o \
+    \( -path '*/mapping/mapped_method_syscalls.txt' -o -name binding_overrides.tsv -o -path '*/syspart*/syscalls.txt' \
+       -o -path '*/merged/*_with_supplement.txt' -o -name platform_extra.txt \) -type f -print) \
+    | rsync -a --files-from=- "$U/" "$D/"
+cp "$LATEST_REPO/tables/mapping_audit_per_app_2026-11-05_2310.csv" "$ART/1_latest_containers/tables/mapping_audit_per_app.csv"
+# The generator as used, with the runtime set as a required argument and the PDF optional.
+python3 - "$LATEST_REPO/tables/make_paper_table.py" "$ART/tools/make_paper_table_latest.py" <<'PYEOF'
+import re, sys
+s = open(sys.argv[1]).read()
+s, n1 = re.subn(r'RUNTIME = sys\.argv\[5\] if len\(sys\.argv\) > 5 else "[^"]*"', 'RUNTIME = sys.argv[5]', s)
+s = s.replace("<out_prefix> [runc.txt]", "<out_prefix> <runc.txt>")
+s, n2 = re.subn(r"\nimport matplotlib\n", "\ntry:\n    import matplotlib\nexcept ImportError:\n"
+                "    sys.exit(f\"wrote {out}.tex (no PDF: matplotlib not installed)\")\n", s)
+assert n1 == 1 and n2 == 1, (n1, n2)
+open(sys.argv[2], "w").write(s)
+PYEOF
+
+# ------------------------------------------- binding-recovery ablation (RQ5)
+# Scripts, procedure and per-image summaries; the call graphs (7 GB) are not shipped.
+log "analysis/binding_ablation <- EchoTrace/ablation (scripts and summaries)"
+ABL="${ABLATION_DIR:-$JDK8_REPO/ablation}"; D="$ART/analysis/binding_ablation"
+rm -rf "$D"; mkdir -p "$D"
+(cd "$ABL" && find . -path '*/__pycache__' -prune -o -path './*/[ABMU]' -prune -o -path './*/ALL' -prune -o -path './*/extra_libs*' -prune -o -path './*/stripped_deps' -prune -o \
+    \( -name '*.md' -o -name '*.sh' -o -name '*.py' -o -name '*.tsv' -o -name '*.tex' \) -type f -print) \
+    | rsync -a --files-from=- "$ABL/" "$D/"
+cat > "$D/README.md" <<'MDEOF'
+# Binding-recovery ablation (RQ5)
+
+SysPart run twice per library, on the same files with the same build: from the
+functions that recovered bindings map to (binding), and from every function in
+the library (no binding).
+
+| Image | Binding: starts / syscalls | No binding: starts / syscalls |
+|---|---|---|
+| Tomcat 7.0.109 (JDK 8), all 8 libraries | 583 / 116 | 34,889 / 124 |
+| Tomcat 11.0.22 (JDK 25), all but `libjvm.so` | 357 / 116 | 12,914 / 127 |
+
+* Procedure: `REPRODUCE.md`. Per image: `<image>/summary.md`,
+  `per_library_syscalls.tsv`, `summary.tex`.
+* Tomcat 7: libraries with stripped dependencies were rerun from their
+  symbolized copies; an earlier summary showing 119 / 125 is superseded.
+* Tomcat 11: `libjvm.so` without binding did not finish (`std::bad_alloc` at
+  35 GB and 60 GB); it is shown as "n/r" and left out of the totals.
+* Paths in these files are those of the analysis host. The SysPart call graphs
+  of the runs (7 GB) are not included.
+MDEOF
+
 # ------------------------------------------------- Docker images and digests
 log "docker_images/ (digests, Dockerfiles)"
 bash "$ART/tools/docker_images.sh" "$ART" "$JDK8_REPO"
@@ -267,8 +323,11 @@ if [ "$CODE_ONLY" = 0 ]; then
     python3 "$ART/tools/make_tables.py" latest "$ART/1_latest_containers/results" \
         --runtime "$ART/1_latest_containers/runc.txt" --out "$ART/1_latest_containers/tables" || true
     # The final Table III (paper format) and the remaining not-found natives with reasons.
-    cp "$LATEST_REPO"/tables/tableIII_latest_rerun_*.tex "$LATEST_REPO"/tables/tableIII_latest_rerun_*.pdf \
-       "$LATEST_REPO"/tables/notfound_natives_latest_*.pdf "$ART/1_latest_containers/tables/" 2>/dev/null || true
+    LATEST_TABLE="${LATEST_TABLE:-tableIII_latest_rerun_2026-11-06_ffmfix}"
+    rm -f "$ART"/1_latest_containers/tables/tableIII_* "$ART"/1_latest_containers/tables/notfound_natives_*
+    cp "$LATEST_REPO/tables/$LATEST_TABLE.tex" "$ART/1_latest_containers/tables/tableIII_latest.tex"
+    cp "$LATEST_REPO/tables/$LATEST_TABLE.pdf" "$ART/1_latest_containers/tables/tableIII_latest.pdf"
+    cp "$LATEST_REPO"/tables/notfound_natives_latest_*.pdf "$ART/1_latest_containers/tables/notfound_natives_latest.pdf"
 fi
 if [ "$CODE_ONLY" = 0 ] && [ "$LATEST_ONLY" = 0 ]; then
     status_md "$ART/2_swat4j_vs_sysjava/STATUS.md" "$ART/2_swat4j_vs_sysjava/sysjava_results" "${JDK8_TARGETS[@]}" "${JDK8_OFFICIAL_TARGETS[@]}"

@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{xspace}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\newcommand{\sysname}{SysJava\xspace}
+\title{\sysname with and without Binding Recovery: Apache Tomcat 7.0.109}
+\author{}
+\date{\vspace{-8ex}}
+\begin{document}
+\maketitle
+
+\begin{table}[H]
+\centering
+\caption{Syscalls reached from the native libraries of Apache Tomcat 7.0.109, with binding recovery (analysis starts from the functions the native methods are mapped to) and without (analysis starts from every function in the library). Container \texttt{et\_tomcat\_7.0}, image \texttt{tomcat:7.0} (\texttt{sha256:9dfd74e6bc2f}); Debian GNU/Linux 10.10 (buster); JDK 8 (OpenJDK, \texttt{/usr/local/openjdk-8}); native libraries tomcat-native 1.2.28, OpenSSL 1.1.1d-0+deb10u6, APR 1.6.5-1+b1, glibc 2.28-10.}
+\label{tab:binding-tomcat-7-0}
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Binding}} & \multicolumn{2}{c}{\textbf{No binding}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Library} & Start functions & Syscalls & Start functions & Syscalls \\
+\midrule
+libj2pkcs11.so & 67 & 37 & 163 & 37 \\
+libjava.so & 88 & 86 & 363 & 96 \\
+libjvm.so & 132 & 82 & 33,030 & 98 \\
+libmanagement.so & 2 & 81 & 115 & 82 \\
+libnet.so & 2 & 81 & 177 & 90 \\
+libsunec.so & 5 & 37 & 387 & 37 \\
+libtcnative-1.so.0.2.28 & 264 & 101 & 458 & 102 \\
+libzip.so & 23 & 81 & 196 & 81 \\
+\textbf{All 8 libraries} & \textbf{583} & \textbf{116} & \textbf{34,889} & \textbf{124} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{Native methods (JNI)}
+\sysname's bytecode analysis found 612 native methods (Java methods declared \texttt{native}, in the application and the JDK) and mapped 583 of them to C functions: 264 in libtcnative-1.so.0.2.28, 132 in libjvm.so, 88 in libjava.so, 67 in libj2pkcs11.so, 23 in libzip.so, 5 in libsunec.so, 2 in libmanagement.so and 2 in libnet.so (451 through JNI symbol naming, 93 through RegisterNatives tables, 39 through JVM native-method tables). Of the other 29, 20 are Windows-only, 4 have no matching function in any library, 4 are handled inside the JVM (intrinsics) and 1 could not be resolved. Apache Tomcat 7.0.109 is an older application on JDK 8 and binds native code only through classic JNI.
+
+\paragraph*{How the syscalls were counted}
+At runtime the JVM loaded 22 native libraries (sysdig trace). The mapped functions fall in 8 libraries: 7 of those, plus libj2pkcs11.so, which is not loaded at all. For each library, SysPart builds a call graph and collects every syscall reachable from the start functions: with binding, the functions the native methods map to; without binding, every function in the library, since without the mapping any of them could be called. Both use the same library files and SysPart build. The last row adds up the start functions and counts each syscall once.
+
+\paragraph*{Result}
+Across the 8 libraries, starting from the mapped functions reaches 116 syscalls; starting from every function reaches 124. Per library, the gap is largest in libjvm.so (+16), libjava.so (+10) and libnet.so (+9). Reached only without binding (8): \texttt{clock\_getres}, \texttt{fchdir}, \texttt{fsync}, \texttt{getppid}, \texttt{rt\_sigsuspend}, \texttt{socketpair}, \texttt{times} and \texttt{umask}.
+
+\end{document}

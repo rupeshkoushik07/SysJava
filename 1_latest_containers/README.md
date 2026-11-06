@@ -21,16 +21,19 @@ Digests: `../docker_images/IMAGES.md`.
 
 * `results/<image>/`: one result per image (layout in the top-level README).
 * `STATUS.md`: whether each image runs under its profile.
-* `tables/`: Table III as in the paper (`tableIII_latest_rerun_*.tex`, `.pdf`), the
-  remaining not-found natives with their reasons (`notfound_natives_latest_*.pdf`),
-  and the rows computed from `results/` (`table.md`).
+* `tables/`: Table III as in the paper (`tableIII_latest.tex`, `.pdf`) and the
+  remaining not-found natives with their reasons (`notfound_natives_latest.pdf`).
+  `TABLE_ONLY=1 ./reproduce.sh` regenerates Table III from `results/` and compares it.
+* `unavailable_libs/`: the other inputs of Table III: natives whose library the image
+  does not ship, mapped by hand after supplying the library (`PROVENANCE.tsv`), and
+  the classification of unresolved bindings (`notfound_search/`).
 * `scripts/`: the pipeline scripts; `runc.txt`: the runtime syscall set.
 
 ## Reproduce
 
 ```bash
 python3 ../generate_syscalls.py zookeeper_3.9.5   # syscalls and profile without SysPart, minutes
-TABLE_ONLY=1 ./reproduce.sh         # table from the shipped results
+TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 ./reproduce.sh                      # full rerun of all 10 images (needs ../setup.sh)
 ./reproduce.sh tomcat_11.0.22       # one image
 ```

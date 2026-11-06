@@ -1,0 +1,125 @@
+syscall	libj2pkcs11.so	libjava.so	libjvm.so	libmanagement.so	libnet.so	libsunec.so	libtcnative-1.so.0.2.28	libzip.so	policy_binding	policy_no_binding
+accept			A		A		B		yes	yes
+accept4							B		yes	yes
+access		B	B	B	B		B	B	yes	yes
+arch_prctl							B		yes	yes
+bind		B	B	B	B		B	B	yes	yes
+brk	B	B	B	B	B	B	B	B	yes	yes
+chdir		B					B		yes	yes
+chmod		A	A				B		yes	yes
+clock_getres			A						yes	yes
+clock_gettime	B	B	B	B	B	B	B	B	yes	yes
+clock_nanosleep		B	B	B	B			B	yes	yes
+clone		B	B	B	B		B	B	yes	yes
+clone3		B	B	B	B			B	yes	yes
+close	B	B	B	B	B	B	B	B	yes	yes
+connect		B	B	B	B		B	B	yes	yes
+dup		B	B	B	B		B	B	yes	yes
+dup2		B			A		B		yes	yes
+dup3							B		yes	yes
+epoll_create1							B		yes	yes
+epoll_ctl							B		yes	yes
+epoll_wait							B		yes	yes
+execve		B	B	B	B		B	B	yes	yes
+exit	B	B	B	B	B	B	B	B	yes	yes
+exit_group	B	B	B	B	B	B	B	B	yes	yes
+faccessat		B	B	B	B			B	yes	yes
+faccessat2		B	B	B	B			B	yes	yes
+fchdir			A							yes
+fchown							B		yes	yes
+fcntl	B	B	B	B	B	B	B	B	yes	yes
+flock							B		yes	yes
+fstat		B	B	B	B		B	B	yes	yes
+fsync		A	A						yes	yes
+ftruncate		B	A				B		yes	yes
+futex	B	B	B	B	B	B	B	B	yes	yes
+getcwd	B	B	B	B	B	B	B	B	yes	yes
+getdents64	B	B	B	B	B	B	B	B	yes	yes
+getegid		B	B	B	B			B	yes	yes
+geteuid		B	B	B	B		B	B	yes	yes
+getgid		B	B	B	B		B	B	yes	yes
+getgroups		B	B	B	B			B	yes	yes
+getpeername		A	A		A		B		yes	yes
+getpid	B	B	B	B	B	B	B	B	yes	yes
+getppid							A			yes
+getpriority		B	B	B	B			B	yes	yes
+getrandom	B	B	B	B	B	B	B	B	yes	yes
+getrusage		B	B	B	B			B	yes	yes
+getsockname		B	B	B	B		B	B	yes	yes
+getsockopt			A		A		B		yes	yes
+gettid	B	B	B	B	B	B	B	B	yes	yes
+gettimeofday		B	B	B	B		B	B	yes	yes
+getuid		B	B	B	B		B	B	yes	yes
+ioctl	B	B	B	B	B	B	B	B	yes	yes
+kill		B	B	B	B		B	B	yes	yes
+link							B		yes	yes
+listen			A		A		B		yes	yes
+lseek	B	B	B	B	B	B	B	B	yes	yes
+lstat		B	B	B	B		B	B	yes	yes
+madvise	B	B	B	B	B	B	B	B	yes	yes
+mincore		B	B	B	B			B	yes	yes
+mkdir		A	A				B		yes	yes
+mmap	B	B	B	B	B	B	B	B	yes	yes
+mprotect	B	B	B	B	B	B	B	B	yes	yes
+mremap	B	B	B	B	B	B	B	B	yes	yes
+munmap	B	B	B	B	B	B	B	B	yes	yes
+newfstatat	B	B	B	B	B	B	B	B	yes	yes
+openat	B	B	B	B	B	B	B	B	yes	yes
+pipe2		B					B		yes	yes
+poll		B	B	B	B		B	B	yes	yes
+pread64	B	B	B	B	B	B	B	B	yes	yes
+prlimit64	B	B	B	B	B	B	B	B	yes	yes
+pselect6							B		yes	yes
+read	B	B	B	B	B	B	B	B	yes	yes
+readlink		B	B	B	B			B	yes	yes
+readv					A		B		yes	yes
+recvfrom		B	B	B	B		B	B	yes	yes
+recvmsg		B	B	B	B		B	B	yes	yes
+rename		A	A				B		yes	yes
+rmdir		A	A				B		yes	yes
+rseq		B	B	B	B			B	yes	yes
+rt_sigaction	B	B	B	B	B	B	B	B	yes	yes
+rt_sigprocmask	B	B	B	B	B	B	B	B	yes	yes
+rt_sigreturn	B	B	B	B	B	B	B	B	yes	yes
+rt_sigsuspend			A							yes
+sched_get_priority_max	B	B	B	B	B	B	B	B	yes	yes
+sched_get_priority_min	B	B	B	B	B	B	B	B	yes	yes
+sched_getaffinity	B	B	B	B	B	B	B	B	yes	yes
+sched_getparam	B	B	B	B	B	B	B	B	yes	yes
+sched_getscheduler	B	B	B	B	B	B	B	B	yes	yes
+sched_setaffinity		B	B	B	B			B	yes	yes
+sched_setscheduler	B	B	B	B	B	B	B	B	yes	yes
+sched_yield		B	B	B	B		B	B	yes	yes
+semctl							B		yes	yes
+semget							B		yes	yes
+semtimedop							B		yes	yes
+sendfile							B		yes	yes
+sendmmsg		A	A		A		B		yes	yes
+sendto		B	B	B	B		B	B	yes	yes
+set_robust_list		B	B	B	B		B	B	yes	yes
+setgid							B		yes	yes
+setpriority		A	B						yes	yes
+setsid							B		yes	yes
+setsockopt		B	B	B	B		B	B	yes	yes
+setuid							B		yes	yes
+shmat		B	B	B	B		B	B	yes	yes
+shmctl		B	B	B	B		B	B	yes	yes
+shmdt		B	B	B	B		B	B	yes	yes
+shmget		B	B	B	B		B	B	yes	yes
+shutdown			A		A		B		yes	yes
+socket		B	B	B	B		B	B	yes	yes
+socketpair					A				yes	yes
+stat		B	B	B	B		B	B	yes	yes
+statfs		B							yes	yes
+sysinfo	B	B	B	B	B	B	B	B	yes	yes
+tgkill	B	B	B	B	B	B	B	B	yes	yes
+time		B	B	B	B		B	B	yes	yes
+times			A	A						yes
+umask		A								yes
+uname		B	B	B	B		B	B	yes	yes
+unlink		B	B	B	B		B	B	yes	yes
+utimensat		A					B		yes	yes
+vfork		B	B	B	B			B	yes	yes
+wait4		B	B	B	B		B	B	yes	yes
+write	B	B	B	B	B	B	B	B	yes	yes
+writev	B	B	B	B	B	B	B	B	yes	yes

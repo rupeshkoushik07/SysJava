@@ -1,0 +1,6 @@
+- Container: `et_tomcat_7.0`, image `tomcat:7.0` (`sha256:9dfd74e6bc2f`)
+- Application: Apache Tomcat 7.0.109
+- Distro: Debian GNU/Linux 10.10 (buster)
+- JDK: JDK 8 (OpenJDK, `/usr/local/openjdk-8`)
+- Native libraries: tomcat-native 1.2.28, OpenSSL 1.1.1d-0+deb10u6, APR 1.6.5-1+b1, glibc 2.28-10
+- Analysis: SysPart 453694d on Ubuntu 22.04.5 LTS; the libraries' libc calls resolve to the host's glibc 2.35-0ubuntu3.15

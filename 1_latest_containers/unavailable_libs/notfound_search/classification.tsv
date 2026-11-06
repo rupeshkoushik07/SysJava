@@ -1,0 +1,185 @@
+target	method	class	library	symbol	tag	reason
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.getProcessId0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.setAffinity0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	com.github.luben.zstd.Zstd.generateSequences	not_found	-	-	-	declared in zstd-jni, absent from the shipped zstd-jni library
+cassandra_5.0.8	com.kenai.jffi.Foreign.freeNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	net.openhft.ticker.impl.JNIClock.rdtsc0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.rdtsc0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.getAffinity0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	com.kenai.jffi.Foreign.newNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	com.kenai.jffi.Foreign.freeCompiledMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+cassandra_5.0.8	com.kenai.jffi.Foreign.compileNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	com.kenai.jffi.Foreign.unregisterNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.getThreadId0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	software.chronicle.enterprise.internals.impl.NativeAffinity.getCpu0	not_found	-	-	-	Chronicle/OpenHFT native library not shipped (commercial/optional; Java fallback)
+cassandra_5.0.8	com.kenai.jffi.Foreign.invokeArrayWithObjectsReturnObject	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+cassandra_5.0.8	com.kenai.jffi.Foreign.registerNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.SetInformationJobObject	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	java.lang.invoke.MethodHandleNatives.registerNatives	mapped	libjvm.so	JVM_RegisterMethodHandleMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.VirtualLock	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNACLibrary.mlockall	mapped	libc.so.6	mlockall	JNI	JNA direct mapping (Native.register) to libc
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.GetCurrentProcess	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.SetConsoleCtrlHandler	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.GetShortPathNameW	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNACLibrary.getrlimit	mapped	libc.so.6	getrlimit	JNI	JNA direct mapping (Native.register) to libc
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.CreateJobObjectW	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.SetProcessWorkingSetSize	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.QueryInformationJobObject	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNACLibrary.geteuid	mapped	libc.so.6	geteuid	JNI	JNA direct mapping (Native.register) to libc
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.AssignProcessToJobObject	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.VirtualQueryEx	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNACLibrary.setrlimit	mapped	libc.so.6	setrlimit	JNI	JNA direct mapping (Native.register) to libc
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNAKernel32Library.CloseHandle	platform	-	-	-	Windows/macOS-only native
+elasticsearch_7.1.0	jdk.internal.misc.Unsafe.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscUnsafeMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+elasticsearch_7.1.0	org.elasticsearch.bootstrap.JNACLibrary.strerror	mapped	libc.so.6	strerror	JNI	JNA direct mapping (Native.register) to libc
+groovy_5.0.6	jdk.internal.vm.Continuation.doYield	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+groovy_5.0.6	java.lang.invoke.MethodHandle.invokeExact	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+groovy_5.0.6	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+groovy_5.0.6	java.lang.Object.wait0	mapped	libjvm.so	JVM_MonitorWait	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+groovy_5.0.6	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+jetty_12.1.10	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jetty_12.1.10	java.lang.Object.wait0	mapped	libjvm.so	JVM_MonitorWait	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jetty_12.1.10	jdk.internal.vm.Continuation.doYield	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+jetty_12.1.10	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+jruby_10.1.0.0	com.kenai.jffi.Foreign.freeNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	jdk.internal.vm.Continuation.doYield	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+jruby_10.1.0.0	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jruby_10.1.0.0	java.lang.Object.wait0	mapped	libjvm.so	JVM_MonitorWait	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jruby_10.1.0.0	com.kenai.jffi.Foreign.freeCompiledMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+jruby_10.1.0.0	com.kenai.jffi.Foreign.compileNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	com.kenai.jffi.Foreign.unregisterNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	jdk.internal.misc.Unsafe.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscUnsafeMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jruby_10.1.0.0	java.lang.invoke.MethodHandleNatives.registerNatives	mapped	libjvm.so	JVM_RegisterMethodHandleMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+jruby_10.1.0.0	com.kenai.jffi.Foreign.newNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	com.kenai.jffi.Foreign.invokeArrayWithObjectsReturnObject	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	com.kenai.jffi.Foreign.registerNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+jruby_10.1.0.0	jdk.internal.misc.ScopedMemoryAccess.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	com.kenai.jffi.Foreign.freeNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	sun.misc.Unsafe.registerNatives	mapped	libjvm.so	JVM_RegisterUnsafeMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	java.lang.invoke.MethodHandle.invokeExact	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+orientdb_3.2.53	jdk.jfr.internal.JVM.registerNatives	mapped	libjvm.so	jfr_register_natives	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	com.kenai.jffi.Foreign.freeCompiledMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	sun.misc.Perf.createLong	mapped	libjvm.so	Perf_CreateLong	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+orientdb_3.2.53	com.kenai.jffi.Foreign.compileNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	jdk.jfr.internal.JVM.getClassId	mapped	libjvm.so	jfr_class_id	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	com.kenai.jffi.Foreign.unregisterNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	java.lang.invoke.MethodHandleNatives.registerNatives	mapped	libjvm.so	JVM_RegisterMethodHandleMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+orientdb_3.2.53	com.kenai.jffi.Foreign.newNativeMethod	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	com.kenai.jffi.Foreign.invokeArrayWithObjectsReturnObject	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	com.kenai.jffi.Foreign.registerNativeMethods	not_found	-	-	-	declared in jffi, absent from every jffi native build on disk (dead declaration)
+orientdb_3.2.53	jdk.jfr.internal.JVM.setCompressedIntegers	not_found	-	-	-	JVM function not present in this libjvm
+solr_10.0.0	jdk.internal.vm.Continuation.doYield	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+solr_10.0.0	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+solr_10.0.0	java.lang.Object.wait0	mapped	libjvm.so	JVM_MonitorWait	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+solr_10.0.0	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.registerUnix	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setIpFreeBind	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringRegisterIoWqMaxWorkers	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringBufRingSize	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.setEnabled	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpNotSentLowAt	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isTcpFastOpenConnect	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getPeerCredentials	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringSetupSupportsFlags	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.BitShuffleNative.shuffleDirectBuffer	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers	platform	-	-	-	Windows/macOS-only native
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isIpMulticastAll	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpFastOpenConnect	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getSoBusyPoll	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isIpTransparent	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.blockingEventFd	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.BitShuffleNative.unshuffle	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.BitShuffleNative.unshuffleDirectBuffer	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.rocksdb.DBOptions.failIfOptionsFileError	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.joinSsmGroup	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.rocksdb.WBWIRocksIterator.refresh0Jni	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpDeferAccept	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.getPlatform	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpKeepIntvl	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTimeToLive	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpDeferAccept	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.eventFdWrite	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.leaveSsmGroup	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.isValidCompressedBuffer	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getInterface	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpFastOpen	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.arrayCopy	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpNotSentLowAt	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.getFd0	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setIpTransparent	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.rocksdb.DBOptions.setFailIfOptionsFileError	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setIpMulticastLoop	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setInterface	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.reset	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getIpMulticastLoop	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isIpFreeBind	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpKeepIdle	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setUdpGro	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.rocksdb.Options.setFailIfOptionsFileError	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.getEntryCount	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.joinGroup	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.cmsghdrData	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpKeepIntvl	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+storm_2.8.8	jdk.jfr.internal.JVM.registerNatives	mapped	libjvm.so	jfr_register_natives	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.maxCompressedLength	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isIpRecvOrigDestAddr	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.getEnabled	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.rocksdb.Options.failIfOptionsFileError	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.rawUncompress	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringSetup	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.nativeLibraryVersion	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringUnRegisterBufRing	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpKeepCnt	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpQuickAck	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpMd5Sig	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setIpRecvOrigDestAddr	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringProbe0	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpKeepIdle	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.createFile	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	jdk.internal.misc.ScopedMemoryAccess.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringRegisterRingFds	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpInfo	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.rocksdb.LiveFileMetaData.newLiveFileMetaDataHandle	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringRegisterEnableRings	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isTcpQuickAck	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.rawCompress	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTimeToLive	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.SnappyNative.uncompressedLength	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.unbind	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringEnter	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.makeBlocking	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpKeepCnt	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.handler.codec.quic.Quiche.quiche_enable_debug_logging	not_found	-	-	-	netty quiche (shaded) symbol not exported
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.isTcpCork	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	jdk.internal.misc.Unsafe.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscUnsafeMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+storm_2.8.8	org.fusesource.hawtjni.runtime.Callback.bind	not_found	-	-	-	hawtjni-runtime native library not shipped; not in any library on disk
+storm_2.8.8	org.rocksdb.RocksEnv.disposeInternalJni	not_found	-	-	-	not in the shipped rocksdb library (only in an older build) or exported only C++-mangled
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setSoBusyPoll	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringRegisterBufRing	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.leaveGroup	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.ioUringExit	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	java.lang.invoke.MethodHandleNatives.registerNatives	mapped	libjvm.so	JVM_RegisterMethodHandleMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+storm_2.8.8	org.apache.storm.shade.org.xerial.snappy.BitShuffleNative.shuffle	not_found	-	-	-	shaded snappy: libsnappyjava exports unshaded Java_org_xerial_snappy_*, cannot link
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setIpMulticastAll	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.getTcpUserTimeout	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpCork	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.Native.kernelVersion	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+storm_2.8.8	org.apache.storm.shade.io.netty.channel.uring.LinuxSocket.setTcpUserTimeout	not_found	-	-	-	netty io_uring (shaded): library excluded, storm cannot load it (unshaded name)
+tomcat_11.0.22	org.apache.commons.daemon.support.DaemonLoader.shutdown	not_found	-	-	-	implemented by the jsvc launcher (RegisterNatives), not shipped in the image
+tomcat_11.0.22	org.apache.commons.daemon.support.DaemonLoader.failed	not_found	-	-	-	implemented by the jsvc launcher (RegisterNatives), not shipped in the image
+tomcat_11.0.22	jdk.internal.vm.Continuation.doYield	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+tomcat_11.0.22	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+tomcat_11.0.22	java.lang.Object.wait0	mapped	libjvm.so	JVM_MonitorWait	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+tomcat_11.0.22	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+zookeeper_3.9.5	jdk.internal.misc.VM.getNanoTimeAdjustment	mapped	libjvm.so	JVM_GetNanoTimeAdjustment	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+zookeeper_3.9.5	jdk.internal.misc.ScopedMemoryAccess.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+zookeeper_3.9.5	java.lang.Class.getSuperclass	platform	-	-	-	JVM intrinsic / signature-polymorphic: no native function
+zookeeper_3.9.5	jdk.internal.misc.Unsafe.registerNatives	mapped	libjvm.so	JVM_RegisterJDKInternalMiscUnsafeMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)
+zookeeper_3.9.5	java.lang.invoke.MethodHandleNatives.registerNatives	mapped	libjvm.so	JVM_RegisterMethodHandleMethods	JVM	JDK-internal native registered by the JVM itself (RegisterNatives / special native)

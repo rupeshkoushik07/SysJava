@@ -1,0 +1,128 @@
+syscall	libcrypto.so.3	libjava.so	libjvm.so	libnet.so	libssl.so.3	libtcnative-2.so.0.0.14	libzip.so	policy_binding	policy_no_binding
+accept	A								
+access		B	B	B			B		
+bind	A	B	B	B	A	B	B		
+brk	B	B	B	B	B	B	B		
+chdir		B	B	B			B		
+chmod	A	A							
+clock_gettime	B	B	B	B	B	B	B		
+clock_nanosleep	A	B	B	B			B		
+clone		B	B	B			B		
+clone3		B	B	B			B		
+close	B	B	B	B	B	B	B		
+close_range		B	B	B			B		
+connect	A	B	B	B	A	B	B		
+dup	A	B	B	B			B		
+dup2		B	B	B			B		
+execve		B							
+exit		B	B	B			B		
+exit_group	B	B	B	B	B	B	B		
+faccessat		B	B	B			B		
+faccessat2		B	B	B			B		
+fallocate		B	B	B			B		
+fchdir		B	B	B			B		
+fcntl	B	B	B	B	B	B	B		
+fstat	B	B	B	B	B	B	B		
+fstatfs		B	B	B			B		
+fsync		A							
+ftruncate		B	B	B			B		
+futex	B	B	B	B	B	B	B		
+get_mempolicy		B	B	B			B		
+getcwd	B	B	B	B	B	B	B		
+getdents64	B	B	B	B	B	B	B		
+getegid		B	B	B			B		
+geteuid		B	B	B			B		
+getgid		B	B	B			B		
+getgroups		B	B	B			B		
+getpeername	A	A		A	A	B			
+getpgid		B	B	B			B		
+getpid	B	B	B	B	B	B	B		
+getppid		A				A			
+getpriority		B	B	B			B		
+getrandom	B	B	B	B	B	B	B		
+getrusage		B	B	B			B		
+getsockname	A	B	B	B	A	B	B		
+getsockopt	A			A	A	B			
+gettid	B	B	B	B	B	B	B		
+gettimeofday	B			A	B	B			
+getuid		B	B	B			B		
+ioctl	B	B	B	B	B	B	B		
+kill		B	B	B		B	B		
+listen	A								
+lseek	B	B	B	B	B	B	B		
+lstat		B	B	B			B		
+madvise	B	B	B	B	B	B	B		
+membarrier		B	B	B			B		
+memfd_create		B	B	B			B		
+mincore		B	B	B			B		
+mkdir		B	B	B			B		
+mlock	A								
+mlock2	A								
+mmap	B	B	B	B	B	B	B		
+mprotect	B	B	B	B	B	B	B		
+mremap	B	B	B	B	B	B	B		
+munmap	B	B	B	B	B	B	B		
+newfstatat	B	B	B	B	B	B	B		
+openat	B	B	B	B	B	B	B		
+pipe2		B							
+poll	A	B	B	B	A	B	B		
+prctl	B	B	B	B	B	B	B		
+pread64	B	B	B	B	B	B	B		
+prlimit64	A	B	B	B		B	B		
+pselect6	B				B	B			
+pwrite64		B	B	B			B		
+read	B	B	B	B	B	B	B		
+readlink		B	B	B			B		
+readv	A			A	A	B			
+recvfrom	A	B	B	B	A	B	B		
+recvmsg	A	B	B	B	A	B	B		
+rename		A							
+rmdir		B	B	B			B		
+rseq		B	B	B			B		
+rt_sigaction	B	B	B	B	B	B	B		
+rt_sigprocmask	B	B	B	B	B	B	B		
+rt_sigreturn	B	B	B	B	B	B	B		
+rt_sigtimedwait		B	B	B			B		
+sched_get_priority_max	B	B	B	B	B	B	B		
+sched_get_priority_min	B	B	B	B	B	B	B		
+sched_getaffinity	B	B	B	B	B	B	B		
+sched_getparam	B	B	B	B	B	B	B		
+sched_getscheduler	B	B	B	B	B	B	B		
+sched_setaffinity		B	B	B			B		
+sched_setparam		B	B	B			B		
+sched_setscheduler	B	B	B	B	B	B	B		
+sched_yield		B	B	B			B		
+sendfile		B	B	B	A		B		
+sendmmsg	A	A		A	A	B			
+sendmsg	A				A				
+sendto	A	B	B	B	A	B	B		
+set_robust_list		B	B	B			B		
+setpgid		B	B	B			B		
+setpriority		B	B	B			B		
+setresgid		B	B	B			B		
+setresuid		B	B	B			B		
+setsid		B	B	B			B		
+setsockopt	A	B	B	B	A	B	B		
+shmat	B				B	B			
+shmdt	B				B	B			
+shmget	B				B	B			
+shutdown	A	B	B	B	A		B		
+socket	A	B	B	B	A	B	B		
+stat		B	B	B			B		
+statfs		A							
+sysinfo	A	B	B	B		B	B		
+tgkill	B	B	B	B	B	B	B		
+time	B	B	B	B	B	B	B		
+timer_create		B	B	B			B		
+timer_delete		B	B	B			B		
+timer_settime		B	B	B			B		
+times		B	B	B			B		
+umask		B	B	B			B		
+uname	B	B	B	B	B	B	B		
+unlink		B	B	B		B	B		
+utimensat		A							
+vfork		B							
+wait4	B	B	B	B	B	B	B		
+waitid		B	B	B			B		
+write	B	B	B	B	B	B	B		
+writev	B	B	B	B	B	B	B		

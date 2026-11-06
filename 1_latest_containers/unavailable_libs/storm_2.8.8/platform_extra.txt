@@ -1,0 +1,2 @@
+org.apache.storm.shade.io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers
+java.lang.Class.getSuperclass
