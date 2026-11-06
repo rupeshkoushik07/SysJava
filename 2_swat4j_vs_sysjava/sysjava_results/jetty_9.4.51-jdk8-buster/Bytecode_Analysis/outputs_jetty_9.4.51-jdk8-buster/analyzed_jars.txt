@@ -1,0 +1,27 @@
+=== JNADetector Analyzed Archives ===
+targetDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster
+runtimeDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster
+targetArchives=13
+runtimeArchives=5
+
+[target]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-deploy-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-http-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-io-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-schemas-3.1.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-security-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-server-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-servlet-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-util-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-webapp-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jetty-xml-9.4.51.v20230217.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/jfr.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/servlet-api-3.1.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/JARFILES_jetty_9.4.51-jdk8-buster/start.jar
+
+[runtime]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster/charsets.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster/jce.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster/jsse.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster/resources.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/RUNTIME_jetty_9.4.51-jdk8-buster/rt.jar

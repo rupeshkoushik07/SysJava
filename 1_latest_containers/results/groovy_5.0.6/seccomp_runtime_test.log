@@ -3,25 +3,25 @@ image=groovy:5.0.6
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json
 profile_syscalls=193 SCMP_ACT_ERRNO
 workload=docker run -it groovy:5.0.6 
-started_at=2026-11-05T23:19:58+01:00
+started_at=2026-11-06T19:15:55+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=0a591ed4dcb2c43e2e071612977e27866950137f6daa3f10d8b7b4554a27ced2
-baseline_ready_after=4s
+docker_run_output=19afc919484337e617015908b98ba04cfe504ae5f4ad5242ee25feb04d0263a1
+baseline_ready_after=13s
 baseline_state=running exit=0
 baseline_probe=ok marker-still-present
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-groovy-5-0-6 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json -it groovy:5.0.6 
-docker_run_output=c5097e6818eb218711d15f42d927c29633dcf43b539b8e662755c65333592d9f
-ready_after=4s
+docker_run_output=e023e7700946acecf75421ae91c577747d07ce4351227231d623608e666191a4
+ready_after=5s
 state_after_60s=running exit=0
 probe=ok marker-still-present
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-05T23:22:12+01:00
+finished_at=2026-11-06T19:18:37+01:00
 
 ---- docker logs tail (with profile) ----
 WARNING: Using incubator modules: jdk.incubator.vector

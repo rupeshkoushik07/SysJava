@@ -1,0 +1,1 @@
+skipped: user decision 2026-11-06: SysPart call graph crashes; same library ended unanalysable in cassandra_5.0.8 (1384 starts excluded)

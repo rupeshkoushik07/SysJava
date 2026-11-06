@@ -1,0 +1,26 @@
+container=jruby_9.4.2.0-jdk8-buster
+image=jruby:9.4.2.0-jdk8-buster
+profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Binary_Analysis/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json
+profile_syscalls=167 SCMP_ACT_ERRNO
+workload=docker run -it jruby:9.4.2.0-jdk8-buster 
+started_at=2026-11-06T18:56:44+01:00
+
+---- baseline (no profile) ----
+docker_run_output=a8ab1ac29cc883744bcb2923b3efb4eff42a289ca0794487766bb239fa1edc21
+baseline_ready_after=30s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-jruby-9-4-2-0-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Binary_Analysis/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json -it jruby:9.4.2.0-jdk8-buster 
+docker_run_output=ab94d298cd16e260619dc93eaacd583b0578bddeb12ec5838f95cf67d5218653
+ready_after=31s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-06T18:59:47+01:00
+
+---- docker logs tail (with profile) ----

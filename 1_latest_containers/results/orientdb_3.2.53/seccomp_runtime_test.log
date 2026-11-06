@@ -3,49 +3,49 @@ image=orientdb:3.2.53
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json
 profile_syscalls=172 SCMP_ACT_ERRNO
 workload=docker run -e ORIENTDB_ROOT_PASSWORD=root orientdb:3.2.53 
-started_at=2026-11-05T21:18:19+01:00
+started_at=2026-11-06T19:15:43+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=29984ad0c80a4fa85a20610d21ba7eca254ed102a7158eb036ac6c3ec26eae9c
-baseline_ready_after=4s
+docker_run_output=8b570965c1f579c4fdfe3dab9cadf745101d8a965c404588e5d91ca37daeef99
+baseline_ready_after=27s
 baseline_state=running exit=0
 baseline_probe=ok http_200 /
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-orientdb-3-2-53 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json -e ORIENTDB_ROOT_PASSWORD=root orientdb:3.2.53 
-docker_run_output=24628d50afb1f10ee7b363a1f985fde3c724af14e41910e0a1aa00d3d20e9d00
+docker_run_output=4e00f03670b61c229bc4a2723b39eb9cad6a85c560b7f3700844c9276229935f
 ready_after=4s
 state_after_60s=running exit=0
 probe=ok http_200 /
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-05T21:20:28+01:00
+finished_at=2026-11-06T19:18:35+01:00
 
 ---- docker logs tail (with profile) ----
-2026-11-05 20:19:25:119 INFO  Loading configuration from: /orientdb/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
-2026-11-05 20:19:25:334 INFO  OrientDB Server v3.2.53 (build d5abecf15277b6e2619182e87e500b4e72c462f3, branch UNKNOWN) is starting up... [OServer]
-2026-11-05 20:19:25:602 INFO  135064719360 B/128807 MB/125 GB of physical memory were detected on machine [ONative]
-2026-11-05 20:19:25:603 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
-2026-11-05 20:19:25:603 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
-2026-11-05 20:19:25:604 INFO  Detected memory limit for current process is 135064719360 B/128807 MB/125 GB [ONative]
-2026-11-05 20:19:25:605 INFO  JVM can use maximum 1963MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
-2026-11-05 20:19:25:605 INFO  Because OrientDB is running outside a container 2g of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
-2026-11-05 20:19:25:606 INFO  OrientDB auto-config DISKCACHE=124,796MB (heap=1,963MB os=128,807MB) [orientechnologies]
-2026-11-05 20:19:25:607 INFO  System is started under an effective user : `root` [OEngineLocalPaginated]
-2026-11-05 20:19:25:614 WARNI You are running under the "root" user privileges that introduces security risks. Please consider to run under a user dedicated to be used to run current server instance. [OEngineLocalPaginated]
-2026-11-05 20:19:25:651 INFO  WAL maximum segment size is set to 7,068 MB [OrientDBDistributed]
-2026-11-05 20:19:25:922 INFO  Databases directory: /orientdb/databases [OServer]
-2026-11-05 20:19:25:952 INFO  Creating the system database 'OSystem' for current server [OSystemDatabase]
-2026-11-05 20:19:25:996 INFO  Page size for WAL located in /orientdb/databases/OSystem is set to 4096 bytes. [CASDiskWriteAheadLog]
-2026-11-05 20:19:26:049 INFO  DWL:OSystem: block size = 4096 bytes, maximum segment size = 7068 MB [DoubleWriteLogGL]
-2026-11-05 20:19:26:285 INFO  Storage 'plocal:/orientdb/databases/OSystem' is created under OrientDB distribution : 3.2.53 (build d5abecf15277b6e2619182e87e500b4e72c462f3, branch UNKNOWN) [OLocalPaginatedStorage]
-2026-11-05 20:19:27:640 INFO  [OVariableParser.resolveVariables] Property not found: distributed [orientechnologies]
-2026-11-05 20:19:27:660 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.38, socket=default) [OServerNetworkListener]
-2026-11-05 20:19:27:664 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
-2026-11-05 20:19:27:675 INFO  Using ORIENTDB_ROOT_PASSWORD variable, for root's password [OServer]
-2026-11-05 20:19:28:173 INFO  Installing dynamic plugin 'orientdb-studio-3.2.53.zip'... [OServerPluginManager]
-2026-11-05 20:19:28:175 INFO  Installing dynamic plugin 'orientdb-etl-3.2.53.jar'... [OServerPluginManager]
-2026-11-05 20:19:28:185 WARNI Authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
-2026-11-05 20:19:28:187 INFO  OrientDB Studio available at http://172.17.0.9:2480/studio/index.html [OServer]
+2026-11-06 18:17:31:694 INFO  Loading configuration from: /orientdb/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2026-11-06 18:17:31:871 INFO  OrientDB Server v3.2.53 (build d5abecf15277b6e2619182e87e500b4e72c462f3, branch UNKNOWN) is starting up... [OServer]
+2026-11-06 18:17:32:114 INFO  135064719360 B/128807 MB/125 GB of physical memory were detected on machine [ONative]
+2026-11-06 18:17:32:115 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-06 18:17:32:115 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-06 18:17:32:116 INFO  Detected memory limit for current process is 135064719360 B/128807 MB/125 GB [ONative]
+2026-11-06 18:17:32:121 INFO  JVM can use maximum 1963MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-06 18:17:32:121 INFO  Because OrientDB is running outside a container 2g of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-06 18:17:32:121 INFO  OrientDB auto-config DISKCACHE=124,796MB (heap=1,963MB os=128,807MB) [orientechnologies]
+2026-11-06 18:17:32:122 INFO  System is started under an effective user : `root` [OEngineLocalPaginated]
+2026-11-06 18:17:32:123 WARNI You are running under the "root" user privileges that introduces security risks. Please consider to run under a user dedicated to be used to run current server instance. [OEngineLocalPaginated]
+2026-11-06 18:17:32:149 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBDistributed]
+2026-11-06 18:17:32:340 INFO  Databases directory: /orientdb/databases [OServer]
+2026-11-06 18:17:32:362 INFO  Creating the system database 'OSystem' for current server [OSystemDatabase]
+2026-11-06 18:17:32:391 INFO  Page size for WAL located in /orientdb/databases/OSystem is set to 4096 bytes. [CASDiskWriteAheadLog]
+2026-11-06 18:17:32:432 INFO  DWL:OSystem: block size = 4096 bytes, maximum segment size = 5002 MB [DoubleWriteLogGL]
+2026-11-06 18:17:32:610 INFO  Storage 'plocal:/orientdb/databases/OSystem' is created under OrientDB distribution : 3.2.53 (build d5abecf15277b6e2619182e87e500b4e72c462f3, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-06 18:17:33:675 INFO  [OVariableParser.resolveVariables] Property not found: distributed [orientechnologies]
+2026-11-06 18:17:33:694 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.38, socket=default) [OServerNetworkListener]
+2026-11-06 18:17:33:697 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-06 18:17:33:708 INFO  Using ORIENTDB_ROOT_PASSWORD variable, for root's password [OServer]
+2026-11-06 18:17:34:241 INFO  Installing dynamic plugin 'orientdb-studio-3.2.53.zip'... [OServerPluginManager]
+2026-11-06 18:17:34:243 INFO  Installing dynamic plugin 'orientdb-etl-3.2.53.jar'... [OServerPluginManager]
+2026-11-06 18:17:34:252 WARNI Authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+2026-11-06 18:17:34:254 INFO  OrientDB Studio available at http://172.17.0.15:2480/studio/index.html [OServer]

@@ -1,0 +1,14 @@
+/usr/bin/awk
+/bin/bash
+/usr/bin/dirname
+/usr/bin/expr
+/bin/grep
+/usr/bin/head
+/bin/mkdir
+/opt/java/bin/java
+/bin/ps
+/usr/sbin/runc
+/bin/sed
+/usr/bin/sort
+/bin/uname
+/usr/bin/env

@@ -1,0 +1,6 @@
+pamc_converse
+pamc_disable
+pamc_end
+pamc_list_agents
+pamc_load
+pamc_start

@@ -1,0 +1,4 @@
+gai_cancel
+gai_error
+gai_suspend
+getaddrinfo_a

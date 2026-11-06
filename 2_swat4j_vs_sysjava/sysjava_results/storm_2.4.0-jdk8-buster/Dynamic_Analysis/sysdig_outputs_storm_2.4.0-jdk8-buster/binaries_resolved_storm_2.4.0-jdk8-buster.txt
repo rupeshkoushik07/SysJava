@@ -1,0 +1,10 @@
+/usr/bin/awk
+/bin/bash
+/usr/bin/cut
+/usr/bin/dirname
+/usr/sbin/gosu
+/opt/java/bin/java
+/usr/local/bin/python
+/usr/sbin/runc
+/usr/bin/tini
+/usr/bin/env

@@ -1,0 +1,116 @@
+
+Path to writev:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to openat:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> __open64_nocancel_ef1a0
+  __open64_nocancel_ef1a0 - [syscall]-> openat
+
+Path to mmap:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to munmap:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to futex:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> __lll_lock_wait_private_1062a0
+  __lll_lock_wait_private_1062a0 - [syscall]-> futex
+
+Path to rt_sigprocmask:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to getpid:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> getpid
+
+Path to gettid:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to tgkill:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> tgkill
+
+Path to exit:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to rt_sigaction:
+  _ZGVcN4vvv_sincos_26c0 - [DIRECT]-> _ZGVbN2vl8l8_sincos_d9f0
+  _ZGVbN2vl8l8_sincos_d9f0 - [DIRECT]-> sincos_39200
+  sincos_39200 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction

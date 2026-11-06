@@ -1,0 +1,238 @@
+
+Path to gettimeofday:
+  delay_output_sp_186f0 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  delay_output_sp_186f0 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  delay_output_sp_186f0 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  delay_output_sp_186f0 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to stat:
+  _nc_is_dir_path_eba0 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to ioctl:
+  _nc_get_tty_mode_sp_18e90 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to write:
+  _nc_outch_sp_18840 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to clock_getres:
+  _nc_setupterm_13b60 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to getuid:
+  _nc_env_access_ec80 - [DIRECT]-> getuid_c7330
+  getuid_c7330 - [syscall]-> getuid
+
+Path to geteuid:
+  _nc_env_access_ec80 - [DIRECT]-> geteuid_c7340
+  geteuid_c7340 - [syscall]-> geteuid
+
+Path to getgid:
+  _nc_env_access_ec80 - [DIRECT]-> getgid_c7350
+  getgid_c7350 - [syscall]-> getgid
+
+Path to getegid:
+  _nc_env_access_ec80 - [DIRECT]-> getegid_c7360
+  getegid_c7360 - [syscall]-> getegid
+
+Path to access:
+  _nc_access_eac0 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to nanosleep:
+  napms_sp_124b0 - [DIRECT]-> nanosleep_c6580
+  nanosleep_c6580 - [syscall]-> nanosleep
+
+Path to futex:
+  _nc_putchar_sp_185b0 - [DIRECT]-> putc_782a0
+  putc_782a0 - [DIRECT]-> __lll_lock_wait_private_1062a0
+  __lll_lock_wait_private_1062a0 - [syscall]-> futex
+
+Path to sched_yield:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to read:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_file_read_7baa0
+  _IO_file_read_7baa0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to lseek:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  delay_output_sp_186f0 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to openat:
+  _nc_setupterm_13b60 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> __open64_nocancel_ef1a0
+  __open64_nocancel_ef1a0 - [syscall]-> openat
+
+Path to prlimit64:
+  _nc_setupterm_13b60 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to poll:
+  _nc_timed_wait_19240 - [DIRECT]-> __poll_chk_10a2e0
+  __poll_chk_10a2e0 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to mremap:
+  _nc_doalloc_112d0 - [DIRECT]-> realloc_84db0
+  realloc_84db0 - [DIRECT]-> mremap_chunk_802f0
+  mremap_chunk_802f0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to writev:
+  _nc_doalloc_112d0 - [DIRECT]-> realloc_84db0
+  realloc_84db0 - [DIRECT]-> malloc_printerr_7fd50
+  malloc_printerr_7fd50 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to madvise:
+  _nc_doalloc_112d0 - [DIRECT]-> realloc_84db0
+  realloc_84db0 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to mmap:
+  _nc_doalloc_112d0 - [DIRECT]-> realloc_84db0
+  realloc_84db0 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to exit:
+  _nc_err_abort_10730 - [DIRECT]-> exit_39fd0
+  exit_39fd0 - [DIRECT]-> __run_exit_handlers_39d80
+  __run_exit_handlers_39d80 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  _nc_err_abort_10730 - [DIRECT]-> exit_39fd0
+  exit_39fd0 - [DIRECT]-> __run_exit_handlers_39d80
+  __run_exit_handlers_39d80 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to brk:
+  delay_output_sp_186f0 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  delay_output_sp_186f0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to getpid:
+  _nc_outch_sp_18840 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [DIRECT]-> __libc_enable_asynccancel_1062f0
+  __libc_enable_asynccancel_1062f0 - [DIRECT]-> __pthread_unwind_136cf0
+  __pthread_unwind_136cf0 - [syscall]-> getpid
+
+Path to kill:
+  _nc_outch_sp_18840 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [DIRECT]-> __libc_enable_asynccancel_1062f0
+  __libc_enable_asynccancel_1062f0 - [DIRECT]-> __pthread_unwind_136cf0
+  __pthread_unwind_136cf0 - [syscall]-> kill
+
+Path to sysinfo:
+  _nc_setupterm_13b60 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to mprotect:
+  new_prescr_14010 - [DIRECT]-> calloc_852e0
+  calloc_852e0 - [DIRECT]-> _int_malloc_82690
+  _int_malloc_82690 - [DIRECT]-> sysmalloc_81e40
+  sysmalloc_81e40 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to rt_sigprocmask:
+  new_prescr_14010 - [DIRECT]-> calloc_852e0
+  calloc_852e0 - [DIRECT]-> __malloc_assert_7fb60
+  __malloc_assert_7fb60 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  new_prescr_14010 - [DIRECT]-> calloc_852e0
+  calloc_852e0 - [DIRECT]-> __malloc_assert_7fb60
+  __malloc_assert_7fb60 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to tgkill:
+  new_prescr_14010 - [DIRECT]-> calloc_852e0
+  calloc_852e0 - [DIRECT]-> __malloc_assert_7fb60
+  __malloc_assert_7fb60 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> tgkill
+
+Path to lstat:
+  delay_output_sp_186f0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  delay_output_sp_186f0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  _nc_setupterm_13b60 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_nprocs_conf_f6a60
+  get_nprocs_conf_f6a60 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  new_prescr_14010 - [DIRECT]-> calloc_852e0
+  calloc_852e0 - [DIRECT]-> __malloc_assert_7fb60
+  __malloc_assert_7fb60 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to fcntl:
+  delay_output_sp_186f0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> fdopendir_c2020
+  fdopendir_c2020 - [DIRECT]-> __fcntl64_nocancel_ef110
+  __fcntl64_nocancel_ef110 - [DIRECT]-> __fcntl64_nocancel_adjusted_ef090
+  __fcntl64_nocancel_adjusted_ef090 - [syscall]-> fcntl

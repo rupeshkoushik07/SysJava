@@ -1,0 +1,450 @@
+
+Path to exit:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [syscall]-> exit
+
+Path to access:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __tunables_init_64830
+  __tunables_init_64830 - [syscall]-> access
+
+Path to arch_prctl:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_setup_tls_10480
+  __libc_setup_tls_10480 - [syscall]-> arch_prctl
+
+Path to rt_sigreturn:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> __restore_rt_6ffc0
+  __restore_rt_6ffc0 - [syscall]-> rt_sigreturn
+
+Path to geteuid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_init_secure_65950
+  __libc_init_secure_65950 - [DIRECT]-> geteuid_8e5f0
+  geteuid_8e5f0 - [syscall]-> geteuid
+
+Path to getuid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_init_secure_65950
+  __libc_init_secure_65950 - [DIRECT]-> getuid_8e5e0
+  getuid_8e5e0 - [syscall]-> getuid
+
+Path to getegid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_init_secure_65950
+  __libc_init_secure_65950 - [DIRECT]-> getegid_8e610
+  getegid_8e610 - [syscall]-> getegid
+
+Path to getgid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_init_secure_65950
+  __libc_init_secure_65950 - [DIRECT]-> getgid_8e600
+  getgid_8e600 - [syscall]-> getgid
+
+Path to uname:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_discover_osversion_66670
+  _dl_discover_osversion_66670 - [DIRECT]-> uname_8e480
+  uname_8e480 - [syscall]-> uname
+
+Path to openat:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_discover_osversion_66670
+  _dl_discover_osversion_66670 - [DIRECT]-> __open_nocancel_5e640
+  __open_nocancel_5e640 - [syscall]-> openat
+
+Path to read:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_discover_osversion_66670
+  _dl_discover_osversion_66670 - [DIRECT]-> __read_nocancel_5e780
+  __read_nocancel_5e780 - [syscall]-> read
+
+Path to close:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_discover_osversion_66670
+  _dl_discover_osversion_66670 - [DIRECT]-> __close_nocancel_5e530
+  __close_nocancel_5e530 - [syscall]-> close
+
+Path to futex:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_cleanup_1f870
+  _IO_cleanup_1f870 - [DIRECT]-> __lll_lock_wait_private_623a0
+  __lll_lock_wait_private_623a0 - [syscall]-> futex
+
+Path to sched_yield:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_cleanup_1f870
+  _IO_cleanup_1f870 - [DIRECT]-> sched_yield_5d840
+  sched_yield_5d840 - [syscall]-> sched_yield
+
+Path to munmap:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_file_close_mmap_1c050
+  _IO_file_close_mmap_1c050 - [DIRECT]-> munmap_5ebf0
+  munmap_5ebf0 - [syscall]-> munmap
+
+Path to lseek:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_file_seek_1c2e0
+  _IO_file_seek_1c2e0 - [DIRECT]-> lseek_5dc70
+  lseek_5dc70 - [syscall]-> lseek
+
+Path to fstat:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_file_stat_1cb70
+  _IO_file_stat_1cb70 - [DIRECT]-> _fxstat_5d910
+  _fxstat_5d910 - [syscall]-> fstat
+
+Path to write:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_new_file_write_1cb80
+  _IO_new_file_write_1cb80 - [DIRECT]-> write_5dbd0
+  write_5dbd0 - [syscall]-> write
+
+Path to mprotect:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _dl_make_stack_executable_9df80
+  _dl_make_stack_executable_9df80 - [DIRECT]-> mprotect_5ec20
+  mprotect_5ec20 - [syscall]-> mprotect
+
+Path to exit_group:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> dl_open_worker_a8530
+  dl_open_worker_a8530 - [DIRECT]-> _Exit_56cc0
+  _Exit_56cc0 - [syscall]-> exit_group
+
+Path to alarm:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> getutent_r_file_633f0
+  getutent_r_file_633f0 - [DIRECT]-> alarm_8e4b0
+  alarm_8e4b0 - [syscall]-> alarm
+
+Path to dup2:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> pututline_file_63960
+  pututline_file_63960 - [DIRECT]-> dup2_8e730
+  dup2_8e730 - [syscall]-> dup2
+
+Path to ftruncate:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> pututline_file_63960
+  pututline_file_63960 - [DIRECT]-> ftruncate_8eed0
+  ftruncate_8eed0 - [syscall]-> ftruncate
+
+Path to chroot:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chroot_5e9e0
+  chroot_5e9e0 - [syscall]-> chroot
+
+Path to chdir:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chdir_5dd20
+  chdir_5dd20 - [syscall]-> chdir
+
+Path to writev:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_relocate_static_pie_66780
+  _dl_relocate_static_pie_66780 - [DIRECT]-> _dl_dprintf_9c870
+  _dl_dprintf_9c870 - [DIRECT]-> _dl_debug_vdprintf_9c090
+  _dl_debug_vdprintf_9c090 - [syscall]-> writev
+
+Path to brk:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __tunables_init_64830
+  __tunables_init_64830 - [DIRECT]-> sbrk_5e820
+  sbrk_5e820 - [DIRECT]-> brk_8ee70
+  brk_8ee70 - [syscall]-> brk
+
+Path to mmap:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_fatal_fab0
+  __libc_fatal_fab0 - [DIRECT]-> __libc_message_f7d0
+  __libc_message_f7d0 - [DIRECT]-> mmap_5eb10
+  mmap_5eb10 - [syscall]-> mmap
+
+Path to readlink:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_init_first_67460
+  __libc_init_first_67460 - [DIRECT]-> _dl_non_dynamic_init_65100
+  _dl_non_dynamic_init_65100 - [DIRECT]-> _dl_get_origin_9dd30
+  _dl_get_origin_9dd30 - [syscall]-> readlink
+
+Path to ioctl:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_file_doallocate_82810
+  _IO_file_doallocate_82810 - [DIRECT]-> isatty_8ed60
+  isatty_8ed60 - [DIRECT]-> tcgetattr_8eda0
+  tcgetattr_8eda0 - [syscall]-> ioctl
+
+Path to mremap:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> _IO_file_underflow_mmap_1d0b0
+  _IO_file_underflow_mmap_1d0b0 - [DIRECT]-> mmap_remap_check_1c080
+  mmap_remap_check_1c080 - [DIRECT]-> mremap_603e0
+  mremap_603e0 - [syscall]-> mremap
+
+Path to getcwd:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> __gconv_read_conf_69540
+  __gconv_read_conf_69540 - [DIRECT]-> __gconv_get_path_69170
+  __gconv_get_path_69170 - [DIRECT]-> getcwd_5dd50
+  getcwd_5dd50 - [syscall]-> getcwd
+
+Path to nanosleep:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> argp_default_parser_60db0
+  argp_default_parser_60db0 - [DIRECT]-> sleep_8e4e0
+  sleep_8e4e0 - [DIRECT]-> nanosleep_8e550
+  nanosleep_8e550 - [syscall]-> nanosleep
+
+Path to madvise:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> free_25e50
+  free_25e50 - [DIRECT]-> _int_free_22580
+  _int_free_22580 - [DIRECT]-> madvise_5ec50
+  madvise_5ec50 - [syscall]-> madvise
+
+Path to rt_sigaction:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> getutent_r_file_633f0
+  getutent_r_file_633f0 - [DIRECT]-> sigaction_701a0
+  sigaction_701a0 - [DIRECT]-> __libc_sigaction_6ffd0
+  __libc_sigaction_6ffd0 - [syscall]-> rt_sigaction
+
+Path to fcntl:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> getutent_r_file_633f0
+  getutent_r_file_633f0 - [DIRECT]-> __fcntl64_nocancel_5e5e0
+  __fcntl64_nocancel_5e5e0 - [DIRECT]-> __fcntl64_nocancel_adjusted_5e560
+  __fcntl64_nocancel_adjusted_5e560 - [syscall]-> fcntl
+
+Path to lstat:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chroot_canon_f3b0
+  chroot_canon_f3b0 - [DIRECT]-> _lxstat_5d960
+  _lxstat_5d960 - [syscall]-> lstat
+
+Path to clock_getres:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chroot_canon_f3b0
+  chroot_canon_f3b0 - [DIRECT]-> sysconf_56e30
+  sysconf_56e30 - [syscall]-> clock_getres
+
+Path to stat:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> add_dir_a7a0
+  add_dir_a7a0 - [DIRECT]-> _xstat_5d8c0
+  _xstat_5d8c0 - [syscall]-> stat
+
+Path to unlink:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> search_dir.isra.2_bb50
+  search_dir.isra.2_bb50 - [DIRECT]-> unlink_5e500
+  unlink_5e500 - [syscall]-> unlink
+
+Path to chmod:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> save_cache_d350
+  save_cache_d350 - [DIRECT]-> chmod_5d9b0
+  chmod_5d9b0 - [syscall]-> chmod
+
+Path to fsync:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> save_cache_d350
+  save_cache_d350 - [DIRECT]-> fsync_5ea10
+  fsync_5ea10 - [syscall]-> fsync
+
+Path to rename:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> save_cache_d350
+  save_cache_d350 - [DIRECT]-> rename_18b00
+  rename_18b00 - [syscall]-> rename
+
+Path to fdatasync:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> save_aux_cache_def0
+  save_aux_cache_def0 - [DIRECT]-> fdatasync_5ea90
+  fdatasync_5ea90 - [syscall]-> fdatasync
+
+Path to mkdir:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> save_aux_cache_def0
+  save_aux_cache_def0 - [DIRECT]-> mkdir_5d9e0
+  mkdir_5d9e0 - [syscall]-> mkdir
+
+Path to getpid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> _dl_relocate_static_pie_66780
+  _dl_relocate_static_pie_66780 - [DIRECT]-> _dl_dprintf_9c870
+  _dl_dprintf_9c870 - [DIRECT]-> _dl_debug_vdprintf_9c090
+  _dl_debug_vdprintf_9c090 - [DIRECT]-> getpid_a5e90
+  getpid_a5e90 - [syscall]-> getpid
+
+Path to rt_sigprocmask:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_fatal_fab0
+  __libc_fatal_fab0 - [DIRECT]-> __libc_message_f7d0
+  __libc_message_f7d0 - [DIRECT]-> abort_9325
+  abort_9325 - [DIRECT]-> sigprocmask_701d0
+  sigprocmask_701d0 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_fatal_fab0
+  __libc_fatal_fab0 - [DIRECT]-> __libc_message_f7d0
+  __libc_message_f7d0 - [DIRECT]-> abort_9325
+  abort_9325 - [DIRECT]-> gsignal_17200
+  gsignal_17200 - [syscall]-> gettid
+
+Path to tgkill:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [DIRECT]-> __libc_fatal_fab0
+  __libc_fatal_fab0 - [DIRECT]-> __libc_message_f7d0
+  __libc_message_f7d0 - [DIRECT]-> abort_9325
+  abort_9325 - [DIRECT]-> gsignal_17200
+  gsignal_17200 - [syscall]-> tgkill
+
+Path to newfstatat:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> __gconv_read_conf_69540
+  __gconv_read_conf_69540 - [DIRECT]-> __gconv_get_path_69170
+  __gconv_get_path_69170 - [DIRECT]-> getcwd_5dd50
+  getcwd_5dd50 - [DIRECT]-> __fxstatat_8e6a0
+  __fxstatat_8e6a0 - [syscall]-> newfstatat
+
+Path to time:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT]-> malloc_25810
+  malloc_25810 - [DIRECT]-> arena_get2.part.4_219b0
+  arena_get2.part.4_219b0 - [DIRECT]-> get_nprocs_5fe20
+  get_nprocs_5fe20 - [DIRECT]-> time_8db60
+  time_8db60 - [syscall]-> time
+
+Path to prlimit64:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chroot_canon_f3b0
+  chroot_canon_f3b0 - [DIRECT]-> sysconf_56e30
+  sysconf_56e30 - [DIRECT]-> getrlimit_5e7e0
+  getrlimit_5e7e0 - [syscall]-> prlimit64
+
+Path to symlink:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> manual_link_b890
+  manual_link_b890 - [DIRECT]-> create_links_b330
+  create_links_b330 - [DIRECT]-> symlink_5e4a0
+  symlink_5e4a0 - [syscall]-> symlink
+
+Path to getdents64:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> search_dir.isra.2_bb50
+  search_dir.isra.2_bb50 - [DIRECT]-> readdir_56bc0
+  readdir_56bc0 - [DIRECT]-> __getdents_8dc10
+  __getdents_8dc10 - [syscall]-> getdents64
+
+Path to sysinfo:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> chroot_canon_f3b0
+  chroot_canon_f3b0 - [DIRECT]-> sysconf_56e30
+  sysconf_56e30 - [DIRECT]-> get_phys_pages_60200
+  get_phys_pages_60200 - [DIRECT]-> sysinfo_60410
+  sysinfo_60410 - [syscall]-> sysinfo
+
+Path to recvmsg:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_get_map_ref_94730
+  __nscd_get_map_ref_94730 - [DIRECT]-> __nscd_get_mapping_94370
+  __nscd_get_mapping_94370 - [DIRECT]-> recvmsg_a6e10
+  recvmsg_a6e10 - [syscall]-> recvmsg
+
+Path to socket:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_open_socket_949e0
+  __nscd_open_socket_949e0 - [DIRECT]-> open_socket_93e90
+  open_socket_93e90 - [DIRECT]-> socket_a6f70
+  socket_a6f70 - [syscall]-> socket
+
+Path to connect:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_open_socket_949e0
+  __nscd_open_socket_949e0 - [DIRECT]-> open_socket_93e90
+  open_socket_93e90 - [DIRECT]-> connect_a6d70
+  connect_a6d70 - [syscall]-> connect
+
+Path to sendto:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_open_socket_949e0
+  __nscd_open_socket_949e0 - [DIRECT]-> open_socket_93e90
+  open_socket_93e90 - [DIRECT]-> send_a6eb0
+  send_a6eb0 - [syscall]-> sendto
+
+Path to gettimeofday:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_open_socket_949e0
+  __nscd_open_socket_949e0 - [DIRECT]-> open_socket_93e90
+  open_socket_93e90 - [DIRECT]-> gettimeofday_a5e60
+  gettimeofday_a5e60 - [syscall]-> gettimeofday
+
+Path to poll:
+  _start_a370 - [DIRECT]-> __libc_start_main_fd40
+  __libc_start_main_fd40 - [INDIRECT_RESOLVED]-> main_9830
+  main_9830 - [DIRECT]-> parse_conf_aa30
+  parse_conf_aa30 - [DIRECT]-> parse_conf_include_af30
+  parse_conf_include_af30 - [DIRECT]-> glob_57c90
+  glob_57c90 - [DIRECT]-> getpwnam_r_8dd00
+  getpwnam_r_8dd00 - [DIRECT]-> __nscd_getpwnam_r_93c80
+  __nscd_getpwnam_r_93c80 - [DIRECT]-> nscd_getpw_r_938b0
+  nscd_getpw_r_938b0 - [DIRECT]-> __nscd_open_socket_949e0
+  __nscd_open_socket_949e0 - [DIRECT]-> open_socket_93e90
+  open_socket_93e90 - [DIRECT]-> poll_a6c30
+  poll_a6c30 - [syscall]-> poll

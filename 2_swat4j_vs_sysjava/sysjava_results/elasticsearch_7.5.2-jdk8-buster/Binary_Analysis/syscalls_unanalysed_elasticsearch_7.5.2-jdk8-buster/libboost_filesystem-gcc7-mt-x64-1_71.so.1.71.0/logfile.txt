@@ -1,0 +1,360 @@
+
+Path to futex:
+  _ZN5boost10filesystem22codecvt_error_categoryEv_7590 - [DIRECT]-> __cxa_guard_acquire_97bd0
+  __cxa_guard_acquire_97bd0 - [syscall]-> futex
+
+Path to gettimeofday:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to fstat:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to lstat:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to stat:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to chdir:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> chdir_eabf0
+  chdir_eabf0 - [syscall]-> chdir
+
+Path to chmod:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> chmod_e9e90
+  chmod_e9e90 - [syscall]-> chmod
+
+Path to close:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> close_115a0
+  close_115a0 - [syscall]-> close
+
+Path to getcwd:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to ioctl:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> ioctl_effc0
+  ioctl_effc0 - [syscall]-> ioctl
+
+Path to link:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> link_ebd80
+  link_ebd80 - [syscall]-> link
+
+Path to lseek:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to mkdir:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> mkdir_e9f80
+  mkdir_e9f80 - [syscall]-> mkdir
+
+Path to nanosleep:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> nanosleep_c6580
+  nanosleep_c6580 - [syscall]-> nanosleep
+
+Path to openat:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> open_11c40
+  open_11c40 - [syscall]-> openat
+
+Path to poll:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to sched_getscheduler:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getparam
+
+Path to read:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to readlink:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to rename:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> rename_6d800
+  rename_6d800 - [syscall]-> rename
+
+Path to rmdir:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> rmdir_ebf00
+  rmdir_ebf00 - [syscall]-> rmdir
+
+Path to exit:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> rt_sigprocmask
+
+Path to symlink:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> symlink_ebde0
+  symlink_ebde0 - [syscall]-> symlink
+
+Path to truncate:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> truncate_f24b0
+  truncate_f24b0 - [syscall]-> truncate
+
+Path to unlink:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to utime:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> utime_e9870
+  utime_e9870 - [syscall]-> utime
+
+Path to write:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> write_11460
+  write_11460 - [syscall]-> write
+
+Path to writev:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> writev_f0090
+  writev_f0090 - [syscall]-> writev
+
+Path to set_tid_address:
+  _init_6a38 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [syscall]-> set_tid_address
+
+Path to sched_yield:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to munmap:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to tgkill:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to getpid:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> getpid
+
+Path to gettid:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit_group:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to sendto:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to recvmsg:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to fcntl:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to newfstatat:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to statfs:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pathconf_c7e10
+  pathconf_c7e10 - [DIRECT]-> statfs_e9d40
+  statfs_e9d40 - [syscall]-> statfs
+
+Path to sched_get_priority_min:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_setaffinity:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setscheduler
+
+Path to mmap:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mprotect:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to getdents64:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to madvise:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to rt_sigaction:
+  _init_6a38 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to prlimit64:
+  _init_6a38 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to mremap:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to clone:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [DIRECT]-> clone_f9030
+  clone_f9030 - [syscall]-> clone
+
+Path to pause:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pthread_mutex_lock_1061e0
+  pthread_mutex_lock_1061e0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to clock_getres:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> newlocale_2f1c0
+  newlocale_2f1c0 - [DIRECT]-> _nl_find_locale_2dc10
+  _nl_find_locale_2dc10 - [DIRECT]-> _nl_load_locale_from_archive_2ea40
+  _nl_load_locale_from_archive_2ea40 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to access:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> pathconf_c7e10
+  pathconf_c7e10 - [DIRECT]-> __statfs_link_max.part.1_c7ae0
+  __statfs_link_max.part.1_c7ae0 - [DIRECT]-> distinguish_extX.isra.0_c7800
+  distinguish_extX.isra.0_c7800 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to socket:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to bind:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to sysinfo:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> newlocale_2f1c0
+  newlocale_2f1c0 - [DIRECT]-> _nl_find_locale_2dc10
+  _nl_find_locale_2dc10 - [DIRECT]-> _nl_load_locale_from_archive_2ea40
+  _nl_load_locale_from_archive_2ea40 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to dup:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> __get_myaddress_11e7b0
+  __get_myaddress_11e7b0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to setsockopt:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to connect:
+  _ZNK5boost6system14error_category10equivalentEiRKNS0_15error_conditionE_7610 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> pmap_getport_129120
+  pmap_getport_129120 - [DIRECT]-> __libc_rpc_getport_128f60
+  __libc_rpc_getport_128f60 - [DIRECT]-> __get_socket_128ec0
+  __get_socket_128ec0 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect

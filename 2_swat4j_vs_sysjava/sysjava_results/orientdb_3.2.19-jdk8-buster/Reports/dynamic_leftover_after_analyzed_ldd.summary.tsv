@@ -1,0 +1,2 @@
+image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
+orientdb_3.2.19-jdk8-buster	19	18	21	8	9	5	10

@@ -1,0 +1,14 @@
+awk
+bash
+dirname
+expr
+grep
+head
+mkdir
+/opt/java/bin/java
+ps
+runc
+sed
+sort
+uname
+/usr/bin/env

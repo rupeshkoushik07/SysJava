@@ -1,0 +1,471 @@
+
+Path to futex:
+  _start_3b90 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  _start_3b90 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to exit:
+  _start_3b90 - [INDIRECT]-> __libc_start_main_23fb0
+  __libc_start_main_23fb0 - [syscall]-> exit
+
+Path to set_robust_list:
+  _start_3b90 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  _start_3b90 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _start_3b90 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  _start_3b90 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to sched_yield:
+  _start_3b90 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  _start_3b90 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  _start_3b90 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to read:
+  _start_3b90 - [INDIRECT]-> _IO_file_read_7baa0
+  _IO_file_read_7baa0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to lseek:
+  _start_3b90 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  _start_3b90 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to write:
+  _start_3b90 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b4d0
+  _IO_file_write@@GLIBC_2.2.5_7b4d0 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to wait4:
+  _start_3b90 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_71410
+  _IO_proc_close@@GLIBC_2.2.5_71410 - [DIRECT]-> __waitpid_nocancel_ef340
+  __waitpid_nocancel_ef340 - [syscall]-> wait4
+
+Path to tgkill:
+  _start_3b90 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to unlink:
+  _start_3b90 - [INDIRECT]-> cleanup_ab90
+  cleanup_ab90 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to sched_get_priority_min:
+  _start_3b90 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _start_3b90 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  _start_3b90 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  _start_3b90 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  _start_3b90 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to getpid:
+  _start_3b90 - [INDIRECT]-> sigcancel_handler_66b0
+  sigcancel_handler_66b0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to rt_sigprocmask:
+  main_3700 - [DIRECT]-> set_program_name_12710
+  set_program_name_12710 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  main_3700 - [DIRECT]-> set_program_name_12710
+  set_program_name_12710 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit_group:
+  main_3700 - [DIRECT]-> set_program_name_12710
+  set_program_name_12710 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to getcwd:
+  main_3700 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to fchown:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> fchown_eb540
+  fchown_eb540 - [syscall]-> fchown
+
+Path to ioctl:
+  _start_3b90 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mmap:
+  _start_3b90 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_7ae40
+  _IO_file_underflow_maybe_mmap_7ae40 - [DIRECT]-> decide_maybe_mmap_7aca0
+  decide_maybe_mmap_7aca0 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mremap:
+  _start_3b90 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to writev:
+  _start_3b90 - [INDIRECT]-> _IO_vtable_check_79e10
+  _IO_vtable_check_79e10 - [DIRECT]-> __libc_fatal_79650
+  __libc_fatal_79650 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to brk:
+  _start_3b90 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to openat:
+  _start_3b90 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_load_cache_2c4c0
+  __gconv_load_cache_2c4c0 - [DIRECT]-> __open64_nocancel_ef1a0
+  __open64_nocancel_ef1a0 - [syscall]-> openat
+
+Path to set_tid_address:
+  _start_3b90 - [INDIRECT]-> __libc_csu_init_15860
+  __libc_csu_init_15860 - [DIRECT]-> _init_3000
+  _init_3000 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [syscall]-> set_tid_address
+
+Path to mprotect:
+  _start_3b90 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to madvise:
+  _start_3b90 - [INDIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to pause:
+  _start_3b90 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to rt_sigaction:
+  main_3700 - [DIRECT]-> set_program_name_12710
+  set_program_name_12710 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to clock_getres:
+  main_3700 - [DIRECT]-> setlocale_2d520
+  setlocale_2d520 - [DIRECT]-> _nl_find_locale_2dc10
+  _nl_find_locale_2dc10 - [DIRECT]-> _nl_load_locale_from_archive_2ea40
+  _nl_load_locale_from_archive_2ea40 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to lstat:
+  main_3700 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  main_3700 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rename:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> ck_rename_b980
+  ck_rename_b980 - [DIRECT]-> rename_6d800
+  rename_6d800 - [syscall]-> rename
+
+Path to prlimit64:
+  _start_3b90 - [INDIRECT]-> __libc_csu_init_15860
+  __libc_csu_init_15860 - [DIRECT]-> _init_3000
+  _init_3000 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to getdents64:
+  main_3700 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to pipe2:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> execute_program_8970
+  execute_program_8970 - [DIRECT]-> popen@@GLIBC_2.2.5_719a0
+  popen@@GLIBC_2.2.5_719a0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_71680
+  _IO_proc_open@@GLIBC_2.2.5_71680 - [DIRECT]-> pipe2_eab30
+  pipe2_eab30 - [syscall]-> pipe2
+
+Path to clone:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> execute_program_8970
+  execute_program_8970 - [DIRECT]-> popen@@GLIBC_2.2.5_719a0
+  popen@@GLIBC_2.2.5_719a0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_71680
+  _IO_proc_open@@GLIBC_2.2.5_71680 - [DIRECT]-> fork_c6610
+  fork_c6610 - [syscall]-> clone
+
+Path to fcntl:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> execute_program_8970
+  execute_program_8970 - [DIRECT]-> popen@@GLIBC_2.2.5_719a0
+  popen@@GLIBC_2.2.5_719a0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_71680
+  _IO_proc_open@@GLIBC_2.2.5_71680 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to dup2:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> execute_program_8970
+  execute_program_8970 - [DIRECT]-> popen@@GLIBC_2.2.5_719a0
+  popen@@GLIBC_2.2.5_719a0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_71680
+  _IO_proc_open@@GLIBC_2.2.5_71680 - [DIRECT]-> dup2_eaaa0
+  dup2_eaaa0 - [syscall]-> dup2
+
+Path to umask:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> ck_mkstemp_b320
+  ck_mkstemp_b320 - [DIRECT]-> umask_e9e80
+  umask_e9e80 - [syscall]-> umask
+
+Path to readlink:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> follow_symlink_b710
+  follow_symlink_b710 - [DIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to stat:
+  main_3700 - [DIRECT]-> setlocale_2d520
+  setlocale_2d520 - [DIRECT]-> _nl_find_locale_2dc10
+  _nl_find_locale_2dc10 - [DIRECT]-> _nl_load_locale_from_archive_2ea40
+  _nl_load_locale_from_archive_2ea40 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> __sysconf_check_spec_c8120
+  __sysconf_check_spec_c8120 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sysinfo:
+  main_3700 - [DIRECT]-> setlocale_2d520
+  setlocale_2d520 - [DIRECT]-> _nl_find_locale_2dc10
+  _nl_find_locale_2dc10 - [DIRECT]-> _nl_load_locale_from_archive_2ea40
+  _nl_load_locale_from_archive_2ea40 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to execve:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> execute_program_8970
+  execute_program_8970 - [DIRECT]-> popen@@GLIBC_2.2.5_719a0
+  popen@@GLIBC_2.2.5_719a0 - [DIRECT]-> _IO_proc_open@@GLIBC_2.2.5_71680
+  _IO_proc_open@@GLIBC_2.2.5_71680 - [DIRECT]-> execl_c6bc0
+  execl_c6bc0 - [DIRECT]-> execve_c68a0
+  execve_c68a0 - [syscall]-> execve
+
+Path to mkdir:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> ck_mkstemp_b320
+  ck_mkstemp_b320 - [DIRECT]-> mkostemp_f12e0
+  mkostemp_f12e0 - [DIRECT]-> __gen_tempname_6d390
+  __gen_tempname_6d390 - [DIRECT]-> mkdir_e9f80
+  mkdir_e9f80 - [syscall]-> mkdir
+
+Path to lgetxattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> lgetfilecon_raw_139f0
+  lgetfilecon_raw_139f0 - [DIRECT]-> lgetxattr_f6ee0
+  lgetxattr_f6ee0 - [syscall]-> lgetxattr
+
+Path to fgetxattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> get_permissions_15420
+  get_permissions_15420 - [DIRECT]-> acl_get_fd_3470
+  acl_get_fd_3470 - [DIRECT]-> fgetxattr_f6dc0
+  fgetxattr_f6dc0 - [syscall]-> fgetxattr
+
+Path to getxattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> get_permissions_15420
+  get_permissions_15420 - [DIRECT]-> acl_get_file_3590
+  acl_get_file_3590 - [DIRECT]-> getxattr_f6e80
+  getxattr_f6e80 - [syscall]-> getxattr
+
+Path to fchmod:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> set_permissions_155d0
+  set_permissions_155d0 - [DIRECT]-> chmod_or_fchmod_155b0
+  chmod_or_fchmod_155b0 - [DIRECT]-> fchmod_e9ec0
+  fchmod_e9ec0 - [syscall]-> fchmod
+
+Path to chmod:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> set_permissions_155d0
+  set_permissions_155d0 - [DIRECT]-> chmod_or_fchmod_155b0
+  chmod_or_fchmod_155b0 - [DIRECT]-> chmod_e9e90
+  chmod_e9e90 - [syscall]-> chmod
+
+Path to socket:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> selinux_raw_to_trans_context_1b390
+  selinux_raw_to_trans_context_1b390 - [DIRECT]-> setransd_open_1ae80
+  setransd_open_1ae80 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to connect:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> selinux_raw_to_trans_context_1b390
+  selinux_raw_to_trans_context_1b390 - [DIRECT]-> setransd_open_1ae80
+  setransd_open_1ae80 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect
+
+Path to sendmsg:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> selinux_raw_to_trans_context_1b390
+  selinux_raw_to_trans_context_1b390 - [DIRECT]-> send_request.constprop.2_1afa0
+  send_request.constprop.2_1afa0 - [DIRECT]-> sendmsg_fa4a0
+  sendmsg_fa4a0 - [syscall]-> sendmsg
+
+Path to access:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> selinux_raw_to_trans_context_1b390
+  selinux_raw_to_trans_context_1b390 - [DIRECT]-> init_context_translations_1ae20
+  init_context_translations_1ae20 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to readv:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> read_pattern_space_8860
+  read_pattern_space_8860 - [DIRECT]-> open_next_file_76b0
+  open_next_file_76b0 - [DIRECT]-> rpl_lgetfilecon_14f20
+  rpl_lgetfilecon_14f20 - [DIRECT]-> lgetfilecon_13b10
+  lgetfilecon_13b10 - [DIRECT]-> selinux_raw_to_trans_context_1b390
+  selinux_raw_to_trans_context_1b390 - [DIRECT]-> receive_response_1acd0
+  receive_response_1acd0 - [DIRECT]-> readv_efff0
+  readv_efff0 - [syscall]-> readv
+
+Path to fsetxattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> set_permissions_155d0
+  set_permissions_155d0 - [DIRECT]-> set_acls.isra.0.part.1_154d0
+  set_acls.isra.0.part.1_154d0 - [DIRECT]-> acl_set_fd_3940
+  acl_set_fd_3940 - [DIRECT]-> fsetxattr_f6e50
+  fsetxattr_f6e50 - [syscall]-> fsetxattr
+
+Path to setxattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> set_permissions_155d0
+  set_permissions_155d0 - [DIRECT]-> set_acls.isra.0.part.1_154d0
+  set_acls.isra.0.part.1_154d0 - [DIRECT]-> acl_set_file_39d0
+  acl_set_file_39d0 - [DIRECT]-> setxattr_f6fd0
+  setxattr_f6fd0 - [syscall]-> setxattr
+
+Path to removexattr:
+  main_3700 - [DIRECT]-> process_files_a040
+  process_files_a040 - [DIRECT]-> closedown_7b00
+  closedown_7b00 - [DIRECT]-> copy_acl_bb60
+  copy_acl_bb60 - [DIRECT]-> qcopy_acl_127b0
+  qcopy_acl_127b0 - [DIRECT]-> set_permissions_155d0
+  set_permissions_155d0 - [DIRECT]-> set_acls.isra.0.part.1_154d0
+  set_acls.isra.0.part.1_154d0 - [DIRECT]-> acl_delete_def_file_2890
+  acl_delete_def_file_2890 - [DIRECT]-> removexattr_f6fa0
+  removexattr_f6fa0 - [syscall]-> removexattr

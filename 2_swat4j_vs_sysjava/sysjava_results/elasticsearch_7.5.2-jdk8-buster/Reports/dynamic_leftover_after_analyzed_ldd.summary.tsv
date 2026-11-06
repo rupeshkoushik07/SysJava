@@ -1,0 +1,2 @@
+image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
+elasticsearch_7.5.2-jdk8-buster	32	15	21	7	9	19	10

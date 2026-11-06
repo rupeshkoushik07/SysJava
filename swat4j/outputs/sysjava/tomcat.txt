@@ -41,6 +41,7 @@ fdatasync
 flock
 fstat
 fstatfs
+fsync
 ftruncate
 futex
 getcwd

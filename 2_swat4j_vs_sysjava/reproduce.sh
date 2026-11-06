@@ -9,13 +9,13 @@
 #   STAGE=7 ./reproduce.sh solr_8.7.0-jdk8-buster   # resume SysJava from a stage
 #   SKIP_SYSJAVA=1 ./reproduce.sh               # only SWAT4J (needs a SysJava rerun's Dataset/)
 #   SKIP_SWAT4J=1  ./reproduce.sh               # only SysJava
-#   TABLE_ONLY=1   ./reproduce.sh               # only the table, from the shipped outputs
+#   TABLE_ONLY=1   ./reproduce.sh               # only the tables, from the shipped outputs
 #
 # 1. SysJava, full pipeline per image   -> ../work/jdk8/Final_results_JDK8/<image>/
 # 2. SWAT4J, unmodified (../swat4j/README.md): static on the same JARs and libraries,
 #    dynamic with strace on containerd (needs sudo) -> ../swat4j/jdk8_debian10/
 # 3. Table: SysJava (A), SWAT4J static + dynamic (B), A ∩ B, A ∖ B, B ∖ A
-#    -> tables_rerun/swat4j_outputs/ and the printed table
+#    -> tables_rerun/swat4j_outputs/ and the printed table; tab:results -> tables_rerun/tab_results.tex
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ART="$HERE/.."
@@ -28,7 +28,14 @@ ALL=(zookeeper_3.4.14-jdk8-buster tomcat_7.0-jdk8-buster cassandra_3.0.29-jdk8-b
 TARGETS=("$@"); [ ${#TARGETS[@]} -gt 0 ] || TARGETS=("${ALL[@]}")
 
 if [ -n "${TABLE_ONLY:-}" ]; then
-    python3 "$SW/show_results.py" "$SW/outputs" ${SETS:+--sets}
+    mkdir -p "$HERE/tables_rerun"
+    python3 "$ART/tools/make_tab_results_jdk8.py" "$HERE/tables/mapping_audit_per_app.csv" "$HERE/tables_rerun/tab_results" || true   # exits 1 without matplotlib (no PDF)
+    if cmp -s "$HERE/tables_rerun/tab_results.tex" "$HERE/tables/tab_results.tex"; then
+        echo "tables_rerun/tab_results.tex is identical to the shipped tables/tab_results.tex"
+    else
+        echo "tables_rerun/tab_results.tex differs from the shipped table:"; diff "$HERE/tables/tab_results.tex" "$HERE/tables_rerun/tab_results.tex" || true
+    fi
+    echo; python3 "$SW/show_results.py" "$SW/outputs" ${SETS:+--sets}
     exit 0
 fi
 
@@ -62,3 +69,9 @@ fi
 ET="$SJ" bash "$SW/package_outputs_jdk8deb.sh" "$HERE/tables_rerun/swat4j_outputs"
 python3 "$SW/show_results.py" "$HERE/tables_rerun/swat4j_outputs" ${SETS:+--sets}
 echo "Compare with the shipped outputs: python3 ../swat4j/show_results.py ../swat4j/outputs"
+# tab:results from this run: the mapping audit (SysJava and SWAT4J), then the table
+apps=(); sw=(); for t in "${ALL[@]}"; do [ -d "$SJ/$t" ] && apps+=("$t=$SJ/$t") && sw+=("$t=$HERE/tables_rerun/swat4j_outputs/mapping/$t"); done
+python3 "$ART/analysis/native_mapping_audit/audit_native_mapping.py" --out "$HERE/tables_rerun/audit" \
+    --app "${apps[@]}" --swat-override "${sw[@]}"
+RESULTS="$SJ" SWAT4J_OUTPUTS="$HERE/tables_rerun/swat4j_outputs" \
+    python3 "$ART/tools/make_tab_results_jdk8.py" "$HERE/tables_rerun/audit/per_app_summary.csv" "$HERE/tables_rerun/tab_results" || true

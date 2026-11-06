@@ -183,3 +183,4 @@ netty_sizeofQuicheRecvInfo
 netty_sizeofQuicheSendInfo
 netty_sockaddr_cmp
 timespecOffsetofTvNsec
+netty_quiche_enable_debug_logging

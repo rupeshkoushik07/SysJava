@@ -1,0 +1,3 @@
+=== FFI (Foreign Function & Memory API) Hits ===
+Format: callerSig | lib | symbol | mechanism | jar
+

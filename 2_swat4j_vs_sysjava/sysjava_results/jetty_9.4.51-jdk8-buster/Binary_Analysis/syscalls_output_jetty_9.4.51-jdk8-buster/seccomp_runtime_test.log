@@ -1,0 +1,31 @@
+container=jetty_9.4.51-jdk8-buster
+image=jetty:9.4.51-jdk8-buster
+profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/jetty_9.4.51-jdk8-buster/Binary_Analysis/syscalls_output_jetty_9.4.51-jdk8-buster/jetty_9.4.51-jdk8-buster.json
+profile_syscalls=157 SCMP_ACT_ERRNO
+workload=docker run  jetty:9.4.51-jdk8-buster 
+started_at=2026-11-06T18:56:44+01:00
+
+---- baseline (no profile) ----
+docker_run_output=dd40edbbf976acb479824de1c0926c3ccc4de2b00691b60aba640a21429f435e
+baseline_ready_after=2s
+baseline_state=running exit=0
+baseline_probe=ok http_404 /
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-jetty-9-4-51-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/jetty_9.4.51-jdk8-buster/Binary_Analysis/syscalls_output_jetty_9.4.51-jdk8-buster/jetty_9.4.51-jdk8-buster.json  jetty:9.4.51-jdk8-buster 
+docker_run_output=cba32ad35868015b9e4bfb07a52374b3322762964590773f9c0d7645a3464b3b
+ready_after=2s
+state_after_60s=running exit=0
+probe=ok http_404 /
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-06T18:58:50+01:00
+
+---- docker logs tail (with profile) ----
+2026-11-06 17:57:48.250:INFO::main: Logging initialized @352ms to org.eclipse.jetty.util.log.StdErrLog
+2026-11-06 17:57:48.438:INFO:oejs.Server:main: jetty-9.4.51.v20230217; built: 2023-02-17T08:19:37.309Z; git: b45c405e4544384de066f814ed42ae3dceacdd49; jvm 1.8.0_504-b01
+2026-11-06 17:57:48.451:INFO:oejdp.ScanningAppProvider:main: Deployment monitor [file:///var/lib/jetty/webapps/] at interval 1
+2026-11-06 17:57:48.493:INFO:oejs.AbstractConnector:main: Started ServerConnector@7b0bbc26{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2026-11-06 17:57:48.495:INFO:oejs.Server:main: Started @597ms

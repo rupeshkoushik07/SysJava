@@ -3122,3 +3122,216 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-05 23:12:12] elasticsearch_7.1.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/elasticsearch_7.1.0/Binary_Analysis/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.json
+
+===== [2026-11-06 19:16:20] elasticsearch_7.1.0 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=46007	fuzzy=0	syscalls=0
+libawt.so	functions=45911	fuzzy=0	syscalls=79
+libawt_xawt.so	functions=52423	fuzzy=978	syscalls=99
+libjava.so	functions=45060	fuzzy=0	syscalls=86
+libjnidispatch.so	functions=3560	fuzzy=3	syscalls=38
+libjvm.so	functions=44664	fuzzy=0	syscalls=79
+libnet.so	functions=45228	fuzzy=0	syscalls=81
+libnio.so	functions=45407	fuzzy=0	syscalls=81
+libzip.so	functions=45246	fuzzy=0	syscalls=79
+basename	functions=3513	fuzzy=0	syscalls=38
+bash	functions=5579	fuzzy=0	syscalls=74
+chroot	functions=3514	fuzzy=0	syscalls=49
+/home/user/Tutorial/EchoTrace_latest/scripts/run_latest_target.sh: line 236: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_BIN_elasticsearch_7.1.0/controller/syscalls.txt: No such file or directory
+controller	functions=34964	fuzzy=2915	syscalls=0
+dirname	functions=3511	fuzzy=0	syscalls=38
+env	functions=3509	fuzzy=0	syscalls=39
+grep	functions=4254	fuzzy=0	syscalls=46
+id	functions=4414	fuzzy=0	syscalls=55
+java	functions=4059	fuzzy=0	syscalls=54
+ldconfig	functions=1286	fuzzy=0	syscalls=54
+runc	functions=17523	fuzzy=91	syscalls=38
+uname	functions=3510	fuzzy=0	syscalls=39
+
+===== [2026-11-06 19:16:21] elasticsearch_7.1.0 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: elasticsearch_7.1.0
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_BIN_elasticsearch_7.1.0
+Found 11 subdirectories
+
+  ✓ basename: 38 syscalls
+  ✓ bash: 74 syscalls
+  ✓ chroot: 49 syscalls
+  ✗ controller: syscalls.txt MISSING
+  ✓ dirname: 38 syscalls
+  ✓ env: 39 syscalls
+  ✓ grep: 46 syscalls
+  ✓ id: 55 syscalls
+  ✓ java: 54 syscalls
+  ✓ ldconfig: 54 syscalls
+  ✓ uname: 39 syscalls
+
+✗ Error: 1 binaries with MISSING syscalls.txt:
+    - controller
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_BIN_elasticsearch_7.1.0/binary_syscalls.txt (94 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0
+Found 9 subdirectories
+
+  ✓ libawt.so: 79 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 99 syscalls
+  ✓ libjava.so: 86 syscalls
+  ✓ libjnidispatch.so: 38 syscalls
+  ✓ libjvm.so: 79 syscalls
+  ✓ libnet.so: 81 syscalls
+  ✓ libnio.so: 81 syscalls
+  ✓ libzip.so: 79 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/library_syscalls.txt (108 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0
+Found 25 syscalls.txt files
+  libapr-1.so.0: 102 syscalls
+  libaprutil-1.so.0: 65 syscalls
+  libboost_filesystem-gcc73-mt-1_65_1.so.1.65.1: 59 syscalls
+  libboost_iostreams-gcc73-mt-1_65_1.so.1.65.1: 47 syscalls
+  libboost_program_options-gcc73-mt-1_65_1.so.1.65.1: 46 syscalls
+  libboost_regex-gcc73-mt-1_65_1.so.1.65.1: 46 syscalls
+  libboost_system-gcc73-mt-1_65_1.so.1.65.1: 46 syscalls
+  libcrypt-2.17.so: 40 syscalls
+  libexpat.so.0: 38 syscalls
+  libextnet.so: 82 syscalls
+  libfreebl3.so: 40 syscalls
+  libgcc_s.so.1: 38 syscalls
+  libjimage.so: 80 syscalls
+  libjli.so: 55 syscalls
+  liblog4cxx.so.10: 82 syscalls
+  libmanagement.so: 80 syscalls
+  libmanagement_ext.so: 80 syscalls
+  libnss_files-2.17.so: 38 syscalls
+  libpcre.so.1: 44 syscalls
+  librt-2.17.so: 67 syscalls
+  libselinux.so.1: 70 syscalls
+  libstdc++.so.6: 40 syscalls
+  libsunec.so: 38 syscalls
+  libtinfo.so.5: 41 syscalls
+  libxml2.so.2: 52 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_unanalysed_elasticsearch_7.1.0/unanalysed_syscalls.txt (147 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 42 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/runc.txt
+  ✓ Loaded 118 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      94
+Library syscalls:     108
+Unanalysed libraries: 147
+JNA/FFI syscalls:     42
+Runc whitelist:       118
+Combined (unique):    196
+  → unanalysed libraries added 44 additional syscalls
+  → JNA/FFI analysis added 2 additional syscalls
+  → runc.txt added 24 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.txt (196 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.json (196 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 196
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  12
+  - Empty:     0
+  - Missing:   1
+  - Syscalls:  94 unique
+
+Libraries:
+  - Analyzed:  9
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  108 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/runc.txt
+  - Syscalls:    118 unique
+  - Added:       70 additional syscalls
+
+Combined:
+  - Total unique syscalls: 196
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_BIN_elasticsearch_7.1.0/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.json (seccomp profile)
+
+⚠ Completed with warnings or errors
+stage 10: merge reported items without results (listed above); profile written, continuing
+Found 1 container(s) to organize.
+
+  elasticsearch_7.1.0
+      JARFILES_elasticsearch_7.1.0  (68M) -> Dataset/
+      LIBS_elasticsearch_7.1.0  (65M) -> Dataset/
+      BINARIES_elasticsearch_7.1.0  (14M) -> Dataset/
+      RUNTIME_elasticsearch_7.1.0  (61M) -> Dataset/
+      outputs_elasticsearch_7.1.0  (424K) -> Bytecode_Analysis/
+      sysdig_outputs_elasticsearch_7.1.0  (180K) -> Dynamic_Analysis/
+      syscalls_output_elasticsearch_7.1.0  (391M) -> Binary_Analysis/
+      syscalls_BIN_elasticsearch_7.1.0  (15M) -> Binary_Analysis/
+      syscalls_unanalysed_elasticsearch_7.1.0  (250M) -> Binary_Analysis/
+      startfuncs_unanalysed_elasticsearch_7.1.0  (960K) -> Binary_Analysis/
+      jna_ffi_analysis  (1.4M) -> Binary_Analysis/
+    (11 moved)
+
+Done. Moved 11 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces/elasticsearch_7.1.0/Final_results/
+Containers organized: 1
+
+===== [2026-11-06 19:16:22] elasticsearch_7.1.0 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-06 19:18:54] elasticsearch_7.1.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/elasticsearch_7.1.0/Binary_Analysis/syscalls_output_elasticsearch_7.1.0/elasticsearch_7.1.0.json

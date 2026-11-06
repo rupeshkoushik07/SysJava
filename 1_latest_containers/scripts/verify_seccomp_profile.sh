@@ -125,6 +125,11 @@ run_case() {  # name, extra-args...
     case "$sec_state" in running*) ;; *) reasons+=(not_running) ;; esac
     sec_probe="$(probe "$SEC")"; echo "probe=${sec_probe}"
     case "$sec_probe" in ok*) ;; *) reasons+=(probe_failed) ;; esac
+    # An HTTP answer alone is not enough: solr answers 503 when its web app failed to start.
+    # The status must equal the baseline's (jetty's empty base answers 404 in both).
+    case "$base_probe $sec_probe" in
+        "ok http_"*" ok http_"*) [ "${base_probe%% /*}" = "${sec_probe%% /*}" ] || reasons+=(http_status_differs_from_baseline) ;;
+    esac
     sec_eperm="$(eperm_count "$SEC")"; echo "eperm_lines=${sec_eperm} (baseline ${base_eperm})"
     [ "${sec_eperm:-0}" -gt "${base_eperm:-0}" ] && reasons+=(new_eperm_errors)
 

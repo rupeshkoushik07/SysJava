@@ -1,0 +1,7 @@
+jruby_9.4.2.0-jdk8-buster (5)
+  - libcrypt.so.1
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+

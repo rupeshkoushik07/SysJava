@@ -1,0 +1,3 @@
+=== JNA Dynamic Hits (Function.invoke*) ===
+Format: callerSig | lib | symbol | apiPattern | sinkSig | stmt
+

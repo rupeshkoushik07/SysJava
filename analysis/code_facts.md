@@ -19,7 +19,10 @@ pipeline scripts are in `1_latest_containers/scripts/` (the same in
 
 Known limitations:
 
-* calls through subclass overrides and lambdas are not followed;
+* calls through subclass overrides and lambdas are not followed (detector `52628c4`,
+  latest-version results). The JDK 8 results use `../echotrace_89bf135/`, whose
+  `PrototypeFinal.java` dispatches virtual and interface calls to the overrides of
+  every class instantiated in reachable code (RTA); lambdas are still not followed;
 * alternative library names such as `libc.so.6|msvcrt` are split wrongly;
 * the FFM detector also infers hits from class names (`FfiDetector.java`, lines
   217-241, run on every class). Table III drops an FFM hit when its JAR has no

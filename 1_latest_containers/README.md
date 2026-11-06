@@ -43,6 +43,12 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 * Stage 4 of ZooKeeper, OrientDB, Elasticsearch, Storm and JRuby used `echotrace/`
   (`52628c4`, with the `<clinit>` fix); the other five used `echotrace_516fb46/`.
   `generate_syscalls.py` picks the matching one.
+* Storm's Total Syscalls in Table III (195) is its pipeline profile (193) plus the
+  syscalls of the two libraries supplied by hand (netty io_uring adds `io_uring_setup`,
+  `io_uring_enter`, `io_uring_register`; jansi adds none), minus `sync`, which only
+  false FFM hits reach. That profile and its PASS check are in
+  `unavailable_libs/storm_2.8.8/merged/` (`storm_2.8.8_with_supplement_no_sync.json`,
+  `seccomp_runtime_test_no_sync.log`).
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.
 * Each `ADDED_first_start_binaries.md` explains executables that were added by

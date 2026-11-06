@@ -1,0 +1,10 @@
+__libdl_freeres
+dladdr
+dladdr1
+dlclose
+dlerror
+dlinfo
+dlmopen
+dlopen
+dlsym
+dlvsym

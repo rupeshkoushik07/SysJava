@@ -1,0 +1,500 @@
+
+Path to futex:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __gettimeofday_syscall_b5c00
+  __gettimeofday_syscall_b5c00 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __syscall_clock_gettime_f9ca0
+  __syscall_clock_gettime_f9ca0 - [syscall]-> clock_gettime
+
+Path to time:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __time_syscall_b5b30
+  __time_syscall_b5b30 - [syscall]-> time
+
+Path to getrandom:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> getentropy_3b460
+  getentropy_3b460 - [syscall]-> getrandom
+
+Path to gettid:
+  Java_org_apache_tomcat_jni_Thread_current_21b10 - [DIRECT]-> tcn_get_thread_id_15530
+  tcn_get_thread_id_15530 - [syscall]-> gettid
+
+Path to sysinfo:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> sysinfo_fa130
+  sysinfo_fa130 - [syscall]-> sysinfo
+
+Path to clock_getres:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [syscall]-> clock_getres
+
+Path to openat:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> open_11c40
+  open_11c40 - [syscall]-> openat
+
+Path to read:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> read_ea450
+  read_ea450 - [syscall]-> read
+
+Path to close:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> close_115a0
+  close_115a0 - [syscall]-> close
+
+Path to connect:
+  Java_org_apache_tomcat_jni_Local_connect_22990 - [DIRECT]-> connect_116c0
+  connect_116c0 - [syscall]-> connect
+
+Path to getpid:
+  Java_org_apache_tomcat_jni_Stdlib_getpid_21af0 - [DIRECT]-> getpid_c7470
+  getpid_c7470 - [syscall]-> getpid
+
+Path to accept:
+  Java_org_apache_tomcat_jni_Local_accept_227e0 - [DIRECT]-> accept_fa3f0
+  accept_fa3f0 - [syscall]-> accept
+
+Path to socket:
+  Java_org_apache_tomcat_jni_Local_create_22560 - [DIRECT]-> socket_faac0
+  socket_faac0 - [syscall]-> socket
+
+Path to bind:
+  Java_org_apache_tomcat_jni_Local_bind_22760 - [DIRECT]-> bind_fa490
+  bind_fa490 - [syscall]-> bind
+
+Path to mmap:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [DIRECT]-> apr_palloc_1f660
+  apr_palloc_1f660 - [DIRECT]-> mmap_f40f0
+  mmap_f40f0 - [syscall]-> mmap
+
+Path to sched_yield:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_cleanup_7e2f0
+  _IO_cleanup_7e2f0 - [DIRECT]-> sched_yield_e0910
+  sched_yield_e0910 - [syscall]-> sched_yield
+
+Path to munmap:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_file_close_mmap_7a860
+  _IO_file_close_mmap_7a860 - [DIRECT]-> munmap_f41d0
+  munmap_f41d0 - [syscall]-> munmap
+
+Path to lseek:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_file_seek_7aaf0
+  _IO_file_seek_7aaf0 - [DIRECT]-> lseek_11ae0
+  lseek_11ae0 - [syscall]-> lseek
+
+Path to fstat:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_file_stat_7b380
+  _IO_file_stat_7b380 - [DIRECT]-> _fxstat_e9ae0
+  _fxstat_e9ae0 - [syscall]-> fstat
+
+Path to write:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b390
+  _IO_file_write@@GLIBC_2.2.5_7b390 - [DIRECT]-> write_11460
+  write_11460 - [syscall]-> write
+
+Path to tgkill:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to rt_sigprocmask:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __start_context_4cb50
+  __start_context_4cb50 - [DIRECT]-> setcontext_474d0
+  setcontext_474d0 - [syscall]-> rt_sigprocmask
+
+Path to setsockopt:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> apr_socket_opt_set_25c40
+  apr_socket_opt_set_25c40 - [DIRECT]-> setsockopt_faa60
+  setsockopt_faa60 - [syscall]-> setsockopt
+
+Path to writev:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> apr_socket_sendv_23670
+  apr_socket_sendv_23670 - [DIRECT]-> writev_f04f0
+  writev_f04f0 - [syscall]-> writev
+
+Path to shutdown:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> apr_socket_shutdown_25130
+  apr_socket_shutdown_25130 - [DIRECT]-> shutdown_faa90
+  shutdown_faa90 - [syscall]-> shutdown
+
+Path to unlink:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> apr_unix_file_cleanup_1b440
+  apr_unix_file_cleanup_1b440 - [DIRECT]-> unlink_ebfc0
+  unlink_ebfc0 - [syscall]-> unlink
+
+Path to shmdt:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> cleanup_shm_1b5340
+  cleanup_shm_1b5340 - [DIRECT]-> shmdt_fb370
+  shmdt_fb370 - [syscall]-> shmdt
+
+Path to stat:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> def_load_bio_f3120
+  def_load_bio_f3120 - [DIRECT]-> _xstat_e9a90
+  _xstat_e9a90 - [syscall]-> stat
+
+Path to epoll_ctl:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> impl_pollset_add_268a0
+  impl_pollset_add_268a0 - [DIRECT]-> epoll_ctl_f9e60
+  epoll_ctl_f9e60 - [syscall]-> epoll_ctl
+
+Path to epoll_create1:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> impl_pollset_create_26a40
+  impl_pollset_create_26a40 - [DIRECT]-> epoll_create1_f9e30
+  epoll_create1_f9e30 - [syscall]-> epoll_create1
+
+Path to epoll_wait:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> impl_pollset_poll_264b0
+  impl_pollset_poll_264b0 - [DIRECT]-> epoll_wait_f97a0
+  epoll_wait_f97a0 - [syscall]-> epoll_wait
+
+Path to poll:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> impl_pollset_poll_264b0
+  impl_pollset_poll_264b0 - [DIRECT]-> poll_ee7d0
+  poll_ee7d0 - [syscall]-> poll
+
+Path to select:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> impl_pollset_poll_264b0
+  impl_pollset_poll_264b0 - [DIRECT]-> select_f0fe0
+  select_f0fe0 - [syscall]-> select
+
+Path to ioctl:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> open_console_1fbf00
+  open_console_1fbf00 - [DIRECT]-> tcgetattr_efb30
+  tcgetattr_efb30 - [syscall]-> ioctl
+
+Path to fchown:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_fcntl_perms_set_1de30
+  proc_mutex_fcntl_perms_set_1de30 - [DIRECT]-> fchown_eb660
+  fchown_eb660 - [syscall]-> fchown
+
+Path to flock:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_flock_acquire_1df90
+  proc_mutex_flock_acquire_1df90 - [DIRECT]-> flock_ea9f0
+  flock_ea9f0 - [syscall]-> flock
+
+Path to semop:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_sysv_acquire_1dcc0
+  proc_mutex_sysv_acquire_1dcc0 - [DIRECT]-> semop_fb210
+  semop_fb210 - [syscall]-> semop
+
+Path to semctl:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_sysv_cleanup_1d7f0
+  proc_mutex_sysv_cleanup_1d7f0 - [DIRECT]-> semctl@@GLIBC_2.2.5_fb270
+  semctl@@GLIBC_2.2.5_fb270 - [syscall]-> semctl
+
+Path to semget:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_sysv_create_1dd20
+  proc_mutex_sysv_create_1dd20 - [DIRECT]-> semget_fb240
+  semget_fb240 - [syscall]-> semget
+
+Path to sched_get_priority_min:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0970
+  sched_get_priority_min_e0970 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e0940
+  sched_get_priority_max_e0940 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e08e0
+  sched_getscheduler_e08e0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0880
+  sched_getparam_e0880 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e08b0
+  sched_setscheduler_e08b0 - [syscall]-> sched_setscheduler
+
+Path to shmctl:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> shm_cleanup_owner_29220
+  shm_cleanup_owner_29220 - [DIRECT]-> shmctl@@GLIBC_2.2.5_fb3d0
+  shmctl@@GLIBC_2.2.5_fb3d0 - [syscall]-> shmctl
+
+Path to access:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> shm_cleanup_owner_29220
+  shm_cleanup_owner_29220 - [DIRECT]-> access_ea5c0
+  access_ea5c0 - [syscall]-> access
+
+Path to listen:
+  Java_org_apache_tomcat_jni_Socket_listen_16060 - [DIRECT]-> apr_socket_listen_251f0
+  apr_socket_listen_251f0 - [DIRECT]-> listen_fa5f0
+  listen_fa5f0 - [syscall]-> listen
+
+Path to sendto:
+  Java_org_apache_tomcat_jni_Socket_sendto_16a60 - [DIRECT]-> apr_socket_sendto_23430
+  apr_socket_sendto_23430 - [DIRECT]-> sendto_119a0
+  sendto_119a0 - [syscall]-> sendto
+
+Path to shmget:
+  Java_org_apache_tomcat_jni_Shm_remove_193c0 - [DIRECT]-> apr_shm_remove_29540
+  apr_shm_remove_29540 - [DIRECT]-> shmget_fb3a0
+  shmget_fb3a0 - [syscall]-> shmget
+
+Path to ftruncate:
+  Java_org_apache_tomcat_jni_File_trunc_12fe0 - [DIRECT]-> apr_file_trunc_1cea0
+  apr_file_trunc_1cea0 - [DIRECT]-> ftruncate_f2940
+  ftruncate_f2940 - [syscall]-> ftruncate
+
+Path to prlimit64:
+  Java_org_apache_tomcat_jni_OS_info_21f70 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> getrlimit_efe60
+  getrlimit_efe60 - [syscall]-> prlimit64
+
+Path to accept4:
+  Java_org_apache_tomcat_jni_Socket_acceptx_16070 - [DIRECT]-> apr_socket_accept_25220
+  apr_socket_accept_25220 - [DIRECT]-> accept4_fad90
+  accept4_fad90 - [syscall]-> accept4
+
+Path to chdir:
+  Java_org_apache_tomcat_jni_Proc_detach_19090 - [DIRECT]-> apr_proc_detach_2a7c0
+  apr_proc_detach_2a7c0 - [DIRECT]-> chdir_ead40
+  chdir_ead40 - [syscall]-> chdir
+
+Path to setsid:
+  Java_org_apache_tomcat_jni_Proc_detach_19090 - [DIRECT]-> apr_proc_detach_2a7c0
+  apr_proc_detach_2a7c0 - [DIRECT]-> setsid_c7790
+  setsid_c7790 - [syscall]-> setsid
+
+Path to kill:
+  Java_org_apache_tomcat_jni_Proc_kill_190a0 - [DIRECT]-> apr_proc_kill_2a950
+  apr_proc_kill_2a950 - [DIRECT]-> kill_37a90
+  kill_37a90 - [syscall]-> kill
+
+Path to shmat:
+  Java_org_apache_tomcat_jni_Shm_create_19310 - [DIRECT]-> apr_shm_create_292b0
+  apr_shm_create_292b0 - [DIRECT]-> shmat_fb340
+  shmat_fb340 - [syscall]-> shmat
+
+Path to mkdir:
+  Java_org_apache_tomcat_jni_Directory_make_124c0 - [DIRECT]-> apr_dir_make_19b20
+  apr_dir_make_19b20 - [DIRECT]-> mkdir_ea0d0
+  mkdir_ea0d0 - [syscall]-> mkdir
+
+Path to getuid:
+  Java_org_apache_tomcat_jni_User_uidCurrent_21b20 - [DIRECT]-> apr_uid_current_2bb50
+  apr_uid_current_2bb50 - [DIRECT]-> getuid_c7490
+  getuid_c7490 - [syscall]-> getuid
+
+Path to getgid:
+  Java_org_apache_tomcat_jni_User_uidCurrent_21b20 - [DIRECT]-> apr_uid_current_2bb50
+  apr_uid_current_2bb50 - [DIRECT]-> getgid_c74b0
+  getgid_c74b0 - [syscall]-> getgid
+
+Path to recvfrom:
+  Java_org_apache_tomcat_jni_Socket_recvfrom_17260 - [DIRECT]-> apr_socket_recvfrom_23520
+  apr_socket_recvfrom_23520 - [DIRECT]-> recvfrom_fa6e0
+  recvfrom_fa6e0 - [syscall]-> recvfrom
+
+Path to rename:
+  Java_org_apache_tomcat_jni_File_rename_131d0 - [DIRECT]-> apr_file_rename_1b860
+  apr_file_rename_1b860 - [DIRECT]-> rename_6d6d0
+  rename_6d6d0 - [syscall]-> rename
+
+Path to chmod:
+  Java_org_apache_tomcat_jni_File_permsSet_13580 - [DIRECT]-> apr_file_perms_set_1ac90
+  apr_file_perms_set_1ac90 - [DIRECT]-> chmod_e9fe0
+  chmod_e9fe0 - [syscall]-> chmod
+
+Path to lstat:
+  Java_org_apache_tomcat_jni_File_getStat_14a00 - [DIRECT]-> apr_stat_1acc0
+  apr_stat_1acc0 - [DIRECT]-> _lxstat_e9b30
+  _lxstat_e9b30 - [syscall]-> lstat
+
+Path to rmdir:
+  Java_org_apache_tomcat_jni_Directory_remove_125a0 - [DIRECT]-> apr_dir_remove_19c70
+  apr_dir_remove_19c70 - [DIRECT]-> rmdir_ec020
+  rmdir_ec020 - [syscall]-> rmdir
+
+Path to utimes:
+  Java_org_apache_tomcat_jni_File_mtimeSet_13680 - [DIRECT]-> apr_file_mtime_set_1ae50
+  apr_file_mtime_set_1ae50 - [DIRECT]-> utimes_f26f0
+  utimes_f26f0 - [syscall]-> utimes
+
+Path to wait4:
+  Java_org_apache_tomcat_jni_Proc_wait_18f80 - [DIRECT]-> apr_proc_wait_2a620
+  apr_proc_wait_2a620 - [DIRECT]-> waitpid_12080
+  waitpid_12080 - [syscall]-> wait4
+
+Path to dup2:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> dup2_eabf0
+  dup2_eabf0 - [syscall]-> dup2
+
+Path to geteuid:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> geteuid_c74a0
+  geteuid_c74a0 - [syscall]-> geteuid
+
+Path to exit_group:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit_group
+
+Path to exit:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit
+
+Path to execve:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> execve_c6a00
+  execve_c6a00 - [syscall]-> execve
+
+Path to setgid:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> setgid_c7590
+  setgid_c7590 - [syscall]-> setgid
+
+Path to setuid:
+  Java_org_apache_tomcat_jni_Proc_create_18c50 - [DIRECT]-> apr_proc_create_29fb0
+  apr_proc_create_29fb0 - [DIRECT]-> setuid_c7500
+  setuid_c7500 - [syscall]-> setuid
+
+Path to getsockopt:
+  Java_org_apache_tomcat_jni_Socket_connect_16280 - [DIRECT]-> apr_socket_connect_25590
+  apr_socket_connect_25590 - [DIRECT]-> getsockopt_fa5c0
+  getsockopt_fa5c0 - [syscall]-> getsockopt
+
+Path to sendfile:
+  Java_org_apache_tomcat_jni_Socket_sendfile_174e0 - [DIRECT]-> apr_socket_sendfile_23790
+  apr_socket_sendfile_23790 - [DIRECT]-> sendfile_eee40
+  sendfile_eee40 - [syscall]-> sendfile
+
+Path to getsockname:
+  Java_org_apache_tomcat_jni_Address_get_121c0 - [DIRECT]-> apr_socket_addr_get_23ec0
+  apr_socket_addr_get_23ec0 - [DIRECT]-> getsockname_fa590
+  getsockname_fa590 - [syscall]-> getsockname
+
+Path to getpeername:
+  Java_org_apache_tomcat_jni_Address_get_121c0 - [DIRECT]-> apr_socket_addr_get_23ec0
+  apr_socket_addr_get_23ec0 - [DIRECT]-> getpeername_fa560
+  getpeername_fa560 - [syscall]-> getpeername
+
+Path to mremap:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> _IO_file_underflow_mmap_7b8d0
+  _IO_file_underflow_mmap_7b8d0 - [DIRECT]-> mmap_remap_check_7a890
+  mmap_remap_check_7a890 - [DIRECT]-> mremap_fa010
+  mremap_fa010 - [syscall]-> mremap
+
+Path to brk:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __default_morecore_85e40
+  __default_morecore_85e40 - [DIRECT]-> sbrk_f0360
+  sbrk_f0360 - [DIRECT]-> brk_f0300
+  brk_f0300 - [syscall]-> brk
+
+Path to getcwd:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [syscall]-> getcwd
+
+Path to mprotect:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f4200
+  mprotect_f4200 - [syscall]-> mprotect
+
+Path to madvise:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> free_849a0
+  free_849a0 - [DIRECT]-> _int_free_810b0
+  _int_free_810b0 - [DIRECT]-> madvise_f42d0
+  madvise_f42d0 - [syscall]-> madvise
+
+Path to fcntl:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_fcntl_acquire_1e290
+  proc_mutex_fcntl_acquire_1e290 - [DIRECT]-> fcntl_compat_11400
+  fcntl_compat_11400 - [DIRECT]-> fcntl_ea900
+  fcntl_ea900 - [syscall]-> fcntl
+
+Path to link:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> proc_mutex_posix_create_1d620
+  proc_mutex_posix_create_1d620 - [DIRECT]-> sem_open_10120
+  sem_open_10120 - [DIRECT]-> link_ebea0
+  link_ebea0 - [syscall]-> link
+
+Path to pause:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef740
+  __pause_nocancel_ef740 - [syscall]-> pause
+
+Path to recvmsg:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> rfc3484_sort_e19f0
+  rfc3484_sort_e19f0 - [DIRECT]-> __check_native_1170c0
+  __check_native_1170c0 - [DIRECT]-> recvmsg_fa7a0
+  recvmsg_fa7a0 - [syscall]-> recvmsg
+
+Path to pipe:
+  Java_org_apache_tomcat_jni_File_pipeCreate_13f50 - [DIRECT]-> apr_file_pipe_create_1bff0
+  apr_file_pipe_create_1bff0 - [DIRECT]-> file_pipe_create_1bc30
+  file_pipe_create_1bc30 - [DIRECT]-> pipe_eac50
+  pipe_eac50 - [syscall]-> pipe
+
+Path to dup3:
+  Java_org_apache_tomcat_jni_Proc_detach_19090 - [DIRECT]-> apr_proc_detach_2a7c0
+  apr_proc_detach_2a7c0 - [DIRECT]-> freopen_779e0
+  freopen_779e0 - [DIRECT]-> dup3_eac20
+  dup3_eac20 - [syscall]-> dup3
+
+Path to clone:
+  Java_org_apache_tomcat_jni_Proc_detach_19090 - [DIRECT]-> apr_proc_detach_2a7c0
+  apr_proc_detach_2a7c0 - [DIRECT]-> fork_compat_113d0
+  fork_compat_113d0 - [DIRECT]-> fork_c6770
+  fork_c6770 - [syscall]-> clone
+
+Path to dup:
+  Java_org_apache_tomcat_jni_Proc_detach_19090 - [DIRECT]-> apr_proc_detach_2a7c0
+  apr_proc_detach_2a7c0 - [DIRECT]-> perror_6cc60
+  perror_6cc60 - [DIRECT]-> dup_eabc0
+  dup_eabc0 - [syscall]-> dup
+
+Path to uname:
+  Java_org_apache_tomcat_jni_Address_getnameinfo_12140 - [DIRECT]-> apr_getnameinfo_244a0
+  apr_getnameinfo_244a0 - [DIRECT]-> getnameinfo_1132f0
+  getnameinfo_1132f0 - [DIRECT]-> uname_c62f0
+  uname_c62f0 - [syscall]-> uname
+
+Path to getdents64:
+  Java_org_apache_tomcat_jni_Directory_read_14be0 - [DIRECT]-> apr_dir_read_198f0
+  apr_dir_read_198f0 - [DIRECT]-> readdir64_r_c1f10
+  readdir64_r_c1f10 - [DIRECT]-> __getdents_c1dd0
+  __getdents_c1dd0 - [syscall]-> getdents64
+
+Path to newfstatat:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> __fxstatat_e9e30
+  __fxstatat_e9e30 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  Java_org_apache_tomcat_jni_Pool_alloc_187c0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_12910
+  sigaction_12910 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to readv:
+  Java_org_apache_tomcat_jni_Address_getservbyname_12230 - [DIRECT]-> apr_getservbyname_24640
+  apr_getservbyname_24640 - [DIRECT]-> getservbyname_r@@GLIBC_2.2.5_10e280
+  getservbyname_r@@GLIBC_2.2.5_10e280 - [DIRECT]-> __nscd_getservbyname_r_12fc60
+  __nscd_getservbyname_r_12fc60 - [DIRECT]-> nscd_getserv_r_12f390
+  nscd_getserv_r_12f390 - [DIRECT]-> __readvall_1307b0
+  __readvall_1307b0 - [DIRECT]-> readv_f0450
+  readv_f0450 - [syscall]-> readv

@@ -14,18 +14,18 @@
 \midrule
 \multicolumn{11}{@{}l}{Native Method Resolution} \\ \midrule
 Native Methods & 1675 & 869 & 651 & 722 & 360 & 588 & 183 & 368 & 2802 & 498 \\
-SysJava Resolved & 1547 & 808 & 642 & 718 & 300 & 571 & 181 & 352 & 2698 & 481 \\
+SysJava Resolved & 1553 & 808 & 642 & 718 & 300 & 571 & 181 & 352 & 2711 & 481 \\
 \midrule
 \multicolumn{11}{@{}l}{Resolution Breakdown (SysJava)} \\ \midrule
-\quad JNI Static (Java\_*) & 786 & 220 & 175 & 132 & 174 & 381 & 93 & 232 & 1647 & 338 \\
+\quad JNI Static (Java\_*) & 792 & 220 & 175 & 132 & 174 & 381 & 93 & 232 & 1659 & 338 \\
 \quad Partial (\_1/\$/\_\_) & 31 & 9 & 0 & 4 & 15 & 24 & 0 & 14 & 64 & 4 \\
-\quad JNI Dynamic (RegisterNatives) & 649 & 503 & 50 & 521 & 53 & 122 & 48 & 60 & 918 & 56 \\
+\quad JNI Dynamic (RegisterNatives) & 649 & 503 & 50 & 521 & 53 & 122 & 48 & 60 & 919 & 56 \\
 \quad JVM & 41 & 43 & 42 & 44 & 49 & 44 & 40 & 41 & 48 & 50 \\
 \quad JFR/Netty & 26 & 17 & 0 & 17 & 0 & 0 & 0 & 0 & 21 & 0 \\
 \quad JNA (Static / Dynamic) & 13 / 0 & 9 / 0 & 0 / 0 & 0 / 0 & 9 / 0 & 0 / 0 & 0 / 0 & 5 / 0 & 0 / 0 & 0 / 0 \\
 \quad FFI/FFM (incl. JNR-FFI) & 1 & 7 & 375 & 0 & 0 & 0 & 0 & 0 & 0 & 33 \\
 \quad Platform / Intrinsic & 113 & 61 & 9 & 4 & 60 & 9 & 2 & 16 & 78 & 10 \\
-\quad Not Found & 15 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 26 & 7 \\
+\quad Not Found & 9 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 13 & 7 \\
 \midrule
 \multicolumn{11}{@{}l}{Syscall Allowlist (SysJava only)} \\ \midrule
 Java Lib Syscalls & 133 & 134 & 116 & 138 & 120 & 107 & 121 & 112 & 141 & 107 \\

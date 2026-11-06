@@ -2748,3 +2748,204 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-05 23:22:12] groovy_5.0.6 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json
+
+===== [2026-11-06 19:15:54] groovy_5.0.6 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt.so	functions=55667	fuzzy=0	syscalls=103
+libawt_xawt.so	functions=62211	fuzzy=978	syscalls=117
+libjava.so	functions=54828	fuzzy=0	syscalls=108
+libjlinenative_jline-native-3.30.9.so	functions=3812	fuzzy=0	syscalls=38
+libjlinenative.so	functions=3812	fuzzy=0	syscalls=38
+libjnidispatch.so	functions=3910	fuzzy=3	syscalls=37
+libjvm.so	functions=54508	fuzzy=0	syscalls=103
+libnet.so	functions=54920	fuzzy=0	syscalls=103
+libzip.so	functions=55033	fuzzy=0	syscalls=103
+basename	functions=3802	fuzzy=0	syscalls=40
+bash	functions=6384	fuzzy=0	syscalls=92
+cut	functions=3812	fuzzy=0	syscalls=41
+dash	functions=3975	fuzzy=0	syscalls=74
+dirname	functions=3801	fuzzy=0	syscalls=40
+env	functions=3815	fuzzy=0	syscalls=42
+expr	functions=4836	fuzzy=95	syscalls=38
+infocmp	functions=4125	fuzzy=0	syscalls=48
+java	functions=3939	fuzzy=0	syscalls=67
+jspawnhelper	functions=3808	fuzzy=0	syscalls=43
+ls	functions=4564	fuzzy=0	syscalls=58
+mawk	functions=4834	fuzzy=0	syscalls=62
+runc	functions=17837	fuzzy=0	syscalls=38
+sed	functions=4560	fuzzy=0	syscalls=75
+test	functions=3814	fuzzy=0	syscalls=46
+uname	functions=3803	fuzzy=0	syscalls=41
+
+===== [2026-11-06 19:15:54] groovy_5.0.6 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: groovy_5.0.6
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_BIN_groovy_5.0.6
+Found 15 subdirectories
+
+  ✓ basename: 40 syscalls
+  ✓ bash: 92 syscalls
+  ✓ cut: 41 syscalls
+  ✓ dash: 74 syscalls
+  ✓ dirname: 40 syscalls
+  ✓ env: 42 syscalls
+  ✓ expr: 38 syscalls
+  ✓ infocmp: 48 syscalls
+  ✓ java: 67 syscalls
+  ✓ jspawnhelper: 43 syscalls
+  ✓ ls: 58 syscalls
+  ✓ mawk: 62 syscalls
+  ✓ sed: 75 syscalls
+  ✓ test: 46 syscalls
+  ✓ uname: 41 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_BIN_groovy_5.0.6/binary_syscalls.txt (121 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6
+Found 9 subdirectories
+
+  ✓ libawt.so: 103 syscalls
+  ✓ libawt_xawt.so: 117 syscalls
+  ✓ libjava.so: 108 syscalls
+  ✓ libjlinenative.so: 38 syscalls
+  ✓ libjlinenative_jline-native-3.30.9.so: 38 syscalls
+  ✓ libjnidispatch.so: 37 syscalls
+  ✓ libjvm.so: 103 syscalls
+  ✓ libnet.so: 103 syscalls
+  ✓ libzip.so: 103 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/library_syscalls.txt (120 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6
+Found 12 syscalls.txt files
+  jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so: 38 syscalls
+  libacl.so.1: 58 syscalls
+  libgmp.so.10: 37 syscalls
+  libjimage.so: 103 syscalls
+  libjli.so: 67 syscalls
+  libjsvml.so: syscalls.txt EMPTY (0 syscalls)
+  libnio.so: 139 syscalls
+  libpcre2-8.so.0: 39 syscalls
+  libselinux.so.1: 83 syscalls
+  libtic.so.6: 51 syscalls
+  libtinfo.so.6: 49 syscalls
+  libverify.so: 103 syscalls
+
+⚠ Warning: 1 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/unanalysed_syscalls.txt (150 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 37 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/runc.txt
+  ✓ Loaded 118 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      121
+Library syscalls:     120
+Unanalysed libraries: 150
+JNA/FFI syscalls:     37
+Runc whitelist:       118
+Combined (unique):    193
+  → unanalysed libraries added 24 additional syscalls
+  → runc.txt added 25 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/groovy_5.0.6.txt (193 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/groovy_5.0.6.json (193 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 193
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  16
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  121 unique
+
+Libraries:
+  - Analyzed:  9
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  120 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/runc.txt
+  - Syscalls:    118 unique
+  - Added:       49 additional syscalls
+
+Combined:
+  - Total unique syscalls: 193
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_BIN_groovy_5.0.6/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/groovy_5.0.6.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_output_groovy_5.0.6/groovy_5.0.6.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  groovy_5.0.6
+      JARFILES_groovy_5.0.6  (29M) -> Dataset/
+      LIBS_groovy_5.0.6  (67M) -> Dataset/
+      BINARIES_groovy_5.0.6  (14M) -> Dataset/
+      RUNTIME_groovy_5.0.6  (60M) -> Dataset/
+      outputs_groovy_5.0.6  (380K) -> Bytecode_Analysis/
+      sysdig_outputs_groovy_5.0.6  (68K) -> Dynamic_Analysis/
+      syscalls_output_groovy_5.0.6  (318M) -> Binary_Analysis/
+      syscalls_BIN_groovy_5.0.6  (20M) -> Binary_Analysis/
+      syscalls_unanalysed_groovy_5.0.6  (159M) -> Binary_Analysis/
+      startfuncs_unanalysed_groovy_5.0.6  (76K) -> Binary_Analysis/
+      jna_ffi_analysis  (708K) -> Binary_Analysis/
+    (11 moved)
+
+Done. Moved 11 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/Final_results/
+Containers organized: 1
+
+===== [2026-11-06 19:15:55] groovy_5.0.6 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-06 19:18:37] groovy_5.0.6 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Binary_Analysis/syscalls_output_groovy_5.0.6/groovy_5.0.6.json

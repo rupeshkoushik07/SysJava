@@ -1,0 +1,11 @@
+=== Combined Skipped Methods ===
+Format: detector | payload
+
+dyn | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+dyn | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+iface | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+iface | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+directmap | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+jnr-ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>

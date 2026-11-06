@@ -1,0 +1,65 @@
+path	gnu_build_id	status	detail	source_override
+BINARIES_jetty_9.4.51-jdk8-buster/java		HAS_SYMTAB		
+BINARIES_jetty_9.4.51-jdk8-buster/runc	ef13e663636f0413387ba0e1652c80171f931505	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/ef13e663636f0413387ba0e1652c80171f931505.debug	
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/jli/libjli.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libattach.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libawt.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libawt_headless.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libdt_socket.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libfreetype.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libhprof.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libinstrument.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libj2gss.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libj2pcsc.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libj2pkcs11.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjaas_unix.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjava.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjava_crw_demo.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjawt.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjdwp.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjsdt.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjsig.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjsound.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjsoundalsa.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/liblcms.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libmlib_image.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libnet.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libnio.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libnpt.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libsaproc.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libsctp.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libsplashscreen.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libsunec.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libunpack.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libverify.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libzip.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libc-2.28.so	c7aa9a1e121fe2395f3840f3f0213146046d9fe3	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/c7aa9a1e121fe2395f3840f3f0213146046d9fe3.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libdl-2.28.so	e0a26233adbeaa08de07d76dbaacd9c3ff5b18f9	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/e0a26233adbeaa08de07d76dbaacd9c3ff5b18f9.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libjava.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libjli.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libjvm.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libm-2.28.so	1ca5f623620c7885aa34446bf372be6c01f27042	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/1ca5f623620c7885aa34446bf372be6c01f27042.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libmanagement.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libnet.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libnio.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libnss_compat-2.28.so	8621c3ee48e85637e77caa4034be374658bb32e5	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/8621c3ee48e85637e77caa4034be374658bb32e5.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libnss_dns-2.28.so	4c6d2cb1c7ec162a0b8cfef0ff4572e95fcdaed1	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/4c6d2cb1c7ec162a0b8cfef0ff4572e95fcdaed1.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libnss_files-2.28.so	d7cfd27ca5fda4bde8f71998d7384810ae8406af	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/d7cfd27ca5fda4bde8f71998d7384810ae8406af.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libnss_hesiod-2.28.so	cfed0e6a4fedc1b3f0357d0e76c7ba90b9cd7764	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/cfed0e6a4fedc1b3f0357d0e76c7ba90b9cd7764.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libnss_nis-2.28.so	b03503a8ff53fdd1d1b4ea686391e83c81cf1344	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/b03503a8ff53fdd1d1b4ea686391e83c81cf1344.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libnss_nisplus-2.28.so	7ba318320adf39152c9cf4b9f91ec9b1940bdd43	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/7ba318320adf39152c9cf4b9f91ec9b1940bdd43.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libpthread-2.28.so	48041452aef93ddb2366ca0fa49da8f32684a9c8	HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libresolv-2.28.so	efdfdde38a9405d345c7efc973f398e69cc1dd4e	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/efdfdde38a9405d345c7efc973f398e69cc1dd4e.debug	
+LIBS_jetty_9.4.51-jdk8-buster/librt-2.28.so	c8899aec85ac923281dfa7ad96e261b772c0be85	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/c8899aec85ac923281dfa7ad96e261b772c0be85.debug	
+LIBS_jetty_9.4.51-jdk8-buster/libverify.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/libzip.so		HAS_SYMTAB		
+LIBS_jetty_9.4.51-jdk8-buster/_container_deps/libnsl.so.1	78b4ce5836cb77383b60f874b58b18673951f6ce	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/78b4ce5836cb77383b60f874b58b18673951f6ce.debug	et_jetty_9.4.51-jdk8-buster (missing DT_NEEDED)
+LIBS_jetty_9.4.51-jdk8-buster/_container_deps/ld-linux-x86-64.so.2	83743ddd4258a7d138a28c4f2032d17ad92a15b5	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/83743ddd4258a7d138a28c4f2032d17ad92a15b5.debug	et_jetty_9.4.51-jdk8-buster (missing DT_NEEDED)
+LIBS_jetty_9.4.51-jdk8-buster/_container_deps/libgcc_s.so.1	de6b14e57aea9bbeaf1e81eb6772e2222101aa6e	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/de6b14e57aea9bbeaf1e81eb6772e2222101aa6e.debug	et_jetty_9.4.51-jdk8-buster (missing DT_NEEDED)
+LIBS_jetty_9.4.51-jdk8-buster/_container_deps/libthread_db.so.1	872a048716e44080397b63a41e74edf44123d7dc	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/872a048716e44080397b63a41e74edf44123d7dc.debug	et_jetty_9.4.51-jdk8-buster (missing DT_NEEDED)
+LIBS_jetty_9.4.51-jdk8-buster/_container_deps/libseccomp.so.2	c412e78a399e3646b96483272f62cb560894e459	SYMBOLIZED	/home/user/Tutorial/EchoTrace/artifacts/all-running-containers/debug-symbols/build-id/c412e78a399e3646b96483272f62cb560894e459.debug	et_jetty_9.4.51-jdk8-buster (missing DT_NEEDED)

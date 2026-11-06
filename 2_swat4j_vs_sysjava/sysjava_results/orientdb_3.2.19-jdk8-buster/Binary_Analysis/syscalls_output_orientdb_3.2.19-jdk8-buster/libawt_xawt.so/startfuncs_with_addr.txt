@@ -1,0 +1,2 @@
+Java_java_awt_Component_initIDs_29670
+Java_java_awt_Font_initIDs_2f130

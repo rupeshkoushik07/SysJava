@@ -1,0 +1,19 @@
+=== JNADetector Analyzed Archives ===
+targetDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster
+runtimeDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster
+targetArchives=5
+runtimeArchives=5
+
+[target]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster/US_export_policy.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster/jfr.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster/jruby.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster/local_policy.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/JARFILES_jruby_9.4.2.0-jdk8-buster/wait.jar
+
+[runtime]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster/charsets.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster/jce.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster/jsse.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster/resources.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/RUNTIME_jruby_9.4.2.0-jdk8-buster/rt.jar

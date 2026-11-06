@@ -1,0 +1,2 @@
+image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
+jetty_9.4.51-jdk8-buster	14	8	8	6	8	3	0

@@ -1,3 +1,4 @@
+getpid
 gettid
 newfstatat
 ioprio_set
@@ -38,15 +39,15 @@ setsockopt
 brk
 rt_sigaction
 exit_group
-getcpu
 lseek
 prlimit64
+getcpu
 clone3
 ioctl
-connect
 getsockname
 sysinfo
 openat
+connect
 sched_get_priority_max
 prctl
 write
@@ -58,4 +59,3 @@ munmap
 sched_get_priority_min
 getdents64
 futex
-getpid

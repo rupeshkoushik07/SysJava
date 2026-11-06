@@ -1,0 +1,10 @@
+__libdl_freeres_1eb0
+dladdr_1b20
+dladdr1_1b50
+dlclose_1340
+dlerror_1680
+dlinfo_1c80
+dlmopen_1e10
+dlopen@@GLIBC_2.2.5_12a0
+dlsym_13b0
+dlvsym_1490

@@ -1,0 +1,51 @@
+container=elasticsearch_7.5.2-jdk8-buster
+image=elasticsearch:7.5.2-jdk8-buster
+profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Binary_Analysis/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json
+profile_syscalls=183 SCMP_ACT_ERRNO
+workload=docker run -e ES_JAVA_OPTS=-Xms1g -Xmx1g elasticsearch:7.5.2-jdk8-buster 
+started_at=2026-11-06T19:40:34+01:00
+
+---- baseline (no profile) ----
+docker_run_output=b14787a63142dfe0ced8cee15777fdc7a6996da6b2aa322895b03785a6664be9
+baseline_ready_after=15s
+baseline_state=running exit=0
+baseline_probe=ok http_200 /
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-elasticsearch-7-5-2-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Binary_Analysis/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json -e ES_JAVA_OPTS=-Xms1g -Xmx1g elasticsearch:7.5.2-jdk8-buster 
+docker_run_output=c8b2f1e54298dbe7d93a14929f7f752c7ca82c2c3eeac40fa2a84eed76ec29b2
+ready_after=10s
+state_after_60s=running exit=0
+probe=ok http_200 /
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-06T19:43:00+01:00
+
+---- docker logs tail (with profile) ----
+[2026-11-06T18:41:57,374][INFO ][o.e.d.DiscoveryModule    ] [es01] using discovery type [single-node] and seed hosts providers [settings]
+[2026-11-06T18:41:58,089][INFO ][o.e.n.Node               ] [es01] initialized
+[2026-11-06T18:41:58,089][INFO ][o.e.n.Node               ] [es01] starting ...
+[2026-11-06T18:41:58,231][INFO ][o.e.t.TransportService   ] [es01] publish_address {172.17.0.15:9300}, bound_addresses {[::]:9300}
+[2026-11-06T18:41:58,334][WARN ][o.e.b.BootstrapChecks    ] [es01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2026-11-06T18:41:58,341][INFO ][o.e.c.c.Coordinator      ] [es01] setting initial configuration to VotingConfiguration{tvlASCMWRjCK9KiLhOjj2w}
+[2026-11-06T18:41:58,491][INFO ][o.e.c.s.MasterService    ] [es01] elected-as-master ([1] nodes joined)[{es01}{tvlASCMWRjCK9KiLhOjj2w}{K5tylqJOSGygtWrBgIWOBA}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{es01}{tvlASCMWRjCK9KiLhOjj2w}{K5tylqJOSGygtWrBgIWOBA}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}
+[2026-11-06T18:41:58,529][INFO ][o.e.c.c.CoordinationState] [es01] cluster UUID set to [BmxepfpASKCjjov3IfHWXg]
+[2026-11-06T18:41:58,543][INFO ][o.e.c.s.ClusterApplierService] [es01] master node changed {previous [], current [{es01}{tvlASCMWRjCK9KiLhOjj2w}{K5tylqJOSGygtWrBgIWOBA}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2026-11-06T18:41:58,579][INFO ][o.e.h.AbstractHttpServerTransport] [es01] publish_address {172.17.0.15:9200}, bound_addresses {[::]:9200}
+[2026-11-06T18:41:58,579][INFO ][o.e.n.Node               ] [es01] started
+[2026-11-06T18:41:58,649][INFO ][o.e.g.GatewayService     ] [es01] recovered [0] indices into cluster_state
+[2026-11-06T18:41:58,777][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.watch-history-10] for index patterns [.watcher-history-10*]
+[2026-11-06T18:41:58,806][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.watches] for index patterns [.watches*]
+[2026-11-06T18:41:58,829][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2026-11-06T18:41:58,850][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.slm-history] for index patterns [.slm-history-1*]
+[2026-11-06T18:41:58,876][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2026-11-06T18:41:58,907][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2026-11-06T18:41:58,933][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2026-11-06T18:41:58,956][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2026-11-06T18:41:58,979][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2026-11-06T18:41:58,998][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [es01] adding index lifecycle policy [watch-history-ilm-policy]
+[2026-11-06T18:41:59,021][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [es01] adding index lifecycle policy [slm-history-ilm-policy]
+[2026-11-06T18:41:59,150][INFO ][o.e.l.LicenseService     ] [es01] license [91786b2a-51db-4e9c-8e71-ea7bdddb94d6] mode [basic] - valid
+[2026-11-06T18:41:59,150][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [es01] Active license is now [BASIC]; Security is disabled

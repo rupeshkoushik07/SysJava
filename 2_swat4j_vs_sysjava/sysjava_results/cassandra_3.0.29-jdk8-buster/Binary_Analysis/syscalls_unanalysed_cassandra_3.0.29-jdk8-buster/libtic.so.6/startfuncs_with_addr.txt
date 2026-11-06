@@ -1,0 +1,12 @@
+_nc_capcmp_93d0
+_nc_entry_match_71b0
+_nc_infotocap_4b40
+_nc_read_entry_source_71c0
+_nc_reset_input_8000
+_nc_resolve_uses2_7380
+_nc_set_writedir_b630
+_nc_tic_expand_5a90
+_nc_tic_written_c650
+_nc_trans_string_8060
+_nc_write_entry_c0c0
+_nc_write_object_b750

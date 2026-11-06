@@ -20,11 +20,3 @@ binary (Build ID 3d35b26e...) that dispatches on argv[0] through a function tabl
 Analysed from `_start` alone, every tool got the same 43 startup syscalls (stage 11 then failed: chown -R
 needs fchownat). Each tool was rerun with starts `_start` + its own `uu_<tool>::uumain` (same SysPart build,
 same wrapper); the `_start`-only results are kept in Binary_Analysis_before_uumain/.
-
-# Executables: _start + main start functions (2026-11-05 22:57)
-
-storm_2.8.8: python3.14 were rerun with starts `_start` + `main` (plus `uu_<tool>::uumain` for uutils
-multi-call binaries), the rule automate_syscall_analysis.sh now applies to every dynamically linked
-executable. In non-PIE binaries _start hands main to __libc_start_main as an absolute immediate that
-SysPart does not follow, so analysed from `_start` alone they only got libc's startup syscalls.
-Previous results are kept in Binary_Analysis_before_main/.

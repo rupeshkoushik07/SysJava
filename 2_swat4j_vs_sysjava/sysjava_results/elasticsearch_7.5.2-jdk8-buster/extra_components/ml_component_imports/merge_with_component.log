@@ -1,0 +1,162 @@
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: elasticsearch_7.5.2-jdk8-buster
+Working directory: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster
+Found 9 subdirectories
+
+  ✓ basename: 36 syscalls
+  ✓ bash: 81 syscalls
+  ✗ controller: unanalysable (SysPart crash), no syscalls.txt
+  ✓ dirname: 36 syscalls
+  ✓ env: 38 syscalls
+  ✓ grep: 47 syscalls
+  ✓ java: 63 syscalls
+  ✓ ldconfig: 61 syscalls
+  ✓ runc: 36 syscalls
+
+  ✓ Written: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster/binary_syscalls.txt (102 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster
+Found 11 subdirectories
+
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libjava.so: 84 syscalls
+  ✓ libjnidispatch.so: 35 syscalls
+  ✓ libjvm.so: 76 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 76 syscalls
+  ✓ libnio.so: 77 syscalls
+  ✓ libsunec.so: 35 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/library_syscalls.txt (101 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster
+Found 16 syscalls.txt files
+  libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0: 58 syscalls
+  libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0: 70 syscalls
+  libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0: 58 syscalls
+  libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_regex-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_thread-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libjli.so: 62 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libpcre.so.3: 41 syscalls
+  librt-2.28.so: 74 syscalls
+  libstdc++.so.6: 38 syscalls
+  libtinfo.so.6: 44 syscalls
+  libxml2.so.2: 54 syscalls
+  libz.so.1: 35 syscalls
+  ✓ Written: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/unanalysed_syscalls.txt (102 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 38 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ ML component (controller/libMlCore/Boost), via imports: 89 syscalls (/tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/extra_components/ml_component_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/runc.txt
+  ✓ Loaded 122 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      102
+Library syscalls:     101
+Unanalysed libraries: 102
+JNA/FFI syscalls:     38
+Extra component:      89  (ML component (controller/libMlCore/Boost), via imports)
+Runc whitelist:       122
+Combined (unique):    181
+Only from extra components: 3 ['mknod', 'sched_setparam', 'setsid']
+  → unanalysed libraries added 20 additional syscalls
+  → JNA/FFI analysis added 2 additional syscalls
+  → runc.txt added 35 additional syscalls
+
+  ✓ Written: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.txt (181 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json (181 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 181
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  9
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  102 unique
+
+Libraries:
+  - Analyzed:  11
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  101 unique
+
+Unanalysable (SysPart crash): 1
+    - Binaries: controller
+
+Runc Whitelist:
+  - Loaded from: /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/runc.txt
+  - Syscalls:    122 unique
+  - Added:       57 additional syscalls
+
+Combined:
+  - Total unique syscalls: 181
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster/binary_syscalls.txt (text)
+  - /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/library_syscalls.txt (text)
+  - /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.txt (text)
+  - /tmp/claude-2232/-home-user-user-Tutorial/7dbe801e-3ce0-4133-b252-645bf4baa1d1/scratchpad/es_merge/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully

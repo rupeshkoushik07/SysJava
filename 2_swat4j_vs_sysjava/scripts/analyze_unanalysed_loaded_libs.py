@@ -23,6 +23,7 @@ Usage:
   IMG_NAME=tomcat_9.0.120 ./scripts/analyze_unanalysed_loaded_libs.py --run-syspart
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 import os
 import re
@@ -270,6 +271,19 @@ def main():
     _, by_name = build_lib_index(libs_dir)
     user_library_path = build_user_library_path(libs_dir)
 
+    # unanalysed_skip.txt (workspace root): "<loaded name><TAB><reason>" per line. Those
+    # libraries are not analysed; each gets syspart_failed.txt with the reason, which
+    # merge_all_syscalls.py treats as unanalysable (e.g. libraries whose every start
+    # crashes SysPart, where testing each start alone takes hours).
+    skip = {}
+    skip_path = root / "unanalysed_skip.txt"
+    if skip_path.is_file():
+        for line in skip_path.read_text().splitlines():
+            if line.strip() and not line.startswith("#"):
+                name, _, reason = line.partition("\t")
+                skip[name.strip()] = reason.strip() or "listed in unanalysed_skip.txt"
+    jobs = []   # SysPart runs, done in parallel below (UNANALYSED_JOBS, default 8)
+
     prepared_rows = []
     total = len(leftovers)
     for index, loaded_name in enumerate(sorted(leftovers), start=1):
@@ -294,26 +308,41 @@ def main():
 
         if args.run_syspart and funcs:
             output_dir = output_root / rel
-            if not args.force and syspart_output_complete(output_dir, startfunc_file):
-                run_status, exit_code = "skipped_complete", 0
+            if loaded_name in skip:
+                output_dir.mkdir(parents=True, exist_ok=True)
+                (output_dir / "syspart_failed.txt").write_text("skipped: %s\n" % skip[loaded_name])
+                progress("SKIP %s listed_in_unanalysed_skip (%s)" % (prefix, skip[loaded_name]))
+                with run_path.open("a") as fh:
+                    fh.write("\t".join([img, loaded_name, str(rel), str(output_dir),
+                                        "skipped_listed", "0"]) + "\n")
+            elif not args.force and syspart_output_complete(output_dir, startfunc_file):
                 progress("SKIP %s already_complete" % prefix)
+                with run_path.open("a") as fh:
+                    fh.write("\t".join([img, loaded_name, str(rel), str(output_dir),
+                                        "skipped_complete", "0"]) + "\n")
             else:
-                progress("START %s functions=%d log=%s"
-                         % (prefix, len(funcs), output_dir / "logfile.txt"))
-                exit_code = run_syspart(syspart_dir, resolved, output_dir,
-                                        startfunc_file, user_library_path)
-                run_status = "completed" if exit_code == 0 else "failed"
-                syscalls_file = output_dir / "syscalls.txt"
-                count = len(syscalls_file.read_text(errors="replace").splitlines()) \
-                    if syscalls_file.is_file() else 0
-                progress("DONE %s status=%s exit=%d syscalls=%d"
-                         % (prefix, run_status, exit_code, count))
-
-            with run_path.open("a") as fh:
-                fh.write("\t".join([img, loaded_name, str(rel), str(output_dir),
-                                    run_status, str(exit_code)]) + "\n")
+                jobs.append((prefix, loaded_name, rel, resolved, output_dir, startfunc_file, len(funcs)))
         elif args.run_syspart:
             progress("SKIP %s no_exported_functions" % prefix)
+
+    def run_one(job):
+        prefix, loaded_name, rel, resolved, output_dir, startfunc_file, nfuncs = job
+        progress("START %s functions=%d log=%s" % (prefix, nfuncs, output_dir / "logfile.txt"))
+        exit_code = run_syspart(syspart_dir, resolved, output_dir, startfunc_file, user_library_path)
+        run_status = "completed" if exit_code == 0 else "failed"
+        syscalls_file = output_dir / "syscalls.txt"
+        count = len(syscalls_file.read_text(errors="replace").splitlines()) \
+            if syscalls_file.is_file() else 0
+        progress("DONE %s status=%s exit=%d syscalls=%d" % (prefix, run_status, exit_code, count))
+        with run_path.open("a") as fh:
+            fh.write("\t".join([img, loaded_name, str(rel), str(output_dir),
+                                run_status, str(exit_code)]) + "\n")
+
+    if jobs:
+        workers = max(1, int(os.environ.get("UNANALYSED_JOBS", "8")))
+        progress("PARALLEL libraries=%d jobs=%d" % (len(jobs), workers))
+        with ThreadPoolExecutor(workers) as pool:
+            list(pool.map(run_one, jobs))
 
     with prepared_path.open("w") as fh:
         fh.write("image\tloaded_name\tresolved_relpath\tstartfunc_file\t"

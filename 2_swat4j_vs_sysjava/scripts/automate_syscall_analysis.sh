@@ -692,7 +692,7 @@ main() {
         local binary_files=()
         while IFS= read -r -d '' binary_file; do
             binary_files+=("$binary_file")
-        done < <(find "$BINARIES_DIR" -maxdepth 1 -type f -executable -print0)
+        done < <(find "$BINARIES_DIR" -maxdepth 1 -type f -executable ! -name runc -print0)  # runc: covered by runc.txt
 
         if [ ${#binary_files[@]} -eq 0 ]; then
             log_message "WARNING" "No executable binaries found in: $BINARIES_DIR"

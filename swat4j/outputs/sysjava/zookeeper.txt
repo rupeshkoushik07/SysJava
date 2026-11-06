@@ -122,6 +122,7 @@ recvfrom
 recvmsg
 removexattr
 rename
+rmdir
 rseq
 rt_sigaction
 rt_sigpending
@@ -139,6 +140,7 @@ sched_setscheduler
 sched_yield
 seccomp
 select
+sendfile
 sendmmsg
 sendmsg
 sendto

@@ -1,0 +1,2 @@
+log
+logf@@GLIBC_2.27

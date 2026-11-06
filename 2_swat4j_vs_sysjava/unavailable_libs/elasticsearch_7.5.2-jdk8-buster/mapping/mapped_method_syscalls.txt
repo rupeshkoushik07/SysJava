@@ -1,0 +1,40 @@
+java.lang.invoke.MethodHandle.invokeExact: NOT_FOUND_IN_LIBS
+java.lang.invoke.MethodHandleNatives.registerNatives: NOT_FOUND_IN_LIBS
+jdk.jfr.internal.JVM.getClassId: NOT_FOUND_IN_LIBS
+jdk.jfr.internal.JVM.registerNatives: NOT_FOUND_IN_LIBS
+jdk.jfr.internal.JVM.setCompressedIntegers: NOT_FOUND_IN_LIBS
+libNativePosixUtil.so:org.apache.lucene.store.NativePosixUtil.madvise -> Java_org_apache_lucene_store_NativePosixUtil_madvise [JNI]
+libNativePosixUtil.so:org.apache.lucene.store.NativePosixUtil.open_direct -> Java_org_apache_lucene_store_NativePosixUtil_open_1direct [JNI]
+libNativePosixUtil.so:org.apache.lucene.store.NativePosixUtil.posix_fadvise -> Java_org_apache_lucene_store_NativePosixUtil_posix_1fadvise [JNI]
+libNativePosixUtil.so:org.apache.lucene.store.NativePosixUtil.posix_madvise -> Java_org_apache_lucene_store_NativePosixUtil_posix_1madvise [JNI]
+libNativePosixUtil.so:org.apache.lucene.store.NativePosixUtil.pread -> Java_org_apache_lucene_store_NativePosixUtil_pread [JNI]
+org.elasticsearch.bootstrap.JNACLibrary.geteuid: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNACLibrary.getrlimit: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNACLibrary.mlockall: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNACLibrary.setrlimit: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNACLibrary.strerror: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.AssignProcessToJobObject: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.CloseHandle: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.CreateJobObjectW: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.GetCurrentProcess: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.GetShortPathNameW: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.QueryInformationJobObject: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.SetConsoleCtrlHandler: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.SetInformationJobObject: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.SetProcessWorkingSetSize: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.VirtualLock: NOT_FOUND_IN_LIBS
+org.elasticsearch.bootstrap.JNAKernel32Library.VirtualQueryEx: NOT_FOUND_IN_LIBS
+sun.misc.Perf.createLong: NOT_FOUND_IN_LIBS
+sun.misc.Unsafe.registerNatives: NOT_FOUND_IN_LIBS
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:jdk.jfr.internal.JVM.getClassId -> jfr_class_id [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:jdk.jfr.internal.JVM.registerNatives -> jfr_register_natives [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libc.so.6:org.elasticsearch.bootstrap.JNACLibrary.geteuid -> geteuid [JNI]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libc.so.6:org.elasticsearch.bootstrap.JNACLibrary.getrlimit -> getrlimit [JNI]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libc.so.6:org.elasticsearch.bootstrap.JNACLibrary.mlockall -> mlockall [JNI]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libc.so.6:org.elasticsearch.bootstrap.JNACLibrary.setrlimit -> setrlimit [JNI]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libc.so.6:org.elasticsearch.bootstrap.JNACLibrary.strerror -> strerror [JNI]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:sun.misc.Perf.createLong -> Perf_CreateLong [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:sun.misc.Unsafe.registerNatives -> JVM_RegisterUnsafeMethods [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:sun.misc.Perf.registerNatives -> JVM_RegisterPerfMethods [JVM]
+/home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster/libjvm.so:java.lang.Class.getSuperclass -> jni_GetSuperclass [JVM]

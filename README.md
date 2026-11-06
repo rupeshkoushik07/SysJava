@@ -6,8 +6,8 @@ finds every Java-to-native binding (JNI, `RegisterNatives`, JNA, JNR-FFI, FFM),
 and a call-graph analysis (SysPart) of the native code those bindings reach.
 The tool is called EchoTrace in the code.
 
-> **Status:** `1_latest_containers/` has its results. The result folders of
-> `2_swat4j_vs_sysjava/` are placeholders until those runs finish.
+> **Status:** `1_latest_containers/` and `2_swat4j_vs_sysjava/` have their final
+> results; all twenty images pass under their generated profiles.
 
 ## Layout
 
@@ -20,10 +20,11 @@ The tool is called EchoTrace in the code.
 | [`docker_images/`](docker_images/README.md) | every image used, pinned by digest; Dockerfiles of the rebuilt JDK 8 images | |
 | `echotrace/` | tool source (bytecode analysis), commit `52628c4` | |
 | `echotrace_516fb46/` | the same tool one commit earlier; five latest-version results were made with it | |
+| `echotrace_89bf135/` | the tool with RTA call dispatch; the JDK 8 results were made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); `code_facts.md`: how binding recovery works, with pointers to the code | |
-| `tools/` | call-graph parser (used by `generate_syscalls.py`) and the Table III generator | |
+| `tools/` | call-graph parser (used by `generate_syscalls.py`) and the generators of Table III and tab:results | |
 | `generate_syscalls.py` | generates an image's syscalls and profile without SysPart (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |
 
@@ -78,7 +79,8 @@ For the image it:
    start functions to the reachable syscalls;
 5. builds the syscall sets (Java libraries, executables, runtime set, fallback
    libraries) and merges them into the seccomp profile;
-6. prints the results as the image's column of Table III: native methods by
+6. prints the results as the image's column of its table (Table III, or tab:results
+   for a JDK 8 image): native methods by
    mapping kind (JNI static, partial, JNI dynamic, JVM, JFR/Netty, JNA, FFI/FFM,
    platform/intrinsic, not found) and the syscall rows (Java libraries, container
    executables, unanalysed libraries, runtime whitelist, total).

@@ -1,0 +1,11 @@
+basename
+bash
+/bin/bash
+dirname
+grep
+/opt/elasticsearch/modules/x-pack-ml/platform/linux-x86_64/bin/controller
+/opt/java/bin/java
+/opt/java/jre/bin/java
+runc
+/sbin/ldconfig
+/usr/bin/env

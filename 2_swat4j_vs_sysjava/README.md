@@ -23,13 +23,22 @@ build script and image IDs: [`../docker_images/`](../docker_images/README.md).
 * `../swat4j/outputs/`: SWAT4J's static and dynamic allowlists and SysJava's
   allowlists for the ten images; `python3 ../swat4j/show_results.py ../swat4j/outputs`
   prints the table.
-* `sysjava_results/<image>/`: full SysJava results (placeholders until the runs finish).
+* `tables/tab_results.{tex,pdf,md}`: the table; `tables/mapping_audit_per_app.csv`:
+  the native-method mapping counts it reads (SysJava and SWAT4J);
+  `tables/storm_no_false_ffm/`: Storm under its profile without `sync` (172 syscalls,
+  PASS), the only syscall of false FFM hits.
+* `sysjava_results/<image>/`: full SysJava results. All ten pass under their profiles.
+  Stage 4 used the detector in `../echotrace_89bf135/`, which follows virtual and
+  interface calls to the overrides of every class instantiated in reachable code (RTA).
+* `unavailable_libs/`: natives whose library the image does not ship, mapped to the
+  released library (`PROVENANCE.tsv`, `<image>/mapping/`), and the rules for the rest
+  (`jdk8_notfound_search/classify_jdk8.py`).
 * `scripts/`: the pipeline scripts; `runc.txt` + `runc_host_1.3.4_additions.txt`: the runtime syscall set.
 
 ## Reproduce
 
 ```bash
-TABLE_ONLY=1 ./reproduce.sh                # the table from the shipped outputs
+TABLE_ONLY=1 ./reproduce.sh                # the tables from the shipped outputs
 ./reproduce.sh                             # SysJava + SWAT4J on all 10 (needs ../setup.sh)
 ./reproduce.sh jetty_9.4.51-jdk8-buster    # one image
 SKIP_SYSJAVA=1 ./reproduce.sh              # SWAT4J only

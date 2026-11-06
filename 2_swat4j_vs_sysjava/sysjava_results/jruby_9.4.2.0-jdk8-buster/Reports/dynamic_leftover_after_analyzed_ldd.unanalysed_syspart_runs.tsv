@@ -1,0 +1,6 @@
+image	loaded_name	resolved_relpath	output_dir	status	exit_code
+jruby_9.4.2.0-jdk8-buster	libcrypt.so.1	libcrypt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/libcrypt-2.28.so	completed	0
+jruby_9.4.2.0-jdk8-buster	libnss_files.so.2	libnss_files-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/libnss_files-2.28.so	completed	0
+jruby_9.4.2.0-jdk8-buster	librt.so.1	librt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/librt-2.28.so	completed	0
+jruby_9.4.2.0-jdk8-buster	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/libjli.so	completed	0
+jruby_9.4.2.0-jdk8-buster	libpcre.so.3	libpcre.so.3	/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/libpcre.so.3	completed	0

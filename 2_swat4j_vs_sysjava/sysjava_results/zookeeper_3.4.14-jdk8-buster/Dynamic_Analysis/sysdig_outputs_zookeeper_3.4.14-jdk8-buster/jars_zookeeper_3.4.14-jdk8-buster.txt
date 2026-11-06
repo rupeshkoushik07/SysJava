@@ -1,0 +1,11 @@
+00:30:40.001936992 openat 1647393 java /opt/java/jre/lib/rt.jar f
+00:30:40.043430041 openat 1647393 java /opt/java/jre/lib/jfr.jar f
+00:30:40.051069060 openat 1647393 java /opt/java/jre/lib/rt.jar f
+00:30:40.256408848 openat 1647393 java /zookeeper-3.4.14/lib/slf4j-log4j12-1.7.25.jar f
+00:30:40.258700130 openat 1647393 java /zookeeper-3.4.14/lib/slf4j-api-1.7.25.jar f
+00:30:40.258943846 openat 1647393 java /zookeeper-3.4.14/lib/netty-3.10.6.Final.jar f
+00:30:40.259532679 openat 1647393 java /zookeeper-3.4.14/lib/log4j-1.2.17.jar f
+00:30:40.259834465 openat 1647393 java /zookeeper-3.4.14/lib/jline-0.9.94.jar f
+00:30:40.260047453 openat 1647393 java /zookeeper-3.4.14/lib/audience-annotations-0.5.0.jar f
+00:30:40.260267596 openat 1647393 java /zookeeper-3.4.14/zookeeper-3.4.14.jar f
+00:30:40.268749743 openat 1647393 java /opt/java/jre/lib/jsse.jar f

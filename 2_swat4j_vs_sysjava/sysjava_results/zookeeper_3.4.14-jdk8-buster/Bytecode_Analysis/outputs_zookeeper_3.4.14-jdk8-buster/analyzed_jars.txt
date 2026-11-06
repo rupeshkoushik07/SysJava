@@ -1,0 +1,22 @@
+=== JNADetector Analyzed Archives ===
+targetDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster
+runtimeDir=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster
+targetArchives=8
+runtimeArchives=5
+
+[target]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/audience-annotations-0.5.0.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/jfr.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/jline-0.9.94.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/log4j-1.2.17.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/netty-3.10.6.Final.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/slf4j-api-1.7.25.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/slf4j-log4j12-1.7.25.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/JARFILES_zookeeper_3.4.14-jdk8-buster/zookeeper-3.4.14.jar
+
+[runtime]
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster/charsets.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster/jce.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster/jsse.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster/resources.jar
+/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/RUNTIME_zookeeper_3.4.14-jdk8-buster/rt.jar

@@ -1,0 +1,222 @@
+
+Path to futex:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to set_robust_list:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __syscall_clock_gettime_f9ca0
+  __syscall_clock_gettime_f9ca0 - [syscall]-> clock_gettime
+
+Path to time:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __time_syscall_b5b30
+  __time_syscall_b5b30 - [syscall]-> time
+
+Path to mmap:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> mmap_f40f0
+  mmap_f40f0 - [syscall]-> mmap
+
+Path to clock_getres:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [syscall]-> clock_getres
+
+Path to munmap:
+  pcre_jit_free_unused_memory_50b90 - [DIRECT]-> munmap_f41d0
+  munmap_f41d0 - [syscall]-> munmap
+
+Path to close:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_close_7a660
+  _IO_file_close_7a660 - [DIRECT]-> __close_nocancel_ef4c0
+  __close_nocancel_ef4c0 - [syscall]-> close
+
+Path to read:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_read_7b960
+  _IO_file_read_7b960 - [DIRECT]-> read_ea450
+  read_ea450 - [syscall]-> read
+
+Path to lseek:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_seek_7aaf0
+  _IO_file_seek_7aaf0 - [DIRECT]-> lseek_ea590
+  lseek_ea590 - [syscall]-> lseek
+
+Path to fstat:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_stat_7b380
+  _IO_file_stat_7b380 - [DIRECT]-> _fxstat_e9ae0
+  _fxstat_e9ae0 - [syscall]-> fstat
+
+Path to write:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b390
+  _IO_file_write@@GLIBC_2.2.5_7b390 - [DIRECT]-> write_ea4f0
+  write_ea4f0 - [syscall]-> write
+
+Path to tgkill:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to sched_get_priority_min:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0970
+  sched_get_priority_min_e0970 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e0940
+  sched_get_priority_max_e0940 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e08e0
+  sched_getscheduler_e08e0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0880
+  sched_getparam_e0880 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e08b0
+  sched_setscheduler_e08b0 - [syscall]-> sched_setscheduler
+
+Path to getpid:
+  pcre_jit_exec_507f0 - [INDIRECT]-> sigcancel_handler_66b0
+  sigcancel_handler_66b0 - [DIRECT]-> getpid_c7470
+  getpid_c7470 - [syscall]-> getpid
+
+Path to madvise:
+  pcre_jit_exec_507f0 - [INDIRECT]-> sljit_stack_resize_29700
+  sljit_stack_resize_29700 - [DIRECT]-> madvise_f42d0
+  madvise_f42d0 - [syscall]-> madvise
+
+Path to openat:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> __open64_nocancel_ef600
+  __open64_nocancel_ef600 - [syscall]-> openat
+
+Path to prlimit64:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> getrlimit_efe60
+  getrlimit_efe60 - [syscall]-> prlimit64
+
+Path to writev:
+  pcre_get_stringtable_entries_288f0 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [syscall]-> writev
+
+Path to ioctl:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_doallocate_6f690
+  _IO_file_doallocate_6f690 - [DIRECT]-> isatty_ebe60
+  isatty_ebe60 - [DIRECT]-> tcgetattr_efb30
+  tcgetattr_efb30 - [syscall]-> ioctl
+
+Path to mremap:
+  pcre_jit_exec_507f0 - [INDIRECT]-> _IO_file_underflow_mmap_7b8d0
+  _IO_file_underflow_mmap_7b8d0 - [DIRECT]-> mmap_remap_check_7a890
+  mmap_remap_check_7a890 - [DIRECT]-> mremap_fa010
+  mremap_fa010 - [syscall]-> mremap
+
+Path to brk:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __default_morecore_85e40
+  __default_morecore_85e40 - [DIRECT]-> sbrk_f0360
+  sbrk_f0360 - [DIRECT]-> brk_f0300
+  brk_f0300 - [syscall]-> brk
+
+Path to getcwd:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [syscall]-> getcwd
+
+Path to mprotect:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f4200
+  mprotect_f4200 - [syscall]-> mprotect
+
+Path to rt_sigprocmask:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37a50
+  sigprocmask_37a50 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> gettid
+
+Path to exit_group:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit_group
+
+Path to exit:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit
+
+Path to pause:
+  pcre_jit_exec_507f0 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef740
+  __pause_nocancel_ef740 - [syscall]-> pause
+
+Path to stat:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> __sysconf_check_spec_c8280
+  __sysconf_check_spec_c8280 - [DIRECT]-> _xstat_e9a90
+  _xstat_e9a90 - [syscall]-> stat
+
+Path to sysinfo:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> get_phys_pages_f6fb0
+  get_phys_pages_f6fb0 - [DIRECT]-> sysinfo_fa130
+  sysinfo_fa130 - [syscall]-> sysinfo
+
+Path to lstat:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> _lxstat_e9b30
+  _lxstat_e9b30 - [syscall]-> lstat
+
+Path to newfstatat:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> __fxstatat_e9e30
+  __fxstatat_e9e30 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37a20
+  sigaction_37a20 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to getdents64:
+  pcre_jit_stack_alloc_50a20 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> get_nprocs_conf_f6ec0
+  get_nprocs_conf_f6ec0 - [DIRECT]-> readdir_c1e10
+  readdir_c1e10 - [DIRECT]-> __getdents_c1dd0
+  __getdents_c1dd0 - [syscall]-> getdents64
+
+Path to fcntl:
+  pcre_jit_exec_507f0 - [INDIRECT]-> __gconv_read_conf_26ab0
+  __gconv_read_conf_26ab0 - [DIRECT]-> __gconv_get_path_266e0
+  __gconv_get_path_266e0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> fdopendir_c2180
+  fdopendir_c2180 - [DIRECT]-> __fcntl64_nocancel_ef570
+  __fcntl64_nocancel_ef570 - [DIRECT]-> __fcntl64_nocancel_adjusted_ef4f0
+  __fcntl64_nocancel_adjusted_ef4f0 - [syscall]-> fcntl

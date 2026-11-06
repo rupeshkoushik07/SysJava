@@ -1,0 +1,3 @@
+HMAC
+MD4
+MD5

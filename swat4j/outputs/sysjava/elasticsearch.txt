@@ -130,6 +130,7 @@ sched_setscheduler
 sched_yield
 seccomp
 select
+sendfile
 sendmmsg
 sendmsg
 sendto
@@ -175,6 +176,7 @@ uname
 unlink
 unlinkat
 utime
+utimes
 vfork
 wait4
 write

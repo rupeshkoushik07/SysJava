@@ -1,0 +1,9 @@
+_nss_dns_getcanonname_r_4270
+_nss_dns_gethostbyaddr2_r_3340
+_nss_dns_gethostbyaddr_r_3810
+_nss_dns_gethostbyname2_r_2e00
+_nss_dns_gethostbyname3_r_2d60
+_nss_dns_gethostbyname4_r_2f90
+_nss_dns_gethostbyname_r_2e80
+_nss_dns_getnetbyaddr_r_3f40
+_nss_dns_getnetbyname_r_3de0

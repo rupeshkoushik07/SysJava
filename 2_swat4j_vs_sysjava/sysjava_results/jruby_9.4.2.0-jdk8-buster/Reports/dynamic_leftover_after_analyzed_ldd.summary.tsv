@@ -1,0 +1,2 @@
+image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
+jruby_9.4.2.0-jdk8-buster	16	7	8	6	8	5	0

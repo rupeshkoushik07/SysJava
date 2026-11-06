@@ -1,0 +1,38 @@
+2026-11-06T19:37:04 RUN image=elasticsearch_7.5.2-jdk8-buster libraries=19 force=False
+2026-11-06T19:37:04 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster
+2026-11-06T19:37:04 SKIP [1/19] libMlCore.so listed_in_unanalysed_skip (SysPart call graph crashes with every start (1769 excluded, 2026-11-06); syscalls recovered from the ML controller's imports (extra_components/ml_component_imports))
+2026-11-06T19:37:04 SKIP [7/19] libboost_log-gcc7-mt-x64-1_71.so.1.71.0 listed_in_unanalysed_skip (SysPart call graph crashes (986 starts excluded, 2026-11-06); covered by the ML imports recovery)
+2026-11-06T19:37:04 SKIP [8/19] libboost_log_setup-gcc7-mt-x64-1_71.so.1.71.0 listed_in_unanalysed_skip (SysPart call graph crashes (282 starts excluded, 2026-11-06); covered by the ML imports recovery)
+2026-11-06T19:37:04 PARALLEL libraries=16 jobs=8
+2026-11-06T19:37:04 START [2/19] libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0 functions=8 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [3/19] libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0 functions=52 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [4/19] libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0 functions=89 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [5/19] libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0 functions=107 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [6/19] libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0 functions=157 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [9/19] libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0 functions=502 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [11/19] libboost_thread-gcc7-mt-x64-1_71.so.1.71.0 functions=170 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_thread-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:37:04 START [10/19] libboost_regex-gcc7-mt-x64-1_71.so.1.71.0 functions=292 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libboost_regex-gcc7-mt-x64-1_71.so.1.71.0/logfile.txt
+2026-11-06T19:38:08 DONE [2/19] libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=57
+2026-11-06T19:38:08 START [12/19] libjli.so functions=9 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libjli.so/logfile.txt
+2026-11-06T19:38:10 DONE [3/19] libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=58
+2026-11-06T19:38:10 START [13/19] libnss_files.so.2 functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libnss_files-2.28.so/logfile.txt
+2026-11-06T19:38:11 DONE [5/19] libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=70
+2026-11-06T19:38:11 START [14/19] libpcre.so.3 functions=27 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libpcre.so.3/logfile.txt
+2026-11-06T19:38:11 DONE [4/19] libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=57
+2026-11-06T19:38:11 START [15/19] librt.so.1 functions=40 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/librt-2.28.so/logfile.txt
+2026-11-06T19:38:14 DONE [6/19] libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=58
+2026-11-06T19:38:14 START [16/19] libstdc++.so.6 functions=3956 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libstdc++.so.6/logfile.txt
+2026-11-06T19:38:15 DONE [11/19] libboost_thread-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=57
+2026-11-06T19:38:15 START [17/19] libtinfo.so.6 functions=193 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libtinfo.so.6/logfile.txt
+2026-11-06T19:38:35 DONE [13/19] libnss_files.so.2 status=completed exit=0 syscalls=35
+2026-11-06T19:38:35 START [18/19] libxml2.so.2 functions=1708 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libxml2.so.2/logfile.txt
+2026-11-06T19:38:35 DONE [10/19] libboost_regex-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=57
+2026-11-06T19:38:35 START [19/19] libz.so.1 functions=85 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/libz.so.1/logfile.txt
+2026-11-06T19:38:36 DONE [12/19] libjli.so status=completed exit=0 syscalls=62
+2026-11-06T19:38:38 DONE [15/19] librt.so.1 status=completed exit=0 syscalls=74
+2026-11-06T19:38:41 DONE [17/19] libtinfo.so.6 status=completed exit=0 syscalls=44
+2026-11-06T19:38:43 DONE [9/19] libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0 status=completed exit=0 syscalls=57
+2026-11-06T19:38:59 DONE [14/19] libpcre.so.3 status=completed exit=0 syscalls=41
+2026-11-06T19:39:01 DONE [19/19] libz.so.1 status=completed exit=0 syscalls=35
+2026-11-06T19:40:00 DONE [18/19] libxml2.so.2 status=completed exit=0 syscalls=54
+2026-11-06T19:40:09 DONE [16/19] libstdc++.so.6 status=completed exit=0 syscalls=38

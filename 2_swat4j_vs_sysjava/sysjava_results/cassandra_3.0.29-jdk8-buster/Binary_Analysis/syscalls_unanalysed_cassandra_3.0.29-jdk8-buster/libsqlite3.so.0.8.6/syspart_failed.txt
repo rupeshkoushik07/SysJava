@@ -1,0 +1,1 @@
+skipped: user decision 2026-11-06: opened only by ldconfig (not the JVM); SysPart call graph crashes (exit 139) and per-function probes need ~20 GB each

@@ -70,6 +70,9 @@ UNANALYSABLE: List[str] = []
 SYSPART_FAILURE_MARKERS = ("syspart_failed.txt", "excluded_starts_syspart_crash.txt")
 
 
+RUNTIME_BINARIES = {"runc"}
+
+
 def process_directory(base_dir: Path, dir_type: str) -> Tuple[Set[str], List[str], List[str]]:
     """
     Process a directory (syscalls_BIN_* or syscalls_LIBS_*) and collect syscalls.
@@ -87,8 +90,9 @@ def process_directory(base_dir: Path, dir_type: str) -> Tuple[Set[str], List[str
         print(f"⚠ Warning: Directory does not exist: {base_dir}")
         return all_syscalls, empty_files, missing_files
 
-    # Get all subdirectories
-    subdirs = [d for d in base_dir.iterdir() if d.is_dir()]
+    # Get all subdirectories. The container runtime (runc) is not a container binary: its syscalls
+    # come from the runc.txt whitelist only (an older run may still hold a runc result here).
+    subdirs = [d for d in base_dir.iterdir() if d.is_dir() and d.name not in RUNTIME_BINARIES]
 
     if not subdirs:
         print(f"⚠ Warning: No subdirectories found in {base_dir}")

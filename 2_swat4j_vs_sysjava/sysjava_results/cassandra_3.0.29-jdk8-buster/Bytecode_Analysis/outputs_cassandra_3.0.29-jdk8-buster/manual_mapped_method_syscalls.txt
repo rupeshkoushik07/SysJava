@@ -1,0 +1,7 @@
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getSuperclass -> jni_GetSuperclass [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getClassId -> jfr_class_id [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.registerNatives -> jfr_register_natives [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Perf.createLong -> Perf_CreateLong [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.registerNatives -> JVM_RegisterUnsafeMethods [JVM]
+LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so:io.netty.channel.unix.Socket.getPeerCredentials -> netty_channel_unix_socket_getPeerCredentials [NETTY]

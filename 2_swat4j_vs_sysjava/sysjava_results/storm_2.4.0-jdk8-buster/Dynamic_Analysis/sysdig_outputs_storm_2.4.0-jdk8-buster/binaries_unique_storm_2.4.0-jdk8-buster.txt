@@ -1,0 +1,10 @@
+awk
+bash
+cut
+dirname
+gosu
+/opt/java/bin/java
+python
+runc
+tini
+/usr/bin/env

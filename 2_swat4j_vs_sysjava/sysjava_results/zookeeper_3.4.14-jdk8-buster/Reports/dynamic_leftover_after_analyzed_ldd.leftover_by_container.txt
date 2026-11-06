@@ -1,0 +1,10 @@
+zookeeper_3.4.14-jdk8-buster (8)
+  - libacl.so.1
+  - libattr.so.1
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+  - libselinux.so.1
+  - libtinfo.so.6
+

@@ -1,0 +1,470 @@
+
+Path to gettid:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [syscall]-> gettid
+
+Path to futex:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to exit:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> rt_sigprocmask
+
+Path to vfork:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> vfork_c6810
+  vfork_c6810 - [syscall]-> vfork
+
+Path to sched_yield:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to read:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_read_7baa0
+  _IO_file_read_7baa0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to lseek:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to write:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b4d0
+  _IO_file_write@@GLIBC_2.2.5_7b4d0 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to getpid:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to unlink:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN10CompileLogD0Ev_49a860
+  _ZN10CompileLogD0Ev_49a860 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to mprotect:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_976250
+  _ZN15VM_LinuxDllLoad4doitEv_976250 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to access:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to tgkill:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to sendto:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to poll:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to recvmsg:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to sched_get_priority_min:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to writev:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to mmap:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [DIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to openat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [DIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> __open64_nocancel_ef1a0
+  __open64_nocancel_ef1a0 - [syscall]-> openat
+
+Path to lstat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to kill:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> kill_37bc0
+  kill_37bc0 - [syscall]-> kill
+
+Path to geteuid:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> geteuid_c7340
+  geteuid_c7340 - [syscall]-> geteuid
+
+Path to ioctl:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mremap:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to wait4:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> waitpid_c62c0
+  waitpid_c62c0 - [syscall]-> wait4
+
+Path to execve:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> execve_c68a0
+  execve_c68a0 - [syscall]-> execve
+
+Path to exit_group:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to getcwd:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to readlink:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to clock_getres:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to getpriority:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZNK10JavaThread8print_onEP12outputStream_adb480
+  _ZNK10JavaThread8print_onEP12outputStream_adb480 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_971970
+  _ZN2os19get_native_priorityEPK6ThreadPi_971970 - [DIRECT]-> getpriority_efdc0
+  getpriority_efdc0 - [syscall]-> getpriority
+
+Path to brk:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to pause:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to uname:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_PrintOsInfo_b56af0
+  WB_PrintOsInfo_b56af0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973590
+  _ZN2os13print_os_infoEP12outputStream_973590 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_97b550
+  _ZN2os5Posix16print_uname_infoEP12outputStream_97b550 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname
+
+Path to prlimit64:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_PrintOsInfo_b56af0
+  WB_PrintOsInfo_b56af0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973590
+  _ZN2os13print_os_infoEP12outputStream_973590 - [DIRECT]-> _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b340
+  _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b340 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to shmget:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmget_faf40
+  shmget_faf40 - [syscall]-> shmget
+
+Path to shmat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmat_faee0
+  shmat_faee0 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_faf70
+  shmctl@@GLIBC_2.2.5_faf70 - [syscall]-> shmctl
+
+Path to shmdt:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_970e80
+  _ZN2os22release_memory_specialEPcm_970e80 - [DIRECT]-> shmdt_faf10
+  shmdt_faf10 - [syscall]-> shmdt
+
+Path to nanosleep:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN14MacroAssembler7debug64EPclPl_874e60
+  _ZN14MacroAssembler7debug64EPclPl_874e60 - [DIRECT]-> _ZN2os11message_boxEPKcS1__972f20
+  _ZN2os11message_boxEPKcS1__972f20 - [DIRECT]-> sleep_c6490
+  sleep_c6490 - [DIRECT]-> nanosleep_c6580
+  nanosleep_c6580 - [syscall]-> nanosleep
+
+Path to sysinfo:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN18VM_RedefineClasses13doit_prologueEv_7e7f40
+  _ZN18VM_RedefineClasses13doit_prologueEv_7e7f40 - [DIRECT]-> _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread.part.89_7e71e0
+  _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread.part.89_7e71e0 - [DIRECT]-> _ZN2os16available_memoryEv_96a5d0
+  _ZN2os16available_memoryEv_96a5d0 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to clone:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> fork_compat_113d0
+  fork_compat_113d0 - [DIRECT]-> fork_c6610
+  fork_c6610 - [syscall]-> clone
+
+Path to newfstatat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_b70870
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_b70870 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to getdents64:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> _ZN2os7readdirEP11__dirstream_97b680
+  _ZN2os7readdirEP11__dirstream_97b680 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to stat:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> WB_AddToBootstrapClassLoaderSearch_b54fa0
+  WB_AddToBootstrapClassLoaderSearch_b54fa0 - [DIRECT]-> _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae680
+  _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae680 - [DIRECT]-> _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a310
+  _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a310 - [DIRECT]-> _ZN2os4statEPKcP4stat_9730d0
+  _ZN2os4statEPKcP4stat_9730d0 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sched_getaffinity:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [DIRECT]-> _ZN2os18current_stack_baseEv_9777c0
+  _ZN2os18current_stack_baseEv_9777c0 - [DIRECT]-> _ZL20current_stack_regionPPhPm.part.6_9776b0
+  _ZL20current_stack_regionPPhPm.part.6_9776b0 - [DIRECT]-> pthread_getattr_np_9b40
+  pthread_getattr_np_9b40 - [DIRECT]-> pthread_getaffinity_np@@GLIBC_2.3.4_129b0
+  pthread_getaffinity_np@@GLIBC_2.3.4_129b0 - [syscall]-> sched_getaffinity
+
+Path to fcntl:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZL13crash_handleriP7siginfoPv_b41330
+  _ZL13crash_handleriP7siginfoPv_b41330 - [DIRECT]-> _ZN7VMError14report_and_dieEv_b3fa20
+  _ZN7VMError14report_and_dieEv_b3fa20 - [DIRECT]-> _ZN2os4openEiPKc_97b660
+  _ZN2os4openEiPKc_97b660 - [DIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to mincore:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN10JavaThread3runEv_adfae0
+  _ZN10JavaThread3runEv_adfae0 - [DIRECT]-> _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0
+  _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_967cb0
+  _ZN2os24create_stack_guard_pagesEPcm_967cb0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_96f240
+  _ZN2os27pd_create_stack_guard_pagesEPcm_96f240 - [DIRECT]-> mincore_f3ea0
+  mincore_f3ea0 - [syscall]-> mincore
+
+Path to getrusage:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65be50
+  _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65be50 - [DIRECT]-> _ZN6CMTask19deal_with_referenceEP7oopDesc_661b00
+  _ZN6CMTask19deal_with_referenceEP7oopDesc_661b00 - [DIRECT]-> _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b4230
+  _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b4230 - [DIRECT]-> _ZN2os12elapsedVTimeEv_96c0f0
+  _ZN2os12elapsedVTimeEv_96c0f0 - [DIRECT]-> getrusage_efa80
+  getrusage_efa80 - [syscall]-> getrusage
+
+Path to shutdown:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> checked_jni_AllocObject_72e2b0
+  checked_jni_AllocObject_72e2b0 - [DIRECT]-> _ZN2os5abortEb_96c540
+  _ZN2os5abortEb_96c540 - [DIRECT]-> _ZN2os8shutdownEv_96c510
+  _ZN2os8shutdownEv_96c510 - [DIRECT]-> _ZN14AttachListener5abortEv_2f02c0
+  _ZN14AttachListener5abortEv_2f02c0 - [DIRECT]-> shutdown_fa630
+  shutdown_fa630 - [syscall]-> shutdown
+
+Path to socket:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to bind:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to sched_setaffinity:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> jvmtiTrace_RunAgentThread_792ba0
+  jvmtiTrace_RunAgentThread_792ba0 - [DIRECT]-> _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7aff10
+  _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7aff10 - [DIRECT]-> _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5180
+  _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5180 - [DIRECT]-> _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540
+  _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to pread64:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> _ZL13crash_handleriP7siginfoPv_b41330
+  _ZL13crash_handleriP7siginfoPv_b41330 - [DIRECT]-> _ZN7VMError14report_and_dieEv_b3fa20
+  _ZN7VMError14report_and_dieEv_b3fa20 - [DIRECT]-> _ZN3Jfr14on_vm_shutdownEb_6b0290
+  _ZN3Jfr14on_vm_shutdownEb_6b0290 - [DIRECT]-> _ZN16JfrEmergencyDump14on_vm_shutdownEb_6bbb40
+  _ZN16JfrEmergencyDump14on_vm_shutdownEb_6bbb40 - [DIRECT]-> _ZN18JfrRecorderService6rotateEi_6e0f80
+  _ZN18JfrRecorderService6rotateEi_6e0f80 - [DIRECT]-> _ZN13JfrRepository11on_vm_errorEv_6e2c90
+  _ZN13JfrRepository11on_vm_errorEv_6e2c90 - [DIRECT]-> _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb740
+  _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb740 - [DIRECT]-> _ZN2os7read_atEiPvjl_971200
+  _ZN2os7read_atEiPvjl_971200 - [DIRECT]-> pread_e8820
+  pread_e8820 - [syscall]-> pread64
+
+Path to dup:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> __get_myaddress_11e7b0
+  __get_myaddress_11e7b0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to setsockopt:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to connect:
+  Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage_6710 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> pmap_getport_129120
+  pmap_getport_129120 - [DIRECT]-> __libc_rpc_getport_128f60
+  __libc_rpc_getport_128f60 - [DIRECT]-> __get_socket_128ec0
+  __get_socket_128ec0 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect

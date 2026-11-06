@@ -1,0 +1,366 @@
+
+Path to futex:
+  __dbc_idel_f08a0 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  __dbc_idel_f08a0 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  __dbc_idel_f08a0 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  __dbc_idel_f08a0 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  __dbc_idel_f08a0 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  __dbc_idel_f08a0 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to exit:
+  __dbc_idel_f08a0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  __dbc_idel_f08a0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> rt_sigprocmask
+
+Path to stat:
+  __os_dirlist_156300 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to unlink:
+  __os_unlink_1591f0 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to select:
+  __os_yield_159340 - [DIRECT]-> select_f0b80
+  select_f0b80 - [syscall]-> select
+
+Path to lseek:
+  __os_seek_1588b0 - [DIRECT]-> lseek_11ae0
+  lseek_11ae0 - [syscall]-> lseek
+
+Path to read:
+  __os_read_157f40 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to pread64:
+  __os_io_158500 - [DIRECT]-> pread_11de0
+  pread_11de0 - [syscall]-> pread64
+
+Path to pwrite64:
+  __os_io_158500 - [DIRECT]-> pwrite_11e90
+  pwrite_11e90 - [syscall]-> pwrite64
+
+Path to shmdt:
+  __os_detach_1574b0 - [DIRECT]-> shmdt_faf10
+  shmdt_faf10 - [syscall]-> shmdt
+
+Path to shmctl:
+  __os_detach_1574b0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_faf70
+  shmctl@@GLIBC_2.2.5_faf70 - [syscall]-> shmctl
+
+Path to munmap:
+  __os_detach_1574b0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to munlock:
+  __os_detach_1574b0 - [DIRECT]-> munlock_f3f30
+  munlock_f3f30 - [syscall]-> munlock
+
+Path to sched_getscheduler:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getparam
+
+Path to socket:
+  __repmgr_connect_b5bc0 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to connect:
+  __repmgr_connect_b5bc0 - [DIRECT]-> connect_116c0
+  connect_116c0 - [syscall]-> connect
+
+Path to close:
+  __repmgr_connect_b5bc0 - [DIRECT]-> close_115a0
+  close_115a0 - [syscall]-> close
+
+Path to write:
+  __repmgr_wake_main_thread_b6a90 - [DIRECT]-> write_11460
+  write_11460 - [syscall]-> write
+
+Path to sendto:
+  __repmgr_write_some_b9a80 - [DIRECT]-> send_118e0
+  send_118e0 - [syscall]-> sendto
+
+Path to fchmod:
+  __os_open_157b20 - [DIRECT]-> fchmod_e9ec0
+  fchmod_e9ec0 - [syscall]-> fchmod
+
+Path to fdatasync:
+  __os_fsync_1569c0 - [DIRECT]-> fdatasync_f0e50
+  fdatasync_f0e50 - [syscall]-> fdatasync
+
+Path to getcwd:
+  __log_archive_1382d0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to rename:
+  __os_rename_157d90 - [DIRECT]-> rename_6d800
+  rename_6d800 - [syscall]-> rename
+
+Path to fstat:
+  __os_ioinfo_158c20 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to shmget:
+  __os_attach_1570f0 - [DIRECT]-> shmget_faf40
+  shmget_faf40 - [syscall]-> shmget
+
+Path to shmat:
+  __os_attach_1570f0 - [DIRECT]-> shmat_faee0
+  shmat_faee0 - [syscall]-> shmat
+
+Path to openat:
+  __os_openhandle_156d20 - [DIRECT]-> open_11c40
+  open_11c40 - [syscall]-> openat
+
+Path to ftruncate:
+  __os_truncate_158ff0 - [DIRECT]-> ftruncate_f24e0
+  ftruncate_f24e0 - [syscall]-> ftruncate
+
+Path to setsockopt:
+  __repmgr_listen_b5eb0 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to bind:
+  __repmgr_listen_b5eb0 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to listen:
+  __repmgr_listen_b5eb0 - [DIRECT]-> listen_fa190
+  listen_fa190 - [syscall]-> listen
+
+Path to pipe:
+  __repmgr_init_b66f0 - [DIRECT]-> pipe_eab00
+  pipe_eab00 - [syscall]-> pipe
+
+Path to writev:
+  __repmgr_writev_b6b00 - [DIRECT]-> writev_f0090
+  writev_f0090 - [syscall]-> writev
+
+Path to clock_getres:
+  __os_cpu_count_156220 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to getuid:
+  __os_isroot_157ef0 - [DIRECT]-> getuid_c7330
+  getuid_c7330 - [syscall]-> getuid
+
+Path to mkdir:
+  __os_mkdir_157a20 - [DIRECT]-> mkdir_e9f80
+  mkdir_e9f80 - [syscall]-> mkdir
+
+Path to chmod:
+  __os_mkdir_157a20 - [DIRECT]-> chmod_e9e90
+  chmod_e9e90 - [syscall]-> chmod
+
+Path to readv:
+  __repmgr_readv_b6b30 - [DIRECT]-> readv_efff0
+  readv_efff0 - [syscall]-> readv
+
+Path to accept:
+  __repmgr_accept_b8170 - [DIRECT]-> accept_f9f90
+  accept_f9f90 - [syscall]-> accept
+
+Path to getpid:
+  __os_id_157d40 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to sched_yield:
+  __dbc_idel_f08a0 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to tgkill:
+  __dbc_idel_f08a0 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to poll:
+  __dbc_idel_f08a0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to recvmsg:
+  __dbc_idel_f08a0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  __dbc_idel_f08a0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to sched_get_priority_min:
+  __dbc_idel_f08a0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  __dbc_idel_f08a0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_setscheduler:
+  __dbc_idel_f08a0 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  __dbc_idel_f08a0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to getdents64:
+  __os_dirlist_156300 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to sched_setaffinity:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to mmap:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mprotect:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to lstat:
+  __log_archive_1382d0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  __log_archive_1382d0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to mlock:
+  __os_attach_1570f0 - [DIRECT]-> __os_map.isra.1_156ff0
+  __os_map.isra.1_156ff0 - [DIRECT]-> mlock_f3f00
+  mlock_f3f00 - [syscall]-> mlock
+
+Path to fcntl:
+  __os_openhandle_156d20 - [DIRECT]-> fcntl_compat_11400
+  fcntl_compat_11400 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to rt_sigaction:
+  __repmgr_init_b66f0 - [DIRECT]-> sigaction_12910
+  sigaction_12910 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to prlimit64:
+  __os_cpu_count_156220 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to getsockname:
+  __os_getaddrinfo_a9d30 - [DIRECT]-> getaddrinfo_e3bc0
+  getaddrinfo_e3bc0 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to gettid:
+  __os_abort_155c70 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit_group:
+  __os_abort_155c70 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to ioctl:
+  __dbc_idel_f08a0 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mremap:
+  __dbc_idel_f08a0 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  __dbc_idel_f08a0 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to pause:
+  __dbc_idel_f08a0 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to clone:
+  __repmgr_thread_start_b6380 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [DIRECT]-> clone_f9030
+  clone_f9030 - [syscall]-> clone
+
+Path to sysinfo:
+  __os_cpu_count_156220 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to access:
+  __os_getaddrinfo_a9d30 - [DIRECT]-> getaddrinfo_e3bc0
+  getaddrinfo_e3bc0 - [DIRECT]-> gaih_inet.constprop.7_e2050
+  gaih_inet.constprop.7_e2050 - [DIRECT]-> __inet6_scopeid_pton_115d80
+  __inet6_scopeid_pton_115d80 - [DIRECT]-> if_nametoindex_113760
+  if_nametoindex_113760 - [DIRECT]-> __opensock_fa740
+  __opensock_fa740 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to uname:
+  __os_getaddrinfo_a9d30 - [DIRECT]-> getaddrinfo_e3bc0
+  getaddrinfo_e3bc0 - [DIRECT]-> gaih_inet.constprop.7_e2050
+  gaih_inet.constprop.7_e2050 - [DIRECT]-> __resolv_context_get_119f40
+  __resolv_context_get_119f40 - [DIRECT]-> context_get.part.1_119db0
+  context_get.part.1_119db0 - [DIRECT]-> __res_vinit_118e80
+  __res_vinit_118e80 - [DIRECT]-> __resolv_conf_load_1181c0
+  __resolv_conf_load_1181c0 - [DIRECT]-> gethostname_f08c0
+  gethostname_f08c0 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname
+
+Path to dup:
+  __dbc_idel_f08a0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> __get_myaddress_11e7b0
+  __get_myaddress_11e7b0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup

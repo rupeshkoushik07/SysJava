@@ -1,0 +1,255 @@
+2026-11-06T16:56:02 RUN image=cassandra_3.0.29-jdk8-buster libraries=99 force=False
+2026-11-06T16:56:02 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Dataset_symbolized/LIBS_cassandra_3.0.29-jdk8-buster
+2026-11-06T16:56:02 SKIP [2/99] libSegFault.so no_exported_functions
+2026-11-06T16:56:02 SKIP [6/99] libapt-pkg.so.5.0.2 listed_in_unanalysed_skip (user decision 2026-11-06: SysPart call graph crashes; same library ended unanalysable in cassandra_5.0.8 (1384 starts excluded))
+2026-11-06T16:56:02 SKIP [7/99] libapt-private.so.0.0 listed_in_unanalysed_skip (user decision 2026-11-06: as libapt-pkg (unanalysable in cassandra_5.0.8))
+2026-11-06T16:56:03 UNRESOLVED [51/99] libnetty-transport-native-epoll3378185644820919240.so
+2026-11-06T16:56:03 PARALLEL libraries=95 jobs=8
+2026-11-06T16:56:03 START [1/99] libBrokenLocale.so.1 functions=1 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libBrokenLocale-2.28.so/logfile.txt
+2026-11-06T16:56:03 START [3/99] libacl.so.1 functions=41 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libacl.so.1/logfile.txt
+2026-11-06T16:56:03 START [4/99] libacl.so.1.1.2253 functions=41 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libacl.so.1.1.2253/logfile.txt
+2026-11-06T16:56:03 START [5/99] libanl-2.28.so functions=4 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libanl-2.28.so/logfile.txt
+2026-11-06T16:56:03 START [8/99] libattr.so.1 functions=26 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libattr.so.1/logfile.txt
+2026-11-06T16:56:03 START [9/99] libaudit.so.1.0.0 functions=77 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libaudit.so.1.0.0/logfile.txt
+2026-11-06T16:56:03 START [10/99] libblkid.so.1 functions=106 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libblkid.so.1/logfile.txt
+2026-11-06T16:56:03 START [11/99] libbz2.so.1.0.4 functions=33 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libbz2.so.1.0.4/logfile.txt
+2026-11-06T16:56:30 DONE [1/99] libBrokenLocale.so.1 status=completed exit=0 syscalls=0
+2026-11-06T16:56:30 START [12/99] libcap-ng.so.0.0.0 functions=19 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libcap-ng.so.0.0.0/logfile.txt
+2026-11-06T16:56:30 DONE [8/99] libattr.so.1 status=completed exit=0 syscalls=47
+2026-11-06T16:56:30 START [13/99] libcap.so.2 functions=27 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libcap.so.2/logfile.txt
+2026-11-06T16:56:32 DONE [3/99] libacl.so.1 status=completed exit=0 syscalls=50
+2026-11-06T16:56:32 START [14/99] libcom_err.so.2.1 functions=17 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libcom_err.so.2.1/logfile.txt
+2026-11-06T16:56:33 DONE [5/99] libanl-2.28.so status=completed exit=0 syscalls=60
+2026-11-06T16:56:33 START [15/99] libcrypt-2.28.so functions=7 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libcrypt-2.28.so/logfile.txt
+2026-11-06T16:56:33 DONE [11/99] libbz2.so.1.0.4 status=completed exit=0 syscalls=36
+2026-11-06T16:56:33 START [16/99] libcrypto.so.1.1 functions=4235 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libcrypto.so.1.1/logfile.txt
+2026-11-06T16:56:33 DONE [4/99] libacl.so.1.1.2253 status=completed exit=0 syscalls=50
+2026-11-06T16:56:33 START [17/99] libdb-5.3.so functions=1719 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libdb-5.3.so/logfile.txt
+2026-11-06T16:56:36 DONE [9/99] libaudit.so.1.0.0 status=completed exit=0 syscalls=49
+2026-11-06T16:56:36 START [18/99] libdebconfclient.so.0 functions=3 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libdebconfclient.so.0/logfile.txt
+2026-11-06T16:56:40 DONE [10/99] libblkid.so.1 status=completed exit=0 syscalls=62
+2026-11-06T16:56:40 START [19/99] libdl-2.28.so functions=10 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libdl-2.28.so/logfile.txt
+2026-11-06T16:56:59 DONE [13/99] libcap.so.2 status=completed exit=0 syscalls=44
+2026-11-06T16:56:59 START [20/99] libe2p.so.2.3 functions=38 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libe2p.so.2.3/logfile.txt
+2026-11-06T16:56:59 DONE [15/99] libcrypt-2.28.so status=completed exit=0 syscalls=35
+2026-11-06T16:56:59 START [21/99] libelf-0.176.so functions=111 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libelf-0.176.so/logfile.txt
+2026-11-06T16:57:02 DONE [14/99] libcom_err.so.2.1 status=completed exit=0 syscalls=46
+2026-11-06T16:57:02 START [22/99] libelf.so.1 functions=111 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libelf-0.176.so/logfile.txt
+2026-11-06T16:57:05 DONE [18/99] libdebconfclient.so.0 status=completed exit=0 syscalls=42
+2026-11-06T16:57:05 START [23/99] libexpat.so.1 functions=83 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libexpat.so.1/logfile.txt
+2026-11-06T16:57:06 DONE [12/99] libcap-ng.so.0.0.0 status=completed exit=0 syscalls=50
+2026-11-06T16:57:06 START [24/99] libexpatw.so.1.6.8 functions=83 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libexpatw.so.1.6.8/logfile.txt
+2026-11-06T16:57:10 DONE [19/99] libdl-2.28.so status=completed exit=0 syscalls=35
+2026-11-06T16:57:10 START [25/99] libext2fs.so.2 functions=602 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libext2fs.so.2/logfile.txt
+2026-11-06T16:57:28 DONE [20/99] libe2p.so.2.3 status=completed exit=0 syscalls=45
+2026-11-06T16:57:28 START [26/99] libfdisk.so.1.1.0 functions=270 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libfdisk.so.1.1.0/logfile.txt
+2026-11-06T16:57:30 DONE [21/99] libelf-0.176.so status=completed exit=0 syscalls=42
+2026-11-06T16:57:30 START [27/99] libffi.so.6.0.4 functions=25 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libffi.so.6.0.4/logfile.txt
+2026-11-06T16:57:37 DONE [22/99] libelf.so.1 status=completed exit=0 syscalls=42
+2026-11-06T16:57:37 START [28/99] libform.so.6 functions=75 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libform.so.6/logfile.txt
+2026-11-06T16:57:40 DONE [24/99] libexpatw.so.1.6.8 status=completed exit=0 syscalls=37
+2026-11-06T16:57:40 START [29/99] libformw.so.6.1 functions=76 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libformw.so.6.1/logfile.txt
+2026-11-06T16:57:41 DONE [23/99] libexpat.so.1 status=completed exit=0 syscalls=37
+2026-11-06T16:57:41 START [30/99] libgcrypt.so.20 functions=205 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libgcrypt.so.20/logfile.txt
+2026-11-06T16:57:51 DONE [25/99] libext2fs.so.2 status=completed exit=0 syscalls=56
+2026-11-06T16:57:51 START [31/99] libgmp.so.10.3.2 functions=589 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libgmp.so.10.3.2/logfile.txt
+2026-11-06T16:58:01 DONE [27/99] libffi.so.6.0.4 status=completed exit=0 syscalls=41
+2026-11-06T16:58:01 START [32/99] libgnutls.so.30 functions=1223 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libgnutls.so.30/logfile.txt
+2026-11-06T16:58:09 DONE [28/99] libform.so.6 status=completed exit=0 syscalls=39
+2026-11-06T16:58:09 START [33/99] libgpg-error.so.0 functions=151 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libgpg-error.so.0/logfile.txt
+2026-11-06T16:58:10 DONE [29/99] libformw.so.6.1 status=completed exit=0 syscalls=39
+2026-11-06T16:58:10 START [34/99] libhistory.so.7 functions=55 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libhistory.so.7/logfile.txt
+2026-11-06T16:58:12 DONE [26/99] libfdisk.so.1.1.0 status=completed exit=0 syscalls=77
+2026-11-06T16:58:12 START [35/99] libhogweed.so.4 functions=254 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libhogweed.so.4/logfile.txt
+2026-11-06T16:58:24 DONE [30/99] libgcrypt.so.20 status=completed exit=0 syscalls=50
+2026-11-06T16:58:24 START [36/99] libidn2.so.0.3.4 functions=20 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libidn2.so.0.3.4/logfile.txt
+2026-11-06T16:58:30 DONE [17/99] libdb-5.3.so status=completed exit=0 syscalls=78
+2026-11-06T16:58:30 START [37/99] libinstrument.so functions=12 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libinstrument.so/logfile.txt
+2026-11-06T16:58:30 DONE [31/99] libgmp.so.10.3.2 status=completed exit=0 syscalls=36
+2026-11-06T16:58:30 START [38/99] libjemalloc.so functions=30 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libjemalloc.so.2/logfile.txt
+2026-11-06T16:58:40 DONE [33/99] libgpg-error.so.0 status=completed exit=0 syscalls=44
+2026-11-06T16:58:40 START [39/99] libjli.so functions=9 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libjli.so/logfile.txt
+2026-11-06T16:58:41 DONE [34/99] libhistory.so.7 status=completed exit=0 syscalls=49
+2026-11-06T16:58:41 START [40/99] liblz4.so.1.8.3 functions=93 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/liblz4.so.1.8.3/logfile.txt
+2026-11-06T16:58:51 DONE [35/99] libhogweed.so.4 status=completed exit=0 syscalls=35
+2026-11-06T16:58:51 START [41/99] liblzma.so.5 functions=98 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/liblzma.so.5/logfile.txt
+2026-11-06T16:58:58 DONE [36/99] libidn2.so.0.3.4 status=completed exit=0 syscalls=35
+2026-11-06T16:58:58 START [42/99] libmemusage.so functions=8 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmemusage.so/logfile.txt
+2026-11-06T16:59:00 DONE [37/99] libinstrument.so status=completed exit=0 syscalls=42
+2026-11-06T16:59:00 START [43/99] libmenu.so.6 functions=65 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmenu.so.6/logfile.txt
+2026-11-06T16:59:08 DONE [40/99] liblz4.so.1.8.3 status=completed exit=0 syscalls=35
+2026-11-06T16:59:08 START [44/99] libmenuw.so.6 functions=65 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmenuw.so.6/logfile.txt
+2026-11-06T16:59:11 DONE [39/99] libjli.so status=completed exit=0 syscalls=62
+2026-11-06T16:59:11 START [45/99] libmnl.so.0 functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmnl.so.0/logfile.txt
+2026-11-06T16:59:19 DONE [38/99] libjemalloc.so status=completed exit=0 syscalls=50
+2026-11-06T16:59:19 START [46/99] libmount.so.1 functions=285 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmount.so.1/logfile.txt
+2026-11-06T16:59:21 DONE [41/99] liblzma.so.5 status=completed exit=0 syscalls=56
+2026-11-06T16:59:21 START [47/99] libmvec-2.28.so functions=48 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmvec-2.28.so/logfile.txt
+2026-11-06T16:59:24 DONE [42/99] libmemusage.so status=completed exit=0 syscalls=0
+2026-11-06T16:59:24 START [48/99] libncurses.so.6.1 functions=338 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libncurses.so.6.1/logfile.txt
+2026-11-06T16:59:29 DONE [43/99] libmenu.so.6 status=completed exit=0 syscalls=39
+2026-11-06T16:59:29 START [49/99] libncursesw.so.6 functions=460 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libncursesw.so.6/logfile.txt
+2026-11-06T16:59:37 DONE [44/99] libmenuw.so.6 status=completed exit=0 syscalls=39
+2026-11-06T16:59:37 START [50/99] libnettle.so.6 functions=367 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnettle.so.6/logfile.txt
+2026-11-06T16:59:37 DONE [45/99] libmnl.so.0 status=completed exit=0 syscalls=42
+2026-11-06T16:59:37 START [52/99] libnsl.so.1 functions=128 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnsl-2.28.so/logfile.txt
+2026-11-06T16:59:47 DONE [16/99] libcrypto.so.1.1 status=completed exit=0 syscalls=70
+2026-11-06T16:59:47 START [53/99] libnss_compat-2.28.so functions=15 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_compat-2.28.so/logfile.txt
+2026-11-06T16:59:53 DONE [47/99] libmvec-2.28.so status=completed exit=0 syscalls=12
+2026-11-06T16:59:53 START [54/99] libnss_dns-2.28.so functions=9 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_dns-2.28.so/logfile.txt
+2026-11-06T17:00:01 DONE [48/99] libncurses.so.6.1 status=completed exit=0 syscalls=45
+2026-11-06T17:00:01 START [55/99] libnss_files-2.28.so functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_files-2.28.so/logfile.txt
+2026-11-06T17:22:05 RUN image=cassandra_3.0.29-jdk8-buster libraries=99 force=False
+2026-11-06T17:22:05 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Dataset_symbolized/LIBS_cassandra_3.0.29-jdk8-buster
+2026-11-06T17:22:06 SKIP [1/99] libBrokenLocale.so.1 already_complete
+2026-11-06T17:22:06 SKIP [2/99] libSegFault.so no_exported_functions
+2026-11-06T17:22:06 SKIP [3/99] libacl.so.1 already_complete
+2026-11-06T17:22:06 SKIP [4/99] libacl.so.1.1.2253 already_complete
+2026-11-06T17:22:06 SKIP [5/99] libanl-2.28.so already_complete
+2026-11-06T17:22:06 SKIP [6/99] libapt-pkg.so.5.0.2 listed_in_unanalysed_skip (user decision 2026-11-06: SysPart call graph crashes; same library ended unanalysable in cassandra_5.0.8 (1384 starts excluded))
+2026-11-06T17:22:06 SKIP [7/99] libapt-private.so.0.0 listed_in_unanalysed_skip (user decision 2026-11-06: as libapt-pkg (unanalysable in cassandra_5.0.8))
+2026-11-06T17:22:06 SKIP [8/99] libattr.so.1 already_complete
+2026-11-06T17:22:06 SKIP [9/99] libaudit.so.1.0.0 already_complete
+2026-11-06T17:22:06 SKIP [10/99] libblkid.so.1 already_complete
+2026-11-06T17:22:06 SKIP [11/99] libbz2.so.1.0.4 already_complete
+2026-11-06T17:22:06 SKIP [12/99] libcap-ng.so.0.0.0 already_complete
+2026-11-06T17:22:06 SKIP [13/99] libcap.so.2 already_complete
+2026-11-06T17:22:06 SKIP [14/99] libcom_err.so.2.1 already_complete
+2026-11-06T17:22:06 SKIP [15/99] libcrypt-2.28.so already_complete
+2026-11-06T17:22:06 SKIP [16/99] libcrypto.so.1.1 already_complete
+2026-11-06T17:22:06 SKIP [17/99] libdb-5.3.so already_complete
+2026-11-06T17:22:06 SKIP [18/99] libdebconfclient.so.0 already_complete
+2026-11-06T17:22:06 SKIP [19/99] libdl-2.28.so already_complete
+2026-11-06T17:22:06 SKIP [20/99] libe2p.so.2.3 already_complete
+2026-11-06T17:22:06 SKIP [21/99] libelf-0.176.so already_complete
+2026-11-06T17:22:06 SKIP [22/99] libelf.so.1 already_complete
+2026-11-06T17:22:06 SKIP [23/99] libexpat.so.1 already_complete
+2026-11-06T17:22:06 SKIP [24/99] libexpatw.so.1.6.8 already_complete
+2026-11-06T17:22:06 SKIP [25/99] libext2fs.so.2 already_complete
+2026-11-06T17:22:06 SKIP [26/99] libfdisk.so.1.1.0 already_complete
+2026-11-06T17:22:06 SKIP [27/99] libffi.so.6.0.4 already_complete
+2026-11-06T17:22:06 SKIP [28/99] libform.so.6 already_complete
+2026-11-06T17:22:06 SKIP [29/99] libformw.so.6.1 already_complete
+2026-11-06T17:22:06 SKIP [30/99] libgcrypt.so.20 already_complete
+2026-11-06T17:22:06 SKIP [31/99] libgmp.so.10.3.2 already_complete
+2026-11-06T17:22:06 SKIP [33/99] libgpg-error.so.0 already_complete
+2026-11-06T17:22:06 SKIP [34/99] libhistory.so.7 already_complete
+2026-11-06T17:22:06 SKIP [35/99] libhogweed.so.4 already_complete
+2026-11-06T17:22:06 SKIP [36/99] libidn2.so.0.3.4 already_complete
+2026-11-06T17:22:06 SKIP [37/99] libinstrument.so already_complete
+2026-11-06T17:22:06 SKIP [38/99] libjemalloc.so already_complete
+2026-11-06T17:22:06 SKIP [39/99] libjli.so already_complete
+2026-11-06T17:22:06 SKIP [40/99] liblz4.so.1.8.3 already_complete
+2026-11-06T17:22:06 SKIP [41/99] liblzma.so.5 already_complete
+2026-11-06T17:22:06 SKIP [42/99] libmemusage.so already_complete
+2026-11-06T17:22:06 SKIP [43/99] libmenu.so.6 already_complete
+2026-11-06T17:22:06 SKIP [44/99] libmenuw.so.6 already_complete
+2026-11-06T17:22:06 SKIP [45/99] libmnl.so.0 already_complete
+2026-11-06T17:22:06 SKIP [47/99] libmvec-2.28.so already_complete
+2026-11-06T17:22:06 SKIP [48/99] libncurses.so.6.1 already_complete
+2026-11-06T17:22:07 UNRESOLVED [51/99] libnetty-transport-native-epoll3378185644820919240.so
+2026-11-06T17:22:08 PARALLEL libraries=52 jobs=8
+2026-11-06T17:22:08 START [32/99] libgnutls.so.30 functions=1223 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libgnutls.so.30/logfile.txt
+2026-11-06T17:22:08 START [46/99] libmount.so.1 functions=285 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libmount.so.1/logfile.txt
+2026-11-06T17:22:08 START [49/99] libncursesw.so.6 functions=460 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libncursesw.so.6/logfile.txt
+2026-11-06T17:22:08 START [50/99] libnettle.so.6 functions=367 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnettle.so.6/logfile.txt
+2026-11-06T17:22:08 START [52/99] libnsl.so.1 functions=128 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnsl-2.28.so/logfile.txt
+2026-11-06T17:22:08 START [53/99] libnss_compat-2.28.so functions=15 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_compat-2.28.so/logfile.txt
+2026-11-06T17:22:08 START [54/99] libnss_dns-2.28.so functions=9 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_dns-2.28.so/logfile.txt
+2026-11-06T17:22:08 START [55/99] libnss_files-2.28.so functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_files-2.28.so/logfile.txt
+2026-11-06T17:22:32 DONE [54/99] libnss_dns-2.28.so status=completed exit=0 syscalls=45
+2026-11-06T17:22:32 START [56/99] libnss_files.so.2 functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_files-2.28.so/logfile.txt
+2026-11-06T17:22:33 DONE [53/99] libnss_compat-2.28.so status=completed exit=0 syscalls=42
+2026-11-06T17:22:33 START [57/99] libnss_hesiod.so.2 functions=17 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_hesiod-2.28.so/logfile.txt
+2026-11-06T17:22:34 DONE [50/99] libnettle.so.6 status=completed exit=0 syscalls=35
+2026-11-06T17:22:34 START [58/99] libnss_nis.so.2 functions=57 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_nis-2.28.so/logfile.txt
+2026-11-06T17:22:34 DONE [55/99] libnss_files-2.28.so status=failed exit=3 syscalls=0
+2026-11-06T17:22:34 START [59/99] libnss_nisplus.so.2 functions=56 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnss_nisplus-2.28.so/logfile.txt
+2026-11-06T17:22:36 DONE [52/99] libnsl.so.1 status=completed exit=0 syscalls=59
+2026-11-06T17:22:36 START [60/99] libnuma.so.1 functions=76 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnuma.so.1/logfile.txt
+2026-11-06T17:22:40 DONE [49/99] libncursesw.so.6 status=completed exit=0 syscalls=45
+2026-11-06T17:22:40 START [61/99] libnuma.so.1.0.0 functions=76 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libnuma.so.1.0.0/logfile.txt
+2026-11-06T17:22:59 DONE [56/99] libnss_files.so.2 status=completed exit=0 syscalls=35
+2026-11-06T17:22:59 START [62/99] libp11-kit.so.0.3.0 functions=100 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libp11-kit.so.0.3.0/logfile.txt
+2026-11-06T17:22:59 DONE [57/99] libnss_hesiod.so.2 status=completed exit=0 syscalls=45
+2026-11-06T17:22:59 START [63/99] libpam.so.0.84.2 functions=41 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpam.so.0.84.2/logfile.txt
+2026-11-06T17:23:02 DONE [59/99] libnss_nisplus.so.2 status=completed exit=0 syscalls=58
+2026-11-06T17:23:02 START [64/99] libpam_misc.so.0.82.1 functions=4 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpam_misc.so.0.82.1/logfile.txt
+2026-11-06T17:23:03 DONE [58/99] libnss_nis.so.2 status=completed exit=0 syscalls=47
+2026-11-06T17:23:03 START [65/99] libpamc.so.0 functions=6 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpamc.so.0/logfile.txt
+2026-11-06T17:23:03 DONE [46/99] libmount.so.1 status=completed exit=0 syscalls=99
+2026-11-06T17:23:03 START [66/99] libpanel.so.6.1 functions=18 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpanel.so.6.1/logfile.txt
+2026-11-06T17:23:03 DONE [60/99] libnuma.so.1 status=completed exit=0 syscalls=57
+2026-11-06T17:23:03 START [67/99] libpanelw.so.6.1 functions=18 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpanelw.so.6.1/logfile.txt
+2026-11-06T17:23:12 DONE [61/99] libnuma.so.1.0.0 status=completed exit=0 syscalls=57
+2026-11-06T17:23:12 START [68/99] libpcprofile.so functions=2 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpcprofile.so/logfile.txt
+2026-11-06T17:23:30 DONE [63/99] libpam.so.0.84.2 status=completed exit=0 syscalls=59
+2026-11-06T17:23:30 START [69/99] libpcre.so.3 functions=27 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpcre.so.3/logfile.txt
+2026-11-06T17:23:30 DONE [65/99] libpamc.so.0 status=completed exit=0 syscalls=41
+2026-11-06T17:23:30 START [70/99] libpcre.so.3.13.3 functions=27 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpcre.so.3.13.3/logfile.txt
+2026-11-06T17:23:30 DONE [67/99] libpanelw.so.6.1 status=completed exit=0 syscalls=35
+2026-11-06T17:23:30 START [71/99] libpcreposix.so.3.13.3 functions=4 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpcreposix.so.3.13.3/logfile.txt
+2026-11-06T17:23:30 DONE [64/99] libpam_misc.so.0.82.1 status=completed exit=0 syscalls=40
+2026-11-06T17:23:30 START [72/99] libprocps.so.7.1.0 functions=43 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libprocps.so.7.1.0/logfile.txt
+2026-11-06T17:23:32 DONE [66/99] libpanel.so.6.1 status=completed exit=0 syscalls=35
+2026-11-06T17:23:32 START [73/99] libpthread-2.28.so functions=255 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libpthread-2.28.so/logfile.txt
+2026-11-06T17:23:42 DONE [68/99] libpcprofile.so status=completed exit=0 syscalls=0
+2026-11-06T17:23:42 START [74/99] libreadline.so.7.0 functions=460 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libreadline.so.7.0/logfile.txt
+2026-11-06T17:24:04 DONE [73/99] libpthread-2.28.so status=completed exit=0 syscalls=76
+2026-11-06T17:24:04 START [75/99] libresolv-2.28.so functions=95 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libresolv-2.28.so/logfile.txt
+2026-11-06T17:24:09 DONE [72/99] libprocps.so.7.1.0 status=completed exit=0 syscalls=57
+2026-11-06T17:24:09 START [76/99] librt-2.28.so functions=40 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/librt-2.28.so/logfile.txt
+2026-11-06T17:24:14 DONE [74/99] libreadline.so.7.0 status=completed exit=0 syscalls=56
+2026-11-06T17:24:14 START [77/99] libseccomp.so.2.3.3 functions=24 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libseccomp.so.2.3.3/logfile.txt
+2026-11-06T17:24:19 DONE [69/99] libpcre.so.3 status=completed exit=0 syscalls=41
+2026-11-06T17:24:19 START [78/99] libselinux.so.1 functions=237 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libselinux.so.1/logfile.txt
+2026-11-06T17:24:19 DONE [71/99] libpcreposix.so.3.13.3 status=completed exit=0 syscalls=41
+2026-11-06T17:24:19 START [79/99] libsemanage.so.1 functions=344 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsemanage.so.1/logfile.txt
+2026-11-06T17:24:21 DONE [70/99] libpcre.so.3.13.3 status=completed exit=0 syscalls=41
+2026-11-06T17:24:21 START [80/99] libsepol.so.1 functions=263 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsepol.so.1/logfile.txt
+2026-11-06T17:24:33 DONE [75/99] libresolv-2.28.so status=completed exit=0 syscalls=45
+2026-11-06T17:24:33 START [81/99] libsmartcols.so.1 functions=149 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsmartcols.so.1/logfile.txt
+2026-11-06T17:24:39 DONE [77/99] libseccomp.so.2.3.3 status=completed exit=0 syscalls=37
+2026-11-06T17:24:39 START [82/99] libsqlite3.so.0.8.6 functions=298 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsqlite3.so.0.8.6/logfile.txt
+2026-11-06T17:24:40 DONE [76/99] librt-2.28.so status=completed exit=0 syscalls=74
+2026-11-06T17:24:40 START [83/99] libss.so.2.0 functions=30 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libss.so.2.0/logfile.txt
+2026-11-06T17:24:57 DONE [80/99] libsepol.so.1 status=completed exit=0 syscalls=36
+2026-11-06T17:24:57 START [84/99] libssl.so.1.1 functions=496 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libssl.so.1.1/logfile.txt
+2026-11-06T17:25:00 DONE [81/99] libsmartcols.so.1 status=completed exit=0 syscalls=39
+2026-11-06T17:25:00 START [85/99] libstdc++.so.6 functions=3950 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libstdc++.so.6/logfile.txt
+2026-11-06T17:25:06 DONE [83/99] libss.so.2.0 status=completed exit=0 syscalls=55
+2026-11-06T17:25:06 START [86/99] libstdc++.so.6.0.25 functions=3950 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libstdc++.so.6.0.25/logfile.txt
+2026-11-06T17:25:13 DONE [78/99] libselinux.so.1 status=completed exit=0 syscalls=74
+2026-11-06T17:25:13 START [87/99] libsystemd.so.0.25.0 functions=539 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsystemd.so.0.25.0/logfile.txt
+2026-11-06T17:25:19 DONE [79/99] libsemanage.so.1 status=completed exit=0 syscalls=71
+2026-11-06T17:25:19 START [88/99] libtasn1.so.6.5.5 functions=40 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libtasn1.so.6.5.5/logfile.txt
+2026-11-06T17:25:31 DONE [62/99] libp11-kit.so.0.3.0 status=completed exit=0 syscalls=61
+2026-11-06T17:25:31 START [89/99] libthread_db-1.0.so functions=40 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libthread_db-1.0.so/logfile.txt
+2026-11-06T17:25:49 DONE [88/99] libtasn1.so.6.5.5 status=completed exit=0 syscalls=35
+2026-11-06T17:25:49 START [90/99] libtic.so.6 functions=12 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libtic.so.6/logfile.txt
+2026-11-06T17:26:00 DONE [32/99] libgnutls.so.30 status=completed exit=0 syscalls=65
+2026-11-06T17:26:00 START [91/99] libtinfo.so.6 functions=193 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libtinfo.so.6/logfile.txt
+2026-11-06T17:26:01 DONE [89/99] libthread_db-1.0.so status=completed exit=0 syscalls=35
+2026-11-06T17:26:01 START [92/99] libtinfo.so.6.1 functions=193 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libtinfo.so.6.1/logfile.txt
+2026-11-06T17:26:31 DONE [90/99] libtic.so.6 status=completed exit=0 syscalls=47
+2026-11-06T17:26:31 START [93/99] libudev.so.1.6.13 functions=90 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libudev.so.1.6.13/logfile.txt
+2026-11-06T17:26:38 DONE [91/99] libtinfo.so.6 status=completed exit=0 syscalls=44
+2026-11-06T17:26:38 START [94/99] libunistring.so.2 functions=557 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libunistring.so.2/logfile.txt
+2026-11-06T17:26:40 DONE [92/99] libtinfo.so.6.1 status=completed exit=0 syscalls=44
+2026-11-06T17:26:40 START [95/99] libutil-2.28.so functions=6 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libutil-2.28.so/logfile.txt
+2026-11-06T17:26:56 DONE [84/99] libssl.so.1.1 status=completed exit=0 syscalls=69
+2026-11-06T17:26:56 START [96/99] libuuid.so.1 functions=20 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libuuid.so.1/logfile.txt
+2026-11-06T17:27:13 DONE [93/99] libudev.so.1.6.13 status=completed exit=0 syscalls=58
+2026-11-06T17:27:13 START [97/99] libxtables.so.12 functions=71 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libxtables.so.12/logfile.txt
+2026-11-06T17:27:16 DONE [85/99] libstdc++.so.6 status=completed exit=0 syscalls=38
+2026-11-06T17:27:16 START [98/99] libz.so.1 functions=85 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libz.so.1/logfile.txt
+2026-11-06T17:27:17 DONE [95/99] libutil-2.28.so status=completed exit=0 syscalls=54
+2026-11-06T17:27:17 START [99/99] libzstd.so.1.3.8 functions=202 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libzstd.so.1.3.8/logfile.txt
+2026-11-06T17:27:23 DONE [86/99] libstdc++.so.6.0.25 status=completed exit=0 syscalls=38
+2026-11-06T17:27:29 DONE [94/99] libunistring.so.2 status=completed exit=0 syscalls=35
+2026-11-06T17:27:31 DONE [96/99] libuuid.so.1 status=completed exit=0 syscalls=46
+2026-11-06T17:27:56 DONE [98/99] libz.so.1 status=completed exit=0 syscalls=35
+2026-11-06T17:27:59 DONE [97/99] libxtables.so.12 status=completed exit=0 syscalls=61
+2026-11-06T17:28:20 DONE [99/99] libzstd.so.1.3.8 status=completed exit=0 syscalls=35
+2026-11-06T18:04:11 DONE [82/99] libsqlite3.so.0.8.6 status=failed exit=-15 syscalls=0
+2026-11-06T18:13:29 DONE [87/99] libsystemd.so.0.25.0 status=completed exit=0 syscalls=112

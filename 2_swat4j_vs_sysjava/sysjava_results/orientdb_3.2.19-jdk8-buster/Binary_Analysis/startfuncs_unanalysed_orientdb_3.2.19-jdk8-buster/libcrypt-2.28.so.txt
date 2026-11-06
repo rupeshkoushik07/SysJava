@@ -1,0 +1,7 @@
+crypt
+crypt_r
+encrypt
+encrypt_r
+fcrypt
+setkey
+setkey_r

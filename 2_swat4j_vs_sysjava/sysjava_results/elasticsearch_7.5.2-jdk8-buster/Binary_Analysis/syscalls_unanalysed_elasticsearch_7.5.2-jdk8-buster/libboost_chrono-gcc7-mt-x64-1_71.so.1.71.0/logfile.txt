@@ -1,0 +1,315 @@
+
+Path to futex:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _ZNSt28__atomic_futex_unsigned_base19_M_futex_notify_allEPj_dd660
+  _ZNSt28__atomic_futex_unsigned_base19_M_futex_notify_allEPj_dd660 - [syscall]-> futex
+
+Path to gettimeofday:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to fstat:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to ioctl:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> ioctl_effc0
+  ioctl_effc0 - [syscall]-> ioctl
+
+Path to lseek:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to nanosleep:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> nanosleep_c6580
+  nanosleep_c6580 - [syscall]-> nanosleep
+
+Path to poll:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to sched_getscheduler:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [syscall]-> sched_getparam
+
+Path to read:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to exit:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> rt_sigprocmask
+
+Path to clock_getres:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to times:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> times_c61c0
+  times_c61c0 - [syscall]-> times
+
+Path to write:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to writev:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> writev_f0090
+  writev_f0090 - [syscall]-> writev
+
+Path to set_tid_address:
+  _init_45a0 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [syscall]-> set_tid_address
+
+Path to sched_yield:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to tgkill:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to getpid:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> getpid
+
+Path to gettid:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit_group:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to sendto:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to recvmsg:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to fcntl:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to openat:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> get_nprocs_f6770
+  get_nprocs_f6770 - [DIRECT]-> __open64_nocancel_ef1a0
+  __open64_nocancel_ef1a0 - [syscall]-> openat
+
+Path to sched_get_priority_min:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_setaffinity:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setscheduler
+
+Path to mmap:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mprotect:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to madvise:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to prlimit64:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to rt_sigaction:
+  _init_45a0 - [DIRECT]-> __pthread_initialize_minimal_6860
+  __pthread_initialize_minimal_6860 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to mremap:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to clone:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [DIRECT]-> clone_f9030
+  clone_f9030 - [syscall]-> clone
+
+Path to pause:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> pthread_mutex_lock_1061e0
+  pthread_mutex_lock_1061e0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to stat:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> __sysconf_check_spec_c8120
+  __sysconf_check_spec_c8120 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sysinfo:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to lstat:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_nprocs_conf_f6a60
+  get_nprocs_conf_f6a60 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to socket:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to bind:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to dup:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> __get_myaddress_11e7b0
+  __get_myaddress_11e7b0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to setsockopt:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to connect:
+  _ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_6system12system_errorEEEED0Ev_55d0 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> pmap_getport_129120
+  pmap_getport_129120 - [DIRECT]-> __libc_rpc_getport_128f60
+  __libc_rpc_getport_128f60 - [DIRECT]-> __get_socket_128ec0
+  __get_socket_128ec0 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect

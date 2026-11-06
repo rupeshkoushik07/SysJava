@@ -1,0 +1,8 @@
+=== Combined Native Binding Hits ===
+Format: detector | payload
+
+ffi | <sun.security.ec.ECDSASignature$SHA1: SHA1> | crypto | SHA1 | downcallHandle | sunec.jar
+ffi | <sun.security.ec.ECDSASignature$SHA224: SHA224> | crypto | SHA224 | downcallHandle | sunec.jar
+ffi | <sun.security.ec.ECDSASignature$SHA256: SHA256> | crypto | SHA256 | downcallHandle | sunec.jar
+ffi | <sun.security.ec.ECDSASignature$SHA384: SHA384> | crypto | SHA384 | downcallHandle | sunec.jar
+ffi | <sun.security.ec.ECDSASignature$SHA512: SHA512> | crypto | SHA512 | downcallHandle | sunec.jar

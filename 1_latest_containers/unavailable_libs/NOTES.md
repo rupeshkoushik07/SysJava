@@ -242,3 +242,32 @@ Tomcat Not Found 2 -> 0.
 - hawtjni Callback: hawtjni generates callback code into each project's own library; no standalone library.
 - Shaded snappy/quiche: upstream libraries export unshaded JNI names; a matching library would have to be
   rebuilt with storm's package names (storm does not ship one).
+
+## 2026-11-06: Cassandra 5.0.8 OpenHFT natives (libCEInternals.so built from source)
+- Source: github.com/OpenHFT/Java-Thread-Affinity tag Java-Thread-Affinity-3.23.3 (commit 7556981), clone in
+  _downloads/openhft-affinity-3.23.3; matches the image's affinity-3.23.3.jar (javap native declarations).
+- Build (debian:bookworm, the image's base; g++ 12.2.0, openjdk-17 for `javac -h` headers), upstream Makefile:
+  javac -proc:none -implicit:none -cp <image jars> -sourcepath src/main/java -h target/jni -d target/classes NativeAffinity.java JNIClock.java
+  cd affinity/src/main/c && make JAVA_HOME=...
+- Result: cassandra_5.0.8/openhft-affinity-3.23.3/libCEInternals.so exports 6 of the jar's 7 natives;
+  NativeAffinity.rdtsc0 has no C implementation upstream (dead declaration).
+- Mapping: notfound_search/classify.py (now idempotent) -> 6 lines in cassandra_5.0.8/mapping/.
+- SysPart: one run, all 6 start functions: run_supplement.sh cassandra_5.0.8 <lib> start_functions_libCEInternals.so.txt syspart_libCEInternals
+  -> 39 syscalls, all already in the 229-syscall profile (profile unchanged; earlier container PASS holds).
+- Table: tables/tableIII_latest_rerun_2026-11-06_openhft.{tex,pdf}, built from the same results mix as _ffmfix
+  (Final_results_latest_versions_clinit for orientdb/zookeeper). Only Cassandra changes: Resolved 1547->1553,
+  JNI Static 786->792, Not Found 15->9.
+
+## 2026-11-06 evening: Storm 2.8.8 mappings, runc dropped, final Table III
+- Storm 2.8.8 (notfound_search/classify.py): 11 shaded snappy natives -> unshaded Java_org_xerial_snappy_* in the image's
+  libsnappyjava (alias, like the pipeline's shaded quiche aliases); quiche_enable_debug_logging -> netty_quiche_enable_debug_logging;
+  WBWIRocksIterator.refresh0Jni -> its C++-mangled symbol. Not Found 26 -> 13 (7 hawtjni, 6 rocksdb natives absent from rocksdbjni 10.10.1.1's library).
+- One SysPart per library, full start list: scripts/manual_lib_rerun.sh storm_2.8.8 Final_results_latest_versions workspaces
+  libsnappyjava_storm-shaded-deps-2.8.8.so libnetty_quiche42_linux_x86_64-4.2.12.Final.so librocksdbjni16624330668920755723.so
+  -> snappy 0->34, quiche 42->42, rocksdb 61->61 syscalls; profile 193 unchanged. Previous results: Binary_Analysis_before_manual/.
+- runc (user decision): merge_all_syscalls.py skips a runc binary result; runc.txt covers it. scripts/remerge_norunc.sh <t> <results_root> <ws_root>
+  for the other 9 (logs tables/norunc_logs/); every profile unchanged, all PASS. Previous: Binary_Analysis_before_norunc/.
+- Storm stage-11 check needs et-latest-zookeeper on et-latest-net (started in stage 1 only); started by hand, then
+  WS_ROOT=<abs> RESULTS_ROOT=<abs> run_latest_target.sh storm_2.8.8 11 -> PASS (first check without ZooKeeper failed in baseline too).
+- Final: tables/tableIII_latest_rerun_2026-11-06_final.{tex,pdf} (results mix: _clinit for orientdb/zookeeper);
+  not-found list notfound_search/notfound_with_jars.tsv (37, rebuilt from classification.tsv) -> tables/notfound_natives_latest_2026-11-06_final.pdf.

@@ -1,0 +1,6 @@
+/bin/sh
+dirname
+/opt/java/bin/java
+rm
+runc
+uname

@@ -1749,3 +1749,196 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-05 21:20:29] orientdb_3.2.53 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json
+
+===== [2026-11-06 19:15:42] orientdb_3.2.53 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=37043	fuzzy=0	syscalls=0
+libawt.so	functions=36950	fuzzy=0	syscalls=82
+libawt_xawt.so	functions=43454	fuzzy=978	syscalls=100
+libicmp_helper.so	functions=3830	fuzzy=0	syscalls=35
+libjava.so	functions=36100	fuzzy=0	syscalls=88
+libjffi-1.2.so	functions=4041	fuzzy=0	syscalls=36
+libjvm.so	functions=35699	fuzzy=0	syscalls=83
+liblz4-java-327945037295835334.so	functions=3977	fuzzy=0	syscalls=34
+liblz4-java.so	functions=3977	fuzzy=0	syscalls=34
+libmanagement.so	functions=36219	fuzzy=0	syscalls=82
+libnet.so	functions=36281	fuzzy=0	syscalls=83
+libnio.so	functions=36474	fuzzy=0	syscalls=83
+libsunec.so	functions=4511	fuzzy=0	syscalls=34
+libzip.so	functions=36305	fuzzy=0	syscalls=82
+bash	functions=6568	fuzzy=0	syscalls=94
+dash	functions=4019	fuzzy=0	syscalls=72
+dirname	functions=28838	fuzzy=0	syscalls=44
+env	functions=28838	fuzzy=0	syscalls=46
+gnurm	functions=3907	fuzzy=0	syscalls=47
+java	functions=3974	fuzzy=0	syscalls=65
+runc	functions=17931	fuzzy=0	syscalls=35
+uname	functions=28838	fuzzy=0	syscalls=45
+
+===== [2026-11-06 19:15:42] orientdb_3.2.53 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: orientdb_3.2.53
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_BIN_orientdb_3.2.53
+Found 7 subdirectories
+
+  ✓ bash: 94 syscalls
+  ✓ dash: 72 syscalls
+  ✓ dirname: 44 syscalls
+  ✓ env: 46 syscalls
+  ✓ gnurm: 47 syscalls
+  ✓ java: 65 syscalls
+  ✓ uname: 45 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_BIN_orientdb_3.2.53/binary_syscalls.txt (108 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53
+Found 14 subdirectories
+
+  ✓ libawt.so: 82 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 100 syscalls
+  ✓ libicmp_helper.so: 35 syscalls
+  ✓ libjava.so: 88 syscalls
+  ✓ libjffi-1.2.so: 36 syscalls
+  ✓ libjvm.so: 83 syscalls
+  ✓ liblz4-java-327945037295835334.so: 34 syscalls
+  ✓ liblz4-java.so: 34 syscalls
+  ✓ libmanagement.so: 82 syscalls
+  ✓ libnet.so: 83 syscalls
+  ✓ libnio.so: 83 syscalls
+  ✓ libsunec.so: 34 syscalls
+  ✓ libzip.so: 82 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/library_syscalls.txt (106 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53
+Found 7 syscalls.txt files
+  libcrypt.so.1: 37 syscalls
+  libcrypt.so.1.failed-unversioned-starts: syscalls.txt EMPTY (0 syscalls)
+  libjli.so: 65 syscalls
+  libpcre2-8.so.0: 36 syscalls
+  librt.so.1: syscalls.txt EMPTY (0 syscalls)
+  libselinux.so.1: 81 syscalls
+  libtinfo.so.6: 47 syscalls
+
+⚠ Warning: 2 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_unanalysed_orientdb_3.2.53/unanalysed_syscalls.txt (89 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 0 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/runc.txt
+  ✓ Loaded 118 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      108
+Library syscalls:     106
+Unanalysed libraries: 89
+JNA/FFI syscalls:     0
+Runc whitelist:       118
+Combined (unique):    172
+  → unanalysed libraries added 9 additional syscalls
+  → runc.txt added 34 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.txt (172 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json (172 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 172
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  8
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  108 unique
+
+Libraries:
+  - Analyzed:  14
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  106 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/runc.txt
+  - Syscalls:    118 unique
+  - Added:       43 additional syscalls
+
+Combined:
+  - Total unique syscalls: 172
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_BIN_orientdb_3.2.53/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  orientdb_3.2.53
+      JARFILES_orientdb_3.2.53  (4.0K) -> Dataset/
+      LIBS_orientdb_3.2.53  (4.0K) -> Dataset/
+      BINARIES_orientdb_3.2.53  (4.0K) -> Dataset/
+      RUNTIME_orientdb_3.2.53  (4.0K) -> Dataset/
+      outputs_orientdb_3.2.53  (480K) -> Bytecode_Analysis/
+      sysdig_outputs_orientdb_3.2.53  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_orientdb_3.2.53  (146M) -> Binary_Analysis/
+      syscalls_BIN_orientdb_3.2.53  (24M) -> Binary_Analysis/
+      syscalls_unanalysed_orientdb_3.2.53  (7.0M) -> Binary_Analysis/
+      startfuncs_unanalysed_orientdb_3.2.53  (32K) -> Binary_Analysis/
+      jna_ffi_analysis  (700K) -> Binary_Analysis/
+    (11 moved)
+
+Done. Moved 11 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_clinit/orientdb_3.2.53/Final_results/
+Containers organized: 1
+
+===== [2026-11-06 19:15:43] orientdb_3.2.53 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-06 19:18:35] orientdb_3.2.53 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/orientdb_3.2.53/Binary_Analysis/syscalls_output_orientdb_3.2.53/orientdb_3.2.53.json

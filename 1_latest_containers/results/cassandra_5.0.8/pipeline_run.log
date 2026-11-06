@@ -5503,3 +5503,354 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-05 18:47:23] cassandra_5.0.8 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Binary_Analysis/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json
+
+===== [2026-11-06 19:16:28] cassandra_5.0.8 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libamazonCorrettoCryptoProvider.so	functions=10406	fuzzy=0	syscalls=39
+libawt.so	functions=49873	fuzzy=0	syscalls=93
+libawt_xawt.so	functions=56245	fuzzy=936	syscalls=101
+libc.so.6	functions=3706	fuzzy=0	syscalls=3
+libjava.so	functions=49032	fuzzy=0	syscalls=94
+libjffi-1.2.so	functions=4014	fuzzy=0	syscalls=39
+libjnidispatch.so	functions=3836	fuzzy=3	syscalls=37
+libjvm.so	functions=48676	fuzzy=0	syscalls=94
+liblz4-java-14995367079075527941.so	functions=3846	fuzzy=0	syscalls=37
+liblz4-java.so	functions=3846	fuzzy=0	syscalls=37
+libnet.so	functions=49187	fuzzy=0	syscalls=93
+libnetty_tcnative_linux_x86_64.so	functions=9800	fuzzy=0	syscalls=44
+libnetty_tcnative-@VERSION@.so	functions=9800	fuzzy=0	syscalls=44
+libnetty_transport_native_epoll_x86_64-4.1.130.Final.so	functions=3952	fuzzy=0	syscalls=67
+libnetty_transport_native_epoll_x86_64.so	functions=3952	fuzzy=0	syscalls=67
+libnio.so	functions=49402	fuzzy=0	syscalls=93
+libsigar-amd64-linux.so	functions=4133	fuzzy=0	syscalls=78
+libsnappyjava.so	functions=5971	fuzzy=302	syscalls=37
+libzip.so	functions=49237	fuzzy=0	syscalls=93
+libzip.so.bad_redo_no_lib_path	functions=3806	fuzzy=0	syscalls=37
+libzip.so.truncated_callgraph	functions=49237	fuzzy=0	syscalls=93
+libzstd-jni-1.5.7-2.so	functions=4234	fuzzy=0	syscalls=53
+bash	functions=6242	fuzzy=0	syscalls=90
+cat	functions=3810	fuzzy=0	syscalls=40
+cut	functions=3815	fuzzy=0	syscalls=39
+dash	functions=3964	fuzzy=0	syscalls=73
+date	functions=3854	fuzzy=0	syscalls=42
+dirname	functions=3806	fuzzy=0	syscalls=38
+env	functions=3811	fuzzy=0	syscalls=40
+expr	functions=5000	fuzzy=95	syscalls=38
+find	functions=5755	fuzzy=0	syscalls=71
+free	functions=9397	fuzzy=250	syscalls=55
+getopt	functions=3759	fuzzy=0	syscalls=39
+grep	functions=4296	fuzzy=0	syscalls=43
+head	functions=3818	fuzzy=0	syscalls=38
+id	functions=4443	fuzzy=0	syscalls=56
+ip	functions=5871	fuzzy=1	syscalls=87
+java	functions=3867	fuzzy=0	syscalls=66
+jspawnhelper	functions=3735	fuzzy=0	syscalls=42
+ls	functions=4659	fuzzy=0	syscalls=62
+mawk	functions=4813	fuzzy=0	syscalls=60
+mkdir	functions=4551	fuzzy=0	syscalls=72
+mktemp	functions=3814	fuzzy=0	syscalls=41
+numactl	functions=3858	fuzzy=0	syscalls=63
+rm	functions=3899	fuzzy=0	syscalls=48
+runc	functions=17822	fuzzy=0	syscalls=38
+sed	functions=4642	fuzzy=0	syscalls=73
+sort	functions=3958	fuzzy=0	syscalls=69
+tr	functions=3824	fuzzy=0	syscalls=39
+uname	functions=3803	fuzzy=0	syscalls=39
+
+===== [2026-11-06 19:16:28] cassandra_5.0.8 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: cassandra_5.0.8
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_BIN_cassandra_5.0.8
+Found 29 subdirectories
+
+  ✓ bash: 90 syscalls
+  ✓ cat: 40 syscalls
+  ✓ cut: 39 syscalls
+  ✓ dash: 73 syscalls
+  ✓ date: 42 syscalls
+  ✓ dirname: 38 syscalls
+  ✓ env: 40 syscalls
+  ✓ expr: 38 syscalls
+  ✓ find: 71 syscalls
+  ✓ free: 55 syscalls
+  ✓ getopt: 39 syscalls
+  ✗ gosu: syscalls.txt MISSING
+  ✓ grep: 43 syscalls
+  ✓ head: 38 syscalls
+  ✓ id: 56 syscalls
+  ✓ ip: 87 syscalls
+  ✓ java: 66 syscalls
+  ✓ jspawnhelper: 42 syscalls
+  ✗ ldconfig: syscalls.txt MISSING
+  ✓ ls: 62 syscalls
+  ✓ mawk: 60 syscalls
+  ✓ mkdir: 72 syscalls
+  ✓ mktemp: 41 syscalls
+  ✓ numactl: 63 syscalls
+  ✓ rm: 48 syscalls
+  ✓ sed: 73 syscalls
+  ✓ sort: 69 syscalls
+  ✓ tr: 39 syscalls
+  ✓ uname: 39 syscalls
+
+✗ Error: 2 binaries with MISSING syscalls.txt:
+    - gosu
+    - ldconfig
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_BIN_cassandra_5.0.8/binary_syscalls.txt (152 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8
+Found 22 subdirectories
+
+  ✓ libamazonCorrettoCryptoProvider.so: 39 syscalls
+  ✓ libawt.so: 93 syscalls
+  ✓ libawt_xawt.so: 101 syscalls
+  ✓ libc.so.6: 3 syscalls
+  ✓ libjava.so: 94 syscalls
+  ✓ libjffi-1.2.so: 39 syscalls
+  ✓ libjnidispatch.so: 37 syscalls
+  ✓ libjvm.so: 94 syscalls
+  ✓ liblz4-java-14995367079075527941.so: 37 syscalls
+  ✓ liblz4-java.so: 37 syscalls
+  ✓ libnet.so: 93 syscalls
+  ✓ libnetty_tcnative-@VERSION@.so: 44 syscalls
+  ✓ libnetty_tcnative_linux_x86_64.so: 44 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64-4.1.130.Final.so: 67 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64.so: 67 syscalls
+  ✓ libnio.so: 93 syscalls
+  ✓ libsigar-amd64-linux.so: 78 syscalls
+  ✓ libsnappyjava.so: 37 syscalls
+  ✓ libzip.so: 93 syscalls
+  ✓ libzip.so.bad_redo_no_lib_path: 37 syscalls
+  ✓ libzip.so.truncated_callgraph: 93 syscalls
+  ✓ libzstd-jni-1.5.7-2.so: 53 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/library_syscalls.txt (132 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8
+Found 105 syscalls.txt files
+  libBrokenLocale.so.1: syscalls.txt EMPTY (0 syscalls)
+  libacl.so.1: 56 syscalls
+  libanl.so.1: syscalls.txt EMPTY (0 syscalls)
+  libapt-pkg.so.6.0.0: syscalls.txt EMPTY (0 syscalls)
+  libapt-private.so.0.0: syscalls.txt EMPTY (0 syscalls)
+  libattr.so.1: 49 syscalls
+  libaudit.so.1.0.0: 54 syscalls
+  libblkid.so.1: 67 syscalls
+  libbpf.so.1: 68 syscalls
+  libbpf.so.1.1.2: 68 syscalls
+  libbz2.so.1.0.4: 38 syscalls
+  libc_malloc_debug.so.0: 37 syscalls
+  libcap-ng.so.0.0.0: 58 syscalls
+  libcap.so.2: 55 syscalls
+  libcap.so.2.66: 55 syscalls
+  libcom_err.so.2.1: 42 syscalls
+  libcrypt.so.1.1.0: 38 syscalls
+  libcrypto.so.3: 67 syscalls
+  libdb-5.3.so: 77 syscalls
+  libdebconfclient.so.0: 38 syscalls
+  libdrop_ambient.so.0: 38 syscalls
+  libe2p.so.2.3: 51 syscalls
+  libelf-0.188.so: 43 syscalls
+  libexpat.so.1: 38 syscalls
+  libexpatw.so.1.8.10: 38 syscalls
+  libext2fs.so.2: 67 syscalls
+  libextnet.so: 94 syscalls
+  libffi.so.8.1.2: 43 syscalls
+  libformw.so.6.4: 42 syscalls
+  libgcrypt.so.20: 49 syscalls
+  libgcrypt.so.20.syspart_crash: syscalls.txt EMPTY (0 syscalls)
+  libgmp.so.10: 38 syscalls
+  libgnutls.so.30: 67 syscalls
+  libgpg-error.so.0: 55 syscalls
+  libgpg-error.so.0.33.1: 55 syscalls
+  libgssapi_krb5.so.2.2: 73 syscalls
+  libhistory.so.8: 54 syscalls
+  libhogweed.so.6.6: 38 syscalls
+  libidn2.so.0.3.8: 37 syscalls
+  libinstrument.so: 93 syscalls
+  libjemalloc.so.2: 59 syscalls
+  libjimage.so: 93 syscalls
+  libjli.so: 66 syscalls
+  libjsvml.so: 37 syscalls
+  libk5crypto.so.3: 37 syscalls
+  libkeyutils.so.1: 40 syscalls
+  libkrb5.so.3: 72 syscalls
+  libkrb5support.so.0.1: 50 syscalls
+  liblz4.so.1: 37 syscalls
+  liblz4.so.1.9.4: 37 syscalls
+  liblzma.so.5: 53 syscalls
+  libmanagement.so: 93 syscalls
+  libmanagement_ext.so: 93 syscalls
+  libmd.so.0.0.5: 37 syscalls
+  libmemusage.so: syscalls.txt EMPTY (0 syscalls)
+  libmenuw.so.6.4: 42 syscalls
+  libmnl.so.0: 44 syscalls
+  libmount.so.1: 95 syscalls
+  libmvec.so.1: syscalls.txt EMPTY (0 syscalls)
+  libncursesw.so.6.4: 49 syscalls
+  libnettle.so.8: 37 syscalls
+  libnsl.so.1: syscalls.txt EMPTY (0 syscalls)
+  libnsl.so.2: 80 syscalls
+  libnss_compat.so.2: 47 syscalls
+  libnss_hesiod.so.2: 46 syscalls
+  libnuma.so.1: 59 syscalls
+  libnuma.so.1.0.0: 59 syscalls
+  libp11-kit.so.0.3.0: 64 syscalls
+  libpam.so.0.85.1: 65 syscalls
+  libpam_misc.so.0.82.1: 43 syscalls
+  libpamc.so.0: 44 syscalls
+  libpanelw.so.6.4: 37 syscalls
+  libpcprofile.so: syscalls.txt EMPTY (0 syscalls)
+  libpcre2-8.so.0: 37 syscalls
+  libproc2.so.0: 65 syscalls
+  libpsx.so.2: 53 syscalls
+  libreadline.so.8: 63 syscalls
+  libresolv.so.2: 46 syscalls
+  libseccomp.so.2: 40 syscalls
+  libselinux.so.1: 80 syscalls
+  libsemanage.so.2: 74 syscalls
+  libsepol.so.2: 38 syscalls
+  libsmartcols.so.1: 41 syscalls
+  libsqlite3.so.0.8.6: 68 syscalls
+  libss.so.2.0: 62 syscalls
+  libssl.so.3: 61 syscalls
+  libstdc++.so.6: 79 syscalls
+  libstdc++.so.6.0.30: 79 syscalls
+  libsystemd.so.0: 110 syscalls
+  libtasn1.so.6: 38 syscalls
+  libthread_db.so.1: 37 syscalls
+  libtic.so.6: 50 syscalls
+  libtinfo.so.6: 47 syscalls
+  libtinfo.so.6.4: 47 syscalls
+  libtirpc.so.3: 79 syscalls
+  libudev.so.1.7.5: 66 syscalls
+  libunistring.so.2.2.0: 37 syscalls
+  libutil.so.1: syscalls.txt EMPTY (0 syscalls)
+  libuuid.so.1: 47 syscalls
+  libverify.so: 93 syscalls
+  libxtables.so.12: 70 syscalls
+  libxxhash.so.0.8.1: 37 syscalls
+  libz.so.1: 37 syscalls
+  libzstd.so.1: 53 syscalls
+  libzstd.so.1.5.4: 53 syscalls
+
+⚠ Warning: 10 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/unanalysed_syscalls.txt (197 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 50 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/runc.txt
+  ✓ Loaded 118 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      152
+Library syscalls:     132
+Unanalysed libraries: 197
+JNA/FFI syscalls:     50
+Runc whitelist:       118
+Combined (unique):    229
+  → unanalysed libraries added 38 additional syscalls
+  → runc.txt added 13 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.txt (229 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json (229 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 229
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  30
+  - Empty:     0
+  - Missing:   2
+  - Syscalls:  152 unique
+
+Libraries:
+  - Analyzed:  22
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  132 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/runc.txt
+  - Syscalls:    118 unique
+  - Added:       51 additional syscalls
+
+Combined:
+  - Total unique syscalls: 229
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_BIN_cassandra_5.0.8/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json (seccomp profile)
+
+⚠ Completed with warnings or errors
+stage 10: merge reported items without results (listed above); profile written, continuing
+Found 1 container(s) to organize.
+
+  cassandra_5.0.8
+      JARFILES_cassandra_5.0.8  (69M) -> Dataset/
+      LIBS_cassandra_5.0.8  (108M) -> Dataset/
+      BINARIES_cassandra_5.0.8  (18M) -> Dataset/
+      RUNTIME_cassandra_5.0.8  (39M) -> Dataset/
+      outputs_cassandra_5.0.8  (1.7M) -> Bytecode_Analysis/
+      sysdig_outputs_cassandra_5.0.8  (160K) -> Dynamic_Analysis/
+      syscalls_output_cassandra_5.0.8  (399M) -> Binary_Analysis/
+      syscalls_BIN_cassandra_5.0.8  (34M) -> Binary_Analysis/
+      syscalls_unanalysed_cassandra_5.0.8  (490M) -> Binary_Analysis/
+      startfuncs_unanalysed_cassandra_5.0.8  (1.3M) -> Binary_Analysis/
+      jna_ffi_analysis  (13M) -> Binary_Analysis/
+    (11 moved)
+
+Done. Moved 11 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/Final_results/
+Containers organized: 1
+
+===== [2026-11-06 19:16:29] cassandra_5.0.8 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-06 19:20:41] cassandra_5.0.8 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Binary_Analysis/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json

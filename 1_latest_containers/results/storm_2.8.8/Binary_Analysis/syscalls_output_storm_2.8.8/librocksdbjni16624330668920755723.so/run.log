@@ -1,0 +1,9 @@
+Time taken for the analysis: 32 seconds
+Time taken for the analysis: 54 seconds
+Direct Edges computation: 1 seconds
+AT List computation: 17 seconds
+Indirect call target resolution:  25 seconds
+Generate indirect call targets: 80 seconds
+Print call graph edges: 148 seconds
+Time taken for the analysis: 318 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/librocksdbjni16624330668920755723.so.manual/callgraph.json

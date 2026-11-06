@@ -1,0 +1,9 @@
+close_ea9f0
+fcntl_ea7b0
+fsync_f0da0
+getpid_c7310
+mlockall_f3f60
+munlockall_f3f90
+open_ea010
+posix_fadvise_ee840
+strerror_88000

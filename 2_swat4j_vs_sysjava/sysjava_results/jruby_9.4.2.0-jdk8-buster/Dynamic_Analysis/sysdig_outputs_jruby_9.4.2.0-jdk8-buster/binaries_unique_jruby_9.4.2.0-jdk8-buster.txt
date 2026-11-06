@@ -1,0 +1,7 @@
+/bin/sh
+cat
+grep
+/opt/java/bin/java
+runc
+uname
+/usr/bin/env

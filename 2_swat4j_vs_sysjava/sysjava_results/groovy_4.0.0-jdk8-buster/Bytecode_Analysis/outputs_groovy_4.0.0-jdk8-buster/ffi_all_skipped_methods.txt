@@ -1,0 +1,6 @@
+=== Combined FFI Skipped Methods ===
+Format: detector | payload
+
+ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>
+jnr-ffi | <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()> | java.lang.IllegalStateException | Failed to apply sootup.interceptors.LocalSplitter@141c8de6 to <com.sun.tools.javac.file.ZipFileIndex$DirectoryEntry: void initEntries()>

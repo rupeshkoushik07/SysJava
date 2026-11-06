@@ -1,0 +1,12 @@
+/usr/bin/awk
+/usr/bin/basename
+/bin/bash
+/usr/bin/cut
+/usr/bin/dirname
+/usr/bin/expr
+/opt/java/bin/java
+/usr/sbin/runc
+/bin/sed
+/bin/sh
+/bin/uname
+/usr/bin/env

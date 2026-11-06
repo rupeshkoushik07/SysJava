@@ -1,0 +1,92 @@
+
+Path to writev:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [syscall]-> writev
+
+Path to openat:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> __open64_nocancel_ef600
+  __open64_nocancel_ef600 - [syscall]-> openat
+
+Path to mmap:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> mmap_f40f0
+  mmap_f40f0 - [syscall]-> mmap
+
+Path to munmap:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> munmap_f41d0
+  munmap_f41d0 - [syscall]-> munmap
+
+Path to futex:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> __lll_lock_wait_private_11250
+  __lll_lock_wait_private_11250 - [syscall]-> futex
+
+Path to rt_sigprocmask:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37a50
+  sigprocmask_37a50 - [syscall]-> rt_sigprocmask
+
+Path to getpid:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> getpid
+
+Path to gettid:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> gettid
+
+Path to tgkill:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> tgkill
+
+Path to exit_group:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit_group
+
+Path to exit:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit
+
+Path to rt_sigaction:
+  SHA256_1e0d00 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37a20
+  sigaction_37a20 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction

@@ -121,6 +121,7 @@ recvfrom
 recvmsg
 removexattr
 rename
+rmdir
 rseq
 rt_sigaction
 rt_sigpending
@@ -181,6 +182,7 @@ umount2
 uname
 unlink
 unlinkat
+utimes
 vfork
 wait4
 write

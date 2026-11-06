@@ -51,6 +51,7 @@ getrandom
 getrlimit
 getrusage
 getsockname
+getsockopt
 gettid
 gettimeofday
 getuid
@@ -97,6 +98,7 @@ readv
 recvfrom
 recvmsg
 rename
+rmdir
 rseq
 rt_sigaction
 rt_sigprocmask
@@ -148,6 +150,7 @@ timer_settime
 uname
 unlink
 unlinkat
+utimes
 vfork
 wait4
 write

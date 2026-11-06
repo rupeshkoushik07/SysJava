@@ -1,0 +1,1412 @@
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.add: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.timerFd: NOT_FOUND_IN_LIBS
+org.apache.hadoop.crypto.OpensslCipher.initContext: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getBoolean -> Unsafe_GetBoolean140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getBoolean -> Unsafe_GetBoolean [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.IntegerComponentRaster.initIDs -> Java_sun_awt_image_IntegerComponentRaster_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.close0 -> Java_sun_nio_ch_FileDispatcherImpl_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.close0 -> Java_sun_nio_ch_FileDispatcherImpl_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.NativeMethodAccessorImpl.invoke0 -> Java_sun_reflect_NativeMethodAccessorImpl_invoke0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.NativeMethodAccessorImpl.invoke0 -> Java_sun_reflect_NativeMethodAccessorImpl_invoke0 [JNI]
+io.netty.channel.unix.Socket.newSocketStreamFd: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.tcpMd5SigMaxKeyLen: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.ssizeMax: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.epollCtlAdd0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.Disposer.initIDs -> Java_sun_java2d_Disposer_initIDs [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.isIPv6Available0 -> Java_sun_nio_ch_Net_isIPv6Available0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.isIPv6Available0 -> Java_sun_nio_ch_Net_isIPv6Available0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeStrike.createNullScalerContext -> Java_sun_font_NativeStrike_createNullScalerContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.StrikeCache.freeIntMemory -> Java_sun_font_StrikeCache_freeIntMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getCharVolatile -> Unsafe_GetCharVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getInt -> Java_java_lang_reflect_Array_getInt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getInt -> Java_java_lang_reflect_Array_getInt [JNI]
+io.netty.channel.epoll.Native.epollCreate: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.storeFence -> Unsafe_StoreFence [REGISTERED]
+io.netty.channel.unix.Socket.setReusePort: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setGlobalBufferSize -> jfr_set_global_buffer_size [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader$NativeLibrary.load -> Java_java_lang_ClassLoader_00024NativeLibrary_load [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader$NativeLibrary.load -> Java_java_lang_ClassLoader_00024NativeLibrary_load [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.copyMemory -> Unsafe_CopyMemory [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.copyMemory -> Unsafe_CopyMemory2 [REGISTERED]
+io.netty.channel.epoll.LinuxSocket.getTcpInfo: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.connect0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.PollArrayWrapper.poll0 -> Java_sun_nio_ch_PollArrayWrapper_poll0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.PollArrayWrapper.poll0 -> Java_sun_nio_ch_PollArrayWrapper_poll0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileOutputStream.close0 -> Java_java_io_FileOutputStream_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileOutputStream.close0 -> Java_java_io_FileOutputStream_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketShutdown -> Java_java_net_PlainSocketImpl_socketShutdown [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketShutdown -> Java_java_net_PlainSocketImpl_socketShutdown [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.destroyJFR -> jfr_destroy_jfr [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.UNIXProcess.forkAndExec -> Java_java_lang_UNIXProcess_forkAndExec [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.UNIXProcess.forkAndExec -> Java_java_lang_UNIXProcess_forkAndExec [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putObjectVolatile -> Unsafe_SetObjectVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryCrc -> Java_java_util_zip_ZipFile_getEntryCrc [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryCrc -> Java_java_util_zip_ZipFile_getEntryCrc [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getFloatAt0 -> Java_sun_reflect_ConstantPool_getFloatAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getFloatAt0 -> Java_sun_reflect_ConstantPool_getFloatAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.writeImage -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_writeImage [JNI]
+org.apache.hadoop.crypto.OpensslCipher.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getNextEntry -> Java_java_util_zip_ZipFile_getNextEntry [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getNextEntry -> Java_java_util_zip_ZipFile_getNextEntry [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setThreshold -> jfr_set_threshold [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.getPathBox -> Java_sun_java2d_pipe_ShapeSpanIterator_getPathBox [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Object.notify -> JVM_MonitorNotify [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.MaskFill.DrawAAPgram -> Java_sun_java2d_loops_MaskFill_DrawAAPgram [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.CRC32.updateBytes -> Java_java_util_zip_CRC32_updateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.CRC32.updateBytes -> Java_java_util_zip_CRC32_updateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.newEventWriter -> jfr_new_event_writer [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.ComponentSampleModel.initIDs -> Java_java_awt_image_ComponentSampleModel_initIDs [JNI]
+io.netty.channel.epoll.Native.sizeofEpollEvent: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.makePipe -> Java_sun_nio_ch_IOUtil_makePipe [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.makePipe -> Java_sun_nio_ch_IOUtil_makePipe [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.MenuItem.initIDs -> Java_java_awt_MenuItem_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.read0 -> Java_java_io_RandomAccessFile_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.read0 -> Java_java_io_RandomAccessFile_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.readImageHeader -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_readImageHeader [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libsunec.so:sun.security.ec.ECDSASignature.verifySignedDigest -> Java_sun_security_ec_ECDSASignature_verifySignedDigest [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsunec.so:sun.security.ec.ECDSASignature.verifySignedDigest -> Java_sun_security_ec_ECDSASignature_verifySignedDigest [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getAddress -> Unsafe_GetNativeAddress [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setForceInstrumentation -> jfr_set_force_instrumentation [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putCharVolatile -> Unsafe_SetCharVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libj2gss.so:sun.security.jgss.wrapper.GSSLibStub.indicateMechs -> Java_sun_security_jgss_wrapper_GSSLibStub_indicateMechs [JNI]
+org.apache.lucene.store.NativePosixUtil.pread: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.setTcpQuickAck: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreadInfo1 -> Java_sun_management_ThreadImpl_getThreadInfo1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreadInfo1 -> Java_sun_management_ThreadImpl_getThreadInfo1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Dialog.initIDs -> Java_java_awt_Dialog_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.URLClassPath.getLookupCacheForClassLoader -> Java_sun_misc_URLClassPath_getLookupCacheForClassLoader [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.URLClassPath.getLookupCacheForClassLoader -> Java_sun_misc_URLClassPath_getLookupCacheForClassLoader [JNI]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.destroyImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.System.mapLibraryName -> Java_java_lang_System_mapLibraryName [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.System.mapLibraryName -> Java_java_lang_System_mapLibraryName [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingRecvmmsg: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectOutputStream.floatsToBytes -> Java_java_io_ObjectOutputStream_floatsToBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectOutputStream.floatsToBytes -> Java_java_io_ObjectOutputStream_floatsToBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.sin -> Java_java_lang_StrictMath_sin [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.sin -> Java_java_lang_StrictMath_sin [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.resolveClass0 -> Java_java_lang_ClassLoader_resolveClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.resolveClass0 -> Java_java_lang_ClassLoader_resolveClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.init -> Java_java_net_PlainDatagramSocketImpl_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.init -> Java_java_net_PlainDatagramSocketImpl_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getByte -> Unsafe_GetNativeByte [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getByte -> Unsafe_GetByte140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getByte -> Unsafe_GetByte [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.setOutputAreaXYXY -> Java_sun_java2d_pipe_ShapeSpanIterator_setOutputAreaXYXY [JNI]
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.compressBytesDirect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Throwable.fillInStackTrace -> Java_java_lang_Throwable_fillInStackTrace [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Throwable.fillInStackTrace -> Java_java_lang_Throwable_fillInStackTrace [JNI]
+io.netty.channel.unix.Socket.connect: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$Windows.extendWorkingSetSize: NOT_FOUND_IN_LIBS
+sun.security.krb5.SCDynamicStoreConfig.getKerberosConfig: PLATFORM_EXCLUDED (SCDynamicStoreConfig)
+io.netty.channel.unix.FileDescriptor.write: NOT_FOUND_IN_LIBS
+sun.security.krb5.Config.getWindowsDirectory: PLATFORM_EXCLUDED (getWindowsDirectory)
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.reset: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Executable.getTypeAnnotationBytes0 -> Java_java_lang_reflect_Executable_getTypeAnnotationBytes0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Executable.getTypeAnnotationBytes0 -> Java_java_lang_reflect_Executable_getTypeAnnotationBytes0 [JNI]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.initImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.dispose -> Java_sun_java2d_pipe_ShapeSpanIterator_dispose [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.join -> Java_java_net_PlainDatagramSocketImpl_join [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.join -> Java_java_net_PlainDatagramSocketImpl_join [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.java2d.loops.DrawGlyphList.DrawGlyphList -> Java_sun_java2d_loops_DrawGlyphList_DrawGlyphList [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.set -> Java_java_lang_reflect_Array_set [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.set -> Java_java_lang_reflect_Array_set [JNI]
+io.netty.channel.epoll.LinuxSocket.setTcpUserTimeout: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.release0 -> Java_sun_nio_ch_FileDispatcherImpl_release0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.release0 -> Java_sun_nio_ch_FileDispatcherImpl_release0 [JNI]
+io.netty.channel.epoll.LinuxSocket.getTcpUserTimeout: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.countGlyphs -> Java_sun_font_NativeFont_countGlyphs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.setCallSiteTargetNormal -> MHN_setCallSiteTargetNormal [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setMethodSamplingInterval -> jfr_set_method_sampling_interval [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getUTF8At0 -> Java_sun_reflect_ConstantPool_getUTF8At0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getUTF8At0 -> Java_sun_reflect_ConstantPool_getUTF8At0 [JNI]
+org.apache.hadoop.crypto.OpensslCipher.update: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Float.intBitsToFloat -> Java_java_lang_Float_intBitsToFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Float.intBitsToFloat -> Java_java_lang_Float_intBitsToFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Runtime.totalMemory -> Java_java_lang_Runtime_totalMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Runtime.totalMemory -> Java_java_lang_Runtime_totalMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreadTotalCpuTime1 -> Java_sun_management_ThreadImpl_getThreadTotalCpuTime1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreadTotalCpuTime1 -> Java_sun_management_ThreadImpl_getThreadTotalCpuTime1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreadTotalCpuTime0 -> Java_sun_management_ThreadImpl_getThreadTotalCpuTime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreadTotalCpuTime0 -> Java_sun_management_ThreadImpl_getThreadTotalCpuTime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.disposeReader -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_disposeReader [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.DiagnosticCommandImpl.executeDiagnosticCommand -> Java_sun_management_DiagnosticCommandImpl_executeDiagnosticCommand [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.DiagnosticCommandImpl.executeDiagnosticCommand -> Java_sun_management_DiagnosticCommandImpl_executeDiagnosticCommand [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.findLoadedClass0 -> Java_java_lang_ClassLoader_findLoadedClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.findLoadedClass0 -> Java_java_lang_ClassLoader_findLoadedClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getZipMessage -> Java_java_util_zip_ZipFile_getZipMessage [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getZipMessage -> Java_java_util_zip_ZipFile_getZipMessage [JNI]
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.end: NOT_FOUND_IN_LIBS
+sun.misc.Unsafe.registerNatives: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.writev0 -> Java_sun_nio_ch_FileDispatcherImpl_writev0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.writev0 -> Java_sun_nio_ch_FileDispatcherImpl_writev0 [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEPIPE: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getStartupTime -> Java_sun_management_VMManagementImpl_getStartupTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getStartupTime -> Java_sun_management_VMManagementImpl_getStartupTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.seek0 -> Java_java_io_RandomAccessFile_seek0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.seek0 -> Java_java_io_RandomAccessFile_seek0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.freeEntry -> Java_java_util_zip_ZipFile_freeEntry [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.freeEntry -> Java_java_util_zip_ZipFile_freeEntry [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getEventWriter -> jfr_get_event_writer [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.canJoin6WithIPv4Group0 -> Java_sun_nio_ch_Net_canJoin6WithIPv4Group0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.canJoin6WithIPv4Group0 -> Java_sun_nio_ch_Net_canJoin6WithIPv4Group0 [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.setDictionary: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.isUp0 -> Java_java_net_NetworkInterface_isUp0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.isUp0 -> Java_java_net_NetworkInterface_isUp0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.BitShuffleNative.unshuffleDirectBuffer -> Java_org_xerial_snappy_BitShuffleNative_unshuffleDirectBuffer [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.VM.latestUserDefinedLoader0 -> Java_sun_misc_VM_latestUserDefinedLoader0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.VM.latestUserDefinedLoader0 -> Java_sun_misc_VM_latestUserDefinedLoader0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.BufferedImage.initIDs -> Java_java_awt_image_BufferedImage_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.readImage -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_readImage [JNI]
+io.netty.channel.epoll.LinuxSocket.setIpRecvOrigDestAddr: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIdle: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.System.setErr0 -> Java_java_lang_System_setErr0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.System.setErr0 -> Java_java_lang_System_setErr0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.Rectangle.initIDs -> Java_java_awt_Rectangle_initIDs [JNI]
+io.netty.channel.epoll.LinuxSocket.setIpFreeBind: NOT_FOUND_IN_LIBS
+java.lang.invoke.MethodHandle.invokeExact: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createDirectoryWithMode0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.currentThread -> JVM_CurrentThread [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.beginRecording -> jfr_begin_recording [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.socketSetOption0 -> Java_java_net_PlainDatagramSocketImpl_socketSetOption0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.socketSetOption0 -> Java_java_net_PlainDatagramSocketImpl_socketSetOption0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreadUserCpuTime0 -> Java_sun_management_ThreadImpl_getThreadUserCpuTime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreadUserCpuTime0 -> Java_sun_management_ThreadImpl_getThreadUserCpuTime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.getLastModifiedTime -> Java_java_io_UnixFileSystem_getLastModifiedTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.getLastModifiedTime -> Java_java_io_UnixFileSystem_getLastModifiedTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.open0 -> Java_sun_nio_ch_InheritedChannel_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.open0 -> Java_sun_nio_ch_InheritedChannel_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Proxy.defineClass0 -> Java_java_lang_reflect_Proxy_defineClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Proxy.defineClass0 -> Java_java_lang_reflect_Proxy_defineClass0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.pollerrValue -> Java_sun_nio_ch_Net_pollerrValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.pollerrValue -> Java_sun_nio_ch_Net_pollerrValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.delete0 -> Java_java_io_UnixFileSystem_delete0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.delete0 -> Java_java_io_UnixFileSystem_delete0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.getGlyphAdvance -> Java_sun_font_NativeFont_getGlyphAdvance [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreadUserCpuTime1 -> Java_sun_management_ThreadImpl_getThreadUserCpuTime1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreadUserCpuTime1 -> Java_sun_management_ThreadImpl_getThreadUserCpuTime1 [JNI]
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.udsSunPathSize: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.setReuseAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.initIDs -> Java_sun_nio_ch_IOUtil_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.initIDs -> Java_sun_nio_ch_IOUtil_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.FillPath.FillPath -> Java_sun_java2d_loops_FillPath_FillPath [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getDeclaringClass0 -> JVM_GetDeclaringClass [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.SunLayoutEngine.initGVIDs -> Java_sun_font_SunLayoutEngine_initGVIDs [JNI]
+jdk.jfr.internal.JVM.registerNatives: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.addSegment -> Java_sun_java2d_pipe_ShapeSpanIterator_addSegment [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getSigners -> JVM_GetClassSigners [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.storeMetadataDescriptor -> jfr_store_metadata_descriptor [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.getFilePointer -> Java_java_io_RandomAccessFile_getFilePointer [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.getFilePointer -> Java_java_io_RandomAccessFile_getFilePointer [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.ImageRepresentation.setICMpixels -> Java_sun_awt_image_ImageRepresentation_setICMpixels [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.abortWrite -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_abortWrite [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.retransformClasses -> jfr_retransform_classes [REGISTERED]
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.deflateBytesDirect: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.timerFdSetTime: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.reset -> Java_java_util_zip_Inflater_reset [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.reset -> Java_java_util_zip_Inflater_reset [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.findDeadlockedThreads0 -> Java_sun_management_ThreadImpl_findDeadlockedThreads0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.findDeadlockedThreads0 -> Java_sun_management_ThreadImpl_findDeadlockedThreads0 [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingTcpFastopen: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileChannelImpl.unmap0 -> Java_sun_nio_ch_FileChannelImpl_unmap0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileChannelImpl.unmap0 -> Java_sun_nio_ch_FileChannelImpl_unmap0 [JNI]
+org.apache.hadoop.net.unix.DomainSocket.readByteBufferDirect0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Class.forName0 -> Java_java_lang_Class_forName0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Class.forName0 -> Java_java_lang_Class_forName0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawCompress -> Java_org_xerial_snappy_SnappyNative_rawCompress__Ljava_lang_Object_2IILjava_lang_Object_2I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawCompress -> Java_org_xerial_snappy_SnappyNative_rawCompress__Ljava_nio_ByteBuffer_2IILjava_nio_ByteBuffer_2I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawCompress -> Java_org_xerial_snappy_SnappyNative_rawCompress__JJJ [JNI]
+org.apache.hadoop.util.NativeCrc32.nativeComputeChunkedSumsByteArray: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Buffer.addressSize0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileChannelImpl.initIDs -> Java_sun_nio_ch_FileChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileChannelImpl.initIDs -> Java_sun_nio_ch_FileChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Thread.registerNatives -> Java_java_lang_Thread_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Thread.registerNatives -> Java_java_lang_Thread_registerNatives [JNI]
+org.apache.hadoop.net.unix.DomainSocket.validateSocketPathSecurity0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.poll -> Java_sun_nio_ch_Net_poll [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.poll -> Java_sun_nio_ch_Net_poll [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getShort -> Java_java_lang_reflect_Array_getShort [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getShort -> Java_java_lang_reflect_Array_getShort [JNI]
+io.netty.channel.unix.Socket.setSoLinger: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setGlobalBufferCount -> jfr_set_global_buffer_count [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.SocketInputStream.init -> Java_java_net_SocketInputStream_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.SocketInputStream.init -> Java_java_net_SocketInputStream_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.freeMemory -> Unsafe_FreeMemory [REGISTERED]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.mlock_native: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.intersectClipBox -> Java_sun_java2d_pipe_ShapeSpanIterator_intersectClipBox [JNI]
+org.apache.hadoop.io.nativeio.SharedFileDescriptorFactory.createDescriptor0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.resetReader -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_resetReader [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.close -> Java_java_util_zip_ZipFile_close [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.close -> Java_java_util_zip_ZipFile_close [JNI]
+io.netty.channel.unix.Socket.setBroadcast: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putAddress -> Unsafe_SetNativeAddress [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.MessageUtils.toStderr -> Java_sun_misc_MessageUtils_toStderr [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.MessageUtils.toStderr -> Java_sun_misc_MessageUtils_toStderr [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.getGlyphImageNoDefault -> Java_sun_font_NativeFont_getGlyphImageNoDefault [JNI]
+io.netty.channel.epoll.LinuxSocket.isIpFreeBind: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.System.arraycopy -> JVM_ArrayCopy [JVM]
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.ssizeMax: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.initIDs: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.setSendBufferSize: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.sendmmsg0: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.bind0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getTypeId -> jfr_type_id [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.size0 -> Java_sun_nio_ch_FileDispatcherImpl_size0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.size0 -> Java_sun_nio_ch_FileDispatcherImpl_size0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setCutoff -> jfr_set_cutoff [REGISTERED]
+org.apache.hadoop.crypto.OpensslCipher.doFinal: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.DiagnosticCommandImpl.getDiagnosticCommands -> Java_sun_management_DiagnosticCommandImpl_getDiagnosticCommands [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.DiagnosticCommandImpl.getDiagnosticCommands -> Java_sun_management_DiagnosticCommandImpl_getDiagnosticCommands [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putByte -> Unsafe_SetNativeByte [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putByte -> Unsafe_SetByte140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putByte -> Unsafe_SetByte [REGISTERED]
+io.netty.channel.unix.Socket.getSendBufferSize: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.Color.initIDs -> Java_java_awt_Color_initIDs [JNI]
+org.apache.hadoop.net.unix.DomainSocket.anchorNative: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getLong -> Java_java_lang_reflect_Array_getLong [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getLong -> Java_java_lang_reflect_Array_getLong [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.nio.Bits.copySwapMemory0 -> Java_java_nio_Bits_copySwapMemory0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.nio.Bits.copySwapMemory0 -> Java_java_nio_Bits_copySwapMemory0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.write0 -> Java_sun_nio_ch_FileDispatcherImpl_write0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.write0 -> Java_sun_nio_ch_FileDispatcherImpl_write0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.end -> Java_java_util_zip_Inflater_end [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.end -> Java_java_util_zip_Inflater_end [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.blockOrUnblock4 -> Java_sun_nio_ch_Net_blockOrUnblock4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.blockOrUnblock4 -> Java_sun_nio_ch_Net_blockOrUnblock4 [JNI]
+io.netty.channel.epoll.Native.epollWait0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.blockOrUnblock6 -> Java_sun_nio_ch_Net_blockOrUnblock6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.blockOrUnblock6 -> Java_sun_nio_ch_Net_blockOrUnblock6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.GraphicsPrimitiveMgr.registerNativeLoops -> Java_sun_java2d_loops_GraphicsPrimitiveMgr_registerNativeLoops [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEALREADY: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getThreadId -> jfr_id_for_thread [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.reallocateMemory -> Unsafe_ReallocateMemory [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.uncaughtException -> jfr_uncaught_exception [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.sinh -> Java_java_lang_StrictMath_sinh [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.sinh -> Java_java_lang_StrictMath_sinh [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketListen -> Java_java_net_PlainSocketImpl_socketListen [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketListen -> Java_java_net_PlainSocketImpl_socketListen [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.setIntOption0 -> Java_sun_nio_ch_Net_setIntOption0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.setIntOption0 -> Java_sun_nio_ch_Net_setIntOption0 [JNI]
+org.apache.hadoop.net.unix.DomainSocket.writeArray0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.event.InputEvent.initIDs -> Java_java_awt_event_InputEvent_initIDs [JNI]
+io.netty.channel.unix.Socket.disconnect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Throwable.getStackTraceDepth -> Java_java_lang_Throwable_getStackTraceDepth [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Throwable.getStackTraceDepth -> Java_java_lang_Throwable_getStackTraceDepth [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.getIntOption0 -> Java_sun_nio_ch_Net_getIntOption0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.getIntOption0 -> Java_sun_nio_ch_Net_getIntOption0 [JNI]
+io.netty.channel.epoll.LinuxSocket.setIpMulticastLoop: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.cbrt -> Java_java_lang_StrictMath_cbrt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.cbrt -> Java_java_lang_StrictMath_cbrt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getDouble -> Unsafe_GetNativeDouble [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getDouble -> Unsafe_GetDouble140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getDouble -> Unsafe_GetDouble [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.System.currentTimeMillis -> JVM_CurrentTimeMillis [JVM]
+org.apache.hadoop.io.nativeio.SharedFileDescriptorFactory.deleteStaleTemporaryFiles0: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO.getMemlockLimit0: NOT_FOUND_IN_LIBS
+org.apache.lucene.store.WindowsDirectory.close: PLATFORM_EXCLUDED (WindowsDirectory.)
+sun.font.FileFontStrike.initNative: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getInt -> Unsafe_GetNativeInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getInt -> Unsafe_GetInt140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getInt -> Unsafe_GetInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.java2d.loops.DrawGlyphListAA.DrawGlyphListAA -> Java_sun_java2d_loops_DrawGlyphListAA_DrawGlyphListAA [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.read -> Java_java_util_zip_ZipFile_read [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.read -> Java_java_util_zip_ZipFile_read [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.addStringConstant -> jfr_add_string_constant [REGISTERED]
+org.apache.hadoop.io.nativeio.NativeIO$Windows.setFilePointer: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.isReusePort: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.isIPv6Preferred: NOT_FOUND_IN_LIBS
+org.apache.lucene.store.WindowsDirectory.read: PLATFORM_EXCLUDED (WindowsDirectory.)
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryBytes -> Java_java_util_zip_ZipFile_getEntryBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryBytes -> Java_java_util_zip_ZipFile_getEntryBytes [JNI]
+io.netty.channel.epoll.LinuxSocket.isIpTransparent: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.Reflection.getClassAccessFlags -> Java_sun_reflect_Reflection_getClassAccessFlags [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.Reflection.getClassAccessFlags -> Java_sun_reflect_Reflection_getClassAccessFlags [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putFloat -> Unsafe_SetNativeFloat [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putFloat -> Unsafe_SetFloat140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putFloat -> Unsafe_SetFloat [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getPid -> jfr_get_pid [REGISTERED]
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpenConnect: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollout: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramDispatcher.write0 -> Java_sun_nio_ch_DatagramDispatcher_write0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramDispatcher.write0 -> Java_sun_nio_ch_DatagramDispatcher_write0 [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramChannelImpl.disconnect0 -> Java_sun_nio_ch_DatagramChannelImpl_disconnect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramChannelImpl.disconnect0 -> Java_sun_nio_ch_DatagramChannelImpl_disconnect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putBoolean -> Unsafe_SetBoolean140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putBoolean -> Unsafe_SetBoolean [REGISTERED]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.strError: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getDeclaredClasses0 -> JVM_GetDeclaredClasses [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.setLastModifiedTime -> Java_java_io_UnixFileSystem_setLastModifiedTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.setLastModifiedTime -> Java_java_io_UnixFileSystem_setLastModifiedTime [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoECONNRESET: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.URLClassPath.knownToNotExist0 -> Java_sun_misc_URLClassPath_knownToNotExist0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.URLClassPath.knownToNotExist0 -> Java_sun_misc_URLClassPath_knownToNotExist0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getIntAt0 -> Java_sun_reflect_ConstantPool_getIntAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getIntAt0 -> Java_sun_reflect_ConstantPool_getIntAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.DrawParallelogram.DrawParallelogram -> Java_sun_java2d_loops_DrawParallelogram_DrawParallelogram [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.iovMax: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.init -> Java_java_util_zip_Inflater_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.init -> Java_java_util_zip_Inflater_init [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getBytesWritten: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.park -> Unsafe_Park [REGISTERED]
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.getLibraryName: NOT_FOUND_IN_LIBS
+org.apache.lucene.store.NativePosixUtil.posix_madvise: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.reset -> Java_java_util_zip_Deflater_reset [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.reset -> Java_java_util_zip_Deflater_reset [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.StrikeCache.getGlyphCacheDescription -> Java_sun_font_StrikeCache_getGlyphCacheDescription [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.log10 -> Java_java_lang_StrictMath_log10 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.log10 -> Java_java_lang_StrictMath_log10 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.event.KeyEvent.initIDs -> Java_java_awt_event_KeyEvent_initIDs [JNI]
+org.apache.hadoop.io.erasurecode.ErasureCodeNative.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileDescriptor.initIDs -> Java_java_io_FileDescriptor_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileDescriptor.initIDs -> Java_java_io_FileDescriptor_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Runtime.gc -> Java_java_lang_Runtime_gc [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Runtime.gc -> Java_java_lang_Runtime_gc [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getBooleanVolatile -> Unsafe_GetBooleanVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.connect0 -> Java_sun_nio_ch_Net_connect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.connect0 -> Java_sun_nio_ch_Net_connect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:java.nio.MappedByteBuffer.load0 -> Java_java_nio_MappedByteBuffer_load0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:java.nio.MappedByteBuffer.load0 -> Java_java_nio_MappedByteBuffer_load0 [JNI]
+org.apache.hadoop.net.unix.DomainSocket.accept0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.seek0 -> Java_sun_nio_ch_FileDispatcherImpl_seek0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.seek0 -> Java_sun_nio_ch_FileDispatcherImpl_seek0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putInt -> Unsafe_SetNativeInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putInt -> Unsafe_SetInt140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putInt -> Unsafe_SetInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.BufImgSurfaceData.initIDs -> Java_sun_awt_image_BufImgSurfaceData_initIDs [JNI]
+io.netty.channel.epoll.LinuxSocket.setInterface: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.mmap: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIntvl: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.closeFileDescriptor0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getLong -> Unsafe_GetNativeLong [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getLong -> Unsafe_GetLong140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getLong -> Unsafe_GetLong [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileOutputStream.open0 -> Java_java_io_FileOutputStream_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileOutputStream.open0 -> Java_java_io_FileOutputStream_open0 [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEINPROGRESS: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setDouble -> Java_java_lang_reflect_Array_setDouble [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setDouble -> Java_java_lang_reflect_Array_setDouble [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getProtectionDomain0 -> JVM_GetProtectionDomain [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.bind0 -> Java_java_net_PlainDatagramSocketImpl_bind0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.bind0 -> Java_java_net_PlainDatagramSocketImpl_bind0 [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.reset: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.setRule -> Java_sun_java2d_pipe_ShapeSpanIterator_setRule [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Object.clone -> JVM_Clone [JVM]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawUncompress -> Java_org_xerial_snappy_SnappyNative_rawUncompress__Ljava_nio_ByteBuffer_2IILjava_nio_ByteBuffer_2I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawUncompress -> Java_org_xerial_snappy_SnappyNative_rawUncompress__Ljava_lang_Object_2IILjava_lang_Object_2I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.rawUncompress -> Java_org_xerial_snappy_SnappyNative_rawUncompress__JJJ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.tan -> Java_java_lang_StrictMath_tan [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.tan -> Java_java_lang_StrictMath_tan [JNI]
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.compressBytesDirectHC: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectInputStream.bytesToFloats -> Java_java_io_ObjectInputStream_bytesToFloats [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectInputStream.bytesToFloats -> Java_java_io_ObjectInputStream_bytesToFloats [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.PortConfig.getUpper0 -> Java_sun_net_PortConfig_getUpper0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.PortConfig.getUpper0 -> Java_sun_net_PortConfig_getUpper0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketGetOption -> Java_java_net_PlainSocketImpl_socketGetOption [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketGetOption -> Java_java_net_PlainSocketImpl_socketGetOption [JNI]
+io.netty.channel.unix.Socket.setKeepAlive: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.maxCompressedLength -> Java_org_xerial_snappy_SnappyNative_maxCompressedLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.getFlowOption -> Java_sun_net_ExtendedOptionsImpl_getFlowOption [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.getFlowOption -> Java_sun_net_ExtendedOptionsImpl_getFlowOption [JNI]
+io.netty.channel.unix.FileDescriptor.writevAddresses: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.ImageRepresentation.setDiffICM -> Java_sun_awt_image_ImageRepresentation_setDiffICM [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getTicksFrequency -> jfr_elapsed_frequency [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.NativeSignalHandler.handle0 -> Java_sun_misc_NativeSignalHandler_handle0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.NativeSignalHandler.handle0 -> Java_sun_misc_NativeSignalHandler_handle0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NullFontScaler.getGlyphImage -> Java_sun_font_NullFontScaler_getGlyphImage [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntry -> Java_java_util_zip_ZipFile_getEntry [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntry -> Java_java_util_zip_ZipFile_getEntry [JNI]
+org.apache.hadoop.io.nativeio.NativeIO.link0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Object.hashCode -> JVM_IHashCode [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketSetOption0 -> Java_java_net_PlainSocketImpl_socketSetOption0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketSetOption0 -> Java_java_net_PlainSocketImpl_socketSetOption0 [JNI]
+org.apache.hadoop.util.NativeCodeLoader.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putLong -> Unsafe_SetNativeLong [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putLong -> Unsafe_SetLong140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putLong -> Unsafe_SetLong [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.endRecording -> jfr_end_recording [REGISTERED]
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsZstd: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.SocketInputStream.socketRead0 -> Java_java_net_SocketInputStream_socketRead0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.SocketInputStream.socketRead0 -> Java_java_net_SocketInputStream_socketRead0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Class.getPrimitiveClass -> Java_java_lang_Class_getPrimitiveClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Class.getPrimitiveClass -> Java_java_lang_Class_getPrimitiveClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.skip0 -> Java_java_io_FileInputStream_skip0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.skip0 -> Java_java_io_FileInputStream_skip0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramChannelImpl.receive0 -> Java_sun_nio_ch_DatagramChannelImpl_receive0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramChannelImpl.receive0 -> Java_sun_nio_ch_DatagramChannelImpl_receive0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.ServerSocketChannelImpl.accept0 -> Java_sun_nio_ch_ServerSocketChannelImpl_accept0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.ServerSocketChannelImpl.accept0 -> Java_sun_nio_ch_ServerSocketChannelImpl_accept0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.unpark -> Unsafe_Unpark [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Shutdown.halt0 -> Java_java_lang_Shutdown_halt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Shutdown.halt0 -> Java_java_lang_Shutdown_halt0 [JNI]
+org.apache.hadoop.net.unix.DomainSocketWatcher.doPoll0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.initIDs -> Java_java_util_zip_Deflater_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.initIDs -> Java_java_util_zip_Deflater_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getFloat -> Unsafe_GetNativeFloat [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getFloat -> Unsafe_GetFloat140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getFloat -> Unsafe_GetFloat [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.preClose0 -> Java_sun_nio_ch_FileDispatcherImpl_preClose0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.preClose0 -> Java_sun_nio_ch_FileDispatcherImpl_preClose0 [JNI]
+org.apache.lucene.store.NativePosixUtil.posix_fadvise: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.log -> jfr_log [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Class.registerNatives -> Java_java_lang_Class_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Class.registerNatives -> Java_java_lang_Class_registerNatives [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.fstat: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.CheckboxMenuItem.initIDs -> Java_java_awt_CheckboxMenuItem_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putShort -> Unsafe_SetNativeShort [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putShort -> Unsafe_SetShort140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putShort -> Unsafe_SetShort [REGISTERED]
+io.netty.channel.unix.Socket.newSocketDgramFd: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.accept: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.getNativeIterator -> Java_sun_java2d_pipe_ShapeSpanIterator_getNativeIterator [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.dup -> Java_sun_nio_ch_InheritedChannel_dup [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.dup -> Java_sun_nio_ch_InheritedChannel_dup [JNI]
+org.apache.hadoop.io.compress.lz4.Lz4Decompressor.decompressBytesDirect: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.FileDescriptor.readAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.atan -> Java_java_lang_StrictMath_atan [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.atan -> Java_java_lang_StrictMath_atan [JNI]
+io.netty.channel.epoll.LinuxSocket.joinSsmGroup: NOT_FOUND_IN_LIBS
+org.apache.lucene.store.NativePosixUtil.open_direct: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.NativeThread.current -> Java_sun_nio_ch_NativeThread_current [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.NativeThread.current -> Java_sun_nio_ch_NativeThread_current [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.init: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putOrderedInt -> Unsafe_SetOrderedInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileKey.init -> Java_sun_nio_ch_FileKey_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileKey.init -> Java_sun_nio_ch_FileKey_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.hypot -> Java_java_lang_StrictMath_hypot [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.hypot -> Java_java_lang_StrictMath_hypot [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.DrawPolygons.DrawPolygons -> Java_sun_java2d_loops_DrawPolygons_DrawPolygons [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.read0 -> Java_sun_nio_ch_FileDispatcherImpl_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.read0 -> Java_sun_nio_ch_FileDispatcherImpl_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.sleep -> JVM_Sleep [JVM]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.destroyImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileOutputStream.initIDs -> Java_java_io_FileOutputStream_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileOutputStream.initIDs -> Java_java_io_FileOutputStream_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putIntVolatile -> Unsafe_SetIntVolatile [REGISTERED]
+io.netty.channel.unix.Socket.recvFd: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.leaveGroup: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.getSoLinger: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getTimeConversionFactor -> jfr_time_conv_factor [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setStackDepth -> jfr_set_stack_depth [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.deflateBytes -> Java_java_util_zip_Deflater_deflateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.deflateBytes -> Java_java_util_zip_Deflater_deflateBytes [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getRemaining: NOT_FOUND_IN_LIBS
+org.apache.hadoop.crypto.OpensslCipher.getLibraryName: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.lz4.Lz4Decompressor.initIDs: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO.copyFileUnbuffered0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.initIDs -> Java_sun_java2d_pipe_ShapeSpanIterator_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.init -> Java_java_net_NetworkInterface_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.init -> Java_java_net_NetworkInterface_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Event.initIDs -> Java_java_awt_Event_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.getThreads -> JVM_GetAllThreads [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.polloutValue -> Java_sun_nio_ch_Net_polloutValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.polloutValue -> Java_sun_nio_ch_Net_polloutValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.canIPv6SocketJoinIPv4Group0 -> Java_sun_nio_ch_Net_canIPv6SocketJoinIPv4Group0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.canIPv6SocketJoinIPv4Group0 -> Java_sun_nio_ch_Net_canIPv6SocketJoinIPv4Group0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveIntvl -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveIntvl [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveIntvl -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveIntvl [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Adler32.updateBytes -> Java_java_util_zip_Adler32_updateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Adler32.updateBytes -> Java_java_util_zip_Adler32_updateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.setPermission -> Java_java_io_UnixFileSystem_setPermission [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.setPermission -> Java_java_io_UnixFileSystem_setPermission [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.flowSupported -> Java_sun_net_ExtendedOptionsImpl_flowSupported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.flowSupported -> Java_sun_net_ExtendedOptionsImpl_flowSupported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo -> Java_sun_management_DiagnosticCommandImpl_getDiagnosticCommandInfo [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo -> Java_sun_management_DiagnosticCommandImpl_getDiagnosticCommandInfo [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.System.identityHashCode -> Java_java_lang_System_identityHashCode [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.System.identityHashCode -> Java_java_lang_System_identityHashCode [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.datagramSocketCreate -> Java_java_net_PlainDatagramSocketImpl_datagramSocketCreate [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.datagramSocketCreate -> Java_java_net_PlainDatagramSocketImpl_datagramSocketCreate [JNI]
+io.netty.channel.epoll.LinuxSocket.isTcpCork: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.createFileExclusively -> Java_java_io_UnixFileSystem_createFileExclusively [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.createFileExclusively -> Java_java_io_UnixFileSystem_createFileExclusively [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.isExclusiveBindAvailable -> Java_sun_nio_ch_Net_isExclusiveBindAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.isExclusiveBindAvailable -> Java_sun_nio_ch_Net_isExclusiveBindAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.initIDs -> Java_java_io_RandomAccessFile_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.initIDs -> Java_java_io_RandomAccessFile_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getFloatVolatile -> Unsafe_GetFloatVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.BytePackedRaster.initIDs -> Java_sun_awt_image_BytePackedRaster_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.subscribeLogLevel -> jfr_subscribe_log_level [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.cosh -> Java_java_lang_StrictMath_cosh [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.cosh -> Java_java_lang_StrictMath_cosh [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.isAvailable -> jfr_is_available [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.pollnvalValue -> Java_sun_nio_ch_Net_pollnvalValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.pollnvalValue -> Java_sun_nio_ch_Net_pollnvalValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.MenuComponent.initIDs -> Java_java_awt_MenuComponent_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveIntvl -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveIntvl [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveIntvl -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveIntvl [JNI]
+org.apache.hadoop.util.NativeCrc32.nativeComputeChunkedSums: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.disconnect0 -> Java_java_net_PlainDatagramSocketImpl_disconnect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.disconnect0 -> Java_java_net_PlainDatagramSocketImpl_disconnect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.getByName0 -> Java_java_net_NetworkInterface_getByName0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.getByName0 -> Java_java_net_NetworkInterface_getByName0 [JNI]
+io.netty.channel.epoll.LinuxSocket.sendFile: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorECONNREFUSED: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Package.getSystemPackage0 -> Java_java_lang_Package_getSystemPackage0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Package.getSystemPackage0 -> Java_java_lang_Package_getSystemPackage0 [JNI]
+org.apache.hadoop.security.JniBasedUnixGroupsMapping.getGroupsForUser: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.deflateBytesDirect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getVersion0 -> Java_sun_management_VMManagementImpl_getVersion0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getVersion0 -> Java_sun_management_VMManagementImpl_getVersion0 [JNI]
+io.netty.channel.unix.Socket.initialize: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.compareAndSwapLong -> Unsafe_CompareAndSwapLong [REGISTERED]
+io.netty.channel.unix.Socket.getReceiveBufferSize: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.isInterface -> JVM_IsInterface [JVM]
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.init: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.IndexColorModel.initIDs -> Java_java_awt_image_IndexColorModel_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.open0 -> Java_java_io_FileInputStream_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.open0 -> Java_java_io_FileInputStream_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.setfdVal -> Java_sun_nio_ch_IOUtil_setfdVal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.setfdVal -> Java_sun_nio_ch_IOUtil_setfdVal [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.munmap: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.setSigners -> JVM_SetClassSigners [JVM]
+io.netty.channel.unix.Socket.isBroadcast: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOENT: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.sendFd: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.initImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.setInterface6 -> Java_sun_nio_ch_Net_setInterface6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.setInterface6 -> Java_sun_nio_ch_Net_setInterface6 [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollerr: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.BitShuffleNative.shuffleDirectBuffer -> Java_org_xerial_snappy_BitShuffleNative_shuffleDirectBuffer [JNI]
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.VM.initialize -> Java_sun_misc_VM_initialize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.VM.initialize -> Java_sun_misc_VM_initialize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Class.isInstance -> Java_java_lang_Class_isInstance [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Class.isInstance -> Java_java_lang_Class_isInstance [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setOutput -> jfr_set_output [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.readBytes -> Java_java_io_FileInputStream_readBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.readBytes -> Java_java_io_FileInputStream_readBytes [JNI]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.decodeImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.FillParallelogram.FillParallelogram -> Java_sun_java2d_loops_FillParallelogram_FillParallelogram [JNI]
+org.apache.hadoop.security.JniBasedUnixGroupsMapping.anchorNative: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.resolve -> MHN_resolve_Mem [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.setInterface4 -> Java_sun_nio_ch_Net_setInterface4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.setInterface4 -> Java_sun_nio_ch_Net_setInterface4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.socket0 -> Java_sun_nio_ch_Net_socket0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.socket0 -> Java_sun_nio_ch_Net_socket0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.addressSize -> Unsafe_AddressSize [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libj2gss.so:sun.security.jgss.wrapper.GSSLibStub.getMechPtr -> Java_sun_security_jgss_wrapper_GSSLibStub_getMechPtr [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.readBytes -> Java_java_io_RandomAccessFile_readBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.readBytes -> Java_java_io_RandomAccessFile_readBytes [JNI]
+io.netty.channel.unix.Socket.isTcpNoDelay: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.getFontMetrics -> Java_sun_font_NativeFont_getFontMetrics [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.getAll -> Java_java_net_NetworkInterface_getAll [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.getAll -> Java_java_net_NetworkInterface_getAll [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Executable.getParameters0 -> Java_java_lang_reflect_Executable_getParameters0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Executable.getParameters0 -> Java_java_lang_reflect_Executable_getParameters0 [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectStreamClass.hasStaticInitializer -> Java_java_io_ObjectStreamClass_hasStaticInitializer [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectStreamClass.hasStaticInitializer -> Java_java_io_ObjectStreamClass_hasStaticInitializer [JNI]
+org.apache.hadoop.net.unix.DomainSocket.getAttribute0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectInputStream.bytesToDoubles -> Java_java_io_ObjectInputStream_bytesToDoubles [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectInputStream.bytesToDoubles -> Java_java_io_ObjectInputStream_bytesToDoubles [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.setNativeName -> JVM_SetNativeThreadName [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setRepositoryLocation -> jfr_set_repository_location [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileChannelImpl.map0 -> Java_sun_nio_ch_FileChannelImpl_map0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileChannelImpl.map0 -> Java_sun_nio_ch_FileChannelImpl_map0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.util.concurrent.atomic.AtomicLong.VMSupportsCS8 -> Java_java_util_concurrent_atomic_AtomicLong_VMSupportsCS8 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.util.concurrent.atomic.AtomicLong.VMSupportsCS8 -> Java_java_util_concurrent_atomic_AtomicLong_VMSupportsCS8 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.pread0 -> Java_sun_nio_ch_FileDispatcherImpl_pread0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.pread0 -> Java_sun_nio_ch_FileDispatcherImpl_pread0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.isLoopback0 -> Java_java_net_NetworkInterface_isLoopback0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.isLoopback0 -> Java_java_net_NetworkInterface_isLoopback0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.CRC32.update -> Java_java_util_zip_CRC32_update [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.CRC32.update -> Java_java_util_zip_CRC32_update [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getDouble -> Java_java_lang_reflect_Array_getDouble [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getDouble -> Java_java_lang_reflect_Array_getDouble [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.objectFieldOffset -> MHN_objectFieldOffset [REGISTERED]
+io.netty.channel.epoll.LinuxSocket.leaveSsmGroup: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.socketpair0: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.bindDomainSocket: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.init: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.init -> Java_java_util_zip_Deflater_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.init -> Java_java_util_zip_Deflater_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.jar.JarFile.getMetaInfEntryNames -> Java_java_util_jar_JarFile_getMetaInfEntryNames [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.jar.JarFile.getMetaInfEntryNames -> Java_java_util_jar_JarFile_getMetaInfEntryNames [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getObjectVolatile -> Unsafe_GetObjectVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.disposeWriter -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_disposeWriter [JNI]
+io.netty.channel.unix.Socket.recvFrom: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.BitShuffleNative.shuffle -> Java_org_xerial_snappy_BitShuffleNative_shuffle [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Cursor.initIDs -> Java_java_awt_Cursor_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.SocketOutputStream.socketWrite0 -> Java_java_net_SocketOutputStream_socketWrite0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.SocketOutputStream.socketWrite0 -> Java_java_net_SocketOutputStream_socketWrite0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.init -> MHN_init_Mem [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryTime -> Java_java_util_zip_ZipFile_getEntryTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryTime -> Java_java_util_zip_ZipFile_getEntryTime [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.init: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.FileDescriptor.close: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.arrayCopy -> Java_org_xerial_snappy_SnappyNative_arrayCopy [JNI]
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.iovMax: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.initImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Class.isAssignableFrom -> Java_java_lang_Class_isAssignableFrom [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Class.isAssignableFrom -> Java_java_lang_Class_isAssignableFrom [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.getTimeToLive -> Java_java_net_PlainDatagramSocketImpl_getTimeToLive [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.getTimeToLive -> Java_java_net_PlainDatagramSocketImpl_getTimeToLive [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getConstantPool -> JVM_GetClassConstantPool [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.DrawLine.DrawLine -> Java_sun_java2d_loops_DrawLine_DrawLine [JNI]
+io.netty.channel.unix.Socket.setTrafficClass: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.bind0 -> Java_sun_nio_ch_Net_bind0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.bind0 -> Java_sun_nio_ch_Net_bind0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.SocketChannelImpl.checkConnect -> Java_sun_nio_ch_SocketChannelImpl_checkConnect [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.SocketChannelImpl.checkConnect -> Java_sun_nio_ch_SocketChannelImpl_checkConnect [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.OperatingSystemImpl.getOpenFileDescriptorCount0 -> Java_sun_management_OperatingSystemImpl_getOpenFileDescriptorCount0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.OperatingSystemImpl.getOpenFileDescriptorCount0 -> Java_sun_management_OperatingSystemImpl_getOpenFileDescriptorCount0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.initProto -> Java_java_net_PlainSocketImpl_initProto [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.initProto -> Java_java_net_PlainSocketImpl_initProto [JNI]
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.setDictionary -> Java_java_util_zip_Deflater_setDictionary [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.setDictionary -> Java_java_util_zip_Deflater_setDictionary [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.event.MouseEvent.initIDs -> Java_java_awt_event_MouseEvent_initIDs [JNI]
+io.netty.channel.unix.FileDescriptor.open: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.SunLayoutEngine.nativeLayout -> Java_sun_font_SunLayoutEngine_nativeLayout [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.startsWithLOC -> Java_java_util_zip_ZipFile_startsWithLOC [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.startsWithLOC -> Java_java_util_zip_ZipFile_startsWithLOC [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramDispatcher.writev0 -> Java_sun_nio_ch_DatagramDispatcher_writev0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramDispatcher.writev0 -> Java_sun_nio_ch_DatagramDispatcher_writev0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeStrikeDisposer.freeNativeScalerContext -> Java_sun_font_NativeStrikeDisposer_freeNativeScalerContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.resetLibraryState -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_resetLibraryState [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putOrderedObject -> Unsafe_SetOrderedObject [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.emitEvent -> jfr_emit_event [REGISTERED]
+io.netty.channel.epoll.Native.epollCtlMod0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getGenericSignature0 -> JVM_GetClassSignature [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getLongAt0 -> Java_sun_reflect_ConstantPool_getLongAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getLongAt0 -> Java_sun_reflect_ConstantPool_getLongAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setChar -> Java_java_lang_reflect_Array_setChar [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setChar -> Java_java_lang_reflect_Array_setChar [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setFileNotification -> jfr_set_file_notification [REGISTERED]
+org.apache.hadoop.crypto.OpensslCipher.clean: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.Blit.Blit -> Java_sun_java2d_loops_Blit_Blit [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.DiagnosticCommandImpl.setNotificationEnabled -> Java_sun_management_DiagnosticCommandImpl_setNotificationEnabled [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.DiagnosticCommandImpl.setNotificationEnabled -> Java_sun_management_DiagnosticCommandImpl_setNotificationEnabled [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getDaemonThreadCount -> Java_sun_management_VMManagementImpl_getDaemonThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getDaemonThreadCount -> Java_sun_management_VMManagementImpl_getDaemonThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.pwrite0 -> Java_sun_nio_ch_FileDispatcherImpl_pwrite0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.pwrite0 -> Java_sun_nio_ch_FileDispatcherImpl_pwrite0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.DebugSettings.setCTracingOn -> Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.DebugSettings.setCTracingOn -> Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.DebugSettings.setCTracingOn -> Java_sun_awt_DebugSettings_setCTracingOn__Z [JNI]
+sun.font.FileFontStrike._getGlyphImageFromWindows: PLATFORM_EXCLUDED (_getGlyphImageFromWindows)
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.log1p -> Java_java_lang_StrictMath_log1p [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.log1p -> Java_java_lang_StrictMath_log1p [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getModifiers -> JVM_GetClassModifiers [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.counterTime -> jfr_elapsed_counter [REGISTERED]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.inflateBytesDirect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveTime -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveTime -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.pathDone -> Java_sun_java2d_pipe_ShapeSpanIterator_pathDone [JNI]
+org.apache.hadoop.net.unix.DomainSocket.shutdown0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.findBuiltinLib -> Java_java_lang_ClassLoader_findBuiltinLib [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.findBuiltinLib -> Java_java_lang_ClassLoader_findBuiltinLib [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getShortVolatile -> Unsafe_GetShortVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.start0 -> JVM_StartThread [JVM]
+io.netty.channel.unix.Socket.localAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.setLength -> Java_java_io_RandomAccessFile_setLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.setLength -> Java_java_io_RandomAccessFile_setLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.soType0 -> Java_sun_nio_ch_InheritedChannel_soType0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.soType0 -> Java_sun_nio_ch_InheritedChannel_soType0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.peekData -> Java_java_net_PlainDatagramSocketImpl_peekData [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.peekData -> Java_java_net_PlainDatagramSocketImpl_peekData [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.dns.ResolverConfigurationImpl.fallbackDomain0 -> Java_sun_net_dns_ResolverConfigurationImpl_fallbackDomain0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.dns.ResolverConfigurationImpl.fallbackDomain0 -> Java_sun_net_dns_ResolverConfigurationImpl_fallbackDomain0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.Signal.handle0 -> Java_sun_misc_Signal_handle0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.Signal.handle0 -> Java_sun_misc_Signal_handle0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.nextSpan -> Java_sun_java2d_pipe_ShapeSpanIterator_nextSpan [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.initReaderIDs -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_initReaderIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.isAlive -> JVM_IsThreadAlive [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libsunec.so:sun.security.ec.ECKeyPairGenerator.isCurveSupported -> Java_sun_security_ec_ECKeyPairGenerator_isCurveSupported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsunec.so:sun.security.ec.ECKeyPairGenerator.isCurveSupported -> Java_sun_security_ec_ECKeyPairGenerator_isCurveSupported [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$Windows.access0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.createJFR -> jfr_create_jfr [REGISTERED]
+io.netty.channel.unix.Socket.listen: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.initIDs -> Java_java_util_zip_ZipFile_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.initIDs -> Java_java_util_zip_ZipFile_initIDs [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.setDictionary: NOT_FOUND_IN_LIBS
+sun.misc.Perf.registerNatives: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.end: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIdle: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.offsetofEpollData: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getInterfaces0 -> JVM_GetClassInterfaces [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getTotal -> Java_java_util_zip_ZipFile_getTotal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getTotal -> Java_java_util_zip_ZipFile_getTotal [JNI]
+io.netty.channel.unix.Socket.isKeepAlive: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getBytesWritten: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.inflateBytes -> Java_java_util_zip_Inflater_inflateBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.inflateBytes -> Java_java_util_zip_Inflater_inflateBytes [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEBADF: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.setTcpDeferAccept: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryMethod -> Java_java_util_zip_ZipFile_getEntryMethod [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryMethod -> Java_java_util_zip_ZipFile_getEntryMethod [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.NativeThread.signal -> Java_sun_nio_ch_NativeThread_signal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.NativeThread.signal -> Java_sun_nio_ch_NativeThread_signal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.Dimension.initIDs -> Java_java_awt_Dimension_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.Reflection.getCallerClass -> Java_sun_reflect_Reflection_getCallerClass__I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.Reflection.getCallerClass -> Java_sun_reflect_Reflection_getCallerClass__ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.Reflection.getCallerClass -> Java_sun_reflect_Reflection_getCallerClass__I [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.Reflection.getCallerClass -> Java_sun_reflect_Reflection_getCallerClass__ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.ByteComponentRaster.initIDs -> Java_sun_awt_image_ByteComponentRaster_initIDs [JNI]
+io.netty.channel.epoll.LinuxSocket.isIpRecvOrigDestAddr: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.uioMaxIov: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.newSocketDomainFd: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.localInetAddress -> Java_sun_nio_ch_Net_localInetAddress [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.localInetAddress -> Java_sun_nio_ch_Net_localInetAddress [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.allocateInstance -> Unsafe_AllocateInstance [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.shouldLog -> jfr_should_log [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.SpanClipRenderer.initIDs -> Java_sun_java2d_pipe_SpanClipRenderer_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putLongVolatile -> Unsafe_SetLongVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Throwable.getStackTraceElement -> Java_java_lang_Throwable_getStackTraceElement [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Throwable.getStackTraceElement -> Java_java_lang_Throwable_getStackTraceElement [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.getThreads -> Java_sun_management_ThreadImpl_getThreads [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.getThreads -> Java_sun_management_ThreadImpl_getThreads [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.shutdown -> Java_sun_nio_ch_Net_shutdown [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.shutdown -> Java_sun_nio_ch_Net_shutdown [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramChannelImpl.initIDs -> Java_sun_nio_ch_DatagramChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramChannelImpl.initIDs -> Java_sun_nio_ch_DatagramChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.staticFieldOffset -> MHN_staticFieldOffset [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.SpanClipRenderer.fillTile -> Java_sun_java2d_pipe_SpanClipRenderer_fillTile [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.cos -> Java_java_lang_StrictMath_cos [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.cos -> Java_java_lang_StrictMath_cos [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.compareAndSwapObject -> Unsafe_CompareAndSwapObject [REGISTERED]
+io.netty.channel.epoll.LinuxSocket.getTcpDeferAccept: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.closeIntFD -> Java_sun_nio_ch_FileDispatcherImpl_closeIntFD [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.closeIntFD -> Java_sun_nio_ch_FileDispatcherImpl_closeIntFD [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Object.notifyAll -> JVM_MonitorNotifyAll [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.init -> Java_sun_nio_ch_FileDispatcherImpl_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.init -> Java_sun_nio_ch_FileDispatcherImpl_init [JNI]
+io.netty.channel.epoll.LinuxSocket.isTcpFastOpenConnect: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.recvFromAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.setDictionary -> Java_java_util_zip_Inflater_setDictionary [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.setDictionary -> Java_java_util_zip_Inflater_setDictionary [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.BlitBg.BlitBg -> Java_sun_java2d_loops_BlitBg_BlitBg [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.setMemory -> Unsafe_SetMemory [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.setMemory -> Unsafe_SetMemory2 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.joinOrDrop4 -> Java_sun_nio_ch_Net_joinOrDrop4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.joinOrDrop4 -> Java_sun_nio_ch_Net_joinOrDrop4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.initJPEGImageWriter -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_initJPEGImageWriter [JNI]
+io.netty.channel.epoll.LinuxSocket.setTcpMd5Sig: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.initIDs -> Java_java_io_FileInputStream_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.initIDs -> Java_java_io_FileInputStream_initIDs [JNI]
+org.apache.lucene.store.WindowsDirectory.length: PLATFORM_EXCLUDED (WindowsDirectory.)
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.joinOrDrop6 -> Java_sun_nio_ch_Net_joinOrDrop6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.joinOrDrop6 -> Java_sun_nio_ch_Net_joinOrDrop6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.OperatingSystemImpl.initialize0 -> Java_sun_management_OperatingSystemImpl_initialize0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.OperatingSystemImpl.initialize0 -> Java_sun_management_OperatingSystemImpl_initialize0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getLoadAverage -> Unsafe_Loadavg [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.expand -> MHN_expand_Mem [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileChannelImpl.transferTo0 -> Java_sun_nio_ch_FileChannelImpl_transferTo0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileChannelImpl.transferTo0 -> Java_sun_nio_ch_FileChannelImpl_transferTo0 [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingSendmmsg: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Double.longBitsToDouble -> Java_java_lang_Double_longBitsToDouble [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Double.longBitsToDouble -> Java_java_lang_Double_longBitsToDouble [JNI]
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsSnappy: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getBytesRead: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.resetContentionTimes0 -> Java_sun_management_ThreadImpl_resetContentionTimes0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.resetContentionTimes0 -> Java_sun_management_ThreadImpl_resetContentionTimes0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.FontMetrics.initIDs -> Java_java_awt_FontMetrics_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.interrupt0 -> JVM_Interrupt [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getEnclosingMethod0 -> JVM_GetEnclosingMethodInfo [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.staticFieldBase -> Unsafe_StaticFieldBaseFromClass [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.staticFieldBase -> Unsafe_StaticFieldBaseFromField [REGISTERED]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollin: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.destroyImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.util.TimeZone.getSystemGMTOffsetID -> Java_java_util_TimeZone_getSystemGMTOffsetID [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.util.TimeZone.getSystemGMTOffsetID -> Java_java_util_TimeZone_getSystemGMTOffsetID [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.ServerSocketChannelImpl.initIDs -> Java_sun_nio_ch_ServerSocketChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.ServerSocketChannelImpl.initIDs -> Java_sun_nio_ch_ServerSocketChannelImpl_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.acos -> Java_java_lang_StrictMath_acos [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.acos -> Java_java_lang_StrictMath_acos [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.ColorModel.initIDs -> Java_java_awt_image_ColorModel_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.Region.initIDs -> Java_sun_java2d_pipe_Region_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setMemorySize -> jfr_set_memory_size [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.FillRect.FillRect -> Java_sun_java2d_loops_FillRect_FillRect [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libsunec.so:sun.security.ec.ECDHKeyAgreement.deriveKey -> Java_sun_security_ec_ECDHKeyAgreement_deriveKey [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsunec.so:sun.security.ec.ECDHKeyAgreement.deriveKey -> Java_sun_security_ec_ECDHKeyAgreement_deriveKey [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.socketGetOption -> Java_java_net_PlainDatagramSocketImpl_socketGetOption [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.socketGetOption -> Java_java_net_PlainDatagramSocketImpl_socketGetOption [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Adler32.update -> Java_java_util_zip_Adler32_update [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Adler32.update -> Java_java_util_zip_Adler32_update [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.defineClass1 -> Java_java_lang_ClassLoader_defineClass1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.defineClass1 -> Java_java_lang_ClassLoader_defineClass1 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NullFontScaler.getNullScalerContext -> Java_sun_font_NullFontScaler_getNullScalerContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.defineClass2 -> Java_java_lang_ClassLoader_defineClass2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.defineClass2 -> Java_java_lang_ClassLoader_defineClass2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.close0 -> Java_sun_nio_ch_InheritedChannel_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.close0 -> Java_sun_nio_ch_InheritedChannel_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.desiredAssertionStatus0 -> JVM_DesiredAssertionStatus [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.Console.istty -> Java_java_io_Console_istty [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.Console.istty -> Java_java_io_Console_istty [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getGroupName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.MaskFill.MaskFill -> Java_sun_java2d_loops_MaskFill_MaskFill [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getBytesWritten: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.URLClassPath.getLookupCacheURLs -> Java_sun_misc_URLClassPath_getLookupCacheURLs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.URLClassPath.getLookupCacheURLs -> Java_sun_misc_URLClassPath_getLookupCacheURLs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.peerAddress0 -> Java_sun_nio_ch_InheritedChannel_peerAddress0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.peerAddress0 -> Java_sun_nio_ch_InheritedChannel_peerAddress0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.dumpThreads0 -> Java_sun_management_ThreadImpl_dumpThreads0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.dumpThreads0 -> Java_sun_management_ThreadImpl_dumpThreads0 [JNI]
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.deflateBytesDirect: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.encodeImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.getByIndex0 -> Java_java_net_NetworkInterface_getByIndex0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.getByIndex0 -> Java_java_net_NetworkInterface_getByIndex0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.resetWriter -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_resetWriter [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.ScaledBlit.Scale -> Java_sun_java2d_loops_ScaledBlit_Scale [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.SecurityManager.getClassContext -> Java_java_lang_SecurityManager_getClassContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.SecurityManager.getClassContext -> Java_java_lang_SecurityManager_getClassContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.MemoryImpl.getMemoryManagers0 -> Java_sun_management_MemoryImpl_getMemoryManagers0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.MemoryImpl.getMemoryManagers0 -> Java_sun_management_MemoryImpl_getMemoryManagers0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.peerPort0 -> Java_sun_nio_ch_InheritedChannel_peerPort0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.peerPort0 -> Java_sun_nio_ch_InheritedChannel_peerPort0 [JNI]
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.uioMaxIov: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.available0 -> Java_java_io_FileInputStream_available0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.available0 -> Java_java_io_FileInputStream_available0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getDeclaredMethods0 -> JVM_GetClassDeclaredMethods [JVM]
+io.netty.channel.epoll.LinuxSocket.isTcpQuickAck: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.AWTEvent.initIDs -> Java_java_awt_AWTEvent_initIDs [JNI]
+io.netty.channel.unix.Socket.setReceiveBufferSize: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.force0 -> Java_sun_nio_ch_FileDispatcherImpl_force0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.force0 -> Java_sun_nio_ch_FileDispatcherImpl_force0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.peek -> Java_java_net_PlainDatagramSocketImpl_peek [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.peek -> Java_java_net_PlainDatagramSocketImpl_peek [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.leave -> Java_java_net_PlainDatagramSocketImpl_leave [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.leave -> Java_java_net_PlainDatagramSocketImpl_leave [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.sdp.SdpSupport.convert0 -> Java_sun_net_sdp_SdpSupport_convert0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.sdp.SdpSupport.convert0 -> Java_sun_net_sdp_SdpSupport_convert0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileDescriptor.sync -> Java_java_io_FileDescriptor_sync [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileDescriptor.sync -> Java_java_io_FileDescriptor_sync [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libj2gss.so:sun.security.jgss.wrapper.GSSLibStub.init -> Java_sun_security_jgss_wrapper_GSSLibStub_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveTime -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveTime [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveTime -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveTime [JNI]
+io.netty.channel.unix.FileDescriptor.read: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.eventFdRead: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getIntVolatile -> Unsafe_GetIntVolatile [REGISTERED]
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.create: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.init -> Java_sun_net_ExtendedOptionsImpl_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.init -> Java_sun_net_ExtendedOptionsImpl_init [JNI]
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.free: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.java2d.loops.DrawGlyphListLCD.DrawGlyphListLCD -> Java_sun_java2d_loops_DrawGlyphListLCD_DrawGlyphListLCD [JNI]
+io.netty.channel.unix.Socket.getSoError: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getUnloadedEventClassCount -> jfr_get_unloaded_event_classes_count [REGISTERED]
+org.apache.lucene.store.WindowsDirectory.open: PLATFORM_EXCLUDED (WindowsDirectory.)
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.GC.maxObjectInspectionAge -> Java_sun_misc_GC_maxObjectInspectionAge [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.GC.maxObjectInspectionAge -> Java_sun_misc_GC_maxObjectInspectionAge [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.initIDs -> Java_java_io_UnixFileSystem_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.initIDs -> Java_java_io_UnixFileSystem_initIDs [JNI]
+org.apache.lucene.store.NativePosixUtil.madvise: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.read0 -> Java_java_io_FileInputStream_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.read0 -> Java_java_io_FileInputStream_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.open -> Java_java_util_zip_ZipFile_open [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.open -> Java_java_util_zip_ZipFile_open [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getChar -> Unsafe_GetNativeChar [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getChar -> Unsafe_GetChar140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getChar -> Unsafe_GetChar [REGISTERED]
+io.netty.channel.epoll.LinuxSocket.setSoBusyPoll: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getManifestNum -> Java_java_util_zip_ZipFile_getManifestNum [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getManifestNum -> Java_java_util_zip_ZipFile_getManifestNum [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setInt -> Java_java_lang_reflect_Array_setInt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setInt -> Java_java_lang_reflect_Array_setInt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Runtime.availableProcessors -> Java_java_lang_Runtime_availableProcessors [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Runtime.availableProcessors -> Java_java_lang_Runtime_availableProcessors [JNI]
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.getAndClearReadableFds: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getIpMulticastLoop: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileInputStream.close0 -> Java_java_io_FileInputStream_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileInputStream.close0 -> Java_java_io_FileInputStream_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.dumpThreads -> JVM_DumpThreads [JVM]
+io.netty.channel.unix.Socket.bind: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.datagramSocketClose -> Java_java_net_PlainDatagramSocketImpl_datagramSocketClose [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.datagramSocketClose -> Java_java_net_PlainDatagramSocketImpl_datagramSocketClose [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.UNIXProcess.destroyProcess -> Java_java_lang_UNIXProcess_destroyProcess [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.UNIXProcess.destroyProcess -> Java_java_lang_UNIXProcess_destroyProcess [JNI]
+org.apache.hadoop.net.unix.DomainSocket.sendFileDescriptors0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.setNormalize -> Java_sun_java2d_pipe_ShapeSpanIterator_setNormalize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Inflater.initIDs -> Java_java_util_zip_Inflater_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Inflater.initIDs -> Java_java_util_zip_Inflater_initIDs [JNI]
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollet: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.haveBitmapFonts -> Java_sun_font_NativeFont_haveBitmapFonts [JNI]
+io.netty.channel.epoll.LinuxSocket.setIpTransparent: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getDoubleVolatile -> Unsafe_GetDoubleVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.PortConfig.getLower0 -> Java_sun_net_PortConfig_getLower0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.PortConfig.getLower0 -> Java_sun_net_PortConfig_getLower0 [JNI]
+io.netty.channel.unix.Socket.sendTo: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.pollconnValue -> Java_sun_nio_ch_Net_pollconnValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.pollconnValue -> Java_sun_nio_ch_Net_pollconnValue [JNI]
+io.netty.channel.unix.Socket.shutdown: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.eventFdWrite: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setShort -> Java_java_lang_reflect_Array_setShort [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setShort -> Java_java_lang_reflect_Array_setShort [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.FillSpans.FillSpans -> Java_sun_java2d_loops_FillSpans_FillSpans [JNI]
+io.netty.channel.epoll.LinuxSocket.setTcpCork: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.getMacAddr0 -> Java_java_net_NetworkInterface_getMacAddr0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.getMacAddr0 -> Java_java_net_NetworkInterface_getMacAddr0 [JNI]
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.init: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.setTcpKeepCnt: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.getStreamSize: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.FileDescriptor.newPipe: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getLongVolatile -> Unsafe_GetLongVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.GraphicsPrimitiveMgr.initIDs -> Java_sun_java2d_loops_GraphicsPrimitiveMgr_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.list -> Java_java_io_UnixFileSystem_list [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.list -> Java_java_io_UnixFileSystem_list [JNI]
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIntvl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.Signal.raise0 -> Java_sun_misc_Signal_raise0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.Signal.raise0 -> Java_sun_misc_Signal_raise0 [JNI]
+io.netty.channel.epoll.LinuxSocket.getTcpKeepCnt: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.registerNatives -> Java_java_lang_ClassLoader_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.registerNatives -> Java_java_lang_ClassLoader_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.allocateMemory -> Unsafe_AllocateMemory [REGISTERED]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEWOULDBLOCK: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.end: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.getMembers -> MHN_getMembers [REGISTERED]
+org.apache.hadoop.crypto.random.OpensslSecureRandom.initSR: NOT_FOUND_IN_LIBS
+sun.security.krb5.SCDynamicStoreConfig.installNotificationCallback: PLATFORM_EXCLUDED (SCDynamicStoreConfig)
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.PollArrayWrapper.interrupt -> Java_sun_nio_ch_PollArrayWrapper_interrupt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.PollArrayWrapper.interrupt -> Java_sun_nio_ch_PollArrayWrapper_interrupt [JNI]
+io.netty.channel.unix.Socket.remoteAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.KeyboardFocusManager.initIDs -> Java_java_awt_KeyboardFocusManager_initIDs [JNI]
+io.netty.channel.unix.Socket.sendToAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getChar -> Java_java_lang_reflect_Array_getChar [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getChar -> Java_java_lang_reflect_Array_getChar [JNI]
+sun.misc.Perf.createLong: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.emitOldObjectSamples -> jfr_emit_old_object_samples [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.getMemberVMInfo -> MHN_getMemberVMInfo [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.Raster.initIDs -> Java_java_awt_image_Raster_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.nativeLibraryVersion -> Java_org_xerial_snappy_SnappyNative_nativeLibraryVersion [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Insets.initIDs -> Java_java_awt_Insets_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.SunFontManager.initIDs -> Java_sun_font_SunFontManager_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.NetworkInterface.getByInetAddress0 -> Java_java_net_NetworkInterface_getByInetAddress0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.NetworkInterface.getByInetAddress0 -> Java_java_net_NetworkInterface_getByInetAddress0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramDispatcher.read0 -> Java_sun_nio_ch_DatagramDispatcher_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramDispatcher.read0 -> Java_sun_nio_ch_DatagramDispatcher_read0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getVmArguments0 -> Java_sun_management_VMManagementImpl_getVmArguments0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getVmArguments0 -> Java_sun_management_VMManagementImpl_getVmArguments0 [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getRemaining: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getDoubleAt0 -> Java_sun_reflect_ConstantPool_getDoubleAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getDoubleAt0 -> Java_sun_reflect_ConstantPool_getDoubleAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.IEEEremainder -> Java_java_lang_StrictMath_IEEEremainder [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.IEEEremainder -> Java_java_lang_StrictMath_IEEEremainder [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.getInheritedAccessControlContext -> Java_java_security_AccessController_getInheritedAccessControlContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.getInheritedAccessControlContext -> Java_java_security_AccessController_getInheritedAccessControlContext [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.end: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.keepAliveOptionsSupported -> Java_sun_net_ExtendedOptionsImpl_keepAliveOptionsSupported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.keepAliveOptionsSupported -> Java_sun_net_ExtendedOptionsImpl_keepAliveOptionsSupported [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getBytesWritten: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.FileDescriptor.writeAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Shutdown.beforeHalt -> Java_java_lang_Shutdown_beforeHalt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Shutdown.beforeHalt -> Java_java_lang_Shutdown_beforeHalt [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createFileWithMode0: NOT_FOUND_IN_LIBS
+java.lang.Class.getSuperclass -> <unresolved> [REGISTERED? UNRESOLVED]
+io.netty.channel.unix.Socket.getTrafficClass: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getName0 -> JVM_GetClassName [JVM]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.uncompressedLength -> Java_org_xerial_snappy_SnappyNative_uncompressedLength__Ljava_lang_Object_2II [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.uncompressedLength -> Java_org_xerial_snappy_SnappyNative_uncompressedLength__Ljava_nio_ByteBuffer_2II [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.uncompressedLength -> Java_org_xerial_snappy_SnappyNative_uncompressedLength__JJ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.shouldRotateDisk -> jfr_should_rotate_disk [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.getBooleanAttributes0 -> Java_java_io_UnixFileSystem_getBooleanAttributes0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.getBooleanAttributes0 -> Java_java_io_UnixFileSystem_getBooleanAttributes0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.pageSize -> Unsafe_PageSize [REGISTERED]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.encodeImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Component.initIDs -> Java_java_awt_Component_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ProcessEnvironment.environ -> Java_java_lang_ProcessEnvironment_environ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ProcessEnvironment.environ -> Java_java_lang_ProcessEnvironment_environ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.fdVal -> Java_sun_nio_ch_IOUtil_fdVal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.fdVal -> Java_sun_nio_ch_IOUtil_fdVal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.OperatingSystemImpl.getMaxFileDescriptorCount0 -> Java_sun_management_OperatingSystemImpl_getMaxFileDescriptorCount0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.OperatingSystemImpl.getMaxFileDescriptorCount0 -> Java_sun_management_OperatingSystemImpl_getMaxFileDescriptorCount0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.yield -> JVM_Yield [JVM]
+jdk.jfr.internal.JVM.getClassId: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getTimeToLive: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.drain -> Java_sun_nio_ch_IOUtil_drain [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.drain -> Java_sun_nio_ch_IOUtil_drain [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.ShapeSpanIterator.appendPoly -> Java_sun_java2d_pipe_ShapeSpanIterator_appendPoly [JNI]
+org.apache.hadoop.io.erasurecode.ErasureCodeNative.loadLibrary: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.write0 -> Java_java_io_RandomAccessFile_write0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.write0 -> Java_java_io_RandomAccessFile_write0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.shouldBeInitialized -> Unsafe_ShouldBeInitialized [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putByteVolatile -> Unsafe_SetByteVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketSendUrgentData -> Java_java_net_PlainSocketImpl_socketSendUrgentData [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketSendUrgentData -> Java_java_net_PlainSocketImpl_socketSendUrgentData [JNI]
+io.netty.channel.epoll.LinuxSocket.setTimeToLive: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Container.initIDs -> Java_java_awt_Container_initIDs [JNI]
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.alloc0: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.compressBytesDirect: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.sendToAddresses: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.DrawPath.DrawPath -> Java_sun_java2d_loops_DrawPath_DrawPath [JNI]
+io.netty.channel.epoll.LinuxSocket.joinGroup: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.iovMax -> Java_sun_nio_ch_IOUtil_iovMax [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.iovMax -> Java_sun_nio_ch_IOUtil_iovMax [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectStreamClass.initNative -> Java_java_io_ObjectStreamClass_initNative [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectStreamClass.initNative -> Java_java_io_ObjectStreamClass_initNative [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getUserName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setByte -> Java_java_lang_reflect_Array_setByte [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setByte -> Java_java_lang_reflect_Array_setByte [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.Toolkit.initIDs -> Java_java_awt_Toolkit_initIDs [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createFile: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpen: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.arrayIndexScale -> Unsafe_ArrayIndexScale [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketAccept -> Java_java_net_PlainSocketImpl_socketAccept [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketAccept -> Java_java_net_PlainSocketImpl_socketAccept [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedAction_2Ljava_security_AccessControlContext_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2Ljava_security_AccessControlContext_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedAction_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedAction_2Ljava_security_AccessControlContext_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2Ljava_security_AccessControlContext_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedAction_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.doPrivileged -> Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.ObjectOutputStream.doublesToBytes -> Java_java_io_ObjectOutputStream_doublesToBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.ObjectOutputStream.doublesToBytes -> Java_java_io_ObjectOutputStream_doublesToBytes [JNI]
+org.apache.hadoop.io.nativeio.NativeIO.initNative: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.staticFieldOffset -> Unsafe_StaticFieldOffset [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getFloat -> Java_java_lang_reflect_Array_getFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getFloat -> Java_java_lang_reflect_Array_getFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Menu.initIDs -> Java_java_awt_Menu_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled -> Java_sun_management_VMManagementImpl_isThreadAllocatedMemoryEnabled [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled -> Java_sun_management_VMManagementImpl_isThreadAllocatedMemoryEnabled [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.lock0 -> Java_sun_nio_ch_FileDispatcherImpl_lock0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.lock0 -> Java_sun_nio_ch_FileDispatcherImpl_lock0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.StrikeCache.freeLongMemory -> Java_sun_font_StrikeCache_freeLongMemory [JNI]
+io.netty.channel.epoll.LinuxSocket.setTcpNotSentLowAt: NOT_FOUND_IN_LIBS
+org.apache.hadoop.crypto.OpensslCipher.init: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.Console.encoding -> Java_java_io_Console_encoding [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.Console.encoding -> Java_java_io_Console_encoding [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putObject -> Unsafe_SetObject140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putObject -> Unsafe_SetObject [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getPeakThreadCount -> Java_sun_management_VMManagementImpl_getPeakThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getPeakThreadCount -> Java_sun_management_VMManagementImpl_getPeakThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.log -> Java_java_lang_StrictMath_log [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.log -> Java_java_lang_StrictMath_log [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.setDest -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_setDest [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getByteVolatile -> Unsafe_GetByteVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putDoubleVolatile -> Unsafe_SetDoubleVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:sun.awt.SunToolkit.closeSplashScreen -> Java_sun_awt_SunToolkit_closeSplashScreen [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getStackTraceId -> jfr_stacktrace_id [REGISTERED]
+io.netty.channel.epoll.Native.epollCtlDel0: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.inflateBytesDirect: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.initIDs: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.dataAvailable -> Java_java_net_PlainDatagramSocketImpl_dataAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.dataAvailable -> Java_java_net_PlainDatagramSocketImpl_dataAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.System.setOut0 -> Java_java_lang_System_setOut0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.System.setOut0 -> Java_java_lang_System_setOut0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.abort -> jfr_abort [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketClose0 -> Java_java_net_PlainSocketImpl_socketClose0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketClose0 -> Java_java_net_PlainSocketImpl_socketClose0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.ConstantPool.getClassAt0 -> Java_sun_reflect_ConstantPool_getClassAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.ConstantPool.getClassAt0 -> Java_sun_reflect_ConstantPool_getClassAt0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.setFlowOption -> Java_sun_net_ExtendedOptionsImpl_setFlowOption [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.setFlowOption -> Java_sun_net_ExtendedOptionsImpl_setFlowOption [JNI]
+org.apache.hadoop.crypto.random.OpensslSecureRandom.nextRandBytes: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.flush -> jfr_event_writer_flush [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.setSource -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_setSource [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.canonicalize0 -> Java_java_io_UnixFileSystem_canonicalize0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.canonicalize0 -> Java_java_io_UnixFileSystem_canonicalize0 [JNI]
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.initIDs: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.available0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Object.getClass -> Java_java_lang_Object_getClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Object.getClass -> Java_java_lang_Object_getClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.isPrimitive -> JVM_IsPrimitiveClass [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_headless.so:java.awt.Font.initIDs -> Java_java_awt_Font_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Font.initIDs -> Java_java_awt_Font_initIDs [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.end: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketAvailable -> Java_java_net_PlainSocketImpl_socketAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketAvailable -> Java_java_net_PlainSocketImpl_socketAvailable [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setFloat -> Java_java_lang_reflect_Array_setFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setFloat -> Java_java_lang_reflect_Array_setFloat [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.isInterrupted -> JVM_IsInterrupted [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileOutputStream.write -> Java_java_io_FileOutputStream_write [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileOutputStream.write -> Java_java_io_FileOutputStream_write [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOTCONN: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.timerFdRead: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.write0: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getPeerCredentials: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getAllEventClasses -> jfr_get_all_event_classes [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.localPort -> Java_sun_nio_ch_Net_localPort [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.localPort -> Java_sun_nio_ch_Net_localPort [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Window.initIDs -> Java_java_awt_Window_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.newArray -> Java_java_lang_reflect_Array_newArray [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.newArray -> Java_java_lang_reflect_Array_newArray [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:java.nio.MappedByteBuffer.force0 -> Java_java_nio_MappedByteBuffer_force0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:java.nio.MappedByteBuffer.force0 -> Java_java_nio_MappedByteBuffer_force0 [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.chmodImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketCreate -> Java_java_net_PlainSocketImpl_socketCreate [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketCreate -> Java_java_net_PlainSocketImpl_socketCreate [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.getConstant -> MHN_getConstant [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.AWTEvent.nativeSetSource -> Java_java_awt_AWTEvent_nativeSetSource [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.Inet6Address.init -> Java_java_net_Inet6Address_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.Inet6Address.init -> Java_java_net_Inet6Address_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.SocketChannelImpl.sendOutOfBandData -> Java_sun_nio_ch_SocketChannelImpl_sendOutOfBandData [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.SocketChannelImpl.sendOutOfBandData -> Java_sun_nio_ch_SocketChannelImpl_sendOutOfBandData [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.Inet4Address.init -> Java_java_net_Inet4Address_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.Inet4Address.init -> Java_java_net_Inet4Address_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.initIDs -> Java_sun_nio_ch_Net_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.initIDs -> Java_sun_nio_ch_Net_initIDs [JNI]
+io.netty.channel.epoll.Native.eventFd: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.receive0 -> Java_java_net_PlainDatagramSocketImpl_receive0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.receive0 -> Java_java_net_PlainDatagramSocketImpl_receive0 [JNI]
+io.netty.channel.unix.Socket.finishConnect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.getNamedCon -> MHN_getNamedCon [REGISTERED]
+java.lang.invoke.MethodHandleNatives.registerNatives: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.destroyImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.misc.Signal.findSignal -> Java_sun_misc_Signal_findSignal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.misc.Signal.findSignal -> Java_sun_misc_Signal_findSignal [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.getLength -> Java_java_io_UnixFileSystem_getLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.getLength -> Java_java_io_UnixFileSystem_getLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.UNIXProcess.init -> Java_java_lang_UNIXProcess_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.UNIXProcess.init -> Java_java_lang_UNIXProcess_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.invoke.MethodHandleNatives.staticFieldBase -> MHN_staticFieldBase [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setEnabled -> jfr_set_enabled [REGISTERED]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.stat: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.open: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:sun.reflect.NativeConstructorAccessorImpl.newInstance0 -> Java_sun_reflect_NativeConstructorAccessorImpl_newInstance0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:sun.reflect.NativeConstructorAccessorImpl.newInstance0 -> Java_sun_reflect_NativeConstructorAccessorImpl_newInstance0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putBooleanVolatile -> Unsafe_SetBooleanVolatile [REGISTERED]
+org.apache.hadoop.net.unix.DomainSocket.readArray0: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.recvmmsg0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setStackTraceEnabled -> jfr_set_stacktrace_enabled [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.createDirectory -> Java_java_io_UnixFileSystem_createDirectory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.createDirectory -> Java_java_io_UnixFileSystem_createDirectory [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.inflateBytesDirect: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.Native.epollBusyWait0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.DatagramPacket.init -> Java_java_net_DatagramPacket_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.DatagramPacket.init -> Java_java_net_DatagramPacket_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Object.wait -> JVM_MonitorWait [JVM]
+org.apache.hadoop.io.compress.snappy.SnappyDecompressor.decompressBytesDirect: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.System.registerNatives -> Java_java_lang_System_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.System.registerNatives -> Java_java_lang_System_registerNatives [JNI]
+io.netty.channel.epoll.LinuxSocket.getInterface: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.isReuseAddress: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.initJPEGImageReader -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_initJPEGImageReader [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.ShortComponentRaster.initIDs -> Java_sun_awt_image_ShortComponentRaster_initIDs [JNI]
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.sizeOfjlong: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getComponentType -> JVM_GetComponentType [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveProbes -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveProbes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.setTcpKeepAliveProbes -> Java_sun_net_ExtendedOptionsImpl_setTcpKeepAliveProbes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.ensureClassInitialized -> Unsafe_EnsureClassInitialized [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.dns.ResolverConfigurationImpl.localDomain0 -> Java_sun_net_dns_ResolverConfigurationImpl_localDomain0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.dns.ResolverConfigurationImpl.localDomain0 -> Java_sun_net_dns_ResolverConfigurationImpl_localDomain0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.open0 -> Java_java_io_RandomAccessFile_open0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.open0 -> Java_java_io_RandomAccessFile_open0 [JNI]
+io.netty.channel.unix.Buffer.memoryAddress0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so:java.awt.Frame.initIDs -> Java_java_awt_Frame_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.pipe.SpanClipRenderer.eraseTile -> Java_sun_java2d_pipe_SpanClipRenderer_eraseTile [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.listen -> Java_sun_nio_ch_Net_listen [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.listen -> Java_sun_nio_ch_Net_listen [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getBytesRead: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.nativeio.NativeIO$Windows.getOwner: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.isArray -> JVM_IsArrayClass [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.length -> Java_java_io_RandomAccessFile_length [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.length -> Java_java_io_RandomAccessFile_length [JNI]
+io.netty.channel.unix.Socket.isIPv6: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.getStreamSize: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.DatagramChannelImpl.send0 -> Java_sun_nio_ch_DatagramChannelImpl_send0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.DatagramChannelImpl.send0 -> Java_sun_nio_ch_DatagramChannelImpl_send0 [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorENETUNREACH: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.close0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntrySize -> Java_java_util_zip_ZipFile_getEntrySize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntrySize -> Java_java_util_zip_ZipFile_getEntrySize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.ClassLoader.findBootstrapClass -> Java_java_lang_ClassLoader_findBootstrapClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.ClassLoader.findBootstrapClass -> Java_java_lang_ClassLoader_findBootstrapClass [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeStrike.createScalerContext -> Java_sun_font_NativeStrike_createScalerContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libsunec.so:sun.security.ec.ECKeyPairGenerator.generateECKeyPair -> Java_sun_security_ec_ECKeyPairGenerator_generateECKeyPair [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsunec.so:sun.security.ec.ECKeyPairGenerator.generateECKeyPair -> Java_sun_security_ec_ECKeyPairGenerator_generateECKeyPair [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileDispatcherImpl.truncate0 -> Java_sun_nio_ch_FileDispatcherImpl_truncate0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileDispatcherImpl.truncate0 -> Java_sun_nio_ch_FileDispatcherImpl_truncate0 [JNI]
+org.apache.hadoop.io.nativeio.NativeIO.renameTo0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.objectFieldOffset -> Unsafe_ObjectFieldOffset [REGISTERED]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getUIDforFDOwnerforOwner: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.sqrt -> Java_java_lang_StrictMath_sqrt [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.sqrt -> Java_java_lang_StrictMath_sqrt [JNI]
+io.netty.channel.unix.Socket.setTcpNoDelay: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.kernelVersion: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.InetAddressImplFactory.isIPv6Supported -> Java_java_net_InetAddressImplFactory_isIPv6Supported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.InetAddressImplFactory.isIPv6Supported -> Java_java_net_InetAddressImplFactory_isIPv6Supported [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getDeclaredConstructors0 -> JVM_GetClassDeclaredConstructors [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageReader.setOutColorSpace -> Java_com_sun_imageio_plugins_jpeg_JPEGImageReader_setOutColorSpace [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.send -> Java_java_net_PlainDatagramSocketImpl_send [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.send -> Java_java_net_PlainDatagramSocketImpl_send [JNI]
+io.netty.channel.epoll.LinuxSocket.getSoBusyPoll: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.rename0 -> Java_java_io_UnixFileSystem_rename0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.rename0 -> Java_java_io_UnixFileSystem_rename0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.StrikeCache.freeLongPointer -> Java_sun_font_StrikeCache_freeLongPointer [JNI]
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getBytesRead: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollrdhup: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.getInterface6 -> Java_sun_nio_ch_Net_getInterface6 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.getInterface6 -> Java_sun_nio_ch_Net_getInterface6 [JNI]
+io.netty.channel.unix.FileDescriptor.writev: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.pow -> Java_java_lang_StrictMath_pow [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.pow -> Java_java_lang_StrictMath_pow [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.getInterface4 -> Java_sun_nio_ch_Net_getInterface4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.getInterface4 -> Java_sun_nio_ch_Net_getInterface4 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveProbes -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveProbes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:sun.net.ExtendedOptionsImpl.getTcpKeepAliveProbes -> Java_sun_net_ExtendedOptionsImpl_getTcpKeepAliveProbes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putShortVolatile -> Unsafe_SetShortVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.TransformHelper.Transform -> Java_sun_java2d_loops_TransformHelper_Transform [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.pollhupValue -> Java_sun_nio_ch_Net_pollhupValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.pollhupValue -> Java_sun_nio_ch_Net_pollhupValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getRawAnnotations -> JVM_GetClassAnnotations [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.defineClass -> Unsafe_DefineClass0 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.defineClass -> Unsafe_DefineClass [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.FileOutputStream.writeBytes -> Java_java_io_FileOutputStream_writeBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.FileOutputStream.writeBytes -> Java_java_io_FileOutputStream_writeBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getShort -> Unsafe_GetNativeShort [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getShort -> Unsafe_GetShort140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getShort -> Unsafe_GetShort [REGISTERED]
+io.netty.channel.epoll.Native.epollWait: NOT_FOUND_IN_LIBS
+org.apache.hadoop.util.NativeCrc32.nativeVerifyChunkedSums: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.InheritedChannel.dup2 -> Java_sun_nio_ch_InheritedChannel_dup2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.InheritedChannel.dup2 -> Java_sun_nio_ch_InheritedChannel_dup2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.StrikeCache.freeIntPointer -> Java_sun_font_StrikeCache_freeIntPointer [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.ThreadImpl.setThreadContentionMonitoringEnabled0 -> Java_sun_management_ThreadImpl_setThreadContentionMonitoringEnabled0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.ThreadImpl.setThreadContentionMonitoringEnabled0 -> Java_sun_management_ThreadImpl_setThreadContentionMonitoringEnabled0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getLiveThreadCount -> Java_sun_management_VMManagementImpl_getLiveThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getLiveThreadCount -> Java_sun_management_VMManagementImpl_getLiveThreadCount [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.BufImgSurfaceData.initRaster -> Java_sun_awt_image_BufImgSurfaceData_initRaster [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.NativeThread.init -> Java_sun_nio_ch_NativeThread_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.NativeThread.init -> Java_sun_nio_ch_NativeThread_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.MaskFill.FillAAPgram -> Java_sun_java2d_loops_MaskFill_FillAAPgram [JNI]
+org.apache.hadoop.security.JniBasedUnixGroupsNetgroupMapping.getUsersForNetgroupJNI: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.connect0 -> Java_java_net_PlainDatagramSocketImpl_connect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.connect0 -> Java_java_net_PlainDatagramSocketImpl_connect0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.get -> Java_java_lang_reflect_Array_get [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.get -> Java_java_lang_reflect_Array_get [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketConnect -> Java_java_net_PlainSocketImpl_socketConnect [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketConnect -> Java_java_net_PlainSocketImpl_socketConnect [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.multiNewArray -> Java_java_lang_reflect_Array_multiNewArray [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.multiNewArray -> Java_java_lang_reflect_Array_multiNewArray [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.SurfaceData.isOpaqueGray -> Java_sun_java2d_SurfaceData_isOpaqueGray [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putDouble -> Unsafe_SetNativeDouble [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putDouble -> Unsafe_SetDouble140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putDouble -> Unsafe_SetDouble [REGISTERED]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.decodeImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Float.floatToRawIntBits -> Java_java_lang_Float_floatToRawIntBits [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Float.floatToRawIntBits -> Java_java_lang_Float_floatToRawIntBits [JNI]
+jdk.jfr.internal.JVM.setCompressedIntegers: NOT_FOUND_IN_LIBS
+io.netty.channel.epoll.LinuxSocket.getTcpNotSentLowAt: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setThreadBufferSize -> jfr_set_thread_buffer_size [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.holdsLock -> JVM_HoldsLock [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryFlag -> Java_java_util_zip_ZipFile_getEntryFlag [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryFlag -> Java_java_util_zip_ZipFile_getEntryFlag [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so:com.sun.imageio.plugins.jpeg.JPEGImageWriter.initWriterIDs -> Java_com_sun_imageio_plugins_jpeg_JPEGImageWriter_initWriterIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.atan2 -> Java_java_lang_StrictMath_atan2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.atan2 -> Java_java_lang_StrictMath_atan2 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.ZipFile.getEntryCSize -> Java_java_util_zip_ZipFile_getEntryCSize [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.ZipFile.getEntryCSize -> Java_java_util_zip_ZipFile_getEntryCSize [JNI]
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.close: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.setSampleThreads -> jfr_set_sample_threads [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.close0 -> Java_java_io_RandomAccessFile_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.close0 -> Java_java_io_RandomAccessFile_close0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libsunec.so:sun.security.ec.ECDSASignature.signDigest -> Java_sun_security_ec_ECDSASignature_signDigest [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsunec.so:sun.security.ec.ECDSASignature.signDigest -> Java_sun_security_ec_ECDSASignature_signDigest [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setLong -> Java_java_lang_reflect_Array_setLong [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setLong -> Java_java_lang_reflect_Array_setLong [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainSocketImpl.socketBind -> Java_java_net_PlainSocketImpl_socketBind [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainSocketImpl.socketBind -> Java_java_net_PlainSocketImpl_socketBind [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.arrayBaseOffset -> Unsafe_ArrayBaseOffset [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.System.nanoTime -> JVM_NanoTime [JVM]
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.remove: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.SampleModel.initIDs -> Java_java_awt_image_SampleModel_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.isValidCompressedBuffer -> Java_org_xerial_snappy_SnappyNative_isValidCompressedBuffer__JJJ [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.isValidCompressedBuffer -> Java_org_xerial_snappy_SnappyNative_isValidCompressedBuffer__Ljava_lang_Object_2II [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.SnappyNative.isValidCompressedBuffer -> Java_org_xerial_snappy_SnappyNative_isValidCompressedBuffer__Ljava_nio_ByteBuffer_2II [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Double.doubleToRawLongBits -> Java_java_lang_Double_doubleToRawLongBits [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Double.doubleToRawLongBits -> Java_java_lang_Double_doubleToRawLongBits [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Thread.setPriority0 -> JVM_SetThreadPriority [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.Net.pollinValue -> Java_sun_nio_ch_Net_pollinValue [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.Net.pollinValue -> Java_sun_nio_ch_Net_pollinValue [JNI]
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.initImpl: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.FileKey.initIDs -> Java_sun_nio_ch_FileKey_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.FileKey.initIDs -> Java_sun_nio_ch_FileKey_initIDs [JNI]
+io.netty.channel.epoll.Native.splice0: NOT_FOUND_IN_LIBS
+io.netty.channel.unix.Socket.connectDomainSocket: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.setBoolean -> Java_java_lang_reflect_Array_setBoolean [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.setBoolean -> Java_java_lang_reflect_Array_setBoolean [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.checkAccess -> Java_java_io_UnixFileSystem_checkAccess [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.checkAccess -> Java_java_io_UnixFileSystem_checkAccess [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.security.AccessController.getStackAccessControlContext -> Java_java_security_AccessController_getStackAccessControlContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.security.AccessController.getStackAccessControlContext -> Java_java_security_AccessController_getStackAccessControlContext [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:java.awt.image.SinglePixelPackedSampleModel.initIDs -> Java_java_awt_image_SinglePixelPackedSampleModel_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so:java.util.zip.Deflater.end -> Java_java_util_zip_Deflater_end [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libzip.so:java.util.zip.Deflater.end -> Java_java_util_zip_Deflater_end [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.MemoryImpl.getMemoryUsage0 -> Java_sun_management_MemoryImpl_getMemoryUsage0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.MemoryImpl.getMemoryUsage0 -> Java_sun_management_MemoryImpl_getMemoryUsage0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getBoolean -> Java_java_lang_reflect_Array_getBoolean [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getBoolean -> Java_java_lang_reflect_Array_getBoolean [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.InetAddress.init -> Java_java_net_InetAddress_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.InetAddress.init -> Java_java_net_InetAddress_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getClassIdNonIntrinsic -> jfr_class_id [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.compareAndSwapInt -> Unsafe_CompareAndSwapInt [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.isThreadCpuTimeEnabled -> Java_sun_management_VMManagementImpl_isThreadCpuTimeEnabled [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.isThreadCpuTimeEnabled -> Java_sun_management_VMManagementImpl_isThreadCpuTimeEnabled [JNI]
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.defineAnonymousClass -> Unsafe_DefineAnonymousClass [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Runtime.maxMemory -> Java_java_lang_Runtime_maxMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Runtime.maxMemory -> Java_java_lang_Runtime_maxMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.Console.echo -> Java_java_io_Console_echo [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.Console.echo -> Java_java_io_Console_echo [JNI]
+org.apache.hadoop.io.compress.snappy.SnappyDecompressor.initIDs: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.getLibraryName: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.PlainDatagramSocketImpl.setTimeToLive -> Java_java_net_PlainDatagramSocketImpl_setTimeToLive [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.PlainDatagramSocketImpl.setTimeToLive -> Java_java_net_PlainDatagramSocketImpl_setTimeToLive [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:jdk.internal.platform.CgroupMetrics.isUseContainerSupport -> Java_jdk_internal_platform_CgroupMetrics_isUseContainerSupport [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:jdk.internal.platform.CgroupMetrics.isUseContainerSupport -> Java_jdk_internal_platform_CgroupMetrics_isUseContainerSupport [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.String.intern -> Java_java_lang_String_intern [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.String.intern -> Java_java_lang_String_intern [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getLength -> Java_java_lang_reflect_Array_getLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getLength -> Java_java_lang_reflect_Array_getLength [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getObject -> Unsafe_GetObject140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.getObject -> Unsafe_GetObject [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so:java.net.SocketOutputStream.init -> Java_java_net_SocketOutputStream_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnet.so:java.net.SocketOutputStream.init -> Java_java_net_SocketOutputStream_init [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.initOptionalSupportFields -> Java_sun_management_VMManagementImpl_initOptionalSupportFields [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.initOptionalSupportFields -> Java_sun_management_VMManagementImpl_initOptionalSupportFields [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.SurfaceData.initIDs -> Java_sun_java2d_SurfaceData_initIDs [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Runtime.freeMemory -> Java_java_lang_Runtime_freeMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Runtime.freeMemory -> Java_java_lang_Runtime_freeMemory [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeFont.getGlyphImage -> Java_sun_font_NativeFont_getGlyphImage [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.MemoryImpl.getMemoryPools0 -> Java_sun_management_MemoryImpl_getMemoryPools0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.MemoryImpl.getMemoryPools0 -> Java_sun_management_MemoryImpl_getMemoryPools0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putChar -> Unsafe_SetNativeChar [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putChar -> Unsafe_SetChar140 [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putChar -> Unsafe_SetChar [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getUptime0 -> Java_sun_management_VMManagementImpl_getUptime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getUptime0 -> Java_sun_management_VMManagementImpl_getUptime0 [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.RandomAccessFile.writeBytes -> Java_java_io_RandomAccessFile_writeBytes [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.RandomAccessFile.writeBytes -> Java_java_io_RandomAccessFile_writeBytes [JNI]
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getBytesRead: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms -> jfr_allow_event_retransforms [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.exp -> Java_java_lang_StrictMath_exp [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.exp -> Java_java_lang_StrictMath_exp [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.asin -> Java_java_lang_StrictMath_asin [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.asin -> Java_java_lang_StrictMath_asin [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putOrderedLong -> Unsafe_SetOrderedLong [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/libsnappyjava.so:org.xerial.snappy.BitShuffleNative.unshuffle -> Java_org_xerial_snappy_BitShuffleNative_unshuffle [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnio.so:sun.nio.ch.IOUtil.configureBlocking -> Java_sun_nio_ch_IOUtil_configureBlocking [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libnio.so:sun.nio.ch.IOUtil.configureBlocking -> Java_sun_nio_ch_IOUtil_configureBlocking [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.Object.registerNatives -> Java_java_lang_Object_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.Object.registerNatives -> Java_java_lang_Object_registerNatives [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so:sun.font.NativeStrike.getMaxGlyph -> Java_sun_font_NativeStrike_getMaxGlyph [JNI]
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.sync_file_range: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.reflect.Array.getByte -> Java_java_lang_reflect_Array_getByte [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.reflect.Array.getByte -> Java_java_lang_reflect_Array_getByte [JNI]
+org.apache.hadoop.net.unix.DomainSocketWatcher.anchorNative: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.putFloatVolatile -> Unsafe_SetFloatVolatile [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.lang.StrictMath.tanh -> Java_java_lang_StrictMath_tanh [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.lang.StrictMath.tanh -> Java_java_lang_StrictMath_tanh [JNI]
+org.apache.hadoop.net.unix.DomainSocket.setAttribute0: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.java2d.loops.MaskBlit.MaskBlit -> Java_sun_java2d_loops_MaskBlit_MaskBlit [JNI]
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsIsal: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:jdk.jfr.internal.JVM.getEpochAddress -> jfr_get_epoch_address [REGISTERED]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEAGAIN: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.create: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.util.TimeZone.getSystemTimeZoneID -> Java_java_util_TimeZone_getSystemTimeZoneID [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.util.TimeZone.getSystemTimeZoneID -> Java_java_util_TimeZone_getSystemTimeZoneID [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libawt.so:sun.awt.image.ImageRepresentation.initIDs -> Java_sun_awt_image_ImageRepresentation_initIDs [JNI]
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEISCONN: NOT_FOUND_IN_LIBS
+org.apache.hadoop.net.unix.DomainSocket.receiveFileDescriptors0: NOT_FOUND_IN_LIBS
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.init: NOT_FOUND_IN_LIBS
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:sun.misc.Unsafe.throwException -> Unsafe_ThrowException [REGISTERED]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so:sun.management.VMManagementImpl.getProcessId -> Java_sun_management_VMManagementImpl_getProcessId [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libmanagement.so:sun.management.VMManagementImpl.getProcessId -> Java_sun_management_VMManagementImpl_getProcessId [JNI]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so:java.lang.Class.getDeclaredFields0 -> JVM_GetClassDeclaredFields [JVM]
+LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so:java.io.UnixFileSystem.getSpace -> Java_java_io_UnixFileSystem_getSpace [JNI]
+LIBS_solr_8.7.0-jdk8-buster/libjava.so:java.io.UnixFileSystem.getSpace -> Java_java_io_UnixFileSystem_getSpace [JNI]

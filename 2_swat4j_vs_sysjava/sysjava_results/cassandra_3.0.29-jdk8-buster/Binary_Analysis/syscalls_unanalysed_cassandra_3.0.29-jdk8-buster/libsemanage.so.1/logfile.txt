@@ -1,0 +1,425 @@
+
+Path to futex:
+  semanage_user_create_29a00 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  semanage_user_create_29a00 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  semanage_user_create_29a00 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  semanage_user_create_29a00 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  semanage_user_create_29a00 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  semanage_user_create_29a00 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to sched_yield:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to read:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_read_7baa0
+  _IO_file_read_7baa0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to lseek:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to write:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b4d0
+  _IO_file_write@@GLIBC_2.2.5_7b4d0 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to tgkill:
+  semanage_user_create_29a00 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to umask:
+  semanage_user_create_29a00 - [INDIRECT]-> dbase_file_flush_fc00
+  dbase_file_flush_fc00 - [DIRECT]-> umask_e9e80
+  umask_e9e80 - [syscall]-> umask
+
+Path to sched_get_priority_min:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to stat:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to unlink:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to openat:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_get_serial_25ca0
+  semanage_direct_get_serial_25ca0 - [DIRECT]-> open_ea010
+  open_ea010 - [syscall]-> openat
+
+Path to getpid:
+  semanage_user_create_29a00 - [INDIRECT]-> sigcancel_handler_66b0
+  sigcancel_handler_66b0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to vfork:
+  semanage_reload_policy_25480 - [DIRECT]-> semanage_exec_prog.isra.5_22a70
+  semanage_exec_prog.isra.5_22a70 - [DIRECT]-> vfork_c6810
+  vfork_c6810 - [syscall]-> vfork
+
+Path to wait4:
+  semanage_reload_policy_25480 - [DIRECT]-> semanage_exec_prog.isra.5_22a70
+  semanage_exec_prog.isra.5_22a70 - [DIRECT]-> waitpid_c62c0
+  waitpid_c62c0 - [syscall]-> wait4
+
+Path to execve:
+  semanage_reload_policy_25480 - [DIRECT]-> semanage_exec_prog.isra.5_22a70
+  semanage_exec_prog.isra.5_22a70 - [DIRECT]-> execve_c68a0
+  execve_c68a0 - [syscall]-> execve
+
+Path to exit:
+  semanage_reload_policy_25480 - [DIRECT]-> semanage_exec_prog.isra.5_22a70
+  semanage_exec_prog.isra.5_22a70 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  semanage_reload_policy_25480 - [DIRECT]-> semanage_exec_prog.isra.5_22a70
+  semanage_exec_prog.isra.5_22a70 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to access:
+  semanage_handle_create_1bbe0 - [DIRECT]-> semanage_conf_parse_2de40
+  semanage_conf_parse_2de40 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to ioctl:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mmap:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_7ae40
+  _IO_file_underflow_maybe_mmap_7ae40 - [DIRECT]-> decide_maybe_mmap_7aca0
+  decide_maybe_mmap_7aca0 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mremap:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to writev:
+  semanage_user_create_29a00 - [INDIRECT]-> _IO_vtable_check_79e10
+  _IO_vtable_check_79e10 - [DIRECT]-> __libc_fatal_79650
+  __libc_fatal_79650 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to brk:
+  semanage_user_create_29a00 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  semanage_user_create_29a00 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to mprotect:
+  semanage_user_create_29a00 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to rt_sigprocmask:
+  semanage_user_create_29a00 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  semanage_user_create_29a00 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to madvise:
+  semanage_user_create_29a00 - [INDIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to pause:
+  semanage_user_create_29a00 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to socket:
+  semanage_user_create_29a00 - [INDIRECT]-> rfc3484_sort_e18a0
+  rfc3484_sort_e18a0 - [DIRECT]-> __check_native_116c60
+  __check_native_116c60 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to bind:
+  semanage_user_create_29a00 - [INDIRECT]-> rfc3484_sort_e18a0
+  rfc3484_sort_e18a0 - [DIRECT]-> __check_native_116c60
+  __check_native_116c60 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  semanage_user_create_29a00 - [INDIRECT]-> rfc3484_sort_e18a0
+  rfc3484_sort_e18a0 - [DIRECT]-> __check_native_116c60
+  __check_native_116c60 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to sendto:
+  semanage_user_create_29a00 - [INDIRECT]-> rfc3484_sort_e18a0
+  rfc3484_sort_e18a0 - [DIRECT]-> __check_native_116c60
+  __check_native_116c60 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to recvmsg:
+  semanage_user_create_29a00 - [INDIRECT]-> rfc3484_sort_e18a0
+  rfc3484_sort_e18a0 - [DIRECT]-> __check_native_116c60
+  __check_native_116c60 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to mkdir:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_begintrans_128a0
+  semanage_direct_begintrans_128a0 - [DIRECT]-> semanage_make_sandbox_24b60
+  semanage_make_sandbox_24b60 - [DIRECT]-> mkdir_e9f80
+  mkdir_e9f80 - [syscall]-> mkdir
+
+Path to flock:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_release_trans_lock_25c20
+  semanage_release_trans_lock_25c20 - [DIRECT]-> flock_ea8a0
+  flock_ea8a0 - [syscall]-> flock
+
+Path to rmdir:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> remove_6d7c0
+  remove_6d7c0 - [DIRECT]-> rmdir_ebf00
+  rmdir_ebf00 - [syscall]-> rmdir
+
+Path to rename:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_copy_file_24320
+  semanage_copy_file_24320 - [DIRECT]-> rename_6d800
+  rename_6d800 - [syscall]-> rename
+
+Path to clock_getres:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_genhomedircon_19c30
+  semanage_genhomedircon_19c30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to pipe:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_extract_17330
+  semanage_direct_extract_17330 - [DIRECT]-> semanage_compile_module_15300
+  semanage_compile_module_15300 - [DIRECT]-> pipe_eab00
+  pipe_eab00 - [syscall]-> pipe
+
+Path to clone:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_extract_17330
+  semanage_direct_extract_17330 - [DIRECT]-> semanage_compile_module_15300
+  semanage_compile_module_15300 - [DIRECT]-> fork_c6610
+  fork_c6610 - [syscall]-> clone
+
+Path to dup2:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_extract_17330
+  semanage_direct_extract_17330 - [DIRECT]-> semanage_compile_module_15300
+  semanage_compile_module_15300 - [DIRECT]-> dup2_eaaa0
+  dup2_eaaa0 - [syscall]-> dup2
+
+Path to fcntl:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_open_62c0
+  audit_open_62c0 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to creat:
+  semanage_connect_1ba50 - [DIRECT]-> semanage_direct_connect_147a0
+  semanage_direct_connect_147a0 - [DIRECT]-> semanage_create_store_23cd0
+  semanage_create_store_23cd0 - [DIRECT]-> creat_eab60
+  creat_eab60 - [syscall]-> creat
+
+Path to lstat:
+  semanage_user_create_29a00 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  semanage_user_create_29a00 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  semanage_user_create_29a00 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to fchmod:
+  semanage_user_create_29a00 - [INDIRECT]-> bool_commit_list_e640
+  bool_commit_list_e640 - [DIRECT]-> security_set_boolean_list_ac40
+  security_set_boolean_list_ac40 - [DIRECT]-> save_booleans_9d10
+  save_booleans_9d10 - [DIRECT]-> fchmod_e9ec0
+  fchmod_e9ec0 - [syscall]-> fchmod
+
+Path to select:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_begintrans_128a0
+  semanage_direct_begintrans_128a0 - [DIRECT]-> semanage_get_trans_lock_25bc0
+  semanage_get_trans_lock_25bc0 - [DIRECT]-> semanage_get_lock_226f0
+  semanage_get_lock_226f0 - [DIRECT]-> select_f0b80
+  select_f0b80 - [syscall]-> select
+
+Path to prlimit64:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_genhomedircon_19c30
+  semanage_genhomedircon_19c30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to readlink:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_log_semanage_message_9070
+  audit_log_semanage_message_9070 - [DIRECT]-> _get_exename.constprop.6_8250
+  _get_exename.constprop.6_8250 - [DIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to getdents64:
+  semanage_user_create_29a00 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to sysinfo:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_genhomedircon_19c30
+  semanage_genhomedircon_19c30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to connect:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_log_semanage_message_9070
+  audit_log_semanage_message_9070 - [DIRECT]-> _resolve_addr_7ec0
+  _resolve_addr_7ec0 - [DIRECT]-> getaddrinfo_e3bc0
+  getaddrinfo_e3bc0 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect
+
+Path to poll:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_log_semanage_message_9070
+  audit_log_semanage_message_9070 - [DIRECT]-> audit_send_user_message_9ae0
+  audit_send_user_message_9ae0 - [DIRECT]-> audit_send_68e0
+  audit_send_68e0 - [DIRECT]-> __audit_send_6640
+  __audit_send_6640 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to readv:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_genhomedircon_19c30
+  semanage_genhomedircon_19c30 - [DIRECT]-> getgrnam_r@@GLIBC_2.2.5_c3b90
+  getgrnam_r@@GLIBC_2.2.5_c3b90 - [DIRECT]-> __nscd_getgrnam_r_12dcf0
+  __nscd_getgrnam_r_12dcf0 - [DIRECT]-> nscd_getgr_r_12d600
+  nscd_getgr_r_12d600 - [DIRECT]-> __readvall_130550
+  __readvall_130550 - [DIRECT]-> readv_efff0
+  readv_efff0 - [syscall]-> readv
+
+Path to recvfrom:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_log_semanage_message_9070
+  audit_log_semanage_message_9070 - [DIRECT]-> audit_send_user_message_9ae0
+  audit_send_user_message_9ae0 - [DIRECT]-> audit_send_68e0
+  audit_send_68e0 - [DIRECT]-> __audit_send_6640
+  __audit_send_6640 - [DIRECT]-> audit_get_reply_63c0
+  audit_get_reply_63c0 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to capget:
+  semanage_seuser_del_local_291f0 - [DIRECT]-> semanage_seuser_audit_28bf0
+  semanage_seuser_audit_28bf0 - [DIRECT]-> audit_log_semanage_message_9070
+  audit_log_semanage_message_9070 - [DIRECT]-> audit_send_user_message_9ae0
+  audit_send_user_message_9ae0 - [DIRECT]-> audit_can_write_60e0
+  audit_can_write_60e0 - [DIRECT]-> capng_have_capability_3390
+  capng_have_capability_3390 - [DIRECT]-> capng_get_caps_process_27c0
+  capng_get_caps_process_27c0 - [DIRECT]-> capget_f98b0
+  capget_f98b0 - [syscall]-> capget
+
+Path to uname:
+  semanage_user_create_29a00 - [INDIRECT]-> semanage_direct_commit_162a0
+  semanage_direct_commit_162a0 - [DIRECT]-> semanage_genhomedircon_19c30
+  semanage_genhomedircon_19c30 - [DIRECT]-> setpwent_c5260
+  setpwent_c5260 - [DIRECT]-> __nss_setent_11c4f0
+  __nss_setent_11c4f0 - [DIRECT]-> __resolv_context_get_119f40
+  __resolv_context_get_119f40 - [DIRECT]-> context_get.part.1_119db0
+  context_get.part.1_119db0 - [DIRECT]-> __res_vinit_118e80
+  __res_vinit_118e80 - [DIRECT]-> __resolv_conf_load_1181c0
+  __resolv_conf_load_1181c0 - [DIRECT]-> gethostname_f08c0
+  gethostname_f08c0 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname

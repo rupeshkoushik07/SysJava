@@ -1,0 +1,4 @@
+# lib | status | bindings | high_conf | sym_infer | unknown | note
+libNativePosixUtil.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libhadoop.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libnetty_transport_native_epoll_x86_64.so|OK|135|135|0|0|

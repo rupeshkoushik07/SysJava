@@ -1,0 +1,12 @@
+awk
+basename
+bash
+cut
+dirname
+expr
+/opt/java/bin/java
+runc
+sed
+sh
+uname
+/usr/bin/env

@@ -1,0 +1,23 @@
+Time taken for the analysis: 11 seconds
+Time taken for the analysis: 19 seconds
+Direct Edges computation: 4 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/libsqlite3.so.0.8.6/callgraph.json
+compute_syscalls: call-graph step exited 139; testing each start function alone
+Killed
+Killed
+Killed
+Killed
+Killed
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Segmentation fault
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated

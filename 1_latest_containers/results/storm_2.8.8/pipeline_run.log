@@ -8684,3 +8684,247 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-05 22:59:24] storm_2.8.8 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Binary_Analysis/syscalls_output_storm_2.8.8/storm_2.8.8.json
+
+===== [2026-11-06 19:23:19] storm_2.8.8 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=50232	fuzzy=0	syscalls=0
+libawt.so	functions=50138	fuzzy=0	syscalls=93
+libawt_xawt.so	functions=56688	fuzzy=978	syscalls=108
+libc.so.6	functions=3823	fuzzy=0	syscalls=34
+libjava.so	functions=49297	fuzzy=0	syscalls=106
+libjvm.so	functions=48941	fuzzy=0	syscalls=93
+libnet.so	functions=49452	fuzzy=0	syscalls=94
+libnetty_quiche42_linux_x86_64-4.2.12.Final.so	functions=15930	fuzzy=0	syscalls=42
+libnetty_tcnative-@VERSION@.so	functions=10406	fuzzy=0	syscalls=43
+libnetty_transport_native_epoll_x86_64-4.2.12.Final.so	functions=4069	fuzzy=0	syscalls=65
+libnio.so	functions=49667	fuzzy=0	syscalls=94
+liborg_apache_storm_shade_netty_tcnative_linux_x86_64.so	functions=10406	fuzzy=0	syscalls=43
+liborg_apache_storm_shade_netty_transport_native_epoll_x86_64.so	functions=4069	fuzzy=0	syscalls=65
+librocksdbjni16624330668920755723.so	functions=26257	fuzzy=1	syscalls=61
+libsctp.so	functions=49712	fuzzy=0	syscalls=94
+libsnappyjava_storm-shaded-deps-2.8.8.so	functions=6236	fuzzy=302	syscalls=34
+libzip.so	functions=49502	fuzzy=0	syscalls=93
+bash	functions=6568	fuzzy=0	syscalls=94
+cat	functions=28838	fuzzy=0	syscalls=46
+chown	functions=28838	fuzzy=0	syscalls=66
+cut	functions=28838	fuzzy=0	syscalls=44
+dash	functions=4019	fuzzy=0	syscalls=72
+dirname	functions=28838	fuzzy=0	syscalls=44
+env	functions=28838	fuzzy=0	syscalls=46
+grep	functions=4279	fuzzy=0	syscalls=42
+id	functions=28838	fuzzy=0	syscalls=63
+java	functions=3984	fuzzy=0	syscalls=63
+jspawnhelper	functions=3852	fuzzy=0	syscalls=40
+ld-linux-x86-64.so.2	functions=367	fuzzy=0	syscalls=34
+mawk	functions=5028	fuzzy=0	syscalls=60
+python3.14	functions=17344	fuzzy=0	syscalls=35
+runc	functions=17931	fuzzy=0	syscalls=35
+
+===== [2026-11-06 19:23:20] storm_2.8.8 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: storm_2.8.8
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_BIN_storm_2.8.8
+Found 15 subdirectories
+
+  ✓ bash: 94 syscalls
+  ✓ cat: 46 syscalls
+  ✓ chown: 66 syscalls
+  ✓ cut: 44 syscalls
+  ✓ dash: 72 syscalls
+  ✓ dirname: 44 syscalls
+  ✓ env: 46 syscalls
+  ✗ gosu: syscalls.txt MISSING
+  ✓ grep: 42 syscalls
+  ✓ id: 63 syscalls
+  ✓ java: 63 syscalls
+  ✓ jspawnhelper: 40 syscalls
+  ✓ ld-linux-x86-64.so.2: 34 syscalls
+  ✓ mawk: 60 syscalls
+  ✓ python3.14: 35 syscalls
+
+✗ Error: 1 binaries with MISSING syscalls.txt:
+    - gosu
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_BIN_storm_2.8.8/binary_syscalls.txt (123 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8
+Found 19 subdirectories
+
+  ✓ libawt.so: 93 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 108 syscalls
+  ✓ libc.so.6: 34 syscalls
+  ✓ libjava.so: 106 syscalls
+  ✓ libjvm.so: 93 syscalls
+  ✓ libnet.so: 94 syscalls
+  ✓ libnetty_quiche42_linux_x86_64-4.2.12.Final.so: 42 syscalls
+  ✓ libnetty_tcnative-@VERSION@.so: 43 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64-4.2.12.Final.so: 65 syscalls
+  ✗ libnetty_transport_native_io_uring42_x86_64-4.2.12.Final.so: syscalls.txt MISSING
+  ✗ libnetty_transport_native_io_uring42_x86_64.so: syscalls.txt MISSING
+  ✓ libnio.so: 94 syscalls
+  ✓ liborg_apache_storm_shade_netty_tcnative_linux_x86_64.so: 43 syscalls
+  ✓ liborg_apache_storm_shade_netty_transport_native_epoll_x86_64.so: 65 syscalls
+  ✓ librocksdbjni16624330668920755723.so: 61 syscalls
+  ✓ libsctp.so: 94 syscalls
+  ✓ libsnappyjava_storm-shaded-deps-2.8.8.so: 34 syscalls
+  ✓ libzip.so: 93 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+✗ Error: 2 libraries with MISSING syscalls.txt:
+    - libnetty_transport_native_io_uring42_x86_64-4.2.12.Final.so
+    - libnetty_transport_native_io_uring42_x86_64.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/library_syscalls.txt (138 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8
+Found 17 syscalls.txt files
+  _bz2.cpython-314-x86_64-linux-gnu.so: syscalls.txt EMPTY (0 syscalls)
+  _lzma.cpython-314-x86_64-linux-gnu.so: syscalls.txt EMPTY (0 syscalls)
+  _zstd.cpython-314-x86_64-linux-gnu.so: syscalls.txt EMPTY (0 syscalls)
+  libbz2.so.1.0: 34 syscalls
+  libexpat.so.1: 36 syscalls
+  libextnet.so: 94 syscalls
+  libjimage.so: 93 syscalls
+  libjli.so: 63 syscalls
+  libjsvml.so: 34 syscalls
+  liblzma.so.5: 53 syscalls
+  libmanagement.so: 93 syscalls
+  libmanagement_ext.so: 93 syscalls
+  libpcre2-8.so.0: 36 syscalls
+  libselinux.so.1: 81 syscalls
+  libtinfo.so.6: 47 syscalls
+  libz.so.1: 34 syscalls
+  libzstd.so.1: 51 syscalls
+
+⚠ Warning: 3 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_unanalysed_storm_2.8.8/unanalysed_syscalls.txt (113 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 42 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/runc.txt
+  ✓ Loaded 118 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      123
+Library syscalls:     138
+Unanalysed libraries: 113
+JNA/FFI syscalls:     42
+Runc whitelist:       118
+Combined (unique):    193
+  → unanalysed libraries added 10 additional syscalls
+  → JNA/FFI analysis added 1 additional syscalls
+  → runc.txt added 23 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/storm_2.8.8.txt (193 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/storm_2.8.8.json (193 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 193
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  16
+  - Empty:     0
+  - Missing:   1
+  - Syscalls:  123 unique
+
+Libraries:
+  - Analyzed:  19
+  - Empty:     1
+  - Missing:   2
+  - Syscalls:  138 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/runc.txt
+  - Syscalls:    118 unique
+  - Added:       34 additional syscalls
+
+Combined:
+  - Total unique syscalls: 193
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_BIN_storm_2.8.8/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/storm_2.8.8.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/storm_2.8.8.json (seccomp profile)
+
+⚠ Completed with warnings or errors
+stage 10: merge reported items without results (listed above); profile written, continuing
+Found 1 container(s) to organize.
+
+  storm_2.8.8
+      JARFILES_storm_2.8.8  (172M) -> Dataset/
+      LIBS_storm_2.8.8  (90M) -> Dataset/
+      BINARIES_storm_2.8.8  (77M) -> Dataset/
+      RUNTIME_storm_2.8.8  (39M) -> Dataset/
+      outputs_storm_2.8.8  (2.6M) -> Bytecode_Analysis/
+      sysdig_outputs_storm_2.8.8  (176K) -> Dynamic_Analysis/
+      syscalls_output_storm_2.8.8  (528M) -> Binary_Analysis/
+      syscalls_BIN_storm_2.8.8  (45M) -> Binary_Analysis/
+      syscalls_unanalysed_storm_2.8.8  (219M) -> Binary_Analysis/
+      startfuncs_unanalysed_storm_2.8.8  (84K) -> Binary_Analysis/
+      jna_ffi_analysis  (2.9M) -> Binary_Analysis/
+    (11 moved)
+
+Done. Moved 11 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/Final_results/
+Containers organized: 1
+
+===== [2026-11-06 19:23:25] storm_2.8.8 stage 11: run the container under its profile
+RESULT=FAIL not_ready not_running probe_failed
+
+===== [2026-11-06 19:26:23] storm_2.8.8 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Binary_Analysis/syscalls_output_storm_2.8.8/storm_2.8.8.json
+
+===== [2026-11-06 19:30:20] storm_2.8.8 stage 11: run the container under its profile
+/home/user/Tutorial/EchoTrace_latest/scripts/verify_seccomp_profile.sh: line 147: Final_results_latest_versions/storm_2.8.8/seccomp_runtime_test.log: No such file or directory
+grep: Final_results_latest_versions/storm_2.8.8/seccomp_runtime_test.log: No such file or directory
+
+===== [2026-11-06 19:30:34] storm_2.8.8 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-06 19:32:46] storm_2.8.8 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Binary_Analysis/syscalls_output_storm_2.8.8/storm_2.8.8.json

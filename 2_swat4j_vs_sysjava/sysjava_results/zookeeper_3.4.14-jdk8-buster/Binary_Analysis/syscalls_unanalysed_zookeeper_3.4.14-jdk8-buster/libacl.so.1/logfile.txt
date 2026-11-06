@@ -1,0 +1,312 @@
+
+Path to stat:
+  perm_copy_file_53f0 - [DIRECT]-> _xstat_e9a90
+  _xstat_e9a90 - [syscall]-> stat
+
+Path to chmod:
+  perm_copy_file_53f0 - [DIRECT]-> chmod_e9fe0
+  chmod_e9fe0 - [syscall]-> chmod
+
+Path to gettimeofday:
+  perm_copy_file_53f0 - [INDIRECT]-> __gettimeofday_syscall_b5c00
+  __gettimeofday_syscall_b5c00 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  perm_copy_file_53f0 - [INDIRECT]-> __restore_rt_37840
+  __restore_rt_37840 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  perm_copy_file_53f0 - [INDIRECT]-> __syscall_clock_gettime_f9ca0
+  __syscall_clock_gettime_f9ca0 - [syscall]-> clock_gettime
+
+Path to time:
+  perm_copy_file_53f0 - [INDIRECT]-> __time_syscall_b5b30
+  __time_syscall_b5b30 - [syscall]-> time
+
+Path to getxattr:
+  perm_copy_file_53f0 - [INDIRECT]-> getxattr_f72e0
+  getxattr_f72e0 - [syscall]-> getxattr
+
+Path to lgetxattr:
+  perm_copy_file_53f0 - [INDIRECT]-> lgetxattr_f7340
+  lgetxattr_f7340 - [syscall]-> lgetxattr
+
+Path to setxattr:
+  acl_set_file_39d0 - [DIRECT]-> setxattr_f7430
+  setxattr_f7430 - [syscall]-> setxattr
+
+Path to removexattr:
+  acl_delete_def_file_2890 - [DIRECT]-> removexattr_f7400
+  removexattr_f7400 - [syscall]-> removexattr
+
+Path to fgetxattr:
+  acl_get_fd_3470 - [DIRECT]-> fgetxattr_f7220
+  fgetxattr_f7220 - [syscall]-> fgetxattr
+
+Path to fstat:
+  acl_get_fd_3470 - [DIRECT]-> _fxstat_e9ae0
+  _fxstat_e9ae0 - [syscall]-> fstat
+
+Path to fchmod:
+  perm_copy_fd_5080 - [DIRECT]-> fchmod_ea010
+  fchmod_ea010 - [syscall]-> fchmod
+
+Path to fsetxattr:
+  acl_set_fd_3940 - [DIRECT]-> fsetxattr_f72b0
+  fsetxattr_f72b0 - [syscall]-> fsetxattr
+
+Path to futex:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> __lll_lock_wait_private_106700
+  __lll_lock_wait_private_106700 - [syscall]-> futex
+
+Path to close:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_close_7a660
+  _IO_file_close_7a660 - [DIRECT]-> __close_nocancel_ef4c0
+  __close_nocancel_ef4c0 - [syscall]-> close
+
+Path to munmap:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_close_mmap_7a860
+  _IO_file_close_mmap_7a860 - [DIRECT]-> munmap_f41d0
+  munmap_f41d0 - [syscall]-> munmap
+
+Path to read:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_read_7b960
+  _IO_file_read_7b960 - [DIRECT]-> read_ea450
+  read_ea450 - [syscall]-> read
+
+Path to lseek:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_seek_7aaf0
+  _IO_file_seek_7aaf0 - [DIRECT]-> lseek_ea590
+  lseek_ea590 - [syscall]-> lseek
+
+Path to write:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b390
+  _IO_file_write@@GLIBC_2.2.5_7b390 - [DIRECT]-> write_ea4f0
+  write_ea4f0 - [syscall]-> write
+
+Path to madvise:
+  acl_from_text_2d40 - [DIRECT]-> free_849a0
+  free_849a0 - [DIRECT]-> _int_free_810b0
+  _int_free_810b0 - [DIRECT]-> madvise_f42d0
+  madvise_f42d0 - [syscall]-> madvise
+
+Path to mmap:
+  acl_from_text_2d40 - [DIRECT]-> free_849a0
+  free_849a0 - [DIRECT]-> _int_free_810b0
+  _int_free_810b0 - [DIRECT]-> mmap_f40f0
+  mmap_f40f0 - [syscall]-> mmap
+
+Path to openat:
+  acl_from_text_2d40 - [DIRECT]-> free_849a0
+  free_849a0 - [DIRECT]-> _int_free_810b0
+  _int_free_810b0 - [DIRECT]-> __open64_nocancel_ef600
+  __open64_nocancel_ef600 - [syscall]-> openat
+
+Path to writev:
+  acl_from_text_2d40 - [DIRECT]-> __stack_chk_fail_10a7b0
+  __stack_chk_fail_10a7b0 - [DIRECT]-> __fortify_fail_abort_10a7d0
+  __fortify_fail_abort_10a7d0 - [DIRECT]-> __libc_message_79240
+  __libc_message_79240 - [syscall]-> writev
+
+Path to getcwd:
+  perm_copy_file_53f0 - [DIRECT]-> dcgettext_30af0
+  dcgettext_30af0 - [DIRECT]-> __dcigettext_31a70
+  __dcigettext_31a70 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [syscall]-> getcwd
+
+Path to ioctl:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_doallocate_6f690
+  _IO_file_doallocate_6f690 - [DIRECT]-> isatty_ebe60
+  isatty_ebe60 - [DIRECT]-> tcgetattr_efb30
+  tcgetattr_efb30 - [syscall]-> ioctl
+
+Path to mremap:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_underflow_mmap_7b8d0
+  _IO_file_underflow_mmap_7b8d0 - [DIRECT]-> mmap_remap_check_7a890
+  mmap_remap_check_7a890 - [DIRECT]-> mremap_fa010
+  mremap_fa010 - [syscall]-> mremap
+
+Path to brk:
+  perm_copy_file_53f0 - [INDIRECT]-> __default_morecore_85e40
+  __default_morecore_85e40 - [DIRECT]-> sbrk_f0360
+  sbrk_f0360 - [DIRECT]-> brk_f0300
+  brk_f0300 - [syscall]-> brk
+
+Path to clock_getres:
+  acl_copy_int_2690 - [DIRECT]-> __acl_reorder_obj_p_43c0
+  __acl_reorder_obj_p_43c0 - [DIRECT]-> qsort_39470
+  qsort_39470 - [DIRECT]-> qsort_r_39140
+  qsort_r_39140 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [syscall]-> clock_getres
+
+Path to lstat:
+  perm_copy_file_53f0 - [DIRECT]-> dcgettext_30af0
+  dcgettext_30af0 - [DIRECT]-> __dcigettext_31a70
+  __dcigettext_31a70 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> _lxstat_e9b30
+  _lxstat_e9b30 - [syscall]-> lstat
+
+Path to newfstatat:
+  perm_copy_file_53f0 - [DIRECT]-> dcgettext_30af0
+  dcgettext_30af0 - [DIRECT]-> __dcigettext_31a70
+  __dcigettext_31a70 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> __fxstatat_e9e30
+  __fxstatat_e9e30 - [syscall]-> newfstatat
+
+Path to getpid:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_read_7b960
+  _IO_file_read_7b960 - [DIRECT]-> read_ea450
+  read_ea450 - [DIRECT]-> __libc_enable_asynccancel_106750
+  __libc_enable_asynccancel_106750 - [DIRECT]-> __pthread_unwind_136f40
+  __pthread_unwind_136f40 - [syscall]-> getpid
+
+Path to kill:
+  perm_copy_file_53f0 - [INDIRECT]-> _IO_file_read_7b960
+  _IO_file_read_7b960 - [DIRECT]-> read_ea450
+  read_ea450 - [DIRECT]-> __libc_enable_asynccancel_106750
+  __libc_enable_asynccancel_106750 - [DIRECT]-> __pthread_unwind_136f40
+  __pthread_unwind_136f40 - [syscall]-> kill
+
+Path to mprotect:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> _int_malloc_82520
+  _int_malloc_82520 - [DIRECT]-> sysmalloc_81cd0
+  sysmalloc_81cd0 - [DIRECT]-> mprotect_f4200
+  mprotect_f4200 - [syscall]-> mprotect
+
+Path to rt_sigprocmask:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37a50
+  sigprocmask_37a50 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> tgkill
+
+Path to gettid:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> gettid
+
+Path to exit_group:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit_group
+
+Path to exit:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit
+
+Path to prlimit64:
+  acl_copy_int_2690 - [DIRECT]-> __acl_reorder_obj_p_43c0
+  __acl_reorder_obj_p_43c0 - [DIRECT]-> qsort_39470
+  qsort_39470 - [DIRECT]-> qsort_r_39140
+  qsort_r_39140 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> getrlimit_efe60
+  getrlimit_efe60 - [syscall]-> prlimit64
+
+Path to getdents64:
+  perm_copy_file_53f0 - [DIRECT]-> dcgettext_30af0
+  dcgettext_30af0 - [DIRECT]-> __dcigettext_31a70
+  __dcigettext_31a70 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> readdir_c1e10
+  readdir_c1e10 - [DIRECT]-> __getdents_c1dd0
+  __getdents_c1dd0 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  perm_copy_file_53f0 - [INDIRECT]-> malloc_84350
+  malloc_84350 - [DIRECT]-> __malloc_assert_7fa10
+  __malloc_assert_7fa10 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37a20
+  sigaction_37a20 - [DIRECT]-> __libc_sigaction_37850
+  __libc_sigaction_37850 - [syscall]-> rt_sigaction
+
+Path to sysinfo:
+  acl_copy_int_2690 - [DIRECT]-> __acl_reorder_obj_p_43c0
+  __acl_reorder_obj_p_43c0 - [DIRECT]-> qsort_39470
+  qsort_39470 - [DIRECT]-> qsort_r_39140
+  qsort_r_39140 - [DIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> get_phys_pages_f6fb0
+  get_phys_pages_f6fb0 - [DIRECT]-> sysinfo_fa130
+  sysinfo_fa130 - [syscall]-> sysinfo
+
+Path to readv:
+  acl_from_text_2d40 - [DIRECT]-> getgrnam_c3160
+  getgrnam_c3160 - [DIRECT]-> getgrnam_r@@GLIBC_2.2.5_c3cf0
+  getgrnam_r@@GLIBC_2.2.5_c3cf0 - [DIRECT]-> __nscd_getgrnam_r_12df50
+  __nscd_getgrnam_r_12df50 - [DIRECT]-> nscd_getgr_r_12d860
+  nscd_getgr_r_12d860 - [DIRECT]-> __readvall_1307b0
+  __readvall_1307b0 - [DIRECT]-> readv_f0450
+  readv_f0450 - [syscall]-> readv
+
+Path to fcntl:
+  perm_copy_file_53f0 - [DIRECT]-> dcgettext_30af0
+  dcgettext_30af0 - [DIRECT]-> __dcigettext_31a70
+  __dcigettext_31a70 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> fdopendir_c2180
+  fdopendir_c2180 - [DIRECT]-> __fcntl64_nocancel_ef570
+  __fcntl64_nocancel_ef570 - [DIRECT]-> __fcntl64_nocancel_adjusted_ef4f0
+  __fcntl64_nocancel_adjusted_ef4f0 - [syscall]-> fcntl
+
+Path to recvmsg:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_c5630
+  getpwnam_r@@GLIBC_2.2.5_c5630 - [DIRECT]-> __nscd_getpwnam_r_12d780
+  __nscd_getpwnam_r_12d780 - [DIRECT]-> nscd_getpw_r_12d3b0
+  nscd_getpw_r_12d3b0 - [DIRECT]-> __nscd_get_map_ref_130d70
+  __nscd_get_map_ref_130d70 - [DIRECT]-> __nscd_get_mapping_1309b0
+  __nscd_get_mapping_1309b0 - [DIRECT]-> recvmsg_fa7a0
+  recvmsg_fa7a0 - [syscall]-> recvmsg
+
+Path to socket:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_c5630
+  getpwnam_r@@GLIBC_2.2.5_c5630 - [DIRECT]-> __nscd_getpwnam_r_12d780
+  __nscd_getpwnam_r_12d780 - [DIRECT]-> nscd_getpw_r_12d3b0
+  nscd_getpw_r_12d3b0 - [DIRECT]-> __nscd_open_socket_131020
+  __nscd_open_socket_131020 - [DIRECT]-> open_socket_1304d0
+  open_socket_1304d0 - [DIRECT]-> socket_faac0
+  socket_faac0 - [syscall]-> socket
+
+Path to connect:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_c5630
+  getpwnam_r@@GLIBC_2.2.5_c5630 - [DIRECT]-> __nscd_getpwnam_r_12d780
+  __nscd_getpwnam_r_12d780 - [DIRECT]-> nscd_getpw_r_12d3b0
+  nscd_getpw_r_12d3b0 - [DIRECT]-> __nscd_open_socket_131020
+  __nscd_open_socket_131020 - [DIRECT]-> open_socket_1304d0
+  open_socket_1304d0 - [DIRECT]-> connect_fa4c0
+  connect_fa4c0 - [syscall]-> connect
+
+Path to sendto:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_c5630
+  getpwnam_r@@GLIBC_2.2.5_c5630 - [DIRECT]-> __nscd_getpwnam_r_12d780
+  __nscd_getpwnam_r_12d780 - [DIRECT]-> nscd_getpw_r_12d3b0
+  nscd_getpw_r_12d3b0 - [DIRECT]-> __nscd_open_socket_131020
+  __nscd_open_socket_131020 - [DIRECT]-> open_socket_1304d0
+  open_socket_1304d0 - [DIRECT]-> send_fa840
+  send_fa840 - [syscall]-> sendto
+
+Path to poll:
+  acl_from_text_2d40 - [DIRECT]-> getpwnam_c5080
+  getpwnam_c5080 - [DIRECT]-> getpwnam_r@@GLIBC_2.2.5_c5630
+  getpwnam_r@@GLIBC_2.2.5_c5630 - [DIRECT]-> __nscd_getpwnam_r_12d780
+  __nscd_getpwnam_r_12d780 - [DIRECT]-> nscd_getpw_r_12d3b0
+  nscd_getpw_r_12d3b0 - [DIRECT]-> __nscd_open_socket_131020
+  __nscd_open_socket_131020 - [DIRECT]-> open_socket_1304d0
+  open_socket_1304d0 - [DIRECT]-> poll_ee7d0
+  poll_ee7d0 - [syscall]-> poll

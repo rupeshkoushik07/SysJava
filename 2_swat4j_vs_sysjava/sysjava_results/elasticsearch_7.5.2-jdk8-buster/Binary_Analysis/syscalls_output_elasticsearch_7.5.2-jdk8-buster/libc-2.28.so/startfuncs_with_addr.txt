@@ -1,0 +1,5 @@
+geteuid_c7340
+getrlimit_efa00
+mlockall_f3f60
+setrlimit_efa40
+strerror_88000

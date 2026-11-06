@@ -1,0 +1,12 @@
+bash
+/bin/bash
+chown
+dirname
+gosu
+grep
+id
+/opt/java/bin/java
+runc
+sed
+uname
+/usr/bin/env

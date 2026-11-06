@@ -1,0 +1,3 @@
+Java_com_sun_media_sound_Platform_nGetExtraLibraries
+Java_com_sun_media_sound_Platform_nIsBigEndian
+Java_com_sun_media_sound_Platform_nIsSigned8

@@ -1,0 +1,15 @@
+solr_8.7.0-jdk8-buster (13)
+  - libacl.so.1
+  - libattr.so.1
+  - libgcrypt.so.20
+  - libgpg-error.so.0
+  - libjli.so
+  - liblz4.so.1
+  - liblzma.so.5
+  - libnss_files.so.2
+  - libpcre.so.3
+  - libprocps.so.7
+  - libselinux.so.1
+  - libsystemd.so.0
+  - libtinfo.so.6
+

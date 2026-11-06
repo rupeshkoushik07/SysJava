@@ -14,3 +14,9 @@ software.chronicle.enterprise.internals.impl.NativeAffinity.getThreadId0: NOT_FO
 software.chronicle.enterprise.internals.impl.NativeAffinity.rdtsc0: NOT_FOUND_IN_LIBS
 software.chronicle.enterprise.internals.impl.NativeAffinity.setAffinity0: NOT_FOUND_IN_LIBS
 notfound_search/libjvm.so:jdk.internal.misc.VM.getNanoTimeAdjustment -> JVM_GetNanoTimeAdjustment [JVM]
+openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getProcessId0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getProcessId0 [JNI]
+openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.setAffinity0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_setAffinity0 [JNI]
+openhft-affinity-3.23.3/libCEInternals.so:net.openhft.ticker.impl.JNIClock.rdtsc0 -> Java_net_openhft_ticker_impl_JNIClock_rdtsc0 [JNI]
+openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getAffinity0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getAffinity0 [JNI]
+openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getThreadId0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getThreadId0 [JNI]
+openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getCpu0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getCpu0 [JNI]

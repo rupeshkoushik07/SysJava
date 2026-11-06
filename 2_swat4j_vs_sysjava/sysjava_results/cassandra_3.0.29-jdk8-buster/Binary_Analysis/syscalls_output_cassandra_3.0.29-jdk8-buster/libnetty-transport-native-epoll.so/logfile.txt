@@ -1,0 +1,358 @@
+
+Path to connect:
+  netty_unix_socket_connectDomainSocket_4850 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect
+
+Path to futex:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to set_robust_list:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to shutdown:
+  netty_unix_socket_shutdown_4de0 - [DIRECT]-> shutdown_fa630
+  shutdown_fa630 - [syscall]-> shutdown
+
+Path to getpeername:
+  netty_unix_socket_remoteAddress_4e40 - [DIRECT]-> getpeername_fa100
+  getpeername_fa100 - [syscall]-> getpeername
+
+Path to unlink:
+  netty_unix_socket_bindDomainSocket_4980 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to bind:
+  netty_unix_socket_bindDomainSocket_4980 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to accept4:
+  netty_unix_socket_accept_4a90 - [DIRECT]-> accept4_fa930
+  accept4_fa930 - [syscall]-> accept4
+
+Path to accept:
+  netty_unix_socket_accept_4a90 - [DIRECT]-> accept_f9f90
+  accept_f9f90 - [syscall]-> accept
+
+Path to fcntl:
+  netty_unix_socket_accept_4a90 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to getsockname:
+  netty_unix_socket_localAddress_5050 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to listen:
+  netty_unix_socket_listen_4db0 - [DIRECT]-> listen_fa190
+  listen_fa190 - [syscall]-> listen
+
+Path to read:
+  netty_unix_filedescriptor_read_62e0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to openat:
+  netty_unix_filedescriptor_open_65b0 - [DIRECT]-> open_ea010
+  open_ea010 - [syscall]-> openat
+
+Path to sendmsg:
+  netty_unix_socket_sendToAddresses_5380 - [DIRECT]-> sendmsg_fa4a0
+  sendmsg_fa4a0 - [syscall]-> sendmsg
+
+Path to sendto:
+  netty_unix_socket_sendTo_5430 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to socket:
+  netty_unix_socket_newSocketDomainFd_4d80 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to close:
+  netty_unix_filedescriptor_close_62c0 - [DIRECT]-> close_ea9f0
+  close_ea9f0 - [syscall]-> close
+
+Path to epoll_create1:
+  netty_epoll_native_epollCreate_7ab0 - [DIRECT]-> epoll_create1_f99d0
+  epoll_create1_f99d0 - [syscall]-> epoll_create1
+
+Path to epoll_create:
+  netty_epoll_native_epollCreate_7ab0 - [DIRECT]-> epoll_create_f99a0
+  epoll_create_f99a0 - [syscall]-> epoll_create
+
+Path to epoll_wait:
+  netty_epoll_native_epollWait0_7990 - [DIRECT]-> epoll_wait_f9340
+  epoll_wait_f9340 - [syscall]-> epoll_wait
+
+Path to pipe2:
+  netty_unix_filedescriptor_newPipe_6210 - [DIRECT]-> pipe2_eab30
+  pipe2_eab30 - [syscall]-> pipe2
+
+Path to pipe:
+  netty_unix_filedescriptor_newPipe_6210 - [DIRECT]-> pipe_eab00
+  pipe_eab00 - [syscall]-> pipe
+
+Path to uname:
+  netty_epoll_native_kernelVersion_7bc0 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname
+
+Path to writev:
+  netty_unix_filedescriptor_writevAddresses_6620 - [DIRECT]-> writev_f0090
+  writev_f0090 - [syscall]-> writev
+
+Path to write:
+  netty_unix_filedescriptor_write_6530 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to sendfile:
+  netty_epoll_native_sendfile0_6cd0 - [DIRECT]-> sendfile_eed20
+  sendfile_eed20 - [syscall]-> sendfile
+
+Path to sendmmsg:
+  netty_epoll_native_sendmmsg0_6e40 - [DIRECT]-> sendmmsg_faa80
+  sendmmsg_faa80 - [syscall]-> sendmmsg
+
+Path to splice:
+  netty_epoll_native_splice0_7140 - [DIRECT]-> splice_f9540
+  splice_f9540 - [syscall]-> splice
+
+Path to setsockopt:
+  netty_epoll_native_setTcpMd5Sig0_7000 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to epoll_ctl:
+  netty_epoll_native_epollCtlAdd0_7d40 - [DIRECT]-> epoll_ctl_f9a00
+  epoll_ctl_f9a00 - [syscall]-> epoll_ctl
+
+Path to recvmsg:
+  netty_epoll_native_recvFd0_7830 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to eventfd2:
+  netty_epoll_native_eventFd_7dd0 - [DIRECT]-> eventfd_f9260
+  eventfd_f9260 - [syscall]-> eventfd2
+
+Path to munmap:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to lseek:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to tgkill:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to sched_get_priority_min:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to getpid:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> sigcancel_handler_66b0
+  sigcancel_handler_66b0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to recvfrom:
+  netty_unix_socket_recvFrom_4810 - [DIRECT]-> _recvFrom_4600
+  _recvFrom_4600 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to getsockopt:
+  netty_unix_socket_isTcpCork_5830 - [DIRECT]-> netty_unix_socket_getOption_5690
+  netty_unix_socket_getOption_5690 - [DIRECT]-> getsockopt_fa160
+  getsockopt_fa160 - [syscall]-> getsockopt
+
+Path to ioctl:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mmap:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_7ae40
+  _IO_file_underflow_maybe_mmap_7ae40 - [DIRECT]-> decide_maybe_mmap_7aca0
+  decide_maybe_mmap_7aca0 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mremap:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to mprotect:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to rt_sigprocmask:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to gettid:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to madvise:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to pause:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to lstat:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to getdents64:
+  netty_unix_socket_connectDomainSocket_4850 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to clock_getres:
+  netty_unix_errors_strError_41e0 - [DIRECT]-> strerror_88000
+  strerror_88000 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to prlimit64:
+  netty_unix_errors_strError_41e0 - [DIRECT]-> strerror_88000
+  strerror_88000 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to stat:
+  netty_unix_errors_strError_41e0 - [DIRECT]-> strerror_88000
+  strerror_88000 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> __sysconf_check_spec_c8120
+  __sysconf_check_spec_c8120 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sysinfo:
+  netty_unix_errors_strError_41e0 - [DIRECT]-> strerror_88000
+  strerror_88000 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo

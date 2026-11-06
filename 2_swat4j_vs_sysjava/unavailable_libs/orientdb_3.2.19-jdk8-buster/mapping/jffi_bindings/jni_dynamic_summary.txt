@@ -1,0 +1,3 @@
+# lib | status | bindings | high_conf | sym_infer | unknown | note
+libNativePosixUtil.so|SKIPPED_NO_JNI_ONLOAD|0|0|0|0|
+libjffi-1.2.so|OK|0|0|0|0|

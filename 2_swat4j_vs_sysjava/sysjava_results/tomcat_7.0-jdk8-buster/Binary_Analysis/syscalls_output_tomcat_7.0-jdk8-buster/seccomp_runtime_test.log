@@ -1,0 +1,51 @@
+container=tomcat_7.0-jdk8-buster
+image=tomcat:7.0-jdk8-buster
+profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/tomcat_7.0-jdk8-buster/Binary_Analysis/syscalls_output_tomcat_7.0-jdk8-buster/tomcat_7.0-jdk8-buster.json
+profile_syscalls=170 SCMP_ACT_ERRNO
+workload=docker run  tomcat:7.0-jdk8-buster 
+started_at=2026-11-06T19:00:07+01:00
+
+---- baseline (no profile) ----
+docker_run_output=2f08a21cb4d4da1378f653b7cfa24faae5ef50342f3e3a96586e1d4b40ffc6d3
+baseline_ready_after=2s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-tomcat-7-0-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/tomcat_7.0-jdk8-buster/Binary_Analysis/syscalls_output_tomcat_7.0-jdk8-buster/tomcat_7.0-jdk8-buster.json  tomcat:7.0-jdk8-buster 
+docker_run_output=530c00e0515300627d8717a414df6881dba0af8998ce499d304a483bec38d3a6
+ready_after=2s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-06T19:02:17+01:00
+
+---- docker logs tail (with profile) ----
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Nov 06, 2026 6:01:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/usr/local/tomcat
+Nov 06, 2026 6:01:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/local/tomcat
+Nov 06, 2026 6:01:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+Nov 06, 2026 6:01:15 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded Apache Tomcat Native library [1.2.28] using APR version [1.6.5].
+Nov 06, 2026 6:01:15 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Nov 06, 2026 6:01:15 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized [OpenSSL 1.1.1d  10 Sep 2019]
+Nov 06, 2026 6:01:15 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Nov 06, 2026 6:01:15 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 443 ms
+Nov 06, 2026 6:01:15 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Nov 06, 2026 6:01:15 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.109
+Nov 06, 2026 6:01:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Nov 06, 2026 6:01:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 34 ms

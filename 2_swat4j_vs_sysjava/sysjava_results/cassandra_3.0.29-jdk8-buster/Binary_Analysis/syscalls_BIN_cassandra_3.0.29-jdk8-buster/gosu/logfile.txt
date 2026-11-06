@@ -1,0 +1,11 @@
+Time taken for the analysis: 2 seconds
+Time taken for the analysis: 4 seconds
+0 not found
+Direct Edges computation: 0 seconds
+AT List computation: 0 seconds
+Indirect call target resolution:  0 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 3 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster/gosu/callgraph.json
+compute_syscalls: none of the start functions (_start ) found in /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Dataset_symbolized/BINARIES_cassandra_3.0.29-jdk8-buster/gosu; no result

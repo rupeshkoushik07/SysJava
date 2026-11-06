@@ -17,8 +17,8 @@ Steps:
      from those start functions to the reachable syscalls
   5. syscall sets and profile: Java libraries, executables, runtime set and
      fallback libraries, merged into the seccomp profile
-  6. (latest images) the results as the image's column of Table III: native
-     methods by mapping kind, not found, and the syscall rows
+  6. the results as the image's column of its table (Table III, or tab:results for
+     the JDK 8 images): native methods by mapping kind, not found, and the syscall rows
 
 Output in <table folder>/generated_syscalls/<image>/:
   native_methods.txt, mapped_method_syscalls.txt   steps 2 and 3
@@ -29,7 +29,7 @@ Output in <table folder>/generated_syscalls/<image>/:
   <image>.json      the seccomp profile
   diff.txt          the profile against the shipped one (for checking a run)
   report.tsv        one line per call graph
-  table_column.txt  the results as the image's column of Table III
+  table_column.txt  the results as the image's column of its table
 Work files and logs: work/static/<image>/.
 Needs JDK 17+, Maven, Python 3, binutils and xz.
 """
@@ -207,13 +207,13 @@ def whitelist(img):
                                   f"only in shipped:   {' '.join(sorted(ref - new)) or 'none'}\n")
 
     if (table / "unavailable_libs").is_dir():
-        step(6, "results (the image's column of Table III)")
+        step(6, f"results (the image's column of {'tab:results' if table.name.startswith('2_') else 'Table III'})")
         print(table_column(img, ws, table, out))
     print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {out / f'{img}.json'}; all outputs in {out}/")
 
 
 def tex_column(tex, img):
-    """(label, value) rows of one image's column in a Table III .tex file."""
+    """(label, value) rows of one image's column in a table .tex file."""
     lines = Path(tex).read_text().splitlines()
     head = next(l for l in lines if l.lstrip().startswith("&") and "Zookeeper" in l)
     col = [c.strip().lower() for c in head.split("&")[1:]].index(img.split("_")[0]) + 1
@@ -222,15 +222,20 @@ def tex_column(tex, img):
         cells = [c.strip() for c in l.rstrip("\\ ").split("&")]
         if len(cells) > col and cells[0] and (cells[0].startswith("\\quad") or not cells[0].startswith(("\\", "%"))):
             label = re.sub(r"\\quad\s*", "  ", cells[0]).replace("\\_", "_").replace("\\$", "$")
-            rows.append((label.replace("($\\Delta$)", "(Δ)"), cells[col]))
+            for tex, sym in (("$\\Delta$", "Δ"), ("$\\cup$", "∪"), ("$\\cap$", "∩")):
+                label = label.replace(tex, sym)
+            rows.append((label, cells[col]))
         elif "multicolumn" in l:
             rows.append((re.search(r"\}\{([^{}]*)\}\s*\\\\", l).group(1), None))
     return rows
 
 
 def table_column(img, ws, table, out):
-    """Run the mapping audit and the Table III generator on this run's files and return the
+    """Run the mapping audit and the table generator on this run's files and return the
     image's column."""
+    jdk8 = table.name.startswith("2_")
+    sub = "sysjava_results" if jdk8 else "results"
+    shipped = table / sub / img
     tv = ws / "table_view"
     shutil.rmtree(tv, ignore_errors=True)
     v = tv / img
@@ -242,13 +247,18 @@ def table_column(img, ws, table, out):
             (v / "Binary_Analysis" / d).symlink_to(ws / d)
     for d in ("JARFILES", "LIBS", "BINARIES", "RUNTIME"):
         (v / "Dataset" / f"{d}_{img}").symlink_to(ws / f"{d}_{img}")
+    # what this run does not produce (dynamic capture, run log, extra components) is the shipped one's
+    for d in ("Dynamic_Analysis", "pipeline_run.log", "extra_components"):
+        if (shipped / d).exists():
+            (v / d).symlink_to(shipped / d)
     # the other images' columns come from the shipped results (only this column is read)
-    for r in (table / "results").iterdir():
+    for r in (table / sub).iterdir():
         if r.name != img and r.is_dir():
             (tv / r.name).symlink_to(r)
     # native-method mapping breakdown: the audit on this run's mapping
+    swat = ["--swat-override", f"{img}={ART / 'swat4j' / 'outputs' / 'mapping' / img}"] if jdk8 else []
     run([sys.executable, str(ART / "analysis" / "native_mapping_audit" / "audit_native_mapping.py"),
-         "--out", str(ws / "audit"), "--app", f"{img}={v}"], ws / "audit.log")
+         "--out", str(ws / "audit"), "--app", f"{img}={v}"] + swat, ws / "audit.log")
     rows = list(csv.DictReader(open(table / "tables" / "mapping_audit_per_app.csv")))
     mine = next(csv.DictReader(open(ws / "audit" / "per_app_summary.csv")))
     with open(ws / "audit" / "table_audit.csv", "w", newline="") as fh:
@@ -256,11 +266,15 @@ def table_column(img, ws, table, out):
         w.writeheader()
         for r in rows:
             w.writerow({k: mine.get(k, r[k]) for k in r} if r["app"] == img else r)
-    run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "unavailable_libs"),
-         str(ws / "audit" / "table_audit.csv"), str(ws / "tableIII"), str(table / "runc.txt")],
-        ws / "table.log", check=False)
+    if jdk8:
+        run([sys.executable, str(ART / "tools" / "make_tab_results_jdk8.py"), str(ws / "audit" / "table_audit.csv"),
+             str(ws / "table")], ws / "table.log", check=False, env={**os.environ, "RESULTS": str(tv)})
+    else:
+        run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "unavailable_libs"),
+             str(ws / "audit" / "table_audit.csv"), str(ws / "table"), str(table / "runc.txt")],
+            ws / "table.log", check=False)
     lines = []
-    for label, val in tex_column(ws / "tableIII.tex", img):
+    for label, val in tex_column(ws / "table.tex", img):
         lines.append(f"      {label}" if val is None else f"      {label:40s}{val:>10s}")
     text = "\n".join(lines)
     (out / "table_column.txt").write_text(re.sub(r"(?m)^      ", "", text) + "\n")

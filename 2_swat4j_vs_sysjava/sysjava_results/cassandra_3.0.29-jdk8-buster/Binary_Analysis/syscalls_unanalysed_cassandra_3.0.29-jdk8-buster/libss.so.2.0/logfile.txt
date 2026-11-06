@@ -1,0 +1,309 @@
+
+Path to openat:
+  ss_help_28a0 - [DIRECT]-> open_ea010
+  open_ea010 - [syscall]-> openat
+
+Path to clone:
+  ss_help_28a0 - [DIRECT]-> fork_c6610
+  fork_c6610 - [syscall]-> clone
+
+Path to dup2:
+  ss_help_28a0 - [DIRECT]-> dup2_eaaa0
+  dup2_eaaa0 - [syscall]-> dup2
+
+Path to close:
+  ss_help_28a0 - [DIRECT]-> close_ea9f0
+  close_ea9f0 - [syscall]-> close
+
+Path to wait4:
+  ss_help_28a0 - [DIRECT]-> wait_c6220
+  wait_c6220 - [syscall]-> wait4
+
+Path to rt_sigprocmask:
+  ss_list_requests_3ba0 - [DIRECT]-> sigprocmask_37b80
+  sigprocmask_37b80 - [syscall]-> rt_sigprocmask
+
+Path to futex:
+  ss_delete_invocation_2800 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to set_robust_list:
+  ss_delete_invocation_2800 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  ss_delete_invocation_2800 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  ss_delete_invocation_2800 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  ss_delete_invocation_2800 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to kill:
+  ss_delete_invocation_2800 - [INDIRECT]-> cancel_handler_44a10
+  cancel_handler_44a10 - [syscall]-> kill
+
+Path to getuid:
+  ss_safe_getenv_3e20 - [DIRECT]-> getuid_c7330
+  getuid_c7330 - [syscall]-> getuid
+
+Path to geteuid:
+  ss_safe_getenv_3e20 - [DIRECT]-> geteuid_c7340
+  geteuid_c7340 - [syscall]-> geteuid
+
+Path to getgid:
+  ss_safe_getenv_3e20 - [DIRECT]-> getgid_c7350
+  getgid_c7350 - [syscall]-> getgid
+
+Path to getegid:
+  ss_safe_getenv_3e20 - [DIRECT]-> getegid_c7360
+  getegid_c7360 - [syscall]-> getegid
+
+Path to prctl:
+  ss_safe_getenv_3e20 - [DIRECT]-> prctl_f9c40
+  prctl_f9c40 - [syscall]-> prctl
+
+Path to pipe:
+  ss_pager_create_3fa0 - [DIRECT]-> pipe_eab00
+  pipe_eab00 - [syscall]-> pipe
+
+Path to read:
+  ss_page_stdin_3e80 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to write:
+  ss_page_stdin_3e80 - [DIRECT]-> write_ea3a0
+  write_ea3a0 - [syscall]-> write
+
+Path to fcntl:
+  ss_list_requests_3ba0 - [DIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to dup:
+  ss_list_requests_3ba0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to sched_yield:
+  ss_delete_invocation_2800 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to munmap:
+  ss_delete_invocation_2800 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to lseek:
+  ss_delete_invocation_2800 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_ea440
+  lseek_ea440 - [syscall]-> lseek
+
+Path to fstat:
+  ss_delete_invocation_2800 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to tgkill:
+  ss_delete_invocation_2800 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to ioctl:
+  ss_delete_invocation_2800 - [INDIRECT]-> default_com_err_proc_2ad0
+  default_com_err_proc_2ad0 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to sched_get_priority_min:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to getpid:
+  ss_delete_invocation_2800 - [INDIRECT]-> sigcancel_handler_66b0
+  sigcancel_handler_66b0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to madvise:
+  ss_execute_command_2dc0 - [DIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to mmap:
+  ss_execute_command_2dc0 - [DIRECT]-> free_84b60
+  free_84b60 - [DIRECT]-> _int_free_81220
+  _int_free_81220 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to writev:
+  ss_execute_command_2dc0 - [DIRECT]-> __stack_chk_fail_10a350
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to mremap:
+  ss_create_invocation_25f0 - [DIRECT]-> realloc_84db0
+  realloc_84db0 - [DIRECT]-> mremap_chunk_802f0
+  mremap_chunk_802f0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  ss_delete_invocation_2800 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  ss_delete_invocation_2800 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to mprotect:
+  ss_delete_invocation_2800 - [INDIRECT]-> __make_stacks_executable_7380
+  __make_stacks_executable_7380 - [DIRECT]-> change_stack_perm_6d30
+  change_stack_perm_6d30 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to gettid:
+  ss_delete_invocation_2800 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit:
+  ss_delete_invocation_2800 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  ss_delete_invocation_2800 - [INDIRECT]-> __pthread_unwind_11060
+  __pthread_unwind_11060 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to rt_sigaction:
+  ss_delete_invocation_2800 - [INDIRECT]-> cancel_handler_44a10
+  cancel_handler_44a10 - [DIRECT]-> sigaction_37b50
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to sigaltstack:
+  ss_delete_invocation_2800 - [INDIRECT]-> listen_int_handler_2f60
+  listen_int_handler_2f60 - [DIRECT]-> __longjmp_chk_10a1d0
+  __longjmp_chk_10a1d0 - [DIRECT]-> ____longjmp_chk_10a220
+  ____longjmp_chk_10a220 - [syscall]-> sigaltstack
+
+Path to pause:
+  ss_delete_invocation_2800 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to execve:
+  ss_execute_line_2e90 - [DIRECT]-> system_44af0
+  system_44af0 - [DIRECT]-> do_system_44550
+  do_system_44550 - [DIRECT]-> execve_c68a0
+  execve_c68a0 - [syscall]-> execve
+
+Path to lstat:
+  ss_delete_invocation_2800 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  ss_delete_invocation_2800 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  ss_delete_invocation_2800 - [INDIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to clock_getres:
+  ss_delete_invocation_2800 - [INDIRECT]-> dlopen_doit_1200
+  dlopen_doit_1200 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to prlimit64:
+  ss_delete_invocation_2800 - [INDIRECT]-> dlopen_doit_1200
+  dlopen_doit_1200 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to stat:
+  ss_delete_invocation_2800 - [INDIRECT]-> dlopen_doit_1200
+  dlopen_doit_1200 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> __sysconf_check_spec_c8120
+  __sysconf_check_spec_c8120 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sysinfo:
+  ss_delete_invocation_2800 - [INDIRECT]-> dlopen_doit_1200
+  dlopen_doit_1200 - [DIRECT]-> dcgettext_30b90
+  dcgettext_30b90 - [DIRECT]-> __dcigettext_31ba0
+  __dcigettext_31ba0 - [DIRECT]-> _nl_find_domain_32500
+  _nl_find_domain_32500 - [DIRECT]-> _nl_expand_alias_34270
+  _nl_expand_alias_34270 - [DIRECT]-> read_alias_file_33d70
+  read_alias_file_33d70 - [DIRECT]-> qsort_395a0
+  qsort_395a0 - [DIRECT]-> qsort_r_39270
+  qsort_r_39270 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo

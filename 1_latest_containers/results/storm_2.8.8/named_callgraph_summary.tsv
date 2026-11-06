@@ -13,6 +13,7 @@ liborg_apache_storm_shade_netty_tcnative_linux_x86_64.so	functions=10406	fuzzy=0
 liborg_apache_storm_shade_netty_transport_native_epoll_x86_64.so	functions=4069	fuzzy=0	syscalls=65
 librocksdbjni16624330668920755723.so	functions=26257	fuzzy=1	syscalls=61
 libsctp.so	functions=49712	fuzzy=0	syscalls=94
+libsnappyjava_storm-shaded-deps-2.8.8.so	functions=6236	fuzzy=302	syscalls=34
 libzip.so	functions=49502	fuzzy=0	syscalls=93
 bash	functions=6568	fuzzy=0	syscalls=94
 cat	functions=28838	fuzzy=0	syscalls=46

@@ -1,0 +1,489 @@
+
+Path to gettid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [syscall]-> gettid
+
+Path to futex:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __gettimeofday_syscall_b5c00
+  __gettimeofday_syscall_b5c00 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to read:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __read_chk_108d60
+  __read_chk_108d60 - [syscall]-> read
+
+Path to rt_sigreturn:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __syscall_clock_gettime_f9ca0
+  __syscall_clock_gettime_f9ca0 - [syscall]-> clock_gettime
+
+Path to time:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __time_syscall_b5b30
+  __time_syscall_b5b30 - [syscall]-> time
+
+Path to close:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> close_eab40
+  close_eab40 - [syscall]-> close
+
+Path to flock:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> flock_ea9f0
+  flock_ea9f0 - [syscall]-> flock
+
+Path to fstatfs:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fstatfs_e9ec0
+  fstatfs_e9ec0 - [syscall]-> fstatfs
+
+Path to ftruncate:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> ftruncate_f2940
+  ftruncate_f2940 - [syscall]-> ftruncate
+
+Path to getpeername:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getpeername_fa560
+  getpeername_fa560 - [syscall]-> getpeername
+
+Path to getpgid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getpgid_c76d0
+  getpgid_c76d0 - [syscall]-> getpgid
+
+Path to getpid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getpid_c7470
+  getpid_c7470 - [syscall]-> getpid
+
+Path to getppid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getppid_c7480
+  getppid_c7480 - [syscall]-> getppid
+
+Path to getpriority:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getpriority_f0220
+  getpriority_f0220 - [syscall]-> getpriority
+
+Path to getrusage:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getrusage_efee0
+  getrusage_efee0 - [syscall]-> getrusage
+
+Path to getsid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getsid_c7760
+  getsid_c7760 - [syscall]-> getsid
+
+Path to getsockname:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getsockname_fa590
+  getsockname_fa590 - [syscall]-> getsockname
+
+Path to getsockopt:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> getsockopt_fa5c0
+  getsockopt_fa5c0 - [syscall]-> getsockopt
+
+Path to ioctl:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> ioctl_f0420
+  ioctl_f0420 - [syscall]-> ioctl
+
+Path to kill:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> kill_37a90
+  kill_37a90 - [syscall]-> kill
+
+Path to lseek:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> lseek_ea590
+  lseek_ea590 - [syscall]-> lseek
+
+Path to mmap:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> mmap_f40f0
+  mmap_f40f0 - [syscall]-> mmap
+
+Path to munmap:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> munmap_f41d0
+  munmap_f41d0 - [syscall]-> munmap
+
+Path to nanosleep:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> nanosleep_c66e0
+  nanosleep_c66e0 - [syscall]-> nanosleep
+
+Path to openat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> open_ea160
+  open_ea160 - [syscall]-> openat
+
+Path to pread64:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pread_e8970
+  pread_e8970 - [syscall]-> pread64
+
+Path to pwrite64:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pwrite_e8a20
+  pwrite_e8a20 - [syscall]-> pwrite64
+
+Path to rt_sigprocmask:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> rt_sigprocmask
+
+Path to tgkill:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> raise_376b0
+  raise_376b0 - [syscall]-> tgkill
+
+Path to rt_sigpending:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> sigpending_37ac0
+  sigpending_37ac0 - [syscall]-> rt_sigpending
+
+Path to exit:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to statfs:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> statfs_e9e90
+  statfs_e9e90 - [syscall]-> statfs
+
+Path to clock_getres:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> sysconf_c8390
+  sysconf_c8390 - [syscall]-> clock_getres
+
+Path to umask:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> umask_e9fd0
+  umask_e9fd0 - [syscall]-> umask
+
+Path to unlink:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> unlink_ebfc0
+  unlink_ebfc0 - [syscall]-> unlink
+
+Path to vfork:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> vfork_c6970
+  vfork_c6970 - [syscall]-> vfork
+
+Path to write:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> write_ea4f0
+  write_ea4f0 - [syscall]-> write
+
+Path to sched_yield:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _IO_cleanup_7e2f0
+  _IO_cleanup_7e2f0 - [DIRECT]-> sched_yield_e0910
+  sched_yield_e0910 - [syscall]-> sched_yield
+
+Path to fstat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _IO_file_stat_7b380
+  _IO_file_stat_7b380 - [DIRECT]-> _fxstat_e9ae0
+  _fxstat_e9ae0 - [syscall]-> fstat
+
+Path to geteuid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  _XimLocalOpenIM_69d40 - [DIRECT]-> geteuid_c74a0
+  geteuid_c74a0 - [syscall]-> geteuid
+
+Path to getegid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  _XimLocalOpenIM_69d40 - [DIRECT]-> getegid_c74c0
+  getegid_c74c0 - [syscall]-> getegid
+
+Path to getuid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  _XimLocalOpenIM_69d40 - [DIRECT]-> getuid_c7490
+  getuid_c7490 - [syscall]-> getuid
+
+Path to getgid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  _XimLocalOpenIM_69d40 - [DIRECT]-> getgid_c74b0
+  getgid_c74b0 - [syscall]-> getgid
+
+Path to mprotect:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_976250
+  _ZN15VM_LinuxDllLoad4doitEv_976250 - [DIRECT]-> mprotect_f4200
+  mprotect_f4200 - [syscall]-> mprotect
+
+Path to access:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> access_ea5c0
+  access_ea5c0 - [syscall]-> access
+
+Path to exit_group:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c69a0
+  _exit_c69a0 - [syscall]-> exit_group
+
+Path to sendto:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> clntudp_call_1277a0
+  clntudp_call_1277a0 - [DIRECT]-> sendto_fa9a0
+  sendto_fa9a0 - [syscall]-> sendto
+
+Path to poll:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> clntudp_call_1277a0
+  clntudp_call_1277a0 - [DIRECT]-> poll_ee7d0
+  poll_ee7d0 - [syscall]-> poll
+
+Path to recvmsg:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> clntudp_call_1277a0
+  clntudp_call_1277a0 - [DIRECT]-> recvmsg_fa7a0
+  recvmsg_fa7a0 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> clntudp_call_1277a0
+  clntudp_call_1277a0 - [DIRECT]-> recvfrom_fa6e0
+  recvfrom_fa6e0 - [syscall]-> recvfrom
+
+Path to readv:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4b260_4b260
+  fuzzyfunc-0x4b260_4b260 - [DIRECT]-> readv_f0450
+  readv_f0450 - [syscall]-> readv
+
+Path to writev:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4b2a0_4b2a0
+  fuzzyfunc-0x4b2a0_4b2a0 - [DIRECT]-> writev_f04f0
+  writev_f04f0 - [syscall]-> writev
+
+Path to shutdown:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
+  fuzzyfunc-0x4b330_4b330 - [DIRECT]-> shutdown_faa90
+  shutdown_faa90 - [syscall]-> shutdown
+
+Path to setsockopt:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> setsockopt_faa60
+  setsockopt_faa60 - [syscall]-> setsockopt
+
+Path to connect:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> connect_fa4c0
+  connect_fa4c0 - [syscall]-> connect
+
+Path to sched_get_priority_min:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0970
+  sched_get_priority_min_e0970 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e0940
+  sched_get_priority_max_e0940 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e08e0
+  sched_getscheduler_e08e0 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0880
+  sched_getparam_e0880 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e08b0
+  sched_setscheduler_e08b0 - [syscall]-> sched_setscheduler
+
+Path to getdents64:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> readdir_c1e10
+  readdir_c1e10 - [DIRECT]-> __getdents_c1dd0
+  __getdents_c1dd0 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> sigaction_37a20
+  sigaction_37a20 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to madvise:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f42d0
+  madvise_f42d0 - [syscall]-> madvise
+
+Path to prlimit64:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> getrlimit_efe60
+  getrlimit_efe60 - [syscall]-> prlimit64
+
+Path to lstat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> _lxstat_e9b30
+  _lxstat_e9b30 - [syscall]-> lstat
+
+Path to mremap:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _IO_file_underflow_mmap_7b8d0
+  _IO_file_underflow_mmap_7b8d0 - [DIRECT]-> mmap_remap_check_7a890
+  mmap_remap_check_7a890 - [DIRECT]-> mremap_fa010
+  mremap_fa010 - [syscall]-> mremap
+
+Path to fcntl:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  _XimLocalOpenIM_69d40 - [DIRECT]-> fdopen@@GLIBC_2.2.5_6fa30
+  fdopen@@GLIBC_2.2.5_6fa30 - [DIRECT]-> fcntl_ea900
+  fcntl_ea900 - [syscall]-> fcntl
+
+Path to wait4:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> waitpid_12080
+  waitpid_12080 - [syscall]-> wait4
+
+Path to execve:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> execve_c6a00
+  execve_c6a00 - [syscall]-> execve
+
+Path to getcwd:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_449f0
+  realpath@@GLIBC_2.3_449f0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [syscall]-> getcwd
+
+Path to readlink:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_449f0
+  realpath@@GLIBC_2.3_449f0 - [DIRECT]-> readlink_ebf60
+  readlink_ebf60 - [syscall]-> readlink
+
+Path to brk:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> __default_morecore_85e40
+  __default_morecore_85e40 - [DIRECT]-> sbrk_f0360
+  sbrk_f0360 - [DIRECT]-> brk_f0300
+  brk_f0300 - [syscall]-> brk
+
+Path to socket:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4ab90_4ab90
+  fuzzyfunc-0x4ab90_4ab90 - [DIRECT]-> fuzzyfunc-0x4a920_4a920
+  fuzzyfunc-0x4a920_4a920 - [DIRECT]-> socket_faac0
+  socket_faac0 - [syscall]-> socket
+
+Path to stat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> getaddrinfo_e3d10
+  getaddrinfo_e3d10 - [DIRECT]-> _xstat_e9a90
+  _xstat_e9a90 - [syscall]-> stat
+
+Path to uname:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> _XimXTransGetHostname_4cc60
+  _XimXTransGetHostname_4cc60 - [DIRECT]-> uname_c62f0
+  uname_c62f0 - [syscall]-> uname
+
+Path to pause:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> pthread_mutex_lock_106640
+  pthread_mutex_lock_106640 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef740
+  __pause_nocancel_ef740 - [syscall]-> pause
+
+Path to bind:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> rfc3484_sort_e19f0
+  rfc3484_sort_e19f0 - [DIRECT]-> __check_native_1170c0
+  __check_native_1170c0 - [DIRECT]-> bind_fa490
+  bind_fa490 - [syscall]-> bind
+
+Path to sysinfo:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> sysconf_c8390
+  sysconf_c8390 - [DIRECT]-> get_phys_pages_f6fb0
+  get_phys_pages_f6fb0 - [DIRECT]-> sysinfo_fa130
+  sysinfo_fa130 - [syscall]-> sysinfo
+
+Path to shmget:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmget_fb3a0
+  shmget_fb3a0 - [syscall]-> shmget
+
+Path to shmat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmat_fb340
+  shmat_fb340 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_fb3d0
+  shmctl@@GLIBC_2.2.5_fb3d0 - [syscall]-> shmctl
+
+Path to shmdt:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_970e80
+  _ZN2os22release_memory_specialEPcm_970e80 - [DIRECT]-> shmdt_fb370
+  shmdt_fb370 - [syscall]-> shmdt
+
+Path to select:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> XAllocColor_1da40
+  XAllocColor_1da40 - [DIRECT]-> _XReply_46220
+  _XReply_46220 - [DIRECT]-> fuzzyfunc-0x413b0_413b0
+  fuzzyfunc-0x413b0_413b0 - [DIRECT]-> select_f0fe0
+  select_f0fe0 - [syscall]-> select
+
+Path to getresuid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
+  _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
+  xlocaledir_4f210 - [DIRECT]-> getresuid_c77c0
+  getresuid_c77c0 - [syscall]-> getresuid
+
+Path to getresgid:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
+  _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
+  xlocaledir_4f210 - [DIRECT]-> getresgid_c77f0
+  getresgid_c77f0 - [syscall]-> getresgid
+
+Path to clone:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> fork_compat_113d0
+  fork_compat_113d0 - [DIRECT]-> fork_c6770
+  fork_c6770 - [syscall]-> clone
+
+Path to newfstatat:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_449f0
+  realpath@@GLIBC_2.3_449f0 - [DIRECT]-> getcwd_eada0
+  getcwd_eada0 - [DIRECT]-> __fxstatat_e9e30
+  __fxstatat_e9e30 - [syscall]-> newfstatat
+
+Path to sched_getaffinity:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [DIRECT]-> _ZN2os18current_stack_baseEv_9777c0
+  _ZN2os18current_stack_baseEv_9777c0 - [DIRECT]-> _ZL20current_stack_regionPPhPm.part.6_9776b0
+  _ZL20current_stack_regionPPhPm.part.6_9776b0 - [DIRECT]-> pthread_getattr_np_9b40
+  pthread_getattr_np_9b40 - [DIRECT]-> pthread_getaffinity_np@@GLIBC_2.3.4_129b0
+  pthread_getaffinity_np@@GLIBC_2.3.4_129b0 - [syscall]-> sched_getaffinity
+
+Path to mincore:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> _ZN10JavaThread3runEv_adfae0
+  _ZN10JavaThread3runEv_adfae0 - [DIRECT]-> _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0
+  _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_967cb0
+  _ZN2os24create_stack_guard_pagesEPcm_967cb0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_96f240
+  _ZN2os27pd_create_stack_guard_pagesEPcm_96f240 - [DIRECT]-> mincore_f4300
+  mincore_f4300 - [syscall]-> mincore
+
+Path to sendmsg:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> XAllocColor_1da40
+  XAllocColor_1da40 - [DIRECT]-> _XReply_46220
+  _XReply_46220 - [DIRECT]-> xcb_wait_for_reply64_de60
+  xcb_wait_for_reply64_de60 - [DIRECT]-> fuzzyfunc-0xcdd0_cdd0
+  fuzzyfunc-0xcdd0_cdd0 - [DIRECT]-> fuzzyfunc-0xc760_c760
+  fuzzyfunc-0xc760_c760 - [DIRECT]-> sendmsg_fa900
+  sendmsg_fa900 - [syscall]-> sendmsg
+
+Path to sched_setaffinity:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> jvmtiTrace_RunAgentThread_792ba0
+  jvmtiTrace_RunAgentThread_792ba0 - [DIRECT]-> _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7aff10
+  _ZN8JvmtiEnv14RunAgentThreadEP8_jobjectPFvP9_jvmtiEnvP7JNIEnv_PvEPKvi_7aff10 - [DIRECT]-> _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5180
+  _ZN16JvmtiAgentThreadC2EP8JvmtiEnvPFvP9_jvmtiEnvP7JNIEnv_PvEPKv_7d5180 - [DIRECT]-> _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540
+  _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to dup:
+  Java_java_awt_Event_initIDs_2e770 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87b50
+  __libc_thread_freeres_87b50 - [DIRECT]-> __rpc_thread_destroy_1293c0
+  __rpc_thread_destroy_1293c0 - [DIRECT]-> __rpc_thread_svc_cleanup_12a160
+  __rpc_thread_svc_cleanup_12a160 - [DIRECT]-> svc_unregister_1298a0
+  svc_unregister_1298a0 - [DIRECT]-> pmap_unset_11ee20
+  pmap_unset_11ee20 - [DIRECT]-> __get_myaddress_11ec10
+  __get_myaddress_11ec10 - [DIRECT]-> perror_6cc60
+  perror_6cc60 - [DIRECT]-> dup_eabc0
+  dup_eabc0 - [syscall]-> dup

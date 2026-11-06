@@ -54,6 +54,7 @@ getrandom
 getrlimit
 getrusage
 getsockname
+getsockopt
 gettid
 gettimeofday
 getuid
@@ -101,6 +102,7 @@ readv
 recvfrom
 recvmsg
 rename
+rmdir
 rseq
 rt_sigaction
 rt_sigprocmask
@@ -117,6 +119,7 @@ sched_setaffinity
 sched_setscheduler
 sched_yield
 seccomp
+sendfile
 sendmmsg
 sendto
 set_robust_list
@@ -157,6 +160,7 @@ umask
 uname
 unlink
 unlinkat
+utimes
 vfork
 wait4
 write

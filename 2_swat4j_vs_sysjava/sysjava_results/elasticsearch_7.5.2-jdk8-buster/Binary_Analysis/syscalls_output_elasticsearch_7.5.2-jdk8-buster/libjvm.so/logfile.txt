@@ -1,0 +1,469 @@
+
+Path to gettid:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [syscall]-> gettid
+
+Path to futex:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to exit:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> exit
+
+Path to rt_sigprocmask:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [syscall]-> rt_sigprocmask
+
+Path to vfork:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> vfork_c6810
+  vfork_c6810 - [syscall]-> vfork
+
+Path to sched_yield:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to close:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_close_7a7a0
+  _IO_file_close_7a7a0 - [DIRECT]-> __close_nocancel_ef060
+  __close_nocancel_ef060 - [syscall]-> close
+
+Path to munmap:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_close_mmap_7a9a0
+  _IO_file_close_mmap_7a9a0 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to read:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_read_7baa0
+  _IO_file_read_7baa0 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to lseek:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_seek_7ac30
+  _IO_file_seek_7ac30 - [DIRECT]-> lseek_11ae0
+  lseek_11ae0 - [syscall]-> lseek
+
+Path to fstat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_stat_7b4c0
+  _IO_file_stat_7b4c0 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to write:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b4d0
+  _IO_file_write@@GLIBC_2.2.5_7b4d0 - [DIRECT]-> write_11460
+  write_11460 - [syscall]-> write
+
+Path to getpid:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to unlink:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN10CompileLogD0Ev_49a860
+  _ZN10CompileLogD0Ev_49a860 - [DIRECT]-> unlink_ebea0
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to mprotect:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_976250
+  _ZN15VM_LinuxDllLoad4doitEv_976250 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to access:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to tgkill:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to sendto:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> sendto_fa540
+  sendto_fa540 - [syscall]-> sendto
+
+Path to poll:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to recvmsg:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to recvfrom:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> recvfrom_fa280
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to sched_get_priority_min:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to madvise:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to lstat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to kill:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> kill_37bc0
+  kill_37bc0 - [syscall]-> kill
+
+Path to geteuid:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> geteuid_c7340
+  geteuid_c7340 - [syscall]-> geteuid
+
+Path to openat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> open_11c40
+  open_11c40 - [syscall]-> openat
+
+Path to mmap:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to ioctl:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_doallocate_6f7c0
+  _IO_file_doallocate_6f7c0 - [DIRECT]-> isatty_ebd40
+  isatty_ebd40 - [DIRECT]-> tcgetattr_ef6d0
+  tcgetattr_ef6d0 - [syscall]-> ioctl
+
+Path to mremap:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to writev:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _IO_vtable_check_79e10
+  _IO_vtable_check_79e10 - [DIRECT]-> __libc_fatal_79650
+  __libc_fatal_79650 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to nanosleep:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN16JfrThreadSampler3runEv_6f8200
+  _ZN16JfrThreadSampler3runEv_6f8200 - [DIRECT]-> _ZN2os17naked_short_sleepEl_971850
+  _ZN2os17naked_short_sleepEl_971850 - [DIRECT]-> nanosleep_11bb0
+  nanosleep_11bb0 - [syscall]-> nanosleep
+
+Path to wait4:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> waitpid_12080
+  waitpid_12080 - [syscall]-> wait4
+
+Path to execve:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> execve_c68a0
+  execve_c68a0 - [syscall]-> execve
+
+Path to exit_group:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to getcwd:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to readlink:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to clock_getres:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to getpriority:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZNK10JavaThread8print_onEP12outputStream_adb480
+  _ZNK10JavaThread8print_onEP12outputStream_adb480 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_971970
+  _ZN2os19get_native_priorityEPK6ThreadPi_971970 - [DIRECT]-> getpriority_efdc0
+  getpriority_efdc0 - [syscall]-> getpriority
+
+Path to brk:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to pause:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to sysinfo:
+  jfr_emit_event_6c7da0 - [DIRECT]-> _ZN19JfrPeriodicEventSet21requestPhysicalMemoryEv_6d4930
+  _ZN19JfrPeriodicEventSet21requestPhysicalMemoryEv_6d4930 - [DIRECT]-> _ZN2os16available_memoryEv_96a5d0
+  _ZN2os16available_memoryEv_96a5d0 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to uname:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_PrintOsInfo_b56af0
+  WB_PrintOsInfo_b56af0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973590
+  _ZN2os13print_os_infoEP12outputStream_973590 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_97b550
+  _ZN2os5Posix16print_uname_infoEP12outputStream_97b550 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname
+
+Path to prlimit64:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_PrintOsInfo_b56af0
+  WB_PrintOsInfo_b56af0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_973590
+  _ZN2os13print_os_infoEP12outputStream_973590 - [DIRECT]-> _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b340
+  _ZN2os5Posix17print_rlimit_infoEP12outputStream_97b340 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to shmget:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmget_faf40
+  shmget_faf40 - [syscall]-> shmget
+
+Path to shmat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmat_faee0
+  shmat_faee0 - [syscall]-> shmat
+
+Path to shmctl:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_9708e0
+  _ZN2os22reserve_memory_specialEmmPcb_9708e0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_faf70
+  shmctl@@GLIBC_2.2.5_faf70 - [syscall]-> shmctl
+
+Path to shmdt:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_ReadFromNoaccessArea_b5b920
+  WB_ReadFromNoaccessArea_b5b920 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPc_b3b650
+  _ZN17ReservedHeapSpaceC1EmmbPc_b3b650 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_970e80
+  _ZN2os22release_memory_specialEPcm_970e80 - [DIRECT]-> shmdt_faf10
+  shmdt_faf10 - [syscall]-> shmdt
+
+Path to clone:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860
+  _ZN24VM_ReportJavaOutOfMemory4doitEv_b3d860 - [DIRECT]-> _ZN2os13fork_and_execEPcb_974a70
+  _ZN2os13fork_and_execEPcb_974a70 - [DIRECT]-> fork_compat_113d0
+  fork_compat_113d0 - [DIRECT]-> fork_c6610
+  fork_c6610 - [syscall]-> clone
+
+Path to newfstatat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a2a0
+  _ZN2os8jvm_pathEPci_96a2a0 - [DIRECT]-> realpath@@GLIBC_2.3_44b20
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_b70870
+  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_b70870 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> sigaction_12910
+  sigaction_12910 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to setpriority:
+  JVM_SetThreadPriority_74aea0 - [DIRECT]-> _ZN6Thread12set_priorityEPS_14ThreadPriority_adc1b0
+  _ZN6Thread12set_priorityEPS_14ThreadPriority_adc1b0 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_9650f0
+  _ZN2os12set_priorityEP6Thread14ThreadPriority_9650f0 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_971920
+  _ZN2os19set_native_priorityEP6Threadi_971920 - [DIRECT]-> setpriority_efe00
+  setpriority_efe00 - [syscall]-> setpriority
+
+Path to sched_setaffinity:
+  JVM_StartThread_74a760 - [DIRECT]-> _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540
+  _ZN10JavaThreadC2EPFvPS_P6ThreadEm_ae6540 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00
+  _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_975c00 - [DIRECT]-> pthread_create@@GLIBC_2.2.5_8280
+  pthread_create@@GLIBC_2.2.5_8280 - [DIRECT]-> create_thread_6d70
+  create_thread_6d70 - [syscall]-> sched_setaffinity
+
+Path to getdents64:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> Perf_Attach_9b7d90
+  Perf_Attach_9b7d90 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30
+  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bee30 - [DIRECT]-> _ZN2os7readdirEP11__dirstream_97b680
+  _ZN2os7readdirEP11__dirstream_97b680 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to stat:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> WB_AddToBootstrapClassLoaderSearch_b54fa0
+  WB_AddToBootstrapClassLoaderSearch_b54fa0 - [DIRECT]-> _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae680
+  _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae680 - [DIRECT]-> _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a310
+  _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a310 - [DIRECT]-> _ZN2os4statEPKcP4stat_9730d0
+  _ZN2os4statEPKcP4stat_9730d0 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to sched_getaffinity:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZL10java_startP6Thread_96b5e0
+  _ZL10java_startP6Thread_96b5e0 - [DIRECT]-> _ZN2os18current_stack_baseEv_9777c0
+  _ZN2os18current_stack_baseEv_9777c0 - [DIRECT]-> _ZL20current_stack_regionPPhPm.part.6_9776b0
+  _ZL20current_stack_regionPPhPm.part.6_9776b0 - [DIRECT]-> pthread_getattr_np_9b40
+  pthread_getattr_np_9b40 - [DIRECT]-> pthread_getaffinity_np@@GLIBC_2.3.4_129b0
+  pthread_getaffinity_np@@GLIBC_2.3.4_129b0 - [syscall]-> sched_getaffinity
+
+Path to fcntl:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZL13crash_handleriP7siginfoPv_b41330
+  _ZL13crash_handleriP7siginfoPv_b41330 - [DIRECT]-> _ZN7VMError14report_and_dieEv_b3fa20
+  _ZN7VMError14report_and_dieEv_b3fa20 - [DIRECT]-> _ZN2os4openEiPKc_97b660
+  _ZN2os4openEiPKc_97b660 - [DIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to mincore:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN10JavaThread3runEv_adfae0
+  _ZN10JavaThread3runEv_adfae0 - [DIRECT]-> _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0
+  _ZN10JavaThread24create_stack_guard_pagesEv_adf9f0 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_967cb0
+  _ZN2os24create_stack_guard_pagesEPcm_967cb0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_96f240
+  _ZN2os27pd_create_stack_guard_pagesEPcm_96f240 - [DIRECT]-> mincore_f3ea0
+  mincore_f3ea0 - [syscall]-> mincore
+
+Path to getrusage:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65be50
+  _ZN13InstanceKlass18oop_oop_iterate_nvEP7oopDescP14G1CMOopClosure_65be50 - [DIRECT]-> _ZN6CMTask19deal_with_referenceEP7oopDesc_661b00
+  _ZN6CMTask19deal_with_referenceEP7oopDesc_661b00 - [DIRECT]-> _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b4230
+  _ZN6CMTask19process_grey_objectILb0EEEvP7oopDesc_4b4230 - [DIRECT]-> _ZN2os12elapsedVTimeEv_96c0f0
+  _ZN2os12elapsedVTimeEv_96c0f0 - [DIRECT]-> getrusage_efa80
+  getrusage_efa80 - [syscall]-> getrusage
+
+Path to shutdown:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> checked_jni_AllocObject_72e2b0
+  checked_jni_AllocObject_72e2b0 - [DIRECT]-> _ZN2os5abortEb_96c540
+  _ZN2os5abortEb_96c540 - [DIRECT]-> _ZN2os8shutdownEv_96c510
+  _ZN2os8shutdownEv_96c510 - [DIRECT]-> _ZN14AttachListener5abortEv_2f02c0
+  _ZN14AttachListener5abortEv_2f02c0 - [DIRECT]-> shutdown_fa630
+  shutdown_fa630 - [syscall]-> shutdown
+
+Path to socket:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to bind:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> clntudp_call_127540
+  clntudp_call_127540 - [DIRECT]-> getifaddrs_114e20
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_open_114020
+  __netlink_open_114020 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to pread64:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> _Z20recorderthread_entryP10JavaThreadP6Thread_6e2a40
+  _Z20recorderthread_entryP10JavaThreadP6Thread_6e2a40 - [DIRECT]-> _ZN18JfrRecorderService6rotateEi_6e0f80
+  _ZN18JfrRecorderService6rotateEi_6e0f80 - [DIRECT]-> _ZN13JfrRepository11on_vm_errorEv_6e2c90
+  _ZN13JfrRepository11on_vm_errorEv_6e2c90 - [DIRECT]-> _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb740
+  _ZN16JfrEmergencyDump11on_vm_errorEPKc_6bb740 - [DIRECT]-> _ZN2os7read_atEiPvjl_971200
+  _ZN2os7read_atEiPvjl_971200 - [DIRECT]-> pread_11de0
+  pread_11de0 - [syscall]-> pread64
+
+Path to dup:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> __get_myaddress_11e7b0
+  __get_myaddress_11e7b0 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to setsockopt:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to connect:
+  Unsafe_CompareAndSwapObject_b05b70 - [INDIRECT]-> start_thread_7eb0
+  start_thread_7eb0 - [DIRECT]-> __libc_thread_freeres_87d10
+  __libc_thread_freeres_87d10 - [DIRECT]-> __rpc_thread_destroy_129160
+  __rpc_thread_destroy_129160 - [DIRECT]-> __rpc_thread_svc_cleanup_129f00
+  __rpc_thread_svc_cleanup_129f00 - [DIRECT]-> svc_unregister_129640
+  svc_unregister_129640 - [DIRECT]-> pmap_unset_11e9c0
+  pmap_unset_11e9c0 - [DIRECT]-> clntudp_bufcreate_128020
+  clntudp_bufcreate_128020 - [DIRECT]-> __libc_clntudp_bufcreate_127d40
+  __libc_clntudp_bufcreate_127d40 - [DIRECT]-> pmap_getport_129120
+  pmap_getport_129120 - [DIRECT]-> __libc_rpc_getport_128f60
+  __libc_rpc_getport_128f60 - [DIRECT]-> __get_socket_128ec0
+  __get_socket_128ec0 - [DIRECT]-> connect_fa060
+  connect_fa060 - [syscall]-> connect

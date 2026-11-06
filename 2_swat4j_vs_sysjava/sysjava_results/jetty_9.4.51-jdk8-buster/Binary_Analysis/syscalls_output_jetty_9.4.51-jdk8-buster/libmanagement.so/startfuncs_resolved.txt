@@ -1,0 +1,3 @@
+Java_sun_management_MemoryImpl_getMemoryUsage0
+Java_sun_management_VMManagementImpl_getVersion0
+Java_sun_management_VMManagementImpl_initOptionalSupportFields

@@ -1,0 +1,4 @@
+=== Combined Native Binding Hits ===
+Format: detector | payload
+
+ffi | <org.codehaus.groovy.ant.VerifyClass: VerifyClass> | verify | VerifyClass | downcallHandle | groovy-ant-4.0.0.jar

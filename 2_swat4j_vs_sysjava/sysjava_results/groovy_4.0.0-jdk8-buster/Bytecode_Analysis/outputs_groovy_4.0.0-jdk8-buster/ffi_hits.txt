@@ -1,0 +1,4 @@
+=== FFI (Foreign Function & Memory API) Hits ===
+Format: callerSig | lib | symbol | mechanism | jar
+
+<org.codehaus.groovy.ant.VerifyClass: VerifyClass> | verify | VerifyClass | downcallHandle | groovy-ant-4.0.0.jar

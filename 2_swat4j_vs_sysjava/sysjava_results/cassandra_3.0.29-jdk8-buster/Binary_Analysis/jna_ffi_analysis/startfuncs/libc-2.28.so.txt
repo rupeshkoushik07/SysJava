@@ -1,0 +1,9 @@
+close
+fcntl
+fsync
+getpid
+mlockall
+munlockall
+open
+posix_fadvise
+strerror

@@ -1,3 +1,6 @@
+newfstatat
+getrandom
+rt_sigprocmask
 getpid
 futex
 rt_sigreturn
@@ -14,8 +17,8 @@ writev
 close
 mremap
 wait4
-poll
 clock_gettime
+poll
 fcntl
 tgkill
 gettid
@@ -37,6 +40,3 @@ munmap
 sched_get_priority_min
 mprotect
 getdents64
-newfstatat
-getrandom
-rt_sigprocmask

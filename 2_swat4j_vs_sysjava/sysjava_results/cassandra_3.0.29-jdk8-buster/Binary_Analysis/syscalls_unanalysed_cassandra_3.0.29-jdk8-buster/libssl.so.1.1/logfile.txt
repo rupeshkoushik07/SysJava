@@ -1,0 +1,335 @@
+
+Path to futex:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __condvar_cleanup_waiting_dd80
+  __condvar_cleanup_waiting_dd80 - [syscall]-> futex
+
+Path to gettimeofday:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to set_robust_list:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __nptl_set_robust_6690
+  __nptl_set_robust_6690 - [syscall]-> set_robust_list
+
+Path to rt_sigreturn:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __restore_rt_12730
+  __restore_rt_12730 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to fstat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to stat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to accept:
+  SSL_copy_session_id_37e30 - [DIRECT]-> accept_f9f90
+  accept_f9f90 - [syscall]-> accept
+
+Path to bind:
+  SSL_copy_session_id_37e30 - [DIRECT]-> bind_fa030
+  bind_fa030 - [syscall]-> bind
+
+Path to chmod:
+  SSL_copy_session_id_37e30 - [DIRECT]-> chmod_e9e90
+  chmod_e9e90 - [syscall]-> chmod
+
+Path to close:
+  SSL_copy_session_id_37e30 - [DIRECT]-> close_115a0
+  close_115a0 - [syscall]-> close
+
+Path to connect:
+  SSL_copy_session_id_37e30 - [DIRECT]-> connect_116c0
+  connect_116c0 - [syscall]-> connect
+
+Path to rt_sigprocmask:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getcontext_47560
+  getcontext_47560 - [syscall]-> rt_sigprocmask
+
+Path to getrandom:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getentropy_3b590
+  getentropy_3b590 - [syscall]-> getrandom
+
+Path to getpid:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getpid_c7310
+  getpid_c7310 - [syscall]-> getpid
+
+Path to getsockname:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getsockname_fa130
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to getsockopt:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getsockopt_fa160
+  getsockopt_fa160 - [syscall]-> getsockopt
+
+Path to ioctl:
+  SSL_copy_session_id_37e30 - [DIRECT]-> ioctl_effc0
+  ioctl_effc0 - [syscall]-> ioctl
+
+Path to listen:
+  SSL_copy_session_id_37e30 - [DIRECT]-> listen_fa190
+  listen_fa190 - [syscall]-> listen
+
+Path to lseek:
+  SSL_copy_session_id_37e30 - [DIRECT]-> lseek_11ae0
+  lseek_11ae0 - [syscall]-> lseek
+
+Path to madvise:
+  SSL_copy_session_id_37e30 - [DIRECT]-> madvise_f3e70
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to mlock:
+  SSL_copy_session_id_37e30 - [DIRECT]-> mlock_f3f00
+  mlock_f3f00 - [syscall]-> mlock
+
+Path to mmap:
+  SSL_copy_session_id_37e30 - [DIRECT]-> mmap_f3c90
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mprotect:
+  SSL_copy_session_id_37e30 - [DIRECT]-> mprotect_f3da0
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to munmap:
+  SSL_copy_session_id_37e30 - [DIRECT]-> munmap_f3d70
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to openat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> open_11c40
+  open_11c40 - [syscall]-> openat
+
+Path to read:
+  SSL_copy_session_id_37e30 - [DIRECT]-> read_ea300
+  read_ea300 - [syscall]-> read
+
+Path to recvfrom:
+  SSL_copy_session_id_37e30 - [DIRECT]-> recvfrom_11820
+  recvfrom_11820 - [syscall]-> recvfrom
+
+Path to select:
+  SSL_copy_session_id_37e30 - [DIRECT]-> select_f0b80
+  select_f0b80 - [syscall]-> select
+
+Path to sendto:
+  SSL_copy_session_id_37e30 - [DIRECT]-> sendto_119a0
+  sendto_119a0 - [syscall]-> sendto
+
+Path to setsockopt:
+  SSL_copy_session_id_37e30 - [DIRECT]-> setsockopt_fa600
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to shmat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> shmat_faee0
+  shmat_faee0 - [syscall]-> shmat
+
+Path to shmdt:
+  SSL_copy_session_id_37e30 - [DIRECT]-> shmdt_faf10
+  shmdt_faf10 - [syscall]-> shmdt
+
+Path to shmget:
+  SSL_copy_session_id_37e30 - [DIRECT]-> shmget_faf40
+  shmget_faf40 - [syscall]-> shmget
+
+Path to shutdown:
+  SSL_copy_session_id_37e30 - [DIRECT]-> shutdown_fa630
+  shutdown_fa630 - [syscall]-> shutdown
+
+Path to socket:
+  SSL_copy_session_id_37e30 - [DIRECT]-> socket_fa660
+  socket_fa660 - [syscall]-> socket
+
+Path to clock_getres:
+  SSL_copy_session_id_37e30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to uname:
+  SSL_copy_session_id_37e30 - [DIRECT]-> uname_c6190
+  uname_c6190 - [syscall]-> uname
+
+Path to write:
+  SSL_copy_session_id_37e30 - [DIRECT]-> write_11460
+  write_11460 - [syscall]-> write
+
+Path to sched_yield:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _IO_cleanup_7e430
+  _IO_cleanup_7e430 - [DIRECT]-> sched_yield_e07c0
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to tgkill:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __nptl_setxid_77c0
+  __nptl_setxid_77c0 - [DIRECT]-> setxid_signal_thread.part.6_7090
+  setxid_signal_thread.part.6_7090 - [syscall]-> tgkill
+
+Path to gettid:
+  SSL_copy_session_id_37e30 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> raise_377e0
+  raise_377e0 - [syscall]-> gettid
+
+Path to exit:
+  SSL_copy_session_id_37e30 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  SSL_copy_session_id_37e30 - [DIRECT]-> abort_22414
+  abort_22414 - [DIRECT]-> _exit_c6840
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to fcntl:
+  SSL_copy_session_id_37e30 - [DIRECT]-> fdopen@@GLIBC_2.2.5_6fb60
+  fdopen@@GLIBC_2.2.5_6fb60 - [DIRECT]-> fcntl_ea7b0
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to dup:
+  SSL_copy_session_id_37e30 - [DIRECT]-> perror_6cd90
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to sched_get_priority_min:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_min_e0820
+  sched_get_priority_min_e0820 - [syscall]-> sched_get_priority_min
+
+Path to sched_get_priority_max:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_attr_setschedparam_9940
+  pthread_attr_setschedparam_9940 - [DIRECT]-> sched_get_priority_max_e07f0
+  sched_get_priority_max_e07f0 - [syscall]-> sched_get_priority_max
+
+Path to sched_getscheduler:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getscheduler_e0790
+  sched_getscheduler_e0790 - [syscall]-> sched_getscheduler
+
+Path to sched_getparam:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_getschedparam_9510
+  pthread_getschedparam_9510 - [DIRECT]-> sched_getparam_e0730
+  sched_getparam_e0730 - [syscall]-> sched_getparam
+
+Path to sched_setscheduler:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_setschedparam_9640
+  pthread_setschedparam_9640 - [DIRECT]-> sched_setscheduler_e0760
+  sched_setscheduler_e0760 - [syscall]-> sched_setscheduler
+
+Path to getdents64:
+  SSL_copy_session_id_37e30 - [DIRECT]-> readdir_c1cb0
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to rt_sigaction:
+  SSL_copy_session_id_37e30 - [DIRECT]-> sigaction_12910
+  sigaction_12910 - [DIRECT]-> __libc_sigaction_12740
+  __libc_sigaction_12740 - [syscall]-> rt_sigaction
+
+Path to prlimit64:
+  SSL_copy_session_id_37e30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> getrlimit_efa00
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to mremap:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _IO_file_underflow_mmap_7ba10
+  _IO_file_underflow_mmap_7ba10 - [DIRECT]-> mmap_remap_check_7a9d0
+  mmap_remap_check_7a9d0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to writev:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _IO_vtable_check_79e10
+  _IO_vtable_check_79e10 - [DIRECT]-> __libc_fatal_79650
+  __libc_fatal_79650 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to brk:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to getcwd:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to recvmsg:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getaddrinfo_e3bc0
+  getaddrinfo_e3bc0 - [DIRECT]-> __check_pf_116410
+  __check_pf_116410 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg
+
+Path to pause:
+  SSL_copy_session_id_37e30 - [DIRECT]-> pthread_mutex_lock_a6c0
+  pthread_mutex_lock_a6c0 - [DIRECT]-> __pthread_mutex_lock_full_a080
+  __pthread_mutex_lock_full_a080 - [DIRECT]-> __pause_nocancel_ef2e0
+  __pause_nocancel_ef2e0 - [syscall]-> pause
+
+Path to sysinfo:
+  SSL_copy_session_id_37e30 - [DIRECT]-> sysconf_c8230
+  sysconf_c8230 - [DIRECT]-> get_phys_pages_f6b50
+  get_phys_pages_f6b50 - [DIRECT]-> sysinfo_f9cd0
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to lstat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to newfstatat:
+  SSL_copy_session_id_37e30 - [DIRECT]-> __gconv_read_conf_26690
+  __gconv_read_conf_26690 - [DIRECT]-> __gconv_get_path_262c0
+  __gconv_get_path_262c0 - [DIRECT]-> getcwd_eac50
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to access:
+  SSL_copy_session_id_37e30 - [DIRECT]-> getnameinfo_112e90
+  getnameinfo_112e90 - [DIRECT]-> if_indextoname_113bd0
+  if_indextoname_113bd0 - [DIRECT]-> __opensock_fa740
+  __opensock_fa740 - [DIRECT]-> access_ea470
+  access_ea470 - [syscall]-> access
+
+Path to poll:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _nss_dns_gethostbyname_r_2e80
+  _nss_dns_gethostbyname_r_2e80 - [DIRECT]-> gethostbyname3_context_2220
+  gethostbyname3_context_2220 - [DIRECT]-> __res_context_search_7720
+  __res_context_search_7720 - [DIRECT]-> __res_context_query_6ad0
+  __res_context_query_6ad0 - [DIRECT]-> __res_context_send_8e70
+  __res_context_send_8e70 - [DIRECT]-> poll_ee6b0
+  poll_ee6b0 - [syscall]-> poll
+
+Path to sendmmsg:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _nss_dns_gethostbyname_r_2e80
+  _nss_dns_gethostbyname_r_2e80 - [DIRECT]-> gethostbyname3_context_2220
+  gethostbyname3_context_2220 - [DIRECT]-> __res_context_search_7720
+  __res_context_search_7720 - [DIRECT]-> __res_context_query_6ad0
+  __res_context_query_6ad0 - [DIRECT]-> __res_context_send_8e70
+  __res_context_send_8e70 - [DIRECT]-> sendmmsg_faa80
+  sendmmsg_faa80 - [syscall]-> sendmmsg
+
+Path to readv:
+  SSL_copy_session_id_37e30 - [DIRECT]-> gethostbyname_10ae00
+  gethostbyname_10ae00 - [DIRECT]-> gethostbyname_r@@GLIBC_2.2.5_10b800
+  gethostbyname_r@@GLIBC_2.2.5_10b800 - [DIRECT]-> __nscd_gethostbyname_r_12e610
+  __nscd_gethostbyname_r_12e610 - [DIRECT]-> nscd_gethst_r_12ddd0
+  nscd_gethst_r_12ddd0 - [DIRECT]-> __readvall_130550
+  __readvall_130550 - [DIRECT]-> readv_efff0
+  readv_efff0 - [syscall]-> readv
+
+Path to getpeername:
+  SSL_copy_session_id_37e30 - [DIRECT]-> _nss_dns_gethostbyname_r_2e80
+  _nss_dns_gethostbyname_r_2e80 - [DIRECT]-> gethostbyname3_context_2220
+  gethostbyname3_context_2220 - [DIRECT]-> __res_context_search_7720
+  __res_context_search_7720 - [DIRECT]-> __res_context_query_6ad0
+  __res_context_query_6ad0 - [DIRECT]-> __res_context_send_8e70
+  __res_context_send_8e70 - [DIRECT]-> send_vc_8320
+  send_vc_8320 - [DIRECT]-> getpeername_fa100
+  getpeername_fa100 - [syscall]-> getpeername

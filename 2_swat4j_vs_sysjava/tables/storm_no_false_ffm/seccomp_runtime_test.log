@@ -1,0 +1,27 @@
+container=storm_2.4.0-jdk8-buster
+image=storm:2.4.0-jdk8-buster
+profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/_tables/storm_no_false_ffm_rta/storm_2.4.0-jdk8-buster.json
+profile_syscalls=172 SCMP_ACT_ERRNO
+workload=docker run --network et-jdk8-net --hostname nimbus --network-alias nimbus storm:2.4.0-jdk8-buster nimbus
+started_at=2026-11-06T19:44:01+01:00
+
+---- baseline (no profile) ----
+docker_run_output=171c1e7b583a34d7bdf274e34db5f526f34abefaff6b26b44f551e4477e8c1c0
+baseline_ready_after=4s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-storm-2-4-0-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/_tables/storm_no_false_ffm_rta/storm_2.4.0-jdk8-buster.json --network et-jdk8-net --hostname nimbus --network-alias nimbus storm:2.4.0-jdk8-buster nimbus
+docker_run_output=f4917399fe8d4cdc2b0f960cc433d7204df9f2b62a57be3173a8f8a1972ee7ff
+ready_after=5s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-06T19:46:10+01:00
+
+---- docker logs tail (with profile) ----
+Running: /opt/java/bin/java -server -Ddaemon.name=nimbus -Dstorm.options= -Dstorm.home=/opt/storm -Dstorm.log.dir=/opt/storm/logs -Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64 -Dstorm.conf.file= -cp /opt/storm/*:/opt/storm/lib/*:/opt/storm/extlib/*:/opt/storm/extlib-daemon/*:/opt/storm/conf -Xmx1024m -Djava.deserialization.disabled=true -Dlogfile.name=nimbus.log -Dlog4j.configurationFile=/opt/storm/log4j2/cluster.xml org.apache.storm.daemon.nimbus.Nimbus

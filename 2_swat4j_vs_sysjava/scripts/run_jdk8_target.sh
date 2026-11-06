@@ -92,6 +92,9 @@ claimed() { [ "$FIRST" = 1 ] && [ -z "${STOP_AFTER:-}" ] && [ -e "${FINAL}/.clai
 if claimed; then echo "${T}: already claimed by an earlier run ($(cat "${FINAL}/.claimed")); nothing to do"; exit 0; fi
 exec 9>"${LOCKS}/target_${T}"
 flock 9
+# RTA rerun started early (outside its lane): a later run of the same target from stage 4
+# stops here instead of running it a second time. RTA_EARLY=1 marks the early run itself.
+if [ "$FIRST" = 4 ] && [ -z "${RTA_EARLY:-}" ] && [ -e "${FINAL}/.rta_rerun" ]; then echo "${T}: RTA rerun already done by an early run ($(cat "${FINAL}/.rta_rerun")); nothing to do"; exit 0; fi
 if claimed; then echo "${T}: already claimed by an earlier run ($(cat "${FINAL}/.claimed")); nothing to do"; exit 0; fi
 LOG="${FINAL}/pipeline_run.log"
 exec > >(tee -a "$LOG") 2>&1
@@ -232,6 +235,12 @@ if run_from 7; then
     rm -rf "${WS}/syscalls_output_${T}" "${WS}/syscalls_BIN_${T}" "${WS}/syscalls_unanalysed_${T}" \
         "${WS}/startfuncs_unanalysed_${T}" "${WS}/jna_ffi_analysis" "${WS}"/dynamic_leftover_after_analyzed_ldd.* \
         "${WS}/unanalysed_syspart_progress.log"
+    # Manual native mappings (supplied libraries, rule-mapped JVM natives): merged into the same
+    # start-function files, so each library is analysed once, from its full start list.
+    MANUAL_DIR="${MANUAL_DIR:-${HOME}/Tutorial/EchoTrace_latest/unavailable_libs}"
+    if [ -f "${MANUAL_DIR}/${T}/mapping/mapped_method_syscalls.txt" ]; then
+        python3 "${REPO}/scripts/apply_manual_mappings.py" "$T" --manual-dir "$MANUAL_DIR" --repo "$REPO"
+    fi
     bash "${WS}/scripts/automate_syscall_analysis.sh" \
         --binary-dir "$SLIBS" --binaries-dir "$SBINS" --startfunc-dir "$OUTPUTS_DIR" \
         --output-dir "${WS}/syscalls_output_${T}" --img-name "$T" --log

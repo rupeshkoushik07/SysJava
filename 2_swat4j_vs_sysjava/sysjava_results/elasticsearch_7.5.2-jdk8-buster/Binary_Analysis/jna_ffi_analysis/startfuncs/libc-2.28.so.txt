@@ -1,0 +1,10 @@
+geteuid
+getrlimit
+mlockall
+prctl
+priv_set
+sandbox_free_error
+sandbox_init
+setrlimit
+strerror
+syscall

@@ -1,0 +1,11 @@
+00:16:26.511884311 openat 1614410 java /opt/java/jre/lib/rt.jar f
+00:16:26.556342080 openat 1614410 java /opt/java/jre/lib/jfr.jar f
+00:16:26.561299931 openat 1614410 java /opt/jruby/lib/jruby.jar f
+00:16:26.731446333 openat 1614410 java /opt/java/jre/lib/jsse.jar f
+00:16:26.746854595 openat 1614410 java /opt/jruby/lib/jruby.jar f
+00:16:27.341811772 openat 1614410 java /opt/java/jre/lib/rt.jar f
+00:16:27.360584422 openat 1614410 java /opt/java/jre/lib/resources.jar f
+00:16:28.307826223 openat 1614410 java /opt/java/jre/lib/jce.jar f
+00:16:28.309197139 openat 1614410 java /opt/java/jre/lib/security/policy/unlimited/US_export_policy.jar f
+00:16:28.310769542 openat 1614410 java /opt/java/jre/lib/security/policy/unlimited/local_policy.jar f
+00:16:29.250392912 openat 1614410 java /opt/jruby/lib/ruby/stdlib/io/wait.jar f

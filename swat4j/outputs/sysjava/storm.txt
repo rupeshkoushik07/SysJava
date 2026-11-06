@@ -161,10 +161,12 @@ timer_delete
 timer_settime
 timerfd_create
 timerfd_settime
+tkill
 umask
 uname
 unlink
 unlinkat
+utimes
 vfork
 wait4
 write

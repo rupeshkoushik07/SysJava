@@ -1,0 +1,16 @@
+/opt/java/jre/lib/jfr.jar
+/opt/java/jre/lib/jsse.jar
+/opt/java/jre/lib/resources.jar
+/opt/java/jre/lib/rt.jar
+/opt/jetty/lib/jetty-deploy-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-http-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-io-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-schemas-3.1.jar
+/opt/jetty/lib/jetty-security-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-server-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-servlet-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-util-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-webapp-9.4.51.v20230217.jar
+/opt/jetty/lib/jetty-xml-9.4.51.v20230217.jar
+/opt/jetty/lib/servlet-api-3.1.jar
+/opt/jetty/start.jar

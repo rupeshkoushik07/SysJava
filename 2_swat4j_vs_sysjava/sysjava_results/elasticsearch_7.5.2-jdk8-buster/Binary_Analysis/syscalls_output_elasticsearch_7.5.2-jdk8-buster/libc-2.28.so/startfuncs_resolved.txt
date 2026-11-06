@@ -1,0 +1,5 @@
+geteuid
+getrlimit
+mlockall
+setrlimit
+strerror
