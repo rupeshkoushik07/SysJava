@@ -78,11 +78,15 @@ For the image it:
    start functions to the reachable syscalls;
 5. builds the syscall sets (Java libraries, executables, runtime set, fallback
    libraries) and merges them into the seccomp profile;
-6. compares it with the shipped profile.
+6. prints the results as the image's column of Table III: native methods by
+   mapping kind (JNI static, partial, JNI dynamic, JVM, JFR/Netty, JNA, FFI/FFM,
+   platform/intrinsic, not found) and the syscall rows (Java libraries, container
+   executables, unanalysed libraries, runtime whitelist, total).
 
 Output in `<table>/generated_syscalls/<image>/`: the native methods and their
 mapping, `syscalls.txt` for every library and executable, the four sets, the
-profile `<image>.json`, and `diff.txt` against the shipped profile. Logs are in
+profile `<image>.json`, `table_column.txt` (step 6), and `diff.txt`, which
+compares the profile with the shipped one. Logs are in
 `work/static/<image>/`. On ZooKeeper and JRuby the profile is identical to the full run's.
 
 ### C. Full rerun

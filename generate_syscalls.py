@@ -17,7 +17,8 @@ Steps:
      from those start functions to the reachable syscalls
   5. syscall sets and profile: Java libraries, executables, runtime set and
      fallback libraries, merged into the seccomp profile
-  6. compare the profile with the shipped one
+  6. (latest images) the results as the image's column of Table III: native
+     methods by mapping kind, not found, and the syscall rows
 
 Output in <table folder>/generated_syscalls/<image>/:
   native_methods.txt, mapped_method_syscalls.txt   steps 2 and 3
@@ -26,11 +27,13 @@ Output in <table folder>/generated_syscalls/<image>/:
                                                     jna_ffi_analysis/ per JNA/FFI library)
   .../library_syscalls.txt, binary_syscalls.txt, unanalysed_syscalls.txt   the sets
   <image>.json      the seccomp profile
-  diff.txt          against the shipped profile
+  diff.txt          the profile against the shipped one (for checking a run)
   report.tsv        one line per call graph
+  table_column.txt  the results as the image's column of Table III
 Work files and logs: work/static/<image>/.
 Needs JDK 17+, Maven, Python 3, binutils and xz.
 """
+import csv
 import glob
 import json
 import os
@@ -64,6 +67,25 @@ def count(path, pattern):
 
 def nlines(path):
     return sum(1 for l in open(path) if l.strip()) if Path(path).is_file() else 0
+
+
+REPLAY = {"ok": "{} call graphs parsed",
+          "no_callgraph_in_original": "{} library/executable without a call graph in the original run either (kept as shipped)",
+          "starts_not_in_callgraph": "{} missing start functions (need a SysPart run)",
+          "new_library_needs_syspart": "{} libraries not in the shipped results (need a SysPart run)",
+          "not_mapped_in_rerun": "{} shipped results not mapped in this run (left out)",
+          "replay_failed": "{} failed"}
+
+
+def replay_summary(log):
+    """whitelist_from_callgraphs.py's summary line in words, plus any line it flags."""
+    lines = open(log).read().splitlines()
+    summary = next((l for l in lines if l.startswith("call-graph replay:")), "")
+    counts = dict(kv.split("=") for kv in summary.split(":", 1)[-1].split(", ") if "=" in kv)
+    order = sorted(counts, key=lambda k: list(REPLAY).index(k.strip()) if k.strip() in REPLAY else len(REPLAY))
+    text = "; ".join(REPLAY.get(k.strip(), k.strip() + " {}").format(counts[k]) for k in order)
+    flagged = [l.strip() for l in lines if l.startswith("  ")]
+    return "\n      ".join([text] + flagged)
 
 
 def detector(shipped):
@@ -138,8 +160,7 @@ def whitelist(img):
     run(["java", "-Xmx16g", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector", str(jars), str(outs), str(rt)],
         ws / "bytecode.log")
     hits = lambda f: sum(1 for l in open(outs / f) if " | " in l and not l.startswith("Format:")) if (outs / f).is_file() else 0
-    print(f"      {nlines(outs / 'native_methods.txt')} native methods "
-          f"(shipped: {nlines(shipped / 'Bytecode_Analysis' / f'outputs_{img}' / 'native_methods.txt')}); "
+    print(f"      {nlines(outs / 'native_methods.txt')} native methods; "
           f"{hits('jna_hits.txt')} JNA, {hits('jnr_ffi_hits.txt')} JNR-FFI, {hits('ffi_hits.txt')} FFM bindings")
 
     step(3, "map native methods to C functions (start functions per library)")
@@ -154,9 +175,7 @@ def whitelist(img):
     step(4, "syscalls from SysPart's shipped call graphs")
     run([sys.executable, str(ART / "tools" / "whitelist_from_callgraphs.py"), img, str(shipped / "Binary_Analysis"),
          str(ws)], ws / "callgraphs.log")
-    # (per-library notes on start functions the original SysPart run also skipped stay in the log)
-    print("      " + "\n      ".join(l.strip() for l in open(ws / "callgraphs.log")
-                                     if l.startswith(("call-graph replay", "  "))))
+    print("      " + replay_summary(ws / "callgraphs.log"))
     shutil.copy(ws / "static_report.tsv", out / "report.tsv")
 
     step(5, "syscall sets and seccomp profile")
@@ -181,18 +200,71 @@ def whitelist(img):
     print(f"      Java libraries {len(lib)}, executables {len(binary)}, runtime set +{len(runtime)}, "
           f"fallback libraries +{len(fallback)}; profile {len(names(prof))}")
 
-    step(6, "compare with the shipped profile")
+    # diff.txt: this profile against the shipped one, for checking a run (not printed)
     new, ref = names(prof), names(shipped / "Binary_Analysis" / f"syscalls_output_{img}" / f"{img}.json")
-    diff = (f"generated: {len(new)} syscalls  ({out / f'{img}.json'})\n"
-            f"shipped:   {len(ref)} syscalls\n"
-            f"only in generated: {' '.join(sorted(new - ref))}\n"
-            f"only in shipped:   {' '.join(sorted(ref - new))}\n")
-    (out / "diff.txt").write_text(diff)
-    print("      " + diff.strip().replace("\n", "\n      "))
-    print(f"RESULT {img}: " + ("identical to the shipped profile" if new == ref else
-                               f"differs from the shipped profile (see {out / 'report.tsv'})")
-          + f"  [{(time.time() - t0) / 60:.0f} min]")
-    return new == ref
+    (out / "diff.txt").write_text(f"generated: {len(new)} syscalls\nshipped:   {len(ref)} syscalls\n"
+                                  f"only in generated: {' '.join(sorted(new - ref)) or 'none'}\n"
+                                  f"only in shipped:   {' '.join(sorted(ref - new)) or 'none'}\n")
+
+    if (table / "unavailable_libs").is_dir():
+        step(6, "results (the image's column of Table III)")
+        print(table_column(img, ws, table, out))
+    print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {out / f'{img}.json'}; all outputs in {out}/")
+
+
+def tex_column(tex, img):
+    """(label, value) rows of one image's column in a Table III .tex file."""
+    lines = Path(tex).read_text().splitlines()
+    head = next(l for l in lines if l.lstrip().startswith("&") and "Zookeeper" in l)
+    col = [c.strip().lower() for c in head.split("&")[1:]].index(img.split("_")[0]) + 1
+    rows = []
+    for l in lines[lines.index(head) + 1:]:
+        cells = [c.strip() for c in l.rstrip("\\ ").split("&")]
+        if len(cells) > col and cells[0] and (cells[0].startswith("\\quad") or not cells[0].startswith(("\\", "%"))):
+            label = re.sub(r"\\quad\s*", "  ", cells[0]).replace("\\_", "_").replace("\\$", "$")
+            rows.append((label.replace("($\\Delta$)", "(Δ)"), cells[col]))
+        elif "multicolumn" in l:
+            rows.append((re.search(r"\}\{([^{}]*)\}\s*\\\\", l).group(1), None))
+    return rows
+
+
+def table_column(img, ws, table, out):
+    """Run the mapping audit and the Table III generator on this run's files and return the
+    image's column."""
+    tv = ws / "table_view"
+    shutil.rmtree(tv, ignore_errors=True)
+    v = tv / img
+    for d in ("Bytecode_Analysis", "Binary_Analysis", "Dataset"):
+        (v / d).mkdir(parents=True)
+    (v / "Bytecode_Analysis" / f"outputs_{img}").symlink_to(ws / f"outputs_{img}")
+    for d in (f"syscalls_output_{img}", f"syscalls_BIN_{img}", f"syscalls_unanalysed_{img}", "jna_ffi_analysis"):
+        if (ws / d).is_dir():
+            (v / "Binary_Analysis" / d).symlink_to(ws / d)
+    for d in ("JARFILES", "LIBS", "BINARIES", "RUNTIME"):
+        (v / "Dataset" / f"{d}_{img}").symlink_to(ws / f"{d}_{img}")
+    # the other images' columns come from the shipped results (only this column is read)
+    for r in (table / "results").iterdir():
+        if r.name != img and r.is_dir():
+            (tv / r.name).symlink_to(r)
+    # native-method mapping breakdown: the audit on this run's mapping
+    run([sys.executable, str(ART / "analysis" / "native_mapping_audit" / "audit_native_mapping.py"),
+         "--out", str(ws / "audit"), "--app", f"{img}={v}"], ws / "audit.log")
+    rows = list(csv.DictReader(open(table / "tables" / "mapping_audit_per_app.csv")))
+    mine = next(csv.DictReader(open(ws / "audit" / "per_app_summary.csv")))
+    with open(ws / "audit" / "table_audit.csv", "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0]))
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: mine.get(k, r[k]) for k in r} if r["app"] == img else r)
+    run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "unavailable_libs"),
+         str(ws / "audit" / "table_audit.csv"), str(ws / "tableIII"), str(table / "runc.txt")],
+        ws / "table.log", check=False)
+    lines = []
+    for label, val in tex_column(ws / "tableIII.tex", img):
+        lines.append(f"      {label}" if val is None else f"      {label:40s}{val:>10s}")
+    text = "\n".join(lines)
+    (out / "table_column.txt").write_text(re.sub(r"(?m)^      ", "", text) + "\n")
+    return text
 
 
 def main():
