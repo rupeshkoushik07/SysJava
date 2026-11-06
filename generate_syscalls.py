@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate an image's syscalls from its shipped dataset, without running SysPart:
+"""Generate an image's syscalls from its shipped dataset and SysPart's shipped call graphs:
 the syscalls of every library and executable, the four syscall sets of the paper's
 table, and the seccomp profile.
 

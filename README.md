@@ -25,7 +25,7 @@ The tool is called EchoTrace in the code.
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); `code_facts.md`: how binding recovery works, with pointers to the code | |
 | `tools/` | call-graph parser (used by `generate_syscalls.py`) and the generators of Table III and tab:results | |
-| `generate_syscalls.py` | generates an image's syscalls and profile without SysPart (B below) | |
+| `generate_syscalls.py` | generates an image's syscalls and profile from SysPart's shipped call graphs (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |
 
 ## Result folders
@@ -64,7 +64,7 @@ TABLE_ONLY=1 1_latest_containers/reproduce.sh
 TABLE_ONLY=1 2_swat4j_vs_sysjava/reproduce.sh
 ```
 
-### B. Syscalls without SysPart
+### B. Syscalls from SysPart's call graphs
 
 ```bash
 python3 generate_syscalls.py zookeeper_3.9.5     # one image

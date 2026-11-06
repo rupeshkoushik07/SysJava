@@ -32,7 +32,7 @@ Digests: `../docker_images/IMAGES.md`.
 ## Reproduce
 
 ```bash
-python3 ../generate_syscalls.py zookeeper_3.9.5   # syscalls and profile without SysPart, minutes
+python3 ../generate_syscalls.py zookeeper_3.9.5   # syscalls and profile from SysPart's call graphs, minutes
 TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 ./reproduce.sh                      # full rerun of all 10 images (needs ../setup.sh)
 ./reproduce.sh tomcat_11.0.22       # one image

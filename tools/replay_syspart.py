@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compute reachable syscalls from a shipped SysPart result, without SysPart.
+"""Compute reachable syscalls from a shipped SysPart result by following its call graph.
 
 SysPart (scripts/compute_syscalls_lowmem.sh) writes, per analysed ELF:
 
