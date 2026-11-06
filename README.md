@@ -23,7 +23,7 @@ The tool is called EchoTrace in the code.
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); `code_facts.md`: how binding recovery works, with pointers to the code | |
-| `tools/` | table builder, call-graph parser, and the scripts that assembled this folder | |
+| `tools/` | call-graph parser (used by `generate_syscalls.py`) and the Table III generator | |
 | `generate_syscalls.py` | generates an image's syscalls and profile without SysPart (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |
 

@@ -75,18 +75,6 @@ case "$T" in
         IMAGE=zookeeper:3.4.14-jdk8-buster; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
     tomcat_7.0-jdk8-buster)
         IMAGE=tomcat:7.0-jdk8-buster; RUN_ARGS=(); CMD=(); MARKER="Server startup in" ;;
-    zookeeper_3.4.14)
-        IMAGE=zookeeper:3.4.14; RUN_ARGS=(); CMD=(); MARKER="binding to port" ;;
-    tomcat_7.0)
-        IMAGE=tomcat:7.0; RUN_ARGS=(); CMD=(); MARKER="Server startup in" ;;
-    cassandra_3.0.29)
-        IMAGE=cassandra:3.0.29; RUN_ARGS=(-e MAX_HEAP_SIZE=1G -e HEAP_NEWSIZE=256M); CMD=()
-        MARKER="Starting listening for CQL clients" ;;
-    orientdb_3.2.19)
-        IMAGE=orientdb:3.2.19; RUN_ARGS=(-e ORIENTDB_ROOT_PASSWORD=root); CMD=(); MARKER="OrientDB Studio available" ;;
-    jruby_9.4.2.0)
-        # irb needs a terminal and prints nothing: ready = JVM up for 30 s.
-        IMAGE=jruby:9.4.2.0; RUN_ARGS=(-it); CMD=(); MARKER="" ;;
     *) echo "unknown target $T" >&2; exit 1 ;;
 esac
 
