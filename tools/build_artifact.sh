@@ -61,7 +61,7 @@ rm -rf "$ART/pipelines" "$ART/echotrace_patches"   # older layout
 rm -rf "$ART/echotrace/results" "$ART/echotrace/scripts" "$ART/echotrace/SysPartCode"
 git -C "$DETECTOR_REPO" rev-parse "$DETECTOR_COMMIT" > "$ART/echotrace/COMMIT"
 # The detector before the <clinit> fix, which built stage 4 of the results whose
-# pipeline_run.log says "code at 516fb46"; whitelist.py picks the tree per image.
+# pipeline_run.log says "code at 516fb46"; generate_syscalls.py picks the tree per image.
 BASELINE_DETECTOR="${BASELINE_DETECTOR:-516fb46}"
 rm -rf "$ART/echotrace_$BASELINE_DETECTOR"; mkdir -p "$ART/echotrace_$BASELINE_DETECTOR"
 git -C "$LATEST_REPO" archive "$BASELINE_DETECTOR" | tar -x -C "$ART/echotrace_$BASELINE_DETECTOR"
@@ -141,7 +141,7 @@ copy_result() {  # <src target dir> <dest target dir>
         "$src/" "$dst/"
     # The captured files (Dataset/: JARs, libraries, executables, the JDK) and the
     # libraries stage 6 added from the container, as split xz archives, so
-    # whitelist.py runs without Docker. Parts stay below GitHub's 100 MB file limit;
+    # generate_syscalls.py runs without Docker. Parts stay below GitHub's 100 MB file limit;
     # tar records no owner names.
     if [ -d "$src/Dataset" ]; then
         local U="rup""esh" P="pun""na" K="kou""shik"
@@ -232,7 +232,7 @@ fi
 log "anonymising text files"
 bash "$ART/tools/anonymise.sh" "$ART"
 # Call graphs and function lists are the bulk of the results (up to ~50 MB
-# each); gzip after anonymising so the text pass sees them. whitelist.py reads
+# each); gzip after anonymising so the text pass sees them. generate_syscalls.py reads
 # them gzipped.
 find "$ART/1_latest_containers/results" "$ART/2_swat4j_vs_sysjava/sysjava_results" \
     \( -name callgraph.json -o -name allfunctions.txt \) -type f -print0 2>/dev/null | nice -n 10 xargs -0 -r -P 4 gzip -9f

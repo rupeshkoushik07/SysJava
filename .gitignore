@@ -9,4 +9,4 @@ swat4j/dynamic/
 swat4j/.tmp_jdk8_native/
 echotrace*/target/
 __pycache__/
-*/whitelists_static/
+*/generated_syscalls/

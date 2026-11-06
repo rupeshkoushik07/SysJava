@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Build one image's seccomp allowlist from its shipped dataset, without SysPart.
+"""Generate an image's syscalls from its shipped dataset, without running SysPart:
+the syscalls of every library and executable, the four syscall sets of the paper's
+table, and the seccomp profile.
 
-    python3 whitelist.py zookeeper_3.9.5        one image (any folder name in results/)
-    python3 whitelist.py all                    every image with a shipped dataset
+    python3 generate_syscalls.py zookeeper_3.9.5        one image (any folder name in results/)
+    python3 generate_syscalls.py all                    every image with a shipped dataset
 
 Steps:
   1. unpack the dataset: the JARs, native libraries, executables and Java runtime
@@ -13,11 +15,20 @@ Steps:
      which gives the start functions per library
   4. call graphs: follow SysPart's shipped call graph of each library and executable
      from those start functions to the reachable syscalls
-  5. profile: merge them with the runtime set into the seccomp profile
-  6. compare it with the shipped profile
+  5. syscall sets and profile: Java libraries, executables, runtime set and
+     fallback libraries, merged into the seccomp profile
+  6. compare the profile with the shipped one
 
-Output: <table folder>/whitelists_static/<image>.json, <image>.diff.txt and
-<image>.report.tsv (one line per call graph). Work files: work/static/<image>/.
+Output in <table folder>/generated_syscalls/<image>/:
+  native_methods.txt, mapped_method_syscalls.txt   steps 2 and 3
+  syscalls_output_<image>/<lib>/syscalls.txt        per library (and _BIN_ per executable,
+                                                    _unanalysed_ per fallback library,
+                                                    jna_ffi_analysis/ per JNA/FFI library)
+  .../library_syscalls.txt, binary_syscalls.txt, unanalysed_syscalls.txt   the sets
+  <image>.json      the seccomp profile
+  diff.txt          against the shipped profile
+  report.tsv        one line per call graph
+Work files and logs: work/static/<image>/.
 Needs JDK 17+, Maven, Python 3, binutils and xz.
 """
 import glob
@@ -84,10 +95,11 @@ def whitelist(img):
     if not parts:
         sys.exit(f"{img}: no shipped dataset")
     ws = ART / "work" / "static" / img
-    out = table / "whitelists_static"
+    out = table / "generated_syscalls" / img
     shutil.rmtree(ws, ignore_errors=True)
+    shutil.rmtree(out, ignore_errors=True)
     ws.mkdir(parents=True)
-    out.mkdir(exist_ok=True)
+    out.mkdir(parents=True)
     t0 = time.time()
     step = lambda n, text: print(f"[{time.strftime('%H:%M:%S')}] {img} {n}. {text}", flush=True)
 
@@ -145,25 +157,40 @@ def whitelist(img):
     # (per-library notes on start functions the original SysPart run also skipped stay in the log)
     print("      " + "\n      ".join(l.strip() for l in open(ws / "callgraphs.log")
                                      if l.startswith(("call-graph replay", "  "))))
-    shutil.copy(ws / "static_report.tsv", out / f"{img}.report.tsv")
+    shutil.copy(ws / "static_report.tsv", out / "report.tsv")
 
-    step(5, "seccomp profile")
+    step(5, "syscall sets and seccomp profile")
     run([sys.executable, "scripts/merge_all_syscalls.py", img], ws / "merge.log", cwd=ws, env=env, check=False)
     prof = ws / f"syscalls_output_{img}" / f"{img}.json"
     if not prof.is_file():
         sys.exit(f"no profile written; see {ws / 'merge.log'}")
+    for f in ("native_methods.txt", "mapped_method_syscalls.txt"):
+        shutil.copy(outs / f, out / f)
+    for top in (f"syscalls_output_{img}", f"syscalls_BIN_{img}", f"syscalls_unanalysed_{img}", "jna_ffi_analysis"):
+        for f in (ws / top).rglob("*syscalls.txt") if (ws / top).is_dir() else []:
+            if f.name in ("syscalls.txt", "library_syscalls.txt", "binary_syscalls.txt",
+                          "unanalysed_syscalls.txt", "union_syscalls.txt"):
+                (out / f.relative_to(ws)).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(f, out / f.relative_to(ws))
     shutil.copy(prof, out / f"{img}.json")
+    rd = lambda p: {l.strip() for l in open(ws / p) if l.strip()} if (ws / p).is_file() else set()
+    lib = rd(f"syscalls_output_{img}/library_syscalls.txt") | rd("jna_ffi_analysis/union_syscalls.txt")
+    binary = rd(f"syscalls_BIN_{img}/binary_syscalls.txt")
+    runtime = rd("runc.txt") - lib - binary
+    fallback = rd(f"syscalls_unanalysed_{img}/unanalysed_syscalls.txt") - lib - binary - runtime
+    print(f"      Java libraries {len(lib)}, executables {len(binary)}, runtime set +{len(runtime)}, "
+          f"fallback libraries +{len(fallback)}; profile {len(names(prof))}")
 
     step(6, "compare with the shipped profile")
     new, ref = names(prof), names(shipped / "Binary_Analysis" / f"syscalls_output_{img}" / f"{img}.json")
-    diff = (f"rerun:   {len(new)} syscalls  ({out / f'{img}.json'})\n"
-            f"shipped: {len(ref)} syscalls\n"
-            f"only in rerun:   {' '.join(sorted(new - ref))}\n"
-            f"only in shipped: {' '.join(sorted(ref - new))}\n")
-    (out / f"{img}.diff.txt").write_text(diff)
+    diff = (f"generated: {len(new)} syscalls  ({out / f'{img}.json'})\n"
+            f"shipped:   {len(ref)} syscalls\n"
+            f"only in generated: {' '.join(sorted(new - ref))}\n"
+            f"only in shipped:   {' '.join(sorted(ref - new))}\n")
+    (out / "diff.txt").write_text(diff)
     print("      " + diff.strip().replace("\n", "\n      "))
     print(f"RESULT {img}: " + ("identical to the shipped profile" if new == ref else
-                               f"differs from the shipped profile (see {out / f'{img}.report.tsv'})")
+                               f"differs from the shipped profile (see {out / 'report.tsv'})")
           + f"  [{(time.time() - t0) / 60:.0f} min]")
     return new == ref
 

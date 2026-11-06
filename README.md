@@ -24,7 +24,7 @@ The tool is called EchoTrace in the code.
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit | |
 | `tools/` | table builder, call-graph parser, and the scripts that assembled this folder | |
-| `whitelist.py` | rebuilds an allowlist without SysPart (B below) | |
+| `generate_syscalls.py` | generates an image's syscalls and profile without SysPart (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |
 
 ## Result folders
@@ -63,11 +63,11 @@ TABLE_ONLY=1 1_latest_containers/reproduce.sh
 TABLE_ONLY=1 2_swat4j_vs_sysjava/reproduce.sh
 ```
 
-### B. Allowlist without SysPart
+### B. Syscalls without SysPart
 
 ```bash
-python3 whitelist.py zookeeper_3.9.5     # one image
-python3 whitelist.py all                 # every image with a shipped dataset
+python3 generate_syscalls.py zookeeper_3.9.5     # one image
+python3 generate_syscalls.py all                 # every image with a shipped dataset
 ```
 
 For the image it:
@@ -76,12 +76,14 @@ For the image it:
 3. maps each native method to the C function and library implementing it (the start functions);
 4. follows SysPart's shipped call graph of each library and executable from those
    start functions to the reachable syscalls;
-5. merges them with the runtime set into the seccomp profile;
+5. builds the syscall sets (Java libraries, executables, runtime set, fallback
+   libraries) and merges them into the seccomp profile;
 6. compares it with the shipped profile.
 
-Output in `<table>/whitelists_static/`: `<image>.json`, `<image>.diff.txt` and
-`<image>.report.tsv`; each step's files and logs are in `work/static/<image>/`.
-On ZooKeeper and JRuby the profile is identical to the full run's.
+Output in `<table>/generated_syscalls/<image>/`: the native methods and their
+mapping, `syscalls.txt` for every library and executable, the four sets, the
+profile `<image>.json`, and `diff.txt` against the shipped profile. Logs are in
+`work/static/<image>/`. On ZooKeeper and JRuby the profile is identical to the full run's.
 
 ### C. Full rerun
 
