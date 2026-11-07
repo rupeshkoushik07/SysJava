@@ -1,5 +1,0 @@
-jetty_9.4.51-jdk8-buster (3)
-  - libjli.so
-  - libnss_files.so.2
-  - librt.so.1
-

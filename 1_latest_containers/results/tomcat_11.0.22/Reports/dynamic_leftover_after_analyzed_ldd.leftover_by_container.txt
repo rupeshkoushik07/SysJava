@@ -1,6 +1,0 @@
-tomcat_11.0.22 (4)
-  - libextnet.so
-  - libjli.so
-  - libmanagement_ext.so
-  - libtinfo.so.6
-

@@ -1,7 +1,0 @@
-orientdb_3.2.19-jdk8-buster (5)
-  - jffi6520012027817402928.so
-  - libcrypt.so.1
-  - libjli.so
-  - libnss_files.so.2
-  - librt.so.1
-

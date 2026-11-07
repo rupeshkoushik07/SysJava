@@ -1,9 +1,0 @@
-2026-11-07T08:30:36 RUN image=jetty_12.1.10 libraries=7 force=False
-2026-11-07T08:30:36 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jetty_12.1.10/Dataset_symbolized/LIBS_jetty_12.1.10
-2026-11-07T08:30:37 SKIP [1/7] libacl.so.1 already_complete
-2026-11-07T08:30:37 SKIP [2/7] libextnet.so already_complete
-2026-11-07T08:30:37 SKIP [3/7] libgcc_s.so.1 already_complete
-2026-11-07T08:30:37 SKIP [4/7] libjli.so already_complete
-2026-11-07T08:30:37 SKIP [5/7] libmanagement_ext.so already_complete
-2026-11-07T08:30:37 SKIP [6/7] libpcre2-8.so.0 already_complete
-2026-11-07T08:30:37 SKIP [7/7] libselinux.so.1 already_complete

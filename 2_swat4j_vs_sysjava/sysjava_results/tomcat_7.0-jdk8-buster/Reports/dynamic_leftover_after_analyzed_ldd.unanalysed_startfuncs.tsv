@@ -1,4 +1,0 @@
-image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
-tomcat_7.0-jdk8-buster	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/startfuncs_unanalysed_tomcat_7.0-jdk8-buster/libjli.so.txt	9	ok
-tomcat_7.0-jdk8-buster	libnss_files.so.2	libnss_files-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/startfuncs_unanalysed_tomcat_7.0-jdk8-buster/libnss_files-2.28.so.txt	68	ok
-tomcat_7.0-jdk8-buster	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/startfuncs_unanalysed_tomcat_7.0-jdk8-buster/libtinfo.so.6.txt	192	ok

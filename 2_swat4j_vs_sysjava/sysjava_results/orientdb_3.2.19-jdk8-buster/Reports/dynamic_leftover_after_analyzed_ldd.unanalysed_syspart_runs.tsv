@@ -1,5 +1,0 @@
-image	loaded_name	resolved_relpath	output_dir	status	exit_code
-orientdb_3.2.19-jdk8-buster	libcrypt.so.1	libcrypt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/syscalls_unanalysed_orientdb_3.2.19-jdk8-buster/libcrypt-2.28.so	completed	0
-orientdb_3.2.19-jdk8-buster	libnss_files.so.2	libnss_files-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/syscalls_unanalysed_orientdb_3.2.19-jdk8-buster/libnss_files-2.28.so	completed	0
-orientdb_3.2.19-jdk8-buster	librt.so.1	librt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/syscalls_unanalysed_orientdb_3.2.19-jdk8-buster/librt-2.28.so	completed	0
-orientdb_3.2.19-jdk8-buster	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/syscalls_unanalysed_orientdb_3.2.19-jdk8-buster/libjli.so	completed	0

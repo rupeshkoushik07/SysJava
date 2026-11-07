@@ -1,9 +1,0 @@
-2026-11-06T18:53:24 RUN image=tomcat_7.0-jdk8-buster libraries=3 force=False
-2026-11-06T18:53:24 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/tomcat_7.0-jdk8-buster/Dataset_symbolized/LIBS_tomcat_7.0-jdk8-buster
-2026-11-06T18:53:24 PARALLEL libraries=3 jobs=8
-2026-11-06T18:53:24 START [1/3] libjli.so functions=9 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/syscalls_unanalysed_tomcat_7.0-jdk8-buster/libjli.so/logfile.txt
-2026-11-06T18:53:24 START [2/3] libnss_files.so.2 functions=68 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/syscalls_unanalysed_tomcat_7.0-jdk8-buster/libnss_files-2.28.so/logfile.txt
-2026-11-06T18:53:24 START [3/3] libtinfo.so.6 functions=192 log=/home/user/Tutorial/EchoTrace/jdk8_workspaces/tomcat_7.0-jdk8-buster/syscalls_unanalysed_tomcat_7.0-jdk8-buster/libtinfo.so.6/logfile.txt
-2026-11-06T18:53:49 DONE [2/3] libnss_files.so.2 status=completed exit=0 syscalls=35
-2026-11-06T18:53:50 DONE [3/3] libtinfo.so.6 status=completed exit=0 syscalls=40
-2026-11-06T18:53:54 DONE [1/3] libjli.so status=completed exit=0 syscalls=62

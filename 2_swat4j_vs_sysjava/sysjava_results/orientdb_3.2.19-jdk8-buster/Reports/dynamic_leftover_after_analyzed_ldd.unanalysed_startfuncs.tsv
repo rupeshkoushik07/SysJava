@@ -1,6 +1,0 @@
-image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
-orientdb_3.2.19-jdk8-buster	jffi6520012027817402928.so			0	unresolved
-orientdb_3.2.19-jdk8-buster	libcrypt.so.1	libcrypt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/startfuncs_unanalysed_orientdb_3.2.19-jdk8-buster/libcrypt-2.28.so.txt	7	ok
-orientdb_3.2.19-jdk8-buster	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/startfuncs_unanalysed_orientdb_3.2.19-jdk8-buster/libjli.so.txt	9	ok
-orientdb_3.2.19-jdk8-buster	libnss_files.so.2	libnss_files-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/startfuncs_unanalysed_orientdb_3.2.19-jdk8-buster/libnss_files-2.28.so.txt	68	ok
-orientdb_3.2.19-jdk8-buster	librt.so.1	librt-2.28.so	/home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/startfuncs_unanalysed_orientdb_3.2.19-jdk8-buster/librt-2.28.so.txt	40	ok

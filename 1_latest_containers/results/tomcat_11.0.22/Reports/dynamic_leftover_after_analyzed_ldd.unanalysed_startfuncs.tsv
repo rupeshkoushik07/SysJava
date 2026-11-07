@@ -1,5 +1,0 @@
-image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
-tomcat_11.0.22	libextnet.so	libextnet.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/startfuncs_unanalysed_tomcat_11.0.22/libextnet.so.txt	17	ok
-tomcat_11.0.22	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/startfuncs_unanalysed_tomcat_11.0.22/libjli.so.txt	20	ok
-tomcat_11.0.22	libmanagement_ext.so	libmanagement_ext.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/startfuncs_unanalysed_tomcat_11.0.22/libmanagement_ext.so.txt	35	ok
-tomcat_11.0.22	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/startfuncs_unanalysed_tomcat_11.0.22/libtinfo.so.6.txt	211	ok

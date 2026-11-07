@@ -1,5 +1,0 @@
-tomcat_7.0-jdk8-buster (3)
-  - libjli.so
-  - libnss_files.so.2
-  - libtinfo.so.6
-
