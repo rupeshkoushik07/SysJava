@@ -1,5 +1,7 @@
-rt_sigreturn
+memfd_create
+get_mempolicy
 sched_yield
+rt_sigreturn
 clone
 kill
 uname
@@ -75,5 +77,3 @@ times
 sched_get_priority_max
 gettid
 futex
-memfd_create
-get_mempolicy

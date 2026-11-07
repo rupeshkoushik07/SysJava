@@ -37,10 +37,10 @@ do_clone.constprop.4 6f40 module-libpthread.so.0 futex 202
 do_clone.constprop.4 6f40 module-libpthread.so.0 tgkill 234
 do_clone.constprop.4 6f40 module-libpthread.so.0 sched_setscheduler 144
 do_clone.constprop.4 6f40 module-libpthread.so.0 sched_setaffinity 203
-start_thread 7d10 module-libpthread.so.0 futex 202
 start_thread 7d10 module-libpthread.so.0 rt_sigprocmask 14
-start_thread 7d10 module-libpthread.so.0 exit 60
 start_thread 7d10 module-libpthread.so.0 futex 202
+start_thread 7d10 module-libpthread.so.0 futex 202
+start_thread 7d10 module-libpthread.so.0 exit 60
 start_thread 7d10 module-libpthread.so.0 set_robust_list 273
 __condvar_cleanup2 bea0 module-libpthread.so.0 futex 202
 __condvar_cleanup2 bea0 module-libpthread.so.0 futex 202
@@ -64,8 +64,8 @@ __sendto_nocancel ec99 module-libpthread.so.0 sendto 44
 __nanosleep_nocancel ee19 module-libpthread.so.0 nanosleep 35
 __nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 futex 202
-__nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 tgkill 234
+__nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 tgkill 234
 __determine_cpumask_size f8c0 module-libpthread.so.0 sched_getaffinity 204
 __msgsnd_nocancel f219 module-libpthread.so.0 msgsnd 69
@@ -102,9 +102,9 @@ raise f470 module-libpthread.so.0 tgkill 234
 pthread_sigqueue ca00 module-libpthread.so.0 rt_tgsigqueueinfo 297
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_getscheduler 145
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_get_priority_max 146
-pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 futex 202
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_get_priority_min 147
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_getparam 143
+pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 futex 202
 pthread_rwlock_rdlock b070 module-libpthread.so.0 futex 202
 recvmsg eb20 module-libpthread.so.0 recvmsg 47
 recvmsg eb20 module-libpthread.so.0 recvmsg 47
@@ -186,8 +186,8 @@ pthread_mutex_setprioceiling 104f0 module-libpthread.so.0 futex 202
 open ee70 module-libpthread.so.0 open 2
 open ee70 module-libpthread.so.0 open 2
 __pthread_initialize_minimal 68d0 module-libpthread.so.0 rt_sigprocmask 14
-__pthread_initialize_minimal 68d0 module-libpthread.so.0 set_tid_address 218
 __pthread_initialize_minimal 68d0 module-libpthread.so.0 set_robust_list 273
+__pthread_initialize_minimal 68d0 module-libpthread.so.0 set_tid_address 218
 connect e9b0 module-libpthread.so.0 connect 42
 connect e9b0 module-libpthread.so.0 connect 42
 sigwait f270 module-libpthread.so.0 rt_sigtimedwait 128

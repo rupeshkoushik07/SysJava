@@ -1,11 +1,7 @@
 
-Path to socketpair:
-  Java_sun_nio_ch_sctp_SctpNet_init_34e0 - [DIRECT]-> socketpair_139660
-  socketpair_139660 - [syscall]-> socketpair
-
-Path to close:
-  Java_sun_nio_ch_sctp_SctpNet_init_34e0 - [DIRECT]-> close_122fa0
-  close_122fa0 - [syscall]-> close
+Path to dup2:
+  Java_sun_nio_ch_sctp_SctpNet_preClose0_39e0 - [DIRECT]-> dup2_1230e0
+  dup2_1230e0 - [syscall]-> dup2
 
 Path to socket:
   Java_sun_nio_ch_sctp_SctpNet_socket0_3540 - [DIRECT]-> socket_139630
@@ -15,325 +11,348 @@ Path to setsockopt:
   Java_sun_nio_ch_sctp_SctpNet_socket0_3540 - [DIRECT]-> setsockopt_1394a0
   setsockopt_1394a0 - [syscall]-> setsockopt
 
+Path to recvmsg:
+  Java_sun_nio_ch_sctp_SctpChannelImpl_receive0_2d00 - [DIRECT]-> recvmsg_1393c0
+  recvmsg_1393c0 - [syscall]-> recvmsg
+
+Path to sendmsg:
+  Java_sun_nio_ch_sctp_SctpChannelImpl_send0_30c0 - [DIRECT]-> sendmsg_139450
+  sendmsg_139450 - [syscall]-> sendmsg
+
+Path to socketpair:
+  Java_sun_nio_ch_sctp_SctpNet_init_34e0 - [DIRECT]-> socketpair_139660
+  socketpair_139660 - [syscall]-> socketpair
+
+Path to close:
+  Java_sun_nio_ch_sctp_SctpNet_init_34e0 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to connect:
+  Java_sun_nio_ch_sctp_SctpNet_connect0_38c0 - [DIRECT]-> connect_139160
+  connect_139160 - [syscall]-> connect
+
 Path to gettid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
   _ZL19thread_native_entryP6Thread_c29660 - [syscall]-> gettid
 
 Path to futex:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
   __condvar_cleanup_waiting_a3140 - [syscall]-> futex
 
 Path to rt_sigreturn:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __restore_rt_45cb0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __restore_rt_45cb0
   __restore_rt_45cb0 - [syscall]-> rt_sigreturn
 
 Path to rt_sigprocmask:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> rt_sigprocmask
 
 Path to exit:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> exit
 
 Path to rseq:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> rseq
 
 Path to set_robust_list:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> set_robust_list
 
 Path to time:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> time_syscall_e8050
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> time_syscall_e8050
   time_syscall_e8050 - [syscall]-> time
 
+Path to getsockopt:
+  Java_sun_nio_ch_sctp_SctpNet_getInitMsgOption0_4200 - [DIRECT]-> getsockopt_1391f0
+  getsockopt_1391f0 - [syscall]-> getsockopt
+
+Path to listen:
+  Java_sun_nio_ch_sctp_SctpNet_listen0_3880 - [DIRECT]-> listen_1392b0
+  listen_1392b0 - [syscall]-> listen
+
 Path to munmap:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_close_mmap_9b360
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_close_mmap_9b360
   _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
   munmap_133b90 - [syscall]-> munmap
 
 Path to ioctl:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_doallocate_8bc60
   _IO_file_doallocate_8bc60 - [DIRECT]-> __isatty_nostatus_129430
   __isatty_nostatus_129430 - [syscall]-> ioctl
 
 Path to read:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_read_9b320
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_read_9b320
   _IO_file_read_9b320 - [DIRECT]-> read_128390
   read_128390 - [syscall]-> read
 
 Path to lseek:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_seek_9b340
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_seek_9b340
   _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
   lseek_127a80 - [syscall]-> lseek
 
 Path to fstat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_stat_9b350
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_stat_9b350
   _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
   fstat_123b70 - [syscall]-> fstat
 
 Path to mmap:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
   _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
   mmap_1331c0 - [syscall]-> mmap
 
 Path to mremap:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
   _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
   mremap_137d20 - [syscall]-> mremap
 
 Path to write:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
   _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> write_128e50
   write_128e50 - [syscall]-> write
 
 Path to unlink:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10CompileLogD0Ev_5e07b0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10CompileLogD0Ev_5e07b0
   _ZN10CompileLogD0Ev_5e07b0 - [DIRECT]-> unlink_128d00
   unlink_128d00 - [syscall]-> unlink
 
 Path to mprotect:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
   _ZN15VM_LinuxDllLoad4doitEv_c2e450 - [DIRECT]-> mprotect_133ae0
   mprotect_133ae0 - [syscall]-> mprotect
 
 Path to clock_gettime:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_c34640
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_c34640
   _ZN2os13javaTimeNanosEv_c34640 - [DIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
   clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
 
 Path to openat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_c2a090
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_c2a090
   _ZN2os8dll_loadEPKcPci_c2a090 - [DIRECT]-> open_127bd0
   open_127bd0 - [syscall]-> openat
 
 Path to access:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> access_122ee0
   access_122ee0 - [syscall]-> access
 
 Path to getpid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __nptl_setxid_sighandler_a12c0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __nptl_setxid_sighandler_a12c0
   __nptl_setxid_sighandler_a12c0 - [DIRECT]-> getpid_ffa00
   getpid_ffa00 - [syscall]-> getpid
 
 Path to sendto:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> sendto_139480
   sendto_139480 - [syscall]-> sendto
 
 Path to poll:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> poll_127e30
   poll_127e30 - [syscall]-> poll
 
-Path to recvmsg:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
-  clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
-  recvmsg_1393c0 - [syscall]-> recvmsg
-
 Path to recvfrom:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvfrom_139370
   recvfrom_139370 - [syscall]-> recvfrom
 
 Path to madvise:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> madvise_132f90
   madvise_132f90 - [syscall]-> madvise
 
 Path to mkdir:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> try_dir_6ad80
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> try_dir_6ad80
   try_dir_6ad80 - [DIRECT]-> mkdir_127ad0
   mkdir_127ad0 - [syscall]-> mkdir
 
+Path to writev:
+  Java_sun_nio_ch_sctp_SctpChannelImpl_receive0_2d00 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> malloc_printerr_b0b90
+  malloc_printerr_b0b90 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
+
 Path to lstat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __lxstat_137c40
   __lxstat_137c40 - [syscall]-> lstat
 
 Path to geteuid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> geteuid_fe650
   geteuid_fe650 - [syscall]-> geteuid
 
 Path to kill:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> kill_45eb0
   kill_45eb0 - [syscall]-> kill
 
 Path to sysinfo:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
   WB_HostPhysicalSwap_f02a60 - [DIRECT]-> _ZN2os5Linux9host_swapEv_c24100
   _ZN2os5Linux9host_swapEv_c24100 - [DIRECT]-> sysinfo_138a90
   sysinfo_138a90 - [syscall]-> sysinfo
 
 Path to wait4:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
   _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
   waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
   wait4_11cdb0 - [syscall]-> wait4
 
-Path to writev:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_vtable_check_988a0
-  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
-  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
-  __libc_message_impl_97df0 - [syscall]-> writev
-
 Path to stat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
   _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4statEPKcP4stat_c339f0
   _ZN2os4statEPKcP4stat_c339f0 - [DIRECT]-> __xstat_138430
   __xstat_138430 - [syscall]-> stat
 
 Path to fcntl:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
   _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4openEPKcii_c28290
   _ZN2os4openEPKcii_c28290 - [DIRECT]-> fcntl_123820
   fcntl_123820 - [syscall]-> fcntl
 
 Path to getrusage:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN20G1RemSetSamplingTask7executeEv_74f280
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN20G1RemSetSamplingTask7executeEv_74f280
   _ZN20G1RemSetSamplingTask7executeEv_74f280 - [DIRECT]-> _ZN2os12elapsedVTimeEv_c246e0
   _ZN2os12elapsedVTimeEv_c246e0 - [DIRECT]-> getrusage_12ab40
   getrusage_12ab40 - [syscall]-> getrusage
 
 Path to vfork:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> vfork_11cd30
   vfork_11cd30 - [syscall]-> vfork
 
 Path to execve:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> execve_f8200
   execve_f8200 - [syscall]-> execve
 
 Path to exit_group:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> _exit_f7480
   _exit_f7480 - [syscall]-> exit_group
 
 Path to rt_sigaction:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
   _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0 - [DIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
   __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
 
 Path to tgkill:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
   _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0 - [DIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
   __pthread_raise_internal_a61b0 - [syscall]-> tgkill
 
 Path to getcwd:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
   __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
   getcwd_126ea0 - [syscall]-> getcwd
 
 Path to getdents64:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
   readdir_f6b20 - [DIRECT]-> getdents64_f67c0
   getdents64_f67c0 - [syscall]-> getdents64
 
 Path to newfstatat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
   stat_128480 - [DIRECT]-> fstatat_123ba0
   fstatat_123ba0 - [syscall]-> newfstatat
 
 Path to prctl:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> name_stack_maps_a3cf0
   name_stack_maps_a3cf0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
 
 Path to clock_nanosleep:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_f11be0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_f11be0
   WB_CheckThreadObjOfTerminatingThread_f11be0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_c337e0
   _ZN2os17naked_short_sleepEl_c337e0 - [DIRECT]-> nanosleep_1039f0
   nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
   clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
 
 Path to uname:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_PrintOsInfo_f03360
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_PrintOsInfo_f03360
   WB_PrintOsInfo_f03360 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_c259e0
   _ZN2os13print_os_infoEP12outputStream_c259e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30
   _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30 - [DIRECT]-> uname_11cd00
   uname_11cd00 - [syscall]-> uname
 
 Path to setpriority:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
   _ZN10GangWorker3runEv_f1d130 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890
   _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_c27ee0
   _ZN2os19set_native_priorityEP6Threadi_c27ee0 - [DIRECT]-> setpriority_12af00
   setpriority_12af00 - [syscall]-> setpriority
 
 Path to prlimit64:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10ZArguments10initializeEv_f21350
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10ZArguments10initializeEv_f21350
   _ZN10ZArguments10initializeEv_f21350 - [DIRECT]-> _ZN18ZAddressSpaceLimit10mark_stackEv_f21200
   _ZN18ZAddressSpaceLimit10mark_stackEv_f21200 - [DIRECT]-> _ZN2os28has_allocatable_memory_limitEPm_c33360
   _ZN2os28has_allocatable_memory_limitEPm_c33360 - [DIRECT]-> getrlimit_12aac0
   getrlimit_12aac0 - [syscall]-> prlimit64
 
 Path to sched_yield:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
   _ZN14ShenandoahHeap10initializeEv_d38f70 - [DIRECT]-> _ZN14ShenandoahLock14contended_lockEb_d504a0
   _ZN14ShenandoahLock14contended_lockEb_d504a0 - [DIRECT]-> _ZN2os11naked_yieldEv_c27ed0
   _ZN2os11naked_yieldEv_c27ed0 - [DIRECT]-> sched_yield_11ad20
   sched_yield_11ad20 - [syscall]-> sched_yield
 
 Path to times:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
   _ZN20VM_G1PauseConcurrent4doitEv_770890 - [DIRECT]-> _ZN14GCTraceCPUTimeC1EP8GCTracer_787030
   _ZN14GCTraceCPUTimeC1EP8GCTracer_787030 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__c247e0
   _ZN2os12getTimesSecsEPdS0_S0__c247e0 - [DIRECT]-> times_11cca0
   times_11cca0 - [syscall]-> times
 
 Path to sched_getaffinity:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_7bce60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_7bce60
   _ZN22VM_HandshakeAllThreads4doitEv_7bce60 - [DIRECT]-> _ZN2os22active_processor_countEv_c293a0
   _ZN2os22active_processor_countEv_c293a0 - [DIRECT]-> _ZL26get_active_processor_countv_c29140
   _ZL26get_active_processor_countv_c29140 - [DIRECT]-> sched_getaffinity@@GLIBC_2.3.4_11ab40
   sched_getaffinity@@GLIBC_2.3.4_11ab40 - [syscall]-> sched_getaffinity
 
 Path to clone:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> fork_fddb0
   fork_fddb0 - [DIRECT]-> _Fork_f73a0
   _Fork_f73a0 - [syscall]-> clone
 
 Path to readlink:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> readlink_1283b0
   readlink_1283b0 - [syscall]-> readlink
 
 Path to faccessat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
   faccessat_1232a0 - [syscall]-> faccessat
 
 Path to faccessat2:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
   faccessat_1232a0 - [syscall]-> faccessat2
 
 Path to getpriority:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_bf8430
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_bf8430
   _ZNK11NamedThread8print_onEP12outputStream_bf8430 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_e67070
   _ZNK6Thread8print_onEP12outputStreamb_e67070 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_c27f30
   _ZN2os19get_native_priorityEPK6ThreadPi_c27f30 - [DIRECT]-> getpriority_12aec0
@@ -380,7 +399,7 @@ Path to sched_get_priority_min:
   sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
 
 Path to mincore:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
   _ZN10JavaThread3runEv_e69030 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270
   _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_c205e0
   _ZN2os24create_stack_guard_pagesEPcm_c205e0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_c276a0
@@ -388,7 +407,7 @@ Path to mincore:
   mincore_133050 - [syscall]-> mincore
 
 Path to shmdt:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
   _ZN14ShenandoahHeap10initializeEv_d38f70 - [DIRECT]-> _ZN13ReservedSpaceC1EmmmPc_ee2100
   _ZN13ReservedSpaceC1EmmmPc_ee2100 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_c20d30
   _ZN2os22release_memory_specialEPcm_c20d30 - [DIRECT]-> _ZN2os25pd_release_memory_specialEPcm_c27e00
@@ -396,7 +415,7 @@ Path to shmdt:
   shmdt_139990 - [syscall]-> shmdt
 
 Path to shutdown:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
   _ZN15G1CollectedHeap10initializeEv_6f17d0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__8295b0
   _Z33vm_shutdown_during_initializationPKcS0__8295b0 - [DIRECT]-> _ZN2os8shutdownEv_c35470
   _ZN2os8shutdownEv_c35470 - [DIRECT]-> _ZN14AttachListener5abortEv_422380
@@ -404,7 +423,7 @@ Path to shutdown:
   shutdown_1394e0 - [syscall]-> shutdown
 
 Path to getuid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
@@ -412,7 +431,7 @@ Path to getuid:
   getuid_ffab0 - [syscall]-> getuid
 
 Path to getegid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
@@ -420,7 +439,7 @@ Path to getegid:
   getegid_fe640 - [syscall]-> getegid
 
 Path to getgid:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
@@ -428,7 +447,7 @@ Path to getgid:
   getgid_fe660 - [syscall]-> getgid
 
 Path to rmdir:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
   _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820
   _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820 - [DIRECT]-> _ZN11FileMapInfo14open_for_writeEPKc_6c0270
   _ZN11FileMapInfo14open_for_writeEPKc_6c0270 - [DIRECT]-> remove_6a7c0
@@ -436,7 +455,7 @@ Path to rmdir:
   rmdir_128410 - [syscall]-> rmdir
 
 Path to bind:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -444,15 +463,24 @@ Path to bind:
   bind_139130 - [syscall]-> bind
 
 Path to getsockname:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
   __netlink_open_147750 - [DIRECT]-> getsockname_1391c0
   getsockname_1391c0 - [syscall]-> getsockname
 
+Path to brk:
+  Java_sun_nio_ch_sctp_SctpChannelImpl_receive0_2d00 - [DIRECT]-> malloc_b5110
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk
+
 Path to fallocate:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_c209d0
@@ -461,7 +489,7 @@ Path to fallocate:
   posix_fallocate64_1282f0 - [syscall]-> fallocate
 
 Path to shmget:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -470,7 +498,7 @@ Path to shmget:
   shmget_1399c0 - [syscall]-> shmget
 
 Path to shmat:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -479,7 +507,7 @@ Path to shmat:
   shmat_139960 - [syscall]-> shmat
 
 Path to shmctl:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -488,7 +516,7 @@ Path to shmctl:
   shmctl@@GLIBC_2.2.5_139a00 - [syscall]-> shmctl
 
 Path to umask:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZL6_fatalv_9b9680
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZL6_fatalv_9b9680
   _ZL6_fatalv_9b9680 - [DIRECT]-> _Z12report_fatal11VMErrorTypePKciS1_z_6094c0
   _Z12report_fatal11VMErrorTypePKciS1_z_6094c0 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_ee4df0
@@ -497,7 +525,7 @@ Path to umask:
   umask_128cf0 - [syscall]-> umask
 
 Path to get_mempolicy:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
   _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
   _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00
   _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_f4c490
@@ -506,7 +534,7 @@ Path to get_mempolicy:
   _ZN8ZSyscall13get_mempolicyEPiPmmPvm_f61550 - [syscall]-> get_mempolicy
 
 Path to sched_setaffinity:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -515,7 +543,7 @@ Path to sched_setaffinity:
   create_thread_a3ae0 - [syscall]-> sched_setaffinity
 
 Path to getgroups:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
@@ -524,7 +552,7 @@ Path to getgroups:
   getgroups_fe670 - [syscall]-> getgroups
 
 Path to getrandom:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_c354e0
   _ZN2os20create_file_for_heapEPKc_c354e0 - [DIRECT]-> mkstemp_1330f0
@@ -533,18 +561,8 @@ Path to getrandom:
   getrandom_49d00 - [DIRECT]-> getrandom_vdso_49660
   getrandom_vdso_49660 - [syscall]-> getrandom
 
-Path to brk:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _IO_default_doallocate_9dab0
-  _IO_default_doallocate_9dab0 - [DIRECT]-> malloc_b5110
-  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
-  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
-  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
-  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
-  sbrk_134610 - [DIRECT]-> brk_12b050
-  brk_12b050 - [syscall]-> brk
-
 Path to ftruncate:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -554,7 +572,7 @@ Path to ftruncate:
   ftruncate_12c6b0 - [syscall]-> ftruncate
 
 Path to fstatfs:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -564,7 +582,7 @@ Path to fstatfs:
   fstatfs_123be0 - [syscall]-> fstatfs
 
 Path to pwrite64:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
   _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
   _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440
   _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking8uncommitEmm_f51480
@@ -574,7 +592,7 @@ Path to pwrite64:
   pwrite_104410 - [syscall]-> pwrite64
 
 Path to pread64:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_c209d0
@@ -585,7 +603,7 @@ Path to pread64:
   pread_1043f0 - [syscall]-> pread64
 
 Path to memfd_create:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -596,7 +614,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_f61510 - [syscall]-> memfd_create
 
 Path to clone3:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -607,7 +625,7 @@ Path to clone3:
   __clone3_137780 - [syscall]-> clone3
 
 Path to dup:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_nio_ch_sctp_SctpNet_bindx_3750 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -617,15 +635,3 @@ Path to dup:
   __get_myaddress.cold_2a20c - [DIRECT]-> perror_28a8f
   perror_28a8f - [DIRECT]-> dup_1230b0
   dup_1230b0 - [syscall]-> dup
-
-Path to connect:
-  Java_sun_nio_ch_sctp_SctpChannelImpl_initIDs_2300 - [INDIRECT]-> start_thread_a3de0
-  start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
-  __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
-  __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
-  __rpc_thread_svc_cleanup_1877e0 - [DIRECT]-> __EI_pmap_unset_17b510
-  __EI_pmap_unset_17b510 - [DIRECT]-> __EI_clntudp_bufcreate_184bc0
-  __EI_clntudp_bufcreate_184bc0 - [DIRECT]-> __GI___libc_clntudp_bufcreate_1848a0
-  __GI___libc_clntudp_bufcreate_1848a0 - [DIRECT]-> __GI_pmap_getport_186490
-  __GI_pmap_getport_186490 - [DIRECT]-> connect_139160
-  connect_139160 - [syscall]-> connect

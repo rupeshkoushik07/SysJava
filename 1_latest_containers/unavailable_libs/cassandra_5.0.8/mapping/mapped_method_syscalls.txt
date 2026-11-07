@@ -20,3 +20,7 @@ openhft-affinity-3.23.3/libCEInternals.so:net.openhft.ticker.impl.JNIClock.rdtsc
 openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getAffinity0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getAffinity0 [JNI]
 openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getThreadId0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getThreadId0 [JNI]
 openhft-affinity-3.23.3/libCEInternals.so:software.chronicle.enterprise.internals.impl.NativeAffinity.getCpu0 -> Java_software_chronicle_enterprise_internals_impl_NativeAffinity_getCpu0 [JNI]
+LIBS_cassandra_5.0.8/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]
+LIBS_cassandra_5.0.8/libjvm.so:jdk.internal.misc.ScopedMemoryAccess.registerNatives -> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods [JVM]
+LIBS_cassandra_5.0.8/libjvm.so:jdk.internal.misc.Unsafe.registerNatives -> JVM_RegisterJDKInternalMiscUnsafeMethods [JVM]
+LIBS_cassandra_5.0.8/libjvm.so:jdk.internal.vm.vector.VectorSupport.registerNatives -> JVM_RegisterVectorSupportMethods [JVM]

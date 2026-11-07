@@ -1,2 +1,2 @@
 image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
-elasticsearch_7.1.0	37	9	20	5	9	26	10
+elasticsearch_7.1.0	37	11	24	5	9	26	14

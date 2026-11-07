@@ -1,4 +1,4 @@
-cassandra_5.0.8 (25)
+cassandra_5.0.8 (26)
   - libX11.so.6
   - libXau.so.6
   - libXdmcp.so.6
@@ -12,6 +12,7 @@ cassandra_5.0.8 (25)
   - libcrypto.so
   - libdl.so.2
   - libdl.so.2:
+  - libfreetype.so
   - libgcc_s.so.1
   - libjava.so
   - libjvm.so

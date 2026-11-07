@@ -41,7 +41,12 @@ def has_graph(d: Path) -> bool:
 
 
 def shipped_starts(d: Path, dest: Path) -> Path:
-    names = [l.rsplit("_", 1)[0] for l in (d / "startfuncs_with_addr.txt").read_text().split()]
+    """The start functions of a shipped result: startfuncs_with_addr.txt (name_addr), or
+    startfuncs_resolved.txt (names) where SysPart wrote only that."""
+    if (d / "startfuncs_with_addr.txt").is_file():
+        names = [l.rsplit("_", 1)[0] for l in (d / "startfuncs_with_addr.txt").read_text().split()]
+    else:
+        names = (d / "startfuncs_resolved.txt").read_text().split()
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text("".join(n + "\n" for n in names))
     return dest
@@ -72,7 +77,7 @@ def main():
         elif top == "jna_ffi_analysis":
             starts = jna_starts / f"{d.name}.txt"
             starts = starts if starts.is_file() else None
-        elif (d / "startfuncs_with_addr.txt").is_file():
+        elif (d / "startfuncs_with_addr.txt").is_file() or (d / "startfuncs_resolved.txt").is_file():
             starts = shipped_starts(d, ws / "static_starts" / rel / "starts.txt")
         else:
             starts = None

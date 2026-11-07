@@ -1,9 +1,9 @@
 image	loaded_name	resolved_relpath	startfunc_file	exported_function_count	status
-jruby_10.1.0.0	libcrypt.so.1	libcrypt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libcrypt.so.1.txt	19	ok
-jruby_10.1.0.0	libjimage.so	libjimage.so	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjimage.so.txt	9	ok
-jruby_10.1.0.0	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjli.so.txt	20	ok
-jruby_10.1.0.0	libjsvml.so	libjsvml.so	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjsvml.so.txt	272	ok
-jruby_10.1.0.0	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libpcre2-8.so.0.txt	73	ok
-jruby_10.1.0.0	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libselinux.so.1.txt	240	ok
-jruby_10.1.0.0	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libtinfo.so.6.txt	211	ok
-jruby_10.1.0.0	libverify.so	libverify.so	/home/user/Tutorial/EchoTrace_latest/workspaces/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libverify.so.txt	3	ok
+jruby_10.1.0.0	libcrypt.so.1	libcrypt.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libcrypt.so.1.txt	19	ok
+jruby_10.1.0.0	libjimage.so	libjimage.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjimage.so.txt	9	ok
+jruby_10.1.0.0	libjli.so	libjli.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjli.so.txt	20	ok
+jruby_10.1.0.0	libjsvml.so	libjsvml.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libjsvml.so.txt	272	ok
+jruby_10.1.0.0	libpcre2-8.so.0	libpcre2-8.so.0	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libpcre2-8.so.0.txt	73	ok
+jruby_10.1.0.0	libselinux.so.1	libselinux.so.1	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libselinux.so.1.txt	240	ok
+jruby_10.1.0.0	libtinfo.so.6	libtinfo.so.6	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libtinfo.so.6.txt	211	ok
+jruby_10.1.0.0	libverify.so	libverify.so	/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/startfuncs_unanalysed_jruby_10.1.0.0/libverify.so.txt	3	ok

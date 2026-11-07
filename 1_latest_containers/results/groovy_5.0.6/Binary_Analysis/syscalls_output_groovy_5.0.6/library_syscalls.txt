@@ -1,7 +1,10 @@
+accept
 access
 bind
 brk
 chdir
+chmod
+chown
 clock_gettime
 clock_nanosleep
 clone
@@ -11,15 +14,23 @@ close_range
 connect
 dup
 dup2
+epoll_create1
+epoll_ctl
 execve
 exit
 exit_group
 faccessat
 faccessat2
+fadvise64
 fallocate
 fchdir
+fchmod
+fchown
 fcntl
+fgetxattr
+flistxattr
 flock
+fsetxattr
 fstat
 fstatfs
 ftruncate
@@ -48,6 +59,8 @@ gettimeofday
 getuid
 ioctl
 kill
+lchown
+listen
 lseek
 lstat
 madvise
@@ -55,6 +68,7 @@ membarrier
 memfd_create
 mincore
 mkdir
+mknodat
 mmap
 mprotect
 mremap
@@ -73,6 +87,7 @@ readlink
 readv
 recvfrom
 recvmsg
+rename
 rmdir
 rseq
 rt_sigaction
@@ -88,6 +103,7 @@ sched_setaffinity
 sched_setparam
 sched_setscheduler
 sched_yield
+sendfile
 sendmmsg
 sendmsg
 sendto
@@ -104,8 +120,10 @@ shmdt
 shmget
 shutdown
 socket
+socketpair
 stat
 statfs
+symlink
 sysinfo
 tgkill
 time
@@ -113,6 +131,7 @@ times
 umask
 uname
 unlink
+utimensat
 vfork
 wait4
 waitid

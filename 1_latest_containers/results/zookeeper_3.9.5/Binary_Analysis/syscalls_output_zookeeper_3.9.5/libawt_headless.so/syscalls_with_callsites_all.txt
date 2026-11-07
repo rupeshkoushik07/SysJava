@@ -124,8 +124,8 @@ clone3 1268a0 module-libc.so.6 clone3 435
 clone3 1268a0 module-libc.so.6 exit 60
 __settimezone d9c40 module-libc.so.6 settimeofday 164
 __write_nocancel 119c10 module-libc.so.6 write 1
-clone 125a40 module-libc.so.6 exit 60
 clone 125a40 module-libc.so.6 clone 56
+clone 125a40 module-libc.so.6 exit 60
 lremovexattr 1221d0 module-libc.so.6 lremovexattr 198
 setsid ec390 module-libc.so.6 setsid 112
 delete_module 126b60 module-libc.so.6 delete_module 176

@@ -62,11 +62,11 @@ __nptl_main 6cb0 module-libpthread.so.0 write 1
 __fsync_nocancel ecf9 module-libpthread.so.0 fsync 74
 __sendto_nocancel ec99 module-libpthread.so.0 sendto 44
 __nanosleep_nocancel ee19 module-libpthread.so.0 nanosleep 35
-__nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 tgkill 234
 __nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __nptl_setxid 75d0 module-libpthread.so.0 tgkill 234
+__nptl_setxid 75d0 module-libpthread.so.0 futex 202
 __determine_cpumask_size f8c0 module-libpthread.so.0 sched_getaffinity 204
 __msgsnd_nocancel f219 module-libpthread.so.0 msgsnd 69
 __msgrcv_nocancel f1b9 module-libpthread.so.0 msgrcv 70
@@ -101,10 +101,10 @@ __lll_lock_wait_private e4a0 module-libpthread.so.0 futex 202
 raise f470 module-libpthread.so.0 tgkill 234
 pthread_sigqueue ca00 module-libpthread.so.0 rt_tgsigqueueinfo 297
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_getscheduler 145
+pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 futex 202
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_get_priority_max 146
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_get_priority_min 147
 pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 sched_getparam 143
-pthread_create@@GLIBC_2.2.5 8050 module-libpthread.so.0 futex 202
 pthread_rwlock_rdlock b070 module-libpthread.so.0 futex 202
 recvmsg eb20 module-libpthread.so.0 recvmsg 47
 recvmsg eb20 module-libpthread.so.0 recvmsg 47
@@ -130,8 +130,8 @@ accept e950 module-libpthread.so.0 accept 43
 pthread_mutex_timedlock a420 module-libpthread.so.0 futex 202
 pthread_mutex_timedlock a420 module-libpthread.so.0 futex 202
 pthread_mutex_timedlock a420 module-libpthread.so.0 futex 202
-pthread_mutex_timedlock a420 module-libpthread.so.0 futex 202
 pthread_mutex_timedlock a420 module-libpthread.so.0 clock_gettime 228
+pthread_mutex_timedlock a420 module-libpthread.so.0 futex 202
 recv ea10 module-libpthread.so.0 recvfrom 45
 recv ea10 module-libpthread.so.0 recvfrom 45
 vfork e620 module-libpthread.so.0 vfork 58
@@ -590,8 +590,8 @@ statfs eea80 module-libc.so.6 statfs 137
 nanosleep c4e00 module-libc.so.6 nanosleep 35
 nanosleep c4e00 module-libc.so.6 nanosleep 35
 getpmsg 139930 module-libc.so.6 getpmsg 181
-sched_setaffinity@@GLIBC_2.3.4 e2e70 module-libc.so.6 sched_getaffinity 204
 sched_setaffinity@@GLIBC_2.3.4 e2e70 module-libc.so.6 sched_setaffinity 203
+sched_setaffinity@@GLIBC_2.3.4 e2e70 module-libc.so.6 sched_getaffinity 204
 mprotect f8420 module-libc.so.6 mprotect 10
 sched_getparam e2cb0 module-libc.so.6 sched_getparam 143
 utime ee7f0 module-libc.so.6 utime 132
@@ -661,7 +661,7 @@ getuid c5e20 module-libc.so.6 getuid 102
 sigaltstack 36a90 module-libc.so.6 sigaltstack 131
 sysinfo fe7e0 module-libc.so.6 sysinfo 99
 dup3 ef6d0 module-libc.so.6 dup3 292
-fuzzyfunc-0x8910 8910 module-libbsd.so.0 getrandom 318
 fuzzyfunc-0x8910 8910 module-libbsd.so.0 _sysctl 156
+fuzzyfunc-0x8910 8910 module-libbsd.so.0 getrandom 318
 closefrom ecb0 module-libbsd.so.0 close_range 436
 closefrom ecb0 module-libbsd.so.0 close_range 436

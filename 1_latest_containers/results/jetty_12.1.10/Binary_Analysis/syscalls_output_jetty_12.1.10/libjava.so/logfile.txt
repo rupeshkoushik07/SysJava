@@ -1,323 +1,330 @@
 
 Path to gettid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
 
 Path to futex:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
   __condvar_cleanup_waiting_a3140 - [syscall]-> futex
 
 Path to rt_sigreturn:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __restore_rt_45cb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __restore_rt_45cb0
   __restore_rt_45cb0 - [syscall]-> rt_sigreturn
 
 Path to setresgid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [syscall]-> setresgid
 
 Path to setresuid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [syscall]-> setresuid
 
 Path to rt_sigprocmask:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [syscall]-> rt_sigprocmask
 
 Path to close_range:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [syscall]-> close_range
 
 Path to rseq:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> rseq
 
 Path to exit:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> exit
 
 Path to set_robust_list:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> set_robust_list
 
 Path to time:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> time_syscall_e8050
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> time_syscall_e8050
   time_syscall_e8050 - [syscall]-> time
 
+Path to stat:
+  Java_java_io_UnixFileSystem_getLastModifiedTime0_157d0 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat
+
+Path to fcntl:
+  Java_java_io_FileDescriptor_getAppend_ff60 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
+
 Path to lseek:
-  Java_java_io_RandomAccessFile_seek0_13840 - [DIRECT]-> lseek_127a80
+  Java_java_io_FileInputStream_skip0_10130 - [DIRECT]-> lseek_127a80
   lseek_127a80 - [syscall]-> lseek
 
+Path to access:
+  Java_java_io_UnixFileSystem_checkAccess0_15520 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
 Path to close:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_close_9b3a0
-  _IO_file_close_9b3a0 - [DIRECT]-> __close_nocancel_128e70
-  __close_nocancel_128e70 - [syscall]-> close
+  Java_java_io_FileCleanable_cleanupClose0_ff90 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to rename:
+  Java_java_io_UnixFileSystem_rename0_15d70 - [DIRECT]-> rename_6a810
+  rename_6a810 - [syscall]-> rename
+
+Path to getpid:
+  Java_java_lang_ProcessHandleImpl_getCurrentPid0_11d20 - [DIRECT]-> getpid_ffa00
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to mkdir:
+  Java_java_io_UnixFileSystem_createDirectory0_15ce0 - [DIRECT]-> mkdir_127ad0
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to fstat:
+  Java_java_io_RandomAccessFile_length0_137d0 - [DIRECT]-> handleGetLength_17cf0
+  handleGetLength_17cf0 - [DIRECT]-> __fxstat_137b60
+  __fxstat_137b60 - [syscall]-> fstat
+
+Path to ioctl:
+  Java_java_io_RandomAccessFile_length0_137d0 - [DIRECT]-> handleGetLength_17cf0
+  handleGetLength_17cf0 - [DIRECT]-> ioctl_132c80
+  ioctl_132c80 - [syscall]-> ioctl
 
 Path to munmap:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_close_mmap_9b360
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_file_close_mmap_9b360
   _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
   munmap_133b90 - [syscall]-> munmap
 
-Path to ioctl:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_doallocate_8bc60
-  _IO_file_doallocate_8bc60 - [DIRECT]-> __isatty_nostatus_129430
-  __isatty_nostatus_129430 - [syscall]-> ioctl
-
 Path to read:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_read_9b320
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_file_read_9b320
   _IO_file_read_9b320 - [DIRECT]-> read_128390
   read_128390 - [syscall]-> read
 
-Path to fstat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_stat_9b350
-  _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
-  fstat_123b70 - [syscall]-> fstat
-
 Path to mmap:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
   _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
   mmap_1331c0 - [syscall]-> mmap
 
 Path to mremap:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
   _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
   mremap_137d20 - [syscall]-> mremap
 
 Path to write:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
   _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> write_128e50
   write_128e50 - [syscall]-> write
 
 Path to unlink:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10CompileLogD0Ev_747ce0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10CompileLogD0Ev_747ce0
   _ZN10CompileLogD0Ev_747ce0 - [DIRECT]-> unlink_128d00
   unlink_128d00 - [syscall]-> unlink
 
 Path to mprotect:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
   _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_133ae0
   mprotect_133ae0 - [syscall]-> mprotect
 
 Path to membarrier:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
   _ZN22VM_HandshakeAllThreads4doitEv_9b9000 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780
   _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780 - [syscall]-> membarrier
 
 Path to clock_gettime:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_e818d0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_e818d0
   _ZN2os13javaTimeNanosEv_e818d0 - [DIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
   clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
 
 Path to madvise:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN2os4initEv_e799f0
   _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_132f90
   madvise_132f90 - [syscall]-> madvise
 
 Path to openat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_e766f0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_e766f0
   _ZN2os8dll_loadEPKcPci_e766f0 - [DIRECT]-> open_127bd0
   open_127bd0 - [syscall]-> openat
 
-Path to access:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
-  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> access_122ee0
-  access_122ee0 - [syscall]-> access
-
-Path to getpid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __nptl_setxid_sighandler_a12c0
-  __nptl_setxid_sighandler_a12c0 - [DIRECT]-> getpid_ffa00
-  getpid_ffa00 - [syscall]-> getpid
-
 Path to rt_sigaction:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> __libc_sigaction_45cc0
   __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
 
 Path to fchdir:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> fchdir_123560
   fchdir_123560 - [syscall]-> fchdir
 
 Path to exit_group:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> _exit_f7480
   _exit_f7480 - [syscall]-> exit_group
 
 Path to chdir:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> chdir_122f10
   chdir_122f10 - [syscall]-> chdir
 
 Path to dup2:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> dup2_1230e0
   dup2_1230e0 - [syscall]-> dup2
 
 Path to getpgid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> getpgid_ff9c0
   getpgid_ff9c0 - [syscall]-> getpgid
 
 Path to getuid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> getuid_ffab0
   getuid_ffab0 - [syscall]-> getuid
 
-Path to fcntl:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
-  __spawni_child_11beb0 - [DIRECT]-> fcntl_123820
-  fcntl_123820 - [syscall]-> fcntl
-
 Path to setsid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> setsid_11afd0
   setsid_11afd0 - [syscall]-> setsid
 
 Path to setpgid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> setpgid_11ae50
   setpgid_11ae50 - [syscall]-> setpgid
 
 Path to sched_setscheduler:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> sched_setscheduler_11acf0
   sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
 
 Path to sched_setparam:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> sched_setparam_11acc0
   sched_setparam_11acc0 - [syscall]-> sched_setparam
 
 Path to getgid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> getgid_fe660
   getgid_fe660 - [syscall]-> getgid
 
 Path to prlimit64:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __spawni_child_11beb0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __spawni_child_11beb0
   __spawni_child_11beb0 - [DIRECT]-> getrlimit_12aac0
   getrlimit_12aac0 - [syscall]-> prlimit64
 
 Path to sched_getparam:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __timer_start_helper_thread_b0940
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __timer_start_helper_thread_b0940
   __timer_start_helper_thread_b0940 - [DIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __timer_start_helper_thread_b0940
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __timer_start_helper_thread_b0940
   __timer_start_helper_thread_b0940 - [DIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getscheduler
 
 Path to sendto:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> sendto_139480
   sendto_139480 - [syscall]-> sendto
 
 Path to poll:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> poll_127e30
   poll_127e30 - [syscall]-> poll
 
 Path to recvmsg:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
   recvmsg_1393c0 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvfrom_139370
   recvfrom_139370 - [syscall]-> recvfrom
 
-Path to mkdir:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> try_dir_6ad80
-  try_dir_6ad80 - [DIRECT]-> mkdir_127ad0
-  mkdir_127ad0 - [syscall]-> mkdir
+Path to getdents64:
+  Java_java_io_UnixFileSystem_list0_15ac0 - [DIRECT]-> readdir_f6b20
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to rmdir:
+  Java_java_io_UnixFileSystem_delete0_15a30 - [DIRECT]-> remove_6a7c0
+  remove_6a7c0 - [DIRECT]-> rmdir_128410
+  rmdir_128410 - [syscall]-> rmdir
+
+Path to writev:
+  Java_java_lang_ClassLoader_findBootstrapClass_fba0 - [DIRECT]-> __stack_chk_fail_145420
+  __stack_chk_fail_145420 - [DIRECT]-> __fortify_fail_144070
+  __fortify_fail_144070 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
+
+Path to sched_yield:
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> JVM_SleepNanos_b17e10
+  JVM_SleepNanos_b17e10 - [DIRECT]-> _ZN2os11naked_yieldEv_e80c90
+  _ZN2os11naked_yieldEv_e80c90 - [DIRECT]-> sched_yield_11ad20
+  sched_yield_11ad20 - [syscall]-> sched_yield
 
 Path to lstat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> Perf_Attach_eba180
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> Perf_Attach_eba180
   Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> __lxstat_137c40
   __lxstat_137c40 - [syscall]-> lstat
 
 Path to geteuid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> Perf_Attach_eba180
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> Perf_Attach_eba180
   Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> geteuid_fe650
   geteuid_fe650 - [syscall]-> geteuid
 
 Path to sysinfo:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
   WB_HostPhysicalSwap_12baca0 - [DIRECT]-> _ZN2os5Linux9host_swapEv_e70ed0
   _ZN2os5Linux9host_swapEv_e70ed0 - [DIRECT]-> sysinfo_138a90
   sysinfo_138a90 - [syscall]-> sysinfo
 
 Path to wait4:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
   _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
   waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
   wait4_11cdb0 - [syscall]-> wait4
 
-Path to writev:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _IO_vtable_check_988a0
-  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
-  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
-  __libc_message_impl_97df0 - [syscall]-> writev
-
-Path to stat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80
-  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80 - [DIRECT]-> _ZN2os4statEPKcP4stat_e80ee0
-  _ZN2os4statEPKcP4stat_e80ee0 - [DIRECT]-> __xstat_138430
-  __xstat_138430 - [syscall]-> stat
-
 Path to times:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
   _ZN17ShenandoahMmuTask4taskEv_1094c70 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__e819b0
   _ZN2os12getTimesSecsEPdS0_S0__e819b0 - [DIRECT]-> times_11cca0
   times_11cca0 - [syscall]-> times
 
 Path to getrusage:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420
   _ZN22G1ConcurrentMarkThread11run_serviceEv_8de420 - [DIRECT]-> _ZN2os12elapsedVTimeEv_e71230
   _ZN2os12elapsedVTimeEv_e71230 - [DIRECT]-> getrusage_12ab40
   getrusage_12ab40 - [syscall]-> getrusage
 
 Path to tgkill:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_1366c80
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_1366c80
   _ZN9__gnu_cxx27__verbose_terminate_handlerEv_1366c80 - [DIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
   __pthread_raise_internal_a61b0 - [syscall]-> tgkill
 
 Path to getcwd:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
   __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
   getcwd_126ea0 - [syscall]-> getcwd
 
-Path to getdents64:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
-  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
-  getdents64_f67c0 - [syscall]-> getdents64
-
 Path to newfstatat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
   stat_128480 - [DIRECT]-> fstatat_123ba0
   fstatat_123ba0 - [syscall]-> newfstatat
 
 Path to sched_setaffinity:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __timer_start_helper_thread_b0940
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __timer_start_helper_thread_b0940
   __timer_start_helper_thread_b0940 - [DIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [syscall]-> sched_setaffinity
 
 Path to prctl:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> name_stack_maps_a3cf0
   name_stack_maps_a3cf0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
 
 Path to rt_sigtimedwait:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> timer_helper_thread_b07f0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> timer_helper_thread_b07f0
   timer_helper_thread_b07f0 - [DIRECT]-> sigwaitinfo_468b0
   sigwaitinfo_468b0 - [DIRECT]-> sigtimedwait_46850
   sigtimedwait_46850 - [syscall]-> rt_sigtimedwait
@@ -328,87 +335,84 @@ Path to readlink:
   getPlatformTimeZoneID_14ec0 - [DIRECT]-> readlink_1283b0
   readlink_1283b0 - [syscall]-> readlink
 
-Path to sched_yield:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
-  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80
-  _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80 - [DIRECT]-> _ZN2os11naked_yieldEv_e80c90
-  _ZN2os11naked_yieldEv_e80c90 - [DIRECT]-> sched_yield_11ad20
-  sched_yield_11ad20 - [syscall]-> sched_yield
+Path to sched_getaffinity:
+  Java_java_lang_ProcessHandleImpl_initNative_11bf0 - [DIRECT]-> sysconf_11c650
+  sysconf_11c650 - [DIRECT]-> get_nprocs_conf_12d5d0
+  get_nprocs_conf_12d5d0 - [DIRECT]-> __get_nprocs_sched_12d2f0
+  __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
+
+Path to faccessat:
+  Java_java_io_UnixFileSystem_canonicalize0_15380 - [DIRECT]-> JDK_Canonicalize_162e0
+  JDK_Canonicalize_162e0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat
+
+Path to faccessat2:
+  Java_java_io_UnixFileSystem_canonicalize0_15380 - [DIRECT]-> JDK_Canonicalize_162e0
+  JDK_Canonicalize_162e0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat2
 
 Path to kill:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> Perf_Attach_eba180
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> Perf_Attach_eba180
   Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> _ZL18get_user_name_slowiiP10JavaThread_ebd8a0
   _ZL18get_user_name_slowiiP10JavaThread_ebd8a0 - [DIRECT]-> kill_45eb0
   kill_45eb0 - [syscall]-> kill
 
 Path to clock_nanosleep:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_12c39c0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_12c39c0
   WB_CheckThreadObjOfTerminatingThread_12c39c0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_e80cf0
   _ZN2os17naked_short_sleepEl_e80cf0 - [DIRECT]-> nanosleep_1039f0
   nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
   clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
 
-Path to sched_getaffinity:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_HostCPUs_12badb0
-  WB_HostCPUs_12badb0 - [DIRECT]-> _ZN2os5Linux22active_processor_countEv_e75480
-  _ZN2os5Linux22active_processor_countEv_e75480 - [DIRECT]-> _ZL26get_active_processor_countv_e75250
-  _ZL26get_active_processor_countv_e75250 - [DIRECT]-> sched_getaffinity@@GLIBC_2.3.4_11ab40
-  sched_getaffinity@@GLIBC_2.3.4_11ab40 - [syscall]-> sched_getaffinity
-
 Path to uname:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_PrintOsInfo_12baec0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_PrintOsInfo_12baec0
   WB_PrintOsInfo_12baec0 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_e747e0
   _ZN2os13print_os_infoEP12outputStream_e747e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0
   _ZN2os5Posix16print_uname_infoEP12outputStream_e805c0 - [DIRECT]-> uname_11cd00
   uname_11cd00 - [syscall]-> uname
 
 Path to setpriority:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
   _ZN12WorkerThread3runEv_12cb260 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0
   _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_e73650
   _ZN2os19set_native_priorityEP6Threadi_e73650 - [DIRECT]-> setpriority_12af00
   setpriority_12af00 - [syscall]-> setpriority
 
-Path to faccessat:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
-  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
-  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
-  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
-  faccessat_1232a0 - [syscall]-> faccessat
-
-Path to faccessat2:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
-  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
-  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
-  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
-  faccessat_1232a0 - [syscall]-> faccessat2
-
 Path to getpriority:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_e3a900
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_e3a900
   _ZNK11NamedThread8print_onEP12outputStream_e3a900 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_11f7fb0
   _ZNK6Thread8print_onEP12outputStreamb_11f7fb0 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_e73690
   _ZN2os19get_native_priorityEPK6ThreadPi_e73690 - [DIRECT]-> getpriority_12aec0
   getpriority_12aec0 - [syscall]-> getpriority
 
+Path to getegid:
+  Java_java_io_UnixFileSystem_canonicalize0_15380 - [DIRECT]-> JDK_Canonicalize_162e0
+  JDK_Canonicalize_162e0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
 Path to sched_get_priority_max:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
-  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
-  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> JVM_StartThread_b24890
+  JVM_StartThread_b24890 - [DIRECT]-> _ZN5Mutex4lockEv_e1e070
+  _ZN5Mutex4lockEv_e1e070 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
   pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
   sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
-  MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_e1e020
-  _ZN5Mutex4lockEP6Thread_e1e020 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> JVM_StartThread_b24890
+  JVM_StartThread_b24890 - [DIRECT]-> _ZN5Mutex4lockEv_e1e070
+  _ZN5Mutex4lockEv_e1e070 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
   pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
   sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
 
 Path to fallocate:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -416,7 +420,7 @@ Path to fallocate:
   posix_fallocate64_1282f0 - [syscall]-> fallocate
 
 Path to mincore:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10JavaThread3runEv_a42ce0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10JavaThread3runEv_a42ce0
   _ZN10JavaThread3runEv_a42ce0 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780
   _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_e6a730
   _ZN2os24create_stack_guard_pagesEPcm_e6a730 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_e731e0
@@ -424,31 +428,15 @@ Path to mincore:
   mincore_133050 - [syscall]-> mincore
 
 Path to shutdown:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10SerialHeap10initializeEv_f48bd0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10SerialHeap10initializeEv_f48bd0
   _ZN10SerialHeap10initializeEv_f48bd0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__a21340
   _Z33vm_shutdown_during_initializationPKcS0__a21340 - [DIRECT]-> _ZN2os8shutdownEv_e82670
   _ZN2os8shutdownEv_e82670 - [DIRECT]-> _ZN14AttachListener5abortEv_553860
   _ZN14AttachListener5abortEv_553860 - [DIRECT]-> shutdown_1394e0
   shutdown_1394e0 - [syscall]-> shutdown
 
-Path to getegid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
-  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
-  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
-  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
-  faccessat_1232a0 - [DIRECT]-> getegid_fe640
-  getegid_fe640 - [syscall]-> getegid
-
-Path to rmdir:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780
-  _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0
-  _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0 - [DIRECT]-> _ZN11FileMapInfo14open_as_outputEv_884030
-  _ZN11FileMapInfo14open_as_outputEv_884030 - [DIRECT]-> remove_6a7c0
-  remove_6a7c0 - [DIRECT]-> rmdir_128410
-  rmdir_128410 - [syscall]-> rmdir
-
 Path to clone3:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __timer_start_helper_thread_b0940
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __timer_start_helper_thread_b0940
   __timer_start_helper_thread_b0940 - [DIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [DIRECT]-> __clone_internal_137680
@@ -456,7 +444,7 @@ Path to clone3:
   __clone3_137780 - [syscall]-> clone3
 
 Path to clone:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> __timer_start_helper_thread_b0940
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> __timer_start_helper_thread_b0940
   __timer_start_helper_thread_b0940 - [DIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [DIRECT]-> __clone_internal_137680
@@ -464,7 +452,7 @@ Path to clone:
   clone_137570 - [syscall]-> clone
 
 Path to socket:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -472,7 +460,7 @@ Path to socket:
   socket_139630 - [syscall]-> socket
 
 Path to bind:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -480,15 +468,23 @@ Path to bind:
   bind_139130 - [syscall]-> bind
 
 Path to getsockname:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> clntudp_call_184080
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
   __netlink_open_147750 - [DIRECT]-> getsockname_1391c0
   getsockname_1391c0 - [syscall]-> getsockname
 
+Path to getgroups:
+  Java_java_io_UnixFileSystem_canonicalize0_15380 - [DIRECT]-> JDK_Canonicalize_162e0
+  JDK_Canonicalize_162e0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> group_member_103910
+  group_member_103910 - [DIRECT]-> getgroups_fe670
+  getgroups_fe670 - [syscall]-> getgroups
+
 Path to umask:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0
   JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_78ec40
   _Z15report_vm_errorPKciS0_S0_z_78ec40 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_128af30
@@ -497,7 +493,7 @@ Path to umask:
   umask_128cf0 - [syscall]-> umask
 
 Path to waitid:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_e82400
   _ZN2os13fork_and_execEPKc_e82400 - [DIRECT]-> posix_spawn@@GLIBC_2.15_11b200
   posix_spawn@@GLIBC_2.15_11b200 - [DIRECT]-> __spawni_11c4b0
@@ -505,17 +501,8 @@ Path to waitid:
   __spawnix_11b960 - [DIRECT]-> waitid_11cde0
   waitid_11cde0 - [syscall]-> waitid
 
-Path to getgroups:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
-  _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
-  _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
-  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
-  faccessat_1232a0 - [DIRECT]-> group_member_103910
-  group_member_103910 - [DIRECT]-> getgroups_fe670
-  getgroups_fe670 - [syscall]-> getgroups
-
 Path to brk:
-  Java_java_lang_Class_forName0_f2b0 - [DIRECT]-> malloc_b5110
+  Java_java_lang_ClassLoader_defineClass1_f5d0 - [DIRECT]-> malloc_b5110
   malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
   __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
   _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
@@ -524,7 +511,7 @@ Path to brk:
   brk_12b050 - [syscall]-> brk
 
 Path to ftruncate:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -534,7 +521,7 @@ Path to ftruncate:
   ftruncate_12c6b0 - [syscall]-> ftruncate
 
 Path to fstatfs:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -544,7 +531,7 @@ Path to fstatfs:
   fstatfs_123be0 - [syscall]-> fstatfs
 
 Path to pwrite64:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -554,7 +541,7 @@ Path to pwrite64:
   pwrite_104410 - [syscall]-> pwrite64
 
 Path to pread64:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -564,7 +551,7 @@ Path to pread64:
   pread_1043f0 - [syscall]-> pread64
 
 Path to get_mempolicy:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
   _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_12e2d30
   _ZN14ZCollectedHeapC2Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC2Ev_12ed500
   _ZN5ZHeapC2Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310
@@ -574,7 +561,7 @@ Path to get_mempolicy:
   _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0 - [syscall]-> get_mempolicy
 
 Path to timer_delete:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN13NonJavaThread8post_runEv_e3ac60
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN13NonJavaThread8post_runEv_e3ac60
   _ZN13NonJavaThread8post_runEv_e3ac60 - [DIRECT]-> _ZN3Jfr14on_thread_exitEP6Thread_a45da0
   _ZN3Jfr14on_thread_exitEP6Thread_a45da0 - [DIRECT]-> _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0
   _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0 - [DIRECT]-> _ZN24JfrCPUTimeThreadSampling23on_javathread_terminateEP10JavaThread_a4afd0
@@ -584,7 +571,7 @@ Path to timer_delete:
   timer_delete@@GLIBC_2.34_b05a0 - [syscall]-> timer_delete
 
 Path to getrandom:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZL17maybe_create_filePKc_dcd820
   _ZL17maybe_create_filePKc_dcd820 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_e827e0
@@ -595,7 +582,7 @@ Path to getrandom:
   getrandom_vdso_49660 - [syscall]-> getrandom
 
 Path to timer_create:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
   _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
   _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
@@ -606,7 +593,7 @@ Path to timer_create:
   timer_create@@GLIBC_2.34_b0290 - [syscall]-> timer_create
 
 Path to timer_settime:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
   _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
   _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
@@ -617,7 +604,7 @@ Path to timer_settime:
   timer_settime@@GLIBC_2.34_b0790 - [syscall]-> timer_settime
 
 Path to memfd_create:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
   _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_12e2d30
   _ZN14ZCollectedHeapC2Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC2Ev_12ed500
   _ZN5ZHeapC2Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocatorC1Emmmm_13100b0
@@ -628,7 +615,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_133f2b0 - [syscall]-> memfd_create
 
 Path to setsockopt:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -639,7 +626,7 @@ Path to setsockopt:
   setsockopt_1394a0 - [syscall]-> setsockopt
 
 Path to dup:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -651,7 +638,7 @@ Path to dup:
   dup_1230b0 - [syscall]-> dup
 
 Path to connect:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> start_thread_a3de0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -663,7 +650,7 @@ Path to connect:
   connect_139160 - [syscall]-> connect
 
 Path to sendfile:
-  Java_java_io_ObjectStreamClass_hasStaticInitializer_10dc0 - [INDIRECT]-> _ZN10SerialHeap18do_full_collectionEb_f4aae0
+  Java_java_io_FileInputStream_initIDs_ffe0 - [INDIRECT]-> _ZN10SerialHeap18do_full_collectionEb_f4aae0
   _ZN10SerialHeap18do_full_collectionEb_f4aae0 - [DIRECT]-> _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370
   _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370 - [DIRECT]-> _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50
   _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50 - [DIRECT]-> _ZN10HeapDumper9dump_heapEv_9c43b0

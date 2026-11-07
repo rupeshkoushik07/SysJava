@@ -1,3 +1,5 @@
+writev
+close
 clock_gettime
 fcntl
 tgkill
@@ -89,5 +91,3 @@ rseq
 set_robust_list
 time
 sched_getaffinity
-writev
-close

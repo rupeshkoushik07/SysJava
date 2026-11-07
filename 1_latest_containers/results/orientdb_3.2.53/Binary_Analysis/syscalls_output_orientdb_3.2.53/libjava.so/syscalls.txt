@@ -1,8 +1,12 @@
+shmget
+getcwd
+mremap
 shutdown
 setsockopt
 geteuid
 rt_sigaction
 chdir
+mkdir
 sched_get_priority_min
 mincore
 getrusage
@@ -24,8 +28,10 @@ getuid
 bind
 execve
 mprotect
+rename
 shmat
 getgid
+chmod
 clock_nanosleep
 wait4
 poll
@@ -50,6 +56,7 @@ sched_getaffinity
 writev
 close
 clock_gettime
+utimensat
 fcntl
 tgkill
 clone3
@@ -59,6 +66,7 @@ prctl
 write
 clone
 munmap
+rmdir
 pipe2
 getdents64
 pread64
@@ -83,6 +91,3 @@ vfork
 faccessat
 faccessat2
 readlink
-shmget
-getcwd
-mremap

@@ -36,12 +36,15 @@ fadvise64
 fallocate
 fchdir
 fchmod
+fchown
 fcntl
 fdatasync
 fgetxattr
+flistxattr
 fsetxattr
 fstat
 fstatfs
+fsync
 ftruncate
 futex
 get_mempolicy
@@ -68,7 +71,9 @@ getuid
 getxattr
 ioctl
 kill
+lchown
 lgetxattr
+link
 listen
 lseek
 lsetxattr
@@ -78,6 +83,7 @@ membarrier
 memfd_create
 mincore
 mkdir
+mknodat
 mlock
 mmap
 mount
@@ -123,6 +129,7 @@ sched_setparam
 sched_setscheduler
 sched_yield
 seccomp
+sendfile
 sendmmsg
 sendmsg
 sendto
@@ -154,6 +161,7 @@ socketpair
 stat
 statfs
 statx
+symlink
 sysinfo
 tgkill
 time
@@ -166,6 +174,7 @@ umount2
 uname
 unlink
 unlinkat
+utimensat
 vfork
 wait4
 waitid

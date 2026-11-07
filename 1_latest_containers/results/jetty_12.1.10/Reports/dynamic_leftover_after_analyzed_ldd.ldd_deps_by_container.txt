@@ -1,4 +1,4 @@
-jetty_12.1.10 (22)
+jetty_12.1.10 (24)
   - libX11.so.6
   - libXau.so.6
   - libXdmcp.so.6
@@ -11,11 +11,13 @@ jetty_12.1.10 (22)
   - libc.so.6
   - libdl.so.2
   - libdl.so.2:
+  - libfreetype.so
   - libjava.so
   - libjvm.so
   - libm.so.6
   - libm.so.6:
   - libmd.so.0
+  - libnet.so
   - libpthread.so.0
   - libpthread.so.0:
   - librt.so.1

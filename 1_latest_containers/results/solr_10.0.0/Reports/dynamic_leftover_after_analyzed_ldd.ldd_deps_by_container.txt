@@ -1,4 +1,4 @@
-solr_10.0.0 (23)
+solr_10.0.0 (24)
   - libX11.so.6
   - libXau.so.6
   - libXdmcp.so.6
@@ -11,6 +11,7 @@ solr_10.0.0 (23)
   - libc.so.6
   - libdl.so.2
   - libdl.so.2:
+  - libfreetype.so
   - libjava.so
   - libjvm.so
   - libm.so.6

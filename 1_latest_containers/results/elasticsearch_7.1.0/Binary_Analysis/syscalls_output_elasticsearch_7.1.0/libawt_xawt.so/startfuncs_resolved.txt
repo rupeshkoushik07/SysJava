@@ -1,4 +1,5 @@
 Java_java_awt_AWTEvent_initIDs
+Java_java_awt_AWTEvent_nativeSetSource
 Java_java_awt_Button_initIDs
 Java_java_awt_Component_initIDs
 Java_java_awt_Container_initIDs

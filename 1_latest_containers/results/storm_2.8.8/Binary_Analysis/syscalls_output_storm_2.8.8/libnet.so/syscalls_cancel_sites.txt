@@ -11,7 +11,9 @@ openat 127cd0 module-libc.so.6 openat 257
 poll 127e30 module-libc.so.6 poll 7
 read 128390 module-libc.so.6 read 0
 write 128e50 module-libc.so.6 write 1
+accept 1390e0 module-libc.so.6 accept 43
 connect 139160 module-libc.so.6 connect 42
 recvfrom 139370 module-libc.so.6 recvfrom 45
 recvmsg 1393c0 module-libc.so.6 recvmsg 47
+send 1393f0 module-libc.so.6 sendto 44
 sendto 139480 module-libc.so.6 sendto 44

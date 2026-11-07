@@ -1,4 +1,4 @@
-zookeeper_3.9.5 (21)
+zookeeper_3.9.5 (22)
   - libX11.so.6
   - libXau.so.6
   - libXdmcp.so.6
@@ -10,6 +10,7 @@ zookeeper_3.9.5 (21)
   - libbsd.so.0
   - libc.so.6
   - libdl.so.2
+  - libfreetype.so
   - libgcc_s.so.1
   - libjava.so
   - libjvm.so

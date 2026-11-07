@@ -1,3 +1,4 @@
+newfstatat
 recvmsg
 madvise
 setpriority
@@ -72,9 +73,9 @@ kill
 writev
 sched_setscheduler
 sched_setaffinity
-rt_sigprocmask
 rseq
 set_robust_list
+rt_sigprocmask
 time
 sched_getaffinity
 close
@@ -90,4 +91,3 @@ rmdir
 ftruncate
 getdents64
 pread64
-newfstatat

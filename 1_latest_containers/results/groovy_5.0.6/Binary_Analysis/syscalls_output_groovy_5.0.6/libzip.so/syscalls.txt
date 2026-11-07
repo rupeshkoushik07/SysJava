@@ -1,3 +1,4 @@
+chdir
 mkdir
 fstatfs
 sched_get_priority_min
@@ -100,4 +101,3 @@ rt_sigaction
 pwrite64
 ioctl
 times
-chdir

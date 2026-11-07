@@ -177,3 +177,8 @@ LIBS_storm_2.8.8/libsnappyjava_storm-shaded-deps-2.8.8.so:org.apache.storm.shade
 LIBS_storm_2.8.8/libsnappyjava_storm-shaded-deps-2.8.8.so:org.apache.storm.shade.org.xerial.snappy.SnappyNative.uncompressedLength -> Java_org_xerial_snappy_SnappyNative_uncompressedLength__Ljava_nio_ByteBuffer_2II [JNI]
 LIBS_storm_2.8.8/libnetty_quiche42_linux_x86_64-4.2.12.Final.so:org.apache.storm.shade.io.netty.handler.codec.quic.Quiche.quiche_enable_debug_logging -> netty_quiche_enable_debug_logging [REGISTERED]
 LIBS_storm_2.8.8/libsnappyjava_storm-shaded-deps-2.8.8.so:org.apache.storm.shade.org.xerial.snappy.BitShuffleNative.shuffle -> Java_org_xerial_snappy_BitShuffleNative_shuffle [JNI]
+LIBS_storm_2.8.8/libjvm.so:jdk.internal.perf.Perf.registerNatives -> JVM_RegisterPerfMethods [JVM]
+rocksdbjni-5.18.4/librocksdbjni-linux64.so:org.rocksdb.DBOptions.failIfOptionsFileError -> Java_org_rocksdb_DBOptions_failIfOptionsFileError [JNI]
+rocksdbjni-5.18.4/librocksdbjni-linux64.so:org.rocksdb.DBOptions.setFailIfOptionsFileError -> Java_org_rocksdb_DBOptions_setFailIfOptionsFileError [JNI]
+rocksdbjni-5.18.4/librocksdbjni-linux64.so:org.rocksdb.Options.failIfOptionsFileError -> Java_org_rocksdb_Options_failIfOptionsFileError [JNI]
+rocksdbjni-5.18.4/librocksdbjni-linux64.so:org.rocksdb.Options.setFailIfOptionsFileError -> Java_org_rocksdb_Options_setFailIfOptionsFileError [JNI]

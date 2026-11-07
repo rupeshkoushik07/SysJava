@@ -161,7 +161,7 @@ if run_from 4; then
     printf 'stage4_detector_commit=%s\nstage4_detector_repo=%s\nstage4_detector_branch=%s\n' \
         "$DETECTOR_COMMIT" "$DETECTOR_REPO" "$(git -C "$DETECTOR_REPO" rev-parse --abbrev-ref HEAD)" \
         > "${FINAL}/detector_commit.txt"
-    java -Xmx16g -cp "${DETECTOR_REPO}/target/classes:$(cat "${DETECTOR_REPO}/target/.classpath")" \
+    java -Xmx"${DETECTOR_HEAP:-16g}" -cp "${DETECTOR_REPO}/target/classes:$(cat "${DETECTOR_REPO}/target/.classpath")" \
         com.echotrace.app.bytecode_new.JNADetector "$JARFILES_DIR" "$OUTPUTS_DIR" "$RUNTIME_DIR"
 fi
 

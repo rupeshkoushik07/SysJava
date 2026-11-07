@@ -1,3 +1,4 @@
+dup
 sched_getparam
 socket
 shmctl
@@ -100,4 +101,3 @@ mincore
 getrusage
 access
 getpid
-dup

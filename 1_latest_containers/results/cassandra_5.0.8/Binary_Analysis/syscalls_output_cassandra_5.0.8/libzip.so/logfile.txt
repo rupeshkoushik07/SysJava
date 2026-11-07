@@ -1,339 +1,339 @@
 
 Path to gettid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
   _ZL19thread_native_entryP6Thread_c29660 - [syscall]-> gettid
 
 Path to futex:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> __condvar_cleanup_waiting_88360
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> __condvar_cleanup_waiting_88360
   __condvar_cleanup_waiting_88360 - [syscall]-> futex
 
 Path to rt_sigreturn:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> __restore_rt_3c050
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> __restore_rt_3c050
   __restore_rt_3c050 - [syscall]-> rt_sigreturn
 
 Path to set_robust_list:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [syscall]-> set_robust_list
 
 Path to rt_sigprocmask:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [syscall]-> rt_sigprocmask
 
 Path to exit:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [syscall]-> exit
 
 Path to rseq:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [syscall]-> rseq
 
 Path to time:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> time_syscall_c4050
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> time_syscall_c4050
   time_syscall_c4050 - [syscall]-> time
 
 Path to sched_yield:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_cleanup_83b30
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_cleanup_83b30
   _IO_cleanup_83b30 - [DIRECT]-> sched_yield_ee010
   sched_yield_ee010 - [syscall]-> sched_yield
 
 Path to close:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_close_80280
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_close_80280
   _IO_file_close_80280 - [DIRECT]-> __close_nocancel_fce60
   __close_nocancel_fce60 - [syscall]-> close
 
 Path to munmap:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_close_mmap_80470
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_close_mmap_80470
   _IO_file_close_mmap_80470 - [DIRECT]-> munmap_101a00
   munmap_101a00 - [syscall]-> munmap
 
 Path to read:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_read_81710
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_read_81710
   _IO_file_read_81710 - [DIRECT]-> read_f82a0
   read_f82a0 - [syscall]-> read
 
 Path to lseek:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_seek_806d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_seek_806d0
   _IO_file_seek_806d0 - [DIRECT]-> lseek_f83e0
   lseek_f83e0 - [syscall]-> lseek
 
 Path to write:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_80fa0
   _IO_file_write@@GLIBC_2.2.5_80fa0 - [DIRECT]-> write_f8340
   write_f8340 - [syscall]-> write
 
 Path to unlink:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10CompileLogD0Ev_5e07b0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10CompileLogD0Ev_5e07b0
   _ZN10CompileLogD0Ev_5e07b0 - [DIRECT]-> unlink_f9b10
   unlink_f9b10 - [syscall]-> unlink
 
 Path to mprotect:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
   _ZN15VM_LinuxDllLoad4doitEv_c2e450 - [DIRECT]-> mprotect_101a30
   mprotect_101a30 - [syscall]-> mprotect
 
 Path to clock_gettime:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_c34640
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_c34640
   _ZN2os13javaTimeNanosEv_c34640 - [DIRECT]-> clock_gettime@@GLIBC_2.17_cf420
   clock_gettime@@GLIBC_2.17_cf420 - [syscall]-> clock_gettime
 
 Path to openat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_c2a090
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_c2a090
   _ZN2os8dll_loadEPKcPci_c2a090 - [DIRECT]-> open_f7fc0
   open_f7fc0 - [syscall]-> openat
 
 Path to access:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> access_f8410
   access_f8410 - [syscall]-> access
 
 Path to getpid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> __nptl_setxid_sighandler_86720
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> __nptl_setxid_sighandler_86720
   __nptl_setxid_sighandler_86720 - [DIRECT]-> getpid_d54e0
   getpid_d54e0 - [syscall]-> getpid
 
 Path to sendto:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> sendto_10aca0
   sendto_10aca0 - [syscall]-> sendto
 
 Path to poll:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> poll_fc220
   poll_fc220 - [syscall]-> poll
 
 Path to recvmsg:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> recvmsg_10aa90
   recvmsg_10aa90 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> recvfrom_10a9d0
   recvfrom_10a9d0 - [syscall]-> recvfrom
 
 Path to writev:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> malloc_98930
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> malloc_98930
   malloc_98930 - [DIRECT]-> __libc_message_7f1d0
   __libc_message_7f1d0 - [syscall]-> writev
 
 Path to madvise:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [DIRECT]-> madvise_101b00
   madvise_101b00 - [syscall]-> madvise
 
 Path to mkdir:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> try_dir_58fc0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> try_dir_58fc0
   try_dir_58fc0 - [DIRECT]-> mkdir_f7f30
   mkdir_f7f30 - [syscall]-> mkdir
 
+Path to mmap:
+  Java_java_util_zip_Deflater_end_2ce0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> mmap_1019a0
+  mmap_1019a0 - [syscall]-> mmap
+
 Path to lstat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __lxstat_1095d0
   __lxstat_1095d0 - [syscall]-> lstat
 
 Path to geteuid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> geteuid_d5510
   geteuid_d5510 - [syscall]-> geteuid
 
 Path to fstat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __fxstat_109580
   __fxstat_109580 - [syscall]-> fstat
 
-Path to mmap:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> Perf_Attach_c67a70
-  Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
-  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> mmap_1019a0
-  mmap_1019a0 - [syscall]-> mmap
-
 Path to kill:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> kill_3c260
   kill_3c260 - [syscall]-> kill
 
 Path to sysinfo:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
   WB_HostPhysicalSwap_f02a60 - [DIRECT]-> _ZN2os5Linux9host_swapEv_c24100
   _ZN2os5Linux9host_swapEv_c24100 - [DIRECT]-> sysinfo_10a0c0
   sysinfo_10a0c0 - [syscall]-> sysinfo
 
 Path to ioctl:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_doallocate_75840
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_doallocate_75840
   _IO_file_doallocate_75840 - [DIRECT]-> isatty_f99b0
   isatty_f99b0 - [DIRECT]-> tcgetattr_fd4a0
   tcgetattr_fd4a0 - [syscall]-> ioctl
 
 Path to newfstatat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_stat_80f90
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_stat_80f90
   _IO_file_stat_80f90 - [DIRECT]-> fstat_f7800
   fstat_f7800 - [DIRECT]-> fstatat_f7860
   fstatat_f7860 - [syscall]-> newfstatat
 
 Path to mremap:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _IO_file_underflow_mmap_814a0
   _IO_file_underflow_mmap_814a0 - [DIRECT]-> mmap_remap_check_804a0
   mmap_remap_check_804a0 - [DIRECT]-> mremap_1099d0
   mremap_1099d0 - [syscall]-> mremap
 
 Path to stat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
   _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4statEPKcP4stat_c339f0
   _ZN2os4statEPKcP4stat_c339f0 - [DIRECT]-> __xstat_109530
   __xstat_109530 - [syscall]-> stat
 
 Path to fcntl:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
   _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4openEPKcii_c28290
   _ZN2os4openEPKcii_c28290 - [DIRECT]-> fcntl_f87a0
   fcntl_f87a0 - [syscall]-> fcntl
 
 Path to getrusage:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN20G1RemSetSamplingTask7executeEv_74f280
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN20G1RemSetSamplingTask7executeEv_74f280
   _ZN20G1RemSetSamplingTask7executeEv_74f280 - [DIRECT]-> _ZN2os12elapsedVTimeEv_c246e0
   _ZN2os12elapsedVTimeEv_c246e0 - [DIRECT]-> getrusage_fd860
   getrusage_fd860 - [syscall]-> getrusage
 
 Path to vfork:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> vfork_d43b0
   vfork_d43b0 - [syscall]-> vfork
 
 Path to execve:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> execve_d4ad0
   execve_d4ad0 - [syscall]-> execve
 
 Path to exit_group:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> _exit_d43e0
   _exit_d43e0 - [syscall]-> exit_group
 
 Path to getdents64:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
   _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
   __malloc_hugepage_config_10a470 - [DIRECT]-> getdents64_d0030
   getdents64_d0030 - [syscall]-> getdents64
 
 Path to pread64:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _dl_tunable_set_hugetlb_94a50
   _dl_tunable_set_hugetlb_94a50 - [DIRECT]-> __malloc_hugepage_config_10a470
   __malloc_hugepage_config_10a470 - [DIRECT]-> __pread64_nocancel_fd130
   __pread64_nocancel_fd130 - [syscall]-> pread64
 
 Path to getrandom:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> malloc_98930
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> malloc_98930
   malloc_98930 - [DIRECT]-> ptmalloc_init.part.0_952f0
   ptmalloc_init.part.0_952f0 - [DIRECT]-> getrandom_3f180
   getrandom_3f180 - [syscall]-> getrandom
 
 Path to clock_nanosleep:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_f11be0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_f11be0
   WB_CheckThreadObjOfTerminatingThread_f11be0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_c337e0
   _ZN2os17naked_short_sleepEl_c337e0 - [DIRECT]-> nanosleep_d3e40
   nanosleep_d3e40 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_cf4e0
   clock_nanosleep@@GLIBC_2.17_cf4e0 - [syscall]-> clock_nanosleep
 
 Path to uname:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_PrintOsInfo_f03360
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_PrintOsInfo_f03360
   WB_PrintOsInfo_f03360 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_c259e0
   _ZN2os13print_os_infoEP12outputStream_c259e0 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30
   _ZN2os5Posix16print_uname_infoEP12outputStream_c32f30 - [DIRECT]-> uname_d3b00
   uname_d3b00 - [syscall]-> uname
 
 Path to setpriority:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
   _ZN10GangWorker3runEv_f1d130 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890
   _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_c27ee0
   _ZN2os19set_native_priorityEP6Threadi_c27ee0 - [DIRECT]-> setpriority_fdba0
   setpriority_fdba0 - [syscall]-> setpriority
 
 Path to prlimit64:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10ZArguments10initializeEv_f21350
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10ZArguments10initializeEv_f21350
   _ZN10ZArguments10initializeEv_f21350 - [DIRECT]-> _ZN18ZAddressSpaceLimit10mark_stackEv_f21200
   _ZN18ZAddressSpaceLimit10mark_stackEv_f21200 - [DIRECT]-> _ZN2os28has_allocatable_memory_limitEPm_c33360
   _ZN2os28has_allocatable_memory_limitEPm_c33360 - [DIRECT]-> getrlimit_fd7e0
   getrlimit_fd7e0 - [syscall]-> prlimit64
 
 Path to times:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
   _ZN20VM_G1PauseConcurrent4doitEv_770890 - [DIRECT]-> _ZN14GCTraceCPUTimeC1EP8GCTracer_787030
   _ZN14GCTraceCPUTimeC1EP8GCTracer_787030 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__c247e0
   _ZN2os12getTimesSecsEPdS0_S0__c247e0 - [DIRECT]-> times_d3b30
   times_d3b30 - [syscall]-> times
 
 Path to sched_getaffinity:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_7bce60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_7bce60
   _ZN22VM_HandshakeAllThreads4doitEv_7bce60 - [DIRECT]-> _ZN2os22active_processor_countEv_c293a0
   _ZN2os22active_processor_countEv_c293a0 - [DIRECT]-> _ZL26get_active_processor_countv_c29140
   _ZL26get_active_processor_countv_c29140 - [DIRECT]-> sched_getaffinity@@GLIBC_2.3.4_ee0d0
   sched_getaffinity@@GLIBC_2.3.4_ee0d0 - [syscall]-> sched_getaffinity
 
 Path to wait4:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> waitpid_d3b90
   waitpid_d3b90 - [DIRECT]-> wait4_d3bc0
   wait4_d3bc0 - [syscall]-> wait4
 
 Path to clone:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> fork_d3e80
   fork_d3e80 - [DIRECT]-> _Fork_d4330
   _Fork_d4330 - [syscall]-> clone
 
 Path to getcwd:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> getcwd_f8c50
   getcwd_f8c50 - [syscall]-> getcwd
 
 Path to readlink:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> readlink_f9ab0
   readlink_f9ab0 - [syscall]-> readlink
 
 Path to faccessat2:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
   faccessat_f8580 - [syscall]-> faccessat2
 
 Path to faccessat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
   faccessat_f8580 - [syscall]-> faccessat
 
 Path to rt_sigaction:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0
   _ZN9__gnu_cxx27__verbose_terminate_handlerEv_f75bd0 - [DIRECT]-> abort_2639f
   abort_2639f - [DIRECT]-> sigaction_3c010
   sigaction_3c010 - [DIRECT]-> __libc_sigaction_3c060
   __libc_sigaction_3c060 - [syscall]-> rt_sigaction
 
 Path to getpriority:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_bf8430
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_bf8430
   _ZNK11NamedThread8print_onEP12outputStream_bf8430 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_e67070
   _ZNK6Thread8print_onEP12outputStreamb_e67070 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_c27f30
   _ZN2os19get_native_priorityEPK6ThreadPi_c27f30 - [DIRECT]-> getpriority_fdb60
   getpriority_fdb60 - [syscall]-> getpriority
 
 Path to sched_setscheduler:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
   MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
   _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
   pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
@@ -341,7 +341,7 @@ Path to sched_setscheduler:
   sched_setscheduler_edfb0 - [syscall]-> sched_setscheduler
 
 Path to sched_getparam:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
   MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
   _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
   pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
@@ -349,7 +349,7 @@ Path to sched_getparam:
   sched_getparam_edf80 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
   MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
   _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
   pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
@@ -357,7 +357,7 @@ Path to sched_getscheduler:
   sched_getscheduler_edfe0 - [syscall]-> sched_getscheduler
 
 Path to sched_get_priority_max:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
   MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
   _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
   pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
@@ -365,7 +365,7 @@ Path to sched_get_priority_max:
   sched_get_priority_max_ee040 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> MHN_clearCallSiteContext_bc29d0
   MHN_clearCallSiteContext_bc29d0 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_be2120
   _ZN5Mutex4lockEP6Thread_be2120 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_8d220
   pthread_mutex_trylock@@GLIBC_2.34_8d220 - [DIRECT]-> __pthread_tpp_change_priority_90e60
@@ -373,7 +373,7 @@ Path to sched_get_priority_min:
   sched_get_priority_min_ee070 - [syscall]-> sched_get_priority_min
 
 Path to mincore:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
   _ZN10JavaThread3runEv_e69030 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270
   _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_c205e0
   _ZN2os24create_stack_guard_pagesEPcm_c205e0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_c276a0
@@ -381,7 +381,7 @@ Path to mincore:
   mincore_101b30 - [syscall]-> mincore
 
 Path to prctl:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -389,7 +389,7 @@ Path to prctl:
   prctl_109410 - [syscall]-> prctl
 
 Path to tgkill:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN13WatcherThread3runEv_bf8b90
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN13WatcherThread3runEv_bf8b90
   _ZN13WatcherThread3runEv_bf8b90 - [DIRECT]-> _ZN7VMError13check_timeoutEv_ee8e20
   _ZN7VMError13check_timeoutEv_ee8e20 - [DIRECT]-> _ZN7VMError26interrupt_reporting_threadEv_ee9d90
   _ZN7VMError26interrupt_reporting_threadEv_ee9d90 - [DIRECT]-> pthread_kill@@GLIBC_2.34_8af40
@@ -397,7 +397,7 @@ Path to tgkill:
   __pthread_kill_implementation_8ade0 - [syscall]-> tgkill
 
 Path to shmdt:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
   _ZN14ShenandoahHeap10initializeEv_d38f70 - [DIRECT]-> _ZN13ReservedSpaceC1EmmmPc_ee2100
   _ZN13ReservedSpaceC1EmmmPc_ee2100 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_c20d30
   _ZN2os22release_memory_specialEPcm_c20d30 - [DIRECT]-> _ZN2os25pd_release_memory_specialEPcm_c27e00
@@ -405,7 +405,7 @@ Path to shmdt:
   shmdt_10b630 - [syscall]-> shmdt
 
 Path to shutdown:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_6f17d0
   _ZN15G1CollectedHeap10initializeEv_6f17d0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__8295b0
   _Z33vm_shutdown_during_initializationPKcS0__8295b0 - [DIRECT]-> _ZN2os8shutdownEv_c35470
   _ZN2os8shutdownEv_c35470 - [DIRECT]-> _ZN14AttachListener5abortEv_422380
@@ -413,7 +413,7 @@ Path to shutdown:
   shutdown_10ad90 - [syscall]-> shutdown
 
 Path to getuid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
@@ -421,7 +421,7 @@ Path to getuid:
   getuid_d5500 - [syscall]-> getuid
 
 Path to getegid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
@@ -429,7 +429,7 @@ Path to getegid:
   getegid_d5530 - [syscall]-> getegid
 
 Path to getgid:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
@@ -437,7 +437,7 @@ Path to getgid:
   getgid_d5520 - [syscall]-> getgid
 
 Path to rmdir:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
   _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820
   _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820 - [DIRECT]-> _ZN11FileMapInfo14open_for_writeEPKc_6c0270
   _ZN11FileMapInfo14open_for_writeEPKc_6c0270 - [DIRECT]-> remove_58a40
@@ -445,7 +445,7 @@ Path to rmdir:
   rmdir_f9b70 - [syscall]-> rmdir
 
 Path to socket:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
   getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
   getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
@@ -453,7 +453,7 @@ Path to socket:
   socket_10adc0 - [syscall]-> socket
 
 Path to bind:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
   getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
   getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
@@ -461,15 +461,24 @@ Path to bind:
   bind_10a780 - [syscall]-> bind
 
 Path to getsockname:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> clntudp_call_142fa0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> clntudp_call_142fa0
   clntudp_call_142fa0 - [DIRECT]-> getifaddrs_122e10
   getifaddrs_122e10 - [DIRECT]-> getifaddrs_internal_122160
   getifaddrs_internal_122160 - [DIRECT]-> __netlink_open_1220a0
   __netlink_open_1220a0 - [DIRECT]-> getsockname_10a880
   getsockname_10a880 - [syscall]-> getsockname
 
+Path to brk:
+  Java_java_util_zip_Deflater_end_2ce0 - [DIRECT]-> free_98ef0
+  free_98ef0 - [DIRECT]-> _int_free_96120
+  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
+  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
+  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
+  sbrk_fdc80 - [DIRECT]-> brk_fdc40
+  brk_fdc40 - [syscall]-> brk
+
 Path to fallocate:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_c209d0
@@ -478,7 +487,7 @@ Path to fallocate:
   posix_fallocate64_fc7c0 - [syscall]-> fallocate
 
 Path to shmget:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -487,7 +496,7 @@ Path to shmget:
   shmget_10b660 - [syscall]-> shmget
 
 Path to shmat:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -496,7 +505,7 @@ Path to shmat:
   shmat_10b600 - [syscall]-> shmat
 
 Path to shmctl:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
@@ -505,7 +514,7 @@ Path to shmctl:
   shmctl@@GLIBC_2.2.5_10b690 - [syscall]-> shmctl
 
 Path to umask:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZL6_fatalv_9b9680
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZL6_fatalv_9b9680
   _ZL6_fatalv_9b9680 - [DIRECT]-> _Z12report_fatal11VMErrorTypePKciS1_z_6094c0
   _Z12report_fatal11VMErrorTypePKciS1_z_6094c0 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_ee8f10 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_ee4df0
@@ -514,7 +523,7 @@ Path to umask:
   umask_f7d40 - [syscall]-> umask
 
 Path to get_mempolicy:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
   _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
   _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00
   _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_f4c490
@@ -523,7 +532,7 @@ Path to get_mempolicy:
   _ZN8ZSyscall13get_mempolicyEPiPmmPvm_f61550 - [syscall]-> get_mempolicy
 
 Path to sched_setaffinity:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -532,7 +541,7 @@ Path to sched_setaffinity:
   create_thread_88d00 - [syscall]-> sched_setaffinity
 
 Path to getgroups:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_3d560
   realpath@@GLIBC_2.3_3d560 - [DIRECT]-> faccessat_f8580
@@ -540,17 +549,8 @@ Path to getgroups:
   group_member_d5670 - [DIRECT]-> getgroups_d5540
   getgroups_d5540 - [syscall]-> getgroups
 
-Path to brk:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> free_98ef0
-  free_98ef0 - [DIRECT]-> _int_free_96120
-  _int_free_96120 - [DIRECT]-> systrim.constprop.0_96070
-  systrim.constprop.0_96070 - [DIRECT]-> __glibc_morecore_96030
-  __glibc_morecore_96030 - [DIRECT]-> sbrk_fdc80
-  sbrk_fdc80 - [DIRECT]-> brk_fdc40
-  brk_fdc40 - [syscall]-> brk
-
 Path to ftruncate:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -560,7 +560,7 @@ Path to ftruncate:
   ftruncate_100050 - [syscall]-> ftruncate
 
 Path to fstatfs:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -570,7 +570,7 @@ Path to fstatfs:
   fstatfs_f7c30 - [syscall]-> fstatfs
 
 Path to pwrite64:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
   _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
   _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440
   _ZN22ZPhysicalMemoryManager8uncommitER15ZPhysicalMemory_f4e440 - [DIRECT]-> _ZNK22ZPhysicalMemoryBacking8uncommitEmm_f51480
@@ -580,7 +580,7 @@ Path to pwrite64:
   pwrite_f6470 - [syscall]-> pwrite64
 
 Path to memfd_create:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -591,7 +591,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_f61510 - [syscall]-> memfd_create
 
 Path to clone3:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -602,7 +602,7 @@ Path to clone3:
   clone3_1098c0 - [syscall]-> clone3
 
 Path to dup:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
   __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
   __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
@@ -614,7 +614,7 @@ Path to dup:
   dup_f8a70 - [syscall]-> dup
 
 Path to setsockopt:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
   __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
   __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0
@@ -626,7 +626,7 @@ Path to setsockopt:
   setsockopt_10ad60 - [syscall]-> setsockopt
 
 Path to connect:
-  Java_java_util_zip_Deflater_deflateBufferBytes_2ad0 - [INDIRECT]-> start_thread_88ef0
+  Java_java_util_zip_Deflater_deflateBytesBytes_2820 - [INDIRECT]-> start_thread_88ef0
   start_thread_88ef0 - [DIRECT]-> __libc_thread_freeres_9aeb0
   __libc_thread_freeres_9aeb0 - [DIRECT]-> __rpc_thread_destroy_144b30
   __rpc_thread_destroy_144b30 - [DIRECT]-> __rpc_thread_svc_cleanup_1459e0

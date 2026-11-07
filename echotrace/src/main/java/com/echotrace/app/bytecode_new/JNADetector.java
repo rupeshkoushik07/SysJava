@@ -101,11 +101,30 @@ public class JNADetector {
         writeAnalyzedJarsManifest(targetDir, runtimeDir, outPath.resolve("analyzed_jars.txt"));
         copyIfExists(outPath.resolve("analyzed_jars.txt"), workRoot.resolve("analyzed_jars.txt"));
 
-        runDynamic(targetDir, dynOutDir.toString());
-        runInterface(targetDir, ifaceOutDir.toString());
-        runDirectMap(targetDir, directOutDir.toString());
-        runFfi(targetDir, ffiOutDir.toString());
-        runJnrFfi(targetDir, jnrOutDir.toString());
+        // The SootUp detectors read the container runtime from detector.runtime.dir;
+        // without it they resolve JDK types against the host JRE instead of the
+        // container's JDK. An explicit -Ddetector.runtime.dir still wins.
+        String previousDetectorRuntime = System.getProperty("detector.runtime.dir");
+        boolean setDetectorRuntime = previousDetectorRuntime == null || previousDetectorRuntime.trim().isEmpty();
+        if (setDetectorRuntime) {
+            System.setProperty("detector.runtime.dir", runtimeDir);
+        }
+        System.out.println("[JNADetector] detector.runtime.dir=" + System.getProperty("detector.runtime.dir"));
+        try {
+            runDynamic(targetDir, dynOutDir.toString());
+            runInterface(targetDir, ifaceOutDir.toString());
+            runDirectMap(targetDir, directOutDir.toString());
+            runFfi(targetDir, ffiOutDir.toString());
+            runJnrFfi(targetDir, jnrOutDir.toString());
+        } finally {
+            if (setDetectorRuntime) {
+                if (previousDetectorRuntime == null) {
+                    System.clearProperty("detector.runtime.dir");
+                } else {
+                    System.setProperty("detector.runtime.dir", previousDetectorRuntime);
+                }
+            }
+        }
 
         Path dynHits = dynOutDir.resolve("jna_dyn_hits.txt");
         Path ifaceHits = ifaceOutDir.resolve("jna_iface_hits.txt");

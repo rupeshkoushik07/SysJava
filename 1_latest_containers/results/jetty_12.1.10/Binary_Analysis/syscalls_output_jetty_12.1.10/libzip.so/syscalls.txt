@@ -1,3 +1,4 @@
+newfstatat
 madvise
 setpriority
 umask
@@ -101,4 +102,3 @@ rmdir
 ftruncate
 getdents64
 pread64
-newfstatat

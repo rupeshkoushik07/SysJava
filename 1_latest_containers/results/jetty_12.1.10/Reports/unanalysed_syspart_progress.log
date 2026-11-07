@@ -1,22 +1,9 @@
-2026-11-05T12:46:33 RUN image=jetty_12.1.10 libraries=10 force=False
-2026-11-05T12:46:33 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jetty_12.1.10/Dataset_symbolized/LIBS_jetty_12.1.10
-2026-11-05T12:46:33 START [1/10] libacl.so.1 functions=41 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libacl.so.1/logfile.txt
-2026-11-05T12:47:17 DONE [1/10] libacl.so.1 status=completed exit=0 syscalls=56
-2026-11-05T12:47:17 START [2/10] libextnet.so functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libextnet.so/logfile.txt
-2026-11-05T13:12:51 DONE [2/10] libextnet.so status=completed exit=0 syscalls=105
-2026-11-05T13:12:51 START [3/10] libgcc_s.so.1 functions=176 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libgcc_s.so.1/logfile.txt
-2026-11-05T13:13:33 DONE [3/10] libgcc_s.so.1 status=completed exit=0 syscalls=34
-2026-11-05T13:13:33 START [4/10] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libjimage.so/logfile.txt
-2026-11-05T13:41:04 DONE [4/10] libjimage.so status=completed exit=0 syscalls=104
-2026-11-05T13:41:04 START [5/10] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libjli.so/logfile.txt
-2026-11-05T13:41:53 DONE [5/10] libjli.so status=completed exit=0 syscalls=65
-2026-11-05T13:41:53 START [6/10] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libmanagement.so/logfile.txt
-2026-11-05T14:09:51 DONE [6/10] libmanagement.so status=completed exit=0 syscalls=104
-2026-11-05T14:09:51 START [7/10] libmanagement_ext.so functions=35 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libmanagement_ext.so/logfile.txt
-2026-11-05T14:41:05 DONE [7/10] libmanagement_ext.so status=completed exit=0 syscalls=104
-2026-11-05T14:41:05 START [8/10] libnio.so functions=201 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libnio.so/logfile.txt
-2026-11-05T15:16:50 DONE [8/10] libnio.so status=completed exit=0 syscalls=140
-2026-11-05T15:16:50 START [9/10] libpcre2-8.so.0 functions=78 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libpcre2-8.so.0/logfile.txt
-2026-11-05T15:18:31 DONE [9/10] libpcre2-8.so.0 status=completed exit=0 syscalls=36
-2026-11-05T15:18:31 START [10/10] libselinux.so.1 functions=241 log=/home/user/Tutorial/EchoTrace_latest/workspaces/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/libselinux.so.1/logfile.txt
-2026-11-05T15:20:16 DONE [10/10] libselinux.so.1 status=completed exit=0 syscalls=81
+2026-11-07T08:30:36 RUN image=jetty_12.1.10 libraries=7 force=False
+2026-11-07T08:30:36 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/jetty_12.1.10/Dataset_symbolized/LIBS_jetty_12.1.10
+2026-11-07T08:30:37 SKIP [1/7] libacl.so.1 already_complete
+2026-11-07T08:30:37 SKIP [2/7] libextnet.so already_complete
+2026-11-07T08:30:37 SKIP [3/7] libgcc_s.so.1 already_complete
+2026-11-07T08:30:37 SKIP [4/7] libjli.so already_complete
+2026-11-07T08:30:37 SKIP [5/7] libmanagement_ext.so already_complete
+2026-11-07T08:30:37 SKIP [6/7] libpcre2-8.so.0 already_complete
+2026-11-07T08:30:37 SKIP [7/7] libselinux.so.1 already_complete

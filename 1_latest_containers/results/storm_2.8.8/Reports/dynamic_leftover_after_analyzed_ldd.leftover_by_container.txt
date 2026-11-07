@@ -1,4 +1,4 @@
-storm_2.8.8 (17)
+storm_2.8.8 (16)
   - _bz2.cpython-314-x86_64-linux-gnu.so
   - _lzma.cpython-314-x86_64-linux-gnu.so
   - _zstd.cpython-314-x86_64-linux-gnu.so
@@ -9,7 +9,6 @@ storm_2.8.8 (17)
   - libjli.so
   - libjsvml.so
   - liblzma.so.5
-  - libmanagement.so
   - libmanagement_ext.so
   - libpcre2-8.so.0
   - libselinux.so.1

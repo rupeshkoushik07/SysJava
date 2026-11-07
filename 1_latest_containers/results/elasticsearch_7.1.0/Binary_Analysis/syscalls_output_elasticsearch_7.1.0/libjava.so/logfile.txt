@@ -39,13 +39,29 @@ Path to geteuid:
   Java_jdk_internal_misc_VM_geteuid_178d0 - [DIRECT]-> geteuid_c5e30
   geteuid_c5e30 - [syscall]-> geteuid
 
+Path to mkdir:
+  Java_java_io_UnixFileSystem_createDirectory_172d0 - [DIRECT]-> mkdir_eecc0
+  mkdir_eecc0 - [syscall]-> mkdir
+
+Path to access:
+  Java_java_io_UnixFileSystem_checkAccess_16b60 - [DIRECT]-> access_ef020
+  access_ef020 - [syscall]-> access
+
 Path to getuid:
   Java_jdk_internal_misc_VM_getuid_178c0 - [DIRECT]-> getuid_c5e20
   getuid_c5e20 - [syscall]-> getuid
 
+Path to lseek:
+  Java_java_io_FileInputStream_skip0_f920 - [DIRECT]-> lseek_fded0
+  lseek_fded0 - [syscall]-> lseek
+
 Path to fcntl:
   Java_java_io_FileDescriptor_getAppend_f810 - [DIRECT]-> fcntl_ef3b0
   fcntl_ef3b0 - [syscall]-> fcntl
+
+Path to kill:
+  Java_java_lang_ProcessHandleImpl_destroy0_13000 - [DIRECT]-> kill_364d0
+  kill_364d0 - [syscall]-> kill
 
 Path to getpid:
   Java_java_lang_ProcessHandleImpl_getCurrentPid0_12ec0 - [DIRECT]-> getpid_c5dd0
@@ -55,13 +71,17 @@ Path to getegid:
   Java_jdk_internal_misc_VM_getegid_178f0 - [DIRECT]-> getegid_c5e50
   getegid_c5e50 - [syscall]-> getegid
 
-Path to lseek:
-  Java_java_io_RandomAccessFile_setLength_14ad0 - [DIRECT]-> lseek_fded0
-  lseek_fded0 - [syscall]-> lseek
+Path to stat:
+  Java_java_io_UnixFileSystem_getLastModifiedTime_16de0 - [DIRECT]-> _xstat_ee880
+  _xstat_ee880 - [syscall]-> stat
 
 Path to close:
-  Java_java_lang_ProcessHandleImpl_initNative_12d90 - [DIRECT]-> sysconf_c6c10
-  sysconf_c6c10 - [syscall]-> close
+  Java_java_io_UnixFileSystem_createFileExclusively_16f50 - [DIRECT]-> close_ef610
+  close_ef610 - [syscall]-> close
+
+Path to rename:
+  Java_java_io_UnixFileSystem_rename0_17370 - [DIRECT]-> rename_6bc70
+  rename_6bc70 - [syscall]-> rename
 
 Path to clock_getres:
   Java_java_lang_ProcessHandleImpl_initNative_12d90 - [DIRECT]-> sysconf_c6c10
@@ -70,6 +90,10 @@ Path to clock_getres:
 Path to getgid:
   Java_jdk_internal_misc_VM_getgid_178e0 - [DIRECT]-> getgid_c5e40
   getgid_c5e40 - [syscall]-> getgid
+
+Path to utimes:
+  Java_java_io_UnixFileSystem_setLastModifiedTime_17480 - [DIRECT]-> utimes_f69b0
+  utimes_f69b0 - [syscall]-> utimes
 
 Path to pipe:
   Java_java_lang_ProcessImpl_forkAndExec_139f0 - [DIRECT]-> pipe_ef700
@@ -132,16 +156,6 @@ Path to open:
   _ZN2os8dll_loadEPKcPci_bf5bb0 - [DIRECT]-> open_eed20
   open_eed20 - [syscall]-> open
 
-Path to access:
-  Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
-  _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> access_ef020
-  access_ef020 - [syscall]-> access
-
-Path to stat:
-  Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0
-  _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0 - [DIRECT]-> strstr_a54b0
-  strstr_a54b0 - [syscall]-> stat
-
 Path to writev:
   Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> free_check_84040
   free_check_84040 - [DIRECT]-> __libc_message_78950
@@ -177,15 +191,35 @@ Path to madvise:
   start_thread_7d10 - [DIRECT]-> madvise_f84b0
   madvise_f84b0 - [syscall]-> madvise
 
+Path to dup2:
+  Java_java_io_FileDescriptor_close0_f830 - [DIRECT]-> fileDescriptorClose_19350
+  fileDescriptorClose_19350 - [DIRECT]-> dup2_ef6a0
+  dup2_ef6a0 - [syscall]-> dup2
+
 Path to ftruncate:
   Java_java_io_RandomAccessFile_setLength_14ad0 - [DIRECT]-> handleSetLength_19650
   handleSetLength_19650 - [DIRECT]-> ftruncate_f6b90
   ftruncate_f6b90 - [syscall]-> ftruncate
 
+Path to statfs:
+  Java_java_io_UnixFileSystem_getNameMax0_17770 - [DIRECT]-> pathconf_c68a0
+  pathconf_c68a0 - [DIRECT]-> statfs_eea80
+  statfs_eea80 - [syscall]-> statfs
+
 Path to getrlimit:
   Java_java_lang_ProcessHandleImpl_initNative_12d90 - [DIRECT]-> sysconf_c6c10
   sysconf_c6c10 - [DIRECT]-> getrlimit_f42f0
   getrlimit_f42f0 - [syscall]-> getrlimit
+
+Path to getdents:
+  Java_java_io_UnixFileSystem_list_170b0 - [DIRECT]-> readdir_c03d0
+  readdir_c03d0 - [DIRECT]-> __getdents_c0840
+  __getdents_c0840 - [syscall]-> getdents
+
+Path to rmdir:
+  Java_java_io_UnixFileSystem_delete0_17020 - [DIRECT]-> remove_6bc30
+  remove_6bc30 - [DIRECT]-> rmdir_f0770
+  rmdir_f0770 - [syscall]-> rmdir
 
 Path to rt_sigaction:
   Java_java_lang_ProcessImpl_init_13820 - [DIRECT]-> sigaction_36480
@@ -223,12 +257,6 @@ Path to lstat:
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> _lxstat_ee920
   _lxstat_ee920 - [syscall]-> lstat
 
-Path to kill:
-  Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> Perf_Attach_c4e6a0
-  Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
-  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> kill_364d0
-  kill_364d0 - [syscall]-> kill
-
 Path to getrusage:
   Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60
   _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60 - [DIRECT]-> _ZN2os12elapsedVTimeEv_bf5550
@@ -265,11 +293,17 @@ Path to pause:
   __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
   __pause_nocancel_eed9 - [syscall]-> pause
 
-Path to dup2:
-  Java_java_lang_ProcessImpl_forkAndExec_139f0 - [DIRECT]-> posix_spawn@@GLIBC_2.15_edbb0
-  posix_spawn@@GLIBC_2.15_edbb0 - [DIRECT]-> __spawni_edbf0
-  __spawni_edbf0 - [DIRECT]-> dup2_ef6a0
-  dup2_ef6a0 - [syscall]-> dup2
+Path to openat:
+  Java_java_io_UnixFileSystem_list_170b0 - [DIRECT]-> opendir_c0390
+  opendir_c0390 - [DIRECT]-> __opendirat_c0340
+  __opendirat_c0340 - [DIRECT]-> __openat64_nocancel_eede0
+  __openat64_nocancel_eede0 - [syscall]-> openat
+
+Path to readlink:
+  Java_java_io_UnixFileSystem_canonicalize0_169b0 - [DIRECT]-> canonicalize_17bd0
+  canonicalize_17bd0 - [DIRECT]-> realpath@@GLIBC_2.3_432a0
+  realpath@@GLIBC_2.3_432a0 - [DIRECT]-> readlink_f06b0
+  readlink_f06b0 - [syscall]-> readlink
 
 Path to sched_setparam:
   Java_java_lang_ProcessImpl_forkAndExec_139f0 - [DIRECT]-> posix_spawn@@GLIBC_2.15_edbb0
@@ -282,12 +316,6 @@ Path to setpgid:
   posix_spawn@@GLIBC_2.15_edbb0 - [DIRECT]-> __spawni_edbf0
   __spawni_edbf0 - [DIRECT]-> setpgid_c6070
   setpgid_c6070 - [syscall]-> setpgid
-
-Path to readlink:
-  Java_java_util_TimeZone_getSystemTimeZoneID_160a0 - [DIRECT]-> findJavaTZ_md_167d0
-  findJavaTZ_md_167d0 - [DIRECT]-> getPlatformTimeZoneID_16530
-  getPlatformTimeZoneID_16530 - [DIRECT]-> readlink_f06b0
-  readlink_f06b0 - [syscall]-> readlink
 
 Path to fallocate:
   Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
@@ -338,26 +366,12 @@ Path to getpriority:
   _ZN2os19get_native_priorityEPK6ThreadPi_bfb460 - [DIRECT]-> getpriority_f46d0
   getpriority_f46d0 - [syscall]-> getpriority
 
-Path to openat:
-  Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> __gconv_read_conf_25190
-  __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
-  __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
-  getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
-  __openat64_nocancel_eede0 - [syscall]-> openat
-
 Path to newfstatat:
   Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> __gconv_read_conf_25190
   __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
   __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
   getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
   __fxstatat_eea30 - [syscall]-> newfstatat
-
-Path to getdents:
-  Java_java_lang_ProcessHandleImpl_initNative_12d90 - [DIRECT]-> sysconf_c6c10
-  sysconf_c6c10 - [DIRECT]-> get_nprocs_conf_fc5b0
-  get_nprocs_conf_fc5b0 - [DIRECT]-> readdir_c03d0
-  readdir_c03d0 - [DIRECT]-> __getdents_c0840
-  __getdents_c0840 - [syscall]-> getdents
 
 Path to sched_getaffinity:
   Java_java_lang_Runtime_availableProcessors_14c90 - [DIRECT]-> JVM_ActiveProcessorCount_91aec0
@@ -448,15 +462,6 @@ Path to pread64:
   posix_fallocate_f34e0 - [DIRECT]-> internal_fallocate_f3330
   internal_fallocate_f3330 - [DIRECT]-> pread_ed640
   pread_ed640 - [syscall]-> pread64
-
-Path to mkdir:
-  Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
-  WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
-  _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_c07860
-  _ZN2os20create_file_for_heapEPKc_c07860 - [DIRECT]-> mkstemp_f55e0
-  mkstemp_f55e0 - [DIRECT]-> __gen_tempname_6b8d0
-  __gen_tempname_6b8d0 - [DIRECT]-> mkdir_eecc0
-  mkdir_eecc0 - [syscall]-> mkdir
 
 Path to connect:
   Java_java_lang_Class_getPrimitiveClass_e430 - [INDIRECT]-> free_check_84040

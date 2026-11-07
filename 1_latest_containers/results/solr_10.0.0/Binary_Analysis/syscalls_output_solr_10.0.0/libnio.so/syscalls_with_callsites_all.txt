@@ -1,4 +1,4 @@
-fstatat_wrapper df90 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/solr_10.0.0/Dataset_symbolized/LIBS_solr_10.0.0/JDK25_LIBS/libnio.so newfstatat 262
+fstatat_wrapper df90 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/solr_10.0.0/Dataset_symbolized/LIBS_solr_10.0.0/libnio.so newfstatat 262
 __libc_start_call_main 2a150 module-libc.so.6 exit 60
 __restore_rt 45330 module-libc.so.6 rt_sigreturn 15
 cancel_handler 58640 module-libc.so.6 kill 62

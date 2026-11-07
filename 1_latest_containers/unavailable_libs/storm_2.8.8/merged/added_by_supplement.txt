@@ -1,3 +1,0 @@
-io_uring_enter
-io_uring_register
-io_uring_setup

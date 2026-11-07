@@ -1,35 +1,12 @@
-2026-11-05T11:50:26 RUN image=groovy_5.0.6 libraries=12 force=False
-2026-11-05T11:50:26 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Dataset_symbolized/LIBS_groovy_5.0.6
-2026-11-05T11:50:26 START [1/12] jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so functions=15 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so/logfile.txt
-2026-11-05T11:51:07 DONE [1/12] jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so status=completed exit=0 syscalls=38
-2026-11-05T11:51:07 START [2/12] libacl.so.1 functions=41 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libacl.so.1/logfile.txt
-2026-11-05T11:51:46 DONE [2/12] libacl.so.1 status=completed exit=0 syscalls=58
-2026-11-05T11:51:46 START [3/12] libgmp.so.10 functions=593 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libgmp.so.10/logfile.txt
-2026-11-05T11:52:36 DONE [3/12] libgmp.so.10 status=completed exit=0 syscalls=37
-2026-11-05T11:52:36 START [4/12] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libjimage.so/logfile.txt
-2026-11-05T11:54:41 DONE [4/12] libjimage.so status=failed exit=-15 syscalls=0
-2026-11-05T11:54:41 START [5/12] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libjli.so/logfile.txt
-2026-11-05T11:55:26 DONE [5/12] libjli.so status=completed exit=0 syscalls=67
-2026-11-05T11:55:26 START [6/12] libjsvml.so functions=272 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libjsvml.so/logfile.txt
-2026-11-05T12:00:45 RUN image=groovy_5.0.6 libraries=12 force=False
-2026-11-05T12:00:45 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Dataset_symbolized/LIBS_groovy_5.0.6
-2026-11-05T12:00:46 SKIP [1/12] jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so already_complete
-2026-11-05T12:00:46 SKIP [2/12] libacl.so.1 already_complete
-2026-11-05T12:00:46 SKIP [3/12] libgmp.so.10 already_complete
-2026-11-05T12:00:46 START [4/12] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libjimage.so/logfile.txt
-2026-11-05T12:24:29 DONE [4/12] libjimage.so status=completed exit=0 syscalls=103
-2026-11-05T12:24:29 SKIP [5/12] libjli.so already_complete
-2026-11-05T12:24:29 START [6/12] libjsvml.so functions=272 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libjsvml.so/logfile.txt
-2026-11-05T12:25:07 DONE [6/12] libjsvml.so status=completed exit=0 syscalls=0
-2026-11-05T12:25:07 START [7/12] libnio.so functions=202 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libnio.so/logfile.txt
-2026-11-05T12:51:25 DONE [7/12] libnio.so status=completed exit=0 syscalls=139
-2026-11-05T12:51:25 START [8/12] libpcre2-8.so.0 functions=73 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libpcre2-8.so.0/logfile.txt
-2026-11-05T12:52:40 DONE [8/12] libpcre2-8.so.0 status=completed exit=0 syscalls=39
-2026-11-05T12:52:40 START [9/12] libselinux.so.1 functions=240 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libselinux.so.1/logfile.txt
-2026-11-05T12:54:01 DONE [9/12] libselinux.so.1 status=completed exit=0 syscalls=83
-2026-11-05T12:54:01 START [10/12] libtic.so.6 functions=12 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libtic.so.6/logfile.txt
-2026-11-05T12:54:43 DONE [10/12] libtic.so.6 status=completed exit=0 syscalls=51
-2026-11-05T12:54:43 START [11/12] libtinfo.so.6 functions=211 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libtinfo.so.6/logfile.txt
-2026-11-05T12:55:25 DONE [11/12] libtinfo.so.6 status=completed exit=0 syscalls=49
-2026-11-05T12:55:25 START [12/12] libverify.so functions=3 log=/home/user/Tutorial/EchoTrace_latest/workspaces/groovy_5.0.6/syscalls_unanalysed_groovy_5.0.6/libverify.so/logfile.txt
-2026-11-05T13:17:41 DONE [12/12] libverify.so status=completed exit=0 syscalls=103
+2026-11-07T07:23:52 RUN image=groovy_5.0.6 libraries=10 force=False
+2026-11-07T07:23:52 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Dataset_symbolized/LIBS_groovy_5.0.6
+2026-11-07T07:23:52 SKIP [1/10] jlinenative-3.30.9-e8e0164d67489425-libjlinenative.so already_complete
+2026-11-07T07:23:52 SKIP [2/10] libacl.so.1 already_complete
+2026-11-07T07:23:52 SKIP [3/10] libgmp.so.10 already_complete
+2026-11-07T07:23:52 SKIP [4/10] libjli.so already_complete
+2026-11-07T07:23:52 SKIP [5/10] libjsvml.so already_complete
+2026-11-07T07:23:52 SKIP [6/10] libpcre2-8.so.0 already_complete
+2026-11-07T07:23:52 SKIP [7/10] libselinux.so.1 already_complete
+2026-11-07T07:23:52 SKIP [8/10] libtic.so.6 already_complete
+2026-11-07T07:23:52 SKIP [9/10] libtinfo.so.6 already_complete
+2026-11-07T07:23:52 SKIP [10/10] libverify.so already_complete

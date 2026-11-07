@@ -72784,3 +72784,594 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-06 19:11:11] cassandra_3.0.29-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Binary_Analysis/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json
+
+===== [2026-11-07 15:12:21] cassandra_3.0.29-jdk8-buster stage done: prepared through stage 8; a plain run continues from stage 9
+
+===== [2026-11-07 15:12:21] cassandra_3.0.29-jdk8-buster stage 5: native mapping and start functions
+============================================================
+ Native mapping and start-function preparation
+============================================================
+LIB_DIRS:    /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster
+OUTPUTS_DIR: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster
+  1/3 Running mapped_updated.py
+INFO: Appended JDK native lib trees (JDK*_LIBS/) for symbol scan:
+  + /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS
+      (child: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS)
+DEBUG: Using LIB_DIRS:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS
+INFO: No intrinsic whitelist found (optional). Skipping intrinsic classification.
+DEBUG: ELF libraries found:
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/jli/libjli.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libattach.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libawt.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libawt_headless.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libawt_xawt.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libdt_socket.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libfontmanager.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libfreetype.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libhprof.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libinstrument.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libj2gss.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libj2pcsc.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libj2pkcs11.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjaas_unix.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjava.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjava_crw_demo.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjawt.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjdwp.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjpeg.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjsdt.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjsig.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjsound.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libjsoundalsa.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/liblcms.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libmanagement.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libmlib_image.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libnet.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libnio.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libnpt.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libsaproc.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libsctp.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libsplashscreen.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libsunec.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libunpack.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libverify.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/libzip.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libBrokenLocale-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libBrokenLocale.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libSegFault.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libacl.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libacl.so.1.1.2253
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libanl-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libanl.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libapt-pkg.so.5.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libapt-pkg.so.5.0.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libapt-private.so.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libapt-private.so.0.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libattr.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libattr.so.1.1.2448
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libaudit.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libaudit.so.1.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libblkid.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libblkid.so.1.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libbz2.so.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libbz2.so.1.0.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libc-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libc.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcap-ng.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcap-ng.so.0.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcap.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcap.so.2.25
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcom_err.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcom_err.so.2.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcrypt-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcrypt.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libcrypto.so.1.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libdb-5.3.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libdebconfclient.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libdebconfclient.so.0.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libdl-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libdl.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libe2p.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libe2p.so.2.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libelf-0.176.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libelf.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libexpat.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libexpat.so.1.6.8
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libexpatw.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libexpatw.so.1.6.8
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libext2fs.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libext2fs.so.2.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libfdisk.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libfdisk.so.1.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libffi.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libffi.so.6.0.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libform.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libform.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libformw.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libformw.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgcc_s.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgcrypt.so.20
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgcrypt.so.20.2.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgmp.so.10
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgmp.so.10.3.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgnutls.so.30
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgnutls.so.30.23.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgpg-error.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libgpg-error.so.0.26.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libhistory.so.7
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libhistory.so.7.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libhogweed.so.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libhogweed.so.4.5
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libidn2.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libidn2.so.0.3.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libinstrument.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libjava.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libjemalloc.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libjli.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libjnidispatch.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libjvm.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblz4-java.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblz4-java1864768816310256501.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblz4-java3154006651160629592.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblz4.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblz4.so.1.8.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblzma.so.5
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/liblzma.so.5.2.4
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libm-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libm.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmanagement.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmemusage.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmenu.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmenu.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmenuw.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmenuw.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmnl.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmnl.so.0.2.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmount.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmount.so.1.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmvec-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libmvec.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libncurses.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libncurses.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libncursesw.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libncursesw.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnet.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnettle.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnettle.so.6.5
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnio.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnsl-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnsl.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_compat-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_compat.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_dns-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_dns.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_files-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_files.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_hesiod-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_hesiod.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_nis-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_nis.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_nisplus-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnss_nisplus.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnuma.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libnuma.so.1.0.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libp11-kit.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libp11-kit.so.0.3.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpam.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpam.so.0.84.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpam_misc.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpam_misc.so.0.82.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpamc.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpamc.so.0.82.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpanel.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpanel.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpanelw.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpanelw.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpcprofile.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpcre.so.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpcre.so.3.13.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpcreposix.so.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpcreposix.so.3.13.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libprocps.so.7
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libprocps.so.7.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpthread-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libpthread.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libreadline.so.7
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libreadline.so.7.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libresolv-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libresolv.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/librt-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/librt.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libseccomp.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libseccomp.so.2.3.3
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libselinux.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsemanage.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsepol.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-amd64-linux.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsmartcols.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsmartcols.so.1.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsnappyjava.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsqlite3.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsqlite3.so.0.8.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libss.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libss.so.2.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libssl.so.1.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libstdc++.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libstdc++.so.6.0.25
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsystemd.so.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libsystemd.so.0.25.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtasn1.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtasn1.so.6.5.5
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libthread_db-1.0.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libthread_db.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtic.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtic.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtinfo.so.6
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libtinfo.so.6.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libudev.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libudev.so.1.6.13
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libunistring.so.2
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libunistring.so.2.1.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libutil-2.28.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libutil.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libuuid.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libuuid.so.1.3.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libverify.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libxtables.so.12
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libxtables.so.12.2.0
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libz.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libz.so.1.2.11
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libzip.so
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libzstd.so.1
+ - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/libzstd.so.1.3.8
+ - (JVM)  /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster/JDK8_LIBS/amd64/server/libjvm.so
+INFO: Built JNI map with 1595 unique Java method entries
+INFO: 677 methods have overloaded JNI variants
+  sun.awt.motif.XsessionWMcommand.New:
+    Java_sun_awt_motif_XsessionWMcommand_New (libawt.so)
+    Java_sun_awt_motif_XsessionWMcommand_New (libawt_xawt.so)
+  sun.awt.DebugSettings.setCTracingOn:
+    Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2I (libawt.so)
+    Java_sun_awt_DebugSettings_setCTracingOn__Z (libawt.so)
+    Java_sun_awt_DebugSettings_setCTracingOn__ZLjava_lang_String_2 (libawt.so)
+  sun.awt.motif.XsessionWMcommand:
+    Java_sun_awt_motif_XsessionWMcommand (libawt.so)
+    Java_sun_awt_motif_XsessionWMcommand (libawt_xawt.so)
+  sun.awt.FontDescriptor.initIDs:
+    Java_sun_awt_FontDescriptor_initIDs (libawt_headless.so)
+    Java_sun_awt_FontDescriptor_initIDs (libawt_xawt.so)
+  sun.java2d.x11.X11Renderer.XDrawPoly:
+    Java_sun_java2d_x11_X11Renderer_XDrawPoly (libawt_headless.so)
+    Java_sun_java2d_x11_X11Renderer_XDrawPoly (libawt_xawt.so)
+INFO: Auto-extracting JNI dynamic bindings from /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/LIBS_cassandra_3.0.29-jdk8-buster -> /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jni_dynamic_bindings.txt
+  Scanned 230 .so files (host_arch=x86_64)
+    processed:  18
+    bindings:   102
+    output:     /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jni_dynamic_bindings.txt
+    summary:    /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jni_dynamic_summary.txt
+INFO: JNI dynamic bindings file /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jni_dynamic_bindings.txt (+102 new targets, 102 total)
+INFO: Extracting RegisterNatives tables from [libjvm.so, libjava.so, libjava.so, libnetty-transport-native-epoll.so] -> /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jvm_dynamic_mapping.txt
+    Scanning for JNI RegisterNatives calls (call *0x6b8)...
+    Mode 5: tracing callers of netty_unix_util_register_natives (0x3c10)...
+    Scanning for named method arrays (Mode 4)...
+  
+    Wrote 423 mappings to /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jvm_dynamic_mapping.txt
+INFO: Loaded RegisterNatives binary mapping from /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/jvm_dynamic_mapping.txt: 51 JVM_* + 336 registered (kept 423, dropped 0 not in libjvm.so)
+INFO: Classifying 975 methods...
+
+=== Classification Summary ===
+Total methods:        975
+Resolved:             897  (92%)
+  JNI:                 963     
+    Generic Java_:     873
+    Partial (_1/$/__): 90
+  JNI_DYNAMIC:         320     
+    JVM_:              39     (target symbol starts with JVM_)
+    Registered_:       281     (Registered_libjvm + JFR + Netty)
+  Intrinsic (JIT):     0
+Platform-excluded:    67
+NOT_FOUND_IN_LIBS:    11
+
+Output: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/mapped_method_syscalls.txt
+  2/3 Filtering unresolved mappings
+Filtering: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/mapped_method_syscalls.txt -> /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/filtered_method_syscalls.txt
+Wrote 1350 lines to /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster/filtered_method_syscalls.txt
+  3/3 Writing per-library SysPart start files
+Wrote combined: final.txt  (libs=24, methods=1282)
+Wrote per-library files to: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/outputs_cassandra_3.0.29-jdk8-buster
+Native mapping preparation complete.
+
+===== [2026-11-07 15:13:18] cassandra_3.0.29-jdk8-buster stage done: prepared through stage 5; a plain run continues from stage 6
+
+===== [2026-11-07 15:13:42] cassandra_3.0.29-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: cassandra_3.0.29-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster
+Found 22 subdirectories
+
+  ✓ bash: 81 syscalls
+  ✓ cat: 37 syscalls
+  ✓ dash: 63 syscalls
+  ✓ dirname: 36 syscalls
+  ✓ find: 69 syscalls
+  ✓ getopt: 36 syscalls
+  ✗ gosu: unanalysable (SysPart crash), no syscalls.txt
+  ✓ grep: 47 syscalls
+  ✓ head: 36 syscalls
+  ✓ id: 58 syscalls
+  ✓ ip: 88 syscalls
+  ✓ java: 63 syscalls
+  ✓ ldconfig: 61 syscalls
+  ✓ ls: 56 syscalls
+  ✓ mawk: 42 syscalls
+  ✓ mktemp: 43 syscalls
+  ✓ numactl: 60 syscalls
+  ✓ rm: 45 syscalls
+  ✓ sed: 68 syscalls
+  ✓ sort: 74 syscalls
+  ✓ tr: 37 syscalls
+  ✓ uname: 37 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster/binary_syscalls.txt (140 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster
+Found 19 subdirectories
+
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libc-2.28.so: 3 syscalls
+  ✓ libfontmanager.so: 75 syscalls
+  ✓ libjava.so: 86 syscalls
+  ✓ libjnidispatch.so: 35 syscalls
+  ✓ libjvm.so: 77 syscalls
+  ✓ liblz4-java.so: 35 syscalls
+  ✓ liblz4-java1864768816310256501.so: 35 syscalls
+  ✓ liblz4-java3154006651160629592.so: 35 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 80 syscalls
+  ✓ libnetty-transport-native-epoll.so: 68 syscalls
+  ✓ libnio.so: 82 syscalls
+  ✓ libsctp.so: 81 syscalls
+  ✓ libsigar-amd64-linux.so: 60 syscalls
+  ✓ libsnappyjava.so: 35 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/library_syscalls.txt (124 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster
+Found 92 syscalls.txt files
+  libBrokenLocale-2.28.so: syscalls.txt EMPTY (0 syscalls)
+  libacl.so.1: 50 syscalls
+  libacl.so.1.1.2253: 50 syscalls
+  libanl-2.28.so: 60 syscalls
+  libattr.so.1: 47 syscalls
+  libaudit.so.1.0.0: 49 syscalls
+  libblkid.so.1: 62 syscalls
+  libbz2.so.1.0.4: 36 syscalls
+  libcap-ng.so.0.0.0: 50 syscalls
+  libcap.so.2: 44 syscalls
+  libcom_err.so.2.1: 46 syscalls
+  libcrypt-2.28.so: 35 syscalls
+  libcrypto.so.1.1: 70 syscalls
+  libdb-5.3.so: 78 syscalls
+  libdebconfclient.so.0: 42 syscalls
+  libdl-2.28.so: 35 syscalls
+  libe2p.so.2.3: 45 syscalls
+  libelf-0.176.so: 42 syscalls
+  libexpat.so.1: 37 syscalls
+  libexpatw.so.1.6.8: 37 syscalls
+  libext2fs.so.2: 56 syscalls
+  libfdisk.so.1.1.0: 77 syscalls
+  libffi.so.6.0.4: 41 syscalls
+  libform.so.6: 39 syscalls
+  libformw.so.6.1: 39 syscalls
+  libgcrypt.so.20: 50 syscalls
+  libgmp.so.10.3.2: 36 syscalls
+  libgnutls.so.30: 65 syscalls
+  libgpg-error.so.0: 44 syscalls
+  libhistory.so.7: 49 syscalls
+  libhogweed.so.4: 35 syscalls
+  libidn2.so.0.3.4: 35 syscalls
+  libinstrument.so: 42 syscalls
+  libjemalloc.so.2: 50 syscalls
+  libjli.so: 62 syscalls
+  liblz4.so.1.8.3: 35 syscalls
+  liblzma.so.5: 56 syscalls
+  libmemusage.so: syscalls.txt EMPTY (0 syscalls)
+  libmenu.so.6: 39 syscalls
+  libmenuw.so.6: 39 syscalls
+  libmnl.so.0: 42 syscalls
+  libmount.so.1: 99 syscalls
+  libmvec-2.28.so: 12 syscalls
+  libncurses.so.6.1: 45 syscalls
+  libncursesw.so.6: 45 syscalls
+  libnettle.so.6: 35 syscalls
+  libnsl-2.28.so: 59 syscalls
+  libnss_compat-2.28.so: 42 syscalls
+  libnss_dns-2.28.so: 45 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libnss_hesiod-2.28.so: 45 syscalls
+  libnss_nis-2.28.so: 47 syscalls
+  libnss_nisplus-2.28.so: 58 syscalls
+  libnuma.so.1: 57 syscalls
+  libnuma.so.1.0.0: 57 syscalls
+  libp11-kit.so.0.3.0: 61 syscalls
+  libpam.so.0.84.2: 59 syscalls
+  libpam_misc.so.0.82.1: 40 syscalls
+  libpamc.so.0: 41 syscalls
+  libpanel.so.6.1: 35 syscalls
+  libpanelw.so.6.1: 35 syscalls
+  libpcprofile.so: syscalls.txt EMPTY (0 syscalls)
+  libpcre.so.3: 41 syscalls
+  libpcre.so.3.13.3: 41 syscalls
+  libpcreposix.so.3.13.3: 41 syscalls
+  libprocps.so.7.1.0: 57 syscalls
+  libpthread-2.28.so: 76 syscalls
+  libreadline.so.7.0: 56 syscalls
+  libresolv-2.28.so: 45 syscalls
+  librt-2.28.so: 74 syscalls
+  libseccomp.so.2.3.3: 37 syscalls
+  libselinux.so.1: 74 syscalls
+  libsemanage.so.1: 71 syscalls
+  libsepol.so.1: 36 syscalls
+  libsmartcols.so.1: 39 syscalls
+  libss.so.2.0: 55 syscalls
+  libssl.so.1.1: 69 syscalls
+  libstdc++.so.6: 38 syscalls
+  libstdc++.so.6.0.25: 38 syscalls
+  libsystemd.so.0.25.0: 112 syscalls
+  libtasn1.so.6.5.5: 35 syscalls
+  libthread_db-1.0.so: 35 syscalls
+  libtic.so.6: 47 syscalls
+  libtinfo.so.6: 44 syscalls
+  libtinfo.so.6.1: 44 syscalls
+  libudev.so.1.6.13: 58 syscalls
+  libunistring.so.2: 35 syscalls
+  libutil-2.28.so: 54 syscalls
+  libuuid.so.1: 46 syscalls
+  libxtables.so.12: 61 syscalls
+  libz.so.1: 35 syscalls
+  libzstd.so.1.3.8: 35 syscalls
+
+⚠ Warning: 3 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/unanalysed_syscalls.txt (192 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 39 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  No extra components.
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/runc.txt
+  ✓ Loaded 122 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      140
+Library syscalls:     124
+Unanalysed libraries: 192
+JNA/FFI syscalls:     39
+Runc whitelist:       122
+Combined (unique):    230
+  → unanalysed libraries added 52 additional syscalls
+  → runc.txt added 13 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.txt (230 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json (230 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 230
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  22
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  140 unique
+
+Libraries:
+  - Analyzed:  19
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  124 unique
+
+Unanalysable (SysPart crash): 1
+    - Binaries: gosu
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/runc.txt
+  - Syscalls:    122 unique
+  - Added:       65 additional syscalls
+
+Combined:
+  - Total unique syscalls: 230
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  cassandra_3.0.29-jdk8-buster
+      JARFILES_cassandra_3.0.29-jdk8-buster  (26M) -> Dataset/
+      LIBS_cassandra_3.0.29-jdk8-buster  (73M) -> Dataset/
+      BINARIES_cassandra_3.0.29-jdk8-buster  (18M) -> Dataset/
+      RUNTIME_cassandra_3.0.29-jdk8-buster  (71M) -> Dataset/
+      outputs_cassandra_3.0.29-jdk8-buster  (880K) -> Bytecode_Analysis/
+      sysdig_outputs_cassandra_3.0.29-jdk8-buster  (220K) -> Dynamic_Analysis/
+      syscalls_output_cassandra_3.0.29-jdk8-buster  (166M) -> Binary_Analysis/
+      syscalls_BIN_cassandra_3.0.29-jdk8-buster  (23M) -> Binary_Analysis/
+      syscalls_unanalysed_cassandra_3.0.29-jdk8-buster  (154M) -> Binary_Analysis/
+      startfuncs_unanalysed_cassandra_3.0.29-jdk8-buster  (1.2M) -> Binary_Analysis/
+      jna_ffi_analysis  (1.1M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (24K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (28K) -> Reports/
+      unanalysed_syspart_progress.log  (40K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-07 15:13:49] cassandra_3.0.29-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-07 15:16:20] cassandra_3.0.29-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Binary_Analysis/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json

@@ -1,2 +1,2 @@
 image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
-jetty_12.1.10	19	5	22	4	7	10	10
+jetty_12.1.10	19	13	24	7	8	7	10

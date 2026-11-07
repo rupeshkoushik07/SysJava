@@ -19,6 +19,7 @@ JVM_GetEnclosingMethodInfo
 JVM_GetNestHost
 JVM_GetPermittedSubclasses
 JVM_GetProtectionDomain
+JVM_GetRecordComponents
 JVM_GetSimpleBinaryName
 JVM_HoldsLock
 JVM_IHashCode
@@ -33,6 +34,7 @@ JVM_MonitorNotify
 JVM_MonitorNotifyAll
 JVM_MonitorWait
 JVM_NanoTime
+JVM_SetClassSigners
 JVM_SetNativeThreadName
 JVM_SetThreadPriority
 JVM_Sleep
@@ -40,6 +42,7 @@ JVM_StartThread
 JVM_Yield
 MHN_expand_Mem
 MHN_getMemberVMInfo
+MHN_getNamedCon
 MHN_init_Mem
 MHN_objectFieldOffset
 MHN_resolve_Mem
@@ -58,6 +61,7 @@ Unsafe_EnsureClassInitialized0
 Unsafe_FreeMemory0
 Unsafe_FullFence
 Unsafe_GetBoolean
+Unsafe_GetBooleanVolatile
 Unsafe_GetByte
 Unsafe_GetByteVolatile
 Unsafe_GetChar
@@ -76,8 +80,10 @@ Unsafe_GetShort
 Unsafe_GetShortVolatile
 Unsafe_LoadFence
 Unsafe_ObjectFieldOffset0
+Unsafe_ObjectFieldOffset1
 Unsafe_Park
 Unsafe_PutBoolean
+Unsafe_PutBooleanVolatile
 Unsafe_PutByte
 Unsafe_PutByteVolatile
 Unsafe_PutChar
@@ -102,7 +108,15 @@ Unsafe_StaticFieldOffset0
 Unsafe_StoreFence
 Unsafe_ThrowException
 Unsafe_Unpark
+Unsafe_WriteBack0
+Unsafe_WriteBackPostSync0
+Unsafe_WriteBackPreSync0
+VectorSupport_GetMaxLaneCount
 close
 fcntl
 fsync
 getpid
+JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods
+JVM_RegisterJDKInternalMiscUnsafeMethods
+JVM_RegisterMethodHandleMethods
+JVM_RegisterVectorSupportMethods

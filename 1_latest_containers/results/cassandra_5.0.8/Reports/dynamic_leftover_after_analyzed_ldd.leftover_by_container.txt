@@ -1,4 +1,4 @@
-cassandra_5.0.8 (108)
+cassandra_5.0.8 (107)
   - libBrokenLocale.so.1
   - libacl.so.1
   - libanl.so.1
@@ -49,7 +49,6 @@ cassandra_5.0.8 (108)
   - liblz4.so.1
   - liblz4.so.1.9.4
   - liblzma.so.5
-  - libmanagement.so
   - libmanagement_ext.so
   - libmd.so.0.0.5
   - libmemusage.so

@@ -1,13 +1,3 @@
-sched_setscheduler
-sched_setaffinity
-rt_sigprocmask
-rseq
-set_robust_list
-time
-gettimeofday
-sched_getaffinity
-close
-clock_gettime
 fcntl
 tgkill
 openat
@@ -16,6 +6,7 @@ write
 clone
 munmap
 rmdir
+pipe2
 ftruncate
 getdents64
 pread64
@@ -106,3 +97,13 @@ exit
 rt_sigreturn
 kill
 writev
+sched_setscheduler
+sched_setaffinity
+rt_sigprocmask
+rseq
+set_robust_list
+time
+gettimeofday
+sched_getaffinity
+close
+clock_gettime

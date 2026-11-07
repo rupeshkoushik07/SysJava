@@ -127,13 +127,13 @@ __lll_lock_wake 98fc0 module-libc.so.6 futex 202
 __allocate_shadow_stack 5efa0 module-libc.so.6  453
 __lll_lock_wait 98f40 module-libc.so.6 futex 202
 __GI___openat64_nocancel 11c940 module-libc.so.6 openat 257
-clone3 129c40 module-libc.so.6 clone3 435
 clone3 129c40 module-libc.so.6 exit 60
+clone3 129c40 module-libc.so.6 clone3 435
 __settimezone df870 module-libc.so.6 settimeofday 164
 __set_vma_name 12a770 module-libc.so.6 prctl 157
 __write_nocancel 11cae0 module-libc.so.6 write 1
-clone 129a20 module-libc.so.6 exit 60
 clone 129a20 module-libc.so.6 clone 56
+clone 129a20 module-libc.so.6 exit 60
 lremovexattr 124ef0 module-libc.so.6 lremovexattr 198
 setsid 10ea90 module-libc.so.6 setsid 112
 delete_module 12acc0 module-libc.so.6 delete_module 176
@@ -182,8 +182,8 @@ epoll_wait 12a020 module-libc.so.6 epoll_wait 232
 epoll_wait 12a020 module-libc.so.6 epoll_wait 232
 fanotify_init 12b260 module-libc.so.6 fanotify_init 300
 setpriority 11d650 module-libc.so.6 setpriority 141
-_Fork ee180 module-libc.so.6 clone 56
 _Fork ee180 module-libc.so.6 set_robust_list 273
+_Fork ee180 module-libc.so.6 clone 56
 pthread_barrier_wait@@GLIBC_2.34 9a630 module-libc.so.6 futex 202
 pthread_barrier_wait@@GLIBC_2.34 9a630 module-libc.so.6 futex 202
 pthread_barrier_wait@@GLIBC_2.34 9a630 module-libc.so.6 futex 202

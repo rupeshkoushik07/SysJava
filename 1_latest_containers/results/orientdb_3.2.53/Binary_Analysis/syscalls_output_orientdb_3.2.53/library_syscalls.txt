@@ -1,7 +1,9 @@
+accept
 access
 bind
 brk
 chdir
+chmod
 clock_gettime
 clock_nanosleep
 clone
@@ -16,6 +18,7 @@ exit_group
 faccessat
 faccessat2
 fcntl
+fdatasync
 flock
 fstat
 fstatfs
@@ -44,10 +47,12 @@ gettimeofday
 getuid
 ioctl
 kill
+listen
 lseek
 lstat
 madvise
 mincore
+mkdir
 mmap
 mprotect
 mremap
@@ -66,6 +71,8 @@ readlink
 readv
 recvfrom
 recvmsg
+rename
+rmdir
 rseq
 rt_sigaction
 rt_sigpending
@@ -79,6 +86,7 @@ sched_getscheduler
 sched_setaffinity
 sched_setscheduler
 sched_yield
+sendfile
 sendmmsg
 sendmsg
 sendto
@@ -100,6 +108,7 @@ time
 umask
 uname
 unlink
+utimensat
 vfork
 wait4
 write

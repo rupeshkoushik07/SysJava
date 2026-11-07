@@ -918,6 +918,12 @@ public class PrototypeFinal {
         public static Set<String> visitedNative = new HashSet<>();
         /** Internal names whose static initializers have been visited. */
         public static Set<String> visitedClassInit = new HashSet<>();
+        /** Virtual dispatch (RTA): reached virtual/interface call targets, keyed by static owner. */
+        public static Map<String, Set<String>> virtualCallsByOwner = new HashMap<>();
+        /** Instantiated classes (NEW reached), keyed by each of their supertypes. */
+        public static Map<String, Set<String>> instancesBelow = new HashMap<>();
+        /** "class#method+descriptor" pairs already dispatched to. */
+        public static Set<String> dispatched = new HashSet<>();
 
         /**
          * Prints visual separator line for output formatting
@@ -1055,6 +1061,9 @@ public class PrototypeFinal {
                 visitClassInit(owner);
             }
             resolveAndVisit(owner, name + descriptor);
+            if ((opcode == Opcodes.INVOKEVIRTUAL || opcode == Opcodes.INVOKEINTERFACE) && !name.startsWith("<")) {
+                addVirtualCall(owner, name + descriptor);
+            }
 
             super.visitMethodInsn(opcode, owner, name, descriptor, isInterface);
         }
@@ -1063,8 +1072,73 @@ public class PrototypeFinal {
         public void visitTypeInsn(int opcode, String type) {
             if (opcode == Opcodes.NEW) {
                 visitClassInit(type);
+                addInstantiated(type);
             }
             super.visitTypeInsn(opcode, type);
+        }
+
+        /**
+         * Virtual dispatch by rapid type analysis. The invoke instruction names
+         * the static type, but the JVM runs the override of the receiver's
+         * class, e.g. {@code File.delete()} calls {@code fs.delete(this)} on the
+         * abstract {@code FileSystem}, which runs {@code UnixFileSystem.delete}
+         * and its native {@code delete0} (rmdir). For every reached virtual or
+         * interface call, the method is also resolved from each instantiated
+         * subtype of its owner; a class instantiated later is matched against
+         * the calls already reached.
+         */
+        private static void addVirtualCall(String owner, String identifier) {
+            if (!Util.virtualCallsByOwner.computeIfAbsent(owner, k -> new HashSet<>()).add(identifier)) {
+                return;
+            }
+            for (String cls : new ArrayList<>(Util.instancesBelow.getOrDefault(owner, Collections.emptySet()))) {
+                dispatch(cls, identifier);
+            }
+        }
+
+        private static void addInstantiated(String type) {
+            if (Util.instancesBelow.getOrDefault(type, Collections.emptySet()).contains(type)) {
+                return;
+            }
+            Set<String> supers = supertypes(type);
+            for (String s : supers) {
+                Util.instancesBelow.computeIfAbsent(s, k -> new HashSet<>()).add(type);
+            }
+            for (String s : supers) {
+                for (String id : new ArrayList<>(Util.virtualCallsByOwner.getOrDefault(s, Collections.emptySet()))) {
+                    dispatch(type, id);
+                }
+            }
+        }
+
+        private static void dispatch(String cls, String identifier) {
+            if (Util.dispatched.add(cls + "#" + identifier)) {
+                resolveAndVisit(cls, identifier);
+            }
+        }
+
+        /** {@code type} and all its superclasses and superinterfaces on the classpath. */
+        private static Set<String> supertypes(String type) {
+            Set<String> out = new LinkedHashSet<>();
+            Deque<String> todo = new ArrayDeque<>();
+            todo.add(type);
+            while (!todo.isEmpty()) {
+                String c = todo.poll();
+                if (!out.add(c)) {
+                    continue;
+                }
+                ClassFilter cf = visitIfPresent(c, "");
+                if (cf == null) {
+                    continue;
+                }
+                if (cf.superName != null) {
+                    todo.add(cf.superName);
+                }
+                if (cf.interfaces != null) {
+                    todo.addAll(Arrays.asList(cf.interfaces));
+                }
+            }
+            return out;
         }
 
         @Override

@@ -1,4 +1,4 @@
-stage4_detector_commit=52628c4
-stage4_detector_repo=/home/user/Tutorial/EchoTrace_clinit_build
-stage4_detector_branch=latest-clinit-fix
+stage4_detector_commit=89bf135
+stage4_detector_repo=/home/user/Tutorial/EchoTrace_rta_build
+stage4_detector_branch=HEAD
 stage4_unpatched_commit=516fb46

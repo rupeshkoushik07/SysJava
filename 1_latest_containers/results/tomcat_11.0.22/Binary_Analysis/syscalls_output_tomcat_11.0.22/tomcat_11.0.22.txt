@@ -36,13 +36,11 @@ fadvise64
 fallocate
 fchdir
 fchmod
-fchmodat
 fchown
 fcntl
 fdatasync
 fgetxattr
 flistxattr
-fremovexattr
 fsetxattr
 fstat
 fstatfs
@@ -70,13 +68,9 @@ getsockopt
 gettid
 gettimeofday
 getuid
-inotify_add_watch
-inotify_init
-inotify_rm_watch
 ioctl
 kill
 lchown
-link
 listen
 lseek
 lstat

@@ -59,6 +59,10 @@ class PrototypeFinalNativeMethodTest {
         // here so each test sees a clean slate.
         PrototypeFinal.Util.visitedNative.clear();
         PrototypeFinal.Util.visitedMethod.clear();
+        PrototypeFinal.Util.visitedClassInit.clear();
+        PrototypeFinal.Util.virtualCallsByOwner.clear();
+        PrototypeFinal.Util.instancesBelow.clear();
+        PrototypeFinal.Util.dispatched.clear();
 
         // pathPrefix is a private static field; traceJarFiles uses it as the
         // dir to resolve JAR names against.  Mirror main()'s normalization
@@ -350,6 +354,125 @@ class PrototypeFinalNativeMethodTest {
     }
 
     // ---------------------------------------------------------------------
+    //  Inherited-method resolution (invoke names the static owner, not the
+    //  declaring class)
+    // ---------------------------------------------------------------------
+
+    /**
+     * app.jar  Main.main()  → INVOKEVIRTUAL rt/Sub.nativeOp()V
+     * rt.jar   Sub extends Mid extends Base;  Base declares native nativeOp()V
+     *
+     * Sub and Mid do not declare nativeOp, so the native is only found by
+     * walking the superclass chain. rt.jar is not scanned, so Flow 1 cannot
+     * find it either.
+     */
+    @Test
+    @DisplayName("Inherited: native declared on a runtime superclass is found through a subclass call")
+    void inheritedNativeOnRuntimeSuperclassIsFound() throws Exception {
+        Path app = writeJar("app.jar", classWithInvokes("com/example/app/Main", "main",
+                new Object[][]{{Opcodes.INVOKEVIRTUAL, "rt/Sub", "nativeOp", false}}));
+        Path rt = writeJar("rt.jar",
+                classDeclaring("rt/Base", "java/lang/Object", null, false,
+                        new Object[][]{{"nativeOp", Opcodes.ACC_PUBLIC | Opcodes.ACC_NATIVE, null}}),
+                classDeclaring("rt/Mid", "rt/Base", null, false, new Object[0][]),
+                classDeclaring("rt/Sub", "rt/Mid", null, false, new Object[0][]));
+
+        runAnalysisWithRuntime(new Path[]{app}, new Path[]{rt});
+
+        assertContains(PrototypeFinal.Util.visitedNative, "rt.Base.nativeOp");
+    }
+
+    /**
+     * app.jar  Main.main()  → INVOKEVIRTUAL rt/Impl.helper()V
+     * rt.jar   Impl implements Iface;  Iface.helper() is a default method
+     *          that calls rt/Natives.n()V (native)
+     */
+    @Test
+    @DisplayName("Inherited: a default method on a runtime superinterface is followed into its natives")
+    void defaultMethodOnSuperinterfaceIsFollowed() throws Exception {
+        Path app = writeJar("app.jar", classWithInvokes("com/example/app/Main", "main",
+                new Object[][]{{Opcodes.INVOKEVIRTUAL, "rt/Impl", "helper", false}}));
+        Path rt = writeJar("rt.jar",
+                classDeclaring("rt/Iface", "java/lang/Object", null, true,
+                        new Object[][]{{"helper", Opcodes.ACC_PUBLIC, new String[]{"rt/Natives", "n"}}}),
+                classDeclaring("rt/Impl", "java/lang/Object", new String[]{"rt/Iface"}, false,
+                        new Object[0][]),
+                classWithMultipleNatives("rt/Natives", new String[][]{{"n", "()V"}}));
+
+        runAnalysisWithRuntime(new Path[]{app}, new Path[]{rt});
+
+        assertContains(PrototypeFinal.Util.visitedNative, "rt.Natives.n");
+    }
+
+    /**
+     * The closest declaration wins: Sub overrides op() with a plain method,
+     * so Base's native op() is not what the call resolves to.
+     */
+    @Test
+    @DisplayName("Inherited: resolution stops at the closest declaring class")
+    void resolutionStopsAtClosestDeclaration() throws Exception {
+        Path app = writeJar("app.jar", classWithInvokes("com/example/app/Main", "main",
+                new Object[][]{{Opcodes.INVOKEVIRTUAL, "rt/Sub", "op", false}}));
+        Path rt = writeJar("rt.jar",
+                classDeclaring("rt/Base", "java/lang/Object", null, false,
+                        new Object[][]{{"op", Opcodes.ACC_PUBLIC | Opcodes.ACC_NATIVE, null}}),
+                classDeclaring("rt/Sub", "rt/Base", null, false,
+                        new Object[][]{{"op", Opcodes.ACC_PUBLIC, null}}));
+
+        runAnalysisWithRuntime(new Path[]{app}, new Path[]{rt});
+
+        assertFalse(PrototypeFinal.Util.visitedNative.contains("rt.Base.op"),
+                "Sub.op() overrides Base.op(), so the native must not be recorded: "
+                        + PrototypeFinal.Util.visitedNative);
+    }
+
+    /**
+     * app.jar  Main.main()  → NEW rt/UnixFs; INVOKEVIRTUAL rt/Fs.delete()V
+     * rt.jar   abstract-style Fs.delete() is empty; UnixFs overrides delete()
+     *          and calls rt/UnixFs.delete0()V (native)
+     *
+     * The call names Fs, but the instantiated receiver is UnixFs, so its
+     * override (and the native behind it) must be followed: the shape of
+     * File.delete() -> FileSystem.delete() -> UnixFileSystem.delete0 (rmdir).
+     */
+    @Test
+    @DisplayName("Dispatch: an override in an instantiated subclass is followed into its native")
+    void overrideInInstantiatedSubclassIsFollowed() throws Exception {
+        Path app = writeJar("app.jar", classWithInvokes("com/example/app/Main", "main",
+                new Object[][]{{Opcodes.NEW, "rt/UnixFs", null, false},
+                               {Opcodes.INVOKEVIRTUAL, "rt/Fs", "delete", false}}));
+        Path rt = writeJar("rt.jar",
+                classDeclaring("rt/Fs", "java/lang/Object", null, false,
+                        new Object[][]{{"delete", Opcodes.ACC_PUBLIC, null}}),
+                classDeclaring("rt/UnixFs", "rt/Fs", null, false,
+                        new Object[][]{{"delete", Opcodes.ACC_PUBLIC, new String[]{"rt/UnixFs", "delete0"}},
+                                       {"delete0", Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_NATIVE, null}}));
+
+        runAnalysisWithRuntime(new Path[]{app}, new Path[]{rt});
+
+        assertContains(PrototypeFinal.Util.visitedNative, "rt.UnixFs.delete0");
+    }
+
+    /** An override in a subclass that is never instantiated is not followed. */
+    @Test
+    @DisplayName("Dispatch: an override in a never-instantiated subclass is not followed")
+    void overrideInUninstantiatedSubclassIsIgnored() throws Exception {
+        Path app = writeJar("app.jar", classWithInvokes("com/example/app/Main", "main",
+                new Object[][]{{Opcodes.INVOKEVIRTUAL, "rt/Fs", "delete", false}}));
+        Path rt = writeJar("rt.jar",
+                classDeclaring("rt/Fs", "java/lang/Object", null, false,
+                        new Object[][]{{"delete", Opcodes.ACC_PUBLIC, null}}),
+                classDeclaring("rt/UnixFs", "rt/Fs", null, false,
+                        new Object[][]{{"delete", Opcodes.ACC_PUBLIC, new String[]{"rt/UnixFs", "delete0"}},
+                                       {"delete0", Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_NATIVE, null}}));
+
+        runAnalysisWithRuntime(new Path[]{app}, new Path[]{rt});
+
+        assertFalse(PrototypeFinal.Util.visitedNative.contains("rt.UnixFs.delete0"),
+                "UnixFs is never instantiated: " + PrototypeFinal.Util.visitedNative);
+    }
+
+    // ---------------------------------------------------------------------
     //  Test helpers - drive PrototypeFinal's machinery directly
     // ---------------------------------------------------------------------
 
@@ -584,6 +707,85 @@ class PrototypeFinalNativeMethodTest {
         for (String[] m : methods) {
             cw.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_NATIVE,
                            m[0], m[1], null, null).visitEnd();
+        }
+        cw.visitEnd();
+        return cw.toByteArray();
+    }
+
+    /**
+     * Builds a class with one static {@code ()V} method making the given calls.
+     *
+     * @param calls array of {opcode, calleeClass, calleeMethod, isInterface}; every
+     *              callee is {@code ()V}. Instance invokes are emitted on a null
+     *              receiver, which only needs to be well-formed for ASM.
+     */
+    private byte[] classWithInvokes(String internalName, String methodName, Object[][] calls) {
+        ClassWriter cw = new ClassWriter(0);
+        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC | Opcodes.ACC_SUPER,
+                 internalName, null, "java/lang/Object", null);
+
+        emitDefaultCtor(cw);
+
+        MethodVisitor mv = cw.visitMethod(
+                Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, methodName, "()V", null, null);
+        mv.visitCode();
+        for (Object[] call : calls) {
+            int opcode = (Integer) call[0];
+            if (opcode == Opcodes.NEW) {   // {NEW, type, null, false}: instantiate, discard
+                mv.visitTypeInsn(Opcodes.NEW, (String) call[1]);
+                mv.visitInsn(Opcodes.POP);
+                continue;
+            }
+            if (opcode != Opcodes.INVOKESTATIC) {
+                mv.visitInsn(Opcodes.ACONST_NULL);
+            }
+            mv.visitMethodInsn(opcode, (String) call[1], (String) call[2], "()V", (Boolean) call[3]);
+        }
+        mv.visitInsn(Opcodes.RETURN);
+        mv.visitMaxs(1, 0);
+        mv.visitEnd();
+        cw.visitEnd();
+        return cw.toByteArray();
+    }
+
+    /**
+     * Builds a class or interface with explicit supertypes and {@code ()V} instance methods.
+     *
+     * @param methods array of {name, access, call}; {@code call} is null for an empty
+     *                body (or no body when ACC_NATIVE), otherwise {calleeClass,
+     *                calleeMethod} invoked with INVOKESTATIC.
+     */
+    private byte[] classDeclaring(String internalName, String superName, String[] interfaces,
+                                  boolean isInterface, Object[][] methods) {
+        ClassWriter cw = new ClassWriter(0);
+        int access = isInterface
+                ? Opcodes.ACC_PUBLIC | Opcodes.ACC_INTERFACE | Opcodes.ACC_ABSTRACT
+                : Opcodes.ACC_PUBLIC | Opcodes.ACC_SUPER;
+        cw.visit(Opcodes.V1_8, access, internalName, null, superName, interfaces);
+
+        if (!isInterface) {
+            MethodVisitor init = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V", null, null);
+            init.visitCode();
+            init.visitVarInsn(Opcodes.ALOAD, 0);
+            init.visitMethodInsn(Opcodes.INVOKESPECIAL, superName, "<init>", "()V", false);
+            init.visitInsn(Opcodes.RETURN);
+            init.visitMaxs(1, 1);
+            init.visitEnd();
+        }
+
+        for (Object[] m : methods) {
+            int methodAccess = (Integer) m[1];
+            MethodVisitor mv = cw.visitMethod(methodAccess, (String) m[0], "()V", null, null);
+            if ((methodAccess & Opcodes.ACC_NATIVE) == 0) {
+                mv.visitCode();
+                String[] call = (String[]) m[2];
+                if (call != null) {
+                    mv.visitMethodInsn(Opcodes.INVOKESTATIC, call[0], call[1], "()V", false);
+                }
+                mv.visitInsn(Opcodes.RETURN);
+                mv.visitMaxs(0, 1);
+            }
+            mv.visitEnd();
         }
         cw.visitEnd();
         return cw.toByteArray();

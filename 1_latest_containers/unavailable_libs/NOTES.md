@@ -271,3 +271,17 @@ Tomcat Not Found 2 -> 0.
   WS_ROOT=<abs> RESULTS_ROOT=<abs> run_latest_target.sh storm_2.8.8 11 -> PASS (first check without ZooKeeper failed in baseline too).
 - Final: tables/tableIII_latest_rerun_2026-11-06_final.{tex,pdf} (results mix: _clinit for orientdb/zookeeper);
   not-found list notfound_search/notfound_with_jars.tsv (37, rebuilt from classification.tsv) -> tables/notfound_natives_latest_2026-11-06_final.pdf.
+
+## 2026-11-07: RTA rerun of the latest set (detector 89bf135), Not Found
+- Results: Final_results_latest_versions_rta/<t>, workspaces_rta/<t> (scripts/rta_rerun_target.sh <t> map|fold|analyse; logs tables/rta_logs/).
+- New Not Found after the published manual mappings: 84 JDK natives reached by RTA. notfound_search/classify_rta.py writes
+  <t>/mapping_rta/mapped_method_syscalls.txt (published lines + new), <t>/platform_extra_rta.txt (platform + intrinsic + dead),
+  <t>/dead_rta.txt, notfound_search/classification_rta.tsv. The published mapping/ and platform_extra.txt are untouched.
+- Mapped: JVM registerNatives (Unsafe, ScopedMemoryAccess, MethodHandleNatives, Perf, VectorSupport, JFR) + VM.getNanoTimeAdjustment -> libjvm;
+  JDK 25 MappedMemoryUtils (solr) -> libnio's registered MappedMemoryUtils_*; 20 LibFallback natives (solr, tomcat) ->
+  libfallbackLinker.so built from openjdk/jdk25u jdk-25.0.3+9 (_downloads/libfallbackLinker-jdk-25.0.3+9; libffi.so.8 alongside);
+  storm rocksdb (DB)Options.(set)failIfOptionsFileError -> rocksdb 5.18.4 library (storm 2.4.0's jar, sha1 = Maven Central).
+- Dead (user decision 2026-11-07, counted with Platform / Intrinsic): jffi Foreign x7, zstd generateSequences, NativeAffinity.rdtsc0,
+  TransformBlit.Transform (no C implementation in OpenJDK), hawtjni Callback x7, rocksdb newLiveFileMetaDataHandle and
+  RocksEnv.disposeInternalJni (no release 5.18.4..11.8.1 implements them), JFR setCompressedIntegers. Not Found = 0 for all 10.
+- New supplied libraries, one SysPart run each with all mapped starts: <t>/rta_syspart_fallbackLinker (solr, tomcat), storm_2.8.8/rta_syspart_rocksdb518.

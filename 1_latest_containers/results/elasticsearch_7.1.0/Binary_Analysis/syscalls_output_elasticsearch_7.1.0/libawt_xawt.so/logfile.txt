@@ -7,21 +7,21 @@ Path to set_robust_list:
   Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __nptl_set_robust_6770
   __nptl_set_robust_6770 - [syscall]-> set_robust_list
 
-Path to futex:
-  Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __nptl_setxid_75d0
-  __nptl_setxid_75d0 - [syscall]-> futex
-
 Path to tgkill:
   Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __nptl_setxid_75d0
   __nptl_setxid_75d0 - [syscall]-> tgkill
+
+Path to futex:
+  Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __nptl_setxid_75d0
+  __nptl_setxid_75d0 - [syscall]-> futex
 
 Path to read:
   Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __read_chk_115fc0
   __read_chk_115fc0 - [syscall]-> read
 
 Path to rt_sigreturn:
-  Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __restore_rt_f5d0
-  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
+  Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __restore_rt_36280
+  __restore_rt_36280 - [syscall]-> rt_sigreturn
 
 Path to clock_gettime:
   Java_java_awt_AWTEvent_initIDs_2f5c0 - [INDIRECT]-> __syscall_clock_gettime_fe260

@@ -1,531 +1,538 @@
 
 Path to gettid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [syscall]-> gettid
 
 Path to futex:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __condvar_cleanup_waiting_9b4b0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __condvar_cleanup_waiting_9b4b0
   __condvar_cleanup_waiting_9b4b0 - [syscall]-> futex
 
 Path to gettimeofday:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __gettimeofday_syscall_df6d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __gettimeofday_syscall_df6d0
   __gettimeofday_syscall_df6d0 - [syscall]-> gettimeofday
 
 Path to rt_sigreturn:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __restore_rt_45330
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __restore_rt_45330
   __restore_rt_45330 - [syscall]-> rt_sigreturn
 
 Path to setresuid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> setresuid
 
 Path to setresgid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> setresgid
 
 Path to close_range:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> close_range
 
 Path to rt_sigprocmask:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> rt_sigprocmask
 
 Path to clock_gettime:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_ec950
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_ec950
   clock_gettime@@GLIBC_2.17_ec950 - [syscall]-> clock_gettime
 
 Path to close:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> close_116710
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> close_116710
   close_116710 - [syscall]-> close
 
 Path to flock:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> flock_117380
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> flock_117380
   flock_117380 - [syscall]-> flock
 
 Path to fstat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstat_1173b0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fstat_1173b0
   fstat_1173b0 - [syscall]-> fstat
 
 Path to newfstatat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstatat_1173e0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fstatat_1173e0
   fstatat_1173e0 - [syscall]-> newfstatat
 
 Path to fstatfs:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fstatfs_117420
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fstatfs_117420
   fstatfs_117420 - [syscall]-> fstatfs
 
 Path to ftruncate:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> ftruncate_11ee90
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> ftruncate_11ee90
   ftruncate_11ee90 - [syscall]-> ftruncate
 
 Path to getpeername:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpeername_12ba30
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getpeername_12ba30
   getpeername_12ba30 - [syscall]-> getpeername
 
 Path to getpgid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpgid_f5a50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getpgid_f5a50
   getpgid_f5a50 - [syscall]-> getpgid
 
 Path to getpid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpid_f5a90
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getpid_f5a90
   getpid_f5a90 - [syscall]-> getpid
 
 Path to getppid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getppid_f5aa0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getppid_f5aa0
   getppid_f5aa0 - [syscall]-> getppid
 
 Path to getpriority:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getpriority_11d610
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getpriority_11d610
   getpriority_11d610 - [syscall]-> getpriority
 
 Path to getrusage:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getrusage_11d260
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getrusage_11d260
   getrusage_11d260 - [syscall]-> getrusage
 
 Path to getsid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsid_f5b10
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getsid_f5b10
   getsid_f5b10 - [syscall]-> getsid
 
 Path to getsockname:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsockname_12ba60
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getsockname_12ba60
   getsockname_12ba60 - [syscall]-> getsockname
 
 Path to getsockopt:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> getsockopt_12ba90
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> getsockopt_12ba90
   getsockopt_12ba90 - [syscall]-> getsockopt
 
 Path to ioctl:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> ioctl_124de0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> ioctl_124de0
   ioctl_124de0 - [syscall]-> ioctl
 
 Path to kill:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> kill_45530
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> kill_45530
   kill_45530 - [syscall]-> kill
 
 Path to lseek:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> lseek_11b000
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> lseek_11b000
   lseek_11b000 - [syscall]-> lseek
 
 Path to mmap:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> mmap_125320
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> mmap_125320
   mmap_125320 - [syscall]-> mmap
 
 Path to munmap:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> munmap_125d70
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> munmap_125d70
   munmap_125d70 - [syscall]-> munmap
 
 Path to openat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> open_11b150
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> open_11b150
   open_11b150 - [syscall]-> openat
 
 Path to pread64:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pread_fa460
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> pread_fa460
   pread_fa460 - [syscall]-> pread64
 
 Path to pwrite64:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pwrite_fa500
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> pwrite_fa500
   pwrite_fa500 - [syscall]-> pwrite64
 
 Path to read:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> read_11ba80
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> read_11ba80
   read_11ba80 - [syscall]-> read
 
 Path to rt_sigpending:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> sigpending_45560
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> sigpending_45560
   sigpending_45560 - [syscall]-> rt_sigpending
 
 Path to set_robust_list:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> start_thread_9c720
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> set_robust_list
 
 Path to rseq:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> start_thread_9c720
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> rseq
 
 Path to exit:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> start_thread_9c720
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> exit
 
 Path to statfs:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> statfs_11bc10
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> statfs_11bc10
   statfs_11bc10 - [syscall]-> statfs
 
 Path to time:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> time_syscall_df5d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> time_syscall_df5d0
   time_syscall_df5d0 - [syscall]-> time
 
 Path to umask:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> umask_11c420
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> umask_11c420
   umask_11c420 - [syscall]-> umask
 
 Path to unlink:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> unlink_11c430
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> unlink_11c430
   unlink_11c430 - [syscall]-> unlink
 
 Path to write:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> write_11c590
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> write_11c590
   write_11c590 - [syscall]-> write
 
+Path to poll:
+  Java_sun_awt_X11_XToolkit_waitForEvents_2cb60 - [DIRECT]-> poll_11b4b0
+  poll_11b4b0 - [syscall]-> poll
+
+Path to pipe2:
+  Java_sun_awt_X11_XToolkit_awt_1toolkit_1init_2d0b0 - [DIRECT]-> pipe_11b440
+  pipe_11b440 - [syscall]-> pipe2
+
+Path to fcntl:
+  Java_sun_awt_X11_XToolkit_awt_1toolkit_1init_2d0b0 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to shmget:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_333c0 - [DIRECT]-> TryInitMITShm_32e70
+  TryInitMITShm_32e70 - [DIRECT]-> shmget_12c7a0
+  shmget_12c7a0 - [syscall]-> shmget
+
+Path to shmat:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_333c0 - [DIRECT]-> TryInitMITShm_32e70
+  TryInitMITShm_32e70 - [DIRECT]-> shmat_12c740
+  shmat_12c740 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_333c0 - [DIRECT]-> TryInitMITShm_32e70
+  TryInitMITShm_32e70 - [DIRECT]-> shmctl@@GLIBC_2.2.5_12c7e0
+  shmctl@@GLIBC_2.2.5_12c7e0 - [syscall]-> shmctl
+
+Path to shmdt:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_333c0 - [DIRECT]-> TryInitMITShm_32e70
+  TryInitMITShm_32e70 - [DIRECT]-> shmdt_12c770
+  shmdt_12c770 - [syscall]-> shmdt
+
+Path to getrandom:
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [DIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> ptmalloc_init.part.0_a9d70
+  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
+
 Path to mremap:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _IO_file_underflow_mmap_92990
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _IO_file_underflow_mmap_92990
   _IO_file_underflow_mmap_92990 - [DIRECT]-> mremap_12a350
   mremap_12a350 - [syscall]-> mremap
 
 Path to geteuid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> geteuid_f4750
   geteuid_f4750 - [syscall]-> geteuid
 
 Path to getegid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getegid_f4740
   getegid_f4740 - [syscall]-> getegid
 
 Path to getuid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getuid_f5b40
   getuid_f5b40 - [syscall]-> getuid
 
 Path to getgid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getgid_f4760
   getgid_f4760 - [syscall]-> getgid
 
 Path to mprotect:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_e7b9d0
   _ZN15VM_LinuxDllLoad4doitEv_e7b9d0 - [DIRECT]-> mprotect_125c40
   mprotect_125c40 - [syscall]-> mprotect
 
 Path to membarrier:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_9b9000
   _ZN22VM_HandshakeAllThreads4doitEv_9b9000 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780
   _ZN24LinuxSystemMemoryBarrier4emitEv_11bf780 - [syscall]-> membarrier
 
 Path to madvise:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os4initEv_e799f0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os4initEv_e799f0
   _ZN2os4initEv_e799f0 - [DIRECT]-> madvise_1250e0
   madvise_1250e0 - [syscall]-> madvise
 
 Path to access:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> access_116650
   access_116650 - [syscall]-> access
 
 Path to rt_sigaction:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> __libc_sigaction_45340
   __libc_sigaction_45340 - [syscall]-> rt_sigaction
 
 Path to fchdir:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> fchdir_116d90
   fchdir_116d90 - [syscall]-> fchdir
 
 Path to exit_group:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> _exit_ee200
   _exit_ee200 - [syscall]-> exit_group
 
 Path to chdir:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> chdir_116680
   chdir_116680 - [syscall]-> chdir
 
 Path to dup2:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> dup2_116990
   dup2_116990 - [syscall]-> dup2
 
-Path to fcntl:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
-  __spawni_child_10f8d0 - [DIRECT]-> fcntl_117000
-  fcntl_117000 - [syscall]-> fcntl
-
 Path to setsid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> setsid_10ea90
   setsid_10ea90 - [syscall]-> setsid
 
 Path to setpgid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> setpgid_10e930
   setpgid_10e930 - [syscall]-> setpgid
 
 Path to sched_setscheduler:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> sched_setscheduler_10e7d0
   sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
 
 Path to sched_setparam:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> sched_setparam_10e7a0
   sched_setparam_10e7a0 - [syscall]-> sched_setparam
 
 Path to prlimit64:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> getrlimit_11d1e0
   getrlimit_11d1e0 - [syscall]-> prlimit64
 
-Path to getrandom:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> calloc_ae7c0
-  calloc_ae7c0 - [DIRECT]-> ptmalloc_init.part.0_a9d70
-  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
-
 Path to sendto:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clntudp_call_1752e0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> sendto_12c0c0
   sendto_12c0c0 - [syscall]-> sendto
 
-Path to poll:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clntudp_call_1752e0
-  clntudp_call_1752e0 - [DIRECT]-> poll_11b4b0
-  poll_11b4b0 - [syscall]-> poll
-
 Path to recvmsg:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clntudp_call_1752e0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> recvmsg_12be10
   recvmsg_12be10 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> clntudp_call_1752e0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> recvfrom_12bca0
   recvfrom_12bca0 - [syscall]-> recvfrom
 
 Path to readv:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4b260_4b260
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4b260_4b260
   fuzzyfunc-0x4b260_4b260 - [DIRECT]-> readv_126980
   readv_126980 - [syscall]-> readv
 
 Path to writev:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4b2a0_4b2a0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4b2a0_4b2a0
   fuzzyfunc-0x4b2a0_4b2a0 - [DIRECT]-> writev_129880
   writev_129880 - [syscall]-> writev
 
 Path to shutdown:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
   fuzzyfunc-0x4b330_4b330 - [DIRECT]-> shutdown_12c1c0
   shutdown_12c1c0 - [syscall]-> shutdown
 
 Path to setsockopt:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
   fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> setsockopt_12c180
   setsockopt_12c180 - [syscall]-> setsockopt
 
 Path to connect:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
   fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> connect_12b990
   connect_12b990 - [syscall]-> connect
 
 Path to clock_nanosleep:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> nanosleep_f9a10
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> nanosleep_f9a10
   nanosleep_f9a10 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_eca20
   clock_nanosleep@@GLIBC_2.17_eca20 - [syscall]-> clock_nanosleep
 
 Path to tgkill:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> raise_45260
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> raise_45260
   raise_45260 - [DIRECT]-> pthread_kill@@GLIBC_2.34_9ea10
   pthread_kill@@GLIBC_2.34_9ea10 - [syscall]-> tgkill
 
 Path to getdents64:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> readdir_ed970
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> readdir_ed970
   readdir_ed970 - [DIRECT]-> getdents64_ed920
   getdents64_ed920 - [syscall]-> getdents64
 
 Path to sched_getscheduler:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
   pthread_create@@GLIBC_2.34_9cbc0 - [syscall]-> sched_getscheduler
 
 Path to sched_getparam:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
   pthread_create@@GLIBC_2.34_9cbc0 - [syscall]-> sched_getparam
 
 Path to mkdir:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> try_dir_66710
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> try_dir_66710
   try_dir_66710 - [DIRECT]-> mkdir_11b050
   mkdir_11b050 - [syscall]-> mkdir
 
+Path to uname:
+  Java_sun_awt_X11GraphicsEnvironment_initXRender_2a4c0 - [DIRECT]-> IsXRenderAvailable_2a0c0
+  IsXRenderAvailable_2a0c0 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
+
+Path to stat:
+  Java_sun_awt_X11GraphicsEnvironment_initXRender_2a4c0 - [DIRECT]-> IsXRenderAvailable_2a0c0
+  IsXRenderAvailable_2a0c0 - [DIRECT]-> __xstat_12ab60
+  __xstat_12ab60 - [syscall]-> stat
+
 Path to lstat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> Perf_Attach_eba180
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> Perf_Attach_eba180
   Perf_Attach_eba180 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_ebde90 - [DIRECT]-> __lxstat_12a260
   __lxstat_12a260 - [syscall]-> lstat
 
 Path to sysinfo:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> WB_HostPhysicalSwap_12baca0
   WB_HostPhysicalSwap_12baca0 - [DIRECT]-> _ZN2os5Linux9host_swapEv_e70ed0
   _ZN2os5Linux9host_swapEv_e70ed0 - [DIRECT]-> sysinfo_12b1a0
   sysinfo_12b1a0 - [syscall]-> sysinfo
 
 Path to wait4:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
   _IO_proc_close@@GLIBC_2.2.5_87950 - [DIRECT]-> waitpid_110910
   waitpid_110910 - [DIRECT]-> wait4_1107c0
   wait4_1107c0 - [syscall]-> wait4
 
-Path to stat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80
-  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_6e1b80 - [DIRECT]-> _ZN2os4statEPKcP4stat_e80ee0
-  _ZN2os4statEPKcP4stat_e80ee0 - [DIRECT]-> __xstat_12ab60
-  __xstat_12ab60 - [syscall]-> stat
-
 Path to times:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN17ShenandoahMmuTask4taskEv_1094c70
   _ZN17ShenandoahMmuTask4taskEv_1094c70 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__e819b0
   _ZN2os12getTimesSecsEPdS0_S0__e819b0 - [DIRECT]-> times_1106b0
   times_1106b0 - [syscall]-> times
 
 Path to prctl:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> __assert_fail_3b4d0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> __assert_fail_3b4d0
   __assert_fail_3b4d0 - [DIRECT]-> __assert_fail_base_3b350
   __assert_fail_base_3b350 - [DIRECT]-> __set_vma_name_12a770
   __set_vma_name_12a770 - [syscall]-> prctl
 
 Path to socket:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4ab90_4ab90
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> fuzzyfunc-0x4ab90_4ab90
   fuzzyfunc-0x4ab90_4ab90 - [DIRECT]-> fuzzyfunc-0x4a920_4a920
   fuzzyfunc-0x4a920_4a920 - [DIRECT]-> socket_12c310
   socket_12c310 - [syscall]-> socket
 
-Path to uname:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
-  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> _XimXTransGetHostname_4cc60
-  _XimXTransGetHostname_4cc60 - [DIRECT]-> uname_110710
-  uname_110710 - [syscall]-> uname
-
 Path to bind:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> rfc3484_sort_159170
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> rfc3484_sort_159170
   rfc3484_sort_159170 - [DIRECT]-> __check_native_13f5b0
   __check_native_13f5b0 - [DIRECT]-> bind_12b960
   bind_12b960 - [syscall]-> bind
 
 Path to sched_getaffinity:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> sysconf_110050
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> sysconf_110050
   sysconf_110050 - [DIRECT]-> get_nprocs_conf_11fda0
   get_nprocs_conf_11fda0 - [DIRECT]-> __get_nprocs_sched_11fab0
   __get_nprocs_sched_11fab0 - [syscall]-> sched_getaffinity
 
 Path to rt_sigtimedwait:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> sigwaitinfo_46020
   sigwaitinfo_46020 - [DIRECT]-> sigtimedwait_45f50
   sigtimedwait_45f50 - [syscall]-> rt_sigtimedwait
 
 Path to sched_setaffinity:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
   pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
   create_thread_9c450 - [syscall]-> sched_setaffinity
 
-Path to pselect6:
-  Java_sun_awt_X11_XlibWrapper_XChangePropertyS_2e800 - [DIRECT]-> XChangeProperty_20350
-  XChangeProperty_20350 - [DIRECT]-> _XSend_41560
-  _XSend_41560 - [DIRECT]-> fuzzyfunc-0x413b0_413b0
-  fuzzyfunc-0x413b0_413b0 - [DIRECT]-> select_126bc0
-  select_126bc0 - [syscall]-> pselect6
-
 Path to sched_yield:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> MHN_setCallSiteTargetNormal_dfcb50
   MHN_setCallSiteTargetNormal_dfcb50 - [DIRECT]-> _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80
   _ZN19DeoptimizationScope17deoptimize_markedEv_7a0a80 - [DIRECT]-> _ZN2os11naked_yieldEv_e80c90
   _ZN2os11naked_yieldEv_e80c90 - [DIRECT]-> sched_yield_10e800
   sched_yield_10e800 - [syscall]-> sched_yield
 
+Path to pselect6:
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> XAllocColor_1da40
+  XAllocColor_1da40 - [DIRECT]-> _XReply_46220
+  _XReply_46220 - [DIRECT]-> fuzzyfunc-0x413b0_413b0
+  fuzzyfunc-0x413b0_413b0 - [DIRECT]-> select_126bc0
+  select_126bc0 - [syscall]-> pselect6
+
 Path to getresuid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
   _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
   _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
   xlocaledir_4f210 - [DIRECT]-> getresuid_f5ae0
   getresuid_f5ae0 - [syscall]-> getresuid
 
 Path to getresgid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
   _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
   _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
   xlocaledir_4f210 - [DIRECT]-> getresgid_f5ab0
   getresgid_f5ab0 - [syscall]-> getresgid
 
 Path to setpriority:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN12WorkerThread3runEv_12cb260
   _ZN12WorkerThread3runEv_12cb260 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0
   _ZN2os12set_priorityEP6Thread14ThreadPriority_e67ad0 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_e73650
   _ZN2os19set_native_priorityEP6Threadi_e73650 - [DIRECT]-> setpriority_11d650
   setpriority_11d650 - [syscall]-> setpriority
 
 Path to getcwd:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
   _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> getcwd_11a440
   getcwd_11a440 - [syscall]-> getcwd
 
 Path to readlink:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
   _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> readlink_11bb20
   readlink_11bb20 - [syscall]-> readlink
 
 Path to faccessat2:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
   _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
   faccessat_116b50 - [syscall]-> faccessat2
 
 Path to faccessat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
   _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
   faccessat_116b50 - [syscall]-> faccessat
 
 Path to sendmmsg:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
   _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
   __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
   __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
   sendmmsg_12bf80 - [syscall]-> sendmmsg
 
-Path to shmdt:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x50bd0_50bd0
-  fuzzyfunc-0x50bd0_50bd0 - [DIRECT]-> XFreeFont_23190
-  XFreeFont_23190 - [DIRECT]-> _XF86BigfontFreeFontMetrics_23150
-  _XF86BigfontFreeFontMetrics_23150 - [DIRECT]-> shmdt_12c770
-  shmdt_12c770 - [syscall]-> shmdt
-
-Path to shmat:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x51140_51140
-  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
-  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
-  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmat_12c740
-  shmat_12c740 - [syscall]-> shmat
-
-Path to shmctl:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> fuzzyfunc-0x51140_51140
-  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
-  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
-  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_12c7e0
-  shmctl@@GLIBC_2.2.5_12c7e0 - [syscall]-> shmctl
-
 Path to sched_get_priority_max:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
   pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
   __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
   __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_max_10e6e0
   sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_9fff0
   pthread_mutex_lock@@GLIBC_2.2.5_9fff0 - [DIRECT]-> __pthread_mutex_lock_full_9f910
   __pthread_mutex_lock_full_9f910 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
   __pthread_tpp_change_priority_a50b0 - [DIRECT]-> sched_get_priority_min_10e710
   sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
 
+Path to brk:
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [DIRECT]-> calloc_ae7c0
+  calloc_ae7c0 - [DIRECT]-> _int_malloc_ab570
+  _int_malloc_ab570 - [DIRECT]-> __glibc_morecore_aaa10
+  __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
+  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
+  brk_11d7a0 - [syscall]-> brk
+
 Path to fallocate:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> WB_ReadFromNoaccessArea_12b3e10
   WB_ReadFromNoaccessArea_12b3e10 - [DIRECT]-> _ZN12HeapReserver7reserveEmmmPKc_dcef60
   _ZN12HeapReserver7reserveEmmmPKc_dcef60 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi6MemTag_e6a990
   _ZN2os18map_memory_to_fileEmi6MemTag_e6a990 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_e82950
@@ -533,7 +540,7 @@ Path to fallocate:
   posix_fallocate64_11b950 - [syscall]-> fallocate
 
 Path to mincore:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN10JavaThread3runEv_a42ce0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN10JavaThread3runEv_a42ce0
   _ZN10JavaThread3runEv_a42ce0 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780
   _ZN13StackOverflow24create_stack_guard_pagesEv_10f2780 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_e6a730
   _ZN2os24create_stack_guard_pagesEPcm_e6a730 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_e731e0
@@ -541,23 +548,15 @@ Path to mincore:
   mincore_1251a0 - [syscall]-> mincore
 
 Path to rmdir:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780
   _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_850780 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0
   _ZN21DynamicArchiveBuilder13write_archiveEPcP22AOTClassLocationConfig_84f6f0 - [DIRECT]-> _ZN11FileMapInfo14open_as_outputEv_884030
   _ZN11FileMapInfo14open_as_outputEv_884030 - [DIRECT]-> remove_66180
   remove_66180 - [DIRECT]-> rmdir_11bb80
   rmdir_11bb80 - [syscall]-> rmdir
 
-Path to brk:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> calloc_ae7c0
-  calloc_ae7c0 - [DIRECT]-> _int_malloc_ab570
-  _int_malloc_ab570 - [DIRECT]-> __glibc_morecore_aaa10
-  __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
-  sbrk_126ae0 - [DIRECT]-> brk_11d7a0
-  brk_11d7a0 - [syscall]-> brk
-
 Path to clone3:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
   pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
   create_thread_9c450 - [DIRECT]-> __clone_internal_129b30
@@ -565,7 +564,7 @@ Path to clone3:
   clone3_129c40 - [syscall]-> clone3
 
 Path to clone:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> timer_helper_thread_a8d50
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> timer_helper_thread_a8d50
   timer_helper_thread_a8d50 - [DIRECT]-> pthread_create@@GLIBC_2.34_9cbc0
   pthread_create@@GLIBC_2.34_9cbc0 - [DIRECT]-> create_thread_9c450
   create_thread_9c450 - [DIRECT]-> __clone_internal_129b30
@@ -573,16 +572,15 @@ Path to clone:
   clone_129a20 - [syscall]-> clone
 
 Path to sendmsg:
-  Java_sun_awt_X11_XlibWrapper_XChangePropertyS_2e800 - [DIRECT]-> XChangeProperty_20350
-  XChangeProperty_20350 - [DIRECT]-> _XSend_41560
-  _XSend_41560 - [DIRECT]-> xcb_writev_dd20
-  xcb_writev_dd20 - [DIRECT]-> fuzzyfunc-0xcae0_cae0
-  fuzzyfunc-0xcae0_cae0 - [DIRECT]-> fuzzyfunc-0xc760_c760
+  Java_sun_awt_X11_XlibWrapper_XNextEvent_2e4d0 - [DIRECT]-> XNextEvent_2eeb0
+  XNextEvent_2eeb0 - [DIRECT]-> _XReadEvents_45e40
+  _XReadEvents_45e40 - [DIRECT]-> xcb_wait_for_event_e1c0
+  xcb_wait_for_event_e1c0 - [DIRECT]-> fuzzyfunc-0xc760_c760
   fuzzyfunc-0xc760_c760 - [DIRECT]-> sendmsg_12c020
   sendmsg_12c020 - [syscall]-> sendmsg
 
 Path to waitid:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_1289db0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_e82400
   _ZN2os13fork_and_execEPKc_e82400 - [DIRECT]-> posix_spawn@@GLIBC_2.15_10ecd0
   posix_spawn@@GLIBC_2.15_10ecd0 - [DIRECT]-> __spawni_10fec0
@@ -591,7 +589,7 @@ Path to waitid:
   __clone_pidfd_supported_129bf0 - [syscall]-> waitid
 
 Path to getgroups:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN2os8jvm_pathEPci_e7b190
   _ZN2os8jvm_pathEPci_e7b190 - [DIRECT]-> _ZN2os8realpathEPKcPcm_e80dd0
   _ZN2os8realpathEPKcPcm_e80dd0 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
@@ -600,7 +598,7 @@ Path to getgroups:
   getgroups_f4770 - [syscall]-> getgroups
 
 Path to get_mempolicy:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
   _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC1Ev_12e2d30
   _ZN14ZCollectedHeapC1Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC1Ev_12ed500
   _ZN5ZHeapC1Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocator11prime_cacheEP8ZWorkersm_1316310
@@ -610,7 +608,7 @@ Path to get_mempolicy:
   _ZN8ZSyscall13get_mempolicyEPiPmmPvm_133f2f0 - [syscall]-> get_mempolicy
 
 Path to timer_delete:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN13NonJavaThread8post_runEv_e3ac60
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN13NonJavaThread8post_runEv_e3ac60
   _ZN13NonJavaThread8post_runEv_e3ac60 - [DIRECT]-> _ZN3Jfr14on_thread_exitEP6Thread_a45da0
   _ZN3Jfr14on_thread_exitEP6Thread_a45da0 - [DIRECT]-> _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0
   _ZN14JfrThreadLocal7on_exitEP6Thread_abaed0 - [DIRECT]-> _ZN24JfrCPUTimeThreadSampling23on_javathread_terminateEP10JavaThread_a4afd0
@@ -620,7 +618,7 @@ Path to timer_delete:
   timer_delete@@GLIBC_2.34_a8b10 - [syscall]-> timer_delete
 
 Path to timer_create:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
   _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
   _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
@@ -631,7 +629,7 @@ Path to timer_create:
   timer_create@@GLIBC_2.34_a8860 - [syscall]-> timer_create
 
 Path to timer_settime:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_e75a40
   _ZL19thread_native_entryP6Thread_e75a40 - [DIRECT]-> _ZN6Thread8call_runEv_11f8390
   _ZN6Thread8call_runEv_11f8390 - [DIRECT]-> _ZN3Jfr15on_thread_startEP6Thread_a45d90
   _ZN3Jfr15on_thread_startEP6Thread_a45d90 - [DIRECT]-> _ZN14JfrThreadLocal8on_startEP6Thread_abb650
@@ -642,7 +640,7 @@ Path to timer_settime:
   timer_settime@@GLIBC_2.34_a8cf0 - [syscall]-> timer_settime
 
 Path to memfd_create:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_12cf2a0
   _ZN10ZArguments11create_heapEv_12cf2a0 - [DIRECT]-> _ZN14ZCollectedHeapC1Ev_12e2d30
   _ZN14ZCollectedHeapC1Ev_12e2d30 - [DIRECT]-> _ZN5ZHeapC1Ev_12ed500
   _ZN5ZHeapC1Ev_12ed500 - [DIRECT]-> _ZN14ZPageAllocatorC2Emmmm_13100b0
@@ -653,7 +651,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_133f2b0 - [syscall]-> memfd_create
 
 Path to dup:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> start_thread_9c720
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [DIRECT]-> __libc_thread_freeres_b0500
   __libc_thread_freeres_b0500 - [DIRECT]-> __rpc_thread_destroy_1779e0
   __rpc_thread_destroy_1779e0 - [DIRECT]-> __rpc_thread_svc_cleanup_1789e0
@@ -665,7 +663,7 @@ Path to dup:
   dup_116960 - [syscall]-> dup
 
 Path to sendfile:
-  Java_sun_awt_X11_XlibWrapper_getStringBytes_2ed20 - [INDIRECT]-> _ZN10SerialHeap18do_full_collectionEb_f4aae0
+  Java_sun_font_FontConfigManager_getFontConfig_3ce60 - [INDIRECT]-> _ZN10SerialHeap18do_full_collectionEb_f4aae0
   _ZN10SerialHeap18do_full_collectionEb_f4aae0 - [DIRECT]-> _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370
   _ZN13CollectedHeap16pre_full_gc_dumpEP7GCTimer_719370 - [DIRECT]-> _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50
   _ZN13CollectedHeap12full_gc_dumpEP7GCTimerb_718c50 - [DIRECT]-> _ZN10HeapDumper9dump_heapEv_9c43b0

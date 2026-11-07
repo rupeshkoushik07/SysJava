@@ -18,6 +18,7 @@ JVM_GetDeclaringClass
 JVM_GetEnclosingMethodInfo
 JVM_GetNestHost
 JVM_GetProtectionDomain
+JVM_GetRecordComponents
 JVM_GetSimpleBinaryName
 JVM_HoldsLock
 JVM_IHashCode
@@ -32,6 +33,7 @@ JVM_MonitorNotify
 JVM_MonitorNotifyAll
 JVM_MonitorWait
 JVM_NanoTime
+JVM_SetClassSigners
 JVM_SetNativeThreadName
 JVM_SetThreadPriority
 JVM_Sleep
@@ -46,6 +48,7 @@ MHN_resolve_Mem
 MHN_staticFieldBase
 MHN_staticFieldOffset
 Perf_CreateLong
+Unsafe_AllocateInstance
 Unsafe_AllocateMemory0
 Unsafe_ArrayBaseOffset0
 Unsafe_ArrayIndexScale0
@@ -57,10 +60,15 @@ Unsafe_CopySwapMemory0
 Unsafe_EnsureClassInitialized0
 Unsafe_FreeMemory0
 Unsafe_GetBoolean
+Unsafe_GetBooleanVolatile
 Unsafe_GetByte
+Unsafe_GetByteVolatile
 Unsafe_GetChar
+Unsafe_GetCharVolatile
 Unsafe_GetDouble
+Unsafe_GetDoubleVolatile
 Unsafe_GetFloat
+Unsafe_GetFloatVolatile
 Unsafe_GetInt
 Unsafe_GetIntVolatile
 Unsafe_GetLong
@@ -68,15 +76,21 @@ Unsafe_GetLongVolatile
 Unsafe_GetReference
 Unsafe_GetReferenceVolatile
 Unsafe_GetShort
+Unsafe_GetShortVolatile
 Unsafe_LoadFence
 Unsafe_ObjectFieldOffset0
 Unsafe_ObjectFieldOffset1
 Unsafe_Park
 Unsafe_PutBoolean
+Unsafe_PutBooleanVolatile
 Unsafe_PutByte
+Unsafe_PutByteVolatile
 Unsafe_PutChar
+Unsafe_PutCharVolatile
 Unsafe_PutDouble
+Unsafe_PutDoubleVolatile
 Unsafe_PutFloat
+Unsafe_PutFloatVolatile
 Unsafe_PutInt
 Unsafe_PutIntVolatile
 Unsafe_PutLong
@@ -84,6 +98,7 @@ Unsafe_PutLongVolatile
 Unsafe_PutReference
 Unsafe_PutReferenceVolatile
 Unsafe_PutShort
+Unsafe_PutShortVolatile
 Unsafe_ReallocateMemory0
 Unsafe_SetMemory0
 Unsafe_ShouldBeInitialized0
@@ -92,3 +107,4 @@ Unsafe_StaticFieldOffset0
 Unsafe_StoreFence
 Unsafe_ThrowException
 Unsafe_Unpark
+JVM_RegisterPerfMethods

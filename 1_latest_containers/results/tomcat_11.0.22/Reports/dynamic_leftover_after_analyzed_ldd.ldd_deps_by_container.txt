@@ -1,6 +1,7 @@
-tomcat_11.0.22 (20)
+tomcat_11.0.22 (22)
   - libapr-1.so.0
   - libapr-1.so.0:
+  - libawt.so
   - libc.so.6
   - libcrypto.so.3
   - libcrypto.so.3:
@@ -10,6 +11,7 @@ tomcat_11.0.22 (20)
   - libjvm.so
   - libm.so.6
   - libm.so.6:
+  - libnet.so
   - libpthread.so.0
   - libpthread.so.0:
   - librt.so.1

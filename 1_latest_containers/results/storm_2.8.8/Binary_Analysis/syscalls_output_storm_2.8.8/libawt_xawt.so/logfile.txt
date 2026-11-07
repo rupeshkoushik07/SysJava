@@ -1,493 +1,491 @@
 
 Path to gettid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_c29660
   _ZL19thread_native_entryP6Thread_c29660 - [syscall]-> gettid
 
 Path to futex:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
   __condvar_cleanup_waiting_a3140 - [syscall]-> futex
 
 Path to gettimeofday:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __gettimeofday_syscall_e80b0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __gettimeofday_syscall_e80b0
   __gettimeofday_syscall_e80b0 - [syscall]-> gettimeofday
 
 Path to rt_sigreturn:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __restore_rt_45cb0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __restore_rt_45cb0
   __restore_rt_45cb0 - [syscall]-> rt_sigreturn
 
 Path to rt_sigprocmask:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> abort_288c5
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> abort_288c5
   abort_288c5 - [syscall]-> rt_sigprocmask
 
 Path to clock_gettime:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
   clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
 
 Path to close:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> close_122fa0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> close_122fa0
   close_122fa0 - [syscall]-> close
 
 Path to flock:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> flock_123b40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> flock_123b40
   flock_123b40 - [syscall]-> flock
 
 Path to fstat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fstat_123b70
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fstat_123b70
   fstat_123b70 - [syscall]-> fstat
 
 Path to newfstatat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fstatat_123ba0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fstatat_123ba0
   fstatat_123ba0 - [syscall]-> newfstatat
 
 Path to fstatfs:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fstatfs_123be0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fstatfs_123be0
   fstatfs_123be0 - [syscall]-> fstatfs
 
 Path to ftruncate:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> ftruncate_12c6b0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> ftruncate_12c6b0
   ftruncate_12c6b0 - [syscall]-> ftruncate
 
 Path to getpeername:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getpeername_139190
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getpeername_139190
   getpeername_139190 - [syscall]-> getpeername
 
 Path to getpgid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getpgid_ff9c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getpgid_ff9c0
   getpgid_ff9c0 - [syscall]-> getpgid
 
 Path to getpid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getpid_ffa00
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getpid_ffa00
   getpid_ffa00 - [syscall]-> getpid
 
 Path to getppid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getppid_ffa10
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getppid_ffa10
   getppid_ffa10 - [syscall]-> getppid
 
 Path to getpriority:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getpriority_12aec0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getpriority_12aec0
   getpriority_12aec0 - [syscall]-> getpriority
 
 Path to getrusage:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getrusage_12ab40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getrusage_12ab40
   getrusage_12ab40 - [syscall]-> getrusage
 
 Path to getsid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getsid_ffa80
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getsid_ffa80
   getsid_ffa80 - [syscall]-> getsid
 
 Path to getsockname:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getsockname_1391c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getsockname_1391c0
   getsockname_1391c0 - [syscall]-> getsockname
 
 Path to getsockopt:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> getsockopt_1391f0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> getsockopt_1391f0
   getsockopt_1391f0 - [syscall]-> getsockopt
 
 Path to ioctl:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> ioctl_132c80
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> ioctl_132c80
   ioctl_132c80 - [syscall]-> ioctl
 
 Path to kill:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> kill_45eb0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> kill_45eb0
   kill_45eb0 - [syscall]-> kill
 
 Path to lseek:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> lseek_127a80
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> lseek_127a80
   lseek_127a80 - [syscall]-> lseek
 
 Path to mmap:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> mmap_1331c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> mmap_1331c0
   mmap_1331c0 - [syscall]-> mmap
 
 Path to munmap:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> munmap_133b90
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> munmap_133b90
   munmap_133b90 - [syscall]-> munmap
 
 Path to openat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> open_127bd0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> open_127bd0
   open_127bd0 - [syscall]-> openat
 
 Path to pread64:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pread_1043f0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pread_1043f0
   pread_1043f0 - [syscall]-> pread64
 
 Path to pwrite64:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pwrite_104410
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pwrite_104410
   pwrite_104410 - [syscall]-> pwrite64
 
 Path to read:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> read_128390
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> read_128390
   read_128390 - [syscall]-> read
 
 Path to rt_sigpending:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> sigpending_45ee0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> sigpending_45ee0
   sigpending_45ee0 - [syscall]-> rt_sigpending
 
 Path to exit:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> exit
 
 Path to set_robust_list:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> set_robust_list
 
 Path to rseq:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> rseq
 
 Path to statfs:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> statfs_1284a0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> statfs_1284a0
   statfs_1284a0 - [syscall]-> statfs
 
 Path to time:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> time_syscall_e8050
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> time_syscall_e8050
   time_syscall_e8050 - [syscall]-> time
 
 Path to umask:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> umask_128cf0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> umask_128cf0
   umask_128cf0 - [syscall]-> umask
 
 Path to unlink:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> unlink_128d00
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> unlink_128d00
   unlink_128d00 - [syscall]-> unlink
 
 Path to write:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> write_128e50
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> write_128e50
   write_128e50 - [syscall]-> write
 
+Path to pipe2:
+  Java_sun_awt_X11_XToolkit_awt_1toolkit_1init_302d0 - [DIRECT]-> pipe_127dc0
+  pipe_127dc0 - [syscall]-> pipe2
+
+Path to fcntl:
+  Java_sun_awt_X11_XToolkit_awt_1toolkit_1init_302d0 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
+
+Path to poll:
+  Java_sun_awt_X11_XToolkit_waitForEvents_2fd60 - [DIRECT]-> poll_127e30
+  poll_127e30 - [syscall]-> poll
+
+Path to shmdt:
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> X11SD_Dispose_2a750
+  X11SD_Dispose_2a750 - [DIRECT]-> shmdt_139990
+  shmdt_139990 - [syscall]-> shmdt
+
 Path to mremap:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
   _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
   mremap_137d20 - [syscall]-> mremap
 
 Path to geteuid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> geteuid_fe650
   geteuid_fe650 - [syscall]-> geteuid
 
 Path to getegid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getegid_fe640
   getegid_fe640 - [syscall]-> getegid
 
 Path to getuid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getuid_ffab0
   getuid_ffab0 - [syscall]-> getuid
 
 Path to getgid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimLocalOpenIM_69d40
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimLocalOpenIM_69d40
   _XimLocalOpenIM_69d40 - [DIRECT]-> getgid_fe660
   getgid_fe660 - [syscall]-> getgid
 
 Path to mprotect:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_c2e450
   _ZN15VM_LinuxDllLoad4doitEv_c2e450 - [DIRECT]-> mprotect_133ae0
   mprotect_133ae0 - [syscall]-> mprotect
 
 Path to access:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> access_122ee0
   access_122ee0 - [syscall]-> access
 
 Path to writev:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __assert_fail_3bec0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __assert_fail_3bec0
   __assert_fail_3bec0 - [DIRECT]-> __libc_message_impl_97df0
   __libc_message_impl_97df0 - [syscall]-> writev
 
 Path to rt_sigaction:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> abort_288c5
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
   __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
 
 Path to tgkill:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> abort_288c5
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
   __pthread_raise_internal_a61b0 - [syscall]-> tgkill
 
 Path to exit_group:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> abort_288c5
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> abort_288c5
   abort_288c5 - [DIRECT]-> _exit_f7480
   _exit_f7480 - [syscall]-> exit_group
 
 Path to sendto:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> sendto_139480
   sendto_139480 - [syscall]-> sendto
 
-Path to poll:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> clntudp_call_184080
-  clntudp_call_184080 - [DIRECT]-> poll_127e30
-  poll_127e30 - [syscall]-> poll
-
 Path to recvmsg:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
   recvmsg_1393c0 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> clntudp_call_184080
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvfrom_139370
   recvfrom_139370 - [syscall]-> recvfrom
 
 Path to readv:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4b260_4b260
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fuzzyfunc-0x4b260_4b260
   fuzzyfunc-0x4b260_4b260 - [DIRECT]-> readv_134520
   readv_134520 - [syscall]-> readv
 
 Path to shutdown:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fuzzyfunc-0x4b330_4b330
   fuzzyfunc-0x4b330_4b330 - [DIRECT]-> shutdown_1394e0
   shutdown_1394e0 - [syscall]-> shutdown
 
 Path to setsockopt:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
   fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> setsockopt_1394a0
   setsockopt_1394a0 - [syscall]-> setsockopt
 
 Path to connect:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
   fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> connect_139160
   connect_139160 - [syscall]-> connect
 
 Path to clock_nanosleep:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> nanosleep_1039f0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> nanosleep_1039f0
   nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
   clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
 
 Path to getdents64:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> readdir_f6b20
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> readdir_f6b20
   readdir_f6b20 - [DIRECT]-> getdents64_f67c0
   getdents64_f67c0 - [syscall]-> getdents64
 
 Path to madvise:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> realloc_b59c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> realloc_b59c0
   realloc_b59c0 - [DIRECT]-> madvise_132f90
   madvise_132f90 - [syscall]-> madvise
 
 Path to prlimit64:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> sysconf_11c650
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> sysconf_11c650
   sysconf_11c650 - [DIRECT]-> getrlimit_12aac0
   getrlimit_12aac0 - [syscall]-> prlimit64
 
 Path to mkdir:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> try_dir_6ad80
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> try_dir_6ad80
   try_dir_6ad80 - [DIRECT]-> mkdir_127ad0
   mkdir_127ad0 - [syscall]-> mkdir
 
+Path to uname:
+  Java_sun_awt_X11GraphicsEnvironment_initXRender_2d620 - [DIRECT]-> IsXRenderAvailable_2d220
+  IsXRenderAvailable_2d220 - [DIRECT]-> uname_11cd00
+  uname_11cd00 - [syscall]-> uname
+
+Path to stat:
+  Java_sun_awt_X11GraphicsEnvironment_initXRender_2d620 - [DIRECT]-> IsXRenderAvailable_2d220
+  IsXRenderAvailable_2d220 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat
+
+Path to shmget:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_36530 - [DIRECT]-> TryInitMITShm_35fa0
+  TryInitMITShm_35fa0 - [DIRECT]-> shmget_1399c0
+  shmget_1399c0 - [syscall]-> shmget
+
+Path to shmat:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_36530 - [DIRECT]-> TryInitMITShm_35fa0
+  TryInitMITShm_35fa0 - [DIRECT]-> shmat_139960
+  shmat_139960 - [syscall]-> shmat
+
+Path to shmctl:
+  Java_sun_awt_X11GraphicsEnvironment_checkShmExt_36530 - [DIRECT]-> TryInitMITShm_35fa0
+  TryInitMITShm_35fa0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_139a00
+  shmctl@@GLIBC_2.2.5_139a00 - [syscall]-> shmctl
+
 Path to lstat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> Perf_Attach_c67a70
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> Perf_Attach_c67a70
   Perf_Attach_c67a70 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP10JavaThread_c6bc80 - [DIRECT]-> __lxstat_137c40
   __lxstat_137c40 - [syscall]-> lstat
 
 Path to sysinfo:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> WB_HostPhysicalSwap_f02a60
   WB_HostPhysicalSwap_f02a60 - [DIRECT]-> _ZN2os5Linux9host_swapEv_c24100
   _ZN2os5Linux9host_swapEv_c24100 - [DIRECT]-> sysinfo_138a90
   sysinfo_138a90 - [syscall]-> sysinfo
 
 Path to wait4:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
   _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
   waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
   wait4_11cdb0 - [syscall]-> wait4
 
-Path to fcntl:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimLocalOpenIM_69d40
-  _XimLocalOpenIM_69d40 - [DIRECT]-> fdopen@@GLIBC_2.2.5_8c090
-  fdopen@@GLIBC_2.2.5_8c090 - [DIRECT]-> fcntl_123820
-  fcntl_123820 - [syscall]-> fcntl
-
-Path to stat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500
-  _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_584500 - [DIRECT]-> _ZN2os4statEPKcP4stat_c339f0
-  _ZN2os4statEPKcP4stat_c339f0 - [DIRECT]-> __xstat_138430
-  __xstat_138430 - [syscall]-> stat
-
 Path to vfork:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> vfork_11cd30
   vfork_11cd30 - [syscall]-> vfork
 
 Path to execve:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> execve_f8200
   execve_f8200 - [syscall]-> execve
 
 Path to prctl:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __assert_fail_3bec0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __assert_fail_3bec0
   __assert_fail_3bec0 - [DIRECT]-> __libc_message_impl_97df0
   __libc_message_impl_97df0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
 
 Path to getcwd:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> __gconv_read_conf_2dd90
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
   __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
   getcwd_126ea0 - [syscall]-> getcwd
 
 Path to socket:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4ab90_4ab90
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> fuzzyfunc-0x4ab90_4ab90
   fuzzyfunc-0x4ab90_4ab90 - [DIRECT]-> fuzzyfunc-0x4a920_4a920
   fuzzyfunc-0x4a920_4a920 - [DIRECT]-> socket_139630
   socket_139630 - [syscall]-> socket
 
-Path to uname:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x4ccf0_4ccf0
-  fuzzyfunc-0x4ccf0_4ccf0 - [DIRECT]-> _XimXTransGetHostname_4cc60
-  _XimXTransGetHostname_4cc60 - [DIRECT]-> uname_11cd00
-  uname_11cd00 - [syscall]-> uname
-
 Path to bind:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> rfc3484_sort_1685c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> rfc3484_sort_1685c0
   rfc3484_sort_1685c0 - [DIRECT]-> __check_native_14cdd0
   __check_native_14cdd0 - [DIRECT]-> bind_139130
   bind_139130 - [syscall]-> bind
 
 Path to sched_getaffinity:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> sysconf_11c650
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> sysconf_11c650
   sysconf_11c650 - [DIRECT]-> get_nprocs_conf_12d5d0
   get_nprocs_conf_12d5d0 - [DIRECT]-> __get_nprocs_sched_12d2f0
   __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
 
 Path to pselect6:
-  Java_sun_awt_X11_XlibWrapper_InternAtom_31b00 - [DIRECT]-> XInternAtom_2b7f0
-  XInternAtom_2b7f0 - [DIRECT]-> _XReply_46220
+  Java_sun_awt_X11_XlibWrapper_XSync_317b0 - [DIRECT]-> XSync_46730
+  XSync_46730 - [DIRECT]-> _XReply_46220
   _XReply_46220 - [DIRECT]-> fuzzyfunc-0x413b0_413b0
   fuzzyfunc-0x413b0_413b0 - [DIRECT]-> select_1346e0
   select_1346e0 - [syscall]-> pselect6
 
 Path to getresuid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
   _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
   _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
   xlocaledir_4f210 - [DIRECT]-> getresuid_ffa50
   getresuid_ffa50 - [syscall]-> getresuid
 
 Path to getresgid:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _XimCheckIfLocalProcessing_68030
   _XimCheckIfLocalProcessing_68030 - [DIRECT]-> _XlcFileName_4f350
   _XlcFileName_4f350 - [DIRECT]-> xlocaledir_4f210
   xlocaledir_4f210 - [DIRECT]-> getresgid_ffa20
   getresgid_ffa20 - [syscall]-> getresgid
 
 Path to setpriority:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN10GangWorker3runEv_f1d130
   _ZN10GangWorker3runEv_f1d130 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890
   _ZN2os12set_priorityEP6Thread14ThreadPriority_c1d890 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_c27ee0
   _ZN2os19set_native_priorityEP6Threadi_c27ee0 - [DIRECT]-> setpriority_12af00
   setpriority_12af00 - [syscall]-> setpriority
 
 Path to sched_yield:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_d38f70
   _ZN14ShenandoahHeap10initializeEv_d38f70 - [DIRECT]-> _ZN14ShenandoahLock14contended_lockEb_d504a0
   _ZN14ShenandoahLock14contended_lockEb_d504a0 - [DIRECT]-> _ZN2os11naked_yieldEv_c27ed0
   _ZN2os11naked_yieldEv_c27ed0 - [DIRECT]-> sched_yield_11ad20
   sched_yield_11ad20 - [syscall]-> sched_yield
 
 Path to times:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_770890
   _ZN20VM_G1PauseConcurrent4doitEv_770890 - [DIRECT]-> _ZN14GCTraceCPUTimeC1EP8GCTracer_787030
   _ZN14GCTraceCPUTimeC1EP8GCTracer_787030 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__c247e0
   _ZN2os12getTimesSecsEPdS0_S0__c247e0 - [DIRECT]-> times_11cca0
   times_11cca0 - [syscall]-> times
 
 Path to clone:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60
   _ZN24VM_ReportJavaOutOfMemory4doitEv_ee3e60 - [DIRECT]-> _ZN2os13fork_and_execEPKcb_c351f0
   _ZN2os13fork_and_execEPKcb_c351f0 - [DIRECT]-> fork_fddb0
   fork_fddb0 - [DIRECT]-> _Fork_f73a0
   _Fork_f73a0 - [syscall]-> clone
 
 Path to readlink:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> readlink_1283b0
   readlink_1283b0 - [syscall]-> readlink
 
 Path to faccessat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
   faccessat_1232a0 - [syscall]-> faccessat
 
 Path to faccessat2:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
   faccessat_1232a0 - [syscall]-> faccessat2
 
 Path to sendmmsg:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _nss_dns_getcanonname_r_14d620
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _nss_dns_getcanonname_r_14d620
   _nss_dns_getcanonname_r_14d620 - [DIRECT]-> __res_context_query_157d20
   __res_context_query_157d20 - [DIRECT]-> __res_context_send_15a310
   __res_context_send_15a310 - [DIRECT]-> sendmmsg_139420
   sendmmsg_139420 - [syscall]-> sendmmsg
 
-Path to shmdt:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x50bd0_50bd0
-  fuzzyfunc-0x50bd0_50bd0 - [DIRECT]-> XFreeFont_23190
-  XFreeFont_23190 - [DIRECT]-> _XF86BigfontFreeFontMetrics_23150
-  _XF86BigfontFreeFontMetrics_23150 - [DIRECT]-> shmdt_139990
-  shmdt_139990 - [syscall]-> shmdt
-
-Path to shmat:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x51140_51140
-  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
-  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
-  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmat_139960
-  shmat_139960 - [syscall]-> shmat
-
-Path to shmctl:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> fuzzyfunc-0x51140_51140
-  fuzzyfunc-0x51140_51140 - [DIRECT]-> XLoadQueryFont_23530
-  XLoadQueryFont_23530 - [DIRECT]-> fuzzyfunc-0x228d0_228d0
-  fuzzyfunc-0x228d0_228d0 - [DIRECT]-> shmctl@@GLIBC_2.2.5_139a00
-  shmctl@@GLIBC_2.2.5_139a00 - [syscall]-> shmctl
-
 Path to sched_getparam:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
   pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
   __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
   __pthread_current_priority_acf50 - [DIRECT]-> sched_getparam_11aba0
   sched_getparam_11aba0 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
   pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
   __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_current_priority_acf50
   __pthread_current_priority_acf50 - [DIRECT]-> sched_getscheduler_11abd0
   sched_getscheduler_11abd0 - [syscall]-> sched_getscheduler
 
 Path to sched_setscheduler:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
   pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
   __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_setscheduler_11acf0
   sched_setscheduler_11acf0 - [syscall]-> sched_setscheduler
 
 Path to sched_get_priority_max:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
   pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
   __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
   sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> pthread_mutex_lock@@GLIBC_2.2.5_a7980
   pthread_mutex_lock@@GLIBC_2.2.5_a7980 - [DIRECT]-> __pthread_mutex_lock_full_a72d0
   __pthread_mutex_lock_full_a72d0 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
   sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
 
 Path to mincore:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN10JavaThread3runEv_e69030
   _ZN10JavaThread3runEv_e69030 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270
   _ZN13StackOverflow24create_stack_guard_pagesEv_d9f270 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_c205e0
   _ZN2os24create_stack_guard_pagesEPcm_c205e0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_c276a0
@@ -495,7 +493,7 @@ Path to mincore:
   mincore_133050 - [syscall]-> mincore
 
 Path to rmdir:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0
   _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_69f2c0 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820
   _ZN21DynamicArchiveBuilder13write_archiveEPc_69e820 - [DIRECT]-> _ZN11FileMapInfo14open_for_writeEPKc_6c0270
   _ZN11FileMapInfo14open_for_writeEPKc_6c0270 - [DIRECT]-> remove_6a7c0
@@ -503,16 +501,15 @@ Path to rmdir:
   rmdir_128410 - [syscall]-> rmdir
 
 Path to sendmsg:
-  Java_sun_awt_X11_XlibWrapper_InternAtom_31b00 - [DIRECT]-> XInternAtom_2b7f0
-  XInternAtom_2b7f0 - [DIRECT]-> _XReply_46220
-  _XReply_46220 - [DIRECT]-> xcb_wait_for_reply64_de60
-  xcb_wait_for_reply64_de60 - [DIRECT]-> fuzzyfunc-0xcdd0_cdd0
-  fuzzyfunc-0xcdd0_cdd0 - [DIRECT]-> fuzzyfunc-0xc760_c760
+  Java_sun_awt_X11_XlibWrapper_XNextEvent_31620 - [DIRECT]-> XNextEvent_2eeb0
+  XNextEvent_2eeb0 - [DIRECT]-> _XReadEvents_45e40
+  _XReadEvents_45e40 - [DIRECT]-> xcb_wait_for_event_e1c0
+  xcb_wait_for_event_e1c0 - [DIRECT]-> fuzzyfunc-0xc760_c760
   fuzzyfunc-0xc760_c760 - [DIRECT]-> sendmsg_139450
   sendmsg_139450 - [syscall]-> sendmsg
 
 Path to fallocate:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
   _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_c209d0
@@ -520,17 +517,8 @@ Path to fallocate:
   _ZN2os18map_memory_to_fileEPcmi_c355f0 - [DIRECT]-> posix_fallocate64_1282f0
   posix_fallocate64_1282f0 - [syscall]-> fallocate
 
-Path to shmget:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
-  WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
-  _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0
-  _ZN13ReservedSpace7reserveEmmmPcb_ee1ab0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_c20c90
-  _ZN2os22reserve_memory_specialEmmmPcb_c20c90 - [DIRECT]-> _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540
-  _ZN2os25pd_reserve_memory_specialEmmmPcb_c2c540 - [DIRECT]-> shmget_1399c0
-  shmget_1399c0 - [syscall]-> shmget
-
 Path to get_mempolicy:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN12ZUncommitter11run_serviceEv_f65360
   _ZN12ZUncommitter11run_serviceEv_f65360 - [DIRECT]-> _ZN14ZPageAllocator8uncommitEPm_f474d0
   _ZN14ZPageAllocator8uncommitEPm_f474d0 - [DIRECT]-> _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00
   _ZN10ZPageCache18flush_for_uncommitEmP5ZListI5ZPageEPm_f4ce00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_f4c490
@@ -539,7 +527,7 @@ Path to get_mempolicy:
   _ZN8ZSyscall13get_mempolicyEPiPmmPvm_f61550 - [syscall]-> get_mempolicy
 
 Path to sched_setaffinity:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -548,7 +536,7 @@ Path to sched_setaffinity:
   create_thread_a3ae0 - [syscall]-> sched_setaffinity
 
 Path to getgroups:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_c23100
   _ZN2os8jvm_pathEPci_c23100 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c338c0
   _ZN2os5Posix8realpathEPKcPcm_c338c0 - [DIRECT]-> realpath@@GLIBC_2.3_47200
   realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
@@ -557,7 +545,7 @@ Path to getgroups:
   getgroups_fe670 - [syscall]-> getgroups
 
 Path to brk:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> calloc_b5f80
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> calloc_b5f80
   calloc_b5f80 - [DIRECT]-> __libc_calloc2_b4160
   __libc_calloc2_b4160 - [DIRECT]-> _int_malloc_b2700
   _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
@@ -566,7 +554,7 @@ Path to brk:
   brk_12b050 - [syscall]-> brk
 
 Path to getrandom:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_f10920
   WB_ReadFromNoaccessArea_f10920 - [DIRECT]-> _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0
   _ZN17ReservedHeapSpaceC2EmmmPKc_ee2ee0 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_c354e0
   _ZN2os20create_file_for_heapEPKc_c354e0 - [DIRECT]-> mkstemp_1330f0
@@ -576,7 +564,7 @@ Path to getrandom:
   getrandom_vdso_49660 - [syscall]-> getrandom
 
 Path to memfd_create:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_f21300
   _ZN10ZArguments11create_heapEv_f21300 - [DIRECT]-> _ZN14ZCollectedHeapC2Ev_f2c2c0
   _ZN14ZCollectedHeapC2Ev_f2c2c0 - [DIRECT]-> _ZN5ZHeapC2Ev_f30fd0
   _ZN5ZHeapC2Ev_f30fd0 - [DIRECT]-> _ZN14ZPageAllocatorC1EP8ZWorkersmmm_f48e20
@@ -587,7 +575,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_f61510 - [syscall]-> memfd_create
 
 Path to clone3:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> _ZN13VM_HeapDumper4doitEv_7c9f00
   _ZN13VM_HeapDumper4doitEv_7c9f00 - [DIRECT]-> _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730
   _ZN8WorkGang8run_taskEP16AbstractGangTaskjb_f1d730 - [DIRECT]-> _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0
   _ZN13WorkerManager11add_workersEP8WorkGangjjjN2os10ThreadTypeEb_f1d3a0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_c2a430
@@ -598,7 +586,7 @@ Path to clone3:
   __clone3_137780 - [syscall]-> clone3
 
 Path to dup:
-  Java_sun_awt_X11GraphicsDevice_pGetBounds_36e00 - [INDIRECT]-> start_thread_a3de0
+  Java_sun_awt_X11_XlibWrapper_XGetAtomName_324a0 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0

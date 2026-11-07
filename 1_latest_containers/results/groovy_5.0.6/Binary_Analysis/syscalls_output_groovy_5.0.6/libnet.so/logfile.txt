@@ -1,398 +1,422 @@
 
 Path to gettid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_d0ee00
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_d0ee00
   _ZL19thread_native_entryP6Thread_d0ee00 - [syscall]-> gettid
 
 Path to futex:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __condvar_cleanup_waiting_9b4b0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __condvar_cleanup_waiting_9b4b0
   __condvar_cleanup_waiting_9b4b0 - [syscall]-> futex
 
+Path to gettimeofday:
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __gettimeofday_syscall_df6d0
+  __gettimeofday_syscall_df6d0 - [syscall]-> gettimeofday
+
 Path to rt_sigreturn:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __restore_rt_45330
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __restore_rt_45330
   __restore_rt_45330 - [syscall]-> rt_sigreturn
 
 Path to setresuid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> setresuid
 
 Path to setresgid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> setresgid
 
 Path to close_range:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> close_range
 
 Path to rt_sigprocmask:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [syscall]-> rt_sigprocmask
 
 Path to set_robust_list:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> set_robust_list
 
 Path to rseq:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> rseq
 
 Path to exit:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [syscall]-> exit
 
 Path to time:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> time_syscall_df5d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> time_syscall_df5d0
   time_syscall_df5d0 - [syscall]-> time
 
 Path to socket:
-  Java_java_net_NetworkInterface_getAll_7490 - [DIRECT]-> enumInterfaces_6ad0
-  enumInterfaces_6ad0 - [DIRECT]-> socket_12c310
+  Java_java_net_NetworkInterface_boundInetAddress0_71c0 - [DIRECT]-> socket_12c310
   socket_12c310 - [syscall]-> socket
 
 Path to close:
-  Java_java_net_NetworkInterface_getAll_7490 - [DIRECT]-> enumInterfaces_6ad0
-  enumInterfaces_6ad0 - [DIRECT]-> close_116710
+  Java_java_net_NetworkInterface_boundInetAddress0_71c0 - [DIRECT]-> close_116710
   close_116710 - [syscall]-> close
 
+Path to bind:
+  Java_java_net_Inet6AddressImpl_isReachable0_4e70 - [DIRECT]-> bind_12b960
+  bind_12b960 - [syscall]-> bind
+
+Path to fcntl:
+  Java_java_net_Inet6AddressImpl_isReachable0_4e70 - [DIRECT]-> fcntl_117000
+  fcntl_117000 - [syscall]-> fcntl
+
+Path to connect:
+  Java_java_net_Inet6AddressImpl_isReachable0_4e70 - [DIRECT]-> connect_12b990
+  connect_12b990 - [syscall]-> connect
+
+Path to setsockopt:
+  Java_java_net_Inet6AddressImpl_isReachable0_4e70 - [DIRECT]-> setsockopt_12c180
+  setsockopt_12c180 - [syscall]-> setsockopt
+
+Path to getsockopt:
+  Java_java_net_Inet6AddressImpl_isReachable0_4e70 - [DIRECT]-> getsockopt_12ba90
+  getsockopt_12ba90 - [syscall]-> getsockopt
+
+Path to dup2:
+  Java_sun_net_sdp_SdpSupport_convert0_7a00 - [DIRECT]-> dup2_116990
+  dup2_116990 - [syscall]-> dup2
+
+Path to ioctl:
+  Java_java_net_NetworkInterface_isLoopback0_7630 - [DIRECT]-> getFlags0_5c80
+  getFlags0_5c80 - [DIRECT]-> ioctl_124de0
+  ioctl_124de0 - [syscall]-> ioctl
+
 Path to munmap:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_close_mmap_938f0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_close_mmap_938f0
   _IO_file_close_mmap_938f0 - [DIRECT]-> munmap_125d70
   munmap_125d70 - [syscall]-> munmap
 
 Path to read:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_read_938b0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_read_938b0
   _IO_file_read_938b0 - [DIRECT]-> read_11ba80
   read_11ba80 - [syscall]-> read
 
 Path to lseek:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_seek_938d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_seek_938d0
   _IO_file_seek_938d0 - [DIRECT]-> lseek_11b000
   lseek_11b000 - [syscall]-> lseek
 
 Path to fstat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_stat_938e0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_stat_938e0
   _IO_file_stat_938e0 - [DIRECT]-> fstat_1173b0
   fstat_1173b0 - [syscall]-> fstat
 
 Path to mmap:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_92c20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_92c20
   _IO_file_underflow_maybe_mmap_92c20 - [DIRECT]-> mmap_125320
   mmap_125320 - [syscall]-> mmap
 
 Path to mremap:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_underflow_mmap_92990
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_underflow_mmap_92990
   _IO_file_underflow_mmap_92990 - [DIRECT]-> mremap_12a350
   mremap_12a350 - [syscall]-> mremap
 
 Path to write:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_93940
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_93940
   _IO_file_write@@GLIBC_2.2.5_93940 - [DIRECT]-> write_11c590
   write_11c590 - [syscall]-> write
 
 Path to unlink:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN10CompileLogD0Ev_681bd0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN10CompileLogD0Ev_681bd0
   _ZN10CompileLogD0Ev_681bd0 - [DIRECT]-> unlink_11c430
   unlink_11c430 - [syscall]-> unlink
 
 Path to mprotect:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_d142a0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_d142a0
   _ZN15VM_LinuxDllLoad4doitEv_d142a0 - [DIRECT]-> mprotect_125c40
   mprotect_125c40 - [syscall]-> mprotect
 
 Path to membarrier:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_8a79d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_8a79d0
   _ZN22VM_HandshakeAllThreads4doitEv_8a79d0 - [DIRECT]-> _ZN24LinuxSystemMemoryBarrier4emitEv_f64b80
   _ZN24LinuxSystemMemoryBarrier4emitEv_f64b80 - [syscall]-> membarrier
 
 Path to clock_gettime:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_d1a340
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os13javaTimeNanosEv_d1a340
   _ZN2os13javaTimeNanosEv_d1a340 - [DIRECT]-> clock_gettime@@GLIBC_2.17_ec950
   clock_gettime@@GLIBC_2.17_ec950 - [syscall]-> clock_gettime
 
 Path to openat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_d0f890
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_d0f890
   _ZN2os8dll_loadEPKcPci_d0f890 - [DIRECT]-> open_11b150
   open_11b150 - [syscall]-> openat
 
 Path to access:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> access_116650
   access_116650 - [syscall]-> access
 
 Path to getpid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __nptl_setxid_sighandler_99530
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __nptl_setxid_sighandler_99530
   __nptl_setxid_sighandler_99530 - [DIRECT]-> getpid_f5a90
   getpid_f5a90 - [syscall]-> getpid
 
 Path to rt_sigaction:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> __libc_sigaction_45340
   __libc_sigaction_45340 - [syscall]-> rt_sigaction
 
 Path to fchdir:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> fchdir_116d90
   fchdir_116d90 - [syscall]-> fchdir
 
 Path to exit_group:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> _exit_ee200
   _exit_ee200 - [syscall]-> exit_group
 
 Path to chdir:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> chdir_116680
   chdir_116680 - [syscall]-> chdir
 
-Path to dup2:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
-  __spawni_child_10f8d0 - [DIRECT]-> dup2_116990
-  dup2_116990 - [syscall]-> dup2
-
 Path to getpgid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> getpgid_f5a50
   getpgid_f5a50 - [syscall]-> getpgid
 
 Path to getuid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> getuid_f5b40
   getuid_f5b40 - [syscall]-> getuid
 
-Path to fcntl:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
-  __spawni_child_10f8d0 - [DIRECT]-> fcntl_117000
-  fcntl_117000 - [syscall]-> fcntl
-
 Path to setsid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> setsid_10ea90
   setsid_10ea90 - [syscall]-> setsid
 
 Path to setpgid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> setpgid_10e930
   setpgid_10e930 - [syscall]-> setpgid
 
 Path to sched_setscheduler:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> sched_setscheduler_10e7d0
   sched_setscheduler_10e7d0 - [syscall]-> sched_setscheduler
 
 Path to sched_setparam:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> sched_setparam_10e7a0
   sched_setparam_10e7a0 - [syscall]-> sched_setparam
 
 Path to getgid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> getgid_f4760
   getgid_f4760 - [syscall]-> getgid
 
 Path to prlimit64:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> getrlimit_11d1e0
   getrlimit_11d1e0 - [syscall]-> prlimit64
 
 Path to sendto:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> sendto_12c0c0
   sendto_12c0c0 - [syscall]-> sendto
 
 Path to poll:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> poll_11b4b0
   poll_11b4b0 - [syscall]-> poll
 
 Path to recvmsg:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> recvmsg_12be10
   recvmsg_12be10 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> clntudp_call_1752e0
   clntudp_call_1752e0 - [DIRECT]-> recvfrom_12bca0
   recvfrom_12bca0 - [syscall]-> recvfrom
 
 Path to madvise:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [DIRECT]-> madvise_1250e0
   madvise_1250e0 - [syscall]-> madvise
 
 Path to mkdir:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> try_dir_66710
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> try_dir_66710
   try_dir_66710 - [DIRECT]-> mkdir_11b050
   mkdir_11b050 - [syscall]-> mkdir
 
-Path to ioctl:
-  Java_java_net_NetworkInterface_getAll_7490 - [DIRECT]-> enumInterfaces_6ad0
-  enumInterfaces_6ad0 - [DIRECT]-> enumIPv4Interfaces.constprop.0_6850
-  enumIPv4Interfaces.constprop.0_6850 - [DIRECT]-> ioctl_124de0
-  ioctl_124de0 - [syscall]-> ioctl
+Path to getsockname:
+  Java_java_net_Inet6AddressImpl_lookupAllHostAddr_46a0 - [DIRECT]-> getaddrinfo_15a720
+  getaddrinfo_15a720 - [DIRECT]-> getsockname_12ba60
+  getsockname_12ba60 - [syscall]-> getsockname
+
+Path to getrandom:
+  Java_java_net_Inet6AddressImpl_lookupAllHostAddr_46a0 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> ptmalloc_init.part.0_a9d70
+  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
+
+Path to uname:
+  Java_java_net_Inet4AddressImpl_getHostByAddr_3c70 - [DIRECT]-> getnameinfo_15e360
+  getnameinfo_15e360 - [DIRECT]-> uname_110710
+  uname_110710 - [syscall]-> uname
 
 Path to kill:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> Perf_Attach_d55ba0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> Perf_Attach_d55ba0
   Perf_Attach_d55ba0 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950 - [DIRECT]-> kill_45530
   kill_45530 - [syscall]-> kill
 
 Path to lstat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> Perf_Attach_d55ba0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> Perf_Attach_d55ba0
   Perf_Attach_d55ba0 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950 - [DIRECT]-> __lxstat_12a260
   __lxstat_12a260 - [syscall]-> lstat
 
 Path to geteuid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> Perf_Attach_d55ba0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> Perf_Attach_d55ba0
   Perf_Attach_d55ba0 - [DIRECT]-> _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950
   _ZN10PerfMemory6attachEiPPcPmP10JavaThread_d59950 - [DIRECT]-> geteuid_f4750
   geteuid_f4750 - [syscall]-> geteuid
 
 Path to sysinfo:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_HostPhysicalSwap_1043080
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_HostPhysicalSwap_1043080
   WB_HostPhysicalSwap_1043080 - [DIRECT]-> _ZN2os5Linux9host_swapEv_d09820
   _ZN2os5Linux9host_swapEv_d09820 - [DIRECT]-> sysinfo_12b1a0
   sysinfo_12b1a0 - [syscall]-> sysinfo
 
-Path to getrandom:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_default_doallocate_95d30
-  _IO_default_doallocate_95d30 - [DIRECT]-> malloc_ad670
-  malloc_ad670 - [DIRECT]-> ptmalloc_init.part.0_a9d70
-  ptmalloc_init.part.0_a9d70 - [syscall]-> getrandom
-
 Path to wait4:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_87950
   _IO_proc_close@@GLIBC_2.2.5_87950 - [DIRECT]-> waitpid_110910
   waitpid_110910 - [DIRECT]-> wait4_1107c0
   wait4_1107c0 - [syscall]-> wait4
 
 Path to writev:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _IO_vtable_check_91290
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _IO_vtable_check_91290
   _IO_vtable_check_91290 - [DIRECT]-> __libc_fatal_90a40
   __libc_fatal_90a40 - [DIRECT]-> __libc_message_impl_90810
   __libc_message_impl_90810 - [syscall]-> writev
 
 Path to stat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_621980
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_621980
   _ZN17ClassPathDirEntry11open_streamEP10JavaThreadPKc_621980 - [DIRECT]-> _ZN2os4statEPKcP4stat_d19940
   _ZN2os4statEPKcP4stat_d19940 - [DIRECT]-> __xstat_12ab60
   __xstat_12ab60 - [syscall]-> stat
 
 Path to getrusage:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_7e9ed0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_7e9ed0
   _ZN22G1ConcurrentMarkThread11run_serviceEv_7e9ed0 - [DIRECT]-> _ZN2os12elapsedVTimeEv_d09d70
   _ZN2os12elapsedVTimeEv_d09d70 - [DIRECT]-> getrusage_11d260
   getrusage_11d260 - [syscall]-> getrusage
 
 Path to getdents64:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> __spawni_child_10f8d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> __spawni_child_10f8d0
   __spawni_child_10f8d0 - [DIRECT]-> __closefrom_fallback_129c90
   __closefrom_fallback_129c90 - [DIRECT]-> getdents64_ed920
   getdents64_ed920 - [syscall]-> getdents64
 
 Path to pread64:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _dl_tunable_set_hugetlb_a9210
   _dl_tunable_set_hugetlb_a9210 - [DIRECT]-> __malloc_hugepage_config_12b580
   __malloc_hugepage_config_12b580 - [DIRECT]-> __pread64_nocancel_11c9d0
   __pread64_nocancel_11c9d0 - [syscall]-> pread64
 
 Path to prctl:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [DIRECT]-> name_stack_maps_9c650
   name_stack_maps_9c650 - [DIRECT]-> __set_vma_name_12a770
   __set_vma_name_12a770 - [syscall]-> prctl
 
 Path to newfstatat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> try_nocreate_66690
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> try_nocreate_66690
   try_nocreate_66690 - [DIRECT]-> lstat_11b030
   lstat_11b030 - [DIRECT]-> fstatat_1173e0
   fstatat_1173e0 - [syscall]-> newfstatat
 
 Path to sched_yield:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
   MHN_setCallSiteTargetNormal_ca1270 - [DIRECT]-> _ZN19DeoptimizationScope17deoptimize_markedEv_6d4810
   _ZN19DeoptimizationScope17deoptimize_markedEv_6d4810 - [DIRECT]-> _ZN2os11naked_yieldEv_d195c0
   _ZN2os11naked_yieldEv_d195c0 - [DIRECT]-> sched_yield_10e800
   sched_yield_10e800 - [syscall]-> sched_yield
 
 Path to clock_nanosleep:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_1051bf0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_CheckThreadObjOfTerminatingThread_1051bf0
   WB_CheckThreadObjOfTerminatingThread_1051bf0 - [DIRECT]-> _ZN2os17naked_short_sleepEl_d19740
   _ZN2os17naked_short_sleepEl_d19740 - [DIRECT]-> nanosleep_f9a10
   nanosleep_f9a10 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_eca20
   clock_nanosleep@@GLIBC_2.17_eca20 - [syscall]-> clock_nanosleep
 
 Path to sched_getaffinity:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_HostCPUs_1043680
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_HostCPUs_1043680
   WB_HostCPUs_1043680 - [DIRECT]-> _ZN2os5Linux22active_processor_countEv_d0e9b0
   _ZN2os5Linux22active_processor_countEv_d0e9b0 - [DIRECT]-> _ZL26get_active_processor_countv_d0e770
   _ZL26get_active_processor_countv_d0e770 - [DIRECT]-> sched_getaffinity@@GLIBC_2.3.4_10e620
   sched_getaffinity@@GLIBC_2.3.4_10e620 - [syscall]-> sched_getaffinity
 
-Path to uname:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_PrintOsInfo_1044580
-  WB_PrintOsInfo_1044580 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_d0dd00
-  _ZN2os13print_os_infoEP12outputStream_d0dd00 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_d18e80
-  _ZN2os5Posix16print_uname_infoEP12outputStream_d18e80 - [DIRECT]-> uname_110710
-  uname_110710 - [syscall]-> uname
-
 Path to setpriority:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN12WorkerThread3runEv_1058870
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN12WorkerThread3runEv_1058870
   _ZN12WorkerThread3runEv_1058870 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_d01500
   _ZN2os12set_priorityEP6Thread14ThreadPriority_d01500 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_d0cb90
   _ZN2os19set_native_priorityEP6Threadi_d0cb90 - [DIRECT]-> setpriority_11d650
   setpriority_11d650 - [syscall]-> setpriority
 
 Path to times:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_855680
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN20VM_G1PauseConcurrent4doitEv_855680
   _ZN20VM_G1PauseConcurrent4doitEv_855680 - [DIRECT]-> _ZN14GCTraceCPUTimeC2EP8GCTracer_872760
   _ZN14GCTraceCPUTimeC2EP8GCTracer_872760 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__d1a420
   _ZN2os12getTimesSecsEPdS0_S0__d1a420 - [DIRECT]-> times_1106b0
   times_1106b0 - [syscall]-> times
 
 Path to tgkill:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_8a79d0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN22VM_HandshakeAllThreads4doitEv_8a79d0
   _ZN22VM_HandshakeAllThreads4doitEv_8a79d0 - [DIRECT]-> _ZL14handle_timeoutP18HandshakeOperationP10JavaThread_8a5de0
   _ZL14handle_timeoutP18HandshakeOperationP10JavaThread_8a5de0 - [DIRECT]-> _ZN2os13signal_threadEP6ThreadiPKc_e8f470
   _ZN2os13signal_threadEP6ThreadiPKc_e8f470 - [DIRECT]-> pthread_kill@@GLIBC_2.34_9ea10
   pthread_kill@@GLIBC_2.34_9ea10 - [syscall]-> tgkill
 
 Path to getcwd:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> getcwd_11a440
   getcwd_11a440 - [syscall]-> getcwd
 
 Path to readlink:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> readlink_11bb20
   readlink_11bb20 - [syscall]-> readlink
 
 Path to faccessat2:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
   faccessat_116b50 - [syscall]-> faccessat2
 
 Path to faccessat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
   faccessat_116b50 - [syscall]-> faccessat
 
 Path to getpriority:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_cd9880
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_cd9880
   _ZNK11NamedThread8print_onEP12outputStream_cd9880 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_f9cc90
   _ZNK6Thread8print_onEP12outputStreamb_f9cc90 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_d0cbe0
   _ZN2os19get_native_priorityEPK6ThreadPi_d0cbe0 - [DIRECT]-> getpriority_11d610
   getpriority_11d610 - [syscall]-> getpriority
 
+Path to sendmmsg:
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> sendmmsg_12bf80
+  sendmmsg_12bf80 - [syscall]-> sendmmsg
+
 Path to sched_getparam:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
   MHN_setCallSiteTargetNormal_ca1270 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_cc10c0
   _ZN5Mutex4lockEP6Thread_cc10c0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
   pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
@@ -400,7 +424,7 @@ Path to sched_getparam:
   sched_getparam_10e680 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
   MHN_setCallSiteTargetNormal_ca1270 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_cc10c0
   _ZN5Mutex4lockEP6Thread_cc10c0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
   pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
@@ -408,7 +432,7 @@ Path to sched_getscheduler:
   sched_getscheduler_10e6b0 - [syscall]-> sched_getscheduler
 
 Path to sched_get_priority_max:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
   MHN_setCallSiteTargetNormal_ca1270 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_cc10c0
   _ZN5Mutex4lockEP6Thread_cc10c0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
   pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
@@ -416,7 +440,7 @@ Path to sched_get_priority_max:
   sched_get_priority_max_10e6e0 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> MHN_setCallSiteTargetNormal_ca1270
   MHN_setCallSiteTargetNormal_ca1270 - [DIRECT]-> _ZN5Mutex4lockEP6Thread_cc10c0
   _ZN5Mutex4lockEP6Thread_cc10c0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a0ef0
   pthread_mutex_trylock@@GLIBC_2.34_a0ef0 - [DIRECT]-> __pthread_tpp_change_priority_a50b0
@@ -424,7 +448,7 @@ Path to sched_get_priority_min:
   sched_get_priority_min_10e710 - [syscall]-> sched_get_priority_min
 
 Path to mincore:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN10JavaThread3runEv_934140
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN10JavaThread3runEv_934140
   _ZN10JavaThread3runEv_934140 - [DIRECT]-> _ZN13StackOverflow24create_stack_guard_pagesEv_eaa570
   _ZN13StackOverflow24create_stack_guard_pagesEv_eaa570 - [DIRECT]-> _ZN2os24create_stack_guard_pagesEPcm_d041e0
   _ZN2os24create_stack_guard_pagesEPcm_d041e0 - [DIRECT]-> _ZN2os27pd_create_stack_guard_pagesEPcm_d0c3d0
@@ -432,7 +456,7 @@ Path to mincore:
   mincore_1251a0 - [syscall]-> mincore
 
 Path to shmdt:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_e204f0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_e204f0
   _ZN14ShenandoahHeap10initializeEv_e204f0 - [DIRECT]-> _ZN13ReservedSpaceC1EmmmPc_10201f0
   _ZN13ReservedSpaceC1EmmmPc_10201f0 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_d04940
   _ZN2os22release_memory_specialEPcm_d04940 - [DIRECT]-> _ZN2os25pd_release_memory_specialEPcm_d0cb20
@@ -440,7 +464,7 @@ Path to shmdt:
   shmdt_12c770 - [syscall]-> shmdt
 
 Path to shutdown:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_7d5db0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN15G1CollectedHeap10initializeEv_7d5db0
   _ZN15G1CollectedHeap10initializeEv_7d5db0 - [DIRECT]-> _Z33vm_shutdown_during_initializationPKcS0__916700
   _Z33vm_shutdown_during_initializationPKcS0__916700 - [DIRECT]-> _ZN2os8shutdownEv_d1b160
   _ZN2os8shutdownEv_d1b160 - [DIRECT]-> _ZN14AttachListener5abortEv_4aea70
@@ -448,7 +472,7 @@ Path to shutdown:
   shutdown_12c1c0 - [syscall]-> shutdown
 
 Path to getegid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
@@ -456,40 +480,31 @@ Path to getegid:
   getegid_f4740 - [syscall]-> getegid
 
 Path to rmdir:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_76e8c0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_76e8c0
   _ZN33VM_PopulateDynamicDumpSharedSpace4doitEv_76e8c0 - [DIRECT]-> _ZN21DynamicArchiveBuilder13write_archiveEPc_76dcf0
   _ZN21DynamicArchiveBuilder13write_archiveEPc_76dcf0 - [DIRECT]-> _ZN11FileMapInfo14open_for_writeEv_798400
   _ZN11FileMapInfo14open_for_writeEv_798400 - [DIRECT]-> remove_66180
   remove_66180 - [DIRECT]-> rmdir_11bb80
   rmdir_11bb80 - [syscall]-> rmdir
 
-Path to bind:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
-  clntudp_call_1752e0 - [DIRECT]-> getifaddrs_13b590
-  getifaddrs_13b590 - [DIRECT]-> getifaddrs_internal_13a2b0
-  getifaddrs_internal_13a2b0 - [DIRECT]-> __netlink_open_13a1f0
-  __netlink_open_13a1f0 - [DIRECT]-> bind_12b960
-  bind_12b960 - [syscall]-> bind
-
-Path to getsockname:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> clntudp_call_1752e0
-  clntudp_call_1752e0 - [DIRECT]-> getifaddrs_13b590
-  getifaddrs_13b590 - [DIRECT]-> getifaddrs_internal_13a2b0
-  getifaddrs_internal_13a2b0 - [DIRECT]-> __netlink_open_13a1f0
-  __netlink_open_13a1f0 - [DIRECT]-> getsockname_12ba60
-  getsockname_12ba60 - [syscall]-> getsockname
+Path to getpeername:
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _nss_dns_getcanonname_r_13fdb0
+  _nss_dns_getcanonname_r_13fdb0 - [DIRECT]-> __res_context_query_149090
+  __res_context_query_149090 - [DIRECT]-> __res_context_send_14b630
+  __res_context_send_14b630 - [DIRECT]-> send_vc_14ae90
+  send_vc_14ae90 - [DIRECT]-> getpeername_12ba30
+  getpeername_12ba30 - [syscall]-> getpeername
 
 Path to brk:
-  Java_java_net_NetworkInterface_getAll_7490 - [DIRECT]-> free_add50
-  free_add50 - [DIRECT]-> tcache_init.part.0_ace10
-  tcache_init.part.0_ace10 - [DIRECT]-> _int_malloc_ab570
+  Java_java_net_Inet6AddressImpl_lookupAllHostAddr_46a0 - [DIRECT]-> malloc_ad670
+  malloc_ad670 - [DIRECT]-> _int_malloc_ab570
   _int_malloc_ab570 - [DIRECT]-> __glibc_morecore_aaa10
   __glibc_morecore_aaa10 - [DIRECT]-> sbrk_126ae0
   sbrk_126ae0 - [DIRECT]-> brk_11d7a0
   brk_11d7a0 - [syscall]-> brk
 
 Path to shmget:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_d048a0
@@ -498,7 +513,7 @@ Path to shmget:
   shmget_12c7a0 - [syscall]-> shmget
 
 Path to shmat:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_d048a0
@@ -507,7 +522,7 @@ Path to shmat:
   shmat_12c740 - [syscall]-> shmat
 
 Path to shmctl:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmmPcb_d048a0
@@ -516,7 +531,7 @@ Path to shmctl:
   shmctl@@GLIBC_2.2.5_12c7e0 - [syscall]-> shmctl
 
 Path to fallocate:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_d045d0
@@ -525,7 +540,7 @@ Path to fallocate:
   posix_fallocate64_11b950 - [syscall]-> fallocate
 
 Path to umask:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZL6_fatalv_a9e4a0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZL6_fatalv_a9e4a0
   _ZL6_fatalv_a9e4a0 - [DIRECT]-> _Z12report_fatal11VMErrorTypePKciS1_z_6bf9d0
   _Z12report_fatal11VMErrorTypePKciS1_z_6bf9d0 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_1027c20
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_1027c20 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_1022f20
@@ -534,7 +549,7 @@ Path to umask:
   umask_11c420 - [syscall]-> umask
 
 Path to get_mempolicy:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN12XUncommitter11run_serviceEv_109f790
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN12XUncommitter11run_serviceEv_109f790
   _ZN12XUncommitter11run_serviceEv_109f790 - [DIRECT]-> _ZN14XPageAllocator8uncommitEPm_1082210
   _ZN14XPageAllocator8uncommitEPm_1082210 - [DIRECT]-> _ZN10XPageCache18flush_for_uncommitEmP5XListI5XPageEPm_1085c90
   _ZN10XPageCache18flush_for_uncommitEmP5XListI5XPageEPm_1085c90 - [DIRECT]-> _ZN10XPageCache9free_pageEP5XPage_1085320
@@ -543,7 +558,7 @@ Path to get_mempolicy:
   _ZN8XSyscall13get_mempolicyEPiPmmPvm_109a250 - [syscall]-> get_mempolicy
 
 Path to sched_setaffinity:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_e204f0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN14ShenandoahHeap10initializeEv_e204f0
   _ZN14ShenandoahHeap10initializeEv_e204f0 - [DIRECT]-> _ZN23ShenandoahControlThreadC1Ev_e0f890
   _ZN23ShenandoahControlThreadC1Ev_e0f890 - [DIRECT]-> _ZN18ConcurrentGCThread16create_and_startE14ThreadPriority_6995c0
   _ZN18ConcurrentGCThread16create_and_startE14ThreadPriority_6995c0 - [DIRECT]-> _ZN2os13create_threadEP6ThreadNS_10ThreadTypeEm_d0fc30
@@ -552,7 +567,7 @@ Path to sched_setaffinity:
   create_thread_9c450 - [syscall]-> sched_setaffinity
 
 Path to waitid:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_d1af10
   _ZN2os13fork_and_execEPKc_d1af10 - [DIRECT]-> posix_spawn@@GLIBC_2.15_10ecd0
   posix_spawn@@GLIBC_2.15_10ecd0 - [DIRECT]-> __spawni_10fec0
@@ -561,7 +576,7 @@ Path to waitid:
   __clone_pidfd_supported_129bf0 - [syscall]-> waitid
 
 Path to clone3:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_d1af10
   _ZN2os13fork_and_execEPKc_d1af10 - [DIRECT]-> posix_spawn@@GLIBC_2.15_10ecd0
   posix_spawn@@GLIBC_2.15_10ecd0 - [DIRECT]-> __spawni_10fec0
@@ -570,7 +585,7 @@ Path to clone3:
   clone3_129c40 - [syscall]-> clone3
 
 Path to getgroups:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_d07e20
   _ZN2os8jvm_pathEPci_d07e20 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_d19820
   _ZN2os5Posix8realpathEPKcPcm_d19820 - [DIRECT]-> realpath@@GLIBC_2.3_46730
   realpath@@GLIBC_2.3_46730 - [DIRECT]-> faccessat_116b50
@@ -578,8 +593,17 @@ Path to getgroups:
   group_member_f9930 - [DIRECT]-> getgroups_f4770
   getgroups_f4770 - [syscall]-> getgroups
 
+Path to readv:
+  Java_java_net_Inet6AddressImpl_lookupAllHostAddr_46a0 - [DIRECT]-> getaddrinfo_15a720
+  getaddrinfo_15a720 - [DIRECT]-> getservbyname_r@@GLIBC_2.2.5_163eb0
+  getservbyname_r@@GLIBC_2.2.5_163eb0 - [DIRECT]-> __nscd_getservbyname_r_17f720
+  __nscd_getservbyname_r_17f720 - [DIRECT]-> nscd_getserv_r_17ecc0
+  nscd_getserv_r_17ecc0 - [DIRECT]-> __readvall_180450
+  __readvall_180450 - [DIRECT]-> readv_126980
+  readv_126980 - [syscall]-> readv
+
 Path to pwrite64:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN12XUncommitter11run_serviceEv_109f790
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN12XUncommitter11run_serviceEv_109f790
   _ZN12XUncommitter11run_serviceEv_109f790 - [DIRECT]-> _ZN14XPageAllocator8uncommitEPm_1082210
   _ZN14XPageAllocator8uncommitEPm_1082210 - [DIRECT]-> _ZN22XPhysicalMemoryManager8uncommitER15XPhysicalMemory_1087250
   _ZN22XPhysicalMemoryManager8uncommitER15XPhysicalMemory_1087250 - [DIRECT]-> _ZNK22XPhysicalMemoryBacking8uncommitEmm_108a380
@@ -589,7 +613,7 @@ Path to pwrite64:
   pwrite_fa500 - [syscall]-> pwrite64
 
 Path to clone:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_1021ea0 - [DIRECT]-> _ZN2os13fork_and_execEPKc_d1af10
   _ZN2os13fork_and_execEPKc_d1af10 - [DIRECT]-> posix_spawn@@GLIBC_2.15_10ecd0
   posix_spawn@@GLIBC_2.15_10ecd0 - [DIRECT]-> __spawni_10fec0
@@ -599,7 +623,7 @@ Path to clone:
   clone_129a20 - [syscall]-> clone
 
 Path to ftruncate:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_d045d0
@@ -610,7 +634,7 @@ Path to ftruncate:
   ftruncate_11ee90 - [syscall]-> ftruncate
 
 Path to fstatfs:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> WB_ReadFromNoaccessArea_1046fa0
   WB_ReadFromNoaccessArea_1046fa0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmmPKc_1021110
   _ZN17ReservedHeapSpaceC1EmmmPKc_1021110 - [DIRECT]-> _ZN13ReservedSpace7reserveEmmmPcb_101f9f0
   _ZN13ReservedSpace7reserveEmmmPcb_101f9f0 - [DIRECT]-> _ZN2os18map_memory_to_fileEmi_d045d0
@@ -620,19 +644,8 @@ Path to fstatfs:
   internal_fallocate64_11b780 - [DIRECT]-> fstatfs_117420
   fstatfs_117420 - [syscall]-> fstatfs
 
-Path to setsockopt:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
-  start_thread_9c720 - [DIRECT]-> __libc_thread_freeres_b0500
-  __libc_thread_freeres_b0500 - [DIRECT]-> __rpc_thread_destroy_1779e0
-  __rpc_thread_destroy_1779e0 - [DIRECT]-> __rpc_thread_svc_cleanup_1789e0
-  __rpc_thread_svc_cleanup_1789e0 - [DIRECT]-> __GI_pmap_unset_16c960
-  __GI_pmap_unset_16c960 - [DIRECT]-> __GI_clntudp_bufcreate_175f10
-  __GI_clntudp_bufcreate_175f10 - [DIRECT]-> __GI___libc_clntudp_bufcreate_175be0
-  __GI___libc_clntudp_bufcreate_175be0 - [DIRECT]-> setsockopt_12c180
-  setsockopt_12c180 - [syscall]-> setsockopt
-
 Path to memfd_create:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> _ZN16ZSharedArguments11create_heapEv_10fe470
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> _ZN16ZSharedArguments11create_heapEv_10fe470
   _ZN16ZSharedArguments11create_heapEv_10fe470 - [DIRECT]-> _ZN10ZArguments11create_heapEv_10a7000
   _ZN10ZArguments11create_heapEv_10a7000 - [DIRECT]-> _ZN14ZCollectedHeapC1Ev_10bd090
   _ZN14ZCollectedHeapC1Ev_10bd090 - [DIRECT]-> _ZN5ZHeapC2Ev_10c89e0
@@ -644,7 +657,7 @@ Path to memfd_create:
   _ZN8ZSyscall12memfd_createEPKcj_110b610 - [syscall]-> memfd_create
 
 Path to dup:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
+  Java_java_net_NetworkInterface_getByInetAddress0_73a0 - [INDIRECT]-> start_thread_9c720
   start_thread_9c720 - [DIRECT]-> __libc_thread_freeres_b0500
   __libc_thread_freeres_b0500 - [DIRECT]-> __rpc_thread_destroy_1779e0
   __rpc_thread_destroy_1779e0 - [DIRECT]-> __rpc_thread_svc_cleanup_1789e0
@@ -654,15 +667,3 @@ Path to dup:
   __get_myaddress.cold_29fbd - [DIRECT]-> perror_28a93
   perror_28a93 - [DIRECT]-> dup_116960
   dup_116960 - [syscall]-> dup
-
-Path to connect:
-  Java_java_net_NetworkInterface_getAll_7490 - [INDIRECT]-> start_thread_9c720
-  start_thread_9c720 - [DIRECT]-> __libc_thread_freeres_b0500
-  __libc_thread_freeres_b0500 - [DIRECT]-> __rpc_thread_destroy_1779e0
-  __rpc_thread_destroy_1779e0 - [DIRECT]-> __rpc_thread_svc_cleanup_1789e0
-  __rpc_thread_svc_cleanup_1789e0 - [DIRECT]-> __GI_pmap_unset_16c960
-  __GI_pmap_unset_16c960 - [DIRECT]-> __GI_clntudp_bufcreate_175f10
-  __GI_clntudp_bufcreate_175f10 - [DIRECT]-> __GI___libc_clntudp_bufcreate_175be0
-  __GI___libc_clntudp_bufcreate_175be0 - [DIRECT]-> __GI_pmap_getport_177780
-  __GI_pmap_getport_177780 - [DIRECT]-> connect_12b990
-  connect_12b990 - [syscall]-> connect

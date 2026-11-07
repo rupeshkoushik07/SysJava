@@ -22,8 +22,8 @@ _ZN2os14print_dll_infoEP12outputStream e71540 module-libjvm.so gettid 186
 _ZN24LinuxSystemMemoryBarrier4emitEv 11bf780 module-libjvm.so membarrier 324
 __cxa_guard_release 1366870 module-libjvm.so futex 202
 __libc_start_call_main 2a580 module-libc.so.6 futex 202
-__libc_start_call_main 2a580 module-libc.so.6 exit 60
 __libc_start_call_main 2a580 module-libc.so.6 rt_sigprocmask 14
+__libc_start_call_main 2a580 module-libc.so.6 exit 60
 __restore_rt 45cb0 module-libc.so.6 rt_sigreturn 15
 __GI___arc4random_buf.part.0 46e40 module-libc.so.6 ppoll 271
 getrandom_vdso 49660 module-libc.so.6 rt_sigprocmask 14
@@ -113,8 +113,8 @@ __gai_notify 15eef0 module-libc.so.6 futex 202
 __netlink_close 147740 module-libc.so.6 close 3
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
-__clone3 137780 module-libc.so.6 exit 60
 __clone3 137780 module-libc.so.6 clone3 435
+__clone3 137780 module-libc.so.6 exit 60
 __isatty_nostatus 129430 module-libc.so.6 ioctl 16
 __clone_pidfd_supported 137730 module-libc.so.6 waitid 247
 __futex_lock_pi64 a0a20 module-libc.so.6 futex 202

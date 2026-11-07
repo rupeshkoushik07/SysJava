@@ -80,12 +80,15 @@ gettimeofday
 getuid
 getxattr
 inotify_add_watch
+inotify_init
 inotify_init1
 inotify_rm_watch
 ioctl
 keyctl
 kill
+lchown
 lgetxattr
+link
 linkat
 listen
 listxattr
@@ -194,6 +197,7 @@ splice
 stat
 statfs
 statx
+symlink
 symlinkat
 sysinfo
 tgkill

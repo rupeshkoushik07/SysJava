@@ -1,51 +1,51 @@
 container=zookeeper_3.9.5
 image=zookeeper:3.9.5
-profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json
-profile_syscalls=183 SCMP_ACT_ERRNO
+profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json
+profile_syscalls=191 SCMP_ACT_ERRNO
 workload=docker run  zookeeper:3.9.5 
-started_at=2026-11-06T19:16:11+01:00
+started_at=2026-11-07T06:19:11+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=c23f608060996705e7a71ecdac353af40393d7bca6cb2b0fae6f403e13825997
-baseline_ready_after=10s
+docker_run_output=3466effb762f033f3908435c61adb00a8e8384c7451aae0d41fc075aaa5a7042
+baseline_ready_after=2s
 baseline_state=running exit=0
 baseline_probe=ok tcp_2181
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
-docker run -d --name echotrace-verify-seccomp-zookeeper-3-9-5 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json  zookeeper:3.9.5 
-docker_run_output=2eafb5a8c654cc7574ff13435167917a5f7e9120812a27dc7bfee84cabdb0f5d
-ready_after=2s
+docker run -d --name echotrace-verify-seccomp-zookeeper-3-9-5 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json  zookeeper:3.9.5 
+docker_run_output=d0420fca819c4adf2619bea9fdef335ef46f5d0f44342eea99154f0b0563ad86
+ready_after=4s
 state_after_60s=running exit=0
 probe=ok tcp_2181
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-06T19:18:33+01:00
+finished_at=2026-11-07T06:21:20+01:00
 
 ---- docker logs tail (with profile) ----
-2026-11-06 18:17:32,096 [myid:1] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@339] - No SessionScavenger set, using defaults
-2026-11-06 18:17:32,097 [myid:1] - INFO  [main:o.e.j.s.s.HouseKeeper@132] - node0 Scavenging every 660000ms
-2026-11-06 18:17:32,100 [myid:1] - WARN  [main:o.e.j.s.ConstraintSecurityHandler@759] - ServletContext@o.e.j.s.ServletContextHandler@65987993{/,null,STARTING} has uncovered http methods for path: /*
-2026-11-06 18:17:32,108 [myid:1] - INFO  [main:o.e.j.s.h.ContextHandler@921] - Started o.e.j.s.ServletContextHandler@65987993{/,null,AVAILABLE}
-2026-11-06 18:17:32,122 [myid:1] - INFO  [main:o.e.j.s.AbstractConnector@333] - Started ServerConnector@6e9175d8{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-2026-11-06 18:17:32,123 [myid:1] - INFO  [main:o.e.j.s.Server@415] - Started @706ms
-2026-11-06 18:17:32,123 [myid:1] - INFO  [main:o.a.z.s.a.JettyAdminServer@201] - Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands
-2026-11-06 18:17:32,127 [myid:1] - INFO  [main:o.a.z.s.ServerCnxnFactory@172] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
-2026-11-06 18:17:32,128 [myid:1] - WARN  [main:o.a.z.s.ServerCnxnFactory@337] - maxCnxns is not configured, using default value 0.
-2026-11-06 18:17:32,130 [myid:1] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 3 selector thread(s), 48 worker threads, and 64 kB direct buffers.
-2026-11-06 18:17:32,133 [myid:1] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port /0.0.0.0:2181
-2026-11-06 18:17:32,143 [myid:1] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
-2026-11-06 18:17:32,143 [myid:1] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
-2026-11-06 18:17:32,144 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@137] - zookeeper.snapshotSizeFactor = 0.33
-2026-11-06 18:17:32,144 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@157] - zookeeper.commitLogCount=500
-2026-11-06 18:17:32,149 [myid:1] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
-2026-11-06 18:17:32,149 [myid:1] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0x0 to /data/version-2/snapshot.0
-2026-11-06 18:17:32,152 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@294] - Snapshot loaded in 7 ms, highest zxid is 0x0, digest is 1371985504
-2026-11-06 18:17:32,153 [myid:1] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0x0 to /data/version-2/snapshot.0
-2026-11-06 18:17:32,154 [myid:1] - INFO  [main:o.a.z.s.ZooKeeperServer@588] - Snapshot taken in 0 ms
-2026-11-06 18:17:32,161 [myid:1] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
-2026-11-06 18:17:32,161 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
-2026-11-06 18:17:32,187 [myid:1] - INFO  [main:o.a.z.s.ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
-2026-11-06 18:17:32,187 [myid:1] - INFO  [main:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
-2026-11-06 18:18:33,527 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@342] - Unable to read additional data from client, it probably closed the socket: address = /172.17.0.1:58250, session = 0x0
+2026-11-07 05:20:17,054 [myid:1] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@339] - No SessionScavenger set, using defaults
+2026-11-07 05:20:17,055 [myid:1] - INFO  [main:o.e.j.s.s.HouseKeeper@132] - node0 Scavenging every 660000ms
+2026-11-07 05:20:17,057 [myid:1] - WARN  [main:o.e.j.s.ConstraintSecurityHandler@759] - ServletContext@o.e.j.s.ServletContextHandler@65987993{/,null,STARTING} has uncovered http methods for path: /*
+2026-11-07 05:20:17,071 [myid:1] - INFO  [main:o.e.j.s.h.ContextHandler@921] - Started o.e.j.s.ServletContextHandler@65987993{/,null,AVAILABLE}
+2026-11-07 05:20:17,084 [myid:1] - INFO  [main:o.e.j.s.AbstractConnector@333] - Started ServerConnector@6e9175d8{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2026-11-07 05:20:17,085 [myid:1] - INFO  [main:o.e.j.s.Server@415] - Started @537ms
+2026-11-07 05:20:17,085 [myid:1] - INFO  [main:o.a.z.s.a.JettyAdminServer@201] - Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands
+2026-11-07 05:20:17,088 [myid:1] - INFO  [main:o.a.z.s.ServerCnxnFactory@172] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2026-11-07 05:20:17,089 [myid:1] - WARN  [main:o.a.z.s.ServerCnxnFactory@337] - maxCnxns is not configured, using default value 0.
+2026-11-07 05:20:17,090 [myid:1] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 3 selector thread(s), 48 worker threads, and 64 kB direct buffers.
+2026-11-07 05:20:17,091 [myid:1] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port /0.0.0.0:2181
+2026-11-07 05:20:17,100 [myid:1] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2026-11-07 05:20:17,101 [myid:1] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2026-11-07 05:20:17,101 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@137] - zookeeper.snapshotSizeFactor = 0.33
+2026-11-07 05:20:17,101 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@157] - zookeeper.commitLogCount=500
+2026-11-07 05:20:17,106 [myid:1] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2026-11-07 05:20:17,106 [myid:1] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0x0 to /data/version-2/snapshot.0
+2026-11-07 05:20:17,109 [myid:1] - INFO  [main:o.a.z.s.ZKDatabase@294] - Snapshot loaded in 7 ms, highest zxid is 0x0, digest is 1371985504
+2026-11-07 05:20:17,109 [myid:1] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0x0 to /data/version-2/snapshot.0
+2026-11-07 05:20:17,110 [myid:1] - INFO  [main:o.a.z.s.ZooKeeperServer@588] - Snapshot taken in 1 ms
+2026-11-07 05:20:17,116 [myid:1] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2026-11-07 05:20:17,116 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2026-11-07 05:20:17,137 [myid:1] - INFO  [main:o.a.z.s.ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2026-11-07 05:20:17,138 [myid:1] - INFO  [main:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2026-11-07 05:21:20,691 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@342] - Unable to read additional data from client, it probably closed the socket: address = /172.17.0.1:58836, session = 0x0

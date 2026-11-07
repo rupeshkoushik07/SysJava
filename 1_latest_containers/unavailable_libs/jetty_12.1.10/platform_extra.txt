@@ -1,2 +1,4 @@
 jdk.internal.vm.Continuation.doYield
 java.lang.Class.getSuperclass
+java.lang.invoke.MethodHandle.invokeExact
+sun.java2d.loops.TransformBlit.Transform

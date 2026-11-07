@@ -1,3 +1,5 @@
+rmdir
+ftruncate
 getdents64
 pread64
 newfstatat
@@ -100,5 +102,3 @@ clone
 setsid
 timer_settime
 munmap
-rmdir
-ftruncate

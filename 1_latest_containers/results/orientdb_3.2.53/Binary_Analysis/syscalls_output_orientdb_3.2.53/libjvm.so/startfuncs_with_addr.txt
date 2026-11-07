@@ -99,6 +99,7 @@ Unsafe_GetShort_b07d90
 Unsafe_GetShort140_b0a0d0
 Unsafe_GetShortVolatile_b08d50
 Unsafe_LoadFence_b096b0
+Unsafe_Loadavg_b0fe20
 Unsafe_ObjectFieldOffset_b10190
 Unsafe_PageSize_b0aab0
 Unsafe_Park_b10970

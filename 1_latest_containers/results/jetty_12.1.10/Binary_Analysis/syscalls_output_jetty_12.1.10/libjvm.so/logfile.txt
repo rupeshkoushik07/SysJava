@@ -392,15 +392,15 @@ Path to getpriority:
   getpriority_12aec0 - [syscall]-> getpriority
 
 Path to sched_get_priority_max:
-  JVM_StartThread_b24890 - [DIRECT]-> _ZN5Mutex4lockEv_e1e070
-  _ZN5Mutex4lockEv_e1e070 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  Unsafe_Park_1238270 - [DIRECT]-> _ZN6Parker4parkEbl_e81f20
+  _ZN6Parker4parkEbl_e81f20 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
   pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
   sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
 
 Path to sched_get_priority_min:
-  JVM_StartThread_b24890 - [DIRECT]-> _ZN5Mutex4lockEv_e1e070
-  _ZN5Mutex4lockEv_e1e070 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  Unsafe_Park_1238270 - [DIRECT]-> _ZN6Parker4parkEbl_e81f20
+  _ZN6Parker4parkEbl_e81f20 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
   pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
   sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
@@ -486,8 +486,7 @@ Path to getsockname:
   getsockname_1391c0 - [syscall]-> getsockname
 
 Path to umask:
-  JVM_GetClassConstantPool_b1bee0 - [DIRECT]-> _ZN32JvmtiVMObjectAllocEventCollectorC1Ev_c5cea0
-  _ZN32JvmtiVMObjectAllocEventCollectorC1Ev_c5cea0 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_78ec40
+  JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods_f3f0e0 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_78ec40
   _Z15report_vm_errorPKciS0_S0_z_78ec40 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPKvS8_S1_im_1290790 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_128af30
   _ZN7VMError6reportEP12outputStreamb_128af30 - [DIRECT]-> _ZN2os15print_user_infoEP12outputStream_e807a0

@@ -1,40 +1,19 @@
-2026-11-05T13:41:54 RUN image=solr_10.0.0 libraries=19 force=False
-2026-11-05T13:41:54 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/solr_10.0.0/Dataset_symbolized/LIBS_solr_10.0.0
-2026-11-05T13:41:55 START [1/19] libacl.so.1 functions=41 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libacl.so.1/logfile.txt
-2026-11-05T13:42:35 DONE [1/19] libacl.so.1 status=completed exit=0 syscalls=58
-2026-11-05T13:42:35 START [2/19] libcap.so.2 functions=70 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libcap.so.2/logfile.txt
-2026-11-05T13:43:13 DONE [2/19] libcap.so.2 status=completed exit=0 syscalls=53
-2026-11-05T13:43:13 START [3/19] libcrypto.so.3 functions=5363 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libcrypto.so.3/logfile.txt
-2026-11-05T13:46:25 DONE [3/19] libcrypto.so.3 status=completed exit=0 syscalls=68
-2026-11-05T13:46:26 START [4/19] libextnet.so functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libextnet.so/logfile.txt
-2026-11-05T14:14:36 DONE [4/19] libextnet.so status=completed exit=0 syscalls=105
-2026-11-05T14:14:37 START [5/19] libgcrypt.so.20 functions=215 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libgcrypt.so.20/logfile.txt
-2026-11-05T14:44:18 DONE [5/19] libgcrypt.so.20 status=completed exit=0 syscalls=51
-2026-11-05T14:44:18 START [6/19] libgpg-error.so.0 functions=158 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libgpg-error.so.0/logfile.txt
-2026-11-05T14:45:06 DONE [6/19] libgpg-error.so.0 status=completed exit=0 syscalls=55
-2026-11-05T14:45:06 START [7/19] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libjimage.so/logfile.txt
-2026-11-05T15:18:19 DONE [7/19] libjimage.so status=completed exit=0 syscalls=104
-2026-11-05T15:18:19 START [8/19] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libjli.so/logfile.txt
-2026-11-05T15:19:08 DONE [8/19] libjli.so status=completed exit=0 syscalls=67
-2026-11-05T15:19:08 START [9/19] liblz4.so.1 functions=108 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/liblz4.so.1/logfile.txt
-2026-11-05T15:19:50 DONE [9/19] liblz4.so.1 status=completed exit=0 syscalls=37
-2026-11-05T15:19:50 START [10/19] liblzma.so.5 functions=107 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/liblzma.so.5/logfile.txt
-2026-11-05T15:20:31 DONE [10/19] liblzma.so.5 status=completed exit=0 syscalls=55
-2026-11-05T15:20:31 START [11/19] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libmanagement.so/logfile.txt
-2026-11-05T15:49:15 DONE [11/19] libmanagement.so status=completed exit=0 syscalls=104
-2026-11-05T15:49:15 START [12/19] libmanagement_ext.so functions=35 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libmanagement_ext.so/logfile.txt
-2026-11-05T16:19:50 DONE [12/19] libmanagement_ext.so status=completed exit=0 syscalls=104
-2026-11-05T16:19:50 START [13/19] libpcre2-8.so.0 functions=73 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libpcre2-8.so.0/logfile.txt
-2026-11-05T16:21:19 DONE [13/19] libpcre2-8.so.0 status=completed exit=0 syscalls=39
-2026-11-05T16:21:19 START [14/19] libproc2.so.0 functions=62 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libproc2.so.0/logfile.txt
-2026-11-05T16:22:46 DONE [14/19] libproc2.so.0 status=completed exit=0 syscalls=68
-2026-11-05T16:22:46 START [15/19] libselinux.so.1 functions=240 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libselinux.so.1/logfile.txt
-2026-11-05T16:24:31 DONE [15/19] libselinux.so.1 status=completed exit=0 syscalls=83
-2026-11-05T16:24:31 START [16/19] libsyslookup.so functions=2 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libsyslookup.so/logfile.txt
-2026-11-05T16:25:21 DONE [16/19] libsyslookup.so status=completed exit=0 syscalls=37
-2026-11-05T16:25:21 START [17/19] libsystemd.so.0 functions=636 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libsystemd.so.0/logfile.txt
-2026-11-05T17:41:18 DONE [17/19] libsystemd.so.0 status=completed exit=0 syscalls=111
-2026-11-05T17:41:18 START [18/19] libtinfo.so.6 functions=211 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libtinfo.so.6/logfile.txt
-2026-11-05T17:42:03 DONE [18/19] libtinfo.so.6 status=completed exit=0 syscalls=49
-2026-11-05T17:42:03 START [19/19] libzstd.so.1 functions=185 log=/home/user/Tutorial/EchoTrace_latest/workspaces/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/libzstd.so.1/logfile.txt
-2026-11-05T17:43:04 DONE [19/19] libzstd.so.1 status=completed exit=0 syscalls=53
+2026-11-07T08:51:12 RUN image=solr_10.0.0 libraries=17 force=False
+2026-11-07T08:51:12 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/solr_10.0.0/Dataset_symbolized/LIBS_solr_10.0.0
+2026-11-07T08:51:12 SKIP [1/17] libacl.so.1 already_complete
+2026-11-07T08:51:12 SKIP [2/17] libcap.so.2 already_complete
+2026-11-07T08:51:12 SKIP [3/17] libcrypto.so.3 already_complete
+2026-11-07T08:51:12 SKIP [4/17] libextnet.so already_complete
+2026-11-07T08:51:12 SKIP [5/17] libgcrypt.so.20 already_complete
+2026-11-07T08:51:12 SKIP [6/17] libgpg-error.so.0 already_complete
+2026-11-07T08:51:12 SKIP [7/17] libjli.so already_complete
+2026-11-07T08:51:12 SKIP [8/17] liblz4.so.1 already_complete
+2026-11-07T08:51:12 SKIP [9/17] liblzma.so.5 already_complete
+2026-11-07T08:51:12 SKIP [10/17] libmanagement_ext.so already_complete
+2026-11-07T08:51:12 SKIP [11/17] libpcre2-8.so.0 already_complete
+2026-11-07T08:51:12 SKIP [12/17] libproc2.so.0 already_complete
+2026-11-07T08:51:12 SKIP [13/17] libselinux.so.1 already_complete
+2026-11-07T08:51:12 SKIP [14/17] libsyslookup.so already_complete
+2026-11-07T08:51:12 SKIP [15/17] libsystemd.so.0 already_complete
+2026-11-07T08:51:12 SKIP [16/17] libtinfo.so.6 already_complete
+2026-11-07T08:51:12 SKIP [17/17] libzstd.so.1 already_complete

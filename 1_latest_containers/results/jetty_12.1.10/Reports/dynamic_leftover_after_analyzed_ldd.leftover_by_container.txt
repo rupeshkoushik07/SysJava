@@ -1,12 +1,9 @@
-jetty_12.1.10 (10)
+jetty_12.1.10 (7)
   - libacl.so.1
   - libextnet.so
   - libgcc_s.so.1
-  - libjimage.so
   - libjli.so
-  - libmanagement.so
   - libmanagement_ext.so
-  - libnio.so
   - libpcre2-8.so.0
   - libselinux.so.1
 

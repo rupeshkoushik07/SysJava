@@ -1,4 +1,4 @@
-fstatat64_wrapper b1e0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Dataset_symbolized/LIBS_orientdb_3.2.53/libnio.so newfstatat 262
+fstatat64_wrapper b1e0 module-/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_clinit/orientdb_3.2.53/Dataset_symbolized/LIBS_orientdb_3.2.53/libnio.so newfstatat 262
 __libc_start_call_main 2a580 module-libc.so.6 rt_sigprocmask 14
 __libc_start_call_main 2a580 module-libc.so.6 futex 202
 __libc_start_call_main 2a580 module-libc.so.6 exit 60

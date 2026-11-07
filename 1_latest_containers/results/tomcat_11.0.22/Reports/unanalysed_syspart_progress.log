@@ -1,23 +1,6 @@
-2026-11-05T11:00:51 RUN image=tomcat_11.0.22 libraries=7 force=False
-2026-11-05T11:00:51 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Dataset_symbolized/LIBS_tomcat_11.0.22
-2026-11-05T11:00:52 START [1/7] libextnet.so functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libextnet.so/logfile.txt
-2026-11-05T11:31:56 DONE [1/7] libextnet.so status=completed exit=0 syscalls=105
-2026-11-05T11:31:56 START [2/7] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libjimage.so/logfile.txt
-2026-11-05T11:54:41 DONE [2/7] libjimage.so status=failed exit=-15 syscalls=0
-2026-11-05T11:54:41 START [3/7] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libjli.so/logfile.txt
-2026-11-05T11:55:27 DONE [3/7] libjli.so status=completed exit=0 syscalls=67
-2026-11-05T11:55:27 START [4/7] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libmanagement.so/logfile.txt
-2026-11-05T12:00:25 RUN image=tomcat_11.0.22 libraries=7 force=False
-2026-11-05T12:00:25 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Dataset_symbolized/LIBS_tomcat_11.0.22
-2026-11-05T12:00:26 SKIP [1/7] libextnet.so already_complete
-2026-11-05T12:00:26 START [2/7] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libjimage.so/logfile.txt
-2026-11-05T12:26:35 DONE [2/7] libjimage.so status=completed exit=0 syscalls=104
-2026-11-05T12:26:35 SKIP [3/7] libjli.so already_complete
-2026-11-05T12:26:35 START [4/7] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libmanagement.so/logfile.txt
-2026-11-05T12:54:58 DONE [4/7] libmanagement.so status=completed exit=0 syscalls=104
-2026-11-05T12:54:58 START [5/7] libmanagement_ext.so functions=35 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libmanagement_ext.so/logfile.txt
-2026-11-05T13:20:59 DONE [5/7] libmanagement_ext.so status=completed exit=0 syscalls=104
-2026-11-05T13:20:59 START [6/7] libnio.so functions=201 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libnio.so/logfile.txt
-2026-11-05T13:47:18 DONE [6/7] libnio.so status=completed exit=0 syscalls=140
-2026-11-05T13:47:18 START [7/7] libtinfo.so.6 functions=211 log=/home/user/Tutorial/EchoTrace_latest/workspaces/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/libtinfo.so.6/logfile.txt
-2026-11-05T13:48:01 DONE [7/7] libtinfo.so.6 status=completed exit=0 syscalls=49
+2026-11-07T07:04:59 RUN image=tomcat_11.0.22 libraries=4 force=False
+2026-11-07T07:04:59 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Dataset_symbolized/LIBS_tomcat_11.0.22
+2026-11-07T07:04:59 SKIP [1/4] libextnet.so already_complete
+2026-11-07T07:04:59 SKIP [2/4] libjli.so already_complete
+2026-11-07T07:04:59 SKIP [3/4] libmanagement_ext.so already_complete
+2026-11-07T07:04:59 SKIP [4/4] libtinfo.so.6 already_complete

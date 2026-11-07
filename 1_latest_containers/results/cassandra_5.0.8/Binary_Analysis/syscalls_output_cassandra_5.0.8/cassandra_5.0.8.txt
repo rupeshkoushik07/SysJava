@@ -106,6 +106,7 @@ memfd_create
 migrate_pages
 mincore
 mkdir
+mknodat
 mlock
 mlock2
 mlockall

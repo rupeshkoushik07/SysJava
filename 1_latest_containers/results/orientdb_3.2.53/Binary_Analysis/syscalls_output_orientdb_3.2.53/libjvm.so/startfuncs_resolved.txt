@@ -99,6 +99,7 @@ Unsafe_GetShort
 Unsafe_GetShort140
 Unsafe_GetShortVolatile
 Unsafe_LoadFence
+Unsafe_Loadavg
 Unsafe_ObjectFieldOffset
 Unsafe_PageSize
 Unsafe_Park

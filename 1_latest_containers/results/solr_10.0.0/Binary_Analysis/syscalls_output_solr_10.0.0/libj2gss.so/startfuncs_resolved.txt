@@ -1,0 +1,3 @@
+Java_sun_security_jgss_wrapper_GSSLibStub_getMechPtr
+Java_sun_security_jgss_wrapper_GSSLibStub_indicateMechs
+Java_sun_security_jgss_wrapper_GSSLibStub_init

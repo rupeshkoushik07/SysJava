@@ -1,214 +1,111 @@
-2026-11-05T12:22:49 RUN image=cassandra_5.0.8 libraries=108 force=False
-2026-11-05T12:22:49 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Dataset_symbolized/LIBS_cassandra_5.0.8
-2026-11-05T12:22:49 START [1/108] libBrokenLocale.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libBrokenLocale.so.1/logfile.txt
-2026-11-05T12:23:21 DONE [1/108] libBrokenLocale.so.1 status=completed exit=0 syscalls=0
-2026-11-05T12:23:21 START [2/108] libacl.so.1 functions=41 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libacl.so.1/logfile.txt
-2026-11-05T12:23:55 DONE [2/108] libacl.so.1 status=completed exit=0 syscalls=56
-2026-11-05T12:23:55 START [3/108] libanl.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libanl.so.1/logfile.txt
-2026-11-05T12:24:26 DONE [3/108] libanl.so.1 status=failed exit=1 syscalls=0
-2026-11-05T12:24:26 START [4/108] libapt-pkg.so.6.0.0 functions=1384 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libapt-pkg.so.6.0.0/logfile.txt
-2026-11-05T12:26:30 DONE [4/108] libapt-pkg.so.6.0.0 status=completed exit=0 syscalls=0
-2026-11-05T12:26:30 START [5/108] libapt-private.so.0.0 functions=83 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libapt-private.so.0.0/logfile.txt
-2026-11-05T12:28:16 DONE [5/108] libapt-private.so.0.0 status=completed exit=0 syscalls=0
-2026-11-05T12:28:16 START [6/108] libattr.so.1 functions=26 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libattr.so.1/logfile.txt
-2026-11-05T12:28:51 DONE [6/108] libattr.so.1 status=completed exit=0 syscalls=49
-2026-11-05T12:28:51 START [7/108] libaudit.so.1.0.0 functions=78 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libaudit.so.1.0.0/logfile.txt
-2026-11-05T12:29:31 DONE [7/108] libaudit.so.1.0.0 status=completed exit=0 syscalls=54
-2026-11-05T12:29:31 START [8/108] libblkid.so.1 functions=109 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libblkid.so.1/logfile.txt
-2026-11-05T12:30:09 DONE [8/108] libblkid.so.1 status=completed exit=0 syscalls=67
-2026-11-05T12:30:09 START [9/108] libbpf.so.1 functions=304 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libbpf.so.1/logfile.txt
-2026-11-05T12:30:52 DONE [9/108] libbpf.so.1 status=completed exit=0 syscalls=68
-2026-11-05T12:30:52 START [10/108] libbpf.so.1.1.2 functions=304 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libbpf.so.1.1.2/logfile.txt
-2026-11-05T12:31:36 DONE [10/108] libbpf.so.1.1.2 status=completed exit=0 syscalls=68
-2026-11-05T12:31:36 START [11/108] libbz2.so.1.0.4 functions=33 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libbz2.so.1.0.4/logfile.txt
-2026-11-05T12:32:13 DONE [11/108] libbz2.so.1.0.4 status=completed exit=0 syscalls=38
-2026-11-05T12:32:13 START [12/108] libc_malloc_debug.so.0 functions=24 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libc_malloc_debug.so.0/logfile.txt
-2026-11-05T12:32:45 DONE [12/108] libc_malloc_debug.so.0 status=completed exit=0 syscalls=37
-2026-11-05T12:32:45 START [13/108] libcap-ng.so.0.0.0 functions=22 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcap-ng.so.0.0.0/logfile.txt
-2026-11-05T12:33:22 DONE [13/108] libcap-ng.so.0.0.0 status=completed exit=0 syscalls=58
-2026-11-05T12:33:22 START [14/108] libcap.so.2 functions=70 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcap.so.2/logfile.txt
-2026-11-05T12:33:54 DONE [14/108] libcap.so.2 status=completed exit=0 syscalls=55
-2026-11-05T12:33:54 START [15/108] libcap.so.2.66 functions=70 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcap.so.2.66/logfile.txt
-2026-11-05T12:34:28 DONE [15/108] libcap.so.2.66 status=completed exit=0 syscalls=55
-2026-11-05T12:34:29 START [16/108] libcom_err.so.2.1 functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcom_err.so.2.1/logfile.txt
-2026-11-05T12:35:02 DONE [16/108] libcom_err.so.2.1 status=completed exit=0 syscalls=42
-2026-11-05T12:35:02 START [17/108] libcrypt.so.1.1.0 functions=19 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcrypt.so.1.1.0/logfile.txt
-2026-11-05T12:35:34 DONE [17/108] libcrypt.so.1.1.0 status=completed exit=0 syscalls=38
-2026-11-05T12:35:34 START [18/108] libcrypto.so.3 functions=5363 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libcrypto.so.3/logfile.txt
-2026-11-05T12:38:53 DONE [18/108] libcrypto.so.3 status=completed exit=0 syscalls=67
-2026-11-05T12:38:53 START [19/108] libdb-5.3.so functions=1719 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libdb-5.3.so/logfile.txt
-2026-11-05T12:41:03 DONE [19/108] libdb-5.3.so status=completed exit=0 syscalls=77
-2026-11-05T12:41:03 START [20/108] libdebconfclient.so.0 functions=3 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libdebconfclient.so.0/logfile.txt
-2026-11-05T12:41:35 DONE [20/108] libdebconfclient.so.0 status=completed exit=0 syscalls=38
-2026-11-05T12:41:35 START [21/108] libdrop_ambient.so.0 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libdrop_ambient.so.0/logfile.txt
-2026-11-05T12:42:07 DONE [21/108] libdrop_ambient.so.0 status=completed exit=0 syscalls=38
-2026-11-05T12:42:07 START [22/108] libe2p.so.2.3 functions=44 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libe2p.so.2.3/logfile.txt
-2026-11-05T12:42:45 DONE [22/108] libe2p.so.2.3 status=completed exit=0 syscalls=51
-2026-11-05T12:42:45 START [23/108] libelf.so.1 functions=111 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libelf-0.188.so/logfile.txt
-2026-11-05T12:43:28 DONE [23/108] libelf.so.1 status=completed exit=0 syscalls=43
-2026-11-05T12:43:28 START [24/108] libexpat.so.1 functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libexpat.so.1/logfile.txt
-2026-11-05T12:44:06 DONE [24/108] libexpat.so.1 status=completed exit=0 syscalls=38
-2026-11-05T12:44:06 START [25/108] libexpatw.so.1.8.10 functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libexpatw.so.1.8.10/logfile.txt
-2026-11-05T12:44:42 DONE [25/108] libexpatw.so.1.8.10 status=completed exit=0 syscalls=38
-2026-11-05T12:44:42 START [26/108] libext2fs.so.2 functions=641 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libext2fs.so.2/logfile.txt
-2026-11-05T12:45:28 DONE [26/108] libext2fs.so.2 status=completed exit=0 syscalls=67
-2026-11-05T12:45:28 START [27/108] libextnet.so functions=15 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libextnet.so/logfile.txt
-2026-11-05T13:04:15 DONE [27/108] libextnet.so status=completed exit=0 syscalls=94
-2026-11-05T13:04:15 START [28/108] libffi.so.8.1.2 functions=22 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libffi.so.8.1.2/logfile.txt
-2026-11-05T13:04:51 DONE [28/108] libffi.so.8.1.2 status=completed exit=0 syscalls=43
-2026-11-05T13:04:51 START [29/108] libformw.so.6.4 functions=76 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libformw.so.6.4/logfile.txt
-2026-11-05T13:05:26 DONE [29/108] libformw.so.6.4 status=completed exit=0 syscalls=42
-2026-11-05T13:05:26 START [30/108] libgcrypt.so.20 functions=215 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgcrypt.so.20/logfile.txt
-2026-11-05T13:06:11 DONE [30/108] libgcrypt.so.20 status=completed exit=0 syscalls=0
-2026-11-05T13:06:11 START [31/108] libgmp.so.10 functions=589 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgmp.so.10/logfile.txt
-2026-11-05T13:06:55 DONE [31/108] libgmp.so.10 status=completed exit=0 syscalls=38
-2026-11-05T13:06:55 START [32/108] libgnutls.so.30 functions=1297 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgnutls.so.30/logfile.txt
-2026-11-05T13:11:49 DONE [32/108] libgnutls.so.30 status=completed exit=0 syscalls=67
-2026-11-05T13:11:49 START [33/108] libgpg-error.so.0 functions=158 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgpg-error.so.0/logfile.txt
-2026-11-05T13:12:27 DONE [33/108] libgpg-error.so.0 status=completed exit=0 syscalls=55
-2026-11-05T13:12:27 START [34/108] libgpg-error.so.0.33.1 functions=158 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgpg-error.so.0.33.1/logfile.txt
-2026-11-05T13:13:08 DONE [34/108] libgpg-error.so.0.33.1 status=completed exit=0 syscalls=55
-2026-11-05T13:13:08 START [35/108] libgssapi_krb5.so.2.2 functions=107 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libgssapi_krb5.so.2.2/logfile.txt
-2026-11-05T13:13:59 DONE [35/108] libgssapi_krb5.so.2.2 status=completed exit=0 syscalls=73
-2026-11-05T13:13:59 START [36/108] libhistory.so.8 functions=56 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libhistory.so.8/logfile.txt
-2026-11-05T13:14:35 DONE [36/108] libhistory.so.8 status=completed exit=0 syscalls=54
-2026-11-05T13:14:35 START [37/108] libhogweed.so.6.6 functions=277 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libhogweed.so.6.6/logfile.txt
-2026-11-05T13:15:15 DONE [37/108] libhogweed.so.6.6 status=completed exit=0 syscalls=38
-2026-11-05T13:15:15 START [38/108] libidn2.so.0.3.8 functions=21 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libidn2.so.0.3.8/logfile.txt
-2026-11-05T13:15:57 DONE [38/108] libidn2.so.0.3.8 status=completed exit=0 syscalls=37
-2026-11-05T13:15:57 START [39/108] libinstrument.so functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libinstrument.so/logfile.txt
-2026-11-05T13:35:21 DONE [39/108] libinstrument.so status=completed exit=0 syscalls=93
-2026-11-05T13:35:21 START [40/108] libjemalloc.so functions=40 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libjemalloc.so.2/logfile.txt
-2026-11-05T13:36:18 DONE [40/108] libjemalloc.so status=completed exit=0 syscalls=59
-2026-11-05T13:36:18 START [41/108] libjimage.so functions=9 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libjimage.so/logfile.txt
-2026-11-05T13:55:06 DONE [41/108] libjimage.so status=completed exit=0 syscalls=93
-2026-11-05T13:55:06 START [42/108] libjli.so functions=20 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libjli.so/logfile.txt
-2026-11-05T13:55:48 DONE [42/108] libjli.so status=completed exit=0 syscalls=66
-2026-11-05T13:55:48 START [43/108] libjsvml.so functions=272 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libjsvml.so/logfile.txt
-2026-11-05T13:56:23 DONE [43/108] libjsvml.so status=completed exit=0 syscalls=37
-2026-11-05T13:56:23 START [44/108] libk5crypto.so.3 functions=94 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libk5crypto.so.3/logfile.txt
-2026-11-05T13:56:57 DONE [44/108] libk5crypto.so.3 status=completed exit=0 syscalls=37
-2026-11-05T13:56:57 START [45/108] libkeyutils.so.1 functions=44 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libkeyutils.so.1/logfile.txt
-2026-11-05T13:57:36 DONE [45/108] libkeyutils.so.1 status=completed exit=0 syscalls=40
-2026-11-05T13:57:36 START [46/108] libkrb5.so.3 functions=641 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libkrb5.so.3/logfile.txt
-2026-11-05T13:58:31 DONE [46/108] libkrb5.so.3 status=completed exit=0 syscalls=72
-2026-11-05T13:58:31 START [47/108] libkrb5support.so.0.1 functions=98 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libkrb5support.so.0.1/logfile.txt
-2026-11-05T13:59:12 DONE [47/108] libkrb5support.so.0.1 status=completed exit=0 syscalls=50
-2026-11-05T13:59:12 START [48/108] liblz4.so.1 functions=108 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/liblz4.so.1/logfile.txt
-2026-11-05T13:59:50 DONE [48/108] liblz4.so.1 status=completed exit=0 syscalls=37
-2026-11-05T13:59:50 START [49/108] liblz4.so.1.9.4 functions=108 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/liblz4.so.1.9.4/logfile.txt
-2026-11-05T14:00:26 DONE [49/108] liblz4.so.1.9.4 status=completed exit=0 syscalls=37
-2026-11-05T14:00:26 START [50/108] liblzma.so.5 functions=107 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/liblzma.so.5/logfile.txt
-2026-11-05T14:01:04 DONE [50/108] liblzma.so.5 status=completed exit=0 syscalls=53
-2026-11-05T14:01:04 START [51/108] libmanagement.so functions=69 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmanagement.so/logfile.txt
-2026-11-05T14:24:18 DONE [51/108] libmanagement.so status=completed exit=0 syscalls=93
-2026-11-05T14:24:18 START [52/108] libmanagement_ext.so functions=35 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmanagement_ext.so/logfile.txt
-2026-11-05T14:59:58 DONE [52/108] libmanagement_ext.so status=completed exit=0 syscalls=93
-2026-11-05T14:59:58 START [53/108] libmd.so.0.0.5 functions=71 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmd.so.0.0.5/logfile.txt
-2026-11-05T15:00:33 DONE [53/108] libmd.so.0.0.5 status=completed exit=0 syscalls=37
-2026-11-05T15:00:33 START [54/108] libmemusage.so functions=8 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmemusage.so/logfile.txt
-2026-11-05T15:01:13 DONE [54/108] libmemusage.so status=completed exit=0 syscalls=0
-2026-11-05T15:01:13 START [55/108] libmenuw.so.6.4 functions=65 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmenuw.so.6.4/logfile.txt
-2026-11-05T15:01:53 DONE [55/108] libmenuw.so.6.4 status=completed exit=0 syscalls=42
-2026-11-05T15:01:53 START [56/108] libmnl.so.0 functions=68 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmnl.so.0/logfile.txt
-2026-11-05T15:02:30 DONE [56/108] libmnl.so.0 status=completed exit=0 syscalls=44
-2026-11-05T15:02:30 START [57/108] libmount.so.1 functions=297 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmount.so.1/logfile.txt
-2026-11-05T15:03:47 DONE [57/108] libmount.so.1 status=completed exit=0 syscalls=95
-2026-11-05T15:03:47 START [58/108] libmvec.so.1 functions=216 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libmvec.so.1/logfile.txt
-2026-11-05T15:04:31 DONE [58/108] libmvec.so.1 status=completed exit=0 syscalls=0
-2026-11-05T15:04:31 START [59/108] libncursesw.so.6.4 functions=463 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libncursesw.so.6.4/logfile.txt
-2026-11-05T15:05:14 DONE [59/108] libncursesw.so.6.4 status=completed exit=0 syscalls=49
-2026-11-05T15:05:14 START [60/108] libnettle.so.8 functions=476 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnettle.so.8/logfile.txt
-2026-11-05T15:05:51 DONE [60/108] libnettle.so.8 status=completed exit=0 syscalls=37
-2026-11-05T15:05:51 UNRESOLVED [61/108] libnetty_tcnative_linux_x86_644364788409599041790.so
-2026-11-05T15:05:51 UNRESOLVED [62/108] libnetty_transport_native_epoll_x86_6445936256729223935.so
-2026-11-05T15:05:51 START [63/108] libnsl.so.1 functions=127 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnsl.so.1/logfile.txt
-2026-11-05T15:06:29 DONE [63/108] libnsl.so.1 status=completed exit=0 syscalls=0
-2026-11-05T15:06:29 START [64/108] libnsl.so.2 functions=114 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnsl.so.2/logfile.txt
-2026-11-05T15:11:32 DONE [64/108] libnsl.so.2 status=completed exit=0 syscalls=80
-2026-11-05T15:11:32 START [65/108] libnss_compat.so.2 functions=15 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnss_compat.so.2/logfile.txt
-2026-11-05T15:12:09 DONE [65/108] libnss_compat.so.2 status=completed exit=0 syscalls=47
-2026-11-05T15:12:09 SKIP [66/108] libnss_dns.so.2 no_exported_functions
-2026-11-05T15:12:09 SKIP [67/108] libnss_files.so.2 no_exported_functions
-2026-11-05T15:12:09 START [68/108] libnss_hesiod.so.2 functions=17 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnss_hesiod.so.2/logfile.txt
-2026-11-05T15:14:16 DONE [68/108] libnss_hesiod.so.2 status=completed exit=0 syscalls=46
-2026-11-05T15:14:16 START [69/108] libnuma.so.1 functions=81 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnuma.so.1/logfile.txt
-2026-11-05T15:14:58 DONE [69/108] libnuma.so.1 status=completed exit=0 syscalls=59
-2026-11-05T15:14:58 START [70/108] libnuma.so.1.0.0 functions=81 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libnuma.so.1.0.0/logfile.txt
-2026-11-05T15:15:43 DONE [70/108] libnuma.so.1.0.0 status=completed exit=0 syscalls=59
-2026-11-05T15:15:43 START [71/108] libp11-kit.so.0.3.0 functions=100 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libp11-kit.so.0.3.0/logfile.txt
-2026-11-05T15:18:46 DONE [71/108] libp11-kit.so.0.3.0 status=completed exit=0 syscalls=64
-2026-11-05T15:18:46 START [72/108] libpam.so.0.85.1 functions=44 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpam.so.0.85.1/logfile.txt
-2026-11-05T15:19:27 DONE [72/108] libpam.so.0.85.1 status=completed exit=0 syscalls=65
-2026-11-05T15:19:27 START [73/108] libpam_misc.so.0.82.1 functions=4 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpam_misc.so.0.82.1/logfile.txt
-2026-11-05T15:20:06 DONE [73/108] libpam_misc.so.0.82.1 status=completed exit=0 syscalls=43
-2026-11-05T15:20:06 START [74/108] libpamc.so.0 functions=6 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpamc.so.0/logfile.txt
-2026-11-05T15:20:41 DONE [74/108] libpamc.so.0 status=completed exit=0 syscalls=44
-2026-11-05T15:20:41 START [75/108] libpanelw.so.6.4 functions=18 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpanelw.so.6.4/logfile.txt
-2026-11-05T15:21:20 DONE [75/108] libpanelw.so.6.4 status=completed exit=0 syscalls=37
-2026-11-05T15:21:20 START [76/108] libpcprofile.so functions=2 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpcprofile.so/logfile.txt
-2026-11-05T15:21:53 DONE [76/108] libpcprofile.so status=completed exit=0 syscalls=0
-2026-11-05T15:21:53 START [77/108] libpcre2-8.so.0 functions=73 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpcre2-8.so.0/logfile.txt
-2026-11-05T15:23:05 DONE [77/108] libpcre2-8.so.0 status=completed exit=0 syscalls=37
-2026-11-05T15:23:05 START [78/108] libproc2.so.0 functions=62 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libproc2.so.0/logfile.txt
-2026-11-05T15:24:14 DONE [78/108] libproc2.so.0 status=completed exit=0 syscalls=65
-2026-11-05T15:24:14 START [79/108] libpsx.so.2 functions=7 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libpsx.so.2/logfile.txt
-2026-11-05T15:24:50 DONE [79/108] libpsx.so.2 status=completed exit=0 syscalls=53
-2026-11-05T15:24:50 START [80/108] libreadline.so.8 functions=503 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libreadline.so.8/logfile.txt
-2026-11-05T15:25:36 DONE [80/108] libreadline.so.8 status=completed exit=0 syscalls=63
-2026-11-05T15:25:36 START [81/108] libresolv.so.2 functions=66 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libresolv.so.2/logfile.txt
-2026-11-05T15:26:18 DONE [81/108] libresolv.so.2 status=completed exit=0 syscalls=46
-2026-11-05T15:26:18 START [82/108] libseccomp.so.2 functions=32 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libseccomp.so.2/logfile.txt
-2026-11-05T15:26:54 DONE [82/108] libseccomp.so.2 status=completed exit=0 syscalls=40
-2026-11-05T15:26:54 START [83/108] libselinux.so.1 functions=238 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libselinux.so.1/logfile.txt
-2026-11-05T15:28:09 DONE [83/108] libselinux.so.1 status=completed exit=0 syscalls=80
-2026-11-05T15:28:09 START [84/108] libsemanage.so.2 functions=341 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libsemanage.so.2/logfile.txt
-2026-11-05T15:29:35 DONE [84/108] libsemanage.so.2 status=completed exit=0 syscalls=74
-2026-11-05T15:29:35 START [85/108] libsepol.so.2 functions=275 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libsepol.so.2/logfile.txt
-2026-11-05T15:30:26 DONE [85/108] libsepol.so.2 status=completed exit=0 syscalls=38
-2026-11-05T15:30:26 START [86/108] libsmartcols.so.1 functions=167 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libsmartcols.so.1/logfile.txt
-2026-11-05T15:31:04 DONE [86/108] libsmartcols.so.1 status=completed exit=0 syscalls=41
-2026-11-05T15:31:04 START [87/108] libsqlite3.so.0.8.6 functions=1370 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libsqlite3.so.0.8.6/logfile.txt
-2026-11-05T15:32:36 DONE [87/108] libsqlite3.so.0.8.6 status=completed exit=0 syscalls=68
-2026-11-05T15:32:36 START [88/108] libss.so.2.0 functions=30 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libss.so.2.0/logfile.txt
-2026-11-05T15:33:08 DONE [88/108] libss.so.2.0 status=completed exit=0 syscalls=62
-2026-11-05T15:33:08 START [89/108] libssl.so.3 functions=518 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libssl.so.3/logfile.txt
-2026-11-05T15:35:22 DONE [89/108] libssl.so.3 status=completed exit=0 syscalls=61
-2026-11-05T15:35:22 START [90/108] libstdc++.so.6 functions=4467 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libstdc++.so.6/logfile.txt
-2026-11-05T15:37:30 DONE [90/108] libstdc++.so.6 status=completed exit=0 syscalls=79
-2026-11-05T15:37:30 START [91/108] libstdc++.so.6.0.30 functions=4467 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libstdc++.so.6.0.30/logfile.txt
-2026-11-05T15:39:43 DONE [91/108] libstdc++.so.6.0.30 status=completed exit=0 syscalls=79
-2026-11-05T15:39:43 START [92/108] libsystemd.so.0 functions=610 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libsystemd.so.0/logfile.txt
-2026-11-05T16:41:05 DONE [92/108] libsystemd.so.0 status=completed exit=0 syscalls=110
-2026-11-05T16:41:05 START [93/108] libtasn1.so.6 functions=41 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libtasn1.so.6/logfile.txt
-2026-11-05T16:42:28 DONE [93/108] libtasn1.so.6 status=completed exit=0 syscalls=38
-2026-11-05T16:42:28 START [94/108] libthread_db.so.1 functions=40 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libthread_db.so.1/logfile.txt
-2026-11-05T16:43:16 DONE [94/108] libthread_db.so.1 status=completed exit=0 syscalls=37
-2026-11-05T16:43:16 START [95/108] libtic.so.6 functions=12 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libtic.so.6/logfile.txt
-2026-11-05T16:44:12 DONE [95/108] libtic.so.6 status=completed exit=0 syscalls=50
-2026-11-05T16:44:12 START [96/108] libtinfo.so.6 functions=199 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libtinfo.so.6/logfile.txt
-2026-11-05T16:45:00 DONE [96/108] libtinfo.so.6 status=completed exit=0 syscalls=47
-2026-11-05T16:45:00 START [97/108] libtinfo.so.6.4 functions=199 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libtinfo.so.6.4/logfile.txt
-2026-11-05T16:46:04 DONE [97/108] libtinfo.so.6.4 status=completed exit=0 syscalls=47
-2026-11-05T16:46:04 START [98/108] libtirpc.so.3 functions=267 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libtirpc.so.3/logfile.txt
-2026-11-05T16:47:40 DONE [98/108] libtirpc.so.3 status=completed exit=0 syscalls=79
-2026-11-05T16:47:40 START [99/108] libudev.so.1.7.5 functions=92 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libudev.so.1.7.5/logfile.txt
-2026-11-05T16:48:38 DONE [99/108] libudev.so.1.7.5 status=completed exit=0 syscalls=66
-2026-11-05T16:48:39 START [100/108] libunistring.so.2.2.0 functions=567 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libunistring.so.2.2.0/logfile.txt
-2026-11-05T16:50:07 DONE [100/108] libunistring.so.2.2.0 status=completed exit=0 syscalls=37
-2026-11-05T16:50:07 START [101/108] libutil.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libutil.so.1/logfile.txt
-2026-11-05T16:51:23 DONE [101/108] libutil.so.1 status=failed exit=1 syscalls=0
-2026-11-05T16:51:23 START [102/108] libuuid.so.1 functions=22 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libuuid.so.1/logfile.txt
-2026-11-05T16:52:25 DONE [102/108] libuuid.so.1 status=completed exit=0 syscalls=47
-2026-11-05T16:52:25 START [103/108] libverify.so functions=3 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libverify.so/logfile.txt
-2026-11-05T17:21:42 DONE [103/108] libverify.so status=completed exit=0 syscalls=93
-2026-11-05T17:21:42 START [104/108] libxtables.so.12 functions=82 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libxtables.so.12/logfile.txt
-2026-11-05T17:22:31 DONE [104/108] libxtables.so.12 status=completed exit=0 syscalls=70
-2026-11-05T17:22:31 START [105/108] libxxhash.so.0.8.1 functions=57 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libxxhash.so.0.8.1/logfile.txt
-2026-11-05T17:23:10 DONE [105/108] libxxhash.so.0.8.1 status=completed exit=0 syscalls=37
-2026-11-05T17:23:10 START [106/108] libz.so.1 functions=88 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libz.so.1/logfile.txt
-2026-11-05T17:23:49 DONE [106/108] libz.so.1 status=completed exit=0 syscalls=37
-2026-11-05T17:23:49 START [107/108] libzstd.so.1 functions=183 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libzstd.so.1/logfile.txt
-2026-11-05T17:24:43 DONE [107/108] libzstd.so.1 status=completed exit=0 syscalls=53
-2026-11-05T17:24:43 START [108/108] libzstd.so.1.5.4 functions=183 log=/home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libzstd.so.1.5.4/logfile.txt
-2026-11-05T17:25:42 DONE [108/108] libzstd.so.1.5.4 status=completed exit=0 syscalls=53
+2026-11-07T06:33:25 RUN image=cassandra_5.0.8 libraries=107 force=False
+2026-11-07T06:33:25 INDEX /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Dataset_symbolized/LIBS_cassandra_5.0.8
+2026-11-07T06:33:25 SKIP [1/107] libBrokenLocale.so.1 already_complete
+2026-11-07T06:33:25 SKIP [2/107] libacl.so.1 already_complete
+2026-11-07T06:33:25 START [3/107] libanl.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libanl.so.1/logfile.txt
+2026-11-07T06:33:53 DONE [3/107] libanl.so.1 status=failed exit=1 syscalls=0
+2026-11-07T06:33:53 SKIP [4/107] libapt-pkg.so.6.0.0 already_complete
+2026-11-07T06:33:53 SKIP [5/107] libapt-private.so.0.0 already_complete
+2026-11-07T06:33:53 SKIP [6/107] libattr.so.1 already_complete
+2026-11-07T06:33:53 SKIP [7/107] libaudit.so.1.0.0 already_complete
+2026-11-07T06:33:53 SKIP [8/107] libblkid.so.1 already_complete
+2026-11-07T06:33:53 SKIP [9/107] libbpf.so.1 already_complete
+2026-11-07T06:33:53 SKIP [10/107] libbpf.so.1.1.2 already_complete
+2026-11-07T06:33:53 SKIP [11/107] libbz2.so.1.0.4 already_complete
+2026-11-07T06:33:53 SKIP [12/107] libc_malloc_debug.so.0 already_complete
+2026-11-07T06:33:53 SKIP [13/107] libcap-ng.so.0.0.0 already_complete
+2026-11-07T06:33:53 SKIP [14/107] libcap.so.2 already_complete
+2026-11-07T06:33:53 SKIP [15/107] libcap.so.2.66 already_complete
+2026-11-07T06:33:53 SKIP [16/107] libcom_err.so.2.1 already_complete
+2026-11-07T06:33:53 SKIP [17/107] libcrypt.so.1.1.0 already_complete
+2026-11-07T06:33:54 SKIP [18/107] libcrypto.so.3 already_complete
+2026-11-07T06:33:54 SKIP [19/107] libdb-5.3.so already_complete
+2026-11-07T06:33:54 SKIP [20/107] libdebconfclient.so.0 already_complete
+2026-11-07T06:33:54 SKIP [21/107] libdrop_ambient.so.0 already_complete
+2026-11-07T06:33:54 SKIP [22/107] libe2p.so.2.3 already_complete
+2026-11-07T06:33:54 SKIP [23/107] libelf.so.1 already_complete
+2026-11-07T06:33:54 SKIP [24/107] libexpat.so.1 already_complete
+2026-11-07T06:33:54 SKIP [25/107] libexpatw.so.1.8.10 already_complete
+2026-11-07T06:33:54 SKIP [26/107] libext2fs.so.2 already_complete
+2026-11-07T06:33:54 SKIP [27/107] libextnet.so already_complete
+2026-11-07T06:33:54 SKIP [28/107] libffi.so.8.1.2 already_complete
+2026-11-07T06:33:54 SKIP [29/107] libformw.so.6.4 already_complete
+2026-11-07T06:33:54 SKIP [30/107] libgcrypt.so.20 already_complete
+2026-11-07T06:33:54 SKIP [31/107] libgmp.so.10 already_complete
+2026-11-07T06:33:54 SKIP [32/107] libgnutls.so.30 already_complete
+2026-11-07T06:33:54 SKIP [33/107] libgpg-error.so.0 already_complete
+2026-11-07T06:33:54 SKIP [34/107] libgpg-error.so.0.33.1 already_complete
+2026-11-07T06:33:54 SKIP [35/107] libgssapi_krb5.so.2.2 already_complete
+2026-11-07T06:33:54 SKIP [36/107] libhistory.so.8 already_complete
+2026-11-07T06:33:54 SKIP [37/107] libhogweed.so.6.6 already_complete
+2026-11-07T06:33:54 SKIP [38/107] libidn2.so.0.3.8 already_complete
+2026-11-07T06:33:54 SKIP [39/107] libinstrument.so already_complete
+2026-11-07T06:33:54 SKIP [40/107] libjemalloc.so already_complete
+2026-11-07T06:33:54 SKIP [41/107] libjimage.so already_complete
+2026-11-07T06:33:54 SKIP [42/107] libjli.so already_complete
+2026-11-07T06:33:54 SKIP [43/107] libjsvml.so already_complete
+2026-11-07T06:33:54 SKIP [44/107] libk5crypto.so.3 already_complete
+2026-11-07T06:33:54 SKIP [45/107] libkeyutils.so.1 already_complete
+2026-11-07T06:33:54 SKIP [46/107] libkrb5.so.3 already_complete
+2026-11-07T06:33:54 SKIP [47/107] libkrb5support.so.0.1 already_complete
+2026-11-07T06:33:54 SKIP [48/107] liblz4.so.1 already_complete
+2026-11-07T06:33:54 SKIP [49/107] liblz4.so.1.9.4 already_complete
+2026-11-07T06:33:54 SKIP [50/107] liblzma.so.5 already_complete
+2026-11-07T06:33:54 SKIP [51/107] libmanagement_ext.so already_complete
+2026-11-07T06:33:54 SKIP [52/107] libmd.so.0.0.5 already_complete
+2026-11-07T06:33:54 SKIP [53/107] libmemusage.so already_complete
+2026-11-07T06:33:54 SKIP [54/107] libmenuw.so.6.4 already_complete
+2026-11-07T06:33:54 SKIP [55/107] libmnl.so.0 already_complete
+2026-11-07T06:33:54 SKIP [56/107] libmount.so.1 already_complete
+2026-11-07T06:33:54 SKIP [57/107] libmvec.so.1 already_complete
+2026-11-07T06:33:54 SKIP [58/107] libncursesw.so.6.4 already_complete
+2026-11-07T06:33:54 SKIP [59/107] libnettle.so.8 already_complete
+2026-11-07T06:33:54 UNRESOLVED [60/107] libnetty_tcnative_linux_x86_644364788409599041790.so
+2026-11-07T06:33:54 UNRESOLVED [61/107] libnetty_transport_native_epoll_x86_6445936256729223935.so
+2026-11-07T06:33:54 SKIP [62/107] libnsl.so.1 already_complete
+2026-11-07T06:33:54 SKIP [63/107] libnsl.so.2 already_complete
+2026-11-07T06:33:54 SKIP [64/107] libnss_compat.so.2 already_complete
+2026-11-07T06:33:54 SKIP [65/107] libnss_dns.so.2 no_exported_functions
+2026-11-07T06:33:54 SKIP [66/107] libnss_files.so.2 no_exported_functions
+2026-11-07T06:33:54 SKIP [67/107] libnss_hesiod.so.2 already_complete
+2026-11-07T06:33:54 SKIP [68/107] libnuma.so.1 already_complete
+2026-11-07T06:33:54 SKIP [69/107] libnuma.so.1.0.0 already_complete
+2026-11-07T06:33:54 SKIP [70/107] libp11-kit.so.0.3.0 already_complete
+2026-11-07T06:33:54 SKIP [71/107] libpam.so.0.85.1 already_complete
+2026-11-07T06:33:54 SKIP [72/107] libpam_misc.so.0.82.1 already_complete
+2026-11-07T06:33:54 SKIP [73/107] libpamc.so.0 already_complete
+2026-11-07T06:33:54 SKIP [74/107] libpanelw.so.6.4 already_complete
+2026-11-07T06:33:54 SKIP [75/107] libpcprofile.so already_complete
+2026-11-07T06:33:55 SKIP [76/107] libpcre2-8.so.0 already_complete
+2026-11-07T06:33:55 SKIP [77/107] libproc2.so.0 already_complete
+2026-11-07T06:33:55 SKIP [78/107] libpsx.so.2 already_complete
+2026-11-07T06:33:55 SKIP [79/107] libreadline.so.8 already_complete
+2026-11-07T06:33:55 SKIP [80/107] libresolv.so.2 already_complete
+2026-11-07T06:33:55 SKIP [81/107] libseccomp.so.2 already_complete
+2026-11-07T06:33:55 SKIP [82/107] libselinux.so.1 already_complete
+2026-11-07T06:33:55 SKIP [83/107] libsemanage.so.2 already_complete
+2026-11-07T06:33:55 SKIP [84/107] libsepol.so.2 already_complete
+2026-11-07T06:33:55 SKIP [85/107] libsmartcols.so.1 already_complete
+2026-11-07T06:33:55 SKIP [86/107] libsqlite3.so.0.8.6 already_complete
+2026-11-07T06:33:55 SKIP [87/107] libss.so.2.0 already_complete
+2026-11-07T06:33:55 SKIP [88/107] libssl.so.3 already_complete
+2026-11-07T06:33:55 SKIP [89/107] libstdc++.so.6 already_complete
+2026-11-07T06:33:55 SKIP [90/107] libstdc++.so.6.0.30 already_complete
+2026-11-07T06:33:55 SKIP [91/107] libsystemd.so.0 already_complete
+2026-11-07T06:33:55 SKIP [92/107] libtasn1.so.6 already_complete
+2026-11-07T06:33:55 SKIP [93/107] libthread_db.so.1 already_complete
+2026-11-07T06:33:55 SKIP [94/107] libtic.so.6 already_complete
+2026-11-07T06:33:55 SKIP [95/107] libtinfo.so.6 already_complete
+2026-11-07T06:33:55 SKIP [96/107] libtinfo.so.6.4 already_complete
+2026-11-07T06:33:55 SKIP [97/107] libtirpc.so.3 already_complete
+2026-11-07T06:33:55 SKIP [98/107] libudev.so.1.7.5 already_complete
+2026-11-07T06:33:55 SKIP [99/107] libunistring.so.2.2.0 already_complete
+2026-11-07T06:33:55 START [100/107] libutil.so.1 functions=1 log=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/cassandra_5.0.8/syscalls_unanalysed_cassandra_5.0.8/libutil.so.1/logfile.txt
+2026-11-07T06:34:23 DONE [100/107] libutil.so.1 status=failed exit=1 syscalls=0
+2026-11-07T06:34:23 SKIP [101/107] libuuid.so.1 already_complete
+2026-11-07T06:34:23 SKIP [102/107] libverify.so already_complete
+2026-11-07T06:34:23 SKIP [103/107] libxtables.so.12 already_complete
+2026-11-07T06:34:23 SKIP [104/107] libxxhash.so.0.8.1 already_complete
+2026-11-07T06:34:23 SKIP [105/107] libz.so.1 already_complete
+2026-11-07T06:34:23 SKIP [106/107] libzstd.so.1 already_complete
+2026-11-07T06:34:23 SKIP [107/107] libzstd.so.1.5.4 already_complete

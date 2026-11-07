@@ -1,9 +1,0 @@
-Time taken for the analysis: 8 seconds
-Time taken for the analysis: 12 seconds
-Direct Edges computation: 0 seconds
-AT List computation: 1 seconds
-Indirect call target resolution:  0 seconds
-Generate indirect call targets: 0 seconds
-Print call graph edges: 0 seconds
-Time taken for the analysis: 11 seconds
-Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/cassandra_5.0.8/syscalls_output_cassandra_5.0.8/libzip.so.redo/callgraph.json

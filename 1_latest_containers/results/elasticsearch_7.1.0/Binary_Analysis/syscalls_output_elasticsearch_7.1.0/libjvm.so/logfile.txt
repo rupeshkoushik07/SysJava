@@ -1,315 +1,315 @@
 
 Path to gettid:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
   _ZL19thread_native_entryP6Thread_bfe0a0 - [syscall]-> gettid
 
 Path to set_robust_list:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __nptl_set_robust_6770
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __nptl_set_robust_6770
   __nptl_set_robust_6770 - [syscall]-> set_robust_list
 
 Path to futex:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __nptl_setxid_75d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __nptl_setxid_75d0
   __nptl_setxid_75d0 - [syscall]-> futex
 
 Path to tgkill:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __nptl_setxid_75d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __nptl_setxid_75d0
   __nptl_setxid_75d0 - [syscall]-> tgkill
 
 Path to rt_sigreturn:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __restore_rt_36280
-  __restore_rt_36280 - [syscall]-> rt_sigreturn
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __restore_rt_f5d0
+  __restore_rt_f5d0 - [syscall]-> rt_sigreturn
 
 Path to clock_gettime:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __syscall_clock_gettime_fe260
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __syscall_clock_gettime_fe260
   __syscall_clock_gettime_fe260 - [syscall]-> clock_gettime
 
 Path to rt_sigprocmask:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> start_thread_7d10
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> start_thread_7d10
   start_thread_7d10 - [syscall]-> rt_sigprocmask
 
 Path to exit:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> start_thread_7d10
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> start_thread_7d10
   start_thread_7d10 - [syscall]-> exit
 
 Path to write:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> unwind_cleanup_e150
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> unwind_cleanup_e150
   unwind_cleanup_e150 - [syscall]-> write
 
 Path to sched_yield:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_cleanup_7dac0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_cleanup_7dac0
   _IO_cleanup_7dac0 - [DIRECT]-> sched_yield_e2d40
   sched_yield_e2d40 - [syscall]-> sched_yield
 
 Path to mmap:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
   _IO_default_doallocate_7d3f0 - [DIRECT]-> mmap_f8330
   mmap_f8330 - [syscall]-> mmap
 
 Path to munmap:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_default_doallocate_7d3f0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_default_doallocate_7d3f0
   _IO_default_doallocate_7d3f0 - [DIRECT]-> munmap_f83f0
   munmap_f83f0 - [syscall]-> munmap
 
 Path to close:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_close_797b0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_close_797b0
   _IO_file_close_797b0 - [DIRECT]-> __close_nocancel_ef619
   __close_nocancel_ef619 - [syscall]-> close
 
 Path to read:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_read_7a740
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_read_7a740
   _IO_file_read_7a740 - [DIRECT]-> read_e6d0
   read_e6d0 - [syscall]-> read
 
 Path to lseek:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_seek_79e30
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_seek_79e30
   _IO_file_seek_79e30 - [DIRECT]-> lseek_ed50
   lseek_ed50 - [syscall]-> lseek
 
 Path to fstat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_stat_7a060
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_stat_7a060
   _IO_file_stat_7a060 - [DIRECT]-> _fxstat_ee8d0
   _fxstat_ee8d0 - [syscall]-> fstat
 
 Path to mremap:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_underflow_mmap_7ac30
   _IO_file_underflow_mmap_7ac30 - [DIRECT]-> mremap_fe630
   mremap_fe630 - [syscall]-> mremap
 
 Path to getpid:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
   _ZL19thread_native_entryP6Thread_bfe0a0 - [DIRECT]-> getpid_c5dd0
   getpid_c5dd0 - [syscall]-> getpid
 
 Path to unlink:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN10CompileLogD0Ev_60dc10
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN10CompileLogD0Ev_60dc10
   _ZN10CompileLogD0Ev_60dc10 - [DIRECT]-> unlink_f0710
   unlink_f0710 - [syscall]-> unlink
 
 Path to mprotect:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_bff550
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN15VM_LinuxDllLoad4doitEv_bff550
   _ZN15VM_LinuxDllLoad4doitEv_bff550 - [DIRECT]-> mprotect_f8420
   mprotect_f8420 - [syscall]-> mprotect
 
 Path to open:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_bf5bb0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN2os8dll_loadEPKcPci_bf5bb0
   _ZN2os8dll_loadEPKcPci_bf5bb0 - [DIRECT]-> open_ee70
   open_ee70 - [syscall]-> open
 
 Path to access:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
   _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> access_ef020
   access_ef020 - [syscall]-> access
 
 Path to stat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0
   _ZN8CallNode10may_modifyEPK10TypeOopPtrP14PhaseTransform_5256a0 - [DIRECT]-> strstr_a54b0
   strstr_a54b0 - [syscall]-> stat
 
 Path to writev:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> free_check_84040
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> free_check_84040
   free_check_84040 - [DIRECT]-> __libc_message_78950
   __libc_message_78950 - [syscall]-> writev
 
 Path to sched_get_priority_min:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_attr_setschedparam_9640
   pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_min_e2da0
   sched_get_priority_min_e2da0 - [syscall]-> sched_get_priority_min
 
 Path to sched_get_priority_max:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_attr_setschedparam_9640
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_attr_setschedparam_9640
   pthread_attr_setschedparam_9640 - [DIRECT]-> sched_get_priority_max_e2d70
   sched_get_priority_max_e2d70 - [syscall]-> sched_get_priority_max
 
 Path to sched_getparam:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_getschedparam_9240
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_getschedparam_9240
   pthread_getschedparam_9240 - [DIRECT]-> sched_getparam_e2cb0
   sched_getparam_e2cb0 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_getschedparam_9240
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_getschedparam_9240
   pthread_getschedparam_9240 - [DIRECT]-> sched_getscheduler_e2d10
   sched_getscheduler_e2d10 - [syscall]-> sched_getscheduler
 
 Path to sched_setscheduler:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_setschedparam_9370
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_setschedparam_9370
   pthread_setschedparam_9370 - [DIRECT]-> sched_setscheduler_e2ce0
   sched_setscheduler_e2ce0 - [syscall]-> sched_setscheduler
 
 Path to madvise:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> start_thread_7d10
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> start_thread_7d10
   start_thread_7d10 - [DIRECT]-> madvise_f84b0
   madvise_f84b0 - [syscall]-> madvise
 
 Path to lstat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> Perf_Attach_c4e6a0
   Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> _lxstat_ee920
   _lxstat_ee920 - [syscall]-> lstat
 
 Path to kill:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> Perf_Attach_c4e6a0
   Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> kill_364d0
   kill_364d0 - [syscall]-> kill
 
 Path to geteuid:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> Perf_Attach_c4e6a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> Perf_Attach_c4e6a0
   Perf_Attach_c4e6a0 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_c567e0 - [DIRECT]-> geteuid_c5e30
   geteuid_c5e30 - [syscall]-> geteuid
 
 Path to ioctl:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _IO_file_doallocate_6dd80
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _IO_file_doallocate_6dd80
   _IO_file_doallocate_6dd80 - [DIRECT]-> isatty_f05d0
   isatty_f05d0 - [DIRECT]-> tcgetattr_f4020
   tcgetattr_f4020 - [syscall]-> ioctl
 
 Path to fcntl:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEPKcP6Thread_5a0150
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN17ClassPathDirEntry11open_streamEPKcP6Thread_5a0150
   _ZN17ClassPathDirEntry11open_streamEPKcP6Thread_5a0150 - [DIRECT]-> _ZN2os4openEPKcii_bfcb80
   _ZN2os4openEPKcii_bfcb80 - [DIRECT]-> fcntl_e830
   fcntl_e830 - [syscall]-> fcntl
 
 Path to getrusage:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60
   _ZN22G1ConcurrentMarkThread11run_serviceEv_757f60 - [DIRECT]-> _ZN2os12elapsedVTimeEv_bf5550
   _ZN2os12elapsedVTimeEv_bf5550 - [DIRECT]-> getrusage_f4350
   getrusage_f4350 - [syscall]-> getrusage
 
 Path to vfork:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
   _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> vfork_e620
   vfork_e620 - [syscall]-> vfork
 
 Path to wait4:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
   _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> waitpid_f110
   waitpid_f110 - [syscall]-> wait4
 
 Path to execve:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
   _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> execve_c5200
   execve_c5200 - [syscall]-> execve
 
 Path to exit_group:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0
   _ZN24VM_ReportJavaOutOfMemory4doitEv_e3ebc0 - [DIRECT]-> _ZN2os13fork_and_execEPcb_bfd1a0
   _ZN2os13fork_and_execEPcb_bfd1a0 - [DIRECT]-> _exit_c51a0
   _exit_c51a0 - [syscall]-> exit_group
 
 Path to mincore:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN25SnapshotThreadStackWalker18do_allocation_siteEPK20ReservedMemoryRegion_e38bf0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN25SnapshotThreadStackWalker18do_allocation_siteEPK20ReservedMemoryRegion_e38bf0
   _ZN25SnapshotThreadStackWalker18do_allocation_siteEPK20ReservedMemoryRegion_e38bf0 - [DIRECT]-> _ZN2os18committed_in_rangeEPhmRS0_Rm_bf9460
   _ZN2os18committed_in_rangeEPhmRS0_Rm_bf9460 - [DIRECT]-> mincore_f84e0
   mincore_f84e0 - [syscall]-> mincore
 
 Path to brk:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __default_morecore_88410
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __default_morecore_88410
   __default_morecore_88410 - [DIRECT]-> sbrk_f4820
   sbrk_f4820 - [DIRECT]-> brk_f47b0
   brk_f47b0 - [syscall]-> brk
 
 Path to getcwd:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __gconv_read_conf_25190
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __gconv_read_conf_25190
   __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
   __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
   getcwd_ef820 - [syscall]-> getcwd
 
 Path to pause:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> pthread_mutex_lock_9c30
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> pthread_mutex_lock_9c30
   pthread_mutex_lock_9c30 - [DIRECT]-> __pthread_mutex_lock_full_58b0
   __pthread_mutex_lock_full_58b0 - [DIRECT]-> __pause_nocancel_eed9
   __pause_nocancel_eed9 - [syscall]-> pause
 
 Path to fallocate:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
   WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
   _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
   _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
   posix_fallocate_f34e0 - [syscall]-> fallocate
 
 Path to uname:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_PrintOsInfo_e63370
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_PrintOsInfo_e63370
   WB_PrintOsInfo_e63370 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_bf6660
   _ZN2os13print_os_infoEP12outputStream_bf6660 - [DIRECT]-> _ZN2os5Posix16print_uname_infoEP12outputStream_c04e80
   _ZN2os5Posix16print_uname_infoEP12outputStream_c04e80 - [DIRECT]-> uname_c4900
   uname_c4900 - [syscall]-> uname
 
 Path to getrlimit:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_PrintOsInfo_e63370
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_PrintOsInfo_e63370
   WB_PrintOsInfo_e63370 - [DIRECT]-> _ZN2os13print_os_infoEP12outputStream_bf6660
   _ZN2os13print_os_infoEP12outputStream_bf6660 - [DIRECT]-> _ZN2os5Posix17print_rlimit_infoEP12outputStream_c04bb0
   _ZN2os5Posix17print_rlimit_infoEP12outputStream_c04bb0 - [DIRECT]-> getrlimit_f42f0
   getrlimit_f42f0 - [syscall]-> getrlimit
 
 Path to nanosleep:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN14MacroAssembler7debug64EPclPl_acab20
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN14MacroAssembler7debug64EPclPl_acab20
   _ZN14MacroAssembler7debug64EPclPl_acab20 - [DIRECT]-> _ZN2os11message_boxEPKcS1__bfc930
   _ZN2os11message_boxEPKcS1__bfc930 - [DIRECT]-> sleep_c4bf0
   sleep_c4bf0 - [DIRECT]-> nanosleep_ee10
   nanosleep_ee10 - [syscall]-> nanosleep
 
 Path to times:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN15VM_G1Concurrent4doitEv_7a8b90
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN15VM_G1Concurrent4doitEv_7a8b90
   _ZN15VM_G1Concurrent4doitEv_7a8b90 - [DIRECT]-> _ZN14GCTraceCPUTimeC1Ev_7bf7c0
   _ZN14GCTraceCPUTimeC1Ev_7bf7c0 - [DIRECT]-> _ZN2os12getTimesSecsEPdS0_S0__bf57e0
   _ZN2os12getTimesSecsEPdS0_S0__bf57e0 - [DIRECT]-> times_c4930
   times_c4930 - [syscall]-> times
 
 Path to setpriority:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN18AbstractGangWorker10initializeEv_e6f660
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN18AbstractGangWorker10initializeEv_e6f660
   _ZN18AbstractGangWorker10initializeEv_e6f660 - [DIRECT]-> _ZN2os12set_priorityEP6Thread14ThreadPriority_bec280
   _ZN2os12set_priorityEP6Thread14ThreadPriority_bec280 - [DIRECT]-> _ZN2os19set_native_priorityEP6Threadi_bfb410
   _ZN2os19set_native_priorityEP6Threadi_bfb410 - [DIRECT]-> setpriority_f4710
   setpriority_f4710 - [syscall]-> setpriority
 
 Path to sysinfo:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN18VM_RedefineClasses13doit_prologueEv_a15320
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN18VM_RedefineClasses13doit_prologueEv_a15320
   _ZN18VM_RedefineClasses13doit_prologueEv_a15320 - [DIRECT]-> _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread_a14a90
   _ZN18VM_RedefineClasses23load_new_class_versionsEP6Thread_a14a90 - [DIRECT]-> _ZN2os16available_memoryEv_bfdfa0
   _ZN2os16available_memoryEv_bfdfa0 - [DIRECT]-> sysinfo_fe7e0
   sysinfo_fe7e0 - [syscall]-> sysinfo
 
 Path to clock_getres:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
   _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c06780
   _ZN2os5Posix8realpathEPKcPcm_c06780 - [DIRECT]-> realpath@@GLIBC_2.3_432a0
   realpath@@GLIBC_2.3_432a0 - [DIRECT]-> sysconf_c6c10
   sysconf_c6c10 - [syscall]-> clock_getres
 
 Path to readlink:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_bf4910
   _ZN2os8jvm_pathEPci_bf4910 - [DIRECT]-> _ZN2os5Posix8realpathEPKcPcm_c06780
   _ZN2os5Posix8realpathEPKcPcm_c06780 - [DIRECT]-> realpath@@GLIBC_2.3_432a0
   realpath@@GLIBC_2.3_432a0 - [DIRECT]-> readlink_f06b0
   readlink_f06b0 - [syscall]-> readlink
 
 Path to rt_sigaction:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_ec9a40
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_ec9a40
   _ZN9__gnu_cxx27__verbose_terminate_handlerEv_ec9a40 - [DIRECT]-> abort_377b0
   abort_377b0 - [DIRECT]-> sigaction_f7d0
-  sigaction_f7d0 - [DIRECT]-> __libc_sigaction_36290
-  __libc_sigaction_36290 - [syscall]-> rt_sigaction
+  sigaction_f7d0 - [DIRECT]-> __libc_sigaction_f5e0
+  __libc_sigaction_f5e0 - [syscall]-> rt_sigaction
 
 Path to getpriority:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_dcb700
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZNK11NamedThread8print_onEP12outputStream_dcb700
   _ZNK11NamedThread8print_onEP12outputStream_dcb700 - [DIRECT]-> _ZNK6Thread8print_onEP12outputStreamb_dcb4e0
   _ZNK6Thread8print_onEP12outputStreamb_dcb4e0 - [DIRECT]-> _ZN2os19get_native_priorityEPK6ThreadPi_bfb460
   _ZN2os19get_native_priorityEPK6ThreadPi_bfb460 - [DIRECT]-> getpriority_f46d0
   getpriority_f46d0 - [syscall]-> getpriority
 
 Path to openat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __gconv_read_conf_25190
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __gconv_read_conf_25190
   __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
   __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
   getcwd_ef820 - [DIRECT]-> __openat64_nocancel_eede0
   __openat64_nocancel_eede0 - [syscall]-> openat
 
 Path to newfstatat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __gconv_read_conf_25190
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __gconv_read_conf_25190
   __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
   __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
   getcwd_ef820 - [DIRECT]-> __fxstatat_eea30
@@ -323,7 +323,7 @@ Path to sched_setaffinity:
   do_clone.constprop.4_6f40 - [syscall]-> sched_setaffinity
 
 Path to shmdt:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
   WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
   _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN17ReservedHeapSpace26initialize_compressed_heapEmmb_e3d9d0
   _ZN17ReservedHeapSpace26initialize_compressed_heapEmmb_e3d9d0 - [DIRECT]-> _ZN2os22release_memory_specialEPcm_bfb050
@@ -331,7 +331,7 @@ Path to shmdt:
   shmdt_ff790 - [syscall]-> shmdt
 
 Path to shmget:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
   WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
   _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
   _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
@@ -339,7 +339,7 @@ Path to shmget:
   shmget_ff7c0 - [syscall]-> shmget
 
 Path to shmat:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
   WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
   _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
   _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
@@ -347,7 +347,7 @@ Path to shmat:
   shmat_ff760 - [syscall]-> shmat
 
 Path to shmctl:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
   WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
   _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os22reserve_memory_specialEmmPcb_bfacb0
   _ZN2os22reserve_memory_specialEmmPcb_bfacb0 - [DIRECT]-> _ZN2os5Linux26reserve_memory_special_shmEmmPcb_bfa1d0
@@ -355,7 +355,7 @@ Path to shmctl:
   shmctl_ff7f0 - [syscall]-> shmctl
 
 Path to sched_getaffinity:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZL19thread_native_entryP6Thread_bfe0a0
   _ZL19thread_native_entryP6Thread_bfe0a0 - [DIRECT]-> _ZN6Thread26record_stack_base_and_sizeEv_dcaa70
   _ZN6Thread26record_stack_base_and_sizeEv_dcaa70 - [DIRECT]-> _ZN2os18current_stack_baseEv_bfd650
   _ZN2os18current_stack_baseEv_bfd650 - [DIRECT]-> pthread_getattr_np_97e0
@@ -363,7 +363,7 @@ Path to sched_getaffinity:
   pthread_getaffinity_np@@GLIBC_2.3.4_f860 - [syscall]-> sched_getaffinity
 
 Path to get_mempolicy:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN18ZNMethodOopClosure6do_oopEPP7oopDesc_e79690
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN18ZNMethodOopClosure6do_oopEPP7oopDesc_e79690
   _ZN18ZNMethodOopClosure6do_oopEPP7oopDesc_e79690 - [DIRECT]-> _ZN5ZHeap15relocate_objectEm_e8f410
   _ZN5ZHeap15relocate_objectEm_e8f410 - [DIRECT]-> _ZN14ZPageAllocator9free_pageEP5ZPageb_ea3b00
   _ZN14ZPageAllocator9free_pageEP5ZPageb_ea3b00 - [DIRECT]-> _ZN10ZPageCache9free_pageEP5ZPage_ea4580
@@ -371,7 +371,7 @@ Path to get_mempolicy:
   _ZN5ZNUMA9memory_idEm_e9ded0 - [syscall]-> get_mempolicy
 
 Path to getdents:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> __gconv_read_conf_25190
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> __gconv_read_conf_25190
   __gconv_read_conf_25190 - [DIRECT]-> __gconv_get_path_24da0
   __gconv_get_path_24da0 - [DIRECT]-> getcwd_ef820
   getcwd_ef820 - [DIRECT]-> readdir_c03d0
@@ -379,7 +379,7 @@ Path to getdents:
   __getdents_c0840 - [syscall]-> getdents
 
 Path to sendto:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> free_check_84040
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> free_check_84040
   free_check_84040 - [DIRECT]-> __libc_message_78950
   __libc_message_78950 - [DIRECT]-> vsyslog_f8000
   vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
@@ -395,7 +395,7 @@ Path to clone:
   clone_fde40 - [syscall]-> clone
 
 Path to ftruncate:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
   WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
   _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
   _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
@@ -404,7 +404,7 @@ Path to ftruncate:
   ftruncate_f6b90 - [syscall]-> ftruncate
 
 Path to fstatfs:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
   WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
   _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
   _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
@@ -413,7 +413,7 @@ Path to fstatfs:
   fstatfs_eeab0 - [syscall]-> fstatfs
 
 Path to pwrite64:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
   WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
   _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
   _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
@@ -422,7 +422,7 @@ Path to pwrite64:
   pwrite_ed6a0 - [syscall]-> pwrite64
 
 Path to pread64:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_NMTReserveMemory_e5fed0
   WB_NMTReserveMemory_e5fed0 - [DIRECT]-> _ZN2os14reserve_memoryEmPcmi_beede0
   _ZN2os14reserve_memoryEmPcmi_beede0 - [DIRECT]-> _ZN2os18map_memory_to_fileEPcmi_c079c0
   _ZN2os18map_memory_to_fileEPcmi_c079c0 - [DIRECT]-> posix_fallocate_f34e0
@@ -431,7 +431,7 @@ Path to pread64:
   pread_ef30 - [syscall]-> pread64
 
 Path to mkdir:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> WB_ReadFromNoaccessArea_e5d6d0
   WB_ReadFromNoaccessArea_e5d6d0 - [DIRECT]-> _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0
   _ZN17ReservedHeapSpaceC1EmmbPKc_e3e3b0 - [DIRECT]-> _ZN2os20create_file_for_heapEPKc_c07860
   _ZN2os20create_file_for_heapEPKc_c07860 - [DIRECT]-> mkstemp_f55e0
@@ -440,7 +440,7 @@ Path to mkdir:
   mkdir_eecc0 - [syscall]-> mkdir
 
 Path to connect:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> free_check_84040
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> free_check_84040
   free_check_84040 - [DIRECT]-> __libc_message_78950
   __libc_message_78950 - [DIRECT]-> vsyslog_f8000
   vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
@@ -449,7 +449,7 @@ Path to connect:
   connect_febc0 - [syscall]-> connect
 
 Path to socket:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> free_check_84040
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> free_check_84040
   free_check_84040 - [DIRECT]-> __libc_message_78950
   __libc_message_78950 - [DIRECT]-> vsyslog_f8000
   vsyslog_f8000 - [DIRECT]-> __vsyslog_chk_f7980
@@ -458,9 +458,8 @@ Path to socket:
   socket_ff020 - [syscall]-> socket
 
 Path to getuid:
-  Unsafe_PutLongVolatile_dfff50 - [DIRECT]-> _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30
-  _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30 - [DIRECT]-> _Z12report_fatalPKciS0_z_65d7f0
-  _Z12report_fatalPKciS0_z_65d7f0 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  JVM_RegisterPerfMethods_c4f630 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
   _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
   _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
@@ -468,9 +467,8 @@ Path to getuid:
   getuid_c5e20 - [syscall]-> getuid
 
 Path to getgid:
-  Unsafe_PutLongVolatile_dfff50 - [DIRECT]-> _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30
-  _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30 - [DIRECT]-> _Z12report_fatalPKciS0_z_65d7f0
-  _Z12report_fatalPKciS0_z_65d7f0 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  JVM_RegisterPerfMethods_c4f630 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
   _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
   _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
@@ -478,9 +476,8 @@ Path to getgid:
   getgid_c5e40 - [syscall]-> getgid
 
 Path to getegid:
-  Unsafe_PutLongVolatile_dfff50 - [DIRECT]-> _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30
-  _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30 - [DIRECT]-> _Z12report_fatalPKciS0_z_65d7f0
-  _Z12report_fatalPKciS0_z_65d7f0 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  JVM_RegisterPerfMethods_c4f630 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
   _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
   _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
@@ -488,9 +485,8 @@ Path to getegid:
   getegid_c5e50 - [syscall]-> getegid
 
 Path to umask:
-  Unsafe_PutLongVolatile_dfff50 - [DIRECT]-> _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30
-  _ZN10JavaThread44check_safepoint_and_suspend_for_native_transEPS__dccb30 - [DIRECT]-> _Z12report_fatalPKciS0_z_65d7f0
-  _Z12report_fatalPKciS0_z_65d7f0 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
+  JVM_RegisterPerfMethods_c4f630 - [DIRECT]-> _Z15report_vm_errorPKciS0_S0_z_65d650
+  _Z15report_vm_errorPKciS0_S0_z_65d650 - [DIRECT]-> _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040
   _ZN7VMError14report_and_dieEP6ThreadPvPKciS4_S4_P13__va_list_tag_e44040 - [DIRECT]-> _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0
   _ZN7VMError14report_and_dieEiPKcS1_P13__va_list_tagP6ThreadPhPvS7_S1_im_e431d0 - [DIRECT]-> _ZN7VMError6reportEP12outputStreamb_e3f4e0
   _ZN7VMError6reportEP12outputStreamb_e3f4e0 - [DIRECT]-> _ZN2os5Posix15print_user_infoEP12outputStream_c05050
@@ -498,7 +494,7 @@ Path to umask:
   umask_eebc0 - [syscall]-> umask
 
 Path to memfd_create:
-  Unsafe_PutLongVolatile_dfff50 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_e75b00
+  Unsafe_PutShortVolatile_dffae0 - [INDIRECT]-> _ZN10ZArguments11create_heapEv_e75b00
   _ZN10ZArguments11create_heapEv_e75b00 - [DIRECT]-> _ZN14ZCollectedHeapC1EP16ZCollectorPolicy_e8b480
   _ZN14ZCollectedHeapC1EP16ZCollectorPolicy_e8b480 - [DIRECT]-> _ZN5ZHeapC1Ev_e8e430
   _ZN5ZHeapC1Ev_e8e430 - [DIRECT]-> _ZN14ZPageAllocatorC2Emmm_ea2040

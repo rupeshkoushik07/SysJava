@@ -1,2 +1,2 @@
 image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
-cassandra_5.0.8	125	20	25	9	12	108	8
+cassandra_5.0.8	125	26	26	10	12	107	8

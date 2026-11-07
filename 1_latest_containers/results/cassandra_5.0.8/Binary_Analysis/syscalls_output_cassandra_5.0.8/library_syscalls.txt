@@ -4,6 +4,8 @@ access
 bind
 brk
 chdir
+chmod
+chown
 clock_gettime
 clock_nanosleep
 clone
@@ -27,7 +29,13 @@ faccessat2
 fadvise64
 fallocate
 fchdir
+fchmod
+fchown
 fcntl
+fdatasync
+fgetxattr
+flistxattr
+fsetxattr
 fstat
 fstatfs
 fsync
@@ -53,8 +61,13 @@ getsockopt
 gettid
 gettimeofday
 getuid
+inotify_add_watch
+inotify_init
+inotify_rm_watch
 ioctl
 kill
+lchown
+link
 listen
 lseek
 lstat
@@ -62,10 +75,12 @@ madvise
 memfd_create
 mincore
 mkdir
+mknodat
 mlockall
 mmap
 mprotect
 mremap
+msync
 munlockall
 munmap
 newfstatat
@@ -83,6 +98,7 @@ readv
 recvfrom
 recvmmsg
 recvmsg
+rename
 rmdir
 rseq
 rt_sigaction
@@ -114,9 +130,11 @@ shmdt
 shmget
 shutdown
 socket
+socketpair
 splice
 stat
 statfs
+symlink
 sysinfo
 tgkill
 time
@@ -126,6 +144,7 @@ times
 umask
 uname
 unlink
+utimensat
 vfork
 wait4
 write

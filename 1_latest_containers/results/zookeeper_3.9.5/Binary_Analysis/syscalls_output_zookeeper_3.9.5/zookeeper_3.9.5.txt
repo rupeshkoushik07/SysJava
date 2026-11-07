@@ -43,6 +43,7 @@ fchownat
 fcntl
 fdatasync
 fgetxattr
+flistxattr
 flock
 fsetxattr
 fstat
@@ -75,8 +76,12 @@ gettid
 gettimeofday
 getuid
 getxattr
+inotify_add_watch
+inotify_init
+inotify_rm_watch
 ioctl
 kill
+lchown
 lgetxattr
 listen
 lseek
@@ -86,6 +91,7 @@ madvise
 memfd_create
 mincore
 mkdir
+mknodat
 mlock
 mmap
 mount
@@ -163,6 +169,7 @@ splice
 stat
 statfs
 statx
+symlink
 sysinfo
 tgkill
 time
@@ -177,6 +184,7 @@ umount2
 uname
 unlink
 unlinkat
+utimensat
 vfork
 wait4
 write

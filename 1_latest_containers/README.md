@@ -21,12 +21,13 @@ Digests: `../docker_images/IMAGES.md`.
 
 * `results/<image>/`: one result per image (layout in the top-level README).
 * `STATUS.md`: whether each image runs under its profile.
-* `tables/`: Table III as in the paper (`tableIII_latest.tex`, `.pdf`) and the
-  remaining not-found natives with their reasons (`notfound_natives_latest.pdf`).
+* `tables/`: Table III (`tableIII_latest.tex`, `.pdf`) and the mapping counts it
+  reads (`mapping_audit_per_app.csv`). No native is left Not Found.
   `TABLE_ONLY=1 ./reproduce.sh` regenerates Table III from `results/` and compares it.
 * `unavailable_libs/`: the other inputs of Table III: natives whose library the image
-  does not ship, mapped by hand after supplying the library (`PROVENANCE.tsv`), and
-  the classification of unresolved bindings (`notfound_search/`).
+  does not ship, mapped after supplying the library (`PROVENANCE.tsv`, `<image>/mapping/`),
+  natives no library implements (`<image>/dead_rta.txt`), and the classification
+  rules (`notfound_search/classify_rta.py`).
 * `scripts/`: the pipeline scripts; `runc.txt`: the runtime syscall set.
 
 ## Reproduce
@@ -40,15 +41,13 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 
 ## Notes
 
-* Stage 4 of ZooKeeper, OrientDB, Elasticsearch, Storm and JRuby used `echotrace/`
-  (`52628c4`, with the `<clinit>` fix); the other five used `echotrace_516fb46/`.
-  `generate_syscalls.py` picks the matching one.
-* Storm's Total Syscalls in Table III (195) is its pipeline profile (193) plus the
-  syscalls of the two libraries supplied by hand (netty io_uring adds `io_uring_setup`,
-  `io_uring_enter`, `io_uring_register`; jansi adds none), minus `sync`, which only
-  false FFM hits reach. That profile and its PASS check are in
-  `unavailable_libs/storm_2.8.8/merged/` (`storm_2.8.8_with_supplement_no_sync.json`,
-  `seccomp_runtime_test_no_sync.log`).
+* Stage 4 of all ten used `../echotrace/` (`89bf135`): native methods are found on an
+  RTA call graph (virtual and interface calls dispatched to the overrides of every
+  class instantiated in reachable code), including class initialisers.
+* Storm's Total Syscalls in Table III (202) is its pipeline profile (200) plus the
+  syscalls of the supplied netty io_uring library (`io_uring_setup`, `io_uring_enter`,
+  `io_uring_register`), minus `sync`, which only false FFM hits reach. That profile and
+  its PASS check are in `unavailable_libs/storm_2.8.8/merged_rta/`.
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.
 * Each `ADDED_first_start_binaries.md` explains executables that were added by

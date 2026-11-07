@@ -1,3 +1,5 @@
+munmap
+rmdir
 ftruncate
 getdents64
 pread64
@@ -63,8 +65,8 @@ execve
 clock_nanosleep
 gettid
 get_mempolicy
-mprotect
 futex
+mprotect
 fallocate
 memfd_create
 exit
@@ -89,5 +91,3 @@ openat
 clone3
 write
 clone
-munmap
-rmdir

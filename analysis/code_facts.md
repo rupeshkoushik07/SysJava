@@ -7,7 +7,7 @@ pipeline scripts are in `1_latest_containers/scripts/` (the same in
 
 | Statement | Code |
 |---|---|
-| Application JARs are swept for native methods. The container's JDK is on the class path but not swept; a JDK native method is included when application code reaches it (a call, a class initialiser `<clinit>` on first use, or an inherited method) | `PrototypeFinal.java`: `traceJarFiles` (line 720) sweeps `JARFILES_<image>`, `RUNTIME_<image>` is on the class loader; `visitClassInit` (1086) and `resolveAndVisit` (1106), detector commit `52628c4` |
+| Application JARs are swept for native methods. The container's JDK is on the class path but not swept; a JDK native method is included when application code reaches it (a call, a class initialiser `<clinit>` on first use, or an inherited method) | `PrototypeFinal.java`: `traceJarFiles` (line 720) sweeps `JARFILES_<image>`, `RUNTIME_<image>` is on the class loader; `visitClassInit` (1160) and `resolveAndVisit` (1180); virtual and interface calls by RTA in `addVirtualCall` (1090); detector commit `89bf135` |
 | The JNA, JNR-FFI and FFM detectors scan only application classes | the detectors run on `JARFILES_<image>` only |
 | A binding whose library or symbol is unknown (`<?>`) gives no start function | `analyse_jna_ffi.py`, lines 110-120 (`UNRESOLVED_LIBS`, line 38) |
 | JNI: the library is chosen by symbol (`nm -D --defined-only` over `LIBS_<image>`); `RegisterNatives` bindings come from the decoded registration tables | `mapped_updated.py` (line 914) |
@@ -15,14 +15,13 @@ pipeline scripts are in `1_latest_containers/scripts/` (the same in
 | Library names are normalised: lower case, leading `lib` removed, cut at the first `.so`/`.dylib`/`.dll`; SONAMEs are indexed; the default library is `c` | `NativeLibraryNames.java`; `normalize_key` in `analyse_jna_ffi.py` (line 55) |
 | JNA direct mapping: every native method of a registered class. JNR-FFI: all interface methods when no call is visible | `JnaDirectMapDetector.java` (line 211); `JnrFfiDetector.java`, PASS 3 (line 243) |
 | Unresolved bindings are classified by a keyword rule: `linux`, `unixsocket`, `RubyBasicSocket$LibC` -> libc (ZooKeeper 7, Groovy 7, JRuby 16); FreeBSD, macOS, Solaris and Windows variants and FFM upcalls -> other platform | `1_latest_containers/unavailable_libs/notfound_search/binding_overrides.py` (line 21) |
-| The only manual step: libraries the images do not ship were supplied (Solr netty-tcnative, Storm jansi and io_uring, Tomcat jsvc, OrientDB jffi and NativePosixUtil, Elasticsearch NativePosixUtil) and then mapped by the pipeline | `1_latest_containers/unavailable_libs/PROVENANCE.tsv` |
+| The only manual step: libraries the images do not ship were supplied (Solr netty-tcnative, Storm jansi, io_uring and rocksdb 5.18.4, Solr and Tomcat the OpenJDK 25 FFM fallback linker, Cassandra OpenHFT affinity, Tomcat jsvc, OrientDB jffi and NativePosixUtil, Elasticsearch NativePosixUtil) and then mapped by the pipeline | `1_latest_containers/unavailable_libs/PROVENANCE.tsv` |
 
 Known limitations:
 
-* calls through subclass overrides and lambdas are not followed (detector `52628c4`,
-  latest-version results). The JDK 8 results use `../echotrace_89bf135/`, whose
-  `PrototypeFinal.java` dispatches virtual and interface calls to the overrides of
-  every class instantiated in reachable code (RTA); lambdas are still not followed;
+* lambdas (`invokedynamic`) are not followed. RTA over-approximates: it reaches JDK
+  desktop libraries (`libawt`, `libawt_xawt`, `libfontmanager`, ...) that none of the
+  twenty containers loads at run time, so their syscalls are allowed although unused;
 * alternative library names such as `libc.so.6|msvcrt` are split wrongly;
 * the FFM detector also infers hits from class names (`FfiDetector.java`, lines
   217-241, run on every class). Table III drops an FFM hit when its JAR has no

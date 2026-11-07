@@ -1,0 +1,12 @@
+start_file	status	old_starts	new_starts	added	removed
+JDK21_LIBS/libjava.so.txt	changed	100	144	44	0
+JDK21_LIBS/libmanagement.so.txt	new	0	11	11	0
+JDK21_LIBS/libnet.so.txt	changed	14	27	13	0
+JDK21_LIBS/libnio.so.txt	changed	33	137	104	0
+JDK21_LIBS/libzip.so.txt	changed	4	8	4	0
+JDK21_LIBS/server/libjvm.so.txt	changed	101	116	15	0
+libjava.so.txt	changed	100	144	44	0
+libjffi-1.2.so.txt	unchanged	195	195	0	0
+libnet.so.txt	changed	14	27	13	0
+libnio.so.txt	changed	33	137	104	0
+libzip.so.txt	changed	4	8	4	0

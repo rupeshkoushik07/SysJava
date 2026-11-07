@@ -1,0 +1,16 @@
+start_file	status	old_starts	new_starts	added	removed
+JDK12_LIBS/libawt.so.txt	changed	8	9	1	0
+JDK12_LIBS/libawt_headless.so.txt	unchanged	1	1	0	0
+JDK12_LIBS/libawt_xawt.so.txt	changed	13	14	1	0
+JDK12_LIBS/libfontmanager.so.txt	new	0	1	1	0
+JDK12_LIBS/libj2gss.so.txt	new	0	3	3	0
+JDK12_LIBS/libjava.so.txt	changed	123	153	30	0
+JDK12_LIBS/libnet.so.txt	changed	18	56	38	0
+JDK12_LIBS/libnio.so.txt	changed	6	130	124	0
+JDK12_LIBS/libzip.so.txt	changed	13	17	4	0
+JDK12_LIBS/server/libjvm.so.txt	changed	99	118	19	0
+libjava.so.txt	changed	123	153	30	0
+libjnidispatch.so.txt	unchanged	70	70	0	0
+libnet.so.txt	changed	18	56	38	0
+libnio.so.txt	changed	6	130	124	0
+libzip.so.txt	changed	13	17	4	0

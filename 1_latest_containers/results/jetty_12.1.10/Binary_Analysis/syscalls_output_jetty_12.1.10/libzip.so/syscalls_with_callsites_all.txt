@@ -39,12 +39,12 @@ __condvar_cleanup_waiting a3140 module-libc.so.6 futex 202
 __condvar_cleanup_waiting a3140 module-libc.so.6 futex 202
 create_thread a3ae0 module-libc.so.6 sched_setscheduler 144
 create_thread a3ae0 module-libc.so.6 sched_setaffinity 203
-start_thread a3de0 module-libc.so.6 futex 202
 start_thread a3de0 module-libc.so.6 exit 60
 start_thread a3de0 module-libc.so.6 rt_sigprocmask 14
 start_thread a3de0 module-libc.so.6 rt_sigprocmask 14
 start_thread a3de0 module-libc.so.6 set_robust_list 273
 start_thread a3de0 module-libc.so.6 rseq 334
+start_thread a3de0 module-libc.so.6 futex 202
 start_thread a3de0 module-libc.so.6 futex 202
 __pthread_mutex_cond_lock_full a64f0 module-libc.so.6 futex 202
 __pthread_mutex_cond_lock_full a64f0 module-libc.so.6 futex 202
@@ -113,8 +113,8 @@ __gai_notify 15eef0 module-libc.so.6 futex 202
 __netlink_close 147740 module-libc.so.6 close 3
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
-__clone3 137780 module-libc.so.6 exit 60
 __clone3 137780 module-libc.so.6 clone3 435
+__clone3 137780 module-libc.so.6 exit 60
 __isatty_nostatus 129430 module-libc.so.6 ioctl 16
 __clone_pidfd_supported 137730 module-libc.so.6 waitid 247
 __futex_lock_pi64 a0a20 module-libc.so.6 futex 202
@@ -125,11 +125,11 @@ __abort_lock_rdlock 46d80 module-libc.so.6 rt_sigprocmask 14
 _dl_sym 193f00 module-libc.so.6 futex 202
 _dl_vsym 193a90 module-libc.so.6 futex 202
 __compat_get_kernel_syms 1386d0 module-libc.so.6 get_kernel_syms 177
-__pthread_kill_internal a61f0 module-libc.so.6 tgkill 234
-__pthread_kill_internal a61f0 module-libc.so.6 rt_sigprocmask 14
-__pthread_kill_internal a61f0 module-libc.so.6 rt_sigprocmask 14
-__pthread_kill_internal a61f0 module-libc.so.6 tgkill 234
 __pthread_kill_internal a61f0 module-libc.so.6 gettid 186
+__pthread_kill_internal a61f0 module-libc.so.6 tgkill 234
+__pthread_kill_internal a61f0 module-libc.so.6 rt_sigprocmask 14
+__pthread_kill_internal a61f0 module-libc.so.6 tgkill 234
+__pthread_kill_internal a61f0 module-libc.so.6 rt_sigprocmask 14
 __lll_lock_wake a0c50 module-libc.so.6 futex 202
 __allocate_shadow_stack 63140 module-libc.so.6  453
 __lll_lock_wait a0bd0 module-libc.so.6 futex 202

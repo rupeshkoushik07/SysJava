@@ -36,8 +36,32 @@ Path to time:
   time_syscall_e8050 - [syscall]-> time
 
 Path to lseek:
-  Java_java_io_RandomAccessFile_getFilePointer_11440 - [DIRECT]-> lseek_127a80
+  Java_java_io_FileInputStream_skip0_e2f0 - [DIRECT]-> lseek_127a80
   lseek_127a80 - [syscall]-> lseek
+
+Path to ioctl:
+  Java_java_io_Console_istty_df70 - [DIRECT]-> isatty_1293c0
+  isatty_1293c0 - [syscall]-> ioctl
+
+Path to access:
+  Java_java_io_UnixFileSystem_checkAccess_15e90 - [DIRECT]-> access_122ee0
+  access_122ee0 - [syscall]-> access
+
+Path to stat:
+  Java_java_io_UnixFileSystem_getLastModifiedTime_16110 - [DIRECT]-> __xstat_138430
+  __xstat_138430 - [syscall]-> stat
+
+Path to close:
+  Java_java_io_UnixFileSystem_createFileExclusively_16280 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to rename:
+  Java_java_io_UnixFileSystem_rename0_16720 - [DIRECT]-> rename_6a810
+  rename_6a810 - [syscall]-> rename
+
+Path to kill:
+  Java_java_lang_UNIXProcess_destroyProcess_15ae0 - [DIRECT]-> kill_45eb0
+  kill_45eb0 - [syscall]-> kill
 
 Path to fsync:
   Java_java_io_FileDescriptor_sync_e200 - [DIRECT]-> fsync_12c680
@@ -47,13 +71,13 @@ Path to pipe2:
   Java_java_lang_UNIXProcess_forkAndExec_15400 - [DIRECT]-> pipe_127dc0
   pipe_127dc0 - [syscall]-> pipe2
 
-Path to close:
-  Java_java_lang_UNIXProcess_forkAndExec_15400 - [DIRECT]-> close_122fa0
-  close_122fa0 - [syscall]-> close
+Path to chmod:
+  Java_java_io_UnixFileSystem_setReadOnly_16950 - [DIRECT]-> chmod_122f40
+  chmod_122f40 - [syscall]-> chmod
 
-Path to ioctl:
-  Java_java_io_Console_echo_dfc0 - [DIRECT]-> tcgetattr_12a680
-  tcgetattr_12a680 - [syscall]-> ioctl
+Path to mkdir:
+  Java_java_io_UnixFileSystem_createDirectory_16680 - [DIRECT]-> mkdir_127ad0
+  mkdir_127ad0 - [syscall]-> mkdir
 
 Path to munmap:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> _IO_file_close_mmap_9b360
@@ -100,11 +124,6 @@ Path to mprotect:
   _ZN15VM_LinuxDllLoad4doitEv_9764d0 - [DIRECT]-> mprotect_133ae0
   mprotect_133ae0 - [syscall]-> mprotect
 
-Path to access:
-  Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> _ZN2os8jvm_pathEPci_96a520
-  _ZN2os8jvm_pathEPci_96a520 - [DIRECT]-> access_122ee0
-  access_122ee0 - [syscall]-> access
-
 Path to sendto:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> sendto_139480
@@ -130,10 +149,40 @@ Path to madvise:
   start_thread_a3de0 - [DIRECT]-> madvise_132f90
   madvise_132f90 - [syscall]-> madvise
 
+Path to statfs:
+  Java_java_io_UnixFileSystem_getSpace_16a10 - [DIRECT]-> statvfs_1284d0
+  statvfs_1284d0 - [DIRECT]-> statfs_1284a0
+  statfs_1284a0 - [syscall]-> statfs
+
+Path to openat:
+  Java_java_io_UnixFileSystem_createFileExclusively_16280 - [DIRECT]-> handleOpen_18a70
+  handleOpen_18a70 - [DIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
 Path to rt_sigaction:
   Java_java_lang_UNIXProcess_init_151c0 - [DIRECT]-> sigaction_45be0
   sigaction_45be0 - [DIRECT]-> __libc_sigaction_45cc0
   __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to dup2:
+  Java_java_io_FileInputStream_close0_e500 - [DIRECT]-> fileClose_18c80
+  fileClose_18c80 - [DIRECT]-> dup2_1230e0
+  dup2_1230e0 - [syscall]-> dup2
+
+Path to getdents64:
+  Java_java_io_UnixFileSystem_list_163e0 - [DIRECT]-> readdir_r_f6c40
+  readdir_r_f6c40 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to utimensat:
+  Java_java_io_UnixFileSystem_setLastModifiedTime_16830 - [DIRECT]-> utimes_137380
+  utimes_137380 - [DIRECT]-> __utimensat64_helper_128dd0
+  __utimensat64_helper_128dd0 - [syscall]-> utimensat
+
+Path to rmdir:
+  Java_java_io_UnixFileSystem_delete0_16350 - [DIRECT]-> remove_6a7c0
+  remove_6a7c0 - [DIRECT]-> rmdir_128410
+  rmdir_128410 - [syscall]-> rmdir
 
 Path to vfork:
   Java_java_lang_UNIXProcess_forkAndExec_15400 - [DIRECT]-> vforkChild_15070
@@ -177,23 +226,11 @@ Path to lstat:
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> __lxstat_137c40
   __lxstat_137c40 - [syscall]-> lstat
 
-Path to kill:
-  Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> Perf_Attach_9b8010
-  Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
-  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> kill_45eb0
-  kill_45eb0 - [syscall]-> kill
-
 Path to geteuid:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> Perf_Attach_9b8010
   Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
   _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> geteuid_fe650
   geteuid_fe650 - [syscall]-> geteuid
-
-Path to openat:
-  Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> Perf_Attach_9b8010
-  Perf_Attach_9b8010 - [DIRECT]-> _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0
-  _ZN10PerfMemory6attachEPKciNS_14PerfMemoryModeEPPcPmP6Thread_9bf0b0 - [DIRECT]-> open_127bd0
-  open_127bd0 - [syscall]-> openat
 
 Path to writev:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> _IO_vtable_check_988a0
@@ -243,12 +280,6 @@ Path to getpriority:
   _ZN2os19get_native_priorityEPK6ThreadPi_971bf0 - [DIRECT]-> getpriority_12aec0
   getpriority_12aec0 - [syscall]-> getpriority
 
-Path to getdents64:
-  Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
-  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
-  getdents64_f67c0 - [syscall]-> getdents64
-
 Path to newfstatat:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
@@ -266,12 +297,6 @@ Path to prctl:
   start_thread_a3de0 - [DIRECT]-> name_stack_maps_a3cf0
   name_stack_maps_a3cf0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
-
-Path to dup2:
-  Java_java_lang_UNIXProcess_forkAndExec_15400 - [DIRECT]-> childProcess_18170
-  childProcess_18170 - [DIRECT]-> restartableDup2_17b80
-  restartableDup2_17b80 - [DIRECT]-> dup2_1230e0
-  dup2_1230e0 - [syscall]-> dup2
 
 Path to prlimit64:
   Java_java_lang_UNIXProcess_forkAndExec_15400 - [DIRECT]-> childProcess_18170
@@ -403,14 +428,6 @@ Path to sched_get_priority_min:
   __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
   sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
 
-Path to stat:
-  Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> WB_AddToBootstrapClassLoaderSearch_b55220
-  WB_AddToBootstrapClassLoaderSearch_b55220 - [DIRECT]-> _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae900
-  _ZN8JvmtiEnv31AddToBootstrapClassLoaderSearchEPKc_7ae900 - [DIRECT]-> _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a590
-  _ZN11ClassLoader27create_class_path_zip_entryEPKc_44a590 - [DIRECT]-> _ZN2os4statEPKcP4stat_973350
-  _ZN2os4statEPKcP4stat_973350 - [DIRECT]-> __xstat_138430
-  __xstat_138430 - [syscall]-> stat
-
 Path to mincore:
   Java_java_lang_Class_registerNatives_cda0 - [INDIRECT]-> _ZN10JavaThread3runEv_adfd60
   _ZN10JavaThread3runEv_adfd60 - [DIRECT]-> _ZN10JavaThread24create_stack_guard_pagesEv_adfc70
@@ -474,14 +491,6 @@ Path to getsockname:
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
   __netlink_open_147750 - [DIRECT]-> getsockname_1391c0
   getsockname_1391c0 - [syscall]-> getsockname
-
-Path to statfs:
-  Java_java_util_TimeZone_getSystemTimeZoneID_147d0 - [DIRECT]-> findJavaTZ_md_14ee0
-  findJavaTZ_md_14ee0 - [DIRECT]-> getPlatformTimeZoneID_14c80
-  getPlatformTimeZoneID_14c80 - [DIRECT]-> findZoneinfoFile_148b0
-  findZoneinfoFile_148b0 - [DIRECT]-> pathconf_103f90
-  pathconf_103f90 - [DIRECT]-> statfs_1284a0
-  statfs_1284a0 - [syscall]-> statfs
 
 Path to brk:
   Java_java_lang_ClassLoader_defineClass1_d100 - [DIRECT]-> malloc_b5110

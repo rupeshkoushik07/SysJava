@@ -40,10 +40,10 @@ __condvar_cleanup_waiting a3140 module-libc.so.6 futex 202
 create_thread a3ae0 module-libc.so.6 sched_setaffinity 203
 create_thread a3ae0 module-libc.so.6 sched_setscheduler 144
 start_thread a3de0 module-libc.so.6 futex 202
-start_thread a3de0 module-libc.so.6 rseq 334
 start_thread a3de0 module-libc.so.6 futex 202
-start_thread a3de0 module-libc.so.6 exit 60
+start_thread a3de0 module-libc.so.6 rseq 334
 start_thread a3de0 module-libc.so.6 rt_sigprocmask 14
+start_thread a3de0 module-libc.so.6 exit 60
 start_thread a3de0 module-libc.so.6 rt_sigprocmask 14
 start_thread a3de0 module-libc.so.6 set_robust_list 273
 __pthread_mutex_cond_lock_full a64f0 module-libc.so.6 futex 202
@@ -113,8 +113,8 @@ __gai_notify 15eef0 module-libc.so.6 futex 202
 __netlink_close 147740 module-libc.so.6 close 3
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
 __fcntl64_nocancel 128ee0 module-libc.so.6 fcntl 72
-__clone3 137780 module-libc.so.6 exit 60
 __clone3 137780 module-libc.so.6 clone3 435
+__clone3 137780 module-libc.so.6 exit 60
 __isatty_nostatus 129430 module-libc.so.6 ioctl 16
 __clone_pidfd_supported 137730 module-libc.so.6 waitid 247
 __futex_lock_pi64 a0a20 module-libc.so.6 futex 202
@@ -479,7 +479,11 @@ openat 127cd0 module-libc.so.6 openat 257
 poll 127e30 module-libc.so.6 poll 7
 read 128390 module-libc.so.6 read 0
 write 128e50 module-libc.so.6 write 1
+readv 134520 module-libc.so.6 readv 19
+writev 137430 module-libc.so.6 writev 20
 connect 139160 module-libc.so.6 connect 42
 recvfrom 139370 module-libc.so.6 recvfrom 45
 recvmsg 1393c0 module-libc.so.6 recvmsg 47
+send 1393f0 module-libc.so.6 sendto 44
+sendmmsg 139420 module-libc.so.6 sendmmsg 307
 sendto 139480 module-libc.so.6 sendto 44

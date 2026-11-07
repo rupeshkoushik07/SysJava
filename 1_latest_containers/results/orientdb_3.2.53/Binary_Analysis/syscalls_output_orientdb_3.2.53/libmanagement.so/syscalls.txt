@@ -1,3 +1,8 @@
+exit_group
+lstat
+prlimit64
+getsockname
+uname
 fstat
 vfork
 faccessat
@@ -75,8 +80,3 @@ getegid
 unlink
 sched_getscheduler
 mmap
-exit_group
-lstat
-prlimit64
-getsockname
-uname

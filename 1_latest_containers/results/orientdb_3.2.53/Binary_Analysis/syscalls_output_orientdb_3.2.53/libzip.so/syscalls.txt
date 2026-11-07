@@ -1,3 +1,4 @@
+munmap
 getdents64
 pread64
 newfstatat
@@ -79,4 +80,3 @@ openat
 prctl
 write
 clone
-munmap

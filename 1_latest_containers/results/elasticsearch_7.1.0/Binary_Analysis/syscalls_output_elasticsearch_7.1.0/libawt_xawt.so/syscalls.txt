@@ -75,10 +75,10 @@ nanosleep
 sched_getaffinity
 sched_yield
 recvfrom
-sendmsg
 uname
-close
 shutdown
+close
+sendmsg
 rt_sigaction
 fcntl
 recvmsg

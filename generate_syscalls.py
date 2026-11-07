@@ -108,6 +108,46 @@ def detector(shipped):
     return et
 
 
+def fold_manual_mappings(shipped, outs, img, table):
+    """Add the manual mappings (natives whose library the image does not ship, or that the
+    mapper misses) to the start files, as the run did before SysPart. JDK 8 results record them,
+    with dataset paths, in outputs_<image>/manual_mapped_method_syscalls.txt
+    (scripts/apply_manual_mappings.py); for the latest images they are the LIBS_<image>/ lines of
+    unavailable_libs/<image>/mapping/mapped_method_syscalls.txt (the RTA rerun's fold step)."""
+    rec = shipped / "Bytecode_Analysis" / f"outputs_{img}" / "manual_mapped_method_syscalls.txt"
+    if rec.is_file():
+        shutil.copy(rec, outs / rec.name)
+        by_name = False
+    else:
+        rec = table / "unavailable_libs" / img / "mapping" / "mapped_method_syscalls.txt"
+        by_name = True   # a library not at that path: the start file of the same name
+        if not rec.is_file():
+            return 0
+    starts = {}
+    for l in rec.read_text().splitlines():
+        m = re.match(rf"^LIBS_{re.escape(img)}/(\S+?):[\w.$]+ -> (\S+) \[\w+\]", l)
+        if m and "NOT_FOUND" not in l:
+            sf = outs / f"{m.group(1)}.txt"
+            lib = outs.parent / f"LIBS_{img}" / m.group(1)
+            if not by_name and lib.is_symlink() and not sf.is_file():
+                # as apply_manual_mappings.py: a link (libc.so.6) gets the start file of its target
+                real = lib.resolve()
+                if real.is_relative_to(lib.parent.resolve()):
+                    sf = outs / f"{real.relative_to(outs.parent.resolve() / f'LIBS_{img}')}.txt"
+            if by_name and not sf.is_file():
+                sf = next(iter(sorted(outs.rglob(Path(m.group(1)).name + ".txt"))), sf)
+            starts.setdefault(sf, set()).add(m.group(2))
+    n = 0
+    for sf, syms in starts.items():
+        old = sf.read_text().split() if sf.is_file() else []
+        add = sorted(syms - set(old))
+        if add:
+            sf.parent.mkdir(parents=True, exist_ok=True)
+            sf.write_text("".join(x + "\n" for x in old + add))
+            n += len(add)
+    return n
+
+
 def whitelist(img):
     table, sub = next(((t, s) for t, s in TABLES if (t / s / img / "Binary_Analysis").is_dir()), (None, None))
     if table is None:
@@ -130,6 +170,8 @@ def whitelist(img):
                RUNTIME_DIR=str(rt), OUTPUTS_DIR=str(outs), JARFILES_IMAGE=str(jars), LIBS_IMAGE=str(libs))
     shutil.copytree(table / "scripts", ws / "scripts")
     shutil.copytree(shipped / "Dynamic_Analysis" / f"sysdig_outputs_{img}", ws / f"sysdig_outputs_{img}")
+    if (shipped / "extra_components").is_dir():   # e.g. Elastic ML: syscalls from its imports (merged)
+        shutil.copytree(shipped / "extra_components", ws / "extra_components")
     with open(ws / "runc.txt", "w") as fh:
         if (shipped / "runtime_set.txt").is_file():
             fh.write((shipped / "runtime_set.txt").read_text())
@@ -144,20 +186,13 @@ def whitelist(img):
     for d in (ws / "Dataset").iterdir():
         d.rename(ws / d.name)
     (ws / "Dataset").rmdir()
-    deps = ws / "Dataset_symbolized" / f"LIBS_{img}" / "_container_deps"
-    if deps.is_dir():   # libraries a copied library needs, added from the container by the original run
-        for f in deps.iterdir():
-            if not (libs / f.name).exists():
-                shutil.copy2(f, libs / f.name)
-    shutil.rmtree(ws / "Dataset_symbolized", ignore_errors=True)
-    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws)
     print(f"      {count(jars, '*.jar')} JARs, {count(libs, '*.so*')} libraries, {count(bins, '*')} executables")
 
     et = detector(shipped)
     step(2, f"bytecode analysis ({et.name}, commit {(et / 'COMMIT').read_text()[:7]})")
     outs.mkdir()
     cp = f"{et}/target/classes:" + (et / "target" / ".classpath").read_text().strip()
-    run(["java", "-Xmx16g", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector", str(jars), str(outs), str(rt)],
+    run(["java", f"-Xmx{os.environ.get('ECHOTRACE_XMX', '16g')}", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector", str(jars), str(outs), str(rt)],
         ws / "bytecode.log")
     hits = lambda f: sum(1 for l in open(outs / f) if " | " in l and not l.startswith("Format:")) if (outs / f).is_file() else 0
     print(f"      {nlines(outs / 'native_methods.txt')} native methods; "
@@ -165,12 +200,23 @@ def whitelist(img):
 
     step(3, "map native methods to C functions (start functions per library)")
     run(["bash", "scripts/prepare_native_mapping.sh"], ws / "mapping.log", cwd=ws, env=env)
+    # as stage 6 of the run, after the JNI mapping: the libraries a copied library needs (added
+    # from the container) and SONAME links; the JNA/FFI analysis (stage 8) sees both
+    deps = ws / "Dataset_symbolized" / f"LIBS_{img}" / "_container_deps"
+    if deps.is_dir():
+        for f in deps.iterdir():
+            if not (libs / f.name).exists():
+                shutil.copy2(f, libs / f.name)
+    shutil.rmtree(ws / "Dataset_symbolized", ignore_errors=True)
+    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws)
     run([sys.executable, "scripts/analyse_jna_ffi.py", "--libs-dir", str(libs), "--outputs-dir", str(outs)],
         ws / "jna_ffi.log", cwd=ws, env=env, check=False)
+    manual = fold_manual_mappings(shipped, outs, img, table)
     tags = re.findall(r"\[([A-Z_]+)\]$", (outs / "mapped_method_syscalls.txt").read_text(), re.M)
     print(f"      {len(tags)} native methods mapped ("
           + ", ".join(f"{t} {tags.count(t)}" for t in sorted(set(tags), key=lambda t: -tags.count(t)))
-          + f"); {count(outs, '*.so*.txt')} libraries with start functions")
+          + f"); {count(outs, '*.so*.txt')} libraries with start functions"
+          + (f"; {manual} manual mappings added" if manual else ""))
 
     step(4, "syscalls from SysPart's shipped call graphs")
     run([sys.executable, str(ART / "tools" / "whitelist_from_callgraphs.py"), img, str(shipped / "Binary_Analysis"),
@@ -216,7 +262,7 @@ def tex_column(tex, img):
     """(label, value) rows of one image's column in a table .tex file."""
     lines = Path(tex).read_text().splitlines()
     head = next(l for l in lines if l.lstrip().startswith("&") and "Zookeeper" in l)
-    col = [c.strip().lower() for c in head.split("&")[1:]].index(img.split("_")[0]) + 1
+    col = [c.strip().lower() for c in head.rstrip("\\ ").split("&")[1:]].index(img.split("_")[0]) + 1
     rows = []
     for l in lines[lines.index(head) + 1:]:
         cells = [c.strip() for c in l.rstrip("\\ ").split("&")]

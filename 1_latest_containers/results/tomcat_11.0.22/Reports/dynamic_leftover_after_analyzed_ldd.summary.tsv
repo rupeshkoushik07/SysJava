@@ -1,2 +1,2 @@
 image	dynamic	analyzed	ldd_deps	dynamic_analyzed	dynamic_ldd	leftover	unresolved_analyzed
-tomcat_11.0.22	21	6	20	5	11	7	0
+tomcat_11.0.22	21	12	22	8	12	4	0

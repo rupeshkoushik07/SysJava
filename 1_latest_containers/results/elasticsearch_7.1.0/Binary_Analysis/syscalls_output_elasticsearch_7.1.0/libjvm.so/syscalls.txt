@@ -35,13 +35,13 @@ sched_getscheduler
 sched_get_priority_max
 sched_get_priority_min
 sched_getparam
-sched_yield
 wait4
-uname
+sched_yield
 clock_gettime
 vfork
-mmap
+uname
 ioctl
+mmap
 shmget
 getuid
 sysinfo

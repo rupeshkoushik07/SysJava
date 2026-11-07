@@ -18,9 +18,7 @@ The tool is called EchoTrace in the code.
 | [`3_sysjava_vs_confine/`](3_sysjava_vs_confine/README.md) | SysJava vs Confine (to be added) | Table `tab:confine` |
 | `Results/` | results of the original submission, unchanged | |
 | [`docker_images/`](docker_images/README.md) | every image used, pinned by digest; Dockerfiles of the rebuilt JDK 8 images | |
-| `echotrace/` | tool source (bytecode analysis), commit `52628c4` | |
-| `echotrace_516fb46/` | the same tool one commit earlier; five latest-version results were made with it | |
-| `echotrace_89bf135/` | the tool with RTA call dispatch; the JDK 8 results were made with it | |
+| `echotrace/` | tool source (bytecode analysis), commit `89bf135`; every result in both tables was made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); `code_facts.md`: how binding recovery works, with pointers to the code | |

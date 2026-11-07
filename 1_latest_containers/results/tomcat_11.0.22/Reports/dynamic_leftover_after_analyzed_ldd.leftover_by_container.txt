@@ -1,9 +1,6 @@
-tomcat_11.0.22 (7)
+tomcat_11.0.22 (4)
   - libextnet.so
-  - libjimage.so
   - libjli.so
-  - libmanagement.so
   - libmanagement_ext.so
-  - libnio.so
   - libtinfo.so.6
 

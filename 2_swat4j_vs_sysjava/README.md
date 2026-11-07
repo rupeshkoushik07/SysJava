@@ -28,7 +28,7 @@ build script and image IDs: [`../docker_images/`](../docker_images/README.md).
   `tables/storm_no_false_ffm/`: Storm under its profile without `sync` (172 syscalls,
   PASS), the only syscall of false FFM hits.
 * `sysjava_results/<image>/`: full SysJava results. All ten pass under their profiles.
-  Stage 4 used the detector in `../echotrace_89bf135/`, which follows virtual and
+  Stage 4 used `../echotrace/` (`89bf135`, as for Table III), which follows virtual and
   interface calls to the overrides of every class instantiated in reachable code (RTA).
 * `unavailable_libs/`: natives whose library the image does not ship, mapped to the
   released library (`PROVENANCE.tsv`, `<image>/mapping/`), and the rules for the rest
