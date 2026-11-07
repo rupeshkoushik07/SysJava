@@ -36,6 +36,7 @@
 #              so the larger graph adds indirect targets a binding-only run never
 #              has (Tomcat 11 libssl: 59 syscalls over the all-roots graph, 44
 #              from its own graph, the same as the pipeline's 44).
+#   OUT_DIR=<dir>  output folder (default ./<img>)
 #   ARMS="A B"  arms to run for TARGETS (e.g. ARMS=B to add the binding arm to
 #              a library whose A is done; its listings in A/<lib> are reused)
 #   NICE=10  JOB_MEM_GB=12  JOB_TIMEOUT=7200   niceness, virtual-memory cap and
@@ -52,7 +53,7 @@ ARCH_LIBS="$RESULTS/Dataset/LIBS_$IMG"
 LIBS_DIR="$ARCH_LIBS"
 [ "${SYMBOLIZED:-0}" = 1 ] && LIBS_DIR="$RESULTS/Dataset_symbolized/LIBS_$IMG"
 MAPPING="$RESULTS/Bytecode_Analysis/outputs_$IMG/mapped_method_syscalls.txt"
-OUT="$HERE/$IMG"
+OUT="${OUT_DIR:-$HERE/$IMG}"   # OUT_DIR: write into another folder (e.g. a rerun next to the original)
 
 [ -x "$SYSPART_APP/syspart" ] || { echo "syspart not built in $SYSPART_APP" >&2; exit 1; }
 [ -n "${TARGETS:-}" ] || [ -d "$B_OUT" ] || { echo "no archived binding run at $B_OUT" >&2; exit 1; }

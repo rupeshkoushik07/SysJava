@@ -14,8 +14,8 @@ pipeline scripts are in `1_latest_containers/scripts/` (the same in
 | JNA, JNR-FFI, FFM: the library name selects the file; a start function gets an address only if it is in SysPart's `allfunctions.txt` (the library and its loaded dependencies) | `analyse_jna_ffi.py`; `compute_syscalls_lowmem.sh`, lines 150-155 |
 | Library names are normalised: lower case, leading `lib` removed, cut at the first `.so`/`.dylib`/`.dll`; SONAMEs are indexed; the default library is `c` | `NativeLibraryNames.java`; `normalize_key` in `analyse_jna_ffi.py` (line 55) |
 | JNA direct mapping: every native method of a registered class. JNR-FFI: all interface methods when no call is visible | `JnaDirectMapDetector.java` (line 211); `JnrFfiDetector.java`, PASS 3 (line 243) |
-| Unresolved bindings are classified by a keyword rule: `linux`, `unixsocket`, `RubyBasicSocket$LibC` -> libc (ZooKeeper 7, Groovy 7, JRuby 16); FreeBSD, macOS, Solaris and Windows variants and FFM upcalls -> other platform | `1_latest_containers/unavailable_libs/notfound_search/binding_overrides.py` (line 21) |
-| The only manual step: libraries the images do not ship were supplied (Solr netty-tcnative, Storm jansi, io_uring and rocksdb 5.18.4, Solr and Tomcat the OpenJDK 25 FFM fallback linker, Cassandra OpenHFT affinity, Tomcat jsvc, OrientDB jffi and NativePosixUtil, Elasticsearch NativePosixUtil) and then mapped by the pipeline | `1_latest_containers/unavailable_libs/PROVENANCE.tsv` |
+| Unresolved bindings are classified by a keyword rule: `linux`, `unixsocket`, `RubyBasicSocket$LibC` -> libc (ZooKeeper 7, Groovy 7, JRuby 16); FreeBSD, macOS, Solaris and Windows variants and FFM upcalls -> other platform | `1_latest_containers/manual_mapping/notfound_search/binding_overrides.py` (line 21) |
+| The only manual step: libraries the images do not ship were supplied (Solr netty-tcnative, Storm jansi, io_uring and rocksdb 5.18.4, Solr and Tomcat the OpenJDK 25 FFM fallback linker, Cassandra OpenHFT affinity, Tomcat jsvc, OrientDB jffi and NativePosixUtil, Elasticsearch NativePosixUtil) and then mapped by the pipeline | `1_latest_containers/manual_mapping/PROVENANCE.tsv` |
 
 Known limitations:
 

@@ -30,7 +30,7 @@ RES = os.environ.get("RESULTS", ART + "/2_swat4j_vs_sysjava/sysjava_results")
 SWO = os.environ.get("SWAT4J_OUTPUTS", ART + "/swat4j/outputs")
 SW, SWD = SWO + "/static/syscalls", SWO + "/dynamic"
 RUNC = ART + "/2_swat4j_vs_sysjava/runc.txt"
-UNAV = ART + "/2_swat4j_vs_sysjava/unavailable_libs"
+UNAV = ART + "/2_swat4j_vs_sysjava/manual_mapping"
 COLS = [("zookeeper_3.4.14", "zookeeper", "Zookeeper", "3.4.14"), ("tomcat_7.0", "tomcat", "Tomcat", "7.0"),
         ("cassandra_3.0.29", "cassandra", "Cassandra", "3.0.29"), ("jetty_9.4.51", "jetty", "Jetty", "9.4.51"),
         ("storm_2.4.0", "storm", "Storm", "2.4.0"), ("orientdb_3.2.19", "orientdb", "OrientDB", "3.2.19"),

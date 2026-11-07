@@ -30,7 +30,7 @@ build script and image IDs: [`../docker_images/`](../docker_images/README.md).
 * `sysjava_results/<image>/`: full SysJava results. All ten pass under their profiles.
   Stage 4 used `../echotrace/` (`89bf135`, as for Table III), which follows virtual and
   interface calls to the overrides of every class instantiated in reachable code (RTA).
-* `unavailable_libs/`: natives whose library the image does not ship, mapped to the
+* `manual_mapping/`: natives whose library the image does not ship, mapped to the
   released library (`PROVENANCE.tsv`, `<image>/mapping/`), and the rules for the rest
   (`jdk8_notfound_search/classify_jdk8.py`).
 * `scripts/`: the pipeline scripts; `runc.txt` + `runc_host_1.3.4_additions.txt`: the runtime syscall set.

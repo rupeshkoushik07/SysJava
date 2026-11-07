@@ -24,7 +24,7 @@ Digests: `../docker_images/IMAGES.md`.
 * `tables/`: Table III (`tableIII_latest.tex`, `.pdf`) and the mapping counts it
   reads (`mapping_audit_per_app.csv`). No native is left Not Found.
   `TABLE_ONLY=1 ./reproduce.sh` regenerates Table III from `results/` and compares it.
-* `unavailable_libs/`: the other inputs of Table III: natives whose library the image
+* `manual_mapping/`: the other inputs of Table III: natives whose library the image
   does not ship, mapped after supplying the library (`PROVENANCE.tsv`, `<image>/mapping/`),
   natives no library implements (`<image>/dead_rta.txt`), and the classification
   rules (`notfound_search/classify_rta.py`).
@@ -47,7 +47,7 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 * Storm's Total Syscalls in Table III (202) is its pipeline profile (200) plus the
   syscalls of the supplied netty io_uring library (`io_uring_setup`, `io_uring_enter`,
   `io_uring_register`), minus `sync`, which only false FFM hits reach. That profile and
-  its PASS check are in `unavailable_libs/storm_2.8.8/merged_rta/`.
+  its PASS check are in `manual_mapping/storm_2.8.8/merged_rta/`.
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.
 * Each `ADDED_first_start_binaries.md` explains executables that were added by

@@ -237,7 +237,7 @@ if run_from 7; then
         "${WS}/unanalysed_syspart_progress.log"
     # Manual native mappings (supplied libraries, rule-mapped JVM natives): merged into the same
     # start-function files, so each library is analysed once, from its full start list.
-    MANUAL_DIR="${MANUAL_DIR:-${HOME}/Tutorial/EchoTrace_latest/unavailable_libs}"
+    MANUAL_DIR="${MANUAL_DIR:-${REPO}/../../2_swat4j_vs_sysjava/manual_mapping}"
     if [ -f "${MANUAL_DIR}/${T}/mapping/mapped_method_syscalls.txt" ]; then
         python3 "${REPO}/scripts/apply_manual_mappings.py" "$T" --manual-dir "$MANUAL_DIR" --repo "$REPO"
     fi

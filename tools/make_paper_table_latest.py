@@ -9,7 +9,7 @@ not already in the rows above it.
   Native Methods          methods declared native (Bytecode_Analysis/.../native_methods.txt)
   SysJava Resolved        natives mapped to a native function (mapper tags below), including
                           the manual mapping of natives whose library the image does not ship
-                          (unavailable_libs/<target>/mapping/)
+                          (manual_mapping/<target>/mapping/)
   Breakdown               mapper tags of the resolved natives; JNI Static + Partial + JNI Dynamic
                           + JVM + JFR/Netty = SysJava Resolved
                           (libc/Sigar bridge mappings are counted as JNI Static)
@@ -21,7 +21,7 @@ not already in the rows above it.
   Runtime whitelist       runc.txt minus all rows above
   Total Syscalls          syscalls in the generated seccomp profile (checked = union of the rows)
 
-Usage: make_paper_table.py <results_dir> <unavailable_libs_dir> <per_app_summary.csv> <out_prefix> <runc.txt>
+Usage: make_paper_table.py <results_dir> <manual_mapping_dir> <per_app_summary.csv> <out_prefix> <runc.txt>
 """
 import csv, glob, json, os, re, sys, zipfile
 
@@ -79,7 +79,7 @@ for t, *_ in COLS:
     # Bindings that are not `native` declarations (JNA direct-mapped methods ARE declarations and
     # are already in native_methods.txt, so they are not counted again). Resolved = library and
     # symbol known.
-    ovr = {}   # unresolved bindings classified in unavailable_libs/<t>/binding_overrides.tsv
+    ovr = {}   # unresolved bindings classified in manual_mapping/<t>/binding_overrides.tsv
     op = os.path.join(unav, t, "binding_overrides.tsv")
     if os.path.exists(op):
         for l in open(op):
@@ -129,7 +129,7 @@ for t, *_ in COLS:
     total_n = int(aud[t]["denominator"]) + sum(v[0] for v in bind.values())
     jna_s, jna_d, ffi = rb("iface"), rb("dyn"), rb("ffi") + rb("jnr-ffi")
     resolved = sum(parts) + jna_s + jna_d + ffi
-    pe = os.path.join(unav, t, "platform_extra.txt")   # classified in unavailable_libs/notfound_search/
+    pe = os.path.join(unav, t, "platform_extra.txt")   # classified in manual_mapping/notfound_search/
     platform = int(aud[t]["et_platform"]) + len(names_in(pe)) + bind_platform   # other OS + JVM intrinsics + no native target
     V[t] = [total_n, resolved, None, *parts, f"{jna_s} / {jna_d}", ffi, platform, total_n - resolved - platform,
             None, len(java), len(binary), len(unan), len(runtime), len(total)]

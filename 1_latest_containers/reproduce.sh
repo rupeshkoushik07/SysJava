@@ -56,7 +56,7 @@ for t in "${ALL[@]}"; do
     fi
 done
 mkdir -p "$HERE/tables_rerun"
-python3 "$HERE/../tools/make_paper_table_latest.py" "$V" "$HERE/unavailable_libs" \
+python3 "$HERE/../tools/make_paper_table_latest.py" "$V" "$HERE/manual_mapping" \
     "$HERE/tables/mapping_audit_per_app.csv" "$HERE/tables_rerun/tableIII_latest" "$HERE/runc.txt" || true
 if cmp -s "$HERE/tables_rerun/tableIII_latest.tex" "$HERE/tables/tableIII_latest.tex"; then
     echo "tables_rerun/tableIII_latest.tex is identical to the shipped tables/tableIII_latest.tex"

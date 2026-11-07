@@ -113,13 +113,13 @@ def fold_manual_mappings(shipped, outs, img, table):
     mapper misses) to the start files, as the run did before SysPart. JDK 8 results record them,
     with dataset paths, in outputs_<image>/manual_mapped_method_syscalls.txt
     (scripts/apply_manual_mappings.py); for the latest images they are the LIBS_<image>/ lines of
-    unavailable_libs/<image>/mapping/mapped_method_syscalls.txt (the RTA rerun's fold step)."""
+    manual_mapping/<image>/mapping/mapped_method_syscalls.txt (the RTA rerun's fold step)."""
     rec = shipped / "Bytecode_Analysis" / f"outputs_{img}" / "manual_mapped_method_syscalls.txt"
     if rec.is_file():
         shutil.copy(rec, outs / rec.name)
         by_name = False
     else:
-        rec = table / "unavailable_libs" / img / "mapping" / "mapped_method_syscalls.txt"
+        rec = table / "manual_mapping" / img / "mapping" / "mapped_method_syscalls.txt"
         by_name = True   # a library not at that path: the start file of the same name
         if not rec.is_file():
             return 0
@@ -252,7 +252,7 @@ def whitelist(img):
                                   f"only in generated: {' '.join(sorted(new - ref)) or 'none'}\n"
                                   f"only in shipped:   {' '.join(sorted(ref - new)) or 'none'}\n")
 
-    if (table / "unavailable_libs").is_dir():
+    if (table / "manual_mapping").is_dir():
         step(6, f"results (the image's column of {'tab:results' if table.name.startswith('2_') else 'Table III'})")
         print(table_column(img, ws, table, out))
     print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {out / f'{img}.json'}; all outputs in {out}/")
@@ -316,7 +316,7 @@ def table_column(img, ws, table, out):
         run([sys.executable, str(ART / "tools" / "make_tab_results_jdk8.py"), str(ws / "audit" / "table_audit.csv"),
              str(ws / "table")], ws / "table.log", check=False, env={**os.environ, "RESULTS": str(tv)})
     else:
-        run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "unavailable_libs"),
+        run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "manual_mapping"),
              str(ws / "audit" / "table_audit.csv"), str(ws / "table"), str(table / "runc.txt")],
             ws / "table.log", check=False)
     lines = []
