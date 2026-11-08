@@ -52,7 +52,7 @@ plain JSON.
 | | Reruns | Needs | Per image |
 |---|---|---|---|
 | A | table rows from the shipped results | Python | seconds |
-| B | bytecode analysis and native mapping on the shipped dataset; syscalls parsed from the shipped call graphs | JDK 17+, Maven, Python, binutils, xz | 5-15 min |
+| B | bytecode analysis and native mapping on the shipped dataset; syscalls parsed from the shipped call graphs; the container run under the profile | JDK 17+, Maven, Python, binutils, xz; Docker for step 7 | 5-15 min (Solr up to 80) |
 | C | the whole pipeline, including capture and SysPart | see below, root | 2-8 h |
 
 ### A. Tables from the shipped results
@@ -67,6 +67,7 @@ TABLE_ONLY=1 2_swat4j_vs_sysjava/reproduce.sh
 ```bash
 python3 generate_syscalls.py zookeeper_3.9.5     # one image
 python3 generate_syscalls.py all                 # every image with a shipped dataset
+python3 generate_syscalls.py --no-run zookeeper_3.9.5   # steps 1-6 only (no Docker)
 ```
 
 For the image it:
@@ -81,13 +82,58 @@ For the image it:
    for a JDK 8 image): native methods by
    mapping kind (JNI static, partial, JNI dynamic, JVM, JFR/Netty, JNA, FFI/FFM,
    platform/intrinsic, not found) and the syscall rows (Java libraries, container
-   executables, unanalysed libraries, runtime whitelist, total).
+   executables, unanalysed libraries, runtime whitelist, total);
+7. runs the container under the generated profile, as the pipeline's last stage
+   (`tools/check_profile.sh`): once without and once with the profile; PASS when it
+   starts, keeps running for 60 s, answers its probe and logs no extra "Operation not
+   permitted". Needs Docker (the image is pulled by digest from
+   `docker_images/images.tsv`, or built for JDK 8); skipped without it.
 
 Output in `<table>/generated_syscalls/<image>/`: the native methods and their
 mapping, `syscalls.txt` for every library and executable, the four sets, the
-profile `<image>.json`, `table_column.txt` (step 6), and `diff.txt`, which
-compares the profile with the shipped one. Logs are in
-`work/static/<image>/`. On ZooKeeper and JRuby the profile is identical to the full run's.
+profile `<image>.json`, `table_column.txt` (step 6), `seccomp_runtime_test.log`
+(step 7) and `diff.txt`, which compares the profile with the shipped one. Logs are
+in `work/static/<image>/`.
+
+ZooKeeper 3.9.5, as printed (8 minutes on the analysis host):
+
+```
+[13:38:04] zookeeper_3.9.5 1. unpack the dataset (2 parts)
+      43 JARs, 74 libraries, 12 executables
+[13:38:10] zookeeper_3.9.5 2. bytecode analysis (echotrace, commit 89bf135)
+      1286 native methods; 36 JNA, 0 JNR-FFI, 7 FFM bindings
+[13:41:03] zookeeper_3.9.5 3. map native methods to C functions (start functions per library)
+      2099 native methods mapped (JNI 1088, JNI_DYNAMIC 880, REGISTERED 73, JVM 41, NETTY 17); 24 libraries with start functions; 1 manual mappings added
+[13:41:44] zookeeper_3.9.5 4. syscalls from SysPart's shipped call graphs
+      40 call graphs parsed; 1 library/executable without a call graph in the original run either (kept as shipped)
+[13:43:50] zookeeper_3.9.5 5. syscall sets and seccomp profile
+      Java libraries 150, executables 113, runtime set +28, fallback libraries +3; profile 191
+[13:43:51] zookeeper_3.9.5 6. results (the image's column of Table III)
+      Native Method Resolution
+      Native Methods                                1322
+      SysJava Resolved                              1260
+      Resolution Breakdown (SysJava)
+        JNI Static (Java_*)                          650
+        Partial (_1/$/__)                             15
+        JNI Dynamic (RegisterNatives)                516
+        JVM                                           46
+        JFR/Netty                                     17
+        JNA (Static / Dynamic)                     9 / 0
+        FFI/FFM (incl. JNR-FFI)                        7
+        Platform / Intrinsic / Dead                   62
+        Not Found                                      0
+      Syscall Allowlist (SysJava only)
+      Java Lib Syscalls                              150
+      Container Binary Syscalls                      113
+      Unanalysed Lib Syscalls (Δ)                      3
+      Go Whitelist (Δ)                                28
+      Total Syscalls                                 191
+[13:43:52] zookeeper_3.9.5 7. run the container under the profile
+      without profile: ready after 2s, running exit=0, probe ok tcp_2181
+      with profile (191 syscalls): ready after 2s, running exit=0 after 60 s, probe ok tcp_2181, EPERM lines 0 (baseline 0)
+      RESULT=PASS  (log: 1_latest_containers/generated_syscalls/zookeeper_3.9.5/seccomp_runtime_test.log)
+Done in 8 min. Profile: 1_latest_containers/generated_syscalls/zookeeper_3.9.5/zookeeper_3.9.5.json; all outputs in 1_latest_containers/generated_syscalls/zookeeper_3.9.5/
+```
 
 ### C. Full rerun
 

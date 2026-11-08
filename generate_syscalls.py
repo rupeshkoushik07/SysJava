@@ -5,6 +5,7 @@ table, and the seccomp profile.
 
     python3 generate_syscalls.py zookeeper_3.9.5        one image (any folder name in results/)
     python3 generate_syscalls.py all                    every image with a shipped dataset
+    python3 generate_syscalls.py --no-run <image>       steps 1-6 only (no Docker)
 
 Steps:
   1. unpack the dataset: the JARs, native libraries, executables and Java runtime
@@ -19,6 +20,10 @@ Steps:
      fallback libraries, merged into the seccomp profile
   6. the results as the image's column of its table (Table III, or tab:results for
      the JDK 8 images): native methods by mapping kind, not found, and the syscall rows
+  7. the container under the generated profile (tools/check_profile.sh, as the pipeline's
+     last stage): it runs once without and once with the profile; PASS when it starts,
+     keeps running, answers its probe and logs no extra "Operation not permitted".
+     Needs Docker; skipped without it or with --no-run
 
 Output in <table folder>/generated_syscalls/<image>/:
   native_methods.txt, mapped_method_syscalls.txt   steps 2 and 3
@@ -30,8 +35,9 @@ Output in <table folder>/generated_syscalls/<image>/:
   diff.txt          the profile against the shipped one (for checking a run)
   report.tsv        one line per call graph
   table_column.txt  the results as the image's column of its table
+  seccomp_runtime_test.log   step 7 (RESULT=PASS or FAIL with the reasons)
 Work files and logs: work/static/<image>/.
-Needs JDK 17+, Maven, Python 3, binutils and xz.
+Needs JDK 17+, Maven, Python 3, binutils and xz; step 7 needs Docker.
 """
 import csv
 import glob
@@ -55,6 +61,11 @@ def run(cmd, log, cwd=None, env=None, check=True):
     if rc and check:
         sys.exit(f"failed (exit {rc}); last lines of {log}:\n" + "".join(open(log).readlines()[-20:]))
     return rc
+
+
+def rel(p):
+    """A path relative to the artifact folder, as printed."""
+    return os.path.relpath(p, ART)
 
 
 def names(profile):
@@ -148,7 +159,7 @@ def fold_manual_mappings(shipped, outs, img, table):
     return n
 
 
-def whitelist(img):
+def whitelist(img, run_container=True):
     table, sub = next(((t, s) for t, s in TABLES if (t / s / img / "Binary_Analysis").is_dir()), (None, None))
     if table is None:
         sys.exit(f"no results for {img}")
@@ -255,7 +266,27 @@ def whitelist(img):
     if (table / "manual_mapping").is_dir():
         step(6, f"results (the image's column of {'tab:results' if table.name.startswith('2_') else 'Table III'})")
         print(table_column(img, ws, table, out))
-    print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {out / f'{img}.json'}; all outputs in {out}/")
+    step(7, "run the container under the profile")
+    if not run_container:
+        print("      skipped (--no-run)")
+    elif subprocess.run(["docker", "info"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode:
+        print("      skipped: Docker is not available")
+    else:
+        log = out / "seccomp_runtime_test.log"
+        run(["bash", str(ART / "tools" / "check_profile.sh"), img, str(out / f"{img}.json"), str(log)],
+            ws / "check_profile.log", check=False)
+        kv = dict(l.split("=", 1) for l in log.read_text().splitlines() if "=" in l and " " not in l.split("=", 1)[0]) \
+            if log.is_file() else {}
+        if "RESULT" not in kv:
+            print(f"      no result; see {rel(ws / 'check_profile.log')}")
+        else:
+            print(f"      without profile: ready after {kv.get('baseline_ready_after', '?')}, "
+                  f"{kv.get('baseline_state', '?')}, probe {kv.get('baseline_probe', '?')}")
+            print(f"      with profile ({kv.get('profile_syscalls', '?').split()[0]} syscalls): ready after "
+                  f"{kv.get('ready_after', '?')}, {kv.get('state_after_60s', '?')} after 60 s, "
+                  f"probe {kv.get('probe', '?')}, EPERM lines {kv.get('eperm_lines', '?')}")
+            print(f"      RESULT={kv['RESULT']}  (log: {rel(log)})")
+    print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {rel(out / f'{img}.json')}; all outputs in {rel(out)}/")
 
 
 def tex_column(tex, img):
@@ -330,11 +361,11 @@ def table_column(img, ws, table, out):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         sys.exit(__doc__)
-    imgs = sys.argv[1:]
+    imgs = [a for a in sys.argv[1:] if a != "--no-run"]
     if imgs == ["all"]:
         imgs = sorted(p.parent.parent.name for t, s in TABLES for p in (t / s).glob("*/dataset/Dataset.tar.xz.part00"))
     for img in imgs:
-        whitelist(img)
+        whitelist(img, run_container="--no-run" not in sys.argv[1:])
 
 
 if __name__ == "__main__":
