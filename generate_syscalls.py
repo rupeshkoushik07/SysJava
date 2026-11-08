@@ -6,6 +6,10 @@ table, and the seccomp profile.
     python3 generate_syscalls.py zookeeper_3.9.5        one image (any folder name in results/)
     python3 generate_syscalls.py all                    every image with a shipped dataset
     python3 generate_syscalls.py --no-run <image>       steps 1-6 only (no Docker)
+    python3 generate_syscalls.py -v <image>             print every line of every tool
+
+While it runs, each tool's main lines are printed with the time (every line with -v);
+the full output of each tool is in its log in work/static/<image>/.
 
 Steps:
   1. unpack the dataset: the JARs, native libraries, executables and Java runtime
@@ -47,6 +51,7 @@ import re
 import shutil
 import subprocess
 import sys
+import threading
 import time
 from pathlib import Path
 
@@ -54,10 +59,66 @@ ART = Path(__file__).resolve().parent
 TABLES = [(ART / "1_latest_containers", "results"), (ART / "2_swat4j_vs_sysjava", "sysjava_results")]
 
 
-def run(cmd, log, cwd=None, env=None, check=True):
+VERBOSE = False   # -v
+
+
+def say(text):
+    """A progress line: the time, then the text (artifact paths relative)."""
+    print(f"      {time.strftime('%H:%M:%S')} {text.replace(f'{ART}/', '')}", flush=True)
+
+
+def shown(*rules, tick=None):
+    """The lines of a tool to print: rules are (regex, format) pairs, format taking the match
+    groups (a function of the match, or None for the line itself); tick=(regex, text) prints
+    a running count of the matching lines every 20 s."""
+    last, n = [time.time()], [0]
+
+    def show(line):
+        for rx, fmt in rules:
+            m = re.search(rx, line)
+            if m:
+                return "  " + (line.strip() if fmt is None else fmt(m) if callable(fmt) else fmt.format(*m.groups()))
+        if tick and re.search(tick[0], line):
+            n[0] += 1
+            if n[0] == 1:
+                last[0] = time.time()
+            if time.time() - last[0] >= 20:
+                last[0] = time.time()
+                return "  " + tick[1].format(n[0])
+    return show
+
+
+def tail(path, pos):
+    """The complete lines of path after byte pos, and the new pos."""
+    if not Path(path).is_file():
+        return [], pos
+    with open(path, "rb") as f:
+        f.seek(pos)
+        data = f.read()
+    data = data[:data.rfind(b"\n") + 1]
+    return data.decode(errors="replace").splitlines(), pos + len(data)
+
+
+def run(cmd, log, cwd=None, env=None, check=True, label=None, show=None, follow=None):
+    """Run cmd with its output in log, printing label and the lines show() picks as they come
+    (every line with -v). follow: a file the command writes itself, printed the same way."""
+    if label:
+        say(f"> {label} (log: {rel(follow or log)})")
+    echo = lambda l: (VERBOSE or show) and (text := "  " + l if VERBOSE else show(l)) and say(text)
     with open(log, "w") as fh:
-        rc = subprocess.run(cmd, cwd=cwd, env=env, stdout=fh, stderr=subprocess.STDOUT,
-                            shell=isinstance(cmd, str)).returncode
+        p = subprocess.Popen(cmd, cwd=cwd, env=dict(env or os.environ, PYTHONUNBUFFERED="1"),
+                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=isinstance(cmd, str),
+                             text=True, errors="replace")
+        reader = threading.Thread(target=lambda: [(fh.write(l), echo(l.rstrip("\n"))) for l in p.stdout])
+        reader.start()
+        pos = 0
+        while reader.is_alive():
+            reader.join(1)
+            if follow:
+                lines, pos = tail(follow, pos)
+                for l in lines:
+                    echo(l)
+        rc = p.wait()
     if rc and check:
         sys.exit(f"failed (exit {rc}); last lines of {log}:\n" + "".join(open(log).readlines()[-20:]))
     return rc
@@ -159,6 +220,14 @@ def fold_manual_mappings(shipped, outs, img, table):
     return n
 
 
+DETECTOR_PASSES = {"dyn": "pass 1/6: dynamic JNA calls (Function.getFunction)",
+                   "iface": "pass 2/6: JNA interfaces (Native.load)",
+                   "directmap": "pass 3/6: JNA direct mapping (Native.register)",
+                   "ffi": "pass 4/6: FFM downcalls (Linker)",
+                   "jnr-ffi": "pass 5/6: JNR-FFI interfaces",
+                   "prototype-final": "pass 6/6: native methods reachable in the call graph (RTA)"}
+
+
 def whitelist(img, run_container=True):
     table, sub = next(((t, s) for t, s in TABLES if (t / s / img / "Binary_Analysis").is_dir()), (None, None))
     if table is None:
@@ -204,13 +273,31 @@ def whitelist(img, run_container=True):
     outs.mkdir()
     cp = f"{et}/target/classes:" + (et / "target" / ".classpath").read_text().strip()
     run(["java", f"-Xmx{os.environ.get('ECHOTRACE_XMX', '16g')}", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector", str(jars), str(outs), str(rt)],
-        ws / "bytecode.log")
+        ws / "bytecode.log", label="JNADetector on the JARs, one pass per kind of binding, then the native methods",
+        show=shown((r"^\[JNADetector\] phase=(\S+)", lambda m: DETECTOR_PASSES.get(m.group(1), m.group(1))),
+                   (r"^\[CTX\] shared context ready in (\S+)", "  classes loaded in {}"),
+                   (r"^\[PRE-SCAN\] Found (\d+) raw", "  {} Native.load calls"),
+                   (r"^\[INFO\] total (.+) hits: (\d+)", "  {0} hits: {1}"),
+                   (r"^There are (\d+) classes over all", "  {} classes"),
+                   (r"^Now we start to analyze called native methods", "  following the calls from every method"),
+                   (r"^Count of visited methods: (\d+)", "  {} methods visited"),
+                   (r"^Count of called native methods: (\d+)", "  {} native methods called"),
+                   tick=(r"^\[ \* Find a native method \* \]", "  {} native calls so far")))
     hits = lambda f: sum(1 for l in open(outs / f) if " | " in l and not l.startswith("Format:")) if (outs / f).is_file() else 0
     print(f"      {nlines(outs / 'native_methods.txt')} native methods; "
           f"{hits('jna_hits.txt')} JNA, {hits('jnr_ffi_hits.txt')} JNR-FFI, {hits('ffi_hits.txt')} FFM bindings")
 
     step(3, "map native methods to C functions (start functions per library)")
-    run(["bash", "scripts/prepare_native_mapping.sh"], ws / "mapping.log", cwd=ws, env=env)
+    run(["bash", "scripts/prepare_native_mapping.sh"], ws / "mapping.log", cwd=ws, env=env,
+        label="scripts/prepare_native_mapping.sh: JNI symbols and RegisterNatives tables of the libraries",
+        show=shown((r"^\s+([123]/3) (.+)", "{0} {1}"),
+                   (r"^INFO: Built JNI map with (\d+) unique", "    {} Java_ symbols in the libraries"),
+                   (r"^\s+bindings:\s+(\d+)", "    {} RegisterNatives bindings in the libraries"),
+                   (r"^\s+Wrote (\d+) mappings to .*jvm_dynamic_mapping", "    {} RegisterNatives entries of libjvm, libjava and Netty"),
+                   (r"^INFO: Classifying (\d+) methods", "    classifying {} native methods"),
+                   (r"^Resolved:\s+(\d+)\s+\((\d+%)\)", "    resolved {0} ({1})"),
+                   (r"^NOT_FOUND_IN_LIBS:\s+(\d+)", "    not in the libraries: {}"),
+                   (r"^Wrote combined: final.txt\s+\(libs=(\d+), methods=(\d+)\)", "    start functions: {1} in {0} libraries")))
     # as stage 6 of the run, after the JNI mapping: the libraries a copied library needs (added
     # from the container) and SONAME links; the JNA/FFI analysis (stage 8) sees both
     deps = ws / "Dataset_symbolized" / f"LIBS_{img}" / "_container_deps"
@@ -219,10 +306,19 @@ def whitelist(img, run_container=True):
             if not (libs / f.name).exists():
                 shutil.copy2(f, libs / f.name)
     shutil.rmtree(ws / "Dataset_symbolized", ignore_errors=True)
-    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws)
+    if deps.is_dir():
+        say(f"> {sum(1 for _ in deps.iterdir())} libraries the copied ones need, added from the container")
+    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws, label="scripts/relink_sonames.sh",
+        show=shown((r"^Created (\d+) symlink\(s\), (\d+) already", "SONAME links: {0} created, {1} present")))
     run([sys.executable, "scripts/analyse_jna_ffi.py", "--libs-dir", str(libs), "--outputs-dir", str(outs)],
-        ws / "jna_ffi.log", cwd=ws, env=env, check=False)
+        ws / "jna_ffi.log", cwd=ws, env=env, check=False,
+        label="scripts/analyse_jna_ffi.py: JNA, JNR-FFI and FFM symbols to their libraries",
+        show=shown((r"^Bindings: (.+)", "{}"),
+                   (r"^(\d+) symbol\(s\) had an unresolved library", "{} symbols without a library to analyse"),
+                   (r"^  (\S+)\s+-> (\S+)$", "{0} -> {1}")))
     manual = fold_manual_mappings(shipped, outs, img, table)
+    if manual:
+        say(f"> manual mappings: {manual} start functions added")
     tags = re.findall(r"\[([A-Z_]+)\]$", (outs / "mapped_method_syscalls.txt").read_text(), re.M)
     print(f"      {len(tags)} native methods mapped ("
           + ", ".join(f"{t} {tags.count(t)}" for t in sorted(set(tags), key=lambda t: -tags.count(t)))
@@ -231,12 +327,14 @@ def whitelist(img, run_container=True):
 
     step(4, "syscalls from SysPart's shipped call graphs")
     run([sys.executable, str(ART / "tools" / "whitelist_from_callgraphs.py"), img, str(shipped / "Binary_Analysis"),
-         str(ws)], ws / "callgraphs.log")
+         str(ws)], ws / "callgraphs.log", label="tools/whitelist_from_callgraphs.py: each call graph from its start functions",
+        show=shown((r"^\[\d+/\d+\] ", None)))
     print("      " + replay_summary(ws / "callgraphs.log"))
     shutil.copy(ws / "static_report.tsv", out / "report.tsv")
 
     step(5, "syscall sets and seccomp profile")
-    run([sys.executable, "scripts/merge_all_syscalls.py", img], ws / "merge.log", cwd=ws, env=env, check=False)
+    run([sys.executable, "scripts/merge_all_syscalls.py", img], ws / "merge.log", cwd=ws, env=env, check=False,
+        label="scripts/merge_all_syscalls.py", show=shown((r"^STEP \d+: (.+)", "{}")))
     prof = ws / f"syscalls_output_{img}" / f"{img}.json"
     if not prof.is_file():
         sys.exit(f"no profile written; see {ws / 'merge.log'}")
@@ -274,7 +372,11 @@ def whitelist(img, run_container=True):
     else:
         log = out / "seccomp_runtime_test.log"
         run(["bash", str(ART / "tools" / "check_profile.sh"), img, str(out / f"{img}.json"), str(log)],
-            ws / "check_profile.log", check=False)
+            ws / "check_profile.log", check=False, follow=log,
+            label="tools/check_profile.sh: the container once without and once with the profile",
+            show=shown((r"^---- (baseline \(no profile\)|with seccomp profile) ----", "{}"),
+                       (r"^((baseline_)?(ready_after|ready|state|probe|eperm_lines)|state_after_\d+s)=", None),
+                       (r"^(Status|Digest): ", None)))
         kv = dict(l.split("=", 1) for l in log.read_text().splitlines() if "=" in l and " " not in l.split("=", 1)[0]) \
             if log.is_file() else {}
         if "RESULT" not in kv:
@@ -361,7 +463,9 @@ def table_column(img, ws, table, out):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         sys.exit(__doc__)
-    imgs = [a for a in sys.argv[1:] if a != "--no-run"]
+    global VERBOSE
+    VERBOSE = "-v" in sys.argv[1:]
+    imgs = [a for a in sys.argv[1:] if a not in ("--no-run", "-v")]
     if imgs == ["all"]:
         imgs = sorted(p.parent.parent.name for t, s in TABLES for p in (t / s).glob("*/dataset/Dataset.tar.xz.part00"))
     for img in imgs:

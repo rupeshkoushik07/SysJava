@@ -68,7 +68,10 @@ def main():
         if ".so" in name:
             mapped[name] = Path(f)
 
-    for d in sorted(p.parent for p in shipped.rglob("callgraph.json*")):
+    graphs = sorted(p.parent for p in shipped.rglob("callgraph.json*"))
+    kinds = {f"syscalls_output_{img}": "library", f"syscalls_BIN_{img}": "executable",
+             f"syscalls_unanalysed_{img}": "fallback library", "jna_ffi_analysis": "JNA/FFI library"}
+    for i, d in enumerate(graphs, 1):
         rel = d.relative_to(shipped)
         out = ws / rel
         top = rel.parts[0]
@@ -82,10 +85,12 @@ def main():
         else:
             starts = None
         if starts is None:
+            print(f"[{i}/{len(graphs)}] {kinds.get(rel.parts[0], rel.parts[0])} {d.name}: not mapped in this run", flush=True)
             report.append(("not_mapped_in_rerun", str(rel), "left out"))
             continue
         code = subprocess.run([sys.executable, str(REPLAY), str(d), str(starts), str(out)]).returncode
         n = len((out / "syscalls.txt").read_text().split()) if (out / "syscalls.txt").is_file() else 0
+        print(f"[{i}/{len(graphs)}] {kinds.get(rel.parts[0], rel.parts[0])} {d.name}: {n} syscalls", flush=True)
         if code == 2:
             # Starts the original run also had but SysPart did not know (not in
             # its function list) were skipped there too; only others are gaps.
