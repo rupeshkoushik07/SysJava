@@ -26,8 +26,8 @@ Digests: `../docker_images/IMAGES.md`.
   `TABLE_ONLY=1 ./reproduce.sh` regenerates Table III from `results/` and compares it.
 * `manual_mapping/`: the other inputs of Table III: natives whose library the image
   does not ship, mapped after supplying the library (`PROVENANCE.tsv`, `<image>/mapping/`),
-  natives no library implements (`<image>/dead_rta.txt`), and the classification
-  rules (`notfound_search/classify_rta.py`).
+  and the classification of the remaining natives (`notfound_search/classify_rta.py`,
+  `classification_rta.tsv`).
 * `scripts/`: the pipeline scripts; `runc.txt`: the runtime syscall set.
 
 ## Reproduce
