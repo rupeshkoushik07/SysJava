@@ -1,4 +1,5 @@
 accept
+accept4
 access
 bind
 brk
@@ -14,6 +15,11 @@ connect
 dup
 dup2
 dup3
+epoll_create
+epoll_create1
+epoll_ctl
+epoll_wait
+eventfd2
 execve
 exit
 exit_group
@@ -28,6 +34,7 @@ getegid
 geteuid
 getgid
 getgroups
+getpeername
 getpid
 getpriority
 getrandom
@@ -73,6 +80,8 @@ sched_setaffinity
 sched_setscheduler
 sched_yield
 sendfile
+sendmmsg
+sendmsg
 sendto
 set_robust_list
 setpriority
@@ -84,6 +93,7 @@ shmget
 shutdown
 sigaltstack
 socket
+splice
 statfs
 symlink
 sysinfo

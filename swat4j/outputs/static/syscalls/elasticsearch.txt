@@ -18,10 +18,8 @@ execve
 exit
 exit_group
 faccessat
-fchdir
 fchmod
 fcntl
-ftruncate
 futex
 getcwd
 getdents64
@@ -38,7 +36,6 @@ getsockopt
 gettid
 getuid
 ioctl
-kill
 link
 listen
 lseek

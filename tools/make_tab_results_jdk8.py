@@ -7,15 +7,18 @@ JDK 8 images (Final_results_JDK8/<app>-jdk8-buster). Writes <out>.tex and <out>.
   SysJava rows              mapper tags in mapped_method_syscalls.txt (same rules as tab:latest):
                             Static + Partial + JNI Dynamic + JVM + JFR/Netty = SysJava Resolved;
                             Resolved + Platform/Intrinsic + Not Found = JNI Total Natives
-  SWAT4J rows               swat4j_mapping.py on the same native_methods.txt and image libraries
-                            (swat4j/jdk8_debian10/mapping/<t>/), counted by audit_native_mapping.py
+  SWAT4J rows               SWAT4J's own JNI mapping of the native methods its own JTracer finds, with its
+                            repository's JNI_thirdparty/ libraries as in the original setup
+                            (swat4j/outputs/mapping/<app>.tsv,
+                            count_own_mapping.py); NOT SysJava's native_methods.txt (decision 2026-11-09)
   Java Lib Syscalls         library_syscalls.txt U syscalls of the JNA/JNR-bound libraries (libraries
                             bound only by false FFM hits are left out: JDK 8 has no FFM API)
   Container Binary          binary_syscalls.txt U extra_components/*/syscalls.txt (ES ML controller)
   Go Whitelist (Delta)      runc.txt entries not in the two rows above
   Unmapped Lib (Delta)      unanalysed_syscalls.txt entries not in any row above
   Total Syscalls            union of the rows; checked against the generated profile
-  SWAT4J Java Lib           SWAT4J static allowlist (JTracer + binary_analyser.py, unmodified SWAT4J)
+  SWAT4J Java Lib           SWAT4J static allowlist (JTracer + binary_analyser.py, unmodified SWAT4J, repository
+                            libraries: swat4j/outputs/static/syscalls/)
   Dynamic capture           sysdig capture (Dynamic_Analysis/sysdig_outputs_<t>/): distinct .so paths
                             opened, distinct executed binaries, distinct JARs opened; libraries with
                             mapped natives that SysPart analysed (syscalls_output_<t>/<lib>/)
@@ -28,7 +31,7 @@ import csv, glob, json, os, re, sys
 ART = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES = os.environ.get("RESULTS", ART + "/2_swat4j_vs_sysjava/sysjava_results")
 SWO = os.environ.get("SWAT4J_OUTPUTS", ART + "/swat4j/outputs")
-SW, SWD = SWO + "/static/syscalls", SWO + "/dynamic"
+SW, SWM, SWD = SWO + "/static/syscalls", SWO + "/mapping", SWO + "/dynamic"
 RUNC = ART + "/2_swat4j_vs_sysjava/runc.txt"
 UNAV = ART + "/2_swat4j_vs_sysjava/manual_mapping"
 COLS = [("zookeeper_3.4.14", "zookeeper", "Zookeeper", "3.4.14"), ("tomcat_7.0", "tomcat", "Tomcat", "7.0"),
@@ -60,15 +63,15 @@ def tags_of(path):
 
 LABELS = ["Native Method Resolution", "JNI Total Natives", "SysJava Resolved", "JNI Static (Java\\_*)",
           "Partial (\\_1/\\$/\\_\\_)", "JNI Dynamic (RegisterNatives)", "JVM", "JFR/Netty", "Platform / Intrinsic",
-          "Not Found", "SWAT4J Resolved", "SWAT4J JNI Static (Java\\_*)", "JNI Partial/Heuristic", "JVM Source Code",
+          "Not Found", "SWAT4J Natives Found (JTracer)", "SWAT4J Resolved", "SWAT4J JNI Static (Java\\_*)", "JNI Partial/Heuristic", "JVM Source Code",
           "Not Found ", "Syscall Allowlist (SysJava only)", "Java Lib Syscalls", "Container Binary Syscalls",
           "Go Whitelist ($\\Delta$)", "Unmapped Lib Syscalls ($\\Delta$)", "Total Syscalls",
           "SWAT4J Syscall Comparison", "SWAT4J Java Lib Syscalls", "SWAT4J Dynamic Syscalls",
           "SWAT4J Total (Static $\\cup$ Dynamic)", "SysJava $\\cap$ SWAT4J", "SysJava only", "SWAT4J only",
           "Dynamic Capture Artefacts", "Libraries Loaded",
           "Binaries Loaded", "JARs Loaded", "Directly Mapped Libraries Analysed"]
-SECTIONS = {0, 15, 21, 28}
-INDENT = {3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14}
+SECTIONS = {0, 16, 22, 29}
+INDENT = {3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15}
 
 V, CHECK = {}, {}
 for folder, app, *_ in COLS:
@@ -80,9 +83,9 @@ for folder, app, *_ in COLS:
     sw_java = names_in(f"{SW}/{app}.txt")
     sw_dyn = names_in(f"{SWD}/{app}_result.txt")
     sw_all = sw_java | sw_dyn
-    col[22] = len(sw_java) if sw_java else "pending"
-    col[23] = len(sw_dyn) if sw_dyn else "pending"
-    col[24] = len(sw_all) if sw_java and sw_dyn else "pending"
+    col[23] = len(sw_java) if sw_java else "pending"
+    col[24] = len(sw_dyn) if sw_dyn else "pending"
+    col[25] = len(sw_all) if sw_java and sw_dyn else "pending"
     if not done or t not in aud:
         V[t] = col; continue
     a = aud[t]
@@ -101,7 +104,10 @@ for folder, app, *_ in COLS:
     assert resolved == len(tags), (t, parts, len(tags))
     total_n = int(a["denominator"])
     platform = int(a["et_platform"]) + int(a["et_intrinsic"]) + len(names_in(f"{UNAV}/{t}/platform_extra.txt"))
-    sw = [int(a["sw_mapped"]), int(a["sw_jni_static"]), int(a["sw_netty_heuristic"]), int(a["sw_jvm_source"]), int(a["sw_not_found"])]
+    # SWAT4J: its own JTracer list, one row per method with the rule that mapped it (count_own_mapping.py)
+    st = [l.rstrip("\n").split("\t")[1] for l in list(open(f"{SWM}/{app}.tsv"))[1:]]
+    c = lambda k: st.count(k)
+    sw = [len(st), len(st) - c("UNMAPPED"), c("Java_XXX"), c("NETTY_HEURISTIC"), c("JVM_XXX"), c("UNMAPPED")]
 
     # false FFM hits (no FFM API on JDK 8): their libraries' syscalls are not counted
     false_syms = set()
@@ -139,7 +145,7 @@ for folder, app, *_ in COLS:
     mapped_libs = len(glob.glob(f"{b}/syscalls_output_{t}/*/"))
 
     col = [None, total_n, resolved, *parts, platform, total_n - resolved - platform, *sw, None,
-           len(java), len(binary), len(runc), len(unan), len(rows), None, col[22], col[23], col[24],
+           len(java), len(binary), len(runc), len(unan), len(rows), None, col[23], col[24], col[25],
            len(rows & sw_all), len(rows - sw_all), len(sw_all - rows), None,
            len(libs), len(bins), len(jars), mapped_libs]
     V[t] = col
@@ -161,8 +167,9 @@ for k, lab in enumerate(LABELS):
     tex.append(("\\quad " if k in INDENT else "") + lab.strip() + " & " + " & ".join(vals) + " \\\\")
     plain = lab.strip().replace("\\_", "_").replace("\\$", "$").replace("$\\Delta$", "Δ").replace("$\\cup$", "∪").replace("$\\cap$", "∩")
     md.append(f"| {'↳ ' if k in INDENT else ''}{plain} | " + " | ".join(vals) + " |")
-NOTE = ("Note: SysJava Resolved + Platform / Intrinsic + Not Found = JNI Total Natives; SWAT4J Resolved + Not Found + "
-        "its intrinsic natives = JNI Total Natives (SWAT4J's mapping run on the same native methods and image libraries). "
+NOTE = ("Note: SysJava Resolved + Platform / Intrinsic + Not Found = JNI Total Natives; SWAT4J Resolved + Not Found = "
+        "SWAT4J Natives Found: SWAT4J maps the native methods its own bytecode analysis (JTracer) finds, by name, "
+        "with the third-party JNI libraries shipped in its repository (it never reads the Hadoop and RocksDB ones). "
         "Java Lib $\\cup$ Container Binary + Go Whitelist ($\\Delta$, runc entries not already counted) + Unmapped Lib "
         "($\\Delta$, syscalls of loaded libraries without a Java binding, not already counted) = Total Syscalls. "
         "Native methods are found on an RTA call graph (virtual and interface calls dispatched to the overrides of every "

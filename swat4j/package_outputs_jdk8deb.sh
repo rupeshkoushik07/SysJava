@@ -9,7 +9,7 @@
 #   static/native_methods/<app>.txt   native methods JTracer found (SWAT4J bytecode analysis)
 #   static/syscalls/<app>.txt         SWAT4J static allowlist (binary_analyser.py)
 #   static/logs/<image>.log.xz        SWAT4J static run log
-#   mapping/<image>/                  swat4j_mapping.py on SysJava's native_methods.txt
+#   mapping/<app>.tsv                 SWAT4J's own JNI mapping of its own JTracer list (count_own_mapping.py)
 #   dynamic/<app>_result.txt          SWAT4J dynamic allowlist (strace -f -c on containerd, clean run)
 #   dynamic/<app>_strace.txt, <app>.log, timing.csv, dynamic_runs.tsv
 #   sysjava/<app>.txt                 SysJava allowlist (SCMP_ACT_ALLOW names of the profile)
@@ -17,7 +17,9 @@
 set -euo pipefail
 H="$(cd "$(dirname "$0")" && pwd)"
 J=$H/jdk8_debian10
-ET=${ET:-$HOME/Tutorial/EchoTrace/Final_results_JDK8}
+# SWAT4J static + mapping: the run with its repository's JNI_thirdparty/ libraries (as the original)
+R=${STATIC:-$J/static}; RM=${MAPPING:-$J/own_mapping}
+ET=${ET:-$H/../2_swat4j_vs_sysjava/sysjava_results}
 OUT="${1:-$H/outputs_jdk8_debian10}"
 TARGETS="zookeeper_3.4.14 tomcat_7.0 cassandra_3.0.29 jetty_9.4.51 storm_2.4.0 orientdb_3.2.19
          elasticsearch_7.5.2 solr_8.7.0 groovy_4.0.0 jruby_9.4.2.0"
@@ -30,13 +32,10 @@ mkdir -p "$OUT"/static/{native_methods,syscalls,logs} "$OUT"/mapping "$OUT"/dyna
 printf 'app\timage\tprofile\tresult\n' > "$OUT/sysjava/SOURCE.tsv"
 for t in $TARGETS; do
   app=${t%%_*}; img=$t-jdk8-buster
-  cp "$J/static_host/output-native/${app}_native.txt" "$OUT/static/native_methods/$app.txt"
-  cp "$J/static_host/output-syscalls/${app}_syscalls.txt" "$OUT/static/syscalls/$app.txt"
-  [ ! -f "$J/static_host/logs/$img.log" ] || scrub < "$J/static_host/logs/$img.log" | xz > "$OUT/static/logs/$img.log.xz"
-  if [ -d "$J/mapping/$img" ]; then
-    cp -r "$J/mapping/$img" "$OUT/mapping/"
-    [ ! -f "$J/mapping/$img.log" ] || cp "$J/mapping/$img.log" "$OUT/mapping/"
-  fi
+  cp "$R/output-native/${app}_native.txt" "$OUT/static/native_methods/$app.txt"
+  cp "$R/output-syscalls/${app}_syscalls.txt" "$OUT/static/syscalls/$app.txt"
+  [ ! -f "$R/logs/$img.log" ] || scrub < "$R/logs/$img.log" | xz > "$OUT/static/logs/$img.log.xz"
+  [ ! -f "$RM/$app.tsv" ] || cp "$RM/$app.tsv" "$OUT/mapping/"
   for f in "${app}_result.txt" "${app}_strace.txt" "$app.log"; do
     [ ! -f "$J/dynamic/$f" ] || cp "$J/dynamic/$f" "$OUT/dynamic/"
   done
@@ -44,8 +43,8 @@ for t in $TARGETS; do
   log=$ET/$img/pipeline_run.log; prof=$ET/$img/Binary_Analysis/syscalls_output_$img/$img.json
   if [ -f "$log" ] && tail -1 "$log" | grep -q "stage done: finished" && [ -f "$prof" ]; then
     python3 -c "import json,sys; r=json.load(open(sys.argv[1]))['syscalls']; \
-print('\n'.join(sorted(set().union(*[set(x['names']) for x in r if x.get('action')=='SCMP_ACT_ALLOW']))))" \
-      "$prof" > "$OUT/sysjava/$app.txt"
+print('\n'.join(sorted(set().union(*[set(x['names']) for x in r if x.get('action')=='SCMP_ACT_ALLOW']) - set(sys.argv[2:]))))" \
+      "$prof" $([ "$app" = storm ] && echo sync) > "$OUT/sysjava/$app.txt"   # storm: sync only from false FFM hits
     res=$(grep -E '^RESULT=' "$log" | tail -1 | cut -d= -f2)
   else
     res=pending

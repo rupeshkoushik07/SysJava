@@ -20,11 +20,12 @@ build script and image IDs: [`../docker_images/`](../docker_images/README.md).
 
 ## Files
 
-* `../swat4j/outputs/`: SWAT4J's static and dynamic allowlists and SysJava's
-  allowlists for the ten images; `python3 ../swat4j/show_results.py ../swat4j/outputs`
-  prints the table.
-* `tables/tab_results.{tex,pdf,md}`: the table; `tables/mapping_audit_per_app.csv`:
-  the native-method mapping counts it reads (SysJava and SWAT4J);
+* `../swat4j/outputs/`: SWAT4J's static and dynamic allowlists, the native methods
+  it found and how it mapped them, and SysJava's allowlists for the ten images;
+  `python3 ../swat4j/show_results.py ../swat4j/outputs` prints the table.
+* `tables/tab_results.{tex,pdf,md}`: the table. Its SysJava mapping rows come from
+  `tables/mapping_audit_per_app.csv`; its SWAT4J rows from `../swat4j/outputs/`
+  (static allowlist, `mapping/<app>.tsv`, dynamic allowlist);
   `tables/storm_no_false_ffm/`: Storm under its profile without `sync` (172 syscalls,
   PASS), the only syscall of false FFM hits.
 * `sysjava_results/<image>/`: full SysJava results. All ten pass under their profiles.
@@ -45,8 +46,10 @@ SKIP_SYSJAVA=1 ./reproduce.sh              # SWAT4J only
 SKIP_SWAT4J=1 ./reproduce.sh               # SysJava only
 ```
 
-SWAT4J (commit `6929d66`) is run unmodified; its dynamic analysis traces
-containerd with `strace`, so it needs sudo. See [`../swat4j/README.md`](../swat4j/README.md).
+SWAT4J (commit `6929d66`) is run unmodified: it finds its own native methods and
+maps those, with the third-party JNI libraries of its own repository as the
+original setup did. Its static and dynamic runs need sudo, and its static count
+may differ by up to 3 between identical runs. See [`../swat4j/README.md`](../swat4j/README.md).
 
 `runc_host_1.3.4_additions.txt` adds four syscalls issued by the host's runc
 1.3.4 (`openat2`, `close_range`, `faccessat2`, `getppid`).

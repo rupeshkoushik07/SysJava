@@ -13,7 +13,6 @@ Rules (same as the paper's table):
 """
 import csv
 import os
-import re
 import sys
 
 APPS = [("zookeeper", "Zookeeper", "3.4.14"), ("tomcat", "Tomcat", "7.0"),
@@ -22,7 +21,9 @@ APPS = [("zookeeper", "Zookeeper", "3.4.14"), ("tomcat", "Tomcat", "7.0"),
         ("elasticsearch", "Elasticsearch", "7.5.2"), ("solr", "Solr", "8.7.0"),
         ("groovy", "Groovy", "4.0.0"), ("jruby", "JRuby", "9.4.2.0")]
 ALIASES = {"pread": "pread64", "pwrite": "pwrite64"}
-NOTES = {"elasticsearch": "SysPart could not analyse the ML `controller` binary; its syscalls come "
+NOTES = {"storm": "sync is left out of SysJava's profile: it comes only from FFM calls inferred from Clojure class "
+                  "names (JDK 8 has no FFM API); Storm runs under the 172-syscall profile.",
+         "elasticsearch": "SysPart could not analyse the ML `controller` binary; its syscalls come "
                           "from the functions it imports (sysjava/elasticsearch_ml_component_imports.md)."}
 
 
@@ -40,15 +41,13 @@ def read_tsv(path, delimiter="\t"):
         return list(csv.DictReader(f, delimiter=delimiter))
 
 
-def mapping_summary(path):
-    """Counts from swat4j_summary.txt: total, mapped and each strategy line."""
-    out = {}
+def mapping_counts(path):
+    """Strategy counts from mapping/<app>.tsv (one row per native method SWAT4J's JTracer found)."""
     if not os.path.exists(path):
-        return out
-    for line in open(path):
-        m = re.match(r"\s*([A-Za-z_ ]+?):?\s+(\d+)", line)
-        if m:
-            out[m.group(1).strip()] = int(m.group(2))
+        return {}
+    rows = read_tsv(path)
+    out = {s: sum(r["strategy"] == s for r in rows) for s in ("Java_XXX", "JVM_XXX", "NETTY_HEURISTIC", "UNMAPPED")}
+    out["MAPPED"] = len(rows) - out["UNMAPPED"]
     return out
 
 
@@ -68,17 +67,12 @@ def main():
         st = read_list(os.path.join(d, "static", "syscalls", f"{app}.txt"))
         dy = read_list(os.path.join(d, "dynamic", f"{app}_result.txt")) if clean.get(app) else None
         nat = read_list(os.path.join(d, "static", "native_methods", f"{app}.txt"))
-        img = source.get(app, {}).get("image", f"{app}_{ver}-jdk8-buster")
-        mp = mapping_summary(os.path.join(d, "mapping", img, "swat4j_summary.txt"))
-        if mp:  # a strategy the summary does not list mapped nothing
-            for k in ("Java_XXX", "JVM_XXX", "NETTY_HEURISTIC", "Intrinsic", "Truly unmapped"):
-                mp.setdefault(k, 0)
+        mp = mapping_counts(os.path.join(d, "mapping", f"{app}.tsv"))
         full = st | dy if st is not None and dy is not None else None
         c = dict(A=sj, B=full, static=st, dynamic=dy, natives=nat,
                  runtime=source.get(app, {}).get("result"), startup=seconds.get(app) if dy is not None else None,
-                 total=mp.get("Total native methods"), mapped=mp.get("MAPPED"),
-                 jni=mp.get("Java_XXX"), jvm=mp.get("JVM_XXX"), heur=mp.get("NETTY_HEURISTIC"),
-                 intrinsic=mp.get("Intrinsic"), unmapped=mp.get("Truly unmapped"))
+                 mapped=mp.get("MAPPED"), jni=mp.get("Java_XXX"), jvm=mp.get("JVM_XXX"),
+                 heur=mp.get("NETTY_HEURISTIC"), unmapped=mp.get("UNMAPPED"))
         if sj is not None and full is not None:
             c.update(both=sj & full, only_a=sj - full, only_b=full - sj)
         cols.append(c)
@@ -94,14 +88,12 @@ def main():
             ("  SWAT4J dynamic (containerd startup trace)", "dynamic"),
             ("A and B", "both"), ("only A", "only_a"), ("only B", "only_b"),
             ("SysJava runtime check", "runtime"), ("Startup traced (s)", "startup"),
-            ("Native methods found by JTracer", "natives"),
-            ("Native methods given to SWAT4J's mapper", "total"), ("  mapped", "mapped"),
-            ("    JNI static (Java_XXX)", "jni"), ("    JVM_XXX", "jvm"),
-            ("    name heuristic (Netty)", "heur"), ("  intrinsic", "intrinsic"),
-            ("  not found", "unmapped")]
+            ("Native methods SWAT4J finds (JTracer)", "natives"), ("  mapped by SWAT4J", "mapped"),
+            ("    Java_* symbol name", "jni"), ("    JVM_* table", "jvm"),
+            ("    Netty name rule", "heur"), ("  not mapped", "unmapped")]
     md = ["| | " + " | ".join(f"{l} {ver}" for _, l, ver in APPS) + " |", "|---" * (len(APPS) + 1) + "|"]
     for name, k in rows:
-        vals = [v(c, k) + ("<sup>a</sup>" if k == "A" and app in NOTES else "")
+        vals = [v(c, k) + (f"<sup>{chr(97 + list(NOTES).index(app))}</sup>" if k == "A" and app in NOTES else "")
                 for c, (app, _, _) in zip(cols, APPS)]
         md.append(f"| {name} | " + " | ".join(vals) + " |")
     print("\n".join(md))

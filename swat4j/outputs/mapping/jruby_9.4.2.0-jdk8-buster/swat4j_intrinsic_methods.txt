@@ -1,7 +1,0 @@
-java.lang.invoke.MethodHandleNatives.getConstant
-java.lang.invoke.MethodHandleNatives.registerNatives
-jdk.jfr.internal.JVM.getClassId
-jdk.jfr.internal.JVM.registerNatives
-jdk.jfr.internal.JVM.setCompressedIntegers
-jdk.jfr.internal.JVM.shouldLog
-sun.misc.Perf.createLong

@@ -1,0 +1,1530 @@
+method	strategy	symbol	library
+org.rocksdb.OptimisticTransactionOptions.setSetSnapshot	UNMAPPED		
+org.rocksdb.ComparatorOptions.disposeInternal	UNMAPPED		
+org.rocksdb.ReadOptions.setTailing	UNMAPPED		
+org.rocksdb.WriteBatch.hasBeginPrepare	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.levelCompactionDynamicLevelBytes	UNMAPPED		
+org.rocksdb.DBOptions.setBytesPerSync	UNMAPPED		
+io.netty.channel.epoll.Native.timerFd	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.maxBytesForLevelMultiplierAdditional	UNMAPPED		
+org.rocksdb.Transaction.prepare	UNMAPPED		
+org.rocksdb.WriteOptions.setDisableWAL	UNMAPPED		
+sun.misc.Unsafe.getBoolean	UNMAPPED		
+org.rocksdb.Options.targetFileSizeBase	UNMAPPED		
+org.rocksdb.Statistics.statsLevel	UNMAPPED		
+io.netty.channel.unix.Socket.newSocketStreamFd	NETTY_HEURISTIC	netty_unix_socket_newSocketStreamFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.tcpMd5SigMaxKeyLen	NETTY_HEURISTIC	netty_epoll_native_tcpMd5SigMaxKeyLen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.SstFileManager.newSstFileManager	UNMAPPED		
+org.rocksdb.TransactionDBOptions.getDefaultLockTimeout	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.ssizeMax	NETTY_HEURISTIC	netty_epoll_native_ssizeMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.epollCtlAdd0	NETTY_HEURISTIC	netty_epoll_native_epollCtlAdd0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.levelZeroFileNumCompactionTrigger	UNMAPPED		
+org.rocksdb.Options.level0FileNumCompactionTrigger	UNMAPPED		
+org.rocksdb.SstFileManager.getMaxTrashDBRatio	UNMAPPED		
+org.rocksdb.Options.setInfoLogLevel	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompactionFilterFactoryHandle	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setOptimizeFiltersForHits	UNMAPPED		
+org.rocksdb.EnvOptions.setWritableFileMaxBufferSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.offsetofEpollData	UNMAPPED		
+org.rocksdb.Options.setLevelZeroFileNumCompactionTrigger	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.isReuseAddress	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompressionPerLevel	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setBottommostLevelCompaction	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpKeepIntvl	UNMAPPED		
+org.rocksdb.BackupableDBOptions.sync	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.disposeInternal	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setMinMergeWidth	UNMAPPED		
+org.rocksdb.Transaction.delete	UNMAPPED		
+org.rocksdb.EnvOptions.setUseDirectWrites	UNMAPPED		
+io.netty.channel.epoll.Native.epollCreate	NETTY_HEURISTIC	netty_epoll_native_epollCreate	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.SstFileWriter.open	UNMAPPED		
+org.rocksdb.UInt64AddOperator.newSharedUInt64AddOperator	UNMAPPED		
+io.netty.channel.unix.Socket.setReusePort	NETTY_HEURISTIC	netty_epoll_native_setReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.storeFence	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferSize	UNMAPPED		
+org.rocksdb.Logger.disposeInternal	UNMAPPED		
+org.rocksdb.DBOptions.setUseDirectIoForFlushAndCompaction	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.timerFd	UNMAPPED		
+java.lang.ClassLoader$NativeLibrary.load	UNMAPPED		
+org.rocksdb.DBOptions.maxBackgroundCompactions	UNMAPPED		
+sun.misc.Unsafe.copyMemory	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setLevel0SlowdownWritesTrigger	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.ttl	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpInfo	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.read	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.writeBufferSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.eventFdRead	UNMAPPED		
+org.rocksdb.EnvOptions.disposeInternal	UNMAPPED		
+org.rocksdb.DirectSlice.clear0	UNMAPPED		
+org.rocksdb.ReadOptions.newReadOptions	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.tcpMd5SigMaxKeyLen	UNMAPPED		
+jdk.jfr.internal.JVM.destroyJFR	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.newColumnFamilyOptions	UNMAPPED		
+org.rocksdb.Options.setMemTableFactory	UNMAPPED		
+org.rocksdb.RocksDB.releaseSnapshot	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxBytesForLevelBase	UNMAPPED		
+org.rocksdb.Transaction.singleDelete	UNMAPPED		
+org.rocksdb.Transaction.putUntracked	UNMAPPED		
+java.lang.UNIXProcess.forkAndExec	Java_XXX	java_lang_UNIXProcess_forkAndExec	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.useFixedLengthPrefixExtractor	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.newCompactionOptionsFIFO	UNMAPPED		
+org.rocksdb.DBOptions.isFdCloseOnExec	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setIpFreeBind	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.maxTableFilesSize	UNMAPPED		
+org.rocksdb.Options.setMaxManifestFileSize	UNMAPPED		
+sun.misc.Unsafe.putObjectVolatile	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.eventFdWrite	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.offsetofKEventFlags	UNMAPPED		
+org.rocksdb.AbstractCompactionFilterFactory.createNewCompactionFilterFactory0	UNMAPPED		
+sun.reflect.ConstantPool.getFloatAt0	Java_XXX	sun_reflect_ConstantPool_getFloatAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCrc	Java_XXX	java_util_zip_ZipFile_getEntryCrc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.CompactionOptionsUniversal.sizeRatio	UNMAPPED		
+org.rocksdb.Options.setComparatorHandle	UNMAPPED		
+org.rocksdb.Transaction.multiGetForUpdate	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setIpTransparent	UNMAPPED		
+org.rocksdb.Options.setTargetFileSizeBase	UNMAPPED		
+jdk.jfr.internal.JVM.setThreshold	UNMAPPED		
+org.rocksdb.Options.adviseRandomOnOpen	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.getPathBox	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_getPathBox	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Object.notify	JVM_XXX	JVM_MonitorNotify	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.CRC32.updateBytes	Java_XXX	java_util_zip_CRC32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Options.paranoidChecks	UNMAPPED		
+jdk.jfr.internal.JVM.newEventWriter	UNMAPPED		
+org.rocksdb.EnvOptions.compactionReadaheadSize	UNMAPPED		
+org.rocksdb.TransactionOptions.setDeadlockDetectDepth	UNMAPPED		
+org.rocksdb.Options.logFileTimeToRoll	UNMAPPED		
+io.netty.channel.epoll.Native.sizeofEpollEvent	NETTY_HEURISTIC	netty_epoll_native_sizeofEpollEvent	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.connectDomainSocket	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.optimizeFiltersForHits	UNMAPPED		
+org.rocksdb.DBOptions.avoidFlushDuringShutdown	UNMAPPED		
+org.rocksdb.Options.setWalTtlSeconds	UNMAPPED		
+org.rocksdb.Options.bytesPerSync	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpNotSentLowAt	UNMAPPED		
+org.rocksdb.SstFileWriter.delete	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.splice0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.sendmmsg0	UNMAPPED		
+java.io.RandomAccessFile.read0	Java_XXX	java_io_RandomAccessFile_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ReadOptions.setManaged	UNMAPPED		
+org.rocksdb.WriteBatch.count0	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.level0SlowdownWritesTrigger	UNMAPPED		
+org.rocksdb.Options.setFailIfOptionsFileError	UNMAPPED		
+org.rocksdb.DBOptions.manifestPreallocationSize	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.disposeInternal	UNMAPPED		
+jdk.jfr.internal.JVM.setForceInstrumentation	UNMAPPED		
+org.rocksdb.Options.setTableCacheNumshardbits	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setAllowWriteStall	UNMAPPED		
+org.rocksdb.Options.recycleLogFileNum	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_setTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setMemtableHugePageSize	UNMAPPED		
+org.rocksdb.WriteBatch.hasSingleDelete	UNMAPPED		
+org.rocksdb.RocksIterator.seekToLast0	UNMAPPED		
+sun.misc.URLClassPath.getLookupCacheForClassLoader	Java_XXX	sun_misc_URLClassPath_getLookupCacheForClassLoader	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setCompressionOptions	UNMAPPED		
+org.rocksdb.Options.setEnv	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.seek0	UNMAPPED		
+org.rocksdb.RocksDB.getProperty0	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setBackupRateLimiter	UNMAPPED		
+org.rocksdb.TransactionDBOptions.newTransactionDBOptions	UNMAPPED		
+java.lang.System.mapLibraryName	Java_XXX	java_lang_System_mapLibraryName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.ObjectOutputStream.floatsToBytes	Java_XXX	java_io_ObjectOutputStream_floatsToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.sin	Java_XXX	java_lang_StrictMath_sin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.ClassLoader.resolveClass0	Java_XXX	java_lang_ClassLoader_resolveClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.optimizeLevelStyleCompaction	UNMAPPED		
+org.rocksdb.TransactionOptions.getMaxWriteBatchSize	UNMAPPED		
+sun.misc.Unsafe.getByte	UNMAPPED		
+org.rocksdb.Options.setParanoidChecks	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.setOutputAreaXYXY	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setOutputAreaXYXY	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Throwable.fillInStackTrace	Java_XXX	java_lang_Throwable_fillInStackTrace	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.BackupEngine.purgeOldBackups	UNMAPPED		
+org.rocksdb.DBOptions.compactionReadaheadSize	UNMAPPED		
+io.netty.channel.unix.Socket.connect	NETTY_HEURISTIC	netty_unix_socket_connect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.connect	UNMAPPED		
+org.rocksdb.RateLimiter.getTotalBytesThrough	UNMAPPED		
+org.rocksdb.ReadOptions.verifyChecksums	UNMAPPED		
+org.rocksdb.SstFileWriter.newSstFileWriter	UNMAPPED		
+sun.security.krb5.SCDynamicStoreConfig.getKerberosConfig	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.write	NETTY_HEURISTIC	netty_unix_filedescriptor_write	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.security.krb5.Config.getWindowsDirectory	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.sendTo	UNMAPPED		
+org.rocksdb.Slice.createNewSlice0	UNMAPPED		
+org.rocksdb.EnvOptions.fallocateWithKeepSize	UNMAPPED		
+org.rocksdb.Slice.createNewSlice1	UNMAPPED		
+org.rocksdb.DBOptions.disposeInternal	UNMAPPED		
+org.rocksdb.Options.optimizeForPointLookup	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.dispose	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_dispose	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+org.rocksdb.AbstractTransactionNotifier.disposeInternal	UNMAPPED		
+org.rocksdb.TransactionOptions.isSetSnapshot	UNMAPPED		
+org.rocksdb.DirectSlice.removePrefix0	UNMAPPED		
+org.rocksdb.Options.setMaxSubcompactions	UNMAPPED		
+org.rocksdb.Options.tableFactoryName	UNMAPPED		
+java.lang.reflect.Array.set	Java_XXX	java_lang_reflect_Array_set	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_setTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.kqueue.Native.sizeofKEvent	UNMAPPED		
+org.rocksdb.CompactRangeOptions.disposeInternal	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_getTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.allowFAllocate	UNMAPPED		
+org.rocksdb.BackupEngine.garbageCollect	UNMAPPED		
+org.rocksdb.CompressionOptions.maxDictBytes	UNMAPPED		
+org.rocksdb.Options.allowConcurrentMemtableWrite	UNMAPPED		
+org.rocksdb.DBOptions.optimizeForSmallDb	UNMAPPED		
+jdk.jfr.internal.JVM.setMethodSamplingInterval	UNMAPPED		
+sun.reflect.ConstantPool.getUTF8At0	Java_XXX	sun_reflect_ConstantPool_getUTF8At0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Float.intBitsToFloat	Java_XXX	java_lang_Float_intBitsToFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ReadOptions.totalOrderSeek	UNMAPPED		
+org.rocksdb.Options.setMaxSuccessiveMerges	UNMAPPED		
+org.rocksdb.RocksCallbackObject.disposeInternal	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setReportBgIoStats	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setTargetPathId	UNMAPPED		
+org.rocksdb.OptionsUtil.loadOptionsFromFile	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getPeerCredentials	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.getTrafficClass	UNMAPPED		
+org.rocksdb.EnvOptions.setBytesPerSync	UNMAPPED		
+org.rocksdb.Options.setMemtableHugePageSize	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.setMaxBytes	UNMAPPED		
+java.lang.Runtime.totalMemory	Java_XXX	java_lang_Runtime_totalMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setRowCache	UNMAPPED		
+org.rocksdb.DBOptions.setKeepLogFileNum	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.iterator1	UNMAPPED		
+org.rocksdb.DBOptions.errorIfExists	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.iterator0	UNMAPPED		
+java.lang.ClassLoader.findLoadedClass0	Java_XXX	java_lang_ClassLoader_findLoadedClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.setMaxTotalWalSize	UNMAPPED		
+org.rocksdb.WriteOptions.setNoSlowdown	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEPIPE	NETTY_HEURISTIC	netty_unix_errors_errnoEPIPE	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Transaction.getNumPuts	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.offsetofKEventFFlags	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setSizeRatio	UNMAPPED		
+org.rocksdb.DBOptions.setRateLimiter	UNMAPPED		
+java.io.RandomAccessFile.seek0	Java_XXX	java_io_RandomAccessFile_seek0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.setIncreaseParallelism	UNMAPPED		
+java.util.zip.ZipFile.freeEntry	Java_XXX	java_util_zip_ZipFile_freeEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Options.statistics	UNMAPPED		
+jdk.jfr.internal.JVM.getEventWriter	UNMAPPED		
+org.rocksdb.OptimisticTransactionOptions.setComparator	UNMAPPED		
+org.rocksdb.Transaction.setLockTimeout	UNMAPPED		
+java.net.NetworkInterface.isUp0	Java_XXX	java_net_NetworkInterface_isUp0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.Options.setLevelCompactionDynamicLevelBytes	UNMAPPED		
+org.rocksdb.DirectSlice.data0	UNMAPPED		
+org.rocksdb.SstFileManager.isMaxAllowedSpaceReachedIncludingCompactions	UNMAPPED		
+org.rocksdb.TransactionOptions.setDeadlockDetect	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setTargetFileSizeMultiplier	UNMAPPED		
+sun.misc.VM.latestUserDefinedLoader0	Java_XXX	sun_misc_VM_latestUserDefinedLoader0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.compactionPriority	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setIpRecvOrigDestAddr	UNMAPPED		
+org.rocksdb.BackupEngine.restoreDbFromLatestBackup	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.setErr0	Java_XXX	java_lang_System_setErr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.RocksDB.getLongProperty	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setIpFreeBind	NETTY_HEURISTIC	netty_epoll_native_setIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.invoke.MethodHandle.invokeExact	UNMAPPED		
+org.rocksdb.DBOptions.keepLogFileNum	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.recvFrom	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.deleteRange	UNMAPPED		
+java.lang.Thread.currentThread	JVM_XXX	JVM_CurrentThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.beginRecording	UNMAPPED		
+org.rocksdb.DBOptions.setMaxSubcompactions	UNMAPPED		
+org.rocksdb.BackupableDBOptions.backupLogFiles	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.numLevels	UNMAPPED		
+org.rocksdb.Options.walTtlSeconds	UNMAPPED		
+org.rocksdb.SstFileWriter.put	UNMAPPED		
+org.rocksdb.Slice.removePrefix0	UNMAPPED		
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.udsSunPathSize	UNMAPPED		
+io.netty.channel.unix.Socket.setReuseAddress	NETTY_HEURISTIC	netty_epoll_native_setReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setDisableAutoCompactions	UNMAPPED		
+org.rocksdb.Options.setLevelZeroStopWritesTrigger	UNMAPPED		
+org.rocksdb.ReadOptions.readaheadSize	UNMAPPED		
+org.rocksdb.Options.bottommostCompressionType	UNMAPPED		
+org.rocksdb.WriteBatch.iterate	UNMAPPED		
+org.rocksdb.CassandraCompactionFilter.createNewCassandraCompactionFilter0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.remoteAddress	UNMAPPED		
+org.rocksdb.TtlDB.open	UNMAPPED		
+java.lang.Class.getDeclaringClass0	JVM_XXX	JVM_GetDeclaringClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.BackupableDBOptions.setMaxBackgroundOperations	UNMAPPED		
+org.rocksdb.DBOptions.createMissingColumnFamilies	UNMAPPED		
+org.rocksdb.Transaction.enableIndexing	UNMAPPED		
+org.rocksdb.Options.setMaxBytesForLevelBase	UNMAPPED		
+org.rocksdb.Options.forceConsistencyChecks	UNMAPPED		
+org.rocksdb.RocksIterator.disposeInternal	UNMAPPED		
+jdk.jfr.internal.JVM.registerNatives	UNMAPPED		
+org.rocksdb.DBOptions.setAccessHintOnCompactionStart	UNMAPPED		
+org.rocksdb.Options.setInplaceUpdateNumLocks	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.addSegment	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_addSegment	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Class.getSigners	JVM_XXX	JVM_GetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.RocksDB.openROnly	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setArenaBlockSize	UNMAPPED		
+jdk.jfr.internal.JVM.storeMetadataDescriptor	UNMAPPED		
+java.io.RandomAccessFile.getFilePointer	Java_XXX	java_io_RandomAccessFile_getFilePointer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.memtableHugePageSize	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.allowGlobalSeqNo	UNMAPPED		
+org.rocksdb.TtlDB.openCF	UNMAPPED		
+org.rocksdb.DBOptions.setDeleteObsoleteFilesPeriodMicros	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.readAddress	UNMAPPED		
+jdk.jfr.internal.JVM.retransformClasses	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.bloomLocality	UNMAPPED		
+java.util.zip.Inflater.reset	Java_XXX	java_util_zip_Inflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.CompactionOptionsUniversal.maxMergeWidth	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingTcpFastopen	NETTY_HEURISTIC	netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.OptimisticTransactionDB.open	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.disableAutoCompactions	UNMAPPED		
+org.rocksdb.Options.writeBufferSize	UNMAPPED		
+java.lang.Class.forName0	Java_XXX	java_lang_Class_forName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.maxFileOpeningThreads	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpCork	UNMAPPED		
+org.rocksdb.DBOptions.accessHintOnCompactionStart	UNMAPPED		
+org.rocksdb.RateLimiter.getTotalRequests	UNMAPPED		
+jline.WindowsTerminal.setConsoleMode	UNMAPPED		
+io.netty.channel.unix.Buffer.addressSize0	UNMAPPED		
+org.rocksdb.SstFileManager.isMaxAllowedSpaceReached	UNMAPPED		
+org.rocksdb.ReadOptions.fillCache	UNMAPPED		
+org.rocksdb.Options.setCompactionPriority	UNMAPPED		
+org.rocksdb.Statistics.reset	UNMAPPED		
+io.netty.channel.unix.Socket.setSoLinger	NETTY_HEURISTIC	netty_unix_socket_setSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.setGlobalBufferCount	UNMAPPED		
+org.rocksdb.CompactRangeOptions.maxSubcompactions	UNMAPPED		
+org.rocksdb.EnvOptions.useMmapWrites	UNMAPPED		
+sun.misc.Unsafe.freeMemory	UNMAPPED		
+org.rocksdb.DBOptions.setParanoidChecks	UNMAPPED		
+org.rocksdb.Options.setMaxWriteBufferNumberToMaintain	UNMAPPED		
+org.rocksdb.Options.useAdaptiveMutex	UNMAPPED		
+org.rocksdb.OptimisticTransactionOptions.newOptimisticTransactionOptions	UNMAPPED		
+org.rocksdb.Options.setDumpMallocStats	UNMAPPED		
+java.util.zip.ZipFile.close	Java_XXX	java_util_zip_ZipFile_close	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.CompressionOptions.setStrategy	UNMAPPED		
+org.rocksdb.DBOptions.dbPaths	UNMAPPED		
+org.rocksdb.Options.useDirectReads	UNMAPPED		
+io.netty.channel.unix.Socket.setBroadcast	NETTY_HEURISTIC	netty_epoll_native_setBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.putAddress	UNMAPPED		
+sun.misc.MessageUtils.toStderr	Java_XXX	sun_misc_MessageUtils_toStderr	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.isIpFreeBind	NETTY_HEURISTIC	netty_epoll_Native_isIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.arraycopy	JVM_XXX	JVM_ArrayCopy	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.ssizeMax	NETTY_HEURISTIC	netty_epoll_native_ssizeMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.CompressionOptions.disposeInternal	UNMAPPED		
+org.rocksdb.DBOptions.setDumpMallocStats	UNMAPPED		
+io.netty.channel.unix.Socket.setSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_setSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.setCompressionType	UNMAPPED		
+io.netty.channel.epoll.Native.sendmmsg0	NETTY_HEURISTIC	netty_epoll_native_sendmmsg0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.noteConnReset	UNMAPPED		
+org.rocksdb.TransactionDBOptions.setWritePolicy	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.maxBytesForLevelMultiplier	UNMAPPED		
+jdk.jfr.internal.JVM.getTypeId	UNMAPPED		
+org.rocksdb.Slice.disposeInternalBuf	UNMAPPED		
+jdk.jfr.internal.JVM.setCutoff	UNMAPPED		
+org.rocksdb.Options.newTableReaderForCompactionInputs	UNMAPPED		
+org.rocksdb.BackupableDBOptions.restoreRateLimit	UNMAPPED		
+org.rocksdb.DBOptions.setMaxBackgroundCompactions	UNMAPPED		
+sun.misc.Unsafe.putByte	UNMAPPED		
+org.rocksdb.Options.prepareForBulkLoad	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.paranoidFileChecks	UNMAPPED		
+io.netty.channel.unix.Socket.getSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_getSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.maxBytesForLevelBase	UNMAPPED		
+org.rocksdb.DBOptions.setDbLogDir	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setHardPendingCompactionBytesLimit	UNMAPPED		
+org.rocksdb.WriteBatch.newWriteBatch	UNMAPPED		
+org.rocksdb.AbstractSlice.compare0	UNMAPPED		
+org.rocksdb.ReadOptions.prefixSameAsStart	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setParanoidFileChecks	UNMAPPED		
+java.util.zip.Inflater.end	Java_XXX	java_util_zip_Inflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.epoll.Native.epollWait0	NETTY_HEURISTIC	netty_epoll_native_epollWait0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.RateLimiter.disposeInternal	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setShareTableFiles	UNMAPPED		
+org.rocksdb.ClockCache.newClockCache	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setTableFactory	UNMAPPED		
+org.rocksdb.Options.maxLogFileSize	UNMAPPED		
+org.rocksdb.Options.failIfOptionsFileError	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEALREADY	NETTY_HEURISTIC	netty_unix_errors_errorEALREADY	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getThreadId	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.compactionPriority	UNMAPPED		
+sun.misc.Unsafe.reallocateMemory	UNMAPPED		
+jdk.jfr.internal.JVM.uncaughtException	UNMAPPED		
+org.rocksdb.DBOptions.setAvoidFlushDuringShutdown	UNMAPPED		
+org.rocksdb.DBOptions.recycleLogFileNum	UNMAPPED		
+org.rocksdb.Filter.disposeInternal	UNMAPPED		
+org.rocksdb.WriteBatch.deleteRange	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.sendFile	UNMAPPED		
+io.netty.channel.unix.Socket.disconnect	UNMAPPED		
+org.rocksdb.TransactionDB.disposeInternal	UNMAPPED		
+org.rocksdb.RocksDB.write0	UNMAPPED		
+java.lang.Throwable.getStackTraceDepth	Java_XXX	java_lang_Throwable_getStackTraceDepth	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ReadOptions.copyReadOptions	UNMAPPED		
+sun.misc.Unsafe.getDouble	UNMAPPED		
+java.lang.System.currentTimeMillis	JVM_XXX	JVM_CurrentTimeMillis	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.DBOptions.setUseFsync	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.maxTableFilesSizeFIFO	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evfiltUser	UNMAPPED		
+org.rocksdb.OptimisticTransactionDB.getBaseDB	UNMAPPED		
+org.rocksdb.BackupableDBOptions.maxBackgroundOperations	UNMAPPED		
+org.rocksdb.Options.createMissingColumnFamilies	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOTCONN	UNMAPPED		
+org.rocksdb.TransactionDB.beginTransaction	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evfiltSock	UNMAPPED		
+sun.misc.Unsafe.getInt	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.softPendingCompactionBytesLimit	UNMAPPED		
+org.rocksdb.AbstractSlice.disposeInternal	UNMAPPED		
+org.rocksdb.Options.arenaBlockSize	UNMAPPED		
+jdk.jfr.internal.JVM.addStringConstant	UNMAPPED		
+io.netty.channel.unix.Socket.isReusePort	NETTY_HEURISTIC	netty_epoll_native_isReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.CassandraValueMergeOperator.disposeInternal	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.seekForPrev0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.setAcceptFilter	UNMAPPED		
+org.rocksdb.TransactionDBOptions.disposeInternal	UNMAPPED		
+java.util.zip.ZipFile.getEntryBytes	Java_XXX	java_util_zip_ZipFile_getEntryBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.AbstractSlice.size0	UNMAPPED		
+org.rocksdb.Options.dumpMallocStats	UNMAPPED		
+org.rocksdb.Transaction.getWaitingTxns	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.isIpTransparent	UNMAPPED		
+sun.reflect.Reflection.getClassAccessFlags	Java_XXX	sun_reflect_Reflection_getClassAccessFlags	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.CassandraValueMergeOperator.newSharedCassandraValueMergeOperator	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompactionPriority	UNMAPPED		
+org.rocksdb.EnvOptions.randomAccessMaxBufferSize	UNMAPPED		
+org.rocksdb.Options.compressionPerLevel	UNMAPPED		
+sun.misc.Unsafe.putFloat	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.setSnapshotConsistency	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.isBroadcast	UNMAPPED		
+jdk.jfr.internal.JVM.getPid	UNMAPPED		
+org.rocksdb.ReadOptions.setIgnoreRangeDeletions	UNMAPPED		
+org.rocksdb.BloomFilter.createNewBloomFilter	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.newSocketDomainFd	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpenConnect	UNMAPPED		
+org.rocksdb.BackupableDBOptions.callbackTriggerIntervalSize	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollout	NETTY_HEURISTIC	netty_epoll_native_epollout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Logger.setInfoLogLevel	UNMAPPED		
+org.rocksdb.RocksDB.listColumnFamilies	UNMAPPED		
+sun.misc.Unsafe.putBoolean	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setAllowTrivialMove	UNMAPPED		
+org.rocksdb.TransactionOptions.getLockTimeout	UNMAPPED		
+org.rocksdb.Options.setBaseBackgroundCompactions	UNMAPPED		
+org.rocksdb.Options.setUseAdaptiveMutex	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.strError	NETTY_HEURISTIC	netty_unix_errors_strError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.RocksDB.write1	UNMAPPED		
+java.lang.Class.getDeclaredClasses0	JVM_XXX	JVM_GetDeclaredClasses	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.kernelVersion	UNMAPPED		
+org.rocksdb.Options.setWriteBufferSize	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.newCompactionOptionsUniversal	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoECONNRESET	NETTY_HEURISTIC	netty_unix_errors_errnoECONNRESET	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.WriteBatchWithIndex.getFromBatch	UNMAPPED		
+sun.reflect.ConstantPool.getIntAt0	Java_XXX	sun_reflect_ConstantPool_getIntAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Transaction.disposeInternal	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.iovMax	NETTY_HEURISTIC	netty_epoll_native_iovMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyHandle.disposeInternal	UNMAPPED		
+java.util.zip.Inflater.init	Java_XXX	java_util_zip_Inflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.ColumnFamilyOptions.setLevelZeroStopWritesTrigger	UNMAPPED		
+sun.misc.Unsafe.park	UNMAPPED		
+org.rocksdb.Transaction.getForUpdate	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.eventFd	UNMAPPED		
+org.rocksdb.Options.walDir	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEINPROGRESS	UNMAPPED		
+org.rocksdb.ReadOptions.managed	UNMAPPED		
+java.util.zip.Deflater.reset	Java_XXX	java_util_zip_Deflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.DBOptions.setDelayedWriteRate	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.minMergeWidth	UNMAPPED		
+org.rocksdb.ColumnFamilyHandle.getName	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.snapshotConsistency	UNMAPPED		
+org.rocksdb.MemoryUtil.getApproximateMemoryUsageByType	UNMAPPED		
+org.rocksdb.RocksIterator.seekForPrev0	UNMAPPED		
+java.lang.Runtime.gc	Java_XXX	java_lang_Runtime_gc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.setEnv	UNMAPPED		
+org.rocksdb.Options.setMaxBytesForLevelMultiplierAdditional	UNMAPPED		
+org.rocksdb.Transaction.getNumDeletes	UNMAPPED		
+sun.misc.Unsafe.putInt	UNMAPPED		
+org.rocksdb.Statistics.setStatsLevel	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.sendToAddress	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getSoBusyPoll	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getLong	UNMAPPED		
+org.rocksdb.DBOptions.maxOpenFiles	UNMAPPED		
+org.rocksdb.RocksDB.get	UNMAPPED		
+org.rocksdb.Options.setSstFileManager	UNMAPPED		
+java.io.FileOutputStream.open0	Java_XXX	java_io_FileOutputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jline.WindowsTerminal.getConsoleMode	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEINPROGRESS	NETTY_HEURISTIC	netty_unix_errors_errnoEINPROGRESS	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setDouble	Java_XXX	java_lang_reflect_Array_setDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.writeThreadMaxYieldUsec	UNMAPPED		
+org.rocksdb.Options.maxBytesForLevelMultiplier	UNMAPPED		
+java.lang.Class.getProtectionDomain0	JVM_XXX	JVM_GetProtectionDomain	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.setIsFdCloseOnExec	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpDeferAccept	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.setRule	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setRule	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Object.clone	JVM_XXX	JVM_Clone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Statistics.getHistogramString	UNMAPPED		
+org.rocksdb.Options.setRateLimiter	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.writeAddress	UNMAPPED		
+org.rocksdb.Options.setTableFactory	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.inplaceUpdateNumLocks	UNMAPPED		
+org.rocksdb.TransactionDBOptions.setTransactionLockTimeout	UNMAPPED		
+java.lang.StrictMath.tan	Java_XXX	java_lang_StrictMath_tan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setRandomAccessMaxBufferSize	UNMAPPED		
+java.io.ObjectInputStream.bytesToFloats	Java_XXX	java_io_ObjectInputStream_bytesToFloats	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.sendToAddresses	UNMAPPED		
+org.rocksdb.ComparatorOptions.newComparatorOptions	UNMAPPED		
+org.rocksdb.EnvOptions.setRateLimiter	UNMAPPED		
+org.rocksdb.Options.bloomLocality	UNMAPPED		
+io.netty.channel.unix.Socket.setKeepAlive	NETTY_HEURISTIC	netty_unix_socket_setKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.FileDescriptor.writevAddresses	NETTY_HEURISTIC	netty_unix_filedescriptor_writevAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.unix.Buffer.addressSize0	UNMAPPED		
+jdk.jfr.internal.JVM.getTicksFrequency	UNMAPPED		
+java.util.zip.ZipFile.getEntry	Java_XXX	java_util_zip_ZipFile_getEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.ComparatorOptions.useAdaptiveMutex	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setTcpNoDelay	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.strError	UNMAPPED		
+java.lang.Object.hashCode	JVM_XXX	JVM_IHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.CompactRangeOptions.targetPathId	UNMAPPED		
+org.rocksdb.RocksDB.setOptions	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpKeepCnt	UNMAPPED		
+sun.misc.Unsafe.putLong	UNMAPPED		
+org.rocksdb.ColumnFamilyHandle.getDescriptor	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evDelete	UNMAPPED		
+jdk.jfr.internal.JVM.endRecording	UNMAPPED		
+org.rocksdb.RocksDB.createColumnFamily	UNMAPPED		
+org.rocksdb.HashSkipListMemTableConfig.newMemTableFactoryHandle	UNMAPPED		
+org.rocksdb.FlushOptions.setWaitForFlush	UNMAPPED		
+org.rocksdb.DBOptions.setMaxFileOpeningThreads	UNMAPPED		
+org.rocksdb.BackupEngine.createNewBackupWithMetadata	UNMAPPED		
+org.rocksdb.Transaction.getIterator	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.disposeInternal	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.newSocketDgramFd	UNMAPPED		
+org.rocksdb.ReadOptions.setReadTier	UNMAPPED		
+java.lang.Shutdown.halt0	Java_XXX	java_lang_Shutdown_halt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.unpark	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.setSavePoint0	UNMAPPED		
+org.rocksdb.WriteBatch.put	UNMAPPED		
+org.rocksdb.Options.setCompactionOptionsUniversal	UNMAPPED		
+org.rocksdb.Snapshot.getSequenceNumber	UNMAPPED		
+sun.misc.Unsafe.getFloat	UNMAPPED		
+org.rocksdb.DBOptions.setEnableWriteThreadAdaptiveYield	UNMAPPED		
+jline.WindowsTerminal.getWindowsTerminalWidth	UNMAPPED		
+org.rocksdb.DBOptions.delayedWriteRate	UNMAPPED		
+jdk.jfr.internal.JVM.log	UNMAPPED		
+sun.misc.Unsafe.putShort	UNMAPPED		
+io.netty.channel.unix.Socket.accept	NETTY_HEURISTIC	netty_unix_socket_accept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.newSocketDgramFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDgramFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollrdhup	UNMAPPED		
+org.rocksdb.Options.setTargetFileSizeMultiplier	UNMAPPED		
+org.rocksdb.Options.setParanoidFileChecks	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.readAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_readAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.getAcceptFilter	UNMAPPED		
+java.lang.StrictMath.atan	Java_XXX	java_lang_StrictMath_atan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.EnvOptions.setUseMmapReads	UNMAPPED		
+org.rocksdb.OptionsUtil.loadLatestOptions	UNMAPPED		
+org.rocksdb.Options.setMaxSequentialSkipInIterations	UNMAPPED		
+sun.misc.Unsafe.putOrderedInt	UNMAPPED		
+org.rocksdb.EnvOptions.allowFallocate	UNMAPPED		
+org.rocksdb.SstFileManager.setMaxTrashDBRatio	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.allowCompaction	UNMAPPED		
+org.rocksdb.Options.dbPathsLen	UNMAPPED		
+org.rocksdb.Statistics.newStatistics	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.epollCtlDel0	UNMAPPED		
+java.lang.Thread.sleep	JVM_XXX	JVM_Sleep	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.WriteBatch.disposeInternal	UNMAPPED		
+org.rocksdb.WriteBatch.popSavePoint	UNMAPPED		
+java.lang.System.setIn0	Java_XXX	java_lang_System_setIn0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.recvFd	UNMAPPED		
+org.rocksdb.Options.setNumLevels	UNMAPPED		
+io.netty.channel.unix.Socket.getSoLinger	NETTY_HEURISTIC	netty_unix_socket_getSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpDeferAccept	UNMAPPED		
+jdk.jfr.internal.JVM.getTimeConversionFactor	UNMAPPED		
+org.rocksdb.TransactionDBOptions.setNumStripes	UNMAPPED		
+jdk.jfr.internal.JVM.setStackDepth	UNMAPPED		
+org.rocksdb.DBOptions.dbPathsLen	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.sizeofEpollEvent	UNMAPPED		
+org.rocksdb.Options.allowFAllocate	UNMAPPED		
+org.rocksdb.RestoreOptions.disposeInternal	UNMAPPED		
+org.rocksdb.WriteBatch.hasPut	UNMAPPED		
+java.util.zip.Deflater.deflateBytes	Java_XXX	java_util_zip_Deflater_deflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Transaction.getLogNumber	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evAdd	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMinWriteBufferNumberToMerge	UNMAPPED		
+org.rocksdb.TransactionLogIterator.next	UNMAPPED		
+org.rocksdb.Options.setCreateIfMissing	UNMAPPED		
+org.rocksdb.BackupEngine.open	UNMAPPED		
+org.rocksdb.Options.maxManifestFileSize	UNMAPPED		
+org.rocksdb.Options.compactionStyle	UNMAPPED		
+org.rocksdb.Options.setAllowMmapReads	UNMAPPED		
+org.rocksdb.Env.setBackgroundThreads	UNMAPPED		
+org.rocksdb.WriteBatch.setMaxBytes	UNMAPPED		
+java.lang.Thread.getThreads	JVM_XXX	JVM_GetAllThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.DBOptions.paranoidChecks	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.copyColumnFamilyOptions	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.getSoLinger	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEBADF	UNMAPPED		
+java.lang.System.identityHashCode	Java_XXX	java_lang_System_identityHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setMaxTableFilesSizeFIFO	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.isTcpCork	NETTY_HEURISTIC	netty_unix_socket_isTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.TransactionOptions.setSetSnapshot	UNMAPPED		
+org.rocksdb.DBOptions.setDbPaths	UNMAPPED		
+org.rocksdb.Options.paranoidFileChecks	UNMAPPED		
+org.rocksdb.Checkpoint.newCheckpoint	UNMAPPED		
+org.rocksdb.Options.setDbPaths	UNMAPPED		
+org.rocksdb.FlushOptions.newFlushOptions	UNMAPPED		
+jdk.jfr.internal.JVM.subscribeLogLevel	UNMAPPED		
+jdk.jfr.internal.JVM.isAvailable	UNMAPPED		
+org.rocksdb.EnvOptions.setSetFdCloexec	UNMAPPED		
+org.rocksdb.DBOptions.setManifestPreallocationSize	UNMAPPED		
+org.rocksdb.Options.delayedWriteRate	UNMAPPED		
+java.net.NetworkInterface.getByName0	Java_XXX	java_net_NetworkInterface_getByName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.ReadOptions.setPrefixSameAsStart	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.sendFile	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorECONNREFUSED	NETTY_HEURISTIC	netty_unix_errors_errorECONNREFUSED	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Package.getSystemPackage0	Java_XXX	java_lang_Package_getSystemPackage0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.memtablePrefixBloomSizeRatio	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.sendFd	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollerr	UNMAPPED		
+org.rocksdb.CompressionOptions.setLevel	UNMAPPED		
+io.netty.channel.unix.Socket.initialize	UNMAPPED		
+org.rocksdb.Options.setLogFileTimeToRoll	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapLong	UNMAPPED		
+io.netty.channel.unix.Socket.getReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_getReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.maxSuccessiveMerges	UNMAPPED		
+java.lang.Class.isInterface	JVM_XXX	JVM_IsInterface	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.disconnect	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.maxWriteBufferNumber	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.newPipe	UNMAPPED		
+org.rocksdb.Options.enableWriteThreadAdaptiveYield	UNMAPPED		
+org.rocksdb.RocksDB.disposeInternal	UNMAPPED		
+org.rocksdb.BackupEngine.createNewBackup	UNMAPPED		
+org.rocksdb.AbstractSlice.startsWith0	UNMAPPED		
+org.rocksdb.HashLinkedListMemTableConfig.newMemTableFactoryHandle	UNMAPPED		
+org.rocksdb.Options.allowMmapWrites	UNMAPPED		
+java.io.FileInputStream.open0	Java_XXX	java_io_FileInputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Transaction.setSnapshotOnNextOperation	UNMAPPED		
+org.rocksdb.RocksDB.keyMayExist	UNMAPPED		
+sun.nio.ch.IOUtil.setfdVal	Java_XXX	sun_nio_ch_IOUtil_setfdVal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.rocksdb.Options.setLevelZeroSlowdownWritesTrigger	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.setSndLowAt	UNMAPPED		
+org.rocksdb.Options.setLevel0FileNumCompactionTrigger	UNMAPPED		
+io.netty.channel.unix.Socket.isBroadcast	NETTY_HEURISTIC	netty_epoll_native_isBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOENT	UNMAPPED		
+org.rocksdb.DBOptions.walRecoveryMode	UNMAPPED		
+io.netty.channel.unix.Socket.sendFd	UNMAPPED		
+org.rocksdb.Options.disposeInternal	UNMAPPED		
+org.rocksdb.Options.setWalDir	UNMAPPED		
+org.rocksdb.RocksDB.destroyDB	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollerr	NETTY_HEURISTIC	netty_epoll_native_epollerr	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.kqueue.Native.offsetofKEventFilter	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.recvFromAddress	UNMAPPED		
+org.rocksdb.WriteBatch.singleDelete	UNMAPPED		
+java.lang.Class.isInstance	Java_XXX	java_lang_Class_isInstance	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setOutput	UNMAPPED		
+java.io.FileInputStream.readBytes	Java_XXX	java_io_FileInputStream_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.setAllowMmapWrites	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.resolve	UNMAPPED		
+org.rocksdb.Options.maxBytesForLevelBase	UNMAPPED		
+org.rocksdb.TransactionOptions.getDeadlockDetectDepth	UNMAPPED		
+org.rocksdb.TransactionDBOptions.getMaxNumLocks	UNMAPPED		
+org.rocksdb.WriteBatch.setSavePoint0	UNMAPPED		
+sun.misc.Unsafe.addressSize	UNMAPPED		
+java.io.RandomAccessFile.readBytes	Java_XXX	java_io_RandomAccessFile_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.WriteBatchWithIndex.getFromBatchAndDB	UNMAPPED		
+org.rocksdb.Transaction.getNumKeys	UNMAPPED		
+org.rocksdb.TransactionDB.getTransactionByName	UNMAPPED		
+io.netty.channel.unix.Socket.isTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_isTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setCompressionType	UNMAPPED		
+org.rocksdb.Options.setSoftPendingCompactionBytesLimit	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.isKeepAlive	UNMAPPED		
+java.net.NetworkInterface.getAll	Java_XXX	java_net_NetworkInterface_getAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.RocksDB.multiGet	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.timerFdRead	UNMAPPED		
+org.rocksdb.DBOptions.logFileTimeToRoll	UNMAPPED		
+org.rocksdb.DBOptions.setRandomAccessMaxBufferSize	UNMAPPED		
+org.rocksdb.NativeComparatorWrapper.disposeInternal	UNMAPPED		
+org.rocksdb.DBOptions.setSstFileManager	UNMAPPED		
+org.rocksdb.OptimisticTransactionDB.beginTransaction_withOld	UNMAPPED		
+org.rocksdb.Options.maxSequentialSkipInIterations	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.sizeOfjlong	UNMAPPED		
+org.rocksdb.Transaction.getNumMerges	UNMAPPED		
+org.rocksdb.Options.newOptions	UNMAPPED		
+org.rocksdb.Options.createIfMissing	UNMAPPED		
+java.io.ObjectInputStream.bytesToDoubles	Java_XXX	java_io_ObjectInputStream_bytesToDoubles	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setNativeName	JVM_XXX	JVM_SetNativeThreadName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.BackupableDBOptions.setSync	UNMAPPED		
+org.rocksdb.Options.baseBackgroundCompactions	UNMAPPED		
+jdk.jfr.internal.JVM.setRepositoryLocation	UNMAPPED		
+org.rocksdb.DBOptions.setIsFdCloseOnExec	UNMAPPED		
+org.rocksdb.EnvOptions.setUseMmapWrites	UNMAPPED		
+org.rocksdb.Options.reportBgIoStats	UNMAPPED		
+org.rocksdb.ReadOptions.setSnapshot	UNMAPPED		
+org.rocksdb.Options.setDeleteObsoleteFilesPeriodMicros	UNMAPPED		
+org.rocksdb.DBOptions.failIfOptionsFileError	UNMAPPED		
+org.rocksdb.TransactionDB.getLockStatusData	UNMAPPED		
+org.rocksdb.DBOptions.setWriteThreadMaxYieldUsec	UNMAPPED		
+org.rocksdb.Options.tableCacheNumshardbits	UNMAPPED		
+java.net.NetworkInterface.isLoopback0	Java_XXX	java_net_NetworkInterface_isLoopback0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.WBWIRocksIterator.isValid0	UNMAPPED		
+java.util.zip.CRC32.update	Java_XXX	java_util_zip_CRC32_update	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.reflect.Array.getDouble	Java_XXX	java_lang_reflect_Array_getDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ReadOptions.pinData	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.seekToFirst0	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.objectFieldOffset	UNMAPPED		
+org.rocksdb.Transaction.getState	UNMAPPED		
+io.netty.channel.unix.Socket.bindDomainSocket	NETTY_HEURISTIC	netty_unix_socket_bindDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.WriteBatch.getWalTerminationPoint	UNMAPPED		
+org.rocksdb.TransactionOptions.setMaxWriteBatchSize	UNMAPPED		
+java.util.zip.Deflater.init	Java_XXX	java_util_zip_Deflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.jar.JarFile.getMetaInfEntryNames	Java_XXX	java_util_jar_JarFile_getMetaInfEntryNames	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Options.setUseDirectIoForFlushAndCompaction	UNMAPPED		
+sun.misc.Unsafe.getObjectVolatile	UNMAPPED		
+io.netty.channel.unix.Socket.recvFrom	NETTY_HEURISTIC	netty_unix_socket_recvFrom	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.AbstractSlice.toString0	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setInfoLog	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.init	UNMAPPED		
+org.rocksdb.TransactionOptions.getExpiration	UNMAPPED		
+java.util.zip.ZipFile.getEntryTime	Java_XXX	java_util_zip_ZipFile_getEntryTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Options.setReportBgIoStats	UNMAPPED		
+org.rocksdb.DBOptions.randomAccessMaxBufferSize	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.close	NETTY_HEURISTIC	netty_unix_filedescriptor_close	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.iovMax	NETTY_HEURISTIC	netty_epoll_native_iovMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Transaction.getName	UNMAPPED		
+org.rocksdb.Options.setNewTableReaderForCompactionInputs	UNMAPPED		
+org.rocksdb.EnvOptions.setCompactionReadaheadSize	UNMAPPED		
+org.rocksdb.Options.setEnableWriteThreadAdaptiveYield	UNMAPPED		
+org.rocksdb.ReadOptions.backgroundPurgeOnIteratorCleanup	UNMAPPED		
+java.lang.Class.isAssignableFrom	Java_XXX	java_lang_Class_isAssignableFrom	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ReadOptions.setIterateLowerBound	UNMAPPED		
+org.rocksdb.Options.maxTotalWalSize	UNMAPPED		
+org.rocksdb.DBOptions.setAllowMmapReads	UNMAPPED		
+org.rocksdb.DBOptions.writeThreadSlowYieldUsec	UNMAPPED		
+org.rocksdb.Options.setMaxWriteBufferNumber	UNMAPPED		
+org.rocksdb.ReadOptions.snapshot	UNMAPPED		
+java.lang.Class.getConstantPool	JVM_XXX	JVM_GetClassConstantPool	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.setTrafficClass	NETTY_HEURISTIC	netty_epoll_native_setTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.setWriteBufferManager	UNMAPPED		
+org.rocksdb.Transaction.put	UNMAPPED		
+org.rocksdb.DBOptions.setRowCache	UNMAPPED		
+org.rocksdb.WriteBatch.data	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.setMaxTableFilesSize	UNMAPPED		
+java.util.zip.Deflater.setDictionary	Java_XXX	java_util_zip_Deflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.FileDescriptor.open	NETTY_HEURISTIC	netty_unix_filedescriptor_open,netty_epoll_native_setTcpFastopen,netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.walBytesPerSync	UNMAPPED		
+org.rocksdb.Options.isFdCloseOnExec	UNMAPPED		
+org.rocksdb.DBOptions.setAdviseRandomOnOpen	UNMAPPED		
+org.rocksdb.Options.setKeepLogFileNum	UNMAPPED		
+java.util.zip.ZipFile.startsWithLOC	Java_XXX	java_util_zip_ZipFile_startsWithLOC	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.DBOptions.setCreateIfMissing	UNMAPPED		
+sun.misc.Unsafe.putOrderedObject	UNMAPPED		
+jdk.jfr.internal.JVM.emitEvent	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlMod0	NETTY_HEURISTIC	netty_epoll_native_epollCtlMod0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.BackupableDBOptions.setRestoreRateLimiter	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.keventTriggerUserEvent	UNMAPPED		
+java.lang.Class.getGenericSignature0	JVM_XXX	JVM_GetClassSignature	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.TransactionDBOptions.getWritePolicy	UNMAPPED		
+sun.reflect.ConstantPool.getLongAt0	Java_XXX	sun_reflect_ConstantPool_getLongAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.setChar	Java_XXX	java_lang_reflect_Array_setChar	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setFileNotification	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.bindDomainSocket	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setBroadcast	UNMAPPED		
+org.rocksdb.SkipListMemTableConfig.newMemTableFactoryHandle0	UNMAPPED		
+org.rocksdb.Options.setEnableThreadTracking	UNMAPPED		
+org.rocksdb.WriteBatch.rollbackToSavePoint0	UNMAPPED		
+org.rocksdb.CompactionOptionsFIFO.setTtl	UNMAPPED		
+org.rocksdb.Options.setMaxTotalWalSize	UNMAPPED		
+org.rocksdb.WriteOptions.setSync	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.newIngestExternalFileOptions	UNMAPPED		
+org.rocksdb.DBOptions.deleteObsoleteFilesPeriodMicros	UNMAPPED		
+org.rocksdb.Logger.createNewLoggerOptions	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompactionOptionsUniversal	UNMAPPED		
+org.rocksdb.Options.inplaceUpdateNumLocks	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.writevAddresses	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.hardPendingCompactionBytesLimit	UNMAPPED		
+org.rocksdb.TransactionOptions.setLockTimeout	UNMAPPED		
+org.rocksdb.DBOptions.setEnableThreadTracking	UNMAPPED		
+java.lang.StrictMath.log1p	Java_XXX	java_lang_StrictMath_log1p	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.WriteBatchWithIndex.clear0	UNMAPPED		
+java.lang.Class.getModifiers	JVM_XXX	JVM_GetClassModifiers	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ColumnFamilyOptions.tableFactoryName	UNMAPPED		
+org.rocksdb.OptimisticTransactionOptions.disposeInternal	UNMAPPED		
+jdk.jfr.internal.JVM.counterTime	UNMAPPED		
+org.rocksdb.EnvOptions.setFdCloexec	UNMAPPED		
+org.rocksdb.Options.maxBackgroundCompactions	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evClear	UNMAPPED		
+org.rocksdb.RocksIterator.seek0	UNMAPPED		
+sun.nio.ch.sctp.SctpNet.socket0	Java_XXX	sun_nio_ch_sctp_SctpNet_socket0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsctp.so
+sun.java2d.pipe.ShapeSpanIterator.pathDone	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_pathDone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+org.rocksdb.ColumnFamilyOptions.setTargetFileSizeBase	UNMAPPED		
+org.rocksdb.DBOptions.setNewTableReaderForCompactionInputs	UNMAPPED		
+org.rocksdb.Options.memtableHugePageSize	UNMAPPED		
+java.lang.ClassLoader.findBuiltinLib	Java_XXX	java_lang_ClassLoader_findBuiltinLib	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.maxSequentialSkipInIterations	UNMAPPED		
+org.rocksdb.RocksDB.disableFileDeletions	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.allowBlockingFlush	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.kqueueCreate	UNMAPPED		
+org.rocksdb.Options.optimizeForSmallDb	UNMAPPED		
+org.rocksdb.SstFileWriter.finish	UNMAPPED		
+org.rocksdb.Transaction.rollback	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEALREADY	UNMAPPED		
+org.rocksdb.Options.setLevel0StopWritesTrigger	UNMAPPED		
+java.lang.Thread.start0	JVM_XXX	JVM_StartThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.RateLimiter.getSingleBurstBytes	UNMAPPED		
+org.rocksdb.Options.avoidFlushDuringRecovery	UNMAPPED		
+io.netty.channel.unix.Socket.localAddress	NETTY_HEURISTIC	netty_unix_socket_localAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.RandomAccessFile.setLength	Java_XXX	java_io_RandomAccessFile_setLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.inplaceUpdateSupport	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.compressionType	UNMAPPED		
+org.rocksdb.Options.level0StopWritesTrigger	UNMAPPED		
+org.rocksdb.Options.maxOpenFiles	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setBottommostCompressionType	UNMAPPED		
+org.rocksdb.Options.setCompressionPerLevel	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.getReceiveBufferSize	UNMAPPED		
+org.rocksdb.DBOptions.infoLogLevel	UNMAPPED		
+org.rocksdb.StringAppendOperator.newSharedStringAppendOperator	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setReuseAddress	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evEnable	UNMAPPED		
+sun.misc.Signal.handle0	Java_XXX	sun_misc_Signal_handle0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.TransactionDBOptions.getTransactionLockTimeout	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.isTcpNoDelay	UNMAPPED		
+org.rocksdb.Options.levelZeroSlowdownWritesTrigger	UNMAPPED		
+org.rocksdb.DBOptions.setLogFileTimeToRoll	UNMAPPED		
+org.rocksdb.Options.setWritableFileMaxBufferSize	UNMAPPED		
+java.lang.Thread.isAlive	JVM_XXX	JVM_IsThreadAlive	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.setCompactionReadaheadSize	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxBytesForLevelMultiplier	UNMAPPED		
+jdk.jfr.internal.JVM.createJFR	UNMAPPED		
+org.rocksdb.RocksDB.delete	UNMAPPED		
+io.netty.channel.unix.Socket.listen	NETTY_HEURISTIC	netty_unix_socket_listen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isTcpFastOpenConnect	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEAGAIN	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.write	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isTcpQuickAck	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoECONNRESET	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxWriteBufferNumber	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.bottommostCompressionType	UNMAPPED		
+org.rocksdb.Transaction.getWriteBatch	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Transaction.mergeUntracked	UNMAPPED		
+io.netty.channel.epoll.Native.offsetofEpollData	NETTY_HEURISTIC	netty_epoll_native_offsetofEpollData	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getInterfaces0	JVM_XXX	JVM_GetClassInterfaces	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getTotal	Java_XXX	java_util_zip_ZipFile_getTotal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Options.setAllowMmapWrites	UNMAPPED		
+io.netty.channel.unix.Socket.isKeepAlive	NETTY_HEURISTIC	netty_unix_socket_isKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.levelCompactionDynamicLevelBytes	UNMAPPED		
+org.rocksdb.BackupEngine.disposeInternal	UNMAPPED		
+org.rocksdb.CompactRangeOptions.allowWriteStall	UNMAPPED		
+org.rocksdb.DBOptions.setCompactionReadaheadSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.initialize	UNMAPPED		
+java.util.zip.Inflater.inflateBytes	Java_XXX	java_util_zip_Inflater_inflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEBADF	NETTY_HEURISTIC	netty_unix_errors_errnoEBADF	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.TransactionDB.open	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_setTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isTcpCork	UNMAPPED		
+org.rocksdb.Options.skipStatsUpdateOnDbOpen	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setLevelZeroFileNumCompactionTrigger	UNMAPPED		
+java.util.zip.ZipFile.getEntryMethod	Java_XXX	java_util_zip_ZipFile_getEntryMethod	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Transaction.setName	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxCompactionBytes	UNMAPPED		
+sun.reflect.Reflection.getCallerClass	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.isIpRecvOrigDestAddr	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.uioMaxIov	NETTY_HEURISTIC	netty_epoll_native_uioMaxIov	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.newSocketDomainFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDomainFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.setWriteBufferManager	UNMAPPED		
+org.rocksdb.Options.maxBytesForLevelMultiplierAdditional	UNMAPPED		
+org.rocksdb.RemoveEmptyValueCompactionFilter.createNewRemoveEmptyValueCompactionFilter0	UNMAPPED		
+org.rocksdb.SstFileManager.setDeleteRateBytesPerSecond	UNMAPPED		
+org.rocksdb.WriteOptions.noSlowdown	UNMAPPED		
+sun.misc.Unsafe.allocateInstance	UNMAPPED		
+jdk.jfr.internal.JVM.shouldLog	UNMAPPED		
+org.rocksdb.Options.levelZeroStopWritesTrigger	UNMAPPED		
+org.rocksdb.ReadOptions.disposeInternal	UNMAPPED		
+org.rocksdb.Logger.infoLogLevel	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueEventArray.evSet	UNMAPPED		
+org.rocksdb.Options.optimizeFiltersForHits	UNMAPPED		
+org.rocksdb.SstFileManager.setMaxAllowedSpaceUsage	UNMAPPED		
+sun.misc.Unsafe.putLongVolatile	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setComparatorHandle	UNMAPPED		
+org.rocksdb.DBOptions.setWalBytesPerSync	UNMAPPED		
+org.rocksdb.Options.numLevels	UNMAPPED		
+java.lang.Throwable.getStackTraceElement	Java_XXX	java_lang_Throwable_getStackTraceElement	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.WriteBatchWithIndex.singleDelete	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldOffset	UNMAPPED		
+java.lang.StrictMath.cos	Java_XXX	java_lang_StrictMath_cos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.compareAndSwapObject	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_getTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.BackupableDBOptions.setShareFilesWithChecksum	UNMAPPED		
+org.rocksdb.DBOptions.setMaxOpenFiles	UNMAPPED		
+org.rocksdb.RocksIterator.prev0	UNMAPPED		
+org.rocksdb.AbstractCompactionFilterFactory.disposeInternal	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpInfo	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.offsetofKeventData	UNMAPPED		
+org.rocksdb.DBOptions.allow2pc	UNMAPPED		
+java.lang.Object.notifyAll	JVM_XXX	JVM_MonitorNotifyAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.epoll.LinuxSocket.isTcpFastOpenConnect	UNMAPPED		
+io.netty.channel.unix.Socket.recvFromAddress	NETTY_HEURISTIC	netty_unix_socket_recvFromAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.Inflater.setDictionary	Java_XXX	java_util_zip_Inflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.Transaction.isDeadlockDetect	UNMAPPED		
+org.rocksdb.DBOptions.setMaxManifestFileSize	UNMAPPED		
+org.rocksdb.DBOptions.setWalSizeLimitMB	UNMAPPED		
+org.rocksdb.Options.setMaxBackgroundCompactions	UNMAPPED		
+jline.WindowsTerminal.readByte	UNMAPPED		
+org.rocksdb.BackupEngine.getCorruptedBackups	UNMAPPED		
+org.rocksdb.Options.copyOptions	UNMAPPED		
+sun.misc.Unsafe.setMemory	UNMAPPED		
+org.rocksdb.WriteOptions.disableWAL	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpMd5Sig	UNMAPPED		
+org.rocksdb.RateLimiter.request	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setForceConsistencyChecks	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMergeOperatorName	UNMAPPED		
+org.rocksdb.Options.maxSubcompactions	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.expand	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.accept	UNMAPPED		
+org.rocksdb.DBOptions.allowConcurrentMemtableWrite	UNMAPPED		
+org.rocksdb.Options.setCompactionStyle	UNMAPPED		
+org.rocksdb.WriteBatch.hasMerge	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.optimizeForPointLookup	UNMAPPED		
+org.rocksdb.Options.setUseFsync	UNMAPPED		
+org.rocksdb.Options.setAvoidFlushDuringRecovery	UNMAPPED		
+org.rocksdb.Transaction.undoGetForUpdate	UNMAPPED		
+org.rocksdb.EnvOptions.useOsBuffer	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingSendmmsg	NETTY_HEURISTIC	netty_epoll_native_isSupportingSendmmsg	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.walDir	UNMAPPED		
+org.rocksdb.DBOptions.useAdaptiveMutex	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setLevel0StopWritesTrigger	UNMAPPED		
+java.lang.Double.longBitsToDouble	Java_XXX	java_lang_Double_longBitsToDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.setMaxSuccessiveMerges	UNMAPPED		
+org.rocksdb.BlockBasedTableConfig.newTableFactoryHandle	UNMAPPED		
+java.lang.Thread.interrupt0	JVM_XXX	JVM_Interrupt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ColumnFamilyOptions.optimizeForSmallDb	UNMAPPED		
+java.lang.Class.getEnclosingMethod0	JVM_XXX	JVM_GetEnclosingMethodInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.staticFieldBase	UNMAPPED		
+org.rocksdb.BackupableDBOptions.disposeInternal	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollin	NETTY_HEURISTIC	netty_epoll_native_epollin	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.TimeZone.getSystemGMTOffsetID	Java_XXX	java_util_TimeZone_getSystemGMTOffsetID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.acos	Java_XXX	java_lang_StrictMath_acos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.setCreateMissingColumnFamilies	UNMAPPED		
+org.rocksdb.EnvOptions.useDirectReads	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isIpRecvOrigDestAddr	UNMAPPED		
+org.rocksdb.DBOptions.copyDBOptions	UNMAPPED		
+org.rocksdb.Options.setAvoidFlushDuringShutdown	UNMAPPED		
+org.rocksdb.RocksDB.merge	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.keventWait	UNMAPPED		
+jdk.jfr.internal.JVM.setMemorySize	UNMAPPED		
+org.rocksdb.DBOptions.newDBOptions	UNMAPPED		
+org.rocksdb.Options.enableThreadTracking	UNMAPPED		
+org.rocksdb.Options.optimizeLevelStyleCompaction	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompressionOptions	UNMAPPED		
+org.rocksdb.Options.setInplaceUpdateSupport	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingSendmmsg	UNMAPPED		
+java.lang.Class.desiredAssertionStatus0	JVM_XXX	JVM_DesiredAssertionStatus	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ComparatorOptions.setUseAdaptiveMutex	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.bind	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.forceConsistencyChecks	UNMAPPED		
+org.rocksdb.Options.writableFileMaxBufferSize	UNMAPPED		
+org.rocksdb.Options.maxTableFilesSizeFIFO	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setTargetLevel	UNMAPPED		
+org.rocksdb.RocksIterator.isValid0	UNMAPPED		
+org.rocksdb.Options.walBytesPerSync	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setBackupRateLimit	UNMAPPED		
+org.rocksdb.UInt64AddOperator.disposeInternal	UNMAPPED		
+java.lang.SecurityManager.getClassContext	Java_XXX	java_lang_SecurityManager_getClassContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.statsDumpPeriodSec	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.maxCompactionBytes	UNMAPPED		
+org.rocksdb.DBOptions.useFsync	UNMAPPED		
+sun.management.MemoryImpl.getMemoryManagers0	Java_XXX	sun_management_MemoryImpl_getMemoryManagers0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+org.rocksdb.BackupableDBOptions.shareTableFiles	UNMAPPED		
+org.rocksdb.Options.setHardPendingCompactionBytesLimit	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingTcpFastopen	UNMAPPED		
+org.rocksdb.Options.setIncreaseParallelism	UNMAPPED		
+org.rocksdb.Transaction.multiGet	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setReceiveBufferSize	UNMAPPED		
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.uioMaxIov	NETTY_HEURISTIC	netty_epoll_native_uioMaxIov	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.SstFileManager.getTotalSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollout	UNMAPPED		
+java.lang.Class.getDeclaredMethods0	JVM_XXX	JVM_GetClassDeclaredMethods	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.setDbLogDir	UNMAPPED		
+org.rocksdb.RocksDB.iterators	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.isTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_isTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpKeepIntvl	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setSoLinger	UNMAPPED		
+org.rocksdb.Options.setErrorIfExists	UNMAPPED		
+io.netty.channel.unix.Socket.setReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_setReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setInplaceUpdateNumLocks	UNMAPPED		
+org.rocksdb.EnvOptions.setUseOsBuffer	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.getTcpNoPush	UNMAPPED		
+org.rocksdb.DBOptions.statistics	UNMAPPED		
+org.rocksdb.WriteOptions.setIgnoreMissingColumnFamilies	UNMAPPED		
+org.rocksdb.LRUCache.newLRUCache	UNMAPPED		
+org.rocksdb.Options.errorIfExists	UNMAPPED		
+java.io.FileDescriptor.sync	Java_XXX	java_io_FileDescriptor_sync	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.FileDescriptor.read	NETTY_HEURISTIC	netty_unix_filedescriptor_read	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setMaxWriteBufferNumberToMaintain	UNMAPPED		
+org.rocksdb.Options.setCreateMissingColumnFamilies	UNMAPPED		
+io.netty.channel.epoll.Native.eventFdRead	NETTY_HEURISTIC	netty_epoll_native_eventFdRead	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getIntVolatile	UNMAPPED		
+org.rocksdb.Slice.data0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.offsetofKEventIdent	UNMAPPED		
+io.netty.channel.unix.Socket.getSoError	NETTY_HEURISTIC	netty_unix_socket_getSoError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getUnloadedEventClassCount	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setInplaceUpdateSupport	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setStopStyle	UNMAPPED		
+org.rocksdb.DBOptions.setStatistics	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isIpFreeBind	UNMAPPED		
+org.rocksdb.Options.setStatsDumpPeriodSec	UNMAPPED		
+org.rocksdb.DBOptions.setWalDir	UNMAPPED		
+org.rocksdb.OptimisticTransactionOptions.isSetSnapshot	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.newSocketStreamFd	UNMAPPED		
+org.rocksdb.DBOptions.maxFileOpeningThreads	UNMAPPED		
+org.rocksdb.DBOptions.dumpMallocStats	UNMAPPED		
+org.rocksdb.DBOptions.setRecycleLogFileNum	UNMAPPED		
+org.rocksdb.RocksDB.getDefaultColumnFamily	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.localAddress	UNMAPPED		
+java.util.zip.ZipFile.open	Java_XXX	java_util_zip_ZipFile_open	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.ColumnFamilyOptions.setMemTableFactory	UNMAPPED		
+org.rocksdb.Options.memtablePrefixBloomSizeRatio	UNMAPPED		
+org.rocksdb.Options.useFsync	UNMAPPED		
+sun.misc.Unsafe.getChar	UNMAPPED		
+org.rocksdb.SstFileWriter.disposeInternal	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.levelZeroFileNumCompactionTrigger	UNMAPPED		
+org.rocksdb.DBOptions.createIfMissing	UNMAPPED		
+org.rocksdb.Options.setLevel0SlowdownWritesTrigger	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setSoBusyPoll	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setCompressionSizePercent	UNMAPPED		
+java.util.zip.ZipFile.getManifestNum	Java_XXX	java_util_zip_ZipFile_getManifestNum	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.CompactRangeOptions.changeLevel	UNMAPPED		
+org.rocksdb.DBOptions.setUseAdaptiveMutex	UNMAPPED		
+org.rocksdb.Options.compactionReadaheadSize	UNMAPPED		
+java.lang.reflect.Array.setInt	Java_XXX	java_lang_reflect_Array_setInt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.availableProcessors	Java_XXX	java_lang_Runtime_availableProcessors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.useDirectReads	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.targetFileSizeMultiplier	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.close	UNMAPPED		
+org.rocksdb.Transaction.getSnapshot	UNMAPPED		
+org.rocksdb.TransactionDBOptions.setDefaultLockTimeout	UNMAPPED		
+io.netty.channel.unix.Socket.bind	NETTY_HEURISTIC	netty_unix_socket_bind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Thread.dumpThreads	JVM_XXX	JVM_DumpThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ColumnFamilyOptions.maxWriteBufferNumberToMaintain	UNMAPPED		
+org.rocksdb.RocksDB.getLatestSequenceNumber	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.setNormalize	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setNormalize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+org.rocksdb.ColumnFamilyOptions.setCompactionFilterHandle	UNMAPPED		
+org.rocksdb.RateLimiter.newRateLimiterHandle	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollet	NETTY_HEURISTIC	netty_epoll_native_epollet	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.maxBackgroundFlushes	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setIpTransparent	UNMAPPED		
+org.rocksdb.WriteBatch.clear0	UNMAPPED		
+org.rocksdb.Transaction.putLogData	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxBytesForLevelMultiplierAdditional	UNMAPPED		
+org.rocksdb.ReadOptions.setVerifyChecksums	UNMAPPED		
+org.rocksdb.BackupableDBOptions.destroyOldData	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.allowTrivialMove	UNMAPPED		
+org.rocksdb.Options.setMaxBytesForLevelMultiplier	UNMAPPED		
+io.netty.channel.unix.Socket.sendTo	NETTY_HEURISTIC	netty_unix_socket_sendTo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Slice.clear0	UNMAPPED		
+io.netty.channel.unix.Socket.shutdown	NETTY_HEURISTIC	netty_unix_socket_shutdown	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.setDbWriteBufferSize	UNMAPPED		
+org.rocksdb.DBOptions.tableCacheNumshardbits	UNMAPPED		
+org.rocksdb.EnvOptions.writableFileMaxBufferSize	UNMAPPED		
+org.rocksdb.WriteBatch.markWalTerminationPoint	UNMAPPED		
+org.rocksdb.OptionsUtil.getLatestOptionsFileName	UNMAPPED		
+io.netty.channel.epoll.Native.eventFdWrite	NETTY_HEURISTIC	netty_epoll_native_eventFdWrite	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setShort	Java_XXX	java_lang_reflect_Array_setShort	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.BackupableDBOptions.setBackupLogFiles	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setRestoreRateLimit	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorENETUNREACH	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpCork	NETTY_HEURISTIC	netty_unix_socket_setTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.getMacAddr0	Java_XXX	java_net_NetworkInterface_getMacAddr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.Options.setCompactionOptionsFIFO	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.RocksIterator.next0	UNMAPPED		
+org.rocksdb.CompressionOptions.level	UNMAPPED		
+org.rocksdb.DBOptions.setStatsDumpPeriodSec	UNMAPPED		
+org.rocksdb.DBOptions.writeThreadMaxYieldUsec	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.newPipe	NETTY_HEURISTIC	netty_unix_filedescriptor_newPipe	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.setWalTtlSeconds	UNMAPPED		
+org.rocksdb.Options.maxBackgroundFlushes	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEISCONN	UNMAPPED		
+sun.misc.Unsafe.getLongVolatile	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollin	UNMAPPED		
+org.rocksdb.RocksDB.getSnapshot	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evEOF	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.finishConnect	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.getTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.epoll.Native.epollCtlAdd0	UNMAPPED		
+org.rocksdb.WriteBatch.putLogData	UNMAPPED		
+sun.misc.Unsafe.allocateMemory	UNMAPPED		
+org.rocksdb.Transaction.disableIndexing	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEWOULDBLOCK	NETTY_HEURISTIC	netty_unix_errors_errnoEWOULDBLOCK	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.TransactionOptions.newTransactionOptions	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.disposeInternal	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.stopStyle	UNMAPPED		
+org.rocksdb.OptimisticTransactionDB.beginTransaction	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.moveFiles	UNMAPPED		
+org.rocksdb.Options.setDelayedWriteRate	UNMAPPED		
+org.rocksdb.Options.memTableFactoryName	UNMAPPED		
+org.rocksdb.PlainTableConfig.newTableFactoryHandle	UNMAPPED		
+org.rocksdb.DBOptions.dbLogDir	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setSendBufferSize	UNMAPPED		
+org.rocksdb.Options.level0SlowdownWritesTrigger	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setBloomLocality	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.iteratorWithBase	UNMAPPED		
+io.netty.channel.unix.Socket.remoteAddress	NETTY_HEURISTIC	netty_unix_socket_remoteAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.setSkipStatsUpdateOnDbOpen	UNMAPPED		
+org.rocksdb.Options.setWalSizeLimitMB	UNMAPPED		
+org.rocksdb.DBOptions.setWalRecoveryMode	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.merge	UNMAPPED		
+io.netty.channel.unix.Socket.sendToAddress	NETTY_HEURISTIC	netty_unix_socket_sendToAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.WriteBatchWithIndex.count0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.recvFd	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.inplaceUpdateSupport	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.shutdown	UNMAPPED		
+jdk.jfr.internal.JVM.emitOldObjectSamples	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.getMemberVMInfo	UNMAPPED		
+org.rocksdb.RocksDB.compactRange	UNMAPPED		
+org.rocksdb.EnvOptions.useMmapReads	UNMAPPED		
+org.rocksdb.RocksDB.compactRange0	UNMAPPED		
+org.rocksdb.Options.maxBackgroundJobs	UNMAPPED		
+org.rocksdb.Transaction.setSnapshot	UNMAPPED		
+org.rocksdb.RocksDB.singleDelete	UNMAPPED		
+org.rocksdb.Options.walRecoveryMode	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.getPeerCredentials	UNMAPPED		
+org.rocksdb.AbstractCompactionFilter.disposeInternal	UNMAPPED		
+java.net.NetworkInterface.getByInetAddress0	Java_XXX	java_net_NetworkInterface_getByInetAddress0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.rocksdb.ColumnFamilyOptions.setMemtablePrefixBloomSizeRatio	UNMAPPED		
+sun.reflect.ConstantPool.getDoubleAt0	Java_XXX	sun_reflect_ConstantPool_getDoubleAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.IEEEremainder	Java_XXX	java_lang_StrictMath_IEEEremainder	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.security.AccessController.getInheritedAccessControlContext	Java_XXX	java_security_AccessController_getInheritedAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.levelZeroStopWritesTrigger	UNMAPPED		
+org.rocksdb.RocksDB.getAggregatedLongProperty	UNMAPPED		
+org.rocksdb.DBOptions.statsDumpPeriodSec	UNMAPPED		
+org.rocksdb.WriteBatch.delete	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.writeAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_writeAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Shutdown.beforeHalt	Java_XXX	java_lang_Shutdown_beforeHalt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.noteReadClosed	UNMAPPED		
+org.rocksdb.BackupableDBOptions.newBackupableDBOptions	UNMAPPED		
+org.rocksdb.WriteBatch.getDataSize	UNMAPPED		
+org.rocksdb.Options.useCappedPrefixExtractor	UNMAPPED		
+org.rocksdb.SstFileManager.setCompactionBufferSize	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.newWriteBatchWithIndex	UNMAPPED		
+org.rocksdb.ReadOptions.iterateUpperBound	UNMAPPED		
+org.rocksdb.DirectSlice.disposeInternalBuf	UNMAPPED		
+java.lang.Class.getSuperclass	UNMAPPED		
+io.netty.channel.unix.Socket.getTrafficClass	NETTY_HEURISTIC	netty_epoll_native_getTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.FlushOptions.disposeInternal	UNMAPPED		
+java.lang.Class.getName0	JVM_XXX	JVM_GetClassName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.getSoError	UNMAPPED		
+jdk.jfr.internal.JVM.shouldRotateDisk	UNMAPPED		
+sun.misc.Unsafe.pageSize	UNMAPPED		
+org.rocksdb.ReadOptions.setReadaheadSize	UNMAPPED		
+org.rocksdb.Transaction.deleteUntracked	UNMAPPED		
+org.rocksdb.DBOptions.maxLogFileSize	UNMAPPED		
+org.rocksdb.Transaction.getCommitTimeWriteBatch	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollet	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setKeepAlive	UNMAPPED		
+sun.nio.ch.IOUtil.fdVal	Java_XXX	sun_nio_ch_IOUtil_fdVal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+java.lang.Thread.yield	JVM_XXX	JVM_Yield	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getClassId	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setReusePort	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEWOULDBLOCK	UNMAPPED		
+java.io.RandomAccessFile.write0	Java_XXX	java_io_RandomAccessFile_write0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.getDBOptionsFromProps	UNMAPPED		
+org.rocksdb.BackupEngine.getBackupInfo	UNMAPPED		
+org.rocksdb.DBOptions.setTableCacheNumshardbits	UNMAPPED		
+sun.misc.Unsafe.shouldBeInitialized	UNMAPPED		
+org.rocksdb.Options.setSkipStatsUpdateOnDbOpen	UNMAPPED		
+org.rocksdb.EnvOptions.bytesPerSync	UNMAPPED		
+org.rocksdb.ColumnFamilyHandle.getID	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.iovMax	UNMAPPED		
+org.rocksdb.Options.setWriteThreadSlowYieldUsec	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.open	UNMAPPED		
+org.rocksdb.BackupableDBOptions.backupRateLimit	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.reportBgIoStats	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpFastOpen	UNMAPPED		
+org.rocksdb.ReadOptions.readTier	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.status0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorECONNREFUSED	UNMAPPED		
+org.rocksdb.DBOptions.enableThreadTracking	UNMAPPED		
+org.rocksdb.FlushOptions.waitForFlush	UNMAPPED		
+org.rocksdb.Options.accessHintOnCompactionStart	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.putLogData	UNMAPPED		
+io.netty.channel.unix.Socket.sendToAddresses	NETTY_HEURISTIC	netty_unix_socket_sendToAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.setMaxLogFileSize	UNMAPPED		
+org.rocksdb.ReadOptions.setFillCache	UNMAPPED		
+org.rocksdb.DBOptions.maxSubcompactions	UNMAPPED		
+org.rocksdb.WriteOptions.ignoreMissingColumnFamilies	UNMAPPED		
+java.lang.reflect.Array.setByte	Java_XXX	java_lang_reflect_Array_setByte	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.StringAppendOperator.disposeInternal	UNMAPPED		
+org.rocksdb.Options.deleteObsoleteFilesPeriodMicros	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setSoBusyPoll	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpen	UNMAPPED		
+org.rocksdb.SstFileWriter.merge	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setLevelZeroSlowdownWritesTrigger	UNMAPPED		
+org.rocksdb.Options.allowMmapReads	UNMAPPED		
+sun.misc.Unsafe.arrayIndexScale	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.udsSunPathSize	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.getWriteBatch	UNMAPPED		
+java.security.AccessController.doPrivileged	UNMAPPED		
+java.io.ObjectOutputStream.doublesToBytes	Java_XXX	java_io_ObjectOutputStream_doublesToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.staticFieldOffset	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.listen	UNMAPPED		
+org.rocksdb.WriteBatch$Handler.createNewHandler0	UNMAPPED		
+org.rocksdb.EnvOptions.setRandomAccessMaxBufferSize	UNMAPPED		
+org.rocksdb.CompressionOptions.setMaxDictBytes	UNMAPPED		
+org.rocksdb.Options.maxWriteBufferNumberToMaintain	UNMAPPED		
+org.rocksdb.Options.setMaxLogFileSize	UNMAPPED		
+org.rocksdb.WriteBatch.hasCommit	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_setTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueEventArray.getChannel	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.delete	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.optimizeUniversalStyleCompaction	UNMAPPED		
+org.rocksdb.Options.dbWriteBufferSize	UNMAPPED		
+org.rocksdb.TransactionDBOptions.setMaxNumLocks	UNMAPPED		
+org.rocksdb.ReadOptions.setTotalOrderSeek	UNMAPPED		
+org.rocksdb.Options.setAllowFAllocate	UNMAPPED		
+sun.misc.Unsafe.putObject	UNMAPPED		
+org.rocksdb.RocksIterator.status0	UNMAPPED		
+org.rocksdb.WriteOptions.copyWriteOptions	UNMAPPED		
+java.lang.StrictMath.log	Java_XXX	java_lang_StrictMath_log	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.sendFile	UNMAPPED		
+jdk.jfr.internal.JVM.getStackTraceId	UNMAPPED		
+org.rocksdb.Options.useDirectIoForFlushAndCompaction	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlDel0	NETTY_HEURISTIC	netty_epoll_native_epollCtlDel0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.TransactionLogIterator.isValid	UNMAPPED		
+org.rocksdb.Options.setMaxOpenFiles	UNMAPPED		
+org.rocksdb.RestoreOptions.newRestoreOptions	UNMAPPED		
+java.lang.System.setOut0	Java_XXX	java_lang_System_setOut0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.CompressionOptions.strategy	UNMAPPED		
+org.rocksdb.DBOptions.setUseDirectReads	UNMAPPED		
+jdk.jfr.internal.JVM.abort	UNMAPPED		
+org.rocksdb.RocksDB.getUpdatesSince	UNMAPPED		
+sun.reflect.ConstantPool.getClassAt0	Java_XXX	sun_reflect_ConstantPool_getClassAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.flush	UNMAPPED		
+org.rocksdb.Options.setLogger	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpKeepCnt	UNMAPPED		
+org.rocksdb.Options.setMemtablePrefixBloomSizeRatio	UNMAPPED		
+org.rocksdb.Options.setDisableAutoCompactions	UNMAPPED		
+org.rocksdb.SstFileManager.disposeInternal	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.epollCtlMod0	UNMAPPED		
+org.rocksdb.RateLimiter.setBytesPerSecond	UNMAPPED		
+org.rocksdb.Logger.createNewLoggerDbOptions	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.popSavePoint	UNMAPPED		
+org.rocksdb.CompactRangeOptions.bottommostLevelCompaction	UNMAPPED		
+org.rocksdb.Options.compressionType	UNMAPPED		
+java.lang.Object.getClass	Java_XXX	java_lang_Object_getClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.isPrimitive	JVM_XXX	JVM_IsPrimitiveClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.reflect.Array.setFloat	Java_XXX	java_lang_reflect_Array_setFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.WriteOptions.sync	UNMAPPED		
+java.lang.Thread.isInterrupted	JVM_XXX	JVM_IsInterrupted	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Statistics.getTickerCount	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOTCONN	NETTY_HEURISTIC	netty_unix_errors_errnoENOTCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.timerFdRead	UNMAPPED		
+org.rocksdb.DBOptions.setAvoidFlushDuringRecovery	UNMAPPED		
+org.rocksdb.RocksIterator.seekToFirst0	UNMAPPED		
+jdk.jfr.internal.JVM.getAllEventClasses	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getPeerCredentials	NETTY_HEURISTIC	netty_channel_unix_socket_getPeerCredentials	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.unix.Socket.getSendBufferSize	UNMAPPED		
+org.rocksdb.Options.maxCompactionBytes	UNMAPPED		
+org.rocksdb.Transaction.setWriteOptions	UNMAPPED		
+org.rocksdb.RateLimiter.getBytesPerSecond	UNMAPPED		
+org.rocksdb.TransactionDB.getDeadlockInfoBuffer	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxSequentialSkipInIterations	UNMAPPED		
+java.lang.reflect.Array.newArray	Java_XXX	java_lang_reflect_Array_newArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.nio.MappedByteBuffer.force0	Java_XXX	java_nio_MappedByteBuffer_force0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.rocksdb.ColumnFamilyOptions.minWriteBufferNumberToMerge	UNMAPPED		
+org.rocksdb.DBOptions.setWriteThreadSlowYieldUsec	UNMAPPED		
+org.rocksdb.DBOptions.maxTotalWalSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpUserTimeout	UNMAPPED		
+org.rocksdb.DBOptions.setInfoLogLevel	UNMAPPED		
+org.rocksdb.Options.setAllowConcurrentMemtableWrite	UNMAPPED		
+org.rocksdb.DBOptions.writableFileMaxBufferSize	UNMAPPED		
+org.rocksdb.EnvOptions.newEnvOptions	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.entry1	UNMAPPED		
+io.netty.channel.epoll.Native.eventFd	NETTY_HEURISTIC	netty_epoll_native_eventFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.finishConnect	NETTY_HEURISTIC	netty_unix_socket_finishConnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.DBOptions.skipStatsUpdateOnDbOpen	UNMAPPED		
+org.rocksdb.TransactionDBOptions.getNumStripes	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setLevelCompactionDynamicLevelBytes	UNMAPPED		
+sun.misc.Signal.findSignal	Java_XXX	sun_misc_Signal_findSignal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.maxWriteBufferNumber	UNMAPPED		
+org.rocksdb.AbstractSlice.empty0	UNMAPPED		
+org.rocksdb.Options.setArenaBlockSize	UNMAPPED		
+org.rocksdb.DBOptions.setAllow2pc	UNMAPPED		
+org.rocksdb.SstFileManager.getDeleteRateBytesPerSecond	UNMAPPED		
+org.rocksdb.DBOptions.newTableReaderForCompactionInputs	UNMAPPED		
+org.rocksdb.DirectSlice.createNewDirectSlice0	UNMAPPED		
+org.rocksdb.RocksDB.flush	UNMAPPED		
+org.rocksdb.DirectSlice.createNewDirectSlice1	UNMAPPED		
+org.rocksdb.Statistics.getHistogramData	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.compactionStyle	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompactionOptionsFIFO	UNMAPPED		
+org.rocksdb.Transaction.rollbackToSavePoint	UNMAPPED		
+org.rocksdb.Options.useFixedLengthPrefixExtractor	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldBase	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.isIpTransparent	UNMAPPED		
+jdk.jfr.internal.JVM.setEnabled	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setMaxMergeWidth	UNMAPPED		
+org.rocksdb.DBOptions.bytesPerSync	UNMAPPED		
+org.rocksdb.TransactionOptions.isDeadlockDetect	UNMAPPED		
+org.rocksdb.CompressionOptions.newCompressionOptions	UNMAPPED		
+org.rocksdb.CompressionOptions.windowBits	UNMAPPED		
+org.rocksdb.DBOptions.allowMmapWrites	UNMAPPED		
+org.rocksdb.BackupableDBOptions.backupDir	UNMAPPED		
+org.rocksdb.WriteOptions.disposeInternal	UNMAPPED		
+org.rocksdb.DBOptions.useDirectIoForFlushAndCompaction	UNMAPPED		
+org.rocksdb.DBOptions.setFailIfOptionsFileError	UNMAPPED		
+org.rocksdb.Options.setWalRecoveryMode	UNMAPPED		
+org.rocksdb.TransactionOptions.disposeInternal	UNMAPPED		
+org.rocksdb.Options.hardPendingCompactionBytesLimit	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.iovMax	UNMAPPED		
+org.rocksdb.Env.getThreadPoolQueueLen	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.FileDescriptor.writev	UNMAPPED		
+jdk.jfr.internal.JVM.setStackTraceEnabled	UNMAPPED		
+org.rocksdb.Checkpoint.disposeInternal	UNMAPPED		
+org.rocksdb.Statistics.toString	UNMAPPED		
+org.rocksdb.Options.setBytesPerSync	UNMAPPED		
+org.rocksdb.RocksDB.enableFileDeletions	UNMAPPED		
+org.rocksdb.WriteBatch.hasDeleteRange	UNMAPPED		
+org.rocksdb.EnvOptions.setAllowFallocate	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setNumLevels	UNMAPPED		
+org.rocksdb.DBOptions.enableWriteThreadAdaptiveYield	UNMAPPED		
+org.rocksdb.RocksDB.deleteRange	UNMAPPED		
+org.rocksdb.Options.setManifestPreallocationSize	UNMAPPED		
+java.lang.Object.wait	JVM_XXX	JVM_MonitorWait	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.DBOptions.setErrorIfExists	UNMAPPED		
+org.rocksdb.ReadOptions.setIterateUpperBound	UNMAPPED		
+org.rocksdb.Options.writeThreadSlowYieldUsec	UNMAPPED		
+org.rocksdb.RocksDB.ingestExternalFile	UNMAPPED		
+org.rocksdb.WriteBatch.hasDelete	UNMAPPED		
+org.rocksdb.Transaction.clearSnapshot	UNMAPPED		
+io.netty.channel.unix.Socket.isReuseAddress	NETTY_HEURISTIC	netty_epoll_native_isReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.storm.shade.io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.ssizeMax	UNMAPPED		
+jline.WindowsTerminal.getWindowsTerminalHeight	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.disposeInternal	UNMAPPED		
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.sizeOfjlong	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpKeepIdle	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.uioMaxIov	UNMAPPED		
+java.lang.Class.getComponentType	JVM_XXX	JVM_GetComponentType	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.CompactionOptionsUniversal.compressionSizePercent	UNMAPPED		
+sun.misc.Unsafe.ensureClassInitialized	UNMAPPED		
+java.io.RandomAccessFile.open0	Java_XXX	java_io_RandomAccessFile_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Buffer.memoryAddress0	UNMAPPED		
+org.rocksdb.Options.infoLogLevel	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.level0FileNumCompactionTrigger	UNMAPPED		
+org.rocksdb.Options.randomAccessMaxBufferSize	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.ssizeMax	UNMAPPED		
+org.rocksdb.DBOptions.setDbWriteBufferSize	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.compressionPerLevel	UNMAPPED		
+org.rocksdb.EnvOptions.useDirectWrites	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.arenaBlockSize	UNMAPPED		
+org.rocksdb.CompactRangeOptions.exclusiveManualCompaction	UNMAPPED		
+org.rocksdb.Transaction.merge	UNMAPPED		
+org.rocksdb.Options.keepLogFileNum	UNMAPPED		
+org.rocksdb.BackupableDBOptions.shareFilesWithChecksum	UNMAPPED		
+org.rocksdb.ReadOptions.tailing	UNMAPPED		
+java.lang.Class.isArray	JVM_XXX	JVM_IsArrayClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.TransactionLogIterator.status	UNMAPPED		
+java.io.RandomAccessFile.length	Java_XXX	java_io_RandomAccessFile_length	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.TransactionDB.beginTransaction_withOld	UNMAPPED		
+org.rocksdb.TransactionDB.getAllPreparedTransactions	UNMAPPED		
+org.rocksdb.DBOptions.setAllowFAllocate	UNMAPPED		
+org.rocksdb.ReadOptions.setBackgroundPurgeOnIteratorCleanup	UNMAPPED		
+org.rocksdb.AbstractTransactionNotifier.createNewTransactionNotifier	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evDisable	UNMAPPED		
+org.rocksdb.Options.setMaxBackgroundJobs	UNMAPPED		
+org.rocksdb.Options.setAccessHintOnCompactionStart	UNMAPPED		
+org.rocksdb.RocksIterator.value0	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorENETUNREACH	NETTY_HEURISTIC	netty_unix_errors_errorENETUNREACH	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.minWriteBufferNumberToMerge	UNMAPPED		
+org.rocksdb.RocksDB.put	UNMAPPED		
+java.util.zip.ZipFile.getEntrySize	Java_XXX	java_util_zip_ZipFile_getEntrySize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.DirectComparator.createNewDirectComparator0	UNMAPPED		
+org.rocksdb.Options.setMergeOperatorName	UNMAPPED		
+org.rocksdb.WriteBatch.hasRollback	UNMAPPED		
+java.lang.ClassLoader.findBootstrapClass	Java_XXX	java_lang_ClassLoader_findBootstrapClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ClockCache.disposeInternal	UNMAPPED		
+sun.misc.Unsafe.objectFieldOffset	UNMAPPED		
+org.rocksdb.Options.setMergeOperator	UNMAPPED		
+java.lang.StrictMath.sqrt	Java_XXX	java_lang_StrictMath_sqrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.RocksMemEnv.disposeInternal	UNMAPPED		
+io.netty.channel.unix.Socket.setTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_setTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.kernelVersion	NETTY_HEURISTIC	netty_epoll_native_kernelVersion	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getDeclaredConstructors0	JVM_XXX	JVM_GetClassDeclaredConstructors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ReadOptions.setPinData	UNMAPPED		
+org.rocksdb.DBOptions.setAllowConcurrentMemtableWrite	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.setAllowGlobalSeqNo	UNMAPPED		
+org.rocksdb.WriteBatch.merge	UNMAPPED		
+org.rocksdb.Options.softPendingCompactionBytesLimit	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getSoBusyPoll	UNMAPPED		
+org.rocksdb.Transaction.setSavePoint	UNMAPPED		
+org.rocksdb.CompactRangeOptions.newCompactRangeOptions	UNMAPPED		
+org.rocksdb.DBOptions.setMaxBackgroundJobs	UNMAPPED		
+org.rocksdb.DBOptions.avoidFlushDuringRecovery	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollrdhup	NETTY_HEURISTIC	netty_epoll_native_epollrdhup	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.FileDescriptor.writev	NETTY_HEURISTIC	netty_unix_filedescriptor_writev	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.StrictMath.pow	Java_XXX	java_lang_StrictMath_pow	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.baseBackgroundCompactions	UNMAPPED		
+java.lang.Class.getRawAnnotations	JVM_XXX	JVM_GetClassAnnotations	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.setWalBytesPerSync	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setDestroyOldData	UNMAPPED		
+sun.misc.Unsafe.defineClass	UNMAPPED		
+org.rocksdb.WriteBufferManager.disposeInternal	UNMAPPED		
+org.rocksdb.DBOptions.walSizeLimitMB	UNMAPPED		
+org.rocksdb.Options.setBottommostCompressionType	UNMAPPED		
+sun.misc.Unsafe.getShort	UNMAPPED		
+java.io.FileOutputStream.writeBytes	Java_XXX	java_io_FileOutputStream_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.CompactionOptionsUniversal.maxSizeAmplificationPercent	UNMAPPED		
+org.rocksdb.SstFileManager.getTrackedFiles	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMergeOperator	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpKeepIdle	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setBackupEnv	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evfiltRead	UNMAPPED		
+org.rocksdb.Checkpoint.createCheckpoint	UNMAPPED		
+org.rocksdb.Transaction.rebuildFromWriteBatch	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setIpRecvOrigDestAddr	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.epollWait0	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.setAllowBlockingFlush	UNMAPPED		
+org.rocksdb.Options.dbLogDir	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setMaxTableFilesSizeFIFO	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.getTcpNotSentLowAt	UNMAPPED		
+org.rocksdb.Options.setWriteThreadMaxYieldUsec	UNMAPPED		
+org.rocksdb.RocksDB.iteratorCF	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.next0	UNMAPPED		
+sun.awt.image.BufImgSurfaceData.initRaster	Java_XXX	sun_awt_image_BufImgSurfaceData_initRaster	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evfiltWrite	UNMAPPED		
+org.rocksdb.TtlDB.createColumnFamilyWithTtl	UNMAPPED		
+org.rocksdb.EnvOptions.setFallocateWithKeepSize	UNMAPPED		
+java.lang.reflect.Array.get	Java_XXX	java_lang_reflect_Array_get	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.multiNewArray	Java_XXX	java_lang_reflect_Array_multiNewArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.LRUCache.disposeInternal	UNMAPPED		
+org.rocksdb.IngestExternalFileOptions.setMoveFiles	UNMAPPED		
+org.rocksdb.ReadOptions.iterateLowerBound	UNMAPPED		
+sun.misc.Unsafe.putDouble	UNMAPPED		
+org.rocksdb.Statistics.disposeInternal	UNMAPPED		
+org.rocksdb.EnvOptions.setUseDirectReads	UNMAPPED		
+java.lang.Float.floatToRawIntBits	Java_XXX	java_lang_Float_floatToRawIntBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.WriteOptions.newWriteOptions	UNMAPPED		
+jdk.jfr.internal.JVM.setCompressedIntegers	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_getTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Transaction.commit	UNMAPPED		
+jdk.jfr.internal.JVM.setThreadBufferSize	UNMAPPED		
+org.rocksdb.DBOptions.setMaxBackgroundFlushes	UNMAPPED		
+java.lang.Thread.holdsLock	JVM_XXX	JVM_HoldsLock	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.walSizeLimitMB	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.level0StopWritesTrigger	UNMAPPED		
+java.util.zip.ZipFile.getEntryFlag	Java_XXX	java_util_zip_ZipFile_getEntryFlag	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpQuickAck	UNMAPPED		
+org.rocksdb.DBOptions.maxManifestFileSize	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.rollbackToSavePoint0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpFastOpenConnect	UNMAPPED		
+java.lang.StrictMath.atan2	Java_XXX	java_lang_StrictMath_atan2	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCSize	Java_XXX	java_util_zip_ZipFile_getEntryCSize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.setSampleThreads	UNMAPPED		
+org.rocksdb.DBOptions.dbWriteBufferSize	UNMAPPED		
+java.lang.reflect.Array.setLong	Java_XXX	java_lang_reflect_Array_setLong	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setRecycleLogFileNum	UNMAPPED		
+sun.misc.Unsafe.arrayBaseOffset	UNMAPPED		
+java.lang.System.nanoTime	JVM_XXX	JVM_NanoTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Transaction.getID	UNMAPPED		
+java.lang.Double.doubleToRawLongBits	Java_XXX	java_lang_Double_doubleToRawLongBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setPriority0	JVM_XXX	JVM_SetThreadPriority	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.ColumnFamilyOptions.setWriteBufferSize	UNMAPPED		
+org.rocksdb.DBOptions.adviseRandomOnOpen	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.useCappedPrefixExtractor	UNMAPPED		
+io.netty.channel.epoll.Native.splice0	NETTY_HEURISTIC	netty_epoll_native_splice0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.connectDomainSocket	NETTY_HEURISTIC	netty_unix_socket_connectDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.Options.setOptimizeFiltersForHits	UNMAPPED		
+org.rocksdb.TransactionLogIterator.disposeInternal	UNMAPPED		
+org.rocksdb.CompactRangeOptions.targetLevel	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpUserTimeout	UNMAPPED		
+org.rocksdb.Options.targetFileSizeMultiplier	UNMAPPED		
+org.rocksdb.RocksMemEnv.createMemEnv	UNMAPPED		
+java.lang.reflect.Array.setBoolean	Java_XXX	java_lang_reflect_Array_setBoolean	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.ColumnFamilyOptions.memTableFactoryName	UNMAPPED		
+java.security.AccessController.getStackAccessControlContext	Java_XXX	java_security_AccessController_getStackAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Options.setMaxBackgroundFlushes	UNMAPPED		
+org.rocksdb.Env.getDefaultEnvInternal	UNMAPPED		
+org.rocksdb.DBOptions.setBaseBackgroundCompactions	UNMAPPED		
+java.util.zip.Deflater.end	Java_XXX	java_util_zip_Deflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.rocksdb.RocksIterator.key0	UNMAPPED		
+jdk.jfr.internal.JVM.getClassIdNonIntrinsic	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.uioMaxIov	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapInt	UNMAPPED		
+org.rocksdb.Options.setBloomLocality	UNMAPPED		
+org.rocksdb.Transaction.getId	UNMAPPED		
+org.rocksdb.Options.setStatistics	UNMAPPED		
+sun.misc.Unsafe.defineAnonymousClass	UNMAPPED		
+org.rocksdb.Options.setUseDirectReads	UNMAPPED		
+java.lang.Runtime.maxMemory	Java_XXX	java_lang_Runtime_maxMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOENT	UNMAPPED		
+org.rocksdb.Comparator.createNewComparator0	UNMAPPED		
+org.rocksdb.ReadOptions.ignoreRangeDeletions	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setExclusiveManualCompaction	UNMAPPED		
+org.rocksdb.Options.disableAutoCompactions	UNMAPPED		
+org.rocksdb.WriteBufferManager.newWriteBufferManager	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.isReusePort	UNMAPPED		
+org.rocksdb.DBOptions.allowMmapReads	UNMAPPED		
+org.rocksdb.RocksDB.pauseBackgroundWork	UNMAPPED		
+jdk.internal.platform.CgroupMetrics.isUseContainerSupport	Java_XXX	jdk_internal_platform_CgroupMetrics_isUseContainerSupport	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.storm.shade.io.netty.channel.epoll.LinuxSocket.setTcpMd5Sig	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.disposeInternal	UNMAPPED		
+java.lang.String.intern	Java_XXX	java_lang_String_intern	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.CompactionOptionsFIFO.setAllowCompaction	UNMAPPED		
+org.rocksdb.Statistics.getAndResetTickerCount	UNMAPPED		
+java.lang.reflect.Array.getLength	Java_XXX	java_lang_reflect_Array_getLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.DBOptions.walTtlSeconds	UNMAPPED		
+org.rocksdb.RocksDB.iterator	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.prev0	UNMAPPED		
+sun.misc.Unsafe.getObject	UNMAPPED		
+org.rocksdb.TransactionOptions.setExpiration	UNMAPPED		
+org.rocksdb.Options.optimizeUniversalStyleCompaction	UNMAPPED		
+org.rocksdb.Options.manifestPreallocationSize	UNMAPPED		
+org.rocksdb.DBOptions.maxBackgroundJobs	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.Native.keventAddUserEvent	UNMAPPED		
+org.rocksdb.Options.setMaxFileOpeningThreads	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Socket.setTrafficClass	UNMAPPED		
+org.rocksdb.Options.dbPaths	UNMAPPED		
+org.rocksdb.Options.avoidFlushDuringShutdown	UNMAPPED		
+org.rocksdb.AbstractSlice.createNewSliceFromString	UNMAPPED		
+java.lang.Runtime.freeMemory	Java_XXX	java_lang_Runtime_freeMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.management.MemoryImpl.getMemoryPools0	Java_XXX	sun_management_MemoryImpl_getMemoryPools0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+org.rocksdb.Options.allow2pc	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.evError	UNMAPPED		
+sun.misc.Unsafe.putChar	UNMAPPED		
+org.rocksdb.CompressionOptions.setWindowBits	UNMAPPED		
+java.io.RandomAccessFile.writeBytes	Java_XXX	java_io_RandomAccessFile_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms	UNMAPPED		
+org.rocksdb.OptimisticTransactionDB.disposeInternal	UNMAPPED		
+java.lang.StrictMath.exp	Java_XXX	java_lang_StrictMath_exp	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.VectorMemTableConfig.newMemTableFactoryHandle	UNMAPPED		
+java.lang.StrictMath.asin	Java_XXX	java_lang_StrictMath_asin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putOrderedLong	UNMAPPED		
+org.rocksdb.WriteBatchWithIndex.put	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.targetFileSizeBase	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.Buffer.memoryAddress0	UNMAPPED		
+org.rocksdb.Transaction.getElapsedTime	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.getColumnFamilyOptionsFromProps	UNMAPPED		
+org.rocksdb.Transaction.get	UNMAPPED		
+org.rocksdb.DirectSlice.get0	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.setTcpNoPush	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueEventArray.deleteGlobalRefs	UNMAPPED		
+org.rocksdb.DBOptions.setLogger	UNMAPPED		
+org.rocksdb.RocksDB.continueBackgroundWork	UNMAPPED		
+org.rocksdb.TransactionDB.setDeadlockInfoBufferSize	UNMAPPED		
+org.rocksdb.WBWIRocksIterator.seekToLast0	UNMAPPED		
+org.rocksdb.BackupEngine.deleteBackup	UNMAPPED		
+org.rocksdb.BackupableDBOptions.setCallbackTriggerIntervalSize	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setCompactionStyle	UNMAPPED		
+org.rocksdb.TransactionLogIterator.getBatch	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.BsdSocket.getSndLowAt	UNMAPPED		
+org.rocksdb.CompactionOptionsUniversal.setMaxSizeAmplificationPercent	UNMAPPED		
+org.rocksdb.Options.setForceConsistencyChecks	UNMAPPED		
+org.rocksdb.WriteBatch.hasEndPrepare	UNMAPPED		
+org.rocksdb.Transaction.getWriteOptions	UNMAPPED		
+org.rocksdb.Options.setAllow2pc	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setChangeLevel	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEPIPE	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.kqueue.KQueueStaticallyReferencedJniMethods.noteDisconnected	UNMAPPED		
+jdk.jfr.internal.JVM.getEpochAddress	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.setSoftPendingCompactionBytesLimit	UNMAPPED		
+org.rocksdb.ColumnFamilyOptions.levelZeroSlowdownWritesTrigger	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEAGAIN	NETTY_HEURISTIC	netty_unix_errors_errnoEAGAIN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.RocksDB.open	UNMAPPED		
+org.rocksdb.Options.setMaxCompactionBytes	UNMAPPED		
+java.util.TimeZone.getSystemTimeZoneID	Java_XXX	java_util_TimeZone_getSystemTimeZoneID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.rocksdb.Transaction.setLogNumber	UNMAPPED		
+org.rocksdb.CompactRangeOptions.setMaxSubcompactions	UNMAPPED		
+org.rocksdb.DBOptions.setWritableFileMaxBufferSize	UNMAPPED		
+org.rocksdb.Options.setAdviseRandomOnOpen	UNMAPPED		
+org.rocksdb.Options.setMinWriteBufferNumberToMerge	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEISCONN	NETTY_HEURISTIC	netty_unix_errors_errorEISCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.rocksdb.ColumnFamilyOptions.setLevel0FileNumCompactionTrigger	UNMAPPED		
+org.rocksdb.RocksDB.dropColumnFamily	UNMAPPED		
+org.rocksdb.BackupEngine.restoreDbFromBackup	UNMAPPED		
+sun.misc.Unsafe.throwException	UNMAPPED		
+java.lang.Class.getDeclaredFields0	JVM_XXX	JVM_GetClassDeclaredFields	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.rocksdb.Options.maxSuccessiveMerges	UNMAPPED		
+org.apache.storm.shade.io.netty.channel.epoll.Native.epollCreate	UNMAPPED		

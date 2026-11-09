@@ -411,9 +411,8 @@ def table_column(img, ws, table, out):
         if r.name != img and r.is_dir():
             (tv / r.name).symlink_to(r)
     # native-method mapping breakdown: the audit on this run's mapping
-    swat = ["--swat-override", f"{img}={ART / 'swat4j' / 'outputs' / 'mapping' / img}"] if jdk8 else []
     run([sys.executable, str(ART / "analysis" / "native_mapping_audit" / "audit_native_mapping.py"),
-         "--out", str(ws / "audit"), "--app", f"{img}={v}"] + swat, ws / "audit.log", echo=False)
+         "--out", str(ws / "audit"), "--app", f"{img}={v}"], ws / "audit.log", echo=False)
     rows = list(csv.DictReader(open(table / "tables" / "mapping_audit_per_app.csv")))
     mine = next(csv.DictReader(open(ws / "audit" / "per_app_summary.csv")))
     with open(ws / "audit" / "table_audit.csv", "w", newline="") as fh:

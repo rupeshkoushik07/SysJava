@@ -152,7 +152,6 @@ splice
 stat
 statfs
 statx
-sync
 sysinfo
 tgkill
 time

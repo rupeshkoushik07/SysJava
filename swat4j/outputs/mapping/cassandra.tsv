@@ -1,0 +1,687 @@
+method	strategy	symbol	library
+sun.misc.Unsafe.getBoolean	UNMAPPED		
+org.hyperic.sigar.vmware.VM.deviceDisconnect	Java_XXX	Java_org_hyperic_sigar_vmware_VM_deviceDisconnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.newSocketStreamFd	NETTY_HEURISTIC	netty_unix_socket_newSocketStreamFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.tcpMd5SigMaxKeyLen	NETTY_HEURISTIC	netty_epoll_native_tcpMd5SigMaxKeyLen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.ssizeMax	NETTY_HEURISTIC	netty_epoll_native_ssizeMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.ConnectParams.destroy	Java_XXX	Java_org_hyperic_sigar_vmware_ConnectParams_destroy	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.Pdh.pdhLookupPerfName	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlAdd0	NETTY_HEURISTIC	netty_epoll_native_epollCtlAdd0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Signal.handle0	Java_XXX	sun_misc_Signal_handle0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.cassandra.utils.WindowsTimer.timeBeginPeriod	UNMAPPED		
+org.hyperic.sigar.NetStat.stat	Java_XXX	Java_org_hyperic_sigar_NetStat_stat	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native._getPointer	UNMAPPED		
+com.sun.jna.Native.getStringBytes	UNMAPPED		
+java.lang.Thread.isAlive	JVM_XXX	JVM_IsThreadAlive	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.vmware.VM.getPid	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getPid	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.FileVersion.gather	Java_XXX	Java_org_hyperic_sigar_win32_FileVersion_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VMwareServer.exec	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_exec	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.getTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.createJFR	UNMAPPED		
+io.netty.channel.unix.Socket.listen	NETTY_HEURISTIC	netty_unix_socket_listen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.NativeLibraryLinux.getpid	UNMAPPED		
+org.apache.cassandra.utils.NativeLibraryLinux.fcntl	UNMAPPED		
+org.hyperic.sigar.FileInfo.getPermissionsString	Java_XXX	Java_org_hyperic_sigar_FileInfo_getPermissionsString	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.offsetofEpollData	NETTY_HEURISTIC	netty_epoll_native_offsetofEpollData	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.epollCreate	NETTY_HEURISTIC	netty_epoll_native_epollCreate	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getInterfaces0	JVM_XXX	JVM_GetClassInterfaces	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getTotal	Java_XXX	java_util_zip_ZipFile_getTotal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+net.jpountz.lz4.LZ4JNI.LZ4_decompress_fast	UNMAPPED		
+sun.misc.Unsafe.storeFence	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferSize	UNMAPPED		
+io.netty.channel.unix.Socket.isKeepAlive	NETTY_HEURISTIC	netty_unix_socket_isKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.copyMemory	UNMAPPED		
+java.lang.ClassLoader$NativeLibrary.load	UNMAPPED		
+com.sun.jna.Native.getByte	UNMAPPED		
+org.hyperic.sigar.util.Getline.reset	Java_XXX	Java_org_hyperic_sigar_util_Getline_reset	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.setInt	UNMAPPED		
+java.util.zip.Inflater.inflateBytes	Java_XXX	java_util_zip_Inflater_inflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.CRC32.updateByteBuffer	Java_XXX	java_util_zip_CRC32_updateByteBuffer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Sigar.getFQDN	Java_XXX	Java_org_hyperic_sigar_Sigar_getFQDN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEBADF	NETTY_HEURISTIC	netty_unix_errors_errnoEBADF	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.ZipFile.getEntryMethod	Java_XXX	java_util_zip_ZipFile_getEntryMethod	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.FileInfo.getTypeString	Java_XXX	Java_org_hyperic_sigar_FileInfo_getTypeString	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.EventLog.openlog	UNMAPPED		
+jdk.jfr.internal.JVM.destroyJFR	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegSetIntValue	UNMAPPED		
+org.hyperic.sigar.Sigar.kill	Java_XXX	Java_org_hyperic_sigar_Sigar_kill	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.reflect.Reflection.getCallerClass	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.uioMaxIov	NETTY_HEURISTIC	netty_epoll_native_uioMaxIov	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.win32.Pdh.pdhConnectMachine	UNMAPPED		
+java.lang.UNIXProcess.forkAndExec	Java_XXX	java_lang_UNIXProcess_forkAndExec	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.newSocketDomainFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDomainFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.putObjectVolatile	UNMAPPED		
+sun.reflect.ConstantPool.getFloatAt0	Java_XXX	sun_reflect_ConstantPool_getFloatAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCrc	Java_XXX	java_util_zip_ZipFile_getEntryCrc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.cassandra.utils.NativeLibraryLinux.posix_fadvise	UNMAPPED		
+sun.misc.Unsafe.allocateInstance	UNMAPPED		
+org.hyperic.sigar.vmware.VM.connect	Java_XXX	Java_org_hyperic_sigar_vmware_VM_connect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.shouldLog	UNMAPPED		
+org.hyperic.sigar.ptql.SigarProcessQuery.find	Java_XXX	Java_org_hyperic_sigar_ptql_SigarProcessQuery_find	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegQueryIntValue	UNMAPPED		
+jdk.jfr.internal.JVM.setThreshold	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.getPathBox	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_getPathBox	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Object.notify	JVM_XXX	JVM_MonitorNotify	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putLongVolatile	UNMAPPED		
+java.util.zip.CRC32.updateBytes	Java_XXX	java_util_zip_CRC32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+net.jpountz.xxhash.XXHashJNI.XXH64_init	UNMAPPED		
+java.lang.Throwable.getStackTraceElement	Java_XXX	java_lang_Throwable_getStackTraceElement	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.vmware.VM.isConnected	Java_XXX	Java_org_hyperic_sigar_vmware_VM_isConnected	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.start	Java_XXX	Java_org_hyperic_sigar_vmware_VM_start	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.newEventWriter	UNMAPPED		
+org.hyperic.sigar.vmware.VMwareServer.disconnect	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_disconnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.invoke.MethodHandleNatives.staticFieldOffset	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapObject	UNMAPPED		
+org.hyperic.sigar.Sigar.getLoadAverage	Java_XXX	Java_org_hyperic_sigar_Sigar_getLoadAverage	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.sizeofEpollEvent	NETTY_HEURISTIC	netty_epoll_native_sizeofEpollEvent	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.CpuPerc.gather	Java_XXX	Java_org_hyperic_sigar_CpuPerc_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VMwareServer.getResource	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_getResource	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Object.notifyAll	JVM_XXX	JVM_MonitorNotifyAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.setTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_setTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.RandomAccessFile.read0	Java_XXX	java_io_RandomAccessFile_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.MetaBase.MetaBaseOpenSubKey	UNMAPPED		
+io.netty.channel.unix.Socket.recvFromAddress	NETTY_HEURISTIC	netty_unix_socket_recvFromAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.NativeLibraryLinux.close	UNMAPPED		
+java.util.zip.Inflater.setDictionary	Java_XXX	java_util_zip_Inflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.vmware.VM.getPermissions	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getPermissions	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.ConnectParams.create	Java_XXX	Java_org_hyperic_sigar_vmware_ConnectParams_create	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+net.jpountz.xxhash.XXHashJNI.XXH32_digest	UNMAPPED		
+com.sun.jna.Native.indexOf	UNMAPPED		
+jdk.jfr.internal.JVM.setForceInstrumentation	UNMAPPED		
+org.hyperic.sigar.win32.Service.CreateService	UNMAPPED		
+sun.misc.Unsafe.setMemory	UNMAPPED		
+org.hyperic.sigar.Swap.gather	Java_XXX	Java_org_hyperic_sigar_Swap_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.FileInfo.getMode	Java_XXX	Java_org_hyperic_sigar_FileInfo_getMode	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.Sigar.getCpuInfoList	Java_XXX	Java_org_hyperic_sigar_Sigar_getCpuInfoList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.URLClassPath.getLookupCacheForClassLoader	Java_XXX	sun_misc_URLClassPath_getLookupCacheForClassLoader	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.expand	UNMAPPED		
+org.hyperic.sigar.FileSystemUsage.gather	Java_XXX	Java_org_hyperic_sigar_FileSystemUsage_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingSendmmsg	NETTY_HEURISTIC	netty_epoll_native_isSupportingSendmmsg	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.mapLibraryName	Java_XXX	java_lang_System_mapLibraryName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Double.longBitsToDouble	Java_XXX	java_lang_Double_longBitsToDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.ObjectOutputStream.floatsToBytes	Java_XXX	java_io_ObjectOutputStream_floatsToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.cassandra.utils.NativeLibraryWindows.GetCurrentProcessId	UNMAPPED		
+java.lang.ClassLoader.resolveClass0	Java_XXX	java_lang_ClassLoader_resolveClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.vmware.VM.removeAllSnapshots	Java_XXX	Java_org_hyperic_sigar_vmware_VM_removeAllSnapshots	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Thread.interrupt0	JVM_XXX	JVM_Interrupt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.getByte	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.setOutputAreaXYXY	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setOutputAreaXYXY	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Class.getEnclosingMethod0	JVM_XXX	JVM_GetEnclosingMethodInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.staticFieldBase	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollin	NETTY_HEURISTIC	netty_epoll_native_epollin	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Throwable.fillInStackTrace	Java_XXX	java_lang_Throwable_fillInStackTrace	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.TimeZone.getSystemGMTOffsetID	Java_XXX	java_util_TimeZone_getSystemGMTOffsetID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.getWindowHandle0	UNMAPPED		
+io.netty.channel.unix.Socket.connect	NETTY_HEURISTIC	netty_unix_socket_connect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.getFloat	UNMAPPED		
+io.netty.channel.epoll.Native.setTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_setTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.FileDescriptor.write	NETTY_HEURISTIC	netty_unix_filedescriptor_write	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.setMemorySize	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.dispose	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_dispose	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+io.netty.channel.epoll.Native.setReusePort	NETTY_HEURISTIC	netty_epoll_native_setReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.NativeLibraryDarwin.fsync	UNMAPPED		
+io.netty.channel.epoll.Native.setTcpMd5Sig0	NETTY_HEURISTIC	netty_epoll_native_setTcpMd5Sig0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.Sigar.getNetListenAddress	Java_XXX	Java_org_hyperic_sigar_Sigar_getNetListenAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.Service.QueryServiceConfig	UNMAPPED		
+java.lang.reflect.Array.set	Java_XXX	java_lang_reflect_Array_set	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.vmware.VM.getResource	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getResource	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegOpenKey	UNMAPPED		
+io.netty.channel.epoll.Native.getTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_getTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.desiredAssertionStatus0	JVM_XXX	JVM_DesiredAssertionStatus	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.vmware.VMwareServer.connect	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_connect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.apache.cassandra.utils.NativeLibraryLinux.open	UNMAPPED		
+org.hyperic.sigar.SigarLog.setLevel	Java_XXX	Java_org_hyperic_sigar_SigarLog_setLevel	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.setMethodSamplingInterval	UNMAPPED		
+sun.reflect.ConstantPool.getUTF8At0	Java_XXX	sun_reflect_ConstantPool_getUTF8At0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.getPeerCredentials	NETTY_HEURISTIC	netty_channel_unix_socket_getPeerCredentials	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Float.intBitsToFloat	Java_XXX	java_lang_Float_intBitsToFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.totalMemory	Java_XXX	java_lang_Runtime_totalMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.open	UNMAPPED		
+com.sun.jna.Native.setMemory	UNMAPPED		
+com.sun.jna.Native.createNativeCallback	UNMAPPED		
+java.lang.SecurityManager.getClassContext	Java_XXX	java_lang_SecurityManager_getClassContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.ProcState.gather	Java_XXX	Java_org_hyperic_sigar_ProcState_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.getToolsLastActive	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getToolsLastActive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.management.MemoryImpl.getMemoryManagers0	Java_XXX	sun_management_MemoryImpl_getMemoryManagers0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+org.hyperic.sigar.win32.Service.OpenService	UNMAPPED		
+java.lang.ClassLoader.findLoadedClass0	Java_XXX	java_lang_ClassLoader_findLoadedClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.ffi_call	UNMAPPED		
+org.hyperic.sigar.util.Getline.setCompleter	Java_XXX	Java_org_hyperic_sigar_util_Getline_setCompleter	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Class.getDeclaredMethods0	JVM_XXX	JVM_GetClassDeclaredMethods	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEPIPE	NETTY_HEURISTIC	netty_unix_errors_errnoEPIPE	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.WindowsTimer.timeEndPeriod	UNMAPPED		
+org.hyperic.sigar.DirStat.gather	Java_XXX	Java_org_hyperic_sigar_DirStat_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.NetInterfaceConfig.gather	Java_XXX	Java_org_hyperic_sigar_NetInterfaceConfig_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.setReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_setReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.RandomAccessFile.seek0	Java_XXX	java_io_RandomAccessFile_seek0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.freeEntry	Java_XXX	java_util_zip_ZipFile_freeEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+com.sun.jna.Native.getDirectByteBuffer	UNMAPPED		
+jdk.jfr.internal.JVM.getEventWriter	UNMAPPED		
+java.io.FileDescriptor.sync	Java_XXX	java_io_FileDescriptor_sync	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.FileDescriptor.read	NETTY_HEURISTIC	netty_unix_filedescriptor_read	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.free	UNMAPPED		
+java.net.NetworkInterface.isUp0	Java_XXX	java_net_NetworkInterface_isUp0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+io.netty.channel.epoll.Native.eventFdRead	NETTY_HEURISTIC	netty_epoll_native_eventFdRead	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getIntVolatile	UNMAPPED		
+org.hyperic.sigar.vmware.VM.deviceIsConnected	Java_XXX	Java_org_hyperic_sigar_vmware_VM_deviceIsConnected	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.getSoError	NETTY_HEURISTIC	netty_unix_socket_getSoError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getUnloadedEventClassCount	UNMAPPED		
+sun.misc.VM.latestUserDefinedLoader0	Java_XXX	sun_misc_VM_latestUserDefinedLoader0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.MetaBase.MetaBaseInit	UNMAPPED		
+org.hyperic.sigar.win32.Pdh.pdhGetValue	UNMAPPED		
+java.lang.System.setErr0	Java_XXX	java_lang_System_setErr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.currentThread	JVM_XXX	JVM_CurrentThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.beginRecording	UNMAPPED		
+java.util.zip.ZipFile.open	Java_XXX	java_util_zip_ZipFile_open	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.io.FileInputStream.read0	Java_XXX	java_io_FileInputStream_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.Native.setTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getChar	UNMAPPED		
+com.sun.jna.Native.invokeVoid	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegQueryBufferValue	UNMAPPED		
+org.hyperic.sigar.FileSystem.gather	UNMAPPED		
+java.util.zip.ZipFile.getManifestNum	Java_XXX	java_util_zip_ZipFile_getManifestNum	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Sigar.getWhoList	Java_XXX	Java_org_hyperic_sigar_Sigar_getWhoList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.reflect.Array.setInt	Java_XXX	java_lang_reflect_Array_setInt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.availableProcessors	Java_XXX	java_lang_Runtime_availableProcessors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.read	UNMAPPED		
+org.hyperic.sigar.vmware.VM.createNamedSnapshot	Java_XXX	Java_org_hyperic_sigar_vmware_VM_createNamedSnapshot	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.Sigar.getPid	Java_XXX	Java_org_hyperic_sigar_Sigar_getPid	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Thread.dumpThreads	JVM_XXX	JVM_DumpThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.bind	NETTY_HEURISTIC	netty_unix_socket_bind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getDeclaringClass0	JVM_XXX	JVM_GetDeclaringClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.win32.EventLog.close	UNMAPPED		
+org.hyperic.sigar.vmware.VM.getRunAsUser	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getRunAsUser	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.NetConnection.getStateString	Java_XXX	Java_org_hyperic_sigar_NetConnection_getStateString	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VMwareServer.isConnected	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_isConnected	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.NetFlags.getIfFlagsString	Java_XXX	Java_org_hyperic_sigar_NetFlags_getIfFlagsString	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.setWideString	UNMAPPED		
+com.sun.jna.Native.getInt	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.setNormalize	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setNormalize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollet	NETTY_HEURISTIC	netty_epoll_native_epollet	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.win32.Pdh.pdhGetObjects	UNMAPPED		
+jdk.jfr.internal.JVM.registerNatives	UNMAPPED		
+org.apache.cassandra.utils.NativeLibraryDarwin.fcntl	UNMAPPED		
+sun.java2d.pipe.ShapeSpanIterator.addSegment	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_addSegment	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Class.getSigners	JVM_XXX	JVM_GetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.storeMetadataDescriptor	UNMAPPED		
+java.io.RandomAccessFile.getFilePointer	Java_XXX	java_io_RandomAccessFile_getFilePointer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.sendTo	NETTY_HEURISTIC	netty_unix_socket_sendTo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.shutdown	NETTY_HEURISTIC	netty_unix_socket_shutdown	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.VM.disconnect	Java_XXX	Java_org_hyperic_sigar_vmware_VM_disconnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.retransformClasses	UNMAPPED		
+org.hyperic.sigar.win32.EventLog.getNumberOfRecords	UNMAPPED		
+java.util.zip.Inflater.reset	Java_XXX	java_util_zip_Inflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Uptime.gather	Java_XXX	Java_org_hyperic_sigar_Uptime_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.eventFdWrite	NETTY_HEURISTIC	netty_epoll_native_eventFdWrite	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setShort	Java_XXX	java_lang_reflect_Array_setShort	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingTcpFastopen	NETTY_HEURISTIC	netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.getMacAddr0	Java_XXX	java_net_NetworkInterface_getMacAddr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.lang.Class.forName0	Java_XXX	java_lang_Class_forName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.xerial.snappy.SnappyNative.rawCompress	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.newPipe	NETTY_HEURISTIC	netty_unix_filedescriptor_newPipe	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getLongVolatile	UNMAPPED		
+sun.misc.Unsafe.monitorEnter	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH32BB	UNMAPPED		
+org.hyperic.sigar.vmware.VM.getConfig	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getConfig	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+net.jpountz.xxhash.XXHashJNI.XXH32_free	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseEnumKey	UNMAPPED		
+org.hyperic.sigar.ResourceLimit.gather	Java_XXX	Java_org_hyperic_sigar_ResourceLimit_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegDeleteValue	UNMAPPED		
+com.sun.jna.Native.setChar	UNMAPPED		
+org.apache.cassandra.utils.NativeLibraryDarwin.strerror	UNMAPPED		
+io.netty.channel.epoll.Native.getTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_getTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.setSoLinger	NETTY_HEURISTIC	netty_unix_socket_setSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.allocateMemory	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferCount	UNMAPPED		
+sun.misc.Unsafe.freeMemory	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEWOULDBLOCK	NETTY_HEURISTIC	netty_unix_errors_errnoEWOULDBLOCK	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.ZipFile.close	Java_XXX	java_util_zip_ZipFile_close	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.NetInfo.gather	Java_XXX	Java_org_hyperic_sigar_NetInfo_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.putAddress	UNMAPPED		
+sun.misc.MessageUtils.toStderr	Java_XXX	sun_misc_MessageUtils_toStderr	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.NetInterfaceStat.gather	Java_XXX	Java_org_hyperic_sigar_NetInterfaceStat_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.hasSnapshot	Java_XXX	Java_org_hyperic_sigar_vmware_VM_hasSnapshot	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.System.arraycopy	JVM_XXX	JVM_ArrayCopy	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+net.jpountz.lz4.LZ4JNI.LZ4_decompress_safe	UNMAPPED		
+org.hyperic.sigar.NfsClientV3.gather	Java_XXX	Java_org_hyperic_sigar_NfsClientV3_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.getTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_getTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.setSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_setSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.NativeLibraryLinux.munlockall	UNMAPPED		
+io.netty.channel.epoll.Native.sendmmsg0	NETTY_HEURISTIC	netty_epoll_native_sendmmsg0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.setTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_setTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.remoteAddress	NETTY_HEURISTIC	netty_unix_socket_remoteAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.sendToAddress	NETTY_HEURISTIC	netty_unix_socket_sendToAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getTypeId	UNMAPPED		
+jdk.jfr.internal.JVM.setCutoff	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegCreateKey	UNMAPPED		
+org.hyperic.sigar.NetConnection.gather	UNMAPPED		
+org.hyperic.sigar.ProcEnv.getAll	Java_XXX	Java_org_hyperic_sigar_ProcEnv_getAll	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.emitOldObjectSamples	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.getMemberVMInfo	UNMAPPED		
+sun.misc.Unsafe.putByte	UNMAPPED		
+io.netty.channel.unix.Socket.getSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_getSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.close	UNMAPPED		
+com.sun.jna.Native.findSymbol	UNMAPPED		
+io.netty.channel.unix.Socket.isTcpCork	NETTY_HEURISTIC	netty_unix_socket_isTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.SnappyNative.nativeLibraryVersion	UNMAPPED		
+java.net.NetworkInterface.getByInetAddress0	Java_XXX	java_net_NetworkInterface_getByInetAddress0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+sun.reflect.ConstantPool.getDoubleAt0	Java_XXX	sun_reflect_ConstantPool_getDoubleAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.end	Java_XXX	java_util_zip_Inflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.epoll.Native.epollWait0	NETTY_HEURISTIC	netty_epoll_native_epollWait0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.StrictMath.IEEEremainder	Java_XXX	java_lang_StrictMath_IEEEremainder	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.security.AccessController.getInheritedAccessControlContext	Java_XXX	java_security_AccessController_getInheritedAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.setFloat	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.writeAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_writeAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Shutdown.beforeHalt	Java_XXX	java_lang_Shutdown_beforeHalt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEALREADY	NETTY_HEURISTIC	netty_unix_errors_errorEALREADY	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getThreadId	UNMAPPED		
+sun.misc.Unsafe.reallocateMemory	UNMAPPED		
+jdk.jfr.internal.JVM.uncaughtException	UNMAPPED		
+org.hyperic.sigar.util.Getline.histadd	Java_XXX	Java_org_hyperic_sigar_util_Getline_histadd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.ffi_free_closure	UNMAPPED		
+java.lang.Class.getSuperclass	UNMAPPED		
+java.lang.Class.getName0	JVM_XXX	JVM_GetClassName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.xerial.snappy.SnappyNative.uncompressedLength	UNMAPPED		
+org.hyperic.sigar.NfsServerV2.gather	Java_XXX	Java_org_hyperic_sigar_NfsServerV2_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.shouldRotateDisk	UNMAPPED		
+java.lang.Throwable.getStackTraceDepth	Java_XXX	java_lang_Throwable_getStackTraceDepth	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+net.jpountz.lz4.LZ4JNI.LZ4_compressBound	UNMAPPED		
+sun.misc.Unsafe.getDouble	UNMAPPED		
+sun.misc.Unsafe.pageSize	UNMAPPED		
+java.lang.System.currentTimeMillis	JVM_XXX	JVM_CurrentTimeMillis	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.nio.ch.IOUtil.fdVal	Java_XXX	sun_nio_ch_IOUtil_fdVal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.hyperic.sigar.ProcCredName.gather	Java_XXX	Java_org_hyperic_sigar_ProcCredName_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.getUptime	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getUptime	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Thread.yield	JVM_XXX	JVM_Yield	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getClassId	UNMAPPED		
+sun.misc.Unsafe.getInt	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseClose	UNMAPPED		
+org.hyperic.sigar.win32.Service.ChangeServiceDescription	UNMAPPED		
+com.sun.jna.Native.freeNativeCallback	UNMAPPED		
+jdk.jfr.internal.JVM.addStringConstant	UNMAPPED		
+org.hyperic.sigar.vmware.VM.setGuestInfo	Java_XXX	Java_org_hyperic_sigar_vmware_VM_setGuestInfo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.io.RandomAccessFile.write0	Java_XXX	java_io_RandomAccessFile_write0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.RegistryKey.RegQueryMultiStringValue	UNMAPPED		
+sun.misc.Unsafe.shouldBeInitialized	UNMAPPED		
+io.netty.channel.epoll.Native.sendFd0	NETTY_HEURISTIC	netty_epoll_native_sendFd0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.ptql.SigarProcessQuery.create	Java_XXX	Java_org_hyperic_sigar_ptql_SigarProcessQuery_create	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.EventLog.getOldestRecord	UNMAPPED		
+java.util.zip.ZipFile.getEntryBytes	Java_XXX	java_util_zip_ZipFile_getEntryBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Mem.gather	Java_XXX	Java_org_hyperic_sigar_Mem_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.reflect.Reflection.getClassAccessFlags	Java_XXX	sun_reflect_Reflection_getClassAccessFlags	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.util.Getline.isatty	Java_XXX	Java_org_hyperic_sigar_util_Getline_isatty	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegFlushKey	UNMAPPED		
+com.sun.jna.Native.ffi_prep_cif	UNMAPPED		
+org.hyperic.sigar.ptql.SigarProcessQuery.findProcess	Java_XXX	Java_org_hyperic_sigar_ptql_SigarProcessQuery_findProcess	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.Sigar.getNetRouteList	Java_XXX	Java_org_hyperic_sigar_Sigar_getNetRouteList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.setTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_setTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.putFloat	UNMAPPED		
+jdk.jfr.internal.JVM.getPid	UNMAPPED		
+io.netty.channel.unix.Socket.sendToAddresses	NETTY_HEURISTIC	netty_unix_socket_sendToAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollout	NETTY_HEURISTIC	netty_epoll_native_epollout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setByte	Java_XXX	java_lang_reflect_Array_setByte	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.Cpu.gather	Java_XXX	Java_org_hyperic_sigar_Cpu_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.putBoolean	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH64BB	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.strError	NETTY_HEURISTIC	netty_unix_errors_strError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.getWideString	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH64	UNMAPPED		
+org.hyperic.sigar.win32.Pdh.pdhLookupPerfIndex	UNMAPPED		
+io.netty.channel.unix.Socket.setTcpCork	NETTY_HEURISTIC	netty_unix_socket_setTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoECONNRESET	NETTY_HEURISTIC	netty_unix_errors_errnoECONNRESET	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.arrayIndexScale	UNMAPPED		
+org.hyperic.sigar.Sigar.getCpuListNative	Java_XXX	Java_org_hyperic_sigar_Sigar_getCpuListNative	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.reflect.ConstantPool.getIntAt0	Java_XXX	sun_reflect_ConstantPool_getIntAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.iovMax	NETTY_HEURISTIC	netty_epoll_native_iovMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.security.AccessController.doPrivileged	UNMAPPED		
+java.io.ObjectOutputStream.doublesToBytes	Java_XXX	java_io_ObjectOutputStream_doublesToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.init	Java_XXX	java_util_zip_Inflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Sigar.getProcArgs	Java_XXX	Java_org_hyperic_sigar_Sigar_getProcArgs	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.Pdh.pdhGetDescription	UNMAPPED		
+sun.misc.Unsafe.park	UNMAPPED		
+sun.misc.Unsafe.staticFieldOffset	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegCloseKey	UNMAPPED		
+org.hyperic.sigar.vmware.VM.saveScreenshot	Java_XXX	Java_org_hyperic_sigar_vmware_VM_saveScreenshot	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.setTrafficClass	NETTY_HEURISTIC	netty_epoll_native_setTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.Deflater.reset	Java_XXX	java_util_zip_Deflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.win32.Win32.findExecutable	Java_XXX	Java_org_hyperic_sigar_win32_Win32_findExecutable	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.StrictMath.log10	Java_XXX	java_lang_StrictMath_log10	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.ProcCpu.gather	Java_XXX	Java_org_hyperic_sigar_ProcCpu_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.EventLog.waitForChange	UNMAPPED		
+java.lang.Runtime.gc	Java_XXX	java_lang_Runtime_gc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.invokeLong	UNMAPPED		
+com.sun.jna.Native.initialize_ffi_type	UNMAPPED		
+sun.misc.Unsafe.putInt	UNMAPPED		
+com.sun.jna.Native.invokeStructure	UNMAPPED		
+org.hyperic.sigar.SysInfo.gather	Java_XXX	Java_org_hyperic_sigar_SysInfo_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.suspend	Java_XXX	Java_org_hyperic_sigar_vmware_VM_suspend	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.createDefaultSnapshot	Java_XXX	Java_org_hyperic_sigar_vmware_VM_createDefaultSnapshot	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.putObject	UNMAPPED		
+java.lang.StrictMath.log	Java_XXX	java_lang_StrictMath_log	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.ProcFd.gather	Java_XXX	Java_org_hyperic_sigar_ProcFd_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.Sigar.getNetConnectionList	Java_XXX	Java_org_hyperic_sigar_Sigar_getNetConnectionList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.Pdh.pdhGetInstances	UNMAPPED		
+org.hyperic.sigar.vmware.VM.getProductInfo	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getProductInfo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.revertToSnapshot	Java_XXX	Java_org_hyperic_sigar_vmware_VM_revertToSnapshot	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.getLong	UNMAPPED		
+org.hyperic.sigar.ProcTime.gather	Java_XXX	Java_org_hyperic_sigar_ProcTime_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.getStackTraceId	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlDel0	NETTY_HEURISTIC	netty_epoll_native_epollCtlDel0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.FileOutputStream.open0	Java_XXX	java_io_FileOutputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native._getDirectBufferPointer	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEINPROGRESS	NETTY_HEURISTIC	netty_unix_errors_errnoEINPROGRESS	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setDouble	Java_XXX	java_lang_reflect_Array_setDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getProtectionDomain0	JVM_XXX	JVM_GetProtectionDomain	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.System.setOut0	Java_XXX	java_lang_System_setOut0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.java2d.pipe.ShapeSpanIterator.setRule	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_setRule	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.Object.clone	JVM_XXX	JVM_Clone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.abort	UNMAPPED		
+sun.reflect.ConstantPool.getClassAt0	Java_XXX	sun_reflect_ConstantPool_getClassAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.xerial.snappy.SnappyNative.rawUncompress	UNMAPPED		
+org.hyperic.sigar.Sigar.getSigNum	Java_XXX	Java_org_hyperic_sigar_Sigar_getSigNum	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.apache.cassandra.utils.NativeLibraryLinux.fsync	UNMAPPED		
+org.hyperic.sigar.win32.EventLog.readlog	UNMAPPED		
+jdk.jfr.internal.JVM.flush	UNMAPPED		
+com.sun.jna.Native.setLong	UNMAPPED		
+java.io.ObjectInputStream.bytesToFloats	Java_XXX	java_io_ObjectInputStream_bytesToFloats	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.registerMethod	UNMAPPED		
+java.lang.Object.getClass	Java_XXX	java_lang_Object_getClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.Native.getTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.isPrimitive	JVM_XXX	JVM_IsPrimitiveClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.setKeepAlive	NETTY_HEURISTIC	netty_unix_socket_setKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.SnappyNative.maxCompressedLength	UNMAPPED		
+org.hyperic.sigar.DirUsage.gather	Java_XXX	Java_org_hyperic_sigar_DirUsage_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.FileDescriptor.writevAddresses	NETTY_HEURISTIC	netty_unix_filedescriptor_writevAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setFloat	Java_XXX	java_lang_reflect_Array_setFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+net.jpountz.lz4.LZ4JNI.LZ4_compress_limitedOutput	UNMAPPED		
+java.lang.Thread.isInterrupted	JVM_XXX	JVM_IsInterrupted	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+com.sun.jna.Native.write	UNMAPPED		
+jdk.jfr.internal.JVM.getTicksFrequency	UNMAPPED		
+java.io.FileOutputStream.write	Java_XXX	java_io_FileOutputStream_write	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.Sigar.getProcPort	Java_XXX	Java_org_hyperic_sigar_Sigar_getProcPort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.util.zip.ZipFile.getEntry	Java_XXX	java_util_zip_ZipFile_getEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOTCONN	NETTY_HEURISTIC	netty_unix_errors_errnoENOTCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Object.hashCode	JVM_XXX	JVM_IHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putLong	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH32	UNMAPPED		
+org.apache.cassandra.utils.NativeLibraryLinux.mlockall	UNMAPPED		
+org.hyperic.sigar.Sigar.getNativeBuildDate	Java_XXX	Java_org_hyperic_sigar_Sigar_getNativeBuildDate	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.getAllEventClasses	UNMAPPED		
+io.netty.channel.epoll.Native.isBroadcast	NETTY_HEURISTIC	netty_epoll_native_isBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.endRecording	UNMAPPED		
+com.sun.jna.Native.getChar	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseGetStringValue	UNMAPPED		
+java.lang.reflect.Array.newArray	Java_XXX	java_lang_reflect_Array_newArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.nio.MappedByteBuffer.force0	Java_XXX	java_nio_MappedByteBuffer_force0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.apache.cassandra.utils.NativeLibraryDarwin.close	UNMAPPED		
+org.hyperic.sigar.Sigar.getNetServicesName	Java_XXX	Java_org_hyperic_sigar_Sigar_getNetServicesName	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.recvFd0	NETTY_HEURISTIC	netty_epoll_native_recvFd0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.ptql.SigarProcessQuery.destroy	Java_XXX	Java_org_hyperic_sigar_ptql_SigarProcessQuery_destroy	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Shutdown.halt0	Java_XXX	java_lang_Shutdown_halt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.unpark	UNMAPPED		
+org.hyperic.sigar.Sigar.getProcList	Java_XXX	Java_org_hyperic_sigar_Sigar_getProcList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.eventFd	NETTY_HEURISTIC	netty_epoll_native_eventFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.finishConnect	NETTY_HEURISTIC	netty_unix_socket_finishConnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getFloat	UNMAPPED		
+org.hyperic.sigar.CpuInfo.gather	UNMAPPED		
+jdk.jfr.internal.JVM.log	UNMAPPED		
+org.hyperic.sigar.NfsClientV2.gather	Java_XXX	Java_org_hyperic_sigar_NfsClientV2_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.putShort	UNMAPPED		
+io.netty.channel.unix.Socket.accept	NETTY_HEURISTIC	netty_unix_socket_accept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.newSocketDgramFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDgramFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.VM.getExecutionState	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getExecutionState	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.SigarLog.setLogger	Java_XXX	Java_org_hyperic_sigar_SigarLog_setLogger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Signal.findSignal	Java_XXX	sun_misc_Signal_findSignal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.vmware.VMwareServer.create	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_create	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegDeleteKey	UNMAPPED		
+org.hyperic.sigar.vmware.VM.stop	Java_XXX	Java_org_hyperic_sigar_vmware_VM_stop	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.FileDescriptor.readAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_readAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.getAPIChecksum	UNMAPPED		
+sun.misc.Unsafe.putOrderedInt	UNMAPPED		
+org.hyperic.sigar.win32.LocaleInfo.getSystemDefaultLCID	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.init	UNMAPPED		
+io.netty.channel.epoll.Native.setTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.VMwareServer.isRegistered	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_isRegistered	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.apache.cassandra.utils.NativeLibraryDarwin.getpid	UNMAPPED		
+java.lang.Thread.sleep	JVM_XXX	JVM_Sleep	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.DiskUsage.gather	Java_XXX	Java_org_hyperic_sigar_DiskUsage_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.invoke.MethodHandleNatives.staticFieldBase	UNMAPPED		
+io.netty.channel.epoll.Native.sendfile0	NETTY_HEURISTIC	netty_epoll_native_sendfile0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.Sigar.getNativeScmRevision	Java_XXX	Java_org_hyperic_sigar_Sigar_getNativeScmRevision	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.putIntVolatile	UNMAPPED		
+org.hyperic.sigar.Sigar.getNativeVersion	Java_XXX	Java_org_hyperic_sigar_Sigar_getNativeVersion	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.setEnabled	UNMAPPED		
+com.sun.jna.Native.unregister	UNMAPPED		
+io.netty.channel.unix.Socket.getSoLinger	NETTY_HEURISTIC	netty_unix_socket_getSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getTimeConversionFactor	UNMAPPED		
+jdk.jfr.internal.JVM.setStackDepth	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH64_free	UNMAPPED		
+java.util.zip.Deflater.deflateBytes	Java_XXX	java_util_zip_Deflater_deflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Sigar.open	Java_XXX	Java_org_hyperic_sigar_Sigar_open	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.Pdh.pdhGetKeys	UNMAPPED		
+jdk.jfr.internal.JVM.setStackTraceEnabled	UNMAPPED		
+com.sun.jna.Native.invokeObject	UNMAPPED		
+org.hyperic.sigar.Sigar.getProcModulesNative	Java_XXX	Java_org_hyperic_sigar_Sigar_getProcModulesNative	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+net.jpountz.lz4.LZ4JNI.init	UNMAPPED		
+java.lang.Object.wait	JVM_XXX	JVM_MonitorWait	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.ProcExe.gather	Java_XXX	Java_org_hyperic_sigar_ProcExe_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.setTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.Adler32.updateBytes	Java_XXX	java_util_zip_Adler32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Sigar.getNetInterfaceList	Java_XXX	Java_org_hyperic_sigar_Sigar_getNetInterfaceList	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.isProtected	UNMAPPED		
+org.hyperic.sigar.NetConnection.getTypeString	Java_XXX	Java_org_hyperic_sigar_NetConnection_getTypeString	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.System.identityHashCode	Java_XXX	java_lang_System_identityHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.setDouble	UNMAPPED		
+io.netty.channel.epoll.Native.getTrafficClass	NETTY_HEURISTIC	netty_epoll_native_getTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.tcpInfo0	NETTY_HEURISTIC	netty_epoll_native_tcpInfo0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getComponentType	JVM_XXX	JVM_GetComponentType	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.epoll.Native.setBroadcast	NETTY_HEURISTIC	netty_epoll_native_setBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.win32.Pdh.pdhGetCounterType	UNMAPPED		
+sun.misc.Unsafe.ensureClassInitialized	UNMAPPED		
+java.io.RandomAccessFile.open0	Java_XXX	java_io_RandomAccessFile_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.vmware.VM.getGuestInfo	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getGuestInfo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.win32.RegistryKey.RegEnumKey	UNMAPPED		
+org.apache.cassandra.utils.NativeLibraryDarwin.munlockall	UNMAPPED		
+jdk.jfr.internal.JVM.subscribeLogLevel	UNMAPPED		
+org.hyperic.sigar.win32.Service.CloseServiceHandle	UNMAPPED		
+jdk.jfr.internal.JVM.isAvailable	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH32_update	UNMAPPED		
+com.sun.jna.Native.getNativeVersion	UNMAPPED		
+java.lang.Class.isArray	JVM_XXX	JVM_IsArrayClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.win32.Pdh.pdhAddCounter	UNMAPPED		
+net.jpountz.lz4.LZ4JNI.LZ4_compressHC	UNMAPPED		
+com.sun.jna.Native.initIDs	UNMAPPED		
+java.net.NetworkInterface.getByName0	Java_XXX	java_net_NetworkInterface_getByName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.io.RandomAccessFile.length	Java_XXX	java_io_RandomAccessFile_length	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorECONNREFUSED	NETTY_HEURISTIC	netty_unix_errors_errorECONNREFUSED	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Package.getSystemPackage0	Java_XXX	java_lang_Package_getSystemPackage0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.Sigar.getServicePid	Java_XXX	Java_org_hyperic_sigar_Sigar_getServicePid	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.NfsServerV3.gather	Java_XXX	Java_org_hyperic_sigar_NfsServerV3_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorENETUNREACH	NETTY_HEURISTIC	netty_unix_errors_errorENETUNREACH	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.compareAndSwapLong	UNMAPPED		
+io.netty.channel.unix.Socket.getReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_getReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.ZipFile.getEntrySize	Java_XXX	java_util_zip_ZipFile_getEntrySize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.win32.Service.getServiceNames	UNMAPPED		
+java.lang.Class.isInterface	JVM_XXX	JVM_IsInterface	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+com.sun.jna.Native.malloc	UNMAPPED		
+org.hyperic.sigar.win32.Service.ControlService	UNMAPPED		
+java.lang.ClassLoader.findBootstrapClass	Java_XXX	java_lang_ClassLoader_findBootstrapClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.FileInputStream.open0	Java_XXX	java_io_FileInputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.setLastError	UNMAPPED		
+sun.nio.ch.IOUtil.setfdVal	Java_XXX	sun_nio_ch_IOUtil_setfdVal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+sun.misc.Unsafe.objectFieldOffset	UNMAPPED		
+java.lang.StrictMath.sqrt	Java_XXX	java_lang_StrictMath_sqrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.setTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_setTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.kernelVersion	NETTY_HEURISTIC	netty_epoll_native_kernelVersion	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+com.sun.jna.Native.invokeDouble	UNMAPPED		
+org.hyperic.sigar.vmware.VMwareObject.init	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareObject_init	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.Class.getDeclaredConstructors0	JVM_XXX	JVM_GetClassDeclaredConstructors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.Sigar.getPasswordNative	Java_XXX	Java_org_hyperic_sigar_Sigar_getPasswordNative	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.NetRoute.gather	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegEnumValueName	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollerr	NETTY_HEURISTIC	netty_epoll_native_epollerr	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.win32.Pdh.validate	UNMAPPED		
+org.hyperic.sigar.FileAttrs.gather	Java_XXX	Java_org_hyperic_sigar_FileAttrs_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.util.Getline.histinit	Java_XXX	Java_org_hyperic_sigar_util_Getline_histinit	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollrdhup	NETTY_HEURISTIC	netty_epoll_native_epollrdhup	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.isInstance	Java_XXX	java_lang_Class_isInstance	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.MetaBase.MetaBaseOpenSubKeyAbs	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.writev	NETTY_HEURISTIC	netty_unix_filedescriptor_writev	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.StrictMath.pow	Java_XXX	java_lang_StrictMath_pow	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.cassandra.utils.NativeLibraryLinux.strerror	UNMAPPED		
+jdk.jfr.internal.JVM.setOutput	UNMAPPED		
+java.io.FileInputStream.readBytes	Java_XXX	java_io_FileInputStream_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getRawAnnotations	JVM_XXX	JVM_GetClassAnnotations	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+com.sun.jna.Native.getLastError	UNMAPPED		
+org.hyperic.sigar.RPC.strerror	Java_XXX	Java_org_hyperic_sigar_RPC_strerror	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.defineClass	UNMAPPED		
+sun.misc.Unsafe.getShort	UNMAPPED		
+java.io.FileOutputStream.writeBytes	Java_XXX	java_io_FileOutputStream_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.resolve	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseGetIntValue	UNMAPPED		
+sun.misc.Unsafe.addressSize	UNMAPPED		
+java.io.RandomAccessFile.readBytes	Java_XXX	java_io_RandomAccessFile_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.isTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_isTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.getAll	Java_XXX	java_net_NetworkInterface_getAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.hyperic.sigar.vmware.VM.reset	Java_XXX	Java_org_hyperic_sigar_vmware_VM_reset	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.setShort	UNMAPPED		
+sun.awt.image.BufImgSurfaceData.initRaster	Java_XXX	sun_awt_image_BufImgSurfaceData_initRaster	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.reflect.Array.get	Java_XXX	java_lang_reflect_Array_get	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setNativeName	JVM_XXX	JVM_SetNativeThreadName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.ObjectInputStream.bytesToDoubles	Java_XXX	java_io_ObjectInputStream_bytesToDoubles	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.LocaleInfo.getAttribute	UNMAPPED		
+java.lang.reflect.Array.multiNewArray	Java_XXX	java_lang_reflect_Array_multiNewArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setRepositoryLocation	UNMAPPED		
+sun.misc.Unsafe.putDouble	UNMAPPED		
+io.netty.channel.epoll.Native.isIpFreeBind	NETTY_HEURISTIC	netty_epoll_Native_isIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Float.floatToRawIntBits	Java_XXX	java_lang_Float_floatToRawIntBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.RPC.ping	Java_XXX	Java_org_hyperic_sigar_RPC_ping	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.setCompressedIntegers	UNMAPPED		
+jdk.jfr.internal.JVM.setThreadBufferSize	UNMAPPED		
+java.lang.Thread.holdsLock	JVM_XXX	JVM_HoldsLock	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.ProcStat.gather	Java_XXX	Java_org_hyperic_sigar_ProcStat_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.sizeof	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseRelease	UNMAPPED		
+java.util.zip.ZipFile.getEntryFlag	Java_XXX	java_util_zip_ZipFile_getEntryFlag	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.vmware.VM.create	Java_XXX	Java_org_hyperic_sigar_vmware_VM_create	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.net.NetworkInterface.isLoopback0	Java_XXX	java_net_NetworkInterface_isLoopback0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.hyperic.sigar.util.Getline.getline	Java_XXX	Java_org_hyperic_sigar_util_Getline_getline	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.vmware.VM.deviceConnect	Java_XXX	Java_org_hyperic_sigar_vmware_VM_deviceConnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.util.zip.CRC32.update	Java_XXX	java_util_zip_CRC32_update	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+com.sun.jna.Native.getShort	UNMAPPED		
+java.util.zip.ZipFile.getEntryCSize	Java_XXX	java_util_zip_ZipFile_getEntryCSize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.setSampleThreads	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.objectFieldOffset	UNMAPPED		
+org.hyperic.sigar.vmware.VM.destroy	Java_XXX	Java_org_hyperic_sigar_vmware_VM_destroy	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.hyperic.sigar.util.Getline.redraw	Java_XXX	Java_org_hyperic_sigar_util_Getline_redraw	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.bindDomainSocket	NETTY_HEURISTIC	netty_unix_socket_bindDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.VM.getHeartbeat	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getHeartbeat	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.reflect.Array.setLong	Java_XXX	java_lang_reflect_Array_setLong	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.RegistryKey.RegQueryStringValue	UNMAPPED		
+java.util.zip.Deflater.init	Java_XXX	java_util_zip_Deflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.arrayBaseOffset	UNMAPPED		
+java.lang.System.nanoTime	JVM_XXX	JVM_NanoTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.win32.Service.DeleteService	UNMAPPED		
+org.xerial.snappy.SnappyNative.isValidCompressedBuffer	UNMAPPED		
+java.lang.Double.doubleToRawLongBits	Java_XXX	java_lang_Double_doubleToRawLongBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setPriority0	JVM_XXX	JVM_SetThreadPriority	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.Who.gather	UNMAPPED		
+java.util.jar.JarFile.getMetaInfEntryNames	Java_XXX	java_util_jar_JarFile_getMetaInfEntryNames	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getObjectVolatile	UNMAPPED		
+org.hyperic.sigar.ThreadCpu.gather	Java_XXX	Java_org_hyperic_sigar_ThreadCpu_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.Socket.recvFrom	NETTY_HEURISTIC	netty_unix_socket_recvFrom	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.splice0	NETTY_HEURISTIC	netty_epoll_native_splice0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.setTcpFastopen	NETTY_HEURISTIC	netty_epoll_native_setTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.connectDomainSocket	NETTY_HEURISTIC	netty_unix_socket_connectDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.win32.Service.QueryServiceStatus	UNMAPPED		
+java.lang.reflect.Array.setBoolean	Java_XXX	java_lang_reflect_Array_setBoolean	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.Service.OpenSCManager	UNMAPPED		
+java.security.AccessController.getStackAccessControlContext	Java_XXX	java_security_AccessController_getStackAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.ProcCred.gather	Java_XXX	Java_org_hyperic_sigar_ProcCred_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.lang.invoke.MethodHandleNatives.init	UNMAPPED		
+org.hyperic.sigar.vmware.VM.getId	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getId	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.util.zip.Deflater.end	Java_XXX	java_util_zip_Deflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.ZipFile.getEntryTime	Java_XXX	java_util_zip_ZipFile_getEntryTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+com.sun.jna.Native.getDouble	UNMAPPED		
+org.hyperic.sigar.win32.Pdh.pdhOpenQuery	UNMAPPED		
+jdk.jfr.internal.JVM.getClassIdNonIntrinsic	UNMAPPED		
+org.hyperic.sigar.win32.Pdh.pdhRemoveCounter	UNMAPPED		
+io.netty.channel.epoll.Native.getTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.FileDescriptor.close	NETTY_HEURISTIC	netty_unix_filedescriptor_close	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.SnappyNative.arrayCopy	UNMAPPED		
+com.sun.jna.Native.setProtected	UNMAPPED		
+org.hyperic.sigar.ResourceLimit.INFINITY	Java_XXX	Java_org_hyperic_sigar_ResourceLimit_INFINITY	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+com.sun.jna.Native.invokePointer	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapInt	UNMAPPED		
+java.lang.Class.isAssignableFrom	Java_XXX	java_lang_Class_isAssignableFrom	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.defineAnonymousClass	UNMAPPED		
+java.lang.Runtime.maxMemory	Java_XXX	java_lang_Runtime_maxMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getConstantPool	JVM_XXX	JVM_GetClassConstantPool	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.Console.echo	Java_XXX	java_io_Console_echo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.ffi_prep_closure	UNMAPPED		
+org.hyperic.sigar.vmware.VMwareServer.getRegisteredVmNames	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_getRegisteredVmNames	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+org.apache.cassandra.utils.NativeLibraryDarwin.open	UNMAPPED		
+com.sun.jna.Native.setDetachState	UNMAPPED		
+org.hyperic.sigar.win32.RegistryKey.RegSetStringValue	UNMAPPED		
+io.netty.channel.epoll.Native.isReuseAddress	NETTY_HEURISTIC	netty_epoll_native_isReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.internal.platform.CgroupMetrics.isUseContainerSupport	Java_XXX	jdk_internal_platform_CgroupMetrics_isUseContainerSupport	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Deflater.setDictionary	Java_XXX	java_util_zip_Deflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.String.intern	Java_XXX	java_lang_String_intern	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.FileDescriptor.open	NETTY_HEURISTIC	netty_unix_filedescriptor_open,netty_epoll_native_setTcpFastopen,netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.getLength	Java_XXX	java_lang_reflect_Array_getLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.ProcEnv.getValue	Java_XXX	Java_org_hyperic_sigar_ProcEnv_getValue	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.getObject	UNMAPPED		
+java.util.zip.ZipFile.startsWithLOC	Java_XXX	java_util_zip_ZipFile_startsWithLOC	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.Tcp.gather	Java_XXX	Java_org_hyperic_sigar_Tcp_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+net.jpountz.xxhash.XXHashJNI.XXH64_digest	UNMAPPED		
+sun.misc.Unsafe.putOrderedObject	UNMAPPED		
+net.jpountz.xxhash.XXHashJNI.XXH32_init	UNMAPPED		
+jdk.jfr.internal.JVM.emitEvent	UNMAPPED		
+org.hyperic.sigar.vmware.VM.getRemoteConnections	Java_XXX	Java_org_hyperic_sigar_vmware_VM_getRemoteConnections	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.epoll.Native.epollCtlMod0	NETTY_HEURISTIC	netty_epoll_native_epollCtlMod0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.hyperic.sigar.vmware.VMwareServer.destroy	Java_XXX	Java_org_hyperic_sigar_vmware_VMwareServer_destroy	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+net.jpountz.xxhash.XXHashJNI.XXH64_update	UNMAPPED		
+io.netty.channel.epoll.Native.setReuseAddress	NETTY_HEURISTIC	netty_epoll_native_setReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.isReusePort	NETTY_HEURISTIC	netty_epoll_native_isReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getGenericSignature0	JVM_XXX	JVM_GetClassSignature	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.reflect.ConstantPool.getLongAt0	Java_XXX	sun_reflect_ConstantPool_getLongAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.setChar	Java_XXX	java_lang_reflect_Array_setChar	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+com.sun.jna.Native.getLong	UNMAPPED		
+org.hyperic.sigar.FileInfo.gatherLink	Java_XXX	Java_org_hyperic_sigar_FileInfo_gatherLink	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.setFileNotification	UNMAPPED		
+org.hyperic.sigar.win32.MetaBase.MetaBaseGetMultiStringValue	UNMAPPED		
+sun.management.MemoryImpl.getMemoryPools0	Java_XXX	sun_management_MemoryImpl_getMemoryPools0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+sun.misc.Unsafe.putChar	UNMAPPED		
+java.io.RandomAccessFile.writeBytes	Java_XXX	java_io_RandomAccessFile_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms	UNMAPPED		
+java.lang.StrictMath.exp	Java_XXX	java_lang_StrictMath_exp	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.Native.setIpFreeBind	NETTY_HEURISTIC	netty_epoll_native_setIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.putOrderedLong	UNMAPPED		
+sun.misc.Unsafe.monitorExit	UNMAPPED		
+com.sun.jna.Native.setByte	UNMAPPED		
+com.sun.jna.Native.invokeInt	UNMAPPED		
+java.lang.Class.getModifiers	JVM_XXX	JVM_GetClassModifiers	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+com.sun.jna.Native.invokeFloat	UNMAPPED		
+org.hyperic.sigar.ptql.SigarProcessQuery.match	Java_XXX	Java_org_hyperic_sigar_ptql_SigarProcessQuery_match	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+jdk.jfr.internal.JVM.counterTime	UNMAPPED		
+io.netty.channel.unix.Socket.isTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_isTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.cassandra.utils.NativeLibraryDarwin.mlockall	UNMAPPED		
+jdk.jfr.internal.JVM.getEpochAddress	UNMAPPED		
+com.sun.jna.Native.setPointer	UNMAPPED		
+sun.nio.ch.sctp.SctpNet.socket0	Java_XXX	sun_nio_ch_sctp_SctpNet_socket0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsctp.so
+org.hyperic.sigar.Sigar.formatSize	Java_XXX	Java_org_hyperic_sigar_Sigar_formatSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEAGAIN	NETTY_HEURISTIC	netty_unix_errors_errnoEAGAIN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+sun.java2d.pipe.ShapeSpanIterator.pathDone	Java_XXX	sun_java2d_pipe_ShapeSpanIterator_pathDone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+java.lang.ClassLoader.findBuiltinLib	Java_XXX	java_lang_ClassLoader_findBuiltinLib	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.Sigar.getFileSystemListNative	Java_XXX	Java_org_hyperic_sigar_Sigar_getFileSystemListNative	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+java.util.TimeZone.getSystemTimeZoneID	Java_XXX	java_util_TimeZone_getSystemTimeZoneID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.hyperic.sigar.win32.Pdh.pdhCloseQuery	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEISCONN	NETTY_HEURISTIC	netty_unix_errors_errorEISCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Thread.start0	JVM_XXX	JVM_StartThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.hyperic.sigar.ProcMem.gather	Java_XXX	Java_org_hyperic_sigar_ProcMem_gather	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so
+sun.misc.Unsafe.throwException	UNMAPPED		
+java.lang.Class.getDeclaredFields0	JVM_XXX	JVM_GetClassDeclaredFields	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.localAddress	NETTY_HEURISTIC	netty_unix_socket_localAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.Adler32.updateByteBuffer	Java_XXX	java_util_zip_Adler32_updateByteBuffer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.hyperic.sigar.win32.RegistryKey.RegLoadKey	UNMAPPED		
+org.hyperic.sigar.Sigar.nativeClose	Java_XXX	Java_org_hyperic_sigar_Sigar_nativeClose	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libsigar-x86-linux.so

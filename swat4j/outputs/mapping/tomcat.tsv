@@ -1,0 +1,615 @@
+method	strategy	symbol	library
+org.apache.tomcat.jni.SSLSocket.getInfoS	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_getInfoS	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DestroyObject	UNMAPPED		
+org.apache.tomcat.jni.Directory.makeRecursive	Java_XXX	Java_org_apache_tomcat_jni_Directory_makeRecursive	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.destroy	Java_XXX	Java_org_apache_tomcat_jni_Socket_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.getBoolean	UNMAPPED		
+org.apache.tomcat.jni.Time.rfc822	Java_XXX	Java_org_apache_tomcat_jni_Time_rfc822	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.getpid	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_getpid	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLSocket.getInfoI	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_getInfoI	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SetAttributeValue	UNMAPPED		
+org.apache.tomcat.jni.File.getInfo	Java_XXX	Java_org_apache_tomcat_jni_File_getInfo	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DigestSingle	UNMAPPED		
+org.apache.tomcat.jni.SSLSocket.getInfoB	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_getInfoB	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.writevFull	Java_XXX	Java_org_apache_tomcat_jni_File_writevFull	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Library.initialize	Java_XXX	Java_org_apache_tomcat_jni_Library_initialize	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.create	Java_XXX	Java_org_apache_tomcat_jni_Proc_create	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.memwrite	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_memwrite	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.acceptfilter	Java_XXX	Java_org_apache_tomcat_jni_Socket_acceptfilter	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.getValueS	UNMAPPED		
+org.apache.tomcat.jni.Procattr.errfnSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_errfnSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.isAlive	JVM_XXX	JVM_IsThreadAlive	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.ec.ECKeyPairGenerator.isCurveSupported	Java_XXX	sun_security_ec_ECKeyPairGenerator_isCurveSupported	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+org.apache.tomcat.jni.Time.now	Java_XXX	Java_org_apache_tomcat_jni_Time_now	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SetOperationState	UNMAPPED		
+org.apache.tomcat.jni.Socket.timeoutSet	Java_XXX	Java_org_apache_tomcat_jni_Socket_timeoutSet	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.createJFR	UNMAPPED		
+org.apache.tomcat.jni.Buffer.malloc	Java_XXX	Java_org_apache_tomcat_jni_Buffer_malloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.getValueI	UNMAPPED		
+org.apache.tomcat.jni.Shm.buffer	Java_XXX	Java_org_apache_tomcat_jni_Shm_buffer	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.OS.random	Java_XXX	Java_org_apache_tomcat_jni_OS_random	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.getValueJ	UNMAPPED		
+org.apache.tomcat.jni.SSLSocket.handshake	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_handshake	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.getValueA	UNMAPPED		
+org.apache.tomcat.jni.Registry.getValueB	UNMAPPED		
+org.apache.tomcat.jni.Buffer.free	Java_XXX	Java_org_apache_tomcat_jni_Buffer_free	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DecryptFinal	UNMAPPED		
+org.apache.tomcat.jni.SSLContext.clearOptions	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_clearOptions	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getInterfaces0	JVM_XXX	JVM_GetClassInterfaces	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getTotal	Java_XXX	java_util_zip_ZipFile_getTotal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.security.pkcs11.wrapper.PKCS11.C_GetAttributeValue	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_GetSessionInfo	UNMAPPED		
+org.apache.commons.daemon.support.DaemonLoader.shutdown	UNMAPPED		
+sun.misc.Unsafe.storeFence	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferSize	UNMAPPED		
+java.lang.ClassLoader$NativeLibrary.load	UNMAPPED		
+org.apache.tomcat.jni.Multicast.ointerface	Java_XXX	Java_org_apache_tomcat_jni_Multicast_ointerface	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Shm.baseaddr	Java_XXX	Java_org_apache_tomcat_jni_Shm_baseaddr	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Library.has	Java_XXX	Java_org_apache_tomcat_jni_Library_has	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.Inflater.inflateBytes	Java_XXX	java_util_zip_Inflater_inflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.User.homepath	Java_XXX	Java_org_apache_tomcat_jni_User_homepath	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.getEntryMethod	Java_XXX	java_util_zip_ZipFile_getEntryMethod	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.destroyJFR	UNMAPPED		
+sun.reflect.Reflection.getCallerClass	UNMAPPED		
+java.lang.UNIXProcess.forkAndExec	Java_XXX	java_lang_UNIXProcess_forkAndExec	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putObjectVolatile	UNMAPPED		
+org.apache.tomcat.jni.File.readFull	Java_XXX	Java_org_apache_tomcat_jni_File_readFull	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_GetMechanismInfo	UNMAPPED		
+sun.reflect.ConstantPool.getFloatAt0	Java_XXX	sun_reflect_ConstantPool_getFloatAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCrc	Java_XXX	java_util_zip_ZipFile_getEntryCrc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.shouldLog	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_GetOperationState	UNMAPPED		
+jdk.jfr.internal.JVM.setThreshold	UNMAPPED		
+java.lang.Object.notify	JVM_XXX	JVM_MonitorNotify	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.pkcs11.wrapper.PKCS11.C_GetMechanismList	UNMAPPED		
+java.util.zip.CRC32.updateBytes	Java_XXX	java_util_zip_CRC32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Throwable.getStackTraceElement	Java_XXX	java_lang_Throwable_getStackTraceElement	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.newEventWriter	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldOffset	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_DigestKey	UNMAPPED		
+java.lang.StrictMath.cos	Java_XXX	java_lang_StrictMath_cos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSLSocket.setVerify	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_setVerify	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.compareAndSwapObject	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_SignUpdate	UNMAPPED		
+org.apache.tomcat.jni.Lock.destroy	Java_XXX	Java_org_apache_tomcat_jni_Lock_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Object.notifyAll	JVM_XXX	JVM_MonitorNotifyAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Registry.open	UNMAPPED		
+org.apache.tomcat.jni.Registry.enumValues	UNMAPPED		
+org.apache.tomcat.jni.SSLContext.setQuietShutdown	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setQuietShutdown	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.RandomAccessFile.read0	Java_XXX	java_io_RandomAccessFile_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.ec.ECDSASignature.verifySignedDigest	Java_XXX	sun_security_ec_ECDSASignature_verifySignedDigest	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+org.apache.tomcat.jni.File.unlock	Java_XXX	Java_org_apache_tomcat_jni_File_unlock	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setForceInstrumentation	UNMAPPED		
+sun.misc.Unsafe.setMemory	UNMAPPED		
+org.apache.tomcat.jni.Pool.cleanupForExec	Java_XXX	Java_org_apache_tomcat_jni_Pool_cleanupForExec	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.mtimeSet	Java_XXX	Java_org_apache_tomcat_jni_File_mtimeSet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_VerifyRecover	UNMAPPED		
+org.apache.tomcat.jni.File.mktemp	Java_XXX	Java_org_apache_tomcat_jni_File_mktemp	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.URLClassPath.getLookupCacheForClassLoader	Java_XXX	sun_misc_URLClassPath_getLookupCacheForClassLoader	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.expand	UNMAPPED		
+org.apache.tomcat.jni.Local.create	Java_XXX	Java_org_apache_tomcat_jni_Local_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_FindObjectsFinal	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_DecryptUpdate	UNMAPPED		
+java.lang.System.mapLibraryName	Java_XXX	java_lang_System_mapLibraryName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Double.longBitsToDouble	Java_XXX	java_lang_Double_longBitsToDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.ObjectOutputStream.floatsToBytes	Java_XXX	java_io_ObjectOutputStream_floatsToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.sin	Java_XXX	java_lang_StrictMath_sin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.ClassLoader.resolveClass0	Java_XXX	java_lang_ClassLoader_resolveClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Global.create	Java_XXX	Java_org_apache_tomcat_jni_Global_create	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setVerify	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setVerify	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.interrupt0	JVM_XXX	JVM_Interrupt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.getByte	UNMAPPED		
+org.apache.tomcat.jni.Shm.detach	Java_XXX	Java_org_apache_tomcat_jni_Shm_detach	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getEnclosingMethod0	JVM_XXX	JVM_GetEnclosingMethodInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.staticFieldBase	UNMAPPED		
+org.apache.tomcat.jni.Lock.name	Java_XXX	Java_org_apache_tomcat_jni_Lock_name	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Throwable.fillInStackTrace	Java_XXX	java_lang_Throwable_fillInStackTrace	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.TimeZone.getSystemGMTOffsetID	Java_XXX	java_util_TimeZone_getSystemGMTOffsetID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.acos	Java_XXX	java_lang_StrictMath_acos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Poll.destroy	Java_XXX	Java_org_apache_tomcat_jni_Poll_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.commons.daemon.support.DaemonLoader.failed	UNMAPPED		
+org.apache.tomcat.jni.User.uid	Java_XXX	Java_org_apache_tomcat_jni_User_uid	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.lock	Java_XXX	Java_org_apache_tomcat_jni_File_lock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Buffer.palloc	Java_XXX	Java_org_apache_tomcat_jni_Buffer_palloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.OS.sysloginit	Java_XXX	Java_org_apache_tomcat_jni_OS_sysloginit	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setMemorySize	UNMAPPED		
+org.apache.tomcat.jni.Error.osError	Java_XXX	Java_org_apache_tomcat_jni_Error_osError	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.ec.ECDHKeyAgreement.deriveKey	Java_XXX	sun_security_ec_ECDHKeyAgreement_deriveKey	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.lang.reflect.Array.set	Java_XXX	java_lang_reflect_Array_set	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Socket.create	Java_XXX	Java_org_apache_tomcat_jni_Socket_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SignInit	UNMAPPED		
+java.lang.Class.desiredAssertionStatus0	JVM_XXX	JVM_DesiredAssertionStatus	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Lock.trylock	Java_XXX	Java_org_apache_tomcat_jni_Lock_trylock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.optSet	Java_XXX	Java_org_apache_tomcat_jni_Socket_optSet	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setMethodSamplingInterval	UNMAPPED		
+org.apache.tomcat.jni.SSL.fipsModeGet	Java_XXX	Java_org_apache_tomcat_jni_SSL_fipsModeGet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.reflect.ConstantPool.getUTF8At0	Java_XXX	sun_reflect_ConstantPool_getUTF8At0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSLContext.setShutdownType	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setShutdownType	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Float.intBitsToFloat	Java_XXX	java_lang_Float_intBitsToFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSLContext.make	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_make	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Runtime.totalMemory	Java_XXX	java_lang_Runtime_totalMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Pool.noteSubprocess	Java_XXX	Java_org_apache_tomcat_jni_Pool_noteSubprocess	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_VerifyFinal	UNMAPPED		
+org.apache.tomcat.jni.Pool.destroy	Java_XXX	Java_org_apache_tomcat_jni_Pool_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.User.usergid	Java_XXX	Java_org_apache_tomcat_jni_User_usergid	/usr/local/apr/lib/libtcnative-1.so.0
+sun.management.MemoryImpl.getMemoryManagers0	Java_XXX	sun_management_MemoryImpl_getMemoryManagers0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+java.lang.ClassLoader.findLoadedClass0	Java_XXX	java_lang_ClassLoader_findLoadedClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.wrapper.PKCS11.C_GenerateKeyPair	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.freeMechanism	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_freeMechanism	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.Shm.attach	Java_XXX	Java_org_apache_tomcat_jni_Shm_attach	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getDeclaredMethods0	JVM_XXX	JVM_GetClassDeclaredMethods	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.pkcs11.wrapper.PKCS11.C_UnwrapKey	UNMAPPED		
+java.io.RandomAccessFile.seek0	Java_XXX	java_io_RandomAccessFile_seek0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.freeEntry	Java_XXX	java_util_zip_ZipFile_freeEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.getEventWriter	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.initializeLibrary	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_initializeLibrary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+sun.misc.Unsafe.getIntVolatile	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_Login	UNMAPPED		
+org.apache.tomcat.jni.OS.defaultEncoding	Java_XXX	Java_org_apache_tomcat_jni_OS_defaultEncoding	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.recvfrom	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvfrom	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Mmap.dup	Java_XXX	Java_org_apache_tomcat_jni_Mmap_dup	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.childErrSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_childErrSet	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.getUnloadedEventClassCount	UNMAPPED		
+org.apache.tomcat.jni.Socket.sendib	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendib	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.VM.latestUserDefinedLoader0	Java_XXX	sun_misc_VM_latestUserDefinedLoader0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.System.setErr0	Java_XXX	java_lang_System_setErr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Address.getInfo	Java_XXX	Java_org_apache_tomcat_jni_Address_getInfo	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.trunc	Java_XXX	Java_org_apache_tomcat_jni_File_trunc	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.Secmod.nssGetLibraryHandle	Java_XXX	sun_security_pkcs11_Secmod_nssGetLibraryHandle	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.File.read	Java_XXX	Java_org_apache_tomcat_jni_File_read	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.invoke.MethodHandle.invokeExact	UNMAPPED		
+org.apache.tomcat.jni.File.readb	Java_XXX	Java_org_apache_tomcat_jni_File_readb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Pool.cleanupRegister	Java_XXX	Java_org_apache_tomcat_jni_Pool_cleanupRegister	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.currentThread	JVM_XXX	JVM_CurrentThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.beginRecording	UNMAPPED		
+org.apache.tomcat.jni.Poll.add	Java_XXX	Java_org_apache_tomcat_jni_Poll_add	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.childInSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_childInSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.open	Java_XXX	java_util_zip_ZipFile_open	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getChar	UNMAPPED		
+org.apache.tomcat.jni.SSL.getLastError	Java_XXX	Java_org_apache_tomcat_jni_SSL_getLastError	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Address.getip	Java_XXX	Java_org_apache_tomcat_jni_Address_getip	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setCipherSuite	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setCipherSuite	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.getManifestNum	Java_XXX	java_util_zip_ZipFile_getManifestNum	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.reflect.Array.setInt	Java_XXX	java_lang_reflect_Array_setInt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.availableProcessors	Java_XXX	java_lang_Runtime_availableProcessors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.wrapper.PKCS11.C_Logout	UNMAPPED		
+org.apache.tomcat.jni.Socket.sendfile	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendfile	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.randSave	Java_XXX	Java_org_apache_tomcat_jni_SSL_randSave	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.dumpThreads	JVM_XXX	JVM_DumpThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Local.accept	Java_XXX	Java_org_apache_tomcat_jni_Local_accept	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getDeclaringClass0	JVM_XXX	JVM_GetDeclaringClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.File.rename	Java_XXX	Java_org_apache_tomcat_jni_File_rename	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setOptions	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setOptions	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.timeoutGet	Java_XXX	Java_org_apache_tomcat_jni_Socket_timeoutGet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_EncryptInit	UNMAPPED		
+org.apache.tomcat.jni.Socket.setsbb	Java_XXX	Java_org_apache_tomcat_jni_Socket_setsbb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.OS.expand	Java_XXX	Java_org_apache_tomcat_jni_OS_expand	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.registerNatives	UNMAPPED		
+org.apache.tomcat.jni.Socket.dataSet	Java_XXX	Java_org_apache_tomcat_jni_Socket_dataSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getSigners	JVM_XXX	JVM_GetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Thread.stop0	JVM_XXX	JVM_StopThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Poll.remove	Java_XXX	Java_org_apache_tomcat_jni_Poll_remove	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.storeMetadataDescriptor	UNMAPPED		
+java.io.RandomAccessFile.getFilePointer	Java_XXX	java_io_RandomAccessFile_getFilePointer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Stdlib.realloc	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_realloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.ioSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_ioSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.recvbb	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvbb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Address.equal	Java_XXX	Java_org_apache_tomcat_jni_Address_equal	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Lock.lock	Java_XXX	Java_org_apache_tomcat_jni_Lock_lock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.detachSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_detachSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.memread	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_memread	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Address.info	Java_XXX	Java_org_apache_tomcat_jni_Address_info	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.closeBIO	Java_XXX	Java_org_apache_tomcat_jni_SSL_closeBIO	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.retransformClasses	UNMAPPED		
+org.apache.tomcat.jni.SSLContext.setCACertificate	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setCACertificate	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.Inflater.reset	Java_XXX	java_util_zip_Inflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Address.get	Java_XXX	Java_org_apache_tomcat_jni_Address_get	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.setShort	Java_XXX	java_lang_reflect_Array_setShort	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Socket.recvbt	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvbt	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Directory.open	Java_XXX	Java_org_apache_tomcat_jni_Directory_open	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.forName0	Java_XXX	java_lang_Class_forName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSLContext.free	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_free	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.getLongVolatile	UNMAPPED		
+org.apache.tomcat.jni.Poll.addWithTimeout	Java_XXX	Java_org_apache_tomcat_jni_Poll_addWithTimeout	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Poll.maintain	Java_XXX	Java_org_apache_tomcat_jni_Poll_maintain	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Pool.calloc	Java_XXX	Java_org_apache_tomcat_jni_Pool_calloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.sendto	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendto	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DigestFinal	UNMAPPED		
+org.apache.tomcat.jni.Registry.getType	UNMAPPED		
+sun.misc.Unsafe.allocateMemory	UNMAPPED		
+org.apache.tomcat.jni.Socket.recv	Java_XXX	Java_org_apache_tomcat_jni_Socket_recv	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setGlobalBufferCount	UNMAPPED		
+java.util.zip.ZipFile.close	Java_XXX	java_util_zip_ZipFile_close	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.putAddress	UNMAPPED		
+sun.misc.MessageUtils.toStderr	Java_XXX	sun_misc_MessageUtils_toStderr	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.wrapper.PKCS11.C_DigestInit	UNMAPPED		
+org.apache.tomcat.jni.Stdlib.calloc	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_calloc	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.System.arraycopy	JVM_XXX	JVM_ArrayCopy	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Mmap.offset	Java_XXX	Java_org_apache_tomcat_jni_Mmap_offset	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Poll.pollset	Java_XXX	Java_org_apache_tomcat_jni_Poll_pollset	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.acceptx	Java_XXX	Java_org_apache_tomcat_jni_Socket_acceptx	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_VerifyInit	UNMAPPED		
+org.apache.tomcat.jni.SSLContext.setCertificateChainFile	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setCertificateChainFile	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Lock.defname	Java_XXX	Java_org_apache_tomcat_jni_Lock_defname	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.getTypeId	UNMAPPED		
+jdk.jfr.internal.JVM.setCutoff	UNMAPPED		
+org.apache.tomcat.jni.Directory.read	Java_XXX	Java_org_apache_tomcat_jni_Directory_read	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.dup2	Java_XXX	Java_org_apache_tomcat_jni_File_dup2	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.emitOldObjectSamples	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.getMemberVMInfo	UNMAPPED		
+sun.misc.Unsafe.putByte	UNMAPPED		
+org.apache.tomcat.jni.File.nameGet	Java_XXX	Java_org_apache_tomcat_jni_File_nameGet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DecryptInit	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_GenerateKey	UNMAPPED		
+sun.reflect.ConstantPool.getDoubleAt0	Java_XXX	sun_reflect_ConstantPool_getDoubleAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Registry.deleteValue	UNMAPPED		
+java.util.zip.Inflater.end	Java_XXX	java_util_zip_Inflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.security.AccessController.getInheritedAccessControlContext	Java_XXX	java_security_AccessController_getInheritedAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Lock.childInit	Java_XXX	Java_org_apache_tomcat_jni_Lock_childInit	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.pipeCreate	Java_XXX	Java_org_apache_tomcat_jni_File_pipeCreate	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Time.ctime	Java_XXX	Java_org_apache_tomcat_jni_Time_ctime	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Global.trylock	Java_XXX	Java_org_apache_tomcat_jni_Global_trylock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Lock.lockfile	Java_XXX	Java_org_apache_tomcat_jni_Lock_lockfile	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setBIO	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setBIO	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.setPassword	Java_XXX	Java_org_apache_tomcat_jni_SSL_setPassword	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.User.gidCurrent	Java_XXX	Java_org_apache_tomcat_jni_User_gidCurrent	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Shutdown.beforeHalt	Java_XXX	java_lang_Shutdown_beforeHalt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getThreadId	UNMAPPED		
+org.apache.tomcat.jni.Multicast.leave	Java_XXX	Java_org_apache_tomcat_jni_Multicast_leave	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.open	Java_XXX	Java_org_apache_tomcat_jni_File_open	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.childOutSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_childOutSet	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.uncaughtException	UNMAPPED		
+java.lang.Class.getSuperclass	UNMAPPED		
+java.lang.Class.getName0	JVM_XXX	JVM_GetClassName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.shouldRotateDisk	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_CreateObject	UNMAPPED		
+java.lang.Throwable.getStackTraceDepth	Java_XXX	java_lang_Throwable_getStackTraceDepth	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getDouble	UNMAPPED		
+sun.misc.Unsafe.pageSize	UNMAPPED		
+org.apache.tomcat.jni.File.close	Java_XXX	Java_org_apache_tomcat_jni_File_close	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.System.currentTimeMillis	JVM_XXX	JVM_CurrentTimeMillis	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.SSL.randSet	Java_XXX	Java_org_apache_tomcat_jni_SSL_randSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Global.unlock	Java_XXX	Java_org_apache_tomcat_jni_Global_unlock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.atmark	Java_XXX	Java_org_apache_tomcat_jni_Socket_atmark	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.infoGet	Java_XXX	Java_org_apache_tomcat_jni_File_infoGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Global.lock	Java_XXX	Java_org_apache_tomcat_jni_Global_lock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.stat	Java_XXX	Java_org_apache_tomcat_jni_File_stat	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.yield	JVM_XXX	JVM_Yield	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getClassId	UNMAPPED		
+sun.misc.Unsafe.getInt	UNMAPPED		
+org.apache.tomcat.jni.Address.getservbyname	Java_XXX	Java_org_apache_tomcat_jni_Address_getservbyname	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.pipeTimeoutGet	Java_XXX	Java_org_apache_tomcat_jni_File_pipeTimeoutGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.randLoad	Java_XXX	Java_org_apache_tomcat_jni_SSL_randLoad	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setCertificate	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setCertificate	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.kill	Java_XXX	Java_org_apache_tomcat_jni_Proc_kill	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.addStringConstant	UNMAPPED		
+sun.misc.Unsafe.shouldBeInitialized	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.createNativeKey	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_createNativeKey	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+sun.security.pkcs11.wrapper.PKCS11.C_FindObjectsInit	UNMAPPED		
+org.apache.tomcat.jni.SSL.fipsModeSet	Java_XXX	Java_org_apache_tomcat_jni_SSL_fipsModeSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.getEntryBytes	Java_XXX	java_util_zip_ZipFile_getEntryBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.User.gid	Java_XXX	Java_org_apache_tomcat_jni_User_gid	/usr/local/apr/lib/libtcnative-1.so.0
+sun.reflect.Reflection.getClassAccessFlags	Java_XXX	sun_reflect_Reflection_getClassAccessFlags	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.File.seek	Java_XXX	Java_org_apache_tomcat_jni_File_seek	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Multicast.loopback	Java_XXX	Java_org_apache_tomcat_jni_Multicast_loopback	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setContextId	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setContextId	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Mmap.create	Java_XXX	Java_org_apache_tomcat_jni_Mmap_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.putFloat	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_Initialize	UNMAPPED		
+jdk.jfr.internal.JVM.getPid	UNMAPPED		
+org.apache.tomcat.jni.File.ungetc	Java_XXX	Java_org_apache_tomcat_jni_File_ungetc	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_EncryptUpdate	UNMAPPED		
+org.apache.tomcat.jni.Socket.shutdown	Java_XXX	Java_org_apache_tomcat_jni_Socket_shutdown	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Directory.make	Java_XXX	Java_org_apache_tomcat_jni_Directory_make	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.newBIO	Java_XXX	Java_org_apache_tomcat_jni_SSL_newBIO	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.setByte	Java_XXX	java_lang_reflect_Array_setByte	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putBoolean	UNMAPPED		
+org.apache.tomcat.jni.SSL.setPasswordCallback	Java_XXX	Java_org_apache_tomcat_jni_SSL_setPasswordCallback	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.User.uidCurrent	Java_XXX	Java_org_apache_tomcat_jni_User_uidCurrent	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Global.childInit	Java_XXX	Java_org_apache_tomcat_jni_Global_childInit	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.deleteKey	UNMAPPED		
+org.apache.tomcat.jni.File.writeFull	Java_XXX	Java_org_apache_tomcat_jni_File_writeFull	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Multicast.join	Java_XXX	Java_org_apache_tomcat_jni_Multicast_join	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_Sign	UNMAPPED		
+sun.reflect.ConstantPool.getIntAt0	Java_XXX	sun_reflect_ConstantPool_getIntAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Stdlib.free	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_free	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLSocket.renegotiate	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_renegotiate	/usr/local/apr/lib/libtcnative-1.so.0
+java.security.AccessController.doPrivileged	UNMAPPED		
+java.io.ObjectOutputStream.doublesToBytes	Java_XXX	java_io_ObjectOutputStream_doublesToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.init	Java_XXX	java_util_zip_Inflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.park	UNMAPPED		
+sun.misc.Unsafe.staticFieldOffset	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_CloseSession	UNMAPPED		
+org.apache.tomcat.jni.Registry.getSize	UNMAPPED		
+org.apache.tomcat.jni.Library.terminate	Java_XXX	Java_org_apache_tomcat_jni_Library_terminate	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.Deflater.reset	Java_XXX	java_util_zip_Deflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Address.fill	Java_XXX	Java_org_apache_tomcat_jni_Address_fill	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Runtime.gc	Java_XXX	java_lang_Runtime_gc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Poll.getTtl	Java_XXX	Java_org_apache_tomcat_jni_Poll_getTtl	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.errorCheckSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_errorCheckSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.flagsGet	Java_XXX	Java_org_apache_tomcat_jni_File_flagsGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.dataGet	Java_XXX	Java_org_apache_tomcat_jni_Socket_dataGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.OS.info	Java_XXX	Java_org_apache_tomcat_jni_OS_info	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.putInt	UNMAPPED		
+sun.misc.Unsafe.putObject	UNMAPPED		
+java.lang.StrictMath.log	Java_XXX	java_lang_StrictMath_log	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Pool.alloc	Java_XXX	Java_org_apache_tomcat_jni_Pool_alloc	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.getLong	UNMAPPED		
+org.apache.tomcat.jni.Directory.tempGet	Java_XXX	Java_org_apache_tomcat_jni_Directory_tempGet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_WrapKey	UNMAPPED		
+jdk.jfr.internal.JVM.getStackTraceId	UNMAPPED		
+org.apache.tomcat.jni.Buffer.create	Java_XXX	Java_org_apache_tomcat_jni_Buffer_create	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.FileOutputStream.open0	Java_XXX	java_io_FileOutputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Error.strerror	Java_XXX	Java_org_apache_tomcat_jni_Error_strerror	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Library.globalPool	Java_XXX	Java_org_apache_tomcat_jni_Library_globalPool	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLSocket.attach	Java_XXX	Java_org_apache_tomcat_jni_SSLSocket_attach	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.User.username	Java_XXX	Java_org_apache_tomcat_jni_User_username	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.setDouble	Java_XXX	java_lang_reflect_Array_setDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getProtectionDomain0	JVM_XXX	JVM_GetProtectionDomain	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.System.setOut0	Java_XXX	java_lang_System_setOut0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Object.clone	JVM_XXX	JVM_Clone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.abort	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_SignRecoverInit	UNMAPPED		
+sun.reflect.ConstantPool.getClassAt0	Java_XXX	sun_reflect_ConstantPool_getClassAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.wrapper.PKCS11.finalizeLibrary	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_finalizeLibrary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.File.dup	Java_XXX	Java_org_apache_tomcat_jni_File_dup	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.flush	UNMAPPED		
+java.lang.StrictMath.tan	Java_XXX	java_lang_StrictMath_tan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Library.size	Java_XXX	Java_org_apache_tomcat_jni_Library_size	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.ObjectInputStream.bytesToFloats	Java_XXX	java_io_ObjectInputStream_bytesToFloats	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Object.getClass	Java_XXX	java_lang_Object_getClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.isPrimitive	JVM_XXX	JVM_IsPrimitiveClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.reflect.Array.setFloat	Java_XXX	java_lang_reflect_Array_setFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.OS.syslog	Java_XXX	Java_org_apache_tomcat_jni_OS_syslog	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.isInterrupted	JVM_XXX	JVM_IsInterrupted	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getTicksFrequency	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_EncryptFinal	UNMAPPED		
+java.util.zip.ZipFile.getEntry	Java_XXX	java_util_zip_ZipFile_getEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Object.hashCode	JVM_XXX	JVM_IHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putLong	UNMAPPED		
+jdk.jfr.internal.JVM.getAllEventClasses	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.connect	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_connect	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+jdk.jfr.internal.JVM.endRecording	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_GetTokenInfo	UNMAPPED		
+org.apache.tomcat.jni.Thread.current	Java_XXX	Java_org_apache_tomcat_jni_Thread_current	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.newArray	Java_XXX	java_lang_reflect_Array_newArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.Secmod.nssGetModuleList	Java_XXX	sun_security_pkcs11_Secmod_nssGetModuleList	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.Socket.listen	Java_XXX	Java_org_apache_tomcat_jni_Socket_listen	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.attrsSet	Java_XXX	Java_org_apache_tomcat_jni_File_attrsSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Pool.dataSet	Java_XXX	Java_org_apache_tomcat_jni_Pool_dataSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Shm.remove	Java_XXX	Java_org_apache_tomcat_jni_Shm_remove	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_DeriveKey	UNMAPPED		
+org.apache.tomcat.jni.Local.bind	Java_XXX	Java_org_apache_tomcat_jni_Local_bind	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.writeFullb	Java_XXX	Java_org_apache_tomcat_jni_File_writeFullb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.fork	Java_XXX	Java_org_apache_tomcat_jni_Proc_fork	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.memset	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_memset	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Shutdown.halt0	Java_XXX	java_lang_Shutdown_halt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Buffer.size	Java_XXX	Java_org_apache_tomcat_jni_Buffer_size	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.getFloat	UNMAPPED		
+org.apache.tomcat.jni.SSL.generateRSATempKey	UNMAPPED		
+org.apache.tomcat.jni.Pool.create	Java_XXX	Java_org_apache_tomcat_jni_Pool_create	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.log	UNMAPPED		
+sun.misc.Unsafe.putShort	UNMAPPED		
+java.lang.StrictMath.atan	Java_XXX	java_lang_StrictMath_atan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putOrderedInt	UNMAPPED		
+org.apache.tomcat.jni.Local.listen	Java_XXX	Java_org_apache_tomcat_jni_Local_listen	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_Verify	UNMAPPED		
+java.lang.Thread.sleep	JVM_XXX	JVM_Sleep	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.pkcs11.wrapper.PKCS11.C_VerifyUpdate	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldBase	UNMAPPED		
+jdk.jfr.internal.JVM.setEnabled	UNMAPPED		
+org.apache.tomcat.jni.File.putc	Java_XXX	Java_org_apache_tomcat_jni_File_putc	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_VerifyRecoverInit	UNMAPPED		
+jdk.jfr.internal.JVM.getTimeConversionFactor	UNMAPPED		
+jdk.jfr.internal.JVM.setStackDepth	UNMAPPED		
+java.util.zip.Deflater.deflateBytes	Java_XXX	java_util_zip_Deflater_deflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Procattr.userSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_userSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.pipeTimeoutSet	Java_XXX	Java_org_apache_tomcat_jni_File_pipeTimeoutSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.getStat	Java_XXX	Java_org_apache_tomcat_jni_File_getStat	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.puts	Java_XXX	Java_org_apache_tomcat_jni_File_puts	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Library.versionString	Java_XXX	Java_org_apache_tomcat_jni_Library_versionString	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.close	UNMAPPED		
+org.apache.tomcat.jni.SSL.initialize	Java_XXX	Java_org_apache_tomcat_jni_SSL_initialize	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setStackTraceEnabled	UNMAPPED		
+org.apache.tomcat.jni.Error.netosError	Java_XXX	Java_org_apache_tomcat_jni_Error_netosError	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.append	Java_XXX	Java_org_apache_tomcat_jni_File_append	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.malloc	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_malloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Library.version	Java_XXX	Java_org_apache_tomcat_jni_Library_version	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Object.wait	JVM_XXX	JVM_MonitorWait	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Poll.create	Java_XXX	Java_org_apache_tomcat_jni_Poll_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SignFinal	UNMAPPED		
+sun.security.pkcs11.Secmod.nssInitialize	Java_XXX	sun_security_pkcs11_Secmod_nssInitialize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.Socket.send	Java_XXX	Java_org_apache_tomcat_jni_Socket_send	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.recvb	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvb	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.System.identityHashCode	Java_XXX	java_lang_System_identityHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Buffer.calloc	Java_XXX	Java_org_apache_tomcat_jni_Buffer_calloc	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getComponentType	JVM_XXX	JVM_GetComponentType	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.SSL.randMake	Java_XXX	Java_org_apache_tomcat_jni_SSL_randMake	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Directory.rewind	Java_XXX	Java_org_apache_tomcat_jni_Directory_rewind	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.versionString	Java_XXX	Java_org_apache_tomcat_jni_SSL_versionString	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Shm.size	Java_XXX	Java_org_apache_tomcat_jni_Shm_size	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.ensureClassInitialized	UNMAPPED		
+org.apache.tomcat.jni.Socket.close	Java_XXX	Java_org_apache_tomcat_jni_Socket_close	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.RandomAccessFile.open0	Java_XXX	java_io_RandomAccessFile_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.Secmod.nssVersionCheck	Java_XXX	sun_security_pkcs11_Secmod_nssVersionCheck	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.Socket.recvt	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvt	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.subscribeLogLevel	UNMAPPED		
+org.apache.tomcat.jni.File.remove	Java_XXX	Java_org_apache_tomcat_jni_File_remove	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.isAvailable	UNMAPPED		
+org.apache.tomcat.jni.File.permsSet	Java_XXX	Java_org_apache_tomcat_jni_File_permsSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.waitAllProcs	Java_XXX	Java_org_apache_tomcat_jni_Proc_waitAllProcs	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Directory.remove	Java_XXX	Java_org_apache_tomcat_jni_Directory_remove	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.isArray	JVM_XXX	JVM_IsArrayClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Socket.setrbb	Java_XXX	Java_org_apache_tomcat_jni_Socket_setrbb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.copy	Java_XXX	Java_org_apache_tomcat_jni_File_copy	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.create	Java_XXX	Java_org_apache_tomcat_jni_Procattr_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_Encrypt	UNMAPPED		
+java.net.NetworkInterface.getByName0	Java_XXX	java_net_NetworkInterface_getByName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.io.RandomAccessFile.length	Java_XXX	java_io_RandomAccessFile_length	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Package.getSystemPackage0	Java_XXX	java_lang_Package_getSystemPackage0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.File.write	Java_XXX	Java_org_apache_tomcat_jni_File_write	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.groupSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_groupSet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Buffer.pcalloc	Java_XXX	Java_org_apache_tomcat_jni_Buffer_pcalloc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.connect	Java_XXX	Java_org_apache_tomcat_jni_Socket_connect	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Stdlib.getppid	Java_XXX	Java_org_apache_tomcat_jni_Stdlib_getppid	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.compareAndSwapLong	UNMAPPED		
+java.util.zip.ZipFile.getEntrySize	Java_XXX	java_util_zip_ZipFile_getEntrySize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Class.isInterface	JVM_XXX	JVM_IsInterface	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.ClassLoader.findBootstrapClass	Java_XXX	java_lang_ClassLoader_findBootstrapClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.ec.ECKeyPairGenerator.generateECKeyPair	Java_XXX	sun_security_ec_ECKeyPairGenerator_generateECKeyPair	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.io.FileInputStream.open0	Java_XXX	java_io_FileInputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.File.writeb	Java_XXX	Java_org_apache_tomcat_jni_File_writeb	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_FindObjects	UNMAPPED		
+sun.misc.Unsafe.objectFieldOffset	UNMAPPED		
+java.lang.StrictMath.sqrt	Java_XXX	java_lang_StrictMath_sqrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Lock.unlock	Java_XXX	Java_org_apache_tomcat_jni_Lock_unlock	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Procattr.cmdtypeSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_cmdtypeSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getDeclaredConstructors0	JVM_XXX	JVM_GetClassDeclaredConstructors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.pkcs11.wrapper.PKCS11.C_GetSlotInfo	UNMAPPED		
+org.apache.tomcat.jni.Shm.create	Java_XXX	Java_org_apache_tomcat_jni_Shm_create	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.OS.localeEncoding	Java_XXX	Java_org_apache_tomcat_jni_OS_localeEncoding	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_GetInfo	UNMAPPED		
+java.lang.Class.isInstance	Java_XXX	java_lang_Class_isInstance	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.pow	Java_XXX	java_lang_StrictMath_pow	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setOutput	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_GetSlotList	UNMAPPED		
+java.io.FileInputStream.readBytes	Java_XXX	java_io_FileInputStream_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getRawAnnotations	JVM_XXX	JVM_GetClassAnnotations	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Poll.poll	Java_XXX	Java_org_apache_tomcat_jni_Poll_poll	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.flush	Java_XXX	Java_org_apache_tomcat_jni_File_flush	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.get	Java_XXX	Java_org_apache_tomcat_jni_Socket_get	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.defineClass	UNMAPPED		
+sun.misc.Unsafe.getShort	UNMAPPED		
+java.io.FileOutputStream.writeBytes	Java_XXX	java_io_FileOutputStream_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.resolve	UNMAPPED		
+java.io.RandomAccessFile.readBytes	Java_XXX	java_io_RandomAccessFile_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.resume0	JVM_XXX	JVM_ResumeThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.File.writev	Java_XXX	Java_org_apache_tomcat_jni_File_writev	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Time.sleep	Java_XXX	Java_org_apache_tomcat_jni_Time_sleep	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Status.is	Java_XXX	Java_org_apache_tomcat_jni_Status_is	/usr/local/apr/lib/libtcnative-1.so.0
+java.net.NetworkInterface.getAll	Java_XXX	java_net_NetworkInterface_getAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.apache.tomcat.jni.Socket.bind	Java_XXX	Java_org_apache_tomcat_jni_Socket_bind	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.accept	Java_XXX	Java_org_apache_tomcat_jni_Socket_accept	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.setValueS	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_DigestUpdate	UNMAPPED		
+java.lang.reflect.Array.get	Java_XXX	java_lang_reflect_Array_get	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSL.hasOp	Java_XXX	Java_org_apache_tomcat_jni_SSL_hasOp	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.sendibb	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendibb	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.ObjectInputStream.bytesToDoubles	Java_XXX	java_io_ObjectInputStream_bytesToDoubles	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.File.getc	Java_XXX	Java_org_apache_tomcat_jni_File_getc	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.eof	Java_XXX	Java_org_apache_tomcat_jni_File_eof	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Thread.setNativeName	JVM_XXX	JVM_SetNativeThreadName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.reflect.Array.multiNewArray	Java_XXX	java_lang_reflect_Array_multiNewArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setRepositoryLocation	UNMAPPED		
+sun.misc.Unsafe.putDouble	UNMAPPED		
+org.apache.tomcat.jni.Pool.clear	Java_XXX	Java_org_apache_tomcat_jni_Pool_clear	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Float.floatToRawIntBits	Java_XXX	java_lang_Float_floatToRawIntBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Socket.pool	Java_XXX	Java_org_apache_tomcat_jni_Socket_pool	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.setValueI	UNMAPPED		
+org.apache.tomcat.jni.Registry.setValueJ	UNMAPPED		
+jdk.jfr.internal.JVM.setCompressedIntegers	UNMAPPED		
+org.apache.tomcat.jni.Registry.setValueE	UNMAPPED		
+jdk.jfr.internal.JVM.setThreadBufferSize	UNMAPPED		
+java.lang.Thread.holdsLock	JVM_XXX	JVM_HoldsLock	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Pool.dataGet	Java_XXX	Java_org_apache_tomcat_jni_Pool_dataGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.File.gets	Java_XXX	Java_org_apache_tomcat_jni_File_gets	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.alloc	Java_XXX	Java_org_apache_tomcat_jni_Proc_alloc	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.getEntryFlag	Java_XXX	java_util_zip_ZipFile_getEntryFlag	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Poll.setTtl	Java_XXX	Java_org_apache_tomcat_jni_Poll_setTtl	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.getDouble	Java_XXX	java_lang_reflect_Array_getDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.atan2	Java_XXX	java_lang_StrictMath_atan2	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Global.destroy	Java_XXX	Java_org_apache_tomcat_jni_Global_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.getEntryCSize	Java_XXX	java_util_zip_ZipFile_getEntryCSize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Socket.recvbbt	Java_XXX	Java_org_apache_tomcat_jni_Socket_recvbbt	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.setSampleThreads	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.objectFieldOffset	UNMAPPED		
+org.apache.tomcat.jni.Socket.sendb	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendb	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SeedRandom	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_OpenSession	UNMAPPED		
+sun.security.ec.ECDSASignature.signDigest	Java_XXX	sun_security_ec_ECDSASignature_signDigest	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.lang.reflect.Array.setLong	Java_XXX	java_lang_reflect_Array_setLong	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Registry.setValueA	UNMAPPED		
+java.util.zip.Deflater.init	Java_XXX	java_util_zip_Deflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.tomcat.jni.Registry.setValueB	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.disconnect	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_disconnect	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+java.lang.System.nanoTime	JVM_XXX	JVM_NanoTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Double.doubleToRawLongBits	Java_XXX	java_lang_Double_doubleToRawLongBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setPriority0	JVM_XXX	JVM_SetThreadPriority	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.jar.JarFile.getMetaInfEntryNames	Java_XXX	java_util_jar_JarFile_getMetaInfEntryNames	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getObjectVolatile	UNMAPPED		
+org.apache.tomcat.jni.Registry.create	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.C_CopyObject	UNMAPPED		
+org.apache.tomcat.jni.Library.aprVersionString	Java_XXX	Java_org_apache_tomcat_jni_Library_aprVersionString	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.reflect.Array.setBoolean	Java_XXX	java_lang_reflect_Array_setBoolean	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.SSL.version	Java_XXX	Java_org_apache_tomcat_jni_SSL_version	/usr/local/apr/lib/libtcnative-1.so.0
+java.security.AccessController.getStackAccessControlContext	Java_XXX	java_security_AccessController_getStackAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.init	UNMAPPED		
+org.apache.tomcat.jni.Pool.cleanupKill	Java_XXX	Java_org_apache_tomcat_jni_Pool_cleanupKill	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.Deflater.end	Java_XXX	java_util_zip_Deflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.ZipFile.getEntryTime	Java_XXX	java_util_zip_ZipFile_getEntryTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.getClassIdNonIntrinsic	UNMAPPED		
+org.apache.tomcat.jni.SSLContext.setCARevocation	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setCARevocation	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Socket.sendv	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendv	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.compareAndSwapInt	UNMAPPED		
+org.apache.tomcat.jni.OS.is	Java_XXX	Java_org_apache_tomcat_jni_OS_is	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.isAssignableFrom	Java_XXX	java_lang_Class_isAssignableFrom	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.defineAnonymousClass	UNMAPPED		
+java.lang.Runtime.maxMemory	Java_XXX	java_lang_Runtime_maxMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getConstantPool	JVM_XXX	JVM_GetClassConstantPool	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Pool.parentGet	Java_XXX	Java_org_apache_tomcat_jni_Pool_parentGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSL.loadDSATempKey	UNMAPPED		
+org.apache.tomcat.jni.Address.getnameinfo	Java_XXX	Java_org_apache_tomcat_jni_Address_getnameinfo	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.wait	Java_XXX	Java_org_apache_tomcat_jni_Proc_wait	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.internal.platform.CgroupMetrics.isUseContainerSupport	Java_XXX	jdk_internal_platform_CgroupMetrics_isUseContainerSupport	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.User.uidcompare	Java_XXX	Java_org_apache_tomcat_jni_User_uidcompare	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.String.intern	Java_XXX	java_lang_String_intern	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.getLength	Java_XXX	java_lang_reflect_Array_getLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Socket.sendbb	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendbb	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Proc.detach	Java_XXX	Java_org_apache_tomcat_jni_Proc_detach	/usr/local/apr/lib/libtcnative-1.so.0
+sun.misc.Unsafe.getObject	UNMAPPED		
+org.apache.tomcat.jni.Buffer.address	Java_XXX	Java_org_apache_tomcat_jni_Buffer_address	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.zip.ZipFile.startsWithLOC	Java_XXX	java_util_zip_ZipFile_startsWithLOC	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.security.pkcs11.wrapper.PKCS11.C_GenerateRandom	UNMAPPED		
+sun.security.pkcs11.Secmod.nssLoadLibrary	Java_XXX	sun_security_pkcs11_Secmod_nssLoadLibrary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+sun.misc.Unsafe.putOrderedObject	UNMAPPED		
+jdk.jfr.internal.JVM.emitEvent	UNMAPPED		
+org.apache.tomcat.jni.Mmap.delete	Java_XXX	Java_org_apache_tomcat_jni_Mmap_delete	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Class.getGenericSignature0	JVM_XXX	JVM_GetClassSignature	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Procattr.dirSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_dirSet	/usr/local/apr/lib/libtcnative-1.so.0
+sun.reflect.ConstantPool.getLongAt0	Java_XXX	sun_reflect_ConstantPool_getLongAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.setChar	Java_XXX	java_lang_reflect_Array_setChar	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setFileNotification	UNMAPPED		
+sun.security.pkcs11.wrapper.PKCS11.getNativeKeyInfo	Java_XXX	sun_security_pkcs11_wrapper_PKCS11_getNativeKeyInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+org.apache.tomcat.jni.File.readFullb	Java_XXX	Java_org_apache_tomcat_jni_File_readFullb	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.Runtime.freeMemory	Java_XXX	java_lang_Runtime_freeMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.management.MemoryImpl.getMemoryPools0	Java_XXX	sun_management_MemoryImpl_getMemoryPools0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+sun.misc.Unsafe.putChar	UNMAPPED		
+java.io.RandomAccessFile.writeBytes	Java_XXX	java_io_RandomAccessFile_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms	UNMAPPED		
+org.apache.tomcat.jni.Socket.sendfilen	Java_XXX	Java_org_apache_tomcat_jni_Socket_sendfilen	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Registry.enumKeys	UNMAPPED		
+org.apache.tomcat.jni.Local.connect	Java_XXX	Java_org_apache_tomcat_jni_Local_connect	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.StrictMath.exp	Java_XXX	java_lang_StrictMath_exp	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.asin	Java_XXX	java_lang_StrictMath_asin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Lock.create	Java_XXX	Java_org_apache_tomcat_jni_Lock_create	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_Finalize	UNMAPPED		
+org.apache.tomcat.jni.Socket.optGet	Java_XXX	Java_org_apache_tomcat_jni_Socket_optGet	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.Directory.close	Java_XXX	Java_org_apache_tomcat_jni_Directory_close	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.SSLContext.setRandom	Java_XXX	Java_org_apache_tomcat_jni_SSLContext_setRandom	/usr/local/apr/lib/libtcnative-1.so.0
+sun.security.pkcs11.wrapper.PKCS11.C_SignRecover	UNMAPPED		
+java.lang.Class.getModifiers	JVM_XXX	JVM_GetClassModifiers	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.User.gidcompare	Java_XXX	Java_org_apache_tomcat_jni_User_gidcompare	/usr/local/apr/lib/libtcnative-1.so.0
+org.apache.tomcat.jni.User.groupname	Java_XXX	Java_org_apache_tomcat_jni_User_groupname	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.counterTime	UNMAPPED		
+org.apache.tomcat.jni.Multicast.hops	Java_XXX	Java_org_apache_tomcat_jni_Multicast_hops	/usr/local/apr/lib/libtcnative-1.so.0
+jdk.jfr.internal.JVM.getEpochAddress	UNMAPPED		
+org.apache.tomcat.jni.Pool.isAncestor	Java_XXX	Java_org_apache_tomcat_jni_Pool_isAncestor	/usr/local/apr/lib/libtcnative-1.so.0
+java.lang.ClassLoader.findBuiltinLib	Java_XXX	java_lang_ClassLoader_findBuiltinLib	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.tomcat.jni.Procattr.addrspaceSet	Java_XXX	Java_org_apache_tomcat_jni_Procattr_addrspaceSet	/usr/local/apr/lib/libtcnative-1.so.0
+java.util.TimeZone.getSystemTimeZoneID	Java_XXX	java_util_TimeZone_getSystemTimeZoneID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.pkcs11.wrapper.PKCS11.C_Decrypt	UNMAPPED		
+java.lang.Thread.start0	JVM_XXX	JVM_StartThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.throwException	UNMAPPED		
+java.lang.Class.getDeclaredFields0	JVM_XXX	JVM_GetClassDeclaredFields	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.tomcat.jni.Shm.destroy	Java_XXX	Java_org_apache_tomcat_jni_Shm_destroy	/usr/local/apr/lib/libtcnative-1.so.0
+java.io.RandomAccessFile.setLength	Java_XXX	java_io_RandomAccessFile_setLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so

@@ -1,0 +1,226 @@
+method	strategy	symbol	library
+sun.reflect.ConstantPool.getIntAt0	Java_XXX	sun_reflect_ConstantPool_getIntAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getBoolean	UNMAPPED		
+java.security.AccessController.doPrivileged	UNMAPPED		
+java.util.zip.Inflater.init	Java_XXX	java_util_zip_Inflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.io.ObjectOutputStream.doublesToBytes	Java_XXX	java_io_ObjectOutputStream_doublesToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.park	UNMAPPED		
+sun.misc.Unsafe.staticFieldOffset	UNMAPPED		
+java.util.zip.Deflater.reset	Java_XXX	java_util_zip_Deflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Thread.isAlive	JVM_XXX	JVM_IsThreadAlive	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Runtime.gc	Java_XXX	java_lang_Runtime_gc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.createJFR	UNMAPPED		
+sun.misc.Unsafe.putInt	UNMAPPED		
+sun.misc.Unsafe.putObject	UNMAPPED		
+java.lang.StrictMath.log	Java_XXX	java_lang_StrictMath_log	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getLong	UNMAPPED		
+java.lang.Class.getInterfaces0	JVM_XXX	JVM_GetClassInterfaces	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getTotal	Java_XXX	java_util_zip_ZipFile_getTotal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.getStackTraceId	UNMAPPED		
+java.io.FileOutputStream.open0	Java_XXX	java_io_FileOutputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.storeFence	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferSize	UNMAPPED		
+java.lang.Class.getProtectionDomain0	JVM_XXX	JVM_GetProtectionDomain	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.System.setOut0	Java_XXX	java_lang_System_setOut0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Object.clone	JVM_XXX	JVM_Clone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.Inflater.inflateBytes	Java_XXX	java_util_zip_Inflater_inflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.abort	UNMAPPED		
+sun.reflect.ConstantPool.getClassAt0	Java_XXX	sun_reflect_ConstantPool_getClassAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryMethod	Java_XXX	java_util_zip_ZipFile_getEntryMethod	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.destroyJFR	UNMAPPED		
+sun.reflect.Reflection.getCallerClass	UNMAPPED		
+jdk.jfr.internal.JVM.flush	UNMAPPED		
+java.lang.UNIXProcess.forkAndExec	Java_XXX	java_lang_UNIXProcess_forkAndExec	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putObjectVolatile	UNMAPPED		
+java.io.ObjectInputStream.bytesToFloats	Java_XXX	java_io_ObjectInputStream_bytesToFloats	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCrc	Java_XXX	java_util_zip_ZipFile_getEntryCrc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.reflect.ConstantPool.getFloatAt0	Java_XXX	sun_reflect_ConstantPool_getFloatAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.shouldLog	UNMAPPED		
+java.lang.Object.getClass	Java_XXX	java_lang_Object_getClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.isPrimitive	JVM_XXX	JVM_IsPrimitiveClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.setThreshold	UNMAPPED		
+java.lang.Object.notify	JVM_XXX	JVM_MonitorNotify	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Thread.isInterrupted	JVM_XXX	JVM_IsInterrupted	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getTicksFrequency	UNMAPPED		
+java.util.zip.ZipFile.getEntry	Java_XXX	java_util_zip_ZipFile_getEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.CRC32.updateBytes	Java_XXX	java_util_zip_CRC32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Throwable.getStackTraceElement	Java_XXX	java_lang_Throwable_getStackTraceElement	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Object.hashCode	JVM_XXX	JVM_IHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putLong	UNMAPPED		
+jdk.jfr.internal.JVM.getAllEventClasses	UNMAPPED		
+jdk.jfr.internal.JVM.newEventWriter	UNMAPPED		
+jdk.jfr.internal.JVM.endRecording	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldOffset	UNMAPPED		
+java.lang.reflect.Array.newArray	Java_XXX	java_lang_reflect_Array_newArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.compareAndSwapObject	UNMAPPED		
+java.lang.Object.notifyAll	JVM_XXX	JVM_MonitorNotifyAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.RandomAccessFile.read0	Java_XXX	java_io_RandomAccessFile_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Shutdown.halt0	Java_XXX	java_lang_Shutdown_halt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.unpark	UNMAPPED		
+jdk.jfr.internal.JVM.setForceInstrumentation	UNMAPPED		
+sun.misc.Unsafe.getFloat	UNMAPPED		
+jdk.jfr.internal.JVM.log	UNMAPPED		
+sun.misc.Unsafe.setMemory	UNMAPPED		
+sun.misc.Unsafe.putShort	UNMAPPED		
+sun.misc.URLClassPath.getLookupCacheForClassLoader	Java_XXX	sun_misc_URLClassPath_getLookupCacheForClassLoader	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.expand	UNMAPPED		
+java.lang.Thread.sleep	JVM_XXX	JVM_Sleep	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Double.longBitsToDouble	Java_XXX	java_lang_Double_longBitsToDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.ObjectOutputStream.floatsToBytes	Java_XXX	java_io_ObjectOutputStream_floatsToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.ClassLoader.resolveClass0	Java_XXX	java_lang_ClassLoader_resolveClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.interrupt0	JVM_XXX	JVM_Interrupt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.invoke.MethodHandleNatives.staticFieldBase	UNMAPPED		
+sun.misc.Unsafe.getByte	UNMAPPED		
+jdk.jfr.internal.JVM.setEnabled	UNMAPPED		
+java.lang.Class.getEnclosingMethod0	JVM_XXX	JVM_GetEnclosingMethodInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.staticFieldBase	UNMAPPED		
+java.lang.Throwable.fillInStackTrace	Java_XXX	java_lang_Throwable_fillInStackTrace	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.TimeZone.getSystemGMTOffsetID	Java_XXX	java_util_TimeZone_getSystemGMTOffsetID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getTimeConversionFactor	UNMAPPED		
+jdk.jfr.internal.JVM.setStackDepth	UNMAPPED		
+jdk.jfr.internal.JVM.setMemorySize	UNMAPPED		
+java.util.zip.Deflater.deflateBytes	Java_XXX	java_util_zip_Deflater_deflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.setStackTraceEnabled	UNMAPPED		
+java.lang.reflect.Array.set	Java_XXX	java_lang_reflect_Array_set	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.desiredAssertionStatus0	JVM_XXX	JVM_DesiredAssertionStatus	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Object.wait	JVM_XXX	JVM_MonitorWait	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Thread.getThreads	JVM_XXX	JVM_GetAllThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.setMethodSamplingInterval	UNMAPPED		
+sun.reflect.ConstantPool.getUTF8At0	Java_XXX	sun_reflect_ConstantPool_getUTF8At0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Float.intBitsToFloat	Java_XXX	java_lang_Float_intBitsToFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.System.identityHashCode	Java_XXX	java_lang_System_identityHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.totalMemory	Java_XXX	java_lang_Runtime_totalMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getComponentType	JVM_XXX	JVM_GetComponentType	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.ensureClassInitialized	UNMAPPED		
+java.io.RandomAccessFile.open0	Java_XXX	java_io_RandomAccessFile_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.ClassLoader.findLoadedClass0	Java_XXX	java_lang_ClassLoader_findLoadedClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.subscribeLogLevel	UNMAPPED		
+java.lang.Class.getDeclaredMethods0	JVM_XXX	JVM_GetClassDeclaredMethods	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.isAvailable	UNMAPPED		
+java.io.RandomAccessFile.seek0	Java_XXX	java_io_RandomAccessFile_seek0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.freeEntry	Java_XXX	java_util_zip_ZipFile_freeEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Class.isArray	JVM_XXX	JVM_IsArrayClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getEventWriter	UNMAPPED		
+java.net.NetworkInterface.getByName0	Java_XXX	java_net_NetworkInterface_getByName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.io.RandomAccessFile.length	Java_XXX	java_io_RandomAccessFile_length	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Package.getSystemPackage0	Java_XXX	java_lang_Package_getSystemPackage0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getIntVolatile	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapLong	UNMAPPED		
+java.util.zip.ZipFile.getEntrySize	Java_XXX	java_util_zip_ZipFile_getEntrySize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Class.isInterface	JVM_XXX	JVM_IsInterface	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getUnloadedEventClassCount	UNMAPPED		
+java.lang.ClassLoader.findBootstrapClass	Java_XXX	java_lang_ClassLoader_findBootstrapClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.VM.latestUserDefinedLoader0	Java_XXX	sun_misc_VM_latestUserDefinedLoader0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.io.FileInputStream.open0	Java_XXX	java_io_FileInputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.System.setErr0	Java_XXX	java_lang_System_setErr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.objectFieldOffset	UNMAPPED		
+java.lang.StrictMath.sqrt	Java_XXX	java_lang_StrictMath_sqrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.currentThread	JVM_XXX	JVM_CurrentThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.beginRecording	UNMAPPED		
+java.lang.Class.getDeclaredConstructors0	JVM_XXX	JVM_GetClassDeclaredConstructors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.open	Java_XXX	java_util_zip_ZipFile_open	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getChar	UNMAPPED		
+java.util.zip.ZipFile.getManifestNum	Java_XXX	java_util_zip_ZipFile_getManifestNum	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Class.isInstance	Java_XXX	java_lang_Class_isInstance	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Runtime.availableProcessors	Java_XXX	java_lang_Runtime_availableProcessors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.pow	Java_XXX	java_lang_StrictMath_pow	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setOutput	UNMAPPED		
+java.lang.Class.getRawAnnotations	JVM_XXX	JVM_GetClassAnnotations	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.defineClass	UNMAPPED		
+java.lang.Thread.dumpThreads	JVM_XXX	JVM_DumpThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.Class.getDeclaringClass0	JVM_XXX	JVM_GetDeclaringClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.FileOutputStream.writeBytes	Java_XXX	java_io_FileOutputStream_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getShort	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.resolve	UNMAPPED		
+java.io.RandomAccessFile.readBytes	Java_XXX	java_io_RandomAccessFile_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.registerNatives	UNMAPPED		
+java.lang.Class.getSigners	JVM_XXX	JVM_GetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.storeMetadataDescriptor	UNMAPPED		
+java.io.RandomAccessFile.getFilePointer	Java_XXX	java_io_RandomAccessFile_getFilePointer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Executable.getParameters0	Java_XXX	java_lang_reflect_Executable_getParameters0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.retransformClasses	UNMAPPED		
+java.lang.reflect.Array.get	Java_XXX	java_lang_reflect_Array_get	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.reset	Java_XXX	java_util_zip_Inflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.io.ObjectInputStream.bytesToDoubles	Java_XXX	java_io_ObjectInputStream_bytesToDoubles	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setNativeName	JVM_XXX	JVM_SetNativeThreadName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.setRepositoryLocation	UNMAPPED		
+sun.misc.Unsafe.putDouble	UNMAPPED		
+java.lang.Float.floatToRawIntBits	Java_XXX	java_lang_Float_floatToRawIntBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.forName0	Java_XXX	java_lang_Class_forName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setCompressedIntegers	UNMAPPED		
+sun.misc.Unsafe.getLongVolatile	UNMAPPED		
+jdk.jfr.internal.JVM.setThreadBufferSize	UNMAPPED		
+java.lang.Thread.holdsLock	JVM_XXX	JVM_HoldsLock	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getEntryFlag	Java_XXX	java_util_zip_ZipFile_getEntryFlag	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.ZipFile.getEntryCSize	Java_XXX	java_util_zip_ZipFile_getEntryCSize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.setSampleThreads	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.objectFieldOffset	UNMAPPED		
+java.util.zip.Deflater.init	Java_XXX	java_util_zip_Deflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.System.nanoTime	JVM_XXX	JVM_NanoTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.allocateMemory	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferCount	UNMAPPED		
+java.lang.Double.doubleToRawLongBits	Java_XXX	java_lang_Double_doubleToRawLongBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setPriority0	JVM_XXX	JVM_SetThreadPriority	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.jar.JarFile.getMetaInfEntryNames	Java_XXX	java_util_jar_JarFile_getMetaInfEntryNames	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getObjectVolatile	UNMAPPED		
+sun.misc.Unsafe.putAddress	UNMAPPED		
+sun.misc.MessageUtils.toStderr	Java_XXX	sun_misc_MessageUtils_toStderr	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.security.AccessController.getStackAccessControlContext	Java_XXX	java_security_AccessController_getStackAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.System.arraycopy	JVM_XXX	JVM_ArrayCopy	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.invoke.MethodHandleNatives.init	UNMAPPED		
+java.util.zip.Deflater.end	Java_XXX	java_util_zip_Deflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.util.zip.ZipFile.getEntryTime	Java_XXX	java_util_zip_ZipFile_getEntryTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.getClassIdNonIntrinsic	UNMAPPED		
+jdk.jfr.internal.JVM.getTypeId	UNMAPPED		
+jdk.jfr.internal.JVM.setCutoff	UNMAPPED		
+sun.misc.Unsafe.compareAndSwapInt	UNMAPPED		
+jdk.jfr.internal.JVM.emitOldObjectSamples	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.getMemberVMInfo	UNMAPPED		
+sun.misc.Unsafe.putByte	UNMAPPED		
+java.lang.Class.isAssignableFrom	Java_XXX	java_lang_Class_isAssignableFrom	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.defineAnonymousClass	UNMAPPED		
+java.lang.Runtime.maxMemory	Java_XXX	java_lang_Runtime_maxMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getConstantPool	JVM_XXX	JVM_GetClassConstantPool	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.reflect.ConstantPool.getDoubleAt0	Java_XXX	sun_reflect_ConstantPool_getDoubleAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.end	Java_XXX	java_util_zip_Inflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.security.AccessController.getInheritedAccessControlContext	Java_XXX	java_security_AccessController_getInheritedAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.String.intern	Java_XXX	java_lang_String_intern	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.getLength	Java_XXX	java_lang_reflect_Array_getLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getObject	UNMAPPED		
+java.util.zip.ZipFile.startsWithLOC	Java_XXX	java_util_zip_ZipFile_startsWithLOC	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Shutdown.beforeHalt	Java_XXX	java_lang_Shutdown_beforeHalt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getThreadId	UNMAPPED		
+sun.misc.Unsafe.putOrderedObject	UNMAPPED		
+jdk.jfr.internal.JVM.emitEvent	UNMAPPED		
+jdk.jfr.internal.JVM.uncaughtException	UNMAPPED		
+java.lang.Class.getGenericSignature0	JVM_XXX	JVM_GetClassSignature	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.reflect.ConstantPool.getLongAt0	Java_XXX	sun_reflect_ConstantPool_getLongAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getSuperclass	UNMAPPED		
+jdk.jfr.internal.JVM.setFileNotification	UNMAPPED		
+java.lang.Class.getName0	JVM_XXX	JVM_GetClassName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.shouldRotateDisk	UNMAPPED		
+java.lang.Runtime.freeMemory	Java_XXX	java_lang_Runtime_freeMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Throwable.getStackTraceDepth	Java_XXX	java_lang_Throwable_getStackTraceDepth	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putChar	UNMAPPED		
+jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms	UNMAPPED		
+sun.misc.Unsafe.pageSize	UNMAPPED		
+sun.misc.Unsafe.getDouble	UNMAPPED		
+java.lang.System.currentTimeMillis	JVM_XXX	JVM_CurrentTimeMillis	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putOrderedLong	UNMAPPED		
+java.lang.Thread.yield	JVM_XXX	JVM_Yield	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getClassId	UNMAPPED		
+sun.misc.Unsafe.getInt	UNMAPPED		
+jdk.jfr.internal.JVM.addStringConstant	UNMAPPED		
+sun.misc.Unsafe.shouldBeInitialized	UNMAPPED		
+java.lang.Class.getModifiers	JVM_XXX	JVM_GetClassModifiers	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getEntryBytes	Java_XXX	java_util_zip_ZipFile_getEntryBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.counterTime	UNMAPPED		
+sun.reflect.Reflection.getClassAccessFlags	Java_XXX	sun_reflect_Reflection_getClassAccessFlags	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getEpochAddress	UNMAPPED		
+sun.misc.Unsafe.putFloat	UNMAPPED		
+jdk.jfr.internal.JVM.getPid	UNMAPPED		
+java.util.TimeZone.getSystemTimeZoneID	Java_XXX	java_util_TimeZone_getSystemTimeZoneID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.start0	JVM_XXX	JVM_StartThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putBoolean	UNMAPPED		
+sun.misc.Unsafe.throwException	UNMAPPED		
+java.lang.Class.getDeclaredFields0	JVM_XXX	JVM_GetClassDeclaredFields	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so

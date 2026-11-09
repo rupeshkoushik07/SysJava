@@ -1,0 +1,614 @@
+method	strategy	symbol	library
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.add	UNMAPPED		
+org.apache.hadoop.crypto.OpensslCipher.initContext	UNMAPPED		
+io.netty.channel.epoll.Native.timerFd	UNMAPPED		
+sun.misc.Unsafe.getBoolean	UNMAPPED		
+io.netty.channel.unix.Socket.newSocketStreamFd	NETTY_HEURISTIC	netty_unix_socket_newSocketStreamFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.tcpMd5SigMaxKeyLen	NETTY_HEURISTIC	netty_epoll_native_tcpMd5SigMaxKeyLen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.ssizeMax	NETTY_HEURISTIC	netty_epoll_native_ssizeMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.epollCtlAdd0	NETTY_HEURISTIC	netty_epoll_native_epollCtlAdd0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Signal.handle0	Java_XXX	sun_misc_Signal_handle0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.initIDs	UNMAPPED		
+java.lang.Thread.isAlive	JVM_XXX	JVM_IsThreadAlive	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.security.ec.ECKeyPairGenerator.isCurveSupported	Java_XXX	sun_security_ec_ECKeyPairGenerator_isCurveSupported	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+org.apache.hadoop.io.nativeio.NativeIO$Windows.access0	UNMAPPED		
+jdk.jfr.internal.JVM.createJFR	UNMAPPED		
+io.netty.channel.unix.Socket.listen	NETTY_HEURISTIC	netty_unix_socket_listen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.setDictionary	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.end	UNMAPPED		
+java.lang.reflect.Array.getInt	Java_XXX	java_lang_reflect_Array_getInt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.offsetofEpollData	NETTY_HEURISTIC	netty_epoll_native_offsetofEpollData	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.epollCreate	NETTY_HEURISTIC	netty_epoll_native_epollCreate	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getInterfaces0	JVM_XXX	JVM_GetClassInterfaces	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getTotal	Java_XXX	java_util_zip_ZipFile_getTotal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.storeFence	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferSize	UNMAPPED		
+io.netty.channel.unix.Socket.setReusePort	NETTY_HEURISTIC	netty_epoll_native_setReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.isKeepAlive	NETTY_HEURISTIC	netty_unix_socket_isKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.ClassLoader$NativeLibrary.load	UNMAPPED		
+sun.misc.Unsafe.copyMemory	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getBytesWritten	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpInfo	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.connect0	UNMAPPED		
+java.util.zip.Inflater.inflateBytes	Java_XXX	java_util_zip_Inflater_inflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEBADF	NETTY_HEURISTIC	netty_unix_errors_errnoEBADF	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.setTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_setTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.ZipFile.getEntryMethod	Java_XXX	java_util_zip_ZipFile_getEntryMethod	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.destroyJFR	UNMAPPED		
+sun.reflect.Reflection.getCallerClass	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.uioMaxIov	NETTY_HEURISTIC	netty_epoll_native_uioMaxIov	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.isIpRecvOrigDestAddr	UNMAPPED		
+java.lang.UNIXProcess.forkAndExec	Java_XXX	java_lang_UNIXProcess_forkAndExec	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.newSocketDomainFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDomainFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.putObjectVolatile	UNMAPPED		
+java.util.zip.ZipFile.getEntryCrc	Java_XXX	java_util_zip_ZipFile_getEntryCrc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.reflect.ConstantPool.getFloatAt0	Java_XXX	sun_reflect_ConstantPool_getFloatAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.shouldLog	UNMAPPED		
+sun.misc.Unsafe.allocateInstance	UNMAPPED		
+org.apache.hadoop.crypto.OpensslCipher.initIDs	UNMAPPED		
+jdk.jfr.internal.JVM.setThreshold	UNMAPPED		
+java.lang.Object.notify	JVM_XXX	JVM_MonitorNotify	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.putLongVolatile	UNMAPPED		
+java.util.zip.CRC32.updateBytes	Java_XXX	java_util_zip_CRC32_updateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Throwable.getStackTraceElement	Java_XXX	java_lang_Throwable_getStackTraceElement	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.newEventWriter	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldOffset	UNMAPPED		
+java.lang.StrictMath.cos	Java_XXX	java_lang_StrictMath_cos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.compareAndSwapObject	UNMAPPED		
+io.netty.channel.epoll.Native.sizeofEpollEvent	NETTY_HEURISTIC	netty_epoll_native_sizeofEpollEvent	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.getTcpDeferAccept	NETTY_HEURISTIC	netty_unix_socket_getTcpDeferAccept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Object.notifyAll	JVM_XXX	JVM_MonitorNotifyAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.RandomAccessFile.read0	Java_XXX	java_io_RandomAccessFile_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.isTcpFastOpenConnect	UNMAPPED		
+sun.security.ec.ECDSASignature.verifySignedDigest	Java_XXX	sun_security_ec_ECDSASignature_verifySignedDigest	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+io.netty.channel.unix.Socket.recvFromAddress	NETTY_HEURISTIC	netty_unix_socket_recvFromAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.Inflater.setDictionary	Java_XXX	java_util_zip_Inflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.setForceInstrumentation	UNMAPPED		
+org.apache.lucene.store.NativePosixUtil.pread	UNMAPPED		
+sun.misc.Unsafe.setMemory	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpMd5Sig	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_setTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.lucene.store.WindowsDirectory.length	UNMAPPED		
+sun.misc.URLClassPath.getLookupCacheForClassLoader	Java_XXX	sun_misc_URLClassPath_getLookupCacheForClassLoader	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.expand	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.destroyImpl	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingSendmmsg	NETTY_HEURISTIC	netty_epoll_native_isSupportingSendmmsg	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.mapLibraryName	Java_XXX	java_lang_System_mapLibraryName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Double.longBitsToDouble	Java_XXX	java_lang_Double_longBitsToDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsSnappy	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getBytesRead	UNMAPPED		
+java.io.ObjectOutputStream.floatsToBytes	Java_XXX	java_io_ObjectOutputStream_floatsToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.sin	Java_XXX	java_lang_StrictMath_sin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingRecvmmsg	UNMAPPED		
+java.lang.ClassLoader.resolveClass0	Java_XXX	java_lang_ClassLoader_resolveClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.interrupt0	JVM_XXX	JVM_Interrupt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.getByte	UNMAPPED		
+java.lang.Class.getEnclosingMethod0	JVM_XXX	JVM_GetEnclosingMethodInfo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.staticFieldBase	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollin	NETTY_HEURISTIC	netty_epoll_native_epollin	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.compressBytesDirect	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.destroyImpl	UNMAPPED		
+java.lang.Throwable.fillInStackTrace	Java_XXX	java_lang_Throwable_fillInStackTrace	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.TimeZone.getSystemGMTOffsetID	Java_XXX	java_util_TimeZone_getSystemGMTOffsetID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.acos	Java_XXX	java_lang_StrictMath_acos	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.connect	NETTY_HEURISTIC	netty_unix_socket_connect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO$Windows.extendWorkingSetSize	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.getLibraryName	UNMAPPED		
+sun.security.krb5.SCDynamicStoreConfig.getKerberosConfig	UNMAPPED		
+jdk.jfr.internal.JVM.setMemorySize	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.write	NETTY_HEURISTIC	netty_unix_filedescriptor_write	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.security.krb5.Config.getWindowsDirectory	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.reset	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.initImpl	UNMAPPED		
+sun.security.ec.ECDHKeyAgreement.deriveKey	Java_XXX	sun_security_ec_ECDHKeyAgreement_deriveKey	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.lang.ClassLoader.defineClass1	Java_XXX	java_lang_ClassLoader_defineClass1	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.set	Java_XXX	java_lang_reflect_Array_set	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_setTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.getTcpUserTimeout	NETTY_HEURISTIC	netty_epoll_native_getTcpUserTimeout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.desiredAssertionStatus0	JVM_XXX	JVM_DesiredAssertionStatus	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getGroupName	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getBytesWritten	UNMAPPED		
+jdk.jfr.internal.JVM.setMethodSamplingInterval	UNMAPPED		
+sun.reflect.ConstantPool.getUTF8At0	Java_XXX	sun_reflect_ConstantPool_getUTF8At0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.crypto.OpensslCipher.update	UNMAPPED		
+java.lang.Float.intBitsToFloat	Java_XXX	java_lang_Float_intBitsToFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.deflateBytesDirect	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.encodeImpl	UNMAPPED		
+java.lang.Runtime.totalMemory	Java_XXX	java_lang_Runtime_totalMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.net.NetworkInterface.getByIndex0	Java_XXX	java_net_NetworkInterface_getByIndex0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.lang.SecurityManager.getClassContext	Java_XXX	java_lang_SecurityManager_getClassContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.management.MemoryImpl.getMemoryManagers0	Java_XXX	sun_management_MemoryImpl_getMemoryManagers0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+java.lang.ClassLoader.findLoadedClass0	Java_XXX	java_lang_ClassLoader_findLoadedClass0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.end	UNMAPPED		
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.uioMaxIov	NETTY_HEURISTIC	netty_epoll_native_uioMaxIov	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.FileInputStream.available0	Java_XXX	java_io_FileInputStream_available0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getDeclaredMethods0	JVM_XXX	JVM_GetClassDeclaredMethods	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.epoll.LinuxSocket.isTcpQuickAck	NETTY_HEURISTIC	netty_unix_socket_isTcpQuickAck	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEPIPE	NETTY_HEURISTIC	netty_unix_errors_errnoEPIPE	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.setReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_setReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.RandomAccessFile.seek0	Java_XXX	java_io_RandomAccessFile_seek0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.freeEntry	Java_XXX	java_util_zip_ZipFile_freeEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+jdk.jfr.internal.JVM.getEventWriter	UNMAPPED		
+java.io.FileDescriptor.sync	Java_XXX	java_io_FileDescriptor_sync	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.setDictionary	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.read	NETTY_HEURISTIC	netty_unix_filedescriptor_read	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.eventFdRead	NETTY_HEURISTIC	netty_epoll_native_eventFdRead	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.isUp0	Java_XXX	java_net_NetworkInterface_isUp0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+sun.misc.Unsafe.getIntVolatile	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.create	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.free	UNMAPPED		
+org.xerial.snappy.BitShuffleNative.unshuffleDirectBuffer	UNMAPPED		
+io.netty.channel.unix.Socket.getSoError	NETTY_HEURISTIC	netty_unix_socket_getSoError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getUnloadedEventClassCount	UNMAPPED		
+sun.misc.VM.latestUserDefinedLoader0	Java_XXX	sun_misc_VM_latestUserDefinedLoader0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setIpRecvOrigDestAddr	UNMAPPED		
+org.apache.lucene.store.WindowsDirectory.open	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIdle	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIdle	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.setErr0	Java_XXX	java_lang_System_setErr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setIpFreeBind	NETTY_HEURISTIC	netty_epoll_native_setIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.invoke.MethodHandle.invokeExact	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createDirectoryWithMode0	UNMAPPED		
+java.lang.Thread.currentThread	JVM_XXX	JVM_CurrentThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.beginRecording	UNMAPPED		
+org.apache.lucene.store.NativePosixUtil.madvise	UNMAPPED		
+java.util.zip.ZipFile.open	Java_XXX	java_util_zip_ZipFile_open	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.io.FileInputStream.read0	Java_XXX	java_io_FileInputStream_read0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getChar	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setSoBusyPoll	UNMAPPED		
+java.util.zip.ZipFile.getManifestNum	Java_XXX	java_util_zip_ZipFile_getManifestNum	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.udsSunPathSize	UNMAPPED		
+java.lang.reflect.Array.setInt	Java_XXX	java_lang_reflect_Array_setInt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.setReuseAddress	NETTY_HEURISTIC	netty_epoll_native_setReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Runtime.availableProcessors	Java_XXX	java_lang_Runtime_availableProcessors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.getAndClearReadableFds	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getIpMulticastLoop	UNMAPPED		
+java.lang.Thread.dumpThreads	JVM_XXX	JVM_DumpThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.bind	NETTY_HEURISTIC	netty_unix_socket_bind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getDeclaringClass0	JVM_XXX	JVM_GetDeclaringClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.net.unix.DomainSocket.sendFileDescriptors0	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollet	NETTY_HEURISTIC	netty_epoll_native_epollet	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.registerNatives	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setIpTransparent	UNMAPPED		
+java.lang.Class.getSigners	JVM_XXX	JVM_GetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.storeMetadataDescriptor	UNMAPPED		
+java.io.RandomAccessFile.getFilePointer	Java_XXX	java_io_RandomAccessFile_getFilePointer	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.sendTo	NETTY_HEURISTIC	netty_unix_socket_sendTo	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.shutdown	NETTY_HEURISTIC	netty_unix_socket_shutdown	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.retransformClasses	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.deflateBytesDirect	UNMAPPED		
+io.netty.channel.epoll.Native.timerFdSetTime	UNMAPPED		
+java.util.zip.Inflater.reset	Java_XXX	java_util_zip_Inflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.epoll.Native.eventFdWrite	NETTY_HEURISTIC	netty_epoll_native_eventFdWrite	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setShort	Java_XXX	java_lang_reflect_Array_setShort	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.isSupportingTcpFastopen	NETTY_HEURISTIC	netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.net.unix.DomainSocket.readByteBufferDirect0	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpCork	NETTY_HEURISTIC	netty_unix_socket_setTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.getMacAddr0	Java_XXX	java_net_NetworkInterface_getMacAddr0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.init	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.forName0	Java_XXX	java_lang_Class_forName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.xerial.snappy.SnappyNative.rawCompress	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.getStreamSize	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.newPipe	NETTY_HEURISTIC	netty_unix_filedescriptor_newPipe	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getLongVolatile	UNMAPPED		
+org.apache.hadoop.util.NativeCrc32.nativeComputeChunkedSumsByteArray	UNMAPPED		
+io.netty.channel.unix.Buffer.addressSize0	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_setTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.net.unix.DomainSocket.validateSocketPathSecurity0	UNMAPPED		
+sun.misc.Signal.raise0	Java_XXX	sun_misc_Signal_raise0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.getShort	Java_XXX	java_lang_reflect_Array_getShort	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.getTcpKeepCnt	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepCnt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.setSoLinger	NETTY_HEURISTIC	netty_unix_socket_setSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.allocateMemory	UNMAPPED		
+jdk.jfr.internal.JVM.setGlobalBufferCount	UNMAPPED		
+sun.misc.Unsafe.freeMemory	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEWOULDBLOCK	NETTY_HEURISTIC	netty_unix_errors_errnoEWOULDBLOCK	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.mlock_native	UNMAPPED		
+org.apache.hadoop.io.nativeio.SharedFileDescriptorFactory.createDescriptor0	UNMAPPED		
+java.util.zip.ZipFile.close	Java_XXX	java_util_zip_ZipFile_close	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.Socket.setBroadcast	NETTY_HEURISTIC	netty_epoll_native_setBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.end	UNMAPPED		
+sun.misc.Unsafe.putAddress	UNMAPPED		
+sun.misc.MessageUtils.toStderr	Java_XXX	sun_misc_MessageUtils_toStderr	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.isIpFreeBind	NETTY_HEURISTIC	netty_epoll_Native_isIpFreeBind	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.System.arraycopy	JVM_XXX	JVM_ArrayCopy	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.ssizeMax	NETTY_HEURISTIC	netty_epoll_native_ssizeMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.initIDs	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise	UNMAPPED		
+org.apache.hadoop.crypto.random.OpensslSecureRandom.initSR	UNMAPPED		
+io.netty.channel.unix.Socket.setSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_setSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.Native.sendmmsg0	NETTY_HEURISTIC	netty_epoll_native_sendmmsg0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.net.unix.DomainSocket.bind0	UNMAPPED		
+io.netty.channel.unix.Socket.remoteAddress	NETTY_HEURISTIC	netty_unix_socket_remoteAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getTypeId	UNMAPPED		
+io.netty.channel.unix.Socket.sendToAddress	NETTY_HEURISTIC	netty_unix_socket_sendToAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.setCutoff	UNMAPPED		
+org.apache.hadoop.crypto.OpensslCipher.doFinal	UNMAPPED		
+java.lang.reflect.Array.getChar	Java_XXX	java_lang_reflect_Array_getChar	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.emitOldObjectSamples	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.getMemberVMInfo	UNMAPPED		
+sun.misc.Unsafe.putByte	UNMAPPED		
+io.netty.channel.unix.Socket.getSendBufferSize	NETTY_HEURISTIC	netty_unix_socket_getSendBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.SnappyNative.nativeLibraryVersion	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.anchorNative	UNMAPPED		
+java.lang.reflect.Array.getLong	Java_XXX	java_lang_reflect_Array_getLong	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.net.NetworkInterface.getByInetAddress0	Java_XXX	java_net_NetworkInterface_getByInetAddress0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getRemaining	UNMAPPED		
+sun.reflect.ConstantPool.getDoubleAt0	Java_XXX	sun_reflect_ConstantPool_getDoubleAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Inflater.end	Java_XXX	java_util_zip_Inflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.StrictMath.IEEEremainder	Java_XXX	java_lang_StrictMath_IEEEremainder	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.Native.epollWait0	NETTY_HEURISTIC	netty_epoll_native_epollWait0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.security.AccessController.getInheritedAccessControlContext	Java_XXX	java_security_AccessController_getInheritedAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.end	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getBytesWritten	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.writeAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_writeAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Shutdown.beforeHalt	Java_XXX	java_lang_Shutdown_beforeHalt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEALREADY	NETTY_HEURISTIC	netty_unix_errors_errorEALREADY	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getThreadId	UNMAPPED		
+sun.misc.Unsafe.reallocateMemory	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createFileWithMode0	UNMAPPED		
+jdk.jfr.internal.JVM.uncaughtException	UNMAPPED		
+java.lang.StrictMath.sinh	Java_XXX	java_lang_StrictMath_sinh	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getSuperclass	UNMAPPED		
+io.netty.channel.unix.Socket.getTrafficClass	NETTY_HEURISTIC	netty_epoll_native_getTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getName0	JVM_XXX	JVM_GetClassName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.xerial.snappy.SnappyNative.uncompressedLength	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.writeArray0	UNMAPPED		
+io.netty.channel.unix.Socket.disconnect	UNMAPPED		
+jdk.jfr.internal.JVM.shouldRotateDisk	UNMAPPED		
+java.lang.Throwable.getStackTraceDepth	Java_XXX	java_lang_Throwable_getStackTraceDepth	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setIpMulticastLoop	UNMAPPED		
+java.lang.StrictMath.cbrt	Java_XXX	java_lang_StrictMath_cbrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.pageSize	UNMAPPED		
+sun.misc.Unsafe.getDouble	UNMAPPED		
+java.lang.System.currentTimeMillis	JVM_XXX	JVM_CurrentTimeMillis	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.encodeImpl	UNMAPPED		
+org.apache.hadoop.io.nativeio.SharedFileDescriptorFactory.deleteStaleTemporaryFiles0	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO.getMemlockLimit0	UNMAPPED		
+org.apache.lucene.store.WindowsDirectory.close	UNMAPPED		
+java.lang.Thread.yield	JVM_XXX	JVM_Yield	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getClassId	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTimeToLive	UNMAPPED		
+sun.misc.Unsafe.getInt	UNMAPPED		
+org.apache.hadoop.io.erasurecode.ErasureCodeNative.loadLibrary	UNMAPPED		
+jdk.jfr.internal.JVM.addStringConstant	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$Windows.setFilePointer	UNMAPPED		
+io.netty.channel.unix.Socket.isReusePort	NETTY_HEURISTIC	netty_epoll_native_isReusePort	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.shouldBeInitialized	UNMAPPED		
+io.netty.channel.unix.Socket.isIPv6Preferred	UNMAPPED		
+org.apache.lucene.store.WindowsDirectory.read	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTimeToLive	UNMAPPED		
+java.util.zip.ZipFile.getEntryBytes	Java_XXX	java_util_zip_ZipFile_getEntryBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.epoll.LinuxSocket.isIpTransparent	UNMAPPED		
+sun.reflect.Reflection.getClassAccessFlags	Java_XXX	sun_reflect_Reflection_getClassAccessFlags	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.alloc0	UNMAPPED		
+sun.misc.Unsafe.putFloat	UNMAPPED		
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.compressBytesDirect	UNMAPPED		
+jdk.jfr.internal.JVM.getPid	UNMAPPED		
+io.netty.channel.unix.Socket.sendToAddresses	NETTY_HEURISTIC	netty_unix_socket_sendToAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpenConnect	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.joinGroup	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollout	NETTY_HEURISTIC	netty_epoll_native_epollout	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getUserName	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getLibraryName	UNMAPPED		
+java.lang.reflect.Array.setByte	Java_XXX	java_lang_reflect_Array_setByte	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putBoolean	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.strError	NETTY_HEURISTIC	netty_unix_errors_strError	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO$Windows.createFile	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpFastOpen	UNMAPPED		
+java.lang.Class.getDeclaredClasses0	JVM_XXX	JVM_GetDeclaredClasses	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoECONNRESET	NETTY_HEURISTIC	netty_unix_errors_errnoECONNRESET	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.arrayIndexScale	UNMAPPED		
+sun.reflect.ConstantPool.getIntAt0	Java_XXX	sun_reflect_ConstantPool_getIntAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.iovMax	NETTY_HEURISTIC	netty_epoll_native_iovMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.security.AccessController.doPrivileged	UNMAPPED		
+java.util.zip.Inflater.init	Java_XXX	java_util_zip_Inflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.io.ObjectOutputStream.doublesToBytes	Java_XXX	java_io_ObjectOutputStream_doublesToBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getBytesWritten	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO.initNative	UNMAPPED		
+sun.misc.Unsafe.park	UNMAPPED		
+sun.misc.Unsafe.staticFieldOffset	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.getLibraryName	UNMAPPED		
+org.apache.lucene.store.NativePosixUtil.posix_madvise	UNMAPPED		
+java.lang.reflect.Array.getFloat	Java_XXX	java_lang_reflect_Array_getFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Deflater.reset	Java_XXX	java_util_zip_Deflater_reset	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.StrictMath.log10	Java_XXX	java_lang_StrictMath_log10	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.erasurecode.ErasureCodeNative.getLibraryName	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.setTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_setTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Runtime.gc	Java_XXX	java_lang_Runtime_gc	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.crypto.OpensslCipher.init	UNMAPPED		
+java.nio.MappedByteBuffer.load0	Java_XXX	java_nio_MappedByteBuffer_load0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.apache.hadoop.net.unix.DomainSocket.accept0	UNMAPPED		
+sun.misc.Unsafe.putInt	UNMAPPED		
+sun.misc.Unsafe.putObject	UNMAPPED		
+java.lang.StrictMath.log	Java_XXX	java_lang_StrictMath_log	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.setInterface	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.mmap	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpKeepIntvl	NETTY_HEURISTIC	netty_epoll_native_getTcpKeepIntvl	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.net.unix.DomainSocket.closeFileDescriptor0	UNMAPPED		
+sun.misc.Unsafe.getLong	UNMAPPED		
+jdk.jfr.internal.JVM.getStackTraceId	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlDel0	NETTY_HEURISTIC	netty_epoll_native_epollCtlDel0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.FileOutputStream.open0	Java_XXX	java_io_FileOutputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.inflateBytesDirect	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.initIDs	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEINPROGRESS	NETTY_HEURISTIC	netty_unix_errors_errnoEINPROGRESS	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setDouble	Java_XXX	java_lang_reflect_Array_setDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getProtectionDomain0	JVM_XXX	JVM_GetProtectionDomain	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.lang.System.setOut0	Java_XXX	java_lang_System_setOut0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.reset	UNMAPPED		
+java.lang.Object.clone	JVM_XXX	JVM_Clone	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.abort	UNMAPPED		
+sun.reflect.ConstantPool.getClassAt0	Java_XXX	sun_reflect_ConstantPool_getClassAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.xerial.snappy.SnappyNative.rawUncompress	UNMAPPED		
+org.apache.hadoop.crypto.random.OpensslSecureRandom.nextRandBytes	UNMAPPED		
+jdk.jfr.internal.JVM.flush	UNMAPPED		
+java.lang.StrictMath.tan	Java_XXX	java_lang_StrictMath_tan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.compressBytesDirectHC	UNMAPPED		
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.initIDs	UNMAPPED		
+java.io.ObjectInputStream.bytesToFloats	Java_XXX	java_io_ObjectInputStream_bytesToFloats	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.net.unix.DomainSocket.available0	UNMAPPED		
+java.lang.Object.getClass	Java_XXX	java_lang_Object_getClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.isPrimitive	JVM_XXX	JVM_IsPrimitiveClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.setKeepAlive	NETTY_HEURISTIC	netty_unix_socket_setKeepAlive	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.SnappyNative.maxCompressedLength	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.end	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.writevAddresses	NETTY_HEURISTIC	netty_unix_filedescriptor_writevAddresses	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.setFloat	Java_XXX	java_lang_reflect_Array_setFloat	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.isInterrupted	JVM_XXX	JVM_IsInterrupted	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+jdk.jfr.internal.JVM.getTicksFrequency	UNMAPPED		
+java.io.FileOutputStream.write	Java_XXX	java_io_FileOutputStream_write	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntry	Java_XXX	java_util_zip_ZipFile_getEntry	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOTCONN	NETTY_HEURISTIC	netty_unix_errors_errnoENOTCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO.link0	UNMAPPED		
+io.netty.channel.epoll.Native.timerFdRead	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.write0	UNMAPPED		
+java.lang.Object.hashCode	JVM_XXX	JVM_IHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.util.NativeCodeLoader.getLibraryName	UNMAPPED		
+sun.misc.Unsafe.putLong	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getPeerCredentials	NETTY_HEURISTIC	netty_channel_unix_socket_getPeerCredentials	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getAllEventClasses	UNMAPPED		
+jdk.jfr.internal.JVM.endRecording	UNMAPPED		
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsZstd	UNMAPPED		
+java.lang.reflect.Array.newArray	Java_XXX	java_lang_reflect_Array_newArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.nio.MappedByteBuffer.force0	Java_XXX	java_nio_MappedByteBuffer_force0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.chmodImpl	UNMAPPED		
+java.io.FileInputStream.skip0	Java_XXX	java_io_FileInputStream_skip0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Shutdown.halt0	Java_XXX	java_lang_Shutdown_halt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.unpark	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocketWatcher.doPoll0	UNMAPPED		
+io.netty.channel.epoll.Native.eventFd	NETTY_HEURISTIC	netty_epoll_native_eventFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.finishConnect	NETTY_HEURISTIC	netty_unix_socket_finishConnect	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.getFloat	UNMAPPED		
+org.apache.lucene.store.NativePosixUtil.posix_fadvise	UNMAPPED		
+jdk.jfr.internal.JVM.log	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.fstat	UNMAPPED		
+sun.misc.Unsafe.putShort	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.destroyImpl	UNMAPPED		
+io.netty.channel.unix.Socket.accept	NETTY_HEURISTIC	netty_unix_socket_accept	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.newSocketDgramFd	NETTY_HEURISTIC	netty_unix_socket_newSocketDgramFd	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Signal.findSignal	Java_XXX	sun_misc_Signal_findSignal	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.lz4.Lz4Decompressor.decompressBytesDirect	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.readAddress	NETTY_HEURISTIC	netty_unix_filedescriptor_readAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.StrictMath.atan	Java_XXX	java_lang_StrictMath_atan	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.joinSsmGroup	UNMAPPED		
+org.apache.lucene.store.NativePosixUtil.open_direct	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.init	UNMAPPED		
+sun.misc.Unsafe.putOrderedInt	UNMAPPED		
+java.lang.StrictMath.hypot	Java_XXX	java_lang_StrictMath_hypot	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.sleep	JVM_XXX	JVM_Sleep	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.destroyImpl	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.staticFieldBase	UNMAPPED		
+jdk.jfr.internal.JVM.setEnabled	UNMAPPED		
+io.netty.channel.unix.Socket.recvFd	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.leaveGroup	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.stat	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.open	UNMAPPED		
+io.netty.channel.unix.Socket.getSoLinger	NETTY_HEURISTIC	netty_unix_socket_getSoLinger	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.getTimeConversionFactor	UNMAPPED		
+jdk.jfr.internal.JVM.setStackDepth	UNMAPPED		
+java.util.zip.Deflater.deflateBytes	Java_XXX	java_util_zip_Deflater_deflateBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getRemaining	UNMAPPED		
+org.apache.hadoop.crypto.OpensslCipher.getLibraryName	UNMAPPED		
+org.apache.hadoop.io.compress.lz4.Lz4Decompressor.initIDs	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO.copyFileUnbuffered0	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.readArray0	UNMAPPED		
+io.netty.channel.epoll.Native.recvmmsg0	UNMAPPED		
+jdk.jfr.internal.JVM.setStackTraceEnabled	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.inflateBytesDirect	UNMAPPED		
+io.netty.channel.epoll.Native.epollBusyWait0	UNMAPPED		
+java.lang.Object.wait	JVM_XXX	JVM_MonitorWait	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.compress.snappy.SnappyDecompressor.decompressBytesDirect	UNMAPPED		
+java.lang.Thread.getThreads	JVM_XXX	JVM_GetAllThreads	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.epoll.LinuxSocket.getInterface	UNMAPPED		
+io.netty.channel.unix.Socket.isReuseAddress	NETTY_HEURISTIC	netty_epoll_native_isReuseAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.initIDs	UNMAPPED		
+java.lang.System.identityHashCode	Java_XXX	java_lang_System_identityHashCode	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.isTcpCork	NETTY_HEURISTIC	netty_unix_socket_isTcpCork	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.sizeOfjlong	UNMAPPED		
+java.lang.Class.getComponentType	JVM_XXX	JVM_GetComponentType	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.misc.Unsafe.ensureClassInitialized	UNMAPPED		
+java.io.RandomAccessFile.open0	Java_XXX	java_io_RandomAccessFile_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Buffer.memoryAddress0	UNMAPPED		
+jdk.jfr.internal.JVM.subscribeLogLevel	UNMAPPED		
+java.lang.StrictMath.cosh	Java_XXX	java_lang_StrictMath_cosh	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.isAvailable	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.getBytesRead	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$Windows.getOwner	UNMAPPED		
+java.lang.Class.isArray	JVM_XXX	JVM_IsArrayClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.util.NativeCrc32.nativeComputeChunkedSums	UNMAPPED		
+java.net.NetworkInterface.getByName0	Java_XXX	java_net_NetworkInterface_getByName0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.io.RandomAccessFile.length	Java_XXX	java_io_RandomAccessFile_length	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.epoll.LinuxSocket.sendFile	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorECONNREFUSED	NETTY_HEURISTIC	netty_unix_errors_errorECONNREFUSED	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Package.getSystemPackage0	Java_XXX	java_lang_Package_getSystemPackage0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.security.JniBasedUnixGroupsMapping.getGroupsForUser	UNMAPPED		
+io.netty.channel.unix.Socket.isIPv6	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.getStreamSize	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.deflateBytesDirect	UNMAPPED		
+io.netty.channel.unix.Socket.initialize	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorENETUNREACH	NETTY_HEURISTIC	netty_unix_errors_errorENETUNREACH	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.compareAndSwapLong	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.close0	UNMAPPED		
+io.netty.channel.unix.Socket.getReceiveBufferSize	NETTY_HEURISTIC	netty_unix_socket_getReceiveBufferSize	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.util.zip.ZipFile.getEntrySize	Java_XXX	java_util_zip_ZipFile_getEntrySize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.Class.isInterface	JVM_XXX	JVM_IsInterface	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.compress.bzip2.Bzip2Compressor.init	UNMAPPED		
+java.lang.ClassLoader.findBootstrapClass	Java_XXX	java_lang_ClassLoader_findBootstrapClass	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.security.ec.ECKeyPairGenerator.generateECKeyPair	Java_XXX	sun_security_ec_ECKeyPairGenerator_generateECKeyPair	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.io.FileInputStream.open0	Java_XXX	java_io_FileInputStream_open0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.nativeio.NativeIO.renameTo0	UNMAPPED		
+sun.misc.Unsafe.objectFieldOffset	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.getUIDforFDOwnerforOwner	UNMAPPED		
+java.lang.StrictMath.sqrt	Java_XXX	java_lang_StrictMath_sqrt	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.setTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_setTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.munmap	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.kernelVersion	NETTY_HEURISTIC	netty_epoll_native_kernelVersion	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.setSigners	JVM_XXX	JVM_SetClassSigners	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.isBroadcast	NETTY_HEURISTIC	netty_epoll_native_isBroadcast	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getDeclaredConstructors0	JVM_XXX	JVM_GetClassDeclaredConstructors	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoENOENT	UNMAPPED		
+io.netty.channel.unix.Socket.sendFd	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.initImpl	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getSoBusyPoll	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollerr	NETTY_HEURISTIC	netty_epoll_native_epollerr	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.BitShuffleNative.shuffleDirectBuffer	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.getBytesRead	UNMAPPED		
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.initIDs	UNMAPPED		
+io.netty.channel.epoll.NativeStaticallyReferencedJniMethods.epollrdhup	NETTY_HEURISTIC	netty_epoll_native_epollrdhup	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.isInstance	Java_XXX	java_lang_Class_isInstance	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.FileDescriptor.writev	NETTY_HEURISTIC	netty_unix_filedescriptor_writev	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.StrictMath.pow	Java_XXX	java_lang_StrictMath_pow	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setOutput	UNMAPPED		
+java.io.FileInputStream.readBytes	Java_XXX	java_io_FileInputStream_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getRawAnnotations	JVM_XXX	JVM_GetClassAnnotations	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawDecoder.decodeImpl	UNMAPPED		
+org.apache.hadoop.security.JniBasedUnixGroupsMapping.anchorNative	UNMAPPED		
+sun.misc.Unsafe.defineClass	UNMAPPED		
+sun.misc.Unsafe.getShort	UNMAPPED		
+java.io.FileOutputStream.writeBytes	Java_XXX	java_io_FileOutputStream_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.resolve	UNMAPPED		
+io.netty.channel.epoll.Native.epollWait	UNMAPPED		
+org.apache.hadoop.util.NativeCrc32.nativeVerifyChunkedSums	UNMAPPED		
+sun.misc.Unsafe.addressSize	UNMAPPED		
+java.io.RandomAccessFile.readBytes	Java_XXX	java_io_RandomAccessFile_readBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.Socket.isTcpNoDelay	NETTY_HEURISTIC	netty_unix_socket_isTcpNoDelay	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.net.NetworkInterface.getAll	Java_XXX	java_net_NetworkInterface_getAll	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.lang.reflect.Executable.getParameters0	Java_XXX	java_lang_reflect_Executable_getParameters0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.initIDs	UNMAPPED		
+org.apache.hadoop.security.JniBasedUnixGroupsNetgroupMapping.getUsersForNetgroupJNI	UNMAPPED		
+java.lang.reflect.Array.get	Java_XXX	java_lang_reflect_Array_get	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.net.unix.DomainSocket.getAttribute0	UNMAPPED		
+java.lang.Thread.setNativeName	JVM_XXX	JVM_SetNativeThreadName	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.io.ObjectInputStream.bytesToDoubles	Java_XXX	java_io_ObjectInputStream_bytesToDoubles	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.multiNewArray	Java_XXX	java_lang_reflect_Array_multiNewArray	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setRepositoryLocation	UNMAPPED		
+sun.misc.Unsafe.putDouble	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawDecoder.decodeImpl	UNMAPPED		
+java.lang.Float.floatToRawIntBits	Java_XXX	java_lang_Float_floatToRawIntBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setCompressedIntegers	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.getTcpNotSentLowAt	NETTY_HEURISTIC	netty_epoll_native_getTcpNotSentLowAt	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+jdk.jfr.internal.JVM.setThreadBufferSize	UNMAPPED		
+java.lang.Thread.holdsLock	JVM_XXX	JVM_HoldsLock	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+java.util.zip.ZipFile.getEntryFlag	Java_XXX	java_util_zip_ZipFile_getEntryFlag	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.net.NetworkInterface.isLoopback0	Java_XXX	java_net_NetworkInterface_isLoopback0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+java.lang.reflect.Array.getDouble	Java_XXX	java_lang_reflect_Array_getDouble	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.atan2	Java_XXX	java_lang_StrictMath_atan2	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryCSize	Java_XXX	java_util_zip_ZipFile_getEntryCSize	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.close	UNMAPPED		
+jdk.jfr.internal.JVM.setSampleThreads	UNMAPPED		
+java.lang.invoke.MethodHandleNatives.objectFieldOffset	UNMAPPED		
+io.netty.channel.epoll.LinuxSocket.leaveSsmGroup	UNMAPPED		
+org.apache.hadoop.net.unix.DomainSocket.socketpair0	UNMAPPED		
+io.netty.channel.unix.Socket.bindDomainSocket	NETTY_HEURISTIC	netty_unix_socket_bindDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.io.compress.zlib.ZlibCompressor.init	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.initIDs	UNMAPPED		
+sun.security.ec.ECDSASignature.signDigest	Java_XXX	sun_security_ec_ECDSASignature_signDigest	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+java.lang.reflect.Array.setLong	Java_XXX	java_lang_reflect_Array_setLong	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Deflater.init	Java_XXX	java_util_zip_Deflater_init	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.arrayBaseOffset	UNMAPPED		
+java.lang.System.nanoTime	JVM_XXX	JVM_NanoTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.net.unix.DomainSocketWatcher$FdSet.remove	UNMAPPED		
+org.xerial.snappy.SnappyNative.isValidCompressedBuffer	UNMAPPED		
+java.lang.Double.doubleToRawLongBits	Java_XXX	java_lang_Double_doubleToRawLongBits	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Thread.setPriority0	JVM_XXX	JVM_SetThreadPriority	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.erasurecode.rawcoder.NativeXORRawEncoder.initImpl	UNMAPPED		
+java.util.jar.JarFile.getMetaInfEntryNames	Java_XXX	java_util_jar_JarFile_getMetaInfEntryNames	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.getObjectVolatile	UNMAPPED		
+io.netty.channel.epoll.Native.splice0	NETTY_HEURISTIC	netty_epoll_native_splice0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.recvFrom	NETTY_HEURISTIC	netty_unix_socket_recvFrom	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.Socket.connectDomainSocket	NETTY_HEURISTIC	netty_unix_socket_connectDomainSocket	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.xerial.snappy.BitShuffleNative.shuffle	UNMAPPED		
+java.lang.reflect.Array.setBoolean	Java_XXX	java_lang_reflect_Array_setBoolean	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.security.AccessController.getStackAccessControlContext	Java_XXX	java_security_AccessController_getStackAccessControlContext	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.invoke.MethodHandleNatives.init	UNMAPPED		
+java.util.zip.Deflater.end	Java_XXX	java_util_zip_Deflater_end	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.reflect.Array.getBoolean	Java_XXX	java_lang_reflect_Array_getBoolean	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.ZipFile.getEntryTime	Java_XXX	java_util_zip_ZipFile_getEntryTime	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.init	UNMAPPED		
+jdk.jfr.internal.JVM.getClassIdNonIntrinsic	UNMAPPED		
+org.xerial.snappy.SnappyNative.arrayCopy	UNMAPPED		
+io.netty.channel.unix.FileDescriptor.close	NETTY_HEURISTIC	netty_unix_filedescriptor_close	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+io.netty.channel.unix.LimitsStaticallyReferencedJniMethods.iovMax	NETTY_HEURISTIC	netty_epoll_native_iovMax	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+sun.misc.Unsafe.compareAndSwapInt	UNMAPPED		
+org.apache.hadoop.io.compress.lz4.Lz4Compressor.getLibraryName	UNMAPPED		
+org.apache.hadoop.io.erasurecode.rawcoder.NativeRSRawEncoder.initImpl	UNMAPPED		
+java.lang.Class.isAssignableFrom	Java_XXX	java_lang_Class_isAssignableFrom	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.defineAnonymousClass	UNMAPPED		
+java.lang.Runtime.maxMemory	Java_XXX	java_lang_Runtime_maxMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getConstantPool	JVM_XXX	JVM_GetClassConstantPool	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.io.compress.snappy.SnappyDecompressor.initIDs	UNMAPPED		
+java.io.Console.echo	Java_XXX	java_io_Console_echo	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.snappy.SnappyCompressor.getLibraryName	UNMAPPED		
+io.netty.channel.unix.Socket.setTrafficClass	NETTY_HEURISTIC	netty_epoll_native_setTrafficClass	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl	UNMAPPED		
+jdk.internal.platform.CgroupMetrics.isUseContainerSupport	Java_XXX	jdk_internal_platform_CgroupMetrics_isUseContainerSupport	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.util.zip.Deflater.setDictionary	Java_XXX	java_util_zip_Deflater_setDictionary	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+java.lang.String.intern	Java_XXX	java_lang_String_intern	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.FileDescriptor.open	NETTY_HEURISTIC	netty_unix_filedescriptor_open,netty_epoll_native_setTcpFastopen,netty_epoll_native_isSupportingTcpFastopen	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.reflect.Array.getLength	Java_XXX	java_lang_reflect_Array_getLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.getObject	UNMAPPED		
+java.util.zip.ZipFile.startsWithLOC	Java_XXX	java_util_zip_ZipFile_startsWithLOC	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+sun.misc.Unsafe.putOrderedObject	UNMAPPED		
+jdk.jfr.internal.JVM.emitEvent	UNMAPPED		
+io.netty.channel.epoll.Native.epollCtlMod0	NETTY_HEURISTIC	netty_epoll_native_epollCtlMod0	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Class.getGenericSignature0	JVM_XXX	JVM_GetClassSignature	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+sun.reflect.ConstantPool.getLongAt0	Java_XXX	sun_reflect_ConstantPool_getLongAt0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.reflect.Array.setChar	Java_XXX	java_lang_reflect_Array_setChar	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.setFileNotification	UNMAPPED		
+java.lang.Runtime.freeMemory	Java_XXX	java_lang_Runtime_freeMemory	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.crypto.OpensslCipher.clean	UNMAPPED		
+sun.management.MemoryImpl.getMemoryPools0	Java_XXX	sun_management_MemoryImpl_getMemoryPools0	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+sun.misc.Unsafe.putChar	UNMAPPED		
+org.apache.hadoop.io.compress.zlib.ZlibDecompressor.getBytesRead	UNMAPPED		
+java.io.RandomAccessFile.writeBytes	Java_XXX	java_io_RandomAccessFile_writeBytes	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+jdk.jfr.internal.JVM.getAllowedToDoEventRetransforms	UNMAPPED		
+java.lang.StrictMath.exp	Java_XXX	java_lang_StrictMath_exp	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.asin	Java_XXX	java_lang_StrictMath_asin	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+sun.misc.Unsafe.putOrderedLong	UNMAPPED		
+org.xerial.snappy.BitShuffleNative.unshuffle	UNMAPPED		
+org.apache.hadoop.io.nativeio.NativeIO$POSIX.sync_file_range	UNMAPPED		
+java.lang.reflect.Array.getByte	Java_XXX	java_lang_reflect_Array_getByte	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.StrictMath.log1p	Java_XXX	java_lang_StrictMath_log1p	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+java.lang.Class.getModifiers	JVM_XXX	JVM_GetClassModifiers	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.net.unix.DomainSocketWatcher.anchorNative	UNMAPPED		
+jdk.jfr.internal.JVM.counterTime	UNMAPPED		
+java.lang.StrictMath.tanh	Java_XXX	java_lang_StrictMath_tanh	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.net.unix.DomainSocket.setAttribute0	UNMAPPED		
+org.apache.hadoop.io.compress.bzip2.Bzip2Decompressor.inflateBytesDirect	UNMAPPED		
+org.apache.hadoop.util.NativeCodeLoader.buildSupportsIsal	UNMAPPED		
+jdk.jfr.internal.JVM.getEpochAddress	UNMAPPED		
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errnoEAGAIN	NETTY_HEURISTIC	netty_unix_errors_errnoEAGAIN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+org.apache.hadoop.net.unix.DomainSocket.shutdown0	UNMAPPED		
+java.lang.ClassLoader.findBuiltinLib	Java_XXX	java_lang_ClassLoader_findBuiltinLib	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+org.apache.hadoop.io.compress.zstd.ZStandardDecompressor.create	UNMAPPED		
+java.util.TimeZone.getSystemTimeZoneID	Java_XXX	java_util_TimeZone_getSystemTimeZoneID	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods.errorEISCONN	NETTY_HEURISTIC	netty_unix_errors_errorEISCONN	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.lang.Thread.start0	JVM_XXX	JVM_StartThread	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+org.apache.hadoop.net.unix.DomainSocket.receiveFileDescriptors0	UNMAPPED		
+org.apache.hadoop.io.compress.zstd.ZStandardCompressor.init	UNMAPPED		
+sun.misc.Unsafe.throwException	UNMAPPED		
+java.lang.Class.getDeclaredFields0	JVM_XXX	JVM_GetClassDeclaredFields	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+io.netty.channel.unix.Socket.localAddress	NETTY_HEURISTIC	netty_unix_socket_localAddress	~/Tutorial/swat4j/jdk8_debian10/repo_libs_arm/datasets_2026-11-09/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/libnetty-transport-native-epoll.so
+java.io.RandomAccessFile.setLength	Java_XXX	java_io_RandomAccessFile_setLength	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
