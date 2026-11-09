@@ -41,9 +41,6 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 
 ## Notes
 
-* Stage 4 of all ten used `../echotrace/` (`89bf135`): native methods are found on an
-  RTA call graph (virtual and interface calls dispatched to the overrides of every
-  class instantiated in reachable code), including class initialisers.
 * Storm's Total Syscalls in Table III (202) is its pipeline profile (200) plus
   `io_uring_setup`, `io_uring_enter` and `io_uring_register`, minus `sync`, which only
   false FFM hits reach. The three io_uring syscalls come from Storm's own netty io_uring
