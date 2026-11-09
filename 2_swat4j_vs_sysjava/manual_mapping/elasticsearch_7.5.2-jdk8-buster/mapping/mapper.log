@@ -1,0 +1,38 @@
+DEBUG: Using LIB_DIRS:
+  - /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster
+INFO: No intrinsic whitelist found (optional). Skipping intrinsic classification.
+DEBUG: ELF libraries found:
+ - /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/libNativePosixUtil.so
+ - (JVM)  /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster/libjvm.so
+INFO: Built JNI map with 5 unique Java method entries
+INFO: 0 methods have overloaded JNI variants
+INFO: Auto-extracting JNI dynamic bindings from /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster -> /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jni_dynamic_bindings.txt
+  Scanned 1 .so files (host_arch=x86_64)
+    processed:  0
+    bindings:   0
+    output:     /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jni_dynamic_bindings.txt
+    summary:    /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jni_dynamic_summary.txt
+INFO: JNI dynamic bindings file /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jni_dynamic_bindings.txt (+0 new targets, 0 total)
+INFO: Extracting RegisterNatives tables from [libjvm.so] -> /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jvm_dynamic_mapping.txt
+    Mode 5: tracing callers of jfr_register_natives (0x6c72d0)...
+    Mode 5: tracing callers of _ZL16register_nativesPKcP7JNIEnv_P7_jclassPK15JNINativeMethodi.isra.0 (0xb04530)...
+    Scanning for named method arrays (Mode 4)...
+  
+    Wrote 265 mappings to /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jvm_dynamic_mapping.txt
+INFO: Loaded RegisterNatives binary mapping from /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/jvm_dynamic_mapping.txt: 0 JVM_* + 229 registered (kept 265, dropped 0 not in libjvm.so)
+INFO: Classifying 28 methods...
+
+=== Classification Summary ===
+Total methods:        28
+Resolved:             5  (17%)
+  JNI:                 5     
+    Generic Java_:     2
+    Partial (_1/$/__): 3
+  JNI_DYNAMIC:         0     
+    JVM_:              0     (target symbol starts with JVM_)
+    Registered_:       0     (Registered_libjvm + JFR + Netty)
+  Intrinsic (JIT):     0
+Platform-excluded:    0
+NOT_FOUND_IN_LIBS:    23
+
+Output: /home/user/Tutorial/EchoTrace_latest/unavailable_libs/elasticsearch_7.5.2-jdk8-buster/mapping/mapped_method_syscalls.txt

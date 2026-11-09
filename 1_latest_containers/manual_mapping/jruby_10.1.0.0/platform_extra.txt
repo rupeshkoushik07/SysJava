@@ -1,0 +1,10 @@
+jdk.internal.vm.Continuation.doYield
+java.lang.Class.getSuperclass
+com.kenai.jffi.Foreign.compileNativeMethods
+com.kenai.jffi.Foreign.freeCompiledMethods
+com.kenai.jffi.Foreign.freeNativeMethod
+com.kenai.jffi.Foreign.invokeArrayWithObjectsReturnObject
+com.kenai.jffi.Foreign.newNativeMethod
+com.kenai.jffi.Foreign.registerNativeMethods
+com.kenai.jffi.Foreign.unregisterNativeMethods
+java.lang.invoke.MethodHandle.invokeExact

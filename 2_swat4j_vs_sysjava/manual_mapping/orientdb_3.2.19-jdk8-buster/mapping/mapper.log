@@ -1,0 +1,57 @@
+DEBUG: Using LIB_DIRS:
+  - /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster
+INFO: No intrinsic whitelist found (optional). Skipping intrinsic classification.
+DEBUG: ELF libraries found:
+ - /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/libNativePosixUtil.so
+ - /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/libjffi-1.2.so
+ - (JVM)  /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster/libjvm.so
+INFO: Built JNI map with 208 unique Java method entries
+INFO: 3 methods have overloaded JNI variants
+  com.kenai.jffi.Foreign.getZeroTerminatedByteArray:
+    Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__JI (libjffi-1.2.so)
+    Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__JJ (libjffi-1.2.so)
+    Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArray__J (libjffi-1.2.so)
+  com.kenai.jffi.Foreign.getZeroTerminatedByteArrayChecked:
+    Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArrayChecked__JI (libjffi-1.2.so)
+    Java_com_kenai_jffi_Foreign_getZeroTerminatedByteArrayChecked__J (libjffi-1.2.so)
+  com.kenai.jffi.Foreign.defineClass:
+    Java_com_kenai_jffi_Foreign_defineClass__Ljava_lang_String_2Ljava_lang_Object_2Ljava_nio_ByteBuffer_2 (libjffi-1.2.so)
+    Java_com_kenai_jffi_Foreign_defineClass__Ljava_lang_String_2Ljava_lang_Object_2_3BII (libjffi-1.2.so)
+INFO: Auto-extracting JNI dynamic bindings from /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster -> /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jni_dynamic_bindings.txt
+  Scanned 2 .so files (host_arch=x86_64)
+    processed:  1
+    bindings:   0
+    output:     /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jni_dynamic_bindings.txt
+    summary:    /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jni_dynamic_summary.txt
+INFO: Auto-extracting JNI dynamic bindings from libjffi: /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/libjffi-1.2.so
+INFO: Auto-extracting JNI dynamic bindings from /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster -> /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jffi_bindings/jni_dynamic_bindings.txt
+  Scanned 2 .so files (host_arch=x86_64)
+    processed:  1
+    bindings:   0
+    output:     /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jffi_bindings/jni_dynamic_bindings.txt
+    summary:    /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jffi_bindings/jni_dynamic_summary.txt
+INFO: JNI dynamic bindings file /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jni_dynamic_bindings.txt (+0 new targets, 0 total)
+INFO: JNI dynamic bindings file /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jffi_bindings/jni_dynamic_bindings.txt (+0 new targets, 0 total)
+INFO: Extracting RegisterNatives tables from [libjvm.so, libjffi-1.2.so] -> /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jvm_dynamic_mapping.txt
+    WARN: Could not parse Java_com_kenai_jffi_Foreign_registerNatives at 0x89d0
+    WARN: Could not parse Java_com_kenai_jffi_Foreign_unregisterNatives at 0x89f0
+    Scanning for named method arrays (Mode 4)...
+  
+    Wrote 265 mappings to /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jvm_dynamic_mapping.txt
+INFO: Loaded RegisterNatives binary mapping from /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/jvm_dynamic_mapping.txt: 0 JVM_* + 229 registered (kept 265, dropped 0 not in libjvm.so)
+INFO: Classifying 56 methods...
+
+=== Classification Summary ===
+Total methods:        56
+Resolved:             42  (75%)
+  JNI:                 43     
+    Generic Java_:     38
+    Partial (_1/$/__): 5
+  JNI_DYNAMIC:         0     
+    JVM_:              0     (target symbol starts with JVM_)
+    Registered_:       0     (Registered_libjvm + JFR + Netty)
+  Intrinsic (JIT):     0
+Platform-excluded:    0
+NOT_FOUND_IN_LIBS:    14
+
+Output: /home/user/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.19-jdk8-buster/mapping/mapped_method_syscalls.txt
