@@ -5,32 +5,39 @@ table, and the seccomp profile.
 
     python3 generate_syscalls.py zookeeper_3.9.5        one image (any folder name in results/)
     python3 generate_syscalls.py all                    every image with a shipped dataset
-    python3 generate_syscalls.py --no-run <image>       steps 1-6 only (no Docker)
-    python3 generate_syscalls.py -v <image>             print every line of every tool
+    python3 generate_syscalls.py --no-run <image>       without the container run (no Docker)
+    python3 generate_syscalls.py -q <image>             one summary line per stage instead
 
-While it runs, each tool's main lines are printed with the time (every line with -v);
-the full output of each tool is in its log in work/static/<image>/.
+It prints what the pipeline's run prints (results/<image>/pipeline_run.log): the stage
+headers of the table's driver (run_latest_target.sh, run_jdk8_target.sh) with the same
+numbers, and the output of each tool as it runs. Stages 1-2 (start the container, sysdig
+capture) are the shipped capture; stage 3 unpacks it, and SysPart's stages read its shipped
+call graphs. Each tool's output is also in its log in work/static/<image>/.
 
-Steps:
-  1. unpack the dataset: the JARs, native libraries, executables and Java runtime
-     the original run copied out of the container (results/<image>/dataset/)
-  2. bytecode analysis: every native method, and the JNI, JNA, JNR-FFI and FFM
+Stages (latest images; the JDK 8 driver numbers merge 9 and the container run 10):
+  3. the JARs, native libraries, executables and Java runtime the original run copied
+     out of the container, unpacked from results/<image>/dataset/
+  4. bytecode analysis: every native method, and the JNI, JNA, JNR-FFI and FFM
      bindings (echotrace/, built with Maven on first use)
-  3. mapping: each native method to the C function and library implementing it,
+  5. native mapping: each native method to the C function and library implementing it,
      which gives the start functions per library
-  4. call graphs: follow SysPart's shipped call graph of each library and executable
-     from those start functions to the reachable syscalls
-  5. syscall sets and profile: Java libraries, executables, runtime set and
-     fallback libraries, merged into the seccomp profile
-  6. the results as the image's column of its table (Table III, or tab:results for
-     the JDK 8 images): native methods by mapping kind, not found, and the syscall rows
-  7. the container under the generated profile (tools/check_profile.sh, as the pipeline's
-     last stage): it runs once without and once with the profile; PASS when it starts,
-     keeps running, answers its probe and logs no extra "Operation not permitted".
-     Needs Docker; skipped without it or with --no-run
+  6. debug symbols are in the shipped capture already; the libraries the copied ones
+     need and the SONAME links
+  7-8. SysPart: from those start functions, the reachable syscalls in the shipped call
+     graph of each library and executable (also the unanalysed loaded libraries and
+     the JNA/FFI-bound ones)
+  9. named call graphs: functions and unnamed (fuzzyfunc) functions per call graph
+  10. syscall sets (Java libraries, executables, runtime set, fallback libraries)
+     merged into the seccomp profile;
+     then the results as the image's column of its table (Table III, or tab:results
+     for the JDK 8 images): native methods by mapping kind, not found, syscall rows
+  11. the container under the generated profile (tools/check_profile.sh): once
+     without and once with the profile; PASS when it starts, keeps running, answers
+     its probe and logs no extra "Operation not permitted". Needs Docker; skipped
+     without it or with --no-run
 
 Output in <table folder>/generated_syscalls/<image>/:
-  native_methods.txt, mapped_method_syscalls.txt   steps 2 and 3
+  native_methods.txt, mapped_method_syscalls.txt   stages 4 and 5
   syscalls_output_<image>/<lib>/syscalls.txt        per library (and _BIN_ per executable,
                                                     _unanalysed_ per fallback library,
                                                     jna_ffi_analysis/ per JNA/FFI library)
@@ -39,19 +46,19 @@ Output in <table folder>/generated_syscalls/<image>/:
   diff.txt          the profile against the shipped one (for checking a run)
   report.tsv        one line per call graph
   table_column.txt  the results as the image's column of its table
-  seccomp_runtime_test.log   step 7 (RESULT=PASS or FAIL with the reasons)
+  seccomp_runtime_test.log   the last stage (RESULT=PASS or FAIL with the reasons)
 Work files and logs: work/static/<image>/.
-Needs JDK 17+, Maven, Python 3, binutils and xz; step 7 needs Docker.
+Needs JDK 17+, Maven, Python 3, binutils and xz; the container run needs Docker.
 """
 import csv
 import glob
+import gzip
 import json
 import os
 import re
 import shutil
 import subprocess
 import sys
-import threading
 import time
 from pathlib import Path
 
@@ -59,65 +66,26 @@ ART = Path(__file__).resolve().parent
 TABLES = [(ART / "1_latest_containers", "results"), (ART / "2_swat4j_vs_sysjava", "sysjava_results")]
 
 
-VERBOSE = False   # -v
+QUIET = False   # -q
 
 
-def say(text):
-    """A progress line: the time, then the text (artifact paths relative)."""
-    print(f"      {time.strftime('%H:%M:%S')} {text.replace(f'{ART}/', '')}", flush=True)
+def summary(text):
+    """A stage's summary line (-q only)."""
+    if QUIET:
+        print(f"      {text}", flush=True)
 
 
-def shown(*rules, tick=None):
-    """The lines of a tool to print: rules are (regex, format) pairs, format taking the match
-    groups (a function of the match, or None for the line itself); tick=(regex, text) prints
-    a running count of the matching lines every 20 s."""
-    last, n = [time.time()], [0]
-
-    def show(line):
-        for rx, fmt in rules:
-            m = re.search(rx, line)
-            if m:
-                return "  " + (line.strip() if fmt is None else fmt(m) if callable(fmt) else fmt.format(*m.groups()))
-        if tick and re.search(tick[0], line):
-            n[0] += 1
-            if n[0] == 1:
-                last[0] = time.time()
-            if time.time() - last[0] >= 20:
-                last[0] = time.time()
-                return "  " + tick[1].format(n[0])
-    return show
-
-
-def tail(path, pos):
-    """The complete lines of path after byte pos, and the new pos."""
-    if not Path(path).is_file():
-        return [], pos
-    with open(path, "rb") as f:
-        f.seek(pos)
-        data = f.read()
-    data = data[:data.rfind(b"\n") + 1]
-    return data.decode(errors="replace").splitlines(), pos + len(data)
-
-
-def run(cmd, log, cwd=None, env=None, check=True, label=None, show=None, follow=None):
-    """Run cmd with its output in log, printing label and the lines show() picks as they come
-    (every line with -v). follow: a file the command writes itself, printed the same way."""
-    if label:
-        say(f"> {label} (log: {rel(follow or log)})")
-    echo = lambda l: (VERBOSE or show) and (text := "  " + l if VERBOSE else show(l)) and say(text)
+def run(cmd, log, cwd=None, env=None, check=True, echo=True):
+    """Run cmd with its output in log and, as the driver does, on the terminal (-q or not echo:
+    log only)."""
     with open(log, "w") as fh:
         p = subprocess.Popen(cmd, cwd=cwd, env=dict(env or os.environ, PYTHONUNBUFFERED="1"),
                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=isinstance(cmd, str),
                              text=True, errors="replace")
-        reader = threading.Thread(target=lambda: [(fh.write(l), echo(l.rstrip("\n"))) for l in p.stdout])
-        reader.start()
-        pos = 0
-        while reader.is_alive():
-            reader.join(1)
-            if follow:
-                lines, pos = tail(follow, pos)
-                for l in lines:
-                    echo(l)
+        for line in p.stdout:
+            fh.write(line)
+            if echo and not QUIET:
+                print(line, end="", flush=True)
         rc = p.wait()
     if rc and check:
         sys.exit(f"failed (exit {rc}); last lines of {log}:\n" + "".join(open(log).readlines()[-20:]))
@@ -174,7 +142,7 @@ def detector(shipped):
     if used and not (et / "COMMIT").read_text().startswith(used) and (ART / f"echotrace_{used}").is_dir():
         et = ART / f"echotrace_{used}"
     if not (et / "target" / ".classpath").is_file():
-        print(f"      building {et.name} with Maven (once)")
+        print(f"building {et.name} with Maven (once)", flush=True)
         run("mvn -q -DskipTests compile && mvn -q dependency:build-classpath -Dmdep.outputFile=target/.classpath",
             ART / "work" / f"build_{et.name}.log", cwd=et)
     return et
@@ -220,13 +188,9 @@ def fold_manual_mappings(shipped, outs, img, table):
     return n
 
 
-DETECTOR_PASSES = {"dyn": "pass 1/6: dynamic JNA calls (Function.getFunction)",
-                   "iface": "pass 2/6: JNA interfaces (Native.load)",
-                   "directmap": "pass 3/6: JNA direct mapping (Native.register)",
-                   "ffi": "pass 4/6: FFM downcalls (Linker)",
-                   "jnr-ffi": "pass 5/6: JNR-FFI interfaces",
-                   "prototype-final": "pass 6/6: native methods reachable in the call graph (RTA)"}
-
+# the stage numbers of the table's driver
+STAGES = {"latest": dict(unpack=3, bytecode=4, mapping=5, symbols=6, syspart="7-8", named=9, merge=10, run=11),
+          "jdk8": dict(unpack=3, bytecode=4, mapping=5, symbols=6, syspart="7-8", merge=9, run=10)}
 
 def whitelist(img, run_container=True):
     table, sub = next(((t, s) for t, s in TABLES if (t / s / img / "Binary_Analysis").is_dir()), (None, None))
@@ -243,7 +207,10 @@ def whitelist(img, run_container=True):
     ws.mkdir(parents=True)
     out.mkdir(parents=True)
     t0 = time.time()
-    step = lambda n, text: print(f"[{time.strftime('%H:%M:%S')}] {img} {n}. {text}", flush=True)
+    jdk8 = table.name.startswith("2_")
+    num = STAGES["jdk8" if jdk8 else "latest"]
+    stage = lambda n, text: print(f"\n===== [{time.strftime('%Y-%m-%d %H:%M:%S')}] {img} stage {num.get(n, n)}: {text}",
+                                  flush=True)
 
     jars, libs, bins, rt, outs = (ws / f"{d}_{img}" for d in ("JARFILES", "LIBS", "BINARIES", "RUNTIME", "outputs"))
     env = dict(os.environ, IMG_NAME=img, JARFILES_DIR=str(jars), LIBS_DIR=str(libs), BINARIES_DIR=str(bins),
@@ -261,80 +228,74 @@ def whitelist(img, run_container=True):
             if extra.is_file():
                 fh.write(extra.read_text())
 
-    step(1, f"unpack the dataset ({len(parts)} parts)")
+    stage("unpack", f"extract JDK runtime, JARs, native libraries (from the shipped capture, {rel(shipped / 'dataset')}/)")
     run("cat " + " ".join(f"'{p}'" for p in parts) + f" | xz -dc | tar -x -C '{ws}'", ws / "unpack.log")
     for d in (ws / "Dataset").iterdir():
         d.rename(ws / d.name)
     (ws / "Dataset").rmdir()
-    print(f"      {count(jars, '*.jar')} JARs, {count(libs, '*.so*')} libraries, {count(bins, '*')} executables")
+    if not QUIET:
+        print(f"captured: {count(jars, '*.jar')} JARs, {count(libs, '*.so*')} native libraries, "
+              f"libjvm.so: {count(libs, 'libjvm.so')}", flush=True)
+    summary(f"{count(jars, '*.jar')} JARs, {count(libs, '*.so*')} libraries, {count(bins, '*')} executables")
 
     et = detector(shipped)
-    step(2, f"bytecode analysis ({et.name}, commit {(et / 'COMMIT').read_text()[:7]})")
+    commit = (et / "COMMIT").read_text()[:7]
+    stage("bytecode", "bytecode analysis (JNADetector)" if jdk8 else f"bytecode analysis (JNADetector, code at {commit} in {et})")
     outs.mkdir()
     cp = f"{et}/target/classes:" + (et / "target" / ".classpath").read_text().strip()
-    run(["java", f"-Xmx{os.environ.get('ECHOTRACE_XMX', '16g')}", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector", str(jars), str(outs), str(rt)],
-        ws / "bytecode.log", label="JNADetector on the JARs, one pass per kind of binding, then the native methods",
-        show=shown((r"^\[JNADetector\] phase=(\S+)", lambda m: DETECTOR_PASSES.get(m.group(1), m.group(1))),
-                   (r"^\[CTX\] shared context ready in (\S+)", "  classes loaded in {}"),
-                   (r"^\[PRE-SCAN\] Found (\d+) raw", "  {} Native.load calls"),
-                   (r"^\[INFO\] total (.+) hits: (\d+)", "  {0} hits: {1}"),
-                   (r"^There are (\d+) classes over all", "  {} classes"),
-                   (r"^Now we start to analyze called native methods", "  following the calls from every method"),
-                   (r"^Count of visited methods: (\d+)", "  {} methods visited"),
-                   (r"^Count of called native methods: (\d+)", "  {} native methods called"),
-                   tick=(r"^\[ \* Find a native method \* \]", "  {} native calls so far")))
+    run(["java", f"-Xmx{os.environ.get('ECHOTRACE_XMX', '16g')}", "-cp", cp, "com.echotrace.app.bytecode_new.JNADetector",
+         str(jars), str(outs), str(rt)], ws / "bytecode.log")
     hits = lambda f: sum(1 for l in open(outs / f) if " | " in l and not l.startswith("Format:")) if (outs / f).is_file() else 0
-    print(f"      {nlines(outs / 'native_methods.txt')} native methods; "
-          f"{hits('jna_hits.txt')} JNA, {hits('jnr_ffi_hits.txt')} JNR-FFI, {hits('ffi_hits.txt')} FFM bindings")
+    summary(f"{nlines(outs / 'native_methods.txt')} native methods; "
+            f"{hits('jna_hits.txt')} JNA, {hits('jnr_ffi_hits.txt')} JNR-FFI, {hits('ffi_hits.txt')} FFM bindings")
 
-    step(3, "map native methods to C functions (start functions per library)")
-    run(["bash", "scripts/prepare_native_mapping.sh"], ws / "mapping.log", cwd=ws, env=env,
-        label="scripts/prepare_native_mapping.sh: JNI symbols and RegisterNatives tables of the libraries",
-        show=shown((r"^\s+([123]/3) (.+)", "{0} {1}"),
-                   (r"^INFO: Built JNI map with (\d+) unique", "    {} Java_ symbols in the libraries"),
-                   (r"^\s+bindings:\s+(\d+)", "    {} RegisterNatives bindings in the libraries"),
-                   (r"^\s+Wrote (\d+) mappings to .*jvm_dynamic_mapping", "    {} RegisterNatives entries of libjvm, libjava and Netty"),
-                   (r"^INFO: Classifying (\d+) methods", "    classifying {} native methods"),
-                   (r"^Resolved:\s+(\d+)\s+\((\d+%)\)", "    resolved {0} ({1})"),
-                   (r"^NOT_FOUND_IN_LIBS:\s+(\d+)", "    not in the libraries: {}"),
-                   (r"^Wrote combined: final.txt\s+\(libs=(\d+), methods=(\d+)\)", "    start functions: {1} in {0} libraries")))
-    # as stage 6 of the run, after the JNI mapping: the libraries a copied library needs (added
-    # from the container) and SONAME links; the JNA/FFI analysis (stage 8) sees both
+    stage("mapping", "native mapping and start functions")
+    run(["bash", "scripts/prepare_native_mapping.sh"], ws / "mapping.log", cwd=ws, env=env)
+    if not jdk8 and (ws / "scripts" / "check_jni_overloads.py").is_file():
+        # every overload of an overloaded JNI method must be mapped
+        if run([sys.executable, "scripts/check_jni_overloads.py", str(libs), str(outs), str(out / "jni_overload_check.tsv")],
+               ws / "overloads.log", cwd=ws, check=False):
+            print(f"WARNING: overloaded JNI symbols missing from the mapping, see {out / 'jni_overload_check.tsv'}")
+
+    stage("symbols", "debug symbols (in the shipped capture already); container dependencies and SONAME links")
+    # the libraries a copied library needs (added from the container) and SONAME links
     deps = ws / "Dataset_symbolized" / f"LIBS_{img}" / "_container_deps"
     if deps.is_dir():
         for f in deps.iterdir():
             if not (libs / f.name).exists():
                 shutil.copy2(f, libs / f.name)
     shutil.rmtree(ws / "Dataset_symbolized", ignore_errors=True)
-    if deps.is_dir():
-        say(f"> {sum(1 for _ in deps.iterdir())} libraries the copied ones need, added from the container")
-    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws, label="scripts/relink_sonames.sh",
-        show=shown((r"^Created (\d+) symlink\(s\), (\d+) already", "SONAME links: {0} created, {1} present")))
-    run([sys.executable, "scripts/analyse_jna_ffi.py", "--libs-dir", str(libs), "--outputs-dir", str(outs)],
-        ws / "jna_ffi.log", cwd=ws, env=env, check=False,
-        label="scripts/analyse_jna_ffi.py: JNA, JNR-FFI and FFM symbols to their libraries",
-        show=shown((r"^Bindings: (.+)", "{}"),
-                   (r"^(\d+) symbol\(s\) had an unresolved library", "{} symbols without a library to analyse"),
-                   (r"^  (\S+)\s+-> (\S+)$", "{0} -> {1}")))
-    manual = fold_manual_mappings(shipped, outs, img, table)
-    if manual:
-        say(f"> manual mappings: {manual} start functions added")
-    tags = re.findall(r"\[([A-Z_]+)\]$", (outs / "mapped_method_syscalls.txt").read_text(), re.M)
-    print(f"      {len(tags)} native methods mapped ("
-          + ", ".join(f"{t} {tags.count(t)}" for t in sorted(set(tags), key=lambda t: -tags.count(t)))
-          + f"); {count(outs, '*.so*.txt')} libraries with start functions"
-          + (f"; {manual} manual mappings added" if manual else ""))
+    run(["bash", "scripts/relink_sonames.sh", str(libs)], ws / "relink.log", cwd=ws, echo=False)
+    if (shipped / "debug_symbols.tsv").is_file() and not QUIET:
+        st = [l.split("\t")[2] for l in (shipped / "debug_symbols.tsv").read_text().splitlines()[1:] if l.count("\t") >= 2]
+        print(" ".join(f"{k}={st.count(k)}" for k in sorted(set(st))) + " ")
 
-    step(4, "syscalls from SysPart's shipped call graphs")
+    stage("syspart", "SysPart: mapped libraries, executed binaries, unanalysed loaded libraries and JNA/FFI "
+                     f"bindings (call graphs of the shipped run, {rel(shipped / 'Binary_Analysis')}/)")
+    run([sys.executable, "scripts/analyse_jna_ffi.py", "--libs-dir", str(libs), "--outputs-dir", str(outs)],
+        ws / "jna_ffi.log", cwd=ws, env=env, check=False)
+    manual = fold_manual_mappings(shipped, outs, img, table)
+    if manual and not QUIET:
+        print(f"manual mappings: {manual} start functions added")
+    tags = re.findall(r"\[([A-Z_]+)\]$", (outs / "mapped_method_syscalls.txt").read_text(), re.M)
+    summary(f"{len(tags)} native methods mapped ("
+            + ", ".join(f"{t} {tags.count(t)}" for t in sorted(set(tags), key=lambda t: -tags.count(t)))
+            + f"); {count(outs, '*.so*.txt')} libraries with start functions"
+            + (f"; {manual} manual mappings added" if manual else ""))
+
     run([sys.executable, str(ART / "tools" / "whitelist_from_callgraphs.py"), img, str(shipped / "Binary_Analysis"),
-         str(ws)], ws / "callgraphs.log", label="tools/whitelist_from_callgraphs.py: each call graph from its start functions",
-        show=shown((r"^\[\d+/\d+\] ", None)))
-    print("      " + replay_summary(ws / "callgraphs.log"))
+         str(ws)], ws / "callgraphs.log")
+    summary(replay_summary(ws / "callgraphs.log"))
     shutil.copy(ws / "static_report.tsv", out / "report.tsv")
 
-    step(5, "syscall sets and seccomp profile")
-    run([sys.executable, "scripts/merge_all_syscalls.py", img], ws / "merge.log", cwd=ws, env=env, check=False,
-        label="scripts/merge_all_syscalls.py", show=shown((r"^STEP \d+: (.+)", "{}")))
+    if "named" in num:
+        stage("named", "named call graphs: unnamed (fuzzyfunc) functions per result")
+        named_callgraphs(img, shipped / "Binary_Analysis", ws, out)
+
+    stage("merge", "merge syscalls into seccomp profile, assemble results")
+    if run([sys.executable, "scripts/merge_all_syscalls.py", img], ws / "merge.log", cwd=ws, env=env, check=False) \
+            and (ws / f"syscalls_output_{img}" / f"{img}.json").is_file() and not QUIET:
+        print(f"stage {num['merge']}: merge reported items without results (listed above); profile written, continuing")
     prof = ws / f"syscalls_output_{img}" / f"{img}.json"
     if not prof.is_file():
         sys.exit(f"no profile written; see {ws / 'merge.log'}")
@@ -352,8 +313,8 @@ def whitelist(img, run_container=True):
     binary = rd(f"syscalls_BIN_{img}/binary_syscalls.txt")
     runtime = rd("runc.txt") - lib - binary
     fallback = rd(f"syscalls_unanalysed_{img}/unanalysed_syscalls.txt") - lib - binary - runtime
-    print(f"      Java libraries {len(lib)}, executables {len(binary)}, runtime set +{len(runtime)}, "
-          f"fallback libraries +{len(fallback)}; profile {len(names(prof))}")
+    summary(f"Java libraries {len(lib)}, executables {len(binary)}, runtime set +{len(runtime)}, "
+            f"fallback libraries +{len(fallback)}; profile {len(names(prof))}")
 
     # diff.txt: this profile against the shipped one, for checking a run (not printed)
     new, ref = names(prof), names(shipped / "Binary_Analysis" / f"syscalls_output_{img}" / f"{img}.json")
@@ -362,33 +323,48 @@ def whitelist(img, run_container=True):
                                   f"only in shipped:   {' '.join(sorted(ref - new)) or 'none'}\n")
 
     if (table / "manual_mapping").is_dir():
-        step(6, f"results (the image's column of {'tab:results' if table.name.startswith('2_') else 'Table III'})")
-        print(table_column(img, ws, table, out))
-    step(7, "run the container under the profile")
+        stage("results", f"the image's column of {'tab:results' if jdk8 else 'Table III'} "
+                         f"(written to {rel(out / 'table_column.txt')})")
+        print(table_column(img, ws, table, out), flush=True)
+    stage("run", "run the container under its profile")
+    log = out / "seccomp_runtime_test.log"
     if not run_container:
-        print("      skipped (--no-run)")
+        print("skipped (--no-run)")
     elif subprocess.run(["docker", "info"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode:
-        print("      skipped: Docker is not available")
+        print("skipped: Docker is not available")
     else:
-        log = out / "seccomp_runtime_test.log"
         run(["bash", str(ART / "tools" / "check_profile.sh"), img, str(out / f"{img}.json"), str(log)],
-            ws / "check_profile.log", check=False, follow=log,
-            label="tools/check_profile.sh: the container once without and once with the profile",
-            show=shown((r"^---- (baseline \(no profile\)|with seccomp profile) ----", "{}"),
-                       (r"^((baseline_)?(ready_after|ready|state|probe|eperm_lines)|state_after_\d+s)=", None),
-                       (r"^(Status|Digest): ", None)))
+            ws / "check_profile.log", check=False)
         kv = dict(l.split("=", 1) for l in log.read_text().splitlines() if "=" in l and " " not in l.split("=", 1)[0]) \
             if log.is_file() else {}
         if "RESULT" not in kv:
-            print(f"      no result; see {rel(ws / 'check_profile.log')}")
+            print(f"no result; see {ws / 'check_profile.log'}")
         else:
-            print(f"      without profile: ready after {kv.get('baseline_ready_after', '?')}, "
-                  f"{kv.get('baseline_state', '?')}, probe {kv.get('baseline_probe', '?')}")
-            print(f"      with profile ({kv.get('profile_syscalls', '?').split()[0]} syscalls): ready after "
-                  f"{kv.get('ready_after', '?')}, {kv.get('state_after_60s', '?')} after 60 s, "
-                  f"probe {kv.get('probe', '?')}, EPERM lines {kv.get('eperm_lines', '?')}")
-            print(f"      RESULT={kv['RESULT']}  (log: {rel(log)})")
-    print(f"Done in {(time.time() - t0) / 60:.0f} min. Profile: {rel(out / f'{img}.json')}; all outputs in {rel(out)}/")
+            summary(f"without profile: ready after {kv.get('baseline_ready_after', '?')}, "
+                    f"{kv.get('baseline_state', '?')}, probe {kv.get('baseline_probe', '?')}")
+            summary(f"with profile ({kv.get('profile_syscalls', '?').split()[0]} syscalls): ready after "
+                    f"{kv.get('ready_after', '?')}, {kv.get('state_after_60s', '?')} after 60 s, "
+                    f"probe {kv.get('probe', '?')}, EPERM lines {kv.get('eperm_lines', '?')}")
+            summary(f"RESULT={kv['RESULT']}  (log: {rel(log)})")
+    stage("done", f"finished in {(time.time() - t0) / 60:.0f} min; profile: {out / f'{img}.json'}")
+
+
+def named_callgraphs(img, shipped, ws, out):
+    """Stage 9 of the latest driver: functions and unnamed (fuzzyfunc) functions of each call
+    graph (the shipped one) and the syscalls found from it (this run)."""
+    rows = []
+    for top in (f"syscalls_output_{img}", f"syscalls_BIN_{img}"):
+        for d in sorted((shipped / top).iterdir()) if (shipped / top).is_dir() else []:
+            af = d / "allfunctions.txt.gz"
+            if not af.is_file():
+                continue
+            funcs = gzip.open(af, "rt", errors="replace").read().splitlines()
+            sc = ws / top / d.name / "syscalls.txt"
+            rows.append(f"{d.name}\tfunctions={len(funcs)}\tfuzzy={sum(1 for f in funcs if f.startswith('fuzzyfunc'))}"
+                        f"\tsyscalls={nlines(sc) if sc.is_file() else 0}")
+    (out / "named_callgraph_summary.tsv").write_text("".join(r + "\n" for r in rows))
+    if not QUIET:
+        print("\n".join(rows), flush=True)
 
 
 def tex_column(tex, img):
@@ -437,7 +413,7 @@ def table_column(img, ws, table, out):
     # native-method mapping breakdown: the audit on this run's mapping
     swat = ["--swat-override", f"{img}={ART / 'swat4j' / 'outputs' / 'mapping' / img}"] if jdk8 else []
     run([sys.executable, str(ART / "analysis" / "native_mapping_audit" / "audit_native_mapping.py"),
-         "--out", str(ws / "audit"), "--app", f"{img}={v}"] + swat, ws / "audit.log")
+         "--out", str(ws / "audit"), "--app", f"{img}={v}"] + swat, ws / "audit.log", echo=False)
     rows = list(csv.DictReader(open(table / "tables" / "mapping_audit_per_app.csv")))
     mine = next(csv.DictReader(open(ws / "audit" / "per_app_summary.csv")))
     with open(ws / "audit" / "table_audit.csv", "w", newline="") as fh:
@@ -447,11 +423,11 @@ def table_column(img, ws, table, out):
             w.writerow({k: mine.get(k, r[k]) for k in r} if r["app"] == img else r)
     if jdk8:
         run([sys.executable, str(ART / "tools" / "make_tab_results_jdk8.py"), str(ws / "audit" / "table_audit.csv"),
-             str(ws / "table")], ws / "table.log", check=False, env={**os.environ, "RESULTS": str(tv)})
+             str(ws / "table")], ws / "table.log", check=False, echo=False, env={**os.environ, "RESULTS": str(tv)})
     else:
         run([sys.executable, str(ART / "tools" / "make_paper_table_latest.py"), str(tv), str(table / "manual_mapping"),
              str(ws / "audit" / "table_audit.csv"), str(ws / "table"), str(table / "runc.txt")],
-            ws / "table.log", check=False)
+            ws / "table.log", check=False, echo=False)
     lines = []
     for label, val in tex_column(ws / "table.tex", img):
         lines.append(f"      {label}" if val is None else f"      {label:40s}{val:>10s}")
@@ -463,9 +439,9 @@ def table_column(img, ws, table, out):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         sys.exit(__doc__)
-    global VERBOSE
-    VERBOSE = "-v" in sys.argv[1:]
-    imgs = [a for a in sys.argv[1:] if a not in ("--no-run", "-v")]
+    global QUIET
+    QUIET = "-q" in sys.argv[1:]
+    imgs = [a for a in sys.argv[1:] if a not in ("--no-run", "-q")]
     if imgs == ["all"]:
         imgs = sorted(p.parent.parent.name for t, s in TABLES for p in (t / s).glob("*/dataset/Dataset.tar.xz.part00"))
     for img in imgs:

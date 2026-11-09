@@ -52,7 +52,7 @@ plain JSON.
 | | Reruns | Needs | Per image |
 |---|---|---|---|
 | A | table rows from the shipped results | Python | seconds |
-| B | bytecode analysis and native mapping on the shipped dataset; syscalls parsed from the shipped call graphs; the container run under the profile | JDK 17+, Maven, Python, binutils, xz; Docker for step 7 | 5-15 min (Solr up to 80) |
+| B | bytecode analysis and native mapping on the shipped dataset; syscalls parsed from the shipped call graphs; the container run under the profile | JDK 17+, Maven, Python, binutils, xz; Docker for the container run | 5-15 min (Solr up to 80) |
 | C | the whole pipeline, including capture and SysPart | see below, root | 2-8 h |
 
 ### A. Tables from the shipped results
@@ -67,140 +67,178 @@ TABLE_ONLY=1 2_swat4j_vs_sysjava/reproduce.sh
 ```bash
 python3 generate_syscalls.py zookeeper_3.9.5     # one image
 python3 generate_syscalls.py all                 # every image with a shipped dataset
-python3 generate_syscalls.py --no-run zookeeper_3.9.5   # steps 1-6 only (no Docker)
-python3 generate_syscalls.py -v zookeeper_3.9.5         # print every line of every tool
+python3 generate_syscalls.py --no-run zookeeper_3.9.5   # without the container run (no Docker)
+python3 generate_syscalls.py -q zookeeper_3.9.5         # one summary line per stage instead
 ```
 
-For the image it:
-1. unpacks the dataset (JARs, native libraries, executables, Java runtime);
-2. runs the bytecode analysis: every native method and the JNI, JNA, JNR-FFI and FFM bindings;
-3. maps each native method to the C function and library implementing it (the start functions);
-4. follows SysPart's shipped call graph of each library and executable from those
-   start functions to the reachable syscalls;
-5. builds the syscall sets (Java libraries, executables, runtime set, fallback
-   libraries) and merges them into the seccomp profile;
-6. prints the results as the image's column of its table (Table III, or tab:results
-   for a JDK 8 image): native methods by
-   mapping kind (JNI static, partial, JNI dynamic, JVM, JFR/Netty, JNA, FFI/FFM,
-   platform/intrinsic, not found) and the syscall rows (Java libraries, container
-   executables, unanalysed libraries, runtime whitelist, total);
-7. runs the container under the generated profile, as the pipeline's last stage
-   (`tools/check_profile.sh`): once without and once with the profile; PASS when it
-   starts, keeps running for 60 s, answers its probe and logs no extra "Operation not
-   permitted". Needs Docker (the image is pulled by digest from
-   `docker_images/images.tsv`, or built for JDK 8); skipped without it.
+It runs the pipeline's stages on the shipped capture and prints what the pipeline's run
+prints (`results/<image>/pipeline_run.log`): the stage headers of the table's driver
+(`scripts/run_latest_target.sh`, `scripts/run_jdk8_target.sh`), with the same numbers,
+and the output of each tool as it runs. Stages 1-2 (start the container, sysdig capture)
+are the shipped capture itself. Stage numbers below are the latest driver's; the JDK 8
+driver numbers the merge 9 and the container run 10.
+
+- **3.** unpacks the capture (JARs, native libraries, executables, Java runtime).
+- **4.** bytecode analysis (`echotrace/`, the same JNADetector run as the pipeline):
+  every native method and the JNI, JNA, JNR-FFI and FFM bindings.
+- **5.** native mapping: each native method to the C function and library implementing
+  it (the start functions).
+- **6.** debug symbols are in the shipped capture already; adds the libraries the copied
+  ones need and the SONAME links.
+- **7-8.** SysPart: follows the shipped call graph of each library and executable
+  (mapped libraries, executables, unanalysed loaded libraries, JNA/FFI-bound
+  libraries) from those start functions to the reachable syscalls. This is the one
+  stage whose output differs from the run's: it reads SysPart's call graphs instead of
+  building them (`[n/40]` lines; `replay_syspart:` lines name start functions the
+  call graph does not have, as in the original run).
+- **9.** named call graphs: functions and unnamed (fuzzyfunc) functions per call graph.
+- **10.** builds the syscall sets (Java libraries, executables, runtime set, fallback
+  libraries) and merges them into the seccomp profile; then prints the image's column
+  of its table (Table III, or tab:results for a JDK 8 image).
+- **11.** runs the container under the generated profile (`tools/check_profile.sh`):
+  once without and once with the profile; PASS when it starts, keeps running for 60 s,
+  answers its probe and logs no extra "Operation not permitted". Needs Docker (the
+  image is pulled by digest from `docker_images/images.tsv`, or built for JDK 8);
+  skipped without it.
 
 Output in `<table>/generated_syscalls/<image>/`: the native methods and their
 mapping, `syscalls.txt` for every library and executable, the four sets, the
-profile `<image>.json`, `table_column.txt` (step 6), `seccomp_runtime_test.log`
-(step 7) and `diff.txt`, which compares the profile with the shipped one. Logs are
-in `work/static/<image>/`. While it runs, it prints each tool's main lines with the
-time (every line with `-v`).
+profile `<image>.json`, `table_column.txt`, `seccomp_runtime_test.log` and
+`diff.txt`, which compares the profile with the shipped one. Each tool's output is
+also in its log in `work/static/<image>/`.
 
-ZooKeeper 3.9.5, as printed (8 minutes on the analysis host). The timed lines are
-the progress of each tool as it runs; the untimed lines under them are the step's result:
+ZooKeeper 3.9.5 (8 minutes on the analysis host). The output has 37,950 lines, as
+the run's `pipeline_run.log` does (37,948), almost all from the bytecode analysis;
+below, each stage's first and last lines:
 
 ```
-[16:10:55] zookeeper_3.9.5 1. unpack the dataset (2 parts)
-      43 JARs, 74 libraries, 12 executables
-[16:11:00] zookeeper_3.9.5 2. bytecode analysis (echotrace, commit 89bf135)
-      16:11:00 > JNADetector on the JARs, one pass per kind of binding, then the native methods (log: work/static/zookeeper_3.9.5/bytecode.log)
-      16:11:00   pass 1/6: dynamic JNA calls (Function.getFunction)
-      16:11:12     classes loaded in 11s
-      16:11:16     dynamic-JNA hits: 0
-      16:11:16   pass 2/6: JNA interfaces (Native.load)
-      16:11:37     classes loaded in 20s
-      16:11:37     7 Native.load calls
-      16:11:40     JNA interface hits: 29
-      16:11:40   pass 3/6: JNA direct mapping (Native.register)
-      16:11:58     classes loaded in 18s
-      16:12:00     JNA direct-mapped hits: 0
-      16:12:00   pass 4/6: FFM downcalls (Linker)
-      16:12:20     classes loaded in 20s
-      16:12:23     FFI hits: 7
-      16:12:23   pass 5/6: JNR-FFI interfaces
-      16:13:17     jnr-ffi hits: 0
-      16:13:17   pass 6/6: native methods reachable in the call graph (RTA)
-      16:13:17     6640 classes
-      16:13:17     following the calls from every method
-      16:13:37     30012 native calls so far
-      16:13:45     77597 methods visited
-      16:13:45     1286 native methods called
-      1286 native methods; 36 JNA, 0 JNR-FFI, 7 FFM bindings
-[16:13:46] zookeeper_3.9.5 3. map native methods to C functions (start functions per library)
-      16:13:46 > scripts/prepare_native_mapping.sh: JNI symbols and RegisterNatives tables of the libraries (log: work/static/zookeeper_3.9.5/mapping.log)
-      16:13:46   1/3 Running mapped_updated.py
-      16:13:47       1404 Java_ symbols in the libraries
-      16:13:49       890 RegisterNatives bindings in the libraries
-      16:14:19       860 RegisterNatives entries of libjvm, libjava and Netty
-      16:14:20       classifying 1286 native methods
-      16:14:25       resolved 1240 (96%)
-      16:14:25       not in the libraries: 6
-      16:14:25   2/3 Filtering unresolved mappings
-      16:14:25   3/3 Writing per-library SysPart start files
-      16:14:25       start functions: 2102 in 24 libraries
-      16:14:25 > scripts/relink_sonames.sh (log: work/static/zookeeper_3.9.5/relink.log)
-      16:14:25   SONAME links: 0 created, 6 present
-      16:14:25 > scripts/analyse_jna_ffi.py: JNA, JNR-FFI and FFM symbols to their libraries (log: work/static/zookeeper_3.9.5/jna_ffi.log)
-      16:14:25   6 symbols across 1 library
-      16:14:25   6 symbols without a library to analyse
-      16:14:26   util -> libutil.so.1
-      16:14:26 > manual mappings: 1 start functions added
-      2099 native methods mapped (JNI 1088, JNI_DYNAMIC 880, REGISTERED 73, JVM 41, NETTY 17); 24 libraries with start functions; 1 manual mappings added
-[16:14:26] zookeeper_3.9.5 4. syscalls from SysPart's shipped call graphs
-      16:14:26 > tools/whitelist_from_callgraphs.py: each call graph from its start functions (log: work/static/zookeeper_3.9.5/callgraphs.log)
-      16:14:26   [1/40] JNA/FFI library libutil.so.1: 38 syscalls
-      16:14:26   [2/40] executable bash: 89 syscalls
-      16:14:26   [3/40] executable chown: 53 syscalls
-      16:14:26   [4/40] executable dirname: 38 syscalls
-      16:14:26   [5/40] executable env: 40 syscalls
-      16:14:26   [6/40] executable grep: 43 syscalls
-      16:14:26   [7/40] executable id: 56 syscalls
-      16:14:27   [8/40] executable java: 66 syscalls
-      16:14:27   [9/40] executable ls: 55 syscalls
-      16:14:27   [10/40] executable sed: 73 syscalls
-      16:14:27   [11/40] executable uname: 39 syscalls
-      16:14:36   [12/40] library libawt.so: 93 syscalls
-      16:14:44   [13/40] library libawt_headless.so: 93 syscalls
-      16:14:54   [14/40] library libawt_xawt.so: 109 syscalls
-      16:15:02   [15/40] library libfontmanager.so: 93 syscalls
-      16:15:02   [16/40] library libj2gss.so: 37 syscalls
-      16:15:10   [17/40] library libjava.so: 109 syscalls
-      16:15:19   [18/40] library libjavajpeg.so: 93 syscalls
-      16:15:19   [19/40] library libjlinenative.so: 38 syscalls
-      16:15:27   [20/40] library libjvm.so: 93 syscalls
-      16:15:35   [21/40] library liblcms.so: 93 syscalls
-      16:15:43   [22/40] library libmanagement.so: 93 syscalls
-      16:15:51   [23/40] library libnet.so: 98 syscalls
-      16:15:51   [24/40] library libnetty_tcnative-@VERSION@.so: 44 syscalls
-      16:15:51   [25/40] library libnetty_tcnative_linux_x86_64.so: 44 syscalls
-      16:15:51   [26/40] library libnetty_transport_native_epoll_x86_64-4.1.130.Final.so: 67 syscalls
-      16:15:51   [27/40] library libnetty_transport_native_epoll_x86_64.so: 67 syscalls
-      16:15:59   [28/40] library libnio.so: 118 syscalls
-      16:15:59   [29/40] library libsnappyjava.so: 37 syscalls
-      16:16:07   [30/40] library libzip.so: 93 syscalls
-      16:16:07   [31/40] fallback library libacl.so.1: 56 syscalls
-      16:16:15   [32/40] fallback library libextnet.so: 94 syscalls
-      16:16:23   [33/40] fallback library libjimage.so: 93 syscalls
-      16:16:23   [34/40] fallback library libjli.so: 66 syscalls
-      16:16:23   [35/40] fallback library libjsvml.so: 37 syscalls
-      16:16:31   [36/40] fallback library libmanagement_ext.so: 93 syscalls
-      16:16:31   [37/40] fallback library libpcre.so.3: 37 syscalls
-      16:16:31   [38/40] fallback library libpcre2-8.so.0: 37 syscalls
-      16:16:31   [39/40] fallback library libselinux.so.1: 74 syscalls
-      16:16:31   [40/40] fallback library libtinfo.so.6: 47 syscalls
-      40 call graphs parsed; 1 library/executable without a call graph in the original run either (kept as shipped)
-[16:16:31] zookeeper_3.9.5 5. syscall sets and seccomp profile
-      16:16:31 > scripts/merge_all_syscalls.py (log: work/static/zookeeper_3.9.5/merge.log)
-      16:16:31   Processing Binary Syscalls
-      16:16:31   Processing Library Syscalls
-      16:16:31   Processing Unanalysed Dynamically Loaded Libraries
-      16:16:31   Loading JNA/FFI Reachable Syscalls
-      16:16:31   Loading runc.txt Default Whitelist
-      16:16:31   Creating Combined Syscalls File
-      16:16:31   Generating Seccomp Profile
-      Java libraries 150, executables 113, runtime set +28, fallback libraries +3; profile 191
-[16:16:31] zookeeper_3.9.5 6. results (the image's column of Table III)
+===== [2026-11-08 17:20:03] zookeeper_3.9.5 stage 3: extract JDK runtime, JARs, native libraries (from the shipped capture, 1_latest_containers/results/zookeeper_3.9.5/dataset/)
+captured: 43 JARs, 74 native libraries, libjvm.so: 2
+
+===== [2026-11-08 17:20:08] zookeeper_3.9.5 stage 4: bytecode analysis (JNADetector, code at 89bf135 in ~/SysJava/echotrace)
+[JNADetector] target=~/SysJava/work/static/zookeeper_3.9.5/JARFILES_zookeeper_3.9.5
+[JNADetector] out   =~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5
+[JNADetector] runtime=~/SysJava/work/static/zookeeper_3.9.5/RUNTIME_zookeeper_3.9.5
+[JNADetector] work  =~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/jna_detector_work_20261108_172008
+[JNADetector] wrote ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/analyzed_jars.txt (target=43, runtime=50)
+[JNADetector] detector.runtime.dir=~/SysJava/work/static/zookeeper_3.9.5/RUNTIME_zookeeper_3.9.5
+[JNADetector] phase=dyn
+[INFO] detector.runtime.dir jars: 50
+[CTX] jars=43 (scan=43, cp=93) classes=6626 (scan=6626)
+[CTX] resolved classes=6616 (scan=6616)
+[CTX] body warm-up (parallel) done in 8s
+[CTX] shared context ready in 11s
+[DYN] classes=6616 out=~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/jna_detector_work_20261108_172008/dyn
+[PASS 1] Populating summaries + field taints (fixed point, max 4 iterations)...
+[PASS 1.0] strings=499 funcSummaries=0 nativeLibSummaries=0 fieldLibs=0 fieldFuncs=0
+[PASS 1.1] strings=570 funcSummaries=0 nativeLibSummaries=0 fieldLibs=0 fieldFuncs=0
+[... 37475 more lines ...]
+
+Count of called native methods: 1286
+ 
+Analysis results written to:
+  - Native methods (1286): ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/native_methods.txt
+Time taken: 27.997 seconds
+[JNADetector] done
+
+===== [2026-11-08 17:22:47] zookeeper_3.9.5 stage 5: native mapping and start functions
+============================================================
+ Native mapping and start-function preparation
+============================================================
+LIB_DIRS:    ~/SysJava/work/static/zookeeper_3.9.5/LIBS_zookeeper_3.9.5
+OUTPUTS_DIR: ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5
+  1/3 Running mapped_updated.py
+[... 124 more lines ...]
+    Registered_:       974     (Registered_libjvm + JFR + Netty)
+  Intrinsic (JIT):     0
+Platform-excluded:    40
+NOT_FOUND_IN_LIBS:    6
+
+Output: ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/mapped_method_syscalls.txt
+  2/3 Filtering unresolved mappings
+Filtering: ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/mapped_method_syscalls.txt -> ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/filtered_method_syscalls.txt
+Wrote 2143 lines to ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5/filtered_method_syscalls.txt
+  3/3 Writing per-library SysPart start files
+Wrote combined: final.txt  (libs=24, methods=2102)
+Wrote per-library files to: ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5
+Native mapping preparation complete.
+overloaded JNI methods detected: 6 (17 symbols); missing from mapping: 0; report: ~/SysJava/1_latest_containers/generated_syscalls/zookeeper_3.9.5/jni_overload_check.tsv
+
+===== [2026-11-08 17:23:27] zookeeper_3.9.5 stage 6: debug symbols (in the shipped capture already); container dependencies and SONAME links
+HAS_SYMTAB=53 NO_BUILD_ID=2 SYMBOLIZED=28 
+
+===== [2026-11-08 17:23:27] zookeeper_3.9.5 stage 7-8: SysPart: mapped libraries, executed binaries, unanalysed loaded libraries and JNA/FFI bindings (call graphs of the shipped run, 1_latest_containers/results/zookeeper_3.9.5/Binary_Analysis/)
+============================================================
+ JNA / jnr-ffi / FFM binary analysis
+============================================================
+IMG_NAME: zookeeper_3.9.5
+LIBS:     ~/SysJava/work/static/zookeeper_3.9.5/LIBS_zookeeper_3.9.5
+reports:  ~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5
+
+Bindings: 6 symbols across 1 library
+  util                     6 symbols
+
+6 symbol(s) had an unresolved library and cannot be analysed:
+  iface: 6
+
+Resolving libraries against the mirror...
+  util                     -> libutil.so.1
+
+Wrote start-function files to ~/SysJava/work/static/zookeeper_3.9.5/jna_ffi_analysis/startfuncs
+[... 52 more lines ...]
+replay_syspart: 5 start function(s) not in the shipped call graph of libpcre.so.3; see ~/SysJava/work/static/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5/libpcre.so.3/replay_missing_starts.txt
+[37/40] fallback library libpcre.so.3: 37 syscalls
+replay_syspart: 19 start function(s) not in the shipped call graph of libpcre2-8.so.0; see ~/SysJava/work/static/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5/libpcre2-8.so.0/replay_missing_starts.txt
+[38/40] fallback library libpcre2-8.so.0: 37 syscalls
+replay_syspart: 17 start function(s) not in the shipped call graph of libselinux.so.1; see ~/SysJava/work/static/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5/libselinux.so.1/replay_missing_starts.txt
+[39/40] fallback library libselinux.so.1: 74 syscalls
+replay_syspart: 16 start function(s) not in the shipped call graph of libtinfo.so.6; see ~/SysJava/work/static/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5/libtinfo.so.6/replay_missing_starts.txt
+[40/40] fallback library libtinfo.so.6: 47 syscalls
+call-graph replay: no_callgraph_in_original=1, ok=40
+
+===== [2026-11-08 17:25:33] zookeeper_3.9.5 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt.so	functions=49760	fuzzy=0	syscalls=93
+libawt_headless.so	functions=49854	fuzzy=0	syscalls=93
+libawt_xawt.so	functions=56310	fuzzy=978	syscalls=109
+libfontmanager.so	functions=52712	fuzzy=0	syscalls=93
+[... 23 more lines ...]
+sed	functions=4360	fuzzy=0	syscalls=73
+uname	functions=3623	fuzzy=0	syscalls=39
+
+===== [2026-11-08 17:25:33] zookeeper_3.9.5 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: zookeeper_3.9.5
+Working directory: ~/SysJava/work/static/zookeeper_3.9.5
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: ~/SysJava/work/static/zookeeper_3.9.5/syscalls_BIN_zookeeper_3.9.5
+Found 11 subdirectories
+
+  ✓ bash: 89 syscalls
+[... 125 more lines ...]
+  - Added:       31 additional syscalls
+
+Combined:
+  - Total unique syscalls: 191
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - ~/SysJava/work/static/zookeeper_3.9.5/syscalls_BIN_zookeeper_3.9.5/binary_syscalls.txt (text)
+  - ~/SysJava/work/static/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/library_syscalls.txt (text)
+  - ~/SysJava/work/static/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.txt (text)
+  - ~/SysJava/work/static/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json (seccomp profile)
+
+⚠ Completed with warnings or errors
+stage 10: merge reported items without results (listed above); profile written, continuing
+
+===== [2026-11-08 17:25:33] zookeeper_3.9.5 stage results: the image's column of Table III (written to 1_latest_containers/generated_syscalls/zookeeper_3.9.5/table_column.txt)
       Native Method Resolution
       Native Methods                                1322
       SysJava Resolved                              1260
@@ -220,22 +258,11 @@ the progress of each tool as it runs; the untimed lines under them are the step'
       Unanalysed Lib Syscalls (Δ)                      3
       Go Whitelist (Δ)                                28
       Total Syscalls                                 191
-[16:16:33] zookeeper_3.9.5 7. run the container under the profile
-      16:16:33 > tools/check_profile.sh: the container once without and once with the profile (log: 1_latest_containers/generated_syscalls/zookeeper_3.9.5/seccomp_runtime_test.log)
-      16:16:34   baseline (no profile)
-      16:16:36   baseline_ready_after=2s
-      16:17:36   baseline_state=running exit=0
-      16:17:36   baseline_probe=ok tcp_2181
-      16:17:36   baseline_eperm_lines=0
-      16:17:36   with seccomp profile
-      16:17:38   ready_after=3s
-      16:18:38   state_after_60s=running exit=0
-      16:18:38   probe=ok tcp_2181
-      16:18:38   eperm_lines=0 (baseline 0)
-      without profile: ready after 2s, running exit=0, probe ok tcp_2181
-      with profile (191 syscalls): ready after 3s, running exit=0 after 60 s, probe ok tcp_2181, EPERM lines 0 (baseline 0)
-      RESULT=PASS  (log: 1_latest_containers/generated_syscalls/zookeeper_3.9.5/seccomp_runtime_test.log)
-Done in 8 min. Profile: 1_latest_containers/generated_syscalls/zookeeper_3.9.5/zookeeper_3.9.5.json; all outputs in 1_latest_containers/generated_syscalls/zookeeper_3.9.5/
+
+===== [2026-11-08 17:25:34] zookeeper_3.9.5 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-08 17:27:40] zookeeper_3.9.5 stage done: finished in 8 min; profile: ~/SysJava/1_latest_containers/generated_syscalls/zookeeper_3.9.5/zookeeper_3.9.5.json
 ```
 
 ### C. Full rerun
