@@ -1,4 +1,0 @@
-org.apache.cassandra.utils.NativeLibraryWindows.GetCurrentProcessId
-org.apache.cassandra.utils.WindowsTimer.timeBeginPeriod
-org.apache.cassandra.utils.WindowsTimer.timeEndPeriod
-sun.font.FileFontStrike.initNative

@@ -1,6 +1,0 @@
-notfound_search/libjvm.so:jdk.internal.misc.VM.getNanoTimeAdjustment -> JVM_GetNanoTimeAdjustment [JVM]
-notfound_search/libjvm.so:java.lang.Object.wait0 -> JVM_MonitorWait [JVM]
-LIBS_jetty_12.1.10/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]
-LIBS_jetty_12.1.10/libjvm.so:jdk.internal.misc.ScopedMemoryAccess.registerNatives -> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods [JVM]
-LIBS_jetty_12.1.10/libjvm.so:jdk.internal.misc.Unsafe.registerNatives -> JVM_RegisterJDKInternalMiscUnsafeMethods [JVM]
-LIBS_jetty_12.1.10/libjvm.so:jdk.internal.perf.Perf.registerNatives -> JVM_RegisterPerfMethods [JVM]

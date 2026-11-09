@@ -1,6 +1,0 @@
-notfound_search/libjvm.so:jdk.internal.misc.VM.getNanoTimeAdjustment -> JVM_GetNanoTimeAdjustment [JVM]
-notfound_search/libjvm.so:java.lang.Object.wait0 -> JVM_MonitorWait [JVM]
-LIBS_groovy_5.0.6/libjvm.so:java.lang.invoke.MethodHandleNatives.registerNatives -> JVM_RegisterMethodHandleMethods [JVM]
-LIBS_groovy_5.0.6/libjvm.so:jdk.internal.misc.ScopedMemoryAccess.registerNatives -> JVM_RegisterJDKInternalMiscScopedMemoryAccessMethods [JVM]
-LIBS_groovy_5.0.6/libjvm.so:jdk.internal.misc.Unsafe.registerNatives -> JVM_RegisterJDKInternalMiscUnsafeMethods [JVM]
-LIBS_groovy_5.0.6/libjvm.so:jdk.internal.perf.Perf.registerNatives -> JVM_RegisterPerfMethods [JVM]

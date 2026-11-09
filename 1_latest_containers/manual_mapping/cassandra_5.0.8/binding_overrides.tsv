@@ -1,1 +1,0 @@
-dyn	<net.openhft.affinity.impl.LinuxHelper: int sched_getcpu()>	<?>	<?>	platform	call through the vsyscall/vDSO address, no shared library
