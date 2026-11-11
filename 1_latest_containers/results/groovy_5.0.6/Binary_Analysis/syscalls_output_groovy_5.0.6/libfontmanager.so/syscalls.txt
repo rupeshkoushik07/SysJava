@@ -1,3 +1,5 @@
+clock_gettime
+fchdir
 fcntl
 tgkill
 waitid
@@ -99,5 +101,3 @@ setresgid
 sched_getaffinity
 writev
 close
-clock_gettime
-fchdir

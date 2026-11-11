@@ -1,51 +1,51 @@
 container=solr_10.0.0
 image=solr:10.0.0
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/solr_10.0.0/Binary_Analysis/syscalls_output_solr_10.0.0/solr_10.0.0.json
-profile_syscalls=221 SCMP_ACT_ERRNO
+profile_syscalls=224 SCMP_ACT_ERRNO
 workload=docker run  solr:10.0.0 
-started_at=2026-11-07T08:52:04+01:00
+started_at=2026-11-11T19:24:17+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=786db3266de67acb7329d6bd9a3a90a375e8eb30e78c092cb426a95969f0a7de
-baseline_ready_after=11s
+docker_run_output=914b9d569a4f55fb8e0f657a11ae198527107490cc0a7585713fad36055e0ea4
+baseline_ready_after=8s
 baseline_state=running exit=0
 baseline_probe=ok http_200 /solr/admin/info/system?wt=json
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-solr-10-0-0 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/solr_10.0.0/Binary_Analysis/syscalls_output_solr_10.0.0/solr_10.0.0.json  solr:10.0.0 
-docker_run_output=fe4cb2a6a8f4909f1d442377fa8d2b5e3f17cd9f7e8c2271ba7d9968d1f3979b
+docker_run_output=35188b01058c3080b4abcdd1e798320de319b08af8538468a21f4a2383ef3f9d
 ready_after=6s
 state_after_60s=running exit=0
 probe=ok http_200 /solr/admin/info/system?wt=json
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-07T08:54:24+01:00
+finished_at=2026-11-11T19:26:37+01:00
 
 ---- docker logs tail (with profile) ----
-2026-11-07 07:53:20.173 INFO  (main) [] o.a.s.c.SolrZkServerProps Reading configuration from: /opt/solr-10.0.0/server/solr/zoo.cfg
-2026-11-07 07:53:20.175 INFO  (main) [] o.a.s.c.SolrZkServer STARTING EMBEDDED ENSEMBLE ZOOKEEPER SERVER at port 9983, listening on host 0.0.0.0
-2026-11-07 07:53:20.211 WARN  (embeddedZkServer) [] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
-2026-11-07 07:53:20.676 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=172.17.0.15:9983
-2026-11-07 07:53:20.736 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Starting
-2026-11-07 07:53:20.764 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Default schema
-2026-11-07 07:53:20.807 INFO  (main-EventThread) [] o.a.c.f.s.ConnectionStateManager State change: CONNECTED
-2026-11-07 07:53:20.816 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
-2026-11-07 07:53:20.816 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
-2026-11-07 07:53:20.925 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/solr/latest/deployment-guide/zookeeper-access-control.html
-2026-11-07 07:53:20.948 INFO  (main) [] o.a.s.c.ZkController The Overseer is enabled.  It will process all cluster commands & state updates.
-2026-11-07 07:53:20.965 INFO  (main) [] o.a.s.c.OverseerElectionContext I am going to be the leader 172.17.0.15:8983_solr
-2026-11-07 07:53:20.970 INFO  (main) [] o.a.s.c.Overseer Overseer (id=72068196100931584-172.17.0.15:8983_solr-n_0000000000) starting
-2026-11-07 07:53:21.023 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper: /live_nodes/172.17.0.15:8983_solr
-2026-11-07 07:53:21.028 INFO  (OverseerStateUpdate-72068196100931584-172.17.0.15:8983_solr-n_0000000000) [] o.a.s.c.Overseer Starting to work on the main queue : 172.17.0.15:8983_solr
-2026-11-07 07:53:21.039 INFO  (OverseerStateUpdate-72068196100931584-172.17.0.15:8983_solr-n_0000000000) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
-2026-11-07 07:53:21.076 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2026-11-07 07:53:21.454 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /var/solr/data
-2026-11-07 07:53:21.606 WARN  (main) [] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
-2026-11-07 07:53:21.840 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2026-11-07 07:53:21.935 INFO  (main) [] o.e.j.e.s.ServletContextHandler Started oeje10w.WebAppContext@85ec632{solr-jetty-context,/solr,b=file:///opt/solr-10.0.0/server/solr-webapp/webapp/,a=AVAILABLE,h=oeje10s.SessionHandler@1c05a54d{STARTED}}{/opt/solr-10.0.0/server/solr-webapp/webapp}
-2026-11-07 07:53:21.938 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2026_11_07.request.log
-2026-11-07 07:53:21.943 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@22ee7fdc{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2026-11-07 07:53:21.944 INFO  (main) [] o.e.j.s.Server Started oejs.Server@2b5f4d54{STARTING}[12.0.27,sto=0] @4118ms
-2026-11-07 07:54:24.049 INFO  (qtp1507118393-157-null-1) [ t:null-1] o.a.s.s.HttpSolrCall [admin] path=/admin/info/system params={wt=json} status=0 QTime=44
+2026-11-11 18:25:33.850 INFO  (main) [] o.a.s.c.SolrZkServerProps Reading configuration from: /opt/solr-10.0.0/server/solr/zoo.cfg
+2026-11-11 18:25:33.852 INFO  (main) [] o.a.s.c.SolrZkServer STARTING EMBEDDED ENSEMBLE ZOOKEEPER SERVER at port 9983, listening on host 0.0.0.0
+2026-11-11 18:25:33.886 WARN  (embeddedZkServer) [] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2026-11-11 18:25:34.354 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=172.17.0.16:9983
+2026-11-11 18:25:34.433 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Starting
+2026-11-11 18:25:34.459 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Default schema
+2026-11-11 18:25:34.482 INFO  (main-EventThread) [] o.a.c.f.s.ConnectionStateManager State change: CONNECTED
+2026-11-11 18:25:34.492 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
+2026-11-11 18:25:34.492 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
+2026-11-11 18:25:34.620 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/solr/latest/deployment-guide/zookeeper-access-control.html
+2026-11-11 18:25:34.645 INFO  (main) [] o.a.s.c.ZkController The Overseer is enabled.  It will process all cluster commands & state updates.
+2026-11-11 18:25:34.664 INFO  (main) [] o.a.s.c.OverseerElectionContext I am going to be the leader 172.17.0.16:8983_solr
+2026-11-11 18:25:34.669 INFO  (main) [] o.a.s.c.Overseer Overseer (id=72093331363725312-172.17.0.16:8983_solr-n_0000000000) starting
+2026-11-11 18:25:34.736 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper: /live_nodes/172.17.0.16:8983_solr
+2026-11-11 18:25:34.741 INFO  (OverseerStateUpdate-72093331363725312-172.17.0.16:8983_solr-n_0000000000) [] o.a.s.c.Overseer Starting to work on the main queue : 172.17.0.16:8983_solr
+2026-11-11 18:25:34.755 INFO  (zkCallback-12-thread-1) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2026-11-11 18:25:34.803 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2026-11-11 18:25:35.250 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /var/solr/data
+2026-11-11 18:25:35.418 WARN  (main) [] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2026-11-11 18:25:35.667 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2026-11-11 18:25:35.761 INFO  (main) [] o.e.j.e.s.ServletContextHandler Started oeje10w.WebAppContext@85ec632{solr-jetty-context,/solr,b=file:///opt/solr-10.0.0/server/solr-webapp/webapp/,a=AVAILABLE,h=oeje10s.SessionHandler@1c05a54d{STARTED}}{/opt/solr-10.0.0/server/solr-webapp/webapp}
+2026-11-11 18:25:35.765 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2026_11_11.request.log
+2026-11-11 18:25:35.770 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@22ee7fdc{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2026-11-11 18:25:35.771 INFO  (main) [] o.e.j.s.Server Started oejs.Server@2b5f4d54{STARTING}[12.0.27,sto=0] @4885ms
+2026-11-11 18:26:37.134 INFO  (qtp1507118393-157-null-1) [ t:null-1] o.a.s.s.HttpSolrCall [admin] path=/admin/info/system params={wt=json} status=0 QTime=51

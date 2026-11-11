@@ -27982,3 +27982,194 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 07:10:18] tomcat_11.0.22 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/tomcat_11.0.22/Binary_Analysis/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json
+
+===== [2026-11-11 18:19:19] tomcat_11.0.22 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt.so	functions=58702	fuzzy=0	syscalls=0
+libj2gss.so	functions=3847	fuzzy=0	syscalls=37
+libjava.so	functions=57869	fuzzy=0	syscalls=111
+libjimage.so	functions=57902	fuzzy=0	syscalls=104
+libjvm.so	functions=57564	fuzzy=0	syscalls=104
+liblcms.so	functions=59671	fuzzy=0	syscalls=104
+libmanagement.so	functions=57942	fuzzy=0	syscalls=104
+libnet.so	functions=57961	fuzzy=0	syscalls=108
+libnio.so	functions=58181	fuzzy=0	syscalls=133
+libtcnative-2.so.0	functions=16937	fuzzy=0	syscalls=61
+libtcnative-2.so.0.0.14	functions=16937	fuzzy=0	syscalls=61
+libzip.so	functions=58074	fuzzy=0	syscalls=104
+bash	functions=6384	fuzzy=0	syscalls=92
+dirname	functions=3801	fuzzy=0	syscalls=40
+env	functions=3815	fuzzy=0	syscalls=42
+java	functions=3944	fuzzy=0	syscalls=67
+uname	functions=3803	fuzzy=0	syscalls=41
+
+===== [2026-11-11 18:19:19] tomcat_11.0.22 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: tomcat_11.0.22
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_BIN_tomcat_11.0.22
+Found 5 subdirectories
+
+  ✓ bash: 92 syscalls
+  ✓ dirname: 40 syscalls
+  ✓ env: 42 syscalls
+  ✓ java: 67 syscalls
+  ✓ uname: 41 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_BIN_tomcat_11.0.22/binary_syscalls.txt (96 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22
+Found 12 subdirectories
+
+  ⚠ libawt.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libj2gss.so: 37 syscalls
+  ✓ libjava.so: 111 syscalls
+  ✓ libjimage.so: 104 syscalls
+  ✓ libjvm.so: 104 syscalls
+  ✓ liblcms.so: 104 syscalls
+  ✓ libmanagement.so: 104 syscalls
+  ✓ libnet.so: 108 syscalls
+  ✓ libnio.so: 133 syscalls
+  ✓ libtcnative-2.so.0: 61 syscalls
+  ✓ libtcnative-2.so.0.0.14: 61 syscalls
+  ✓ libzip.so: 104 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/library_syscalls.txt (140 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22
+Found 4 syscalls.txt files
+  libextnet.so: 105 syscalls
+  libjli.so: 67 syscalls
+  libmanagement_ext.so: 104 syscalls
+  libtinfo.so.6: 49 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_unanalysed_tomcat_11.0.22/unanalysed_syscalls.txt (109 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 44 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals via its imports, and C-library functions looked up with dlsym: 115 syscalls (/home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      96
+Library syscalls:     140
+Unanalysed libraries: 109
+JNA/FFI syscalls:     44
+Extra component:      115  (libjvm internals via its imports, and C-library functions looked up with dlsym)
+Runc whitelist:       123
+Combined (unique):    180
+  → runc.txt added 25 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.txt (180 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json (180 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 180
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  5
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  96 unique
+
+Libraries:
+  - Analyzed:  12
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  140 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/runc.txt
+  - Syscalls:    123 unique
+  - Added:       33 additional syscalls
+
+Combined:
+  - Total unique syscalls: 180
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_BIN_tomcat_11.0.22/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  tomcat_11.0.22
+      JARFILES_tomcat_11.0.22  (4.0K) -> Dataset/
+      LIBS_tomcat_11.0.22  (4.0K) -> Dataset/
+      BINARIES_tomcat_11.0.22  (4.0K) -> Dataset/
+      RUNTIME_tomcat_11.0.22  (4.0K) -> Dataset/
+      outputs_tomcat_11.0.22  (836K) -> Bytecode_Analysis/
+      sysdig_outputs_tomcat_11.0.22  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_tomcat_11.0.22  (494M) -> Binary_Analysis/
+      syscalls_BIN_tomcat_11.0.22  (7.9M) -> Binary_Analysis/
+      syscalls_unanalysed_tomcat_11.0.22  (103M) -> Binary_Analysis/
+      startfuncs_unanalysed_tomcat_11.0.22  (40K) -> Binary_Analysis/
+      jna_ffi_analysis  (27M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 18:19:20] tomcat_11.0.22 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 18:21:52] tomcat_11.0.22 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/tomcat_11.0.22/Binary_Analysis/syscalls_output_tomcat_11.0.22/tomcat_11.0.22.json

@@ -1,0 +1,5 @@
+start_file	vtables	vtable_functions	newly_added
+JDK17_LIBS/libfontmanager.so.txt	9	30	30
+libamazonCorrettoCryptoProvider.so.txt	141	624	624
+libnetty_tcnative-@VERSION@.so.txt	18	78	78
+libnetty_tcnative_linux_x86_64.so.txt	18	78	78

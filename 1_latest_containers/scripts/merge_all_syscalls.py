@@ -14,6 +14,8 @@ This script:
      libraries that no Java binding reaches; see
      scripts/analyze_unanalysed_loaded_libs.py)
   8. Includes jna_ffi_analysis/union_syscalls.txt when present
+  8b. Includes extra_components/<name>/syscalls.txt (each labelled by its label.txt): parts analysed
+     another way, e.g. libjvm's internals via its imports (analyse_jvm_imports.sh, 2026-11-11)
   9. Merges with runc.txt default whitelist (if present)
  10. Creates <IMG_NAME>.txt with combined syscalls (no duplicates)
  11. Generates <IMG_NAME>.json seccomp profile from combined syscalls
@@ -325,6 +327,25 @@ def main():
                 print(f"    - {candidate}")
 
     # =========================================================================
+    # STEP 4b: Extra components (documented in extra_components/<name>/README.md)
+    # =========================================================================
+    print("\n" + "="*70)
+    print("STEP 4b: Loading Extra Components")
+    print("="*70)
+
+    extra_syscalls = set()
+    extra_rows = []
+    for comp in sorted((project_root / "extra_components").glob("*/syscalls.txt")):
+        label_file = comp.parent / "label.txt"
+        label = label_file.read_text().strip() if label_file.exists() else comp.parent.name
+        comp_syscalls = read_syscalls_file(comp)
+        extra_rows.append((label, len(comp_syscalls)))
+        extra_syscalls |= comp_syscalls
+        print(f"\n  ✓ {label}: {len(comp_syscalls)} syscalls ({comp})")
+    if not extra_rows:
+        print("\n  No extra components.")
+
+    # =========================================================================
     # STEP 5: Load runc.txt Default Whitelist
     # =========================================================================
     print("\n" + "="*70)
@@ -352,12 +373,14 @@ def main():
     # Combine all sets (set union automatically removes duplicates)
     # Order: binary + library + unanalysed library + JNA/FFI + runc whitelist
     combined_syscalls = (binary_syscalls | library_syscalls | unanalysed_syscalls
-                         | jna_ffi_syscalls | runc_syscalls)
+                         | jna_ffi_syscalls | extra_syscalls | runc_syscalls)
 
     print(f"\nBinary syscalls:      {len(binary_syscalls)}")
     print(f"Library syscalls:     {len(library_syscalls)}")
     print(f"Unanalysed libraries: {len(unanalysed_syscalls)}")
     print(f"JNA/FFI syscalls:     {len(jna_ffi_syscalls)}")
+    for label, n in extra_rows:
+        print(f"Extra component:      {n}  ({label})")
     print(f"Runc whitelist:       {len(runc_syscalls)}")
     print(f"Combined (unique):    {len(combined_syscalls)}")
 
@@ -370,7 +393,7 @@ def main():
     added_by_jna_ffi = len(base_u | jna_ffi_syscalls) - len(base_u)
     if added_by_jna_ffi > 0:
         print(f"  → JNA/FFI analysis added {added_by_jna_ffi} additional syscalls")
-    before_runc = len(base_u | jna_ffi_syscalls)
+    before_runc = len(base_u | jna_ffi_syscalls | extra_syscalls)
     added_by_runc = len(combined_syscalls) - before_runc
     if added_by_runc > 0:
         print(f"  → runc.txt added {added_by_runc} additional syscalls")

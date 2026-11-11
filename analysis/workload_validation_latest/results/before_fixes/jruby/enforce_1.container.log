@@ -1,0 +1,2 @@
+[0.001s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because flock() failed (errno = 1)
+OPS ok=46 fail=0

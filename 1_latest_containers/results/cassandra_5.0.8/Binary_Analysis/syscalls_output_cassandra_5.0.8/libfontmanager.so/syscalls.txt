@@ -34,8 +34,8 @@ execve
 clock_nanosleep
 gettid
 get_mempolicy
-futex
 mprotect
+futex
 fallocate
 memfd_create
 exit

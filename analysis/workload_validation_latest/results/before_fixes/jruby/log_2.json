@@ -1,0 +1,24 @@
+{
+ "app": "jruby",
+ "mode": "log",
+ "rep": 2,
+ "started": true,
+ "exit_code": "0",
+ "ready": true,
+ "ready_after_s": 5,
+ "ops_ok": 46,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 0,
+ "running_after": false,
+ "pids_seen": 1,
+ "would_be_denied": {
+  "openat2": [
+   "/runc"
+  ],
+  "flock": [
+   "/opt/java/openjdk/bin/java"
+  ]
+ },
+ "unattributed_log_records": {}
+}

@@ -1,0 +1,5 @@
+libdl.so.2 exit=0 starts=6 syscalls=38
+libpthread.so.0 exit=0 starts=63 syscalls=53
+libm.so.6 exit=0 starts=18 syscalls=38
+libc.so.6 exit=0 starts=228 syscalls=96
+ld-linux-x86-64.so.2 exit=0 starts=4 syscalls=27

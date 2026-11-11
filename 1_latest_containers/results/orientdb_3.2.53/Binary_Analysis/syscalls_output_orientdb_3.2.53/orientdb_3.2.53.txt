@@ -16,6 +16,7 @@ clock_nanosleep
 clone
 clone3
 close
+close_range
 connect
 dup
 dup2
@@ -34,16 +35,20 @@ faccessat2
 fadvise64
 fchdir
 fchmod
+fchown
 fcntl
 fdatasync
 fgetxattr
+flistxattr
 flock
+fremovexattr
 fsetxattr
 fstat
 fstatfs
 fsync
 ftruncate
 futex
+getcpu
 getcwd
 getdents64
 getegid
@@ -91,6 +96,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 pause
 personality
 pipe
@@ -109,6 +115,7 @@ recvfrom
 recvmsg
 removexattr
 rename
+renameat
 rmdir
 rseq
 rt_sigaction
@@ -142,6 +149,7 @@ setregid
 setresgid
 setresuid
 setreuid
+setsid
 setsockopt
 setuid
 setxattr

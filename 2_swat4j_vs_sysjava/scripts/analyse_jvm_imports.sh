@@ -23,7 +23,7 @@
 #     join that provider's start list (one SysPart run per provider). Recorded in dlsym_names.tsv.
 set -u
 T=$1
-REPO=/home/user/Tutorial/EchoTrace
+REPO="$(cd "$(dirname "$0")/.." && pwd)"   # defaults below: the JDK 8 layout; other pipelines set JVMI_*
 WS=$REPO/jdk8_workspaces/$T
 L=${JVMI_LIBS:-$REPO/Final_results_JDK8/$T/Dataset_symbolized/LIBS_$T}
 O=${JVMI_OUT:-$WS/extra_components/jvm_internal_imports}

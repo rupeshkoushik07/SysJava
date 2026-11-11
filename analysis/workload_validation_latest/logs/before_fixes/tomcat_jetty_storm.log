@@ -1,0 +1,27 @@
+tomcat base rep1: ready=True ok=3052 failed=0 running=True denied={}
+tomcat log rep1: ready=True ok=3052 failed=0 running=True denied={'openat2': ['/runc'], 'flock': ['/opt/java/openjdk/bin/java'], 'copy_file_range': ['/opt/java/openjdk/bin/java']}
+tomcat enforce rep1: ready=True ok=2802 failed=250 running=True denied={}
+tomcat base rep2: ready=True ok=3052 failed=0 running=True denied={}
+tomcat log rep2: ready=True ok=3052 failed=0 running=True denied={'openat2': ['/runc'], 'flock': ['/opt/java/openjdk/bin/java'], 'copy_file_range': ['/opt/java/openjdk/bin/java']}
+tomcat enforce rep2: ready=True ok=2802 failed=250 running=True denied={}
+tomcat base rep3: ready=True ok=3052 failed=0 running=True denied={}
+tomcat log rep3: ready=True ok=3052 failed=0 running=True denied={'openat2': ['/runc'], 'flock': ['/opt/java/openjdk/bin/java'], 'copy_file_range': ['/opt/java/openjdk/bin/java']}
+tomcat enforce rep3: ready=True ok=2802 failed=250 running=True denied={}
+jetty base rep1: ready=True ok=3075 failed=0 running=True denied={}
+jetty log rep1: ready=True ok=3075 failed=0 running=True denied={'openat2': ['/runc']}
+jetty enforce rep1: ready=True ok=3075 failed=0 running=True denied={}
+jetty base rep2: ready=True ok=3075 failed=0 running=True denied={}
+jetty log rep2: ready=True ok=3075 failed=0 running=True denied={'openat2': ['/runc']}
+jetty enforce rep2: ready=True ok=3075 failed=0 running=True denied={}
+jetty base rep3: ready=True ok=3075 failed=0 running=True denied={}
+jetty log rep3: ready=True ok=3075 failed=0 running=True denied={'openat2': ['/runc']}
+jetty enforce rep3: ready=True ok=3075 failed=0 running=True denied={}
+storm base rep1: ready=True ok=35 failed=0 running=True denied={}
+storm log rep1: ready=True ok=35 failed=0 running=True denied={'openat2': ['/runc'], 'sync_file_range': ['/opt/java/openjdk/bin/java']}
+storm enforce rep1: ready=True ok=35 failed=0 running=True denied={}
+storm base rep2: ready=True ok=35 failed=0 running=True denied={}
+storm log rep2: ready=True ok=35 failed=0 running=True denied={'openat2': ['/runc'], 'sync_file_range': ['/opt/java/openjdk/bin/java']}
+storm enforce rep2: ready=True ok=35 failed=0 running=True denied={}
+storm base rep3: ready=True ok=35 failed=0 running=True denied={}
+storm log rep3: ready=True ok=35 failed=0 running=True denied={'openat2': ['/runc'], 'sync_file_range': ['/opt/java/openjdk/bin/java']}
+storm enforce rep3: ready=True ok=35 failed=0 running=True denied={}

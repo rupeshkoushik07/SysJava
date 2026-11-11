@@ -188,7 +188,7 @@ NOTE = ("Note: SysJava Resolved + Platform / Intrinsic + Not Found = JNI Total N
         "\\texttt{setCompressedIntegers} absent from the 8u504 libjvm). Container binaries are analysed from "
         "\\texttt{\\_start} and \\texttt{main}; runc is covered by the Go whitelist only. "
         "Storm: \\texttt{sync} in its generated profile comes only from FFM hits the detector inferred from Clojure "
-        "class names (JDK 8 has no FFM API) and is not counted; Storm runs under the 172-syscall profile. "
+        "class names (JDK 8 has no FFM API) and is not counted; Storm runs under the " + str(next(v for k, v in V.items() if k.startswith("storm"))[LABELS.index("Total Syscalls")]) + "-syscall profile. "
         "Elasticsearch: SysPart cannot analyse the stripped ML \\texttt{controller}; its syscalls are recovered from "
         "the functions it imports. SWAT4J Java Lib = its static allowlist (JTracer); "
         "SWAT4J Dynamic = \\texttt{strace} of the container start-up. All ten containers run under their generated profiles.")

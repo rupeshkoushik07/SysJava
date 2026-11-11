@@ -1,5 +1,7 @@
 __futex_abstimed_wait_cancelable64 a0980 module-libc.so.6 futex 202
 clock_nanosleep@@GLIBC_2.17 f5dc0 module-libc.so.6 clock_nanosleep 230
+pread 1043f0 module-libc.so.6 pread64 17
+pwrite 104410 module-libc.so.6 pwrite64 18
 wait4 11cdb0 module-libc.so.6 wait4 61
 close 122fa0 module-libc.so.6 close 3
 fcntl 123820 module-libc.so.6 fcntl 72
@@ -8,6 +10,11 @@ openat 127cd0 module-libc.so.6 openat 257
 poll 127e30 module-libc.so.6 poll 7
 read 128390 module-libc.so.6 read 0
 write 128e50 module-libc.so.6 write 1
+fallocate 128eb0 module-libc.so.6 fallocate 285
+sync_file_range 129270 module-libc.so.6 sync_file_range 277
+fdatasync 12c070 module-libc.so.6 fdatasync 75
+fsync 12c680 module-libc.so.6 fsync 74
+msync 133b10 module-libc.so.6 msync 26
 writev 137430 module-libc.so.6 writev 20
 connect 139160 module-libc.so.6 connect 42
 recvfrom 139370 module-libc.so.6 recvfrom 45

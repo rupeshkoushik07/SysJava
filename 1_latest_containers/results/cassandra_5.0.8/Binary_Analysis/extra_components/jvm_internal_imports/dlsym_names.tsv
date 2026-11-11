@@ -1,0 +1,7 @@
+libfontmanager.so	libm.so.6	y0f 
+libfontmanager.so	libc.so.6	div err 
+libjvm.so	libm.so.6	acos asin atan atan2 cbrt cos cosh expm1 fadd fdiv floor fmul fsub hypot log10 log1p rint sin sinh tan tanh 
+libjvm.so	libc.so.6	abs backtrace clone daemon dup2 index mallinfo mallinfo2 open pthread_condattr_setclock pthread_getcpuclockid __pthread_get_minstack pthread_setname_np revoke sched_getcpu tee wait 
+libnet.so	libc.so.6	index 
+libnio.so	libc.so.6	fdopendir fstatat64 futimens futimesat lutimes openat64 renameat statx unlinkat 
+libsigar-amd64-linux.so	libc.so.6	access ctime error mkdir mknod nice pathconf pipe readdir rename rmdir symlink wait warn 

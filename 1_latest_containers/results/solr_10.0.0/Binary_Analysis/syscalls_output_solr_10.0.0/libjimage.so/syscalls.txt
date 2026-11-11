@@ -1,3 +1,6 @@
+sched_yield
+getegid
+unlink
 sched_getscheduler
 mmap
 dup2
@@ -99,6 +102,3 @@ recvmsg
 madvise
 setpriority
 umask
-sched_yield
-getegid
-unlink

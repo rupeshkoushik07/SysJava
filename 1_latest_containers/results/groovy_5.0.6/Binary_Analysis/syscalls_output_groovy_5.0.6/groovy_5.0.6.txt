@@ -18,6 +18,7 @@ clone3
 close
 close_range
 connect
+copy_file_range
 dup
 dup2
 dup3
@@ -49,6 +50,7 @@ fstatfs
 ftruncate
 futex
 get_mempolicy
+getcpu
 getcwd
 getdents64
 getegid
@@ -100,6 +102,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 personality
 pipe
 pipe2
@@ -117,6 +120,7 @@ recvfrom
 recvmsg
 removexattr
 rename
+renameat
 rmdir
 rseq
 rt_sigaction

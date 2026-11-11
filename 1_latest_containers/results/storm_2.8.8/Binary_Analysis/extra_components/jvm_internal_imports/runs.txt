@@ -1,0 +1,2 @@
+libm.so.6 exit=0 starts=35 syscalls=34
+libc.so.6 exit=0 starts=270 syscalls=111

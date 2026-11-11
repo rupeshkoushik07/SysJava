@@ -1,0 +1,9 @@
+solr base rep1: ready=True ok=194 failed=0 running=True denied={}
+solr log rep1: ready=True ok=194 failed=0 running=True denied={}
+solr enforce rep1: ready=True ok=194 failed=0 running=True denied={}
+solr base rep2: ready=True ok=194 failed=0 running=True denied={}
+solr log rep2: ready=True ok=194 failed=0 running=True denied={}
+solr enforce rep2: ready=True ok=194 failed=0 running=True denied={}
+solr base rep3: ready=True ok=194 failed=0 running=True denied={}
+solr log rep3: ready=True ok=194 failed=0 running=True denied={}
+solr enforce rep3: ready=True ok=194 failed=0 running=True denied={}

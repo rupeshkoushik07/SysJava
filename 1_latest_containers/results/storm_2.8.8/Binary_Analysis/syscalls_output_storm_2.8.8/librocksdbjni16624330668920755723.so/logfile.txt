@@ -1,263 +1,332 @@
 
 Path to futex:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __condvar_cleanup_waiting_a3140
   __condvar_cleanup_waiting_a3140 - [syscall]-> futex
 
 Path to gettimeofday:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gettimeofday_syscall_e80b0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __gettimeofday_syscall_e80b0
   __gettimeofday_syscall_e80b0 - [syscall]-> gettimeofday
 
 Path to rt_sigreturn:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __restore_rt_45cb0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __restore_rt_45cb0
   __restore_rt_45cb0 - [syscall]-> rt_sigreturn
 
 Path to rt_sigprocmask:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [syscall]-> rt_sigprocmask
 
 Path to sched_getparam:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getparam
 
 Path to sched_getscheduler:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getscheduler
 
 Path to set_robust_list:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> set_robust_list
 
 Path to exit:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> exit
 
 Path to rseq:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [syscall]-> rseq
 
 Path to time:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> time_syscall_e8050
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> time_syscall_e8050
   time_syscall_e8050 - [syscall]-> time
 
+Path to fdatasync:
+  _ZN7rocksdb17PosixRandomRWFile4SyncERKNS_9IOOptionsEPNS_14IODebugContextE_7129a0 - [DIRECT]-> fdatasync_12c070
+  fdatasync_12c070 - [syscall]-> fdatasync
+
 Path to close:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_close_9b3a0
-  _IO_file_close_9b3a0 - [DIRECT]-> __close_nocancel_128e70
-  __close_nocancel_128e70 - [syscall]-> close
+  _ZN7rocksdb17PosixRandomRWFile5CloseERKNS_9IOOptionsEPNS_14IODebugContextE_712b40 - [DIRECT]-> close_122fa0
+  close_122fa0 - [syscall]-> close
+
+Path to fsync:
+  _ZN7rocksdb17PosixRandomRWFile5FsyncERKNS_9IOOptionsEPNS_14IODebugContextE_712a70 - [DIRECT]-> fsync_12c680
+  fsync_12c680 - [syscall]-> fsync
+
+Path to fcntl:
+  _ZN7rocksdb17PosixWritableFile20SetWriteLifeTimeHintENS_3Env17WriteLifeTimeHintE_70f740 - [DIRECT]-> fcntl_123820
+  fcntl_123820 - [syscall]-> fcntl
+
+Path to ftruncate:
+  _ZN7rocksdb17PosixWritableFile5CloseERKNS_9IOOptionsEPNS_14IODebugContextE_7121c0 - [DIRECT]-> ftruncate_12c6b0
+  ftruncate_12c6b0 - [syscall]-> ftruncate
+
+Path to fstat:
+  _ZN7rocksdb17PosixWritableFile5CloseERKNS_9IOOptionsEPNS_14IODebugContextE_7121c0 - [DIRECT]-> __fxstat_137b60
+  __fxstat_137b60 - [syscall]-> fstat
+
+Path to fallocate:
+  _ZN7rocksdb17PosixWritableFile5CloseERKNS_9IOOptionsEPNS_14IODebugContextE_7121c0 - [DIRECT]-> fallocate_128eb0
+  fallocate_128eb0 - [syscall]-> fallocate
+
+Path to write:
+  _ZN7rocksdb17PosixWritableFile6AppendERKNS_5SliceERKNS_9IOOptionsEPNS_14IODebugContextE_712080 - [DIRECT]-> write_128e50
+  write_128e50 - [syscall]-> write
+
+Path to lseek:
+  _ZN7rocksdb17PosixWritableFile8TruncateEmRKNS_9IOOptionsEPNS_14IODebugContextE_7152f0 - [DIRECT]-> lseek_127a80
+  lseek_127a80 - [syscall]-> lseek
+
+Path to sync_file_range:
+  _ZN7rocksdb17PosixWritableFile9RangeSyncEmmRKNS_9IOOptionsEPNS_14IODebugContextE_7159e0 - [DIRECT]-> sync_file_range_129270
+  sync_file_range_129270 - [syscall]-> sync_file_range
 
 Path to munmap:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_close_mmap_9b360
-  _IO_file_close_mmap_9b360 - [DIRECT]-> munmap_133b90
+  _ZN7rocksdb27PosixMemoryMappedFileBufferD1Ev_70f790 - [DIRECT]-> munmap_133b90
   munmap_133b90 - [syscall]-> munmap
 
+Path to pread64:
+  _ZN7rocksdb19PosixSequentialFile14PositionedReadEmmRKNS_9IOOptionsEPNS_5SliceEPcPNS_14IODebugContextE_716530 - [DIRECT]-> pread_1043f0
+  pread_1043f0 - [syscall]-> pread64
+
+Path to sched_yield:
+  _ZN7rocksdb8MemTable22ApproximateMemoryUsageEv_5f94e0 - [DIRECT]-> sched_yield_11ad20
+  sched_yield_11ad20 - [syscall]-> sched_yield
+
+Path to readahead:
+  _ZN7rocksdb21PosixRandomAccessFile8PrefetchEmmRKNS_9IOOptionsEPNS_14IODebugContextE_714e20 - [DIRECT]-> readahead_138000
+  readahead_138000 - [syscall]-> readahead
+
+Path to geteuid:
+  _ZN7rocksdb16ChrootFileSystem16GetTestDirectoryERKNS_9IOOptionsEPSsPNS_14IODebugContextE_6df8f0 - [DIRECT]-> geteuid_fe650
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to openat:
+  _ZN7rocksdb14PosixDirectory19FsyncWithDirOptionsERKNS_9IOOptionsEPNS_14IODebugContextERKNS_15DirFsyncOptionsE_713010 - [DIRECT]-> open_127bd0
+  open_127bd0 - [syscall]-> openat
+
 Path to ioctl:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_doallocate_8bc60
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_file_doallocate_8bc60
   _IO_file_doallocate_8bc60 - [DIRECT]-> __isatty_nostatus_129430
   __isatty_nostatus_129430 - [syscall]-> ioctl
 
 Path to read:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_read_9b320
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_file_read_9b320
   _IO_file_read_9b320 - [DIRECT]-> read_128390
   read_128390 - [syscall]-> read
 
-Path to lseek:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_seek_9b340
-  _IO_file_seek_9b340 - [DIRECT]-> lseek_127a80
-  lseek_127a80 - [syscall]-> lseek
-
-Path to fstat:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_stat_9b350
-  _IO_file_stat_9b350 - [DIRECT]-> fstat_123b70
-  fstat_123b70 - [syscall]-> fstat
-
 Path to mmap:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_file_underflow_maybe_mmap_9a560
   _IO_file_underflow_maybe_mmap_9a560 - [DIRECT]-> mmap_1331c0
   mmap_1331c0 - [syscall]-> mmap
 
 Path to mremap:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_file_underflow_mmap_9a2b0
   _IO_file_underflow_mmap_9a2b0 - [DIRECT]-> mremap_137d20
   mremap_137d20 - [syscall]-> mremap
 
-Path to write:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_9b3b0
-  _IO_file_write@@GLIBC_2.2.5_9b3b0 - [DIRECT]-> write_128e50
-  write_128e50 - [syscall]-> write
-
 Path to ioprio_set:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830
   _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830 - [DIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl8BGThreadEm_8e2430
   _ZN7rocksdb14ThreadPoolImpl4Impl8BGThreadEm_8e2430 - [syscall]-> ioprio_set
 
-Path to sched_yield:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb8MemTable22ApproximateMemoryUsageEv_5f94e0
-  _ZN7rocksdb8MemTable22ApproximateMemoryUsageEv_5f94e0 - [DIRECT]-> sched_yield_11ad20
-  sched_yield_11ad20 - [syscall]-> sched_yield
-
 Path to getpid:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __nptl_setxid_sighandler_a12c0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __nptl_setxid_sighandler_a12c0
   __nptl_setxid_sighandler_a12c0 - [DIRECT]-> getpid_ffa00
   getpid_ffa00 - [syscall]-> getpid
 
 Path to sendto:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> sendto_139480
   sendto_139480 - [syscall]-> sendto
 
 Path to poll:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> poll_127e30
   poll_127e30 - [syscall]-> poll
 
 Path to recvmsg:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
   recvmsg_1393c0 - [syscall]-> recvmsg
 
 Path to recvfrom:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> recvfrom_139370
   recvfrom_139370 - [syscall]-> recvfrom
 
 Path to sched_setaffinity:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [syscall]-> sched_setaffinity
 
 Path to sched_setscheduler:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [syscall]-> sched_setscheduler
 
 Path to rt_sigaction:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> __libc_sigaction_45cc0
   __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
 
 Path to madvise:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> madvise_132f90
   madvise_132f90 - [syscall]-> madvise
 
 Path to mprotect:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> mprotect_133ae0
   mprotect_133ae0 - [syscall]-> mprotect
 
-Path to wait4:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
-  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
-  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
-  wait4_11cdb0 - [syscall]-> wait4
+Path to getcwd:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> getcwd_126ea0
+  getcwd_126ea0 - [syscall]-> getcwd
 
-Path to writev:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _IO_vtable_check_988a0
-  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
-  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
-  __libc_message_impl_97df0 - [syscall]-> writev
+Path to readlink:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> readlink_1283b0
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to faccessat:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat
+
+Path to faccessat2:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat2
+
+Path to fadvise64:
+  _ZN7rocksdb17PosixWritableFile15InvalidateCacheEmm_712890 - [DIRECT]-> _ZN7rocksdb7FadviseEilmi_7103e0
+  _ZN7rocksdb7FadviseEilmi_7103e0 - [DIRECT]-> posix_fadvise_127e50
+  posix_fadvise_127e50 - [syscall]-> fadvise64
+
+Path to tgkill:
+  _ZN7rocksdb20FaultInjectionTestFS8LinkFileERKSsS2_RKNS_9IOOptionsEPNS_14IODebugContextE_962040 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
+  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+
+Path to exit_group:
+  _ZN7rocksdb20FaultInjectionTestFS8LinkFileERKSsS2_RKNS_9IOOptionsEPNS_14IODebugContextE_962040 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> _exit_f7480
+  _exit_f7480 - [syscall]-> exit_group
 
 Path to clock_gettime:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb12ReplayerImpl6ReplayERKNS_13ReplayOptionsERKSt8functionIFvNS_6StatusEOSt10unique_ptrINS_17TraceRecordResultESt14default_deleteIS7_EEEE_99c610
   _ZN7rocksdb12ReplayerImpl6ReplayERKNS_13ReplayOptionsERKSt8functionIFvNS_6StatusEOSt10unique_ptrINS_17TraceRecordResultESt14default_deleteIS7_EEEE_99c610 - [DIRECT]-> _ZNSt6chrono3_V212system_clock3nowEv_e9040
   _ZNSt6chrono3_V212system_clock3nowEv_e9040 - [DIRECT]-> clock_gettime@@GLIBC_2.17_f5cf0
   clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
 
 Path to clock_nanosleep:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb12ReplayerImpl6ReplayERKNS_13ReplayOptionsERKSt8functionIFvNS_6StatusEOSt10unique_ptrINS_17TraceRecordResultESt14default_deleteIS7_EEEE_99c610
   _ZN7rocksdb12ReplayerImpl6ReplayERKNS_13ReplayOptionsERKSt8functionIFvNS_6StatusEOSt10unique_ptrINS_17TraceRecordResultESt14default_deleteIS7_EEEE_99c610 - [DIRECT]-> nanosleep_1039f0
   nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
   clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
 
-Path to tgkill:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20
-  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20 - [DIRECT]-> abort_288c5
-  abort_288c5 - [DIRECT]-> __pthread_raise_internal_a61b0
-  __pthread_raise_internal_a61b0 - [syscall]-> tgkill
+Path to msync:
+  _ZN7rocksdb13PosixMmapFile4SyncERKNS_9IOOptionsEPNS_14IODebugContextE_711e00 - [DIRECT]-> _ZN7rocksdb13PosixMmapFile5MsyncEv_711810
+  _ZN7rocksdb13PosixMmapFile5MsyncEv_711810 - [DIRECT]-> msync_133b10
+  msync_133b10 - [syscall]-> msync
 
-Path to exit_group:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20
-  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20 - [DIRECT]-> abort_288c5
-  abort_288c5 - [DIRECT]-> _exit_f7480
-  _exit_f7480 - [syscall]-> exit_group
+Path to wait4:
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_proc_close@@GLIBC_2.2.5_8e8a0
+  _IO_proc_close@@GLIBC_2.2.5_8e8a0 - [DIRECT]-> waitpid_11ce10
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
 
-Path to openat:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_load_cache_36880
-  __gconv_load_cache_36880 - [DIRECT]-> __open64_nocancel_1290a0
-  __open64_nocancel_1290a0 - [syscall]-> openat
-
-Path to getcwd:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
-  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
-  getcwd_126ea0 - [syscall]-> getcwd
+Path to writev:
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_vtable_check_988a0
+  _IO_vtable_check_988a0 - [DIRECT]-> __libc_fatal_98040
+  __libc_fatal_98040 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
 
 Path to getdents64:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gconv_read_conf_2dd90
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> readdir_f6b20
   readdir_f6b20 - [DIRECT]-> getdents64_f67c0
   getdents64_f67c0 - [syscall]-> getdents64
 
 Path to newfstatat:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gconv_read_conf_2dd90
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> __gconv_read_conf_2dd90
   __gconv_read_conf_2dd90 - [DIRECT]-> stat_128480
   stat_128480 - [DIRECT]-> fstatat_123ba0
   fstatat_123ba0 - [syscall]-> newfstatat
 
 Path to prctl:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> name_stack_maps_a3cf0
   name_stack_maps_a3cf0 - [DIRECT]-> __set_vma_name_138180
   __set_vma_name_138180 - [syscall]-> prctl
 
+Path to getuid:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getuid_ffab0
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to getegid:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getegid_fe640
+  getegid_fe640 - [syscall]-> getegid
+
+Path to getgid:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> getgid_fe660
+  getgid_fe660 - [syscall]-> getgid
+
+Path to sched_get_priority_max:
+  _ZN7rocksdb22TransactionDBMutexImpl10TryLockForEl_9ce1f0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  _ZN7rocksdb22TransactionDBMutexImpl10TryLockForEl_9ce1f0 - [DIRECT]-> pthread_mutex_trylock@@GLIBC_2.34_a8820
+  pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to gettid:
+  _ZN7rocksdb20FaultInjectionTestFS8LinkFileERKSsS2_RKNS_9IOOptionsEPNS_14IODebugContextE_962040 - [DIRECT]-> abort_288c5
+  abort_288c5 - [DIRECT]-> raise_45b60
+  raise_45b60 - [DIRECT]-> pthread_kill@@GLIBC_2.34_a6370
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
+
 Path to getcpu:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb14StatisticsImpl10recordTickEjm_76e560
-  _ZN7rocksdb14StatisticsImpl10recordTickEjm_76e560 - [DIRECT]-> _ZNK7rocksdb14CoreLocalArrayINS_14StatisticsImpl14StatisticsDataEE21AccessElementAndIndexEv_7707b0
-  _ZNK7rocksdb14CoreLocalArrayINS_14StatisticsImpl14StatisticsDataEE21AccessElementAndIndexEv_7707b0 - [DIRECT]-> _ZN7rocksdb4port14PhysicalCoreIDEv_7b9ae0
+  _ZN7rocksdb8MemTable25NewRangeTombstoneIteratorERKNS_11ReadOptionsEmb_5f6bb0 - [DIRECT]-> _ZN7rocksdb8MemTable33NewRangeTombstoneIteratorInternalERKNS_11ReadOptionsEmb_5f68d0
+  _ZN7rocksdb8MemTable33NewRangeTombstoneIteratorInternalERKNS_11ReadOptionsEmb_5f68d0 - [DIRECT]-> _ZN7rocksdb4port14PhysicalCoreIDEv_7b9ae0
   _ZN7rocksdb4port14PhysicalCoreIDEv_7b9ae0 - [DIRECT]-> sched_getcpu_122e00
   sched_getcpu_122e00 - [syscall]-> getcpu
 
 Path to setpriority:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830
   _ZN7rocksdb14ThreadPoolImpl4Impl15BGThreadWrapperEPv_8e2830 - [DIRECT]-> _ZN7rocksdb14ThreadPoolImpl4Impl8BGThreadEm_8e2430
   _ZN7rocksdb14ThreadPoolImpl4Impl8BGThreadEm_8e2430 - [DIRECT]-> _ZN7rocksdb4port14SetCpuPriorityEiNS_11CpuPriorityE_7b9c50
   _ZN7rocksdb4port14SetCpuPriorityEiNS_11CpuPriorityE_7b9c50 - [DIRECT]-> setpriority_12af00
   setpriority_12af00 - [syscall]-> setpriority
 
-Path to gettid:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20
-  _ZN9__gnu_cxx27__verbose_terminate_handlerEv_c5a20 - [DIRECT]-> abort_288c5
-  abort_288c5 - [DIRECT]-> raise_45b60
-  raise_45b60 - [DIRECT]-> pthread_kill@@GLIBC_2.34_a6370
-  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
-
 Path to clone3:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [DIRECT]-> __clone_internal_137680
   __clone_internal_137680 - [DIRECT]-> __clone3_137780
   __clone3_137780 - [syscall]-> clone3
 
 Path to clone:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> pthread_create@@GLIBC_2.34_a4330
   pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
   create_thread_a3ae0 - [DIRECT]-> __clone_internal_137680
   __clone_internal_137680 - [DIRECT]-> clone_137570
   clone_137570 - [syscall]-> clone
 
-Path to sched_get_priority_max:
-  Java_org_rocksdb_Env_getDefaultEnvInternal_38f840 - [DIRECT]-> _ZN7rocksdb3Env7DefaultEv_6ecd50
-  _ZN7rocksdb3Env7DefaultEv_6ecd50 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_a70a0
-  pthread_mutex_init@@GLIBC_2.2.5_a70a0 - [DIRECT]-> __init_sched_fifo_prio_acb00
-  __init_sched_fifo_prio_acb00 - [DIRECT]-> sched_get_priority_max_11ac00
-  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
-
-Path to sched_get_priority_min:
-  Java_org_rocksdb_Env_getDefaultEnvInternal_38f840 - [DIRECT]-> _ZN7rocksdb3Env7DefaultEv_6ecd50
-  _ZN7rocksdb3Env7DefaultEv_6ecd50 - [DIRECT]-> pthread_mutex_init@@GLIBC_2.2.5_a70a0
-  pthread_mutex_init@@GLIBC_2.2.5_a70a0 - [DIRECT]-> __init_sched_fifo_prio_acb00
-  __init_sched_fifo_prio_acb00 - [DIRECT]-> sched_get_priority_min_11ac30
-  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+Path to getgroups:
+  _ZN7rocksdb16ChrootFileSystem14PrepareOptionsERKNS_13ConfigOptionsE_6e0420 - [DIRECT]-> realpath@@GLIBC_2.3_47200
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> group_member_103910
+  group_member_103910 - [DIRECT]-> getgroups_fe670
+  getgroups_fe670 - [syscall]-> getgroups
 
 Path to mlock:
   Java_org_rocksdb_PersistentCache_newPersistentCache_3a9740 - [DIRECT]-> _ZN7rocksdb18NewPersistentCacheEPNS_3EnvERKSsmRKSt10shared_ptrINS_6LoggerEEbPS4_INS_15PersistentCacheEE_97d0e0
@@ -266,16 +335,22 @@ Path to mlock:
   _ZN7rocksdb9HashTableIPNS_14BlockCacheFileENS_22BlockCacheTierMetadata18BlockCacheFileHashENS3_19BlockCacheFileEqualEEC1Emfj_9804c0 - [DIRECT]-> mlock_133160
   mlock_133160 - [syscall]-> mlock
 
-Path to fcntl:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> __gconv_read_conf_2dd90
-  __gconv_read_conf_2dd90 - [DIRECT]-> __gconv_get_path_2cf80
-  __gconv_get_path_2cf80 - [DIRECT]-> getcwd_126ea0
-  getcwd_126ea0 - [DIRECT]-> fdopendir_f66e0
-  fdopendir_f66e0 - [DIRECT]-> __fcntl64_nocancel_128ee0
-  __fcntl64_nocancel_128ee0 - [syscall]-> fcntl
+Path to fstatfs:
+  _ZN7rocksdb13PosixMmapFile6AppendERKNS_5SliceERKNS_9IOOptionsEPNS_14IODebugContextE_7145f0 - [DIRECT]-> _ZN7rocksdb13PosixMmapFile12MapNewRegionEv_7140b0
+  _ZN7rocksdb13PosixMmapFile12MapNewRegionEv_7140b0 - [DIRECT]-> posix_fallocate_128090
+  posix_fallocate_128090 - [DIRECT]-> internal_fallocate_127e70
+  internal_fallocate_127e70 - [DIRECT]-> fstatfs_123be0
+  fstatfs_123be0 - [syscall]-> fstatfs
+
+Path to pwrite64:
+  _ZN7rocksdb13PosixMmapFile6AppendERKNS_5SliceERKNS_9IOOptionsEPNS_14IODebugContextE_7145f0 - [DIRECT]-> _ZN7rocksdb13PosixMmapFile12MapNewRegionEv_7140b0
+  _ZN7rocksdb13PosixMmapFile12MapNewRegionEv_7140b0 - [DIRECT]-> posix_fallocate_128090
+  posix_fallocate_128090 - [DIRECT]-> internal_fallocate_127e70
+  internal_fallocate_127e70 - [DIRECT]-> pwrite_104410
+  pwrite_104410 - [syscall]-> pwrite64
 
 Path to socket:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -283,7 +358,7 @@ Path to socket:
   socket_139630 - [syscall]-> socket
 
 Path to bind:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -291,7 +366,7 @@ Path to bind:
   bind_139130 - [syscall]-> bind
 
 Path to getsockname:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> clntudp_call_184080
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> clntudp_call_184080
   clntudp_call_184080 - [DIRECT]-> getifaddrs_148b30
   getifaddrs_148b30 - [DIRECT]-> getifaddrs_internal_147810
   getifaddrs_internal_147810 - [DIRECT]-> __netlink_open_147750
@@ -307,8 +382,8 @@ Path to prlimit64:
   getrlimit_12aac0 - [syscall]-> prlimit64
 
 Path to sched_getaffinity:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [DIRECT]-> _Znwm_c3e20
-  _Znwm_c3e20 - [DIRECT]-> malloc_b5110
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_default_doallocate_9dab0
+  _IO_default_doallocate_9dab0 - [DIRECT]-> malloc_b5110
   malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
   __libc_malloc2_b3fa0 - [DIRECT]-> arena_get2_b16d0
   arena_get2_b16d0 - [DIRECT]-> get_nprocs_12d590
@@ -316,8 +391,8 @@ Path to sched_getaffinity:
   __get_nprocs_sched_12d2f0 - [syscall]-> sched_getaffinity
 
 Path to brk:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [DIRECT]-> _Znwm_c3e20
-  _Znwm_c3e20 - [DIRECT]-> malloc_b5110
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _IO_default_doallocate_9dab0
+  _IO_default_doallocate_9dab0 - [DIRECT]-> malloc_b5110
   malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
   __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
   _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
@@ -326,7 +401,7 @@ Path to brk:
   brk_12b050 - [syscall]-> brk
 
 Path to sysinfo:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> _ZNSt6locale5facet18_S_initialize_onceEv_d9590
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> _ZNSt6locale5facet18_S_initialize_onceEv_d9590
   _ZNSt6locale5facet18_S_initialize_onceEv_d9590 - [DIRECT]-> _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__e81f0
   _ZNSt6locale5facet18_S_create_c_localeERP15__locale_structPKcS2__e81f0 - [DIRECT]-> newlocale_3a130
   newlocale_3a130 - [DIRECT]-> _nl_find_locale_37a80
@@ -337,7 +412,7 @@ Path to sysinfo:
   sysinfo_138a90 - [syscall]-> sysinfo
 
 Path to setsockopt:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -348,7 +423,7 @@ Path to setsockopt:
   setsockopt_1394a0 - [syscall]-> setsockopt
 
 Path to dup:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0
@@ -360,7 +435,7 @@ Path to dup:
   dup_1230b0 - [syscall]-> dup
 
 Path to connect:
-  Java_org_rocksdb_RocksDB_suggestCompactRange_3af640 - [INDIRECT]-> start_thread_a3de0
+  _ZN7rocksdb22FullFilterBlockBuilder6FinishERKNS_11BlockHandleEPNS_5SliceEPSt10unique_ptrIA_KcSt14default_deleteIS8_EE_834570 - [INDIRECT]-> start_thread_a3de0
   start_thread_a3de0 - [DIRECT]-> __libc_thread_freeres_b7cb0
   __libc_thread_freeres_b7cb0 - [DIRECT]-> __rpc_thread_destroy_1866f0
   __rpc_thread_destroy_1866f0 - [DIRECT]-> __rpc_thread_svc_cleanup_1877e0

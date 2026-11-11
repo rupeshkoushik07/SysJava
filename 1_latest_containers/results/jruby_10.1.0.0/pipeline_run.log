@@ -47416,3 +47416,192 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 04:48:29] jruby_10.1.0.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jruby_10.1.0.0/Binary_Analysis/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json
+
+===== [2026-11-11 17:58:07] jruby_10.1.0.0 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libjava.so	functions=54828	fuzzy=0	syscalls=110
+libjffi-1.2.so	functions=4098	fuzzy=0	syscalls=41
+libjvm.so	functions=54508	fuzzy=0	syscalls=103
+libmanagement.so	functions=54902	fuzzy=0	syscalls=103
+libnet.so	functions=54920	fuzzy=0	syscalls=107
+libnio.so	functions=55137	fuzzy=0	syscalls=130
+libzip.so	functions=55033	fuzzy=0	syscalls=103
+bash	functions=6384	fuzzy=0	syscalls=92
+dash	functions=3975	fuzzy=0	syscalls=74
+env	functions=3815	fuzzy=0	syscalls=42
+find	functions=4712	fuzzy=0	syscalls=72
+java	functions=3939	fuzzy=0	syscalls=67
+realpath	functions=3823	fuzzy=0	syscalls=48
+uname	functions=3803	fuzzy=0	syscalls=41
+
+===== [2026-11-11 17:58:07] jruby_10.1.0.0 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: jruby_10.1.0.0
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_BIN_jruby_10.1.0.0
+Found 7 subdirectories
+
+  ✓ bash: 92 syscalls
+  ✓ dash: 74 syscalls
+  ✓ env: 42 syscalls
+  ✓ find: 72 syscalls
+  ✓ java: 67 syscalls
+  ✓ realpath: 48 syscalls
+  ✓ uname: 41 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_BIN_jruby_10.1.0.0/binary_syscalls.txt (108 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0
+Found 7 subdirectories
+
+  ✓ libjava.so: 110 syscalls
+  ✓ libjffi-1.2.so: 41 syscalls
+  ✓ libjvm.so: 103 syscalls
+  ✓ libmanagement.so: 103 syscalls
+  ✓ libnet.so: 107 syscalls
+  ✓ libnio.so: 130 syscalls
+  ✓ libzip.so: 103 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/library_syscalls.txt (133 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0
+Found 8 syscalls.txt files
+  libcrypt.so.1: 37 syscalls
+  libjimage.so: 103 syscalls
+  libjli.so: 67 syscalls
+  libjsvml.so: syscalls.txt EMPTY (0 syscalls)
+  libpcre2-8.so.0: 39 syscalls
+  libselinux.so.1: 83 syscalls
+  libtinfo.so.6: 49 syscalls
+  libverify.so: 103 syscalls
+
+⚠ Warning: 1 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_unanalysed_jruby_10.1.0.0/unanalysed_syscalls.txt (122 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+No JNA/FFI syscall union found. Looked for:
+    - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/jna_ffi_analysis/union_syscalls.txt
+    - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/jna_ffi_analysis/full_deps/union_syscalls.txt
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals via its imports, and C-library functions looked up with dlsym: 116 syscalls (/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      108
+Library syscalls:     133
+Unanalysed libraries: 122
+JNA/FFI syscalls:     0
+Extra component:      116  (libjvm internals via its imports, and C-library functions looked up with dlsym)
+Runc whitelist:       123
+Combined (unique):    187
+  → unanalysed libraries added 5 additional syscalls
+  → runc.txt added 26 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.txt (187 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json (187 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 187
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  7
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  108 unique
+
+Libraries:
+  - Analyzed:  7
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  133 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/runc.txt
+  - Syscalls:    123 unique
+  - Added:       38 additional syscalls
+
+Combined:
+  - Total unique syscalls: 187
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_BIN_jruby_10.1.0.0/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  jruby_10.1.0.0
+      JARFILES_jruby_10.1.0.0  (4.0K) -> Dataset/
+      LIBS_jruby_10.1.0.0  (4.0K) -> Dataset/
+      BINARIES_jruby_10.1.0.0  (4.0K) -> Dataset/
+      RUNTIME_jruby_10.1.0.0  (4.0K) -> Dataset/
+      outputs_jruby_10.1.0.0  (524K) -> Bytecode_Analysis/
+      sysdig_outputs_jruby_10.1.0.0  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_jruby_10.1.0.0  (310M) -> Binary_Analysis/
+      syscalls_BIN_jruby_10.1.0.0  (11M) -> Binary_Analysis/
+      syscalls_unanalysed_jruby_10.1.0.0  (106M) -> Binary_Analysis/
+      startfuncs_unanalysed_jruby_10.1.0.0  (44K) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (16 moved)
+
+Done. Moved 16 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 17:58:08] jruby_10.1.0.0 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 18:01:30] jruby_10.1.0.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jruby_10.1.0.0/Binary_Analysis/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json

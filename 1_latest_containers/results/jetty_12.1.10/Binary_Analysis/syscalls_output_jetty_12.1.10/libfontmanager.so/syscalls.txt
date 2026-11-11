@@ -1,3 +1,6 @@
+setsockopt
+getpgid
+geteuid
 rt_sigaction
 times
 chdir
@@ -99,6 +102,3 @@ getcwd
 timer_delete
 mremap
 shutdown
-setsockopt
-getpgid
-geteuid

@@ -1,12 +1,12 @@
 container=storm_2.8.8
 image=storm:2.8.8
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/storm_2.8.8/Binary_Analysis/syscalls_output_storm_2.8.8/storm_2.8.8.json
-profile_syscalls=200 SCMP_ACT_ERRNO
+profile_syscalls=205 SCMP_ACT_ERRNO
 workload=docker run --network et-latest-net --hostname nimbus --network-alias nimbus storm:2.8.8 storm nimbus
-started_at=2026-11-07T06:40:13+01:00
+started_at=2026-11-11T18:12:01+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=260f0f84eddaff8282b44c359c92d5e5b671740df406b55516884c25485f9b35
+docker_run_output=9629f8701a3d1aa9fe68ae0a54326788ec8ca01ef788c1ec91748d8ab5d1f99a
 baseline_ready_after=10s
 baseline_state=running exit=0
 baseline_probe=ok marker-still-present
@@ -14,14 +14,14 @@ baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-storm-2-8-8 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/storm_2.8.8/Binary_Analysis/syscalls_output_storm_2.8.8/storm_2.8.8.json --network et-latest-net --hostname nimbus --network-alias nimbus storm:2.8.8 storm nimbus
-docker_run_output=04ebddb5497ed773a0edcccb675aec14705f7d0db35d72ee8ba8945ff25facc4
+docker_run_output=c6962b51cfa8e0d5356d6f2334cf4b4858068b706e87b2a5907cb573267be5d5
 ready_after=6s
 state_after_60s=running exit=0
 probe=ok marker-still-present
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-07T06:42:32+01:00
+finished_at=2026-11-11T18:14:23+01:00
 
 ---- docker logs tail (with profile) ----
 Running: /opt/java/openjdk/bin/java -server -Ddaemon.name=nimbus -Dstorm.options= -Dstorm.home=/apache-storm -Dstorm.log.dir=/logs -Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64 -Dstorm.conf.file= -cp /apache-storm/*:/apache-storm/lib/*:/apache-storm/extlib/*:/apache-storm/extlib-daemon/*:/conf -Xmx1024m -Djava.deserialization.disabled=true -Dlogfile.name=nimbus.log -Dlog4j.configurationFile=/apache-storm/log4j2/cluster.xml org.apache.storm.daemon.nimbus.Nimbus

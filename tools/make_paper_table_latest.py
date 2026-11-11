@@ -110,6 +110,10 @@ for t, *_ in COLS:
         if starts and starts <= FALSE_FFM.get(t, set()):
             continue
         java |= names_in(sd + "syscalls.txt")
+    # extra components (merge_all_syscalls.py STEP 4b, 2026-11-11): libjvm's internals via its imports and the
+    # C-library functions analysed libraries look up with dlsym; Java runtime / Java library code -> Java Lib row
+    for c in glob.glob(f"{b}/extra_components/*/syscalls.txt"):
+        java |= names_in(c)
     # manual mapping: syscalls SysPart reaches from the supplied libraries' newly mapped starts
     for sp in glob.glob(os.path.join(unav, t, "syspart*", "syscalls.txt")):
         java |= names_in(sp)
@@ -155,7 +159,7 @@ NOTE = ("Note: Native Methods = methods declared native (JNI and JNA direct mapp
         "(Solr netty-tcnative 2.0.70: 276; Storm jansi: 9, netty io_uring: 62, which adds io\\_uring\\_setup/enter/register, and rocksdb 5.18.4: 4; Solr and Tomcat: 20 FFM fallback-linker natives in libfallbackLinker built from OpenJDK 25.0.3 source; Cassandra OpenHFT Java-Thread-Affinity 3.23.3: 6; Tomcat: 2 commons-daemon natives in jsvc, built from the image's commons-daemon-native source; OrientDB jffi 1.3.11: 37 and Lucene NativePosixUtil: 5; "
         "Elasticsearch NativePosixUtil: 5). Unanalysed Lib Syscalls ($\\Delta$) are syscalls reachable from native "
         "libraries present in the container but without a direct Java binding entry point, not already counted above; the "
-        "Go Whitelist ($\\Delta$) adds the runc entries not already counted (runc itself is not analysed). Storm's Total includes the supplied io\\_uring library's syscalls and excludes sync (false FFM hits); Storm runs under that 202-syscall profile. All ten containers run under their generated "
+        "Go Whitelist ($\\Delta$) adds the runc entries not already counted (runc itself is not analysed). Storm's Total includes the supplied io\\_uring library's syscalls and excludes sync (false FFM hits); Storm runs under that " + str(V["storm_2.8.8"][-1]) + "-syscall profile. All ten containers run under their generated "
         "profiles.")
 n = len(COLS); names = [c[0] for c in COLS]
 # ---- LaTeX

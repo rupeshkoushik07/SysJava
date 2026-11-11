@@ -1,0 +1,27 @@
+container=storm_2.8.8
+image=storm:2.8.8
+profile=/home/user/Tutorial/SysJava-artifact/1_latest_containers/manual_mapping/storm_2.8.8/merged_rta_fixes/storm_2.8.8_rta_with_supplement_no_sync.json
+profile_syscalls=207 SCMP_ACT_ERRNO
+workload=docker run --network et-latest-net --hostname nimbus --network-alias nimbus storm:2.8.8 storm nimbus
+started_at=2026-11-11T21:21:45+01:00
+
+---- baseline (no profile) ----
+docker_run_output=e8240072f710a8a2622ce0a5415a9d3109a8c02b24bab84984ed9dff8fd0f752
+baseline_ready_after=6s
+baseline_state=running exit=0
+baseline_probe=ok marker-still-present
+baseline_eperm_lines=0
+
+---- with seccomp profile ----
+docker run -d --name echotrace-verify-seccomp-storm-2-8-8 --security-opt seccomp=/home/user/Tutorial/SysJava-artifact/1_latest_containers/manual_mapping/storm_2.8.8/merged_rta_fixes/storm_2.8.8_rta_with_supplement_no_sync.json --network et-latest-net --hostname nimbus --network-alias nimbus storm:2.8.8 storm nimbus
+docker_run_output=11654c4d5e0850787c5bed99c085d6267920da037f76c020f176ddde70b2c14c
+ready_after=7s
+state_after_60s=running exit=0
+probe=ok marker-still-present
+eperm_lines=0 (baseline 0)
+
+RESULT=PASS
+finished_at=2026-11-11T21:23:59+01:00
+
+---- docker logs tail (with profile) ----
+Running: /opt/java/openjdk/bin/java -server -Ddaemon.name=nimbus -Dstorm.options= -Dstorm.home=/apache-storm -Dstorm.log.dir=/logs -Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64 -Dstorm.conf.file= -cp /apache-storm/*:/apache-storm/lib/*:/apache-storm/extlib/*:/apache-storm/extlib-daemon/*:/conf -Xmx1024m -Djava.deserialization.disabled=true -Dlogfile.name=nimbus.log -Dlog4j.configurationFile=/apache-storm/log4j2/cluster.xml org.apache.storm.daemon.nimbus.Nimbus

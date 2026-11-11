@@ -1,3 +1,4 @@
+getcwd
 timer_delete
 mremap
 read
@@ -101,4 +102,3 @@ fstat
 faccessat2
 faccessat
 readlink
-getcwd

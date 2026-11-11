@@ -1,0 +1,16 @@
+Time taken for the analysis: 8 seconds
+Time taken for the analysis: 13 seconds
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+Direct Edges computation: 1 seconds
+AT List computation: 3 seconds
+Indirect call target resolution:  2 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 17 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces_rta/tomcat_11.0.22/extra_components/jvm_internal_imports/syspart_libc.so.6/callgraph.json

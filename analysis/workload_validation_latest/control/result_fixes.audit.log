@@ -1,0 +1,3 @@
+type=SECCOMP msg=audit(1794421802.029:105139): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=docker-default pid=3453651 comm="java" exe="/opt/java/openjdk/bin/java" sig=0 arch=c000003e syscall=83 compat=0 ip=0x7f116a5e905b code=0x7ffc0000
+type=SECCOMP msg=audit(1794421803.777:105140): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=docker-default pid=3453651 comm="java" exe="/opt/java/openjdk/bin/java" sig=0 arch=c000003e syscall=83 compat=0 ip=0x7f116a5e905b code=0x7ffc0000
+type=SECCOMP msg=audit(1794421803.781:105141): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=docker-default pid=3453651 comm="java" exe="/opt/java/openjdk/bin/java" sig=0 arch=c000003e syscall=82 compat=0 ip=0x7f116a5341db code=0x7ffc0000

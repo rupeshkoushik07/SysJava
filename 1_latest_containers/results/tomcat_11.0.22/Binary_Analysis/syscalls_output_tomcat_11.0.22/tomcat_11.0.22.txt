@@ -18,6 +18,7 @@ clone3
 close
 close_range
 connect
+copy_file_range
 dup
 dup2
 epoll_create
@@ -41,6 +42,7 @@ fcntl
 fdatasync
 fgetxattr
 flistxattr
+flock
 fsetxattr
 fstat
 fstatfs
@@ -48,6 +50,7 @@ fsync
 ftruncate
 futex
 get_mempolicy
+getcpu
 getcwd
 getdents64
 getegid
@@ -91,6 +94,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 personality
 pipe
 pipe2
@@ -107,11 +111,13 @@ readv
 recvfrom
 recvmsg
 rename
+renameat
 rmdir
 rseq
 rt_sigaction
 rt_sigprocmask
 rt_sigreturn
+rt_sigsuspend
 rt_sigtimedwait
 sched_get_priority_max
 sched_get_priority_min

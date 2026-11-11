@@ -1,3 +1,4 @@
+exit_group
 lstat
 prlimit64
 getsockname
@@ -90,4 +91,3 @@ getegid
 unlink
 sched_getscheduler
 mmap
-exit_group

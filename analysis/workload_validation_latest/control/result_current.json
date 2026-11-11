@@ -1,0 +1,28 @@
+{
+ "profile": "jruby log profile (/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jruby_10.1.0.0/Binary_Analysis/syscalls_output_jruby_10.1.0.0/jruby_10.1.0.0.json) with mkdir and rename removed",
+ "removed": [
+  "mkdir",
+  "rename"
+ ],
+ "program_output": "done",
+ "would_be_denied": {
+  "openat2": [
+   "/runc"
+  ],
+  "mkdir": [
+   "/opt/java/openjdk/bin/java"
+  ],
+  "flock": [
+   "/opt/java/openjdk/bin/java"
+  ],
+  "rename": [
+   "/opt/java/openjdk/bin/java"
+  ]
+ },
+ "unattributed": {},
+ "passed": true,
+ "also_outside_profile": [
+  "flock",
+  "openat2"
+ ]
+}

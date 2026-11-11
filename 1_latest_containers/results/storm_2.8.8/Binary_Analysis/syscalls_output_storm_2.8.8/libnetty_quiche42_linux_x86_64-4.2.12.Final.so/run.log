@@ -1,9 +1,0 @@
-Time taken for the analysis: 19 seconds
-Time taken for the analysis: 31 seconds
-Direct Edges computation: 1 seconds
-AT List computation: 15 seconds
-Indirect call target resolution:  6 seconds
-Generate indirect call targets: 10 seconds
-Print call graph edges: 30 seconds
-Time taken for the analysis: 87 seconds
-Call graph saved to /home/user/Tutorial/EchoTrace_latest/workspaces/storm_2.8.8/syscalls_output_storm_2.8.8/libnetty_quiche42_linux_x86_64-4.2.12.Final.so.manual/callgraph.json

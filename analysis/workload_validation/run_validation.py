@@ -472,13 +472,13 @@ def prepare():
     w = f"{HERE}/work"
     os.makedirs(w, exist_ok=True)
     if not os.path.isdir(f"{w}/solr_docs"):
-        sh(["docker", "create", "--name", "wlv-cp", "solr:8.7.0-jdk8-buster"])
-        sh(["docker", "cp", "wlv-cp:/opt/solr/example/exampledocs", f"{w}/solr_docs"])
-        sh(["docker", "rm", "wlv-cp"])
+        sh(["docker", "create", "--name", f"wlv-cp-{os.getpid()}", "solr:8.7.0-jdk8-buster"])
+        sh(["docker", "cp", f"wlv-cp-{os.getpid()}:/opt/solr/example/exampledocs", f"{w}/solr_docs"])
+        sh(["docker", "rm", f"wlv-cp-{os.getpid()}"])
     if not os.path.isdir(f"{w}/tomcat_dist"):
-        sh(["docker", "create", "--name", "wlv-cp", "tomcat:7.0-jdk8-buster"])
-        sh(["docker", "cp", "wlv-cp:/usr/local/tomcat/webapps.dist", f"{w}/tomcat_dist"])
-        sh(["docker", "rm", "wlv-cp"])
+        sh(["docker", "create", "--name", f"wlv-cp-{os.getpid()}", "tomcat:7.0-jdk8-buster"])
+        sh(["docker", "cp", f"wlv-cp-{os.getpid()}:/usr/local/tomcat/webapps.dist", f"{w}/tomcat_dist"])
+        sh(["docker", "rm", f"wlv-cp-{os.getpid()}"])
         for d in ("manager", "host-manager"):               # admin apps need credentials; not part of the workload
             shutil.rmtree(f"{w}/tomcat_dist/{d}", ignore_errors=True)
         sh(["chmod", "-R", "a+rwX", f"{w}/tomcat_dist"])

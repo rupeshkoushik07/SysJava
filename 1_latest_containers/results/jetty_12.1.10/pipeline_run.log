@@ -23291,3 +23291,201 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 08:32:49] jetty_12.1.10 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jetty_12.1.10/Binary_Analysis/syscalls_output_jetty_12.1.10/jetty_12.1.10.json
+
+===== [2026-11-11 19:24:16] jetty_12.1.10 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=58983	fuzzy=0	syscalls=104
+libawt.so	functions=58889	fuzzy=0	syscalls=104
+libawt_xawt.so	functions=65383	fuzzy=978	syscalls=123
+libfontmanager.so	functions=61834	fuzzy=0	syscalls=104
+libjavajpeg.so	functions=58372	fuzzy=0	syscalls=104
+libjava.so	functions=58056	fuzzy=0	syscalls=105
+libjimage.so	functions=58089	fuzzy=0	syscalls=104
+libjvm.so	functions=57751	fuzzy=0	syscalls=104
+liblcms.so	functions=59858	fuzzy=0	syscalls=104
+libmanagement.so	functions=58129	fuzzy=0	syscalls=104
+libnet.so	functions=58148	fuzzy=0	syscalls=108
+libnio.so	functions=58368	fuzzy=0	syscalls=128
+libzip.so	functions=58261	fuzzy=0	syscalls=104
+dash	functions=4019	fuzzy=0	syscalls=72
+date	functions=28838	fuzzy=0	syscalls=48
+expr	functions=28838	fuzzy=0	syscalls=44
+grep	functions=4279	fuzzy=0	syscalls=42
+java	functions=3987	fuzzy=0	syscalls=65
+sed	functions=4666	fuzzy=0	syscalls=74
+whoami	functions=28838	fuzzy=0	syscalls=54
+
+===== [2026-11-11 19:24:16] jetty_12.1.10 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: jetty_12.1.10
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_BIN_jetty_12.1.10
+Found 7 subdirectories
+
+  ✓ dash: 72 syscalls
+  ✓ date: 48 syscalls
+  ✓ expr: 44 syscalls
+  ✓ grep: 42 syscalls
+  ✓ java: 65 syscalls
+  ✓ sed: 74 syscalls
+  ✓ whoami: 54 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_BIN_jetty_12.1.10/binary_syscalls.txt (113 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10
+Found 13 subdirectories
+
+  ✓ libawt.so: 104 syscalls
+  ✓ libawt_headless.so: 104 syscalls
+  ✓ libawt_xawt.so: 123 syscalls
+  ✓ libfontmanager.so: 104 syscalls
+  ✓ libjava.so: 105 syscalls
+  ✓ libjavajpeg.so: 104 syscalls
+  ✓ libjimage.so: 104 syscalls
+  ✓ libjvm.so: 104 syscalls
+  ✓ liblcms.so: 104 syscalls
+  ✓ libmanagement.so: 104 syscalls
+  ✓ libnet.so: 108 syscalls
+  ✓ libnio.so: 128 syscalls
+  ✓ libzip.so: 104 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/library_syscalls.txt (143 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10
+Found 7 syscalls.txt files
+  libacl.so.1: 56 syscalls
+  libextnet.so: 105 syscalls
+  libgcc_s.so.1: 34 syscalls
+  libjli.so: 65 syscalls
+  libmanagement_ext.so: 104 syscalls
+  libpcre2-8.so.0: 36 syscalls
+  libselinux.so.1: 81 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_unanalysed_jetty_12.1.10/unanalysed_syscalls.txt (123 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+No JNA/FFI syscall union found. Looked for:
+    - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/jna_ffi_analysis/union_syscalls.txt
+    - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/jna_ffi_analysis/full_deps/union_syscalls.txt
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals via its imports, and C-library functions looked up with dlsym: 117 syscalls (/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      113
+Library syscalls:     143
+Unanalysed libraries: 123
+JNA/FFI syscalls:     0
+Extra component:      117  (libjvm internals via its imports, and C-library functions looked up with dlsym)
+Runc whitelist:       123
+Combined (unique):    191
+  → unanalysed libraries added 3 additional syscalls
+  → runc.txt added 21 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/jetty_12.1.10.txt (191 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/jetty_12.1.10.json (191 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 191
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  7
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  113 unique
+
+Libraries:
+  - Analyzed:  13
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  143 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/runc.txt
+  - Syscalls:    123 unique
+  - Added:       32 additional syscalls
+
+Combined:
+  - Total unique syscalls: 191
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_BIN_jetty_12.1.10/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/jetty_12.1.10.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/syscalls_output_jetty_12.1.10/jetty_12.1.10.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  jetty_12.1.10
+      JARFILES_jetty_12.1.10  (4.0K) -> Dataset/
+      LIBS_jetty_12.1.10  (4.0K) -> Dataset/
+      BINARIES_jetty_12.1.10  (4.0K) -> Dataset/
+      RUNTIME_jetty_12.1.10  (4.0K) -> Dataset/
+      outputs_jetty_12.1.10  (564K) -> Bytecode_Analysis/
+      sysdig_outputs_jetty_12.1.10  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_jetty_12.1.10  (696M) -> Binary_Analysis/
+      syscalls_BIN_jetty_12.1.10  (22M) -> Binary_Analysis/
+      syscalls_unanalysed_jetty_12.1.10  (109M) -> Binary_Analysis/
+      startfuncs_unanalysed_jetty_12.1.10  (56K) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (16 moved)
+
+Done. Moved 16 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_rta/jetty_12.1.10/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 19:24:17] jetty_12.1.10 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 19:26:28] jetty_12.1.10 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jetty_12.1.10/Binary_Analysis/syscalls_output_jetty_12.1.10/jetty_12.1.10.json

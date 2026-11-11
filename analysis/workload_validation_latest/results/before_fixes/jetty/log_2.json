@@ -1,0 +1,24 @@
+{
+ "app": "jetty",
+ "mode": "log",
+ "rep": 2,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 3,
+ "ops_ok": 3075,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 4,
+ "running_after": true,
+ "pids_seen": 5,
+ "would_be_denied": {
+  "openat2": [
+   "/runc"
+  ]
+ },
+ "unattributed_log_records": {
+  "openat2": [
+   "/runc"
+  ]
+ }
+}

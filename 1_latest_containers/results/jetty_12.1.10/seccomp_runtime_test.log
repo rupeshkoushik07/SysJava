@@ -1,12 +1,12 @@
 container=jetty_12.1.10
 image=jetty:12.1.10
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jetty_12.1.10/Binary_Analysis/syscalls_output_jetty_12.1.10/jetty_12.1.10.json
-profile_syscalls=186 SCMP_ACT_ERRNO
+profile_syscalls=191 SCMP_ACT_ERRNO
 workload=docker run  jetty:12.1.10 
-started_at=2026-11-07T08:30:40+01:00
+started_at=2026-11-11T19:24:17+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=5087c5b6dbad32987a17137ad257afe3293471b04e6f202f27c9a938f0c39f89
+docker_run_output=f79116e4595c8c5468e2f1794e84f33c618447229bed74cbe7cde7aa1c953543
 baseline_ready_after=4s
 baseline_state=running exit=0
 baseline_probe=ok http_404 /
@@ -14,17 +14,17 @@ baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-jetty-12-1-10 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/jetty_12.1.10/Binary_Analysis/syscalls_output_jetty_12.1.10/jetty_12.1.10.json  jetty:12.1.10 
-docker_run_output=8d59e9d2190ab8c02c5a86ff488053d682488900d301f8422696af22441e2669
+docker_run_output=1b1f3195f4c0f28bab7927720e8b4f0ef6e8f9e5d91cbbc85f006d4a2b0b4068
 ready_after=2s
 state_after_60s=running exit=0
 probe=ok http_404 /
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-07T08:32:49+01:00
+finished_at=2026-11-11T19:26:28+01:00
 
 ---- docker logs tail (with profile) ----
 /opt/java/openjdk/bin/java -Djava.io.tmpdir=/tmp/jetty -Djetty.home=/usr/local/jetty -Djetty.base=/var/lib/jetty -Djava.io.tmpdir=/tmp/jetty --class-path /var/lib/jetty/resources:/usr/local/jetty/lib/logging/slf4j-api-2.0.17.jar:/usr/local/jetty/lib/logging/jetty-slf4j-impl-12.1.10.jar:/usr/local/jetty/lib/jetty-http-12.1.10.jar:/usr/local/jetty/lib/jetty-util-12.1.10.jar:/usr/local/jetty/lib/jetty-server-12.1.10.jar:/usr/local/jetty/lib/jetty-xml-12.1.10.jar:/usr/local/jetty/lib/jetty-io-12.1.10.jar org.eclipse.jetty.xml.XmlConfiguration java.io.tmpdir=/tmp/jetty java.version=25.0.3 jetty.base=/var/lib/jetty jetty.base.uri=file:///var/lib/jetty jetty.home=/usr/local/jetty jetty.home.uri=file:///usr/local/jetty jetty.webapp.addHiddenClasses=org.eclipse.jetty.logging.,file:///usr/local/jetty/lib/logging/,org.slf4j. runtime.feature.alpn=true slf4j.version=2.0.17 /usr/local/jetty/etc/jetty-bytebufferpool.xml /usr/local/jetty/etc/jetty-http-config.xml /usr/local/jetty/etc/jetty-scheduler.xml /usr/local/jetty/etc/jetty-threadpool.xml /usr/local/jetty/etc/jetty.xml /usr/local/jetty/etc/jetty-http.xml
-2026-11-07 07:31:48.067:INFO :oejs.Server:main: jetty-12.1.10; built: 2026-05-31T04:45:52.925Z; git: 986024525891c2c20ff08c58ba300dc3b9847586; jvm 25.0.3+9-LTS
-2026-11-07 07:31:48.100:INFO :oejs.AbstractConnector:main: Started oejs.ServerConnector@63475ace{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-2026-11-07 07:31:48.104:INFO :oejs.Server:main: Started oejs.Server@6913c1fb{STARTING}[12.1.10,sto=0] @42ms
+2026-11-11 18:25:27.248:INFO :oejs.Server:main: jetty-12.1.10; built: 2026-05-31T04:45:52.925Z; git: 986024525891c2c20ff08c58ba300dc3b9847586; jvm 25.0.3+9-LTS
+2026-11-11 18:25:27.278:INFO :oejs.AbstractConnector:main: Started oejs.ServerConnector@63475ace{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2026-11-11 18:25:27.283:INFO :oejs.Server:main: Started oejs.Server@6913c1fb{STARTING}[12.1.10,sto=0] @41ms

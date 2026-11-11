@@ -1,3 +1,7 @@
+munmap
+sched_get_priority_min
+mprotect
+getdents64
 newfstatat
 getrandom
 rt_sigprocmask
@@ -36,7 +40,3 @@ sysinfo
 write
 sched_get_priority_max
 fstat
-munmap
-sched_get_priority_min
-mprotect
-getdents64

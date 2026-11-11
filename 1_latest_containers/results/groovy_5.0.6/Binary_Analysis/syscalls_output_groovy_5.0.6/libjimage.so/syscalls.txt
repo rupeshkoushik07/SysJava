@@ -1,3 +1,5 @@
+sched_getparam
+socket
 shmctl
 stat
 wait4
@@ -99,5 +101,3 @@ getrusage
 access
 getpid
 dup
-sched_getparam
-socket

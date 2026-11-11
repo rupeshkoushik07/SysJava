@@ -24,7 +24,7 @@ import argparse, bisect, glob, os, subprocess
 
 ap = argparse.ArgumentParser()
 ap.add_argument("target")
-ap.add_argument("--repo", default=os.path.expanduser("~/Tutorial/EchoTrace"))
+ap.add_argument("--repo", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ap.add_argument("--outputs")
 ap.add_argument("--libs")
 a = ap.parse_args()

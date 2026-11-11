@@ -1,0 +1,26 @@
+{
+ "app": "tomcat",
+ "mode": "log",
+ "rep": 2,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 3,
+ "ops_ok": 3052,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 20,
+ "running_after": true,
+ "pids_seen": 1,
+ "would_be_denied": {
+  "openat2": [
+   "/runc"
+  ],
+  "flock": [
+   "/opt/java/openjdk/bin/java"
+  ],
+  "copy_file_range": [
+   "/opt/java/openjdk/bin/java"
+  ]
+ },
+ "unattributed_log_records": {}
+}

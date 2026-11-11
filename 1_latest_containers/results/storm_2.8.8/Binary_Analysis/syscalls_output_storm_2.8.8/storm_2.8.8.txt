@@ -106,6 +106,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 pause
 personality
 pipe
@@ -118,6 +119,7 @@ prlimit64
 pselect6
 pwrite64
 read
+readahead
 readlink
 readlinkat
 readv
@@ -126,6 +128,7 @@ recvmmsg
 recvmsg
 removexattr
 rename
+renameat
 rmdir
 rseq
 rt_sigaction
@@ -178,7 +181,9 @@ statfs
 statx
 symlink
 sync
+sync_file_range
 sysinfo
+tee
 tgkill
 time
 timer_create

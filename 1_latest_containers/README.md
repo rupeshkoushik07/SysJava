@@ -41,7 +41,7 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
 
 ## Notes
 
-* Storm's Total Syscalls in Table III (202) is its pipeline profile (200) plus
+* Storm's Total Syscalls in Table III (207) is its pipeline profile (205) plus
   `io_uring_setup`, `io_uring_enter` and `io_uring_register`, minus `sync`, which only
   false FFM hits reach. The three io_uring syscalls come from Storm's own netty io_uring
   library (from `storm-shaded-deps-2.8.8.jar`, in the dataset): Storm relocates the Java
@@ -49,7 +49,7 @@ TABLE_ONLY=1 ./reproduce.sh         # Table III from the shipped results
   netty's own names, so the mapper does not find them; they are mapped manually
   (`manual_mapping/storm_2.8.8/mapping/`), and SysPart from those start functions reaches
   the three (`syspart_io_uring/`). That profile and its PASS check are in
-  `manual_mapping/storm_2.8.8/merged_rta/`.
+  `manual_mapping/storm_2.8.8/merged_rta_fixes/`.
 * On glibc ≥ 2.41 (OrientDB, Jetty, Storm), `scripts/cancel_syscall_sites.py`
   recovers syscalls made through `__syscall_cancel`.
 * Each `ADDED_first_start_binaries.md` explains executables that were added by

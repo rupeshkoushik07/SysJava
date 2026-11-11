@@ -1,0 +1,4 @@
+libjvm.so	libm.so.6	atan2 cbrt cos fadd fdiv floor fmul fsub j0f rint sin tan tanh 
+libjvm.so	libc.so.6	abs backtrace clone daemon dup2 index mallinfo mallinfo2 malloc_info pthread_condattr_setclock __pthread_get_minstack pthread_setname_np sched_getcpu warn 
+libnet.so	libc.so.6	index 
+libnio.so	libc.so.6	copy_file_range fdopendir fstatat64 openat64 renameat statx unlinkat 

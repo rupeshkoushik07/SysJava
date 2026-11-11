@@ -125,6 +125,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 pause
 perf_event_open
 personality
@@ -148,6 +149,7 @@ recvmmsg
 recvmsg
 removexattr
 rename
+renameat
 request_key
 rmdir
 rseq
@@ -207,6 +209,7 @@ symlink
 sync
 syncfs
 sysinfo
+tee
 tgkill
 time
 timer_create

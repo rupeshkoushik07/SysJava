@@ -1,51 +1,51 @@
 container=cassandra_5.0.8
 image=cassandra:5.0.8
 profile=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/cassandra_5.0.8/Binary_Analysis/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json
-profile_syscalls=230 SCMP_ACT_ERRNO
+profile_syscalls=233 SCMP_ACT_ERRNO
 workload=docker run -e MAX_HEAP_SIZE=1G -e HEAP_NEWSIZE=256M cassandra:5.0.8 
-started_at=2026-11-07T06:36:11+01:00
+started_at=2026-11-11T17:58:21+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=956fe49a913b257f1eb2dee6c45eb12f0e2d20093450fdc90e0e716db7ad9ea8
-baseline_ready_after=63s
+docker_run_output=1a08ad056f0b936ead7578e3651df748f4e59d70d61918c235b345e9d8d7f442
+baseline_ready_after=64s
 baseline_state=running exit=0
 baseline_probe=ok tcp_9042
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-cassandra-5-0-8 --security-opt seccomp=/home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/cassandra_5.0.8/Binary_Analysis/syscalls_output_cassandra_5.0.8/cassandra_5.0.8.json -e MAX_HEAP_SIZE=1G -e HEAP_NEWSIZE=256M cassandra:5.0.8 
-docker_run_output=28d7831cd4cc576e61f133b5e416d3377a76f6b2e276ca4b47337a88ac0b4628
-ready_after=59s
+docker_run_output=6372efbe61536988aad46887573b52e62a0c153ce84134e69788c27b8aa671f5
+ready_after=61s
 state_after_60s=running exit=0
 probe=ok tcp_9042
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-07T06:40:17+01:00
+finished_at=2026-11-11T18:02:38+01:00
 
 ---- docker logs tail (with profile) ----
-INFO  [MemtableFlushWriter:2] 2026-11-07T05:39:09,482 LogTransaction.java:249 - Unfinished transaction log, deleting /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb_txn_flush_8e0b9450-da6d-11f1-9424-8b63d5f9b7a6.log 
-INFO  [main] 2026-11-07T05:39:09,492 ColumnFamilyStore.java:1052 - Enqueuing flush of system.local, Reason: INTERNALLY_FORCED, Usage: 3.703KiB (0%) on-heap, 0B (0%) off-heap
-INFO  [PerDiskMemtableFlushWriter_0:2] 2026-11-07T05:39:09,498 Flushing.java:153 - Writing Memtable-local@2004413351(672B serialized bytes, 1 ops, 3.703KiB (0%) on-heap, 0B (0%) off-heap), flushed range = [null, null)
-INFO  [PerDiskMemtableFlushWriter_0:2] 2026-11-07T05:39:09,499 Flushing.java:179 - Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big-Data.db (371B) for commitlog position CommitLogPosition(segmentId=1794029900476, position=56586)
-INFO  [MemtableFlushWriter:1] 2026-11-07T05:39:09,511 LogTransaction.java:249 - Unfinished transaction log, deleting /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb_txn_flush_8e104f40-da6d-11f1-9424-8b63d5f9b7a6.log 
-INFO  [main] 2026-11-07T05:39:09,520 StorageService.java:3320 - Node /172.17.0.15:7000 state jump to NORMAL
-INFO  [main] 2026-11-07T05:39:09,522 StorageService.java:1466 - Auto-repair service is disabled via JVM property, skipping setup
-INFO  [main] 2026-11-07T05:39:09,522 Gossiper.java:2459 - Waiting for gossip to settle...
-INFO  [main] 2026-11-07T05:39:17,523 Gossiper.java:2490 - No gossip backlog; proceeding
-INFO  [main] 2026-11-07T05:39:17,540 CassandraDaemon.java:450 - Prewarming of auth caches is disabled
-INFO  [main] 2026-11-07T05:39:17,552 NativeTransportService.java:132 - Using Netty Version: [netty-all=netty-all-4.1.130.Final.41ff1eb (repository: dirty), netty-buffer=netty-buffer-4.1.130.Final.41ff1eb (repository: dirty), netty-codec=netty-codec-4.1.130.Final.41ff1eb (repository: dirty), netty-common=netty-common-4.1.130.Final.41ff1eb (repository: dirty), netty-handler=netty-handler-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-proxy=netty-handler-proxy-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-ssl-ocsp=netty-handler-ssl-ocsp-4.1.130.Final.41ff1eb (repository: dirty), netty-resolver=netty-resolver-4.1.130.Final.41ff1eb (repository: dirty), netty-transport=netty-transport-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-epoll=netty-transport-native-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.130.Final.41ff1eb (repository: dirty)]
-INFO  [main] 2026-11-07T05:39:17,554 NativeTransportService.java:70 - Netty using native Epoll event loop
-INFO  [CompactionExecutor:2] 2026-11-07T05:39:17,571 CompactionTask.java:175 - Compacting (92e026d0-da6d-11f1-9424-8b63d5f9b7a6) [/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-5-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-6-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-3-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-4-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-1-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-2-big-Data.db:level=0, ]
-INFO  [main] 2026-11-07T05:39:17,578 PipelineConfigurator.java:147 - Using Netty Version: [netty-all=netty-all-4.1.130.Final.41ff1eb (repository: dirty), netty-buffer=netty-buffer-4.1.130.Final.41ff1eb (repository: dirty), netty-codec=netty-codec-4.1.130.Final.41ff1eb (repository: dirty), netty-common=netty-common-4.1.130.Final.41ff1eb (repository: dirty), netty-handler=netty-handler-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-proxy=netty-handler-proxy-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-ssl-ocsp=netty-handler-ssl-ocsp-4.1.130.Final.41ff1eb (repository: dirty), netty-resolver=netty-resolver-4.1.130.Final.41ff1eb (repository: dirty), netty-transport=netty-transport-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-epoll=netty-transport-native-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.130.Final.41ff1eb (repository: dirty)]
-INFO  [main] 2026-11-07T05:39:17,578 PipelineConfigurator.java:148 - Starting listening for CQL clients on /0.0.0.0:9042 (unencrypted)...
-INFO  [main] 2026-11-07T05:39:17,581 CassandraDaemon.java:744 - Startup complete
-INFO  [CompactionExecutor:2] 2026-11-07T05:39:17,645 CompactionTask.java:274 - Compacted (92e026d0-da6d-11f1-9424-8b63d5f9b7a6) 7 sstables to [/opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-8-big,] to level=0.  858B to 667B (~77% of original) in 69ms.  Read Throughput = 12.135KiB/s, Write Throughput = 9.434KiB/s, Row Throughput = ~2/s.  7 total partitions merged to 1.  Partition merge counts were {7:1, }. Time spent writing keys = 35ms
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,646 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,648 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-5-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,649 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-6-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,650 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-3-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,651 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-4-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,652 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-1-big
-INFO  [NonPeriodicTasks:1] 2026-11-07T05:39:17,653 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-2-big
-INFO  [OptionalTasks:1] 2026-11-07T05:39:27,662 CassandraRoleManager.java:454 - Created default superuser role 'cassandra'
+INFO  [MemtableFlushWriter:2] 2026-11-11T17:01:29,582 LogTransaction.java:249 - Unfinished transaction log, deleting /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb_txn_flush_89e61490-ddf1-11f1-9937-7ba288f3127f.log 
+INFO  [main] 2026-11-11T17:01:29,589 ColumnFamilyStore.java:1052 - Enqueuing flush of system.local, Reason: INTERNALLY_FORCED, Usage: 3.703KiB (0%) on-heap, 0B (0%) off-heap
+INFO  [PerDiskMemtableFlushWriter_0:2] 2026-11-11T17:01:29,598 Flushing.java:153 - Writing Memtable-local@1477472516(672B serialized bytes, 1 ops, 3.703KiB (0%) on-heap, 0B (0%) off-heap), flushed range = [null, null)
+INFO  [PerDiskMemtableFlushWriter_0:2] 2026-11-11T17:01:29,599 Flushing.java:179 - Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big-Data.db (371B) for commitlog position CommitLogPosition(segmentId=1794416439432, position=56586)
+INFO  [MemtableFlushWriter:1] 2026-11-11T17:01:30,045 LogTransaction.java:249 - Unfinished transaction log, deleting /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb_txn_flush_89ea8160-ddf1-11f1-9937-7ba288f3127f.log 
+INFO  [main] 2026-11-11T17:01:30,057 StorageService.java:3320 - Node /172.17.0.16:7000 state jump to NORMAL
+INFO  [main] 2026-11-11T17:01:30,059 StorageService.java:1466 - Auto-repair service is disabled via JVM property, skipping setup
+INFO  [main] 2026-11-11T17:01:30,059 Gossiper.java:2459 - Waiting for gossip to settle...
+INFO  [main] 2026-11-11T17:01:38,060 Gossiper.java:2490 - No gossip backlog; proceeding
+INFO  [main] 2026-11-11T17:01:38,098 CassandraDaemon.java:450 - Prewarming of auth caches is disabled
+INFO  [CompactionExecutor:1] 2026-11-11T17:01:38,119 CompactionTask.java:175 - Compacting (8efeb4f0-ddf1-11f1-9937-7ba288f3127f) [/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-5-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-6-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-3-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-4-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-1-big-Data.db:level=0, /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/nb-2-big-Data.db:level=0, ]
+INFO  [main] 2026-11-11T17:01:38,125 NativeTransportService.java:132 - Using Netty Version: [netty-all=netty-all-4.1.130.Final.41ff1eb (repository: dirty), netty-buffer=netty-buffer-4.1.130.Final.41ff1eb (repository: dirty), netty-codec=netty-codec-4.1.130.Final.41ff1eb (repository: dirty), netty-common=netty-common-4.1.130.Final.41ff1eb (repository: dirty), netty-handler=netty-handler-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-proxy=netty-handler-proxy-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-ssl-ocsp=netty-handler-ssl-ocsp-4.1.130.Final.41ff1eb (repository: dirty), netty-resolver=netty-resolver-4.1.130.Final.41ff1eb (repository: dirty), netty-transport=netty-transport-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-epoll=netty-transport-native-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.130.Final.41ff1eb (repository: dirty)]
+INFO  [main] 2026-11-11T17:01:38,128 NativeTransportService.java:70 - Netty using native Epoll event loop
+INFO  [main] 2026-11-11T17:01:38,175 PipelineConfigurator.java:147 - Using Netty Version: [netty-all=netty-all-4.1.130.Final.41ff1eb (repository: dirty), netty-buffer=netty-buffer-4.1.130.Final.41ff1eb (repository: dirty), netty-codec=netty-codec-4.1.130.Final.41ff1eb (repository: dirty), netty-common=netty-common-4.1.130.Final.41ff1eb (repository: dirty), netty-handler=netty-handler-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-proxy=netty-handler-proxy-4.1.130.Final.41ff1eb (repository: dirty), netty-handler-ssl-ocsp=netty-handler-ssl-ocsp-4.1.130.Final.41ff1eb (repository: dirty), netty-resolver=netty-resolver-4.1.130.Final.41ff1eb (repository: dirty), netty-transport=netty-transport-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-epoll=netty-transport-native-epoll-4.1.130.Final.41ff1eb (repository: dirty), netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.130.Final.41ff1eb (repository: dirty)]
+INFO  [main] 2026-11-11T17:01:38,175 PipelineConfigurator.java:148 - Starting listening for CQL clients on /0.0.0.0:9042 (unencrypted)...
+INFO  [main] 2026-11-11T17:01:38,180 CassandraDaemon.java:744 - Startup complete
+INFO  [CompactionExecutor:1] 2026-11-11T17:01:38,216 CompactionTask.java:274 - Compacted (8efeb4f0-ddf1-11f1-9937-7ba288f3127f) 7 sstables to [/opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-8-big,] to level=0.  860B to 667B (~77% of original) in 85ms.  Read Throughput = 9.787KiB/s, Write Throughput = 7.591KiB/s, Row Throughput = ~2/s.  7 total partitions merged to 1.  Partition merge counts were {7:1, }. Time spent writing keys = 48ms
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,217 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-7-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,219 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-5-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,220 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-6-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,221 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-3-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,222 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-4-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,223 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-1-big
+INFO  [NonPeriodicTasks:1] 2026-11-11T17:01:38,224 BigFormat.java:231 - Deleting sstable: /opt/cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/nb-2-big
+INFO  [OptionalTasks:1] 2026-11-11T17:01:48,209 CassandraRoleManager.java:454 - Created default superuser role 'cassandra'

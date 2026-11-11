@@ -1,0 +1,6 @@
+start_file	vtables	vtable_functions	newly_added
+JDK17_LIBS/libfontmanager.so.txt	9	30	30
+libnetty_quiche42_linux_x86_64-4.2.12.Final.so.txt	19	81	81
+libnetty_tcnative-@VERSION@.so.txt	19	84	84
+liborg_apache_storm_shade_netty_tcnative_linux_x86_64.so.txt	19	84	84
+librocksdbjni16624330668920755723.so.txt	661	1762	1762

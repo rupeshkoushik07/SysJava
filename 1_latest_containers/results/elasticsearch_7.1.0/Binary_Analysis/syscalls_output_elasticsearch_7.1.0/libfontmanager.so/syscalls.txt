@@ -25,8 +25,8 @@ gettid
 futex
 memfd_create
 get_mempolicy
-rt_sigreturn
 sched_yield
+rt_sigreturn
 clone
 kill
 uname

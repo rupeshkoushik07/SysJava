@@ -1,0 +1,27 @@
+{
+ "app": "orientdb",
+ "mode": "log",
+ "rep": 3,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 3,
+ "ops_ok": 1808,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 8,
+ "running_after": true,
+ "pids_seen": 1,
+ "would_be_denied": {
+  "close_range": [
+   "/runc"
+  ],
+  "openat2": [
+   "/runc"
+  ]
+ },
+ "unattributed_log_records": {
+  "openat2": [
+   "/runc"
+  ]
+ }
+}

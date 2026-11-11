@@ -1,0 +1,16 @@
+{
+ "app": "tomcat",
+ "mode": "base",
+ "rep": 1,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 4,
+ "ops_ok": 3052,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 19,
+ "running_after": true,
+ "pids_seen": 1,
+ "would_be_denied": {},
+ "unattributed_log_records": {}
+}

@@ -1,0 +1,16 @@
+{
+ "app": "storm",
+ "mode": "log",
+ "rep": 1,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 16,
+ "ops_ok": 35,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 87,
+ "running_after": true,
+ "pids_seen": 3,
+ "would_be_denied": {},
+ "unattributed_log_records": {}
+}

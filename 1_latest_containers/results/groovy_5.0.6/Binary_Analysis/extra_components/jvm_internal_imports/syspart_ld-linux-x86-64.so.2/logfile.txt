@@ -1,0 +1,22 @@
+
+Path to writev:
+  __tls_get_addr_17820 - [DIRECT]-> __tls_get_addr_slow_14e30
+  __tls_get_addr_slow_14e30 - [DIRECT]-> tls_get_addr_tail_13a70
+  tls_get_addr_tail_13a70 - [DIRECT]-> _dl_fatal_printf_ee10
+  _dl_fatal_printf_ee10 - [DIRECT]-> _dl_debug_vdprintf_e3f0
+  _dl_debug_vdprintf_e3f0 - [syscall]-> writev
+
+Path to exit_group:
+  __tls_get_addr_17820 - [DIRECT]-> __tls_get_addr_slow_14e30
+  __tls_get_addr_slow_14e30 - [DIRECT]-> tls_get_addr_tail_13a70
+  tls_get_addr_tail_13a70 - [DIRECT]-> _dl_fatal_printf_ee10
+  _dl_fatal_printf_ee10 - [DIRECT]-> _Exit_25f90
+  _Exit_25f90 - [syscall]-> exit_group
+
+Path to getpid:
+  __tls_get_addr_17820 - [DIRECT]-> __tls_get_addr_slow_14e30
+  __tls_get_addr_slow_14e30 - [DIRECT]-> tls_get_addr_tail_13a70
+  tls_get_addr_tail_13a70 - [DIRECT]-> _dl_fatal_printf_ee10
+  _dl_fatal_printf_ee10 - [DIRECT]-> _dl_debug_vdprintf_e3f0
+  _dl_debug_vdprintf_e3f0 - [DIRECT]-> getpid_25fc0
+  getpid_25fc0 - [syscall]-> getpid

@@ -1,0 +1,4 @@
+exit
+exit_group
+getpid
+writev

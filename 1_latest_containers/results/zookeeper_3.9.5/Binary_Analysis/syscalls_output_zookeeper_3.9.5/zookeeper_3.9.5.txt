@@ -52,6 +52,7 @@ fsync
 ftruncate
 futex
 get_mempolicy
+getcpu
 getcwd
 getdents64
 getegid
@@ -104,6 +105,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 personality
 pipe
 pipe2
@@ -122,12 +124,14 @@ recvmmsg
 recvmsg
 removexattr
 rename
+renameat
 rmdir
 rseq
 rt_sigaction
 rt_sigpending
 rt_sigprocmask
 rt_sigreturn
+rt_sigsuspend
 sched_get_priority_max
 sched_get_priority_min
 sched_getaffinity
@@ -171,6 +175,7 @@ statfs
 statx
 symlink
 sysinfo
+tee
 tgkill
 time
 timer_create

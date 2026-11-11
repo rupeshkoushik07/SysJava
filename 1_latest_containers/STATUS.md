@@ -1,6 +1,6 @@
 # Status of the shipped results
 
-Generated on 2026-11-09 12:03 UTC.
+Generated on 2026-11-11 20:19 UTC.
 An image is complete when its last stage is "done" and the profile file exists.
 
 | Image | Last stage logged | Profile | Runs under profile |

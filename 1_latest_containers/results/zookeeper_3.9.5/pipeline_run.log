@@ -37946,3 +37946,227 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 06:21:20] zookeeper_3.9.5 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json
+
+===== [2026-11-11 17:58:07] zookeeper_3.9.5 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=49854	fuzzy=0	syscalls=93
+libawt.so	functions=49760	fuzzy=0	syscalls=93
+libawt_xawt.so	functions=56310	fuzzy=978	syscalls=109
+libfontmanager.so	functions=52712	fuzzy=0	syscalls=93
+libj2gss.so	functions=3670	fuzzy=0	syscalls=37
+libjavajpeg.so	functions=49236	fuzzy=0	syscalls=93
+libjava.so	functions=48919	fuzzy=0	syscalls=109
+libjlinenative.so	functions=3633	fuzzy=0	syscalls=38
+libjvm.so	functions=48563	fuzzy=0	syscalls=93
+liblcms.so	functions=50738	fuzzy=0	syscalls=93
+libmanagement.so	functions=48995	fuzzy=0	syscalls=93
+libnet.so	functions=49074	fuzzy=0	syscalls=98
+libnetty_tcnative_linux_x86_64.so	functions=10126	fuzzy=0	syscalls=44
+libnetty_tcnative-@VERSION@.so	functions=10126	fuzzy=0	syscalls=44
+libnetty_transport_native_epoll_x86_64-4.1.130.Final.so	functions=3847	fuzzy=0	syscalls=67
+libnetty_transport_native_epoll_x86_64.so	functions=3847	fuzzy=0	syscalls=67
+libnio.so	functions=49289	fuzzy=0	syscalls=118
+libsnappyjava.so	functions=5858	fuzzy=302	syscalls=37
+libzip.so	functions=49124	fuzzy=0	syscalls=93
+bash	functions=6123	fuzzy=0	syscalls=89
+chown	functions=3669	fuzzy=0	syscalls=53
+dirname	functions=3620	fuzzy=0	syscalls=38
+env	functions=3630	fuzzy=0	syscalls=40
+grep	functions=3938	fuzzy=0	syscalls=43
+id	functions=4203	fuzzy=0	syscalls=56
+java	functions=3762	fuzzy=0	syscalls=66
+ls	functions=4353	fuzzy=0	syscalls=55
+sed	functions=4360	fuzzy=0	syscalls=73
+uname	functions=3623	fuzzy=0	syscalls=39
+
+===== [2026-11-11 17:58:07] zookeeper_3.9.5 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: zookeeper_3.9.5
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_BIN_zookeeper_3.9.5
+Found 11 subdirectories
+
+  ✓ bash: 89 syscalls
+  ✓ chown: 53 syscalls
+  ✓ dirname: 38 syscalls
+  ✓ env: 40 syscalls
+  ✗ gosu: syscalls.txt MISSING
+  ✓ grep: 43 syscalls
+  ✓ id: 56 syscalls
+  ✓ java: 66 syscalls
+  ✓ ls: 55 syscalls
+  ✓ sed: 73 syscalls
+  ✓ uname: 39 syscalls
+
+✗ Error: 1 binaries with MISSING syscalls.txt:
+    - gosu
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_BIN_zookeeper_3.9.5/binary_syscalls.txt (113 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5
+Found 19 subdirectories
+
+  ✓ libawt.so: 93 syscalls
+  ✓ libawt_headless.so: 93 syscalls
+  ✓ libawt_xawt.so: 109 syscalls
+  ✓ libfontmanager.so: 93 syscalls
+  ✓ libj2gss.so: 37 syscalls
+  ✓ libjava.so: 109 syscalls
+  ✓ libjavajpeg.so: 93 syscalls
+  ✓ libjlinenative.so: 38 syscalls
+  ✓ libjvm.so: 93 syscalls
+  ✓ liblcms.so: 93 syscalls
+  ✓ libmanagement.so: 93 syscalls
+  ✓ libnet.so: 98 syscalls
+  ✓ libnetty_tcnative-@VERSION@.so: 44 syscalls
+  ✓ libnetty_tcnative_linux_x86_64.so: 44 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64-4.1.130.Final.so: 67 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64.so: 67 syscalls
+  ✓ libnio.so: 118 syscalls
+  ✓ libsnappyjava.so: 37 syscalls
+  ✓ libzip.so: 93 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/library_syscalls.txt (150 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5
+Found 10 syscalls.txt files
+  libacl.so.1: 56 syscalls
+  libextnet.so: 94 syscalls
+  libjimage.so: 93 syscalls
+  libjli.so: 66 syscalls
+  libjsvml.so: 37 syscalls
+  libmanagement_ext.so: 93 syscalls
+  libpcre.so.3: 37 syscalls
+  libpcre2-8.so.0: 37 syscalls
+  libselinux.so.1: 74 syscalls
+  libtinfo.so.6: 47 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_unanalysed_zookeeper_3.9.5/unanalysed_syscalls.txt (112 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 38 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals via its imports, and C-library functions looked up with dlsym: 111 syscalls (/home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      113
+Library syscalls:     150
+Unanalysed libraries: 112
+JNA/FFI syscalls:     38
+Extra component:      111  (libjvm internals via its imports, and C-library functions looked up with dlsym)
+Runc whitelist:       123
+Combined (unique):    196
+  → unanalysed libraries added 3 additional syscalls
+  → runc.txt added 27 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.txt (196 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json (196 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 196
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  11
+  - Empty:     0
+  - Missing:   1
+  - Syscalls:  113 unique
+
+Libraries:
+  - Analyzed:  19
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  150 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/runc.txt
+  - Syscalls:    123 unique
+  - Added:       36 additional syscalls
+
+Combined:
+  - Total unique syscalls: 196
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_BIN_zookeeper_3.9.5/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json (seccomp profile)
+
+⚠ Completed with warnings or errors
+stage 10: merge reported items without results (listed above); profile written, continuing
+Found 1 container(s) to organize.
+
+  zookeeper_3.9.5
+      JARFILES_zookeeper_3.9.5  (4.0K) -> Dataset/
+      LIBS_zookeeper_3.9.5  (4.0K) -> Dataset/
+      BINARIES_zookeeper_3.9.5  (4.0K) -> Dataset/
+      RUNTIME_zookeeper_3.9.5  (4.0K) -> Dataset/
+      outputs_zookeeper_3.9.5  (1.3M) -> Bytecode_Analysis/
+      sysdig_outputs_zookeeper_3.9.5  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_zookeeper_3.9.5  (647M) -> Binary_Analysis/
+      syscalls_BIN_zookeeper_3.9.5  (14M) -> Binary_Analysis/
+      syscalls_unanalysed_zookeeper_3.9.5  (159M) -> Binary_Analysis/
+      startfuncs_unanalysed_zookeeper_3.9.5  (56K) -> Binary_Analysis/
+      jna_ffi_analysis  (688K) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_rta/zookeeper_3.9.5/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 17:58:10] zookeeper_3.9.5 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 18:00:37] zookeeper_3.9.5 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/zookeeper_3.9.5/Binary_Analysis/syscalls_output_zookeeper_3.9.5/zookeeper_3.9.5.json

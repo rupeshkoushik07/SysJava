@@ -55,6 +55,7 @@ fsync
 ftruncate
 futex
 get_mempolicy
+getcpu
 getcwd
 getdents64
 getegid
@@ -119,6 +120,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 pause
 personality
 pidfd_open
@@ -151,6 +153,7 @@ rt_sigpending
 rt_sigprocmask
 rt_sigqueueinfo
 rt_sigreturn
+rt_sigsuspend
 rt_sigtimedwait
 sched_get_priority_max
 sched_get_priority_min

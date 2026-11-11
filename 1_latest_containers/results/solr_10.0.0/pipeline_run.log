@@ -126349,3 +126349,237 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 08:54:24] solr_10.0.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/solr_10.0.0/Binary_Analysis/syscalls_output_solr_10.0.0/solr_10.0.0.json
+
+===== [2026-11-11 19:24:16] solr_10.0.0 stage 9: named call graphs: unnamed (fuzzyfunc) functions per result
+libawt_headless.so	functions=58796	fuzzy=0	syscalls=104
+libawt.so	functions=58702	fuzzy=0	syscalls=104
+libawt_xawt.so	functions=65196	fuzzy=978	syscalls=123
+libfontmanager.so	functions=61647	fuzzy=0	syscalls=104
+libj2gss.so	functions=3847	fuzzy=0	syscalls=37
+libjavajpeg.so	functions=58185	fuzzy=0	syscalls=104
+libjava.so	functions=57869	fuzzy=0	syscalls=114
+libjimage.so	functions=57902	fuzzy=0	syscalls=104
+libjvm.so	functions=57564	fuzzy=0	syscalls=104
+liblcms.so	functions=59671	fuzzy=0	syscalls=104
+libmanagement.so	functions=57942	fuzzy=0	syscalls=104
+libnet.so	functions=57961	fuzzy=0	syscalls=109
+libnetty_transport_native_epoll_x86_64-4.2.6.Final.so	functions=4024	fuzzy=0	syscalls=67
+libnetty_transport_native_epoll_x86_64.so	functions=4024	fuzzy=0	syscalls=67
+libnio.so	functions=58181	fuzzy=0	syscalls=138
+librmi.so	functions=57571	fuzzy=0	syscalls=104
+libsnappyjava_snappy-java-1.1.10.8.so	functions=6049	fuzzy=302	syscalls=37
+libzip.so	functions=58074	fuzzy=0	syscalls=104
+bash	functions=6384	fuzzy=0	syscalls=92
+cp	functions=4636	fuzzy=9	syscalls=89
+dirname	functions=3801	fuzzy=0	syscalls=40
+env	functions=3815	fuzzy=0	syscalls=42
+find	functions=4712	fuzzy=0	syscalls=72
+grep	functions=4205	fuzzy=0	syscalls=45
+head	functions=3812	fuzzy=0	syscalls=40
+java	functions=3944	fuzzy=0	syscalls=67
+mawk	functions=4834	fuzzy=0	syscalls=62
+mkdir	functions=4458	fuzzy=0	syscalls=62
+ps	functions=8848	fuzzy=1	syscalls=61
+sed	functions=4560	fuzzy=0	syscalls=75
+sort	functions=14835	fuzzy=0	syscalls=70
+tini	functions=3823	fuzzy=7	syscalls=45
+uname	functions=3803	fuzzy=0	syscalls=41
+
+===== [2026-11-11 19:24:16] solr_10.0.0 stage 10: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: solr_10.0.0
+Working directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_BIN_solr_10.0.0
+Found 15 subdirectories
+
+  ✓ bash: 92 syscalls
+  ✓ cp: 89 syscalls
+  ✓ dirname: 40 syscalls
+  ✓ env: 42 syscalls
+  ✓ find: 72 syscalls
+  ✓ grep: 45 syscalls
+  ✓ head: 40 syscalls
+  ✓ java: 67 syscalls
+  ✓ mawk: 62 syscalls
+  ✓ mkdir: 62 syscalls
+  ✓ ps: 61 syscalls
+  ✓ sed: 75 syscalls
+  ✓ sort: 70 syscalls
+  ✓ tini: 45 syscalls
+  ✓ uname: 41 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_BIN_solr_10.0.0/binary_syscalls.txt (140 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0
+Found 18 subdirectories
+
+  ✓ libawt.so: 104 syscalls
+  ✓ libawt_headless.so: 104 syscalls
+  ✓ libawt_xawt.so: 123 syscalls
+  ✓ libfontmanager.so: 104 syscalls
+  ✓ libj2gss.so: 37 syscalls
+  ✓ libjava.so: 114 syscalls
+  ✓ libjavajpeg.so: 104 syscalls
+  ✓ libjimage.so: 104 syscalls
+  ✓ libjvm.so: 104 syscalls
+  ✓ liblcms.so: 104 syscalls
+  ✓ libmanagement.so: 104 syscalls
+  ✓ libnet.so: 109 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64-4.2.6.Final.so: 67 syscalls
+  ✓ libnetty_transport_native_epoll_x86_64.so: 67 syscalls
+  ✓ libnio.so: 138 syscalls
+  ✓ librmi.so: 104 syscalls
+  ✓ libsnappyjava_snappy-java-1.1.10.8.so: 37 syscalls
+  ✓ libzip.so: 104 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/library_syscalls.txt (160 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_unanalysed_solr_10.0.0
+Found 17 syscalls.txt files
+  libacl.so.1: 58 syscalls
+  libcap.so.2: 53 syscalls
+  libcrypto.so.3: 68 syscalls
+  libextnet.so: 105 syscalls
+  libgcrypt.so.20: 51 syscalls
+  libgpg-error.so.0: 55 syscalls
+  libjli.so: 67 syscalls
+  liblz4.so.1: 37 syscalls
+  liblzma.so.5: 55 syscalls
+  libmanagement_ext.so: 104 syscalls
+  libpcre2-8.so.0: 39 syscalls
+  libproc2.so.0: 68 syscalls
+  libselinux.so.1: 83 syscalls
+  libsyslookup.so: 37 syscalls
+  libsystemd.so.0: 111 syscalls
+  libtinfo.so.6: 49 syscalls
+  libzstd.so.1: 53 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_unanalysed_solr_10.0.0/unanalysed_syscalls.txt (166 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 11 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals via its imports, and C-library functions looked up with dlsym: 115 syscalls (/home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      140
+Library syscalls:     160
+Unanalysed libraries: 166
+JNA/FFI syscalls:     11
+Extra component:      115  (libjvm internals via its imports, and C-library functions looked up with dlsym)
+Runc whitelist:       123
+Combined (unique):    224
+  → unanalysed libraries added 21 additional syscalls
+  → runc.txt added 15 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/solr_10.0.0.txt (224 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/solr_10.0.0.json (224 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 224
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  15
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  140 unique
+
+Libraries:
+  - Analyzed:  18
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  160 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/runc.txt
+  - Syscalls:    123 unique
+  - Added:       39 additional syscalls
+
+Combined:
+  - Total unique syscalls: 224
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_BIN_solr_10.0.0/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/solr_10.0.0.txt (text)
+  - /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/syscalls_output_solr_10.0.0/solr_10.0.0.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  solr_10.0.0
+      JARFILES_solr_10.0.0  (4.0K) -> Dataset/
+      LIBS_solr_10.0.0  (4.0K) -> Dataset/
+      BINARIES_solr_10.0.0  (4.0K) -> Dataset/
+      RUNTIME_solr_10.0.0  (4.0K) -> Dataset/
+      outputs_solr_10.0.0  (908K) -> Bytecode_Analysis/
+      sysdig_outputs_solr_10.0.0  (4.0K) -> Dynamic_Analysis/
+      syscalls_output_solr_10.0.0  (737M) -> Binary_Analysis/
+      syscalls_BIN_solr_10.0.0  (22M) -> Binary_Analysis/
+      syscalls_unanalysed_solr_10.0.0  (142M) -> Binary_Analysis/
+      startfuncs_unanalysed_solr_10.0.0  (208K) -> Binary_Analysis/
+      jna_ffi_analysis  (2.6M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace_latest/workspaces_rta/solr_10.0.0/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 19:24:17] solr_10.0.0 stage 11: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 19:26:37] solr_10.0.0 stage done: finished; profile: /home/user/Tutorial/EchoTrace_latest/Final_results_latest_versions_rta/solr_10.0.0/Binary_Analysis/syscalls_output_solr_10.0.0/solr_10.0.0.json

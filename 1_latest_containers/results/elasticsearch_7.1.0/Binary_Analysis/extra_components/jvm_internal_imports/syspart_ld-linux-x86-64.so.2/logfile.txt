@@ -1,0 +1,219 @@
+
+Path to mmap:
+  malloc_185a0 - [DIRECT]-> __libc_memalign_18490
+  __libc_memalign_18490 - [DIRECT]-> mmap_196c0
+  mmap_196c0 - [syscall]-> mmap
+
+Path to rt_sigreturn:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> __restore_rt_19910
+  __restore_rt_19910 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_lookup_symbol_x_9eb0
+  _dl_lookup_symbol_x_9eb0 - [syscall]-> futex
+
+Path to exit:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [DIRECT]-> oom_104c
+  oom_104c - [DIRECT]-> _exit_197f0
+  _exit_197f0 - [syscall]-> exit
+
+Path to exit_group:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [DIRECT]-> oom_104c
+  oom_104c - [DIRECT]-> _exit_197f0
+  _exit_197f0 - [syscall]-> exit_group
+
+Path to writev:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_debug_printf_10820
+  _dl_debug_printf_10820 - [DIRECT]-> _dl_debug_vdprintf_10240
+  _dl_debug_vdprintf_10240 - [syscall]-> writev
+
+Path to uname:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_discover_osversion_181f0
+  _dl_discover_osversion_181f0 - [DIRECT]-> uname_197d0
+  uname_197d0 - [syscall]-> uname
+
+Path to open:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_discover_osversion_181f0
+  _dl_discover_osversion_181f0 - [DIRECT]-> open_19590
+  open_19590 - [syscall]-> open
+
+Path to read:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_discover_osversion_181f0
+  _dl_discover_osversion_181f0 - [DIRECT]-> read_195b0
+  read_195b0 - [syscall]-> read
+
+Path to close:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_discover_osversion_181f0
+  _dl_discover_osversion_181f0 - [DIRECT]-> close_196a0
+  close_196a0 - [syscall]-> close
+
+Path to getpid:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_debug_printf_10820
+  _dl_debug_printf_10820 - [DIRECT]-> _dl_debug_vdprintf_10240
+  _dl_debug_vdprintf_10240 - [DIRECT]-> getpid_19850
+  getpid_19850 - [syscall]-> getpid
+
+Path to munmap:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> _dl_open_13a10
+  _dl_open_13a10 - [DIRECT]-> _dl_unload_cache_170d0
+  _dl_unload_cache_170d0 - [DIRECT]-> munmap_19770
+  munmap_19770 - [syscall]-> munmap
+
+Path to arch_prctl:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_map_object_from_fd_5db0
+  _dl_map_object_from_fd_5db0 - [syscall]-> arch_prctl
+
+Path to readlink:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_deps_d050
+  _dl_map_object_deps_d050 - [DIRECT]-> _dl_get_origin_12d10
+  _dl_get_origin_12d10 - [syscall]-> readlink
+
+Path to mprotect:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_relocate_object_b680
+  _dl_relocate_object_b680 - [DIRECT]-> mprotect_19790
+  mprotect_19790 - [syscall]-> mprotect
+
+Path to fstat:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_start_profile_11350
+  _dl_start_profile_11350 - [DIRECT]-> _fxstat_19510
+  _fxstat_19510 - [syscall]-> fstat
+
+Path to lseek:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_start_profile_11350
+  _dl_start_profile_11350 - [DIRECT]-> lseek_197b0
+  lseek_197b0 - [syscall]-> lseek
+
+Path to write:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_start_profile_11350
+  _dl_start_profile_11350 - [DIRECT]-> write_195d0
+  write_195d0 - [syscall]-> write
+
+Path to stat:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> open_path_56a0
+  open_path_56a0 - [DIRECT]-> _xstat_194d0
+  _xstat_194d0 - [syscall]-> stat
+
+Path to getcwd:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [syscall]-> getcwd
+
+Path to setitimer:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_start_profile_11350
+  _dl_start_profile_11350 - [DIRECT]-> profil_19390
+  profil_19390 - [DIRECT]-> setitimer_1bf60
+  setitimer_1bf60 - [syscall]-> setitimer
+
+Path to lstat:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [DIRECT]-> _lxstat_19550
+  _lxstat_19550 - [syscall]-> lstat
+
+Path to openat:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [DIRECT]-> openat64_18ed0
+  openat64_18ed0 - [syscall]-> openat
+
+Path to newfstatat:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [DIRECT]-> __fxstatat_19060
+  __fxstatat_19060 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_start_profile_11350
+  _dl_start_profile_11350 - [DIRECT]-> profil_19390
+  profil_19390 - [DIRECT]-> sigaction_19b10
+  sigaction_19b10 - [DIRECT]-> __libc_sigaction_19920
+  __libc_sigaction_19920 - [syscall]-> rt_sigaction
+
+Path to fcntl:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [DIRECT]-> fdopendir_192c0
+  fdopendir_192c0 - [DIRECT]-> fcntl_19610
+  fcntl_19610 - [syscall]-> fcntl
+
+Path to getdents:
+  __tls_get_addr_178f0 - [DIRECT]-> __tls_get_addr_slow_12ce0
+  __tls_get_addr_slow_12ce0 - [DIRECT]-> tls_get_addr_tail_11f10
+  tls_get_addr_tail_11f10 - [INDIRECT]-> dl_open_worker_14090
+  dl_open_worker_14090 - [DIRECT]-> _dl_map_object_83f0
+  _dl_map_object_83f0 - [DIRECT]-> _dl_new_object_b0b0
+  _dl_new_object_b0b0 - [DIRECT]-> getcwd_18ab0
+  getcwd_18ab0 - [DIRECT]-> readdir_19180
+  readdir_19180 - [DIRECT]-> __getdents_19240
+  __getdents_19240 - [syscall]-> getdents

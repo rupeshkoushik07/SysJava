@@ -1,0 +1,8 @@
+libawt_xawt.so	libc.so.6	times 
+libfontmanager.so	libm.so.6	sinh 
+libjava.so	libm.so.6	canonicalize scalbn 
+libjava.so	libc.so.6	clone err scalbn sleep wait 
+libjvm.so	libm.so.6	atan2 cos fadd fdiv fmul fsub gamma log log10 pow sin tan 
+libjvm.so	libc.so.6	abs clock_getres clock_gettime clone daemon dup2 index pthread_getcpuclockid pthread_setname_np revoke sched_getcpu wait 
+libnet.so	libc.so.6	index 
+libnio.so	libc.so.6	fdopendir fgetxattr flistxattr fremovexattr fsetxattr fstatat64 futimesat openat64 renameat unlinkat 

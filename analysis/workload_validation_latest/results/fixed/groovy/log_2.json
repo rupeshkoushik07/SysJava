@@ -1,0 +1,17 @@
+{
+ "app": "groovy",
+ "mode": "log",
+ "rep": 2,
+ "started": true,
+ "exit_code": "0",
+ "ready": true,
+ "ready_after_s": 49,
+ "ops_ok": 46,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 0,
+ "running_after": false,
+ "pids_seen": 5,
+ "would_be_denied": {},
+ "unattributed_log_records": {}
+}

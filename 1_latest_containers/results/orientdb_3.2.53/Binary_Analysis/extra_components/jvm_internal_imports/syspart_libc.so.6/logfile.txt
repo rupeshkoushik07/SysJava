@@ -1,0 +1,376 @@
+
+Path to rt_sigprocmask:
+  abort_288c5 - [syscall]-> rt_sigprocmask
+
+Path to shmget:
+  shmget_1399c0 - [syscall]-> shmget
+
+Path to unlink:
+  unlink_128d00 - [syscall]-> unlink
+
+Path to prlimit64:
+  setrlimit_12ab00 - [syscall]-> prlimit64
+
+Path to lseek:
+  lseek_127a80 - [syscall]-> lseek
+
+Path to shutdown:
+  shutdown_1394e0 - [syscall]-> shutdown
+
+Path to exit_group:
+  _exit_f7480 - [syscall]-> exit_group
+
+Path to renameat:
+  renameat_6a840 - [syscall]-> renameat
+
+Path to close:
+  close_122fa0 - [syscall]-> close
+
+Path to fgetxattr:
+  fgetxattr_12c0a0 - [syscall]-> fgetxattr
+
+Path to poll:
+  poll_127e30 - [syscall]-> poll
+
+Path to sendto:
+  sendto_139480 - [syscall]-> sendto
+
+Path to recvfrom:
+  recvfrom_139370 - [syscall]-> recvfrom
+
+Path to write:
+  write_128e50 - [syscall]-> write
+
+Path to times:
+  times_11cca0 - [syscall]-> times
+
+Path to clock_gettime:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [syscall]-> clock_gettime
+
+Path to clone:
+  clone_137570 - [syscall]-> clone
+
+Path to exit:
+  clone_137570 - [syscall]-> exit
+
+Path to bind:
+  bind_139130 - [syscall]-> bind
+
+Path to getsockname:
+  getsockname_1391c0 - [syscall]-> getsockname
+
+Path to mkdir:
+  mkdir_127ad0 - [syscall]-> mkdir
+
+Path to tgkill:
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> tgkill
+
+Path to gettid:
+  pthread_kill@@GLIBC_2.34_a6370 - [syscall]-> gettid
+
+Path to mincore:
+  mincore_133050 - [syscall]-> mincore
+
+Path to getrusage:
+  getrusage_12ab40 - [syscall]-> getrusage
+
+Path to access:
+  access_122ee0 - [syscall]-> access
+
+Path to dup2:
+  dup2_1230e0 - [syscall]-> dup2
+
+Path to pread64:
+  pread_1043f0 - [syscall]-> pread64
+
+Path to futex:
+  pthread_cond_wait@@GLIBC_2.3.2_a3210 - [syscall]-> futex
+
+Path to shmctl:
+  shmctl@@GLIBC_2.2.5_139a00 - [syscall]-> shmctl
+
+Path to stat:
+  __xstat_138430 - [syscall]-> stat
+
+Path to getpid:
+  getpid_ffa00 - [syscall]-> getpid
+
+Path to accept:
+  accept_1390e0 - [syscall]-> accept
+
+Path to kill:
+  kill_45eb0 - [syscall]-> kill
+
+Path to fremovexattr:
+  fremovexattr_12c100 - [syscall]-> fremovexattr
+
+Path to getcwd:
+  getcwd_126ea0 - [syscall]-> getcwd
+
+Path to getpriority:
+  getpriority_12aec0 - [syscall]-> getpriority
+
+Path to setsockopt:
+  setsockopt_1394a0 - [syscall]-> setsockopt
+
+Path to ioctl:
+  isatty_1293c0 - [syscall]-> ioctl
+
+Path to geteuid:
+  geteuid_fe650 - [syscall]-> geteuid
+
+Path to execve:
+  execve_f8200 - [syscall]-> execve
+
+Path to getegid:
+  getegid_fe640 - [syscall]-> getegid
+
+Path to getuid:
+  getuid_ffab0 - [syscall]-> getuid
+
+Path to getgid:
+  getgid_fe660 - [syscall]-> getgid
+
+Path to fcntl:
+  fcntl_123820 - [syscall]-> fcntl
+
+Path to rt_sigsuspend:
+  sigsuspend_45f20 - [syscall]-> rt_sigsuspend
+
+Path to rename:
+  rename_6a810 - [syscall]-> rename
+
+Path to getsockopt:
+  getsockopt_1391f0 - [syscall]-> getsockopt
+
+Path to shmat:
+  shmat_139960 - [syscall]-> shmat
+
+Path to getcpu:
+  sched_getcpu_122e00 - [syscall]-> getcpu
+
+Path to chmod:
+  chmod_122f40 - [syscall]-> chmod
+
+Path to fchdir:
+  fchdir_123560 - [syscall]-> fchdir
+
+Path to openat:
+  open_127bd0 - [syscall]-> openat
+
+Path to clock_getres:
+  clock_getres@@GLIBC_2.17_f5c80 - [syscall]-> clock_getres
+
+Path to sched_getparam:
+  pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getparam
+
+Path to sched_getscheduler:
+  pthread_create@@GLIBC_2.34_a4330 - [syscall]-> sched_getscheduler
+
+Path to fsync:
+  fsync_12c680 - [syscall]-> fsync
+
+Path to uname:
+  uname_11cd00 - [syscall]-> uname
+
+Path to sched_getaffinity:
+  sched_getaffinity@@GLIBC_2.3.4_11ab40 - [syscall]-> sched_getaffinity
+
+Path to munmap:
+  munmap_133b90 - [syscall]-> munmap
+
+Path to mmap:
+  mmap_1331c0 - [syscall]-> mmap
+
+Path to mprotect:
+  mprotect_133ae0 - [syscall]-> mprotect
+
+Path to madvise:
+  madvise_132f90 - [syscall]-> madvise
+
+Path to unlinkat:
+  unlinkat_128d30 - [syscall]-> unlinkat
+
+Path to ftruncate:
+  ftruncate_12c6b0 - [syscall]-> ftruncate
+
+Path to flistxattr:
+  flistxattr_12c0d0 - [syscall]-> flistxattr
+
+Path to setpriority:
+  setpriority_12af00 - [syscall]-> setpriority
+
+Path to fsetxattr:
+  fsetxattr_12c130 - [syscall]-> fsetxattr
+
+Path to sched_yield:
+  sched_yield_11ad20 - [syscall]-> sched_yield
+
+Path to sysinfo:
+  sysinfo_138a90 - [syscall]-> sysinfo
+
+Path to shmdt:
+  shmdt_139990 - [syscall]-> shmdt
+
+Path to lstat:
+  __lxstat_137c40 - [syscall]-> lstat
+
+Path to vfork:
+  vfork_11cd30 - [syscall]-> vfork
+
+Path to fstat:
+  __fxstat_137b60 - [syscall]-> fstat
+
+Path to socket:
+  socket_139630 - [syscall]-> socket
+
+Path to connect:
+  connect_139160 - [syscall]-> connect
+
+Path to read:
+  read_128390 - [syscall]-> read
+
+Path to listen:
+  listen_1392b0 - [syscall]-> listen
+
+Path to rt_sigaction:
+  abort_288c5 - [DIRECT]-> __libc_sigaction_45cc0
+  __libc_sigaction_45cc0 - [syscall]-> rt_sigaction
+
+Path to dup:
+  perror_28a8f - [DIRECT]-> dup_1230b0
+  dup_1230b0 - [syscall]-> dup
+
+Path to gettimeofday:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> __gettimeofday_syscall_e80b0
+  __gettimeofday_syscall_e80b0 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> __restore_rt_45cb0
+  __restore_rt_45cb0 - [syscall]-> rt_sigreturn
+
+Path to set_robust_list:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> start_thread_a3de0
+  start_thread_a3de0 - [syscall]-> set_robust_list
+
+Path to rseq:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> start_thread_a3de0
+  start_thread_a3de0 - [syscall]-> rseq
+
+Path to time:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> time_syscall_e8050
+  time_syscall_e8050 - [syscall]-> time
+
+Path to setsid:
+  daemon_12b0e0 - [DIRECT]-> setsid_11afd0
+  setsid_11afd0 - [syscall]-> setsid
+
+Path to chdir:
+  daemon_12b0e0 - [DIRECT]-> chdir_122f10
+  chdir_122f10 - [syscall]-> chdir
+
+Path to wait4:
+  waitpid_11ce10 - [DIRECT]-> wait4_11cdb0
+  wait4_11cdb0 - [syscall]-> wait4
+
+Path to newfstatat:
+  getcwd_126ea0 - [DIRECT]-> fstatat_123ba0
+  fstatat_123ba0 - [syscall]-> newfstatat
+
+Path to getdents64:
+  readdir_f6b20 - [DIRECT]-> getdents64_f67c0
+  getdents64_f67c0 - [syscall]-> getdents64
+
+Path to prctl:
+  pthread_setname_np@@GLIBC_2.34_ab4b0 - [DIRECT]-> prctl_137f10
+  prctl_137f10 - [syscall]-> prctl
+
+Path to readlink:
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> readlink_1283b0
+  readlink_1283b0 - [syscall]-> readlink
+
+Path to faccessat:
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat
+
+Path to faccessat2:
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [syscall]-> faccessat2
+
+Path to utimensat:
+  futimesat_12c760 - [DIRECT]-> __utimensat64_helper_128dd0
+  __utimensat64_helper_128dd0 - [syscall]-> utimensat
+
+Path to sched_setaffinity:
+  pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
+  create_thread_a3ae0 - [syscall]-> sched_setaffinity
+
+Path to sched_setscheduler:
+  pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
+  create_thread_a3ae0 - [syscall]-> sched_setscheduler
+
+Path to rmdir:
+  remove_6a7c0 - [DIRECT]-> rmdir_128410
+  rmdir_128410 - [syscall]-> rmdir
+
+Path to clock_nanosleep:
+  nanosleep_1039f0 - [DIRECT]-> clock_nanosleep@@GLIBC_2.17_f5dc0
+  clock_nanosleep@@GLIBC_2.17_f5dc0 - [syscall]-> clock_nanosleep
+
+Path to writev:
+  __assert_fail_3bec0 - [DIRECT]-> __libc_message_impl_97df0
+  __libc_message_impl_97df0 - [syscall]-> writev
+
+Path to mremap:
+  realloc_b59c0 - [DIRECT]-> mremap_137d20
+  mremap_137d20 - [syscall]-> mremap
+
+Path to recvmsg:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> clntudp_call_184080
+  clntudp_call_184080 - [DIRECT]-> recvmsg_1393c0
+  recvmsg_1393c0 - [syscall]-> recvmsg
+
+Path to sched_get_priority_max:
+  pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_max_11ac00
+  sched_get_priority_max_11ac00 - [syscall]-> sched_get_priority_max
+
+Path to sched_get_priority_min:
+  pthread_mutex_trylock@@GLIBC_2.34_a8820 - [DIRECT]-> __pthread_tpp_change_priority_acb30
+  __pthread_tpp_change_priority_acb30 - [DIRECT]-> sched_get_priority_min_11ac30
+  sched_get_priority_min_11ac30 - [syscall]-> sched_get_priority_min
+
+Path to getgroups:
+  realpath@@GLIBC_2.3_47200 - [DIRECT]-> faccessat_1232a0
+  faccessat_1232a0 - [DIRECT]-> group_member_103910
+  group_member_103910 - [DIRECT]-> getgroups_fe670
+  getgroups_fe670 - [syscall]-> getgroups
+
+Path to clone3:
+  pthread_create@@GLIBC_2.34_a4330 - [DIRECT]-> create_thread_a3ae0
+  create_thread_a3ae0 - [DIRECT]-> __clone_internal_137680
+  __clone_internal_137680 - [DIRECT]-> __clone3_137780
+  __clone3_137780 - [syscall]-> clone3
+
+Path to sendmmsg:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> _nss_dns_getcanonname_r_14d620
+  _nss_dns_getcanonname_r_14d620 - [DIRECT]-> __res_context_query_157d20
+  __res_context_query_157d20 - [DIRECT]-> __res_context_send_15a310
+  __res_context_send_15a310 - [DIRECT]-> sendmmsg_139420
+  sendmmsg_139420 - [syscall]-> sendmmsg
+
+Path to getpeername:
+  clock_gettime@@GLIBC_2.17_f5cf0 - [INDIRECT]-> _nss_dns_getcanonname_r_14d620
+  _nss_dns_getcanonname_r_14d620 - [DIRECT]-> __res_context_query_157d20
+  __res_context_query_157d20 - [DIRECT]-> __res_context_send_15a310
+  __res_context_send_15a310 - [DIRECT]-> send_vc_159b70
+  send_vc_159b70 - [DIRECT]-> getpeername_139190
+  getpeername_139190 - [syscall]-> getpeername
+
+Path to brk:
+  malloc_b5110 - [DIRECT]-> __libc_malloc2_b3fa0
+  __libc_malloc2_b3fa0 - [DIRECT]-> _int_malloc_b2700
+  _int_malloc_b2700 - [DIRECT]-> __glibc_morecore_b1eb0
+  __glibc_morecore_b1eb0 - [DIRECT]-> sbrk_134610
+  sbrk_134610 - [DIRECT]-> brk_12b050
+  brk_12b050 - [syscall]-> brk

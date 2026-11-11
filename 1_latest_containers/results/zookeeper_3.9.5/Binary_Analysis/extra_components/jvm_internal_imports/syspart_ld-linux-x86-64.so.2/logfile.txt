@@ -1,0 +1,29 @@
+
+Path to writev:
+  __tls_get_addr_181d0 - [DIRECT]-> __tls_get_addr_slow_15050
+  __tls_get_addr_slow_15050 - [DIRECT]-> tls_get_addr_tail_13d80
+  tls_get_addr_tail_13d80 - [DIRECT]-> _dl_fatal_printf_ff20
+  _dl_fatal_printf_ff20 - [DIRECT]-> _dl_debug_vdprintf_f4c0
+  _dl_debug_vdprintf_f4c0 - [syscall]-> writev
+
+Path to exit:
+  __tls_get_addr_181d0 - [DIRECT]-> __tls_get_addr_slow_15050
+  __tls_get_addr_slow_15050 - [DIRECT]-> tls_get_addr_tail_13d80
+  tls_get_addr_tail_13d80 - [DIRECT]-> _dl_fatal_printf_ff20
+  _dl_fatal_printf_ff20 - [DIRECT]-> _exit_26e90
+  _exit_26e90 - [syscall]-> exit
+
+Path to exit_group:
+  __tls_get_addr_181d0 - [DIRECT]-> __tls_get_addr_slow_15050
+  __tls_get_addr_slow_15050 - [DIRECT]-> tls_get_addr_tail_13d80
+  tls_get_addr_tail_13d80 - [DIRECT]-> _dl_fatal_printf_ff20
+  _dl_fatal_printf_ff20 - [DIRECT]-> _exit_26e90
+  _exit_26e90 - [syscall]-> exit_group
+
+Path to getpid:
+  __tls_get_addr_181d0 - [DIRECT]-> __tls_get_addr_slow_15050
+  __tls_get_addr_slow_15050 - [DIRECT]-> tls_get_addr_tail_13d80
+  tls_get_addr_tail_13d80 - [DIRECT]-> _dl_fatal_printf_ff20
+  _dl_fatal_printf_ff20 - [DIRECT]-> _dl_debug_vdprintf_f4c0
+  _dl_debug_vdprintf_f4c0 - [DIRECT]-> getpid_26ee0
+  getpid_26ee0 - [syscall]-> getpid

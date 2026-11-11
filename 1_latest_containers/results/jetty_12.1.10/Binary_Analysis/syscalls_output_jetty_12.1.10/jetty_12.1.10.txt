@@ -1,5 +1,6 @@
 accept
 access
+alarm
 arch_prctl
 bind
 brk
@@ -18,6 +19,7 @@ clone3
 close
 close_range
 connect
+copy_file_range
 dup
 dup2
 epoll_create
@@ -48,6 +50,7 @@ fstatfs
 ftruncate
 futex
 get_mempolicy
+getcpu
 getcwd
 getdents64
 getegid
@@ -98,6 +101,7 @@ nanosleep
 newfstatat
 open
 openat
+openat2
 pause
 personality
 pipe
@@ -116,6 +120,7 @@ recvfrom
 recvmsg
 removexattr
 rename
+renameat
 rmdir
 rseq
 rt_sigaction

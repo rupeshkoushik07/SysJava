@@ -26,6 +26,7 @@ exit
 exit_group
 faccessat
 faccessat2
+fadvise64
 fallocate
 fchdir
 fchmod
@@ -95,6 +96,7 @@ prlimit64
 pselect6
 pwrite64
 read
+readahead
 readlink
 readv
 recvfrom
@@ -138,6 +140,7 @@ splice
 stat
 statfs
 symlink
+sync_file_range
 sysinfo
 tgkill
 time

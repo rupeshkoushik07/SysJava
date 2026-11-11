@@ -21,7 +21,7 @@ The tool is called EchoTrace in the code.
 | `echotrace/` | tool source (bytecode analysis), commit `89bf135`; every result in both tables was made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
-| `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); [`workload_validation/`](analysis/workload_validation/README.md): the ten JDK 8 profiles under real workloads (base / log / enforce, every run's logs); `code_facts.md`: how binding recovery works, with pointers to the code | |
+| `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); [`workload_validation/`](analysis/workload_validation/README.md) and [`workload_validation_latest/`](analysis/workload_validation_latest/README.md): the profiles of both tables under real workloads (base / log / enforce, every run's logs); `code_facts.md`: how binding recovery works, with pointers to the code | |
 | `tools/` | call-graph parser (used by `generate_syscalls.py`) and the generators of Table III and tab:results | |
 | `generate_syscalls.py` | generates an image's syscalls and profile from SysPart's shipped call graphs (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |

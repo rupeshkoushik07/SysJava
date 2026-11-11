@@ -3,8 +3,8 @@
 
 Takes JRuby's log profile (the profile run_validation.py uses, defaultAction SCMP_ACT_LOG), removes
 mkdir and rename from it, runs a JRuby one-liner that makes a directory, writes a file and renames it,
-and reads the audit records the same way run_validation.py does. Expected: exactly mkdir and rename,
-made by /opt/java/bin/java.
+and reads the audit records the same way run_validation.py does. Passed: mkdir and rename are both
+reported. Anything else reported (also_outside_profile) is a syscall the profile itself misses.
 
 Usage: control/positive_control.py [output.json]      (default control/result.json)
 """
@@ -45,7 +45,8 @@ time.sleep(2)
 mine, other, raw = rv.denials(since, pids)
 res = dict(profile=f"jruby log profile ({rv.profile_path('jruby')}) with {' and '.join(REMOVE)} removed",
            removed=REMOVE, program_output=rv.sh(["docker", "logs", name]).stdout.strip(),
-           would_be_denied=mine, unattributed=other, passed=sorted(mine) == sorted(REMOVE))
+           would_be_denied=mine, unattributed=other, passed=set(REMOVE) <= set(mine),
+           also_outside_profile=sorted(set(mine) - set(REMOVE)))
 rv.sh(["docker", "rm", "-f", name])
 json.dump(res, open(out, "w"), indent=1)
 open(out[:-5] + ".audit.log", "w").write("".join(l + "\n" for l in raw))

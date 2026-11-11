@@ -199,6 +199,11 @@ cd "$WS"
 ulimit -s 1048576  # Egalito recursion depth on a full libjvm
 if run_from 7; then
     stage 7 "SysPart: mapped libraries and executed binaries"
+    # Fix 2026-11-11: the functions in a C++ library's vtables (not libjvm's) join its start list, so
+    # virtual calls through a vtable reached only via the GOT stay in the call graph (e.g. RocksDB 8
+    # sync_file_range). Start files change in place: each library is still analysed once, from one list.
+    VT_CHANGED="$(python3 "${REPO}/scripts/add_vtable_starts.py" "$T" --outputs "$OUTPUTS_DIR" --libs "$SLIBS")"
+    echo "vtable starts added to: $(echo $VT_CHANGED) (${OUTPUTS_DIR}/vtable_starts_added.tsv)"
     bash "${WS}/scripts/automate_syscall_analysis.sh" \
         --binary-dir "$SLIBS" --binaries-dir "$SBINS" --startfunc-dir "$OUTPUTS_DIR" \
         --output-dir "${WS}/syscalls_output_${T}" --img-name "$T" --log \
@@ -214,6 +219,14 @@ if run_from 8; then
     # Kernel32 and Solaris libsocket): nothing to analyse, not a pipeline failure.
     python3 "${WS}/scripts/analyse_jna_ffi.py" --libs-dir "$SLIBS" --outputs-dir "$OUTPUTS_DIR" --run-syspart \
         || echo "stage 8: JNA/FFI analysis exited $? (bound libraries not in LIBS_, listed above); continuing"
+    # Fix 2026-11-11: libjvm's internals (e.g. flock) via the functions it imports, SysPart on each
+    # providing library from those functions; plus the C-library functions analysed libraries look up
+    # with dlsym (JDK 25 libnio: copy_file_range). -> extra_components/, merged in stage 10 (STEP 4b).
+    JVMI_LIBS="$SLIBS" JVMI_OUT="${WS}/extra_components/jvm_internal_imports" \
+        JVMI_SYSPART="${WS}/SysPartCode/analysis/app" JVMI_DLSYM_LIBS="${WS}/syscalls_output_${T}" \
+        bash "${REPO}/scripts/analyse_jvm_imports.sh" "$T" > "${WS}/jvm_imports.log" 2>&1 \
+        || echo "stage 8: analyse_jvm_imports exited $? (see ${WS}/jvm_imports.log); continuing"
+    tail -1 "${WS}/jvm_imports.log"
 fi
 
 if run_from 9; then
@@ -246,6 +259,7 @@ if run_from 10; then
     for extra in "${ORGANIZE_TMP}/${T}"/*; do
         case "$(basename "$extra")" in Dataset|Bytecode_Analysis|Dynamic_Analysis|Binary_Analysis) ;; *) cp -a "$extra" "${FINAL}/" ;; esac
     done
+    [ -d "${WS}/extra_components" ] && cp -a "${WS}/extra_components" "${FINAL}/Binary_Analysis/"
 fi
 PROFILE="${FINAL}/Binary_Analysis/syscalls_output_${T}/${PROFILE_NAME}"
 

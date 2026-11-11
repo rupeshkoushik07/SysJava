@@ -1,0 +1,16 @@
+{
+ "app": "orientdb",
+ "mode": "log",
+ "rep": 1,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 6,
+ "ops_ok": 1808,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 12,
+ "running_after": true,
+ "pids_seen": 1,
+ "would_be_denied": {},
+ "unattributed_log_records": {}
+}
