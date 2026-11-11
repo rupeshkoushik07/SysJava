@@ -18,7 +18,8 @@ analysed once, from one start list. Rerunning is a no-op once the functions are 
 Usage: add_vtable_starts.py <target> [--repo DIR] [--outputs DIR --libs DIR]
   --outputs/--libs: start-file folder and symbolized-library folder of another pipeline (EchoTrace_latest)
 Prints the start files whose set changed (the libraries stage 7 must analyse again) and writes
-outputs_<t>/vtable_starts_added.tsv (start file, vtables, vtable functions, newly added).
+outputs_<t>/vtable_starts_added.tsv (start file, vtables, vtable functions, newly added); a rerun that adds
+nothing leaves an existing tsv as it is.
 """
 import argparse, bisect, glob, os, subprocess
 
@@ -88,5 +89,8 @@ for f in sorted(glob.glob(f"{OUT}/**/*.so*.txt", recursive=True)):
             fh.write("\n".join(sorted(have | funcs)) + "\n")
         print(os.path.relpath(f, OUT))
     rows.append(f"{os.path.relpath(f, OUT)}\t{n_vt}\t{len(funcs)}\t{len(new)}")
-with open(f"{OUT}/vtable_starts_added.tsv", "w") as fh:
-    fh.write("start_file\tvtables\tvtable_functions\tnewly_added\n" + "".join(r + "\n" for r in rows))
+# a rerun on finished start files adds nothing: keep the record of the run that added the functions
+TSV = f"{OUT}/vtable_starts_added.tsv"
+if any(r.split("\t")[3] != "0" for r in rows) or not os.path.exists(TSV):
+    with open(TSV, "w") as fh:
+        fh.write("start_file\tvtables\tvtable_functions\tnewly_added\n" + "".join(r + "\n" for r in rows))
