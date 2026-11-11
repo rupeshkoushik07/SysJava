@@ -241,6 +241,9 @@ if run_from 7; then
     if [ -f "${MANUAL_DIR}/${T}/mapping/mapped_method_syscalls.txt" ]; then
         python3 "${REPO}/scripts/apply_manual_mappings.py" "$T" --manual-dir "$MANUAL_DIR" --repo "$REPO"
     fi
+    # C++ libraries (not libjvm): functions their vtables point to are virtual-call targets SysPart
+    # can miss (vtable reached only through the GOT), so they join the same start files.
+    python3 "${REPO}/scripts/add_vtable_starts.py" "$T" --repo "$REPO"
     bash "${WS}/scripts/automate_syscall_analysis.sh" \
         --binary-dir "$SLIBS" --binaries-dir "$SBINS" --startfunc-dir "$OUTPUTS_DIR" \
         --output-dir "${WS}/syscalls_output_${T}" --img-name "$T" --log
@@ -252,6 +255,8 @@ if run_from 8; then
         --libs-dir "$SLIBS" --syscalls-dir "${WS}/syscalls_output_${T}"
     python3 "${WS}/scripts/analyze_unanalysed_loaded_libs.py" --libs-dir "$SLIBS" --run-syspart
     python3 "${WS}/scripts/analyse_jna_ffi.py" --libs-dir "$SLIBS" --outputs-dir "$OUTPUTS_DIR" --run-syspart
+    # libjvm's start-up code and internal threads (unreachable from its JNI starts): via its imports
+    bash "${REPO}/scripts/analyse_jvm_imports.sh" "$T"
 fi
 
 # --------------------------------------------------------- seccomp profile
@@ -266,6 +271,8 @@ if run_from 9; then
         rm -rf "${FINAL:?}/${part}"
         [ -d "${ORGANIZE_TMP}/${T}/${part}" ] && cp -a "${ORGANIZE_TMP}/${T}/${part}" "${FINAL}/"
     done
+    # parts merged in STEP 4b (analysed another way), kept with the profile they went into
+    [ -d "${WS}/extra_components" ] && cp -a "${WS}/extra_components" "${FINAL}/Binary_Analysis/"
     for extra in "${ORGANIZE_TMP}/${T}"/*; do
         case "$(basename "$extra")" in Dataset|Bytecode_Analysis|Dynamic_Analysis|Binary_Analysis) ;; *) cp -a "$extra" "${FINAL}/" ;; esac
     done

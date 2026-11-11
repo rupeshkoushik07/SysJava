@@ -1,0 +1,6 @@
+ceilf
+exp
+fmod
+fmodf
+frexp
+sqrt

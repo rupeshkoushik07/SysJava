@@ -1,3 +1,4 @@
+brk
 clock_getres
 munmap
 rt_sigreturn
@@ -32,4 +33,3 @@ prlimit64
 write
 exit_group
 exit
-brk

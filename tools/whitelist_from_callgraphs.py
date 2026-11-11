@@ -70,7 +70,8 @@ def main():
 
     graphs = sorted(p.parent for p in shipped.rglob("callgraph.json*"))
     kinds = {f"syscalls_output_{img}": "library", f"syscalls_BIN_{img}": "executable",
-             f"syscalls_unanalysed_{img}": "fallback library", "jna_ffi_analysis": "JNA/FFI library"}
+             f"syscalls_unanalysed_{img}": "fallback library", "jna_ffi_analysis": "JNA/FFI library",
+             "extra_components": "extra component"}
     for i, d in enumerate(graphs, 1):
         rel = d.relative_to(shipped)
         out = ws / rel

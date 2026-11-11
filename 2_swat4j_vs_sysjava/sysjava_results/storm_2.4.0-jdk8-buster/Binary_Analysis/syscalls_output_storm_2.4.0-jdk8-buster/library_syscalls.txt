@@ -20,6 +20,8 @@ eventfd2
 execve
 exit
 exit_group
+fadvise64
+fallocate
 fcntl
 fdatasync
 flock
@@ -74,6 +76,7 @@ pread64
 prlimit64
 pwrite64
 read
+readahead
 readlink
 readv
 recvfrom
@@ -110,6 +113,7 @@ socketpair
 splice
 stat
 statfs
+sync_file_range
 sysinfo
 tgkill
 time

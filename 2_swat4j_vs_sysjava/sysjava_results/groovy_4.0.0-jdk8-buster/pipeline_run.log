@@ -84049,3 +84049,269 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-06 19:02:10] groovy_4.0.0-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Binary_Analysis/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json
+
+===== [2026-11-11 16:00:08] groovy_4.0.0-jdk8-buster stage 8: SysPart: unanalysed loaded libraries and JNA/FFI bindings
+============================================================
+ Unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:     groovy_4.0.0-jdk8-buster
+LIBS:         /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset_symbolized/LIBS_groovy_4.0.0-jdk8-buster
+syscalls_out: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster
+sysdig_out:   /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/sysdig_outputs_groovy_4.0.0-jdk8-buster
+
+loaded at runtime:          18
+already analysed:           15
+covered via ldd closure:    21
+LEFTOVER (unanalysed):      8
+analyzed names unresolved:  10
+  - libacl.so.1
+  - libattr.so.1
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+  - libselinux.so.1
+  - libtinfo.so.6
+
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.summary.tsv
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt
+============================================================
+ Analysing unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:  groovy_4.0.0-jdk8-buster
+LIBS:      /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset_symbolized/LIBS_groovy_4.0.0-jdk8-buster
+leftovers: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+run-syspart: True
+2026-11-11T16:00:09 RUN image=groovy_4.0.0-jdk8-buster libraries=8 force=False
+2026-11-11T16:00:09 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset_symbolized/LIBS_groovy_4.0.0-jdk8-buster
+2026-11-11T16:00:09 SKIP [1/8] libacl.so.1 already_complete
+2026-11-11T16:00:09 SKIP [2/8] libattr.so.1 already_complete
+2026-11-11T16:00:09 SKIP [3/8] libjli.so already_complete
+2026-11-11T16:00:09 SKIP [4/8] libnss_files.so.2 already_complete
+2026-11-11T16:00:09 SKIP [5/8] libpcre.so.3 already_complete
+2026-11-11T16:00:09 SKIP [6/8] librt.so.1 already_complete
+2026-11-11T16:00:09 SKIP [7/8] libselinux.so.1 already_complete
+2026-11-11T16:00:09 SKIP [8/8] libtinfo.so.6 already_complete
+
+prepared=/home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv
+runs=/home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv
+progress=/home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/unanalysed_syspart_progress.log
+syscalls=/home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_unanalysed_groovy_4.0.0-jdk8-buster
+ok=8
+============================================================
+ JNA / jnr-ffi / FFM binary analysis
+============================================================
+IMG_NAME: groovy_4.0.0-jdk8-buster
+LIBS:     /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset_symbolized/LIBS_groovy_4.0.0-jdk8-buster
+reports:  /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/outputs_groovy_4.0.0-jdk8-buster
+
+Bindings: 1 symbols across 1 library
+  verify                   1 symbols
+
+Resolving libraries against the mirror...
+  verify                   -> libverify.so
+
+Wrote start-function files to /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/jna_ffi_analysis/startfuncs
+
+[libverify.so] already analysed, skipping (use --force)
+  75 syscalls
+
+============================================================
+Union: 75 syscalls -> /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+
+Fold into the profile with:
+  python3 scripts/merge_all_syscalls.py groovy_4.0.0-jdk8-buster
+libm.so.6 exit=0 starts=6 syscalls=35
+libdl.so.2 exit=0 starts=6 syscalls=35
+libpthread.so.0 exit=0 starts=60 syscalls=62
+libc.so.6 exit=0 starts=201 syscalls=83
+ld-linux-x86-64.so.2 exit=0 starts=4 syscalls=25
+union=92
+
+===== [2026-11-11 16:02:00] groovy_4.0.0-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: groovy_4.0.0-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_BIN_groovy_4.0.0-jdk8-buster
+Found 11 subdirectories
+
+  ✓ basename: 36 syscalls
+  ✓ bash: 81 syscalls
+  ✓ cut: 37 syscalls
+  ✓ dash: 63 syscalls
+  ✓ dirname: 36 syscalls
+  ✓ env: 38 syscalls
+  ✓ expr: 36 syscalls
+  ✓ java: 63 syscalls
+  ✓ mawk: 42 syscalls
+  ✓ sed: 68 syscalls
+  ✓ uname: 37 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_BIN_groovy_4.0.0-jdk8-buster/binary_syscalls.txt (105 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster
+Found 15 subdirectories
+
+  ✓ libattach.so: 76 syscalls
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libfontmanager.so: 75 syscalls
+  ✓ libjansi-2.14.6.so: 36 syscalls
+  ✓ libjansi.so: 36 syscalls
+  ✓ libjava.so: 87 syscalls
+  ✓ libjpeg.so: 75 syscalls
+  ✓ libjsound.so: 75 syscalls
+  ✓ libjvm.so: 76 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 80 syscalls
+  ✓ libnio.so: 80 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/library_syscalls.txt (109 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_unanalysed_groovy_4.0.0-jdk8-buster
+Found 8 syscalls.txt files
+  libacl.so.1: 50 syscalls
+  libattr.so.1: 47 syscalls
+  libjli.so: 62 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libpcre.so.3: 41 syscalls
+  librt-2.28.so: 74 syscalls
+  libselinux.so.1: 74 syscalls
+  libtinfo.so.6: 44 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_unanalysed_groovy_4.0.0-jdk8-buster/unanalysed_syscalls.txt (107 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 75 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals, via its libc/libpthread imports: 92 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      105
+Library syscalls:     109
+Unanalysed libraries: 107
+JNA/FFI syscalls:     75
+Extra component:      92  (libjvm internals, via its libc/libpthread imports)
+Runc whitelist:       123
+Combined (unique):    189
+Only from extra components: 0 []
+  → unanalysed libraries added 22 additional syscalls
+  → runc.txt added 34 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.txt (189 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json (189 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 189
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  12
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  105 unique
+
+Libraries:
+  - Analyzed:  15
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  109 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/runc.txt
+  - Syscalls:    123 unique
+  - Added:       56 additional syscalls
+
+Combined:
+  - Total unique syscalls: 189
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_BIN_groovy_4.0.0-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  groovy_4.0.0-jdk8-buster
+      JARFILES_groovy_4.0.0-jdk8-buster  (42M) -> Dataset/
+      LIBS_groovy_4.0.0-jdk8-buster  (47M) -> Dataset/
+      BINARIES_groovy_4.0.0-jdk8-buster  (13M) -> Dataset/
+      RUNTIME_groovy_4.0.0-jdk8-buster  (71M) -> Dataset/
+      outputs_groovy_4.0.0-jdk8-buster  (688K) -> Bytecode_Analysis/
+      sysdig_outputs_groovy_4.0.0-jdk8-buster  (96K) -> Dynamic_Analysis/
+      syscalls_output_groovy_4.0.0-jdk8-buster  (187M) -> Binary_Analysis/
+      syscalls_BIN_groovy_4.0.0-jdk8-buster  (13M) -> Binary_Analysis/
+      syscalls_unanalysed_groovy_4.0.0-jdk8-buster  (7.4M) -> Binary_Analysis/
+      startfuncs_unanalysed_groovy_4.0.0-jdk8-buster  (40K) -> Binary_Analysis/
+      jna_ffi_analysis  (14M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/groovy_4.0.0-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 16:02:02] groovy_4.0.0-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 16:04:08] groovy_4.0.0-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Binary_Analysis/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json

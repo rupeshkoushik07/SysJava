@@ -1,0 +1,195 @@
+
+Path to mmap:
+  malloc_18d90 - [DIRECT]-> mmap_1a6b0
+  mmap_1a6b0 - [syscall]-> mmap
+
+Path to exit:
+  realloc_190d0 - [DIRECT]-> __assert_fail_19080
+  __assert_fail_19080 - [DIRECT]-> _Exit_1a7e0
+  _Exit_1a7e0 - [syscall]-> exit
+
+Path to exit_group:
+  realloc_190d0 - [DIRECT]-> __assert_fail_19080
+  __assert_fail_19080 - [DIRECT]-> _Exit_1a7e0
+  _Exit_1a7e0 - [syscall]-> exit_group
+
+Path to writev:
+  realloc_190d0 - [DIRECT]-> __assert_fail_19080
+  __assert_fail_19080 - [DIRECT]-> _dl_dprintf_101f0
+  _dl_dprintf_101f0 - [DIRECT]-> _dl_debug_vdprintf_f990
+  _dl_debug_vdprintf_f990 - [syscall]-> writev
+
+Path to rt_sigreturn:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> __restore_rt_1a8f0
+  __restore_rt_1a8f0 - [syscall]-> rt_sigreturn
+
+Path to futex:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_lookup_symbol_x_a240
+  _dl_lookup_symbol_x_a240 - [syscall]-> futex
+
+Path to getpid:
+  realloc_190d0 - [DIRECT]-> __assert_fail_19080
+  __assert_fail_19080 - [DIRECT]-> _dl_dprintf_101f0
+  _dl_dprintf_101f0 - [DIRECT]-> _dl_debug_vdprintf_f990
+  _dl_debug_vdprintf_f990 - [DIRECT]-> getpid_1a830
+  getpid_1a830 - [syscall]-> getpid
+
+Path to uname:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_discover_osversion_18af0
+  _dl_discover_osversion_18af0 - [DIRECT]-> uname_1a7c0
+  uname_1a7c0 - [syscall]-> uname
+
+Path to openat:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_discover_osversion_18af0
+  _dl_discover_osversion_18af0 - [DIRECT]-> __open64_nocancel_1a4d0
+  __open64_nocancel_1a4d0 - [syscall]-> openat
+
+Path to read:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_discover_osversion_18af0
+  _dl_discover_osversion_18af0 - [DIRECT]-> __read_nocancel_1a5c0
+  __read_nocancel_1a5c0 - [syscall]-> read
+
+Path to close:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_discover_osversion_18af0
+  _dl_discover_osversion_18af0 - [DIRECT]-> __GI___close_nocancel_1a430
+  __GI___close_nocancel_1a430 - [syscall]-> close
+
+Path to munmap:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> _dl_open_12b20
+  _dl_open_12b20 - [DIRECT]-> _dl_unload_cache_163f0
+  _dl_unload_cache_163f0 - [DIRECT]-> munmap_1a780
+  munmap_1a780 - [syscall]-> munmap
+
+Path to readlink:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_deps_d2a0
+  _dl_map_object_deps_d2a0 - [DIRECT]-> _dl_get_origin_12530
+  _dl_get_origin_12530 - [syscall]-> readlink
+
+Path to mprotect:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_relocate_object_b850
+  _dl_relocate_object_b850 - [DIRECT]-> mprotect_1a7a0
+  mprotect_1a7a0 - [syscall]-> mprotect
+
+Path to fstat:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_start_profile_10cb0
+  _dl_start_profile_10cb0 - [DIRECT]-> _fxstat_1a370
+  _fxstat_1a370 - [syscall]-> fstat
+
+Path to lseek:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_start_profile_10cb0
+  _dl_start_profile_10cb0 - [DIRECT]-> lseek_1a3f0
+  lseek_1a3f0 - [syscall]-> lseek
+
+Path to write:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_start_profile_10cb0
+  _dl_start_profile_10cb0 - [DIRECT]-> __write_nocancel_1a5e0
+  __write_nocancel_1a5e0 - [syscall]-> write
+
+Path to getcwd:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> _dl_new_object_b240
+  _dl_new_object_b240 - [DIRECT]-> getcwd_19890
+  getcwd_19890 - [syscall]-> getcwd
+
+Path to stat:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> open_path_75b0
+  open_path_75b0 - [DIRECT]-> _xstat_1a330
+  _xstat_1a330 - [syscall]-> stat
+
+Path to setitimer:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_start_profile_10cb0
+  _dl_start_profile_10cb0 - [DIRECT]-> profil_1a260
+  profil_1a260 - [DIRECT]-> setitimer_1eb00
+  setitimer_1eb00 - [syscall]-> setitimer
+
+Path to lstat:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> _dl_new_object_b240
+  _dl_new_object_b240 - [DIRECT]-> getcwd_19890
+  getcwd_19890 - [DIRECT]-> _lxstat_1a3b0
+  _lxstat_1a3b0 - [syscall]-> lstat
+
+Path to newfstatat:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> _dl_new_object_b240
+  _dl_new_object_b240 - [DIRECT]-> getcwd_19890
+  getcwd_19890 - [DIRECT]-> __fxstatat_19ed0
+  __fxstatat_19ed0 - [syscall]-> newfstatat
+
+Path to rt_sigaction:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_start_profile_10cb0
+  _dl_start_profile_10cb0 - [DIRECT]-> profil_1a260
+  profil_1a260 - [DIRECT]-> sigaction_1aa90
+  sigaction_1aa90 - [DIRECT]-> __libc_sigaction_1a900
+  __libc_sigaction_1a900 - [syscall]-> rt_sigaction
+
+Path to getdents64:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> _dl_new_object_b240
+  _dl_new_object_b240 - [DIRECT]-> getcwd_19890
+  getcwd_19890 - [DIRECT]-> readdir_1a060
+  readdir_1a060 - [DIRECT]-> __getdents_1a190
+  __getdents_1a190 - [syscall]-> getdents64
+
+Path to fcntl:
+  __tls_get_addr_171c0 - [DIRECT]-> __tls_get_addr_slow_12500
+  __tls_get_addr_slow_12500 - [DIRECT]-> tls_get_addr_tail.isra.0_117d0
+  tls_get_addr_tail.isra.0_117d0 - [INDIRECT]-> dl_open_worker_12f60
+  dl_open_worker_12f60 - [DIRECT]-> _dl_map_object_88c0
+  _dl_map_object_88c0 - [DIRECT]-> _dl_new_object_b240
+  _dl_new_object_b240 - [DIRECT]-> getcwd_19890
+  getcwd_19890 - [DIRECT]-> fdopendir_1a0f0
+  fdopendir_1a0f0 - [DIRECT]-> __fcntl64_nocancel_1a4a0
+  __fcntl64_nocancel_1a4a0 - [DIRECT]-> __fcntl64_nocancel_adjusted_1a450
+  __fcntl64_nocancel_adjusted_1a450 - [syscall]-> fcntl

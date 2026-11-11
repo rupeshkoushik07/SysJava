@@ -42,6 +42,7 @@
         "fadvise64",
         "fchdir",
         "fchmod",
+        "fchown",
         "fcntl",
         "fdatasync",
         "flock",

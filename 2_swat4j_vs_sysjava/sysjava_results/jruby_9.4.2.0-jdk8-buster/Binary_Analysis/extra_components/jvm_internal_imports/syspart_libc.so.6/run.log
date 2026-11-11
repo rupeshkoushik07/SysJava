@@ -1,0 +1,15 @@
+Time taken for the analysis: 5 seconds
+Time taken for the analysis: 8 seconds
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+0 not found
+Direct Edges computation: 1 seconds
+AT List computation: 1 seconds
+Indirect call target resolution:  1 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 11 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/extra_components/jvm_internal_imports/syspart_libc.so.6/callgraph.json

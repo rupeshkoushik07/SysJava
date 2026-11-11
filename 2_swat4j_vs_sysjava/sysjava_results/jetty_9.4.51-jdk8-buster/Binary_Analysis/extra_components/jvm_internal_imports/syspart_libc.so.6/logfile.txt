@@ -1,0 +1,274 @@
+
+Path to rt_sigprocmask:
+  raise_377e0 - [syscall]-> rt_sigprocmask
+
+Path to getpid:
+  raise_377e0 - [syscall]-> getpid
+
+Path to gettid:
+  raise_377e0 - [syscall]-> gettid
+
+Path to tgkill:
+  raise_377e0 - [syscall]-> tgkill
+
+Path to getcwd:
+  getcwd_eac50 - [syscall]-> getcwd
+
+Path to write:
+  write_ea3a0 - [syscall]-> write
+
+Path to getegid:
+  getegid_c7360 - [syscall]-> getegid
+
+Path to prlimit64:
+  getrlimit_efa00 - [syscall]-> prlimit64
+
+Path to sendto:
+  sendto_fa540 - [syscall]-> sendto
+
+Path to shmat:
+  shmat_faee0 - [syscall]-> shmat
+
+Path to unlink:
+  unlink_ebea0 - [syscall]-> unlink
+
+Path to mincore:
+  mincore_f3ea0 - [syscall]-> mincore
+
+Path to fsync:
+  fsync_f0da0 - [syscall]-> fsync
+
+Path to clock_getres:
+  sysconf_c8230 - [syscall]-> clock_getres
+
+Path to getsockopt:
+  getsockopt_fa160 - [syscall]-> getsockopt
+
+Path to recvfrom:
+  recvfrom_fa280 - [syscall]-> recvfrom
+
+Path to clone:
+  fork_c6610 - [syscall]-> clone
+
+Path to fcntl:
+  fcntl_ea7b0 - [syscall]-> fcntl
+
+Path to setsockopt:
+  setsockopt_fa600 - [syscall]-> setsockopt
+
+Path to nanosleep:
+  nanosleep_c6580 - [syscall]-> nanosleep
+
+Path to mkdir:
+  mkdir_e9f80 - [syscall]-> mkdir
+
+Path to openat:
+  open_ea010 - [syscall]-> openat
+
+Path to shmdt:
+  shmdt_faf10 - [syscall]-> shmdt
+
+Path to wait4:
+  waitpid_c62c0 - [syscall]-> wait4
+
+Path to ftruncate:
+  ftruncate_f24e0 - [syscall]-> ftruncate
+
+Path to times:
+  times_c61c0 - [syscall]-> times
+
+Path to sysinfo:
+  sysinfo_f9cd0 - [syscall]-> sysinfo
+
+Path to uname:
+  uname_c6190 - [syscall]-> uname
+
+Path to rt_sigsuspend:
+  sigsuspend_37c20 - [syscall]-> rt_sigsuspend
+
+Path to accept:
+  accept_f9f90 - [syscall]-> accept
+
+Path to pread64:
+  pread_e8820 - [syscall]-> pread64
+
+Path to sched_getaffinity:
+  sched_getaffinity@@GLIBC_2.3.4_e0880 - [syscall]-> sched_getaffinity
+
+Path to shutdown:
+  shutdown_fa630 - [syscall]-> shutdown
+
+Path to shmget:
+  shmget_faf40 - [syscall]-> shmget
+
+Path to getuid:
+  getuid_c7330 - [syscall]-> getuid
+
+Path to execve:
+  execve_c68a0 - [syscall]-> execve
+
+Path to listen:
+  listen_fa190 - [syscall]-> listen
+
+Path to munmap:
+  munmap_f3d70 - [syscall]-> munmap
+
+Path to lseek:
+  lseek_ea440 - [syscall]-> lseek
+
+Path to ioctl:
+  ioctl_effc0 - [syscall]-> ioctl
+
+Path to mmap:
+  mmap_f3c90 - [syscall]-> mmap
+
+Path to mprotect:
+  mprotect_f3da0 - [syscall]-> mprotect
+
+Path to setpriority:
+  setpriority_efe00 - [syscall]-> setpriority
+
+Path to fchdir:
+  fchdir_eac20 - [syscall]-> fchdir
+
+Path to geteuid:
+  geteuid_c7340 - [syscall]-> geteuid
+
+Path to vfork:
+  vfork_c6810 - [syscall]-> vfork
+
+Path to madvise:
+  madvise_f3e70 - [syscall]-> madvise
+
+Path to getgid:
+  getgid_c7350 - [syscall]-> getgid
+
+Path to access:
+  access_ea470 - [syscall]-> access
+
+Path to getrusage:
+  getrusage_efa80 - [syscall]-> getrusage
+
+Path to poll:
+  poll_ee6b0 - [syscall]-> poll
+
+Path to socket:
+  socket_fa660 - [syscall]-> socket
+
+Path to connect:
+  connect_fa060 - [syscall]-> connect
+
+Path to getpriority:
+  getpriority_efdc0 - [syscall]-> getpriority
+
+Path to read:
+  read_ea300 - [syscall]-> read
+
+Path to bind:
+  bind_fa030 - [syscall]-> bind
+
+Path to getsockname:
+  getsockname_fa130 - [syscall]-> getsockname
+
+Path to exit:
+  _exit_c6840 - [syscall]-> exit
+
+Path to exit_group:
+  _exit_c6840 - [syscall]-> exit_group
+
+Path to close:
+  close_ea9f0 - [syscall]-> close
+
+Path to kill:
+  kill_37bc0 - [syscall]-> kill
+
+Path to rename:
+  rename_6d800 - [syscall]-> rename
+
+Path to sched_yield:
+  sched_yield_e07c0 - [syscall]-> sched_yield
+
+Path to shmctl:
+  shmctl@@GLIBC_2.2.5_faf70 - [syscall]-> shmctl
+
+Path to chmod:
+  chmod_e9e90 - [syscall]-> chmod
+
+Path to futex:
+  fseek_77dd0 - [DIRECT]-> __lll_lock_wait_private_1062a0
+  __lll_lock_wait_private_1062a0 - [syscall]-> futex
+
+Path to lstat:
+  getcwd_eac50 - [DIRECT]-> _lxstat_e99e0
+  _lxstat_e99e0 - [syscall]-> lstat
+
+Path to fstat:
+  getcwd_eac50 - [DIRECT]-> _fxstat_e9990
+  _fxstat_e9990 - [syscall]-> fstat
+
+Path to newfstatat:
+  getcwd_eac50 - [DIRECT]-> __fxstatat_e9ce0
+  __fxstatat_e9ce0 - [syscall]-> newfstatat
+
+Path to rmdir:
+  remove_6d7c0 - [DIRECT]-> rmdir_ebf00
+  rmdir_ebf00 - [syscall]-> rmdir
+
+Path to rt_sigaction:
+  sigaction_37b50 - [DIRECT]-> __libc_sigaction_37980
+  __libc_sigaction_37980 - [syscall]-> rt_sigaction
+
+Path to gettimeofday:
+  pthread_attr_setdetachstate_105dc0 - [INDIRECT]-> __gettimeofday_syscall_b5aa0
+  __gettimeofday_syscall_b5aa0 - [syscall]-> gettimeofday
+
+Path to rt_sigreturn:
+  pthread_attr_setdetachstate_105dc0 - [INDIRECT]-> __restore_rt_37970
+  __restore_rt_37970 - [syscall]-> rt_sigreturn
+
+Path to clock_gettime:
+  pthread_attr_setdetachstate_105dc0 - [INDIRECT]-> __syscall_clock_gettime_f9840
+  __syscall_clock_gettime_f9840 - [syscall]-> clock_gettime
+
+Path to time:
+  pthread_attr_setdetachstate_105dc0 - [INDIRECT]-> __time_syscall_b59d0
+  __time_syscall_b59d0 - [syscall]-> time
+
+Path to readlink:
+  realpath@@GLIBC_2.3_44b20 - [DIRECT]-> readlink_ebe40
+  readlink_ebe40 - [syscall]-> readlink
+
+Path to getdents64:
+  readdir_c1cb0 - [DIRECT]-> __getdents_c1c70
+  __getdents_c1c70 - [syscall]-> getdents64
+
+Path to dup:
+  perror_6cd90 - [DIRECT]-> dup_eaa70
+  dup_eaa70 - [syscall]-> dup
+
+Path to stat:
+  sysconf_c8230 - [DIRECT]-> __sysconf_check_spec_c8120
+  __sysconf_check_spec_c8120 - [DIRECT]-> _xstat_e9940
+  _xstat_e9940 - [syscall]-> stat
+
+Path to writev:
+  __stack_chk_fail_10a350 - [DIRECT]-> __fortify_fail_abort_10a370
+  __fortify_fail_abort_10a370 - [DIRECT]-> __libc_message_79380
+  __libc_message_79380 - [syscall]-> writev
+
+Path to mremap:
+  realloc_84db0 - [DIRECT]-> mremap_chunk_802f0
+  mremap_chunk_802f0 - [DIRECT]-> mremap_f9bb0
+  mremap_f9bb0 - [syscall]-> mremap
+
+Path to brk:
+  pthread_attr_setdetachstate_105dc0 - [INDIRECT]-> __default_morecore_86000
+  __default_morecore_86000 - [DIRECT]-> sbrk_eff00
+  sbrk_eff00 - [DIRECT]-> brk_efea0
+  brk_efea0 - [syscall]-> brk
+
+Path to recvmsg:
+  getifaddrs_114e20 - [DIRECT]-> getifaddrs_internal_1140e0
+  getifaddrs_internal_1140e0 - [DIRECT]-> __netlink_request_113cc0
+  __netlink_request_113cc0 - [DIRECT]-> recvmsg_fa340
+  recvmsg_fa340 - [syscall]-> recvmsg

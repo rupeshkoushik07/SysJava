@@ -1,0 +1,3 @@
+zookeeper log rep1: ready=True ok=3951 failed=0 running=True denied={}
+zookeeper log rep2: ready=True ok=3951 failed=0 running=True denied={}
+zookeeper log rep3: ready=True ok=3951 failed=0 running=True denied={}

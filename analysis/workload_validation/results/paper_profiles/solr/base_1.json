@@ -1,0 +1,16 @@
+{
+ "app": "solr",
+ "mode": "base",
+ "rep": 1,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 3,
+ "ops_ok": 199,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 10,
+ "running_after": true,
+ "pids_seen": 3,
+ "would_be_denied": {},
+ "unattributed_log_records": {}
+}

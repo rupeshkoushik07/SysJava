@@ -135,6 +135,7 @@ rt_sigaction
 rt_sigpending
 rt_sigprocmask
 rt_sigreturn
+rt_sigsuspend
 sched_get_priority_max
 sched_get_priority_min
 sched_getaffinity
@@ -186,6 +187,7 @@ timer_delete
 timer_settime
 timerfd_create
 timerfd_settime
+times
 umask
 umount2
 uname

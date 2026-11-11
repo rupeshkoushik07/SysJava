@@ -1,0 +1,33 @@
+{
+ "app": "elasticsearch",
+ "mode": "log",
+ "rep": 2,
+ "started": true,
+ "ready": true,
+ "ready_after_s": 13,
+ "ops_ok": 250,
+ "ops_failed": 0,
+ "errors": {},
+ "workload_s": 9,
+ "running_after": true,
+ "pids_seen": 3,
+ "would_be_denied": {
+  "fchown": [
+   "/runc"
+  ]
+ },
+ "unattributed_log_records": {
+  "times": [
+   "/opt/java/bin/java"
+  ],
+  "fallocate": [
+   "/opt/java/bin/java"
+  ],
+  "fchdir": [
+   "/opt/java/bin/java"
+  ],
+  "fchown": [
+   "/runc"
+  ]
+ }
+}

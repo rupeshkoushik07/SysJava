@@ -13,7 +13,8 @@ JDK 8 images (Final_results_JDK8/<app>-jdk8-buster). Writes <out>.tex and <out>.
                             count_own_mapping.py); NOT SysJava's native_methods.txt (decision 2026-11-09)
   Java Lib Syscalls         library_syscalls.txt U syscalls of the JNA/JNR-bound libraries (libraries
                             bound only by false FFM hits are left out: JDK 8 has no FFM API)
-  Container Binary          binary_syscalls.txt U extra_components/*/syscalls.txt (ES ML controller)
+  Container Binary          binary_syscalls.txt U extra_components/*/syscalls.txt (ES ML controller);
+                            extra_components/jvm_internal_imports (libjvm via its imports) counts as Java Lib
   Go Whitelist (Delta)      runc.txt entries not in the two rows above
   Unmapped Lib (Delta)      unanalysed_syscalls.txt entries not in any row above
   Total Syscalls            union of the rows; checked against the generated profile
@@ -128,8 +129,13 @@ for folder, app, *_ in COLS:
     # ones included (LIBS_<t>/_supplied/), is analysed once from its full start list, so its
     # syscalls are already in library_syscalls.txt
     binary = names_in(f"{b}/syscalls_BIN_{t}/binary_syscalls.txt")
-    for c in glob.glob(f"{d}/extra_components/*/syscalls.txt"):
-        binary |= names_in(c)
+    # extra components (merge_all_syscalls.py STEP 4b): libjvm's internals via its imports
+    # (analyse_jvm_imports.sh, 2026-11-11) are Java runtime code; the others (ES ML controller) are binaries
+    for c in set(glob.glob(f"{d}/extra_components/*/syscalls.txt")) | set(glob.glob(f"{b}/extra_components/*/syscalls.txt")):
+        if os.path.basename(os.path.dirname(c)) == "jvm_internal_imports":
+            java |= names_in(c)
+        else:
+            binary |= names_in(c)
     runc = names_in(RUNC) - java - binary
     unan = names_in(f"{b}/syscalls_unanalysed_{t}/unanalysed_syscalls.txt") - java - binary - runc
     rows = java | binary | runc | unan

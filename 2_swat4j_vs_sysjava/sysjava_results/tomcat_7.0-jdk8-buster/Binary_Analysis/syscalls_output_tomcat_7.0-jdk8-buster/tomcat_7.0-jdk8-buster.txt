@@ -34,6 +34,7 @@ exit_group
 faccessat
 faccessat2
 fadvise64
+fchdir
 fchmod
 fchown
 fcntl
@@ -111,6 +112,7 @@ rt_sigaction
 rt_sigpending
 rt_sigprocmask
 rt_sigreturn
+rt_sigsuspend
 sched_get_priority_max
 sched_get_priority_min
 sched_getaffinity
@@ -159,6 +161,7 @@ time
 timer_create
 timer_delete
 timer_settime
+times
 umask
 uname
 unlink

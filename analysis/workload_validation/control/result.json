@@ -1,0 +1,17 @@
+{
+ "profile": "jruby log profile with mkdir and rename removed",
+ "removed": [
+  "mkdir",
+  "rename"
+ ],
+ "program_output": "done",
+ "would_be_denied": {
+  "mkdir": [
+   "/opt/java/bin/java"
+  ],
+  "rename": [
+   "/opt/java/bin/java"
+  ]
+ },
+ "unattributed": {}
+}

@@ -1,0 +1,137 @@
+img	library	sha256_16	binding_starts	binding_syscalls	nobinding_starts	nobinding_syscalls	only_without_binding	only_with_binding
+cassandra_3.0.29-jdk8-buster	libawt.so	ed547a36f9acb650	62	75	850	78	getitimer set_tid_address setitimer	
+cassandra_3.0.29-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+cassandra_3.0.29-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	18	95	778	97	pipe set_tid_address	
+cassandra_3.0.29-jdk8-buster	libc-2.28.so	82680100dc6a0d79	3	3	3125	273	_sysctl accept accept4 access acct adjtimex alarm arch_prctl bind brk capget capset chdir chmod chown chroot clock_adjtime clock_getres clock_gettime clock_nanosleep clock_settime clone close connect copy_file_range creat create_module delete_module dup dup2 dup3 epoll_create epoll_create1 epoll_ctl epoll_pwait epoll_wait eventfd2 execve execveat exit exit_group faccessat fallocate fanotify_init fanotify_mark fchdir fchmod fchmodat fchown fchownat fcntl fdatasync fgetxattr flistxattr flock fremovexattr fsetxattr fstat fstatfs fsync ftruncate futex futimesat get_kernel_syms getcpu getcwd getdents64 getegid geteuid getgid getgroups getitimer getpeername getpgid getpgrp getpid getpmsg getppid getpriority getrandom getresgid getresuid getrusage getsid getsockname getsockopt gettid gettimeofday getuid getxattr init_module inotify_add_watch inotify_init inotify_init1 inotify_rm_watch ioctl ioperm iopl kill lchown lgetxattr link linkat listen listxattr llistxattr lremovexattr lseek lsetxattr lstat madvise memfd_create mincore mkdir mkdirat mknod mknodat mlock mlock2 mmap modify_ldt mount mprotect mremap msgctl msgget msgrcv msgsnd msync munlock munmap name_to_handle_at nanosleep newfstatat nfsservctl open_by_handle_at openat pause personality pipe pipe2 pivot_root pkey_alloc pkey_free pkey_mprotect poll ppoll prctl pread64 preadv preadv2 prlimit64 process_vm_readv process_vm_writev pselect6 ptrace putpmsg pwrite64 pwritev pwritev2 query_module quotactl read readahead readlink readlinkat readv reboot recvfrom recvmmsg recvmsg remap_file_pages removexattr rename renameat renameat2 rmdir rt_sigaction rt_sigpending rt_sigprocmask rt_sigqueueinfo rt_sigreturn rt_sigsuspend rt_sigtimedwait sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_rr_get_interval sched_setaffinity sched_setparam sched_setscheduler sched_yield select semctl semget semop semtimedop sendfile sendmmsg sendmsg sendto setdomainname setfsgid setfsuid setgid setgroups sethostname setitimer setns setpgid setpriority setregid setresgid setresuid setreuid setsid setsockopt settimeofday setuid setxattr shmat shmctl shmdt shmget shutdown sigaltstack signalfd4 socket socketpair splice stat statfs statx swapoff swapon symlink symlinkat sync sync_file_range syncfs sysinfo syslog tee tgkill time timerfd_create timerfd_gettime timerfd_settime times truncate umask umount2 uname unlink unlinkat unshare uselib ustat utime utimensat utimes vfork vhangup vmsplice wait4 waitid write writev	
+cassandra_3.0.29-jdk8-buster	libfontmanager.so	96ae77229c9349a2	284	75	799	76	set_tid_address	
+cassandra_3.0.29-jdk8-buster	libjava.so	85faa73de027e5a4	141	86	361	92	ftruncate getegid getgid getuid set_tid_address umask	
+cassandra_3.0.29-jdk8-buster	libjnidispatch.so	b638061c836e5997	69	35	124	35		
+cassandra_3.0.29-jdk8-buster	libjvm.so	da71c35e28da3257	210	77		not resolved		
+cassandra_3.0.29-jdk8-buster	liblz4-java.so = liblz4-java1864768816310256501.so = liblz4-java3154006651160629592.so	ff8b46ae9d2829b4	19	35	93	35		
+cassandra_3.0.29-jdk8-buster	libmanagement.so	fac58c6af82f4c37	26	75	119	77	set_tid_address times	
+cassandra_3.0.29-jdk8-buster	libnet.so	03d43cc88f18502c	41	80	181	82	readv set_tid_address	
+cassandra_3.0.29-jdk8-buster	libnetty-transport-native-epoll.so	29f94baa0f2f5b57	107	68	137	69	set_tid_address	
+cassandra_3.0.29-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	40	82	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod pipe readv rename rmdir sendmsg set_tid_address statfs symlink utimes	
+cassandra_3.0.29-jdk8-buster	libsctp.so	f156e81279dc8eed	22	81	47	82	set_tid_address	
+cassandra_3.0.29-jdk8-buster	libsigar-amd64-linux.so	0007a9d9cf4f6e4c	127	60	427	60		
+cassandra_3.0.29-jdk8-buster	libsnappyjava.so	d6b0052005cd622e	15	35	721	35		
+cassandra_3.0.29-jdk8-buster	libzip.so	f08a0938c666d174	37	75	213	76	set_tid_address	
+elasticsearch_7.5.2-jdk8-buster	libNativePosixUtil.so	10002759da33ec78	5	37	22	37		
+elasticsearch_7.5.2-jdk8-buster	libawt.so	ed547a36f9acb650	19	75	850	78	getitimer set_tid_address setitimer	
+elasticsearch_7.5.2-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+elasticsearch_7.5.2-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	14	95	778	97	pipe set_tid_address	
+elasticsearch_7.5.2-jdk8-buster	libc-2.28.so	82680100dc6a0d79	5	37	3125	273	_sysctl accept accept4 access acct adjtimex alarm arch_prctl bind capget capset chdir chmod chown chroot clock_adjtime clock_nanosleep clock_settime clone connect copy_file_range creat create_module delete_module dup dup2 dup3 epoll_create epoll_create1 epoll_ctl epoll_pwait epoll_wait eventfd2 execve execveat faccessat fadvise64 fallocate fanotify_init fanotify_mark fchdir fchmod fchmodat fchown fchownat fdatasync fgetxattr flistxattr flock fremovexattr fsetxattr fstatfs fsync ftruncate futimesat get_kernel_syms getcpu getegid getgid getgroups getitimer getpeername getpgid getpgrp getpmsg getppid getpriority getrandom getresgid getresuid getrusage getsid getsockname getsockopt gettimeofday getuid getxattr init_module inotify_add_watch inotify_init inotify_init1 inotify_rm_watch ioperm iopl lchown lgetxattr link linkat listen listxattr llistxattr lremovexattr lsetxattr memfd_create mincore mkdir mkdirat mknod mknodat mlock mlock2 modify_ldt mount msgctl msgget msgrcv msgsnd msync munlock munlockall name_to_handle_at nanosleep nfsservctl open_by_handle_at pause personality pipe pipe2 pivot_root pkey_alloc pkey_free pkey_mprotect poll ppoll prctl pread64 preadv preadv2 process_vm_readv process_vm_writev pselect6 ptrace putpmsg pwrite64 pwritev pwritev2 query_module quotactl readahead readlink readlinkat readv reboot recvfrom recvmmsg recvmsg remap_file_pages removexattr rename renameat renameat2 rmdir rt_sigpending rt_sigqueueinfo rt_sigsuspend rt_sigtimedwait sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_rr_get_interval sched_setaffinity sched_setparam sched_setscheduler sched_yield select semctl semget semop semtimedop sendfile sendmmsg sendmsg sendto setdomainname setfsgid setfsuid setgid setgroups sethostname setitimer setns setpgid setpriority setregid setresgid setresuid setreuid setsid setsockopt settimeofday setuid setxattr shmat shmctl shmdt shmget shutdown sigaltstack signalfd4 socket socketpair splice statfs statx swapoff swapon symlink symlinkat sync sync_file_range syncfs syslog tee timerfd_create timerfd_gettime timerfd_settime times truncate umask umount2 uname unlink unlinkat unshare uselib ustat utime utimensat utimes vfork vhangup vmsplice wait4 waitid	
+elasticsearch_7.5.2-jdk8-buster	libfontmanager.so	96ae77229c9349a2	263	75	799	76	set_tid_address	
+elasticsearch_7.5.2-jdk8-buster	libj2gss.so	1a456284e0cde258	3	35	61	35		
+elasticsearch_7.5.2-jdk8-buster	libjava.so	85faa73de027e5a4	143	88	361	92	chmod fsync set_tid_address umask	
+elasticsearch_7.5.2-jdk8-buster	libjnidispatch.so	b37f395f10fd2f86	70	35	125	35		
+elasticsearch_7.5.2-jdk8-buster	libjvm.so	da71c35e28da3257	203	76		not resolved		
+elasticsearch_7.5.2-jdk8-buster	libmanagement.so	fac58c6af82f4c37	26	75	119	77	set_tid_address times	
+elasticsearch_7.5.2-jdk8-buster	libnet.so	03d43cc88f18502c	59	80	181	82	readv set_tid_address	
+elasticsearch_7.5.2-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	75	88	193	111	chmod chown epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername inotify_add_watch inotify_init inotify_rm_watch lchown link mkdir mknod readv rename rmdir set_tid_address statfs symlink utimes	
+elasticsearch_7.5.2-jdk8-buster	libsunec.so	89343ddec336b6ee	38	35	414	35		
+elasticsearch_7.5.2-jdk8-buster	libzip.so	f08a0938c666d174	35	75	213	76	set_tid_address	
+groovy_4.0.0-jdk8-buster	libattach.so	dee37e6f886a4517	10	76	21	77	set_tid_address	
+groovy_4.0.0-jdk8-buster	libawt.so	ed547a36f9acb650	65	75	850	78	getitimer set_tid_address setitimer	
+groovy_4.0.0-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+groovy_4.0.0-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	22	95	778	97	pipe set_tid_address	
+groovy_4.0.0-jdk8-buster	libfontmanager.so	96ae77229c9349a2	284	75	799	76	set_tid_address	
+groovy_4.0.0-jdk8-buster	libjansi-2.14.6.so	0706bd1f48d2a761	1	36	25	36		
+groovy_4.0.0-jdk8-buster	libjansi.so	4bf8600bdeee4017	10	36	35	36		
+groovy_4.0.0-jdk8-buster	libjava.so	85faa73de027e5a4	142	87	361	92	fsync getegid getgid set_tid_address umask	
+groovy_4.0.0-jdk8-buster	libjpeg.so	baf25e0013b937b3	6	75	309	76	set_tid_address	
+groovy_4.0.0-jdk8-buster	libjsound.so	03a93b609e819bdc	3	75	13	76	set_tid_address	
+groovy_4.0.0-jdk8-buster	libjvm.so	da71c35e28da3257	209	76		not resolved		
+groovy_4.0.0-jdk8-buster	libmanagement.so	fac58c6af82f4c37	8	75	119	77	set_tid_address times	
+groovy_4.0.0-jdk8-buster	libnet.so	03d43cc88f18502c	30	80	181	82	readv set_tid_address	
+groovy_4.0.0-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	22	80	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe readv rename rmdir sendfile sendmsg set_tid_address statfs symlink utimes	
+groovy_4.0.0-jdk8-buster	libzip.so	f08a0938c666d174	33	75	213	76	set_tid_address	
+jetty_9.4.51-jdk8-buster	libawt.so	ed547a36f9acb650	1	0	850	78	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getitimer getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setitimer setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+jetty_9.4.51-jdk8-buster	libj2gss.so	1a456284e0cde258	1	35	61	35		
+jetty_9.4.51-jdk8-buster	libjava.so	85faa73de027e5a4	114	84	361	92	chmod fsync ftruncate getegid getgid getuid set_tid_address umask	
+jetty_9.4.51-jdk8-buster	libjvm.so	da71c35e28da3257	200	76		not resolved		
+jetty_9.4.51-jdk8-buster	libmanagement.so	fac58c6af82f4c37	3	75	119	77	set_tid_address times	
+jetty_9.4.51-jdk8-buster	libnet.so	03d43cc88f18502c	22	80	181	82	readv set_tid_address	
+jetty_9.4.51-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	20	80	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe readv rename rmdir sendfile sendmsg set_tid_address statfs symlink utimes	
+jetty_9.4.51-jdk8-buster	libzip.so	f08a0938c666d174	30	75	213	76	set_tid_address	
+jruby_9.4.2.0-jdk8-buster	libjava.so	85faa73de027e5a4	130	85	361	92	fsync ftruncate getegid getgid getuid set_tid_address umask	
+jruby_9.4.2.0-jdk8-buster	libjffi-1.2.so	73c042ebd2c82bcd	195	39	315	41	ftruncate statfs	
+jruby_9.4.2.0-jdk8-buster	libjvm.so	da71c35e28da3257	200	76		not resolved		
+jruby_9.4.2.0-jdk8-buster	libmanagement.so	fac58c6af82f4c37	16	75	119	77	set_tid_address times	
+jruby_9.4.2.0-jdk8-buster	libnet.so	03d43cc88f18502c	37	79	181	82	accept readv set_tid_address	
+jruby_9.4.2.0-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	26	82	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe rename rmdir sendmsg set_tid_address statfs symlink utimes	
+jruby_9.4.2.0-jdk8-buster	libzip.so	f08a0938c666d174	26	75	213	76	set_tid_address	
+orientdb_3.2.19-jdk8-buster	libNativePosixUtil.so	10002759da33ec78	5	37	22	37		
+orientdb_3.2.19-jdk8-buster	libawt.so	ed547a36f9acb650	16	75	850	78	getitimer set_tid_address setitimer	
+orientdb_3.2.19-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+orientdb_3.2.19-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	2	95	778	97	pipe set_tid_address	
+orientdb_3.2.19-jdk8-buster	libfontmanager.so	96ae77229c9349a2	263	75	799	76	set_tid_address	
+orientdb_3.2.19-jdk8-buster	libicmp_helper.so	70497007e52b3bbb	1	36	7	36		
+orientdb_3.2.19-jdk8-buster	libj2gss.so	1a456284e0cde258	1	35	61	35		
+orientdb_3.2.19-jdk8-buster	libjava.so	85faa73de027e5a4	143	86	361	92	ftruncate getegid getgid getuid set_tid_address umask	
+orientdb_3.2.19-jdk8-buster	libjffi-1.2.so	9c38610250738359	157	35	218	35		
+orientdb_3.2.19-jdk8-buster	libjpeg.so	baf25e0013b937b3	15	75	309	76	set_tid_address	
+orientdb_3.2.19-jdk8-buster	libjvm.so	da71c35e28da3257	203	76		not resolved		
+orientdb_3.2.19-jdk8-buster	liblz4-java-7776228697999496578.so = liblz4-java.so	9008c9b9ae43485c	19	35	129	35		
+orientdb_3.2.19-jdk8-buster	libmanagement.so	fac58c6af82f4c37	29	75	119	77	set_tid_address times	
+orientdb_3.2.19-jdk8-buster	libnet.so	03d43cc88f18502c	35	80	181	82	readv set_tid_address	
+orientdb_3.2.19-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	25	81	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe readv rename rmdir sendmsg set_tid_address statfs symlink utimes	
+orientdb_3.2.19-jdk8-buster	libsunec.so	89343ddec336b6ee	38	35	414	35		
+orientdb_3.2.19-jdk8-buster	libzip.so	f08a0938c666d174	32	75	213	76	set_tid_address	
+solr_8.7.0-jdk8-buster	libNativePosixUtil.so	10002759da33ec78	5	37	22	37		
+solr_8.7.0-jdk8-buster	libawt.so	ed547a36f9acb650	63	75	850	78	getitimer set_tid_address setitimer	
+solr_8.7.0-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+solr_8.7.0-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	18	95	778	97	pipe set_tid_address	
+solr_8.7.0-jdk8-buster	libfontmanager.so	96ae77229c9349a2	285	75	799	76	set_tid_address	
+solr_8.7.0-jdk8-buster	libhadoop-3.3.6.so	4eb6b773bba879f7	14	41	215	65	accept bind chmod connect fadvise64 geteuid getsockopt gettimeofday link listen mlock poll readv recvmsg rename sendmsg sendto set_tid_address setsockopt shutdown socket socketpair sync_file_range unlink	
+solr_8.7.0-jdk8-buster	libhadoop.so	e43a630ba265cf73	125	64	234	64		
+solr_8.7.0-jdk8-buster	libj2gss.so	1a456284e0cde258	3	35	61	35		
+solr_8.7.0-jdk8-buster	libjava.so	85faa73de027e5a4	166	87	361	92	getegid getgid getuid set_tid_address umask	
+solr_8.7.0-jdk8-buster	libjpeg.so	baf25e0013b937b3	16	75	309	76	set_tid_address	
+solr_8.7.0-jdk8-buster	libjvm.so	da71c35e28da3257	205	76		not resolved		
+solr_8.7.0-jdk8-buster	libmanagement.so	fac58c6af82f4c37	31	75	119	77	set_tid_address times	
+solr_8.7.0-jdk8-buster	libnet.so	03d43cc88f18502c	62	80	181	82	readv set_tid_address	
+solr_8.7.0-jdk8-buster	libnetty_transport_native_epoll_x86_64.so	029bed26e682ce00	141	71	194	72	set_tid_address	
+solr_8.7.0-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	82	89	193	111	chmod chown epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs inotify_add_watch inotify_init inotify_rm_watch lchown link mkdir mknod readv rename rmdir set_tid_address statfs symlink utimes	
+solr_8.7.0-jdk8-buster	libsnappyjava.so	9b6d448e0f1d8d52	19	35	773	35		
+solr_8.7.0-jdk8-buster	libsunec.so	89343ddec336b6ee	38	35	414	35		
+solr_8.7.0-jdk8-buster	libzip.so	f08a0938c666d174	35	75	213	76	set_tid_address	
+storm_2.4.0-jdk8-buster	libawt.so	ed547a36f9acb650	61	75	850	78	getitimer set_tid_address setitimer	
+storm_2.4.0-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+storm_2.4.0-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	20	95	778	97	pipe set_tid_address	
+storm_2.4.0-jdk8-buster	libfontmanager.so	96ae77229c9349a2	285	75	799	76	set_tid_address	
+storm_2.4.0-jdk8-buster	libj2gss.so	1a456284e0cde258	3	35	61	35		
+storm_2.4.0-jdk8-buster	libjava.so	85faa73de027e5a4	150	87	361	92	getegid getgid getuid set_tid_address umask	
+storm_2.4.0-jdk8-buster	libjvm.so	da71c35e28da3257	204	76		not resolved		
+storm_2.4.0-jdk8-buster	libmanagement.so	fac58c6af82f4c37	25	75	119	77	set_tid_address times	
+storm_2.4.0-jdk8-buster	libnet.so	03d43cc88f18502c	58	80	181	82	readv set_tid_address	
+storm_2.4.0-jdk8-buster	libnetty_transport_native_epoll_x86_64-4.1.30.Final.so = libnetty_transport_native_epoll_x86_64.so	4059ae0ec61e0707	124	70	171	71	set_tid_address	
+storm_2.4.0-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	81	89	193	111	chmod chown epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs inotify_add_watch inotify_init inotify_rm_watch lchown link mkdir mknod readv rename rmdir set_tid_address statfs symlink utimes	
+storm_2.4.0-jdk8-buster	librocksdbjni6329444148818420541.so	dfccaa38a2e40877	1971	70	8841	80	dup2 execve geteuid kill mlock nanosleep pipe2 readlink set_tid_address wait4	
+storm_2.4.0-jdk8-buster	libsctp.so	f156e81279dc8eed	22	81	47	82	set_tid_address	
+storm_2.4.0-jdk8-buster	libzip.so	f08a0938c666d174	35	75	213	76	set_tid_address	
+tomcat_7.0-jdk8-buster	libawt.so	ed547a36f9acb650	20	75	850	78	getitimer set_tid_address setitimer	
+tomcat_7.0-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+tomcat_7.0-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	11	95	778	97	pipe set_tid_address	
+tomcat_7.0-jdk8-buster	libfontmanager.so	96ae77229c9349a2	263	75	799	76	set_tid_address	
+tomcat_7.0-jdk8-buster	libj2gss.so	1a456284e0cde258	1	35	61	35		
+tomcat_7.0-jdk8-buster	libj2pkcs11.so	19169b49522bde52	67	35	166	35		
+tomcat_7.0-jdk8-buster	libjava.so	85faa73de027e5a4	136	85	361	92	chmod fsync getegid getgid getuid set_tid_address umask	
+tomcat_7.0-jdk8-buster	libjvm.so	da71c35e28da3257	202	76		not resolved		
+tomcat_7.0-jdk8-buster	libmanagement.so	fac58c6af82f4c37	33	75	119	77	set_tid_address times	
+tomcat_7.0-jdk8-buster	libnet.so	03d43cc88f18502c	34	80	181	82	readv set_tid_address	
+tomcat_7.0-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	26	82	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe rename rmdir sendmsg set_tid_address statfs symlink utimes	
+tomcat_7.0-jdk8-buster	libsunec.so	89343ddec336b6ee	38	35	414	35		
+tomcat_7.0-jdk8-buster	libtcnative-1.so.0 = libtcnative-1.so.0.2.28	41d4942d4ae15d92	264	99	458	101	getppid set_tid_address	
+tomcat_7.0-jdk8-buster	libzip.so	f08a0938c666d174	31	75	213	76	set_tid_address	
+zookeeper_3.4.14-jdk8-buster	libawt.so	ed547a36f9acb650	63	75	850	78	getitimer set_tid_address setitimer	
+zookeeper_3.4.14-jdk8-buster	libawt_headless.so	e877c030b2b3d18c	1	0	93	76	access bind brk clock_getres clock_gettime clone close connect dup execve exit exit_group fcntl fstat futex getcwd getdents64 geteuid getpid getpriority getrusage getsockname gettid gettimeofday ioctl kill lseek lstat madvise mincore mmap mprotect mremap munmap nanosleep newfstatat openat pause poll pread64 prlimit64 read readlink recvfrom recvmsg rt_sigaction rt_sigprocmask rt_sigreturn sched_get_priority_max sched_get_priority_min sched_getaffinity sched_getparam sched_getscheduler sched_setaffinity sched_setscheduler sched_yield sendto set_robust_list set_tid_address setsockopt shmat shmctl shmdt shmget shutdown socket stat sysinfo tgkill time uname unlink vfork wait4 write writev	
+zookeeper_3.4.14-jdk8-buster	libawt_xawt.so	c6419752d8ca8243	18	95	778	97	pipe set_tid_address	
+zookeeper_3.4.14-jdk8-buster	libfontmanager.so	96ae77229c9349a2	284	75	799	76	set_tid_address	
+zookeeper_3.4.14-jdk8-buster	libj2gss.so	1a456284e0cde258	1	35	61	35		
+zookeeper_3.4.14-jdk8-buster	libjava.so	85faa73de027e5a4	117	84	361	92	chmod fsync getegid getgid getuid set_tid_address umask utimes	
+zookeeper_3.4.14-jdk8-buster	libjvm.so	da71c35e28da3257	198	76		not resolved		
+zookeeper_3.4.14-jdk8-buster	libmanagement.so	fac58c6af82f4c37	13	75	119	77	set_tid_address times	
+zookeeper_3.4.14-jdk8-buster	libnet.so	03d43cc88f18502c	37	80	181	82	readv set_tid_address	
+zookeeper_3.4.14-jdk8-buster	libnio.so	3ec3e6f8c3e0c7e5	22	81	193	111	accept chmod chown dup2 epoll_create epoll_ctl epoll_wait fchmod fchown fstatfs getpeername getsockopt inotify_add_watch inotify_init inotify_rm_watch lchown link listen mkdir mknod msync pipe readv rename rmdir sendmsg set_tid_address statfs symlink utimes	
+zookeeper_3.4.14-jdk8-buster	libzip.so	f08a0938c666d174	34	75	213	76	set_tid_address	

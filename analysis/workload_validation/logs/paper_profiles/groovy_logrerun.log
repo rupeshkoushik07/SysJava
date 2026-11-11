@@ -1,0 +1,3 @@
+groovy log rep1: ready=True ok=46 failed=0 running=False denied={}
+groovy log rep2: ready=True ok=46 failed=0 running=False denied={}
+groovy log rep3: ready=True ok=46 failed=0 running=False denied={}

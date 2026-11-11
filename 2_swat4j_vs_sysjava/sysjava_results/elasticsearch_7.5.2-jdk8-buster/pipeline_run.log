@@ -132233,3 +132233,305 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-06 19:43:00] elasticsearch_7.5.2-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Binary_Analysis/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json
+
+===== [2026-11-11 16:01:04] elasticsearch_7.5.2-jdk8-buster stage 8: SysPart: unanalysed loaded libraries and JNA/FFI bindings
+============================================================
+ Unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:     elasticsearch_7.5.2-jdk8-buster
+LIBS:         /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster
+syscalls_out: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster
+sysdig_out:   /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/sysdig_outputs_elasticsearch_7.5.2-jdk8-buster
+
+loaded at runtime:          32
+already analysed:           15
+covered via ldd closure:    21
+LEFTOVER (unanalysed):      19
+analyzed names unresolved:  10
+  - libMlCore.so
+  - libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_log-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_log_setup-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_regex-gcc7-mt-x64-1_71.so.1.71.0
+  - libboost_thread-gcc7-mt-x64-1_71.so.1.71.0
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+  - libstdc++.so.6
+  - libtinfo.so.6
+  - libxml2.so.2
+  - libz.so.1
+
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.summary.tsv
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt
+============================================================
+ Analysing unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:  elasticsearch_7.5.2-jdk8-buster
+LIBS:      /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster
+leftovers: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+run-syspart: True
+2026-11-11T16:01:04 RUN image=elasticsearch_7.5.2-jdk8-buster libraries=19 force=False
+2026-11-11T16:01:04 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster
+2026-11-11T16:01:04 SKIP [1/19] libMlCore.so listed_in_unanalysed_skip (SysPart call graph crashes with every start (1769 excluded, 2026-11-06); syscalls recovered from the ML controller's imports (extra_components/ml_component_imports))
+2026-11-11T16:01:04 SKIP [2/19] libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [3/19] libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [4/19] libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [5/19] libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [6/19] libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [7/19] libboost_log-gcc7-mt-x64-1_71.so.1.71.0 listed_in_unanalysed_skip (SysPart call graph crashes (986 starts excluded, 2026-11-06); covered by the ML imports recovery)
+2026-11-11T16:01:04 SKIP [8/19] libboost_log_setup-gcc7-mt-x64-1_71.so.1.71.0 listed_in_unanalysed_skip (SysPart call graph crashes (282 starts excluded, 2026-11-06); covered by the ML imports recovery)
+2026-11-11T16:01:04 SKIP [9/19] libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [10/19] libboost_regex-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [11/19] libboost_thread-gcc7-mt-x64-1_71.so.1.71.0 already_complete
+2026-11-11T16:01:04 SKIP [12/19] libjli.so already_complete
+2026-11-11T16:01:04 SKIP [13/19] libnss_files.so.2 already_complete
+2026-11-11T16:01:04 SKIP [14/19] libpcre.so.3 already_complete
+2026-11-11T16:01:04 SKIP [15/19] librt.so.1 already_complete
+2026-11-11T16:01:05 SKIP [16/19] libstdc++.so.6 already_complete
+2026-11-11T16:01:05 SKIP [17/19] libtinfo.so.6 already_complete
+2026-11-11T16:01:05 SKIP [18/19] libxml2.so.2 already_complete
+2026-11-11T16:01:05 SKIP [19/19] libz.so.1 already_complete
+
+prepared=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv
+runs=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv
+progress=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/unanalysed_syspart_progress.log
+syscalls=/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster
+ok=19
+============================================================
+ JNA / jnr-ffi / FFM binary analysis
+============================================================
+IMG_NAME: elasticsearch_7.5.2-jdk8-buster
+LIBS:     /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset_symbolized/LIBS_elasticsearch_7.5.2-jdk8-buster
+reports:  /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/outputs_elasticsearch_7.5.2-jdk8-buster
+
+Bindings: 21 symbols across 2 libraries
+  kernel32                 11 symbols
+  libc.so.6                10 symbols
+
+Resolving libraries against the mirror...
+  libc.so.6                -> libc-2.28.so
+  kernel32                 -> NOT FOUND in mirror
+
+Wrote start-function files to /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/jna_ffi_analysis/startfuncs
+
+[libc-2.28.so] already analysed, skipping (use --force)
+  38 syscalls
+
+============================================================
+Union: 38 syscalls -> /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+
+Fold into the profile with:
+  python3 scripts/merge_all_syscalls.py elasticsearch_7.5.2-jdk8-buster
+libm.so.6 exit=0 starts=6 syscalls=35
+libdl.so.2 exit=0 starts=6 syscalls=35
+libpthread.so.0 exit=0 starts=60 syscalls=62
+libc.so.6 exit=0 starts=201 syscalls=83
+ld-linux-x86-64.so.2 exit=0 starts=4 syscalls=25
+union=92
+
+===== [2026-11-11 16:02:55] elasticsearch_7.5.2-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: elasticsearch_7.5.2-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster
+Found 8 subdirectories
+
+  ✓ basename: 36 syscalls
+  ✓ bash: 81 syscalls
+  ✗ controller: unanalysable (SysPart crash), no syscalls.txt
+  ✓ dirname: 36 syscalls
+  ✓ env: 38 syscalls
+  ✓ grep: 47 syscalls
+  ✓ java: 63 syscalls
+  ✓ ldconfig: 61 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster/binary_syscalls.txt (102 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster
+Found 15 subdirectories
+
+  ✓ libNativePosixUtil.so: 37 syscalls
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libc-2.28.so: 37 syscalls
+  ✓ libfontmanager.so: 75 syscalls
+  ✓ libj2gss.so: 35 syscalls
+  ✓ libjava.so: 88 syscalls
+  ✓ libjnidispatch.so: 35 syscalls
+  ✓ libjvm.so: 76 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 80 syscalls
+  ✓ libnio.so: 88 syscalls
+  ✓ libsunec.so: 35 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/library_syscalls.txt (112 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster
+Found 16 syscalls.txt files
+  libboost_atomic-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_chrono-gcc7-mt-x64-1_71.so.1.71.0: 58 syscalls
+  libboost_date_time-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_filesystem-gcc7-mt-x64-1_71.so.1.71.0: 70 syscalls
+  libboost_iostreams-gcc7-mt-x64-1_71.so.1.71.0: 58 syscalls
+  libboost_program_options-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_regex-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libboost_thread-gcc7-mt-x64-1_71.so.1.71.0: 57 syscalls
+  libjli.so: 62 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libpcre.so.3: 41 syscalls
+  librt-2.28.so: 74 syscalls
+  libstdc++.so.6: 38 syscalls
+  libtinfo.so.6: 44 syscalls
+  libxml2.so.2: 54 syscalls
+  libz.so.1: 35 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster/unanalysed_syscalls.txt (102 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 38 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals, via its libc/libpthread imports: 92 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/extra_components/jvm_internal_imports/syscalls.txt)
+
+  ✓ ML component (controller/libMlCore/Boost), via imports: 89 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/extra_components/ml_component_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      102
+Library syscalls:     112
+Unanalysed libraries: 102
+JNA/FFI syscalls:     38
+Extra component:      92  (libjvm internals, via its libc/libpthread imports)
+Extra component:      89  (ML component (controller/libMlCore/Boost), via imports)
+Runc whitelist:       123
+Combined (unique):    185
+Only from extra components: 4 ['mknod', 'rt_sigsuspend', 'sched_setparam', 'setsid']
+  → unanalysed libraries added 18 additional syscalls
+  → JNA/FFI analysis added 1 additional syscalls
+  → runc.txt added 35 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.txt (185 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json (185 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 185
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  8
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  102 unique
+
+Libraries:
+  - Analyzed:  15
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  112 unique
+
+Unanalysable (SysPart crash): 1
+    - Binaries: controller
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/runc.txt
+  - Syscalls:    123 unique
+  - Added:       54 additional syscalls
+
+Combined:
+  - Total unique syscalls: 185
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_BIN_elasticsearch_7.5.2-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  elasticsearch_7.5.2-jdk8-buster
+      JARFILES_elasticsearch_7.5.2-jdk8-buster  (80M) -> Dataset/
+      LIBS_elasticsearch_7.5.2-jdk8-buster  (56M) -> Dataset/
+      BINARIES_elasticsearch_7.5.2-jdk8-buster  (14M) -> Dataset/
+      RUNTIME_elasticsearch_7.5.2-jdk8-buster  (71M) -> Dataset/
+      outputs_elasticsearch_7.5.2-jdk8-buster  (824K) -> Bytecode_Analysis/
+      sysdig_outputs_elasticsearch_7.5.2-jdk8-buster  (212K) -> Dynamic_Analysis/
+      syscalls_output_elasticsearch_7.5.2-jdk8-buster  (149M) -> Binary_Analysis/
+      syscalls_BIN_elasticsearch_7.5.2-jdk8-buster  (12M) -> Binary_Analysis/
+      syscalls_unanalysed_elasticsearch_7.5.2-jdk8-buster  (61M) -> Binary_Analysis/
+      startfuncs_unanalysed_elasticsearch_7.5.2-jdk8-buster  (668K) -> Binary_Analysis/
+      jna_ffi_analysis  (1.2M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (8.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (8.0K) -> Reports/
+      unanalysed_syspart_progress.log  (12K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/elasticsearch_7.5.2-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 16:02:58] elasticsearch_7.5.2-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 16:05:23] elasticsearch_7.5.2-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Binary_Analysis/syscalls_output_elasticsearch_7.5.2-jdk8-buster/elasticsearch_7.5.2-jdk8-buster.json

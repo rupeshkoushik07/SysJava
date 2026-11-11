@@ -1,0 +1,4 @@
+free
+malloc
+realloc
+__tls_get_addr

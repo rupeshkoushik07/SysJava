@@ -1,0 +1,6 @@
+dladdr_1b20
+dlclose_1340
+dlerror_1680
+dlopen@@GLIBC_2.2.5_12a0
+dlsym_13b0
+dlvsym_1490

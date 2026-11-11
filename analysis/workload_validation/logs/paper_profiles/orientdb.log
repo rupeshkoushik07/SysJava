@@ -1,0 +1,9 @@
+orientdb base rep1: ready=True ok=1808 failed=0 running=True denied={}
+orientdb log rep1: ready=True ok=1808 failed=0 running=True denied={}
+orientdb enforce rep1: ready=True ok=1808 failed=0 running=True denied={}
+orientdb base rep2: ready=True ok=1808 failed=0 running=True denied={}
+orientdb log rep2: ready=True ok=1808 failed=0 running=True denied={}
+orientdb enforce rep2: ready=True ok=1808 failed=0 running=True denied={}
+orientdb base rep3: ready=True ok=1808 failed=0 running=True denied={}
+orientdb log rep3: ready=True ok=1808 failed=0 running=True denied={}
+orientdb enforce rep3: ready=True ok=1808 failed=0 running=True denied={}

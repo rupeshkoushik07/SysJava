@@ -3,25 +3,25 @@ image=groovy:4.0.0-jdk8-buster
 profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Binary_Analysis/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json
 profile_syscalls=189 SCMP_ACT_ERRNO
 workload=docker run  groovy:4.0.0-jdk8-buster 
-started_at=2026-11-06T19:00:02+01:00
+started_at=2026-11-11T16:02:02+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=156b58e8c5f607c70e9eeacf6ad2b606b9753db120a35883ea907f7ad1d17e6d
-baseline_ready_after=4s
+docker_run_output=e388a3d838d22b441af9c6b0367e60d8231cb90b385fbbb021d9fc2341e3a667
+baseline_ready_after=2s
 baseline_state=running exit=0
 baseline_probe=ok marker-still-present
 baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-groovy-4-0-0-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Binary_Analysis/syscalls_output_groovy_4.0.0-jdk8-buster/groovy_4.0.0-jdk8-buster.json  groovy:4.0.0-jdk8-buster 
-docker_run_output=d968a48b74acecbe0784b75b94cfb6a3ef35f43e4e2ee5d7b9a327332b4b42f9
+docker_run_output=f8be708caab79a218e6b5b59afc372267c93d899467b975f7e6735e55b74731b
 ready_after=2s
 state_after_60s=running exit=0
 probe=ok marker-still-present
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-06T19:02:09+01:00
+finished_at=2026-11-11T16:04:08+01:00
 
 ---- docker logs tail (with profile) ----
 Groovy 4.0.0 on 1.8.0_504

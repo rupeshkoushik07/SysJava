@@ -32,6 +32,7 @@ faccessat2
 fadvise64
 fchdir
 fchmod
+fchown
 fcntl
 fdatasync
 fstat

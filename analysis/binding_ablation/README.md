@@ -17,3 +17,5 @@ the library (no binding).
   35 GB and 60 GB); it is shown as "n/r" and left out of the totals.
 * Paths in these files are those of the analysis host. The SysPart call graphs
   of the runs (7 GB) are not included.
+
+All ten JDK 8 images of tab:results (Debian 10, Temurin 8u504): `jdk8_all/README.md`. Mean profile: 185.2 syscalls with binding, 210.3 without.

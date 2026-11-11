@@ -1,0 +1,9 @@
+Time taken for the analysis: 5 seconds
+Time taken for the analysis: 8 seconds
+Direct Edges computation: 0 seconds
+AT List computation: 1 seconds
+Indirect call target resolution:  0 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 8 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/storm_2.4.0-jdk8-buster/extra_components/jvm_internal_imports/syspart_libdl.so.2/callgraph.json

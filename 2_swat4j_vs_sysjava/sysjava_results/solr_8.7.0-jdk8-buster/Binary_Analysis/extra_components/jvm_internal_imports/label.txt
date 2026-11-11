@@ -1,0 +1,1 @@
+libjvm internals, via its libc/libpthread imports

@@ -1,0 +1,83 @@
+[2026-11-11T15:07:55,024][INFO ][o.e.e.NodeEnvironment    ] [es01] using [1] data paths, mounts [[/ (overlay)]], net usable_space [53.7gb], net total_space [503.8gb], types [overlay]
+[2026-11-11T15:07:55,025][INFO ][o.e.e.NodeEnvironment    ] [es01] heap size [989.8mb], compressed ordinary object pointers [true]
+[2026-11-11T15:07:55,030][INFO ][o.e.n.Node               ] [es01] node name [es01], node ID [VYtjb8RPQqqDSg7OK4_Z3g], cluster name [docker-es-7.5.2]
+[2026-11-11T15:07:55,030][INFO ][o.e.n.Node               ] [es01] version[7.5.2], pid[1], build[default/tar/8bec50e1e0ad29dad5653712cf3bb580cd1afcdf/2020-01-15T12:11:52.313576Z], OS[Linux/5.15.0-202-generic/amd64], JVM[Temurin/OpenJDK 64-Bit Server VM/1.8.0_504/25.504-b01]
+[2026-11-11T15:07:55,030][INFO ][o.e.n.Node               ] [es01] JVM home [/opt/java/jre]
+[2026-11-11T15:07:55,034][INFO ][o.e.n.Node               ] [es01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-2472980149163541517, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Xms1g, -Xmx1g, -XX:MaxDirectMemorySize=536870912, -Des.path.home=/opt/elasticsearch, -Des.path.conf=/opt/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2026-11-11T15:07:56,936][INFO ][o.e.p.PluginsService     ] [es01] loaded module [aggs-matrix-stats]
+[2026-11-11T15:07:56,937][INFO ][o.e.p.PluginsService     ] [es01] loaded module [analysis-common]
+[2026-11-11T15:07:56,937][INFO ][o.e.p.PluginsService     ] [es01] loaded module [flattened]
+[2026-11-11T15:07:56,937][INFO ][o.e.p.PluginsService     ] [es01] loaded module [frozen-indices]
+[2026-11-11T15:07:56,937][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-common]
+[2026-11-11T15:07:56,938][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-geoip]
+[2026-11-11T15:07:56,938][INFO ][o.e.p.PluginsService     ] [es01] loaded module [ingest-user-agent]
+[2026-11-11T15:07:56,938][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-expression]
+[2026-11-11T15:07:56,938][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-mustache]
+[2026-11-11T15:07:56,939][INFO ][o.e.p.PluginsService     ] [es01] loaded module [lang-painless]
+[2026-11-11T15:07:56,939][INFO ][o.e.p.PluginsService     ] [es01] loaded module [mapper-extras]
+[2026-11-11T15:07:56,939][INFO ][o.e.p.PluginsService     ] [es01] loaded module [parent-join]
+[2026-11-11T15:07:56,939][INFO ][o.e.p.PluginsService     ] [es01] loaded module [percolator]
+[2026-11-11T15:07:56,939][INFO ][o.e.p.PluginsService     ] [es01] loaded module [rank-eval]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [reindex]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [repository-url]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [search-business-rules]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [spatial]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [transform]
+[2026-11-11T15:07:56,940][INFO ][o.e.p.PluginsService     ] [es01] loaded module [transport-netty4]
+[2026-11-11T15:07:56,941][INFO ][o.e.p.PluginsService     ] [es01] loaded module [vectors]
+[2026-11-11T15:07:56,941][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-analytics]
+[2026-11-11T15:07:56,941][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ccr]
+[2026-11-11T15:07:56,941][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-core]
+[2026-11-11T15:07:56,941][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-deprecation]
+[2026-11-11T15:07:56,942][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-enrich]
+[2026-11-11T15:07:56,942][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-graph]
+[2026-11-11T15:07:56,942][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ilm]
+[2026-11-11T15:07:56,942][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-logstash]
+[2026-11-11T15:07:56,943][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-ml]
+[2026-11-11T15:07:56,943][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-monitoring]
+[2026-11-11T15:07:56,943][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-rollup]
+[2026-11-11T15:07:56,943][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-security]
+[2026-11-11T15:07:56,943][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-sql]
+[2026-11-11T15:07:56,944][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-voting-only-node]
+[2026-11-11T15:07:56,944][INFO ][o.e.p.PluginsService     ] [es01] loaded module [x-pack-watcher]
+[2026-11-11T15:07:56,945][INFO ][o.e.p.PluginsService     ] [es01] no plugins loaded
+[2026-11-11T15:08:00,705][INFO ][o.e.x.s.a.s.FileRolesStore] [es01] parsed [0] roles from file [/opt/elasticsearch/config/roles.yml]
+[2026-11-11T15:08:01,220][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [es01] [controller/220] [Main.cc@110] controller (64 bit): Version 7.5.2 (Build 68f6981dfb8e2d) Copyright (c) 2020 Elasticsearch BV
+[2026-11-11T15:08:01,864][DEBUG][o.e.a.ActionModule       ] [es01] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2026-11-11T15:08:02,080][INFO ][o.e.d.DiscoveryModule    ] [es01] using discovery type [single-node] and seed hosts providers [settings]
+[2026-11-11T15:08:02,958][INFO ][o.e.n.Node               ] [es01] initialized
+[2026-11-11T15:08:02,959][INFO ][o.e.n.Node               ] [es01] starting ...
+[2026-11-11T15:08:03,122][INFO ][o.e.t.TransportService   ] [es01] publish_address {172.17.0.15:9300}, bound_addresses {[::]:9300}
+[2026-11-11T15:08:03,254][WARN ][o.e.b.BootstrapChecks    ] [es01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2026-11-11T15:08:03,263][INFO ][o.e.c.c.Coordinator      ] [es01] setting initial configuration to VotingConfiguration{VYtjb8RPQqqDSg7OK4_Z3g}
+[2026-11-11T15:08:03,414][INFO ][o.e.c.s.MasterService    ] [es01] elected-as-master ([1] nodes joined)[{es01}{VYtjb8RPQqqDSg7OK4_Z3g}{Z0KP1aM0QFW2Q1kW1foMoQ}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{es01}{VYtjb8RPQqqDSg7OK4_Z3g}{Z0KP1aM0QFW2Q1kW1foMoQ}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}
+[2026-11-11T15:08:03,462][INFO ][o.e.c.c.CoordinationState] [es01] cluster UUID set to [RT43bAJNQtOlJYtqAHaL7Q]
+[2026-11-11T15:08:03,495][INFO ][o.e.c.s.ClusterApplierService] [es01] master node changed {previous [], current [{es01}{VYtjb8RPQqqDSg7OK4_Z3g}{Z0KP1aM0QFW2Q1kW1foMoQ}{172.17.0.15}{172.17.0.15:9300}{dilm}{ml.machine_memory=135064719360, xpack.installed=true, ml.max_open_jobs=20}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2026-11-11T15:08:03,548][INFO ][o.e.h.AbstractHttpServerTransport] [es01] publish_address {172.17.0.15:9200}, bound_addresses {[::]:9200}
+[2026-11-11T15:08:03,549][INFO ][o.e.n.Node               ] [es01] started
+[2026-11-11T15:08:03,638][INFO ][o.e.g.GatewayService     ] [es01] recovered [0] indices into cluster_state
+[2026-11-11T15:08:03,776][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.slm-history] for index patterns [.slm-history-1*]
+[2026-11-11T15:08:04,744][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2026-11-11T15:08:04,784][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.watch-history-10] for index patterns [.watcher-history-10*]
+[2026-11-11T15:08:04,810][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.watches] for index patterns [.watches*]
+[2026-11-11T15:08:04,842][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2026-11-11T15:08:04,887][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2026-11-11T15:08:04,924][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2026-11-11T15:08:04,964][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2026-11-11T15:08:04,988][INFO ][o.e.c.m.MetaDataIndexTemplateService] [es01] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2026-11-11T15:08:05,013][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [es01] adding index lifecycle policy [watch-history-ilm-policy]
+[2026-11-11T15:08:05,042][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [es01] adding index lifecycle policy [slm-history-ilm-policy]
+[2026-11-11T15:08:05,241][INFO ][o.e.l.LicenseService     ] [es01] license [311ca78d-4a11-4716-96d1-71641713156b] mode [basic] - valid
+[2026-11-11T15:08:05,243][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [es01] Active license is now [BASIC]; Security is disabled
+[2026-11-11T15:08:05,298][INFO ][o.e.c.m.MetaDataCreateIndexService] [es01] [wl1] creating index, cause [api], templates [], shards [2]/[0], mappings []
+[2026-11-11T15:08:05,600][INFO ][o.e.c.r.a.AllocationService] [es01] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[wl1][1]]]).
+[2026-11-11T15:08:05,732][INFO ][o.e.c.m.MetaDataMappingService] [es01] [wl1/C-d4mNaJQJ2-NW9vIw6sSw] create_mapping [_doc]
+[2026-11-11T15:08:10,978][INFO ][o.e.c.m.MetaDataCreateIndexService] [es01] [wl2] creating index, cause [api], templates [], shards [2]/[0], mappings []
+[2026-11-11T15:08:11,064][INFO ][o.e.c.r.a.AllocationService] [es01] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[wl2][0]]]).
+[2026-11-11T15:08:11,103][INFO ][o.e.c.m.MetaDataMappingService] [es01] [wl2/qdiXjdHhS0aLQJ75wKYp-Q] create_mapping [_doc]
+[2026-11-11T15:08:14,300][INFO ][o.e.c.m.MetaDataCreateIndexService] [es01] [wl3] creating index, cause [auto(bulk api)], templates [], shards [1]/[1], mappings []
+[2026-11-11T15:08:14,451][INFO ][o.e.c.m.MetaDataMappingService] [es01] [wl3/k24a2FGITTS4iL-4oH3Shg] create_mapping [_doc]
+[2026-11-11T15:08:15,010][INFO ][o.e.c.m.MetaDataDeleteIndexService] [es01] [wl1/C-d4mNaJQJ2-NW9vIw6sSw] deleting index
+[2026-11-11T15:08:15,053][INFO ][o.e.c.m.MetaDataDeleteIndexService] [es01] [wl2/qdiXjdHhS0aLQJ75wKYp-Q] deleting index
+[2026-11-11T15:08:15,088][INFO ][o.e.c.m.MetaDataDeleteIndexService] [es01] [wl3/k24a2FGITTS4iL-4oH3Shg] deleting index
+future versions of Elasticsearch will require Java 11; your Java version from [/opt/java/jre] does not meet this requirement

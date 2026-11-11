@@ -2,3 +2,4 @@ openat2
 close_range
 faccessat2
 getppid
+fchown

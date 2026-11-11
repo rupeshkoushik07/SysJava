@@ -1,0 +1,9 @@
+Time taken for the analysis: 0 seconds
+Time taken for the analysis: 0 seconds
+Direct Edges computation: 0 seconds
+AT List computation: 0 seconds
+Indirect call target resolution:  0 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 0 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/orientdb_3.2.19-jdk8-buster/extra_components/jvm_internal_imports/syspart_ld-linux-x86-64.so.2/callgraph.json

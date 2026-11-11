@@ -11,6 +11,10 @@ Path to time:
   Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> __time_syscall_b5b30
   __time_syscall_b5b30 - [syscall]-> time
 
+Path to write:
+  __cxa_pure_virtual_21b20 - [DIRECT]-> write_ea4f0
+  write_ea4f0 - [syscall]-> write
+
 Path to close:
   Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> _IO_file_close_7a660
   _IO_file_close_7a660 - [DIRECT]-> __close_nocancel_ef4c0
@@ -40,11 +44,6 @@ Path to futex:
   Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> _IO_file_underflow@@GLIBC_2.2.5_7c520
   _IO_file_underflow@@GLIBC_2.2.5_7c520 - [DIRECT]-> __lll_lock_wait_private_106700
   __lll_lock_wait_private_106700 - [syscall]-> futex
-
-Path to write:
-  Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> _IO_file_write@@GLIBC_2.2.5_7b390
-  _IO_file_write@@GLIBC_2.2.5_7b390 - [DIRECT]-> write_ea4f0
-  write_ea4f0 - [syscall]-> write
 
 Path to ioctl:
   Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> _IO_file_doallocate_6f690
@@ -131,9 +130,8 @@ Path to madvise:
   madvise_f42d0 - [syscall]-> madvise
 
 Path to kill:
-  Java_sun_security_ec_ECDSASignature_signDigest_97a0 - [INDIRECT]-> _IO_file_read_7b960
-  _IO_file_read_7b960 - [DIRECT]-> read_ea450
-  read_ea450 - [DIRECT]-> __libc_enable_asynccancel_106750
+  __cxa_pure_virtual_21b20 - [DIRECT]-> write_ea4f0
+  write_ea4f0 - [DIRECT]-> __libc_enable_asynccancel_106750
   __libc_enable_asynccancel_106750 - [DIRECT]-> __pthread_unwind_136f40
   __pthread_unwind_136f40 - [syscall]-> kill
 

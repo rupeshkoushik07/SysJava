@@ -21,7 +21,7 @@ The tool is called EchoTrace in the code.
 | `echotrace/` | tool source (bytecode analysis), commit `89bf135`; every result in both tables was made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
-| `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); `code_facts.md`: how binding recovery works, with pointers to the code | |
+| `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); [`workload_validation/`](analysis/workload_validation/README.md): the ten JDK 8 profiles under real workloads (base / log / enforce, every run's logs); `code_facts.md`: how binding recovery works, with pointers to the code | |
 | `tools/` | call-graph parser (used by `generate_syscalls.py`) and the generators of Table III and tab:results | |
 | `generate_syscalls.py` | generates an image's syscalls and profile from SysPart's shipped call graphs (B below) | |
 | `setup.sh` | one-time setup for the full rerun (C below) | |
@@ -90,7 +90,10 @@ driver numbers the merge 9 and the container run 10.
   libraries) from those start functions to the reachable syscalls. This is the one
   stage whose output differs from the run's: it reads SysPart's call graphs instead of
   building them (`[n/40]` lines; `replay_syspart:` lines name start functions the
-  call graph does not have, as in the original run).
+  call graph does not have, as in the original run). For the JDK 8 images it also adds
+  the functions C++ libraries' vtables point to as start functions, and follows the
+  call graphs of the libraries libjvm imports from (`extra_components/jvm_internal_imports`),
+  as their pipeline does.
 - **9.** named call graphs: functions and unnamed (fuzzyfunc) functions per call graph.
 - **10.** builds the syscall sets (Java libraries, executables, runtime set, fallback
   libraries) and merges them into the seccomp profile; then prints the image's column

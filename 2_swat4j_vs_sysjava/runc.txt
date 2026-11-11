@@ -26,6 +26,7 @@ exit_group
 faccessat2
 fadvise64
 fchmod
+fchown
 fcntl
 fdatasync
 fstatfs
@@ -100,6 +101,7 @@ setresuid
 setreuid
 set_robust_list
 setsockopt
+set_tid_address
 setuid
 shmat
 shmctl
@@ -119,4 +121,3 @@ unlink
 unlinkat
 write
 writev
-set_tid_address

@@ -1,0 +1,23 @@
+#!/bin/bash
+# ldd as the image would resolve it: the image's own loader (ld-2.28.so, run in trace mode, as ldd
+# does with LD_TRACE_LOADED_OBJECTS=1), searching the image's LD_LIBRARY_PATH and /etc/ld.so.conf directories inside the extracted
+# copy $IMAGE_ROOT, never the host's cache or directories. The loader's own line is mapped to the
+# image's loader. A library the image does not have is reported "not found": the loader's built-in
+# fallback (/lib/x86_64-linux-gnu) would otherwise pick the HOST's copy (e.g. X11 for Groovy's libawt_xawt).
+# Used by SWAT4J's get_dependent_libs() through PATH; SWAT4J itself is unchanged.
+: "${IMAGE_ROOT:?}"
+dirs=()
+for d in $(tr ':' ' ' < "$IMAGE_ROOT/LD_LIBRARY_PATH") \
+         $(cat "$IMAGE_ROOT"/etc/ld.so.conf.d/*.conf 2>/dev/null | grep -v '^\s*#') ; do
+  [ -d "$IMAGE_ROOT$d" ] && dirs+=("$IMAGE_ROOT$d")
+done
+lp=$(IFS=:; echo "${dirs[*]}")
+out=$(LD_TRACE_LOADED_OBJECTS=1 "$IMAGE_ROOT/lib/x86_64-linux-gnu/ld-2.28.so" --inhibit-cache --library-path "$lp" "$@" 2>&1 \
+  | sed "s#^\t/lib64/ld-linux-x86-64.so.2 (#\t$IMAGE_ROOT/lib/x86_64-linux-gnu/ld-2.28.so (#" \
+  | awk -v root="$IMAGE_ROOT/" -v jdk="/usr/lib/jvm/java-8-openjdk-amd64/" '
+      / version `GLIBC_[0-9.]*. not found/ { next }      # only arises for host libraries (see below)
+      /=> \// { split($0, a, "=> "); p = a[2]; sub(/ \(0x.*/, "", p)
+               if (index(p, root) != 1 && index(p, jdk) != 1) { sub(/=> .*/, "=> not found") } }
+      { print }')
+[ -n "${LDD_LOG:-}" ] && printf '## %s\n%s\n' "$*" "$out" >> "$LDD_LOG"
+printf '%s\n' "$out"

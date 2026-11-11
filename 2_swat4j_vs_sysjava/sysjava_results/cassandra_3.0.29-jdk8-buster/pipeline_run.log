@@ -73375,3 +73375,294 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-07 15:16:20] cassandra_3.0.29-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Binary_Analysis/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json
+
+===== [2026-11-11 15:58:48] cassandra_3.0.29-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: cassandra_3.0.29-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster
+Found 22 subdirectories
+
+  ✓ bash: 81 syscalls
+  ✓ cat: 37 syscalls
+  ✓ dash: 63 syscalls
+  ✓ dirname: 36 syscalls
+  ✓ find: 69 syscalls
+  ✓ getopt: 36 syscalls
+  ✗ gosu: unanalysable (SysPart crash), no syscalls.txt
+  ✓ grep: 47 syscalls
+  ✓ head: 36 syscalls
+  ✓ id: 58 syscalls
+  ✓ ip: 88 syscalls
+  ✓ java: 63 syscalls
+  ✓ ldconfig: 61 syscalls
+  ✓ ls: 56 syscalls
+  ✓ mawk: 42 syscalls
+  ✓ mktemp: 43 syscalls
+  ✓ numactl: 60 syscalls
+  ✓ rm: 45 syscalls
+  ✓ sed: 68 syscalls
+  ✓ sort: 74 syscalls
+  ✓ tr: 37 syscalls
+  ✓ uname: 37 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster/binary_syscalls.txt (140 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster
+Found 19 subdirectories
+
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libc-2.28.so: 3 syscalls
+  ✓ libfontmanager.so: 75 syscalls
+  ✓ libjava.so: 86 syscalls
+  ✓ libjnidispatch.so: 35 syscalls
+  ✓ libjvm.so: 77 syscalls
+  ✓ liblz4-java.so: 35 syscalls
+  ✓ liblz4-java1864768816310256501.so: 35 syscalls
+  ✓ liblz4-java3154006651160629592.so: 35 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 80 syscalls
+  ✓ libnetty-transport-native-epoll.so: 68 syscalls
+  ✓ libnio.so: 82 syscalls
+  ✓ libsctp.so: 81 syscalls
+  ✓ libsigar-amd64-linux.so: 60 syscalls
+  ✓ libsnappyjava.so: 35 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/library_syscalls.txt (124 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster
+Found 92 syscalls.txt files
+  libBrokenLocale-2.28.so: syscalls.txt EMPTY (0 syscalls)
+  libacl.so.1: 50 syscalls
+  libacl.so.1.1.2253: 50 syscalls
+  libanl-2.28.so: 60 syscalls
+  libattr.so.1: 47 syscalls
+  libaudit.so.1.0.0: 49 syscalls
+  libblkid.so.1: 62 syscalls
+  libbz2.so.1.0.4: 36 syscalls
+  libcap-ng.so.0.0.0: 50 syscalls
+  libcap.so.2: 44 syscalls
+  libcom_err.so.2.1: 46 syscalls
+  libcrypt-2.28.so: 35 syscalls
+  libcrypto.so.1.1: 70 syscalls
+  libdb-5.3.so: 78 syscalls
+  libdebconfclient.so.0: 42 syscalls
+  libdl-2.28.so: 35 syscalls
+  libe2p.so.2.3: 45 syscalls
+  libelf-0.176.so: 42 syscalls
+  libexpat.so.1: 37 syscalls
+  libexpatw.so.1.6.8: 37 syscalls
+  libext2fs.so.2: 56 syscalls
+  libfdisk.so.1.1.0: 77 syscalls
+  libffi.so.6.0.4: 41 syscalls
+  libform.so.6: 39 syscalls
+  libformw.so.6.1: 39 syscalls
+  libgcrypt.so.20: 50 syscalls
+  libgmp.so.10.3.2: 36 syscalls
+  libgnutls.so.30: 65 syscalls
+  libgpg-error.so.0: 44 syscalls
+  libhistory.so.7: 49 syscalls
+  libhogweed.so.4: 35 syscalls
+  libidn2.so.0.3.4: 35 syscalls
+  libinstrument.so: 42 syscalls
+  libjemalloc.so.2: 50 syscalls
+  libjli.so: 62 syscalls
+  liblz4.so.1.8.3: 35 syscalls
+  liblzma.so.5: 56 syscalls
+  libmemusage.so: syscalls.txt EMPTY (0 syscalls)
+  libmenu.so.6: 39 syscalls
+  libmenuw.so.6: 39 syscalls
+  libmnl.so.0: 42 syscalls
+  libmount.so.1: 99 syscalls
+  libmvec-2.28.so: 12 syscalls
+  libncurses.so.6.1: 45 syscalls
+  libncursesw.so.6: 45 syscalls
+  libnettle.so.6: 35 syscalls
+  libnsl-2.28.so: 59 syscalls
+  libnss_compat-2.28.so: 42 syscalls
+  libnss_dns-2.28.so: 45 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libnss_hesiod-2.28.so: 45 syscalls
+  libnss_nis-2.28.so: 47 syscalls
+  libnss_nisplus-2.28.so: 58 syscalls
+  libnuma.so.1: 57 syscalls
+  libnuma.so.1.0.0: 57 syscalls
+  libp11-kit.so.0.3.0: 61 syscalls
+  libpam.so.0.84.2: 59 syscalls
+  libpam_misc.so.0.82.1: 40 syscalls
+  libpamc.so.0: 41 syscalls
+  libpanel.so.6.1: 35 syscalls
+  libpanelw.so.6.1: 35 syscalls
+  libpcprofile.so: syscalls.txt EMPTY (0 syscalls)
+  libpcre.so.3: 41 syscalls
+  libpcre.so.3.13.3: 41 syscalls
+  libpcreposix.so.3.13.3: 41 syscalls
+  libprocps.so.7.1.0: 57 syscalls
+  libpthread-2.28.so: 76 syscalls
+  libreadline.so.7.0: 56 syscalls
+  libresolv-2.28.so: 45 syscalls
+  librt-2.28.so: 74 syscalls
+  libseccomp.so.2.3.3: 37 syscalls
+  libselinux.so.1: 74 syscalls
+  libsemanage.so.1: 71 syscalls
+  libsepol.so.1: 36 syscalls
+  libsmartcols.so.1: 39 syscalls
+  libss.so.2.0: 55 syscalls
+  libssl.so.1.1: 69 syscalls
+  libstdc++.so.6: 38 syscalls
+  libstdc++.so.6.0.25: 38 syscalls
+  libsystemd.so.0.25.0: 112 syscalls
+  libtasn1.so.6.5.5: 35 syscalls
+  libthread_db-1.0.so: 35 syscalls
+  libtic.so.6: 47 syscalls
+  libtinfo.so.6: 44 syscalls
+  libtinfo.so.6.1: 44 syscalls
+  libudev.so.1.6.13: 58 syscalls
+  libunistring.so.2: 35 syscalls
+  libutil-2.28.so: 54 syscalls
+  libuuid.so.1: 46 syscalls
+  libxtables.so.12: 61 syscalls
+  libz.so.1: 35 syscalls
+  libzstd.so.1.3.8: 35 syscalls
+
+⚠ Warning: 3 unanalysed libraries with EMPTY syscalls.txt
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_unanalysed_cassandra_3.0.29-jdk8-buster/unanalysed_syscalls.txt (192 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+Reading JNA/FFI syscall union from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+  ✓ Loaded 39 syscalls from JNA/FFI analysis
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals, via its libc/libpthread imports: 92 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      140
+Library syscalls:     124
+Unanalysed libraries: 192
+JNA/FFI syscalls:     39
+Extra component:      92  (libjvm internals, via its libc/libpthread imports)
+Runc whitelist:       123
+Combined (unique):    230
+Only from extra components: 0 []
+  → unanalysed libraries added 52 additional syscalls
+  → runc.txt added 13 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.txt (230 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json (230 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 230
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  22
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  140 unique
+
+Libraries:
+  - Analyzed:  19
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  124 unique
+
+Unanalysable (SysPart crash): 1
+    - Binaries: gosu
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/runc.txt
+  - Syscalls:    123 unique
+  - Added:       65 additional syscalls
+
+Combined:
+  - Total unique syscalls: 230
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_BIN_cassandra_3.0.29-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  cassandra_3.0.29-jdk8-buster
+      JARFILES_cassandra_3.0.29-jdk8-buster  (26M) -> Dataset/
+      LIBS_cassandra_3.0.29-jdk8-buster  (73M) -> Dataset/
+      BINARIES_cassandra_3.0.29-jdk8-buster  (18M) -> Dataset/
+      RUNTIME_cassandra_3.0.29-jdk8-buster  (71M) -> Dataset/
+      outputs_cassandra_3.0.29-jdk8-buster  (896K) -> Bytecode_Analysis/
+      sysdig_outputs_cassandra_3.0.29-jdk8-buster  (220K) -> Dynamic_Analysis/
+      syscalls_output_cassandra_3.0.29-jdk8-buster  (166M) -> Binary_Analysis/
+      syscalls_BIN_cassandra_3.0.29-jdk8-buster  (23M) -> Binary_Analysis/
+      syscalls_unanalysed_cassandra_3.0.29-jdk8-buster  (154M) -> Binary_Analysis/
+      startfuncs_unanalysed_cassandra_3.0.29-jdk8-buster  (1.2M) -> Binary_Analysis/
+      jna_ffi_analysis  (1.1M) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (24K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (28K) -> Reports/
+      unanalysed_syspart_progress.log  (40K) -> Reports/
+    (17 moved)
+
+Done. Moved 17 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/cassandra_3.0.29-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 15:58:49] cassandra_3.0.29-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 16:01:15] cassandra_3.0.29-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Binary_Analysis/syscalls_output_cassandra_3.0.29-jdk8-buster/cassandra_3.0.29-jdk8-buster.json

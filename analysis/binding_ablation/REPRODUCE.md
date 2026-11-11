@@ -201,3 +201,39 @@ The results before symbolization are kept in `tomcat_7.0/stripped_deps/`.
 Result: 116 syscalls with binding against 124 without. Found only without binding:
 `clock_getres fchdir fsync getppid rt_sigsuspend socketpair times umask`.
 Unmapped-library policy: 166.
+
+## All ten JDK 8 images (Debian 10, Temurin 8u504), 2026-11-11
+
+Static analysis only. This uses the same method as Tomcat 7 and 11, applied to every library the final JDK 8 pipeline analysed. Folder: `jdk8_all/`.
+
+### Inputs (read only)
+- Pipeline results: `R=~/Tutorial/EchoTrace/Final_results_JDK8/<t>-jdk8-buster`
+  - libraries: `$R/Dataset_symbolized/LIBS_<t>`
+  - binding runs (start lists and syscalls): `$R/Binary_Analysis/syscalls_output_<t>/<lib>/`
+  - final policy: `$R/Binary_Analysis/syscalls_output_<t>/<t>.json`
+- SysPart: the same build `run_ablation.sh` uses.
+
+### Steps
+1. `python3 jdk8_all/make_targets.py` hashes every analysed library (sha256).
+   - Result: 141 library analyses, 38 distinct files, and 37 no-binding runs. Each distinct file is run once, in the first image that has it.
+   - libjvm.so is excluded and reported "not resolved" (out of memory at 35 and 60 GB on Tomcat 11).
+   - Outputs: `targets/<img>.tsv` and `libraries.tsv`.
+2. `bash jdk8_all/run_all.sh` runs arm A (SysPart from every function) for all 8 images that have targets, 2 jobs each, with `LEAN=1`, a 24 GB per-job limit and a 4 h timeout.
+   - `jdk8_all/guard.sh` ran alongside: it pauses these runs if MemAvailable drops below 30 GB, so the workload validation keeps priority. It never had to pause anything.
+3. Two libraries are stored under a symlink name and first ran with 0 start functions, because SysPart takes the module name from the real file. They were rerun from `targets_fix/` under the real names:
+   - `libtcnative-1.so.0.2.28` (Tomcat);
+   - `libnetty_transport_native_epoll_x86_64.so` (Storm netty 4.1.30).
+
+   `compare_all.py` uses the reruns (`A_FIX`).
+4. `python3 jdk8_all/compare_all.py` writes `summary.md` (one table per image plus an overall table), `per_library.tsv` and `per_image.tsv`.
+   - Binding: the pipeline's own run.
+   - No binding: the A run, matched by sha256.
+   - Two names for one file count as one library.
+   - Profile without binding: the final policy plus every library's no-binding set; libjvm keeps its binding set.
+
+### Observations
+- Every library passes the check: no binding run reaches a syscall that its no-binding run misses.
+- The largest effect is libc-2.28 in Cassandra and Elasticsearch, which JNA binds to directly.
+  - With binding, the pipeline maps 3 libc functions in Cassandra (3 syscalls) and 5 in Elasticsearch (37 syscalls).
+  - Without binding, every one of the 3,125 libc exports is a start, and 273 syscalls are reached.
+  - This is what drives the +74 (Cassandra) and +112 (Elasticsearch) profile increases.

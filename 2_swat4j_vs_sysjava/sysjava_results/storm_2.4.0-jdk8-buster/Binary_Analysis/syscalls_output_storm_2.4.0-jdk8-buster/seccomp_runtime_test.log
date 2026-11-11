@@ -1,12 +1,12 @@
 container=storm_2.4.0-jdk8-buster
 image=storm:2.4.0-jdk8-buster
 profile=/home/user/Tutorial/EchoTrace/Final_results_JDK8/storm_2.4.0-jdk8-buster/Binary_Analysis/syscalls_output_storm_2.4.0-jdk8-buster/storm_2.4.0-jdk8-buster.json
-profile_syscalls=173 SCMP_ACT_ERRNO
+profile_syscalls=180 SCMP_ACT_ERRNO
 workload=docker run --network et-jdk8-net --hostname nimbus --network-alias nimbus storm:2.4.0-jdk8-buster nimbus
-started_at=2026-11-06T18:56:44+01:00
+started_at=2026-11-11T15:51:51+01:00
 
 ---- baseline (no profile) ----
-docker_run_output=7615341d8cbdb4e76bf7acf9e8af4aa8d87a52466147d64ab1e77725261f2835
+docker_run_output=07b2a23e73adc72872a6a269530dd73a12cca29de9edc4373ffe715501b72456
 baseline_ready_after=6s
 baseline_state=running exit=0
 baseline_probe=ok marker-still-present
@@ -14,14 +14,14 @@ baseline_eperm_lines=0
 
 ---- with seccomp profile ----
 docker run -d --name echotrace-verify-seccomp-storm-2-4-0-jdk8-buster --security-opt seccomp=/home/user/Tutorial/EchoTrace/Final_results_JDK8/storm_2.4.0-jdk8-buster/Binary_Analysis/syscalls_output_storm_2.4.0-jdk8-buster/storm_2.4.0-jdk8-buster.json --network et-jdk8-net --hostname nimbus --network-alias nimbus storm:2.4.0-jdk8-buster nimbus
-docker_run_output=aaf89210212ca91e0645b3aa2e34876412b591a10e03f9194b59c9ef773e1430
-ready_after=4s
+docker_run_output=3e45d77ec70aebb2f60f74b74b67def5965c28c6705d45dac8b632b18fc2420c
+ready_after=6s
 state_after_60s=running exit=0
 probe=ok marker-still-present
 eperm_lines=0 (baseline 0)
 
 RESULT=PASS
-finished_at=2026-11-06T18:58:56+01:00
+finished_at=2026-11-11T15:54:06+01:00
 
 ---- docker logs tail (with profile) ----
 Running: /opt/java/bin/java -server -Ddaemon.name=nimbus -Dstorm.options= -Dstorm.home=/opt/storm -Dstorm.log.dir=/opt/storm/logs -Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64 -Dstorm.conf.file= -cp /opt/storm/*:/opt/storm/lib/*:/opt/storm/extlib/*:/opt/storm/extlib-daemon/*:/opt/storm/conf -Xmx1024m -Djava.deserialization.disabled=true -Dlogfile.name=nimbus.log -Dlog4j.configurationFile=/opt/storm/log4j2/cluster.xml org.apache.storm.daemon.nimbus.Nimbus

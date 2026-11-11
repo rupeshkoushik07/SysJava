@@ -15,8 +15,8 @@ as `<name>-jdk8-buster` (Debian 10, JDK 8; see `../../docker_images/`).
 | Folder | What | Produced by |
 |---|---|---|
 | `static/native_methods/<app>.txt` | native methods SWAT4J's bytecode analysis (JTracer) found | `run_swat4j_host_out.sh` (SWAT4J unmodified, host OpenJDK 8u504), each image's LIBS folder plus SWAT4J's repository libraries `JNI_thirdparty/` (repository copy wins on a name clash, as in the original setup): `run_static_jdk8deb.sh` |
-| `static/syscalls/<app>.txt` | SWAT4J static allowlist (`binary_analyser.py`) | same run |
-| `static/logs/<image>.log.xz` | log of that run | same run |
+| `static/syscalls/<app>.txt` | SWAT4J static allowlist (`binary_analyser.py`) on each image's own libraries: the image's JDK and its dependencies as the image's loader resolves them | `image_libs/run_image_libs.sh` (after `image_libs/extract_rootfs.sh`), on the native methods above |
+| `static/logs/<image>.log.xz`, `<image>.ldd.xz` | log of that run, every library lookup | `image_libs/run_image_libs.sh` |
 | `mapping/<app>.tsv` | SWAT4J's own JNI mapping of the native methods its JTracer found (`static/native_methods/<app>.txt`): one row per method with the rule that mapped it (`Java_XXX`, `JVM_XXX`, `NETTY_HEURISTIC`) or `UNMAPPED`, the symbol and the library | `own_mapping_jdk8deb.sh` (`count_own_mapping.py`): builds SWAT4J's six name maps with its own unmodified functions and replays its `aggregate()` rules |
 | `dynamic/<app>_result.txt` | SWAT4J dynamic allowlist: `strace -f -c` on Docker's containerd while the image starts, stopped at the ready line | `dynamic_swat4j_jdk8deb.sh <app>` |
 | `dynamic/<app>_strace.txt`, `<app>.log` | raw `strace -c` table, container log | same |

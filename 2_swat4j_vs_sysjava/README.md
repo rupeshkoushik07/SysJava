@@ -26,9 +26,15 @@ build script and image IDs: [`../docker_images/`](../docker_images/README.md).
 * `tables/tab_results.{tex,pdf,md}`: the table. Its SysJava mapping rows come from
   `tables/mapping_audit_per_app.csv`; its SWAT4J rows from `../swat4j/outputs/`
   (static allowlist, `mapping/<app>.tsv`, dynamic allowlist);
-  `tables/storm_no_false_ffm/`: Storm under its profile without `sync` (172 syscalls,
+  `tables/storm_no_false_ffm/`: Storm under its profile without `sync` (179 syscalls,
   PASS), the only syscall of false FFM hits.
 * `sysjava_results/<image>/`: full SysJava results. All ten pass under their profiles.
+  Two analysis steps cover syscalls a workload validation found missing
+  (`../analysis/workload_validation/`): libjvm's own syscalls, from the functions libjvm
+  imports from libc and the other libraries it links (`scripts/analyse_jvm_imports.sh`,
+  `Binary_Analysis/extra_components/jvm_internal_imports/`), and the functions a C++
+  library's vtables point to as extra start functions (`scripts/add_vtable_starts.py`,
+  RocksDB's `fallocate`). `runc.txt` includes `fchown`, which runc's init issues.
 * `manual_mapping/`: natives whose library the image does not ship, mapped to the
   released library (`PROVENANCE.tsv`, `<image>/mapping/`), and the rules for the rest
   (`jdk8_notfound_search/classify_jdk8.py`).

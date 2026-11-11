@@ -1,0 +1,131 @@
+2026-11-11 15:08:13,430 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /conf/zoo.cfg
+2026-11-11 15:08:13,434 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2026-11-11 15:08:13,435 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2026-11-11 15:08:13,435 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2026-11-11 15:08:13,435 [myid:] - WARN  [main:QuorumPeerMain@116] - Either no config or no quorum defined in config, running  in standalone mode
+2026-11-11 15:08:13,443 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /conf/zoo.cfg
+2026-11-11 15:08:13,443 [myid:] - INFO  [main:ZooKeeperServerMain@98] - Starting server
+2026-11-11 15:08:13,448 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+2026-11-11 15:08:13,448 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=1067ed57349d
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_504
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Temurin
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/opt/java/jre
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/zookeeper-3.4.14/bin/../zookeeper-server/target/classes:/zookeeper-3.4.14/bin/../build/classes:/zookeeper-3.4.14/bin/../zookeeper-server/target/lib/*.jar:/zookeeper-3.4.14/bin/../build/lib/*.jar:/zookeeper-3.4.14/bin/../lib/slf4j-log4j12-1.7.25.jar:/zookeeper-3.4.14/bin/../lib/slf4j-api-1.7.25.jar:/zookeeper-3.4.14/bin/../lib/netty-3.10.6.Final.jar:/zookeeper-3.4.14/bin/../lib/log4j-1.2.17.jar:/zookeeper-3.4.14/bin/../lib/jline-0.9.94.jar:/zookeeper-3.4.14/bin/../lib/audience-annotations-0.5.0.jar:/zookeeper-3.4.14/bin/../zookeeper-3.4.14.jar:/zookeeper-3.4.14/bin/../zookeeper-server/src/main/resources/lib/*.jar:/conf:
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2026-11-11 15:08:13,449 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2026-11-11 15:08:13,450 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+2026-11-11 15:08:13,450 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+2026-11-11 15:08:13,450 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=5.15.0-202-generic
+2026-11-11 15:08:13,451 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=zookeeper
+2026-11-11 15:08:13,451 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/home/zookeeper
+2026-11-11 15:08:13,451 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/zookeeper-3.4.14
+2026-11-11 15:08:13,457 [myid:] - INFO  [main:ZooKeeperServer@836] - tickTime set to 2000
+2026-11-11 15:08:13,457 [myid:] - INFO  [main:ZooKeeperServer@845] - minSessionTimeout set to -1
+2026-11-11 15:08:13,457 [myid:] - INFO  [main:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2026-11-11 15:08:13,462 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2026-11-11 15:08:13,466 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2181
+2026-11-11 15:08:19,201 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39162
+2026-11-11 15:08:19,205 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ServerCnxn@324] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2026-11-11 15:08:19,205 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ServerCnxn@325] - The list of enabled four letter word commands is : [[wchs, stat, stmk, conf, ruok, mntr, srvr, envi, srst, isro, dump, gtmk, crst, cons]]
+2026-11-11 15:08:19,205 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing ruok command from /172.17.0.1:39162
+2026-11-11 15:08:19,208 [myid:] - INFO  [Thread-1:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39162 (no session established for client)
+2026-11-11 15:08:19,208 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39164
+2026-11-11 15:08:19,209 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing stat command from /172.17.0.1:39164
+2026-11-11 15:08:19,211 [myid:] - INFO  [Thread-2:NIOServerCnxn$StatCommand@687] - Stat command output
+2026-11-11 15:08:19,211 [myid:] - INFO  [Thread-2:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39164 (no session established for client)
+2026-11-11 15:08:19,212 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39172
+2026-11-11 15:08:19,212 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing srvr command from /172.17.0.1:39172
+2026-11-11 15:08:19,213 [myid:] - INFO  [Thread-3:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39172 (no session established for client)
+2026-11-11 15:08:19,213 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39174
+2026-11-11 15:08:19,214 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing conf command from /172.17.0.1:39174
+2026-11-11 15:08:19,215 [myid:] - INFO  [Thread-4:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39174 (no session established for client)
+2026-11-11 15:08:19,215 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39176
+2026-11-11 15:08:19,215 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing cons command from /172.17.0.1:39176
+2026-11-11 15:08:19,217 [myid:] - INFO  [Thread-5:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39176 (no session established for client)
+2026-11-11 15:08:19,217 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39190
+2026-11-11 15:08:19,217 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing envi command from /172.17.0.1:39190
+2026-11-11 15:08:19,219 [myid:] - INFO  [Thread-6:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39190 (no session established for client)
+2026-11-11 15:08:19,219 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39200
+2026-11-11 15:08:19,219 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing mntr command from /172.17.0.1:39200
+2026-11-11 15:08:19,222 [myid:] - INFO  [Thread-7:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39200 (no session established for client)
+2026-11-11 15:08:19,223 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39208
+2026-11-11 15:08:19,223 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing wchs command from /172.17.0.1:39208
+2026-11-11 15:08:19,224 [myid:] - INFO  [Thread-8:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39208 (no session established for client)
+2026-11-11 15:08:19,225 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39222
+2026-11-11 15:08:19,225 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing dump command from /172.17.0.1:39222
+2026-11-11 15:08:19,226 [myid:] - INFO  [Thread-9:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39222 (no session established for client)
+2026-11-11 15:08:19,226 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39234
+2026-11-11 15:08:19,227 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing ruok command from /172.17.0.1:39234
+2026-11-11 15:08:19,227 [myid:] - INFO  [Thread-10:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39234 (no session established for client)
+2026-11-11 15:08:19,228 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39246
+2026-11-11 15:08:19,228 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing stat command from /172.17.0.1:39246
+2026-11-11 15:08:19,228 [myid:] - INFO  [Thread-11:NIOServerCnxn$StatCommand@687] - Stat command output
+2026-11-11 15:08:19,229 [myid:] - INFO  [Thread-11:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39246 (no session established for client)
+2026-11-11 15:08:19,229 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39252
+2026-11-11 15:08:19,230 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing srvr command from /172.17.0.1:39252
+2026-11-11 15:08:19,232 [myid:] - INFO  [Thread-12:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39252 (no session established for client)
+2026-11-11 15:08:19,232 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39268
+2026-11-11 15:08:19,232 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing conf command from /172.17.0.1:39268
+2026-11-11 15:08:19,233 [myid:] - INFO  [Thread-13:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39268 (no session established for client)
+2026-11-11 15:08:19,234 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39284
+2026-11-11 15:08:19,234 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing cons command from /172.17.0.1:39284
+2026-11-11 15:08:19,235 [myid:] - INFO  [Thread-14:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39284 (no session established for client)
+2026-11-11 15:08:19,235 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39300
+2026-11-11 15:08:19,235 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing envi command from /172.17.0.1:39300
+2026-11-11 15:08:19,236 [myid:] - INFO  [Thread-15:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39300 (no session established for client)
+2026-11-11 15:08:19,236 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39314
+2026-11-11 15:08:19,237 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing mntr command from /172.17.0.1:39314
+2026-11-11 15:08:19,237 [myid:] - INFO  [Thread-16:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39314 (no session established for client)
+2026-11-11 15:08:19,238 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39326
+2026-11-11 15:08:19,238 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing wchs command from /172.17.0.1:39326
+2026-11-11 15:08:19,238 [myid:] - INFO  [Thread-17:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39326 (no session established for client)
+2026-11-11 15:08:19,239 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39330
+2026-11-11 15:08:19,239 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing dump command from /172.17.0.1:39330
+2026-11-11 15:08:19,239 [myid:] - INFO  [Thread-18:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39330 (no session established for client)
+2026-11-11 15:08:19,240 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39344
+2026-11-11 15:08:19,240 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing ruok command from /172.17.0.1:39344
+2026-11-11 15:08:19,241 [myid:] - INFO  [Thread-19:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39344 (no session established for client)
+2026-11-11 15:08:19,241 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39352
+2026-11-11 15:08:19,241 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing stat command from /172.17.0.1:39352
+2026-11-11 15:08:19,242 [myid:] - INFO  [Thread-20:NIOServerCnxn$StatCommand@687] - Stat command output
+2026-11-11 15:08:19,242 [myid:] - INFO  [Thread-20:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39352 (no session established for client)
+2026-11-11 15:08:19,242 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39362
+2026-11-11 15:08:19,243 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing srvr command from /172.17.0.1:39362
+2026-11-11 15:08:19,243 [myid:] - INFO  [Thread-21:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39362 (no session established for client)
+2026-11-11 15:08:19,243 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39370
+2026-11-11 15:08:19,244 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing conf command from /172.17.0.1:39370
+2026-11-11 15:08:19,244 [myid:] - INFO  [Thread-22:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39370 (no session established for client)
+2026-11-11 15:08:19,245 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39382
+2026-11-11 15:08:19,245 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing cons command from /172.17.0.1:39382
+2026-11-11 15:08:19,246 [myid:] - INFO  [Thread-23:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39382 (no session established for client)
+2026-11-11 15:08:19,246 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39384
+2026-11-11 15:08:19,247 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing envi command from /172.17.0.1:39384
+2026-11-11 15:08:19,247 [myid:] - INFO  [Thread-24:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39384 (no session established for client)
+2026-11-11 15:08:19,247 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39400
+2026-11-11 15:08:19,248 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing mntr command from /172.17.0.1:39400
+2026-11-11 15:08:19,248 [myid:] - INFO  [Thread-25:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39400 (no session established for client)
+2026-11-11 15:08:19,249 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39412
+2026-11-11 15:08:19,252 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing wchs command from /172.17.0.1:39412
+2026-11-11 15:08:19,252 [myid:] - INFO  [Thread-26:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39412 (no session established for client)
+2026-11-11 15:08:19,252 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.1:39414
+2026-11-11 15:08:19,253 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@908] - Processing dump command from /172.17.0.1:39414
+2026-11-11 15:08:19,253 [myid:] - INFO  [Thread-27:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.1:39414 (no session established for client)
+2026-11-11 15:08:19,730 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.18:56990
+2026-11-11 15:08:19,736 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.17.0.18:56990
+2026-11-11 15:08:19,739 [myid:] - INFO  [SyncThread:0:FileTxnLog@216] - Creating new log file: log.1
+2026-11-11 15:08:20,423 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1001fcc12ea0000 with negotiated timeout 30000 for client /172.17.0.18:56990
+2026-11-11 15:08:22,567 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1001fcc12ea0000
+2026-11-11 15:08:22,569 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.18:56990 which had sessionid 0x1001fcc12ea0000
+2026-11-11 15:08:23,325 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.18:56994
+2026-11-11 15:08:23,331 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.17.0.18:56994
+2026-11-11 15:08:23,333 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1001fcc12ea0001 with negotiated timeout 30000 for client /172.17.0.18:56994
+2026-11-11 15:08:24,963 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1001fcc12ea0001
+2026-11-11 15:08:24,964 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.18:56994 which had sessionid 0x1001fcc12ea0001
+2026-11-11 15:08:25,930 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@222] - Accepted socket connection from /172.17.0.18:57006
+2026-11-11 15:08:25,935 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.17.0.18:57006
+2026-11-11 15:08:25,937 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1001fcc12ea0002 with negotiated timeout 30000 for client /172.17.0.18:57006
+2026-11-11 15:08:28,040 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1001fcc12ea0002
+2026-11-11 15:08:28,043 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.17.0.18:57006 which had sessionid 0x1001fcc12ea0002
+ZooKeeper JMX enabled by default
+Using config: /conf/zoo.cfg

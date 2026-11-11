@@ -17,18 +17,18 @@
 | ↳ JVM Source Code | 36 | 39 | 37 | 38 | 39 | 38 | 39 | 40 | 41 | 39 |
 | ↳ Not Found | 107 | 181 | 278 | 101 | 1246 | 168 | 194 | 315 | 160 | 118 |
 | **Syscall Allowlist (SysJava only)** | | | | | | | | | | |
-| Java Lib Syscalls | 108 | 124 | 124 | 92 | 125 | 111 | 113 | 127 | 109 | 95 |
+| Java Lib Syscalls | 113 | 128 | 127 | 100 | 133 | 115 | 118 | 131 | 113 | 103 |
 | Container Binary Syscalls | 111 | 92 | 140 | 63 | 101 | 83 | 114 | 111 | 105 | 84 |
-| Go Whitelist (Δ) | 36 | 35 | 24 | 51 | 26 | 40 | 31 | 28 | 37 | 43 |
-| Unmapped Lib Syscalls (Δ) | 18 | 0 | 41 | 10 | 2 | 10 | 11 | 20 | 19 | 10 |
-| Total Syscalls | 190 | 170 | 230 | 157 | 172 | 173 | 183 | 199 | 189 | 167 |
+| Go Whitelist (Δ) | 36 | 35 | 24 | 50 | 27 | 40 | 32 | 28 | 37 | 42 |
+| Unmapped Lib Syscalls (Δ) | 18 | 0 | 41 | 10 | 2 | 10 | 11 | 20 | 18 | 10 |
+| Total Syscalls | 192 | 173 | 230 | 161 | 179 | 174 | 185 | 201 | 189 | 168 |
 | **SWAT4J Syscall Comparison** | | | | | | | | | | |
-| SWAT4J Java Lib Syscalls | 104 | 105 | 124 | 104 | 116 | 105 | 102 | 113 | 108 | 104 |
+| SWAT4J Java Lib Syscalls | 108 | 123 | 119 | 108 | 118 | 109 | 109 | 118 | 108 | 105 |
 | SWAT4J Dynamic Syscalls | 128 | 127 | 141 | 128 | 137 | 129 | 137 | 136 | 130 | 128 |
-| SWAT4J Total (Static ∪ Dynamic) | 171 | 170 | 182 | 171 | 178 | 169 | 174 | 175 | 175 | 170 |
-| SysJava ∩ SWAT4J | 136 | 134 | 163 | 125 | 139 | 133 | 139 | 146 | 140 | 133 |
-| SysJava only | 54 | 36 | 67 | 32 | 33 | 40 | 44 | 53 | 49 | 34 |
-| SWAT4J only | 35 | 36 | 19 | 46 | 39 | 36 | 35 | 29 | 35 | 37 |
+| SWAT4J Total (Static ∪ Dynamic) | 170 | 176 | 179 | 170 | 177 | 168 | 173 | 175 | 171 | 168 |
+| SysJava ∩ SWAT4J | 141 | 145 | 162 | 134 | 146 | 136 | 143 | 150 | 141 | 136 |
+| SysJava only | 51 | 28 | 68 | 27 | 33 | 38 | 42 | 51 | 48 | 32 |
+| SWAT4J only | 29 | 31 | 17 | 36 | 31 | 32 | 30 | 25 | 30 | 32 |
 | **Dynamic Capture Artefacts** | | | | | | | | | | |
 | Libraries Loaded | 20 | 24 | 119 | 15 | 29 | 23 | 35 | 28 | 19 | 19 |
 | Binaries Loaded | 11 | 6 | 23 | 2 | 10 | 6 | 9 | 14 | 12 | 7 |

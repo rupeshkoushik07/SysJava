@@ -1,0 +1,9 @@
+Time taken for the analysis: 7 seconds
+Time taken for the analysis: 10 seconds
+Direct Edges computation: 0 seconds
+AT List computation: 1 seconds
+Indirect call target resolution:  0 seconds
+Generate indirect call targets: 0 seconds
+Print call graph edges: 0 seconds
+Time taken for the analysis: 9 seconds
+Call graph saved to /home/user/Tutorial/EchoTrace/jdk8_workspaces/jetty_9.4.51-jdk8-buster/extra_components/jvm_internal_imports/syspart_libm.so.6/callgraph.json

@@ -1,0 +1,17 @@
+cassandra base rep1: ready=True ok=11 failed=0 running=True denied={}
+cassandra log rep1: ready=True ok=11 failed=0 running=True denied={}
+cassandra enforce rep1: ready=True ok=11 failed=0 running=True denied={}
+cassandra base rep2: ready=True ok=11 failed=0 running=True denied={}
+cassandra log rep2: ready=True ok=11 failed=0 running=True denied={}
+cassandra enforce rep2: ready=True ok=11 failed=0 running=True denied={}
+cassandra base rep3: ready=True ok=11 failed=0 running=True denied={}
+cassandra log rep3: ready=True ok=11 failed=0 running=True denied={}
+cassandra enforce rep3: ready=True ok=11 failed=0 running=True denied={}
+Traceback (most recent call last):
+  File "/home/user/Tutorial/EchoTrace/workload_validation/run_validation.py", line 333, in <module>
+    
+  File "/home/user/Tutorial/EchoTrace/workload_validation/run_validation.py", line 318, in main
+    if s == 200:
+  File "/home/user/Tutorial/EchoTrace/workload_validation/run_validation.py", line 324, in summarize
+    def log_profile(app):
+NotADirectoryError: [Errno 20] Not a directory: '/home/user/Tutorial/EchoTrace/workload_validation/results/summary.tsv'

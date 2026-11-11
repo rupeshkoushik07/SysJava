@@ -1,0 +1,13 @@
+2026-11-11 15:11:15.826:INFO::main: Logging initialized @450ms to org.eclipse.jetty.util.log.StdErrLog
+2026-11-11 15:11:16.041:INFO:oejs.Server:main: jetty-9.4.51.v20230217; built: 2023-02-17T08:19:37.309Z; git: b45c405e4544384de066f814ed42ae3dceacdd49; jvm 1.8.0_504-b01
+2026-11-11 15:11:16.064:INFO:oejdp.ScanningAppProvider:main: Deployment monitor [file:///var/lib/jetty/webapps/] at interval 1
+2026-11-11 15:11:16.164:INFO:oejw.StandardDescriptorProcessor:main: NO JSP Support for /wl, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2026-11-11 15:11:16.172:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2026-11-11 15:11:16.172:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2026-11-11 15:11:16.173:INFO:oejs.session:main: node0 Scavenging every 660000ms
+2026-11-11 15:11:16.195:INFO:oejsh.ContextHandler:main: Started o.e.j.w.WebAppContext@4d95d2a2{Welcome to Tomcat,/wl,file:///tmp/jetty-0_0_0_0-8080-wl_war-_wl-any-8460107618767904577/webapp/,AVAILABLE}{/var/lib/jetty/webapps/wl.war}
+2026-11-11 15:11:16.237:INFO:oejs.AbstractConnector:main: Started ServerConnector@a0d2e34{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2026-11-11 15:11:16.239:INFO:oejs.Server:main: Started @863ms
+2026-11-11 15:11:22.273:INFO:oejw.StandardDescriptorProcessor:Scanner-0: NO JSP Support for /wl2, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2026-11-11 15:11:22.274:INFO:oejsh.ContextHandler:Scanner-0: Started o.e.j.w.WebAppContext@53ffdcea{Welcome to Tomcat,/wl2,file:///tmp/jetty-0_0_0_0-8080-wl2_war-_wl2-any-3293583539945624396/webapp/,AVAILABLE}{/var/lib/jetty/webapps/wl2.war}
+2026-11-11 15:11:24.281:INFO:oejsh.ContextHandler:Scanner-0: Stopped o.e.j.w.WebAppContext@53ffdcea{Welcome to Tomcat,/wl2,null,STOPPED}{/var/lib/jetty/webapps/wl2.war}

@@ -24797,3 +24797,251 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-06 18:58:50] zookeeper_3.4.14-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Binary_Analysis/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.json
+
+===== [2026-11-11 16:00:03] zookeeper_3.4.14-jdk8-buster stage 8: SysPart: unanalysed loaded libraries and JNA/FFI bindings
+============================================================
+ Unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:     zookeeper_3.4.14-jdk8-buster
+LIBS:         /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster
+syscalls_out: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster
+sysdig_out:   /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/sysdig_outputs_zookeeper_3.4.14-jdk8-buster
+
+loaded at runtime:          19
+already analysed:           11
+covered via ldd closure:    21
+LEFTOVER (unanalysed):      8
+analyzed names unresolved:  10
+  - libacl.so.1
+  - libattr.so.1
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+  - libselinux.so.1
+  - libtinfo.so.6
+
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.summary.tsv
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt
+============================================================
+ Analysing unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:  zookeeper_3.4.14-jdk8-buster
+LIBS:      /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster
+leftovers: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+run-syspart: True
+2026-11-11T16:00:04 RUN image=zookeeper_3.4.14-jdk8-buster libraries=8 force=False
+2026-11-11T16:00:04 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster
+2026-11-11T16:00:04 SKIP [1/8] libacl.so.1 already_complete
+2026-11-11T16:00:04 SKIP [2/8] libattr.so.1 already_complete
+2026-11-11T16:00:04 SKIP [3/8] libjli.so already_complete
+2026-11-11T16:00:04 SKIP [4/8] libnss_files.so.2 already_complete
+2026-11-11T16:00:04 SKIP [5/8] libpcre.so.3 already_complete
+2026-11-11T16:00:04 SKIP [6/8] librt.so.1 already_complete
+2026-11-11T16:00:04 SKIP [7/8] libselinux.so.1 already_complete
+2026-11-11T16:00:04 SKIP [8/8] libtinfo.so.6 already_complete
+
+prepared=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv
+runs=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv
+progress=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/unanalysed_syspart_progress.log
+syscalls=/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_unanalysed_zookeeper_3.4.14-jdk8-buster
+ok=8
+============================================================
+ JNA / jnr-ffi / FFM binary analysis
+============================================================
+IMG_NAME: zookeeper_3.4.14-jdk8-buster
+LIBS:     /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset_symbolized/LIBS_zookeeper_3.4.14-jdk8-buster
+reports:  /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/outputs_zookeeper_3.4.14-jdk8-buster
+
+Bindings: 0 symbols across 0 libraries
+
+Nothing to analyse.
+libm.so.6 exit=0 starts=6 syscalls=35
+libdl.so.2 exit=0 starts=6 syscalls=35
+libpthread.so.0 exit=0 starts=60 syscalls=62
+libc.so.6 exit=0 starts=201 syscalls=83
+ld-linux-x86-64.so.2 exit=0 starts=4 syscalls=25
+union=92
+
+===== [2026-11-11 16:01:55] zookeeper_3.4.14-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: zookeeper_3.4.14-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_BIN_zookeeper_3.4.14-jdk8-buster
+Found 10 subdirectories
+
+  ✓ bash: 81 syscalls
+  ✓ chown: 49 syscalls
+  ✓ dirname: 36 syscalls
+  ✓ env: 38 syscalls
+  ✓ gosu: 51 syscalls
+  ✓ grep: 47 syscalls
+  ✓ id: 58 syscalls
+  ✓ java: 63 syscalls
+  ✓ sed: 68 syscalls
+  ✓ uname: 37 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_BIN_zookeeper_3.4.14-jdk8-buster/binary_syscalls.txt (111 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster
+Found 11 subdirectories
+
+  ✓ libawt.so: 75 syscalls
+  ⚠ libawt_headless.so: syscalls.txt EMPTY (0 syscalls)
+  ✓ libawt_xawt.so: 95 syscalls
+  ✓ libfontmanager.so: 75 syscalls
+  ✓ libj2gss.so: 35 syscalls
+  ✓ libjava.so: 84 syscalls
+  ✓ libjvm.so: 76 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 80 syscalls
+  ✓ libnio.so: 81 syscalls
+  ✓ libzip.so: 75 syscalls
+
+⚠ Warning: 1 libraries with EMPTY syscalls.txt:
+    - libawt_headless.so
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/library_syscalls.txt (108 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_unanalysed_zookeeper_3.4.14-jdk8-buster
+Found 8 syscalls.txt files
+  libacl.so.1: 50 syscalls
+  libattr.so.1: 47 syscalls
+  libjli.so: 62 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libpcre.so.3: 41 syscalls
+  librt-2.28.so: 74 syscalls
+  libselinux.so.1: 74 syscalls
+  libtinfo.so.6: 40 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_unanalysed_zookeeper_3.4.14-jdk8-buster/unanalysed_syscalls.txt (107 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+No JNA/FFI syscall union found. Looked for:
+    - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+    - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/jna_ffi_analysis/full_deps/union_syscalls.txt
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals, via its libc/libpthread imports: 92 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      111
+Library syscalls:     108
+Unanalysed libraries: 107
+JNA/FFI syscalls:     0
+Extra component:      92  (libjvm internals, via its libc/libpthread imports)
+Runc whitelist:       123
+Combined (unique):    192
+Only from extra components: 2 ['rt_sigsuspend', 'times']
+  → unanalysed libraries added 21 additional syscalls
+  → runc.txt added 35 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.txt (192 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.json (192 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 192
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  11
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  111 unique
+
+Libraries:
+  - Analyzed:  11
+  - Empty:     1
+  - Missing:   0
+  - Syscalls:  108 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/runc.txt
+  - Syscalls:    123 unique
+  - Added:       56 additional syscalls
+
+Combined:
+  - Total unique syscalls: 192
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_BIN_zookeeper_3.4.14-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  zookeeper_3.4.14-jdk8-buster
+      JARFILES_zookeeper_3.4.14-jdk8-buster  (4.2M) -> Dataset/
+      LIBS_zookeeper_3.4.14-jdk8-buster  (47M) -> Dataset/
+      BINARIES_zookeeper_3.4.14-jdk8-buster  (15M) -> Dataset/
+      RUNTIME_zookeeper_3.4.14-jdk8-buster  (71M) -> Dataset/
+      outputs_zookeeper_3.4.14-jdk8-buster  (548K) -> Bytecode_Analysis/
+      sysdig_outputs_zookeeper_3.4.14-jdk8-buster  (84K) -> Dynamic_Analysis/
+      syscalls_output_zookeeper_3.4.14-jdk8-buster  (147M) -> Binary_Analysis/
+      syscalls_BIN_zookeeper_3.4.14-jdk8-buster  (14M) -> Binary_Analysis/
+      syscalls_unanalysed_zookeeper_3.4.14-jdk8-buster  (7.4M) -> Binary_Analysis/
+      startfuncs_unanalysed_zookeeper_3.4.14-jdk8-buster  (40K) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (16 moved)
+
+Done. Moved 16 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/zookeeper_3.4.14-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 16:01:57] zookeeper_3.4.14-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 16:04:03] zookeeper_3.4.14-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Binary_Analysis/syscalls_output_zookeeper_3.4.14-jdk8-buster/zookeeper_3.4.14-jdk8-buster.json

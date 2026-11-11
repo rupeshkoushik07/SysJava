@@ -46945,3 +46945,239 @@ Containers organized: 1
 RESULT=PASS
 
 ===== [2026-11-06 18:59:47] jruby_9.4.2.0-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Binary_Analysis/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json
+
+===== [2026-11-11 15:49:34] jruby_9.4.2.0-jdk8-buster stage 8: SysPart: unanalysed loaded libraries and JNA/FFI bindings
+============================================================
+ Unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:     jruby_9.4.2.0-jdk8-buster
+LIBS:         /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Dataset_symbolized/LIBS_jruby_9.4.2.0-jdk8-buster
+syscalls_out: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster
+sysdig_out:   /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/sysdig_outputs_jruby_9.4.2.0-jdk8-buster
+
+loaded at runtime:          16
+already analysed:           7
+covered via ldd closure:    8
+LEFTOVER (unanalysed):      5
+  - libcrypt.so.1
+  - libjli.so
+  - libnss_files.so.2
+  - libpcre.so.3
+  - librt.so.1
+
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.summary.tsv
+wrote /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt
+============================================================
+ Analysing unanalysed dynamically loaded libraries
+============================================================
+IMG_NAME:  jruby_9.4.2.0-jdk8-buster
+LIBS:      /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Dataset_symbolized/LIBS_jruby_9.4.2.0-jdk8-buster
+leftovers: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt
+run-syspart: True
+2026-11-11T15:49:34 RUN image=jruby_9.4.2.0-jdk8-buster libraries=5 force=False
+2026-11-11T15:49:35 INDEX /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Dataset_symbolized/LIBS_jruby_9.4.2.0-jdk8-buster
+2026-11-11T15:49:35 SKIP [1/5] libcrypt.so.1 already_complete
+2026-11-11T15:49:35 SKIP [2/5] libjli.so already_complete
+2026-11-11T15:49:35 SKIP [3/5] libnss_files.so.2 already_complete
+2026-11-11T15:49:35 SKIP [4/5] libpcre.so.3 already_complete
+2026-11-11T15:49:35 SKIP [5/5] librt.so.1 already_complete
+
+prepared=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv
+runs=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv
+progress=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/unanalysed_syspart_progress.log
+syscalls=/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster
+ok=5
+============================================================
+ JNA / jnr-ffi / FFM binary analysis
+============================================================
+IMG_NAME: jruby_9.4.2.0-jdk8-buster
+LIBS:     /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Dataset_symbolized/LIBS_jruby_9.4.2.0-jdk8-buster
+reports:  /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/outputs_jruby_9.4.2.0-jdk8-buster
+
+Bindings: 16 symbols across 2 libraries
+  Kernel32                 6 symbols
+  socket                   10 symbols
+
+19 symbol(s) had an unresolved library and cannot be analysed:
+  jnr-ffi: 19
+
+Resolving libraries against the mirror...
+  socket                   -> NOT FOUND in mirror
+  Kernel32                 -> NOT FOUND in mirror
+
+No library resolved; nothing to analyse.
+libm.so.6 exit=0 starts=6 syscalls=35
+libdl.so.2 exit=0 starts=6 syscalls=35
+libpthread.so.0 exit=0 starts=60 syscalls=62
+libc.so.6 exit=0 starts=201 syscalls=83
+ld-linux-x86-64.so.2 exit=0 starts=4 syscalls=25
+union=92
+
+===== [2026-11-11 15:51:23] jruby_9.4.2.0-jdk8-buster stage 9: merge syscalls into seccomp profile, assemble results
+╔══════════════════════════════════════════════════════════════╗
+║              Syscall Merge & Analysis Tool                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+IMG_NAME: jruby_9.4.2.0-jdk8-buster
+Working directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster
+
+======================================================================
+STEP 1: Processing Binary Syscalls
+======================================================================
+
+[Processing Binaries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_BIN_jruby_9.4.2.0-jdk8-buster
+Found 6 subdirectories
+
+  ✓ cat: 37 syscalls
+  ✓ dash: 63 syscalls
+  ✓ env: 38 syscalls
+  ✓ grep: 47 syscalls
+  ✓ java: 63 syscalls
+  ✓ uname: 37 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_BIN_jruby_9.4.2.0-jdk8-buster/binary_syscalls.txt (84 syscalls)
+
+======================================================================
+STEP 2: Processing Library Syscalls
+======================================================================
+
+[Processing Libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster
+Found 7 subdirectories
+
+  ✓ libjava.so: 85 syscalls
+  ✓ libjffi-1.2.so: 39 syscalls
+  ✓ libjvm.so: 76 syscalls
+  ✓ libmanagement.so: 75 syscalls
+  ✓ libnet.so: 79 syscalls
+  ✓ libnio.so: 82 syscalls
+  ✓ libzip.so: 75 syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/library_syscalls.txt (95 syscalls)
+
+======================================================================
+STEP 3: Processing Unanalysed Dynamically Loaded Libraries
+======================================================================
+
+[Processing Unanalysed dynamically loaded libraries]
+Directory: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster
+Found 5 syscalls.txt files
+  libcrypt-2.28.so: 35 syscalls
+  libjli.so: 62 syscalls
+  libnss_files-2.28.so: 35 syscalls
+  libpcre.so.3: 41 syscalls
+  librt-2.28.so: 74 syscalls
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster/unanalysed_syscalls.txt (81 syscalls)
+
+======================================================================
+STEP 4: Loading JNA/FFI Reachable Syscalls
+======================================================================
+
+No JNA/FFI syscall union found. Looked for:
+    - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/jna_ffi_analysis/union_syscalls.txt
+    - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/jna_ffi_analysis/full_deps/union_syscalls.txt
+
+======================================================================
+STEP 4b: Loading Extra Components
+======================================================================
+
+  ✓ libjvm internals, via its libc/libpthread imports: 92 syscalls (/home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/extra_components/jvm_internal_imports/syscalls.txt)
+
+======================================================================
+STEP 5: Loading runc.txt Default Whitelist
+======================================================================
+
+Reading default whitelist from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/runc.txt
+  ✓ Loaded 123 syscalls from runc.txt
+
+======================================================================
+STEP 6: Creating Combined Syscalls File
+======================================================================
+
+Binary syscalls:      84
+Library syscalls:     95
+Unanalysed libraries: 81
+JNA/FFI syscalls:     0
+Extra component:      92  (libjvm internals, via its libc/libpthread imports)
+Runc whitelist:       123
+Combined (unique):    168
+Only from extra components: 0 []
+  → unanalysed libraries added 13 additional syscalls
+  → runc.txt added 41 additional syscalls
+
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.txt (168 syscalls)
+
+======================================================================
+STEP 7: Generating Seccomp Profile
+======================================================================
+
+Generating seccomp profile from combined syscalls...
+  ✓ Written: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json (168 syscalls)
+
+Seccomp profile configuration:
+  - Default action: SCMP_ACT_ERRNO (deny all by default)
+  - Allowed syscalls: 168
+  - Architectures: SCMP_ARCH_X86_64, SCMP_ARCH_X86, SCMP_ARCH_X32
+
+======================================================================
+SUMMARY
+======================================================================
+
+Binaries:
+  - Analyzed:  7
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  84 unique
+
+Libraries:
+  - Analyzed:  7
+  - Empty:     0
+  - Missing:   0
+  - Syscalls:  95 unique
+
+Runc Whitelist:
+  - Loaded from: /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/runc.txt
+  - Syscalls:    123 unique
+  - Added:       54 additional syscalls
+
+Combined:
+  - Total unique syscalls: 168
+  - Includes: binaries + libraries + runc whitelist
+
+Output files:
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_BIN_jruby_9.4.2.0-jdk8-buster/binary_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/library_syscalls.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.txt (text)
+  - /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json (seccomp profile)
+
+✓ Completed successfully
+Found 1 container(s) to organize.
+
+  jruby_9.4.2.0-jdk8-buster
+      JARFILES_jruby_9.4.2.0-jdk8-buster  (17M) -> Dataset/
+      LIBS_jruby_9.4.2.0-jdk8-buster  (47M) -> Dataset/
+      BINARIES_jruby_9.4.2.0-jdk8-buster  (12M) -> Dataset/
+      RUNTIME_jruby_9.4.2.0-jdk8-buster  (71M) -> Dataset/
+      outputs_jruby_9.4.2.0-jdk8-buster  (580K) -> Bytecode_Analysis/
+      sysdig_outputs_jruby_9.4.2.0-jdk8-buster  (76K) -> Dynamic_Analysis/
+      syscalls_output_jruby_9.4.2.0-jdk8-buster  (87M) -> Binary_Analysis/
+      syscalls_BIN_jruby_9.4.2.0-jdk8-buster  (6.7M) -> Binary_Analysis/
+      syscalls_unanalysed_jruby_9.4.2.0-jdk8-buster  (4.2M) -> Binary_Analysis/
+      startfuncs_unanalysed_jruby_9.4.2.0-jdk8-buster  (24K) -> Binary_Analysis/
+      dynamic_leftover_after_analyzed_ldd.ldd_deps_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.leftover_by_container.txt  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.summary.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_startfuncs.tsv  (4.0K) -> Reports/
+      dynamic_leftover_after_analyzed_ldd.unanalysed_syspart_runs.tsv  (4.0K) -> Reports/
+      unanalysed_syspart_progress.log  (4.0K) -> Reports/
+    (16 moved)
+
+Done. Moved 16 item(s) into /home/user/Tutorial/EchoTrace/jdk8_workspaces/jruby_9.4.2.0-jdk8-buster/Final_results/
+Containers organized: 1
+
+===== [2026-11-11 15:51:26] jruby_9.4.2.0-jdk8-buster stage 10: run the container under its profile
+RESULT=PASS
+
+===== [2026-11-11 15:54:29] jruby_9.4.2.0-jdk8-buster stage done: finished; profile: /home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Binary_Analysis/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json

@@ -13,9 +13,9 @@
 #   TABLE_ONLY=1   ./reproduce.sh               # only the tables, from the shipped outputs
 #
 # 1. SysJava, full pipeline per image   -> ../work/jdk8/Final_results_JDK8/<image>/
-# 2. SWAT4J, unmodified (../swat4j/README.md): static on the same JARs and libraries plus SWAT4J's
-#    own JNI_thirdparty/ libraries, its own native-method mapping counted, dynamic with strace on
-#    containerd (needs sudo) -> ../swat4j/jdk8_debian10/
+# 2. SWAT4J, unmodified (../swat4j/README.md): its bytecode step on the same JARs, its own native-method
+#    mapping counted, its binary step on each image's own libraries (image JDK, image loader) plus SWAT4J's
+#    JNI_thirdparty/ libraries, dynamic with strace on containerd (needs sudo) -> ../swat4j/jdk8_debian10/
 # 3. Table: SysJava (A), SWAT4J static + dynamic (B), A ∩ B, A ∖ B, B ∖ A
 #    -> tables_rerun/swat4j_outputs/ and the printed table; tab:results -> tables_rerun/tab_results.tex
 set -euo pipefail
@@ -66,6 +66,13 @@ if [ -z "${SKIP_SWAT4J:-}" ]; then
     ET="$SJ" bash "$SW/run_static_jdk8deb.sh" "${TARGETS[@]}"
     echo "===== SWAT4J mapping of its own native methods: ${apps[*]}"
     bash "$SW/own_mapping_jdk8deb.sh" "${TARGETS[@]}"
+    echo "===== SWAT4J static on each image's own libraries: ${apps[*]}"
+    for t in "${ALL[@]}"; do     # extract_rootfs.sh copies the image's libraries out of each image
+        app="${t%%_*}"; ver="${t#*_}"; ver="${ver%-jdk8-buster}"
+        docker image inspect "${app}:${ver}-jdk8-buster" >/dev/null 2>&1 || bash "$ART/docker_images/build_jdk8_images.sh" "$app"
+    done
+    bash "$SW/image_libs/extract_rootfs.sh"
+    bash "$SW/image_libs/run_image_libs.sh" "${TARGETS[@]}"
     echo "===== SWAT4J dynamic: ${apps[*]}"
     bash "$SW/dynamic_all_jdk8deb.sh" "${apps[@]}"
 fi

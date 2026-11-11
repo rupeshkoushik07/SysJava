@@ -277,6 +277,10 @@ def whitelist(img, run_container=True):
     manual = fold_manual_mappings(shipped, outs, img, table)
     if manual and not QUIET:
         print(f"manual mappings: {manual} start functions added")
+    if (shipped / "Bytecode_Analysis" / f"outputs_{img}" / "vtable_starts_added.tsv").is_file():
+        # as the run's stage 7, after the manual mappings: the functions a C++ library's vtables point to
+        run([sys.executable, "scripts/add_vtable_starts.py", img, "--outputs", str(outs), "--libs", str(libs)],
+            ws / "vtable_starts.log", cwd=ws)
     tags = re.findall(r"\[([A-Z_]+)\]$", (outs / "mapped_method_syscalls.txt").read_text(), re.M)
     summary(f"{len(tags)} native methods mapped ("
             + ", ".join(f"{t} {tags.count(t)}" for t in sorted(set(tags), key=lambda t: -tags.count(t)))
@@ -287,6 +291,18 @@ def whitelist(img, run_container=True):
          str(ws)], ws / "callgraphs.log")
     summary(replay_summary(ws / "callgraphs.log"))
     shutil.copy(ws / "static_report.tsv", out / "report.tsv")
+    # extra components the run analysed with SysPart (libjvm through the functions it imports,
+    # scripts/analyse_jvm_imports.sh): their syscalls.txt is the union of the call graphs replayed above
+    for comp in sorted((shipped / "Binary_Analysis" / "extra_components").glob("*/")):
+        graphs = sorted((ws / "extra_components" / comp.name).glob("syspart_*/syscalls.txt"))
+        if graphs:
+            union = sorted(set().union(*(set(g.read_text().split()) for g in graphs)))
+            (ws / "extra_components" / comp.name / "syscalls.txt").write_text("".join(x + "\n" for x in union))
+            for f in ("label.txt", "README.md"):
+                if (comp / f).is_file():
+                    shutil.copy(comp / f, ws / "extra_components" / comp.name / f)
+            if not QUIET:
+                print(f"extra component {comp.name}: {len(union)} syscalls from {len(graphs)} call graphs")
 
     if "named" in num:
         stage("named", "named call graphs: unnamed (fuzzyfunc) functions per result")

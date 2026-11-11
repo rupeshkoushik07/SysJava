@@ -1,0 +1,1 @@
+# extracted afterwards (extract_audit_records.py): SECCOMP log records between 1794409558 and 1794409602 (epoch); records of other apps in log mode at the same time are marked '# other app'. This container's syscalls, by PID: would_be_denied in log_1.json = {}

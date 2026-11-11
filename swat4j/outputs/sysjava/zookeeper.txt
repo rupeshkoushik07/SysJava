@@ -129,6 +129,7 @@ rt_sigpending
 rt_sigprocmask
 rt_sigqueueinfo
 rt_sigreturn
+rt_sigsuspend
 rt_sigtimedwait
 sched_get_priority_max
 sched_get_priority_min
@@ -178,6 +179,7 @@ timer_delete
 timer_getoverrun
 timer_gettime
 timer_settime
+times
 tkill
 umask
 umount2

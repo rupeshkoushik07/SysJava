@@ -1,3 +1,7 @@
+pread64
+munmap
+uname
+shutdown
 mmap
 getsockname
 nanosleep
@@ -52,13 +56,13 @@ getpid
 rt_sigaction
 execve
 readlink
-setsockopt
 shmat
 tgkill
 mincore
 ioctl
 prlimit64
 sendto
+setsockopt
 sched_setscheduler
 socket
 write
@@ -69,7 +73,3 @@ exit
 exit_group
 vfork
 sched_getscheduler
-uname
-pread64
-munmap
-shutdown

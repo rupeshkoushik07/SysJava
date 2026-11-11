@@ -1,0 +1,284 @@
+*** [WARN] *** Your open file limit is currently 1024.  
+ It should be set to 65000 to avoid operational disruption. 
+ If you no longer wish to see this warning, set SOLR_ULIMIT_CHECKS to false in your profile or solr.in.sh
+2026-11-11 15:11:25.503 INFO  (main) [   ] o.e.j.u.log Logging initialized @871ms to org.eclipse.jetty.util.log.Slf4jLog
+2026-11-11 15:11:25.555 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+    <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
+        <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
+      </Arg></New>
+  </Arg>
+2026-11-11 15:11:25.643 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_504-b01
+2026-11-11 15:11:25.692 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr/server/contexts/] at interval 0
+2026-11-11 15:11:25.891 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2026-11-11 15:11:25.900 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2026-11-11 15:11:25.900 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2026-11-11 15:11:25.902 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2026-11-11 15:11:25.975 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2026-11-11 15:11:25.981 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 8.7.0
+2026-11-11 15:11:25.981 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2026-11-11 15:11:25.981 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2026-11-11 15:11:25.982 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2026-11-11T15:11:25.982Z
+2026-11-11 15:11:25.987 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /var/solr/data
+2026-11-11 15:11:25.991 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2026-11-11 15:11:26.103 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@4445629, but no JMX reporters were configured - adding default JMX reporter.
+2026-11-11 15:11:26.546 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2026-11-11 15:11:26.666 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@f79a760[provider=null,keyStore=null,trustStore=null]
+2026-11-11 15:11:26.667 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@f79a760[provider=null,keyStore=null,trustStore=null]
+2026-11-11 15:11:26.791 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3af17be2[provider=null,keyStore=null,trustStore=null]
+2026-11-11 15:11:26.791 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3af17be2[provider=null,keyStore=null,trustStore=null]
+2026-11-11 15:11:26.841 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2026-11-11 15:11:26.981 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2026-11-11 15:11:26.983 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2026-11-11 15:11:27.053 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4445629
+2026-11-11 15:11:27.053 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4445629
+2026-11-11 15:11:27.059 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4445629
+2026-11-11 15:11:27.089 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /var/solr/data
+2026-11-11 15:11:27.132 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@51c668e3{/solr,file:///opt/solr/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr/server/solr-webapp/webapp}
+2026-11-11 15:11:27.145 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5136d012{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2026-11-11 15:11:27.145 INFO  (main) [   ] o.e.j.s.Server Started @2515ms
+2026-11-11 15:11:27.891 INFO  (qtp1546908073-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=31
+2026-11-11 15:11:27.933 INFO  (qtp1546908073-25) [   x:wl] o.a.s.h.a.CoreAdminOperation core create command name=wl&action=CREATE&configSet=_default&wt=json
+2026-11-11 15:11:27.984 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2026-11-11 15:11:28.152 INFO  (qtp1546908073-25) [   x:wl] o.a.s.s.IndexSchema Schema name=default-config
+2026-11-11 15:11:28.666 INFO  (qtp1546908073-25) [   x:wl] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2026-11-11 15:11:28.689 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.CoreContainer Creating SolrCore 'wl' using configuration from configset /var/solr/data/configsets/_default, trusted=true
+2026-11-11 15:11:28.700 INFO  (qtp1546908073-25) [   x:wl] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.wl' (registry 'solr.core.wl') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4445629
+2026-11-11 15:11:28.715 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.SolrCore [[wl] ] Opening new SolrCore at [/var/solr/data/wl], dataDir=[/var/solr/data/wl/data/]
+2026-11-11 15:11:29.293 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2026-11-11 15:11:29.293 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2026-11-11 15:11:29.303 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2026-11-11 15:11:29.303 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2026-11-11 15:11:29.331 INFO  (qtp1546908073-25) [   x:wl] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/configsets/_default/conf
+2026-11-11 15:11:29.349 INFO  (qtp1546908073-25) [   x:wl] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2026-11-11 15:11:29.356 INFO  (qtp1546908073-25) [   x:wl] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2026-11-11 15:11:29.366 INFO  (qtp1546908073-25) [   x:wl] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2026-11-11 15:11:29.370 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1881575144156037120
+2026-11-11 15:11:29.374 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:29.374 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2026-11-11 15:11:29.377 INFO  (qtp1546908073-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=wl&action=CREATE&configSet=_default&wt=json} status=0 QTime=1445
+2026-11-11 15:11:29.386 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:29.502 INFO  (qtp1546908073-26) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.569 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[GB18030TEST (1881575144299692032)]} 0 187
+2026-11-11 15:11:29.637 INFO  (qtp1546908073-27) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.655 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SP2514N (1881575144442298368), 6H500F0 (1881575144452784128)]} 0 80
+2026-11-11 15:11:29.675 INFO  (qtp1546908073-28) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.697 INFO  (qtp1546908073-28) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1881575144493678592), IW-02 (1881575144496824320)]} 0 37
+2026-11-11 15:11:29.726 INFO  (qtp1546908073-29) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.732 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[MA147LL/A (1881575144531427328)]} 0 31
+2026-11-11 15:11:29.749 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[adata (1881575144541913088), apple (1881575144544010240), asus (1881575144545058816), ati (1881575144546107392), belkin (1881575144547155968), canon (1881575144548204544), corsair (1881575144549253120), dell (1881575144549253121), maxtor (1881575144550301696), samsung (1881575144551350272), ... (11 adds)]} 0 11
+2026-11-11 15:11:29.777 INFO  (qtp1546908073-31) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.787 INFO  (qtp1546908073-31) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1881575144585953280), VS1GB400C3 (1881575144589099008), VDBDB1A16 (1881575144591196160)]} 0 34
+2026-11-11 15:11:29.814 INFO  (qtp1546908073-32) [   x:wl] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/configsets/_default/conf/managed-schema
+2026-11-11 15:11:29.819 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[USD (1881575144622653440), EUR (1881575144624750592), GBP (1881575144624750593), NOK (1881575144625799168)]} 0 28
+2026-11-11 15:11:29.826 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[3007WFP (1881575144632090624)]} 0 3
+2026-11-11 15:11:29.832 INFO  (qtp1546908073-43) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[VA902B (1881575144639430656)]} 0 2
+2026-11-11 15:11:29.839 INFO  (qtp1546908073-23) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[0579B002 (1881575144645722112)]} 0 3
+2026-11-11 15:11:29.844 INFO  (qtp1546908073-24) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[9885A004 (1881575144652013568)]} 0 3
+2026-11-11 15:11:29.850 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SOLR1000 (1881575144657256448)]} 0 3
+2026-11-11 15:11:29.856 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[UTF8TEST (1881575144663547904)]} 0 3
+2026-11-11 15:11:29.867 INFO  (qtp1546908073-51) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1881575144669839360), 100-435805 (1881575144676130816)]} 0 8
+2026-11-11 15:11:30.383 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:30.390 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:30.392 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={commit=true}{add=[gen-0-0 (1881575144688713728), gen-0-1 (1881575144690810880), gen-0-2 (1881575144691859456), gen-0-3 (1881575144691859457), gen-0-4 (1881575144692908032), gen-0-5 (1881575144692908033), gen-0-6 (1881575144695005184), gen-0-7 (1881575144695005185), gen-0-8 (1881575144696053760), gen-0-9 (1881575144696053761), ... (2000 adds)],commit=} 0 519
+2026-11-11 15:11:30.401 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[GB18030TEST (1881575145233973248)]} 0 4
+2026-11-11 15:11:30.409 INFO  (qtp1546908073-52) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SP2514N (1881575145241313280), 6H500F0 (1881575145244459008)]} 0 5
+2026-11-11 15:11:30.414 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1881575145249701888), IW-02 (1881575145250750464)]} 0 3
+2026-11-11 15:11:30.421 INFO  (qtp1546908073-31) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[MA147LL/A (1881575145255993344)]} 0 3
+2026-11-11 15:11:30.427 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[adata (1881575145261236224), apple (1881575145262284800), asus (1881575145262284801), ati (1881575145262284802), belkin (1881575145262284803), canon (1881575145263333376), corsair (1881575145264381952), dell (1881575145264381953), maxtor (1881575145264381954), samsung (1881575145264381955), ... (11 adds)]} 0 4
+2026-11-11 15:11:30.433 INFO  (qtp1546908073-28) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1881575145268576256), VS1GB400C3 (1881575145269624832), VDBDB1A16 (1881575145270673408)]} 0 3
+2026-11-11 15:11:30.438 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[USD (1881575145274867712), EUR (1881575145274867713), GBP (1881575145275916288), NOK (1881575145275916289)]} 0 2
+2026-11-11 15:11:30.442 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[3007WFP (1881575145280110592)]} 0 1
+2026-11-11 15:11:30.446 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[VA902B (1881575145284304896)]} 0 1
+2026-11-11 15:11:30.450 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[0579B002 (1881575145287450624)]} 0 1
+2026-11-11 15:11:30.454 INFO  (qtp1546908073-51) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[9885A004 (1881575145291644928)]} 0 1
+2026-11-11 15:11:30.458 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SOLR1000 (1881575145295839232)]} 0 1
+2026-11-11 15:11:30.462 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[UTF8TEST (1881575145300033536)]} 0 1
+2026-11-11 15:11:30.470 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1881575145307373568), 100-435805 (1881575145308422144)]} 0 3
+2026-11-11 15:11:30.784 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:30.789 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:30.791 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={commit=true}{add=[gen-1-0 (1881575145317859328), gen-1-1 (1881575145318907904), gen-1-2 (1881575145318907905), gen-1-3 (1881575145318907906), gen-1-4 (1881575145318907907), gen-1-5 (1881575145318907908), gen-1-6 (1881575145318907909), gen-1-7 (1881575145318907910), gen-1-8 (1881575145318907911), gen-1-9 (1881575145318907912), ... (2000 adds)],commit=} 0 313
+2026-11-11 15:11:30.806 INFO  (qtp1546908073-52) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[GB18030TEST (1881575145655500800)]} 0 9
+2026-11-11 15:11:30.813 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SP2514N (1881575145665986560), 6H500F0 (1881575145668083712)]} 0 3
+2026-11-11 15:11:30.819 INFO  (qtp1546908073-31) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1881575145674375168), IW-02 (1881575145675423744)]} 0 2
+2026-11-11 15:11:30.825 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[MA147LL/A (1881575145680666624)]} 0 2
+2026-11-11 15:11:30.834 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[adata (1881575145689055232), apple (1881575145690103808), asus (1881575145690103809), ati (1881575145690103810), belkin (1881575145690103811), canon (1881575145690103812), corsair (1881575145690103813), dell (1881575145690103814), maxtor (1881575145690103815), samsung (1881575145690103816), ... (11 adds)]} 0 2
+2026-11-11 15:11:30.839 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1881575145695346688), VS1GB400C3 (1881575145695346689), VDBDB1A16 (1881575145696395264)]} 0 2
+2026-11-11 15:11:30.842 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[USD (1881575145698492416), EUR (1881575145699540992), GBP (1881575145699540993), NOK (1881575145699540994)]} 0 1
+2026-11-11 15:11:30.845 INFO  (qtp1546908073-51) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[3007WFP (1881575145702686720)]} 0 1
+2026-11-11 15:11:30.848 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[VA902B (1881575145705832448)]} 0 0
+2026-11-11 15:11:30.851 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[0579B002 (1881575145708978176)]} 0 1
+2026-11-11 15:11:30.856 INFO  (qtp1546908073-28) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[9885A004 (1881575145713172480)]} 0 1
+2026-11-11 15:11:30.861 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SOLR1000 (1881575145718415360)]} 0 1
+2026-11-11 15:11:30.865 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[UTF8TEST (1881575145722609664)]} 0 1
+2026-11-11 15:11:30.873 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1881575145727852544), 100-435805 (1881575145732046848)]} 0 4
+2026-11-11 15:11:31.027 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:31.029 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:31.033 INFO  (qtp1546908073-43) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={commit=true}{add=[gen-2-0 (1881575145741484032), gen-2-1 (1881575145742532608), gen-2-2 (1881575145742532609), gen-2-3 (1881575145742532610), gen-2-4 (1881575145742532611), gen-2-5 (1881575145742532612), gen-2-6 (1881575145742532613), gen-2-7 (1881575145742532614), gen-2-8 (1881575145742532615), gen-2-9 (1881575145742532616), ... (2000 adds)],commit=} 0 151
+2026-11-11 15:11:31.041 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[GB18030TEST (1881575145905061888)]} 0 5
+2026-11-11 15:11:31.050 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SP2514N (1881575145914499072), 6H500F0 (1881575145916596224)]} 0 4
+2026-11-11 15:11:31.054 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1881575145920790528), IW-02 (1881575145920790529)]} 0 1
+2026-11-11 15:11:31.058 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[MA147LL/A (1881575145924984832)]} 0 1
+2026-11-11 15:11:31.063 INFO  (qtp1546908073-51) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[adata (1881575145931276288), apple (1881575145931276289), asus (1881575145931276290), ati (1881575145931276291), belkin (1881575145931276292), canon (1881575145931276293), corsair (1881575145931276294), dell (1881575145931276295), maxtor (1881575145931276296), samsung (1881575145931276297), ... (11 adds)]} 0 0
+2026-11-11 15:11:31.068 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1881575145934422016), VS1GB400C3 (1881575145935470592), VDBDB1A16 (1881575145935470593)]} 0 2
+2026-11-11 15:11:31.071 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[USD (1881575145938616320), EUR (1881575145939664896), GBP (1881575145939664897), NOK (1881575145939664898)]} 0 0
+2026-11-11 15:11:31.073 INFO  (qtp1546908073-31) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[3007WFP (1881575145941762048)]} 0 0
+2026-11-11 15:11:31.078 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[VA902B (1881575145947004928)]} 0 1
+2026-11-11 15:11:31.083 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[0579B002 (1881575145952247808)]} 0 3
+2026-11-11 15:11:31.088 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[9885A004 (1881575145956442112)]} 0 1
+2026-11-11 15:11:31.092 INFO  (qtp1546908073-43) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SOLR1000 (1881575145960636416)]} 0 1
+2026-11-11 15:11:31.096 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[UTF8TEST (1881575145965879296)]} 0 0
+2026-11-11 15:11:31.103 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1881575145971122176), 100-435805 (1881575145972170752)]} 0 2
+2026-11-11 15:11:31.692 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:31.695 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:31.697 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={commit=true}{add=[gen-3-0 (1881575145980559360), gen-3-1 (1881575145980559361), gen-3-2 (1881575145980559362), gen-3-3 (1881575145980559363), gen-3-4 (1881575145980559364), gen-3-5 (1881575145980559365), gen-3-6 (1881575145980559366), gen-3-7 (1881575145980559367), gen-3-8 (1881575145980559368), gen-3-9 (1881575145980559369), ... (2000 adds)],commit=} 0 587
+2026-11-11 15:11:31.704 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[GB18030TEST (1881575146601316352)]} 0 4
+2026-11-11 15:11:31.711 INFO  (qtp1546908073-52) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SP2514N (1881575146609704960), 6H500F0 (1881575146610753536)]} 0 3
+2026-11-11 15:11:31.716 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1881575146614947840), IW-02 (1881575146614947841)]} 0 1
+2026-11-11 15:11:31.720 INFO  (qtp1546908073-26) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[MA147LL/A (1881575146619142144)]} 0 1
+2026-11-11 15:11:31.723 INFO  (qtp1546908073-31) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[adata (1881575146622287872), apple (1881575146622287873), asus (1881575146622287874), ati (1881575146622287875), belkin (1881575146622287876), canon (1881575146623336448), corsair (1881575146623336449), dell (1881575146623336450), maxtor (1881575146623336451), samsung (1881575146623336452), ... (11 adds)]} 0 0
+2026-11-11 15:11:31.727 INFO  (qtp1546908073-27) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1881575146625433600), VS1GB400C3 (1881575146625433601), VDBDB1A16 (1881575146626482176)]} 0 2
+2026-11-11 15:11:31.730 INFO  (qtp1546908073-25) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[USD (1881575146630676480), EUR (1881575146630676481), GBP (1881575146630676482), NOK (1881575146630676483)]} 0 0
+2026-11-11 15:11:31.735 INFO  (qtp1546908073-30) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[3007WFP (1881575146635919360)]} 0 1
+2026-11-11 15:11:31.739 INFO  (qtp1546908073-43) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[VA902B (1881575146640113664)]} 0 0
+2026-11-11 15:11:31.743 INFO  (qtp1546908073-42) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[0579B002 (1881575146644307968)]} 0 1
+2026-11-11 15:11:31.747 INFO  (qtp1546908073-28) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[9885A004 (1881575146647453696)]} 0 1
+2026-11-11 15:11:31.751 INFO  (qtp1546908073-48) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[SOLR1000 (1881575146651648000)]} 0 1
+2026-11-11 15:11:31.754 INFO  (qtp1546908073-29) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[UTF8TEST (1881575146654793728)]} 0 1
+2026-11-11 15:11:31.758 INFO  (qtp1546908073-32) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1881575146658988032), 100-435805 (1881575146660036608)]} 0 2
+2026-11-11 15:11:32.057 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2026-11-11 15:11:32.059 INFO  (searcherExecutor-15-thread-1-processing-x:wl) [   x:wl] o.a.s.c.SolrCore [wl]  Registered new searcher autowarm time: 0 ms
+2026-11-11 15:11:32.065 INFO  (qtp1546908073-50) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={commit=true}{add=[gen-4-0 (1881575146668425216), gen-4-1 (1881575146668425217), gen-4-2 (1881575146668425218), gen-4-3 (1881575146668425219), gen-4-4 (1881575146668425220), gen-4-5 (1881575146668425221), gen-4-6 (1881575146668425222), gen-4-7 (1881575146668425223), gen-4-8 (1881575146668425224), gen-4-9 (1881575146668425225), ... (2000 adds)],commit=} 0 299
+2026-11-11 15:11:32.117 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=47
+2026-11-11 15:11:32.151 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=15
+2026-11-11 15:11:32.196 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=40
+2026-11-11 15:11:32.219 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=19
+2026-11-11 15:11:32.233 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=6
+2026-11-11 15:11:32.322 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=31
+2026-11-11 15:11:32.327 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.333 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.347 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=4
+2026-11-11 15:11:32.351 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.356 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.366 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=1
+2026-11-11 15:11:32.369 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.373 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.378 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=2
+2026-11-11 15:11:32.381 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.384 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.394 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.398 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.401 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.406 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=2
+2026-11-11 15:11:32.408 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.411 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.419 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.421 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.423 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.427 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.429 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.432 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.440 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.442 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.444 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.448 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=2
+2026-11-11 15:11:32.451 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.453 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.461 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=1
+2026-11-11 15:11:32.463 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.465 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.468 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.470 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.473 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.481 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=1
+2026-11-11 15:11:32.486 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.488 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.492 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.495 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.497 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.505 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=1
+2026-11-11 15:11:32.508 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.512 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.515 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.519 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.522 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.530 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.532 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.535 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.538 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.541 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.544 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.551 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.554 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.556 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.560 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=2
+2026-11-11 15:11:32.564 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.567 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.575 INFO  (qtp1546908073-26) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.577 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.580 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.583 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.585 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.587 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.593 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.595 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.599 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=1
+2026-11-11 15:11:32.602 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.605 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.608 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.616 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.618 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.621 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.625 INFO  (qtp1546908073-51) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=2
+2026-11-11 15:11:32.628 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.631 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.639 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.641 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.643 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.646 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.648 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.650 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.658 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.660 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.662 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.664 INFO  (qtp1546908073-51) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.668 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.670 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.676 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.678 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.680 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.682 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.684 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.686 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.693 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.695 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.697 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.701 INFO  (qtp1546908073-51) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.704 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.707 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.714 INFO  (qtp1546908073-43) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.716 INFO  (qtp1546908073-28) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.718 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.720 INFO  (qtp1546908073-52) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.722 INFO  (qtp1546908073-25) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.725 INFO  (qtp1546908073-48) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.733 INFO  (qtp1546908073-29) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.736 INFO  (qtp1546908073-31) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.739 INFO  (qtp1546908073-42) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name:ipod&wt=json} hits=3 status=0 QTime=0
+2026-11-11 15:11:32.743 INFO  (qtp1546908073-51) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&facet.field=cat&facet=true&wt=json} hits=10032 status=0 QTime=1
+2026-11-11 15:11:32.745 INFO  (qtp1546908073-27) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=price_f:[10+TO+100]&sort=price_f+desc&wt=json} hits=300 status=0 QTime=0
+2026-11-11 15:11:32.748 INFO  (qtp1546908073-32) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=*:*&rows=500&wt=json} hits=10032 status=0 QTime=0
+2026-11-11 15:11:32.753 INFO  (qtp1546908073-50) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/select params={q=name_s:item*&fl=id&wt=json} hits=10000 status=0 QTime=0
+2026-11-11 15:11:32.756 INFO  (qtp1546908073-28) [   x:wl] o.a.s.u.p.LogUpdateProcessorFactory [wl]  webapp=/solr path=/update params={optimize=true}{optimize=} 0 2
+2026-11-11 15:11:32.767 INFO  (qtp1546908073-30) [   x:wl] o.a.s.c.S.Request [wl]  webapp=/solr path=/replication params={name=wlbak&wt=json&command=backup} status=0 QTime=6
+2026-11-11 15:11:32.768 INFO  (Thread-24) [   ] o.a.s.h.SnapShooter Creating backup snapshot wlbak at file:///var/solr/data/wl/data/
+2026-11-11 15:11:32.798 INFO  (Thread-24) [   ] o.a.s.h.SnapShooter Done creating backup snapshot: wlbak into file:///var/solr/data/wl/data/snapshot.wlbak
+2026-11-11 15:11:37.775 INFO  (qtp1546908073-52) [   x:wl] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wl tag=null
+2026-11-11 15:11:37.776 INFO  (qtp1546908073-52) [   x:wl] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@230d6412: rootName = null, domain = solr.core.wl, service url = null, agent id = null] for registry solr.core.wl/com.codahale.metrics.MetricRegistry@66af8add
+2026-11-11 15:11:37.789 INFO  (qtp1546908073-52) [   ] o.a.s.c.SolrCore [wl]  CLOSING SolrCore org.apache.solr.core.SolrCore@c4c5270
+2026-11-11 15:11:37.789 INFO  (qtp1546908073-52) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wl tag=SolrCore@c4c5270
+2026-11-11 15:11:37.790 INFO  (qtp1546908073-52) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2026-11-11 15:11:37.814 INFO  (qtp1546908073-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=wl&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=39
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)

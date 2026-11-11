@@ -19,6 +19,8 @@ H="$(cd "$(dirname "$0")" && pwd)"
 J=$H/jdk8_debian10
 # SWAT4J static + mapping: the run with its repository's JNI_thirdparty/ libraries (as the original)
 R=${STATIC:-$J/static}; RM=${MAPPING:-$J/own_mapping}
+# static allowlists: binary_analyser.py on each image's own libraries (image_libs/run_image_libs.sh)
+RI=${IMAGE_STATIC:-$J/image_libs}
 ET=${ET:-$H/../2_swat4j_vs_sysjava/sysjava_results}
 OUT="${1:-$H/outputs_jdk8_debian10}"
 TARGETS="zookeeper_3.4.14 tomcat_7.0 cassandra_3.0.29 jetty_9.4.51 storm_2.4.0 orientdb_3.2.19
@@ -33,8 +35,8 @@ printf 'app\timage\tprofile\tresult\n' > "$OUT/sysjava/SOURCE.tsv"
 for t in $TARGETS; do
   app=${t%%_*}; img=$t-jdk8-buster
   cp "$R/output-native/${app}_native.txt" "$OUT/static/native_methods/$app.txt"
-  cp "$R/output-syscalls/${app}_syscalls.txt" "$OUT/static/syscalls/$app.txt"
-  [ ! -f "$R/logs/$img.log" ] || scrub < "$R/logs/$img.log" | xz > "$OUT/static/logs/$img.log.xz"
+  cp "$RI/output-syscalls/${app}_syscalls.txt" "$OUT/static/syscalls/$app.txt"
+  [ ! -f "$RI/logs/$img.log" ] || scrub < "$RI/logs/$img.log" | xz > "$OUT/static/logs/$img.log.xz"
   [ ! -f "$RM/$app.tsv" ] || cp "$RM/$app.tsv" "$OUT/mapping/"
   for f in "${app}_result.txt" "${app}_strace.txt" "$app.log"; do
     [ ! -f "$J/dynamic/$f" ] || cp "$J/dynamic/$f" "$OUT/dynamic/"
