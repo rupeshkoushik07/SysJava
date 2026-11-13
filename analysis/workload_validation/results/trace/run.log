@@ -1,0 +1,18 @@
+tomcat trace rep1: ready=True ok=3052 failed=0 running=True denied={}
+tomcat: ops ok=3052 failed=0  missing/performed/permitted = 0/82/173 []  new bins/libs = 0/0
+cassandra trace rep1: ready=True ok=11 failed=0 running=True denied={}
+cassandra: ops ok=11 failed=0  missing/performed/permitted = 0/104/230 []  new bins/libs = 0/4
+jetty trace rep1: ready=True ok=3052 failed=0 running=True denied={}
+jetty: ops ok=3052 failed=0  missing/performed/permitted = 0/67/161 []  new bins/libs = 0/0
+storm trace rep1: ready=True ok=35 failed=0 running=True denied={}
+storm: ops ok=35 failed=0  missing/performed/permitted = 2/93/172 ['fallocate', 'fchdir']  new bins/libs = 0/1
+orientdb trace rep1: ready=True ok=1808 failed=0 running=True denied={}
+orientdb: ops ok=1808 failed=0  missing/performed/permitted = 0/79/174 []  new bins/libs = 0/4
+elasticsearch trace rep1: ready=True ok=250 failed=0 running=True denied={}
+elasticsearch: ops ok=250 failed=0  missing/performed/permitted = 0/88/185 []  new bins/libs = 0/0
+solr trace rep1: ready=True ok=199 failed=0 running=True denied={}
+solr: ops ok=199 failed=0  missing/performed/permitted = 0/86/201 []  new bins/libs = 0/0
+groovy trace rep1: ready=True ok=46 failed=0 running=False denied={}
+groovy: ops ok=46 failed=0  missing/performed/permitted = 0/79/189 []  new bins/libs = 0/0
+jruby trace rep1: ready=True ok=46 failed=0 running=False denied={}
+jruby: ops ok=46 failed=0  missing/performed/permitted = 0/78/168 []  new bins/libs = 0/1

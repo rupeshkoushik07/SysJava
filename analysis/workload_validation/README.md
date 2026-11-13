@@ -101,6 +101,7 @@ for log mode `<mode>_<rep>.audit.log`. `summary.tsv` and `table.md` summarise al
 |---|---|---|
 | `results/paper_profiles/` | `profiles/paper/` | 90, 2026-11-11 morning |
 | `results/fixed_profiles/` | `profiles/fixed/` | 90, 2026-11-11 afternoon |
+| `results/trace/` | `profiles/fixed/` (for "missing") | 10 traced runs under Docker's default profile, 2026-11-12 (see "Traced pass") |
 
 `logs/` has the console output of every run. The `paper` runs' `.audit.log` files were extracted
 afterwards from the host's audit log by time window (`extract_audit_records.py`), because the harness
@@ -135,6 +136,55 @@ did not save them then; records of other apps that ran at the same time are mark
 | storm | 35 | 105 / 0 | 105 / 0 | 105 / 0 | none | 9 | PASS |
 | tomcat | 3,052 | 9,156 / 0 | 9,156 / 0 | 9,156 / 0 | none | 9 | PASS |
 | zookeeper | 3,951 | 11,853 / 0 | 11,853 / 0 | 11,853 / 0 | none | 9 | PASS |
+
+## Traced pass: the policy-validation table (`results/trace/`)
+
+The columns of the paper's policy-validation table: syscalls missing / performed / permitted, and new
+binaries / libraries. `trace_validation.py` runs each workload once more under Docker's default seccomp
+profile while sysdig (0.41.4, `--modern-bpf`) records every syscall of the container, from start-up to
+the end of the workload (2026-11-12, `fixed` profiles):
+
+- **performed**: the distinct syscalls of the container's processes. sysdig's names are mapped to
+  libseccomp's (`pread` -> `pread64`, `pwrite` -> `pwrite64`, `prlimit` -> `prlimit64`). runc's setup
+  stages `runc:[0:PARENT]` and `runc:[1:CHILD]` are left out because they run before the filter is
+  installed (listed in `runc_setup_syscalls`).
+- **missing**: performed syscalls that the published profile does not allow (Storm: the 179 profile).
+- **permitted**: the size of the profile.
+- **new**: programs executed and `.so` files opened whose name is not in the image's dataset
+  (`Dataset/LIBS_<t>`, `Dataset/BINARIES_<t>`). Three loads use another name of an analysed library and
+  are listed in `loaded_under_other_name`:
+  - Cassandra's `/tmp/libnetty-transport-native-epoll<n>.so`;
+  - Cassandra's `/usr/local/lib/libjemalloc.so` (`libjemalloc.so.2`);
+  - OrientDB's `/tmp/jffi<n>.so` (`libjffi-1.2.so`).
+
+| Container | Workload (ops) | Missing / performed / permitted | New binaries / libraries |
+|---|---|---|---|
+| Zookeeper 3.4.14 | zkCli + four-letter cmds (3,951) | 0 / 85 / 192 | 0 / 0 |
+| Tomcat 7.0 | servlet/JSP GETs, POSTs, war deploy (3,052) | 0 / 82 / 173 | 0 / 0 |
+| Cassandra 3.0.29 | cqlsh + cassandra-stress (11) | 0 / 104 / 230 | 0 / 0 |
+| Jetty 9.4.51 | static GETs, POSTs, war deploy (3,052) | 0 / 67 / 161 | 0 / 0 |
+| Storm 2.4.0 | storm list + blobstore (35) | 0 / 93 / 179 | 0 / 0 |
+| OrientDB 3.2.19 | REST CRUD, index, edges (1,808) | 0 / 79 / 174 | 0 / 0 |
+| Elasticsearch 7.5.2 | bulk index, search, reindex (250) | 0 / 88 / 185 | 0 / 0 |
+| Solr 8.7.0 | index, query, backup, unload (199) | 0 / 86 / 201 | 0 / 0 |
+| Groovy 4.0.0 | script: files, XML, zip, HTTP (46) | 0 / 79 / 189 | 0 / 0 |
+| JRuby 9.4.2.0 | script: files, JSON, zlib, TCP (46) | 0 / 78 / 168 | 0 / 0 |
+
+Every workload completed with the same operation count as the validation runs. Per application,
+`results/trace/<app>/` holds the trace (`trace_1.sysdig.txt`, one line per distinct syscall and process,
+plus every open and execve), the run (`trace_1.json`, `trace_1.container.log`) and the row
+(`table_row.json`).
+
+```bash
+cd analysis/workload_validation
+python3 trace_validation.py zookeeper tomcat cassandra jetty storm orientdb elasticsearch solr groovy jruby
+python3 results/trace/make_table.py          # -> results/trace/table.md, policy_validation_rows.tex
+```
+Needs sysdig with `--modern-bpf` and passwordless sudo for it. For the "new" column, set `WLV_DATASETS` to
+a folder holding `<t>/Dataset/`. Unpack each image's dataset from
+`2_swat4j_vs_sysjava/sysjava_results/<t>/dataset/` (`cat Dataset.tar.xz.part* | tar -xJ`).
+`python3 trace_validation.py --analyse <apps>` recomputes the rows from the saved traces without
+running anything.
 
 ## Findings (`paper` profiles) and the fixes (`fixed` profiles)
 
@@ -182,4 +232,7 @@ None was a profile problem; each also failed under `base`:
 | `extract_audit_records.py` | raw audit records for runs made before the harness saved them |
 | `profiles/paper/`, `profiles/fixed/` | the profiles tested |
 | `results/`, `logs/` | every run |
+| `trace_validation.py`, `results/trace/` | the traced pass (policy-validation table) |
 | `Workload_validation_and_binding_JDK8.pdf` | the same validation (`paper` profiles) and the binding ablation, as a report |
+| `Workload_validation_all20.pdf` | the validation of all 20 profiles (this folder and `../workload_validation_latest/`), before and after the fixes |
+| `Benchmarks_and_reproduction.pdf` | what each workload does, how a run works, the results with the published profiles (all 20 containers, and the traced table) and how to reproduce every step |
