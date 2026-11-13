@@ -1,9 +1,0 @@
-jetty base rep1: ready=True ok=3052 failed=0 running=True denied={}
-jetty log rep1: ready=True ok=3052 failed=0 running=True denied={}
-jetty enforce rep1: ready=True ok=3052 failed=0 running=True denied={}
-jetty base rep2: ready=True ok=3052 failed=0 running=True denied={}
-jetty log rep2: ready=True ok=3052 failed=0 running=True denied={}
-jetty enforce rep2: ready=True ok=3052 failed=0 running=True denied={}
-jetty base rep3: ready=True ok=3052 failed=0 running=True denied={}
-jetty log rep3: ready=True ok=3052 failed=0 running=True denied={}
-jetty enforce rep3: ready=True ok=3052 failed=0 running=True denied={}

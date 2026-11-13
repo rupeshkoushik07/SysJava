@@ -1,3 +1,0 @@
-jetty log rep1: ready=True ok=3052 failed=0 running=True denied={'fchown': ['/runc'], 'fchdir': ['/opt/java/bin/java']}
-jetty log rep2: ready=True ok=3052 failed=0 running=True denied={'fchown': ['/runc'], 'fchdir': ['/opt/java/bin/java']}
-jetty log rep3: ready=True ok=3052 failed=0 running=True denied={'fchown': ['/runc'], 'fchdir': ['/opt/java/bin/java']}

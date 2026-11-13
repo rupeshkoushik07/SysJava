@@ -14,12 +14,12 @@ Then, against the published profile (run_validation.profile_path) and the pipeli
               runc's setup stages before the filter is installed (runc:[0:PARENT], runc:[1:CHILD])
   missing   = performed - profile
   new       = libraries / executables seen here whose file name is not in Dataset/LIBS_<t> / BINARIES_<t>
-Usage: trace_validation.py <app> [<app> ...]      (WLV_RESULTS default: results/trace)
-Output: results_trace/<app>/trace_1.{json,container.log,sysdig.txt}, results_trace/<app>/table_row.json
+Usage: trace_validation.py <app> [<app> ...]      (WLV_RESULTS default: trace)
+Output: trace/<app>/trace_1.{json,container.log,sysdig.txt}, trace/<app>/table_row.json
 """
 import json, os, re, signal, subprocess, sys, time
 
-os.environ.setdefault("WLV_RESULTS", "results/trace")
+os.environ.setdefault("WLV_RESULTS", "trace")
 # Storm: the published 179-syscall profile (run_validation's default is the earlier 172 one)
 os.environ.setdefault("WLV_STORM_PROFILE", os.path.expanduser(
     "~/Tutorial/EchoTrace/Final_results_JDK8/_tables/storm_no_false_ffm_fixes/storm_2.4.0-jdk8-buster.json"))
@@ -35,7 +35,7 @@ PRE_SECCOMP = {"runc:[0:PARENT]", "runc:[1:CHILD]"}
 
 
 def dataset_names(t):
-    # WLV_DATASETS: a folder of <t>/Dataset (the artifact unpacks 2_swat4j_vs_sysjava/sysjava_results/<t>/dataset/ there)
+    # WLV_DATASETS: a folder of <t>/Dataset (the artifact: unpack 2_swat4j_vs_sysjava/sysjava_results/<t>/dataset/ there)
     ds = f"{os.environ.get('WLV_DATASETS', rv.R)}/{t}/Dataset"
     libs, bins = set(), set()
     for root, _, files in os.walk(f"{ds}/LIBS_{t}"):

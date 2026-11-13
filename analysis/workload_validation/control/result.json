@@ -1,5 +1,5 @@
 {
- "profile": "jruby log profile with mkdir and rename removed",
+ "profile": "jruby log profile (/home/user/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Binary_Analysis/syscalls_output_jruby_9.4.2.0-jdk8-buster/jruby_9.4.2.0-jdk8-buster.json) with mkdir and rename removed",
  "removed": [
   "mkdir",
   "rename"
@@ -13,5 +13,6 @@
    "/opt/java/bin/java"
   ]
  },
- "unattributed": {}
+ "unattributed": {},
+ "passed": true
 }

@@ -1,9 +1,0 @@
-zookeeper base rep1: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper log rep1: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper enforce rep1: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper base rep2: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper log rep2: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper enforce rep2: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper base rep3: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper log rep3: ready=True ok=3951 failed=0 running=True denied={}
-zookeeper enforce rep3: ready=True ok=3951 failed=0 running=True denied={}

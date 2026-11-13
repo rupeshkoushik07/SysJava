@@ -1,9 +1,0 @@
-jruby base rep1: ready=True ok=46 failed=0 running=False denied={}
-jruby log rep1: ready=True ok=46 failed=0 running=False denied={}
-jruby enforce rep1: ready=True ok=46 failed=0 running=False denied={}
-jruby base rep2: ready=True ok=46 failed=0 running=False denied={}
-jruby log rep2: ready=True ok=46 failed=0 running=False denied={}
-jruby enforce rep2: ready=True ok=46 failed=0 running=False denied={}
-jruby base rep3: ready=True ok=46 failed=0 running=False denied={}
-jruby log rep3: ready=True ok=46 failed=0 running=False denied={}
-jruby enforce rep3: ready=True ok=46 failed=0 running=False denied={}

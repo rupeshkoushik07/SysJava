@@ -1,3 +1,0 @@
-storm log rep1: ready=True ok=35 failed=0 running=True denied={'fchdir': ['/opt/java/bin/java'], 'fallocate': ['/opt/java/bin/java']}
-storm log rep2: ready=True ok=35 failed=0 running=True denied={'fchdir': ['/opt/java/bin/java'], 'fallocate': ['/opt/java/bin/java']}
-storm log rep3: ready=True ok=35 failed=0 running=True denied={'fchdir': ['/opt/java/bin/java'], 'fallocate': ['/opt/java/bin/java']}

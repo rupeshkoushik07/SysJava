@@ -342,7 +342,7 @@ def wait_ready(name, app):
 def profile_path(app):
     """The profile the paper reports. Storm: 172, without `sync` from false FFM hits (_tables/REPRODUCE.md)."""
     t = APPS[app]["t"]
-    d = os.environ.get("WLV_PROFILE_DIR") or (None if os.path.isdir(R) else f"{HERE}/profiles/fixed")
+    d = os.environ.get("WLV_PROFILE_DIR") or (None if os.path.isdir(R) else f"{HERE}/profiles")
     if d:                                             # a folder of <t>.json profiles (the artifact's profiles/<set>/)
         return os.path.join(d, f"{t}.json")
     if app == "storm":      # Table III: RTA profile + supplement (io_uring), without the false-FFM sync

@@ -1,0 +1,957 @@
+<|clone|clone|runc:[0:PARENT]|/usr/sbin/runc|false|<NA>
+>|close|close|runc:[0:PARENT]|/usr/sbin/runc|<NA>|<NA>
+>|prctl|prctl|runc:[0:PARENT]|/usr/sbin/runc|<NA>|<NA>
+>|unshare|unshare|runc:[0:PARENT]|/usr/sbin/runc|<NA>|<NA>
+>|write|write|runc:[0:PARENT]|/usr/sbin/runc|<NA>|ffff8e37012acc80->ffff8e37012aa200 
+>|read|read|runc:[0:PARENT]|/usr/sbin/runc|<NA>|ffff8e37012acc80->ffff8e37012aa200 
+<|clone|clone|runc:[1:CHILD]|/usr/sbin/runc|false|<NA>
+>|exit_group|exit_group|runc:[0:PARENT]|/usr/sbin/runc|<NA>|<NA>
+>|close|close|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<UNKNOWN>thread-self/fd/8
+>|prctl|prctl|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|read|read|runc:[1:CHILD]|/usr/sbin/runc|<NA>|
+>|setsid|setsid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|setuid|setuid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|setgid|setgid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|write|write|runc:[1:CHILD]|/usr/sbin/runc|<NA>|
+>|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/self/maps
+>|prlimit|prlimit|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|newfstatat|newfstatat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/sys/kernel/mm/transparent_hugepage/hpage_pmd_size
+>|mmap|mmap|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|madvise|madvise|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fcntl|fcntl|runc:[1:CHILD]|/usr/sbin/runc|<NA>|/dev/null
+>|sigaltstack|sigaltstack|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|gettid|gettid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|rt_sigaction|rt_sigaction|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|mprotect|mprotect|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|clone3|clone3|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|clone3|clone3|runc:[2:INIT]|/usr/sbin/runc|false|<NA>
+>|rseq|rseq|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|set_robust_list|set_robust_list|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|mmap|mmap|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|munmap|munmap|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|mprotect|mprotect|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|sigaltstack|sigaltstack|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|gettid|gettid|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|nanosleep|nanosleep|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|futex|futex|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|futex|futex|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|readlinkat|readlinkat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|true|/runc
+>|seccomp|seccomp|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|statfs|statfs|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|getppid|getppid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/filesystems
+>|epoll_create1|epoll_create1|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|eventfd2|eventfd2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|epoll_ctl|epoll_ctl|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fstat|fstat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|/proc/filesystems
+>|keyctl|keyctl|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|socket|socket|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|bind|bind|runc:[1:CHILD]|/usr/sbin/runc|<NA>|
+>|setsockopt|setsockopt|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|sendto|sendto|runc:[1:CHILD]|/usr/sbin/runc|<NA>|
+>|getsockname|getsockname|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|recvfrom|recvfrom|runc:[1:CHILD]|/usr/sbin/runc|<NA>|
+>|mount|mount|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/var/lib/docker/overlay2/7b66a7a48a5695190f63cfaaa3aeacff37c31ad3de776a3bd183bca4b68c934f/merged
+>|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/var/lib/docker/overlay2/7b66a7a48a5695190f63cfaaa3aeacff37c31ad3de776a3bd183bca4b68c934f/merged/proc
+>|open_tree|open_tree|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|uname|uname|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fsopen|fsopen|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fsconfig|fsconfig|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fsmount|fsmount|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fstatfs|fstatfs|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|faccessat2|faccessat2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|faccessat|faccessat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/run/containerd/io.containerd.runtime.v2.task/moby/adf15300742a5a46bdfd5f5fe262c9afe0175aebe2e594d98085688e8c948ee0
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/11
+>|statx|statx|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/14
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/proc
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/dev
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/14
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|true|/dev/pts
+>|mkdirat|mkdirat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/pts
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/dev/pts
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/var/lib/docker/overlay2/7b66a7a48a5695190f63cfaaa3aeacff37c31ad3de776a3bd183bca4b68c934f/merged/sys
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/sys
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/sys/fs/cgroup
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|true|/dev/mqueue
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/mqueue
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/dev/mqueue
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|true|/dev/shm
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/shm
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/dev/shm
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|true|/orientdb/backup
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/orientdb
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/backup
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/orientdb/backup
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/orientdb/config
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/orientdb/databases
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/etc/resolv.conf
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/etc/hostname
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/etc/hosts
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/self/uid_map
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/var/lib/docker/overlay2/7b66a7a48a5695190f63cfaaa3aeacff37c31ad3de776a3bd183bca4b68c934f/merged/dev
+>|mknodat|mknodat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/null
+>|fchmodat2|fchmodat2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/11
+>|fchmodat|fchmodat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|fchownat|fchownat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/random
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/full
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/tty
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/zero
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/12/urandom
+>|unlinkat|unlinkat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|symlinkat|symlinkat|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|epoll_pwait|epoll_pwait|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|getpid|getpid|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|tgkill|tgkill|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|rt_sigreturn|rt_sigreturn|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|chdir|chdir|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/
+>|fchdir|fchdir|runc:[1:CHILD]|/usr/sbin/runc|<NA>|/var/lib/docker/overlay2/7b66a7a48a5695190f63cfaaa3aeacff37c31ad3de776a3bd183bca4b68c934f/merged
+>|pivot_root|pivot_root|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|umount2|umount2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/dev/null
+>|dup3|dup3|runc:[1:CHILD]|/usr/sbin/runc|<NA>|/dev/null
+>|umask|umask|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|sethostname|sethostname|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|/
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/attr/apparmor/exec
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/8
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>./sys/net/ipv4/ping_group_range
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>./sys/net/ipv4/ip_unprivileged_port_start
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/acpi
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|true|/proc/asound
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/interrupts
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/kcore
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/keys
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|true|/proc/latency_stats
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|true|/proc/sched_debug
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/scsi
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/timer_list
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|true|/proc/timer_stats
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/sys/devices/virtual/powercap
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/sys/firmware
+>|brk|brk|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|pipe2|pipe2|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|read|read|runc:[2:INIT]|/usr/sbin/runc|<NA>|
+>|close_range|close_range|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/etc/passwd
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|/proc/sys/kernel/cap_last_cap
+>|capget|capget|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat2|openat2|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>self/setgroups
+>|setgroups|setgroups|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|getpid|getpid|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|tgkill|tgkill|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|setgid|setgid|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|rt_sigreturn|rt_sigreturn|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|setuid|setuid|runc:[2:INIT]|/usr/sbin/runc|<NA>|<NA>
+>|getcwd|getcwd|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+>|capset|capset|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/7
+<|openat|openat|runc:[1:CHILD]|/usr/sbin/runc|false|<UNKNOWN>thread-self/fd/4
+>|getdents64|getdents64|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<UNKNOWN>thread-self/fd/4
+>|execve|execve|runc:[1:CHILD]|/usr/sbin/runc|<NA>|<NA>
+<|execve|execve|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|<NA>
+>|brk|brk|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|mmap|mmap|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|access|access|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/etc/ld.so.cache
+>|fstat|fstat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|/etc/ld.so.cache
+>|close|close|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|/etc/ld.so.cache
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+>|read|read|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/lib/x86_64-linux-gnu/libm.so.6
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/lib/x86_64-linux-gnu/libc.so.6
+>|pread|pread|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|/usr/lib/x86_64-linux-gnu/libc.so.6
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0
+>|arch_prctl|arch_prctl|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|set_tid_address|set_tid_address|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|set_robust_list|set_robust_list|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|rseq|rseq|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|mprotect|mprotect|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+<|prlimit|prlimit|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|<NA>
+>|lseek|lseek|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|rt_sigaction|rt_sigaction|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|prctl|prctl|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+>|open|open|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+<|open|open|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/proc/self/auxv
+>|statx|statx|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|false|/usr/share/coreutils/locales/uucore/en-US.ftl
+<|openat|openat|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|true|/usr/share/coreutils/locales/env/en-US.ftl
+>|ioctl|ioctl|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|
+>|execve|execve|__cacert_entryp|/usr/lib/cargo/bin/coreutils/env|<NA>|<NA>
+<|execve|execve|bash|/usr/bin/bash|false|<NA>
+>|brk|brk|bash|/usr/bin/bash|<NA>|<NA>
+>|mmap|mmap|bash|/usr/bin/bash|<NA>|<NA>
+>|access|access|bash|/usr/bin/bash|<NA>|<NA>
+>|openat|openat|bash|/usr/bin/bash|<NA>|<NA>
+<|openat|openat|bash|/usr/bin/bash|false|/etc/ld.so.cache
+>|fstat|fstat|bash|/usr/bin/bash|<NA>|/etc/ld.so.cache
+>|close|close|bash|/usr/bin/bash|<NA>|/etc/ld.so.cache
+<|openat|openat|bash|/usr/bin/bash|false|/usr/lib/x86_64-linux-gnu/libtinfo.so.6
+>|read|read|bash|/usr/bin/bash|<NA>|/usr/lib/x86_64-linux-gnu/libtinfo.so.6
+>|pread|pread|bash|/usr/bin/bash|<NA>|/usr/lib/x86_64-linux-gnu/libtinfo.so.6
+>|arch_prctl|arch_prctl|bash|/usr/bin/bash|<NA>|<NA>
+<|set_tid_address|set_tid_address|bash|/usr/bin/bash|<NA>|<NA>
+>|set_robust_list|set_robust_list|bash|/usr/bin/bash|<NA>|<NA>
+>|mprotect|mprotect|bash|/usr/bin/bash|<NA>|<NA>
+>|prlimit|prlimit|bash|/usr/bin/bash|<NA>|<NA>
+<|getrandom|getrandom|bash|/usr/bin/bash|<NA>|<NA>
+>|munmap|munmap|bash|/usr/bin/bash|<NA>|<NA>
+>|ioctl|ioctl|bash|/usr/bin/bash|<NA>|/dev/null
+<|openat|openat|bash|/usr/bin/bash|false|/usr/lib/locale/locale-archive
+<|openat|openat|bash|/usr/bin/bash|false|/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+>|getresuid|getresuid|bash|/usr/bin/bash|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|bash|/usr/bin/bash|<NA>|<NA>
+<|rt_sigaction|rt_sigaction|bash|/usr/bin/bash|<NA>|<NA>
+>|uname|uname|bash|/usr/bin/bash|<NA>|<NA>
+>|getcwd|getcwd|bash|/usr/bin/bash|<NA>|<NA>
+>|getpid|getpid|bash|/usr/bin/bash|<NA>|<NA>
+>|getppid|getppid|bash|/usr/bin/bash|<NA>|<NA>
+>|newfstatat|newfstatat|bash|/usr/bin/bash|<NA>|<NA>
+>|geteuid|geteuid|bash|/usr/bin/bash|<NA>|<NA>
+<|getuid|getuid|bash|/usr/bin/bash|false|<NA>
+>|getgid|getgid|bash|/usr/bin/bash|<NA>|<NA>
+>|getegid|getegid|bash|/usr/bin/bash|<NA>|<NA>
+>|socket|socket|bash|/usr/bin/bash|<NA>|<NA>
+>|connect|connect|bash|/usr/bin/bash|<NA>|/var/run/nscd/socket
+>|lseek|lseek|bash|/usr/bin/bash|<NA>|/var/run/nscd/socket
+<|openat|openat|bash|/usr/bin/bash|true|/usr/share/locale/locale.alias
+<|openat|openat|bash|/usr/bin/bash|true|/usr/share/locale-langpack/en_US/LC_MESSAGES/bash.mo
+<|openat|openat|bash|/usr/bin/bash|true|/usr/share/locale-langpack/en/LC_MESSAGES/bash.mo
+<|openat|openat|bash|/usr/bin/bash|false|/__cacert_entrypoint.sh
+>|fcntl|fcntl|bash|/usr/bin/bash|<NA>|<NA>
+>|execve|execve|bash|/usr/bin/bash|<NA>|<NA>
+>|rseq|rseq|bash|/usr/bin/bash|<NA>|<NA>
+<|openat|openat|bash|/usr/bin/bash|false|/orientdb/bin/server.sh
+>|write|write|bash|/usr/bin/bash|<NA>|
+>|pipe2|pipe2|bash|/usr/bin/bash|<NA>|<NA>
+>|clone|clone|bash|/usr/bin/bash|<NA>|<NA>
+<|clone|clone|server.sh|/usr/bin/bash|false|<NA>
+>|set_robust_list|set_robust_list|server.sh|/usr/bin/bash|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|server.sh|/usr/bin/bash|<NA>|<NA>
+>|close|close|server.sh|/usr/bin/bash|<NA>|
+>|dup2|dup2|server.sh|/usr/bin/bash|<NA>|<NA>
+>|newfstatat|newfstatat|server.sh|/usr/bin/bash|<NA>|<NA>
+>|execve|execve|server.sh|/usr/bin/bash|<NA>|<NA>
+<|execve|execve|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|<NA>
+>|brk|brk|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|mmap|mmap|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|access|access|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/etc/ld.so.cache
+>|fstat|fstat|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/etc/ld.so.cache
+>|close|close|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/etc/ld.so.cache
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+>|read|read|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/lib/x86_64-linux-gnu/libm.so.6
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/lib/x86_64-linux-gnu/libc.so.6
+>|pread|pread|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/usr/lib/x86_64-linux-gnu/libc.so.6
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0
+>|arch_prctl|arch_prctl|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|set_tid_address|set_tid_address|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|set_robust_list|set_robust_list|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|rseq|rseq|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|mprotect|mprotect|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|prlimit|prlimit|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|getrandom|getrandom|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|munmap|munmap|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|statfs|statfs|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/proc/filesystems
+>|fcntl|fcntl|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/dev/null
+>|rt_sigaction|rt_sigaction|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|poll|poll|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/proc/self/maps
+>|lseek|lseek|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|/proc/self/maps
+>|sched_getaffinity|sched_getaffinity|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|sigaltstack|sigaltstack|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|gettid|gettid|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|prctl|prctl|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|open|open|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+<|open|open|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/proc/self/auxv
+>|statx|statx|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|false|/usr/share/coreutils/locales/uucore/en-US.ftl
+<|openat|openat|dirname|/usr/lib/cargo/bin/coreutils/dirname|true|/usr/share/coreutils/locales/dirname/en-US.ftl
+>|ioctl|ioctl|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|
+>|write|write|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|
+>|exit_group|exit_group|dirname|/usr/lib/cargo/bin/coreutils/dirname|<NA>|<NA>
+>|rt_sigreturn|rt_sigreturn|bash|/usr/bin/bash|<NA>|<NA>
+>|wait4|wait4|bash|/usr/bin/bash|<NA>|<NA>
+>|chdir|chdir|server.sh|/usr/bin/bash|<NA>|<NA>
+>|write|write|server.sh|/usr/bin/bash|<NA>|
+>|exit_group|exit_group|server.sh|/usr/bin/bash|<NA>|<NA>
+>|chdir|chdir|bash|/usr/bin/bash|<NA>|<NA>
+<|execve|execve|uname|/usr/lib/cargo/bin/coreutils/uname|false|<NA>
+>|brk|brk|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|mmap|mmap|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|access|access|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/etc/ld.so.cache
+>|fstat|fstat|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/etc/ld.so.cache
+>|close|close|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/etc/ld.so.cache
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+>|read|read|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/usr/lib/x86_64-linux-gnu/libselinux.so.1
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/lib/x86_64-linux-gnu/libm.so.6
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/lib/x86_64-linux-gnu/libc.so.6
+>|pread|pread|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/usr/lib/x86_64-linux-gnu/libc.so.6
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0
+>|arch_prctl|arch_prctl|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|set_tid_address|set_tid_address|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|set_robust_list|set_robust_list|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|rseq|rseq|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|mprotect|mprotect|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|prlimit|prlimit|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|getrandom|getrandom|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|munmap|munmap|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|statfs|statfs|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/proc/filesystems
+>|fcntl|fcntl|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/dev/null
+>|rt_sigaction|rt_sigaction|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|poll|poll|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/proc/self/maps
+>|lseek|lseek|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|/proc/self/maps
+>|sched_getaffinity|sched_getaffinity|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|sigaltstack|sigaltstack|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|gettid|gettid|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|prctl|prctl|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|open|open|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|open|open|uname|/usr/lib/cargo/bin/coreutils/uname|false|/proc/self/auxv
+>|statx|statx|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|false|/usr/share/coreutils/locales/uucore/en-US.ftl
+<|openat|openat|uname|/usr/lib/cargo/bin/coreutils/uname|true|/usr/share/coreutils/locales/uname/en-US.ftl
+>|ioctl|ioctl|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|
+>|uname|uname|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+>|write|write|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|
+>|exit_group|exit_group|uname|/usr/lib/cargo/bin/coreutils/uname|<NA>|<NA>
+<|openat|openat|bash|/usr/bin/bash|false|/orientdb/bin/orient.pid
+>|dup2|dup2|bash|/usr/bin/bash|<NA>|/orientdb/bin/orient.pid
+<|execve|execve|java|/opt/java/openjdk/bin/java|false|<NA>
+>|brk|brk|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|readlinkat|readlinkat|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|access|access|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|openat|openat|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libpthread.so.0
+>|newfstatat|newfstatat|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libpthread.so.0
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.cache
+>|fstat|fstat|java|/opt/java/openjdk/bin/java|<NA>|/etc/ld.so.cache
+>|close|close|java|/opt/java/openjdk/bin/java|<NA>|/etc/ld.so.cache
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libpthread.so.0
+>|read|read|java|/opt/java/openjdk/bin/java|<NA>|/usr/lib/x86_64-linux-gnu/libpthread.so.0
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/lib/amd64/jli/libjli.so
+>|munmap|munmap|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libdl.so.2
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libdl.so.2
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libdl.so.2
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libc.so.6
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libc.so.6
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libc.so.6
+>|pread|pread|java|/opt/java/openjdk/bin/java|<NA>|/usr/lib/x86_64-linux-gnu/libc.so.6
+>|arch_prctl|arch_prctl|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_tid_address|set_tid_address|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rseq|rseq|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prlimit|prlimit|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|getrandom|getrandom|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|readlink|readlink|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/jvm.cfg
+>|stat|stat|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/server/libjvm.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libm.so.6
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libm.so.6
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libm.so.6
+>|getpid|getpid|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib
+>|getdents64|getdents64|java|/opt/java/openjdk/bin/java|<NA>|/orientdb/lib
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/plugins
+>|rt_sigaction|rt_sigaction|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|madvise|madvise|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|clone3|clone3|java|/opt/java/openjdk/bin/java|true|<NA>
+>|clone|clone|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/sys/devices/system/cpu/possible
+>|sysinfo|sysinfo|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/librt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/librt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/librt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libverify.so
+>|lseek|lseek|java|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/amd64/libverify.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libjava.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/cgroups
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/self/cgroup
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/self/mountinfo
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/jre/lib/endorsed
+>|sched_getaffinity|sched_getaffinity|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/sys/fs/cgroup/cpu.max
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/sys/fs/cgroup/cpu.weight
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/sys/fs/cgroup/memory.max
+>|clock_getres|clock_getres|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/self/maps
+>|geteuid|geteuid|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|socket|socket|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|connect|connect|java|/opt/java/openjdk/bin/java|<NA>|/var/run/nscd/socket
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/nsswitch.conf
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/passwd
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp/hsperfdata_root
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/bin
+>|fchdir|fchdir|java|/opt/java/openjdk/bin/java|<NA>|/tmp/hsperfdata_root
+>|mkdir|mkdir|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|lstat|lstat|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp/hsperfdata_root/1
+>|ftruncate|ftruncate|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|write|write|java|/opt/java/openjdk/bin/java|<NA>|/tmp/hsperfdata_root/1
+>|gettid|gettid|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libzip.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/meta-index
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/sys/devices/system/cpu/online
+>|prctl|prctl|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/rt.jar
+>|fcntl|fcntl|java|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/rt.jar
+>|uname|uname|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/locale/locale-archive
+>|getuid|getuid|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/localtime
+>|getcwd|getcwd|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/ext/meta-index
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/ext
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/java/packages/lib/ext
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/jfr.jar
+>|sched_yield|sched_yield|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-server-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libnio.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libnet.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/hazelcast-3.12.13.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-backward-codecs-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-core-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jnr-ffi-2.2.11.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-memory-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/asm-analysis-9.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/bcprov-jdk18on-1.84.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/commons-codec-1.19.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jffi-1.3.9-native.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-spatial-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/js-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/truffle-api-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-join-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/hppc-0.8.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-misc-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-highlighter-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/profiler-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-queryparser-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jackson-core-2.21.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/spatial4j-0.7.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/commons-io-2.22.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jakarta.activation-2.0.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jaxb-runtime-3.0.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-object-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lz4-java-1.11.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/javassist-3.31.0-GA.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-core-3.2.53.jar
+<|clone|clone|Thread-0|/opt/java/openjdk/bin/java|false|<NA>
+>|rseq|rseq|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|gettid|gettid|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prctl|prctl|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/noggit-0.8.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-spatial-extras-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jts-core-1.20.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/s2-geometry-library-java-1.0.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/asm-tree-9.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/bcutil-jdk18on-1.84.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-community-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-analyzers-common-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-queries-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-spatial3d-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jffi-1.3.9.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jnr-a64asm-1.0.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-lucene-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-codecs-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/chromeinspector-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/js-scriptengine-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-tools-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/javax.activation-api-1.2.0.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/icu4j-71.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/commons-csv-1.14.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-client-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jakarta.xml.bind-api-3.0.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-facet-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/asm-9.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/bcpkix-jdk18on-1.84.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/txw2-3.0.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/istack-commons-runtime-4.0.1.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-distributed-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/orientdb-jdbc-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jnr-constants-0.10.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/asm-commons-9.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/hazelcast-kubernetes-2.2.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jnr-posix-3.1.15.jar
+>|rt_sigreturn|rt_sigreturn|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/graal-sdk-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/asm-util-9.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/regex-21.3.5.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jnr-x86asm-1.0.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/lucene-sandbox-7.7.3.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/lib/jaxb-core-3.0.2.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/plugins/orientdb-etl-3.2.53.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/security/java.security
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/jsse.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/dev/random
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/dev/urandom
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp/jffi1291212916130148541.so
+>|getsockname|getsockname|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/net/if_inet6
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/net/ipv6_route
+>|socketpair|socketpair|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|pwrite|pwrite|java|/opt/java/openjdk/bin/java|<NA>|/tmp/jffi1291212916130148541.so
+>|unlink|unlink|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.conf
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.conf.d
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.conf.d/libc.conf
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.conf.d/x86_64-linux-gnu.conf
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/etc/ld.so.conf.d/docker-openjdk.conf
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/share/locale/locale.alias
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/share/locale/en_US/LC_MESSAGES/libc.mo
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/share/locale/en/LC_MESSAGES/libc.mo
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/share/locale-langpack/en_US/LC_MESSAGES/libc.mo
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/usr/share/locale-langpack/en/LC_MESSAGES/libc.mo
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libcrypt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libcrypt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libcrypt.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/config/orientdb-server-log.properties
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/log/orient-server.log.0.lck
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/log/orient-server.log.0
+>|ioctl|ioctl|java|/opt/java/openjdk/bin/java|<NA>|/dev/null
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/etc/timezone
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/tzdb.dat
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/config/orientdb-server-config.xml
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/ext/nashorn.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libmanagement.so
+>|getegid|getegid|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/mounts
+>|statfs|statfs|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases
+>|dup|dup|java|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases
+>|munmap|munmap|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/config/security.json
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/jce.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/ext/sunec.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libsunec.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/jli/libgcc_s.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|true|/opt/java/openjdk/lib/amd64/libgcc_s.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/ext/sunjce_provider.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/security/policy/unlimited/US_export_policy.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/security/policy/unlimited/local_policy.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp/liblz4-java-5083727885248737957.so.lck
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/tmp/liblz4-java-5083727885248737957.so
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/data.iv
+>|fsync|fsync|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|lseek|lseek|Thread-0|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/rt.jar
+>|read|read|Thread-0|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/rt.jar
+>|openat|openat|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|Thread-0|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OSystem.1.wal
+<|clone|clone|OrientDB WAL Fl|/opt/java/openjdk/bin/java|false|<NA>
+>|rseq|rseq|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|gettid|gettid|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|munmap|munmap|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prctl|prctl|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|write|write|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/OSystem/OSystem.1.wal
+>|fsync|fsync|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|lseek|lseek|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/rt.jar
+>|read|read|OrientDB WAL Fl|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/rt.jar
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/name_id_map_v3_t.cm
+>|rename|rename|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OSystem_0.dwl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/dirty.fl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/dirty.flb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/config_1883809832.ccm
+>|pwrite|pwrite|Thread-0|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/OSystem/config_1883809832.ccm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/name_id_map_v3.cm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/config_1051569933.fcm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/config_1525911218.nd
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_1_954535585.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/index_936843634.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/manindex_1771654879.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/internal_1172838831.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/config_1761107632.cd
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_0_278001529.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/manindex_2145388968.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/internal_1682995100.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/manindex_363995743.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/config_626105569.bd
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/default_1430074861.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/internal_59535103.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/index_520876863.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/index_604457394.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_2_320355182.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_3_1989404548.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/default_779756960.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/default_1367229921.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_4_914268479.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osecuritypolicy_2059416567.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osecuritypolicy_1806148335.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osecuritypolicy_228289718.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/currency.data
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OSecurityPolicy.name_1321453600.cbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OSecurityPolicy.name_1082554170.vpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OSecurityPolicy.name_1083124386.nbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/orole_2028212609.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/orole_1720175024.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/orole_848552393.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_5_366211448.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ORole.name_331407392.nbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ORole.name_1071966261.cbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ORole.name_1349929511.vpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ouser_95543825.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_6_2131774483.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ouser_470050849.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ouser_1285709236.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OUser.name_412103640.vpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OUser.name_995329034.cbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OUser.name_2121912691.nbt
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ofunction_275397900.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ofunction_1357664663.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_7_336379639.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/ofunction_642953100.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OFunction.name_871531927.vpm
+>|rt_sigreturn|rt_sigreturn|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OFunction.name_1541801775.him
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OFunction.name_168018232.hib
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OFunction.name_1587496770.hnb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/OFunction.name_1308849357.hit
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osequence_1367264797.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osequence_763045656.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_8_208441767.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/osequence_1105870358.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_9_968317686.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/oschedule_473849004.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/oschedule_629766755.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/oschedule_1021593625.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/v_1685276666.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_10_204608472.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/v_496687745.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/v_598627329.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_11_466066565.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/e_923505736.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/e_487009524.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/e_1470097203.pcl
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/proc/sys/vm/overcommit_memory
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/serverinfo_469935859.fsm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/serverinfo_1413218618.cpm
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/global_collection_12_238384873.grb
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/databases/OSystem/serverinfo_1008293718.pcl
+>|shutdown|shutdown|java|/opt/java/openjdk/bin/java|<NA>|
+>|setsockopt|setsockopt|java|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|bind|bind|java|/opt/java/openjdk/bin/java|<NA>|
+>|listen|listen|java|/opt/java/openjdk/bin/java|<NA>|:::2424
+>|poll|poll|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|accept|accept|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|fcntl|fcntl|Thread-0|/opt/java/openjdk/bin/java|<NA>|172.17.0.1:38120->172.17.0.15:2480
+>|setsockopt|setsockopt|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|getsockname|getsockname|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/plugins/orientdb-studio-3.2.53.zip
+<|openat|openat|Thread-0|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/wl.1.wal
+<|openat|openat|java|/opt/java/openjdk/bin/java|false|/orientdb/config/custom-sql-functions.json
+<|clone|clone|OrientDB Timer[|/opt/java/openjdk/bin/java|false|<NA>
+>|rseq|rseq|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|gettid|gettid|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|munmap|munmap|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prctl|prctl|OrientDB Timer[|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|clone|clone|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|<NA>
+>|rseq|rseq|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|gettid|gettid|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prctl|prctl|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|poll|poll|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|recvfrom|recvfrom|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|172.17.0.1:38144->172.17.0.15:2480
+>|ioctl|ioctl|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|172.17.0.1:38144->172.17.0.15:2480
+>|read|read|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/dev/urandom
+>|lseek|lseek|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/lib/orientdb-server-3.2.53.jar
+>|access|access|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_924796809.pcl
+>|close|close|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl/person_924796809.pcl
+>|fstat|fstat|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl/person_924796809.pcl
+>|fsync|fsync|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/name_id_map_v3.cm
+>|pwrite|pwrite|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl/name_id_map_v3.cm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_320086270.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_651698903.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_58_1027860893.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_1_1852770394.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_59_2128201452.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_1_362722886.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_1_321458418.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_2_1699380814.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_2_139738720.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_2_1844129079.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_60_382105322.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_3_1626920248.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_3_1930577172.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_61_484604191.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_3_2084147413.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_62_729772716.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_4_1163048868.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_4_1558906003.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_4_1872333123.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_5_1577467285.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_5_913176615.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_5_1481411990.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_63_150174633.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_6_1591569502.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_64_1986568365.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_6_1639639858.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_6_362675703.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_65_487307883.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_7_1298502749.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_7_431808768.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_7_694884757.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_8_1444556440.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_8_122044530.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_8_483300450.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_66_235265401.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_9_1394007127.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_67_903726124.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_9_1933682869.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_9_983538451.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_68_1829942432.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_10_1448813731.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_10_1018942483.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_10_817068680.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_11_308651254.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_11_1470451037.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_11_2078869186.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_69_68715732.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_12_1177050941.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_12_287710482.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_70_410287858.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_12_1882253370.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_13_1426955625.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_13_1381435037.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_13_877663452.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_71_1572145067.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_14_942344787.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_72_58329281.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_14_1862083362.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_14_1683602839.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_15_1730551715.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_15_510527689.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_15_1542748093.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_73_1474445726.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_74_1267843106.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_16_1695068637.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_16_527778960.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_16_134973716.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_17_372809608.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_17_1259992186.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_17_1793350113.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_75_206037882.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_76_12544811.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_18_165005085.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_18_1222111338.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_18_953331916.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_19_1438544029.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_77_712586287.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_19_1527822281.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_19_381021117.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_20_909827179.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_20_1726015939.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_20_1238611000.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_78_809133622.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_21_1883828793.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_21_464274265.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_21_401641274.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_79_1485894413.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_80_1253927452.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_22_1330019475.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_22_1082645347.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_22_445307357.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_23_362947265.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_23_740295075.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_81_1812939273.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/person_23_1760735738.fsm
+>|sendto|sendto|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|172.17.0.1:38144->172.17.0.15:2480
+>|dup2|dup2|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|
+>|madvise|madvise|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|exit|exit|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigreturn|rt_sigreturn|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/Person.name_759728431.cbt
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/Person.name_1755822593.nbt
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/Person.name$null_1211161211.nbt
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/Person.name$null_1529274235.cbt
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_1930289916.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_259587643.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_82_775067641.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_2050760561.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_1_2100768773.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_1_1910837234.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_1_1250984376.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_83_377002992.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_2_941462380.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_84_757381843.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_2_977678237.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_2_569421452.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_3_871674341.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_85_1900966493.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_3_81301265.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_3_420824106.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_4_604021729.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_4_1090657200.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_4_1210960.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_86_225755634.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_87_892462883.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_5_574287390.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_5_64819561.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_5_1967414754.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_6_268306216.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_88_1702305873.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_6_1411781119.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_6_1573025976.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_7_53903997.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_7_1890838111.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_7_399777048.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_89_395753320.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_8_820905788.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_8_2092055446.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_90_1715779277.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_8_2082976618.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_9_1601564934.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_9_371065399.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_91_1788529235.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_9_88062627.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_10_292742130.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_92_1949429350.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_10_1708904637.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_10_1798334472.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_11_840963106.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_11_681409306.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_93_850177866.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_11_835316098.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_12_1256289284.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_12_330179078.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_94_1387715198.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_12_2054302429.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_95_1487643706.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_13_286391042.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_13_1059573678.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_13_2075036839.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_14_1616363153.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_96_769745688.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_14_2096557660.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_14_1068866570.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_15_1399223619.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_97_724181967.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_15_957136731.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_15_1397785549.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_98_361395993.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_16_1345333531.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_16_1246094714.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_16_1543123924.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_17_1898608554.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_17_702161657.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_17_97187532.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_99_765197239.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_18_2093480646.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_18_34375573.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_18_168899708.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_100_1822901899.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_19_1407702887.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_19_1764152661.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_19_128291475.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_101_1683548898.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_20_982290142.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_102_1630504148.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_20_422808313.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_20_1728724695.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_21_795381215.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_21_1435164306.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_103_1618790340.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_21_1136022201.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_104_926003971.grb
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_22_888729973.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_22_1259616313.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_22_582770243.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_23_23875892.cpm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_23_1011651127.fsm
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/knows_23_201481135.pcl
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl/global_collection_105_1187917457.grb
+>|munmap|munmap|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|readlink|readlink|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|access|access|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|close|close|Thread-0|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl/global_collection_68_1829942432.grb
+>|lstat|lstat|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|unlink|unlink|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|Thread-0|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libzip.so
+>|fstat|fstat|Thread-0|/opt/java/openjdk/bin/java|<NA>|/opt/java/openjdk/jre/lib/amd64/libzip.so
+>|fsync|fsync|Thread-0|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|clone|clone|OrientDB Write |/opt/java/openjdk/bin/java|false|<NA>
+>|rseq|rseq|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|set_robust_list|set_robust_list|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rt_sigprocmask|rt_sigprocmask|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|gettid|gettid|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|futex|futex|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|sched_getaffinity|sched_getaffinity|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mmap|mmap|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|mprotect|mprotect|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|prctl|prctl|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+>|pwrite|pwrite|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl/person_651698903.cpm
+>|munmap|munmap|OrientDB Write |/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|Thread-0|/opt/java/openjdk/bin/java|false|/opt/java/openjdk/jre/lib/amd64/libnio.so
+>|lstat|lstat|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|unlink|unlink|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+<|openat|openat|OrientDB ONetwo|/opt/java/openjdk/bin/java|false|/orientdb/databases/wl
+>|dup|dup|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl
+>|fcntl|fcntl|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl
+>|getdents64|getdents64|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|/orientdb/databases/wl
+>|stat|stat|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>
+>|rmdir|rmdir|OrientDB ONetwo|/opt/java/openjdk/bin/java|<NA>|<NA>

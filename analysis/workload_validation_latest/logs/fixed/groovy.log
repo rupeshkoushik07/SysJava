@@ -1,9 +1,0 @@
-groovy base rep1: ready=True ok=46 failed=0 running=False denied={}
-groovy log rep1: ready=True ok=46 failed=0 running=False denied={}
-groovy enforce rep1: ready=True ok=46 failed=0 running=False denied={}
-groovy base rep2: ready=True ok=46 failed=0 running=False denied={}
-groovy log rep2: ready=True ok=46 failed=0 running=False denied={}
-groovy enforce rep2: ready=True ok=46 failed=0 running=False denied={}
-groovy base rep3: ready=True ok=46 failed=0 running=False denied={}
-groovy log rep3: ready=True ok=46 failed=0 running=False denied={}
-groovy enforce rep3: ready=True ok=46 failed=0 running=False denied={}

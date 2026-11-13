@@ -1,3 +1,0 @@
-cassandra log rep1: ready=True ok=11 failed=0 running=True denied={}
-cassandra log rep2: ready=True ok=11 failed=0 running=True denied={}
-cassandra log rep3: ready=True ok=11 failed=0 running=True denied={}

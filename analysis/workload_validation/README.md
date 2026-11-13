@@ -2,8 +2,7 @@
 
 Does each application still work under the seccomp profile SysJava generated for it, and does it make
 any syscall the profile does not allow? Each of the ten JDK 8 images (Debian 10, Temurin 8u504, the
-images of `2_swat4j_vs_sysjava/`) runs a real workload in three modes, three times each (90 runs per
-profile set):
+images of `2_swat4j_vs_sysjava/`) runs a real workload in three modes, three times each (90 runs):
 
 | Mode | Seccomp profile | What it shows |
 |---|---|---|
@@ -19,12 +18,8 @@ profile set):
 Rule 3 is strict: under `enforce` such a syscall gets `EPERM`, and an application that ignores the error
 still passes rules 1 and 2. Log mode is the only way to see it.
 
-Two profile sets were tested:
-
-| Set | Folder | Profiles |
-|---|---|---|
-| `paper` | `profiles/paper/` | the profiles of tab:results (Storm: 172, without the false-FFM `sync`) |
-| `fixed` | `profiles/fixed/` | the same after three analysis fixes for the syscalls the `paper` log runs found (see "Findings") |
+The profiles are the published ones (`profiles/<image>.json`, the Total Syscalls of tab:results; Storm:
+179, without the `sync` that only false FFM hits reach).
 
 ## How a run works (`run_validation.py`, function `one_run`)
 
@@ -51,8 +46,7 @@ the positive control first.
 
 **Positive control** (`control/positive_control.py`): JRuby's log profile with `mkdir` and `rename`
 removed; a JRuby one-liner makes a directory, writes a file and renames it. The harness must report
-exactly `mkdir` and `rename` (`control/result*.json`, with their raw records in `*.audit.log`). It did,
-both before the `paper` runs and between the `fixed` runs.
+exactly `mkdir` and `rename` . It did, between the validation runs (`control/result.json`).
 
 ## The workloads
 
@@ -81,7 +75,7 @@ listed, pinned by digest, in `docker_images/` (the JDK 8 images are rebuilt with
 ```bash
 cd analysis/workload_validation
 python3 control/positive_control.py control/result_check.json        # must print "passed": true
-export WLV_PROFILE_DIR=$PWD/profiles/fixed WLV_RESULTS=results_rerun  # or profiles/paper
+export WLV_RESULTS=results_rerun                                     # profiles/ is used by default
 python3 run_validation.py tomcat jetty storm --reps 3 &              # apps can run in parallel,
 python3 run_validation.py elasticsearch solr cassandra --reps 3 &    # one process per group
 python3 run_validation.py zookeeper orientdb groovy jruby --reps 3 &
@@ -95,34 +89,7 @@ Outputs, per application and run: `<mode>_<rep>.json` (ready time, workload time
 the first error per operation, PIDs seen, would-be-denied syscalls), `<mode>_<rep>.container.log`, and
 for log mode `<mode>_<rep>.audit.log`. `summary.tsv` and `table.md` summarise all runs.
 
-## Results
-
-| Folder | Profiles | Runs |
-|---|---|---|
-| `results/paper_profiles/` | `profiles/paper/` | 90, 2026-11-11 morning |
-| `results/fixed_profiles/` | `profiles/fixed/` | 90, 2026-11-11 afternoon |
-| `results/trace/` | `profiles/fixed/` (for "missing") | 10 traced runs under Docker's default profile, 2026-11-12 (see "Traced pass") |
-
-`logs/` has the console output of every run. The `paper` runs' `.audit.log` files were extracted
-afterwards from the host's audit log by time window (`extract_audit_records.py`), because the harness
-did not save them then; records of other apps that ran at the same time are marked `# other app`.
-
-**`paper` profiles** (`results/paper_profiles/table.md`):
-
-| Application | Workload ops per run | Base: ok / failed | Log: ok / failed | Enforce: ok / failed | Would be blocked (log mode) | Runs | Result |
-|---|---:|---|---|---|---|---:|---|
-| cassandra | 11 | 33 / 0 | 33 / 0 | 33 / 0 | none | 9 | PASS |
-| elasticsearch | 250 | 750 / 0 | 750 / 0 | 750 / 0 | fchown | 9 | FAIL |
-| groovy | 46 | 138 / 0 | 138 / 0 | 138 / 0 | none | 9 | PASS |
-| jetty | 3,052 | 9,156 / 0 | 9,156 / 0 | 9,156 / 0 | fchdir, fchown | 9 | FAIL |
-| jruby | 46 | 138 / 0 | 138 / 0 | 138 / 0 | none | 9 | PASS |
-| orientdb | 1,808 | 5,424 / 0 | 5,424 / 0 | 5,424 / 0 | none | 9 | PASS |
-| solr | 199 | 597 / 0 | 597 / 0 | 597 / 0 | times | 9 | FAIL |
-| storm | 35 | 105 / 0 | 105 / 0 | 105 / 0 | fallocate, fchdir | 9 | FAIL |
-| tomcat | 3,052 | 9,156 / 0 | 9,156 / 0 | 9,156 / 0 | fchdir | 9 | FAIL |
-| zookeeper | 3,951 | 11,853 / 0 | 11,853 / 0 | 11,853 / 0 | none | 9 | PASS |
-
-**`fixed` profiles** (`results/fixed_profiles/table.md`):
+## Results (`results/`, 2026-11-11)
 
 | Application | Workload ops per run | Base: ok / failed | Log: ok / failed | Enforce: ok / failed | Would be blocked (log mode) | Runs | Result |
 |---|---:|---|---|---|---|---:|---|
@@ -137,19 +104,25 @@ did not save them then; records of other apps that ran at the same time are mark
 | tomcat | 3,052 | 9,156 / 0 | 9,156 / 0 | 9,156 / 0 | none | 9 | PASS |
 | zookeeper | 3,951 | 11,853 / 0 | 11,853 / 0 | 11,853 / 0 | none | 9 | PASS |
 
-## Traced pass: the policy-validation table (`results/trace/`)
+All ten pass: every operation completes under `enforce`, no operation fails, and no log run records a
+syscall outside the profile. `logs/` has the console output of every run. The harness did not yet save
+the raw audit records in these runs; `extract_audit_records.py` recovered them afterwards from the host's
+audit log by time window (`<mode>_<rep>.audit.log`; records of other apps that ran at the same time are
+marked `# other app`).
+
+## Traced pass: the policy-validation table (`trace/`, 2026-11-12)
 
 The columns of the paper's policy-validation table: syscalls missing / performed / permitted, and new
 binaries / libraries. `trace_validation.py` runs each workload once more under Docker's default seccomp
 profile while sysdig (0.41.4, `--modern-bpf`) records every syscall of the container, from start-up to
-the end of the workload (2026-11-12, `fixed` profiles):
+the end of the workload:
 
 - **performed**: the distinct syscalls of the container's processes. sysdig's names are mapped to
   libseccomp's (`pread` -> `pread64`, `pwrite` -> `pwrite64`, `prlimit` -> `prlimit64`). runc's setup
   stages `runc:[0:PARENT]` and `runc:[1:CHILD]` are left out because they run before the filter is
   installed (listed in `runc_setup_syscalls`).
-- **missing**: performed syscalls that the published profile does not allow (Storm: the 179 profile).
-- **permitted**: the size of the profile.
+- **missing**: performed syscalls that the profile in `profiles/` does not allow.
+- **permitted**: the size of that profile.
 - **new**: programs executed and `.so` files opened whose name is not in the image's dataset
   (`Dataset/LIBS_<t>`, `Dataset/BINARIES_<t>`). Three loads use another name of an analysed library and
   are listed in `loaded_under_other_name`:
@@ -171,54 +144,19 @@ the end of the workload (2026-11-12, `fixed` profiles):
 | JRuby 9.4.2.0 | script: files, JSON, zlib, TCP (46) | 0 / 78 / 168 | 0 / 0 |
 
 Every workload completed with the same operation count as the validation runs. Per application,
-`results/trace/<app>/` holds the trace (`trace_1.sysdig.txt`, one line per distinct syscall and process,
-plus every open and execve), the run (`trace_1.json`, `trace_1.container.log`) and the row
-(`table_row.json`).
+`trace/<app>/` holds the trace (`trace_1.sysdig.txt`, one line per distinct syscall and process, plus
+every open and execve), the run (`trace_1.json`, `trace_1.container.log`) and the row (`table_row.json`).
 
 ```bash
 cd analysis/workload_validation
 python3 trace_validation.py zookeeper tomcat cassandra jetty storm orientdb elasticsearch solr groovy jruby
-python3 results/trace/make_table.py          # -> results/trace/table.md, policy_validation_rows.tex
+python3 trace/make_table.py                  # -> trace/table.md, policy_validation_rows.tex
 ```
 Needs sysdig with `--modern-bpf` and passwordless sudo for it. For the "new" column, set `WLV_DATASETS` to
 a folder holding `<t>/Dataset/`. Unpack each image's dataset from
 `2_swat4j_vs_sysjava/sysjava_results/<t>/dataset/` (`cat Dataset.tar.xz.part* | tar -xJ`).
 `python3 trace_validation.py --analyse <apps>` recomputes the rows from the saved traces without
 running anything.
-
-## Findings (`paper` profiles) and the fixes (`fixed` profiles)
-
-All applications completed every operation under `enforce` in all runs. Log mode showed that five
-applications make syscalls their `paper` profile does not allow. Under `enforce` these get `EPERM`,
-and the application (or runc) carries on:
-
-| Syscall | Apps | Made by (evidence) | Why the analysis missed it | Fix |
-|---|---|---|---|---|
-| `fchdir` | Tomcat, Jetty, Storm | libjvm, `PerfMemory::create_memory_region` at JVM start-up (hsperfdata directory) | The java launcher binds libjvm through `dlsym`, so the JVM's start-up code and internal threads are not reachable from libjvm's JNI start functions | libjvm makes every syscall through functions it imports. SysPart runs on each library libjvm imports from (libc, libpthread, libdl, libm, ld-linux), from only those functions (`analyse_jvm_imports.sh`, stage 8) |
-| `times` | Solr | libjvm, G1's GC-pause timing (`TraceCPUTime`); Solr runs with GC logging (`control/strace_solr.txt`, `strace -k`) | as above | as above |
-| `fallocate` | Storm | RocksDB, `PosixWritableFile::Allocate` | reached only by a virtual call; RocksDB's `PosixEnv` vtable is loaded through the GOT, so SysPart does not treat its functions as address-taken | the functions a C++ library's vtables point to become start functions of that library (`add_vtable_starts.py`, stage 7; not libjvm) |
-| `fchown` | Elasticsearch, Jetty | runc's init (`exe=/runc`), before the application starts | runc changes the owner of the container's stdio when the image runs as a non-root user without a terminal, and ignores the error; runc is covered by a whitelist, which lacked it | `fchown` added to `runc.txt` |
-
-The fixes add 0 to 7 syscalls per profile (mean 183.0 -> 185.2):
-
-| | ZooKeeper | Tomcat | Cassandra | Jetty | Storm | OrientDB | Elasticsearch | Solr | Groovy | JRuby |
-|---|---|---|---|---|---|---|---|---|---|---|
-| `paper` | 190 | 170 | 230 | 157 | 172 | 173 | 183 | 199 | 189 | 167 |
-| `fixed` | 192 | 173 | 230 | 161 | 179 | 174 | 185 | 201 | 189 | 168 |
-
-Added: `rt_sigsuspend` and `times` (libjvm imports) where no other part of the profile had them;
-`fchdir` (Tomcat, Jetty, Storm); `fchown` (Jetty, Storm, OrientDB, Elasticsearch, JRuby); for Storm also
-`fallocate`, `readahead` and `sync_file_range` (RocksDB, which goes from 59 to 70 syscalls).
-
-## Harness problems found and fixed during the `paper` runs
-
-None was a profile problem; each also failed under `base`:
-- Log mode first read the kernel log (`journalctl -k`), where this host's auditd leaves nothing; every
-  log run reported nothing. The positive control exposed it; all log runs were redone.
-- Jetty: the readiness check requested a JSP, which this image cannot serve (HTTP 500 in every mode).
-- Storm: nimbus logs to a file, so the log-based readiness check never fired; it now waits for port 6627.
-- Smaller workload fixes: Solr query encoding and backup location, a Groovy GString, a JRuby
-  `Range#sum` bug in threads, root-owned Tomcat and Jetty work directories.
 
 ## Files
 
@@ -228,11 +166,7 @@ None was a profile problem; each also failed under `base`:
 | `make_table.py` | `table.md` from the run JSONs |
 | `scripts/workload.groovy`, `scripts/workload.rb` | the batch workloads |
 | `control/positive_control.py` | the log-mode positive control |
-| `control/strace_*.txt`, `trace_callers.py` | `strace -f -k` stack traces of the missed syscalls (how `times` and `fchdir` were attributed to libjvm) |
 | `extract_audit_records.py` | raw audit records for runs made before the harness saved them |
-| `profiles/paper/`, `profiles/fixed/` | the profiles tested |
-| `results/`, `logs/` | every run |
-| `trace_validation.py`, `results/trace/` | the traced pass (policy-validation table) |
-| `Workload_validation_and_binding_JDK8.pdf` | the same validation (`paper` profiles) and the binding ablation, as a report |
-| `Workload_validation_all20.pdf` | the validation of all 20 profiles (this folder and `../workload_validation_latest/`), before and after the fixes |
-| `Benchmarks_and_reproduction.pdf` | what each workload does, how a run works, the results with the published profiles (all 20 containers, and the traced table) and how to reproduce every step |
+| `trace_validation.py`, `trace/` | the traced pass (policy-validation table) |
+| `profiles/` | the profiles tested |
+| `results/`, `logs/` | every validation run |
