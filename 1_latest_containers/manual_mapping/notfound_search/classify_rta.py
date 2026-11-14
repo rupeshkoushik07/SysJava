@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Not Found natives of the RTA rerun (workspaces_rta/<t>, detector 89bf135) that the published manual
+"""Not Found natives of the RTA rerun (workspaces_rta/<t>, detector SJ-r195) that the published manual
 mappings (../<t>/mapping, ../<t>/platform_extra.txt, classification.tsv) do not already cover.
 
 Writes, per target, ../<t>/mapping_rta/mapped_method_syscalls.txt = the published manual mappings + the

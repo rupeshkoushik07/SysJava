@@ -2,7 +2,7 @@
 #
 # End-to-end EchoTrace run for one of the newer-version images (paper Table
 # "latest": JDK 8-25 on Debian 12 / Ubuntu 22.04-26.04 / CentOS 7), from the
-# merged code at 516fb46 (JNI mapping keeps every overload target) with debug
+# merged code at SJ-r193 (JNI mapping keeps every overload target) with debug
 # symbols restored before SysPart:
 #
 #   dynamic capture -> extraction -> bytecode -> native mapping (+ overload

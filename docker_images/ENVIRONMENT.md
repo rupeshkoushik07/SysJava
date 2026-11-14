@@ -31,9 +31,9 @@ Image digests are in `images.tsv`, the images themselves in `tarballs/` (see `RE
 | Tool | Version / build |
 |---|---|
 | SysPart | one binary for every run: `analysis/app/syspart` sha256 `91121663a9b17b3f...`, commit 453694d (2026-06 build; EchoTrace_latest/SysPartCode, EchoTrace/SysPartLowmem and ~/SysPartCode all hold it). The July build (sha256 `b5bd7962...`, EchoTrace/SysPartCode) was NOT used (infinite recursion on JDK 13/17 libjvm). |
-| EchoTrace (JDK 8 pipeline) | repo ~/Tutorial/EchoTrace at 4823b44 + uncommitted script fixes made 2026-11-05/06 (list in the session notes) |
-| EchoTrace (latest pipeline) | repo ~/Tutorial/EchoTrace_latest at 516fb46 + uncommitted script fixes |
-| Bytecode analysis (stage 4) | PrototypeFinal/JNADetector with the <clinit> + inherited-method fix, commit 52628c4 (branch latest-clinit-fix, ~/Tutorial/EchoTrace_clinit_build); patch sha256 332e88ea... |
+| EchoTrace (JDK 8 pipeline) | repo ~/Tutorial/EchoTrace at SJ-r188 + uncommitted script fixes made 2026-11-05/06 (list in the session notes) |
+| EchoTrace (latest pipeline) | repo ~/Tutorial/EchoTrace_latest at SJ-r193 + uncommitted script fixes |
+| Bytecode analysis (stage 4) | PrototypeFinal/JNADetector with the <clinit> + inherited-method fix, commit SJ-r194 (branch latest-clinit-fix, ~/Tutorial/EchoTrace_clinit_build); patch sha256 332e88ea... |
 | SootUp / ASM | SootUp (org.soot-oss sootup.*) and ASM 9.9 from ~/.m2 |
 | SWAT4J | upstream https://github.com/facumolina/SWAT4J commit 6929d66, unmodified (~/SWAT4J) |
 | Host JDK (analysis tools) | OpenJDK 17.0.20.1 (Ubuntu build) |

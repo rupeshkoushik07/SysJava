@@ -3,7 +3,7 @@
 
 An overloaded Java native method has one exported symbol per signature,
 Java_<cls>_<name>__<mangled-args> (JNI spec, "long name"). Before commit
-642a71c the mapper kept only the first target per Java method, so the other
+SJ-r187 the mapper kept only the first target per Java method, so the other
 overloads never reached SysPart as start functions.
 
 For each library under LIBS_DIR this finds exported Java_* symbols that share a

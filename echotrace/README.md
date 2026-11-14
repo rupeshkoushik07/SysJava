@@ -1,6 +1,5 @@
 # EchoTrace
 
-[![CI](https://github.com/anonymous/EchoTrace/actions/workflows/ci.yml/badge.svg)](https://github.com/anonymous/EchoTrace/actions/workflows/ci.yml)
 
 **Static and dynamic analysis framework for generating container-specific seccomp allowlists for Java applications.**
 
@@ -56,7 +55,7 @@ The key design choice is that EchoTrace analyzes the container's own artifacts r
 ## Dynamic Analysis (Sysdig / eBPF)
 
 ### What We Monitor
-<img width="960" height="540" alt="sysdig" src="https://github.com/user-attachments/assets/8dec74d9-0557-4efd-810e-a07d03d61e94" />
+<img width="960" height="540" alt="sysdig" src="assets/sysdig_ebpf.png" />
 
 
 EchoTrace uses [Sysdig](https://github.com/draios/sysdig) with the modern eBPF backend (`--modern-bpf`) to observe container activity without modifying the application. The unified capture is a clean-start run:
@@ -528,18 +527,10 @@ pgrep -af "sysdig --modern-bpf"
 sudo pkill -f "sysdig --modern-bpf"
 ```
 
-Clone the repository together with the SysPart submodule:
+The tool source is this artifact's `echotrace/` folder (SysPart is built separately: `syspart/`):
 
 ```bash
-git clone --recurse-submodules https://github.com/anonymous/EchoTrace.git
-cd EchoTrace
-```
-
-If you already cloned without `--recurse-submodules`, initialize the submodule
-from inside the repository:
-
-```bash
-git submodule update --init --recursive
+cd echotrace
 ```
 
 Build SysPart once before running binary analysis:

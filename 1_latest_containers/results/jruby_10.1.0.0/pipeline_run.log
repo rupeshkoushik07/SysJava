@@ -1,5 +1,5 @@
 
-===== [2026-11-06 22:32:01] jruby_10.1.0.0 stage 4: bytecode analysis (JNADetector, code at 89bf135 in /home/user/Tutorial/EchoTrace_rta_build)
+===== [2026-11-06 22:32:01] jruby_10.1.0.0 stage 4: bytecode analysis (JNADetector, code at SJ-r195 in /home/user/Tutorial/EchoTrace_rta_build)
 [JNADetector] target=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/JARFILES_jruby_10.1.0.0
 [JNADetector] out   =/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/outputs_jruby_10.1.0.0
 [JNADetector] runtime=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/jruby_10.1.0.0/RUNTIME_jruby_10.1.0.0

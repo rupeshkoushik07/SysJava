@@ -20,9 +20,9 @@
   "tools": {
     "syspart_sha256": "91121663a9b17b3fd49f2ba72cef03ff27a158e479a7e73bb15e137f326efec7",
     "syspart_commit": "453694d",
-    "echotrace_jdk8_commit": "4823b44b1659b2e9a8225389fed4365e826577f1",
-    "echotrace_latest_commit": "516fb467f77236193d5e21266fc5f08cc04e0b60",
-    "detector_commit": "52628c4",
+    "echotrace_jdk8_commit": "SJ-r188",
+    "echotrace_latest_commit": "SJ-r193",
+    "detector_commit": "SJ-r194",
     "swat4j_commit": "6929d6683ddeb77dcf34de9479eaf69418b8af53",
     "host_java": "openjdk version \"17.0.20.1\" 2026-08-18",
     "python": "Python 3.10.12"

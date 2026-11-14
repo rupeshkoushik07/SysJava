@@ -7,7 +7,7 @@ pipeline scripts are in `1_latest_containers/scripts/` (the same in
 
 | Statement | Code |
 |---|---|
-| Application JARs are swept for native methods. The container's JDK is on the class path but not swept; a JDK native method is included when application code reaches it (a call, a class initialiser `<clinit>` on first use, or an inherited method) | `PrototypeFinal.java`: `traceJarFiles` (line 720) sweeps `JARFILES_<image>`, `RUNTIME_<image>` is on the class loader; `visitClassInit` (1160) and `resolveAndVisit` (1180); virtual and interface calls by RTA in `addVirtualCall` (1090); detector commit `89bf135` |
+| Application JARs are swept for native methods. The container's JDK is on the class path but not swept; a JDK native method is included when application code reaches it (a call, a class initialiser `<clinit>` on first use, or an inherited method) | `PrototypeFinal.java`: `traceJarFiles` (line 720) sweeps `JARFILES_<image>`, `RUNTIME_<image>` is on the class loader; `visitClassInit` (1160) and `resolveAndVisit` (1180); virtual and interface calls by RTA in `addVirtualCall` (1090); detector commit `SJ-r195` |
 | The JNA, JNR-FFI and FFM detectors scan only application classes | the detectors run on `JARFILES_<image>` only |
 | A binding whose library or symbol is unknown (`<?>`) gives no start function | `analyse_jna_ffi.py`, lines 110-120 (`UNRESOLVED_LIBS`, line 38) |
 | JNI: the library is chosen by symbol (`nm -D --defined-only` over `LIBS_<image>`); `RegisterNatives` bindings come from the decoded registration tables | `mapped_updated.py` (line 914) |

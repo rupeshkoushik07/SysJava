@@ -1,5 +1,5 @@
 
-===== [2026-11-06 22:35:52] orientdb_3.2.53 stage 4: bytecode analysis (JNADetector, code at 89bf135 in /home/user/Tutorial/EchoTrace_rta_build)
+===== [2026-11-06 22:35:52] orientdb_3.2.53 stage 4: bytecode analysis (JNADetector, code at SJ-r195 in /home/user/Tutorial/EchoTrace_rta_build)
 [JNADetector] target=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/orientdb_3.2.53/JARFILES_orientdb_3.2.53
 [JNADetector] out   =/home/user/Tutorial/EchoTrace_latest/workspaces_rta/orientdb_3.2.53/outputs_orientdb_3.2.53
 [JNADetector] runtime=/home/user/Tutorial/EchoTrace_latest/workspaces_rta/orientdb_3.2.53/RUNTIME_orientdb_3.2.53

@@ -18,7 +18,7 @@ The tool is called EchoTrace in the code.
 | [`3_sysjava_vs_confine/`](3_sysjava_vs_confine/README.md) | SysJava vs Confine (to be added) | Table `tab:confine` |
 | `Results/` | results of the original submission, unchanged | |
 | [`docker_images/`](docker_images/README.md) | every image used, pinned by digest; Dockerfiles of the rebuilt JDK 8 images | |
-| `echotrace/` | tool source (bytecode analysis), commit `89bf135`; every result in both tables was made with it | |
+| `echotrace/` | tool source (bytecode analysis), release `SJ-r195`; every result in both tables was made with it | |
 | [`syspart/`](syspart/README.md) | how to build SysPart (third-party) | |
 | [`swat4j/`](swat4j/README.md) | scripts that run SWAT4J unmodified | |
 | `analysis/` | native-declaration coverage audit; binding-recovery ablation (`binding_ablation/`, RQ5); [`workload_validation/`](analysis/workload_validation/README.md) and [`workload_validation_latest/`](analysis/workload_validation_latest/README.md): the profiles of both tables under real workloads (base / log / enforce, every run's logs), and a traced pass for both sets under Docker's default profile (sysdig; missing / performed / permitted syscalls and new binaries / libraries: the policy-validation table); `code_facts.md`: how binding recovery works, with pointers to the code | |
@@ -118,7 +118,7 @@ below, each stage's first and last lines:
 ===== [2026-11-08 17:20:03] zookeeper_3.9.5 stage 3: extract JDK runtime, JARs, native libraries (from the shipped capture, 1_latest_containers/results/zookeeper_3.9.5/dataset/)
 captured: 43 JARs, 74 native libraries, libjvm.so: 2
 
-===== [2026-11-08 17:20:08] zookeeper_3.9.5 stage 4: bytecode analysis (JNADetector, code at 89bf135 in ~/SysJava/echotrace)
+===== [2026-11-08 17:20:08] zookeeper_3.9.5 stage 4: bytecode analysis (JNADetector, code at SJ-r195 in ~/SysJava/echotrace)
 [JNADetector] target=~/SysJava/work/static/zookeeper_3.9.5/JARFILES_zookeeper_3.9.5
 [JNADetector] out   =~/SysJava/work/static/zookeeper_3.9.5/outputs_zookeeper_3.9.5
 [JNADetector] runtime=~/SysJava/work/static/zookeeper_3.9.5/RUNTIME_zookeeper_3.9.5

@@ -143,7 +143,7 @@ LABELS = ["Native Methods", "SysJava Resolved", "Resolution Breakdown (SysJava)"
           "JNA (Static / Dynamic)", "FFI/FFM (incl. JNR-FFI)", "Platform / Intrinsic / Dead", "Not Found", "Syscall Allowlist (SysJava only)", "Java Lib Syscalls",
           "Container Binary Syscalls", "Unanalysed Lib Syscalls ($\\Delta$)", "Go Whitelist ($\\Delta$)", "Total Syscalls"]
 INDENT = set(range(3, 12))
-CAPTION = ("Native method resolution for SysJava on latest container images (JDK 8--25), RTA call graph (EchoTrace 89bf135). JNA and FFI bindings are "
+CAPTION = ("Native method resolution for SysJava on latest container images (JDK 8--25), RTA call graph. JNA and FFI bindings are "
            "resolved statically from bytecode call sites.")
 NOTE = ("Note: Native Methods = methods declared native (JNI and JNA direct mapping) + JNA interface and dynamic "
         "bindings + JNR-FFI and FFM bindings. The breakdown rows count resolved natives and add up to SysJava Resolved; "

@@ -1,7 +1,7 @@
 # Unmapped native methods: missing-library investigation (latest containers)
 
 Date: 2026-11-05. Scope: stage 5 (native mapping) of the latest-versions run,
-`Final_results_latest_versions/` and `workspaces/` (code at 516fb46). Nothing in the
+`Final_results_latest_versions/` and `workspaces/` (code at SJ-r193). Nothing in the
 pipeline results was modified; everything here is a side experiment.
 
 ## Question
@@ -272,7 +272,7 @@ Tomcat Not Found 2 -> 0.
 - Final: tables/tableIII_latest_rerun_2026-11-06_final.{tex,pdf} (results mix: _clinit for orientdb/zookeeper);
   not-found list notfound_search/notfound_with_jars.tsv (37, rebuilt from classification.tsv) -> tables/notfound_natives_latest_2026-11-06_final.pdf.
 
-## 2026-11-07: RTA rerun of the latest set (detector 89bf135), Not Found
+## 2026-11-07: RTA rerun of the latest set (detector SJ-r195), Not Found
 - Results: Final_results_latest_versions_rta/<t>, workspaces_rta/<t> (scripts/rta_rerun_target.sh <t> map|fold|analyse; logs tables/rta_logs/).
 - New Not Found after the published manual mappings: 84 JDK natives reached by RTA. notfound_search/classify_rta.py writes
   <t>/mapping_rta/mapped_method_syscalls.txt (published lines + new), <t>/platform_extra_rta.txt (platform + intrinsic + dead),

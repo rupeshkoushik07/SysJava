@@ -1,1 +1,1 @@
-stage4_detector_commit=89bf135
+stage4_detector_commit=SJ-r195
