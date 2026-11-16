@@ -5,5 +5,5 @@ FFM hits (Clojure class names, see ../REPRODUCE.md). Made from the pipeline prof
 (vtable starts, libjvm imports, fchown in runc.txt; 180), so 179 syscalls.
 
 The profile in `../../sysjava_results/storm_2.4.0-jdk8-buster/` (top level and
-`Binary_Analysis/syscalls_output_storm_2.4.0-jdk8-buster/`) is replaced by this 179-syscall file (2026-11-16), so the
-results, the paper and the workload validation all use the same Storm profile.
+`Binary_Analysis/syscalls_output_storm_2.4.0-jdk8-buster/`, JSON and plain list) is replaced by this 179-syscall
+file (2026-11-16), so the results, the paper and the workload validation all use the same Storm profile.
