@@ -54,6 +54,7 @@ plain JSON.
 | A | table rows from the shipped results | Python | seconds |
 | B | bytecode analysis and native mapping on the shipped dataset; syscalls parsed from the shipped call graphs; the container run under the profile | JDK 17+, Maven, Python, binutils, xz; Docker for the container run | 5-15 min (Solr up to 80) |
 | C | the whole pipeline, including capture and SysPart | see below, root | 2-8 h |
+| D | the workload validation and the policy-validation table | Python; for a rerun Docker, sudo, auditd, sysdig | seconds (tables); about 2 h per set (rerun) |
 
 ### A. Tables from the shipped results
 
@@ -61,6 +62,8 @@ plain JSON.
 TABLE_ONLY=1 1_latest_containers/reproduce.sh
 TABLE_ONLY=1 2_swat4j_vs_sysjava/reproduce.sh
 ```
+
+The policy-validation table is rebuilt the same way, from the shipped traces (section D).
 
 ### B. Syscalls from SysPart's call graphs
 
@@ -297,3 +300,39 @@ resumes an image from stage *n*.
 
 A rerun can differ where sysdig misses part of a start on a loaded host, or
 where debug-symbol archives have changed. Images are pulled by digest.
+
+### D. Workload validation and the policy-validation table
+
+Each profile is checked under a real workload, for both sets: the JDK 8 images of tab:results
+([`analysis/workload_validation/`](analysis/workload_validation/README.md)) and the newer images of
+tab:latest ([`analysis/workload_validation_latest/`](analysis/workload_validation_latest/README.md)).
+Those READMEs describe the workloads, the modes and every column.
+
+Tables from the shipped runs and traces (Python only, seconds):
+
+```bash
+cd analysis/workload_validation            # or analysis/workload_validation_latest
+python3 trace/make_table.py                # policy-validation table -> trace/table.md, policy_validation_rows.tex
+WLV_RESULTS=results python3 make_table.py  # base / log / enforce runs -> results/table.md
+```
+
+Full rerun (Docker, sudo, `ausyscall` from auditd; sysdig 0.38+ with `--modern-bpf` for the traced pass):
+
+```bash
+cd analysis/workload_validation_latest
+python3 -c "import run_validation as r; r.prepare()"           # latest set only: inputs, once
+python3 control/positive_control.py control/result_check.json  # must print "passed": true
+export WLV_RESULTS=results_rerun
+python3 run_validation.py tomcat jetty storm --reps 3 &
+python3 run_validation.py elasticsearch solr cassandra --reps 3 &
+python3 run_validation.py zookeeper orientdb groovy jruby --reps 3 &
+wait
+python3 make_table.py                                          # -> results_rerun/table.md
+python3 trace_validation.py zookeeper tomcat cassandra jetty storm orientdb elasticsearch solr groovy jruby
+python3 trace/make_table.py                                    # -> trace/table.md
+```
+
+The 90 validation runs take about 2 hours per set in three parallel groups. For the "new binaries / libraries" column, set `WLV_DATASETS` to a folder of `<t>/Dataset/`
+unpacked from each image's `dataset/` (`cat Dataset.tar.xz.part* | tar -xJ`).
+`python3 trace_validation.py --analyse <apps>` recomputes the rows from the saved traces without
+running anything.
