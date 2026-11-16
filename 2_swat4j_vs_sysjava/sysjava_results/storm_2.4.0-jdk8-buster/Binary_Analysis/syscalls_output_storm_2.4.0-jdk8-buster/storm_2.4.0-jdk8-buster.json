@@ -167,7 +167,6 @@
         "stat",
         "statfs",
         "statx",
-        "sync",
         "sync_file_range",
         "sysinfo",
         "tgkill",

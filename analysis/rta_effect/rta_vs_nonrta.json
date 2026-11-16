@@ -1,0 +1,2787 @@
+{
+ "zookeeper_3.4.14": {
+  "natives_before": 318,
+  "natives_after": 495,
+  "natives_new": [
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.awt.CheckboxMenuItem.initIDs",
+   "java.awt.FontMetrics.initIDs",
+   "java.awt.Menu.initIDs",
+   "java.awt.MenuComponent.initIDs",
+   "java.awt.MenuItem.initIDs",
+   "java.awt.event.KeyEvent.initIDs",
+   "java.awt.image.ComponentSampleModel.initIDs",
+   "java.awt.image.IndexColorModel.initIDs",
+   "java.awt.image.SampleModel.initIDs",
+   "java.awt.image.SinglePixelPackedSampleModel.initIDs",
+   "java.io.FileInputStream.available0",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.readBytes",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.RandomAccessFile.close0",
+   "java.io.RandomAccessFile.write0",
+   "java.io.RandomAccessFile.writeBytes",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.lang.StrictMath.acos",
+   "java.lang.StrictMath.cos",
+   "java.lang.StrictMath.hypot",
+   "java.lang.StrictMath.tan",
+   "java.lang.Thread.dumpThreads",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Array.get",
+   "java.lang.reflect.Array.multiNewArray",
+   "java.lang.reflect.Array.set",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.connect0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.disconnect0",
+   "java.net.PlainDatagramSocketImpl.getTimeToLive",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.leave",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketGetOption",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Adler32.update",
+   "java.util.zip.Adler32.updateBytes",
+   "java.util.zip.CRC32.update",
+   "java.util.zip.Inflater.reset",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.awt.image.ByteComponentRaster.initIDs",
+   "sun.awt.image.BytePackedRaster.initIDs",
+   "sun.awt.image.ImageRepresentation.initIDs",
+   "sun.awt.image.ImageRepresentation.setDiffICM",
+   "sun.awt.image.ImageRepresentation.setICMpixels",
+   "sun.awt.image.IntegerComponentRaster.initIDs",
+   "sun.awt.image.ShortComponentRaster.initIDs",
+   "sun.font.FileFontStrike._getGlyphImageFromWindows",
+   "sun.font.FileFontStrike.initNative",
+   "sun.font.NativeFont.countGlyphs",
+   "sun.font.NativeFont.getFontMetrics",
+   "sun.font.NativeFont.getGlyphAdvance",
+   "sun.font.NativeFont.getGlyphImage",
+   "sun.font.NativeFont.getGlyphImageNoDefault",
+   "sun.font.NativeFont.haveBitmapFonts",
+   "sun.font.NativeStrike.createNullScalerContext",
+   "sun.font.NativeStrike.createScalerContext",
+   "sun.font.NativeStrike.getMaxGlyph",
+   "sun.font.NativeStrikeDisposer.freeNativeScalerContext",
+   "sun.font.NullFontScaler.getGlyphImage",
+   "sun.font.NullFontScaler.getNullScalerContext",
+   "sun.font.StrikeCache.freeIntMemory",
+   "sun.font.StrikeCache.freeIntPointer",
+   "sun.font.StrikeCache.freeLongMemory",
+   "sun.font.StrikeCache.freeLongPointer",
+   "sun.font.StrikeCache.getGlyphCacheDescription",
+   "sun.font.SunLayoutEngine.initGVIDs",
+   "sun.font.SunLayoutEngine.nativeLayout",
+   "sun.java2d.loops.Blit.Blit",
+   "sun.java2d.loops.BlitBg.BlitBg",
+   "sun.java2d.loops.DrawGlyphList.DrawGlyphList",
+   "sun.java2d.loops.DrawGlyphListAA.DrawGlyphListAA",
+   "sun.java2d.loops.DrawGlyphListLCD.DrawGlyphListLCD",
+   "sun.java2d.loops.DrawLine.DrawLine",
+   "sun.java2d.loops.DrawParallelogram.DrawParallelogram",
+   "sun.java2d.loops.DrawPath.DrawPath",
+   "sun.java2d.loops.DrawRect.DrawRect",
+   "sun.java2d.loops.FillParallelogram.FillParallelogram",
+   "sun.java2d.loops.FillPath.FillPath",
+   "sun.java2d.loops.FillRect.FillRect",
+   "sun.java2d.loops.FillSpans.FillSpans",
+   "sun.java2d.loops.MaskBlit.MaskBlit",
+   "sun.java2d.loops.MaskFill.DrawAAPgram",
+   "sun.java2d.loops.MaskFill.FillAAPgram",
+   "sun.java2d.loops.MaskFill.MaskFill",
+   "sun.java2d.loops.ScaledBlit.Scale",
+   "sun.java2d.loops.TransformHelper.Transform",
+   "sun.java2d.pipe.ShapeSpanIterator.getNativeIterator",
+   "sun.java2d.pipe.ShapeSpanIterator.intersectClipBox",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.java2d.pipe.SpanClipRenderer.eraseTile",
+   "sun.java2d.pipe.SpanClipRenderer.fillTile",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryManagers0",
+   "sun.management.MemoryImpl.getMemoryPools0",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Unsafe.allocateInstance",
+   "sun.misc.Unsafe.copyMemory",
+   "sun.misc.Unsafe.getAddress",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putLongVolatile",
+   "sun.misc.Unsafe.putOrderedInt",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 100,
+  "javalib_after": 108,
+  "javalib_added": {
+   "accept": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 188,
+  "profile_after": 190,
+  "profile_added": {
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "tomcat_7.0": {
+  "natives_before": 694,
+  "natives_after": 816,
+  "natives_new": [
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.io.FileInputStream.available0",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.RandomAccessFile.close0",
+   "java.io.RandomAccessFile.write0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.leave",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.CRC32.update",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.ThreadImpl.findDeadlockedThreads0",
+   "sun.management.ThreadImpl.getThreadInfo1",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime1",
+   "sun.management.ThreadImpl.getThreadUserCpuTime0",
+   "sun.management.ThreadImpl.getThreadUserCpuTime1",
+   "sun.management.VMManagementImpl.getAvailableProcessors",
+   "sun.management.VMManagementImpl.getDaemonThreadCount",
+   "sun.management.VMManagementImpl.getLiveThreadCount",
+   "sun.management.VMManagementImpl.getPeakThreadCount",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getTotalClassCount",
+   "sun.management.VMManagementImpl.getTotalCompileTime",
+   "sun.management.VMManagementImpl.getTotalThreadCount",
+   "sun.management.VMManagementImpl.getUnloadedClassCount",
+   "sun.management.VMManagementImpl.getUptime0",
+   "sun.management.VMManagementImpl.getVerboseClass",
+   "sun.management.VMManagementImpl.getVerboseGC",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Unsafe.allocateInstance",
+   "sun.misc.Unsafe.copyMemory",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getLoadAverage",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putLongVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.dns.ResolverConfigurationImpl.fallbackDomain0",
+   "sun.net.dns.ResolverConfigurationImpl.localDomain0",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.readv0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2pkcs11.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libtcnative-1.so.0",
+   "libtcnative-1.so.0.2.28",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libj2pkcs11.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libtcnative-1.so.0",
+   "libtcnative-1.so.0.2.28",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 122,
+  "javalib_after": 124,
+  "javalib_added": {
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 169,
+  "profile_after": 170,
+  "profile_added": {
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "cassandra_3.0.29": {
+  "natives_before": null,
+  "natives_after": 975,
+  "natives_new": null,
+  "natives_lost": null,
+  "note": "no binary analysis in the run without RTA (stopped after the bytecode stage)"
+ },
+ "jetty_9.4.51": {
+  "natives_before": 273,
+  "natives_after": 353,
+  "natives_new": [
+   "java.io.FileInputStream.available0",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.readBytes",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.RandomAccessFile.close0",
+   "java.io.RandomAccessFile.write0",
+   "java.io.RandomAccessFile.writeBytes",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.lang.ClassLoader.defineClass2",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Array.multiNewArray",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketAvailable",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.init",
+   "java.net.SocketInputStream.socketRead0",
+   "java.net.SocketOutputStream.init",
+   "java.net.SocketOutputStream.socketWrite0",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.misc.Unsafe.allocateInstance",
+   "sun.misc.Unsafe.copyMemory",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putLongVolatile",
+   "sun.misc.Unsafe.putOrderedInt",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libawt.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 81,
+  "javalib_after": 92,
+  "javalib_added": {
+   "accept": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "ftruncate": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "getsockopt": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "pwrite64": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 154,
+  "profile_after": 157,
+  "profile_added": {
+   "getsockopt": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "storm_2.4.0": {
+  "natives_before": 1610,
+  "natives_after": 1884,
+  "natives_new": [
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.awt.CheckboxMenuItem.initIDs",
+   "java.awt.Dialog.initIDs",
+   "java.awt.FontMetrics.initIDs",
+   "java.awt.Menu.initIDs",
+   "java.awt.MenuComponent.initIDs",
+   "java.awt.MenuItem.initIDs",
+   "java.awt.event.KeyEvent.initIDs",
+   "java.awt.image.ComponentSampleModel.initIDs",
+   "java.awt.image.IndexColorModel.initIDs",
+   "java.awt.image.SampleModel.initIDs",
+   "java.awt.image.SinglePixelPackedSampleModel.initIDs",
+   "java.io.Console.echo",
+   "java.io.Console.encoding",
+   "java.io.Console.istty",
+   "java.io.FileInputStream.available0",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.ObjectStreamClass.hasStaticInitializer",
+   "java.io.RandomAccessFile.close0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.io.UnixFileSystem.setPermission",
+   "java.lang.StrictMath.hypot",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.NetworkInterface.getByIndex0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.connect0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.disconnect0",
+   "java.net.PlainDatagramSocketImpl.getTimeToLive",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.leave",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketGetOption",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSendUrgentData",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Adler32.update",
+   "java.util.zip.Adler32.updateBytes",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.awt.SunToolkit.closeSplashScreen",
+   "sun.awt.image.ByteComponentRaster.initIDs",
+   "sun.awt.image.BytePackedRaster.initIDs",
+   "sun.awt.image.ImageRepresentation.initIDs",
+   "sun.awt.image.ImageRepresentation.setDiffICM",
+   "sun.awt.image.ImageRepresentation.setICMpixels",
+   "sun.awt.image.IntegerComponentRaster.initIDs",
+   "sun.awt.image.ShortComponentRaster.initIDs",
+   "sun.font.FileFontStrike._getGlyphImageFromWindows",
+   "sun.font.FileFontStrike.initNative",
+   "sun.font.NativeFont.countGlyphs",
+   "sun.font.NativeFont.getFontMetrics",
+   "sun.font.NativeFont.getGlyphAdvance",
+   "sun.font.NativeFont.getGlyphImage",
+   "sun.font.NativeFont.getGlyphImageNoDefault",
+   "sun.font.NativeFont.haveBitmapFonts",
+   "sun.font.NativeStrike.createNullScalerContext",
+   "sun.font.NativeStrike.createScalerContext",
+   "sun.font.NativeStrike.getMaxGlyph",
+   "sun.font.NativeStrikeDisposer.freeNativeScalerContext",
+   "sun.font.NullFontScaler.getGlyphImage",
+   "sun.font.NullFontScaler.getNullScalerContext",
+   "sun.font.StrikeCache.freeIntMemory",
+   "sun.font.StrikeCache.freeIntPointer",
+   "sun.font.StrikeCache.freeLongMemory",
+   "sun.font.StrikeCache.freeLongPointer",
+   "sun.font.StrikeCache.getGlyphCacheDescription",
+   "sun.font.SunFontManager.initIDs",
+   "sun.font.SunLayoutEngine.initGVIDs",
+   "sun.font.SunLayoutEngine.nativeLayout",
+   "sun.java2d.loops.Blit.Blit",
+   "sun.java2d.loops.BlitBg.BlitBg",
+   "sun.java2d.loops.DrawGlyphList.DrawGlyphList",
+   "sun.java2d.loops.DrawGlyphListAA.DrawGlyphListAA",
+   "sun.java2d.loops.DrawGlyphListLCD.DrawGlyphListLCD",
+   "sun.java2d.loops.DrawLine.DrawLine",
+   "sun.java2d.loops.DrawParallelogram.DrawParallelogram",
+   "sun.java2d.loops.DrawPath.DrawPath",
+   "sun.java2d.loops.FillParallelogram.FillParallelogram",
+   "sun.java2d.loops.FillPath.FillPath",
+   "sun.java2d.loops.FillRect.FillRect",
+   "sun.java2d.loops.FillSpans.FillSpans",
+   "sun.java2d.loops.MaskBlit.MaskBlit",
+   "sun.java2d.loops.MaskFill.DrawAAPgram",
+   "sun.java2d.loops.MaskFill.FillAAPgram",
+   "sun.java2d.loops.MaskFill.MaskFill",
+   "sun.java2d.loops.ScaledBlit.Scale",
+   "sun.java2d.loops.TransformHelper.Transform",
+   "sun.java2d.pipe.ShapeSpanIterator.getNativeIterator",
+   "sun.java2d.pipe.ShapeSpanIterator.intersectClipBox",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.java2d.pipe.SpanClipRenderer.eraseTile",
+   "sun.java2d.pipe.SpanClipRenderer.fillTile",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.ThreadImpl.findDeadlockedThreads0",
+   "sun.management.ThreadImpl.getThreadInfo1",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreads",
+   "sun.management.VMManagementImpl.getDaemonThreadCount",
+   "sun.management.VMManagementImpl.getLiveThreadCount",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getTotalClassCount",
+   "sun.management.VMManagementImpl.getUnloadedClassCount",
+   "sun.management.VMManagementImpl.getUptime0",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Perf.registerNatives",
+   "sun.misc.URLClassPath.knownToNotExist0",
+   "sun.misc.Unsafe.getAddress",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.ExtendedOptionsImpl.flowSupported",
+   "sun.net.ExtendedOptionsImpl.getFlowOption",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveTime",
+   "sun.net.ExtendedOptionsImpl.init",
+   "sun.net.ExtendedOptionsImpl.keepAliveOptionsSupported",
+   "sun.net.ExtendedOptionsImpl.setFlowOption",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveTime",
+   "sun.net.PortConfig.getLower0",
+   "sun.net.PortConfig.getUpper0",
+   "sun.net.dns.ResolverConfigurationImpl.fallbackDomain0",
+   "sun.net.dns.ResolverConfigurationImpl.localDomain0",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.DatagramChannelImpl.disconnect0",
+   "sun.nio.ch.DatagramChannelImpl.initIDs",
+   "sun.nio.ch.DatagramChannelImpl.receive0",
+   "sun.nio.ch.DatagramChannelImpl.send0",
+   "sun.nio.ch.DatagramDispatcher.read0",
+   "sun.nio.ch.DatagramDispatcher.write0",
+   "sun.nio.ch.DatagramDispatcher.writev0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.closeIntFD",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.preClose0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.configureBlocking",
+   "sun.nio.ch.IOUtil.drain",
+   "sun.nio.ch.IOUtil.makePipe",
+   "sun.nio.ch.InheritedChannel.close0",
+   "sun.nio.ch.InheritedChannel.dup",
+   "sun.nio.ch.InheritedChannel.dup2",
+   "sun.nio.ch.InheritedChannel.open0",
+   "sun.nio.ch.InheritedChannel.peerAddress0",
+   "sun.nio.ch.InheritedChannel.peerPort0",
+   "sun.nio.ch.InheritedChannel.soType0",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.nio.ch.Net.bind0",
+   "sun.nio.ch.Net.blockOrUnblock4",
+   "sun.nio.ch.Net.blockOrUnblock6",
+   "sun.nio.ch.Net.canIPv6SocketJoinIPv4Group0",
+   "sun.nio.ch.Net.canJoin6WithIPv4Group0",
+   "sun.nio.ch.Net.connect0",
+   "sun.nio.ch.Net.getIntOption0",
+   "sun.nio.ch.Net.getInterface4",
+   "sun.nio.ch.Net.getInterface6",
+   "sun.nio.ch.Net.initIDs",
+   "sun.nio.ch.Net.isExclusiveBindAvailable",
+   "sun.nio.ch.Net.isIPv6Available0",
+   "sun.nio.ch.Net.joinOrDrop4",
+   "sun.nio.ch.Net.joinOrDrop6",
+   "sun.nio.ch.Net.listen",
+   "sun.nio.ch.Net.localInetAddress",
+   "sun.nio.ch.Net.localPort",
+   "sun.nio.ch.Net.poll",
+   "sun.nio.ch.Net.pollconnValue",
+   "sun.nio.ch.Net.pollerrValue",
+   "sun.nio.ch.Net.pollhupValue",
+   "sun.nio.ch.Net.pollinValue",
+   "sun.nio.ch.Net.pollnvalValue",
+   "sun.nio.ch.Net.polloutValue",
+   "sun.nio.ch.Net.setIntOption0",
+   "sun.nio.ch.Net.setInterface4",
+   "sun.nio.ch.Net.setInterface6",
+   "sun.nio.ch.Net.shutdown",
+   "sun.nio.ch.Net.socket0",
+   "sun.nio.ch.PollArrayWrapper.interrupt",
+   "sun.nio.ch.PollArrayWrapper.poll0",
+   "sun.nio.ch.ServerSocketChannelImpl.accept0",
+   "sun.nio.ch.ServerSocketChannelImpl.initIDs",
+   "sun.nio.ch.SocketChannelImpl.checkConnect",
+   "sun.nio.ch.SocketChannelImpl.sendOutOfBandData",
+   "sun.nio.ch.sctp.SctpChannelImpl.checkConnect",
+   "sun.nio.ch.sctp.SctpChannelImpl.receive0",
+   "sun.nio.ch.sctp.SctpChannelImpl.send0",
+   "sun.nio.ch.sctp.SctpNet.bindx",
+   "sun.nio.ch.sctp.SctpNet.close0",
+   "sun.nio.ch.sctp.SctpNet.connect0",
+   "sun.nio.ch.sctp.SctpNet.getInitMsgOption0",
+   "sun.nio.ch.sctp.SctpNet.getIntOption0",
+   "sun.nio.ch.sctp.SctpNet.getLocalAddresses0",
+   "sun.nio.ch.sctp.SctpNet.getPrimAddrOption0",
+   "sun.nio.ch.sctp.SctpNet.getRemoteAddresses0",
+   "sun.nio.ch.sctp.SctpNet.listen0",
+   "sun.nio.ch.sctp.SctpNet.preClose0",
+   "sun.nio.ch.sctp.SctpNet.setInitMsgOption0",
+   "sun.nio.ch.sctp.SctpNet.setIntOption0",
+   "sun.nio.ch.sctp.SctpNet.setPeerPrimAddrOption0",
+   "sun.nio.ch.sctp.SctpNet.setPrimAddrOption0",
+   "sun.nio.ch.sctp.SctpServerChannelImpl.accept0",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr",
+   "sun.security.jgss.wrapper.GSSLibStub.indicateMechs",
+   "sun.security.jgss.wrapper.GSSLibStub.init"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnetty_transport_native_epoll_x86_64-4.1.30.Final.so",
+   "libnetty_transport_native_epoll_x86_64.so",
+   "libnio.so",
+   "librocksdbjni6329444148818420541.so",
+   "libsctp.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnetty_transport_native_epoll_x86_64-4.1.30.Final.so",
+   "libnetty_transport_native_epoll_x86_64.so",
+   "libnio.so",
+   "librocksdbjni6329444148818420541.so",
+   "libsctp.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsctp.so",
+   "libzip.so"
+  ],
+  "javalib_before": 119,
+  "javalib_after": 125,
+  "javalib_added": {
+   "chmod": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 171,
+  "profile_after": 173,
+  "profile_added": {
+   "tkill": [
+    "other",
+    []
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "orientdb_3.2.19": {
+  "natives_before": 581,
+  "natives_after": 700,
+  "natives_new": [
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.disposeReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.initJPEGImageReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.initReaderIDs",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.readImage",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.readImageHeader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.resetLibraryState",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.resetReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.setOutColorSpace",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.setSource",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.disposeWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initJPEGImageWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initWriterIDs",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.resetWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.setDest",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.writeImage",
+   "java.awt.Color.initIDs",
+   "java.awt.Dimension.initIDs",
+   "java.io.Console.encoding",
+   "java.io.Console.istty",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.RandomAccessFile.close0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.getSpace",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.io.UnixFileSystem.setReadOnly",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Array.multiNewArray",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.CRC32.update",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.font.StrikeCache.getGlyphCacheDescription",
+   "sun.java2d.Disposer.initIDs",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.HotSpotDiagnostic.dumpHeap0",
+   "sun.management.MemoryImpl.getMemoryPools0",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.ThreadImpl.findDeadlockedThreads0",
+   "sun.management.ThreadImpl.findMonitorDeadlockedThreads0",
+   "sun.management.ThreadImpl.getThreadInfo1",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreads",
+   "sun.management.VMManagementImpl.getDaemonThreadCount",
+   "sun.management.VMManagementImpl.getLiveThreadCount",
+   "sun.management.VMManagementImpl.getPeakThreadCount",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getTotalClassCount",
+   "sun.management.VMManagementImpl.getTotalThreadCount",
+   "sun.management.VMManagementImpl.getUnloadedClassCount",
+   "sun.management.VMManagementImpl.getUptime0",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.NativeSignalHandler.handle0",
+   "sun.misc.Unsafe.getLoadAverage",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libicmp_helper.so",
+   "libjava.so",
+   "libjffi-1.2.so",
+   "libjvm.so",
+   "liblz4-java-7986720998865702853.so",
+   "liblz4-java.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libNativePosixUtil.so",
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libicmp_helper.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjffi-1.2.so",
+   "libjpeg.so",
+   "libjvm.so",
+   "liblz4-java-7776228697999496578.so",
+   "liblz4-java.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjpeg.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 101,
+  "javalib_after": 111,
+  "javalib_added": {
+   "accept": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "chmod": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "fadvise64": [
+    "manual",
+    [
+     "libNativePosixUtil.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 170,
+  "profile_after": 173,
+  "profile_added": {
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "elasticsearch_7.5.2": {
+  "natives_before": 442,
+  "natives_after": 626,
+  "natives_new": [
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.io.Console.encoding",
+   "java.io.Console.istty",
+   "java.io.FileInputStream.available0",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.ObjectStreamClass.hasStaticInitializer",
+   "java.io.RandomAccessFile.close0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.NetworkInterface.getByIndex0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.connect0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.disconnect0",
+   "java.net.PlainDatagramSocketImpl.getTimeToLive",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.leave",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketGetOption",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSendUrgentData",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Adler32.update",
+   "java.util.zip.Adler32.updateBytes",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.font.StrikeCache.getGlyphCacheDescription",
+   "sun.java2d.Disposer.initIDs",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.ThreadImpl.findMonitorDeadlockedThreads0",
+   "sun.management.ThreadImpl.getThreadInfo1",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime1",
+   "sun.management.ThreadImpl.getThreads",
+   "sun.management.VMManagementImpl.getLiveThreadCount",
+   "sun.management.VMManagementImpl.getPeakThreadCount",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getTotalClassCount",
+   "sun.management.VMManagementImpl.getUnloadedClassCount",
+   "sun.management.VMManagementImpl.getUptime0",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Perf.registerNatives",
+   "sun.misc.URLClassPath.knownToNotExist0",
+   "sun.misc.Unsafe.allocateInstance",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.ExtendedOptionsImpl.flowSupported",
+   "sun.net.ExtendedOptionsImpl.getFlowOption",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveTime",
+   "sun.net.ExtendedOptionsImpl.init",
+   "sun.net.ExtendedOptionsImpl.keepAliveOptionsSupported",
+   "sun.net.ExtendedOptionsImpl.setFlowOption",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveTime",
+   "sun.net.PortConfig.getLower0",
+   "sun.net.PortConfig.getUpper0",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.DatagramChannelImpl.disconnect0",
+   "sun.nio.ch.DatagramChannelImpl.initIDs",
+   "sun.nio.ch.DatagramChannelImpl.receive0",
+   "sun.nio.ch.DatagramChannelImpl.send0",
+   "sun.nio.ch.DatagramDispatcher.read0",
+   "sun.nio.ch.DatagramDispatcher.write0",
+   "sun.nio.ch.DatagramDispatcher.writev0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.closeIntFD",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.preClose0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.configureBlocking",
+   "sun.nio.ch.IOUtil.drain",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.IOUtil.makePipe",
+   "sun.nio.ch.IOUtil.setfdVal",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.nio.ch.Net.bind0",
+   "sun.nio.ch.Net.blockOrUnblock4",
+   "sun.nio.ch.Net.blockOrUnblock6",
+   "sun.nio.ch.Net.canIPv6SocketJoinIPv4Group0",
+   "sun.nio.ch.Net.canJoin6WithIPv4Group0",
+   "sun.nio.ch.Net.connect0",
+   "sun.nio.ch.Net.getIntOption0",
+   "sun.nio.ch.Net.getInterface4",
+   "sun.nio.ch.Net.getInterface6",
+   "sun.nio.ch.Net.initIDs",
+   "sun.nio.ch.Net.isExclusiveBindAvailable",
+   "sun.nio.ch.Net.isIPv6Available0",
+   "sun.nio.ch.Net.joinOrDrop4",
+   "sun.nio.ch.Net.joinOrDrop6",
+   "sun.nio.ch.Net.listen",
+   "sun.nio.ch.Net.localInetAddress",
+   "sun.nio.ch.Net.localPort",
+   "sun.nio.ch.Net.poll",
+   "sun.nio.ch.Net.pollconnValue",
+   "sun.nio.ch.Net.pollerrValue",
+   "sun.nio.ch.Net.pollhupValue",
+   "sun.nio.ch.Net.pollinValue",
+   "sun.nio.ch.Net.pollnvalValue",
+   "sun.nio.ch.Net.polloutValue",
+   "sun.nio.ch.Net.setIntOption0",
+   "sun.nio.ch.Net.setInterface4",
+   "sun.nio.ch.Net.setInterface6",
+   "sun.nio.ch.Net.shutdown",
+   "sun.nio.ch.Net.socket0",
+   "sun.nio.ch.PollArrayWrapper.interrupt",
+   "sun.nio.ch.PollArrayWrapper.poll0",
+   "sun.nio.ch.ServerSocketChannelImpl.accept0",
+   "sun.nio.ch.ServerSocketChannelImpl.initIDs",
+   "sun.nio.ch.SocketChannelImpl.checkConnect",
+   "sun.nio.ch.SocketChannelImpl.sendOutOfBandData",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr",
+   "sun.security.jgss.wrapper.GSSLibStub.indicateMechs",
+   "sun.security.jgss.wrapper.GSSLibStub.init"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libjava.so",
+   "libjnidispatch.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libNativePosixUtil.so",
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libc-2.28.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjnidispatch.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 101,
+  "javalib_after": 112,
+  "javalib_added": {
+   "accept": [
+    "rta",
+    [
+     "libnet.so",
+     "libnio.so"
+    ]
+   ],
+   "fadvise64": [
+    "manual",
+    [
+     "libNativePosixUtil.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so",
+     "libnio.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "mlockall": [
+    "other",
+    [
+     "libc-2.28.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 181,
+  "profile_after": 183,
+  "profile_added": {
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "solr_8.7.0": {
+  "natives_before": 698,
+  "natives_after": 980,
+  "natives_new": [
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.disposeReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.initJPEGImageReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.initReaderIDs",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.readImage",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.readImageHeader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.resetLibraryState",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.resetReader",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.setOutColorSpace",
+   "com.sun.imageio.plugins.jpeg.JPEGImageReader.setSource",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.abortWrite",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.disposeWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initJPEGImageWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initWriterIDs",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.resetWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.setDest",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.writeImage",
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.awt.CheckboxMenuItem.initIDs",
+   "java.awt.FontMetrics.initIDs",
+   "java.awt.Menu.initIDs",
+   "java.awt.MenuComponent.initIDs",
+   "java.awt.MenuItem.initIDs",
+   "java.awt.event.KeyEvent.initIDs",
+   "java.io.Console.encoding",
+   "java.io.Console.istty",
+   "java.io.FileInputStream.close0",
+   "java.io.FileOutputStream.close0",
+   "java.io.ObjectStreamClass.hasStaticInitializer",
+   "java.io.RandomAccessFile.close0",
+   "java.io.RandomAccessFile.write0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.getSpace",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.io.UnixFileSystem.setPermission",
+   "java.lang.ClassLoader.defineClass2",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.connect0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.disconnect0",
+   "java.net.PlainDatagramSocketImpl.getTimeToLive",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.leave",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.setTimeToLive",
+   "java.net.PlainDatagramSocketImpl.socketGetOption",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketAvailable",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSendUrgentData",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.init",
+   "java.net.SocketInputStream.socketRead0",
+   "java.net.SocketOutputStream.init",
+   "java.net.SocketOutputStream.socketWrite0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Adler32.update",
+   "java.util.zip.Adler32.updateBytes",
+   "java.util.zip.CRC32.update",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.awt.image.BufImgSurfaceData.initIDs",
+   "sun.awt.image.BufImgSurfaceData.initRaster",
+   "sun.awt.image.ImageRepresentation.initIDs",
+   "sun.awt.image.ImageRepresentation.setDiffICM",
+   "sun.awt.image.ImageRepresentation.setICMpixels",
+   "sun.font.FileFontStrike._getGlyphImageFromWindows",
+   "sun.font.FileFontStrike.initNative",
+   "sun.font.NativeFont.countGlyphs",
+   "sun.font.NativeFont.getFontMetrics",
+   "sun.font.NativeFont.getGlyphAdvance",
+   "sun.font.NativeFont.getGlyphImage",
+   "sun.font.NativeFont.getGlyphImageNoDefault",
+   "sun.font.NativeFont.haveBitmapFonts",
+   "sun.font.NativeStrike.createNullScalerContext",
+   "sun.font.NativeStrike.createScalerContext",
+   "sun.font.NativeStrike.getMaxGlyph",
+   "sun.font.NativeStrikeDisposer.freeNativeScalerContext",
+   "sun.font.NullFontScaler.getGlyphImage",
+   "sun.font.NullFontScaler.getNullScalerContext",
+   "sun.font.StrikeCache.freeIntMemory",
+   "sun.font.StrikeCache.freeIntPointer",
+   "sun.font.StrikeCache.freeLongMemory",
+   "sun.font.StrikeCache.freeLongPointer",
+   "sun.font.SunFontManager.initIDs",
+   "sun.font.SunLayoutEngine.initGVIDs",
+   "sun.font.SunLayoutEngine.nativeLayout",
+   "sun.java2d.SurfaceData.initIDs",
+   "sun.java2d.SurfaceData.isOpaqueGray",
+   "sun.java2d.loops.Blit.Blit",
+   "sun.java2d.loops.BlitBg.BlitBg",
+   "sun.java2d.loops.DrawGlyphList.DrawGlyphList",
+   "sun.java2d.loops.DrawGlyphListAA.DrawGlyphListAA",
+   "sun.java2d.loops.DrawGlyphListLCD.DrawGlyphListLCD",
+   "sun.java2d.loops.DrawLine.DrawLine",
+   "sun.java2d.loops.DrawParallelogram.DrawParallelogram",
+   "sun.java2d.loops.DrawPath.DrawPath",
+   "sun.java2d.loops.DrawPolygons.DrawPolygons",
+   "sun.java2d.loops.FillParallelogram.FillParallelogram",
+   "sun.java2d.loops.FillPath.FillPath",
+   "sun.java2d.loops.FillRect.FillRect",
+   "sun.java2d.loops.FillSpans.FillSpans",
+   "sun.java2d.loops.GraphicsPrimitiveMgr.initIDs",
+   "sun.java2d.loops.GraphicsPrimitiveMgr.registerNativeLoops",
+   "sun.java2d.loops.MaskBlit.MaskBlit",
+   "sun.java2d.loops.MaskFill.DrawAAPgram",
+   "sun.java2d.loops.MaskFill.FillAAPgram",
+   "sun.java2d.loops.MaskFill.MaskFill",
+   "sun.java2d.loops.ScaledBlit.Scale",
+   "sun.java2d.loops.TransformHelper.Transform",
+   "sun.java2d.pipe.ShapeSpanIterator.appendPoly",
+   "sun.java2d.pipe.ShapeSpanIterator.getNativeIterator",
+   "sun.java2d.pipe.ShapeSpanIterator.intersectClipBox",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.java2d.pipe.SpanClipRenderer.eraseTile",
+   "sun.java2d.pipe.SpanClipRenderer.fillTile",
+   "sun.java2d.pipe.SpanClipRenderer.initIDs",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryUsage0",
+   "sun.management.OperatingSystemImpl.getMaxFileDescriptorCount0",
+   "sun.management.OperatingSystemImpl.getOpenFileDescriptorCount0",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.ThreadImpl.findDeadlockedThreads0",
+   "sun.management.ThreadImpl.getThreadInfo1",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime1",
+   "sun.management.ThreadImpl.getThreadUserCpuTime0",
+   "sun.management.ThreadImpl.getThreadUserCpuTime1",
+   "sun.management.ThreadImpl.getThreads",
+   "sun.management.ThreadImpl.resetContentionTimes0",
+   "sun.management.ThreadImpl.setThreadContentionMonitoringEnabled0",
+   "sun.management.VMManagementImpl.getDaemonThreadCount",
+   "sun.management.VMManagementImpl.getLiveThreadCount",
+   "sun.management.VMManagementImpl.getPeakThreadCount",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getUptime0",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.GC.maxObjectInspectionAge",
+   "sun.misc.NativeSignalHandler.handle0",
+   "sun.misc.Perf.registerNatives",
+   "sun.misc.URLClassPath.knownToNotExist0",
+   "sun.misc.Unsafe.getAddress",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getLoadAverage",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.ExtendedOptionsImpl.flowSupported",
+   "sun.net.ExtendedOptionsImpl.getFlowOption",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.getTcpKeepAliveTime",
+   "sun.net.ExtendedOptionsImpl.init",
+   "sun.net.ExtendedOptionsImpl.keepAliveOptionsSupported",
+   "sun.net.ExtendedOptionsImpl.setFlowOption",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveIntvl",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveProbes",
+   "sun.net.ExtendedOptionsImpl.setTcpKeepAliveTime",
+   "sun.net.PortConfig.getLower0",
+   "sun.net.PortConfig.getUpper0",
+   "sun.net.dns.ResolverConfigurationImpl.fallbackDomain0",
+   "sun.net.dns.ResolverConfigurationImpl.localDomain0",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.DatagramChannelImpl.disconnect0",
+   "sun.nio.ch.DatagramChannelImpl.initIDs",
+   "sun.nio.ch.DatagramChannelImpl.receive0",
+   "sun.nio.ch.DatagramChannelImpl.send0",
+   "sun.nio.ch.DatagramDispatcher.read0",
+   "sun.nio.ch.DatagramDispatcher.write0",
+   "sun.nio.ch.DatagramDispatcher.writev0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.closeIntFD",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.preClose0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.configureBlocking",
+   "sun.nio.ch.IOUtil.drain",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.IOUtil.makePipe",
+   "sun.nio.ch.IOUtil.setfdVal",
+   "sun.nio.ch.InheritedChannel.close0",
+   "sun.nio.ch.InheritedChannel.dup",
+   "sun.nio.ch.InheritedChannel.dup2",
+   "sun.nio.ch.InheritedChannel.open0",
+   "sun.nio.ch.InheritedChannel.peerAddress0",
+   "sun.nio.ch.InheritedChannel.peerPort0",
+   "sun.nio.ch.InheritedChannel.soType0",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.nio.ch.Net.bind0",
+   "sun.nio.ch.Net.blockOrUnblock4",
+   "sun.nio.ch.Net.blockOrUnblock6",
+   "sun.nio.ch.Net.canIPv6SocketJoinIPv4Group0",
+   "sun.nio.ch.Net.canJoin6WithIPv4Group0",
+   "sun.nio.ch.Net.connect0",
+   "sun.nio.ch.Net.getIntOption0",
+   "sun.nio.ch.Net.getInterface4",
+   "sun.nio.ch.Net.getInterface6",
+   "sun.nio.ch.Net.initIDs",
+   "sun.nio.ch.Net.isExclusiveBindAvailable",
+   "sun.nio.ch.Net.isIPv6Available0",
+   "sun.nio.ch.Net.joinOrDrop4",
+   "sun.nio.ch.Net.joinOrDrop6",
+   "sun.nio.ch.Net.listen",
+   "sun.nio.ch.Net.localInetAddress",
+   "sun.nio.ch.Net.localPort",
+   "sun.nio.ch.Net.poll",
+   "sun.nio.ch.Net.pollconnValue",
+   "sun.nio.ch.Net.pollerrValue",
+   "sun.nio.ch.Net.pollhupValue",
+   "sun.nio.ch.Net.pollinValue",
+   "sun.nio.ch.Net.pollnvalValue",
+   "sun.nio.ch.Net.polloutValue",
+   "sun.nio.ch.Net.setIntOption0",
+   "sun.nio.ch.Net.setInterface4",
+   "sun.nio.ch.Net.setInterface6",
+   "sun.nio.ch.Net.shutdown",
+   "sun.nio.ch.Net.socket0",
+   "sun.nio.ch.PollArrayWrapper.interrupt",
+   "sun.nio.ch.PollArrayWrapper.poll0",
+   "sun.nio.ch.ServerSocketChannelImpl.accept0",
+   "sun.nio.ch.ServerSocketChannelImpl.initIDs",
+   "sun.nio.ch.SocketChannelImpl.checkConnect",
+   "sun.nio.ch.SocketChannelImpl.sendOutOfBandData",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0",
+   "sun.security.jgss.wrapper.GSSLibStub.getMechPtr",
+   "sun.security.jgss.wrapper.GSSLibStub.indicateMechs",
+   "sun.security.jgss.wrapper.GSSLibStub.init"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libsnappyjava.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libNativePosixUtil.so",
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libhadoop-3.3.6.so",
+   "libhadoop.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjpeg.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnetty_transport_native_epoll_x86_64.so",
+   "libnio.so",
+   "libsnappyjava.so",
+   "libsunec.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libj2gss.so",
+   "libjava.so",
+   "libjpeg.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 102,
+  "javalib_after": 127,
+  "javalib_added": {
+   "accept": [
+    "rta+other",
+    [
+     "libnet.so",
+     "libnio.so",
+     "libhadoop.so",
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "accept4": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "chmod": [
+    "rta+other",
+    [
+     "libhadoop.so",
+     "libjava.so"
+    ]
+   ],
+   "epoll_create": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "epoll_create1": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "epoll_ctl": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "epoll_wait": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "eventfd2": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "fadvise64": [
+    "manual",
+    [
+     "libNativePosixUtil.so",
+     "libhadoop.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "link": [
+    "manual",
+    [
+     "libhadoop.so"
+    ]
+   ],
+   "listen": [
+    "rta+other",
+    [
+     "libnet.so",
+     "libnio.so",
+     "libhadoop.so",
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "mlock": [
+    "manual",
+    [
+     "libhadoop.so"
+    ]
+   ],
+   "pipe2": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "recvmmsg": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "rename": [
+    "rta+other",
+    [
+     "libhadoop.so",
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta+other",
+    [
+     "libnio.so",
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "sendmmsg": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "splice": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "sync_file_range": [
+    "manual",
+    [
+     "libhadoop.so"
+    ]
+   ],
+   "timerfd_create": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "timerfd_settime": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 202,
+  "profile_after": 199,
+  "profile_added": {
+   "link": [
+    "manual",
+    [
+     "libhadoop.so"
+    ]
+   ],
+   "recvmmsg": [
+    "manual",
+    [
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta+other",
+    [
+     "libnio.so",
+     "libnetty_transport_native_epoll_x86_64.so"
+    ]
+   ],
+   "sync_file_range": [
+    "manual",
+    [
+     "libhadoop.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {
+   "mq_notify": [
+    "other",
+    []
+   ],
+   "mq_open": [
+    "other",
+    []
+   ],
+   "mq_timedreceive": [
+    "other",
+    []
+   ],
+   "mq_timedsend": [
+    "other",
+    []
+   ],
+   "mq_unlink": [
+    "other",
+    []
+   ],
+   "rt_sigqueueinfo": [
+    "other",
+    []
+   ],
+   "rt_sigtimedwait": [
+    "other",
+    []
+   ],
+   "timer_getoverrun": [
+    "other",
+    []
+   ],
+   "timer_gettime": [
+    "other",
+    []
+   ]
+  },
+  "result_before": true
+ },
+ "groovy_4.0.0": {
+  "natives_before": 436,
+  "natives_after": 588,
+  "natives_new": [
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.disposeWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initJPEGImageWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.initWriterIDs",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.resetWriter",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.setDest",
+   "com.sun.imageio.plugins.jpeg.JPEGImageWriter.writeImage",
+   "java.awt.AWTEvent.nativeSetSource",
+   "java.awt.CheckboxMenuItem.initIDs",
+   "java.awt.event.KeyEvent.initIDs",
+   "java.io.Console.encoding",
+   "java.io.Console.istty",
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.RandomAccessFile.close0",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.io.UnixFileSystem.setPermission",
+   "java.io.UnixFileSystem.setReadOnly",
+   "java.lang.StrictMath.acos",
+   "java.lang.StrictMath.cos",
+   "java.lang.StrictMath.hypot",
+   "java.lang.StrictMath.tan",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketAccept",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Adler32.update",
+   "java.util.zip.Adler32.updateBytes",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "sun.awt.image.ImageRepresentation.initIDs",
+   "sun.awt.image.ImageRepresentation.setDiffICM",
+   "sun.awt.image.ImageRepresentation.setICMpixels",
+   "sun.font.FileFontStrike._getGlyphImageFromWindows",
+   "sun.font.FileFontStrike.initNative",
+   "sun.font.NativeFont.countGlyphs",
+   "sun.font.NativeFont.getFontMetrics",
+   "sun.font.NativeFont.getGlyphAdvance",
+   "sun.font.NativeFont.getGlyphImage",
+   "sun.font.NativeFont.getGlyphImageNoDefault",
+   "sun.font.NativeFont.haveBitmapFonts",
+   "sun.font.NativeStrike.createNullScalerContext",
+   "sun.font.NativeStrike.createScalerContext",
+   "sun.font.NativeStrike.getMaxGlyph",
+   "sun.font.NativeStrikeDisposer.freeNativeScalerContext",
+   "sun.font.NullFontScaler.getGlyphImage",
+   "sun.font.NullFontScaler.getNullScalerContext",
+   "sun.font.StrikeCache.freeIntMemory",
+   "sun.font.StrikeCache.freeIntPointer",
+   "sun.font.StrikeCache.freeLongMemory",
+   "sun.font.StrikeCache.freeLongPointer",
+   "sun.font.SunLayoutEngine.initGVIDs",
+   "sun.font.SunLayoutEngine.nativeLayout",
+   "sun.java2d.loops.Blit.Blit",
+   "sun.java2d.loops.BlitBg.BlitBg",
+   "sun.java2d.loops.DrawGlyphList.DrawGlyphList",
+   "sun.java2d.loops.DrawGlyphListAA.DrawGlyphListAA",
+   "sun.java2d.loops.DrawGlyphListLCD.DrawGlyphListLCD",
+   "sun.java2d.loops.DrawLine.DrawLine",
+   "sun.java2d.loops.DrawParallelogram.DrawParallelogram",
+   "sun.java2d.loops.DrawPath.DrawPath",
+   "sun.java2d.loops.DrawRect.DrawRect",
+   "sun.java2d.loops.FillParallelogram.FillParallelogram",
+   "sun.java2d.loops.FillPath.FillPath",
+   "sun.java2d.loops.FillRect.FillRect",
+   "sun.java2d.loops.FillSpans.FillSpans",
+   "sun.java2d.loops.MaskBlit.MaskBlit",
+   "sun.java2d.loops.MaskFill.DrawAAPgram",
+   "sun.java2d.loops.MaskFill.FillAAPgram",
+   "sun.java2d.loops.MaskFill.MaskFill",
+   "sun.java2d.loops.ScaledBlit.Scale",
+   "sun.java2d.loops.TransformHelper.Transform",
+   "sun.java2d.pipe.ShapeSpanIterator.getNativeIterator",
+   "sun.java2d.pipe.ShapeSpanIterator.intersectClipBox",
+   "sun.java2d.pipe.ShapeSpanIterator.nextSpan",
+   "sun.java2d.pipe.SpanClipRenderer.eraseTile",
+   "sun.java2d.pipe.SpanClipRenderer.fillTile",
+   "sun.management.ThreadImpl.dumpThreads0",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Perf.detach",
+   "sun.misc.Perf.registerNatives",
+   "sun.misc.Unsafe.copyMemory",
+   "sun.misc.Unsafe.getAddress",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putLongVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.misc.Unsafe.setMemory",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libattach.so",
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libjansi.so",
+   "libjava.so",
+   "libjsound.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libattach.so",
+   "libawt.so",
+   "libawt_headless.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libjansi-2.14.6.so",
+   "libjansi.so",
+   "libjava.so",
+   "libjpeg.so",
+   "libjsound.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libawt.so",
+   "libawt_xawt.so",
+   "libfontmanager.so",
+   "libjava.so",
+   "libjpeg.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 100,
+  "javalib_after": 109,
+  "javalib_added": {
+   "accept": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "chmod": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "mkdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 187,
+  "profile_after": 189,
+  "profile_added": {
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ },
+ "jruby_9.4.2.0": {
+  "natives_before": 494,
+  "natives_after": 598,
+  "natives_new": [
+   "java.io.FileInputStream.close0",
+   "java.io.FileInputStream.read0",
+   "java.io.FileInputStream.skip0",
+   "java.io.FileOutputStream.close0",
+   "java.io.FileOutputStream.write",
+   "java.io.RandomAccessFile.close0",
+   "java.io.RandomAccessFile.write0",
+   "java.io.RandomAccessFile.writeBytes",
+   "java.io.UnixFileSystem.canonicalize0",
+   "java.io.UnixFileSystem.checkAccess",
+   "java.io.UnixFileSystem.createDirectory",
+   "java.io.UnixFileSystem.createFileExclusively",
+   "java.io.UnixFileSystem.delete0",
+   "java.io.UnixFileSystem.getBooleanAttributes0",
+   "java.io.UnixFileSystem.getLastModifiedTime",
+   "java.io.UnixFileSystem.getLength",
+   "java.io.UnixFileSystem.list",
+   "java.io.UnixFileSystem.rename0",
+   "java.io.UnixFileSystem.setLastModifiedTime",
+   "java.io.UnixFileSystem.setPermission",
+   "java.io.UnixFileSystem.setReadOnly",
+   "java.lang.SecurityManager.getClassContext",
+   "java.lang.UNIXProcess.destroyProcess",
+   "java.lang.reflect.Proxy.defineClass0",
+   "java.net.PlainDatagramSocketImpl.bind0",
+   "java.net.PlainDatagramSocketImpl.dataAvailable",
+   "java.net.PlainDatagramSocketImpl.datagramSocketClose",
+   "java.net.PlainDatagramSocketImpl.datagramSocketCreate",
+   "java.net.PlainDatagramSocketImpl.join",
+   "java.net.PlainDatagramSocketImpl.peek",
+   "java.net.PlainDatagramSocketImpl.peekData",
+   "java.net.PlainDatagramSocketImpl.receive0",
+   "java.net.PlainDatagramSocketImpl.send",
+   "java.net.PlainDatagramSocketImpl.socketGetOption",
+   "java.net.PlainDatagramSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketBind",
+   "java.net.PlainSocketImpl.socketClose0",
+   "java.net.PlainSocketImpl.socketConnect",
+   "java.net.PlainSocketImpl.socketCreate",
+   "java.net.PlainSocketImpl.socketGetOption",
+   "java.net.PlainSocketImpl.socketListen",
+   "java.net.PlainSocketImpl.socketSetOption0",
+   "java.net.PlainSocketImpl.socketShutdown",
+   "java.net.SocketInputStream.socketRead0",
+   "java.nio.Bits.copySwapMemory0",
+   "java.util.zip.Inflater.inflateBytes",
+   "java.util.zip.Inflater.reset",
+   "java.util.zip.ZipFile.getNextEntry",
+   "java.util.zip.ZipFile.getZipMessage",
+   "java.util.zip.ZipFile.read",
+   "jdk.internal.platform.CgroupMetrics.isUseContainerSupport",
+   "sun.management.DiagnosticCommandImpl.executeDiagnosticCommand",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommandInfo",
+   "sun.management.DiagnosticCommandImpl.getDiagnosticCommands",
+   "sun.management.DiagnosticCommandImpl.setNotificationEnabled",
+   "sun.management.MemoryImpl.getMemoryPools0",
+   "sun.management.OperatingSystemImpl.initialize0",
+   "sun.management.ThreadImpl.getThreadTotalCpuTime0",
+   "sun.management.ThreadImpl.getThreadUserCpuTime0",
+   "sun.management.VMManagementImpl.getProcessId",
+   "sun.management.VMManagementImpl.getStartupTime",
+   "sun.management.VMManagementImpl.getVmArguments0",
+   "sun.management.VMManagementImpl.isThreadAllocatedMemoryEnabled",
+   "sun.management.VMManagementImpl.isThreadCpuTimeEnabled",
+   "sun.misc.Unsafe.allocateInstance",
+   "sun.misc.Unsafe.getBooleanVolatile",
+   "sun.misc.Unsafe.getByteVolatile",
+   "sun.misc.Unsafe.getCharVolatile",
+   "sun.misc.Unsafe.getDoubleVolatile",
+   "sun.misc.Unsafe.getFloatVolatile",
+   "sun.misc.Unsafe.getShortVolatile",
+   "sun.misc.Unsafe.putBooleanVolatile",
+   "sun.misc.Unsafe.putByteVolatile",
+   "sun.misc.Unsafe.putCharVolatile",
+   "sun.misc.Unsafe.putDoubleVolatile",
+   "sun.misc.Unsafe.putFloatVolatile",
+   "sun.misc.Unsafe.putIntVolatile",
+   "sun.misc.Unsafe.putLongVolatile",
+   "sun.misc.Unsafe.putShortVolatile",
+   "sun.net.sdp.SdpSupport.convert0",
+   "sun.nio.ch.FileChannelImpl.map0",
+   "sun.nio.ch.FileChannelImpl.transferTo0",
+   "sun.nio.ch.FileChannelImpl.unmap0",
+   "sun.nio.ch.FileDispatcherImpl.close0",
+   "sun.nio.ch.FileDispatcherImpl.force0",
+   "sun.nio.ch.FileDispatcherImpl.lock0",
+   "sun.nio.ch.FileDispatcherImpl.pread0",
+   "sun.nio.ch.FileDispatcherImpl.pwrite0",
+   "sun.nio.ch.FileDispatcherImpl.read0",
+   "sun.nio.ch.FileDispatcherImpl.readv0",
+   "sun.nio.ch.FileDispatcherImpl.release0",
+   "sun.nio.ch.FileDispatcherImpl.seek0",
+   "sun.nio.ch.FileDispatcherImpl.size0",
+   "sun.nio.ch.FileDispatcherImpl.truncate0",
+   "sun.nio.ch.FileDispatcherImpl.write0",
+   "sun.nio.ch.FileDispatcherImpl.writev0",
+   "sun.nio.ch.FileKey.init",
+   "sun.nio.ch.FileKey.initIDs",
+   "sun.nio.ch.IOUtil.fdVal",
+   "sun.nio.ch.NativeThread.current",
+   "sun.nio.ch.NativeThread.init",
+   "sun.nio.ch.NativeThread.signal",
+   "sun.reflect.NativeConstructorAccessorImpl.newInstance0",
+   "sun.reflect.NativeMethodAccessorImpl.invoke0"
+  ],
+  "natives_lost": [],
+  "libs_before": [
+   "libjava.so",
+   "libjffi-1.2.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "libs_after": [
+   "libjava.so",
+   "libjffi-1.2.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "rta_libs": [
+   "libjava.so",
+   "libjvm.so",
+   "libmanagement.so",
+   "libnet.so",
+   "libnio.so",
+   "libzip.so"
+  ],
+  "javalib_before": 83,
+  "javalib_after": 95,
+  "javalib_added": {
+   "chmod": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "fdatasync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "fsync": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "ftruncate": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "getsockopt": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "listen": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "pwrite64": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "readv": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "rename": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "javalib_removed": [],
+  "profile_before": 163,
+  "profile_after": 167,
+  "profile_added": {
+   "getsockopt": [
+    "rta",
+    [
+     "libnet.so"
+    ]
+   ],
+   "rmdir": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ],
+   "sendfile": [
+    "rta",
+    [
+     "libnio.so"
+    ]
+   ],
+   "utimes": [
+    "rta",
+    [
+     "libjava.so"
+    ]
+   ]
+  },
+  "profile_removed": {},
+  "result_before": true
+ }
+}
