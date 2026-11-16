@@ -155,11 +155,11 @@ if run_from 4; then
     # DETECTOR_REPO selects the build that runs the bytecode detectors (default:
     # this worktree). The commit is recorded in FINAL/detector_commit.txt.
     DETECTOR_REPO="${DETECTOR_REPO:-$REPO}"
-    DETECTOR_COMMIT="$(git -C "$DETECTOR_REPO" rev-parse --short HEAD)"
+    DETECTOR_COMMIT="$(git -C "$DETECTOR_REPO" rev-parse --short HEAD 2>/dev/null || cat "$DETECTOR_REPO/COMMIT")"   # a downloaded artifact has no .git: echotrace/COMMIT
     stage 4 "bytecode analysis (JNADetector, code at ${DETECTOR_COMMIT} in ${DETECTOR_REPO})"
     mkdir -p "$OUTPUTS_DIR"
     printf 'stage4_detector_commit=%s\nstage4_detector_repo=%s\nstage4_detector_branch=%s\n' \
-        "$DETECTOR_COMMIT" "$DETECTOR_REPO" "$(git -C "$DETECTOR_REPO" rev-parse --abbrev-ref HEAD)" \
+        "$DETECTOR_COMMIT" "$DETECTOR_REPO" "$(git -C "$DETECTOR_REPO" rev-parse --abbrev-ref HEAD 2>/dev/null || echo none)" \
         > "${FINAL}/detector_commit.txt"
     java -Xmx"${DETECTOR_HEAP:-16g}" -cp "${DETECTOR_REPO}/target/classes:$(cat "${DETECTOR_REPO}/target/.classpath")" \
         com.echotrace.app.bytecode_new.JNADetector "$JARFILES_DIR" "$OUTPUTS_DIR" "$RUNTIME_DIR"
