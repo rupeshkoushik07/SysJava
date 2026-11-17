@@ -1,11 +1,11 @@
-image	jni_static_methods	jni_static_syscalls	jni_full_methods	jni_full_syscalls	full_minus_static
-zookeeper_3.4.14-jdk8-buster	321	113	484	113	
-tomcat_7.0-jdk8-buster	623	128	790	128	
-cassandra_3.0.29-jdk8-buster	613	116	889	124	accept4 epoll_create epoll_create1 epoll_ctl epoll_wait eventfd2 sendmmsg splice
-jetty_9.4.51-jdk8-buster	187	100	352	100	
-storm_2.4.0-jdk8-buster	1412	122	1835	133	accept4 epoll_create epoll_create1 epoll_ctl epoll_wait eventfd2 pipe2 sendmmsg splice timerfd_create timerfd_settime
-orientdb_3.2.19-jdk8-buster	516	115	684	115	
-elasticsearch_7.5.2-jdk8-buster	436	116	604	116	
-solr_8.7.0-jdk8-buster	653	119	967	131	accept4 epoll_create epoll_create1 epoll_ctl epoll_wait eventfd2 pipe2 recvmmsg sendmmsg splice timerfd_create timerfd_settime
-groovy_4.0.0-jdk8-buster	367	113	541	113	
-jruby_9.4.2.0-jdk8-buster	422	103	587	103	
+image	jni_static_methods	jni_static_syscalls	jni_full_methods	jni_full_syscalls	jna_bound	jnr_ffi_bound	binding_methods	binding_syscalls	paper_binding_syscalls	nested
+zookeeper_3.4.14-jdk8-buster	365	113	484	113	0	0	484	113	113	True
+tomcat_7.0-jdk8-buster	670	128	792	128	0	0	792	128	128	True
+cassandra_3.0.29-jdk8-buster	663	116	894	124	9	0	903	127	127	True
+jetty_9.4.51-jdk8-buster	233	100	352	100	0	0	352	100	100	True
+storm_2.4.0-jdk8-buster	1459	122	1835	133	0	0	1835	133	133	True
+orientdb_3.2.19-jdk8-buster	561	115	684	115	0	0	684	115	115	True
+elasticsearch_7.5.2-jdk8-buster	483	116	604	116	7	0	611	118	118	True
+solr_8.7.0-jdk8-buster	700	119	967	131	0	0	967	131	131	True
+groovy_4.0.0-jdk8-buster	419	113	541	113	0	0	541	113	113	True
+jruby_9.4.2.0-jdk8-buster	467	103	587	103	0	25	612	104	104	True

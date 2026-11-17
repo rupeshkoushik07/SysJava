@@ -1,5 +1,5 @@
 % Table V (tab:ablation). Rebuild: docker run --rm -v $PWD:/w -w /w texlive/texlive:latest pdflatex table_v.tex
-% SWAT4J binding: swat4j_binding.py; JNI-static / JNI-full: jni_columns.py; SysJava binding / No binding: results/java_base/.
+% SWAT4J binding: swat4j_binding.py; JNI-static / JNI-full / SysJava binding: jni_columns.py; No binding: results/java_base/.
 \documentclass[conference]{IEEEtran}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -10,11 +10,11 @@
 \begin{table*}[t]
 \centering
 \caption{Java-to-native binding ablation using the same libraries, starting from the native methods SWAT4J identifies,
-mapped to native targets by \sysname{} (\emph{SWAT4J binding}); the native targets \sysname{} recovers by JNI symbol
-lookup only (\emph{JNI-static}); by JNI symbol lookup and \texttt{RegisterNatives} (\emph{JNI-full}); every native
-target \sysname{} recovers (\emph{\sysname{} binding}); or all exported functions (\emph{No binding}, including
-\texttt{libc}). \emph{Libs} counts libraries with recovered bindings, \emph{Methods} the native methods with a
-recovered target, \emph{Funcs.} the analysis entry functions, and \emph{Syscalls} their distinct reachable syscalls.
+mapped to native targets by \sysname{} (\emph{SWAT4J binding}); the targets \sysname{} recovers by JNI symbol lookup
+(\emph{JNI-static}); by JNI symbol lookup and explicit registration (\emph{JNI-full}); every bound target, i.e.\ JNI-full
+plus JNA and JNR-FFI (\emph{\sysname{} binding}); or all exported functions (\emph{No binding}, including \texttt{libc}).
+\emph{Libs} counts libraries with recovered bindings, \emph{Methods} the bound methods (Table~II),
+\emph{Funcs.} the analysis entry functions, and \emph{Syscalls} their distinct reachable syscalls.
 \label{tab:ablation}}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrrrrrrrrr@{}}
@@ -23,16 +23,16 @@ recovered target, \emph{Funcs.} the analysis entry functions, and \emph{Syscalls
 \cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}\cmidrule(l){11-12}
 \textbf{Container} & \textbf{Libs} & \textbf{Methods} & \textbf{Syscalls} & \textbf{Methods} & \textbf{Syscalls} & \textbf{Methods} & \textbf{Syscalls} & \textbf{Methods} & \textbf{Syscalls} & \textbf{Funcs.} & \textbf{Syscalls} \\
 \midrule
-ZooKeeper 3.4.14 & 16 & 227 & 96 & 321 & 113 & 484 & 113 & 484 & 113 & 39,079 & 276 \\
-Tomcat 7.0 & 19 & 588 & 116 & 623 & 128 & 790 & 128 & 792 & 128 & 40,117 & 276 \\
-Cassandra 3.0.29 & 21 & 624 & 113 & 613 & 116 & 889 & 124 & 914 & 127 & 40,564 & 276 \\
-Jetty 9.4.51 & 13 & 224 & 96 & 187 & 100 & 352 & 100 & 352 & 100 & 37,406 & 276 \\
-Storm 2.4.0 & 19 & 1,483 & 121 & 1,412 & 122 & 1,835 & 133 & 1,835 & 133 & 48,135 & 277 \\
-OrientDB 3.2.19 & 23 & 466 & 97 & 516 & 115 & 684 & 115 & 684 & 115 & 40,483 & 276 \\
-Elasticsearch 7.5.2 & 19 & 351 & 99 & 436 & 116 & 604 & 116 & 625 & 118 & 39,637 & 276 \\
-Solr 8.7.0 & 23 & 603 & 118 & 653 & 119 & 967 & 131 & 967 & 131 & 41,237 & 276 \\
-Groovy 4.0.0 & 20 & 289 & 110 & 367 & 113 & 541 & 113 & 541 & 113 & 39,418 & 276 \\
-JRuby 9.4.2.0 & 12 & 437 & 97 & 422 & 103 & 587 & 103 & 620 & 104 & 36,810 & 276 \\
+ZooKeeper 3.4.14 & 16 & 227 & 96 & 365 & 113 & 484 & 113 & 484 & 113 & 39,079 & 276 \\
+Tomcat 7.0 & 19 & 588 & 116 & 670 & 128 & 792 & 128 & 792 & 128 & 40,117 & 276 \\
+Cassandra 3.0.29 & 21 & 624 & 113 & 663 & 116 & 894 & 124 & 903 & 127 & 40,564 & 276 \\
+Jetty 9.4.51 & 13 & 224 & 96 & 233 & 100 & 352 & 100 & 352 & 100 & 37,406 & 276 \\
+Storm 2.4.0 & 19 & 1,483 & 121 & 1,459 & 122 & 1,835 & 133 & 1,835 & 133 & 48,135 & 277 \\
+OrientDB 3.2.19 & 23 & 466 & 97 & 561 & 115 & 684 & 115 & 684 & 115 & 40,483 & 276 \\
+Elasticsearch 7.5.2 & 19 & 351 & 99 & 483 & 116 & 604 & 116 & 611 & 118 & 39,637 & 276 \\
+Solr 8.7.0 & 23 & 603 & 118 & 700 & 119 & 967 & 131 & 967 & 131 & 41,237 & 276 \\
+Groovy 4.0.0 & 20 & 289 & 110 & 419 & 113 & 541 & 113 & 541 & 113 & 39,418 & 276 \\
+JRuby 9.4.2.0 & 12 & 437 & 97 & 467 & 103 & 587 & 103 & 612 & 104 & 36,810 & 276 \\
 \bottomrule
 \end{tabular}%
 }

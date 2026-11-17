@@ -14,16 +14,16 @@ Methods / Syscalls per column (No binding: entry functions / syscalls):
 
 | Container | Libs | SWAT4J binding | JNI-static | JNI-full | SysJava binding | No binding |
 |---|---:|---:|---:|---:|---:|---:|
-| ZooKeeper 3.4.14 | 16 | 227 / 96 | 321 / 113 | 484 / 113 | 484 / 113 | 39,079 / 276 |
-| Tomcat 7.0 | 19 | 588 / 116 | 623 / 128 | 790 / 128 | 792 / 128 | 40,117 / 276 |
-| Cassandra 3.0.29 | 21 | 624 / 113 | 613 / 116 | 889 / 124 | 914 / 127 | 40,564 / 276 |
-| Jetty 9.4.51 | 13 | 224 / 96 | 187 / 100 | 352 / 100 | 352 / 100 | 37,406 / 276 |
-| Storm 2.4.0 | 19 | 1,483 / 121 | 1,412 / 122 | 1,835 / 133 | 1,835 / 133 | 48,135 / 277 |
-| OrientDB 3.2.19 | 23 | 466 / 97 | 516 / 115 | 684 / 115 | 684 / 115 | 40,483 / 276 |
-| Elasticsearch 7.5.2 | 19 | 351 / 99 | 436 / 116 | 604 / 116 | 625 / 118 | 39,637 / 276 |
-| Solr 8.7.0 | 23 | 603 / 118 | 653 / 119 | 967 / 131 | 967 / 131 | 41,237 / 276 |
-| Groovy 4.0.0 | 20 | 289 / 110 | 367 / 113 | 541 / 113 | 541 / 113 | 39,418 / 276 |
-| JRuby 9.4.2.0 | 12 | 437 / 97 | 422 / 103 | 587 / 103 | 620 / 104 | 36,810 / 276 |
+| ZooKeeper 3.4.14 | 16 | 227 / 96 | 365 / 113 | 484 / 113 | 484 / 113 | 39,079 / 276 |
+| Tomcat 7.0 | 19 | 588 / 116 | 670 / 128 | 792 / 128 | 792 / 128 | 40,117 / 276 |
+| Cassandra 3.0.29 | 21 | 624 / 113 | 663 / 116 | 894 / 124 | 903 / 127 | 40,564 / 276 |
+| Jetty 9.4.51 | 13 | 224 / 96 | 233 / 100 | 352 / 100 | 352 / 100 | 37,406 / 276 |
+| Storm 2.4.0 | 19 | 1,483 / 121 | 1,459 / 122 | 1,835 / 133 | 1,835 / 133 | 48,135 / 277 |
+| OrientDB 3.2.19 | 23 | 466 / 97 | 561 / 115 | 684 / 115 | 684 / 115 | 40,483 / 276 |
+| Elasticsearch 7.5.2 | 19 | 351 / 99 | 483 / 116 | 604 / 116 | 611 / 118 | 39,637 / 276 |
+| Solr 8.7.0 | 23 | 603 / 118 | 700 / 119 | 967 / 131 | 967 / 131 | 41,237 / 276 |
+| Groovy 4.0.0 | 20 | 289 / 110 | 419 / 113 | 541 / 113 | 541 / 113 | 39,418 / 276 |
+| JRuby 9.4.2.0 | 12 | 437 / 97 | 467 / 103 | 587 / 103 | 612 / 104 | 36,810 / 276 |
 
 ## SWAT4J binding column (rebuilt from this artifact)
 
@@ -51,29 +51,31 @@ python3 swat4j_binding.py      # about 2 min, 4 GB of memory; writes results/swa
   indirect-call targets. SysPart run from only SWAT4J's start functions (ZooKeeper `libjava.so`, `libnet.so`,
   `libzip.so`) gives the same syscalls except `setpriority` in `libjava.so`, which libjvm's imports add anyway.
 
-## JNI-static and JNI-full columns (rebuilt from this artifact)
+## JNI-static, JNI-full and SysJava binding columns (rebuilt from this artifact)
 
 ```bash
-python3 jni_columns.py         # about 3 min; writes results/jni_columns.tsv
+python3 jni_columns.py         # about 3 min; writes results/jni_columns.tsv and prints the checks
 ```
 
-Same libraries, call graphs and libjvm imports as the SWAT4J column; only the start functions differ, chosen by the
-mapper tag of each mapping (`mapped_method_syscalls.txt`, `manual_mapped_method_syscalls.txt`):
+Same libraries, call graphs and libjvm imports as the SWAT4J column. A native's column is its Table II category:
+its first mapper tag, read as Table II's generator reads it (`mapped_method_syscalls.txt`, then
+`2_swat4j_vs_sysjava/manual_mapping/<image>/mapping/mapped_method_syscalls.txt`).
 
-- **JNI-static:** `[JNI]`, i.e. exported `Java_*` symbols in their short, overloaded (`__` + argument types) and
-  escaped (`_1`, `_00024`) forms, including manual mappings to supplied libraries.
-- **JNI-full:** JNI-static plus `RegisterNatives`: `[JNI_DYNAMIC]` and `[REGISTERED]` (decoded registration tables),
-  `[JVM]` (JDK class tables to `JVM_*`), `[NETTY]`.
-- **Neither:** JNA, JNR-FFI, FFM, and Cassandra's `[DIRECT_LIBC_BRIDGE]` (9) and `[SIGAR_LIST_BRIDGE]` (5) mappings.
-  The SysJava binding column adds them, and Tomcat's 2 natives in the `jsvc` executable.
-- **Methods check:** JNI-full equals Table II's symbol lookup + explicit registration except Tomcat (790 vs 792, the
-  `jsvc` natives) and Cassandra (889 vs 894, the Sigar list bridges); JNI-static equals Table II's static + partial.
-- **Why JNI-static and JNI-full tie in 7 images:** there every `RegisterNatives` target is in `libjvm.so`, and the 76
-  syscalls libjvm reaches are already reached through the other JNI libraries. SysPart resolves an indirect call to
-  every address-taken function (the JNIEnv table alone makes every JNI library reach libjvm, libc and libpthread
-  code), so most JNI libraries reach the same 75 syscalls. `RegisterNatives` adds syscalls only through Netty
-  (Cassandra +8, Storm +11, Solr +12: `epoll_*`, `accept4`, `eventfd2`, `splice`, ...); JNA adds Cassandra +3 and
-  Elasticsearch +2, JNR-FFI adds JRuby's `getpeername`.
+- **JNI-static = Table II's symbol lookup:** `[JNI]` (exported `Java_*` symbols: short, overloaded, escaped,
+  including manual mappings to supplied libraries), `[JVM]` (JDK class tables to `JVM_*`), `[SIGAR_LIST_BRIDGE]`.
+- **JNI-full = Table II's bound JNI:** plus explicit registration, `[JNI_DYNAMIC]` and `[REGISTERED]` (decoded
+  `RegisterNatives` tables) and `[NETTY]`. Tomcat's 2 natives registered in the `jsvc` executable are counted as
+  methods; `jsvc` is not one of the analysed libraries.
+- **SysJava binding = JNI-full + JNA + JNR-FFI bindings that are bound** (library and function known, applicable on
+  Linux): Cassandra +9 JNA, Elasticsearch +7 JNA, JRuby +25 JNR-FFI. JNA direct-mapped natives count only under JNA.
+- **Checks (printed by the script):** JNI-static + explicit registration = JNI-full, JNI-full + JNA + JNR-FFI =
+  SysJava binding, and the syscall sets nest (JNI-static within JNI-full within SysJava binding) in all ten images;
+  the SysJava binding syscalls equal the paper's.
+- **Why the columns are close:** in 7 images every `RegisterNatives` target is in `libjvm.so`, whose syscalls the
+  other JNI libraries already reach: SysPart resolves an indirect call to every address-taken function, so most JNI
+  libraries reach the same 75 syscalls. Explicit registration adds syscalls only through Netty (Cassandra +8, Storm
+  +11, Solr +12: `epoll_*`, `accept4`, `eventfd2`, `splice`, ...); JNA adds Cassandra +3 (`fadvise64`, `mlockall`,
+  `munlockall`) and Elasticsearch +2 (`mlockall`, `prctl`); JNR-FFI adds JRuby's `getpeername`.
 
 ## SysJava binding and No binding columns
 
