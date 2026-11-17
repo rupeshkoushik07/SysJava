@@ -1,14 +1,23 @@
-# REPRODUCE: stratified sample of SysJava mappings for manual validation (R6, 2026-11-16)
+# REPRODUCE: validation of SysJava mappings: stratified sample + JNI symbol lookup checked in full (R6, 2026-11-16; restructured 2026-11-17)
 
 Request (user via the Rewrite session): draw a stratified random sample of SysJava's resolved mappings, 20 per
 stratum, with the evidence a person can check and a pre-check verdict to confirm. Read-only: no result, table or
 paper file is changed.
 
+Restructured 2026-11-17 (user): six mechanisms are sampled, 20 each (120); JNI symbol lookup is checked in full
+(all 21,058) instead of sampled. The 120 are the first 120 of the original draw (stratum 7 was drawn last), so they
+and their verdicts are unchanged. The original 140 (7 x 20) outputs are kept in `sample_140_2026-11-16/`.
+
+**Who decided the verdicts.** Every verdict in `sample.tsv`, `sample.md` and `jni_symbol_lookup_all.tsv` is computed
+by `sample.py` from the evidence it prints. The only verdict decided by a person is S2-10 (user, 2026-11-16). A
+manual confirmation of the 120 is not recorded in these files.
+
 ## Command
 
     cd ~/Tutorial/EchoTrace/manual_validation
     python3 population.py   # population sizes per stratum (printed)
-    python3 sample.py       # ~2 min: sample.tsv, sample.md, population_sizes.tsv
+    python3 sample.py       # ~2 min: sample.tsv (120), sample.md, population_sizes.tsv, jni_symbol_lookup_all.tsv (21,058)
+    python3 exhaustive/exhaustive.py   # optional, ~4 min: the same check on every mapping of all 7 strata -> exhaustive/all.tsv
 
 Seed 20261116 (`SEED` in sample.py). Python 3.10, pyelftools 0.33. Same inputs, same seed, same output.
 
@@ -39,12 +48,12 @@ NOT_FOUND are unresolved and left out; repeated lines count once.
 | 4 JNR-FFI | jna_hits.txt jnr-ffi, same rule | 67 | 33 | 34 |
 | 5 FFM | ffi hits of Tomcat 11 and ZooKeeper 3.9.5 (the only images that use java.lang.foreign), one per symbol | 206 | 0 | 206 |
 | 6 manual / supplied library | resolved lines of the manual mapping files | 943 | 411 | 532 |
-| 7 control | JNI-tagged mappings to a Java_* symbol | 21,058 | 8,634 | 12,424 |
+| 7 JNI symbol lookup (checked in full, not sampled) | JNI-tagged mappings to a Java_* symbol | 21,058 | 8,634 | 12,424 |
 
 Counts are mappings, not methods: overloads and several library copies of one function count separately, and the
 same libjvm mapping counts once per image.
 
-Draw (sample.py `draw`): each stratum is shuffled, grouped by image, and taken round-robin over the images (image
+Draw (sample.py `draw`, strata 1-6; `FULL = {7}` is checked in full): each stratum is shuffled, grouped by image, and taken round-robin over the images (image
 order shuffled) until 20, so every image with mappings in the stratum is sampled where possible.
 
 ## Evidence and pre-check (sample.py)
@@ -61,11 +70,20 @@ order shuffled) until 20, so every image with mappings in the stratum is sampled
   Solaris classes; kevent/kqueue) are "unverifiable: other-OS".
 - Manual: the manual mapping line, the nm line in the supplied library, the expected JNI name, and the
   PROVENANCE.tsv / NOTES.md record (upstream version and whether it matches what the app ships or loads).
-- Control: the expected JNI short name computed from class and method (mangling of _, $, etc.) and the nm -D line.
+- JNI symbol lookup (all 21,058): the expected JNI short name computed from class and method (mangling of _, $, etc.),
+  or its overloaded form (short name + `__<mangled args>`), and the library defines the symbol.
 
-## Observations (pre-check, 140 sampled)
+## Observations (script verdicts; 120 sampled + 21,058 checked in full)
 
-- Correct 120 (incl. 6 with a library-name note and 2 with a version note), incorrect 0, unverifiable 20; 140 in total.
+- Sample, 120: correct 100 (incl. 6 with a library-name note and 2 with a version note), incorrect 0, unverifiable 20.
+  The 20 are bindings shown not to resolve in these Linux images (other OS, or a function the image's library does
+  not export); see below.
+- JNI symbol lookup, all 21,058: 21,056 pass. 2 do not (Cassandra 5.0.8, zstd-jni 1.5.7-2):
+  `Zstd.searchLengthMax` -> `Java_com_github_luben_zstd_Zstd_searchLogMax` and `Zstd.searchLengthMin` ->
+  `..._searchLogMin`. The mapper records them as aliases of `searchLogMax`/`searchLogMin` (mapped_method_syscalls.txt:
+  "(alias of ...)"); the library exports no `searchLength*` symbol. Not resolved whether this is correct.
+- Original 140 (2026-11-16): the 20 symbol-lookup mappings sampled then were all correct; they are in
+  `sample_140_2026-11-16/`.
 - S2-10 (Cassandra 3.0.29 NativeLibraryLinux.fcntl -> fcntl, recorded in libjvm.so): libjvm.so only imports fcntl,
   but the pipeline's SysPart run of libjvm.so starts fcntl at 0xea7b0 in libc.so.6 (startfuncs_with_addr.txt +
   allfunctions.txt module), i.e. libc's fcntl body. Pre-check "correct" (user, 2026-11-16): library recorded as an

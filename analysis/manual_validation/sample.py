@@ -25,6 +25,7 @@ import population as P
 from elfev import elf, jni_mangle, jni_short_name, sha16, symbolized
 
 SEED, N = 20261116, 20
+FULL = {7}   # strata checked in full instead of sampled (JNI symbol lookup)
 H = os.path.dirname(os.path.abspath(__file__))
 TUT = os.path.expanduser("~/Tutorial") + "/"
 WIN = {"kernel32", "msvcrt", "winmm", "advapi32", "user32", "psapi"}
@@ -365,12 +366,27 @@ EV = {1: ev_registration, 2: ev_heuristic, 3: ev_binding, 4: ev_binding, 5: ev_b
 def main():
     rng = random.Random(SEED)
     S = build()
-    sizes, rows = [], []
+    sizes, rows, full_summary = [], [], []
     for k in sorted(P.STRATA):
         pop = S.get(k, [])
         by = defaultdict(int)
         for r in pop:
             by[r["set"]] += 1
+        if k in FULL:   # checked in full, not sampled
+            full_rows = []
+            for r in pop:
+                _, (verdict, reason) = EV[k](r)
+                full_rows.append([r["set"], r["img"], r["tag"], r["java"], r["sym"], rel(r["lib"]), verdict, reason])
+            with open(f"{H}/jni_symbol_lookup_all.tsv", "w", newline="") as f:
+                w = csv.writer(f, delimiter="\t", lineterminator="\n")
+                w.writerow(["set", "image", "tag", "java_side", "native_function", "library", "check", "check_reason"])
+                w.writerows(full_rows)
+            fc = defaultdict(int)
+            for r in full_rows:
+                fc[r[6]] += 1
+            full_summary.append((k, len(pop), by["jdk8"], by["latest"], len({(r['set'], r['img']) for r in pop}), dict(fc),
+                                 [r for r in full_rows if r[6] != "correct"]))
+            continue
         smp = draw(pop, rng)
         sizes.append([k, P.STRATA[k], len(pop), by["jdk8"], by["latest"], len({(r['set'], r['img']) for r in pop}),
                       len(smp), len({(r['set'], r['img']) for r in smp})])
@@ -389,9 +405,9 @@ def main():
         f.write("stratum\tname\tpopulation\tjdk8\tlatest\timages\tsampled\tsampled_images\n")
         for s in sizes:
             f.write("\t".join(map(str, s)) + "\n")
-    md = [f"# Manual validation sample (seed {SEED}, {N} per stratum)\n",
+    md = [f"# Validation of SysJava mappings: sample of {N} per stratum (seed {SEED}) + JNI symbol lookup checked in full\n",
           "Population: resolved mappings behind Table II (JDK 8) and Table III (latest). Columns: Java side, chosen "
-          "native function and library, the evidence to check, and a pre-check verdict to confirm.\n",
+          "native function and library, the evidence, and the script's verdict (computed by sample.py from that evidence; a person's confirmation is not recorded here).\n",
           "| Stratum | Population | JDK 8 | Latest | Images | Sampled | Sampled images | " +
           " | ".join(sorted({r[10] for r in rows})) + " |",
           "|---|---:|---:|---:|---:|---:|---:|" + "---:|" * len({r[10] for r in rows})]
@@ -403,6 +419,16 @@ def main():
                 c[r[10]] += 1
         md.append(f"| {s[0]} {s[1]} | {s[2]:,} | {s[3]:,} | {s[4]:,} | {s[5]} | {s[6]} | {s[7]} | " +
                   " | ".join(str(c[v]) for v in vs) + " |")
+    for k, n, j8, lt, ni, fc, bad in full_summary:
+        md.append(f"\n## {k}. {P.STRATA[k]}: all {n:,} mappings checked (not sampled)\n")
+        md.append(f"JDK 8 {j8:,}, latest {lt:,}, {ni} images. Same check as the sample would apply (expected JNI short "
+                  "name from class and method, or its overloaded form, and the library defines the symbol). "
+                  "Every row is in `jni_symbol_lookup_all.tsv`.\n")
+        md.append("| Check | Mappings |\n|---|---:|\n" + "\n".join(f"| {v} | {c:,} |" for v, c in sorted(fc.items())) + "\n")
+        if bad:
+            md.append("Mappings that do not pass:\n")
+            for b in bad:
+                md.append(f"- {b[1]} ({b[0]}) `{b[3]}` -> `{b[4]}` in `{b[5]}`: {b[7]}")
     for s in sizes:
         md.append(f"\n## {s[0]}. {s[1]}\n")
         for r in rows:

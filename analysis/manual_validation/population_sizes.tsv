@@ -5,4 +5,3 @@ stratum	name	population	jdk8	latest	images	sampled	sampled_images
 4	JNR-FFI	67	33	34	3	20	3
 5	FFM	206	0	206	2	20	2
 6	manual / supplied library	943	411	532	20	20	20
-7	control: JNI symbol lookup	21058	8634	12424	20	20	20

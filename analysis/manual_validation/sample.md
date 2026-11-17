@@ -1,6 +1,6 @@
-# Manual validation sample (seed 20261116, 20 per stratum)
+# Validation of SysJava mappings: sample of 20 per stratum (seed 20261116) + JNI symbol lookup checked in full
 
-Population: resolved mappings behind Table II (JDK 8) and Table III (latest). Columns: Java side, chosen native function and library, the evidence to check, and a pre-check verdict to confirm.
+Population: resolved mappings behind Table II (JDK 8) and Table III (latest). Columns: Java side, chosen native function and library, the evidence, and the script's verdict (computed by sample.py from that evidence; a person's confirmation is not recorded here).
 
 | Stratum | Population | JDK 8 | Latest | Images | Sampled | Sampled images | correct | correct (library note) | correct (version note) | unverifiable |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -10,7 +10,20 @@ Population: resolved mappings behind Table II (JDK 8) and Table III (latest). Co
 | 4 JNR-FFI | 67 | 33 | 34 | 3 | 20 | 3 | 13 | 0 | 0 | 7 |
 | 5 FFM | 206 | 0 | 206 | 2 | 20 | 2 | 12 | 6 | 0 | 2 |
 | 6 manual / supplied library | 943 | 411 | 532 | 20 | 20 | 20 | 18 | 0 | 2 | 0 |
-| 7 control: JNI symbol lookup | 21,058 | 8,634 | 12,424 | 20 | 20 | 20 | 20 | 0 | 0 | 0 |
+
+## 7. control: JNI symbol lookup: all 21,058 mappings checked (not sampled)
+
+JDK 8 8,634, latest 12,424, 20 images. Same check as the sample would apply (expected JNI short name from class and method, or its overloaded form, and the library defines the symbol). Every row is in `jni_symbol_lookup_all.tsv`.
+
+| Check | Mappings |
+|---|---:|
+| correct | 21,056 |
+| incorrect? | 2 |
+
+Mappings that do not pass:
+
+- cassandra_5.0.8 (latest) `com.github.luben.zstd.Zstd.searchLengthMax` -> `Java_com_github_luben_zstd_Zstd_searchLogMax` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Dataset/LIBS_cassandra_5.0.8/libzstd-jni-1.5.7-2.so`: mangled name mismatch
+- cassandra_5.0.8 (latest) `com.github.luben.zstd.Zstd.searchLengthMin` -> `Java_com_github_luben_zstd_Zstd_searchLogMin` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Dataset/LIBS_cassandra_5.0.8/libzstd-jni-1.5.7-2.so`: mangled name mismatch
 
 ## 1. explicit registration
 
@@ -752,7 +765,7 @@ Java: `org.apache.storm.shade.io.netty.channel.uring.Native.ioUringEnter`
 Native: `netty_io_uring_enter` in `~/Tutorial/EchoTrace_latest/unavailable_libs/storm_2.8.8/io_uring/libnetty_transport_native_io_uring42_x86_64.so` (sha256 080883258bd7fca7)  
 - manual mapping line (unavailable_libs/storm_2.8.8/io_uring/libnetty_transport_native_io_uring42_x86_64.so) [REGISTERED]  
 - nm: 0000000000005be0 t netty_io_uring_enter (local, not exported)  
-- provenance: ~/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libnetty_transport_native_io_uring42_x86_64.so — netty 4.2.12 io_uring (symbolized), from storm-shaded-deps-2.8.8.jar; mapped by user decision (2026-11-06) although storm cannot load it (registers unshaded io/netty/channel/uring/*); same symbols as the June storm_latest run  
+- provenance: /home/rupesh.punna/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset_symbolized/LIBS_storm_2.8.8/libnetty_transport_native_io_uring42_x86_64.so — netty 4.2.12 io_uring (symbolized), from storm-shaded-deps-2.8.8.jar; mapped by user decision (2026-11-06) although storm cannot load it (registers unshaded io/netty/channel/uring/*); same symbols as the June storm_latest run  
 - RegisterNatives entry: libnetty_transport_native_io_uring42_x86_64.so vaddr 0x139c0 (file offset 0x129c0): {"ioUringEnter", "(IIII)I", 0x5be0 (netty_io_uring_enter)}
 
 **S6-07** tomcat_11.0.22 (latest) `[JNI]` — **correct (version note)**: function correct; supplied library documented in NOTES.md (not shipped by the image)  
@@ -804,7 +817,7 @@ Java: `io.netty.internal.tcnative.SSL.getLastErrorNumber`
 Native: `netty_internal_tcnative_SSL_getLastErrorNumber` in `~/Tutorial/EchoTrace_latest/unavailable_libs/solr_10.0.0/libnetty_tcnative_linux_x86_64.so` (sha256 ec0fe8ed43699c52)  
 - manual mapping line (unavailable_libs/solr_10.0.0/libnetty_tcnative_linux_x86_64.so) [JNI_DYNAMIC]  
 - nm: 000000000002e770 t netty_internal_tcnative_SSL_getLastErrorNumber (local, not exported)  
-- provenance: ~/Prototype/Final_results_echotrace/cassandra_5.0.6-bookworm/Dataset/LIBS_cassandra_5.0.6-bookworm/libnetty_tcnative_linux_x86_64.so — netty-tcnative 2.0.70.Final linux-x86_64; byte-identical to Prototype solr_slim copy; solr 10 ships only the classes jar for 2.0.70  
+- provenance: /home/rupesh.punna/Prototype/Final_results_echotrace/cassandra_5.0.6-bookworm/Dataset/LIBS_cassandra_5.0.6-bookworm/libnetty_tcnative_linux_x86_64.so — netty-tcnative 2.0.70.Final linux-x86_64; byte-identical to Prototype solr_slim copy; solr 10 ships only the classes jar for 2.0.70  
 - RegisterNatives entry: libnetty_tcnative_linux_x86_64.so vaddr 0x23e628 (file offset 0x23d628): {"getLastErrorNumber", "()I", 0x2e770 (netty_internal_tcnative_SSL_getLastErrorNumber)}
 
 **S6-14** jruby_10.1.0.0 (latest) `[JVM]` — **correct**: symbol defined in the image's library  
@@ -841,7 +854,7 @@ Java: `com.kenai.jffi.Foreign.getByteArrayChecked`
 Native: `Java_com_kenai_jffi_Foreign_getByteArrayChecked` in `~/Tutorial/EchoTrace_latest/unavailable_libs/orientdb_3.2.53/libjffi-1.2.so` (sha256 2f9ea4c923c6b7ee)  
 - manual mapping line (unavailable_libs/orientdb_3.2.53/libjffi-1.2.so) [JNI]  
 - nm -D: 000000000000bbe0 T Java_com_kenai_jffi_Foreign_getByteArrayChecked  
-- provenance: ~/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Dataset/JARFILES_orientdb_3.2.53/jffi-1.3.9-native.jar!/jni/x86_64-Linux/libjffi-1.2.so — from the target's own jffi native jar (exact version)  
+- provenance: /home/rupesh.punna/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Dataset/JARFILES_orientdb_3.2.53/jffi-1.3.9-native.jar!/jni/x86_64-Linux/libjffi-1.2.so — from the target's own jffi native jar (exact version)  
 - expected JNI name Java_com_kenai_jffi_Foreign_getByteArrayChecked: match
 
 **S6-19** zookeeper_3.9.5 (latest) `[JVM]` — **correct**: symbol defined in the image's library  
@@ -857,127 +870,4 @@ Native: `JVM_RegisterMethodHandleMethods` in `~/Tutorial/EchoTrace/Final_results
 - manual mapping line (~/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset_symbolized/LIBS_groovy_4.0.0-jdk8-buster/libjvm.so) [JVM]  
 - nm: 000000000090ff00 t JVM_RegisterMethodHandleMethods (local, not exported)  
 - library is the image's own file (mapped in the supplement run)
-
-
-## 7. control: JNI symbol lookup
-
-**S7-01** groovy_5.0.6 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.Class.isAssignableFrom`  
-Native: `Java_java_lang_Class_isAssignableFrom` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/groovy_5.0.6/Dataset/LIBS_groovy_5.0.6/JDK21_LIBS/libjava.so` (sha256 cdcb1ce2b9352f21)  
-- expected short name Java_java_lang_Class_isAssignableFrom  
-- nm -D: 000000000000e960 T Java_java_lang_Class_isAssignableFrom
-
-**S7-02** jruby_10.1.0.0 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.StackStreamFactory$AbstractStackWalker.callStackWalk`  
-Native: `Java_java_lang_StackStreamFactory_00024AbstractStackWalker_callStackWalk` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/jruby_10.1.0.0/Dataset/LIBS_jruby_10.1.0.0/JDK21_LIBS/libjava.so` (sha256 ddccf070f3d797e1)  
-- expected short name Java_java_lang_StackStreamFactory_00024AbstractStackWalker_callStackWalk  
-- nm -D: 0000000000013260 T Java_java_lang_StackStreamFactory_00024AbstractStackWalker_callStackWalk
-
-**S7-03** storm_2.8.8 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.nio.ch.Net.joinOrDrop6`  
-Native: `Java_sun_nio_ch_Net_joinOrDrop6` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/storm_2.8.8/Dataset/LIBS_storm_2.8.8/libnio.so` (sha256 fcfcc573468080ae)  
-- expected short name Java_sun_nio_ch_Net_joinOrDrop6  
-- nm -D: 000000000000b060 T Java_sun_nio_ch_Net_joinOrDrop6
-
-**S7-04** orientdb_3.2.19-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `com.kenai.jffi.Foreign.munmap`  
-Native: `Java_com_kenai_jffi_Foreign_munmap` in `~/Tutorial/EchoTrace/Final_results_JDK8/orientdb_3.2.19-jdk8-buster/Dataset/LIBS_orientdb_3.2.19-jdk8-buster/libjffi-1.2.so` (sha256 9c38610250738359)  
-- expected short name Java_com_kenai_jffi_Foreign_munmap  
-- nm -D: 000000000000bee0 T Java_com_kenai_jffi_Foreign_munmap
-
-**S7-05** elasticsearch_7.5.2-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.util.zip.Inflater.reset`  
-Native: `Java_java_util_zip_Inflater_reset` in `~/Tutorial/EchoTrace/Final_results_JDK8/elasticsearch_7.5.2-jdk8-buster/Dataset/LIBS_elasticsearch_7.5.2-jdk8-buster/libzip.so` (sha256 f08a0938c666d174)  
-- expected short name Java_java_util_zip_Inflater_reset  
-- nm -D: 0000000000003630 T Java_java_util_zip_Inflater_reset
-
-**S7-06** orientdb_3.2.53 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `com.kenai.jffi.Foreign.getTypeSize`  
-Native: `Java_com_kenai_jffi_Foreign_getTypeSize` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/orientdb_3.2.53/Dataset/LIBS_orientdb_3.2.53/libjffi-1.2.so` (sha256 9c38610250738359)  
-- expected short name Java_com_kenai_jffi_Foreign_getTypeSize  
-- nm -D: 000000000000cb40 T Java_com_kenai_jffi_Foreign_getTypeSize
-
-**S7-07** zookeeper_3.4.14-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.nio.ch.FileChannelImpl.unmap0`  
-Native: `Java_sun_nio_ch_FileChannelImpl_unmap0` in `~/Tutorial/EchoTrace/Final_results_JDK8/zookeeper_3.4.14-jdk8-buster/Dataset/LIBS_zookeeper_3.4.14-jdk8-buster/libnio.so` (sha256 3ec3e6f8c3e0c7e5)  
-- expected short name Java_sun_nio_ch_FileChannelImpl_unmap0  
-- nm -D: 0000000000007590 T Java_sun_nio_ch_FileChannelImpl_unmap0
-
-**S7-08** elasticsearch_7.1.0 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.net.SocketInputStream.init`  
-Native: `Java_java_net_SocketInputStream_init` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/elasticsearch_7.1.0/Dataset/LIBS_elasticsearch_7.1.0/JDK12_LIBS/libnet.so` (sha256 a88a548aed4dd647)  
-- expected short name Java_java_net_SocketInputStream_init  
-- nm -D: 000000000000df40 T Java_java_net_SocketInputStream_init
-
-**S7-09** zookeeper_3.9.5 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.awt.X11.XlibWrapper.XFilterEvent`  
-Native: `Java_sun_awt_X11_XlibWrapper_XFilterEvent` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/zookeeper_3.9.5/Dataset/LIBS_zookeeper_3.9.5/JDK17_LIBS/libawt_xawt.so` (sha256 6b201fd498de094d)  
-- expected short name Java_sun_awt_X11_XlibWrapper_XFilterEvent  
-- nm -D: 0000000000031660 T Java_sun_awt_X11_XlibWrapper_XFilterEvent
-
-**S7-10** tomcat_7.0-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `org.apache.tomcat.jni.Directory.make`  
-Native: `Java_org_apache_tomcat_jni_Directory_make` in `~/Tutorial/EchoTrace/Final_results_JDK8/tomcat_7.0-jdk8-buster/Dataset/LIBS_tomcat_7.0-jdk8-buster/libtcnative-1.so.0.2.28` (sha256 41d4942d4ae15d92)  
-- expected short name Java_org_apache_tomcat_jni_Directory_make  
-- nm -D: 00000000000124c0 T Java_org_apache_tomcat_jni_Directory_make
-
-**S7-11** tomcat_11.0.22 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.nio.ch.NativeSocketAddress.offsetSin4Port`  
-Native: `Java_sun_nio_ch_NativeSocketAddress_offsetSin4Port` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/tomcat_11.0.22/Dataset/LIBS_tomcat_11.0.22/libnio.so` (sha256 7ecb9696fc2a4fff)  
-- expected short name Java_sun_nio_ch_NativeSocketAddress_offsetSin4Port  
-- nm -D: 000000000000a730 T Java_sun_nio_ch_NativeSocketAddress_offsetSin4Port
-
-**S7-12** solr_10.0.0 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.nio.ch.Net.pollerrValue`  
-Native: `Java_sun_nio_ch_Net_pollerrValue` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/solr_10.0.0/Dataset/LIBS_solr_10.0.0/libnio.so` (sha256 bc444112121aaa00)  
-- expected short name Java_sun_nio_ch_Net_pollerrValue  
-- nm -D: 000000000000c660 T Java_sun_nio_ch_Net_pollerrValue
-
-**S7-13** cassandra_3.0.29-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.io.UnixFileSystem.createDirectory`  
-Native: `Java_java_io_UnixFileSystem_createDirectory` in `~/Tutorial/EchoTrace/Final_results_JDK8/cassandra_3.0.29-jdk8-buster/Dataset/LIBS_cassandra_3.0.29-jdk8-buster/libjava.so` (sha256 85faa73de027e5a4)  
-- expected short name Java_java_io_UnixFileSystem_createDirectory  
-- nm -D: 0000000000016680 T Java_java_io_UnixFileSystem_createDirectory
-
-**S7-14** groovy_4.0.0-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.util.zip.ZipFile.getEntryBytes`  
-Native: `Java_java_util_zip_ZipFile_getEntryBytes` in `~/Tutorial/EchoTrace/Final_results_JDK8/groovy_4.0.0-jdk8-buster/Dataset/LIBS_groovy_4.0.0-jdk8-buster/JDK8_LIBS/amd64/libzip.so` (sha256 f08a0938c666d174)  
-- expected short name Java_java_util_zip_ZipFile_getEntryBytes  
-- nm -D: 0000000000003ac0 T Java_java_util_zip_ZipFile_getEntryBytes
-
-**S7-15** storm_2.4.0-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `org.rocksdb.RocksDB.keyMayExist`  
-Native: `Java_org_rocksdb_RocksDB_keyMayExist__J_3BIIJLjava_lang_StringBuilder_2` in `~/Tutorial/EchoTrace/Final_results_JDK8/storm_2.4.0-jdk8-buster/Dataset/LIBS_storm_2.4.0-jdk8-buster/librocksdbjni6329444148818420541.so` (sha256 dfccaa38a2e40877)  
-- expected short name Java_org_rocksdb_RocksDB_keyMayExist (overloaded form: + __<mangled args>)  
-- nm -D: 00000000001a0bb0 T Java_org_rocksdb_RocksDB_keyMayExist__J_3BIIJLjava_lang_StringBuilder_2
-
-**S7-16** jetty_9.4.51-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.System.setOut0`  
-Native: `Java_java_lang_System_setOut0` in `~/Tutorial/EchoTrace/Final_results_JDK8/jetty_9.4.51-jdk8-buster/Dataset/LIBS_jetty_9.4.51-jdk8-buster/JDK8_LIBS/amd64/libjava.so` (sha256 85faa73de027e5a4)  
-- expected short name Java_java_lang_System_setOut0  
-- nm -D: 00000000000145a0 T Java_java_lang_System_setOut0
-
-**S7-17** jruby_9.4.2.0-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.reflect.Proxy.defineClass0`  
-Native: `Java_java_lang_reflect_Proxy_defineClass0` in `~/Tutorial/EchoTrace/Final_results_JDK8/jruby_9.4.2.0-jdk8-buster/Dataset/LIBS_jruby_9.4.2.0-jdk8-buster/JDK8_LIBS/amd64/libjava.so` (sha256 85faa73de027e5a4)  
-- expected short name Java_java_lang_reflect_Proxy_defineClass0  
-- nm -D: 0000000000011110 T Java_java_lang_reflect_Proxy_defineClass0
-
-**S7-18** jetty_12.1.10 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.ProcessImpl.init`  
-Native: `Java_java_lang_ProcessImpl_init` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/jetty_12.1.10/Dataset/LIBS_jetty_12.1.10/libjava.so` (sha256 0ae08e6f61a2fcae)  
-- expected short name Java_java_lang_ProcessImpl_init  
-- nm -D: 00000000000123e0 T Java_java_lang_ProcessImpl_init
-
-**S7-19** solr_8.7.0-jdk8-buster (jdk8) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `sun.net.dns.ResolverConfigurationImpl.fallbackDomain0`  
-Native: `Java_sun_net_dns_ResolverConfigurationImpl_fallbackDomain0` in `~/Tutorial/EchoTrace/Final_results_JDK8/solr_8.7.0-jdk8-buster/Dataset/LIBS_solr_8.7.0-jdk8-buster/JDK8_LIBS/amd64/libnet.so` (sha256 03d43cc88f18502c)  
-- expected short name Java_sun_net_dns_ResolverConfigurationImpl_fallbackDomain0  
-- nm -D: 000000000000ea10 T Java_sun_net_dns_ResolverConfigurationImpl_fallbackDomain0
-
-**S7-20** cassandra_5.0.8 (latest) `[JNI]` — **correct**: mangled name matches and the library defines it  
-Java: `java.lang.Float.intBitsToFloat`  
-Native: `Java_java_lang_Float_intBitsToFloat` in `~/Tutorial/EchoTrace_latest/Final_results_latest_versions/cassandra_5.0.8/Dataset/LIBS_cassandra_5.0.8/libjava.so` (sha256 a1dde1cc24d629d6)  
-- expected short name Java_java_lang_Float_intBitsToFloat  
-- nm -D: 0000000000010420 T Java_java_lang_Float_intBitsToFloat
 
