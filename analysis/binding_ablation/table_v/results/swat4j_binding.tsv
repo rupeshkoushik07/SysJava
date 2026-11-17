@@ -1,0 +1,11 @@
+image	paper_binding_syscalls	rewalked_binding_syscalls	swat4j_listed_natives	swat4j_natives_resolved_by_sysjava	swat4j_start_functions	swat4j_syscalls	only_binding	only_swat4j
+zookeeper_3.4.14-jdk8-buster	113	113	236	227	265	96	fdatasync flock fstatfs getpeername getpgid getppid getresgid getresuid getsid pwrite64 readv rt_sigpending select sendfile sendmsg socketpair umask	
+tomcat_7.0-jdk8-buster	128	128	614	588	890	116	fdatasync fstatfs getpgid getppid getresgid getresuid getsid pwrite64 rt_sigpending sendmsg socketpair umask	
+cassandra_3.0.29-jdk8-buster	127	127	686	624	717	113	fdatasync flock fstatfs getpgid getppid getresgid getresuid getsid pwrite64 rt_sigpending select socketpair umask utimes	
+jetty_9.4.51-jdk8-buster	100	100	225	224	262	96	fdatasync pwrite64 socketpair utimes	
+storm_2.4.0-jdk8-buster	133	133	1529	1483	1599	121	flock getpgid getppid getresgid getresuid getsid readv rt_sigpending select socketpair umask utimes	
+orientdb_3.2.19-jdk8-buster	115	115	519	466	527	97	fdatasync flock fstatfs getpeername getpgid getppid getresgid getresuid getsid pwrite64 readv rt_sigpending select sendfile sendmsg socketpair umask utimes	
+elasticsearch_7.5.2-jdk8-buster	118	118	368	351	403	99	fdatasync flock fstatfs getpeername getpgid getppid getresgid getresuid getsid prctl pwrite64 readv rt_sigpending select sendfile sendmsg socketpair umask utimes	
+solr_8.7.0-jdk8-buster	131	131	613	603	647	118	fdatasync flock fstatfs getpgid getppid getresgid getresuid getsid pwrite64 rt_sigpending select umask utimes	
+groovy_4.0.0-jdk8-buster	113	113	334	289	327	110	fdatasync socketpair utimes	
+jruby_9.4.2.0-jdk8-buster	104	104	448	437	480	97	fdatasync getpeername pwrite64 readv sendfile socketpair utimes	
