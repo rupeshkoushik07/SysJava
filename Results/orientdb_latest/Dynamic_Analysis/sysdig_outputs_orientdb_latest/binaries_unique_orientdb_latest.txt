@@ -1,6 +1,0 @@
-/bin/sh
-grep
-ls
-readlink
-sh
-test

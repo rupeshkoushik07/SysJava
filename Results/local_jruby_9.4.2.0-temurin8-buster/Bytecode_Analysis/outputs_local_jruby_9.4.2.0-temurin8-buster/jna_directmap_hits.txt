@@ -1,3 +1,0 @@
-=== JNA Direct Mapping Hits ===
-Format: methodSig | lib | symbol | apiPattern | jar
-

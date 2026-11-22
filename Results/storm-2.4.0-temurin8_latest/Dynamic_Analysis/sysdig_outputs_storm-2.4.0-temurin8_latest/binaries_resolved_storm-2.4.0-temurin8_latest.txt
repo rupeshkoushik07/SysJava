@@ -1,2 +1,0 @@
-/opt/java/openjdk/bin/java
-/usr/local/bin/python

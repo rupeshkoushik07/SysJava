@@ -1,5 +1,0 @@
-mlockall
-mmap
-munlockall
-posix_fadvise
-strerror

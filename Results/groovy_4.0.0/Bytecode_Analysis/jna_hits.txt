@@ -1,3 +1,0 @@
-=== Combined Native Binding Hits ===
-Format: detector | payload
-

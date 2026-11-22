@@ -1,9 +1,0 @@
-fstat
-fsync
-lstat
-mlockall
-msync
-munlockall
-setpriority
-shmdt
-shutdown

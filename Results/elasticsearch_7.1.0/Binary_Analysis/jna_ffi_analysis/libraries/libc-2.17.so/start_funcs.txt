@@ -1,5 +1,0 @@
-geteuid
-mlockall
-setrlimit
-getrlimit
-strerror

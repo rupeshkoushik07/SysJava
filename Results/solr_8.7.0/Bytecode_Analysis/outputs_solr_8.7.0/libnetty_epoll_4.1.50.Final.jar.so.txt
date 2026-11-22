@@ -1,2 +1,0 @@
-netty_epoll_linuxsocket_isTcpFastOpenConnect
-netty_epoll_linuxsocket_setTcpFastOpenConnect

@@ -1,3 +1,0 @@
-/sbin/ldconfig
-/usr/share/elasticsearch/jdk/bin/java
-/usr/share/elasticsearch/modules/x-pack-ml/platform/linux-x86_64/bin/controller

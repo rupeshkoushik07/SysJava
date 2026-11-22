@@ -1,3 +1,0 @@
-resolved_bindings=301
-unresolved_bindings=7
-reachable_syscalls=35

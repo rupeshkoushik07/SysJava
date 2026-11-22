@@ -1,3 +1,0 @@
-VerifyClassForMajorVersion
-_fini
-_init

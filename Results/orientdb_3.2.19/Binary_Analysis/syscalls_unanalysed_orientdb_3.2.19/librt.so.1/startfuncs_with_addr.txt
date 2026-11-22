@@ -1,6 +1,0 @@
-__librt_version_placeholder_1140
-1140
-1140
-1140
-1140
-1140

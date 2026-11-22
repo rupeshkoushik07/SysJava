@@ -1,3 +1,0 @@
-debconfclient_delete
-debconfclient_init
-debconfclient_new
